@@ -21,6 +21,15 @@ from urllib.parse import urlparse
 import requests
 import yaml
 
+# Windows runner 默认 cp1252，输出 ✓/✗/中文会 UnicodeEncodeError 进而崩掉整个脚本。
+# 与 sync.py / render.py / build_web.py 保持一致。
+for _stream in (sys.stdout, sys.stderr):
+    if hasattr(_stream, "reconfigure"):
+        try:
+            _stream.reconfigure(encoding="utf-8", errors="replace")
+        except Exception:
+            pass
+
 REPO_ROOT = Path(__file__).resolve().parents[1]
 DATA_FILE = REPO_ROOT / "data" / "latest.json"
 PACKAGES_FILE = REPO_ROOT / "packages.yaml"
