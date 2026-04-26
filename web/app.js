@@ -99,15 +99,37 @@ function app() {
       this.$refs.search?.focus();
     },
 
-    // ==== 平台徽章颜色 ====
-    platformClass(platform) {
+    // ==== 直链检测 ====
+    // 剥掉查询串后看路径是否以文件扩展名结尾
+    isDirectLink(url) {
+      if (!url) return false;
+      const path = url.toLowerCase().split('?')[0];
+      return /\.(exe|dmg|iso|zip|tar\.gz|msi|pkg|deb|rpm|appimage|7z)$/.test(path);
+    },
+
+    // ==== 平台徽章颜色（direct=实心填充 / page=描边空心） ====
+    badgeClass(platform, url) {
       const family = platform.split('-')[0];
-      const map = {
-        win:   'bg-blue-50 text-blue-700 hover:bg-blue-100 dark:bg-blue-950/40 dark:text-blue-300 dark:hover:bg-blue-900/40',
-        mac:   'bg-zinc-100 text-zinc-700 hover:bg-zinc-200 dark:bg-zinc-800 dark:text-zinc-300 dark:hover:bg-zinc-700',
-        linux: 'bg-orange-50 text-orange-700 hover:bg-orange-100 dark:bg-orange-950/40 dark:text-orange-300 dark:hover:bg-orange-900/40',
+      const direct = this.isDirectLink(url);
+      const colorMap = {
+        win: {
+          direct: 'bg-blue-50   text-blue-700  hover:bg-blue-100  dark:bg-blue-950/40  dark:text-blue-300  dark:hover:bg-blue-900/40',
+          page:   'ring-1 ring-blue-300   text-blue-600  hover:bg-blue-50   dark:ring-blue-700   dark:text-blue-400  dark:hover:bg-blue-950/30',
+        },
+        mac: {
+          direct: 'bg-zinc-100  text-zinc-700  hover:bg-zinc-200  dark:bg-zinc-800     dark:text-zinc-300  dark:hover:bg-zinc-700',
+          page:   'ring-1 ring-zinc-300   text-zinc-600  hover:bg-zinc-100  dark:ring-zinc-600   dark:text-zinc-400  dark:hover:bg-zinc-800/50',
+        },
+        linux: {
+          direct: 'bg-orange-50 text-orange-700 hover:bg-orange-100 dark:bg-orange-950/40 dark:text-orange-300 dark:hover:bg-orange-900/40',
+          page:   'ring-1 ring-orange-300 text-orange-600 hover:bg-orange-50 dark:ring-orange-700 dark:text-orange-400 dark:hover:bg-orange-950/30',
+        },
       };
-      return map[family] || 'bg-violet-50 text-violet-700 hover:bg-violet-100 dark:bg-violet-950/40 dark:text-violet-300 dark:hover:bg-violet-900/40';
+      const colors = colorMap[family] || {
+        direct: 'bg-violet-50  text-violet-700 hover:bg-violet-100 dark:bg-violet-950/40 dark:text-violet-300 dark:hover:bg-violet-900/40',
+        page:   'ring-1 ring-violet-300 text-violet-600 hover:bg-violet-50 dark:ring-violet-700 dark:text-violet-400 dark:hover:bg-violet-950/30',
+      };
+      return colors[direct ? 'direct' : 'page'];
     },
 
     // ==== 格式化辅助 ====
