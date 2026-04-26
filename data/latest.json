@@ -13,13 +13,13 @@
       "assets": [
         {
           "platform": "win-x64",
-          "url": "https://software.download.prss.microsoft.com/dbazure/Win11_25H2_Chinese_Simplified_x64_v2.iso?t=b3829800-3cbc-41d6-bfe9-438a242c90dd&P1=1777300123&P2=601&P3=2&P4=rZ66SGSNBEM31VrgLSxep7xt40qMQrF2O2gDonl2nl5E1j8EC4ARgtci6Ve%2fvfxuPRCC6pIYPwmughKJuqvTBn55PvOZcTAqG3%2b9cdl7oDUDStU9LmrWvwQ3%2fEm5U026O8mZA1SQP5kv0bKYTCwvazMW2HeRukDai05Q9Ik6j6ORHuWGEEWYdYUvZOVNohkX6ISXQ6rb1OjbepZ2SFponOJaWwPJ2A0Qkv8eJKrZ8Cdd1XS5Ly0PDegkLx59m9snLjuZ0CdsCv1k%2bXVzjNWSE7kq8D7DebOhyS2pEq%2f%2fFBWJ%2fvX68d8GtD5evbp1uj5fjrag86xt6WkFZiuZtcrHZQ%3d%3d",
+          "url": "https://software.download.prss.microsoft.com/dbazure/Win11_25H2_Chinese_Simplified_x64_v2.iso?t=383599a8-7901-4401-ae06-fca07a47769b&P1=1777302949&P2=601&P3=2&P4=XqqM7VJ6xT%2bOfncabRQr2ZukxBE8yId5F9Oj5lKPjcKQtWBuTN9FksOol3rsAAcnMyD%2bPjfhX6TR4YEENm0B%2bXczMbEJMumoLaBYMvth57ij9XNpWt4iR%2fCkuWryVrLvQj8DXm3hHQCblx%2fO6B%2fItx5W2lJSxcyWn8oIRIopSEON8HREEbbudT6dW76k3JOZL5S7FBqeFG4oMkJ75dMHbNv7K%2bSDY0u%2bIbmFdF0rms9Mve0u4jRQS2bRvyH74FbxzDmsmGzfQ6Y695x5oNWf1sb%2f%2f8k62wMy0AIFNFyT5q0bdq9EkmNb0JxAssrQeiJXDEYC4nr3EphCUiLfu2Azkg%3d%3d",
           "filename": "Win11_25H2_Chinese_Simplified_x64_v2.iso",
           "size": null,
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-26T14:28:44+00:00"
+      "fetched_at": "2026-04-26T15:15:49+00:00"
     },
     {
       "id": "v2rayn",
@@ -60,48 +60,48 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-26T14:28:44+00:00"
+      "fetched_at": "2026-04-26T15:15:50+00:00"
     },
     {
       "id": "vscode",
       "name": "Visual Studio Code",
-      "version": "1.117.0",
+      "version": "1.118.0-insider",
       "source": "VSCode Build Manifest",
       "category": "开发工具",
       "homepage": "https://code.visualstudio.com",
-      "released_at": "2026-04-21T23:19:50+00:00",
-      "notes_url": "https://code.visualstudio.com/updates/v1_117",
+      "released_at": "2026-04-24T17:07:06+00:00",
+      "notes_url": "https://code.visualstudio.com/updates/v1_118",
       "assets": [
         {
           "platform": "win-x64",
-          "url": "https://vscode.download.prss.microsoft.com/dbazure/download/stable/10c8e557c8b9f9ed0a87f61f1c9a44bde731c409/VSCodeUserSetup-x64-1.117.0.exe",
+          "url": "https://vscode.download.prss.microsoft.com/dbazure/download/insider/f2b51f3f64f0a781a7633c2243cfdde589030e34/VSCodeUserSetup-x64-1.118.0-insider.exe",
           "filename": null,
           "size": null,
-          "sha256": "9f3061d1b1b17b8240d435ed948e555c729537876aa7495d03d6102721665157"
+          "sha256": "a1c979ce5738222e72156d8d440181c24e2fc984fc1b91c1aeb5a0c804c30e2f"
         },
         {
           "platform": "win-arm64",
-          "url": "https://vscode.download.prss.microsoft.com/dbazure/download/stable/10c8e557c8b9f9ed0a87f61f1c9a44bde731c409/VSCodeUserSetup-arm64-1.117.0.exe",
+          "url": "https://vscode.download.prss.microsoft.com/dbazure/download/insider/f2b51f3f64f0a781a7633c2243cfdde589030e34/VSCodeUserSetup-arm64-1.118.0-insider.exe",
           "filename": null,
           "size": null,
-          "sha256": "342893e696415116ff4eb86381b5067ccd7893517beb0487f0ed7f709f07061c"
+          "sha256": "5a3e7810097c0dc72b1f9d41e919dad788b90ddb99b444e54b2a7bca909dec6c"
         },
         {
           "platform": "mac-arm64",
-          "url": "https://vscode.download.prss.microsoft.com/dbazure/download/stable/10c8e557c8b9f9ed0a87f61f1c9a44bde731c409/VSCode-darwin-arm64.dmg",
+          "url": "https://vscode.download.prss.microsoft.com/dbazure/download/insider/f2b51f3f64f0a781a7633c2243cfdde589030e34/VSCode-darwin-arm64.dmg",
           "filename": null,
           "size": null,
-          "sha256": "21fbec0fbc5407bf747f7c2ed11e87bf585140ccc778717e76d7a08e2bcea7fe"
+          "sha256": "479b637fe510adbba73836b876aa941bac331221bdef0bc2cbdbc6c7457cd824"
         },
         {
           "platform": "mac-x64",
-          "url": "https://vscode.download.prss.microsoft.com/dbazure/download/stable/10c8e557c8b9f9ed0a87f61f1c9a44bde731c409/VSCode-darwin-x64.dmg",
+          "url": "https://vscode.download.prss.microsoft.com/dbazure/download/insider/f2b51f3f64f0a781a7633c2243cfdde589030e34/VSCode-darwin-x64.dmg",
           "filename": null,
           "size": null,
-          "sha256": "bc5017110545de218ac71df0bdcf40665ec00e9de322825e29a28eebc1e3e1a2"
+          "sha256": "53841c6f91d99a230b2579a6ce35a28cfc51fec5126440a28c992c04a1b76efc"
         }
       ],
-      "fetched_at": "2026-04-26T14:28:45+00:00"
+      "fetched_at": "2026-04-26T15:15:50+00:00"
     },
     {
       "id": "chrome",
@@ -128,7 +128,7 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-26T14:28:46+00:00"
+      "fetched_at": "2026-04-26T15:15:51+00:00"
     },
     {
       "id": "steam",
@@ -148,7 +148,7 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-26T14:28:46+00:00"
+      "fetched_at": "2026-04-26T15:15:51+00:00"
     },
     {
       "id": "wegame",
@@ -168,7 +168,7 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-26T14:28:46+00:00"
+      "fetched_at": "2026-04-26T15:15:51+00:00"
     },
     {
       "id": "localsend",
@@ -195,7 +195,7 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-26T14:28:46+00:00"
+      "fetched_at": "2026-04-26T15:15:51+00:00"
     },
     {
       "id": "bitwarden",
@@ -222,7 +222,7 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-26T14:28:47+00:00"
+      "fetched_at": "2026-04-26T15:15:52+00:00"
     },
     {
       "id": "codex",
@@ -263,7 +263,7 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-26T14:28:49+00:00"
+      "fetched_at": "2026-04-26T15:15:55+00:00"
     },
     {
       "id": "baidunetdisk",
@@ -290,7 +290,7 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-26T14:28:50+00:00"
+      "fetched_at": "2026-04-26T15:15:56+00:00"
     },
     {
       "id": "geek",
@@ -310,7 +310,7 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-26T14:28:50+00:00"
+      "fetched_at": "2026-04-26T15:15:56+00:00"
     },
     {
       "id": "everything",
@@ -351,7 +351,7 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-26T14:28:51+00:00"
+      "fetched_at": "2026-04-26T15:15:57+00:00"
     },
     {
       "id": "nvidia-app",
@@ -371,7 +371,7 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-26T14:28:51+00:00"
+      "fetched_at": "2026-04-26T15:15:57+00:00"
     },
     {
       "id": "qq",
@@ -398,7 +398,7 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-26T14:28:51+00:00"
+      "fetched_at": "2026-04-26T15:15:57+00:00"
     },
     {
       "id": "wechat",
@@ -425,7 +425,7 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-26T14:28:52+00:00"
+      "fetched_at": "2026-04-26T15:15:58+00:00"
     },
     {
       "id": "yy",
@@ -445,7 +445,7 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-26T14:28:52+00:00"
+      "fetched_at": "2026-04-26T15:15:58+00:00"
     }
   ],
   "stats": {

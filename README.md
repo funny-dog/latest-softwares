@@ -3,7 +3,7 @@
 > 由 GitHub Actions 每日自动同步上游官方源的**最新版本元数据**。
 > 仓库**不托管二进制安装包**，下载按钮直接跳到上游官方下载链接。
 >
-> 📅 **最后更新**：`2026-04-26 14:29:12` (UTC)　· 共 16 项软件
+> 📅 **最后更新**：`2026-04-26 15:16:13` (UTC)　· 共 16 项软件
 
 ---
 
@@ -14,7 +14,7 @@
 
 | 软件 | 最新版本 | 发布日期 | 下载链接 | 来源 |
 |------|---------|---------|---------|------|
-| [**Windows 11**](https://www.microsoft.com/software-download/windows11) | `25H2` | — | [win-x64](https://software.download.prss.microsoft.com/dbazure/Win11_25H2_Chinese_Simplified_x64_v2.iso?t=b3829800-3cbc-41d6-bfe9-438a242c90dd&P1=1777300123&P2=601&P3=2&P4=rZ66SGSNBEM31VrgLSxep7xt40qMQrF2O2gDonl2nl5E1j8EC4ARgtci6Ve%2fvfxuPRCC6pIYPwmughKJuqvTBn55PvOZcTAqG3%2b9cdl7oDUDStU9LmrWvwQ3%2fEm5U026O8mZA1SQP5kv0bKYTCwvazMW2HeRukDai05Q9Ik6j6ORHuWGEEWYdYUvZOVNohkX6ISXQ6rb1OjbepZ2SFponOJaWwPJ2A0Qkv8eJKrZ8Cdd1XS5Ly0PDegkLx59m9snLjuZ0CdsCv1k%2bXVzjNWSE7kq8D7DebOhyS2pEq%2f%2fFBWJ%2fvX68d8GtD5evbp1uj5fjrag86xt6WkFZiuZtcrHZQ%3d%3d) | Microsoft Software Download (via Fido) |
+| [**Windows 11**](https://www.microsoft.com/software-download/windows11) | `25H2` | — | [win-x64](https://software.download.prss.microsoft.com/dbazure/Win11_25H2_Chinese_Simplified_x64_v2.iso?t=383599a8-7901-4401-ae06-fca07a47769b&P1=1777302949&P2=601&P3=2&P4=XqqM7VJ6xT%2bOfncabRQr2ZukxBE8yId5F9Oj5lKPjcKQtWBuTN9FksOol3rsAAcnMyD%2bPjfhX6TR4YEENm0B%2bXczMbEJMumoLaBYMvth57ij9XNpWt4iR%2fCkuWryVrLvQj8DXm3hHQCblx%2fO6B%2fItx5W2lJSxcyWn8oIRIopSEON8HREEbbudT6dW76k3JOZL5S7FBqeFG4oMkJ75dMHbNv7K%2bSDY0u%2bIbmFdF0rms9Mve0u4jRQS2bRvyH74FbxzDmsmGzfQ6Y695x5oNWf1sb%2f%2f8k62wMy0AIFNFyT5q0bdq9EkmNb0JxAssrQeiJXDEYC4nr3EphCUiLfu2Azkg%3d%3d) | Microsoft Software Download (via Fido) |
 
 
 ### 网络代理
@@ -28,7 +28,7 @@
 
 | 软件 | 最新版本 | 发布日期 | 下载链接 | 来源 |
 |------|---------|---------|---------|------|
-| [**Visual Studio Code**](https://code.visualstudio.com) | `1.117.0` | 2026-04-21 | [win-x64](https://vscode.download.prss.microsoft.com/dbazure/download/stable/10c8e557c8b9f9ed0a87f61f1c9a44bde731c409/VSCodeUserSetup-x64-1.117.0.exe) · [win-arm64](https://vscode.download.prss.microsoft.com/dbazure/download/stable/10c8e557c8b9f9ed0a87f61f1c9a44bde731c409/VSCodeUserSetup-arm64-1.117.0.exe) · [mac-arm64](https://vscode.download.prss.microsoft.com/dbazure/download/stable/10c8e557c8b9f9ed0a87f61f1c9a44bde731c409/VSCode-darwin-arm64.dmg) · [mac-x64](https://vscode.download.prss.microsoft.com/dbazure/download/stable/10c8e557c8b9f9ed0a87f61f1c9a44bde731c409/VSCode-darwin-x64.dmg) | VSCode Build Manifest |
+| [**Visual Studio Code**](https://code.visualstudio.com) | `1.118.0-insider` | 2026-04-24 | [win-x64](https://vscode.download.prss.microsoft.com/dbazure/download/insider/f2b51f3f64f0a781a7633c2243cfdde589030e34/VSCodeUserSetup-x64-1.118.0-insider.exe) · [win-arm64](https://vscode.download.prss.microsoft.com/dbazure/download/insider/f2b51f3f64f0a781a7633c2243cfdde589030e34/VSCodeUserSetup-arm64-1.118.0-insider.exe) · [mac-arm64](https://vscode.download.prss.microsoft.com/dbazure/download/insider/f2b51f3f64f0a781a7633c2243cfdde589030e34/VSCode-darwin-arm64.dmg) · [mac-x64](https://vscode.download.prss.microsoft.com/dbazure/download/insider/f2b51f3f64f0a781a7633c2243cfdde589030e34/VSCode-darwin-x64.dmg) | VSCode Build Manifest |
 | [**OpenAI Codex**](https://github.com/openai/codex) | `0.125.0` | 2026-04-24 | [win-x64](https://github.com/openai/codex/releases/download/rust-v0.125.0/codex-x86_64-pc-windows-msvc.exe) · [win-arm64](https://github.com/openai/codex/releases/download/rust-v0.125.0/codex-aarch64-pc-windows-msvc.exe) · [mac-arm64](https://github.com/openai/codex/releases/download/rust-v0.125.0/codex-aarch64-apple-darwin.dmg) · [mac-x64](https://github.com/openai/codex/releases/download/rust-v0.125.0/codex-x86_64-apple-darwin.tar.gz) | GitHub Release: openai/codex |
 
 
