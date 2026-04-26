@@ -13,13 +13,13 @@
       "assets": [
         {
           "platform": "win-x64",
-          "url": "https://software.download.prss.microsoft.com/dbazure/Win11_25H2_Chinese_Simplified_x64_v2.iso?t=e81076a4-5c97-421b-85a7-4035aac1e827&P1=1777298469&P2=601&P3=2&P4=gVsrZeiQuppykno4n7np4SnthMCYcCrJtdC8n7bOK5ebXfSqLCxVbedZufyYkv7nlrGj5LkOya0nzO7h7auWjc4Wdmo7fHb1va8SpJ9vWrPTtgZU66WpFDCu%2fYEDbeqqYEVodtWdVtcY6gWlNRUOruan9ORRjZJwcoGQwebzWPO80%2bNNxteGiIPqIZd0PFLsbURQWmJAFUdGNz9%2bZJE32II8aLrNQFX9VLFAT93rRCP%2f3A2al%2f7v27GSqFLHmiJTLyLU3Vfrb5kEZsi7Agm0X%2bFUr%2flTmsWvzHW6%2bl9E9OpvXQ1KipjDxbjOAJM99q00VKRgWclum2STzkGwynLqQg%3d%3d",
+          "url": "https://software.download.prss.microsoft.com/dbazure/Win11_25H2_Chinese_Simplified_x64_v2.iso?t=11954e90-6c20-4a64-b9ba-eded0707cac4&P1=1777298930&P2=601&P3=2&P4=PSLtJ5%2fGAdg39RoOBEDY3yn4qeJk5Mfl27PhQoLO1lj6YsmBWh8hS%2bM1Ekk1igoq9lAkR6tS5IP9VBFLVmvi9uUFZ4K8941kqdQKl3ZxC9WgDVCQk0yLolnm8VkSmICrn6TPLIHJUhYOS83MdLLLR2%2fWj5DF6lrcmjqMyTeleRIdgv1F5vVAxzU1NzdIuwDBqSS7Zl81o2nW7aKrllU1Rn1A2zntrcscSIhD%2b9WGUKqFamn8KRO9%2bnAPsKu3drLlHKzLvdbMd28hEe7h3Qicg8Ic4T9Oxdo%2bPHjFgtsiYz%2f4HwruYsIGvBIT9djparCVDjjSPYTJFePiVdGGImc0Uw%3d%3d",
           "filename": "Win11_25H2_Chinese_Simplified_x64_v2.iso",
           "size": null,
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-26T14:01:11+00:00"
+      "fetched_at": "2026-04-26T14:08:51+00:00"
     },
     {
       "id": "v2rayn",
@@ -60,7 +60,7 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-26T14:01:11+00:00"
+      "fetched_at": "2026-04-26T14:08:51+00:00"
     },
     {
       "id": "vscode",
@@ -101,7 +101,7 @@
           "sha256": "bc5017110545de218ac71df0bdcf40665ec00e9de322825e29a28eebc1e3e1a2"
         }
       ],
-      "fetched_at": "2026-04-26T14:01:12+00:00"
+      "fetched_at": "2026-04-26T14:08:52+00:00"
     },
     {
       "id": "chrome",
@@ -128,7 +128,7 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-26T14:01:12+00:00"
+      "fetched_at": "2026-04-26T14:08:53+00:00"
     },
     {
       "id": "steam",
@@ -148,7 +148,7 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-26T14:01:12+00:00"
+      "fetched_at": "2026-04-26T14:08:53+00:00"
     },
     {
       "id": "wegame",
@@ -168,7 +168,7 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-26T14:01:12+00:00"
+      "fetched_at": "2026-04-26T14:08:53+00:00"
     },
     {
       "id": "localsend",
@@ -195,7 +195,7 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-26T14:01:13+00:00"
+      "fetched_at": "2026-04-26T14:08:53+00:00"
     },
     {
       "id": "bitwarden",
@@ -222,7 +222,7 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-26T14:01:13+00:00"
+      "fetched_at": "2026-04-26T14:08:54+00:00"
     },
     {
       "id": "codex",
@@ -263,7 +263,7 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-26T14:01:15+00:00"
+      "fetched_at": "2026-04-26T14:08:56+00:00"
     },
     {
       "id": "baidunetdisk",
@@ -290,7 +290,7 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-26T14:01:16+00:00"
+      "fetched_at": "2026-04-26T14:08:57+00:00"
     },
     {
       "id": "geek",
@@ -310,7 +310,7 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-26T14:01:17+00:00"
+      "fetched_at": "2026-04-26T14:08:58+00:00"
     },
     {
       "id": "everything",
@@ -351,7 +351,7 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-26T14:01:17+00:00"
+      "fetched_at": "2026-04-26T14:08:58+00:00"
     }
   ],
   "stats": {
