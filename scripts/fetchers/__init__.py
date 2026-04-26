@@ -5,6 +5,7 @@ from typing import Callable
 
 from .base import FetchResult, FetchError, AssetInfo
 from . import github_release, windows11_fido, vscode, chrome, steam, wegame, baidunetdisk, geek, everything
+from . import nvidia_app, qq, wechat, yy
 
 
 FETCHERS: dict[str, Callable[[dict], FetchResult]] = {
@@ -17,6 +18,10 @@ FETCHERS: dict[str, Callable[[dict], FetchResult]] = {
     "baidunetdisk":      baidunetdisk.fetch,
     "geek":              geek.fetch,
     "everything":        everything.fetch,
+    "nvidia_app":        nvidia_app.fetch,
+    "qq_official":       qq.fetch,
+    "wechat_official":   wechat.fetch,
+    "yy_official":       yy.fetch,
 }
 
 

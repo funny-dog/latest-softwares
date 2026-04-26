@@ -138,3 +138,41 @@ packages:
         - { platform: win-x86, download_url: "https://www.voidtools.com/Everything-1.4.1.1032.x86-Setup.exe" }
         - { platform: win-x64-portable, download_url: "https://www.voidtools.com/Everything-1.4.1.1032.x64.zip" }
         - { platform: win-x86-portable, download_url: "https://www.voidtools.com/Everything-1.4.1.1032.x86.zip" }
+
+  - id: nvidia-app
+    name: NVIDIA App
+    category: 系统工具
+    homepage: https://www.nvidia.com/en-us/software/nvidia-app/
+    fetcher: nvidia_app
+    args:
+      platforms:
+        - { platform: win-x64, download_url: "https://www.nvidia.com/en-us/software/nvidia-app/" }
+
+  - id: qq
+    name: QQ
+    category: 即时通讯
+    homepage: https://im.qq.com/
+    fetcher: qq_official
+    args:
+      platforms:
+        - { platform: win-x64,       download_url: "https://im.qq.com/download/" }
+        - { platform: mac-universal, download_url: "https://im.qq.com/download/" }
+
+  - id: wechat
+    name: 微信
+    category: 即时通讯
+    homepage: https://weixin.qq.com/
+    fetcher: wechat_official
+    args:
+      platforms:
+        - { platform: win-x64,       download_url: "https://dldir1.qq.com/weixin/Windows/WeChatSetup.exe" }
+        - { platform: mac-universal, download_url: "https://dldir1.qq.com/weixin/mac/WeChatMac.dmg" }
+
+  - id: yy
+    name: YY 语音
+    category: 即时通讯
+    homepage: https://www.yy.com/
+    fetcher: yy_official
+    args:
+      platforms:
+        - { platform: win-x64, download_url: "https://www.yy.com/" }
