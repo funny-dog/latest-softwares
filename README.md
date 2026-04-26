@@ -3,7 +3,7 @@
 > 由 GitHub Actions 每日自动同步上游官方源的**最新版本元数据**。
 > 仓库**不托管二进制安装包**，下载按钮直接跳到上游官方下载链接。
 >
-> 📅 **最后更新**：`2026-04-26 13:58:07` (UTC)　· 共 12 项软件
+> 📅 **最后更新**：`2026-04-26 14:01:31` (UTC)　· 共 12 项软件
 
 ---
 
@@ -14,7 +14,7 @@
 
 | 软件 | 最新版本 | 发布日期 | 下载链接 | 来源 |
 |------|---------|---------|---------|------|
-| [**Windows 11**](https://www.microsoft.com/software-download/windows11) | `25H2` | — | [win-x64](https://software.download.prss.microsoft.com/dbazure/Win11_25H2_Chinese_Simplified_x64_v2.iso?t=0905fd68-ea19-48b8-a366-50130f9b357d&P1=1777298264&P2=601&P3=2&P4=TWKsQdsoh23usMkpBfh1zomLZDvAqZuVnDPnZtT4i91RKbG4A99nSEim06H%2bCsD0vpUr3DP1gVBr9zBC8IDq0aveqCefXVX8P9EmrXhUi3tvy1ZcfRTDBxgvThHOxE5uatMwl4qpj%2f2jmtCdSXmE6oYDcUMGf0a1ioyPa308Si07%2fmrzbfx8n7QeDtoIDDvBVbs6LFS5TkydijRSTtKEfl%2frX%2bmBkdrywjJm683kBTu1LxvvbE8TcRbc9pgGX3MED4FVfsggxlYu5Fcvh%2fVw6%2f8lnFUKXUzD%2fYuNaUfia37okg28WgDvHvk%2bx20zrCf8Zn9hiKVTr5VGMkEZDm80tQ%3d%3d) | Microsoft Software Download (via Fido) |
+| [**Windows 11**](https://www.microsoft.com/software-download/windows11) | `25H2` | — | [win-x64](https://software.download.prss.microsoft.com/dbazure/Win11_25H2_Chinese_Simplified_x64_v2.iso?t=e81076a4-5c97-421b-85a7-4035aac1e827&P1=1777298469&P2=601&P3=2&P4=gVsrZeiQuppykno4n7np4SnthMCYcCrJtdC8n7bOK5ebXfSqLCxVbedZufyYkv7nlrGj5LkOya0nzO7h7auWjc4Wdmo7fHb1va8SpJ9vWrPTtgZU66WpFDCu%2fYEDbeqqYEVodtWdVtcY6gWlNRUOruan9ORRjZJwcoGQwebzWPO80%2bNNxteGiIPqIZd0PFLsbURQWmJAFUdGNz9%2bZJE32II8aLrNQFX9VLFAT93rRCP%2f3A2al%2f7v27GSqFLHmiJTLyLU3Vfrb5kEZsi7Agm0X%2bFUr%2flTmsWvzHW6%2bl9E9OpvXQ1KipjDxbjOAJM99q00VKRgWclum2STzkGwynLqQg%3d%3d) | Microsoft Software Download (via Fido) |
 
 
 ### 网络代理
