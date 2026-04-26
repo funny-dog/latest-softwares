@@ -14,6 +14,7 @@ import json
 import os
 import re
 import sys
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
 from typing import Any
 
@@ -35,6 +36,7 @@ PACKAGES_FILE = REPO_ROOT / "packages.yaml"
 
 TIMEOUT = 30
 HEADERS = {"User-Agent": "latest-softwares-sync"}
+MAX_WORKERS = 15  # URL 检查纯 I/O，可开更多线程（比 sync 多，无 API 限流压力）
 
 # 与 web/app.js isDirectLink() 保持一致的文件扩展名集合
 _DIRECT_EXT_PATTERN = re.compile(
@@ -68,58 +70,74 @@ def validate_and_fix() -> int:
     cfg = yaml.safe_load(PACKAGES_FILE.read_text(encoding="utf-8"))
     configs = {entry["id"]: entry for entry in cfg.get("packages", [])}
 
-    total_checked = 0
-    total_fixed = 0
-    total_failed = 0
+    # ==== Phase 1: 收集所有待检查的直链 URL ====
+    Check = tuple[dict, int, str, str, str]  # (pkg, asset_idx, eid, platform, url)
+    checks: list[Check] = []
+    landing_count = 0
 
     for pkg in data.get("packages", []):
         eid = pkg["id"]
         config = configs.get(eid)
         if not config:
             continue
-
-        fetcher_name = config.get("fetcher", "")
         assets = pkg.get("assets", [])
         if not assets:
             continue
-
         for i, asset in enumerate(assets):
             url = asset.get("url", "")
             if not url:
                 continue
-            total_checked += 1
 
-            # 跳转下载页不验证直链可达性（与前端 isDirectLink 逻辑一致）
             if not _is_direct_link(url):
+                landing_count += 1
                 print(f"  ↗ {eid} [{asset.get('platform', '')}]: 跳转页，跳过验证")
                 continue
 
-            ok = _check_url(url)
-            if ok:
-                print(f"  ✓ {eid} [{asset.get('platform', '')}]: 有效")
-                continue
+            checks.append((pkg, i, eid, asset.get("platform", ""), url))
 
-            # HEAD 失败时尝试 GET + Range 备选（部分 CDN 如 qq.com 会拒绝 HEAD）
-            if _check_url_get_fallback(url):
-                print(f"  ✓ {eid} [{asset.get('platform', '')}]: 有效（GET 备选）")
-                continue
+    total_checked = len(checks) + landing_count
 
-            print(f"  ✗ {eid} [{asset.get('platform', '')}]: 链接失效 {url}", file=sys.stderr)
+    # ==== Phase 2: 并行检查所有直链 URL ====
+    failed_checks: list[Check] = []
 
-            # 尝试修复
-            fixed_url = None
-            if fetcher_name == "github_release":
-                fixed_url = _fix_github_asset(config, asset)
-            elif fetcher_name in ("chrome_official", "steam_official"):
-                fixed_url = _fix_fixed_url(fetcher_name, config, asset)
+    if checks:
+        with ThreadPoolExecutor(max_workers=MAX_WORKERS) as executor:
+            futures = {
+                executor.submit(_check_url_robust, url): (pkg, i, eid, platform, url)
+                for (pkg, i, eid, platform, url) in checks
+            }
+            for future in as_completed(futures):
+                pkg, i, eid, platform, url = futures[future]
+                ok = future.result()
+                if ok:
+                    print(f"  ✓ {eid} [{platform}]: 有效")
+                else:
+                    failed_checks.append((pkg, i, eid, platform, url))
 
-            if fixed_url:
-                pkg["assets"][i]["url"] = fixed_url
-                total_fixed += 1
-                print(f"    ↳ 已修复 → {fixed_url}")
-            else:
-                total_failed += 1
-                print(f"    ⚠ 无法自动修复", file=sys.stderr)
+    # ==== Phase 3: 串行修复失败链接（涉及 API 调用，不宜并发） ====
+    total_fixed = 0
+    total_failed = 0
+
+    for pkg, i, eid, platform, url in failed_checks:
+        print(f"  ✗ {eid} [{platform}]: 链接失效 {url}", file=sys.stderr)
+
+        config = configs.get(eid)
+        fetcher_name = config.get("fetcher", "") if config else ""
+        asset = pkg["assets"][i]
+
+        fixed_url = None
+        if fetcher_name == "github_release":
+            fixed_url = _fix_github_asset(config, asset)
+        elif fetcher_name in ("chrome_official", "steam_official"):
+            fixed_url = _fix_fixed_url(fetcher_name, config, asset)
+
+        if fixed_url:
+            pkg["assets"][i]["url"] = fixed_url
+            total_fixed += 1
+            print(f"    ↳ 已修复 → {fixed_url}")
+        else:
+            total_failed += 1
+            print(f"    ⚠ 无法自动修复", file=sys.stderr)
 
     DATA_FILE.write_text(
         json.dumps(data, ensure_ascii=False, indent=2, sort_keys=False) + "\n",
@@ -147,6 +165,11 @@ def _check_url_get_fallback(url: str) -> bool:
         return resp.status_code < 400
     except Exception:
         return False
+
+
+def _check_url_robust(url: str) -> bool:
+    """HEAD 优先，失败则 GET+Range 备选。由 ThreadPoolExecutor 并发调用。"""
+    return _check_url(url) or _check_url_get_fallback(url)
 
 
 def _fix_github_asset(config: dict[str, Any], asset: dict[str, Any]) -> str | None:
