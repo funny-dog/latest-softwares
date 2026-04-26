@@ -2,6 +2,26 @@
   "schema_version": 1,
   "packages": [
     {
+      "id": "windows11",
+      "name": "Windows 11",
+      "version": "25H2",
+      "source": "Microsoft Software Download (via Fido)",
+      "category": "操作系统",
+      "homepage": "https://www.microsoft.com/software-download/windows11",
+      "released_at": null,
+      "notes_url": "https://learn.microsoft.com/windows/release-health/windows11-release-information",
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://software.download.prss.microsoft.com/dbazure/Win11_25H2_Chinese_Simplified_x64_v2.iso?t=df6472a9-9a46-4919-bb7b-ce9c9f1ec720&P1=1777270769&P2=601&P3=2&P4=eUWkXGXF3FfT9xl4aS2eEYXX2cBGu4vMRJpFPeLW0huOrXrIwkDQNUksHIbhclQxdoymM6ki3cuckwP1D8yNeFKcRyxFYsH6RLveF0inbNNf2948Y56sApautFdBIiVf6uVp0HUhaM2ju3ImLAwP%2fc%2faC8E6A3ic9dPXNrnu92lEdb502HkUKOHYrAU6lRFYScPf5mnvKAmcnyWILQX%2fj4XUSGsEDCscQnDSJS4uaFqM9g6NyhxWeJAoh5cEEJUrebB%2fzSwqxRAlRouG2A2NnuSHgx%2fasjHNH3dbWWrcmGMYd4uNRvVMbfHOk%2fSXBeIGRqUA8kI4I%2f3tiETWdXTcNA%3d%3d",
+          "filename": "Win11_25H2_Chinese_Simplified_x64_v2.iso",
+          "size": null,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-04-26T06:19:31+00:00"
+    },
+    {
       "id": "v2rayn",
       "name": "v2rayN",
       "version": "7.20.4",
@@ -40,7 +60,7 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-26T06:14:51+00:00"
+      "fetched_at": "2026-04-26T06:19:31+00:00"
     },
     {
       "id": "vscode",
@@ -81,7 +101,7 @@
           "sha256": "bc5017110545de218ac71df0bdcf40665ec00e9de322825e29a28eebc1e3e1a2"
         }
       ],
-      "fetched_at": "2026-04-26T06:14:52+00:00"
+      "fetched_at": "2026-04-26T06:19:32+00:00"
     },
     {
       "id": "chrome",
@@ -108,7 +128,7 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-26T06:14:53+00:00"
+      "fetched_at": "2026-04-26T06:19:32+00:00"
     },
     {
       "id": "localsend",
@@ -135,7 +155,7 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-26T06:14:53+00:00"
+      "fetched_at": "2026-04-26T06:19:33+00:00"
     },
     {
       "id": "bitwarden",
@@ -162,7 +182,7 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-26T06:14:53+00:00"
+      "fetched_at": "2026-04-26T06:19:34+00:00"
     },
     {
       "id": "codex",
@@ -203,12 +223,12 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-26T06:14:55+00:00"
+      "fetched_at": "2026-04-26T06:19:36+00:00"
     }
   ],
   "stats": {
     "total": 7,
-    "success": 6,
-    "failed": 1
+    "success": 7,
+    "failed": 0
   }
 }
