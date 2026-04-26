@@ -1,0 +1,105 @@
+"""Windows 11 ISO 抓取器 —— 包装 Fido.ps1。
+
+Fido 是 Pete Batard 开源的 PowerShell 脚本（项目地址 https://github.com/pbatard/Fido，
+GPL v3 协议），它通过模拟微软下载页的请求流程拿到一次性的 ISO 直链（约 24h 有效）。
+我们只在每次同步时调用它生成新链接，因此 README 中的 ISO 链接每天会刷新。
+
+需要环境里有 pwsh（pwsh-7+，跨平台 PowerShell Core）。在 GitHub Actions 的
+ubuntu-latest 上预装；本地若没装可 `brew install --cask powershell`。
+"""
+from __future__ import annotations
+
+import os
+import re
+import subprocess
+from pathlib import Path
+from typing import Any
+from urllib.parse import unquote, urlparse
+
+from .base import AssetInfo, FetchError, FetchResult
+
+
+# Fido 脚本位置：从仓库根目录起的 third_party/Fido.ps1
+SCRIPT_PATH = Path(__file__).resolve().parents[2] / "third_party" / "Fido.ps1"
+
+# 默认参数
+DEFAULT_LANG = "Chinese (Simplified)"
+DEFAULT_EDITION = "Pro"
+DEFAULT_ARCH = "x64"
+TIMEOUT = 120  # Fido 内部要等 MS 服务端响应，给宽裕些
+
+
+def _run_fido(lang: str, edition: str, arch: str) -> str:
+    if not SCRIPT_PATH.exists():
+        raise FetchError(
+            f"找不到 Fido 脚本：{SCRIPT_PATH}。请运行 scripts/install_fido.sh 或手动下载。"
+        )
+
+    cmd = [
+        "pwsh", "-NoProfile", "-NonInteractive", "-File", str(SCRIPT_PATH),
+        "-Win", "11",
+        "-Lang", lang,
+        "-Ed",   edition,
+        "-Arch", arch,
+        "-GetUrl",
+    ]
+    try:
+        proc = subprocess.run(
+            cmd, capture_output=True, text=True, timeout=TIMEOUT, check=False,
+        )
+    except FileNotFoundError as e:
+        raise FetchError(f"未找到 pwsh，无法运行 Fido：{e}") from e
+    except subprocess.TimeoutExpired as e:
+        raise FetchError(f"Fido 超时（>{TIMEOUT}s），微软端可能限流") from e
+
+    stdout = (proc.stdout or "").strip()
+    stderr = (proc.stderr or "").strip()
+
+    # Fido 在成功时也可能往 stderr 写诊断信息；URL 永远是 stdout 最后一行非空内容
+    url_line = next(
+        (line for line in reversed(stdout.splitlines()) if line.startswith("http")),
+        "",
+    )
+    if not url_line:
+        raise FetchError(
+            f"Fido 未返回 URL。stdout={stdout!r} stderr={stderr!r} returncode={proc.returncode}"
+        )
+    return url_line
+
+
+def _parse_release_from_url(url: str) -> tuple[str, str | None]:
+    """
+    从 Fido 返回的 URL 解析 release 名（如 24H2）和文件名。
+    URL 形如：
+      https://software.download.prss.microsoft.com/dbazure/Win11_24H2_Chinese_Simplified_x64.iso?t=...
+    """
+    parsed = urlparse(url)
+    filename = unquote(Path(parsed.path).name)  # Win11_24H2_Chinese_Simplified_x64.iso
+    m = re.search(r"Win11_([0-9]+H[12])", filename, re.IGNORECASE)
+    release = m.group(1).upper() if m else "Latest"
+    return release, filename or None
+
+
+def fetch(args: dict[str, Any]) -> FetchResult:
+    lang = args.get("lang", DEFAULT_LANG)
+    edition = args.get("edition", DEFAULT_EDITION)
+    arch = args.get("arch", DEFAULT_ARCH)
+
+    url = _run_fido(lang, edition, arch)
+    release, filename = _parse_release_from_url(url)
+
+    asset = AssetInfo(
+        platform=f"win-{arch}",
+        url=url,
+        filename=filename,
+    )
+
+    return FetchResult(
+        id="",
+        name=f"Windows 11 ({lang}, {edition})",
+        version=release,
+        source="Microsoft Software Download (via Fido)",
+        homepage="https://www.microsoft.com/software-download/windows11",
+        notes_url="https://learn.microsoft.com/windows/release-health/windows11-release-information",
+        assets=[asset],
+    )

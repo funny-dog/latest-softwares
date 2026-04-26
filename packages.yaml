@@ -1,0 +1,91 @@
+# 软件清单 —— 用户的"控制面板"
+# 加新软件：在 packages: 下追加一项即可。90% 情况用 github_release fetcher。
+# 字段说明：
+#   id        : 唯一短标识（小写、可作文件名）
+#   name      : 显示名（README 中展示）
+#   category  : 分组（README 按 category 聚合）
+#   homepage  : 主页（可选，用于 README 链接）
+#   fetcher   : 抓取器名（必须在 scripts/fetchers/__init__.py 的 FETCHERS 中注册）
+#   args      : 透传给 fetcher 的参数
+
+packages:
+  - id: windows11
+    name: Windows 11
+    category: 操作系统
+    homepage: https://www.microsoft.com/software-download/windows11
+    fetcher: windows11_fido
+    args:
+      lang: "Chinese (Simplified)"
+      edition: "Pro"
+
+  - id: v2rayn
+    name: v2rayN
+    category: 网络代理
+    homepage: https://github.com/2dust/v2rayN
+    fetcher: github_release
+    args:
+      repo: 2dust/v2rayN
+      assets:
+        - { platform: win-x64,    pattern: "v2rayN-windows-64-desktop.zip" }
+        - { platform: win-arm64,  pattern: "v2rayN-windows-arm64-desktop.zip" }
+        - { platform: mac-arm64,  pattern: "v2rayN-macos-arm64.dmg" }
+        - { platform: mac-x64,    pattern: "v2rayN-macos-64.dmg" }
+
+  - id: vscode
+    name: Visual Studio Code
+    category: 开发工具
+    homepage: https://code.visualstudio.com
+    fetcher: vscode_official
+    args:
+      builds:
+        - { platform: win-x64,    build: "win32-x64-user" }
+        - { platform: win-arm64,  build: "win32-arm64-user" }
+        - { platform: mac-arm64,  build: "darwin-arm64-dmg" }
+        - { platform: mac-x64,    build: "darwin-x64-dmg" }
+
+  - id: chrome
+    name: Google Chrome
+    category: 浏览器
+    homepage: https://www.google.com/chrome/
+    fetcher: chrome_official
+    args:
+      platforms:
+        - { platform: win-x64,   channel: stable, os_key: win64,    download_url: "https://dl.google.com/chrome/install/standalonesetup64.exe" }
+        - { platform: mac-arm64, channel: stable, os_key: mac_arm64, download_url: "https://dl.google.com/chrome/mac/stable/GGRO/googlechrome.dmg" }
+
+  - id: localsend
+    name: LocalSend
+    category: 通用工具
+    homepage: https://localsend.org
+    fetcher: github_release
+    args:
+      repo: localsend/localsend
+      assets:
+        - { platform: win-x64,   pattern: "LocalSend-*-windows-x86-64.exe" }
+        - { platform: mac-arm64, pattern: "LocalSend-*.dmg" }
+
+  - id: bitwarden
+    name: Bitwarden Desktop
+    category: 通用工具
+    homepage: https://bitwarden.com/download/
+    fetcher: github_release
+    args:
+      repo: bitwarden/clients
+      tag_pattern: "^desktop-v"
+      assets:
+        - { platform: win-x64,            pattern: "Bitwarden-Installer-*.exe" }
+        - { platform: mac-universal,      pattern: "Bitwarden-*-universal.dmg" }
+
+  - id: codex
+    name: OpenAI Codex
+    category: 开发工具
+    homepage: https://github.com/openai/codex
+    fetcher: github_release
+    args:
+      repo: openai/codex
+      tag_pattern: "^rust-v"
+      assets:
+        - { platform: win-x64,    pattern: "codex-x86_64-pc-windows-msvc.exe" }
+        - { platform: win-arm64,  pattern: "codex-aarch64-pc-windows-msvc.exe" }
+        - { platform: mac-arm64,  pattern: "codex-aarch64-apple-darwin.dmg" }
+        - { platform: mac-x64,    pattern: "codex-x86_64-apple-darwin.tar.gz" }

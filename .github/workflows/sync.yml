@@ -1,0 +1,60 @@
+name: Sync Latest Software
+
+on:
+  schedule:
+    # 每日 UTC 01:00（北京时间 09:00）
+    - cron: '0 1 * * *'
+  workflow_dispatch: {}
+  push:
+    branches: [main, master]
+    paths:
+      - 'packages.yaml'
+      - 'scripts/**'
+      - 'README.template.md'
+      - '.github/workflows/sync.yml'
+
+permissions:
+  contents: write   # 自动 commit 渲染结果回主分支
+
+concurrency:
+  group: sync-latest-software
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+
+      - name: Install Python dependencies
+        run: pip install -r requirements.txt
+
+      # ubuntu-latest 已自带 pwsh，无需单独安装
+      - name: Verify pwsh
+        run: pwsh --version
+
+      - name: Run sync
+        env:
+          # 走 GITHUB_TOKEN 提高 GitHub API 速率限制（5000/h vs 60/h）
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python scripts/sync.py
+
+      - name: Render README
+        run: python scripts/render.py
+
+      - name: Commit changes
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: 'chore(data): sync latest software [skip ci]'
+          file_pattern: 'data/latest.json README.md'
+          commit_user_name: 'github-actions[bot]'
+          commit_user_email: '41898282+github-actions[bot]@users.noreply.github.com'
