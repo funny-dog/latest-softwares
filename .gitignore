@@ -6,3 +6,6 @@ venv/
 .DS_Store
 .idea/
 .vscode/
+
+# Web 构建产物（CI 临时生成，不入库）
+dist/

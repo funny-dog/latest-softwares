@@ -11,6 +11,8 @@ on:
       - 'packages.yaml'
       - 'scripts/**'
       - 'README.template.md'
+      - 'web/**'
+      - 'deploy/**'
       - '.github/workflows/sync.yml'
 
 permissions:
@@ -21,10 +23,11 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+  # ==========================================================================
+  # Job 1: 数据同步 + 渲染 README + 构建 web 产物
+  #   用 windows-latest 是为了让 Fido.ps1 能跑（OSVersion.Platform 硬检查）
+  # ==========================================================================
   sync:
-    # 用 windows-latest 是为了让 Fido.ps1 能跑（它做了 OSVersion.Platform 硬检查，
-    # 非 Windows 平台一律 exit 403）。public repo 上 windows runner 与 ubuntu
-    # 一样免费；private repo 切回 ubuntu-latest 时需要去掉 windows11 包。
     runs-on: windows-latest
     timeout-minutes: 10
 
@@ -58,10 +61,71 @@ jobs:
       - name: Render README
         run: python scripts/render.py
 
-      - name: Commit changes
+      - name: Build web (dist/)
+        run: python scripts/build_web.py
+
+      - name: Commit data + README back to repo
         uses: stefanzweifel/git-auto-commit-action@v7
         with:
           commit_message: 'chore(data): sync latest software [skip ci]'
           file_pattern: 'data/latest.json README.md'
           commit_user_name: 'github-actions[bot]'
           commit_user_email: '41898282+github-actions[bot]@users.noreply.github.com'
+
+      - name: Upload dist artifact
+        # PR 不打包；调度/push/手动都打包
+        if: github.event_name != 'pull_request'
+        uses: actions/upload-artifact@v4
+        with:
+          name: dist
+          path: dist/
+          retention-days: 7
+
+  # ==========================================================================
+  # Job 2: 部署 dist/ 到阿里云
+  #   独立 job 用 ubuntu-latest（自带 rsync，windows runner 没有）
+  #   由仓库变量 DEPLOY_ENABLED=true 控制是否启用 —— 没配 secrets 时跳过
+  # ==========================================================================
+  deploy:
+    needs: sync
+    if: github.event_name != 'pull_request' && vars.DEPLOY_ENABLED == 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+
+    steps:
+      - name: Download dist artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: dist
+          path: dist/
+
+      - name: Setup SSH
+        env:
+          SSH_KEY:  ${{ secrets.ALIYUN_DEPLOY_KEY }}
+          SSH_HOST: ${{ secrets.ALIYUN_HOST }}
+          SSH_PORT: ${{ secrets.ALIYUN_PORT }}
+        run: |
+          mkdir -p ~/.ssh
+          printf '%s\n' "$SSH_KEY" > ~/.ssh/deploy_key
+          chmod 600 ~/.ssh/deploy_key
+          PORT="${SSH_PORT:-22}"
+          ssh-keyscan -p "$PORT" -H "$SSH_HOST" >> ~/.ssh/known_hosts 2>/dev/null
+
+      - name: Deploy to Aliyun via rsync
+        env:
+          SSH_HOST:    ${{ secrets.ALIYUN_HOST }}
+          SSH_USER:    ${{ secrets.ALIYUN_USER }}
+          SSH_PORT:    ${{ secrets.ALIYUN_PORT }}
+          DEPLOY_PATH: ${{ secrets.ALIYUN_DEPLOY_PATH }}
+        run: |
+          PORT="${SSH_PORT:-22}"
+          rsync -avz --delete \
+            -e "ssh -i ~/.ssh/deploy_key -p $PORT -o StrictHostKeyChecking=accept-new" \
+            dist/ "$SSH_USER@$SSH_HOST:$DEPLOY_PATH/"
+
+      - name: Summary
+        env:
+          SSH_HOST: ${{ secrets.ALIYUN_HOST }}
+        run: |
+          echo "✅ 已部署到 http://$SSH_HOST:8080/"
+          echo "  浏览器访问需要 Basic Auth 用户名/密码（在服务器 htpasswd 配置）"

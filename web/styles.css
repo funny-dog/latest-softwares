@@ -1,0 +1,35 @@
+/* 极少量自定义样式，大头交给 Tailwind */
+
+/* 防止 Alpine x-cloak 闪烁 */
+[x-cloak] { display: none !important; }
+
+/* 平滑滚动 */
+html { scroll-behavior: smooth; }
+
+/* 搜索框：去掉浏览器默认的清除按钮（搜索类型输入特有） */
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  -webkit-appearance: none;
+}
+
+/* 滚动条美化（仅 WebKit/Blink） */
+::-webkit-scrollbar { width: 10px; height: 10px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb {
+  background: rgb(212 212 216 / 0.5);
+  border-radius: 5px;
+  border: 2px solid transparent;
+  background-clip: padding-box;
+}
+::-webkit-scrollbar-thumb:hover { background: rgb(161 161 170 / 0.7); background-clip: padding-box; border: 2px solid transparent; }
+.dark ::-webkit-scrollbar-thumb { background: rgb(63 63 70 / 0.6); background-clip: padding-box; border: 2px solid transparent; }
+.dark ::-webkit-scrollbar-thumb:hover { background: rgb(82 82 91 / 0.8); background-clip: padding-box; border: 2px solid transparent; }
+
+/* 链接焦点环：让键盘导航更易跟踪 */
+a:focus-visible, button:focus-visible, input:focus-visible {
+  outline: 2px solid rgb(139 92 246);   /* violet-500 */
+  outline-offset: 2px;
+  border-radius: 6px;
+}
