@@ -13,13 +13,14 @@
       "assets": [
         {
           "platform": "win-x64",
-          "url": "https://software.download.prss.microsoft.com/dbazure/Win11_25H2_Chinese_Simplified_x64_v2.iso?t=c16856d3-da65-4959-bae4-703baddbd9c6&P1=1777281661&P2=601&P3=2&P4=Dseh2lCjmdscwYr%2bCHy%2fOuxRlj1CMKj0NeXbKwJTmQiMEWIQhrdzexHqe1EefxQxlebl7w4Knmp2BaAZ5CwtmXoRNKsiTGhJHc2pSY0frWgrNKKpKOZfoD16TAVigSQe6L8%2fx5j6Y5XMtZpNgcqk1owmPeQzkvGp3ZvS%2bdnR6b9GStY9fhm04HmEXkTKE5fWX%2fhbOkb5sHE%2bIVBRS8Rg%2f%2bJwIaHhZaMXjy0AVxapoNoJlTDAvCQAtuQCxbUBYWCjjvwOpDFm%2boi%2bsX4SUvZINw229fcAJsoc4IuI3RoKapk3LS8pm0eN178M0fJK7s2Je85QvQr3fe87YvGPjmnEnA%3d%3d",
+          "url": "https://software.download.prss.microsoft.com/dbazure/Win11_25H2_Chinese_Simplified_x64_v2.iso?t=5bf28715-5b14-4e47-bf47-5508af08ca5c&P1=1777275405&P2=601&P3=2&P4=KfDiWjHGu6S8QwYmL5BR4yNWj2EgdzngRC86RC0jhxCnAo%2b0CZSf9bCqkgPHR%2fAGOz7OOytGPSIYaJI%2bVLdtplZduDtYtWLq%2bp6vv0QZ4S60%2baVRQomREAOag8Zg4VQltWkvt0fLFAcTbmy%2fqouZ9SqM3LBvOHlimTr8sSUJJPFQ8cX7sN%2bzrzAtKRfNgJlW8n17kIzbLzkLT4Eln01y7sD3g2lxSF3EpA6MBt2nCgRf8iPVBAkXk0dOENi8y2mrGp%2b3IgeQfTK5nELuTZsTJUW5MsU951bWh5F%2bkrL4TQlxE3aKEhEplKDVqAUKhOAFXCrQZ4LkZASGbJh6ULElAA%3d%3d",
           "filename": "Win11_25H2_Chinese_Simplified_x64_v2.iso",
           "size": null,
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-26T09:21:02+00:00"
+      "fetched_at": "2026-04-26T07:36:46+00:00",
+      "_stale": true
     },
     {
       "id": "v2rayn",
@@ -60,7 +61,7 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-26T09:21:02+00:00"
+      "fetched_at": "2026-04-26T13:55:36+00:00"
     },
     {
       "id": "vscode",
@@ -101,7 +102,7 @@
           "sha256": "bc5017110545de218ac71df0bdcf40665ec00e9de322825e29a28eebc1e3e1a2"
         }
       ],
-      "fetched_at": "2026-04-26T09:21:03+00:00"
+      "fetched_at": "2026-04-26T13:55:38+00:00"
     },
     {
       "id": "chrome",
@@ -128,7 +129,7 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-26T09:21:04+00:00"
+      "fetched_at": "2026-04-26T13:55:39+00:00"
     },
     {
       "id": "steam",
@@ -148,7 +149,7 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-26T09:21:04+00:00"
+      "fetched_at": "2026-04-26T13:55:41+00:00"
     },
     {
       "id": "wegame",
@@ -168,7 +169,7 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-26T09:21:04+00:00"
+      "fetched_at": "2026-04-26T13:55:41+00:00"
     },
     {
       "id": "localsend",
@@ -195,7 +196,7 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-26T09:21:05+00:00"
+      "fetched_at": "2026-04-26T13:55:45+00:00"
     },
     {
       "id": "bitwarden",
@@ -222,7 +223,7 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-26T09:21:05+00:00"
+      "fetched_at": "2026-04-26T13:55:48+00:00"
     },
     {
       "id": "codex",
@@ -263,12 +264,100 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-26T09:21:07+00:00"
+      "fetched_at": "2026-04-26T13:55:54+00:00"
+    },
+    {
+      "id": "baidunetdisk",
+      "name": "百度网盘",
+      "version": "2026-04-24",
+      "source": "百度网盘下载页（SPA，仅能取页面更新日期）",
+      "category": "通用工具",
+      "homepage": "https://pan.baidu.com/",
+      "released_at": null,
+      "notes_url": "https://pan.baidu.com/disk/base/semdownload",
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://pan.baidu.com/disk/base/semdownload",
+          "filename": null,
+          "size": null,
+          "sha256": null
+        },
+        {
+          "platform": "mac-universal",
+          "url": "https://pan.baidu.com/disk/base/semdownload",
+          "filename": null,
+          "size": null,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-04-26T13:55:54+00:00"
+    },
+    {
+      "id": "geek",
+      "name": "Geek Uninstaller",
+      "version": "1.5.3.170",
+      "source": "Geek Uninstaller 官网",
+      "category": "通用工具",
+      "homepage": "https://geekuninstaller.com/",
+      "released_at": null,
+      "notes_url": "https://geekuninstaller.com/download",
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://geekuninstaller.com/download",
+          "filename": null,
+          "size": null,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-04-26T13:55:57+00:00"
+    },
+    {
+      "id": "everything",
+      "name": "Everything",
+      "version": "1.4.1.1032",
+      "source": "voidtools 官网",
+      "category": "通用工具",
+      "homepage": "https://www.voidtools.com/",
+      "released_at": null,
+      "notes_url": "https://www.voidtools.com/download.php",
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://www.voidtools.com/Everything-1.4.1.1032.x64-Setup.exe",
+          "filename": null,
+          "size": null,
+          "sha256": null
+        },
+        {
+          "platform": "win-x86",
+          "url": "https://www.voidtools.com/Everything-1.4.1.1032.x86-Setup.exe",
+          "filename": null,
+          "size": null,
+          "sha256": null
+        },
+        {
+          "platform": "win-x64-portable",
+          "url": "https://www.voidtools.com/Everything-1.4.1.1032.x64.zip",
+          "filename": null,
+          "size": null,
+          "sha256": null
+        },
+        {
+          "platform": "win-x86-portable",
+          "url": "https://www.voidtools.com/Everything-1.4.1.1032.x86.zip",
+          "filename": null,
+          "size": null,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-04-26T13:56:00+00:00"
     }
   ],
   "stats": {
-    "total": 9,
-    "success": 9,
-    "failed": 0
+    "total": 12,
+    "success": 11,
+    "failed": 1
   }
 }

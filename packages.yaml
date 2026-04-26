@@ -105,5 +105,36 @@ packages:
       assets:
         - { platform: win-x64,    pattern: "codex-x86_64-pc-windows-msvc.exe" }
         - { platform: win-arm64,  pattern: "codex-aarch64-pc-windows-msvc.exe" }
-        - { platform: mac-arm64,  pattern: "codex-aarch64-apple-darwin.dmg" }
+        - { platform: mac-arm64, pattern: "codex-aarch64-apple-darwin.dmg" }
         - { platform: mac-x64,    pattern: "codex-x86_64-apple-darwin.tar.gz" }
+
+  - id: baidunetdisk
+    name: 百度网盘
+    category: 通用工具
+    homepage: https://pan.baidu.com/
+    fetcher: baidunetdisk
+    args:
+      platforms:
+        - { platform: win-x64, download_url: "https://pan.baidu.com/disk/base/semdownload" }
+        - { platform: mac-universal, download_url: "https://pan.baidu.com/disk/base/semdownload" }
+
+  - id: geek
+    name: Geek Uninstaller
+    category: 通用工具
+    homepage: https://geekuninstaller.com/
+    fetcher: geek
+    args:
+      platforms:
+        - { platform: win-x64, download_url: "https://geekuninstaller.com/download" }
+
+  - id: everything
+    name: Everything
+    category: 通用工具
+    homepage: https://www.voidtools.com/
+    fetcher: everything
+    args:
+      platforms:
+        - { platform: win-x64, download_url: "https://www.voidtools.com/Everything-1.4.1.1032.x64-Setup.exe" }
+        - { platform: win-x86, download_url: "https://www.voidtools.com/Everything-1.4.1.1032.x86-Setup.exe" }
+        - { platform: win-x64-portable, download_url: "https://www.voidtools.com/Everything-1.4.1.1032.x64.zip" }
+        - { platform: win-x86-portable, download_url: "https://www.voidtools.com/Everything-1.4.1.1032.x86.zip" }
