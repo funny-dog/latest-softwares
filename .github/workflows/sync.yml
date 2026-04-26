@@ -50,6 +50,11 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: python scripts/sync.py
 
+      - name: Validate & fix download links
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python scripts/validate_links.py
+
       - name: Render README
         run: python scripts/render.py
 
