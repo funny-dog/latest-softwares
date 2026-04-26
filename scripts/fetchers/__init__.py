@@ -4,7 +4,7 @@ from __future__ import annotations
 from typing import Callable
 
 from .base import FetchResult, FetchError, AssetInfo
-from . import github_release, windows11_fido, vscode, chrome
+from . import github_release, windows11_fido, vscode, chrome, steam, wegame
 
 
 FETCHERS: dict[str, Callable[[dict], FetchResult]] = {
@@ -12,6 +12,8 @@ FETCHERS: dict[str, Callable[[dict], FetchResult]] = {
     "windows11_fido":  windows11_fido.fetch,
     "vscode_official": vscode.fetch,
     "chrome_official": chrome.fetch,
+    "steam_official":  steam.fetch,
+    "wegame_official": wegame.fetch,
 }
 
 

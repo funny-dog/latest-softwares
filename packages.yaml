@@ -53,6 +53,24 @@ packages:
         - { platform: win-x64,   channel: stable, os_key: win64,    download_url: "https://dl.google.com/chrome/install/standalonesetup64.exe" }
         - { platform: mac-arm64, channel: stable, os_key: mac_arm64, download_url: "https://dl.google.com/chrome/mac/stable/GGRO/googlechrome.dmg" }
 
+  - id: steam
+    name: Steam
+    category: 游戏平台
+    homepage: https://store.steampowered.com/about/
+    fetcher: steam_official
+    args:
+      platforms:
+        - { platform: win-x64, download_url: "https://cdn.fastly.steamstatic.com/client/installer/SteamSetup.exe" }
+
+  - id: wegame
+    name: WeGame
+    category: 游戏平台
+    homepage: https://www.wegame.com.cn/
+    fetcher: wegame_official
+    args:
+      platforms:
+        - { platform: win-x64, download_url: "https://www.wegame.com.cn/client/" }
+
   - id: localsend
     name: LocalSend
     category: 通用工具
