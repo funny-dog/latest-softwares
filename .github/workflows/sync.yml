@@ -22,7 +22,10 @@ concurrency:
 
 jobs:
   sync:
-    runs-on: ubuntu-latest
+    # 用 windows-latest 是为了让 Fido.ps1 能跑（它做了 OSVersion.Platform 硬检查，
+    # 非 Windows 平台一律 exit 403）。public repo 上 windows runner 与 ubuntu
+    # 一样免费；private repo 切回 ubuntu-latest 时需要去掉 windows11 包。
+    runs-on: windows-latest
     timeout-minutes: 10
 
     steps:
@@ -38,7 +41,6 @@ jobs:
       - name: Install Python dependencies
         run: pip install -r requirements.txt
 
-      # ubuntu-latest 已自带 pwsh，无需单独安装
       - name: Verify pwsh
         run: pwsh --version
 
