@@ -41,6 +41,10 @@ def _run_fido(lang: str, edition: str, arch: str) -> str:
         "-Lang", lang,
         "-Ed",   edition,
         "-Arch", arch,
+        # PlatformArch 是 Fido 用来描述运行 Fido 的"主机"CPU 的参数。
+        # 不传时 Fido 会调 Get-CimInstance（WMI，Windows 专属），在 Linux pwsh 上崩。
+        # 我们对 ISO 架构本身只关心 -Arch（产物），主机架构无关紧要，传死 x64 即可。
+        "-PlatformArch", "x64",
         "-GetUrl",
     ]
     try:
