@@ -3,7 +3,7 @@
 > 由 GitHub Actions 每日自动同步上游官方源的**最新版本元数据**。
 > 仓库**不托管二进制安装包**，下载按钮直接跳到上游官方下载链接。
 >
-> 📅 **最后更新**：`2026-04-26 06:19:36` (UTC)　· 共 7 项软件
+> 📅 **最后更新**：`2026-04-26 07:36:51` (UTC)　· 共 9 项软件
 
 ---
 
@@ -14,7 +14,7 @@
 
 | 软件 | 最新版本 | 发布日期 | 下载链接 | 来源 |
 |------|---------|---------|---------|------|
-| [**Windows 11**](https://www.microsoft.com/software-download/windows11) | `25H2` | — | [win-x64](https://software.download.prss.microsoft.com/dbazure/Win11_25H2_Chinese_Simplified_x64_v2.iso?t=df6472a9-9a46-4919-bb7b-ce9c9f1ec720&P1=1777270769&P2=601&P3=2&P4=eUWkXGXF3FfT9xl4aS2eEYXX2cBGu4vMRJpFPeLW0huOrXrIwkDQNUksHIbhclQxdoymM6ki3cuckwP1D8yNeFKcRyxFYsH6RLveF0inbNNf2948Y56sApautFdBIiVf6uVp0HUhaM2ju3ImLAwP%2fc%2faC8E6A3ic9dPXNrnu92lEdb502HkUKOHYrAU6lRFYScPf5mnvKAmcnyWILQX%2fj4XUSGsEDCscQnDSJS4uaFqM9g6NyhxWeJAoh5cEEJUrebB%2fzSwqxRAlRouG2A2NnuSHgx%2fasjHNH3dbWWrcmGMYd4uNRvVMbfHOk%2fSXBeIGRqUA8kI4I%2f3tiETWdXTcNA%3d%3d) | Microsoft Software Download (via Fido) |
+| [**Windows 11**](https://www.microsoft.com/software-download/windows11) | `25H2` | — | [win-x64](https://software.download.prss.microsoft.com/dbazure/Win11_25H2_Chinese_Simplified_x64_v2.iso?t=5bf28715-5b14-4e47-bf47-5508af08ca5c&P1=1777275405&P2=601&P3=2&P4=KfDiWjHGu6S8QwYmL5BR4yNWj2EgdzngRC86RC0jhxCnAo%2b0CZSf9bCqkgPHR%2fAGOz7OOytGPSIYaJI%2bVLdtplZduDtYtWLq%2bp6vv0QZ4S60%2baVRQomREAOag8Zg4VQltWkvt0fLFAcTbmy%2fqouZ9SqM3LBvOHlimTr8sSUJJPFQ8cX7sN%2bzrzAtKRfNgJlW8n17kIzbLzkLT4Eln01y7sD3g2lxSF3EpA6MBt2nCgRf8iPVBAkXk0dOENi8y2mrGp%2b3IgeQfTK5nELuTZsTJUW5MsU951bWh5F%2bkrL4TQlxE3aKEhEplKDVqAUKhOAFXCrQZ4LkZASGbJh6ULElAA%3d%3d) | Microsoft Software Download (via Fido) |
 
 
 ### 网络代理
@@ -37,6 +37,14 @@
 | 软件 | 最新版本 | 发布日期 | 下载链接 | 来源 |
 |------|---------|---------|---------|------|
 | [**Google Chrome**](https://www.google.com/chrome/) | `148.0.7778.56` | — | [win-x64](https://dl.google.com/chrome/install/standalonesetup64.exe) · [mac-arm64](https://dl.google.com/chrome/mac/stable/GGRO/googlechrome.dmg) | Google Version History API |
+
+
+### 游戏平台
+
+| 软件 | 最新版本 | 发布日期 | 下载链接 | 来源 |
+|------|---------|---------|---------|------|
+| [**Steam**](https://store.steampowered.com/about/) | `2026-01-30` | — | [win-x64](https://cdn.fastly.steamstatic.com/client/installer/SteamSetup.exe) | Valve Client Update API |
+| [**WeGame**](https://www.wegame.com.cn/) | `2026-04-26` | — | [win-x64](https://www.wegame.com.cn/client/) | 手动同步（无 API） |
 
 
 ### 通用工具
