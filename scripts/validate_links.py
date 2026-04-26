@@ -16,7 +16,6 @@ import re
 import sys
 from pathlib import Path
 from typing import Any
-from urllib.parse import urlparse
 
 import requests
 import yaml
@@ -36,6 +35,19 @@ PACKAGES_FILE = REPO_ROOT / "packages.yaml"
 
 TIMEOUT = 30
 HEADERS = {"User-Agent": "latest-softwares-sync"}
+
+# 与 web/app.js isDirectLink() 保持一致的文件扩展名集合
+_DIRECT_EXT_PATTERN = re.compile(
+    r"\.(exe|dmg|iso|zip|tar\.gz|msi|pkg|deb|rpm|appimage|7z)$"
+)
+
+
+def _is_direct_link(url: str) -> bool:
+    """判断 URL 是否为直链下载（与前端 isDirectLink 逻辑一致）。"""
+    if not url:
+        return False
+    path = url.split("?")[0].lower()
+    return bool(_DIRECT_EXT_PATTERN.search(path))
 
 
 def _get_headers() -> dict[str, str]:
@@ -77,9 +89,19 @@ def validate_and_fix() -> int:
                 continue
             total_checked += 1
 
+            # 跳转下载页不验证直链可达性（与前端 isDirectLink 逻辑一致）
+            if not _is_direct_link(url):
+                print(f"  ↗ {eid} [{asset.get('platform', '')}]: 跳转页，跳过验证")
+                continue
+
             ok = _check_url(url)
             if ok:
                 print(f"  ✓ {eid} [{asset.get('platform', '')}]: 有效")
+                continue
+
+            # HEAD 失败时尝试 GET + Range 备选（部分 CDN 如 qq.com 会拒绝 HEAD）
+            if _check_url_get_fallback(url):
+                print(f"  ✓ {eid} [{asset.get('platform', '')}]: 有效（GET 备选）")
                 continue
 
             print(f"  ✗ {eid} [{asset.get('platform', '')}]: 链接失效 {url}", file=sys.stderr)
@@ -111,6 +133,17 @@ def _check_url(url: str) -> bool:
     """HEAD 请求检查 URL 是否可达（2xx/3xx 视为有效）。"""
     try:
         resp = requests.head(url, allow_redirects=True, timeout=TIMEOUT, headers=HEADERS)
+        return resp.status_code < 400
+    except Exception:
+        return False
+
+
+def _check_url_get_fallback(url: str) -> bool:
+    """GET + Range 字节请求作为备选（部分 CDN 拒绝 HEAD 但允许 GET）。"""
+    try:
+        headers = {**HEADERS, "Range": "bytes=0-0"}
+        resp = requests.get(url, headers=headers, timeout=TIMEOUT, stream=True)
+        resp.close()
         return resp.status_code < 400
     except Exception:
         return False
