@@ -3,7 +3,7 @@
 > 由 GitHub Actions 每日自动同步上游官方源的**最新版本元数据**。
 > 仓库**不托管二进制安装包**，下载按钮直接跳到上游官方下载链接。
 >
-> 📅 **最后更新**：`2026-04-26 14:09:11` (UTC)　· 共 12 项软件
+> 📅 **最后更新**：`2026-04-26 14:29:12` (UTC)　· 共 16 项软件
 
 ---
 
@@ -14,7 +14,7 @@
 
 | 软件 | 最新版本 | 发布日期 | 下载链接 | 来源 |
 |------|---------|---------|---------|------|
-| [**Windows 11**](https://www.microsoft.com/software-download/windows11) | `25H2` | — | [win-x64](https://software.download.prss.microsoft.com/dbazure/Win11_25H2_Chinese_Simplified_x64_v2.iso?t=11954e90-6c20-4a64-b9ba-eded0707cac4&P1=1777298930&P2=601&P3=2&P4=PSLtJ5%2fGAdg39RoOBEDY3yn4qeJk5Mfl27PhQoLO1lj6YsmBWh8hS%2bM1Ekk1igoq9lAkR6tS5IP9VBFLVmvi9uUFZ4K8941kqdQKl3ZxC9WgDVCQk0yLolnm8VkSmICrn6TPLIHJUhYOS83MdLLLR2%2fWj5DF6lrcmjqMyTeleRIdgv1F5vVAxzU1NzdIuwDBqSS7Zl81o2nW7aKrllU1Rn1A2zntrcscSIhD%2b9WGUKqFamn8KRO9%2bnAPsKu3drLlHKzLvdbMd28hEe7h3Qicg8Ic4T9Oxdo%2bPHjFgtsiYz%2f4HwruYsIGvBIT9djparCVDjjSPYTJFePiVdGGImc0Uw%3d%3d) | Microsoft Software Download (via Fido) |
+| [**Windows 11**](https://www.microsoft.com/software-download/windows11) | `25H2` | — | [win-x64](https://software.download.prss.microsoft.com/dbazure/Win11_25H2_Chinese_Simplified_x64_v2.iso?t=b3829800-3cbc-41d6-bfe9-438a242c90dd&P1=1777300123&P2=601&P3=2&P4=rZ66SGSNBEM31VrgLSxep7xt40qMQrF2O2gDonl2nl5E1j8EC4ARgtci6Ve%2fvfxuPRCC6pIYPwmughKJuqvTBn55PvOZcTAqG3%2b9cdl7oDUDStU9LmrWvwQ3%2fEm5U026O8mZA1SQP5kv0bKYTCwvazMW2HeRukDai05Q9Ik6j6ORHuWGEEWYdYUvZOVNohkX6ISXQ6rb1OjbepZ2SFponOJaWwPJ2A0Qkv8eJKrZ8Cdd1XS5Ly0PDegkLx59m9snLjuZ0CdsCv1k%2bXVzjNWSE7kq8D7DebOhyS2pEq%2f%2fFBWJ%2fvX68d8GtD5evbp1uj5fjrag86xt6WkFZiuZtcrHZQ%3d%3d) | Microsoft Software Download (via Fido) |
 
 
 ### 网络代理
@@ -56,6 +56,22 @@
 | [**百度网盘**](https://pan.baidu.com/) | `2026-04-24` | — | [win-x64](https://pan.baidu.com/disk/base/semdownload) · [mac-universal](https://pan.baidu.com/disk/base/semdownload) | 百度网盘下载页（SPA，仅能取页面更新日期） |
 | [**Geek Uninstaller**](https://geekuninstaller.com/) | `1.5.3.170` | — | [win-x64](https://geekuninstaller.com/download) | Geek Uninstaller 官网 |
 | [**Everything**](https://www.voidtools.com/) | `1.4.1.1032` | — | [win-x64](https://www.voidtools.com/Everything-1.4.1.1032.x64-Setup.exe) · [win-x86](https://www.voidtools.com/Everything-1.4.1.1032.x86-Setup.exe) · [win-x64-portable](https://www.voidtools.com/Everything-1.4.1.1032.x64.zip) · [win-x86-portable](https://www.voidtools.com/Everything-1.4.1.1032.x86.zip) | voidtools 官网 |
+
+
+### 系统工具
+
+| 软件 | 最新版本 | 发布日期 | 下载链接 | 来源 |
+|------|---------|---------|---------|------|
+| [**NVIDIA App**](https://www.nvidia.com/en-us/software/nvidia-app/) | `2026-04-26` | — | [win-x64](https://www.nvidia.com/en-us/software/nvidia-app/) | 手动同步（无 API） |
+
+
+### 即时通讯
+
+| 软件 | 最新版本 | 发布日期 | 下载链接 | 来源 |
+|------|---------|---------|---------|------|
+| [**QQ**](https://im.qq.com/) | `2026-04-26` | — | [win-x64](https://im.qq.com/download/) · [mac-universal](https://im.qq.com/download/) | 手动同步（无 API） |
+| [**微信**](https://weixin.qq.com/) | `214.172.387.384` | — | [win-x64](https://dldir1.qq.com/weixin/Windows/WeChatSetup.exe) · [mac-universal](https://dldir1.qq.com/weixin/mac/WeChatMac.dmg) | 微信官网 |
+| [**YY 语音**](https://www.yy.com/) | `2026-04-26` | — | [win-x64](https://www.yy.com/) | 手动同步（无 API） |
 
 
 

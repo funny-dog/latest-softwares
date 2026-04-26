@@ -13,13 +13,13 @@
       "assets": [
         {
           "platform": "win-x64",
-          "url": "https://software.download.prss.microsoft.com/dbazure/Win11_25H2_Chinese_Simplified_x64_v2.iso?t=11954e90-6c20-4a64-b9ba-eded0707cac4&P1=1777298930&P2=601&P3=2&P4=PSLtJ5%2fGAdg39RoOBEDY3yn4qeJk5Mfl27PhQoLO1lj6YsmBWh8hS%2bM1Ekk1igoq9lAkR6tS5IP9VBFLVmvi9uUFZ4K8941kqdQKl3ZxC9WgDVCQk0yLolnm8VkSmICrn6TPLIHJUhYOS83MdLLLR2%2fWj5DF6lrcmjqMyTeleRIdgv1F5vVAxzU1NzdIuwDBqSS7Zl81o2nW7aKrllU1Rn1A2zntrcscSIhD%2b9WGUKqFamn8KRO9%2bnAPsKu3drLlHKzLvdbMd28hEe7h3Qicg8Ic4T9Oxdo%2bPHjFgtsiYz%2f4HwruYsIGvBIT9djparCVDjjSPYTJFePiVdGGImc0Uw%3d%3d",
+          "url": "https://software.download.prss.microsoft.com/dbazure/Win11_25H2_Chinese_Simplified_x64_v2.iso?t=b3829800-3cbc-41d6-bfe9-438a242c90dd&P1=1777300123&P2=601&P3=2&P4=rZ66SGSNBEM31VrgLSxep7xt40qMQrF2O2gDonl2nl5E1j8EC4ARgtci6Ve%2fvfxuPRCC6pIYPwmughKJuqvTBn55PvOZcTAqG3%2b9cdl7oDUDStU9LmrWvwQ3%2fEm5U026O8mZA1SQP5kv0bKYTCwvazMW2HeRukDai05Q9Ik6j6ORHuWGEEWYdYUvZOVNohkX6ISXQ6rb1OjbepZ2SFponOJaWwPJ2A0Qkv8eJKrZ8Cdd1XS5Ly0PDegkLx59m9snLjuZ0CdsCv1k%2bXVzjNWSE7kq8D7DebOhyS2pEq%2f%2fFBWJ%2fvX68d8GtD5evbp1uj5fjrag86xt6WkFZiuZtcrHZQ%3d%3d",
           "filename": "Win11_25H2_Chinese_Simplified_x64_v2.iso",
           "size": null,
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-26T14:08:51+00:00"
+      "fetched_at": "2026-04-26T14:28:44+00:00"
     },
     {
       "id": "v2rayn",
@@ -60,7 +60,7 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-26T14:08:51+00:00"
+      "fetched_at": "2026-04-26T14:28:44+00:00"
     },
     {
       "id": "vscode",
@@ -101,7 +101,7 @@
           "sha256": "bc5017110545de218ac71df0bdcf40665ec00e9de322825e29a28eebc1e3e1a2"
         }
       ],
-      "fetched_at": "2026-04-26T14:08:52+00:00"
+      "fetched_at": "2026-04-26T14:28:45+00:00"
     },
     {
       "id": "chrome",
@@ -128,7 +128,7 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-26T14:08:53+00:00"
+      "fetched_at": "2026-04-26T14:28:46+00:00"
     },
     {
       "id": "steam",
@@ -148,7 +148,7 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-26T14:08:53+00:00"
+      "fetched_at": "2026-04-26T14:28:46+00:00"
     },
     {
       "id": "wegame",
@@ -168,7 +168,7 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-26T14:08:53+00:00"
+      "fetched_at": "2026-04-26T14:28:46+00:00"
     },
     {
       "id": "localsend",
@@ -195,7 +195,7 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-26T14:08:53+00:00"
+      "fetched_at": "2026-04-26T14:28:46+00:00"
     },
     {
       "id": "bitwarden",
@@ -222,7 +222,7 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-26T14:08:54+00:00"
+      "fetched_at": "2026-04-26T14:28:47+00:00"
     },
     {
       "id": "codex",
@@ -263,7 +263,7 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-26T14:08:56+00:00"
+      "fetched_at": "2026-04-26T14:28:49+00:00"
     },
     {
       "id": "baidunetdisk",
@@ -290,7 +290,7 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-26T14:08:57+00:00"
+      "fetched_at": "2026-04-26T14:28:50+00:00"
     },
     {
       "id": "geek",
@@ -310,7 +310,7 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-26T14:08:58+00:00"
+      "fetched_at": "2026-04-26T14:28:50+00:00"
     },
     {
       "id": "everything",
@@ -351,12 +351,106 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-26T14:08:58+00:00"
+      "fetched_at": "2026-04-26T14:28:51+00:00"
+    },
+    {
+      "id": "nvidia-app",
+      "name": "NVIDIA App",
+      "version": "2026-04-26",
+      "source": "手动同步（无 API）",
+      "category": "系统工具",
+      "homepage": "https://www.nvidia.com/en-us/software/nvidia-app/",
+      "released_at": null,
+      "notes_url": "https://www.nvidia.com/en-us/software/nvidia-app/",
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://www.nvidia.com/en-us/software/nvidia-app/",
+          "filename": null,
+          "size": null,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-04-26T14:28:51+00:00"
+    },
+    {
+      "id": "qq",
+      "name": "QQ",
+      "version": "2026-04-26",
+      "source": "手动同步（无 API）",
+      "category": "即时通讯",
+      "homepage": "https://im.qq.com/",
+      "released_at": null,
+      "notes_url": "https://im.qq.com/download/",
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://im.qq.com/download/",
+          "filename": null,
+          "size": null,
+          "sha256": null
+        },
+        {
+          "platform": "mac-universal",
+          "url": "https://im.qq.com/download/",
+          "filename": null,
+          "size": null,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-04-26T14:28:51+00:00"
+    },
+    {
+      "id": "wechat",
+      "name": "微信",
+      "version": "214.172.387.384",
+      "source": "微信官网",
+      "category": "即时通讯",
+      "homepage": "https://weixin.qq.com/",
+      "released_at": null,
+      "notes_url": "https://weixin.qq.com/",
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://dldir1.qq.com/weixin/Windows/WeChatSetup.exe",
+          "filename": null,
+          "size": null,
+          "sha256": null
+        },
+        {
+          "platform": "mac-universal",
+          "url": "https://dldir1.qq.com/weixin/mac/WeChatMac.dmg",
+          "filename": null,
+          "size": null,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-04-26T14:28:52+00:00"
+    },
+    {
+      "id": "yy",
+      "name": "YY 语音",
+      "version": "2026-04-26",
+      "source": "手动同步（无 API）",
+      "category": "即时通讯",
+      "homepage": "https://www.yy.com/",
+      "released_at": null,
+      "notes_url": "https://www.yy.com/",
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://www.yy.com/",
+          "filename": null,
+          "size": null,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-04-26T14:28:52+00:00"
     }
   ],
   "stats": {
-    "total": 12,
-    "success": 12,
+    "total": 16,
+    "success": 16,
     "failed": 0
   }
 }
