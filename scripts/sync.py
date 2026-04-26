@@ -20,6 +20,15 @@ from pathlib import Path
 
 import yaml
 
+# Windows runner 默认用 cp1252，输出 ✓/✗/中文会 UnicodeEncodeError 进而崩掉整个脚本。
+# 在最早机会重置 stdout/stderr 为 UTF-8，保证后续所有 print 安全。
+for _stream in (sys.stdout, sys.stderr):
+    if hasattr(_stream, "reconfigure"):
+        try:
+            _stream.reconfigure(encoding="utf-8", errors="replace")
+        except Exception:
+            pass
+
 # 兼容两种运行方式：作为模块（python -m scripts.sync）或作为脚本（python scripts/sync.py）
 if __package__ in (None, ""):
     sys.path.insert(0, str(Path(__file__).resolve().parents[1]))

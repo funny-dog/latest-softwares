@@ -12,6 +12,7 @@ from __future__ import annotations
 import os
 import re
 import subprocess
+import time
 from pathlib import Path
 from typing import Any
 from urllib.parse import unquote, urlparse
@@ -26,7 +27,9 @@ SCRIPT_PATH = Path(__file__).resolve().parents[2] / "third_party" / "Fido.ps1"
 DEFAULT_LANG = "Chinese (Simplified)"
 DEFAULT_EDITION = "Pro"
 DEFAULT_ARCH = "x64"
-TIMEOUT = 120  # Fido 内部要等 MS 服务端响应，给宽裕些
+TIMEOUT = 180         # subprocess 等 Fido 全程的超时
+MAX_ATTEMPTS = 3      # MS 端偶发超时（Fido 内部 30s 硬超时无法外部加长），失败重试
+RETRY_BACKOFF = 5     # 重试间隔（秒）
 
 
 def _run_fido(lang: str, edition: str, arch: str) -> str:
@@ -47,28 +50,34 @@ def _run_fido(lang: str, edition: str, arch: str) -> str:
         "-PlatformArch", "x64",
         "-GetUrl",
     ]
-    try:
-        proc = subprocess.run(
-            cmd, capture_output=True, text=True, timeout=TIMEOUT, check=False,
-        )
-    except FileNotFoundError as e:
-        raise FetchError(f"未找到 pwsh，无法运行 Fido：{e}") from e
-    except subprocess.TimeoutExpired as e:
-        raise FetchError(f"Fido 超时（>{TIMEOUT}s），微软端可能限流") from e
+    last_err = ""
+    for attempt in range(1, MAX_ATTEMPTS + 1):
+        try:
+            proc = subprocess.run(
+                cmd, capture_output=True, text=True, timeout=TIMEOUT, check=False,
+            )
+        except FileNotFoundError as e:
+            raise FetchError(f"未找到 pwsh，无法运行 Fido：{e}") from e
+        except subprocess.TimeoutExpired as e:
+            last_err = f"subprocess 超时（>{TIMEOUT}s）"
+        else:
+            stdout = (proc.stdout or "").strip()
+            stderr = (proc.stderr or "").strip()
+            url_line = next(
+                (line for line in reversed(stdout.splitlines()) if line.startswith("http")),
+                "",
+            )
+            if url_line:
+                return url_line
+            last_err = (
+                f"Fido 未返回 URL。stdout={stdout!r} stderr={stderr!r} "
+                f"returncode={proc.returncode}"
+            )
+        if attempt < MAX_ATTEMPTS:
+            print(f"  ↻ Fido 第 {attempt} 次失败：{last_err[:80]}…，{RETRY_BACKOFF}s 后重试", flush=True)
+            time.sleep(RETRY_BACKOFF)
 
-    stdout = (proc.stdout or "").strip()
-    stderr = (proc.stderr or "").strip()
-
-    # Fido 在成功时也可能往 stderr 写诊断信息；URL 永远是 stdout 最后一行非空内容
-    url_line = next(
-        (line for line in reversed(stdout.splitlines()) if line.startswith("http")),
-        "",
-    )
-    if not url_line:
-        raise FetchError(
-            f"Fido 未返回 URL。stdout={stdout!r} stderr={stderr!r} returncode={proc.returncode}"
-        )
-    return url_line
+    raise FetchError(f"Fido 连续 {MAX_ATTEMPTS} 次失败，最后一次：{last_err}")
 
 
 def _parse_release_from_url(url: str) -> tuple[str, str | None]:
