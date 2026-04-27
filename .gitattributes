@@ -1,0 +1,6 @@
+# 统一行尾：文本文件 LF，二进制文件不转换
+* text=auto
+
+# vendor 预构建 JS/JSON 作为二进制保存，禁止任何换行转换
+# 保证 Windows runner checkout 后 sha256 与 manifest 一致
+web/vendor/* binary
