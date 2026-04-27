@@ -20,6 +20,15 @@ import urllib.error
 import urllib.request
 from pathlib import Path
 
+# Windows runner 默认 cp1252，print 中文（"未变"、"已更新"等）会 UnicodeEncodeError
+# 进而 exit 1。与 sync.py 模式一致：在最早机会 reconfigure stdio 为 UTF-8。
+for _stream in (sys.stdout, sys.stderr):
+    if hasattr(_stream, "reconfigure"):
+        try:
+            _stream.reconfigure(encoding="utf-8", errors="replace")
+        except Exception:
+            pass
+
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
 WEB_VENDOR = REPO_ROOT / "web" / "vendor"

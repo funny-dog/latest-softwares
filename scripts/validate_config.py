@@ -9,6 +9,16 @@ from urllib.parse import urlparse
 
 import yaml
 
+# Windows runner 默认 cp1252，print 中文（"配置校验通过"等）会 UnicodeEncodeError
+# 进而 exit 1，让本应通过的校验在 CI 上崩溃。与 sync.py / render.py 模式一致：
+# 在最早机会 reconfigure stdio 为 UTF-8。
+for _stream in (sys.stdout, sys.stderr):
+    if hasattr(_stream, "reconfigure"):
+        try:
+            _stream.reconfigure(encoding="utf-8", errors="replace")
+        except Exception:
+            pass
+
 if __package__ in (None, ""):
     sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
     from scripts.fetchers import FETCHERS  # type: ignore
