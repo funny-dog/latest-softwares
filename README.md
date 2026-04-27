@@ -3,7 +3,7 @@
 > 由 GitHub Actions 每日自动同步上游官方源的**最新版本元数据**。
 > 仓库**不托管二进制安装包**，下载按钮直接跳到上游官方下载链接。
 >
-> 📅 **最后更新**：`2026-04-26 15:24:11` (UTC)　· 共 16 项软件
+> 📅 **最后更新**：`2026-04-27 05:12:58` (UTC)　· 共 16 项软件
 
 ---
 
@@ -14,7 +14,7 @@
 
 | 软件 | 最新版本 | 发布日期 | 下载链接 | 来源 |
 |------|---------|---------|---------|------|
-| [**Windows 11**](https://www.microsoft.com/software-download/windows11) | `25H2` | — | [win-x64](https://software.download.prss.microsoft.com/dbazure/Win11_25H2_Chinese_Simplified_x64_v2.iso?t=8a4fd55d-b77f-4b68-89f1-fea91e31842a&P1=1777303444&P2=601&P3=2&P4=LSOAqJ6K78%2fpam8U9NWTUeBkxUIHUDHM8s3MDNyLmUS%2fije%2faWLb6yxqsgRQrMakrPPU4Tz6Xjw%2fUEYvJM79xuAtkXUCNZ7ezeVrGg7uuhYOgGq8RTl%2bAC99iw0NJ9KvNy0PWeAnfN5jhHGcXuphYiZ8mB%2fi2LQPj%2fa4ZoMjpmWycBjvHYo%2fsok4sl1Hn%2bmqGFkidGc5Znb4YhKfyDlj7o%2bZkpPHQQ3mhkrqaaf9GGFfS4QARTUXu5ROZwRriDm15DkBYXeewH2pHnN9Z8kIs%2bSjRxMT0eEyossibwx4ki%2bW%2bMLSY8mHul4wPmD86BUxWycXJl8Q9BtuQeRUN649aQ%3d%3d) | Microsoft Software Download (via Fido) |
+| [**Windows 11**](https://www.microsoft.com/software-download/windows11) | `25H2` | — | [win-x64](https://software.download.prss.microsoft.com/dbazure/Win11_25H2_Chinese_Simplified_x64_v2.iso?t=747986ad-53a9-40fe-b20e-2202d47c2e83&P1=1777353171&P2=601&P3=2&P4=sUd3AGNr5bUuyUCPL5dtzcWA8TkG%2bPm6EqboThNZf30Ms2QIuHT4tlfIRCMsQwc1RrO9BSqtrg4Fj%2bir4M%2fTPT4Fo87dp%2beqN57uFqKOs1G8DJvTC3yv4H8PPLlyyxrN6j%2bBJoNzqriyhCR6M3JKPyz5%2byNdK8iY%2fRSEhYQwnnmetDWqYhB%2b5WHopkrBHBKbP6DrK2drzOPTV7qTfetrYCTHHBsVvrHPFi1n%2fEQwGJ0VnfRb7m1sUjmdjcia2Z4PrIl6%2fr8ksnwAZ0UJdQhNUkbX5g1KlvjlKpVcu60h7TAmrbCvaNjzE8aQhjjYkRL7Vk5Hk8Sos5JjgzEqNMuFlQ%3d%3d) | Microsoft Software Download (via Fido) |
 
 
 ### 网络代理
@@ -44,7 +44,7 @@
 | 软件 | 最新版本 | 发布日期 | 下载链接 | 来源 |
 |------|---------|---------|---------|------|
 | [**Steam**](https://store.steampowered.com/about/) | `2026-01-30` | — | [win-x64](https://cdn.fastly.steamstatic.com/client/installer/SteamSetup.exe) | Valve Client Update API |
-| [**WeGame**](https://www.wegame.com.cn/) | `2026-04-26` | — | [win-x64](https://www.wegame.com.cn/client/) | 手动同步（无 API） |
+| [**WeGame**](https://www.wegame.com.cn/) | `2026-04-27` | — | [win-x64](https://www.wegame.com.cn/client/) | 手动同步（无 API） |
 
 
 ### 通用工具
@@ -62,16 +62,16 @@
 
 | 软件 | 最新版本 | 发布日期 | 下载链接 | 来源 |
 |------|---------|---------|---------|------|
-| [**NVIDIA App**](https://www.nvidia.com/en-us/software/nvidia-app/) | `2026-04-26` | — | [win-x64](https://www.nvidia.com/en-us/software/nvidia-app/) | 手动同步（无 API） |
+| [**NVIDIA App**](https://www.nvidia.com/en-us/software/nvidia-app/) | `2026-04-27` | — | [win-x64](https://www.nvidia.com/en-us/software/nvidia-app/) | 手动同步（无 API） |
 
 
 ### 即时通讯
 
 | 软件 | 最新版本 | 发布日期 | 下载链接 | 来源 |
 |------|---------|---------|---------|------|
-| [**QQ**](https://im.qq.com/) | `2026-04-26` | — | [win-x64](https://im.qq.com/download/) · [mac-universal](https://im.qq.com/download/) | 手动同步（无 API） |
+| [**QQ**](https://im.qq.com/) | `2026-04-27` | — | [win-x64](https://im.qq.com/download/) · [mac-universal](https://im.qq.com/download/) | 手动同步（无 API） |
 | [**微信**](https://weixin.qq.com/) | `214.172.387.384` | — | [win-x64](https://dldir1.qq.com/weixin/Windows/WeChatSetup.exe) · [mac-universal](https://dldir1.qq.com/weixin/mac/WeChatMac.dmg) | 微信官网 |
-| [**YY 语音**](https://www.yy.com/) | `2026-04-26` | — | [win-x64](https://www.yy.com/) | 手动同步（无 API） |
+| [**YY 语音**](https://www.yy.com/) | `2026-04-27` | — | [win-x64](https://www.yy.com/) | 手动同步（无 API） |
 
 
 
