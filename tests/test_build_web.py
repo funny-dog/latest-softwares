@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import json
+import re
 
 from scripts import build_web
 
@@ -35,23 +36,46 @@ def test_json_injection_escapes_script_end_tag(tmp_path, monkeypatch):
     assert "<\\/script><script>alert(1)<\\/script>" in html
 
 
-def test_rewrite_vendor_refs_points_to_local_dist_assets():
-    html = """
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.14.1/dist/cdn.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/fuse.js@7.0.0/dist/fuse.min.js"></script>
-    """
+def test_web_source_uses_local_vendor_assets():
+    html = (build_web.WEB_SRC / "index.html").read_text(encoding="utf-8")
 
-    rewritten = build_web.rewrite_vendor_refs(html)
+    assert "https://cdn.tailwindcss.com" not in html
+    assert "https://cdn.jsdelivr.net" not in html
+    assert "https://fonts.googleapis.com" not in html
+    assert "https://fonts.gstatic.com" not in html
+    assert 'src="vendor/tailwindcss.js"' in html
+    assert 'src="vendor/alpinejs.min.js"' in html
+    assert 'src="vendor/fuse.min.js"' in html
 
-    assert "https://cdn.tailwindcss.com" not in rewritten
-    assert "https://cdn.jsdelivr.net/npm/alpinejs" not in rewritten
-    assert "https://cdn.jsdelivr.net/npm/fuse.js" not in rewritten
-    assert "https://fonts.googleapis.com" not in rewritten
-    assert "https://fonts.gstatic.com" not in rewritten
-    assert 'src="vendor/tailwindcss.js"' in rewritten
-    assert 'src="vendor/alpinejs.min.js"' in rewritten
-    assert 'src="vendor/fuse.min.js"' in rewritten
+
+def test_copy_static_copies_vendor_directory(tmp_path, monkeypatch):
+    web_src = tmp_path / "web"
+    vendor = web_src / "vendor"
+    dist = tmp_path / "dist"
+    vendor.mkdir(parents=True)
+    dist.mkdir()
+    (web_src / "index.html").write_text("index", encoding="utf-8")
+    (vendor / "library.js").write_text("console.log('ok')", encoding="utf-8")
+
+    monkeypatch.setattr(build_web, "WEB_SRC", web_src)
+    monkeypatch.setattr(build_web, "DIST", dist)
+
+    copied = build_web.copy_static()
+
+    assert copied == 2
+    assert (dist / "index.html").read_text(encoding="utf-8") == "index"
+    assert (dist / "vendor" / "library.js").read_text(
+        encoding="utf-8"
+    ) == "console.log('ok')"
+
+
+def test_vendor_manifest_checksums_match_real_files():
+    verified = build_web.verify_vendor_assets()
+
+    assert {entry["path"] for entry in verified} == {
+        "vendor/tailwindcss.js",
+        "vendor/alpinejs.min.js",
+        "vendor/fuse.min.js",
+    }
+    for entry in verified:
+        assert re.fullmatch(r"[0-9a-f]{64}", entry["sha256"])

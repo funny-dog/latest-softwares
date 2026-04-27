@@ -10,16 +10,11 @@
 
 from __future__ import annotations
 
+import hashlib
 import json
 import shutil
 import sys
 from pathlib import Path
-
-if __package__ in (None, ""):
-    sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
-    from scripts.http import get  # type: ignore
-else:
-    from .http import get
 
 # Windows runner 默认 cp1252，输出 ✓ 会崩
 for _stream in (sys.stdout, sys.stderr):
@@ -34,26 +29,12 @@ REPO_ROOT = Path(__file__).resolve().parents[1]
 WEB_SRC = REPO_ROOT / "web"
 DATA_FILE = REPO_ROOT / "data" / "latest.json"
 DIST = REPO_ROOT / "dist"
-TIMEOUT = 30
+VENDOR_MANIFEST = WEB_SRC / "vendor" / "manifest.json"
 
 # index.html 中数据占位符（必须与 web/index.html 内严格一致）
 DATA_PLACEHOLDER = (
     '/*__DATA__*/ {"schema_version": 1, "packages": [], "stats": {}} /*__DATA__*/'
 )
-VENDOR_ASSETS = [
-    {
-        "url": "https://cdn.tailwindcss.com",
-        "path": "vendor/tailwindcss.js",
-    },
-    {
-        "url": "https://cdn.jsdelivr.net/npm/alpinejs@3.14.1/dist/cdn.min.js",
-        "path": "vendor/alpinejs.min.js",
-    },
-    {
-        "url": "https://cdn.jsdelivr.net/npm/fuse.js@7.0.0/dist/fuse.min.js",
-        "path": "vendor/fuse.min.js",
-    },
-]
 
 
 def clean_dist() -> None:
@@ -70,23 +51,50 @@ def clean_dist() -> None:
 def copy_static() -> int:
     count = 0
     for src in WEB_SRC.iterdir():
+        target = DIST / src.name
         if src.is_file():
-            shutil.copy2(src, DIST / src.name)
+            shutil.copy2(src, target)
             count += 1
+        elif src.is_dir():
+            if target.exists():
+                shutil.rmtree(target)
+            shutil.copytree(src, target)
+            count += sum(1 for path in src.rglob("*") if path.is_file())
     return count
 
 
-def copy_vendor() -> int:
-    """Download browser dependencies into dist/vendor for CDN-free deploys."""
-    count = 0
-    for asset in VENDOR_ASSETS:
-        response = get(asset["url"], timeout=TIMEOUT)
-        response.raise_for_status()
-        target = DIST / asset["path"]
-        target.parent.mkdir(parents=True, exist_ok=True)
-        target.write_bytes(response.content)
-        count += 1
-    return count
+def _sha256(path: Path) -> str:
+    digest = hashlib.sha256()
+    with path.open("rb") as fh:
+        for chunk in iter(lambda: fh.read(1024 * 1024), b""):
+            digest.update(chunk)
+    return digest.hexdigest()
+
+
+def verify_vendor_assets() -> list[dict[str, str]]:
+    """Validate vendored browser dependencies before copying them to dist."""
+    if not VENDOR_MANIFEST.exists():
+        raise FileNotFoundError(f"找不到 vendor manifest: {VENDOR_MANIFEST}")
+
+    manifest = json.loads(VENDOR_MANIFEST.read_text(encoding="utf-8"))
+    entries = manifest.get("assets", [])
+    if not entries:
+        raise RuntimeError("vendor manifest 没有配置任何 assets")
+
+    verified: list[dict[str, str]] = []
+    for entry in entries:
+        rel_path = entry["path"]
+        expected = entry["sha256"]
+        asset_path = WEB_SRC / rel_path
+        if not asset_path.is_file():
+            raise FileNotFoundError(f"找不到 vendor 文件: {asset_path}")
+        actual = _sha256(asset_path)
+        if actual != expected:
+            raise RuntimeError(
+                f"vendor checksum 不匹配: {rel_path} expected={expected} actual={actual}"
+            )
+        verified.append({"path": rel_path, "sha256": actual})
+    return verified
 
 
 def _json_for_inline_script(data: dict) -> str:
@@ -97,23 +105,6 @@ def _json_for_inline_script(data: dict) -> str:
         .replace("\u2028", "\\u2028")
         .replace("\u2029", "\\u2029")
     )
-
-
-def rewrite_vendor_refs(html: str) -> str:
-    for asset in VENDOR_ASSETS:
-        html = html.replace(asset["url"], asset["path"])
-    html = html.replace(
-        '<link rel="preconnect" href="https://fonts.googleapis.com">\n', ""
-    )
-    html = html.replace(
-        '<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>\n',
-        "",
-    )
-    html = html.replace(
-        '  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">\n',
-        "",
-    )
-    return html
 
 
 def inject_data() -> int:
@@ -135,7 +126,7 @@ def inject_data() -> int:
             "请确认 web/index.html 的占位符与 build_web.py 中的 DATA_PLACEHOLDER 一致。"
         )
 
-    html = rewrite_vendor_refs(html.replace(DATA_PLACEHOLDER, replacement))
+    html = html.replace(DATA_PLACEHOLDER, replacement)
     index.write_text(html, encoding="utf-8")
     return len(data.get("packages", []))
 
@@ -147,13 +138,13 @@ def main() -> int:
 
     DIST.mkdir(parents=True, exist_ok=True)
     clean_dist()
+    vendor_assets = verify_vendor_assets()
     n_files = copy_static()
-    n_vendor = copy_vendor()
     n_pkgs = inject_data()
 
     print(
         f"✓ dist/ 构建完成（{n_files} 个静态文件，"
-        f"{n_vendor} 个 vendor 文件，注入 {n_pkgs} 个软件数据）"
+        f"{len(vendor_assets)} 个 vendor 文件已校验，注入 {n_pkgs} 个软件数据）"
     )
     print(
         f"  本地预览: uv run python -m http.server -d {DIST.relative_to(REPO_ROOT)} 8000"
