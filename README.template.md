@@ -41,14 +41,36 @@
 
 ### 可用的 fetcher
 
-| fetcher | 适用场景 | 必要参数 |
-|---------|---------|---------|
-| `github_release` | 任何在 GitHub Releases 发布的软件 | `repo`, `assets[].pattern`（fnmatch 通配符） |
-| `windows11_fido` | Windows 11 ISO（微软官方下载页） | `lang`, `edition` |
-| `vscode_official` | VS Code | `builds[].build`（如 `win32-x64-user`） |
-| `chrome_official` | Google Chrome | `platforms[].os_key` + 固定 `download_url` |
+| fetcher | 适用场景 | 关键 args 字段 | 版本号来源 | 下载链接 |
+|---------|---------|--------------|----------|--------|
+| `github_release` | GitHub Releases 发布的软件（**通用首选**） | `repo`、`assets[].{platform, pattern}` | Release tag | 直链（GitHub asset） |
+| `vscode_official` | VS Code | `builds[].{platform, build}`（`build` 为 VSCode API 的 `platform.os`，如 `win32-x64-user`） | VSCode Build Manifest API | 直链 |
+| `chrome_official` | Google Chrome | `platforms[].{platform, os_key, channel, download_url}` | Google Version History API | 取决于 `download_url` |
+| `steam_official` | Steam 客户端 | `platforms[].{platform, download_url}` | Valve Client Update API（构建时间戳） | 取决于 `download_url` |
+| `windows11_fido` | Windows 11 ISO | `lang`（默认 `Chinese (Simplified)`）、`edition`（默认 `Pro`）、`arch`（默认 `x64`） | ISO URL 解析（如 `24H2`） | 直链，约 24 h 有效 |
+| `baidunetdisk` | 百度网盘 | `platforms[].{platform, download_url}` | 页面 `__V20_VER__`（构建日期，非客户端版本） | 取决于 `download_url` |
+| `geek` | Geek Uninstaller | `platforms[].{platform, download_url}` | 官网 HTML 解析 | 取决于 `download_url` |
+| `everything` | Everything 搜索 | `platforms[].{platform, download_url}` | 官网 HTML 解析 | 取决于 `download_url` |
+| `wechat_official` | 微信 PC 客户端 | `platforms[].{platform, download_url}` | 官网 HTML 解析；失败时退为当天日期 | 取决于 `download_url` |
+| `wegame_official` | WeGame | `platforms[].{platform}`（`download_url` 固定，可省略） | 当天日期（SPA，无公开 API） | 固定跳转页 |
+| `nvidia_app` | NVIDIA App | `platforms[].{platform, download_url}` | 当天日期（SPA，无公开 API） | 固定跳转页 |
+| `qq_official` | 腾讯 QQ（QQNT） | `platforms[].{platform, download_url}` | 当天日期（SPA，无公开 API） | 固定跳转页 |
+| `yy_official` | YY 语音 | `platforms[].{platform}`（`download_url` 固定，可省略） | 当天日期（SPA，无公开 API） | 固定跳转页 |
 
-monorepo（一个仓库发多个产品）可加 `tag_pattern` 正则筛选标签，如 Bitwarden 就用 `^desktop-v` 把 desktop 客户端的 release 挑出来。
+**`github_release` 扩展参数**
+
+- `tag_pattern`（正则）—— monorepo 场景，用正则从 release 列表中筛出目标子产品的 tag。例：Bitwarden 仓库同时发 Desktop / Web / CLI 等，用 `^desktop-v` 只挑 Desktop release；OpenAI Codex 用 `^rust-v`。不填则直接取 `/releases/latest`。
+- `release_scan_pages`（整数，默认 `1`）—— 仅当 `tag_pattern` 存在时有意义，控制翻页深度（每页 30 个 release）。若目标 tag 不靠前，可调大到 `2`–`3`。
+- `warnings` —— 运行时字段，不在 yaml 中配置。当某个 platform 的 `pattern` 在当次 Release 的 assets 里未找到匹配文件时，该 platform 跳过并记入 `warnings`；其余 platform 照常返回。README 中该行会出现 ⚠️ 标记。
+
+**直链 vs 跳转页**
+
+系统根据 `download_url` 的路径后缀自动判断类型，无需手动标注：
+
+- **直链**：URL 以 `.exe` / `.dmg` / `.iso` / `.zip` / `.tar.gz` / `.msi` / `.pkg` 等文件扩展名结尾，点击立即开始下载。Web 界面中对应**实心填充**徽章。
+- **跳转页**：URL 指向一个下载网页（无文件后缀），点击后需在页面上再手动选择下载。Web 界面中对应**空心描边**徽章。
+
+`validate_links.py` 仅校验直链的 HTTP 可达性；跳转页跳过不校验，避免把正常网页误判为失效链接。
 
 ---
 
