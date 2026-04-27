@@ -3,6 +3,7 @@
 NVIDIA App 下载页为 JavaScript SPA，无法从静态 HTML 提取版本号。
 版本号取当天日期（表示数据同步日期），下载链接指向官方下载页。
 """
+
 from __future__ import annotations
 
 from datetime import datetime, timezone

@@ -6,6 +6,7 @@
 我们把它解析并格式化成 ``YYYY-MM-DD`` 作为"页面更新时间"展示——
 不是真正的客户端版本号，但至少能反映上游确实有动静。
 """
+
 from __future__ import annotations
 
 import re
@@ -14,6 +15,7 @@ from typing import Any
 
 import requests
 
+from ..http import browser_headers, get
 from .base import AssetInfo, FetchError, FetchResult
 
 
@@ -43,13 +45,10 @@ def fetch(args: dict[str, Any]) -> FetchResult:
     version: str | None = None
 
     try:
-        resp = requests.get(
+        resp = get(
             DOWNLOAD_PAGE,
             timeout=TIMEOUT,
-            headers={
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
-                "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
-            },
+            headers=browser_headers(),
         )
         resp.raise_for_status()
         m = VERSION_VER_RE.search(resp.text)

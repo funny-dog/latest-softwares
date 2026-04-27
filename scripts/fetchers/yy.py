@@ -3,6 +3,7 @@
 YY 语音为 Windows 独占应用，下载页为 SPA，无公开版本 API。
 版本号取当天日期（表示数据同步日期），下载链接指向官方下载页。
 """
+
 from __future__ import annotations
 
 from datetime import datetime, timezone

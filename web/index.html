@@ -155,7 +155,11 @@
             <span class="font-mono font-medium text-zinc-700 dark:text-zinc-300">v<span x-text="pkg.version"></span></span>
             <span x-show="pkg.released_at">·</span>
             <span x-show="pkg.released_at" x-text="formatDate(pkg.released_at)"></span>
-            <span x-show="pkg._stale" class="text-amber-500 dark:text-amber-400" title="本次抓取失败，复用上次数据">⚠</span>
+            <span
+              x-show="pkg._stale || pkg.warnings?.length"
+              class="text-amber-500 dark:text-amber-400"
+              :title="pkg._stale ? '本次抓取失败，复用上次数据' : pkg.warnings.join('；')"
+            >⚠</span>
           </div>
 
           <!-- 平台徽章/下载按钮 -->

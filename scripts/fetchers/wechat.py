@@ -3,6 +3,7 @@
 腾讯为微信 Windows/Mac 维护了固定的重定向下载 URL，始终指向最新版安装包。
 版本号通过抓取微信官网页面中的版本字符串获取；解析失败时回退到当天日期。
 """
+
 from __future__ import annotations
 
 import re
@@ -11,6 +12,7 @@ from typing import Any
 
 import requests
 
+from ..http import browser_headers, get
 from .base import AssetInfo, FetchResult
 
 
@@ -25,13 +27,10 @@ def fetch(args: dict[str, Any]) -> FetchResult:
 
     version = today
     try:
-        resp = requests.get(
+        resp = get(
             HOMEPAGE,
             timeout=TIMEOUT,
-            headers={
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
-                "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
-            },
+            headers=browser_headers(),
         )
         resp.raise_for_status()
         m = _VERSION_RE.search(resp.text)

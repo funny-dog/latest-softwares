@@ -6,6 +6,7 @@ Steam 的下载链接是固定的稳定 URL（永远指向最新版），由 pac
 API 端点：https://client-update.akamai.steamstatic.com/steam_client_win32
 返回 Valve KeyValues 格式，version 字段为 Unix 时间戳（构建号）。
 """
+
 from __future__ import annotations
 
 import re
@@ -14,6 +15,7 @@ from typing import Any
 
 import requests
 
+from ..http import get
 from .base import AssetInfo, FetchError, FetchResult
 
 API_URL = "https://client-update.akamai.steamstatic.com/steam_client_win32"
@@ -29,11 +31,7 @@ def fetch(args: dict[str, Any]) -> FetchResult:
 
     # 从 API 获取版本号
     try:
-        resp = requests.get(
-            API_URL,
-            timeout=TIMEOUT,
-            headers={"User-Agent": "latest-softwares-sync"},
-        )
+        resp = get(API_URL, timeout=TIMEOUT)
         resp.raise_for_status()
         match = _VERSION_RE.search(resp.text)
         if not match:

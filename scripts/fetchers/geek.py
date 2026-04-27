@@ -3,6 +3,7 @@
 Geek Uninstaller 官方下载页面为 https://geekuninstaller.com/download，
 下载链接需从页面抓取。
 """
+
 from __future__ import annotations
 
 import re
@@ -10,6 +11,7 @@ from typing import Any
 
 import requests
 
+from ..http import browser_headers, get
 from .base import AssetInfo, FetchError, FetchResult
 
 
@@ -28,19 +30,18 @@ def fetch(args: dict[str, Any]) -> FetchResult:
     version: str | None = None
 
     try:
-        resp = requests.get(
+        resp = get(
             DOWNLOAD_PAGE,
             timeout=TIMEOUT,
-            headers={
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
-                "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
-            },
+            headers=browser_headers(),
         )
         resp.raise_for_status()
         text = resp.text
         found = _VERSION_RE.findall(text)
         if found:
-            version = sorted(set(found), key=lambda x: tuple(map(int, x.split("."))), reverse=True)[0]
+            version = sorted(
+                set(found), key=lambda x: tuple(map(int, x.split("."))), reverse=True
+            )[0]
     except requests.RequestException as exc:
         raise FetchError(f"geek: 页面请求失败：{exc}") from exc
 

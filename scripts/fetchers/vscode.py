@@ -7,13 +7,13 @@ url / productVersion / sha256hash / platform.os 等字段。
 只需在 packages.yaml 里列出关心的 platform.os 名（如 "win32-x64-user"），
 fetcher 自动从全量数据中筛选。
 """
+
 from __future__ import annotations
 
 from datetime import datetime, timezone
 from typing import Any
 
-import requests
-
+from ..http import get_json
 from .base import AssetInfo, FetchError, FetchResult
 
 
@@ -26,9 +26,7 @@ def fetch(args: dict[str, Any]) -> FetchResult:
     if not builds:
         raise FetchError("vscode: builds 不能为空")
 
-    resp = requests.get(API_URL, timeout=TIMEOUT, headers={"User-Agent": "latest-softwares-sync"})
-    resp.raise_for_status()
-    products = resp.json().get("products", [])
+    products = get_json(API_URL, timeout=TIMEOUT).get("products", [])
     if not products:
         raise FetchError("vscode: API 返回空 products 数组")
 
@@ -48,15 +46,19 @@ def fetch(args: dict[str, Any]) -> FetchResult:
         if version is None:
             version = product.get("productVersion")
             timestamp_ms = product.get("timestamp")
-        assets.append(AssetInfo(
-            platform=platform,
-            url=product["url"],
-            sha256=product.get("sha256hash"),
-        ))
+        assets.append(
+            AssetInfo(
+                platform=platform,
+                url=product["url"],
+                sha256=product.get("sha256hash"),
+            )
+        )
 
     if not assets:
         available = sorted(by_os.keys())
-        raise FetchError(f"vscode: 配置的 builds 在 API 中都不存在。可用 os: {available}")
+        raise FetchError(
+            f"vscode: 配置的 builds 在 API 中都不存在。可用 os: {available}"
+        )
     if not version:
         raise FetchError("vscode: 未能拿到 productVersion")
 

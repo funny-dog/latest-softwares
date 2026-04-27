@@ -2,6 +2,7 @@
 
 模板用 Jinja2，避免在 Python 里拼大段 Markdown 字符串。
 """
+
 from __future__ import annotations
 
 import json
@@ -64,7 +65,9 @@ def main() -> int:
 
     env = Environment(
         loader=FileSystemLoader(str(REPO_ROOT)),
-        autoescape=select_autoescape(enabled_extensions=()),  # Markdown 不需要 HTML 转义
+        autoescape=select_autoescape(
+            enabled_extensions=()
+        ),  # Markdown 不需要 HTML 转义
         trim_blocks=False,
         lstrip_blocks=False,
         keep_trailing_newline=True,
@@ -79,7 +82,9 @@ def main() -> int:
         failed=stats.get("failed", 0),
     )
     OUTPUT_FILE.write_text(rendered, encoding="utf-8")
-    print(f"写入 {OUTPUT_FILE.relative_to(REPO_ROOT)}（{len(packages)} 项软件，分 {len(group_by_category(packages))} 组）")
+    print(
+        f"写入 {OUTPUT_FILE.relative_to(REPO_ROOT)}（{len(packages)} 项软件，分 {len(group_by_category(packages))} 组）"
+    )
     return 0
 
 

@@ -15,7 +15,7 @@
 | 软件 | 最新版本 | 发布日期 | 下载链接 | 来源 |
 |------|---------|---------|---------|------|
 {%- for it in items %}
-| {% if it.homepage %}[**{{ it.name }}**]({{ it.homepage }}){% else %}**{{ it.name }}**{% endif %}{% if it._stale %} ⚠️{% endif %} | `{{ it.version }}` | {{ it.released_at | fmt_date }} | {% for a in it.assets %}[{{ a.platform }}]({{ a.url }}){% if not loop.last %} · {% endif %}{% endfor %} | {{ it.source }} |
+| {% if it.homepage %}[**{{ it.name }}**]({{ it.homepage }}){% else %}**{{ it.name }}**{% endif %}{% if it._stale or it.warnings %} ⚠️{% endif %} | `{{ it.version }}` | {{ it.released_at | fmt_date }} | {% for a in it.assets %}[{{ a.platform }}]({{ a.url }}){% if not loop.last %} · {% endif %}{% endfor %} | {{ it.source }}{% if it.warnings %}<br>⚠ {{ it.warnings | join("; ") }}{% endif %} |
 {%- endfor %}
 
 {% endfor %}

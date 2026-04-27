@@ -12,6 +12,7 @@
   或在仓库根目录：
   python scripts/sync.py
 """
+
 from __future__ import annotations
 
 import json
@@ -56,7 +57,10 @@ def load_previous() -> dict[str, dict]:
         return {}
 
 
-def _sync_one(entry: dict, previous: dict[str, dict]) -> tuple[int, dict | None, bool, tuple[str, str] | None]:
+def _sync_one(
+    entry: dict,
+    previous: dict[str, dict],
+) -> tuple[str, dict | None, bool, tuple[str, str] | None]:
     """运行单个 fetcher，返回 (index, result_dict, ok, error_info)。
 
     此函数由 ThreadPoolExecutor 并发调用，只读 previous，无副作用。
@@ -89,7 +93,9 @@ def _sync_one(entry: dict, previous: dict[str, dict]) -> tuple[int, dict | None,
         if eid in previous:
             stale = dict(previous[eid])
             stale["_stale"] = True
-            print(f"  ↳ 复用上次数据（{previous[eid].get('version')}）", file=sys.stderr)
+            print(
+                f"  ↳ 复用上次数据（{previous[eid].get('version')}）", file=sys.stderr
+            )
             return (eid, stale, False, (eid, msg))
         return (eid, None, False, (eid, msg))
 
@@ -112,14 +118,9 @@ def main() -> int:
     order: list[str] = [e["id"] for e in entries]
 
     with ThreadPoolExecutor(max_workers=MAX_WORKERS) as executor:
-        futures = {
-            executor.submit(_sync_one, entry, previous): entry
-            for entry in entries
-        }
+        futures = [executor.submit(_sync_one, entry, previous) for entry in entries]
         for future in as_completed(futures):
-            entry = futures[future]
             eid, result, ok, error_info = future.result()
-            idx = order.index(eid)
             if result is not None:
                 result_map[eid] = result
             if ok:

@@ -3,6 +3,7 @@
 QQ 下载页为 JavaScript SPA，下载链接由 JS 动态生成，无公开版本 API。
 版本号取当天日期（表示数据同步日期），下载链接指向官方下载页。
 """
+
 from __future__ import annotations
 
 from datetime import datetime, timezone
