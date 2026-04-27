@@ -1,7 +1,13 @@
 name: Python lint + test
 description: |
-  共享的"配置校验 + 静态检查 + 单测 + 字节码编译"步骤序列。
+  共享的"配置校验 + 静态检查 + 拆分后的单测 + 字节码编译"步骤序列。
   pr-checks 与 sync 两个 job 都需要这套相同的检查 —— 抽出来避免漂移。
+
+  step 拆分原则：
+    - 每个 test_*.py 模块独立一个 step，GitHub Actions UI 中可单独看 ✓ / ✗
+    - 同类（fetchers）合并为一个 step，避免 step 数量爆炸
+    - 除"配置校验"外所有 step 都加 if: !cancelled()，一次跑能看到所有失败
+      （配置坏掉时其它 step 仍可跑，因为它们大多 mock 输入；故也加 !cancelled）
 
   注意：本 action 不含 setup-python 与 install deps —— 这两步在 windows 与
   ubuntu 上的 pip cache 策略不同（sync.yml 用手动 cache step 防止内置 cache
@@ -14,18 +20,73 @@ runs:
       shell: bash
       run: python scripts/validate_config.py
 
-    - name: Lint Python
+    - name: Lint - ruff check
+      if: ${{ !cancelled() }}
       shell: bash
       run: python -m ruff check .
 
-    - name: Check Python formatting
+    - name: Lint - ruff format
+      if: ${{ !cancelled() }}
       shell: bash
       run: python -m ruff format --check .
 
-    - name: Run tests
+    - name: Test - config (validate_config)
+      if: ${{ !cancelled() }}
       shell: bash
-      run: python -m pytest tests -q
+      run: python -m pytest tests/test_validate_config.py -q
+
+    - name: Test - schema (latest.json)
+      if: ${{ !cancelled() }}
+      shell: bash
+      run: python -m pytest tests/test_latest_json_schema.py -q
+
+    - name: Test - render (README)
+      if: ${{ !cancelled() }}
+      shell: bash
+      run: python -m pytest tests/test_render.py -q
+
+    - name: Test - web (build_web)
+      if: ${{ !cancelled() }}
+      shell: bash
+      run: python -m pytest tests/test_build_web.py -q
+
+    - name: Test - vendor (update_vendor)
+      if: ${{ !cancelled() }}
+      shell: bash
+      run: python -m pytest tests/test_update_vendor.py -q
+
+    - name: Test - links (validate_links)
+      if: ${{ !cancelled() }}
+      shell: bash
+      run: python -m pytest tests/test_links.py -q
+
+    - name: Test - sync core
+      if: ${{ !cancelled() }}
+      shell: bash
+      run: python -m pytest tests/test_sync.py -q
+
+    - name: Test - http/net layer
+      if: ${{ !cancelled() }}
+      shell: bash
+      run: python -m pytest tests/test_http.py -q
+
+    - name: Test - fetchers
+      if: ${{ !cancelled() }}
+      shell: bash
+      run: |
+        python -m pytest \
+          tests/test_github_release.py \
+          tests/test_redirect_fetchers.py \
+          tests/test_wechat.py \
+          tests/test_everything.py \
+          -q
+
+    - name: Test - workflow.yml self-check
+      if: ${{ !cancelled() }}
+      shell: bash
+      run: python -m pytest tests/test_workflow.py -q
 
     - name: Compile Python
+      if: ${{ !cancelled() }}
       shell: bash
       run: python -m compileall scripts

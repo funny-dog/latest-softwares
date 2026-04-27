@@ -4,7 +4,18 @@ on:
   schedule:
     # 每日 UTC 01:00（北京时间 09:00）
     - cron: '0 1 * * *'
-  workflow_dispatch: {}
+  workflow_dispatch:
+    inputs:
+      only:
+        description: '只同步指定软件 id（逗号分隔，留空=全部）。例：vscode,python'
+        required: false
+        default: ''
+        type: string
+      skip:
+        description: '跳过指定软件 id（逗号分隔）。'
+        required: false
+        default: ''
+        type: string
   push:
     branches: [main, master]
     paths:
@@ -111,10 +122,19 @@ jobs:
         run: pwsh --version
 
       - name: Run sync
+        # 用 env 包住 workflow_dispatch 的用户输入，避免 ${{ }} 直接拼进 run
+        # 字符串导致 shell 注入。PowerShell 这边再用 splatting 安全拼参数。
         env:
           # 走 GITHUB_TOKEN 提高 GitHub API 速率限制（5000/h vs 60/h）
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: python scripts/sync.py
+          SYNC_ONLY: ${{ inputs.only }}
+          SYNC_SKIP: ${{ inputs.skip }}
+        shell: pwsh
+        run: |
+          $cmdArgs = @()
+          if ($env:SYNC_ONLY) { $cmdArgs += @('--only', $env:SYNC_ONLY) }
+          if ($env:SYNC_SKIP) { $cmdArgs += @('--skip', $env:SYNC_SKIP) }
+          python scripts/sync.py @cmdArgs
 
       - name: Validate & fix download links
         env:

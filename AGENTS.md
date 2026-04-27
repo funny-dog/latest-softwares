@@ -88,6 +88,16 @@ README.md              ← 最终产物（自动覆盖，禁止手动修改）
 - **不要手动编辑 `data/latest.json`**——由 `scripts/sync.py` 自动生成
 - 新增软件不要直接改 fetcher 代码——正确方式是在 `packages.yaml` 中添加配置项
 
+## 前端 vendor 维护
+
+`web/vendor/` 下所有第三方 JS 都本地化、**钉死版本** + sha256 校验，禁止运行时回到 CDN：
+
+- 单一来源：`web/vendor/manifest.json`（每条 asset：`path` / `source` / `version` / `license` / `sha256`）
+- CI 巡检：`python scripts/update_vendor.py`（校验模式，sha256 不匹配即 fail）
+- 升级流程：改 `manifest.json` 中的 `source`（版本号）→ `python scripts/update_vendor.py --update`（重新下载并写回 sha256）→ 一并提交文件 + manifest
+
+**关于 Tailwind**：`source` 必须是版本化 URL（如 `https://cdn.tailwindcss.com/3.4.17`），不要用 `https://cdn.tailwindcss.com`（滚动 latest，sha256 会随 Tailwind 升级而漂移）。
+
 ## 依赖
 
 - Python 3.10+，依赖见 `requirements.txt`（PyYAML, requests, Jinja2）
