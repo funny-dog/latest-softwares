@@ -52,6 +52,8 @@ def fetch(args: dict[str, Any]) -> FetchResult:
         name="Google Chrome",
         version=version or "unknown",
         source="Google Version History API",
+        version_kind="release_version",
+        version_source="Google Version History API",
         homepage="https://www.google.com/chrome/",
         notes_url="https://chromereleases.googleblog.com/",
         assets=assets,

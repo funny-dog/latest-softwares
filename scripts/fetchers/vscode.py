@@ -74,6 +74,8 @@ def fetch(args: dict[str, Any]) -> FetchResult:
         name="Visual Studio Code",
         version=version,
         source="VSCode Build Manifest",
+        version_kind="release_version",
+        version_source="VSCode Build Manifest productVersion",
         homepage="https://code.visualstudio.com",
         released_at=released_at,
         notes_url=f"https://code.visualstudio.com/updates/v{notes_anchor}",

@@ -2,9 +2,13 @@
 
 from __future__ import annotations
 
+from email.utils import parsedate_to_datetime
+from datetime import datetime, timezone
 import os
+import threading
 import time
 from typing import Any
+from urllib.parse import urlsplit
 
 import requests
 
@@ -15,6 +19,14 @@ DEFAULT_TIMEOUT = 30
 DEFAULT_RETRIES = 2
 DEFAULT_BACKOFF = 1.0
 RETRY_STATUS_CODES = {429, 500, 502, 503, 504}
+# Retry-After 上限：避免上游传入异常大值（例如 86400）导致 CI 卡死
+MAX_RETRY_AFTER = 60.0
+MAX_CONNECTIONS_PER_HOST = max(
+    1,
+    int(os.environ.get("LATEST_SOFTWARES_MAX_CONNECTIONS_PER_HOST", "4")),
+)
+_HOST_LIMITERS: dict[str, threading.BoundedSemaphore] = {}
+_HOST_LIMITERS_LOCK = threading.Lock()
 
 
 def base_headers(extra: dict[str, str] | None = None) -> dict[str, str]:
@@ -54,6 +66,42 @@ def browser_headers(extra: dict[str, str] | None = None) -> dict[str, str]:
     return headers
 
 
+def _host_key(url: str) -> str:
+    parsed = urlsplit(url)
+    return (parsed.netloc or url).lower()
+
+
+def _get_host_limiter(url: str) -> threading.BoundedSemaphore:
+    key = _host_key(url)
+    with _HOST_LIMITERS_LOCK:
+        limiter = _HOST_LIMITERS.get(key)
+        if limiter is None:
+            limiter = threading.BoundedSemaphore(MAX_CONNECTIONS_PER_HOST)
+            _HOST_LIMITERS[key] = limiter
+        return limiter
+
+
+def _parse_retry_after(value: str | None) -> float | None:
+    """解析 Retry-After 头，支持秒数与 HTTP-Date 两种格式。"""
+    if not value:
+        return None
+    value = value.strip()
+    try:
+        return float(value)
+    except ValueError:
+        pass
+    try:
+        target = parsedate_to_datetime(value)
+    except (TypeError, ValueError):
+        return None
+    if target is None:
+        return None
+    if target.tzinfo is None:
+        target = target.replace(tzinfo=timezone.utc)
+    delta = (target - datetime.now(tz=timezone.utc)).total_seconds()
+    return max(delta, 0.0)
+
+
 def request(
     method: str,
     url: str,
@@ -67,16 +115,19 @@ def request(
     """Run an HTTP request with default headers and light transient retries."""
     merged_headers = base_headers(headers)
     last_exc: requests.RequestException | None = None
+    host_limiter = _get_host_limiter(url)
 
     for attempt in range(retries + 1):
+        retry_after: float | None = None
         try:
-            response = requests.request(
-                method,
-                url,
-                headers=merged_headers,
-                timeout=timeout,
-                **kwargs,
-            )
+            with host_limiter:
+                response = requests.request(
+                    method,
+                    url,
+                    headers=merged_headers,
+                    timeout=timeout,
+                    **kwargs,
+                )
         except requests.RequestException as exc:
             last_exc = exc
             if attempt >= retries:
@@ -84,9 +135,15 @@ def request(
         else:
             if response.status_code not in RETRY_STATUS_CODES or attempt >= retries:
                 return response
+            # 优先用服务端给的 Retry-After（GitHub 限流场景下最准）
+            retry_after = _parse_retry_after(response.headers.get("Retry-After"))
             response.close()
 
-        time.sleep(float(backoff) * (2**attempt))
+        if retry_after is not None:
+            delay = min(retry_after, MAX_RETRY_AFTER)
+        else:
+            delay = float(backoff) * (2**attempt)
+        time.sleep(delay)
 
     if last_exc is not None:
         raise last_exc

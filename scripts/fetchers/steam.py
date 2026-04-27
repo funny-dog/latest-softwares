@@ -58,6 +58,8 @@ def fetch(args: dict[str, Any]) -> FetchResult:
         name="Steam",
         version=version or "unknown",
         source="Valve Client Update API",
+        version_kind="build_date",
+        version_source="Valve Client Update API timestamp",
         homepage="https://store.steampowered.com/about/",
         notes_url="https://store.steampowered.com/news/",
         assets=assets,

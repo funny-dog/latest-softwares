@@ -9,10 +9,22 @@ on:
     branches: [main, master]
     paths:
       - 'packages.yaml'
+      - 'requirements*.txt'
       - 'scripts/**'
+      - 'tests/**'
       - 'README.template.md'
       - 'web/**'
       - 'deploy/**'
+      - '.github/workflows/sync.yml'
+  pull_request:
+    branches: [main, master]
+    paths:
+      - 'packages.yaml'
+      - 'requirements*.txt'
+      - 'scripts/**'
+      - 'tests/**'
+      - 'README.template.md'
+      - 'web/**'
       - '.github/workflows/sync.yml'
 
 permissions:
@@ -24,10 +36,45 @@ concurrency:
 
 jobs:
   # ==========================================================================
+  # Job 0: PR 轻量检查 —— 仅 PR 触发，跑在 ubuntu 上以节省启动时间
+  #   不跑真实 sync / Fido / 网络密集的 validate_links —— 那些留给 main 分支
+  # ==========================================================================
+  pr-checks:
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Setup Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+          cache-dependency-path: requirements*.txt
+
+      - name: Install Python dependencies
+        run: pip install -r requirements.txt -r requirements-dev.txt
+
+      - name: Lint + test
+        uses: ./.github/actions/python-lint-test
+
+      # 用仓库内已 commit 的 data/latest.json 验证 README 渲染一致性
+      - name: Check rendered README
+        run: python scripts/render.py --check
+
+      - name: Build web (dist/)
+        run: python scripts/build_web.py
+
+  # ==========================================================================
   # Job 1: 数据同步 + 渲染 README + 构建 web 产物
   #   用 windows-latest 是为了让 Fido.ps1 能跑（OSVersion.Platform 硬检查）
+  #   PR 不跑此 job —— 真实 sync 涉及 Microsoft / GitHub 等多源网络请求
   # ==========================================================================
   sync:
+    if: github.event_name != 'pull_request'
     runs-on: windows-latest
     timeout-minutes: 20
 
@@ -50,12 +97,15 @@ jobs:
         uses: actions/cache@v4
         with:
           path: ${{ steps.pip-cache.outputs.dir }}
-          key: ${{ runner.os }}-pip-${{ hashFiles('requirements.txt') }}
+          key: ${{ runner.os }}-pip-${{ hashFiles('requirements*.txt') }}
           restore-keys: |
             ${{ runner.os }}-pip-
 
       - name: Install Python dependencies
-        run: pip install -r requirements.txt
+        run: pip install -r requirements.txt -r requirements-dev.txt
+
+      - name: Lint + test
+        uses: ./.github/actions/python-lint-test
 
       - name: Verify pwsh
         run: pwsh --version
@@ -71,8 +121,16 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: python scripts/validate_links.py
 
+      # sync.py 重写了 latest.json，再跑一次 schema 校验拦截新引入的数据问题
+      # （fetcher 静默返回空 assets / 占位符未替换 / 非法 URL 等）
+      - name: Re-validate latest.json schema
+        run: python -m pytest tests/test_latest_json_schema.py -q
+
       - name: Render README
         run: python scripts/render.py
+
+      - name: Check rendered README
+        run: python scripts/render.py --check
 
       - name: Build web (dist/)
         run: python scripts/build_web.py
@@ -86,8 +144,6 @@ jobs:
           commit_user_email: '41898282+github-actions[bot]@users.noreply.github.com'
 
       - name: Upload dist artifact
-        # PR 不打包；调度/push/手动都打包
-        if: github.event_name != 'pull_request'
         uses: actions/upload-artifact@v6
         with:
           name: dist
@@ -111,6 +167,23 @@ jobs:
         with:
           name: dist
           path: dist/
+
+      - name: Validate deploy secrets
+        env:
+          ALIYUN_DEPLOY_KEY:  ${{ secrets.ALIYUN_DEPLOY_KEY }}
+          ALIYUN_HOST:        ${{ secrets.ALIYUN_HOST }}
+          ALIYUN_USER:        ${{ secrets.ALIYUN_USER }}
+          ALIYUN_DEPLOY_PATH: ${{ secrets.ALIYUN_DEPLOY_PATH }}
+        run: |
+          missing=()
+          [ -n "${ALIYUN_DEPLOY_KEY:-}" ] || missing+=("ALIYUN_DEPLOY_KEY")
+          [ -n "${ALIYUN_HOST:-}" ] || missing+=("ALIYUN_HOST")
+          [ -n "${ALIYUN_USER:-}" ] || missing+=("ALIYUN_USER")
+          [ -n "${ALIYUN_DEPLOY_PATH:-}" ] || missing+=("ALIYUN_DEPLOY_PATH")
+          if [ "${#missing[@]}" -gt 0 ]; then
+            printf 'Missing required deploy secrets: %s\n' "${missing[*]}" >&2
+            exit 1
+          fi
 
       - name: Setup SSH
         env:

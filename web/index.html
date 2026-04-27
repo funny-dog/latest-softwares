@@ -149,13 +149,18 @@
 
           <!-- 版本 + 日期 -->
           <div class="flex items-center gap-3 text-xs text-zinc-500 dark:text-zinc-400 mb-4">
-            <span class="font-mono font-medium text-zinc-700 dark:text-zinc-300">v<span x-text="pkg.version"></span></span>
+            <span
+              class="font-mono font-medium text-zinc-700 dark:text-zinc-300"
+              :title="pkg.version_source ? (versionKindLabel(pkg.version_kind) + ' · ' + pkg.version_source) : null"
+            >v<span x-text="pkg.version"></span></span>
             <span x-show="pkg.released_at">·</span>
             <span x-show="pkg.released_at" x-text="formatDate(pkg.released_at)"></span>
             <span
               x-show="pkg._stale || pkg.warnings?.length"
               class="text-amber-500 dark:text-amber-400"
-              :title="pkg._stale ? '本次抓取失败，复用上次数据' : pkg.warnings.join('；')"
+              :title="pkg._stale
+                ? ('本次抓取失败，复用上次数据' + (pkg._stale_reason ? '：' + pkg._stale_reason : ''))
+                : pkg.warnings.join('；')"
             >⚠</span>
           </div>
 

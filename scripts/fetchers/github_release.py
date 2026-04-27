@@ -109,6 +109,8 @@ def fetch(args: dict[str, Any]) -> FetchResult:
         name=repo.split("/")[-1],
         version=version,
         source=f"GitHub Release: {repo}",
+        version_kind="release_version",
+        version_source="GitHub release tag",
         homepage=f"https://github.com/{repo}",
         released_at=rel.get("published_at"),
         notes_url=rel.get("html_url"),

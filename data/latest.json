@@ -1,10 +1,13 @@
 {
   "schema_version": 1,
+  "generated_at": "2026-04-27T12:02:29+00:00",
   "packages": [
     {
       "id": "windows11",
       "name": "Windows 11",
       "version": "25H2",
+      "version_kind": "release_label",
+      "version_source": "Fido ISO filename parsed from Microsoft download URL",
       "source": "Microsoft Software Download (via Fido)",
       "category": "操作系统",
       "homepage": "https://www.microsoft.com/software-download/windows11",
@@ -19,12 +22,17 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-27T05:18:06+00:00"
+      "fetched_at": "2026-04-27T05:18:06+00:00",
+      "_stale": true,
+      "_stale_reason": "未找到 pwsh，无法运行 Fido：[Errno 2] No such file or directory: 'pwsh'",
+      "last_success_at": "2026-04-27T05:18:06+00:00"
     },
     {
       "id": "v2rayn",
       "name": "v2rayN",
       "version": "7.20.4",
+      "version_kind": "release_version",
+      "version_source": "GitHub release tag",
       "source": "GitHub Release: 2dust/v2rayN",
       "category": "网络代理",
       "homepage": "https://github.com/2dust/v2rayN",
@@ -60,12 +68,15 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-27T05:17:59+00:00"
+      "fetched_at": "2026-04-27T12:02:25+00:00",
+      "last_success_at": "2026-04-27T12:02:25+00:00"
     },
     {
       "id": "vscode",
       "name": "Visual Studio Code",
       "version": "1.117.0",
+      "version_kind": "release_version",
+      "version_source": "VSCode Build Manifest productVersion",
       "source": "VSCode Build Manifest",
       "category": "开发工具",
       "homepage": "https://code.visualstudio.com",
@@ -101,13 +112,15 @@
           "sha256": "bc5017110545de218ac71df0bdcf40665ec00e9de322825e29a28eebc1e3e1a2"
         }
       ],
-      "fetched_at": "2026-04-27T05:12:47+00:00",
-      "_stale": true
+      "fetched_at": "2026-04-27T12:02:27+00:00",
+      "last_success_at": "2026-04-27T12:02:27+00:00"
     },
     {
       "id": "chrome",
       "name": "Google Chrome",
       "version": "148.0.7778.56",
+      "version_kind": "release_version",
+      "version_source": "Google Version History API",
       "source": "Google Version History API",
       "category": "浏览器",
       "homepage": "https://www.google.com/chrome/",
@@ -129,12 +142,15 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-27T05:17:59+00:00"
+      "fetched_at": "2026-04-27T12:02:27+00:00",
+      "last_success_at": "2026-04-27T12:02:27+00:00"
     },
     {
       "id": "steam",
       "name": "Steam",
       "version": "2026-01-30",
+      "version_kind": "build_date",
+      "version_source": "Valve Client Update API timestamp",
       "source": "Valve Client Update API",
       "category": "游戏平台",
       "homepage": "https://store.steampowered.com/about/",
@@ -149,12 +165,15 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-27T05:17:59+00:00"
+      "fetched_at": "2026-04-27T12:02:26+00:00",
+      "last_success_at": "2026-04-27T12:02:26+00:00"
     },
     {
       "id": "wegame",
       "name": "WeGame",
       "version": "2026-04-27",
+      "version_kind": "sync_date",
+      "version_source": "UTC sync date; no public version API",
       "source": "手动同步（无 API）",
       "category": "游戏平台",
       "homepage": "https://www.wegame.com.cn/",
@@ -169,12 +188,15 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-27T05:17:58+00:00"
+      "fetched_at": "2026-04-27T12:02:24+00:00",
+      "last_success_at": "2026-04-27T12:02:24+00:00"
     },
     {
       "id": "localsend",
       "name": "LocalSend",
       "version": "1.17.0",
+      "version_kind": "release_version",
+      "version_source": "GitHub release tag",
       "source": "GitHub Release: localsend/localsend",
       "category": "通用工具",
       "homepage": "https://localsend.org",
@@ -196,12 +218,15 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-27T05:17:59+00:00"
+      "fetched_at": "2026-04-27T12:02:26+00:00",
+      "last_success_at": "2026-04-27T12:02:26+00:00"
     },
     {
       "id": "bitwarden",
       "name": "Bitwarden Desktop",
       "version": "2026.3.1",
+      "version_kind": "release_version",
+      "version_source": "GitHub release tag",
       "source": "GitHub Release: bitwarden/clients",
       "category": "通用工具",
       "homepage": "https://bitwarden.com/download/",
@@ -223,12 +248,15 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-27T05:17:59+00:00"
+      "fetched_at": "2026-04-27T12:02:26+00:00",
+      "last_success_at": "2026-04-27T12:02:26+00:00"
     },
     {
       "id": "codex",
       "name": "OpenAI Codex",
       "version": "0.125.0",
+      "version_kind": "release_version",
+      "version_source": "GitHub release tag",
       "source": "GitHub Release: openai/codex",
       "category": "开发工具",
       "homepage": "https://github.com/openai/codex",
@@ -264,12 +292,15 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-27T05:18:01+00:00"
+      "fetched_at": "2026-04-27T12:02:29+00:00",
+      "last_success_at": "2026-04-27T12:02:29+00:00"
     },
     {
       "id": "baidunetdisk",
       "name": "百度网盘",
       "version": "2026-04-24",
+      "version_kind": "page_date",
+      "version_source": "download page window.__V20_VER__ build timestamp",
       "source": "百度网盘下载页（SPA，仅能取页面更新日期）",
       "category": "通用工具",
       "homepage": "https://pan.baidu.com/",
@@ -291,12 +322,15 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-27T05:17:59+00:00"
+      "fetched_at": "2026-04-27T12:02:24+00:00",
+      "last_success_at": "2026-04-27T12:02:24+00:00"
     },
     {
       "id": "geek",
       "name": "Geek Uninstaller",
       "version": "1.5.3.170",
+      "version_kind": "release_version",
+      "version_source": "official download page HTML",
       "source": "Geek Uninstaller 官网",
       "category": "通用工具",
       "homepage": "https://geekuninstaller.com/",
@@ -311,12 +345,15 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-27T05:17:59+00:00"
+      "fetched_at": "2026-04-27T12:02:27+00:00",
+      "last_success_at": "2026-04-27T12:02:27+00:00"
     },
     {
       "id": "everything",
       "name": "Everything",
       "version": "1.4.1.1032",
+      "version_kind": "release_version",
+      "version_source": "official download page HTML",
       "source": "voidtools 官网",
       "category": "通用工具",
       "homepage": "https://www.voidtools.com/",
@@ -352,12 +389,15 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-27T05:17:59+00:00"
+      "fetched_at": "2026-04-27T12:02:28+00:00",
+      "last_success_at": "2026-04-27T12:02:28+00:00"
     },
     {
       "id": "nvidia-app",
       "name": "NVIDIA App",
       "version": "2026-04-27",
+      "version_kind": "sync_date",
+      "version_source": "UTC sync date; no public version API",
       "source": "手动同步（无 API）",
       "category": "系统工具",
       "homepage": "https://www.nvidia.com/en-us/software/nvidia-app/",
@@ -372,12 +412,15 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-27T05:17:59+00:00"
+      "fetched_at": "2026-04-27T12:02:24+00:00",
+      "last_success_at": "2026-04-27T12:02:24+00:00"
     },
     {
       "id": "qq",
       "name": "QQ",
       "version": "2026-04-27",
+      "version_kind": "sync_date",
+      "version_source": "UTC sync date; no public version API",
       "source": "手动同步（无 API）",
       "category": "即时通讯",
       "homepage": "https://im.qq.com/",
@@ -399,12 +442,15 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-27T05:17:59+00:00"
+      "fetched_at": "2026-04-27T12:02:24+00:00",
+      "last_success_at": "2026-04-27T12:02:24+00:00"
     },
     {
       "id": "wechat",
       "name": "微信",
-      "version": "214.172.387.384",
+      "version": "8.0.71",
+      "version_kind": "release_version",
+      "version_source": "Content-Disposition / official page; date fallback when unavailable",
       "source": "微信官网",
       "category": "即时通讯",
       "homepage": "https://weixin.qq.com/",
@@ -426,12 +472,15 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-27T05:18:00+00:00"
+      "fetched_at": "2026-04-27T12:02:24+00:00",
+      "last_success_at": "2026-04-27T12:02:24+00:00"
     },
     {
       "id": "yy",
       "name": "YY 语音",
       "version": "2026-04-27",
+      "version_kind": "sync_date",
+      "version_source": "UTC sync date; no public version API",
       "source": "手动同步（无 API）",
       "category": "即时通讯",
       "homepage": "https://www.yy.com/",
@@ -446,12 +495,22 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-27T05:17:59+00:00"
+      "fetched_at": "2026-04-27T12:02:24+00:00",
+      "last_success_at": "2026-04-27T12:02:24+00:00"
     }
   ],
   "stats": {
     "total": 16,
     "success": 15,
-    "failed": 1
+    "failed": 1,
+    "failed_ids": [
+      "windows11"
+    ],
+    "failures": [
+      {
+        "id": "windows11",
+        "error": "未找到 pwsh，无法运行 Fido：[Errno 2] No such file or directory: 'pwsh'"
+      }
+    ]
   }
 }

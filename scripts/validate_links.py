@@ -3,8 +3,8 @@
 遍历 data/latest.json 中所有 asset URL，发送 HEAD 请求校验可达性。
 若发现失效链接（4xx/5xx），根据 fetcher 类型尝试自动修复：
 
-  - github_release：重新查询 GitHub API，按 pattern 匹配最新 asset
-  - 其它 fetcher：输出警告，暂不处理
+  - 重新调用对应 fetcher，按相同 platform 查找最新 URL
+  - 无法重新抓取或 URL 未变化时输出警告
 
 修复后的数据写回 data/latest.json，供后续 render 使用。
 """
@@ -12,20 +12,22 @@
 from __future__ import annotations
 
 import json
-import re
 import sys
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
 from typing import Any
 
-import requests
 import yaml
 
 if __package__ in (None, ""):
     sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
-    from scripts.net import get, get_json, github_headers, head  # type: ignore
+    from scripts.fetchers import FETCHERS  # type: ignore
+    from scripts.link_utils import is_direct_link  # type: ignore
+    from scripts.net import get, head  # type: ignore
 else:
-    from .net import get, get_json, github_headers, head
+    from .fetchers import FETCHERS
+    from .link_utils import is_direct_link
+    from .net import get, head
 
 # Windows runner 默认 cp1252，输出 ✓/✗/中文会 UnicodeEncodeError 进而崩掉整个脚本。
 # 与 sync.py / render.py / build_web.py 保持一致。
@@ -42,19 +44,6 @@ PACKAGES_FILE = REPO_ROOT / "packages.yaml"
 
 TIMEOUT = 30
 MAX_WORKERS = 15  # URL 检查纯 I/O，可开更多线程（比 sync 多，无 API 限流压力）
-
-# 与 web/app.js isDirectLink() 保持一致的文件扩展名集合
-_DIRECT_EXT_PATTERN = re.compile(
-    r"\.(exe|dmg|iso|zip|tar\.gz|msi|pkg|deb|rpm|appimage|7z)$"
-)
-
-
-def _is_direct_link(url: str) -> bool:
-    """判断 URL 是否为直链下载（与前端 isDirectLink 逻辑一致）。"""
-    if not url:
-        return False
-    path = url.split("?")[0].lower()
-    return bool(_DIRECT_EXT_PATTERN.search(path))
 
 
 def validate_and_fix() -> int:
@@ -80,7 +69,7 @@ def validate_and_fix() -> int:
             if not url:
                 continue
 
-            if not _is_direct_link(url):
+            if not is_direct_link(url):
                 landing_count += 1
                 print(f"  ↗ {eid} [{asset.get('platform', '')}]: 跳转页，跳过验证")
                 continue
@@ -114,16 +103,11 @@ def validate_and_fix() -> int:
         print(f"  ✗ {eid} [{platform}]: 链接失效 {url}", file=sys.stderr)
 
         config = configs.get(eid)
-        fetcher_name = config.get("fetcher", "") if config else ""
         asset = pkg["assets"][i]
 
-        fixed_url = None
-        if fetcher_name == "github_release":
-            fixed_url = _fix_github_asset(config, asset)
-        elif fetcher_name in ("chrome_official", "steam_official"):
-            fixed_url = _fix_fixed_url(fetcher_name, config, asset)
+        fixed_url = _fix_by_refetch(config, asset)
 
-        if fixed_url:
+        if fixed_url and fixed_url != url:
             pkg["assets"][i]["url"] = fixed_url
             total_fixed += 1
             print(f"    ↳ 已修复 → {fixed_url}")
@@ -171,101 +155,23 @@ def _check_url_robust(url: str) -> bool:
     return _check_url(url) or _check_url_get_fallback(url)
 
 
-def _fix_github_asset(config: dict[str, Any], asset: dict[str, Any]) -> str | None:
-    """重新查询 GitHub Release，按 pattern 找到正确的 asset URL。"""
-    import fnmatch
-
-    repo = config["args"]["repo"]
-    tag_pattern = config["args"].get("tag_pattern")
-    asset_specs = config["args"].get("assets", [])
-
-    # 找到当前 asset 对应的 pattern
-    current_platform = asset.get("platform", "")
-    pattern = None
-    for spec in asset_specs:
-        if spec.get("platform") == current_platform:
-            pattern = spec["pattern"]
-            break
-    if not pattern:
+def _fix_by_refetch(config: dict[str, Any], asset: dict[str, Any]) -> str | None:
+    """Refetch package metadata and return the URL for the same platform."""
+    fetcher_name = config.get("fetcher", "")
+    fetcher = FETCHERS.get(fetcher_name)
+    if fetcher is None:
         return None
 
-    # 获取 release
-    try:
-        if tag_pattern:
-            # 有 tag_pattern，按 release_scan_pages 遍历 release 列表
-            release = None
-            compiled = re.compile(tag_pattern)
-            scan_pages = max(1, int(config["args"].get("release_scan_pages", 1)))
-            for page in range(1, scan_pages + 1):
-                api_url = f"https://api.github.com/repos/{repo}/releases?per_page=30&page={page}"
-                for rel in get_json(
-                    api_url,
-                    headers=github_headers(),
-                    timeout=TIMEOUT,
-                ):
-                    if rel.get("prerelease") or rel.get("draft"):
-                        continue
-                    if compiled.search(rel.get("tag_name", "")):
-                        release = rel
-                        break
-                if release:
-                    break
-            if not release:
-                return None
-        else:
-            # 无 tag_pattern，直接用 latest
-            api_url = f"https://api.github.com/repos/{repo}/releases/latest"
-            try:
-                release = get_json(api_url, headers=github_headers(), timeout=TIMEOUT)
-            except requests.HTTPError as exc:
-                if exc.response is not None and exc.response.status_code == 404:
-                    return None
-                raise
-
-        # 在 release assets 中找匹配的
-        for ra in release.get("assets", []):
-            if fnmatch.fnmatch(ra["name"], pattern):
-                return ra["browser_download_url"]
-
-    except Exception as e:
-        print(f"    github_release 修复失败: {e}", file=sys.stderr)
-
-    return None
-
-
-def _fix_fixed_url(
-    fetcher_name: str, config: dict[str, Any], asset: dict[str, Any]
-) -> str | None:
-    """固定 URL 的 fetcher：重新抓取版本，确认 URL 是否变化。"""
-    if fetcher_name == "chrome_official":
-        return _fix_chrome(config, asset)
-    if fetcher_name == "steam_official":
-        # Steam 的 URL 是固定的，直接返回原 URL（如果可访问性检查失败可能是临时问题）
-        return asset.get("url")
-    return None
-
-
-def _fix_chrome(config: dict[str, Any], asset: dict[str, Any]) -> str | None:
-    """Chrome 的下载 URL 是固定的，重新确认 API 版本是否存在。"""
     platform = asset.get("platform", "")
-    spec = None
-    for s in config["args"].get("platforms", []):
-        if s.get("platform") == platform:
-            spec = s
-            break
-    if not spec:
+    try:
+        result = fetcher(config.get("args", {}) or {})
+    except Exception as exc:
+        print(f"    {fetcher_name} 重新抓取失败: {exc}", file=sys.stderr)
         return None
 
-    api_url = (
-        f"https://versionhistory.googleapis.com/v1/chrome/platforms/"
-        f"{spec['os_key']}/channels/{spec['channel']}/versions?pageSize=1"
-    )
-    try:
-        versions = get_json(api_url, timeout=TIMEOUT).get("versions", [])
-        if versions:
-            return spec["download_url"]
-    except Exception:
-        pass
+    for candidate in result.assets:
+        if candidate.platform == platform:
+            return candidate.url
     return None
 
 

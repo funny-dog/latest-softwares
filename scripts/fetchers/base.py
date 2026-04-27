@@ -30,6 +30,8 @@ class FetchResult:
     name: str
     version: str
     source: str  # 数据来源描述，便于排错
+    version_kind: str = "release_version"
+    version_source: str | None = None
     category: str | None = None
     homepage: str | None = None
     released_at: str | None = None  # ISO8601 字符串
@@ -40,6 +42,8 @@ class FetchResult:
 
     def to_dict(self) -> dict[str, Any]:
         data = asdict(self)
+        if data.get("version_source") is None:
+            data["version_source"] = data["source"]
         if not data["warnings"]:
             data.pop("warnings")
         return data

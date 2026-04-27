@@ -5,6 +5,7 @@
 
 from __future__ import annotations
 
+import argparse
 import json
 import sys
 from datetime import datetime, timezone
@@ -54,17 +55,37 @@ def group_by_category(packages: list[dict]) -> list[tuple[str, list[dict]]]:
     return [(cat, buckets[cat]) for cat in seen_order]
 
 
-def main() -> int:
-    if not DATA_FILE.exists():
-        print(f"找不到 {DATA_FILE}，请先运行 scripts/sync.py", file=sys.stderr)
-        return 1
+def _format_updated_at(value: str | None) -> str:
+    if not value:
+        return datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M:%S")
+    try:
+        normalized = value.replace("Z", "+00:00")
+        dt = datetime.fromisoformat(normalized)
+        if dt.tzinfo is None:
+            dt = dt.replace(tzinfo=timezone.utc)
+        return dt.astimezone(timezone.utc).strftime("%Y-%m-%d %H:%M:%S")
+    except ValueError:
+        return value
 
-    data = json.loads(DATA_FILE.read_text(encoding="utf-8"))
+
+def _latest_fetched_at(packages: list[dict]) -> str | None:
+    values = sorted(
+        pkg.get("fetched_at", "") for pkg in packages if pkg.get("fetched_at")
+    )
+    return values[-1] if values else None
+
+
+def render_markdown(data: dict) -> str:
     packages = data.get("packages", [])
     stats = data.get("stats", {})
+    updated_at = (
+        data.get("generated_at")
+        or stats.get("generated_at")
+        or _latest_fetched_at(packages)
+    )
 
     env = Environment(
-        loader=FileSystemLoader(str(REPO_ROOT)),
+        loader=FileSystemLoader(str(TEMPLATE_FILE.parent)),
         autoescape=select_autoescape(
             enabled_extensions=()
         ),  # Markdown 不需要 HTML 转义
@@ -75,12 +96,45 @@ def main() -> int:
     env.filters["fmt_date"] = fmt_date
 
     tmpl = env.get_template(TEMPLATE_FILE.name)
-    rendered = tmpl.render(
-        updated_at=datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M:%S"),
+    return tmpl.render(
+        updated_at=_format_updated_at(updated_at),
         grouped=group_by_category(packages),
         total=stats.get("total", len(packages)),
         failed=stats.get("failed", 0),
     )
+
+
+def main(argv: list[str] | None = None) -> int:
+    parser = argparse.ArgumentParser()
+    parser.add_argument(
+        "--check",
+        action="store_true",
+        help="只检查 README.md 是否与模板和数据一致，不写文件",
+    )
+    args = parser.parse_args(argv)
+
+    if not DATA_FILE.exists():
+        print(f"找不到 {DATA_FILE}，请先运行 scripts/sync.py", file=sys.stderr)
+        return 1
+
+    data = json.loads(DATA_FILE.read_text(encoding="utf-8"))
+    packages = data.get("packages", [])
+    rendered = render_markdown(data)
+
+    if args.check:
+        if not OUTPUT_FILE.exists():
+            print(f"找不到 {OUTPUT_FILE}", file=sys.stderr)
+            return 1
+        current = OUTPUT_FILE.read_text(encoding="utf-8")
+        if current != rendered:
+            print(
+                f"{OUTPUT_FILE.relative_to(REPO_ROOT)} 与模板渲染结果不一致",
+                file=sys.stderr,
+            )
+            return 1
+        print(f"{OUTPUT_FILE.relative_to(REPO_ROOT)} 已是最新")
+        return 0
+
     OUTPUT_FILE.write_text(rendered, encoding="utf-8")
     print(
         f"写入 {OUTPUT_FILE.relative_to(REPO_ROOT)}（{len(packages)} 项软件，分 {len(group_by_category(packages))} 组）"

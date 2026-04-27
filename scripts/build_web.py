@@ -16,6 +16,12 @@ import shutil
 import sys
 from pathlib import Path
 
+if __package__ in (None, ""):
+    sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+    from scripts.link_utils import DIRECT_FILE_EXTENSIONS  # type: ignore
+else:
+    from .link_utils import DIRECT_FILE_EXTENSIONS
+
 # Windows runner 默认 cp1252，输出 ✓ 会崩
 for _stream in (sys.stdout, sys.stderr):
     if hasattr(_stream, "reconfigure"):
@@ -113,6 +119,7 @@ def inject_data() -> int:
             f"找不到 {DATA_FILE.relative_to(REPO_ROOT)}，请先跑 scripts/sync.py"
         )
     data = json.loads(DATA_FILE.read_text(encoding="utf-8"))
+    data["direct_file_extensions"] = list(DIRECT_FILE_EXTENSIONS)
     # ensure_ascii=False 让中文不被转义成 \uXXXX，体积更小
     data_json = _json_for_inline_script(data)
     replacement = f"/*__DATA__*/ {data_json} /*__DATA__*/"
@@ -146,9 +153,7 @@ def main() -> int:
         f"✓ dist/ 构建完成（{n_files} 个静态文件，"
         f"{len(vendor_assets)} 个 vendor 文件已校验，注入 {n_pkgs} 个软件数据）"
     )
-    print(
-        f"  本地预览: uv run python -m http.server -d {DIST.relative_to(REPO_ROOT)} 8000"
-    )
+    print(f"  本地预览: python -m http.server -d {DIST.relative_to(REPO_ROOT)} 8000")
     return 0
 
 

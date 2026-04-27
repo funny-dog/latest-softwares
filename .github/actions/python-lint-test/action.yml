@@ -1,0 +1,31 @@
+name: Python lint + test
+description: |
+  共享的"配置校验 + 静态检查 + 单测 + 字节码编译"步骤序列。
+  pr-checks 与 sync 两个 job 都需要这套相同的检查 —— 抽出来避免漂移。
+
+  注意：本 action 不含 setup-python 与 install deps —— 这两步在 windows 与
+  ubuntu 上的 pip cache 策略不同（sync.yml 用手动 cache step 防止内置 cache
+  异常吞日志），强行统一会丢失这个意图。
+
+runs:
+  using: composite
+  steps:
+    - name: Validate package config
+      shell: bash
+      run: python scripts/validate_config.py
+
+    - name: Lint Python
+      shell: bash
+      run: python -m ruff check .
+
+    - name: Check Python formatting
+      shell: bash
+      run: python -m ruff format --check .
+
+    - name: Run tests
+      shell: bash
+      run: python -m pytest tests -q
+
+    - name: Compile Python
+      shell: bash
+      run: python -m compileall scripts

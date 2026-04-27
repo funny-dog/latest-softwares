@@ -132,6 +132,8 @@ def fetch(args: dict[str, Any]) -> FetchResult:
         name=f"Windows 11 ({lang}, {edition})",
         version=release,
         source="Microsoft Software Download (via Fido)",
+        version_kind="release_label",
+        version_source="Fido ISO filename parsed from Microsoft download URL",
         homepage="https://www.microsoft.com/software-download/windows11",
         notes_url="https://learn.microsoft.com/windows/release-health/windows11-release-information",
         assets=[asset],

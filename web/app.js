@@ -10,6 +10,7 @@ function app() {
     fuse: null,
     packages: [],
     lastUpdated: '—',
+    directFileExtensions: ['.exe', '.dmg', '.iso', '.zip', '.tar.gz', '.msi', '.pkg', '.deb', '.rpm', '.appimage', '.7z'],
 
     // ==== 生命周期 ====
     init() {
@@ -25,9 +26,10 @@ function app() {
       const data = window.__PKG_DATA__ || { packages: [], stats: {} };
       // 排序：先按分类（packages.yaml 顺序），再按 name
       this.packages = data.packages || [];
+      this.directFileExtensions = data.direct_file_extensions || this.directFileExtensions;
 
-      // 显示最近一次抓取时间（从第一个 fetched_at 取近似值）
-      const ts = this.packages
+      // 显示最近一次同步时间（优先使用 sync.py 写入的顶层 generated_at）
+      const ts = data.generated_at || this.packages
         .map(p => p.fetched_at)
         .filter(Boolean)
         .sort()
@@ -103,8 +105,8 @@ function app() {
     // 剥掉查询串后看路径是否以文件扩展名结尾
     isDirectLink(url) {
       if (!url) return false;
-      const path = url.toLowerCase().split('?')[0];
-      return /\.(exe|dmg|iso|zip|tar\.gz|msi|pkg|deb|rpm|appimage|7z)$/.test(path);
+      const path = url.toLowerCase().split(/[?#]/)[0];
+      return this.directFileExtensions.some(ext => path.endsWith(ext));
     },
 
     // ==== 平台徽章颜色（direct=实心填充 / page=描边空心） ====
@@ -160,6 +162,16 @@ function app() {
       let i = 0, v = bytes;
       while (v >= 1024 && i < units.length - 1) { v /= 1024; i++; }
       return `${v.toFixed(v < 10 && i > 0 ? 1 : 0)} ${units[i]}`;
+    },
+
+    versionKindLabel(kind) {
+      return {
+        release_version: '发布版本',
+        release_label: '发行标签',
+        build_date: '构建日期',
+        page_date: '页面日期',
+        sync_date: '同步日期',
+      }[kind] || kind || '版本';
     },
   };
 }

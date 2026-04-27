@@ -133,11 +133,12 @@ packages:
     homepage: https://www.voidtools.com/
     fetcher: everything
     args:
+      # {version} 占位符由 fetcher 解析到的真实版本动态填充
       platforms:
-        - { platform: win-x64, download_url: "https://www.voidtools.com/Everything-1.4.1.1032.x64-Setup.exe" }
-        - { platform: win-x86, download_url: "https://www.voidtools.com/Everything-1.4.1.1032.x86-Setup.exe" }
-        - { platform: win-x64-portable, download_url: "https://www.voidtools.com/Everything-1.4.1.1032.x64.zip" }
-        - { platform: win-x86-portable, download_url: "https://www.voidtools.com/Everything-1.4.1.1032.x86.zip" }
+        - { platform: win-x64,          download_url: "https://www.voidtools.com/Everything-{version}.x64-Setup.exe" }
+        - { platform: win-x86,          download_url: "https://www.voidtools.com/Everything-{version}.x86-Setup.exe" }
+        - { platform: win-x64-portable, download_url: "https://www.voidtools.com/Everything-{version}.x64.zip" }
+        - { platform: win-x86-portable, download_url: "https://www.voidtools.com/Everything-{version}.x86.zip" }
 
   - id: nvidia-app
     name: NVIDIA App

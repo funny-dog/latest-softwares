@@ -79,3 +79,9 @@ def test_vendor_manifest_checksums_match_real_files():
     }
     for entry in verified:
         assert re.fullmatch(r"[0-9a-f]{64}", entry["sha256"])
+
+
+def test_web_app_uses_generated_at_for_last_updated():
+    app_js = (build_web.WEB_SRC / "app.js").read_text(encoding="utf-8")
+
+    assert "data.generated_at" in app_js

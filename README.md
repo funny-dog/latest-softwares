@@ -3,7 +3,7 @@
 > 由 GitHub Actions 每日自动同步上游官方源的**最新版本元数据**。
 > 仓库**不托管二进制安装包**，下载按钮直接跳到上游官方下载链接。
 >
-> 📅 **最后更新**：`2026-04-27 05:38:30` (UTC)　· 共 16 项软件
+> 📅 **最后更新**：`2026-04-27 12:02:29` (UTC)　· 共 16 项软件（其中 1 项使用上次数据，标 ⚠️）
 
 ---
 
@@ -14,7 +14,7 @@
 
 | 软件 | 最新版本 | 发布日期 | 下载链接 | 来源 |
 |------|---------|---------|---------|------|
-| [**Windows 11**](https://www.microsoft.com/software-download/windows11) | `25H2` | — | [win-x64](https://software.download.prss.microsoft.com/dbazure/Win11_25H2_Chinese_Simplified_x64_v2.iso?t=89a589a9-da6d-44d0-a96d-7a80a945599d&P1=1777353484&P2=601&P3=2&P4=lavLX5vv7g3PPhqdnVlJ1bb%2biYvyx7o61g02yBKYTHmpYSnKa5Pm1sGQ%2b9pfv5Q8%2bxLS24lK9470M37p673eYwcFwUqf5EKkc4ebkh%2bhDExcsQ4kcMuFYm8pYFRYgPx72GPGWsKUmO6ru9b3ClTaue2MlB61Tq5hEgfF4ZV%2fYtWHPDVu9zLH4R%2bsqezSN5Lq16y6uXNpFKKEtf5esorxCHaFOL%2bYN%2bywFR4onG7%2fni94dYX6XNHm8ZwCp41lZGne10vAhM6MV3HHWerbNlznNBNZC2qH5UkAqAF19S5%2b9FW4OkZZRvwYc2H1CgJWi%2fCYTe2U8Vx%2b5LUZQ5uNrMyf%2bg%3d%3d) | Microsoft Software Download (via Fido) |
+| [**Windows 11**](https://www.microsoft.com/software-download/windows11) ⚠️ | `25H2` | — | [win-x64](https://software.download.prss.microsoft.com/dbazure/Win11_25H2_Chinese_Simplified_x64_v2.iso?t=89a589a9-da6d-44d0-a96d-7a80a945599d&P1=1777353484&P2=601&P3=2&P4=lavLX5vv7g3PPhqdnVlJ1bb%2biYvyx7o61g02yBKYTHmpYSnKa5Pm1sGQ%2b9pfv5Q8%2bxLS24lK9470M37p673eYwcFwUqf5EKkc4ebkh%2bhDExcsQ4kcMuFYm8pYFRYgPx72GPGWsKUmO6ru9b3ClTaue2MlB61Tq5hEgfF4ZV%2fYtWHPDVu9zLH4R%2bsqezSN5Lq16y6uXNpFKKEtf5esorxCHaFOL%2bYN%2bywFR4onG7%2fni94dYX6XNHm8ZwCp41lZGne10vAhM6MV3HHWerbNlznNBNZC2qH5UkAqAF19S5%2b9FW4OkZZRvwYc2H1CgJWi%2fCYTe2U8Vx%2b5LUZQ5uNrMyf%2bg%3d%3d) | Microsoft Software Download (via Fido)<br>⚠ 未找到 pwsh，无法运行 Fido：[Errno 2] No such file or directory: 'pwsh' |
 
 
 ### 网络代理
@@ -28,7 +28,7 @@
 
 | 软件 | 最新版本 | 发布日期 | 下载链接 | 来源 |
 |------|---------|---------|---------|------|
-| [**Visual Studio Code**](https://code.visualstudio.com) ⚠️ | `1.117.0` | 2026-04-21 | [win-x64](https://vscode.download.prss.microsoft.com/dbazure/download/stable/10c8e557c8b9f9ed0a87f61f1c9a44bde731c409/VSCodeUserSetup-x64-1.117.0.exe) · [win-arm64](https://vscode.download.prss.microsoft.com/dbazure/download/stable/10c8e557c8b9f9ed0a87f61f1c9a44bde731c409/VSCodeUserSetup-arm64-1.117.0.exe) · [mac-arm64](https://vscode.download.prss.microsoft.com/dbazure/download/stable/10c8e557c8b9f9ed0a87f61f1c9a44bde731c409/VSCode-darwin-arm64.dmg) · [mac-x64](https://vscode.download.prss.microsoft.com/dbazure/download/stable/10c8e557c8b9f9ed0a87f61f1c9a44bde731c409/VSCode-darwin-x64.dmg) | VSCode Build Manifest |
+| [**Visual Studio Code**](https://code.visualstudio.com) | `1.117.0` | 2026-04-21 | [win-x64](https://vscode.download.prss.microsoft.com/dbazure/download/stable/10c8e557c8b9f9ed0a87f61f1c9a44bde731c409/VSCodeUserSetup-x64-1.117.0.exe) · [win-arm64](https://vscode.download.prss.microsoft.com/dbazure/download/stable/10c8e557c8b9f9ed0a87f61f1c9a44bde731c409/VSCodeUserSetup-arm64-1.117.0.exe) · [mac-arm64](https://vscode.download.prss.microsoft.com/dbazure/download/stable/10c8e557c8b9f9ed0a87f61f1c9a44bde731c409/VSCode-darwin-arm64.dmg) · [mac-x64](https://vscode.download.prss.microsoft.com/dbazure/download/stable/10c8e557c8b9f9ed0a87f61f1c9a44bde731c409/VSCode-darwin-x64.dmg) | VSCode Build Manifest |
 | [**OpenAI Codex**](https://github.com/openai/codex) | `0.125.0` | 2026-04-24 | [win-x64](https://github.com/openai/codex/releases/download/rust-v0.125.0/codex-x86_64-pc-windows-msvc.exe) · [win-arm64](https://github.com/openai/codex/releases/download/rust-v0.125.0/codex-aarch64-pc-windows-msvc.exe) · [mac-arm64](https://github.com/openai/codex/releases/download/rust-v0.125.0/codex-aarch64-apple-darwin.dmg) · [mac-x64](https://github.com/openai/codex/releases/download/rust-v0.125.0/codex-x86_64-apple-darwin.tar.gz) | GitHub Release: openai/codex |
 
 
@@ -70,7 +70,7 @@
 | 软件 | 最新版本 | 发布日期 | 下载链接 | 来源 |
 |------|---------|---------|---------|------|
 | [**QQ**](https://im.qq.com/) | `2026-04-27` | — | [win-x64](https://im.qq.com/download/) · [mac-universal](https://im.qq.com/download/) | 手动同步（无 API） |
-| [**微信**](https://weixin.qq.com/) | `214.172.387.384` | — | [win-x64](https://dldir1.qq.com/weixin/Windows/WeChatSetup.exe) · [mac-universal](https://dldir1.qq.com/weixin/mac/WeChatMac.dmg) | 微信官网 |
+| [**微信**](https://weixin.qq.com/) | `8.0.71` | — | [win-x64](https://dldir1.qq.com/weixin/Windows/WeChatSetup.exe) · [mac-universal](https://dldir1.qq.com/weixin/mac/WeChatMac.dmg) | 微信官网 |
 | [**YY 语音**](https://www.yy.com/) | `2026-04-27` | — | [win-x64](https://www.yy.com/) | 手动同步（无 API） |
 
 
@@ -96,14 +96,45 @@
 
 ### 可用的 fetcher
 
-| fetcher | 适用场景 | 必要参数 |
-|---------|---------|---------|
-| `github_release` | 任何在 GitHub Releases 发布的软件 | `repo`, `assets[].pattern`（fnmatch 通配符） |
-| `windows11_fido` | Windows 11 ISO（微软官方下载页） | `lang`, `edition` |
-| `vscode_official` | VS Code | `builds[].build`（如 `win32-x64-user`） |
-| `chrome_official` | Google Chrome | `platforms[].os_key` + 固定 `download_url` |
+| fetcher | 适用场景 | 关键 args 字段 | 版本号来源 | 下载链接 |
+|---------|---------|--------------|----------|--------|
+| `github_release` | GitHub Releases 发布的软件（**通用首选**） | `repo`、`assets[].{platform, pattern}` | Release tag | 直链（GitHub asset） |
+| `vscode_official` | VS Code | `builds[].{platform, build}`（`build` 为 VSCode API 的 `platform.os`，如 `win32-x64-user`） | VSCode Build Manifest API | 直链 |
+| `chrome_official` | Google Chrome | `platforms[].{platform, os_key, channel, download_url}` | Google Version History API | 取决于 `download_url` |
+| `steam_official` | Steam 客户端 | `platforms[].{platform, download_url}` | Valve Client Update API（构建时间戳） | 取决于 `download_url` |
+| `windows11_fido` | Windows 11 ISO | `lang`（默认 `Chinese (Simplified)`）、`edition`（默认 `Pro`）、`arch`（默认 `x64`） | ISO URL 解析（如 `24H2`） | 直链，约 24 h 有效 |
+| `baidunetdisk` | 百度网盘 | `platforms[].{platform, download_url}` | 页面 `__V20_VER__`（构建日期，非客户端版本） | 取决于 `download_url` |
+| `geek` | Geek Uninstaller | `platforms[].{platform, download_url}` | 官网 HTML 解析 | 取决于 `download_url` |
+| `everything` | Everything 搜索 | `platforms[].{platform, download_url}` | 官网 HTML 解析 | 取决于 `download_url` |
+| `wechat_official` | 微信 PC 客户端 | `platforms[].{platform, download_url}` | 官网 HTML 解析；失败时退为当天日期 | 取决于 `download_url` |
+| `wegame_official` | WeGame | `platforms[].{platform, download_url?}`（可整体省略；缺 URL 时使用下载页） | 当天日期（SPA，无公开 API） | 固定跳转页 |
+| `nvidia_app` | NVIDIA App | `platforms[].{platform, download_url?}`（可整体省略；缺 URL 时使用下载页） | 当天日期（SPA，无公开 API） | 固定跳转页 |
+| `qq_official` | 腾讯 QQ（QQNT） | `platforms[].{platform, download_url?}`（可整体省略；缺 URL 时使用下载页） | 当天日期（SPA，无公开 API） | 固定跳转页 |
+| `yy_official` | YY 语音 | `platforms[].{platform, download_url?}`（可整体省略；缺 URL 时使用下载页） | 当天日期（SPA，无公开 API） | 固定跳转页 |
 
-monorepo（一个仓库发多个产品）可加 `tag_pattern` 正则筛选标签，如 Bitwarden 就用 `^desktop-v` 把 desktop 客户端的 release 挑出来。
+**`github_release` 扩展参数**
+
+- `tag_pattern`（正则）—— monorepo 场景，用正则从 release 列表中筛出目标子产品的 tag。例：Bitwarden 仓库同时发 Desktop / Web / CLI 等，用 `^desktop-v` 只挑 Desktop release；OpenAI Codex 用 `^rust-v`。不填则直接取 `/releases/latest`。
+- `release_scan_pages`（整数，默认 `1`）—— 仅当 `tag_pattern` 存在时有意义，控制翻页深度（每页 30 个 release）。若目标 tag 不靠前，可调大到 `2`–`3`。
+- `warnings` —— 运行时字段，不在 yaml 中配置。当某个 platform 的 `pattern` 在当次 Release 的 assets 里未找到匹配文件时，该 platform 跳过并记入 `warnings`；其余 platform 照常返回。README 中该行会出现 ⚠️ 标记。
+
+**直链 vs 跳转页**
+
+系统根据 `download_url` 的路径后缀自动判断类型，无需手动标注：
+
+- **直链**：URL 以 `.exe` / `.dmg` / `.iso` / `.zip` / `.tar.gz` / `.msi` / `.pkg` 等文件扩展名结尾，点击立即开始下载。Web 界面中对应**实心填充**徽章。
+- **跳转页**：URL 指向一个下载网页（无文件后缀），点击后需在页面上再手动选择下载。Web 界面中对应**空心描边**徽章。
+
+`validate_links.py` 仅校验直链的 HTTP 可达性；跳转页跳过不校验，避免把正常网页误判为失效链接。
+
+**版本字段语义**
+
+`data/latest.json` 每个软件条目都会写入 `version_kind` 和 `version_source`，用于区分表格中"最新版本"字段的真实含义：
+
+- `release_version`：上游发布版本号，例如 GitHub Release tag、官方 manifest、官网 HTML 解析出的版本。
+- `release_label`：发行标签，例如 Windows 11 ISO 文件名中的 `25H2`。
+- `build_date` / `page_date`：上游只暴露构建时间或页面更新时间时，展示为日期。
+- `sync_date`：上游没有公开版本 API，只能确认下载入口，本字段表示本次同步日期。
 
 ---
 
@@ -116,6 +147,14 @@ monorepo（一个仓库发多个产品）可加 `tag_pattern` 正则筛选标签
 工作流文件：[`.github/workflows/sync.yml`](.github/workflows/sync.yml)
 
 抓取结果原始数据：[`data/latest.json`](data/latest.json)
+
+本地调试时可以只同步部分软件，避免频繁请求所有上游：
+
+```bash
+python -m scripts.sync --only vscode,chrome
+python -m scripts.sync --skip windows11
+python -m scripts.render
+```
 
 ---
 

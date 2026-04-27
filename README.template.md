@@ -15,7 +15,7 @@
 | 软件 | 最新版本 | 发布日期 | 下载链接 | 来源 |
 |------|---------|---------|---------|------|
 {%- for it in items %}
-| {% if it.homepage %}[**{{ it.name }}**]({{ it.homepage }}){% else %}**{{ it.name }}**{% endif %}{% if it._stale or it.warnings %} ⚠️{% endif %} | `{{ it.version }}` | {{ it.released_at | fmt_date }} | {% for a in it.assets %}[{{ a.platform }}]({{ a.url }}){% if not loop.last %} · {% endif %}{% endfor %} | {{ it.source }}{% if it.warnings %}<br>⚠ {{ it.warnings | join("; ") }}{% endif %} |
+| {% if it.homepage %}[**{{ it.name }}**]({{ it.homepage }}){% else %}**{{ it.name }}**{% endif %}{% if it._stale or it.warnings %} ⚠️{% endif %} | `{{ it.version }}` | {{ it.released_at | fmt_date }} | {% for a in it.assets %}[{{ a.platform }}]({{ a.url }}){% if not loop.last %} · {% endif %}{% endfor %} | {{ it.source }}{% if it._stale_reason %}<br>⚠ {{ it._stale_reason }}{% endif %}{% if it.warnings %}<br>⚠ {{ it.warnings | join("; ") }}{% endif %} |
 {%- endfor %}
 
 {% endfor %}
@@ -52,10 +52,10 @@
 | `geek` | Geek Uninstaller | `platforms[].{platform, download_url}` | 官网 HTML 解析 | 取决于 `download_url` |
 | `everything` | Everything 搜索 | `platforms[].{platform, download_url}` | 官网 HTML 解析 | 取决于 `download_url` |
 | `wechat_official` | 微信 PC 客户端 | `platforms[].{platform, download_url}` | 官网 HTML 解析；失败时退为当天日期 | 取决于 `download_url` |
-| `wegame_official` | WeGame | `platforms[].{platform}`（`download_url` 固定，可省略） | 当天日期（SPA，无公开 API） | 固定跳转页 |
-| `nvidia_app` | NVIDIA App | `platforms[].{platform, download_url}` | 当天日期（SPA，无公开 API） | 固定跳转页 |
-| `qq_official` | 腾讯 QQ（QQNT） | `platforms[].{platform, download_url}` | 当天日期（SPA，无公开 API） | 固定跳转页 |
-| `yy_official` | YY 语音 | `platforms[].{platform}`（`download_url` 固定，可省略） | 当天日期（SPA，无公开 API） | 固定跳转页 |
+| `wegame_official` | WeGame | `platforms[].{platform, download_url?}`（可整体省略；缺 URL 时使用下载页） | 当天日期（SPA，无公开 API） | 固定跳转页 |
+| `nvidia_app` | NVIDIA App | `platforms[].{platform, download_url?}`（可整体省略；缺 URL 时使用下载页） | 当天日期（SPA，无公开 API） | 固定跳转页 |
+| `qq_official` | 腾讯 QQ（QQNT） | `platforms[].{platform, download_url?}`（可整体省略；缺 URL 时使用下载页） | 当天日期（SPA，无公开 API） | 固定跳转页 |
+| `yy_official` | YY 语音 | `platforms[].{platform, download_url?}`（可整体省略；缺 URL 时使用下载页） | 当天日期（SPA，无公开 API） | 固定跳转页 |
 
 **`github_release` 扩展参数**
 
@@ -72,6 +72,15 @@
 
 `validate_links.py` 仅校验直链的 HTTP 可达性；跳转页跳过不校验，避免把正常网页误判为失效链接。
 
+**版本字段语义**
+
+`data/latest.json` 每个软件条目都会写入 `version_kind` 和 `version_source`，用于区分表格中"最新版本"字段的真实含义：
+
+- `release_version`：上游发布版本号，例如 GitHub Release tag、官方 manifest、官网 HTML 解析出的版本。
+- `release_label`：发行标签，例如 Windows 11 ISO 文件名中的 `25H2`。
+- `build_date` / `page_date`：上游只暴露构建时间或页面更新时间时，展示为日期。
+- `sync_date`：上游没有公开版本 API，只能确认下载入口，本字段表示本次同步日期。
+
 ---
 
 ## ⚙️ 工作流
@@ -83,6 +92,14 @@
 工作流文件：[`.github/workflows/sync.yml`](.github/workflows/sync.yml)
 
 抓取结果原始数据：[`data/latest.json`](data/latest.json)
+
+本地调试时可以只同步部分软件，避免频繁请求所有上游：
+
+```bash
+python -m scripts.sync --only vscode,chrome
+python -m scripts.sync --skip windows11
+python -m scripts.render
+```
 
 ---
 

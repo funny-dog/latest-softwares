@@ -3,16 +3,22 @@
     {
       "path": "vendor/tailwindcss.js",
       "source": "https://cdn.tailwindcss.com",
+      "version": "cdn-browser-build",
+      "license": "MIT",
       "sha256": "176e894661aa9cdc9a5cba6c720044cbbf7b8bd80d1c9a142a7c24b1b6c50d15"
     },
     {
       "path": "vendor/alpinejs.min.js",
       "source": "https://cdn.jsdelivr.net/npm/alpinejs@3.14.1/dist/cdn.min.js",
+      "version": "3.14.1",
+      "license": "MIT",
       "sha256": "358d9afbb1ab5befa2f48061a30776e5bcd7707f410a606ba985f98bc3b1c034"
     },
     {
       "path": "vendor/fuse.min.js",
       "source": "https://cdn.jsdelivr.net/npm/fuse.js@7.0.0/dist/fuse.min.js",
+      "version": "7.0.0",
+      "license": "Apache-2.0",
       "sha256": "e3621b53cb77b4ec306dec41ed95511e6dd80d17fae5a04f3e346d214b9f8f92"
     }
   ]
