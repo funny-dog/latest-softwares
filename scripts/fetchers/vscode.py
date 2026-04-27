@@ -13,7 +13,7 @@ from __future__ import annotations
 from datetime import datetime, timezone
 from typing import Any
 
-from ..http import get_json
+from ..net import get_json
 from .base import AssetInfo, FetchError, FetchResult
 
 

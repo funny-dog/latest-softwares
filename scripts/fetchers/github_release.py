@@ -14,7 +14,7 @@ import fnmatch
 import re
 from typing import Any
 
-from ..http import get_json, github_headers
+from ..net import get_json, github_headers
 from .base import AssetInfo, FetchError, FetchResult
 
 

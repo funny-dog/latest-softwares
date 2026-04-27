@@ -11,7 +11,7 @@ from typing import Any
 
 import requests
 
-from ..http import browser_headers, get
+from ..net import browser_headers, get
 from .base import AssetInfo, FetchError, FetchResult
 
 

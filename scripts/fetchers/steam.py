@@ -15,7 +15,7 @@ from typing import Any
 
 import requests
 
-from ..http import get
+from ..net import get
 from .base import AssetInfo, FetchError, FetchResult
 
 API_URL = "https://client-update.akamai.steamstatic.com/steam_client_win32"

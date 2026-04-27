@@ -23,9 +23,9 @@ import yaml
 
 if __package__ in (None, ""):
     sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
-    from scripts.http import get, get_json, github_headers, head  # type: ignore
+    from scripts.net import get, get_json, github_headers, head  # type: ignore
 else:
-    from .http import get, get_json, github_headers, head
+    from .net import get, get_json, github_headers, head
 
 # Windows runner 默认 cp1252，输出 ✓/✗/中文会 UnicodeEncodeError 进而崩掉整个脚本。
 # 与 sync.py / render.py / build_web.py 保持一致。

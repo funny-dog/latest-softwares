@@ -4,7 +4,7 @@ import requests
 
 
 def test_github_headers_include_token(monkeypatch):
-    from scripts.http import github_headers
+    from scripts.net import github_headers
 
     monkeypatch.setenv("GITHUB_TOKEN", "token-123")
 
@@ -17,7 +17,7 @@ def test_github_headers_include_token(monkeypatch):
 
 
 def test_browser_headers_use_browser_user_agent():
-    from scripts.http import browser_headers
+    from scripts.net import browser_headers
 
     headers = browser_headers()
 
@@ -26,7 +26,7 @@ def test_browser_headers_use_browser_user_agent():
 
 
 def test_request_retries_transient_request_errors(monkeypatch):
-    from scripts import http
+    from scripts import net as http
 
     calls: list[str] = []
 
