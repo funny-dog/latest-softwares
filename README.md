@@ -3,7 +3,7 @@
 > 由 GitHub Actions 每日自动同步上游官方源的**最新版本元数据**。
 > 仓库**不托管二进制安装包**，下载按钮直接跳到上游官方下载链接。
 >
-> 📅 **最后更新**：`2026-04-28 13:51:10` (UTC)　· 共 111 项软件（其中 2 项使用上次数据，标 ⚠️）
+> 📅 **最后更新**：`2026-04-28 18:11:07` (UTC)　· 共 111 项软件（其中 1 项使用上次数据，标 ⚠️）
 
 ---
 
@@ -14,7 +14,7 @@
 
 | 软件 | 最新版本 | 发布日期 | 下载链接 | 来源 |
 |------|---------|---------|---------|------|
-| [**Windows 11**](https://www.microsoft.com/software-download/windows11) ⚠️ | `25H2` | — | [win-x64](https://software.download.prss.microsoft.com/dbazure/Win11_25H2_Chinese_Simplified_x64_v2.iso?t=37fa8c6f-bee4-479c-af72-84173ea36f54&P1=1777441409&P2=601&P3=2&P4=eCbck3avpNGY%2fCsgnl2spINP7P6BdXJyKsyscP3AiZhUjTWgO5jnfM0hC5oy6oTc9psqEajmUCnS9ywPIufsW4Ol44AvrumFywkvYWD5gaBGS6Y7MmELLYWzDJIJKHI1qIo9588CW5WJndY00tSw7dh35zpMujFVQEU1ao%2ft2H8d1C7Vv4TkKqlrTik5xyZchdZMr4MvkMnPyAFhwveg7RGeGo6TcaeTvPWbdKUKkihv%2bGN8YKKNrSchsK1evxbwhIJQlSXHpENkJqy8ihapf%2boH%2bRgp5zUENljcu1cRbd2fhN8dKemKVjiuIsX69Ylan%2fZkeMwTQlmFKVBOaTOQvQ%3d%3d) | Microsoft Software Download (via Fido)<br>⚠ 未找到 pwsh，无法运行 Fido：[Errno 2] No such file or directory: 'pwsh' |
+| [**Windows 11**](https://www.microsoft.com/software-download/windows11) | `25H2` | — | [win-x64](https://software.download.prss.microsoft.com/dbazure/Win11_25H2_Chinese_Simplified_x64_v2.iso?t=ccbc64bc-1928-4518-8ec8-4db3ce230d70&P1=1777486241&P2=601&P3=2&P4=i6k5aeCQDgOSHLs0q0YCw359v%2b10nzLZs%2b1XXB9EMsu%2bd%2fDhE6wbSp23znoje0RkEgSU3i%2fscn8ev2arb0rgGx2C2BAAXbOZQ2ZCU8VCPbIdYk1fa5RlH5tLEDQKu%2bNcCuLzGueJLnNYM6YtFeJN7t%2f%2f5EJA379VCCnqFlakBxdFntb2Lv9GGRTZRx7UZ8Q3vUdd0bQMd9%2b5g6zjOFy9L4Ay145SgzSsD3K%2fkuROLsBDCPOFZOPBMiHpv5UHpKrAR9L7cG%2bMuJqcfJJGJWF%2bHX2Nutm2LS8hwezng97NfQKEr1vTe6LsUpJZaE6YU47CqswSvGeYlAied6OJ7QL0bA%3d%3d) | Microsoft Software Download (via Fido) |
 
 
 ### Network & Proxy
@@ -74,7 +74,7 @@
 | [**Brave Browser**](https://github.com/brave/brave-browser) | `1.89.143` | 2026-04-23 | [win-x64](https://github.com/brave/brave-browser/releases/download/v1.89.143/BraveBrowserSetup.exe) | GitHub Release: brave/brave-browser |
 | [**Thorium Browser**](https://github.com/Alex313031/Thorium-Win) | `138.0.7204.303` | 2026-02-18 | [win-x64](https://github.com/Alex313031/Thorium-Win/releases/download/M138.0.7204.303/thorium_AVX2_mini_installer.exe) | GitHub Release: Alex313031/Thorium-Win |
 | [**Zen Browser**](https://github.com/zen-browser/desktop) | `1.19.10b` | 2026-04-27 | [win-x64](https://github.com/zen-browser/desktop/releases/download/1.19.10b/zen.installer.exe) | GitHub Release: zen-browser/desktop |
-| [**Mozilla Firefox**](https://www.mozilla.org/firefox/new/) | `150.0` | — | [win-x64](https://download.mozilla.org/?product=firefox-latest-ssl&os=win64&lang=en-US) · [mac-universal](https://download.mozilla.org/?product=firefox-latest-ssl&os=osx&lang=en-US) · [linux-x64](https://download.mozilla.org/?product=firefox-latest-ssl&os=linux64&lang=en-US) | Mozilla product-details API |
+| [**Mozilla Firefox**](https://www.mozilla.org/firefox/new/) | `150.0.1` | — | [win-x64](https://download.mozilla.org/?product=firefox-latest-ssl&os=win64&lang=en-US) · [mac-universal](https://download.mozilla.org/?product=firefox-latest-ssl&os=osx&lang=en-US) · [linux-x64](https://download.mozilla.org/?product=firefox-latest-ssl&os=linux64&lang=en-US) | Mozilla product-details API |
 | [**Floorp Browser**](https://floorp.app/) | `12.12.2` | 2026-04-23 | [win-x64](https://github.com/Floorp-Projects/Floorp/releases/download/v12.12.2/floorp-windows-x86_64.installer.exe) · [mac-universal](https://github.com/Floorp-Projects/Floorp/releases/download/v12.12.2/floorp-macOS-universal.dmg) · [linux-x64](https://github.com/Floorp-Projects/Floorp/releases/download/v12.12.2/floorp-linux-x86_64.tar.xz) | GitHub Release: Floorp-Projects/Floorp |
 | [**Chromium**](https://github.com/Hibbiki/chromium-win64) | `147.0.7727.117-r1596535` | 2026-04-23 | [win-x64](https://github.com/Hibbiki/chromium-win64/releases/download/v147.0.7727.117-r1596535/mini_installer.exe) | GitHub Release: Hibbiki/chromium-win64 |
 
@@ -166,7 +166,7 @@
 
 | 软件 | 最新版本 | 发布日期 | 下载链接 | 来源 |
 |------|---------|---------|---------|------|
-| [**Ollama**](https://github.com/ollama/ollama) | `0.21.2` | 2026-04-23 | [win-x64](https://github.com/ollama/ollama/releases/download/v0.21.2/OllamaSetup.exe) | GitHub Release: ollama/ollama |
+| [**Ollama**](https://github.com/ollama/ollama) | `0.22.0` | 2026-04-28 | [win-x64](https://github.com/ollama/ollama/releases/download/v0.22.0/OllamaSetup.exe) | GitHub Release: ollama/ollama |
 | [**Jan**](https://jan.ai/) | `0.7.9` | 2026-03-23 | [win-x64](https://github.com/janhq/jan/releases/download/v0.7.9/Jan_0.7.9_x64-setup.exe) · [mac-universal](https://github.com/janhq/jan/releases/download/v0.7.9/Jan_0.7.9_universal.dmg) · [linux-x64](https://github.com/janhq/jan/releases/download/v0.7.9/Jan_0.7.9_amd64.AppImage) | GitHub Release: menloresearch/jan |
 | [**GPT4All**](https://www.nomic.ai/gpt4all) | `3.10.0` | 2025-02-25 | [win-x64](https://github.com/nomic-ai/gpt4all/releases/download/v3.10.0/gpt4all-installer-win64-v3.10.0.exe) · [mac-universal](https://github.com/nomic-ai/gpt4all/releases/download/v3.10.0/gpt4all-installer-macos-v3.10.0.dmg) · [linux-x64](https://github.com/nomic-ai/gpt4all/releases/download/v3.10.0/gpt4all-installer-linux-v3.10.0.run) | GitHub Release: nomic-ai/gpt4all |
 
@@ -177,7 +177,7 @@
 |------|---------|---------|---------|------|
 | [**Audacity**](https://github.com/audacity/audacity) | `3.7.7` | 2025-12-11 | [win-x64](https://github.com/audacity/audacity/releases/download/Audacity-3.7.7/audacity-win-3.7.7-64bit.exe) | GitHub Release: audacity/audacity |
 | [**HandBrake**](https://github.com/HandBrake/HandBrake) | `1.11.1` | 2026-03-22 | [win-x64](https://github.com/HandBrake/HandBrake/releases/download/1.11.1/HandBrake-1.11.1-x86_64-Win_GUI.exe) | GitHub Release: HandBrake/HandBrake |
-| [**FFmpeg**](https://github.com/BtbN/FFmpeg-Builds) | `latest` | 2026-04-27 | [win-x64](https://github.com/BtbN/FFmpeg-Builds/releases/download/latest/ffmpeg-master-latest-win64-gpl.zip) | GitHub Release: BtbN/FFmpeg-Builds |
+| [**FFmpeg**](https://github.com/BtbN/FFmpeg-Builds) | `latest` | 2026-04-28 | [win-x64](https://github.com/BtbN/FFmpeg-Builds/releases/download/latest/ffmpeg-master-latest-win64-gpl.zip) | GitHub Release: BtbN/FFmpeg-Builds |
 | [**IINA**](https://github.com/iina/iina) | `1.4.2-build164` | 2026-04-16 | [mac-arm64](https://github.com/iina/iina/releases/download/v1.4.2-build164/IINA.v1.4.2-build164.dmg) | GitHub Release: iina/iina |
 | [**OBS Studio**](https://obsproject.com/) | `32.1.2` | 2026-04-21 | [win-x64](https://github.com/obsproject/obs-studio/releases/download/32.1.2/OBS-Studio-32.1.2-Windows-x64-Installer.exe) · [mac-arm64](https://github.com/obsproject/obs-studio/releases/download/32.1.2/OBS-Studio-32.1.2-macOS-Apple.dmg) · [mac-x64](https://github.com/obsproject/obs-studio/releases/download/32.1.2/OBS-Studio-32.1.2-macOS-Intel.dmg) · [linux-x64](https://github.com/obsproject/obs-studio/releases/download/32.1.2/OBS-Studio-32.1.2-Ubuntu-24.04-x86_64.deb) | GitHub Release: obsproject/obs-studio |
 | [**mpv**](https://mpv.io/) | `20260421` | 2026-04-21 | [win-x64](https://github.com/shinchiro/mpv-winbuild-cmake/releases/download/20260421/mpv-x86_64-20260421-git-5921fe5.7z) | GitHub Release: shinchiro/mpv-winbuild-cmake |
