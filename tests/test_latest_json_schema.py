@@ -16,6 +16,8 @@ from urllib.parse import urlparse
 
 import pytest
 
+from scripts.fetchers import base
+
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
 LATEST_JSON = REPO_ROOT / "data" / "latest.json"
@@ -40,6 +42,17 @@ ALLOWED_VERSION_KINDS = {
     "page_date",
     "sync_date",
 }
+ALLOWED_LINK_KINDS = {"direct", "landing_page"}
+
+
+def test_version_kind_constants_match_schema_allowlist():
+    assert {
+        base.VERSION_KIND_RELEASE,
+        base.VERSION_KIND_RELEASE_LABEL,
+        base.VERSION_KIND_BUILD_DATE,
+        base.VERSION_KIND_PAGE_DATE,
+        base.VERSION_KIND_SYNC_DATE,
+    } == ALLOWED_VERSION_KINDS
 
 
 @pytest.fixture(scope="module")
@@ -74,7 +87,7 @@ def _is_iso_datetime(value: object) -> bool:
 
 
 def test_top_level_schema_version_present(latest_data: dict):
-    assert latest_data.get("schema_version") == 1, "schema_version 缺失或不为 1"
+    assert latest_data.get("schema_version") == 2, "schema_version 缺失或不为 2"
 
 
 def test_package_ids_are_unique(packages: list[dict]):
@@ -147,6 +160,16 @@ def test_each_asset_url_is_valid_http(packages: list[dict]):
             if not _is_valid_url(asset.get("url")):
                 bad.append((p["id"], asset.get("platform"), asset.get("url")))
     assert not bad, f"asset URL 不是合法 http(s): {bad}"
+
+
+def test_asset_link_kind_is_known_when_present(packages: list[dict]):
+    bad = []
+    for p in packages:
+        for asset in p["assets"]:
+            value = asset.get("link_kind")
+            if value is not None and value not in ALLOWED_LINK_KINDS:
+                bad.append((p["id"], asset.get("platform"), value))
+    assert not bad, f"asset link_kind 非法: {bad}"
 
 
 def test_asset_platforms_are_unique_within_package(packages: list[dict]):

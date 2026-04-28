@@ -17,7 +17,14 @@ from pathlib import Path
 from typing import Any
 from urllib.parse import unquote, urlparse
 
-from .base import AssetInfo, FetchError, FetchResult
+from ..link_utils import LINK_KIND_DIRECT
+from .base import (
+    VERSION_KIND_RELEASE_LABEL,
+    VERSION_SOURCE_FIDO_ISO_FILENAME,
+    AssetInfo,
+    FetchError,
+    FetchResult,
+)
 
 
 # Fido 脚本位置：从仓库根目录起的 third_party/Fido.ps1
@@ -124,6 +131,7 @@ def fetch(args: dict[str, Any]) -> FetchResult:
     asset = AssetInfo(
         platform=f"win-{arch}",
         url=url,
+        link_kind=LINK_KIND_DIRECT,
         filename=filename,
     )
 
@@ -132,8 +140,8 @@ def fetch(args: dict[str, Any]) -> FetchResult:
         name=f"Windows 11 ({lang}, {edition})",
         version=release,
         source="Microsoft Software Download (via Fido)",
-        version_kind="release_label",
-        version_source="Fido ISO filename parsed from Microsoft download URL",
+        version_kind=VERSION_KIND_RELEASE_LABEL,
+        version_source=VERSION_SOURCE_FIDO_ISO_FILENAME,
         homepage="https://www.microsoft.com/software-download/windows11",
         notes_url="https://learn.microsoft.com/windows/release-health/windows11-release-information",
         assets=[asset],

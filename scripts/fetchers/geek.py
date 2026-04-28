@@ -12,7 +12,13 @@ from typing import Any
 import requests
 
 from ..net import browser_headers, get
-from .base import AssetInfo, FetchError, FetchResult
+from .base import (
+    VERSION_KIND_RELEASE,
+    VERSION_SOURCE_OFFICIAL_PAGE_HTML,
+    AssetInfo,
+    FetchError,
+    FetchResult,
+)
 
 
 DOWNLOAD_PAGE = "https://geekuninstaller.com/download"
@@ -50,6 +56,7 @@ def fetch(args: dict[str, Any]) -> FetchResult:
             AssetInfo(
                 platform=spec["platform"],
                 url=spec["download_url"],
+                link_kind=spec.get("link_kind"),
             )
         )
 
@@ -58,8 +65,8 @@ def fetch(args: dict[str, Any]) -> FetchResult:
         name="Geek Uninstaller",
         version=version or "unknown",
         source="Geek Uninstaller 官网",
-        version_kind="release_version",
-        version_source="official download page HTML",
+        version_kind=VERSION_KIND_RELEASE,
+        version_source=VERSION_SOURCE_OFFICIAL_PAGE_HTML,
         homepage="https://geekuninstaller.com/",
         notes_url="https://geekuninstaller.com/download",
         assets=assets,

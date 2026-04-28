@@ -85,3 +85,10 @@ def test_web_app_uses_generated_at_for_last_updated():
     app_js = (build_web.WEB_SRC / "app.js").read_text(encoding="utf-8")
 
     assert "data.generated_at" in app_js
+
+
+def test_web_shows_visible_version_kind_label():
+    html = (build_web.WEB_SRC / "index.html").read_text(encoding="utf-8")
+
+    assert 'x-text="versionKindLabel(pkg.version_kind)"' in html
+    assert "pkg.version_source" in html

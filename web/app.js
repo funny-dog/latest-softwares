@@ -103,16 +103,18 @@ function app() {
 
     // ==== 直链检测 ====
     // 剥掉查询串后看路径是否以文件扩展名结尾
-    isDirectLink(url) {
+    isDirectLink(url, linkKind = null) {
+      if (linkKind === 'direct') return true;
+      if (linkKind === 'landing_page') return false;
       if (!url) return false;
       const path = url.toLowerCase().split(/[?#]/)[0];
       return this.directFileExtensions.some(ext => path.endsWith(ext));
     },
 
     // ==== 平台徽章颜色（direct=实心填充 / page=描边空心） ====
-    badgeClass(platform, url) {
+    badgeClass(platform, url, linkKind = null) {
       const family = platform.split('-')[0];
-      const direct = this.isDirectLink(url);
+      const direct = this.isDirectLink(url, linkKind);
       const colorMap = {
         win: {
           direct: 'bg-blue-50   text-blue-700  hover:bg-blue-100  dark:bg-blue-950/40  dark:text-blue-300  dark:hover:bg-blue-900/40',

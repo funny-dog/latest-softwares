@@ -16,7 +16,13 @@ from typing import Any
 import requests
 
 from ..net import get
-from .base import AssetInfo, FetchError, FetchResult
+from .base import (
+    VERSION_KIND_BUILD_DATE,
+    VERSION_SOURCE_VALVE_CLIENT_TIMESTAMP,
+    AssetInfo,
+    FetchError,
+    FetchResult,
+)
 
 API_URL = "https://client-update.akamai.steamstatic.com/steam_client_win32"
 TIMEOUT = 30
@@ -47,6 +53,7 @@ def fetch(args: dict[str, Any]) -> FetchResult:
             AssetInfo(
                 platform=spec["platform"],
                 url=spec["download_url"],
+                link_kind=spec.get("link_kind"),
             )
         )
 
@@ -58,8 +65,8 @@ def fetch(args: dict[str, Any]) -> FetchResult:
         name="Steam",
         version=version or "unknown",
         source="Valve Client Update API",
-        version_kind="build_date",
-        version_source="Valve Client Update API timestamp",
+        version_kind=VERSION_KIND_BUILD_DATE,
+        version_source=VERSION_SOURCE_VALVE_CLIENT_TIMESTAMP,
         homepage="https://store.steampowered.com/about/",
         notes_url="https://store.steampowered.com/news/",
         assets=assets,

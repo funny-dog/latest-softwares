@@ -21,7 +21,7 @@
   </script>
   <script src="vendor/tailwindcss.js"></script>
   <link rel="stylesheet" href="styles.css">
-  <script>window.__PKG_DATA__ = /*__DATA__*/ {"schema_version": 1, "packages": [], "stats": {}} /*__DATA__*/;</script>
+  <script>window.__PKG_DATA__ = /*__DATA__*/ {"schema_version": 2, "packages": [], "stats": {}} /*__DATA__*/;</script>
 </head>
 
 <body
@@ -153,6 +153,11 @@
               class="font-mono font-medium text-zinc-700 dark:text-zinc-300"
               :title="pkg.version_source ? (versionKindLabel(pkg.version_kind) + ' · ' + pkg.version_source) : null"
             >v<span x-text="pkg.version"></span></span>
+            <span
+              x-show="pkg.version_kind"
+              x-text="versionKindLabel(pkg.version_kind)"
+              class="rounded bg-zinc-100 px-1.5 py-0.5 text-[10px] text-zinc-500 dark:bg-zinc-800 dark:text-zinc-400"
+            ></span>
             <span x-show="pkg.released_at">·</span>
             <span x-show="pkg.released_at" x-text="formatDate(pkg.released_at)"></span>
             <span
@@ -170,17 +175,17 @@
               <a
                 :href="asset.url"
                 target="_blank" rel="noopener"
-                :class="badgeClass(asset.platform, asset.url)"
+                :class="badgeClass(asset.platform, asset.url, asset.link_kind)"
                 class="inline-flex items-center gap-1 text-xs px-2.5 py-1 rounded-md font-medium transition"
-                :title="isDirectLink(asset.url)
+                :title="isDirectLink(asset.url, asset.link_kind)
                   ? ('直链下载 · ' + asset.platform + (asset.size ? ' (' + formatSize(asset.size) + ')' : ''))
                   : ('跳转下载页 · ' + asset.platform)"
               >
                 <span x-text="asset.platform"></span>
                 <!-- 直链：下载箭头 -->
-                <svg x-show="isDirectLink(asset.url)" class="w-3 h-3 opacity-60" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" d="M12 4v12m0 0l-4-4m4 4l4-4M4 20h16"/></svg>
+                <svg x-show="isDirectLink(asset.url, asset.link_kind)" class="w-3 h-3 opacity-60" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" d="M12 4v12m0 0l-4-4m4 4l4-4M4 20h16"/></svg>
                 <!-- 跳转页：外链箭头 -->
-                <svg x-show="!isDirectLink(asset.url)" class="w-3 h-3 opacity-60" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14 21 3"/></svg>
+                <svg x-show="!isDirectLink(asset.url, asset.link_kind)" class="w-3 h-3 opacity-60" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14 21 3"/></svg>
               </a>
             </template>
           </div>

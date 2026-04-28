@@ -1,5 +1,5 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "generated_at": "2026-04-28T05:43:30+00:00",
   "packages": [
     {
@@ -19,7 +19,8 @@
           "url": "https://software.download.prss.microsoft.com/dbazure/Win11_25H2_Chinese_Simplified_x64_v2.iso?t=37fa8c6f-bee4-479c-af72-84173ea36f54&P1=1777441409&P2=601&P3=2&P4=eCbck3avpNGY%2fCsgnl2spINP7P6BdXJyKsyscP3AiZhUjTWgO5jnfM0hC5oy6oTc9psqEajmUCnS9ywPIufsW4Ol44AvrumFywkvYWD5gaBGS6Y7MmELLYWzDJIJKHI1qIo9588CW5WJndY00tSw7dh35zpMujFVQEU1ao%2ft2H8d1C7Vv4TkKqlrTik5xyZchdZMr4MvkMnPyAFhwveg7RGeGo6TcaeTvPWbdKUKkihv%2bGN8YKKNrSchsK1evxbwhIJQlSXHpENkJqy8ihapf%2boH%2bRgp5zUENljcu1cRbd2fhN8dKemKVjiuIsX69Ylan%2fZkeMwTQlmFKVBOaTOQvQ%3d%3d",
           "filename": "Win11_25H2_Chinese_Simplified_x64_v2.iso",
           "size": null,
-          "sha256": null
+          "sha256": null,
+          "link_kind": "direct"
         }
       ],
       "fetched_at": "2026-04-28T05:43:30+00:00",
@@ -42,28 +43,32 @@
           "url": "https://github.com/2dust/v2rayN/releases/download/7.20.4/v2rayN-windows-64-desktop.zip",
           "filename": "v2rayN-windows-64-desktop.zip",
           "size": 116495499,
-          "sha256": null
+          "sha256": null,
+          "link_kind": "direct"
         },
         {
           "platform": "win-arm64",
           "url": "https://github.com/2dust/v2rayN/releases/download/7.20.4/v2rayN-windows-arm64-desktop.zip",
           "filename": "v2rayN-windows-arm64-desktop.zip",
           "size": 109005620,
-          "sha256": null
+          "sha256": null,
+          "link_kind": "direct"
         },
         {
           "platform": "mac-arm64",
           "url": "https://github.com/2dust/v2rayN/releases/download/7.20.4/v2rayN-macos-arm64.dmg",
           "filename": "v2rayN-macos-arm64.dmg",
           "size": 111024329,
-          "sha256": null
+          "sha256": null,
+          "link_kind": "direct"
         },
         {
           "platform": "mac-x64",
           "url": "https://github.com/2dust/v2rayN/releases/download/7.20.4/v2rayN-macos-64.dmg",
           "filename": "v2rayN-macos-64.dmg",
           "size": 116466508,
-          "sha256": null
+          "sha256": null,
+          "link_kind": "direct"
         }
       ],
       "fetched_at": "2026-04-28T05:43:22+00:00",
@@ -86,28 +91,32 @@
           "url": "https://vscode.download.prss.microsoft.com/dbazure/download/stable/10c8e557c8b9f9ed0a87f61f1c9a44bde731c409/VSCodeUserSetup-x64-1.117.0.exe",
           "filename": null,
           "size": null,
-          "sha256": "9f3061d1b1b17b8240d435ed948e555c729537876aa7495d03d6102721665157"
+          "sha256": "9f3061d1b1b17b8240d435ed948e555c729537876aa7495d03d6102721665157",
+          "link_kind": "direct"
         },
         {
           "platform": "win-arm64",
           "url": "https://vscode.download.prss.microsoft.com/dbazure/download/stable/10c8e557c8b9f9ed0a87f61f1c9a44bde731c409/VSCodeUserSetup-arm64-1.117.0.exe",
           "filename": null,
           "size": null,
-          "sha256": "342893e696415116ff4eb86381b5067ccd7893517beb0487f0ed7f709f07061c"
+          "sha256": "342893e696415116ff4eb86381b5067ccd7893517beb0487f0ed7f709f07061c",
+          "link_kind": "direct"
         },
         {
           "platform": "mac-arm64",
           "url": "https://vscode.download.prss.microsoft.com/dbazure/download/stable/10c8e557c8b9f9ed0a87f61f1c9a44bde731c409/VSCode-darwin-arm64.dmg",
           "filename": null,
           "size": null,
-          "sha256": "21fbec0fbc5407bf747f7c2ed11e87bf585140ccc778717e76d7a08e2bcea7fe"
+          "sha256": "21fbec0fbc5407bf747f7c2ed11e87bf585140ccc778717e76d7a08e2bcea7fe",
+          "link_kind": "direct"
         },
         {
           "platform": "mac-x64",
           "url": "https://vscode.download.prss.microsoft.com/dbazure/download/stable/10c8e557c8b9f9ed0a87f61f1c9a44bde731c409/VSCode-darwin-x64.dmg",
           "filename": null,
           "size": null,
-          "sha256": "bc5017110545de218ac71df0bdcf40665ec00e9de322825e29a28eebc1e3e1a2"
+          "sha256": "bc5017110545de218ac71df0bdcf40665ec00e9de322825e29a28eebc1e3e1a2",
+          "link_kind": "direct"
         }
       ],
       "fetched_at": "2026-04-28T05:43:23+00:00",
@@ -130,14 +139,16 @@
           "url": "https://dl.google.com/chrome/install/standalonesetup64.exe",
           "filename": null,
           "size": null,
-          "sha256": null
+          "sha256": null,
+          "link_kind": "direct"
         },
         {
           "platform": "mac-arm64",
           "url": "https://dl.google.com/chrome/mac/stable/GGRO/googlechrome.dmg",
           "filename": null,
           "size": null,
-          "sha256": null
+          "sha256": null,
+          "link_kind": "direct"
         }
       ],
       "fetched_at": "2026-04-28T05:43:22+00:00",
@@ -160,7 +171,8 @@
           "url": "https://cdn.fastly.steamstatic.com/client/installer/SteamSetup.exe",
           "filename": null,
           "size": null,
-          "sha256": null
+          "sha256": null,
+          "link_kind": "direct"
         }
       ],
       "fetched_at": "2026-04-28T05:43:22+00:00",
@@ -183,7 +195,8 @@
           "url": "https://www.wegame.com.cn/client/",
           "filename": null,
           "size": null,
-          "sha256": null
+          "sha256": null,
+          "link_kind": "landing_page"
         }
       ],
       "fetched_at": "2026-04-28T05:43:21+00:00",
@@ -206,14 +219,16 @@
           "url": "https://github.com/localsend/localsend/releases/download/v1.17.0/LocalSend-1.17.0-windows-x86-64.exe",
           "filename": "LocalSend-1.17.0-windows-x86-64.exe",
           "size": 14895464,
-          "sha256": null
+          "sha256": null,
+          "link_kind": "direct"
         },
         {
           "platform": "mac-arm64",
           "url": "https://github.com/localsend/localsend/releases/download/v1.17.0/LocalSend-1.17.0.dmg",
           "filename": "LocalSend-1.17.0.dmg",
           "size": 32493186,
-          "sha256": null
+          "sha256": null,
+          "link_kind": "direct"
         }
       ],
       "fetched_at": "2026-04-28T05:43:22+00:00",
@@ -236,14 +251,16 @@
           "url": "https://github.com/bitwarden/clients/releases/download/desktop-v2026.3.1/Bitwarden-Installer-2026.3.1.exe",
           "filename": "Bitwarden-Installer-2026.3.1.exe",
           "size": 731968,
-          "sha256": null
+          "sha256": null,
+          "link_kind": "direct"
         },
         {
           "platform": "mac-universal",
           "url": "https://github.com/bitwarden/clients/releases/download/desktop-v2026.3.1/Bitwarden-2026.3.1-universal.dmg",
           "filename": "Bitwarden-2026.3.1-universal.dmg",
           "size": 261436860,
-          "sha256": null
+          "sha256": null,
+          "link_kind": "direct"
         }
       ],
       "fetched_at": "2026-04-28T05:43:23+00:00",
@@ -266,28 +283,32 @@
           "url": "https://github.com/openai/codex/releases/download/rust-v0.125.0/codex-x86_64-pc-windows-msvc.exe",
           "filename": "codex-x86_64-pc-windows-msvc.exe",
           "size": 220304176,
-          "sha256": null
+          "sha256": null,
+          "link_kind": "direct"
         },
         {
           "platform": "win-arm64",
           "url": "https://github.com/openai/codex/releases/download/rust-v0.125.0/codex-aarch64-pc-windows-msvc.exe",
           "filename": "codex-aarch64-pc-windows-msvc.exe",
           "size": 187542832,
-          "sha256": null
+          "sha256": null,
+          "link_kind": "direct"
         },
         {
           "platform": "mac-arm64",
           "url": "https://github.com/openai/codex/releases/download/rust-v0.125.0/codex-aarch64-apple-darwin.dmg",
           "filename": "codex-aarch64-apple-darwin.dmg",
           "size": 84791610,
-          "sha256": null
+          "sha256": null,
+          "link_kind": "direct"
         },
         {
           "platform": "mac-x64",
           "url": "https://github.com/openai/codex/releases/download/rust-v0.125.0/codex-x86_64-apple-darwin.tar.gz",
           "filename": "codex-x86_64-apple-darwin.tar.gz",
           "size": 83178683,
-          "sha256": null
+          "sha256": null,
+          "link_kind": "direct"
         }
       ],
       "fetched_at": "2026-04-28T05:43:24+00:00",
@@ -310,14 +331,16 @@
           "url": "https://pan.baidu.com/disk/base/semdownload",
           "filename": null,
           "size": null,
-          "sha256": null
+          "sha256": null,
+          "link_kind": "landing_page"
         },
         {
           "platform": "mac-universal",
           "url": "https://pan.baidu.com/disk/base/semdownload",
           "filename": null,
           "size": null,
-          "sha256": null
+          "sha256": null,
+          "link_kind": "landing_page"
         }
       ],
       "fetched_at": "2026-04-28T05:43:23+00:00",
@@ -340,7 +363,8 @@
           "url": "https://geekuninstaller.com/download",
           "filename": null,
           "size": null,
-          "sha256": null
+          "sha256": null,
+          "link_kind": "landing_page"
         }
       ],
       "fetched_at": "2026-04-28T05:43:22+00:00",
@@ -363,28 +387,32 @@
           "url": "https://www.voidtools.com/Everything-1.4.1.1032.x64-Setup.exe",
           "filename": null,
           "size": null,
-          "sha256": null
+          "sha256": null,
+          "link_kind": "direct"
         },
         {
           "platform": "win-x86",
           "url": "https://www.voidtools.com/Everything-1.4.1.1032.x86-Setup.exe",
           "filename": null,
           "size": null,
-          "sha256": null
+          "sha256": null,
+          "link_kind": "direct"
         },
         {
           "platform": "win-x64-portable",
           "url": "https://www.voidtools.com/Everything-1.4.1.1032.x64.zip",
           "filename": null,
           "size": null,
-          "sha256": null
+          "sha256": null,
+          "link_kind": "direct"
         },
         {
           "platform": "win-x86-portable",
           "url": "https://www.voidtools.com/Everything-1.4.1.1032.x86.zip",
           "filename": null,
           "size": null,
-          "sha256": null
+          "sha256": null,
+          "link_kind": "direct"
         }
       ],
       "fetched_at": "2026-04-28T05:43:23+00:00",
@@ -407,7 +435,8 @@
           "url": "https://www.nvidia.com/en-us/software/nvidia-app/",
           "filename": null,
           "size": null,
-          "sha256": null
+          "sha256": null,
+          "link_kind": "landing_page"
         }
       ],
       "fetched_at": "2026-04-28T05:43:22+00:00",
@@ -430,14 +459,16 @@
           "url": "https://im.qq.com/download/",
           "filename": null,
           "size": null,
-          "sha256": null
+          "sha256": null,
+          "link_kind": "landing_page"
         },
         {
           "platform": "mac-universal",
           "url": "https://im.qq.com/download/",
           "filename": null,
           "size": null,
-          "sha256": null
+          "sha256": null,
+          "link_kind": "landing_page"
         }
       ],
       "fetched_at": "2026-04-28T05:43:22+00:00",
@@ -460,14 +491,16 @@
           "url": "https://dldir1.qq.com/weixin/Windows/WeChatSetup.exe",
           "filename": null,
           "size": null,
-          "sha256": null
+          "sha256": null,
+          "link_kind": "direct"
         },
         {
           "platform": "mac-universal",
           "url": "https://dldir1.qq.com/weixin/mac/WeChatMac.dmg",
           "filename": null,
           "size": null,
-          "sha256": null
+          "sha256": null,
+          "link_kind": "direct"
         }
       ],
       "fetched_at": "2026-04-28T05:43:25+00:00",
@@ -490,7 +523,8 @@
           "url": "https://www.yy.com/",
           "filename": null,
           "size": null,
-          "sha256": null
+          "sha256": null,
+          "link_kind": "landing_page"
         }
       ],
       "fetched_at": "2026-04-28T05:43:22+00:00",

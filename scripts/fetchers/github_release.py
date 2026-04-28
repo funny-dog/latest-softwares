@@ -15,7 +15,14 @@ import re
 from typing import Any
 
 from ..net import get_json, github_headers
-from .base import AssetInfo, FetchError, FetchResult
+from ..link_utils import LINK_KIND_DIRECT
+from .base import (
+    VERSION_KIND_RELEASE,
+    VERSION_SOURCE_GITHUB_TAG,
+    AssetInfo,
+    FetchError,
+    FetchResult,
+)
 
 
 GITHUB_API = "https://api.github.com"
@@ -94,6 +101,7 @@ def fetch(args: dict[str, Any]) -> FetchResult:
             AssetInfo(
                 platform=platform,
                 url=hit["browser_download_url"],
+                link_kind=spec.get("link_kind", LINK_KIND_DIRECT),
                 filename=hit["name"],
                 size=hit.get("size"),
             )
@@ -110,8 +118,8 @@ def fetch(args: dict[str, Any]) -> FetchResult:
         name=repo.split("/")[-1],
         version=version,
         source=f"GitHub Release: {repo}",
-        version_kind="release_version",
-        version_source="GitHub release tag",
+        version_kind=VERSION_KIND_RELEASE,
+        version_source=VERSION_SOURCE_GITHUB_TAG,
         homepage=f"https://github.com/{repo}",
         released_at=rel.get("published_at"),
         notes_url=rel.get("html_url"),

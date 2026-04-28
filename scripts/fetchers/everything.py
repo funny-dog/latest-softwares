@@ -15,7 +15,13 @@ from typing import Any
 import requests
 
 from ..net import browser_headers, get
-from .base import AssetInfo, FetchError, FetchResult
+from .base import (
+    VERSION_KIND_RELEASE,
+    VERSION_SOURCE_OFFICIAL_PAGE_HTML,
+    AssetInfo,
+    FetchError,
+    FetchResult,
+)
 
 
 DOWNLOAD_PAGE = "https://www.voidtools.com/download.php"
@@ -57,6 +63,7 @@ def fetch(args: dict[str, Any]) -> FetchResult:
             AssetInfo(
                 platform=spec["platform"],
                 url=_resolve_url(spec["download_url"], version),
+                link_kind=spec.get("link_kind"),
             )
         )
 
@@ -65,8 +72,8 @@ def fetch(args: dict[str, Any]) -> FetchResult:
         name="Everything",
         version=version,
         source="voidtools 官网",
-        version_kind="release_version",
-        version_source="official download page HTML",
+        version_kind=VERSION_KIND_RELEASE,
+        version_source=VERSION_SOURCE_OFFICIAL_PAGE_HTML,
         homepage="https://www.voidtools.com/",
         notes_url="https://www.voidtools.com/download.php",
         assets=assets,

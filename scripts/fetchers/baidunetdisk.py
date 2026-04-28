@@ -16,7 +16,13 @@ from typing import Any
 import requests
 
 from ..net import browser_headers, get
-from .base import AssetInfo, FetchError, FetchResult
+from .base import (
+    VERSION_KIND_PAGE_DATE,
+    VERSION_SOURCE_BAIDU_PAGE_TIMESTAMP,
+    AssetInfo,
+    FetchError,
+    FetchResult,
+)
 
 
 DOWNLOAD_PAGE = "https://pan.baidu.com/disk/base/semdownload"
@@ -62,6 +68,7 @@ def fetch(args: dict[str, Any]) -> FetchResult:
             AssetInfo(
                 platform=spec["platform"],
                 url=spec["download_url"],
+                link_kind=spec.get("link_kind"),
             )
         )
 
@@ -70,8 +77,8 @@ def fetch(args: dict[str, Any]) -> FetchResult:
         name="百度网盘",
         version=version or "latest",
         source="百度网盘下载页（SPA，仅能取页面更新日期）",
-        version_kind="page_date",
-        version_source="download page window.__V20_VER__ build timestamp",
+        version_kind=VERSION_KIND_PAGE_DATE,
+        version_source=VERSION_SOURCE_BAIDU_PAGE_TIMESTAMP,
         homepage="https://pan.baidu.com/",
         notes_url="https://pan.baidu.com/disk/base/semdownload",
         assets=assets,

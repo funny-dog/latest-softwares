@@ -39,7 +39,7 @@ VENDOR_MANIFEST = WEB_SRC / "vendor" / "manifest.json"
 
 # index.html 中数据占位符（必须与 web/index.html 内严格一致）
 DATA_PLACEHOLDER = (
-    '/*__DATA__*/ {"schema_version": 1, "packages": [], "stats": {}} /*__DATA__*/'
+    '/*__DATA__*/ {"schema_version": 2, "packages": [], "stats": {}} /*__DATA__*/'
 )
 
 

@@ -125,6 +125,8 @@
 - **直链**：URL 以 `.exe` / `.dmg` / `.iso` / `.zip` / `.tar.gz` / `.msi` / `.pkg` 等文件扩展名结尾，点击立即开始下载。Web 界面中对应**实心填充**徽章。
 - **跳转页**：URL 指向一个下载网页（无文件后缀），点击后需在页面上再手动选择下载。Web 界面中对应**空心描边**徽章。
 
+如 URL 后缀无法可靠判断，可在 `packages.yaml` 的 platform 配置中显式写 `link_kind: direct` 或 `link_kind: landing_page`，显式值优先于后缀推断。
+
 `validate_links.py` 仅校验直链的 HTTP 可达性；跳转页跳过不校验，避免把正常网页误判为失效链接。
 
 **版本字段语义**
@@ -135,6 +137,8 @@
 - `release_label`：发行标签，例如 Windows 11 ISO 文件名中的 `25H2`。
 - `build_date` / `page_date`：上游只暴露构建时间或页面更新时间时，展示为日期。
 - `sync_date`：上游没有公开版本 API，只能确认下载入口，本字段表示本次同步日期。
+
+当前数据契约版本为 `schema_version: 2`。
 
 ---
 
@@ -147,6 +151,8 @@
 工作流文件：[`.github/workflows/sync.yml`](.github/workflows/sync.yml)
 
 抓取结果原始数据：[`data/latest.json`](data/latest.json)
+
+真实下载链接巡检会在独立 CI job 中运行，并上传 `data/link-health.json` artifact，避免外部网络抖动阻塞主同步与部署。
 
 本地调试时可以只同步部分软件，避免频繁请求所有上游：
 

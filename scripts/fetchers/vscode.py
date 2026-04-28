@@ -14,7 +14,14 @@ from datetime import datetime, timezone
 from typing import Any
 
 from ..net import get_json
-from .base import AssetInfo, FetchError, FetchResult
+from ..link_utils import LINK_KIND_DIRECT
+from .base import (
+    VERSION_KIND_RELEASE,
+    VERSION_SOURCE_VSCODE_MANIFEST,
+    AssetInfo,
+    FetchError,
+    FetchResult,
+)
 
 
 API_URL = "https://code.visualstudio.com/sha?build=stable"
@@ -50,6 +57,7 @@ def fetch(args: dict[str, Any]) -> FetchResult:
             AssetInfo(
                 platform=platform,
                 url=product["url"],
+                link_kind=spec.get("link_kind", LINK_KIND_DIRECT),
                 sha256=product.get("sha256hash"),
             )
         )
@@ -74,8 +82,8 @@ def fetch(args: dict[str, Any]) -> FetchResult:
         name="Visual Studio Code",
         version=version,
         source="VSCode Build Manifest",
-        version_kind="release_version",
-        version_source="VSCode Build Manifest productVersion",
+        version_kind=VERSION_KIND_RELEASE,
+        version_source=VERSION_SOURCE_VSCODE_MANIFEST,
         homepage="https://code.visualstudio.com",
         released_at=released_at,
         notes_url=f"https://code.visualstudio.com/updates/v{notes_anchor}",

@@ -15,7 +15,12 @@ from typing import Any
 import requests
 
 from ..net import browser_headers, get, head
-from .base import AssetInfo, FetchResult
+from .base import (
+    VERSION_KIND_RELEASE,
+    VERSION_SOURCE_WECHAT,
+    AssetInfo,
+    FetchResult,
+)
 
 
 HOMEPAGE = "https://weixin.qq.com/"
@@ -110,6 +115,7 @@ def fetch(args: dict[str, Any]) -> FetchResult:
             AssetInfo(
                 platform=spec["platform"],
                 url=spec["download_url"],
+                link_kind=spec.get("link_kind"),
             )
         )
 
@@ -121,8 +127,8 @@ def fetch(args: dict[str, Any]) -> FetchResult:
         name="微信",
         version=version,
         source="微信官网",
-        version_kind="release_version",
-        version_source="Content-Disposition / official page; date fallback when unavailable",
+        version_kind=VERSION_KIND_RELEASE,
+        version_source=VERSION_SOURCE_WECHAT,
         homepage=HOMEPAGE,
         notes_url=HOMEPAGE,
         assets=assets,

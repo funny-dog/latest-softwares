@@ -13,7 +13,13 @@ from __future__ import annotations
 from typing import Any
 
 from ..net import get_json
-from .base import AssetInfo, FetchError, FetchResult
+from .base import (
+    VERSION_KIND_RELEASE,
+    VERSION_SOURCE_GOOGLE_VERSION_HISTORY,
+    AssetInfo,
+    FetchError,
+    FetchResult,
+)
 
 
 API_TMPL = (
@@ -45,15 +51,21 @@ def fetch(args: dict[str, Any]) -> FetchResult:
                 raise FetchError(f"chrome: versionhistory 返回空（{os_key}/{channel}）")
             version = versions[0]["version"]
 
-        assets.append(AssetInfo(platform=platform, url=download_url))
+        assets.append(
+            AssetInfo(
+                platform=platform,
+                url=download_url,
+                link_kind=spec.get("link_kind"),
+            )
+        )
 
     return FetchResult(
         id="",
         name="Google Chrome",
         version=version or "unknown",
         source="Google Version History API",
-        version_kind="release_version",
-        version_source="Google Version History API",
+        version_kind=VERSION_KIND_RELEASE,
+        version_source=VERSION_SOURCE_GOOGLE_VERSION_HISTORY,
         homepage="https://www.google.com/chrome/",
         notes_url="https://chromereleases.googleblog.com/",
         assets=assets,

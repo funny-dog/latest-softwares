@@ -12,7 +12,13 @@ from __future__ import annotations
 from datetime import datetime, timezone
 from typing import Any, Callable
 
-from .base import AssetInfo, FetchResult
+from ..link_utils import LINK_KIND_LANDING_PAGE
+from .base import (
+    VERSION_KIND_SYNC_DATE,
+    VERSION_SOURCE_UTC_SYNC_DATE,
+    AssetInfo,
+    FetchResult,
+)
 
 
 def make_redirect_fetcher(
@@ -42,19 +48,26 @@ def make_redirect_fetcher(
             AssetInfo(
                 platform=spec["platform"],
                 url=spec.get("download_url") or download_page,
+                link_kind=spec.get("link_kind", LINK_KIND_LANDING_PAGE),
             )
             for spec in args.get("platforms", [])
         ]
         if not assets:
-            assets.append(AssetInfo(platform=default_platform, url=download_page))
+            assets.append(
+                AssetInfo(
+                    platform=default_platform,
+                    url=download_page,
+                    link_kind=LINK_KIND_LANDING_PAGE,
+                )
+            )
 
         return FetchResult(
             id=id,
             name=name,
             version=today,
             source=source,
-            version_kind="sync_date",
-            version_source="UTC sync date; no public version API",
+            version_kind=VERSION_KIND_SYNC_DATE,
+            version_source=VERSION_SOURCE_UTC_SYNC_DATE,
             homepage=homepage,
             notes_url=download_page,
             assets=assets,

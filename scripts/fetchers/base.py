@@ -10,6 +10,33 @@ from dataclasses import asdict, dataclass, field
 from datetime import datetime, timezone
 from typing import Any
 
+VERSION_KIND_RELEASE = "release_version"
+VERSION_KIND_RELEASE_LABEL = "release_label"
+VERSION_KIND_BUILD_DATE = "build_date"
+VERSION_KIND_PAGE_DATE = "page_date"
+VERSION_KIND_SYNC_DATE = "sync_date"
+VERSION_KINDS = {
+    VERSION_KIND_RELEASE,
+    VERSION_KIND_RELEASE_LABEL,
+    VERSION_KIND_BUILD_DATE,
+    VERSION_KIND_PAGE_DATE,
+    VERSION_KIND_SYNC_DATE,
+}
+
+VERSION_SOURCE_GITHUB_TAG = "GitHub release tag"
+VERSION_SOURCE_VSCODE_MANIFEST = "VSCode Build Manifest productVersion"
+VERSION_SOURCE_GOOGLE_VERSION_HISTORY = "Google Version History API"
+VERSION_SOURCE_VALVE_CLIENT_TIMESTAMP = "Valve Client Update API timestamp"
+VERSION_SOURCE_FIDO_ISO_FILENAME = (
+    "Fido ISO filename parsed from Microsoft download URL"
+)
+VERSION_SOURCE_BAIDU_PAGE_TIMESTAMP = "download page window.__V20_VER__ build timestamp"
+VERSION_SOURCE_OFFICIAL_PAGE_HTML = "official download page HTML"
+VERSION_SOURCE_WECHAT = (
+    "Content-Disposition / official page; date fallback when unavailable"
+)
+VERSION_SOURCE_UTC_SYNC_DATE = "UTC sync date; no public version API"
+
 
 def _utc_now_iso() -> str:
     return datetime.now(timezone.utc).isoformat(timespec="seconds")
@@ -19,6 +46,7 @@ def _utc_now_iso() -> str:
 class AssetInfo:
     platform: str  # 例：win-x64 / mac-arm64 / mac-x64
     url: str  # 直接下载链接
+    link_kind: str | None = None  # direct / landing_page；为空时由 URL 后缀推断
     filename: str | None = None  # 原始文件名（GitHub Release 才有）
     size: int | None = None  # 字节
     sha256: str | None = None
@@ -30,7 +58,7 @@ class FetchResult:
     name: str
     version: str
     source: str  # 数据来源描述，便于排错
-    version_kind: str = "release_version"
+    version_kind: str = VERSION_KIND_RELEASE
     version_source: str | None = None
     category: str | None = None
     homepage: str | None = None

@@ -227,7 +227,7 @@ def main(argv: list[str] | None = None) -> int:
     # 写出
     DATA_FILE.parent.mkdir(parents=True, exist_ok=True)
     output = {
-        "schema_version": 1,
+        "schema_version": 2,
         "generated_at": _utc_now_iso(),
         "packages": results,
         "stats": {

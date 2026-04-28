@@ -136,15 +136,17 @@ jobs:
           if ($env:SYNC_SKIP) { $cmdArgs += @('--skip', $env:SYNC_SKIP) }
           python scripts/sync.py @cmdArgs
 
-      - name: Validate & fix download links
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: python scripts/validate_links.py
-
       # sync.py 重写了 latest.json，再跑一次 schema 校验拦截新引入的数据问题
       # （fetcher 静默返回空 assets / 占位符未替换 / 非法 URL 等）
       - name: Re-validate latest.json schema
         run: python -m pytest tests/test_latest_json_schema.py -q
+
+      - name: Upload latest data artifact
+        uses: actions/upload-artifact@v6
+        with:
+          name: latest-data
+          path: data/latest.json
+          retention-days: 1
 
       - name: Render README
         run: python scripts/render.py
@@ -171,7 +173,56 @@ jobs:
           retention-days: 7
 
   # ==========================================================================
-  # Job 2: 部署 dist/ 到阿里云
+  # Job 2: 真实下载链接巡检
+  #   独立 job 隔离外部网络抖动，避免主同步/部署日志被链接巡检噪声淹没。
+  #   结果通过 data/link-health.json artifact 暴露；PR 不跑真实网络巡检。
+  # ==========================================================================
+  link-check:
+    needs: sync
+    if: github.event_name != 'pull_request'
+    runs-on: windows-latest
+    timeout-minutes: 12
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Setup Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+          cache-dependency-path: requirements*.txt
+
+      - name: Install Python dependencies
+        run: pip install -r requirements.txt -r requirements-dev.txt
+
+      - name: Download latest data artifact
+        uses: actions/download-artifact@v6
+        with:
+          name: latest-data
+          path: data/
+
+      - name: Validate links and write health report
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python scripts/validate_links.py
+
+      - name: Write link health summary
+        if: ${{ always() }}
+        run: python scripts/link_health_summary.py data/link-health.json
+
+      - name: Upload link health artifact
+        if: ${{ always() }}
+        uses: actions/upload-artifact@v6
+        with:
+          name: link-health
+          path: data/link-health.json
+          if-no-files-found: warn
+          retention-days: 14
+
+  # ==========================================================================
+  # Job 3: 部署 dist/ 到阿里云
   #   独立 job 用 ubuntu-latest（自带 rsync，windows runner 没有）
   #   由仓库变量 DEPLOY_ENABLED=true 控制是否启用 —— 没配 secrets 时跳过
   # ==========================================================================

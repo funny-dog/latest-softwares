@@ -135,3 +135,29 @@ def test_redirect_fetcher_allows_missing_platforms():
     errors = validate_config.validate_config(cfg)
 
     assert errors == []
+
+
+def test_allows_explicit_link_kind_on_platform_specs():
+    cfg = load_current_config()
+    cfg = {
+        "packages": [copy.deepcopy(next(p for p in cfg["packages"] if p["id"] == "qq"))]
+    }
+    cfg["packages"][0]["args"]["platforms"][0]["link_kind"] = "landing_page"
+
+    errors = validate_config.validate_config(cfg)
+
+    assert errors == []
+
+
+def test_rejects_invalid_link_kind():
+    cfg = load_current_config()
+    cfg = {
+        "packages": [
+            copy.deepcopy(next(p for p in cfg["packages"] if p["id"] == "chrome"))
+        ]
+    }
+    cfg["packages"][0]["args"]["platforms"][0]["link_kind"] = "maybe"
+
+    errors = validate_config.validate_config(cfg)
+
+    assert any("link_kind 必须是 direct 或 landing_page" in error for error in errors)

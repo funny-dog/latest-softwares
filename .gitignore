@@ -9,3 +9,6 @@ venv/
 
 # Web 构建产物（CI 临时生成，不入库）
 dist/
+
+# 链接巡检报告由 CI artifact 保存，本地运行时不入库
+data/link-health.json

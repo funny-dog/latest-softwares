@@ -22,8 +22,10 @@ for _stream in (sys.stdout, sys.stderr):
 if __package__ in (None, ""):
     sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
     from scripts.fetchers import FETCHERS  # type: ignore
+    from scripts.link_utils import LINK_KINDS  # type: ignore
 else:
     from .fetchers import FETCHERS
+    from .link_utils import LINK_KINDS
 
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
@@ -86,6 +88,12 @@ def _validate_unique_platforms(
         seen.add(platform)
 
 
+def _validate_link_kind(errors: list[str], label: str, item: dict) -> None:
+    value = item.get("link_kind")
+    if value is not None and value not in LINK_KINDS:
+        errors.append(f"{label}: link_kind 必须是 direct 或 landing_page")
+
+
 def _validate_list(
     errors: list[str],
     label: str,
@@ -132,6 +140,7 @@ def _validate_github_release(errors: list[str], label: str, args: dict) -> None:
     for asset in assets:
         _require_string(errors, label, asset, "platform")
         _require_string(errors, label, asset, "pattern")
+        _validate_link_kind(errors, label, asset)
 
 
 def _validate_windows11_fido(errors: list[str], label: str, args: dict) -> None:
@@ -148,6 +157,7 @@ def _validate_vscode(errors: list[str], label: str, args: dict) -> None:
     for build in builds:
         _require_string(errors, label, build, "platform")
         _require_string(errors, label, build, "build")
+        _validate_link_kind(errors, label, build)
 
 
 def _validate_chrome(errors: list[str], label: str, args: dict) -> None:
@@ -158,6 +168,7 @@ def _validate_chrome(errors: list[str], label: str, args: dict) -> None:
         _require_string(errors, label, platform, "os_key")
         _require_string(errors, label, platform, "channel")
         _require_url(errors, label, platform, "download_url")
+        _validate_link_kind(errors, label, platform)
 
 
 def _validate_fixed_url_platforms(errors: list[str], label: str, args: dict) -> None:
@@ -166,6 +177,7 @@ def _validate_fixed_url_platforms(errors: list[str], label: str, args: dict) -> 
     for platform in platforms:
         _require_string(errors, label, platform, "platform")
         _require_url(errors, label, platform, "download_url")
+        _validate_link_kind(errors, label, platform)
 
 
 def _validate_redirect_platforms(errors: list[str], label: str, args: dict) -> None:
@@ -186,6 +198,7 @@ def _validate_redirect_platforms(errors: list[str], label: str, args: dict) -> N
         _require_string(errors, label, platform, "platform")
         if "download_url" in platform:
             _require_url(errors, label, platform, "download_url")
+        _validate_link_kind(errors, label, platform)
 
 
 def _validate_fetcher_args(

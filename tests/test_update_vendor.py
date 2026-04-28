@@ -174,6 +174,18 @@ def test_real_vendor_manifest_has_version_and_license():
     assert not missing
 
 
+def test_tailwind_vendor_source_is_pinned():
+    manifest = json.loads(update_vendor.MANIFEST.read_text(encoding="utf-8"))
+    tailwind = next(
+        asset
+        for asset in manifest.get("assets", [])
+        if asset.get("path") == "vendor/tailwindcss.js"
+    )
+
+    assert tailwind["version"] in tailwind["source"]
+    assert tailwind["source"] != "https://cdn.tailwindcss.com"
+
+
 @pytest.mark.parametrize(
     "data,expected_prefix",
     [(b"abc", "ba7816bf"), (b"", "e3b0c442")],
