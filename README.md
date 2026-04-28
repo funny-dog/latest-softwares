@@ -3,7 +3,7 @@
 > 由 GitHub Actions 每日自动同步上游官方源的**最新版本元数据**。
 > 仓库**不托管二进制安装包**，下载按钮直接跳到上游官方下载链接。
 >
-> 📅 **最后更新**：`2026-04-27 17:26:47` (UTC)　· 共 16 项软件（其中 2 项使用上次数据，标 ⚠️）
+> 📅 **最后更新**：`2026-04-28 04:29:21` (UTC)　· 共 16 项软件
 
 ---
 
@@ -14,7 +14,7 @@
 
 | 软件 | 最新版本 | 发布日期 | 下载链接 | 来源 |
 |------|---------|---------|---------|------|
-| [**Windows 11**](https://www.microsoft.com/software-download/windows11) | `25H2` | — | [win-x64](https://software.download.prss.microsoft.com/dbazure/Win11_25H2_Chinese_Simplified_x64_v2.iso?t=761299e1-c7ae-42a2-9b8c-c1b9801a89da&P1=1777397202&P2=601&P3=2&P4=2PnhK3Wq7Y%2b%2bW5Wd2mfWFUFMZiNjU5NGYZ2qEgxXz6It4Zzwy9mQuHIfDGRHf3l34B4mvmexccLkyofSZFyX46rW7FiPEyi%2bd7lbsDd4D7fdcikQwy%2f1l3rNkywc8m6cQihMe5Zt63w0S%2bj%2fKDbsRCb465PcQUqMspTaPKEqnM%2bsV31pKSOMQViAwQdz0qXiRyRFx2E0HEpXUg955BaN5v0HvbHKpau9SahGn4qzBDKUvyaTag7k1OKMRBZ0R1sfZU8oOk5LF0zZ1QvZjGaYXNyzmOxBlA3EMEsJeJTjo06acZXcN4%2beuBxsrplAaSK%2bfBrAlDYBOpHGs7htvTM5nA%3d%3d) | Microsoft Software Download (via Fido) |
+| [**Windows 11**](https://www.microsoft.com/software-download/windows11) | `25H2` | — | [win-x64](https://software.download.prss.microsoft.com/dbazure/Win11_25H2_Chinese_Simplified_x64_v2.iso?t=dcfffa46-635e-455f-9ca1-f04def8a2d03&P1=1777436960&P2=601&P3=2&P4=VOItG6GUB98m1CgDldpANX0bbd1JmznsGNKSATx0Ebo88Vp4YB%2f2j5Fj6sF6UsR8IrvXbfR1C9gU78c3RDgucUQkBXzBgESw8Kw9j6BiuGIDPYZEXZl2MtFVgJOL0DCcN9ftFfZFxOnSMF9XA3A9I1YKuKiM9zrCLiWykiJ78tKQYuzOn%2fMeZsfu8Qh3DDpiH6zzrKP9XgM07xZNSuuOa48B7Rdh1F4DqBN7TZda98LIBL6RZYy5m%2f5ZK2Fr%2bB3HY8YWXrzzNTvrgcEpdFvrTuZmCqkvVURNzoyLX%2fQcy%2fcK0zx4b4U9swnqK9JjbZQmz6Zjpxeynpk45g56R%2f1hvA%3d%3d) | Microsoft Software Download (via Fido) |
 
 
 ### 网络代理
@@ -29,7 +29,7 @@
 | 软件 | 最新版本 | 发布日期 | 下载链接 | 来源 |
 |------|---------|---------|---------|------|
 | [**Visual Studio Code**](https://code.visualstudio.com) | `1.117.0` | 2026-04-21 | [win-x64](https://vscode.download.prss.microsoft.com/dbazure/download/stable/10c8e557c8b9f9ed0a87f61f1c9a44bde731c409/VSCodeUserSetup-x64-1.117.0.exe) · [win-arm64](https://vscode.download.prss.microsoft.com/dbazure/download/stable/10c8e557c8b9f9ed0a87f61f1c9a44bde731c409/VSCodeUserSetup-arm64-1.117.0.exe) · [mac-arm64](https://vscode.download.prss.microsoft.com/dbazure/download/stable/10c8e557c8b9f9ed0a87f61f1c9a44bde731c409/VSCode-darwin-arm64.dmg) · [mac-x64](https://vscode.download.prss.microsoft.com/dbazure/download/stable/10c8e557c8b9f9ed0a87f61f1c9a44bde731c409/VSCode-darwin-x64.dmg) | VSCode Build Manifest |
-| [**OpenAI Codex**](https://github.com/openai/codex) ⚠️ | `0.125.0` | 2026-04-24 | [win-x64](https://github.com/openai/codex/releases/download/rust-v0.125.0/codex-x86_64-pc-windows-msvc.exe) · [win-arm64](https://github.com/openai/codex/releases/download/rust-v0.125.0/codex-aarch64-pc-windows-msvc.exe) · [mac-arm64](https://github.com/openai/codex/releases/download/rust-v0.125.0/codex-aarch64-apple-darwin.dmg) · [mac-x64](https://github.com/openai/codex/releases/download/rust-v0.125.0/codex-x86_64-apple-darwin.tar.gz) | GitHub Release: openai/codex<br>⚠ openai/codex: 最近 30 个 release 中没有匹配 ^rust-v 的稳定版 |
+| [**OpenAI Codex**](https://github.com/openai/codex) | `0.125.0` | 2026-04-24 | [win-x64](https://github.com/openai/codex/releases/download/rust-v0.125.0/codex-x86_64-pc-windows-msvc.exe) · [win-arm64](https://github.com/openai/codex/releases/download/rust-v0.125.0/codex-aarch64-pc-windows-msvc.exe) · [mac-arm64](https://github.com/openai/codex/releases/download/rust-v0.125.0/codex-aarch64-apple-darwin.dmg) · [mac-x64](https://github.com/openai/codex/releases/download/rust-v0.125.0/codex-x86_64-apple-darwin.tar.gz) | GitHub Release: openai/codex |
 
 
 ### 浏览器
@@ -44,7 +44,7 @@
 | 软件 | 最新版本 | 发布日期 | 下载链接 | 来源 |
 |------|---------|---------|---------|------|
 | [**Steam**](https://store.steampowered.com/about/) | `2026-01-30` | — | [win-x64](https://cdn.fastly.steamstatic.com/client/installer/SteamSetup.exe) | Valve Client Update API |
-| [**WeGame**](https://www.wegame.com.cn/) | `2026-04-27` | — | [win-x64](https://www.wegame.com.cn/client/) | 手动同步（无 API） |
+| [**WeGame**](https://www.wegame.com.cn/) | `2026-04-28` | — | [win-x64](https://www.wegame.com.cn/client/) | 手动同步（无 API） |
 
 
 ### 通用工具
@@ -52,7 +52,7 @@
 | 软件 | 最新版本 | 发布日期 | 下载链接 | 来源 |
 |------|---------|---------|---------|------|
 | [**LocalSend**](https://localsend.org) | `1.17.0` | 2025-02-20 | [win-x64](https://github.com/localsend/localsend/releases/download/v1.17.0/LocalSend-1.17.0-windows-x86-64.exe) · [mac-arm64](https://github.com/localsend/localsend/releases/download/v1.17.0/LocalSend-1.17.0.dmg) | GitHub Release: localsend/localsend |
-| [**Bitwarden Desktop**](https://bitwarden.com/download/) ⚠️ | `2026.3.1` | 2026-04-02 | [win-x64](https://github.com/bitwarden/clients/releases/download/desktop-v2026.3.1/Bitwarden-Installer-2026.3.1.exe) · [mac-universal](https://github.com/bitwarden/clients/releases/download/desktop-v2026.3.1/Bitwarden-2026.3.1-universal.dmg) | GitHub Release: bitwarden/clients<br>⚠ bitwarden/clients: 最近 30 个 release 中没有匹配 ^desktop-v 的稳定版 |
+| [**Bitwarden Desktop**](https://bitwarden.com/download/) | `2026.3.1` | 2026-04-02 | [win-x64](https://github.com/bitwarden/clients/releases/download/desktop-v2026.3.1/Bitwarden-Installer-2026.3.1.exe) · [mac-universal](https://github.com/bitwarden/clients/releases/download/desktop-v2026.3.1/Bitwarden-2026.3.1-universal.dmg) | GitHub Release: bitwarden/clients |
 | [**百度网盘**](https://pan.baidu.com/) | `2026-04-24` | — | [win-x64](https://pan.baidu.com/disk/base/semdownload) · [mac-universal](https://pan.baidu.com/disk/base/semdownload) | 百度网盘下载页（SPA，仅能取页面更新日期） |
 | [**Geek Uninstaller**](https://geekuninstaller.com/) | `1.5.3.170` | — | [win-x64](https://geekuninstaller.com/download) | Geek Uninstaller 官网 |
 | [**Everything**](https://www.voidtools.com/) | `1.4.1.1032` | — | [win-x64](https://www.voidtools.com/Everything-1.4.1.1032.x64-Setup.exe) · [win-x86](https://www.voidtools.com/Everything-1.4.1.1032.x86-Setup.exe) · [win-x64-portable](https://www.voidtools.com/Everything-1.4.1.1032.x64.zip) · [win-x86-portable](https://www.voidtools.com/Everything-1.4.1.1032.x86.zip) | voidtools 官网 |
@@ -62,16 +62,16 @@
 
 | 软件 | 最新版本 | 发布日期 | 下载链接 | 来源 |
 |------|---------|---------|---------|------|
-| [**NVIDIA App**](https://www.nvidia.com/en-us/software/nvidia-app/) | `2026-04-27` | — | [win-x64](https://www.nvidia.com/en-us/software/nvidia-app/) | 手动同步（无 API） |
+| [**NVIDIA App**](https://www.nvidia.com/en-us/software/nvidia-app/) | `2026-04-28` | — | [win-x64](https://www.nvidia.com/en-us/software/nvidia-app/) | 手动同步（无 API） |
 
 
 ### 即时通讯
 
 | 软件 | 最新版本 | 发布日期 | 下载链接 | 来源 |
 |------|---------|---------|---------|------|
-| [**QQ**](https://im.qq.com/) | `2026-04-27` | — | [win-x64](https://im.qq.com/download/) · [mac-universal](https://im.qq.com/download/) | 手动同步（无 API） |
+| [**QQ**](https://im.qq.com/) | `2026-04-28` | — | [win-x64](https://im.qq.com/download/) · [mac-universal](https://im.qq.com/download/) | 手动同步（无 API） |
 | [**微信**](https://weixin.qq.com/) | `8.0.71` | — | [win-x64](https://dldir1.qq.com/weixin/Windows/WeChatSetup.exe) · [mac-universal](https://dldir1.qq.com/weixin/mac/WeChatMac.dmg) | 微信官网 |
-| [**YY 语音**](https://www.yy.com/) | `2026-04-27` | — | [win-x64](https://www.yy.com/) | 手动同步（无 API） |
+| [**YY 语音**](https://www.yy.com/) | `2026-04-28` | — | [win-x64](https://www.yy.com/) | 手动同步（无 API） |
 
 
 
