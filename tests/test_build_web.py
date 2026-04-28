@@ -103,6 +103,31 @@ def test_copy_static_copies_vendor_directory(tmp_path, monkeypatch):
     ) == "console.log('ok')"
 
 
+def test_inject_asset_versions_adds_content_hash_queries(tmp_path, monkeypatch):
+    dist = tmp_path / "dist"
+    vendor = dist / "vendor"
+    vendor.mkdir(parents=True)
+    (dist / "index.html").write_text(
+        '<link rel="stylesheet" href="styles.css">'
+        '<script src="vendor/fuse.min.js"></script>'
+        '<script src="app.js"></script>',
+        encoding="utf-8",
+    )
+    (dist / "styles.css").write_text("body{}", encoding="utf-8")
+    (dist / "app.js").write_text("console.log('app')", encoding="utf-8")
+    (vendor / "fuse.min.js").write_text("console.log('fuse')", encoding="utf-8")
+
+    monkeypatch.setattr(build_web, "DIST", dist)
+
+    versions = build_web.inject_asset_versions()
+
+    html = (dist / "index.html").read_text(encoding="utf-8")
+    assert f'href="styles.css?v={versions["styles.css"]}"' in html
+    assert f'src="vendor/fuse.min.js?v={versions["vendor/fuse.min.js"]}"' in html
+    assert f'src="app.js?v={versions["app.js"]}"' in html
+    assert all(re.fullmatch(r"[0-9a-f]{12}", version) for version in versions.values())
+
+
 def test_vendor_manifest_checksums_match_real_files():
     verified = build_web.verify_vendor_assets()
 

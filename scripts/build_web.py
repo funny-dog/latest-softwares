@@ -38,6 +38,13 @@ WEB_SRC = REPO_ROOT / "web"
 DATA_FILE = REPO_ROOT / "data" / "latest.json"
 DIST = REPO_ROOT / "dist"
 VENDOR_MANIFEST = WEB_SRC / "vendor" / "manifest.json"
+VERSIONED_ASSETS = (
+    "styles.css",
+    "vendor/tailwindcss.js",
+    "vendor/alpinejs.min.js",
+    "vendor/fuse.min.js",
+    "app.js",
+)
 
 # index.html 中数据占位符（必须与 web/index.html 内严格一致）
 DATA_PLACEHOLDER = (
@@ -115,6 +122,29 @@ def _json_for_inline_script(data: dict) -> str:
     )
 
 
+def inject_asset_versions() -> dict[str, str]:
+    """Append content-hash query strings to static asset URLs in dist/index.html."""
+    index = DIST / "index.html"
+    html = index.read_text(encoding="utf-8")
+    versions: dict[str, str] = {}
+
+    for asset in VERSIONED_ASSETS:
+        asset_path = DIST / asset
+        if not asset_path.is_file():
+            continue
+
+        version = _sha256(asset_path)[:12]
+        versions[asset] = version
+        for attr in ("href", "src"):
+            html = html.replace(
+                f'{attr}="{asset}"',
+                f'{attr}="{asset}?v={version}"',
+            )
+
+    index.write_text(html, encoding="utf-8")
+    return versions
+
+
 def inject_data(edition: str | None = None) -> int:
     if not DATA_FILE.exists():
         raise FileNotFoundError(
@@ -161,12 +191,14 @@ def main() -> int:
     clean_dist()
     vendor_assets = verify_vendor_assets()
     n_files = copy_static()
+    versioned_assets = inject_asset_versions()
     n_pkgs = inject_data(edition=args.edition)
 
     edition_label = f" [{args.edition}]" if args.edition else ""
     print(
         f"✓ dist/ 构建完成{edition_label}（{n_files} 个静态文件，"
-        f"{len(vendor_assets)} 个 vendor 文件已校验，注入 {n_pkgs} 个软件数据）"
+        f"{len(vendor_assets)} 个 vendor 文件已校验，"
+        f"{len(versioned_assets)} 个静态资源已加版本，注入 {n_pkgs} 个软件数据）"
     )
     print(f"  本地预览: python -m http.server -d {DIST.relative_to(REPO_ROOT)} 8000")
     return 0
