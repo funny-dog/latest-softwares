@@ -177,7 +177,7 @@
                 target="_blank" rel="noopener"
                 :class="badgeClass(asset.platform, asset.url, asset.link_kind)"
                 class="inline-flex items-center gap-1 text-xs px-2.5 py-1 rounded-md font-medium transition"
-                :title="assetTitle(asset)"
+                :title="isDirectLink(asset.url, asset.link_kind) ? msg('direct_download', { platform: asset.platform, size: asset.size ? formatSize(asset.size) : '' }) : msg('landing_download', { platform: asset.platform })"
               >
                 <span x-text="asset.platform"></span>
                 <!-- Direct download icon -->
