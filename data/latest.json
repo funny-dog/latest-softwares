@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-04-28T19:49:48+00:00",
+  "generated_at": "2026-04-28T19:56:25+00:00",
   "packages": [
     {
       "id": "windows11",
@@ -16,15 +16,15 @@
       "assets": [
         {
           "platform": "win-x64",
-          "url": "https://software.download.prss.microsoft.com/dbazure/Win11_25H2_Chinese_Simplified_x64_v2.iso?t=c946dc6a-f4b0-48c3-a277-afd14a5714a7&P1=1777492155&P2=601&P3=2&P4=bJyo7QUAXKR3iRV5nQFePXmjwVE2Esgj%2f74aweIkCuyt1YuB9QuQhF7P4zkjPpwcHkeQGEja%2f5E%2fqtnU8nZDmeKaMlPMlVfsYL%2bRpuDW3LcczdwNNfwA7s2kZ79ZrM8WwN0UnqNzxXa5H6AunLrvOxxuklocq2MRAvQRToKCFt9ctgw4U%2b6IUOUolkduFz%2fVzaMYAl5nGIUYA%2f63O%2fV7o%2f4d1eXjJyTXtGm%2f5IKEN1pBm0DCoaTn3ypu6%2fnXmXBOld9afaiTLKyuA6sO7HfkQBG5AwbMTgEp3n%2fHkRL296vfspOPJmOX7achD6VbLpyh1gGrwEmaaZ4mLrNLNAL%2bSw%3d%3d",
+          "url": "https://software.download.prss.microsoft.com/dbazure/Win11_25H2_Chinese_Simplified_x64_v2.iso?t=e09774cf-f94f-40c8-88ab-95e61bc10e55&P1=1777492561&P2=601&P3=2&P4=Rt1V23i%2fh7OlBzITvH8l%2fkssJuLGpX8PvjCqon63Cz2k3KErb4N8J9eGFOIzGwg5b8L3Cl0A%2fhv5oYujWuK00AnO2MqNiizfbx1PSuXR7UEnIjeNS%2bmsjAzu%2bFHj0KBG7q%2fLZPgo5qoR3vbFDl5VAboetIbE7rdxV0LoQOANUCBf6ngYsmN8L77cdAEFrmY4ynEuSZ5G322lg%2fQh5ga1I3RIp91uCDElTXEZsZVBJf%2fHodrMbVVMWPguug%2f0%2b%2fpyDhEImW6eSCMhpNKnERDGqE5IbYPV4Ehntyy7it8rNCrurlizQDVvFRYN4v0yux3ex%2fuPkn8q2MbJYrz54IuzyQ%3d%3d",
           "link_kind": "direct",
           "filename": "Win11_25H2_Chinese_Simplified_x64_v2.iso",
           "size": null,
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-28T19:49:17+00:00",
-      "last_success_at": "2026-04-28T19:49:17+00:00",
+      "fetched_at": "2026-04-28T19:56:02+00:00",
+      "last_success_at": "2026-04-28T19:56:02+00:00",
       "editions": [
         "cn"
       ]
@@ -74,8 +74,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-28T19:49:09+00:00",
-      "last_success_at": "2026-04-28T19:49:09+00:00",
+      "fetched_at": "2026-04-28T19:55:57+00:00",
+      "last_success_at": "2026-04-28T19:55:57+00:00",
       "editions": [
         "intl"
       ]
@@ -125,8 +125,8 @@
           "sha256": "bc5017110545de218ac71df0bdcf40665ec00e9de322825e29a28eebc1e3e1a2"
         }
       ],
-      "fetched_at": "2026-04-28T19:49:10+00:00",
-      "last_success_at": "2026-04-28T19:49:10+00:00",
+      "fetched_at": "2026-04-28T19:55:58+00:00",
+      "last_success_at": "2026-04-28T19:55:58+00:00",
       "editions": [
         "cn",
         "intl"
@@ -161,8 +161,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-28T19:49:09+00:00",
-      "last_success_at": "2026-04-28T19:49:09+00:00",
+      "fetched_at": "2026-04-28T19:55:57+00:00",
+      "last_success_at": "2026-04-28T19:55:57+00:00",
       "editions": [
         "cn",
         "intl"
@@ -189,8 +189,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-28T19:49:09+00:00",
-      "last_success_at": "2026-04-28T19:49:09+00:00",
+      "fetched_at": "2026-04-28T19:55:57+00:00",
+      "last_success_at": "2026-04-28T19:55:57+00:00",
       "editions": [
         "cn",
         "intl"
@@ -225,8 +225,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-28T19:49:09+00:00",
-      "last_success_at": "2026-04-28T19:49:09+00:00",
+      "fetched_at": "2026-04-28T19:55:57+00:00",
+      "last_success_at": "2026-04-28T19:55:57+00:00",
       "editions": [
         "cn",
         "intl"
@@ -261,8 +261,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-28T19:49:10+00:00",
-      "last_success_at": "2026-04-28T19:49:10+00:00",
+      "fetched_at": "2026-04-28T19:55:57+00:00",
+      "last_success_at": "2026-04-28T19:55:57+00:00",
       "editions": [
         "cn",
         "intl"
@@ -313,8 +313,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-28T19:49:11+00:00",
-      "last_success_at": "2026-04-28T19:49:11+00:00",
+      "fetched_at": "2026-04-28T19:55:59+00:00",
+      "last_success_at": "2026-04-28T19:55:59+00:00",
       "editions": [
         "intl"
       ]
@@ -340,8 +340,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-28T19:49:09+00:00",
-      "last_success_at": "2026-04-28T19:49:09+00:00",
+      "fetched_at": "2026-04-28T19:55:57+00:00",
+      "last_success_at": "2026-04-28T19:55:57+00:00",
       "editions": [
         "cn",
         "intl"
@@ -392,8 +392,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-28T19:49:10+00:00",
-      "last_success_at": "2026-04-28T19:49:10+00:00",
+      "fetched_at": "2026-04-28T19:55:57+00:00",
+      "last_success_at": "2026-04-28T19:55:57+00:00",
       "editions": [
         "cn",
         "intl"
@@ -420,8 +420,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-28T19:49:09+00:00",
-      "last_success_at": "2026-04-28T19:49:09+00:00",
+      "fetched_at": "2026-04-28T19:55:57+00:00",
+      "last_success_at": "2026-04-28T19:55:57+00:00",
       "editions": [
         "cn",
         "intl"
@@ -448,8 +448,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-28T19:49:10+00:00",
-      "last_success_at": "2026-04-28T19:49:10+00:00",
+      "fetched_at": "2026-04-28T19:55:57+00:00",
+      "last_success_at": "2026-04-28T19:55:57+00:00",
       "editions": [
         "intl"
       ]
@@ -475,8 +475,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-28T19:49:10+00:00",
-      "last_success_at": "2026-04-28T19:49:10+00:00",
+      "fetched_at": "2026-04-28T19:55:57+00:00",
+      "last_success_at": "2026-04-28T19:55:57+00:00",
       "editions": [
         "intl"
       ]
@@ -502,8 +502,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-28T19:49:10+00:00",
-      "last_success_at": "2026-04-28T19:49:10+00:00",
+      "fetched_at": "2026-04-28T19:55:58+00:00",
+      "last_success_at": "2026-04-28T19:55:58+00:00",
       "editions": [
         "intl"
       ]
@@ -529,8 +529,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-28T19:49:10+00:00",
-      "last_success_at": "2026-04-28T19:49:10+00:00",
+      "fetched_at": "2026-04-28T19:55:58+00:00",
+      "last_success_at": "2026-04-28T19:55:58+00:00",
       "editions": [
         "intl"
       ]
@@ -556,8 +556,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-28T19:49:11+00:00",
-      "last_success_at": "2026-04-28T19:49:11+00:00",
+      "fetched_at": "2026-04-28T19:55:58+00:00",
+      "last_success_at": "2026-04-28T19:55:58+00:00",
       "editions": [
         "intl"
       ]
@@ -583,8 +583,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-28T19:49:11+00:00",
-      "last_success_at": "2026-04-28T19:49:11+00:00",
+      "fetched_at": "2026-04-28T19:55:58+00:00",
+      "last_success_at": "2026-04-28T19:55:58+00:00",
       "editions": [
         "intl"
       ]
@@ -610,8 +610,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-28T19:49:11+00:00",
-      "last_success_at": "2026-04-28T19:49:11+00:00",
+      "fetched_at": "2026-04-28T19:55:58+00:00",
+      "last_success_at": "2026-04-28T19:55:58+00:00",
       "editions": [
         "intl"
       ]
@@ -637,8 +637,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-28T19:49:11+00:00",
-      "last_success_at": "2026-04-28T19:49:11+00:00",
+      "fetched_at": "2026-04-28T19:55:58+00:00",
+      "last_success_at": "2026-04-28T19:55:58+00:00",
       "editions": [
         "intl"
       ]
@@ -664,8 +664,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-28T19:49:11+00:00",
-      "last_success_at": "2026-04-28T19:49:11+00:00",
+      "fetched_at": "2026-04-28T19:55:58+00:00",
+      "last_success_at": "2026-04-28T19:55:58+00:00",
       "editions": [
         "intl"
       ]
@@ -691,8 +691,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-28T19:49:11+00:00",
-      "last_success_at": "2026-04-28T19:49:11+00:00",
+      "fetched_at": "2026-04-28T19:55:59+00:00",
+      "last_success_at": "2026-04-28T19:55:59+00:00",
       "editions": [
         "intl"
       ]
@@ -718,8 +718,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-28T19:49:12+00:00",
-      "last_success_at": "2026-04-28T19:49:12+00:00",
+      "fetched_at": "2026-04-28T19:55:59+00:00",
+      "last_success_at": "2026-04-28T19:55:59+00:00",
       "editions": [
         "intl"
       ]
@@ -745,8 +745,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-28T19:49:12+00:00",
-      "last_success_at": "2026-04-28T19:49:12+00:00",
+      "fetched_at": "2026-04-28T19:55:59+00:00",
+      "last_success_at": "2026-04-28T19:55:59+00:00",
       "editions": [
         "intl"
       ]
@@ -772,8 +772,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-28T19:49:12+00:00",
-      "last_success_at": "2026-04-28T19:49:12+00:00",
+      "fetched_at": "2026-04-28T19:55:59+00:00",
+      "last_success_at": "2026-04-28T19:55:59+00:00",
       "editions": [
         "intl"
       ]
@@ -799,8 +799,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-28T19:49:12+00:00",
-      "last_success_at": "2026-04-28T19:49:12+00:00",
+      "fetched_at": "2026-04-28T19:55:59+00:00",
+      "last_success_at": "2026-04-28T19:55:59+00:00",
       "editions": [
         "intl"
       ]
@@ -826,8 +826,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-28T19:49:12+00:00",
-      "last_success_at": "2026-04-28T19:49:12+00:00",
+      "fetched_at": "2026-04-28T19:56:00+00:00",
+      "last_success_at": "2026-04-28T19:56:00+00:00",
       "editions": [
         "intl"
       ]
@@ -853,8 +853,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-28T19:49:12+00:00",
-      "last_success_at": "2026-04-28T19:49:12+00:00",
+      "fetched_at": "2026-04-28T19:55:59+00:00",
+      "last_success_at": "2026-04-28T19:55:59+00:00",
       "editions": [
         "intl"
       ]
@@ -880,8 +880,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-28T19:49:13+00:00",
-      "last_success_at": "2026-04-28T19:49:13+00:00",
+      "fetched_at": "2026-04-28T19:55:59+00:00",
+      "last_success_at": "2026-04-28T19:55:59+00:00",
       "editions": [
         "intl"
       ]
@@ -907,8 +907,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-28T19:49:13+00:00",
-      "last_success_at": "2026-04-28T19:49:13+00:00",
+      "fetched_at": "2026-04-28T19:55:59+00:00",
+      "last_success_at": "2026-04-28T19:55:59+00:00",
       "editions": [
         "intl"
       ]
@@ -934,8 +934,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-28T19:49:13+00:00",
-      "last_success_at": "2026-04-28T19:49:13+00:00",
+      "fetched_at": "2026-04-28T19:56:00+00:00",
+      "last_success_at": "2026-04-28T19:56:00+00:00",
       "editions": [
         "intl"
       ]
@@ -961,8 +961,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-28T19:49:13+00:00",
-      "last_success_at": "2026-04-28T19:49:13+00:00",
+      "fetched_at": "2026-04-28T19:55:59+00:00",
+      "last_success_at": "2026-04-28T19:55:59+00:00",
       "editions": [
         "intl"
       ]
@@ -988,8 +988,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-28T19:49:13+00:00",
-      "last_success_at": "2026-04-28T19:49:13+00:00",
+      "fetched_at": "2026-04-28T19:56:00+00:00",
+      "last_success_at": "2026-04-28T19:56:00+00:00",
       "editions": [
         "intl"
       ]
@@ -1015,8 +1015,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-28T19:49:13+00:00",
-      "last_success_at": "2026-04-28T19:49:13+00:00",
+      "fetched_at": "2026-04-28T19:56:00+00:00",
+      "last_success_at": "2026-04-28T19:56:00+00:00",
       "editions": [
         "intl"
       ]
@@ -1042,8 +1042,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-28T19:49:13+00:00",
-      "last_success_at": "2026-04-28T19:49:13+00:00",
+      "fetched_at": "2026-04-28T19:56:01+00:00",
+      "last_success_at": "2026-04-28T19:56:01+00:00",
       "editions": [
         "intl"
       ]
@@ -1069,8 +1069,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-28T19:49:14+00:00",
-      "last_success_at": "2026-04-28T19:49:14+00:00",
+      "fetched_at": "2026-04-28T19:56:00+00:00",
+      "last_success_at": "2026-04-28T19:56:00+00:00",
       "editions": [
         "intl"
       ]
@@ -1096,8 +1096,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-28T19:49:14+00:00",
-      "last_success_at": "2026-04-28T19:49:14+00:00",
+      "fetched_at": "2026-04-28T19:56:00+00:00",
+      "last_success_at": "2026-04-28T19:56:00+00:00",
       "editions": [
         "intl"
       ]
@@ -1123,8 +1123,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-28T19:49:14+00:00",
-      "last_success_at": "2026-04-28T19:49:14+00:00",
+      "fetched_at": "2026-04-28T19:56:00+00:00",
+      "last_success_at": "2026-04-28T19:56:00+00:00",
       "editions": [
         "intl"
       ]
@@ -1150,8 +1150,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-28T19:49:14+00:00",
-      "last_success_at": "2026-04-28T19:49:14+00:00",
+      "fetched_at": "2026-04-28T19:56:01+00:00",
+      "last_success_at": "2026-04-28T19:56:01+00:00",
       "editions": [
         "intl"
       ]
@@ -1177,8 +1177,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-28T19:49:14+00:00",
-      "last_success_at": "2026-04-28T19:49:14+00:00",
+      "fetched_at": "2026-04-28T19:56:01+00:00",
+      "last_success_at": "2026-04-28T19:56:01+00:00",
       "editions": [
         "intl"
       ]
@@ -1204,8 +1204,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-28T19:49:15+00:00",
-      "last_success_at": "2026-04-28T19:49:15+00:00",
+      "fetched_at": "2026-04-28T19:56:01+00:00",
+      "last_success_at": "2026-04-28T19:56:01+00:00",
       "editions": [
         "intl"
       ]
@@ -1231,8 +1231,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-28T19:49:14+00:00",
-      "last_success_at": "2026-04-28T19:49:14+00:00",
+      "fetched_at": "2026-04-28T19:56:01+00:00",
+      "last_success_at": "2026-04-28T19:56:01+00:00",
       "editions": [
         "intl"
       ]
@@ -1258,8 +1258,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-28T19:49:15+00:00",
-      "last_success_at": "2026-04-28T19:49:15+00:00",
+      "fetched_at": "2026-04-28T19:56:01+00:00",
+      "last_success_at": "2026-04-28T19:56:01+00:00",
       "editions": [
         "intl"
       ]
@@ -1285,8 +1285,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-28T19:49:16+00:00",
-      "last_success_at": "2026-04-28T19:49:16+00:00",
+      "fetched_at": "2026-04-28T19:56:01+00:00",
+      "last_success_at": "2026-04-28T19:56:01+00:00",
       "editions": [
         "intl"
       ]
@@ -1312,8 +1312,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-28T19:49:15+00:00",
-      "last_success_at": "2026-04-28T19:49:15+00:00",
+      "fetched_at": "2026-04-28T19:56:01+00:00",
+      "last_success_at": "2026-04-28T19:56:01+00:00",
       "editions": [
         "intl"
       ]
@@ -1339,8 +1339,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-28T19:49:15+00:00",
-      "last_success_at": "2026-04-28T19:49:15+00:00",
+      "fetched_at": "2026-04-28T19:56:02+00:00",
+      "last_success_at": "2026-04-28T19:56:02+00:00",
       "editions": [
         "intl"
       ]
@@ -1366,8 +1366,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-28T19:49:15+00:00",
-      "last_success_at": "2026-04-28T19:49:15+00:00",
+      "fetched_at": "2026-04-28T19:56:02+00:00",
+      "last_success_at": "2026-04-28T19:56:02+00:00",
       "editions": [
         "intl"
       ]
@@ -1393,8 +1393,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-28T19:49:15+00:00",
-      "last_success_at": "2026-04-28T19:49:15+00:00",
+      "fetched_at": "2026-04-28T19:56:02+00:00",
+      "last_success_at": "2026-04-28T19:56:02+00:00",
       "editions": [
         "intl"
       ]
@@ -1420,8 +1420,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-28T19:49:15+00:00",
-      "last_success_at": "2026-04-28T19:49:15+00:00",
+      "fetched_at": "2026-04-28T19:56:02+00:00",
+      "last_success_at": "2026-04-28T19:56:02+00:00",
       "editions": [
         "intl"
       ]
@@ -1447,8 +1447,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-28T19:49:16+00:00",
-      "last_success_at": "2026-04-28T19:49:16+00:00",
+      "fetched_at": "2026-04-28T19:56:02+00:00",
+      "last_success_at": "2026-04-28T19:56:02+00:00",
       "editions": [
         "intl"
       ]
@@ -1474,8 +1474,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-28T19:49:16+00:00",
-      "last_success_at": "2026-04-28T19:49:16+00:00",
+      "fetched_at": "2026-04-28T19:56:02+00:00",
+      "last_success_at": "2026-04-28T19:56:02+00:00",
       "editions": [
         "intl"
       ]
@@ -1501,8 +1501,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-28T19:49:16+00:00",
-      "last_success_at": "2026-04-28T19:49:16+00:00",
+      "fetched_at": "2026-04-28T19:56:02+00:00",
+      "last_success_at": "2026-04-28T19:56:02+00:00",
       "editions": [
         "intl"
       ]
@@ -1528,8 +1528,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-28T19:49:16+00:00",
-      "last_success_at": "2026-04-28T19:49:16+00:00",
+      "fetched_at": "2026-04-28T19:56:02+00:00",
+      "last_success_at": "2026-04-28T19:56:02+00:00",
       "editions": [
         "intl"
       ]
@@ -1555,8 +1555,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-28T19:49:16+00:00",
-      "last_success_at": "2026-04-28T19:49:16+00:00",
+      "fetched_at": "2026-04-28T19:56:02+00:00",
+      "last_success_at": "2026-04-28T19:56:02+00:00",
       "editions": [
         "intl"
       ]
@@ -1582,8 +1582,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-28T19:49:16+00:00",
-      "last_success_at": "2026-04-28T19:49:16+00:00",
+      "fetched_at": "2026-04-28T19:56:03+00:00",
+      "last_success_at": "2026-04-28T19:56:03+00:00",
       "editions": [
         "intl"
       ]
@@ -1609,8 +1609,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-28T19:49:16+00:00",
-      "last_success_at": "2026-04-28T19:49:16+00:00",
+      "fetched_at": "2026-04-28T19:56:03+00:00",
+      "last_success_at": "2026-04-28T19:56:03+00:00",
       "editions": [
         "intl"
       ]
@@ -1636,8 +1636,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-28T19:49:17+00:00",
-      "last_success_at": "2026-04-28T19:49:17+00:00",
+      "fetched_at": "2026-04-28T19:56:03+00:00",
+      "last_success_at": "2026-04-28T19:56:03+00:00",
       "editions": [
         "intl"
       ]
@@ -1663,8 +1663,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-28T19:49:16+00:00",
-      "last_success_at": "2026-04-28T19:49:16+00:00",
+      "fetched_at": "2026-04-28T19:56:03+00:00",
+      "last_success_at": "2026-04-28T19:56:03+00:00",
       "editions": [
         "intl"
       ]
@@ -1690,8 +1690,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-28T19:49:17+00:00",
-      "last_success_at": "2026-04-28T19:49:17+00:00",
+      "fetched_at": "2026-04-28T19:56:03+00:00",
+      "last_success_at": "2026-04-28T19:56:03+00:00",
       "editions": [
         "intl"
       ]
@@ -1717,8 +1717,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-28T19:49:17+00:00",
-      "last_success_at": "2026-04-28T19:49:17+00:00",
+      "fetched_at": "2026-04-28T19:56:03+00:00",
+      "last_success_at": "2026-04-28T19:56:03+00:00",
       "editions": [
         "intl"
       ]
@@ -1744,8 +1744,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-28T19:49:17+00:00",
-      "last_success_at": "2026-04-28T19:49:17+00:00",
+      "fetched_at": "2026-04-28T19:56:03+00:00",
+      "last_success_at": "2026-04-28T19:56:03+00:00",
       "editions": [
         "intl"
       ]
@@ -1771,8 +1771,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-28T19:49:17+00:00",
-      "last_success_at": "2026-04-28T19:49:17+00:00",
+      "fetched_at": "2026-04-28T19:56:03+00:00",
+      "last_success_at": "2026-04-28T19:56:03+00:00",
       "editions": [
         "intl"
       ]
@@ -1798,8 +1798,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-28T19:49:17+00:00",
-      "last_success_at": "2026-04-28T19:49:17+00:00",
+      "fetched_at": "2026-04-28T19:56:03+00:00",
+      "last_success_at": "2026-04-28T19:56:03+00:00",
       "editions": [
         "intl"
       ]
@@ -1825,8 +1825,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-28T19:49:17+00:00",
-      "last_success_at": "2026-04-28T19:49:17+00:00",
+      "fetched_at": "2026-04-28T19:56:03+00:00",
+      "last_success_at": "2026-04-28T19:56:03+00:00",
       "editions": [
         "intl"
       ]
@@ -1852,8 +1852,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-28T19:49:18+00:00",
-      "last_success_at": "2026-04-28T19:49:18+00:00",
+      "fetched_at": "2026-04-28T19:56:04+00:00",
+      "last_success_at": "2026-04-28T19:56:04+00:00",
       "editions": [
         "intl"
       ]
@@ -1879,8 +1879,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-28T19:49:18+00:00",
-      "last_success_at": "2026-04-28T19:49:18+00:00",
+      "fetched_at": "2026-04-28T19:56:04+00:00",
+      "last_success_at": "2026-04-28T19:56:04+00:00",
       "editions": [
         "intl"
       ]
@@ -1906,8 +1906,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-28T19:49:18+00:00",
-      "last_success_at": "2026-04-28T19:49:18+00:00",
+      "fetched_at": "2026-04-28T19:56:04+00:00",
+      "last_success_at": "2026-04-28T19:56:04+00:00",
       "editions": [
         "intl"
       ]
@@ -1933,8 +1933,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-28T19:49:18+00:00",
-      "last_success_at": "2026-04-28T19:49:18+00:00",
+      "fetched_at": "2026-04-28T19:56:04+00:00",
+      "last_success_at": "2026-04-28T19:56:04+00:00",
       "editions": [
         "intl"
       ]
@@ -1960,8 +1960,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-28T19:49:17+00:00",
-      "last_success_at": "2026-04-28T19:49:17+00:00",
+      "fetched_at": "2026-04-28T19:56:03+00:00",
+      "last_success_at": "2026-04-28T19:56:03+00:00",
       "editions": [
         "intl"
       ]
@@ -1987,8 +1987,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-28T19:49:18+00:00",
-      "last_success_at": "2026-04-28T19:49:18+00:00",
+      "fetched_at": "2026-04-28T19:56:04+00:00",
+      "last_success_at": "2026-04-28T19:56:04+00:00",
       "editions": [
         "intl"
       ]
@@ -2014,8 +2014,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-28T19:49:18+00:00",
-      "last_success_at": "2026-04-28T19:49:18+00:00",
+      "fetched_at": "2026-04-28T19:56:04+00:00",
+      "last_success_at": "2026-04-28T19:56:04+00:00",
       "editions": [
         "intl"
       ]
@@ -2041,8 +2041,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-28T19:49:18+00:00",
-      "last_success_at": "2026-04-28T19:49:18+00:00",
+      "fetched_at": "2026-04-28T19:56:04+00:00",
+      "last_success_at": "2026-04-28T19:56:04+00:00",
       "editions": [
         "intl"
       ]
@@ -2068,8 +2068,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-28T19:49:19+00:00",
-      "last_success_at": "2026-04-28T19:49:19+00:00",
+      "fetched_at": "2026-04-28T19:56:04+00:00",
+      "last_success_at": "2026-04-28T19:56:04+00:00",
       "editions": [
         "intl"
       ]
@@ -2095,8 +2095,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-28T19:49:17+00:00",
-      "last_success_at": "2026-04-28T19:49:17+00:00",
+      "fetched_at": "2026-04-28T19:56:03+00:00",
+      "last_success_at": "2026-04-28T19:56:03+00:00",
       "editions": [
         "intl"
       ]
@@ -2122,8 +2122,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-28T19:49:17+00:00",
-      "last_success_at": "2026-04-28T19:49:17+00:00",
+      "fetched_at": "2026-04-28T19:56:03+00:00",
+      "last_success_at": "2026-04-28T19:56:03+00:00",
       "editions": [
         "intl"
       ]
@@ -2149,8 +2149,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-28T19:49:19+00:00",
-      "last_success_at": "2026-04-28T19:49:19+00:00",
+      "fetched_at": "2026-04-28T19:56:05+00:00",
+      "last_success_at": "2026-04-28T19:56:05+00:00",
       "editions": [
         "intl"
       ]
@@ -2176,8 +2176,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-28T19:49:19+00:00",
-      "last_success_at": "2026-04-28T19:49:19+00:00",
+      "fetched_at": "2026-04-28T19:56:05+00:00",
+      "last_success_at": "2026-04-28T19:56:05+00:00",
       "editions": [
         "intl"
       ]
@@ -2203,8 +2203,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-28T19:49:19+00:00",
-      "last_success_at": "2026-04-28T19:49:19+00:00",
+      "fetched_at": "2026-04-28T19:56:05+00:00",
+      "last_success_at": "2026-04-28T19:56:05+00:00",
       "editions": [
         "intl"
       ]
@@ -2230,8 +2230,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-28T19:49:20+00:00",
-      "last_success_at": "2026-04-28T19:49:20+00:00",
+      "fetched_at": "2026-04-28T19:56:05+00:00",
+      "last_success_at": "2026-04-28T19:56:05+00:00",
       "editions": [
         "intl"
       ]
@@ -2257,8 +2257,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-28T19:49:20+00:00",
-      "last_success_at": "2026-04-28T19:49:20+00:00",
+      "fetched_at": "2026-04-28T19:56:05+00:00",
+      "last_success_at": "2026-04-28T19:56:05+00:00",
       "editions": [
         "intl"
       ]
@@ -2284,8 +2284,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-28T19:49:20+00:00",
-      "last_success_at": "2026-04-28T19:49:20+00:00",
+      "fetched_at": "2026-04-28T19:56:05+00:00",
+      "last_success_at": "2026-04-28T19:56:05+00:00",
       "editions": [
         "intl"
       ]
@@ -2327,8 +2327,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-28T19:49:19+00:00",
-      "last_success_at": "2026-04-28T19:49:19+00:00",
+      "fetched_at": "2026-04-28T19:56:05+00:00",
+      "last_success_at": "2026-04-28T19:56:05+00:00",
       "editions": [
         "intl"
       ]
@@ -2378,8 +2378,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-28T19:49:19+00:00",
-      "last_success_at": "2026-04-28T19:49:19+00:00",
+      "fetched_at": "2026-04-28T19:56:05+00:00",
+      "last_success_at": "2026-04-28T19:56:05+00:00",
       "editions": [
         "intl"
       ]
@@ -2429,8 +2429,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-28T19:49:20+00:00",
-      "last_success_at": "2026-04-28T19:49:20+00:00",
+      "fetched_at": "2026-04-28T19:56:05+00:00",
+      "last_success_at": "2026-04-28T19:56:05+00:00",
       "editions": [
         "intl"
       ]
@@ -2480,8 +2480,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-28T19:49:20+00:00",
-      "last_success_at": "2026-04-28T19:49:20+00:00",
+      "fetched_at": "2026-04-28T19:56:05+00:00",
+      "last_success_at": "2026-04-28T19:56:05+00:00",
       "editions": [
         "intl"
       ]
@@ -2523,8 +2523,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-28T19:49:20+00:00",
-      "last_success_at": "2026-04-28T19:49:20+00:00",
+      "fetched_at": "2026-04-28T19:56:06+00:00",
+      "last_success_at": "2026-04-28T19:56:06+00:00",
       "editions": [
         "intl"
       ]
@@ -2566,8 +2566,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-28T19:49:21+00:00",
-      "last_success_at": "2026-04-28T19:49:21+00:00",
+      "fetched_at": "2026-04-28T19:56:06+00:00",
+      "last_success_at": "2026-04-28T19:56:06+00:00",
       "editions": [
         "intl"
       ]
@@ -2609,8 +2609,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-28T19:49:21+00:00",
-      "last_success_at": "2026-04-28T19:49:21+00:00",
+      "fetched_at": "2026-04-28T19:56:06+00:00",
+      "last_success_at": "2026-04-28T19:56:06+00:00",
       "editions": [
         "intl"
       ]
@@ -2636,8 +2636,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-28T19:49:21+00:00",
-      "last_success_at": "2026-04-28T19:49:21+00:00",
+      "fetched_at": "2026-04-28T19:56:06+00:00",
+      "last_success_at": "2026-04-28T19:56:06+00:00",
       "editions": [
         "intl"
       ]
@@ -2679,8 +2679,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-28T19:49:21+00:00",
-      "last_success_at": "2026-04-28T19:49:21+00:00",
+      "fetched_at": "2026-04-28T19:56:06+00:00",
+      "last_success_at": "2026-04-28T19:56:06+00:00",
       "editions": [
         "intl"
       ]
@@ -2706,8 +2706,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-28T19:49:21+00:00",
-      "last_success_at": "2026-04-28T19:49:21+00:00",
+      "fetched_at": "2026-04-28T19:56:06+00:00",
+      "last_success_at": "2026-04-28T19:56:06+00:00",
       "editions": [
         "intl"
       ]
@@ -2733,8 +2733,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-28T19:49:21+00:00",
-      "last_success_at": "2026-04-28T19:49:21+00:00",
+      "fetched_at": "2026-04-28T19:56:07+00:00",
+      "last_success_at": "2026-04-28T19:56:07+00:00",
       "editions": [
         "intl"
       ]
@@ -2776,8 +2776,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-28T19:49:21+00:00",
-      "last_success_at": "2026-04-28T19:49:21+00:00",
+      "fetched_at": "2026-04-28T19:56:06+00:00",
+      "last_success_at": "2026-04-28T19:56:06+00:00",
       "editions": [
         "intl"
       ]
@@ -2819,8 +2819,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-28T19:49:21+00:00",
-      "last_success_at": "2026-04-28T19:49:21+00:00",
+      "fetched_at": "2026-04-28T19:56:06+00:00",
+      "last_success_at": "2026-04-28T19:56:06+00:00",
       "editions": [
         "intl"
       ]
@@ -2846,8 +2846,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-28T19:49:22+00:00",
-      "last_success_at": "2026-04-28T19:49:22+00:00",
+      "fetched_at": "2026-04-28T19:56:07+00:00",
+      "last_success_at": "2026-04-28T19:56:07+00:00",
       "editions": [
         "intl"
       ]
@@ -2889,8 +2889,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-28T19:49:22+00:00",
-      "last_success_at": "2026-04-28T19:49:22+00:00",
+      "fetched_at": "2026-04-28T19:56:07+00:00",
+      "last_success_at": "2026-04-28T19:56:07+00:00",
       "editions": [
         "intl"
       ]
@@ -2932,8 +2932,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-28T19:49:22+00:00",
-      "last_success_at": "2026-04-28T19:49:22+00:00",
+      "fetched_at": "2026-04-28T19:56:06+00:00",
+      "last_success_at": "2026-04-28T19:56:06+00:00",
       "editions": [
         "intl"
       ]
@@ -2975,8 +2975,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-28T19:49:22+00:00",
-      "last_success_at": "2026-04-28T19:49:22+00:00",
+      "fetched_at": "2026-04-28T19:56:07+00:00",
+      "last_success_at": "2026-04-28T19:56:07+00:00",
       "editions": [
         "intl"
       ]
@@ -3018,8 +3018,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-28T19:49:22+00:00",
-      "last_success_at": "2026-04-28T19:49:22+00:00",
+      "fetched_at": "2026-04-28T19:56:07+00:00",
+      "last_success_at": "2026-04-28T19:56:07+00:00",
       "editions": [
         "intl"
       ]
@@ -3061,8 +3061,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-28T19:49:21+00:00",
-      "last_success_at": "2026-04-28T19:49:21+00:00",
+      "fetched_at": "2026-04-28T19:56:06+00:00",
+      "last_success_at": "2026-04-28T19:56:06+00:00",
       "editions": [
         "intl"
       ]
@@ -3104,8 +3104,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-28T19:49:21+00:00",
-      "last_success_at": "2026-04-28T19:49:21+00:00",
+      "fetched_at": "2026-04-28T19:56:06+00:00",
+      "last_success_at": "2026-04-28T19:56:06+00:00",
       "editions": [
         "intl"
       ]
@@ -3139,8 +3139,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-28T19:49:21+00:00",
-      "last_success_at": "2026-04-28T19:49:21+00:00",
+      "fetched_at": "2026-04-28T19:56:06+00:00",
+      "last_success_at": "2026-04-28T19:56:06+00:00",
       "editions": [
         "intl"
       ]
@@ -3174,8 +3174,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-28T19:49:21+00:00",
-      "last_success_at": "2026-04-28T19:49:21+00:00",
+      "fetched_at": "2026-04-28T19:56:06+00:00",
+      "last_success_at": "2026-04-28T19:56:06+00:00",
       "editions": [
         "intl"
       ]
@@ -3217,8 +3217,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-28T19:49:21+00:00",
-      "last_success_at": "2026-04-28T19:49:21+00:00",
+      "fetched_at": "2026-04-28T19:56:06+00:00",
+      "last_success_at": "2026-04-28T19:56:06+00:00",
       "editions": [
         "intl"
       ]
@@ -3244,8 +3244,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-28T19:49:21+00:00",
-      "last_success_at": "2026-04-28T19:49:21+00:00",
+      "fetched_at": "2026-04-28T19:56:06+00:00",
+      "last_success_at": "2026-04-28T19:56:06+00:00",
       "editions": [
         "intl"
       ]
@@ -3279,8 +3279,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-28T19:49:21+00:00",
-      "last_success_at": "2026-04-28T19:49:21+00:00",
+      "fetched_at": "2026-04-28T19:56:06+00:00",
+      "last_success_at": "2026-04-28T19:56:06+00:00",
       "editions": [
         "intl"
       ]
@@ -3322,8 +3322,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-28T19:49:21+00:00",
-      "last_success_at": "2026-04-28T19:49:21+00:00",
+      "fetched_at": "2026-04-28T19:56:06+00:00",
+      "last_success_at": "2026-04-28T19:56:06+00:00",
       "editions": [
         "intl"
       ]
@@ -3357,8 +3357,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-28T19:49:21+00:00",
-      "last_success_at": "2026-04-28T19:49:21+00:00",
+      "fetched_at": "2026-04-28T19:56:06+00:00",
+      "last_success_at": "2026-04-28T19:56:06+00:00",
       "editions": [
         "intl"
       ]
@@ -3392,8 +3392,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-28T19:49:21+00:00",
-      "last_success_at": "2026-04-28T19:49:21+00:00",
+      "fetched_at": "2026-04-28T19:56:06+00:00",
+      "last_success_at": "2026-04-28T19:56:06+00:00",
       "editions": [
         "intl"
       ]
@@ -3435,8 +3435,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-28T19:49:21+00:00",
-      "last_success_at": "2026-04-28T19:49:21+00:00",
+      "fetched_at": "2026-04-28T19:56:06+00:00",
+      "last_success_at": "2026-04-28T19:56:06+00:00",
       "editions": [
         "intl"
       ]
@@ -3478,8 +3478,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-28T19:49:21+00:00",
-      "last_success_at": "2026-04-28T19:49:21+00:00",
+      "fetched_at": "2026-04-28T19:56:06+00:00",
+      "last_success_at": "2026-04-28T19:56:06+00:00",
       "editions": [
         "intl"
       ]
@@ -3495,7 +3495,7 @@
     "failures": [
       {
         "id": "windows11-english",
-        "error": "Fido 连续 3 次失败，最后一次：Fido 未返回 URL。stdout='Error: We are unable to complete your request at this time. Some users, entities and locations are banned from using this service. For this reason, leveraging anonymous or location hiding technologies when connecting to this service is not generally allowed. If you believe that you encountered this problem in error, please try again. If the problem persists you may contact Microsoft Support â€“ Contact Us page for assistance. Refer to message code 715-123130 and 0f383fd2-b149-4b0c-97cb-306054a90570.' stderr='' returncode=3"
+        "error": "Fido 连续 3 次失败，最后一次：Fido 未返回 URL。stdout='Error: We are unable to complete your request at this time. Some users, entities and locations are banned from using this service. For this reason, leveraging anonymous or location hiding technologies when connecting to this service is not generally allowed. If you believe that you encountered this problem in error, please try again. If the problem persists you may contact Microsoft Support â€“ Contact Us page for assistance. Refer to message code 715-123130 and acd07c0a-8a06-4807-9775-d6b38ce9e246.' stderr='' returncode=3"
       }
     ]
   }
