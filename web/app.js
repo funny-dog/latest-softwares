@@ -10,6 +10,7 @@ function app() {
     dark: false,
     fuse: null,
     packages: [],
+    stats: {},
     lastUpdated: '—',
     directFileExtensions: ['.exe', '.dmg', '.iso', '.zip', '.tar.gz', '.msi', '.pkg', '.deb', '.rpm', '.appimage', '.7z'],
 
@@ -19,6 +20,8 @@ function app() {
         all: '全部',
         app_title: 'Latest Softwares',
         status: ({ count, updated }) => `共 ${count} 项 · 最后同步 ${updated}`,
+        total_software: '软件总数',
+        total_software_value: ({ count }) => `${count} 项`,
         category: '分类',
         platform: '平台',
         result_count: ({ shown, total }) => `显示 ${shown} / ${total} 项`,
@@ -49,6 +52,8 @@ function app() {
         all: 'All',
         app_title: 'Latest Softwares',
         status: ({ count, updated }) => `Total ${count} items · Last synced ${updated}`,
+        total_software: 'Total',
+        total_software_value: ({ count }) => `${count} items`,
         category: 'Category',
         platform: 'Platform',
         result_count: ({ shown, total }) => `Showing ${shown} / ${total} items`,
@@ -104,6 +109,7 @@ function app() {
       document.title = this.t('app_title');
       // Keep packages.yaml order so categories remain predictable.
       this.packages = data.packages || [];
+      this.stats = data.stats || {};
       this.directFileExtensions = data.direct_file_extensions || this.directFileExtensions;
 
       // Prefer the top-level generated_at written by sync.py.
@@ -220,14 +226,22 @@ function app() {
     },
 
     statusText() {
-      return this.msg('status', { count: this.packages.length, updated: this.lastUpdated });
+      return this.msg('status', { count: this.totalCount(), updated: this.lastUpdated });
     },
 
     resultCountText() {
       return this.msg('result_count', {
         shown: this.filtered.length,
-        total: this.packages.length,
+        total: this.totalCount(),
       });
+    },
+
+    totalCount() {
+      return Number.isFinite(this.stats.total) ? this.stats.total : this.packages.length;
+    },
+
+    totalSoftwareText() {
+      return this.msg('total_software_value', { count: this.totalCount() });
     },
 
     themeTitle() {

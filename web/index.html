@@ -115,8 +115,14 @@
     </div>
 
     <!-- Result count -->
-    <div class="mt-6 mb-4 text-xs text-zinc-500 dark:text-zinc-400 flex items-center justify-between">
-      <span x-text="resultCountText()"></span>
+    <div class="mt-6 mb-4 text-xs text-zinc-500 dark:text-zinc-400 flex items-center justify-between gap-3">
+      <div class="flex items-center gap-2 min-w-0">
+        <span class="inline-flex items-center gap-1.5 rounded-md border border-zinc-200 bg-white px-2.5 py-1 text-zinc-700 shadow-sm dark:border-zinc-800 dark:bg-zinc-900 dark:text-zinc-200">
+          <span x-text="t('total_software')"></span>
+          <strong class="font-semibold tabular-nums" x-text="totalSoftwareText()"></strong>
+        </span>
+        <span class="hidden sm:inline" x-text="resultCountText()"></span>
+      </div>
       <button
         x-show="query || activeCategory !== 'all' || activePlatform !== 'all'"
         @click="resetFilters()"

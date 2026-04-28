@@ -132,6 +132,15 @@ def test_web_index_uses_i18n_for_visible_copy():
     html = (build_web.WEB_SRC / "index.html").read_text(encoding="utf-8")
 
     assert "statusText()" in html
+    assert "totalSoftwareText()" in html
     assert "resultCountText()" in html
     assert "msg('direct_download'" in html
     assert "t('footer')" in html
+
+
+def test_web_app_uses_stats_total_for_visible_total():
+    app_js = (build_web.WEB_SRC / "app.js").read_text(encoding="utf-8")
+
+    assert "this.stats = data.stats || {}" in app_js
+    assert "totalCount()" in app_js
+    assert "this.stats.total" in app_js
