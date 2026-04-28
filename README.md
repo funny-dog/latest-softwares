@@ -3,7 +3,7 @@
 > 由 GitHub Actions 每日自动同步上游官方源的**最新版本元数据**。
 > 仓库**不托管二进制安装包**，下载按钮直接跳到上游官方下载链接。
 >
-> 📅 **最后更新**：`2026-04-28 18:11:07` (UTC)　· 共 111 项软件（其中 1 项使用上次数据，标 ⚠️）
+> 📅 **最后更新**：`2026-04-28 18:41:11` (UTC)　· 共 111 项软件（其中 1 项使用上次数据，标 ⚠️）
 
 ---
 
@@ -14,7 +14,7 @@
 
 | 软件 | 最新版本 | 发布日期 | 下载链接 | 来源 |
 |------|---------|---------|---------|------|
-| [**Windows 11**](https://www.microsoft.com/software-download/windows11) | `25H2` | — | [win-x64](https://software.download.prss.microsoft.com/dbazure/Win11_25H2_Chinese_Simplified_x64_v2.iso?t=ccbc64bc-1928-4518-8ec8-4db3ce230d70&P1=1777486241&P2=601&P3=2&P4=i6k5aeCQDgOSHLs0q0YCw359v%2b10nzLZs%2b1XXB9EMsu%2bd%2fDhE6wbSp23znoje0RkEgSU3i%2fscn8ev2arb0rgGx2C2BAAXbOZQ2ZCU8VCPbIdYk1fa5RlH5tLEDQKu%2bNcCuLzGueJLnNYM6YtFeJN7t%2f%2f5EJA379VCCnqFlakBxdFntb2Lv9GGRTZRx7UZ8Q3vUdd0bQMd9%2b5g6zjOFy9L4Ay145SgzSsD3K%2fkuROLsBDCPOFZOPBMiHpv5UHpKrAR9L7cG%2bMuJqcfJJGJWF%2bHX2Nutm2LS8hwezng97NfQKEr1vTe6LsUpJZaE6YU47CqswSvGeYlAied6OJ7QL0bA%3d%3d) | Microsoft Software Download (via Fido) |
+| [**Windows 11**](https://www.microsoft.com/software-download/windows11) | `25H2` | — | [win-x64](https://software.download.prss.microsoft.com/dbazure/Win11_25H2_Chinese_Simplified_x64_v2.iso?t=acd2553f-d21a-472c-bb3d-19103a60cd0b&P1=1777488044&P2=601&P3=2&P4=ZOcsWL4hz6lKRPNW760yRQQSHacVuzKbJ0KQZxkZpx4ggmwLr9o91tdsdb5EdHUCkEjbNxKTAGbJzhn4il7GA4KQZAi%2bgVrVlXEYbg514imkML7LcXSy52Lu538sTHfUAYYsVXi0FVKuVisi%2f%2fy7sYmKN1pPR3S88bjA92qzxMeYOMXX%2bbJcPCnnbuB%2fuutiAWXnNpEALBHSxFIZ8UCgsj%2fpmkS5BNG8hs0piZ3icDII3UHAcCAvRHSh0HK0%2fumT%2blXyOn1PrNK2J4fYoKgKpEBf%2f7Syi767%2bvPsK%2b3q6oH6TDgkpCdYyYc4zhtaMbzSN%2f3NcjqmanJteV%2fL7h2yvg%3d%3d) | Microsoft Software Download (via Fido) |
 
 
 ### Network & Proxy
@@ -90,7 +90,7 @@
 | [**Moonlight**](https://github.com/moonlight-stream/moonlight-qt) | `6.1.0` | 2024-09-17 | [win-x64](https://github.com/moonlight-stream/moonlight-qt/releases/download/v6.1.0/MoonlightPortable-x64-6.1.0.zip) | GitHub Release: moonlight-stream/moonlight-qt |
 | [**Cemu**](https://github.com/cemu-project/Cemu) | `2.6` | 2025-02-06 | [win-x64](https://github.com/cemu-project/Cemu/releases/download/v2.6/cemu-2.6-windows-x64.zip) | GitHub Release: cemu-project/Cemu |
 | [**PPSSPP**](https://www.ppsspp.org/) | `1.20.3` | 2026-03-15 | [win-x64](https://github.com/hrydgard/ppsspp/releases/download/v1.20.3/PPSSPP-v1.20.3-Windows-x64.zip) · [mac-universal](https://github.com/hrydgard/ppsspp/releases/download/v1.20.3/PPSSPPSDL-macOS-v1.20.3.zip) · [linux-x64](https://github.com/hrydgard/ppsspp/releases/download/v1.20.3/PPSSPP-v1.20.3-anylinux-x86_64.AppImage) | GitHub Release: hrydgard/ppsspp |
-| [**RPCS3**](https://rpcs3.net/) | `74bcbd9816345d0811491011360c7406ad97dab4` | 2026-04-28 | [win-x64](https://github.com/RPCS3/rpcs3-binaries-win/releases/download/build-74bcbd9816345d0811491011360c7406ad97dab4/rpcs3-v0.0.40-19260-74bcbd98_win64_msvc.7z) | GitHub Release: RPCS3/rpcs3-binaries-win |
+| [**RPCS3**](https://rpcs3.net/) | `05d35972192f7cb9a3af39dac83d6bd402c6861` | 2026-04-28 | [win-x64](https://github.com/RPCS3/rpcs3-binaries-win/releases/download/build-e05d35972192f7cb9a3af39dac83d6bd402c6861/rpcs3-v0.0.40-19261-e05d3597_win64_msvc.7z) | GitHub Release: RPCS3/rpcs3-binaries-win |
 | [**Sunshine**](https://app.lizardbyte.dev/Sunshine/) | `2025.924.154138` | 2025-09-24 | [win-x64](https://github.com/LizardByte/Sunshine/releases/download/v2025.924.154138/Sunshine-Windows-AMD64-installer.exe) · [win-x64-portable](https://github.com/LizardByte/Sunshine/releases/download/v2025.924.154138/Sunshine-Windows-AMD64-portable.zip) · [linux-x64](https://github.com/LizardByte/Sunshine/releases/download/v2025.924.154138/sunshine-ubuntu-24.04-amd64.deb) | GitHub Release: LizardByte/Sunshine |
 | [**Heroic Games Launcher**](https://heroicgameslauncher.com/) | `2.21.0` | 2026-04-22 | [win-x64](https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/releases/download/v2.21.0/Heroic-2.21.0-Setup-x64.exe) · [mac-arm64](https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/releases/download/v2.21.0/Heroic-2.21.0-macOS-arm64.dmg) · [linux-x64](https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/releases/download/v2.21.0/Heroic-2.21.0-linux-amd64.deb) | GitHub Release: Heroic-Games-Launcher/HeroicGamesLauncher |
 
