@@ -1,7 +1,3333 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-04-28T19:25:41+00:00",
+  "generated_at": "2026-04-28T19:27:23+00:00",
   "packages": [
+    {
+      "id": "windows11",
+      "name": "Windows 11",
+      "version": "25H2",
+      "source": "Microsoft Software Download (via Fido)",
+      "version_kind": "release_label",
+      "version_source": "Fido ISO filename parsed from Microsoft download URL",
+      "category": "Operating Systems",
+      "homepage": "https://www.microsoft.com/software-download/windows11",
+      "released_at": null,
+      "notes_url": "https://learn.microsoft.com/windows/release-health/windows11-release-information",
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://software.download.prss.microsoft.com/dbazure/Win11_25H2_Chinese_Simplified_x64_v2.iso?t=541f734d-7142-46d8-b366-329f2c2cf5d2&P1=1777490818&P2=601&P3=2&P4=h2ZwaDdSuAJFBS3S3L2Cp%2foVx09B2%2bVU9xjwCEFsTB74UIT5p7q81%2fzAfZRkJkms9xyBAbPRKGkftfNDYpbJcjImj8sQfRCYWqzm7lItSMFx%2bPkW9JXnVw1gSVgTxK6xyOXi%2bTjoOaYPmTb9Eam%2f2BhBA6WH2CsRvqrSm1SjA2e5AzhXJooSfWokCAN9BelqzE4uu2kx0anBEbPDMg753Hk8Yldbziq%2fdyHIrTeLoAH7BvzE4aCQUeMjKHCTID27ywG2mPrSUCW0y9u9Z1iIv5qAo3i%2fIk8pQJp0q4K0kor54r%2bF74AajEhLNtfzsGhIcV1qL1nmoIP1BqCLyUF55Q%3d%3d",
+          "link_kind": "direct",
+          "filename": "Win11_25H2_Chinese_Simplified_x64_v2.iso",
+          "size": null,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-04-28T19:26:59+00:00",
+      "last_success_at": "2026-04-28T19:26:59+00:00",
+      "editions": [
+        "cn"
+      ]
+    },
+    {
+      "id": "v2rayn",
+      "name": "v2rayN",
+      "version": "7.20.4",
+      "source": "GitHub Release: 2dust/v2rayN",
+      "version_kind": "release_version",
+      "version_source": "GitHub release tag",
+      "category": "Network & Proxy",
+      "homepage": "https://github.com/2dust/v2rayN",
+      "released_at": "2026-04-16T05:42:06Z",
+      "notes_url": "https://github.com/2dust/v2rayN/releases/tag/7.20.4",
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://github.com/2dust/v2rayN/releases/download/7.20.4/v2rayN-windows-64-desktop.zip",
+          "link_kind": "direct",
+          "filename": "v2rayN-windows-64-desktop.zip",
+          "size": 116495499,
+          "sha256": null
+        },
+        {
+          "platform": "win-arm64",
+          "url": "https://github.com/2dust/v2rayN/releases/download/7.20.4/v2rayN-windows-arm64-desktop.zip",
+          "link_kind": "direct",
+          "filename": "v2rayN-windows-arm64-desktop.zip",
+          "size": 109005620,
+          "sha256": null
+        },
+        {
+          "platform": "mac-arm64",
+          "url": "https://github.com/2dust/v2rayN/releases/download/7.20.4/v2rayN-macos-arm64.dmg",
+          "link_kind": "direct",
+          "filename": "v2rayN-macos-arm64.dmg",
+          "size": 111024329,
+          "sha256": null
+        },
+        {
+          "platform": "mac-x64",
+          "url": "https://github.com/2dust/v2rayN/releases/download/7.20.4/v2rayN-macos-64.dmg",
+          "link_kind": "direct",
+          "filename": "v2rayN-macos-64.dmg",
+          "size": 116466508,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-04-28T19:26:52+00:00",
+      "last_success_at": "2026-04-28T19:26:52+00:00",
+      "editions": [
+        "intl"
+      ]
+    },
+    {
+      "id": "vscode",
+      "name": "Visual Studio Code",
+      "version": "1.117.0",
+      "source": "VSCode Build Manifest",
+      "version_kind": "release_version",
+      "version_source": "VSCode Build Manifest productVersion",
+      "category": "Developer Tools",
+      "homepage": "https://code.visualstudio.com",
+      "released_at": "2026-04-21T23:19:50+00:00",
+      "notes_url": "https://code.visualstudio.com/updates/v1_117",
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://vscode.download.prss.microsoft.com/dbazure/download/stable/10c8e557c8b9f9ed0a87f61f1c9a44bde731c409/VSCodeUserSetup-x64-1.117.0.exe",
+          "link_kind": "direct",
+          "filename": null,
+          "size": null,
+          "sha256": "9f3061d1b1b17b8240d435ed948e555c729537876aa7495d03d6102721665157"
+        },
+        {
+          "platform": "win-arm64",
+          "url": "https://vscode.download.prss.microsoft.com/dbazure/download/stable/10c8e557c8b9f9ed0a87f61f1c9a44bde731c409/VSCodeUserSetup-arm64-1.117.0.exe",
+          "link_kind": "direct",
+          "filename": null,
+          "size": null,
+          "sha256": "342893e696415116ff4eb86381b5067ccd7893517beb0487f0ed7f709f07061c"
+        },
+        {
+          "platform": "mac-arm64",
+          "url": "https://vscode.download.prss.microsoft.com/dbazure/download/stable/10c8e557c8b9f9ed0a87f61f1c9a44bde731c409/VSCode-darwin-arm64.dmg",
+          "link_kind": "direct",
+          "filename": null,
+          "size": null,
+          "sha256": "21fbec0fbc5407bf747f7c2ed11e87bf585140ccc778717e76d7a08e2bcea7fe"
+        },
+        {
+          "platform": "mac-x64",
+          "url": "https://vscode.download.prss.microsoft.com/dbazure/download/stable/10c8e557c8b9f9ed0a87f61f1c9a44bde731c409/VSCode-darwin-x64.dmg",
+          "link_kind": "direct",
+          "filename": null,
+          "size": null,
+          "sha256": "bc5017110545de218ac71df0bdcf40665ec00e9de322825e29a28eebc1e3e1a2"
+        }
+      ],
+      "fetched_at": "2026-04-28T19:26:53+00:00",
+      "last_success_at": "2026-04-28T19:26:53+00:00",
+      "editions": [
+        "cn",
+        "intl"
+      ]
+    },
+    {
+      "id": "chrome",
+      "name": "Google Chrome",
+      "version": "148.0.7778.56",
+      "source": "Google Version History API",
+      "version_kind": "release_version",
+      "version_source": "Google Version History API",
+      "category": "Browsers",
+      "homepage": "https://www.google.com/chrome/",
+      "released_at": null,
+      "notes_url": "https://chromereleases.googleblog.com/",
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://dl.google.com/chrome/install/standalonesetup64.exe",
+          "link_kind": null,
+          "filename": null,
+          "size": null,
+          "sha256": null
+        },
+        {
+          "platform": "mac-arm64",
+          "url": "https://dl.google.com/chrome/mac/stable/GGRO/googlechrome.dmg",
+          "link_kind": null,
+          "filename": null,
+          "size": null,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-04-28T19:26:53+00:00",
+      "last_success_at": "2026-04-28T19:26:53+00:00",
+      "editions": [
+        "cn",
+        "intl"
+      ]
+    },
+    {
+      "id": "steam",
+      "name": "Steam",
+      "version": "2026-01-30",
+      "source": "Valve Client Update API",
+      "version_kind": "build_date",
+      "version_source": "Valve Client Update API timestamp",
+      "category": "Gaming",
+      "homepage": "https://store.steampowered.com/about/",
+      "released_at": null,
+      "notes_url": "https://store.steampowered.com/news/",
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://cdn.fastly.steamstatic.com/client/installer/SteamSetup.exe",
+          "link_kind": null,
+          "filename": null,
+          "size": null,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-04-28T19:26:52+00:00",
+      "last_success_at": "2026-04-28T19:26:52+00:00",
+      "editions": [
+        "cn",
+        "intl"
+      ]
+    },
+    {
+      "id": "localsend",
+      "name": "LocalSend",
+      "version": "1.17.0",
+      "source": "GitHub Release: localsend/localsend",
+      "version_kind": "release_version",
+      "version_source": "GitHub release tag",
+      "category": "Utilities",
+      "homepage": "https://localsend.org",
+      "released_at": "2025-02-20T01:23:55Z",
+      "notes_url": "https://github.com/localsend/localsend/releases/tag/v1.17.0",
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://github.com/localsend/localsend/releases/download/v1.17.0/LocalSend-1.17.0-windows-x86-64.exe",
+          "link_kind": "direct",
+          "filename": "LocalSend-1.17.0-windows-x86-64.exe",
+          "size": 14895464,
+          "sha256": null
+        },
+        {
+          "platform": "mac-arm64",
+          "url": "https://github.com/localsend/localsend/releases/download/v1.17.0/LocalSend-1.17.0.dmg",
+          "link_kind": "direct",
+          "filename": "LocalSend-1.17.0.dmg",
+          "size": 32493186,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-04-28T19:26:52+00:00",
+      "last_success_at": "2026-04-28T19:26:52+00:00",
+      "editions": [
+        "cn",
+        "intl"
+      ]
+    },
+    {
+      "id": "bitwarden",
+      "name": "Bitwarden Desktop",
+      "version": "2026.3.1",
+      "source": "GitHub Release: bitwarden/clients",
+      "version_kind": "release_version",
+      "version_source": "GitHub release tag",
+      "category": "Utilities",
+      "homepage": "https://bitwarden.com/download/",
+      "released_at": "2026-04-02T16:03:55Z",
+      "notes_url": "https://github.com/bitwarden/clients/releases/tag/desktop-v2026.3.1",
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://github.com/bitwarden/clients/releases/download/desktop-v2026.3.1/Bitwarden-Installer-2026.3.1.exe",
+          "link_kind": "direct",
+          "filename": "Bitwarden-Installer-2026.3.1.exe",
+          "size": 731968,
+          "sha256": null
+        },
+        {
+          "platform": "mac-universal",
+          "url": "https://github.com/bitwarden/clients/releases/download/desktop-v2026.3.1/Bitwarden-2026.3.1-universal.dmg",
+          "link_kind": "direct",
+          "filename": "Bitwarden-2026.3.1-universal.dmg",
+          "size": 261436860,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-04-28T19:26:53+00:00",
+      "last_success_at": "2026-04-28T19:26:53+00:00",
+      "editions": [
+        "cn",
+        "intl"
+      ]
+    },
+    {
+      "id": "codex",
+      "name": "OpenAI Codex",
+      "version": "0.125.0",
+      "source": "GitHub Release: openai/codex",
+      "version_kind": "release_version",
+      "version_source": "GitHub release tag",
+      "category": "Developer Tools",
+      "homepage": "https://github.com/openai/codex",
+      "released_at": "2026-04-24T18:00:38Z",
+      "notes_url": "https://github.com/openai/codex/releases/tag/rust-v0.125.0",
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://github.com/openai/codex/releases/download/rust-v0.125.0/codex-x86_64-pc-windows-msvc.exe",
+          "link_kind": "direct",
+          "filename": "codex-x86_64-pc-windows-msvc.exe",
+          "size": 220304176,
+          "sha256": null
+        },
+        {
+          "platform": "win-arm64",
+          "url": "https://github.com/openai/codex/releases/download/rust-v0.125.0/codex-aarch64-pc-windows-msvc.exe",
+          "link_kind": "direct",
+          "filename": "codex-aarch64-pc-windows-msvc.exe",
+          "size": 187542832,
+          "sha256": null
+        },
+        {
+          "platform": "mac-arm64",
+          "url": "https://github.com/openai/codex/releases/download/rust-v0.125.0/codex-aarch64-apple-darwin.dmg",
+          "link_kind": "direct",
+          "filename": "codex-aarch64-apple-darwin.dmg",
+          "size": 84791610,
+          "sha256": null
+        },
+        {
+          "platform": "mac-x64",
+          "url": "https://github.com/openai/codex/releases/download/rust-v0.125.0/codex-x86_64-apple-darwin.tar.gz",
+          "link_kind": "direct",
+          "filename": "codex-x86_64-apple-darwin.tar.gz",
+          "size": 83178683,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-04-28T19:26:54+00:00",
+      "last_success_at": "2026-04-28T19:26:54+00:00",
+      "editions": [
+        "intl"
+      ]
+    },
+    {
+      "id": "geek",
+      "name": "Geek Uninstaller",
+      "version": "1.5.3.170",
+      "source": "Geek Uninstaller official download page",
+      "version_kind": "release_version",
+      "version_source": "official download page HTML",
+      "category": "Utilities",
+      "homepage": "https://geekuninstaller.com/",
+      "released_at": null,
+      "notes_url": "https://geekuninstaller.com/download",
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://geekuninstaller.com/download",
+          "link_kind": "landing_page",
+          "filename": null,
+          "size": null,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-04-28T19:26:52+00:00",
+      "last_success_at": "2026-04-28T19:26:52+00:00",
+      "editions": [
+        "cn",
+        "intl"
+      ]
+    },
+    {
+      "id": "everything",
+      "name": "Everything",
+      "version": "1.4.1.1032",
+      "source": "voidtools official download page",
+      "version_kind": "release_version",
+      "version_source": "official download page HTML",
+      "category": "Utilities",
+      "homepage": "https://www.voidtools.com/",
+      "released_at": null,
+      "notes_url": "https://www.voidtools.com/download.php",
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://www.voidtools.com/Everything-1.4.1.1032.x64-Setup.exe",
+          "link_kind": null,
+          "filename": null,
+          "size": null,
+          "sha256": null
+        },
+        {
+          "platform": "win-x86",
+          "url": "https://www.voidtools.com/Everything-1.4.1.1032.x86-Setup.exe",
+          "link_kind": null,
+          "filename": null,
+          "size": null,
+          "sha256": null
+        },
+        {
+          "platform": "win-x64-portable",
+          "url": "https://www.voidtools.com/Everything-1.4.1.1032.x64.zip",
+          "link_kind": null,
+          "filename": null,
+          "size": null,
+          "sha256": null
+        },
+        {
+          "platform": "win-x86-portable",
+          "url": "https://www.voidtools.com/Everything-1.4.1.1032.x86.zip",
+          "link_kind": null,
+          "filename": null,
+          "size": null,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-04-28T19:26:53+00:00",
+      "last_success_at": "2026-04-28T19:26:53+00:00",
+      "editions": [
+        "cn",
+        "intl"
+      ]
+    },
+    {
+      "id": "nvidia-app",
+      "name": "NVIDIA App",
+      "version": "2026-04-28",
+      "source": "Official download page; no public version API",
+      "version_kind": "sync_date",
+      "version_source": "UTC sync date; no public version API",
+      "category": "System Utilities",
+      "homepage": "https://www.nvidia.com/en-us/software/nvidia-app/",
+      "released_at": null,
+      "notes_url": "https://www.nvidia.com/en-us/software/nvidia-app/",
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://www.nvidia.com/en-us/software/nvidia-app/",
+          "link_kind": "landing_page",
+          "filename": null,
+          "size": null,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-04-28T19:26:52+00:00",
+      "last_success_at": "2026-04-28T19:26:52+00:00",
+      "editions": [
+        "cn",
+        "intl"
+      ]
+    },
+    {
+      "id": "git",
+      "name": "Git for Windows",
+      "version": "2.54.0.windows.1",
+      "source": "GitHub Release: git-for-windows/git",
+      "version_kind": "release_version",
+      "version_source": "GitHub release tag",
+      "category": "Developer Tools",
+      "homepage": "https://github.com/git-for-windows/git",
+      "released_at": "2026-04-20T18:22:08Z",
+      "notes_url": "https://github.com/git-for-windows/git/releases/tag/v2.54.0.windows.1",
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://github.com/git-for-windows/git/releases/download/v2.54.0.windows.1/Git-2.54.0-64-bit.exe",
+          "link_kind": "direct",
+          "filename": "Git-2.54.0-64-bit.exe",
+          "size": 65175776,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-04-28T19:26:53+00:00",
+      "last_success_at": "2026-04-28T19:26:53+00:00",
+      "editions": [
+        "intl"
+      ]
+    },
+    {
+      "id": "insomnia",
+      "name": "Insomnia",
+      "version": "12.5.0",
+      "source": "GitHub Release: Kong/insomnia",
+      "version_kind": "release_version",
+      "version_source": "GitHub release tag",
+      "category": "Developer Tools",
+      "homepage": "https://github.com/Kong/insomnia",
+      "released_at": "2026-04-02T00:50:58Z",
+      "notes_url": "https://github.com/Kong/insomnia/releases/tag/core%4012.5.0",
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://github.com/Kong/insomnia/releases/download/core%4012.5.0/Insomnia.Core-12.5.0.exe",
+          "link_kind": "direct",
+          "filename": "Insomnia.Core-12.5.0.exe",
+          "size": 603284672,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-04-28T19:26:53+00:00",
+      "last_success_at": "2026-04-28T19:26:53+00:00",
+      "editions": [
+        "intl"
+      ]
+    },
+    {
+      "id": "heidisql",
+      "name": "HeidiSQL",
+      "version": "12.17",
+      "source": "GitHub Release: HeidiSQL/HeidiSQL",
+      "version_kind": "release_version",
+      "version_source": "GitHub release tag",
+      "category": "Developer Tools",
+      "homepage": "https://github.com/HeidiSQL/HeidiSQL",
+      "released_at": "2026-04-12T11:41:57Z",
+      "notes_url": "https://github.com/HeidiSQL/HeidiSQL/releases/tag/12.17",
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://github.com/HeidiSQL/HeidiSQL/releases/download/12.17/HeidiSQL_12.17.0.7270_Setup.exe",
+          "link_kind": "direct",
+          "filename": "HeidiSQL_12.17.0.7270_Setup.exe",
+          "size": 17750168,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-04-28T19:26:53+00:00",
+      "last_success_at": "2026-04-28T19:26:53+00:00",
+      "editions": [
+        "intl"
+      ]
+    },
+    {
+      "id": "notepadplusplus",
+      "name": "Notepad++",
+      "version": "8.9.4",
+      "source": "GitHub Release: notepad-plus-plus/notepad-plus-plus",
+      "version_kind": "release_version",
+      "version_source": "GitHub release tag",
+      "category": "Developer Tools",
+      "homepage": "https://github.com/notepad-plus-plus/notepad-plus-plus",
+      "released_at": "2026-04-26T13:37:48Z",
+      "notes_url": "https://github.com/notepad-plus-plus/notepad-plus-plus/releases/tag/v8.9.4",
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://github.com/notepad-plus-plus/notepad-plus-plus/releases/download/v8.9.4/npp.8.9.4.Installer.x64.exe",
+          "link_kind": "direct",
+          "filename": "npp.8.9.4.Installer.x64.exe",
+          "size": 6889816,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-04-28T19:26:54+00:00",
+      "last_success_at": "2026-04-28T19:26:54+00:00",
+      "editions": [
+        "intl"
+      ]
+    },
+    {
+      "id": "wezterm",
+      "name": "WezTerm",
+      "version": "20240203-110809-5046fc22",
+      "source": "GitHub Release: wez/wezterm",
+      "version_kind": "release_version",
+      "version_source": "GitHub release tag",
+      "category": "Developer Tools",
+      "homepage": "https://github.com/wez/wezterm",
+      "released_at": "2024-02-03T18:32:26Z",
+      "notes_url": "https://github.com/wezterm/wezterm/releases/tag/20240203-110809-5046fc22",
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://github.com/wezterm/wezterm/releases/download/20240203-110809-5046fc22/WezTerm-20240203-110809-5046fc22-setup.exe",
+          "link_kind": "direct",
+          "filename": "WezTerm-20240203-110809-5046fc22-setup.exe",
+          "size": 42321770,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-04-28T19:26:54+00:00",
+      "last_success_at": "2026-04-28T19:26:54+00:00",
+      "editions": [
+        "intl"
+      ]
+    },
+    {
+      "id": "hiddify",
+      "name": "Hiddify Next",
+      "version": "4.1.1",
+      "source": "GitHub Release: hiddify/hiddify-next",
+      "version_kind": "release_version",
+      "version_source": "GitHub release tag",
+      "category": "Network & Proxy",
+      "homepage": "https://github.com/hiddify/hiddify-next",
+      "released_at": "2026-03-05T17:22:57Z",
+      "notes_url": "https://github.com/hiddify/hiddify-app/releases/tag/v4.1.1",
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://github.com/hiddify/hiddify-app/releases/download/v4.1.1/Hiddify-Windows-Setup-x64.exe",
+          "link_kind": "direct",
+          "filename": "Hiddify-Windows-Setup-x64.exe",
+          "size": 36486310,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-04-28T19:26:54+00:00",
+      "last_success_at": "2026-04-28T19:26:54+00:00",
+      "editions": [
+        "intl"
+      ]
+    },
+    {
+      "id": "sing-box",
+      "name": "sing-box",
+      "version": "1.13.11",
+      "source": "GitHub Release: SagerNet/sing-box",
+      "version_kind": "release_version",
+      "version_source": "GitHub release tag",
+      "category": "Network & Proxy",
+      "homepage": "https://github.com/SagerNet/sing-box",
+      "released_at": "2026-04-23T00:44:08Z",
+      "notes_url": "https://github.com/SagerNet/sing-box/releases/tag/v1.13.11",
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://github.com/SagerNet/sing-box/releases/download/v1.13.11/sing-box-1.13.11-windows-amd64.zip",
+          "link_kind": "direct",
+          "filename": "sing-box-1.13.11-windows-amd64.zip",
+          "size": 20400572,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-04-28T19:26:54+00:00",
+      "last_success_at": "2026-04-28T19:26:54+00:00",
+      "editions": [
+        "intl"
+      ]
+    },
+    {
+      "id": "trafficmonitor",
+      "name": "TrafficMonitor",
+      "version": "1.86",
+      "source": "GitHub Release: zhongyang219/TrafficMonitor",
+      "version_kind": "release_version",
+      "version_source": "GitHub release tag",
+      "category": "System Utilities",
+      "homepage": "https://github.com/zhongyang219/TrafficMonitor",
+      "released_at": "2026-03-29T10:02:56Z",
+      "notes_url": "https://github.com/zhongyang219/TrafficMonitor/releases/tag/V1.86",
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://github.com/zhongyang219/TrafficMonitor/releases/download/V1.86/TrafficMonitor_V1.86_x64.zip",
+          "link_kind": "direct",
+          "filename": "TrafficMonitor_V1.86_x64.zip",
+          "size": 1471133,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-04-28T19:26:53+00:00",
+      "last_success_at": "2026-04-28T19:26:53+00:00",
+      "editions": [
+        "intl"
+      ]
+    },
+    {
+      "id": "keepassxc",
+      "name": "KeePassXC",
+      "version": "2.7.12",
+      "source": "GitHub Release: keepassxreboot/keepassxc",
+      "version_kind": "release_version",
+      "version_source": "GitHub release tag",
+      "category": "Utilities",
+      "homepage": "https://github.com/keepassxreboot/keepassxc",
+      "released_at": "2026-03-10T01:16:42Z",
+      "notes_url": "https://github.com/keepassxreboot/keepassxc/releases/tag/2.7.12",
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://github.com/keepassxreboot/keepassxc/releases/download/2.7.12/KeePassXC-2.7.12-Win64.msi",
+          "link_kind": "direct",
+          "filename": "KeePassXC-2.7.12-Win64.msi",
+          "size": 35901440,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-04-28T19:26:54+00:00",
+      "last_success_at": "2026-04-28T19:26:54+00:00",
+      "editions": [
+        "intl"
+      ]
+    },
+    {
+      "id": "rustdesk",
+      "name": "RustDesk",
+      "version": "1.4.6",
+      "source": "GitHub Release: rustdesk/rustdesk",
+      "version_kind": "release_version",
+      "version_source": "GitHub release tag",
+      "category": "Utilities",
+      "homepage": "https://github.com/rustdesk/rustdesk",
+      "released_at": "2026-03-05T05:05:30Z",
+      "notes_url": "https://github.com/rustdesk/rustdesk/releases/tag/1.4.6",
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://github.com/rustdesk/rustdesk/releases/download/1.4.6/rustdesk-1.4.6-x86_64.exe",
+          "link_kind": "direct",
+          "filename": "rustdesk-1.4.6-x86_64.exe",
+          "size": 24252504,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-04-28T19:26:54+00:00",
+      "last_success_at": "2026-04-28T19:26:54+00:00",
+      "editions": [
+        "intl"
+      ]
+    },
+    {
+      "id": "telegram",
+      "name": "Telegram Desktop",
+      "version": "6.7.8",
+      "source": "GitHub Release: telegramdesktop/tdesktop",
+      "version_kind": "release_version",
+      "version_source": "GitHub release tag",
+      "category": "Messaging",
+      "homepage": "https://github.com/telegramdesktop/tdesktop",
+      "released_at": "2026-04-24T16:39:30Z",
+      "notes_url": "https://github.com/telegramdesktop/tdesktop/releases/tag/v6.7.8",
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://github.com/telegramdesktop/tdesktop/releases/download/v6.7.8/tsetup.6.7.8.exe",
+          "link_kind": "direct",
+          "filename": "tsetup.6.7.8.exe",
+          "size": 46467536,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-04-28T19:26:54+00:00",
+      "last_success_at": "2026-04-28T19:26:54+00:00",
+      "editions": [
+        "intl"
+      ]
+    },
+    {
+      "id": "logseq",
+      "name": "Logseq",
+      "version": "0.10.15",
+      "source": "GitHub Release: logseq/logseq",
+      "version_kind": "release_version",
+      "version_source": "GitHub release tag",
+      "category": "Productivity",
+      "homepage": "https://github.com/logseq/logseq",
+      "released_at": "2025-12-01T12:33:43Z",
+      "notes_url": "https://github.com/logseq/logseq/releases/tag/0.10.15",
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://github.com/logseq/logseq/releases/download/0.10.15/Logseq-win-x64-0.10.15.exe",
+          "link_kind": "direct",
+          "filename": "Logseq-win-x64-0.10.15.exe",
+          "size": 231276488,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-04-28T19:26:55+00:00",
+      "last_success_at": "2026-04-28T19:26:55+00:00",
+      "editions": [
+        "intl"
+      ]
+    },
+    {
+      "id": "joplin",
+      "name": "Joplin",
+      "version": "3.5.13",
+      "source": "GitHub Release: laurent22/joplin",
+      "version_kind": "release_version",
+      "version_source": "GitHub release tag",
+      "category": "Productivity",
+      "homepage": "https://github.com/laurent22/joplin",
+      "released_at": "2026-02-25T21:19:11Z",
+      "notes_url": "https://github.com/laurent22/joplin/releases/tag/v3.5.13",
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://github.com/laurent22/joplin/releases/download/v3.5.13/Joplin-Setup-3.5.13.exe",
+          "link_kind": "direct",
+          "filename": "Joplin-Setup-3.5.13.exe",
+          "size": 243234176,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-04-28T19:26:55+00:00",
+      "last_success_at": "2026-04-28T19:26:55+00:00",
+      "editions": [
+        "intl"
+      ]
+    },
+    {
+      "id": "brave",
+      "name": "Brave Browser",
+      "version": "1.89.143",
+      "source": "GitHub Release: brave/brave-browser",
+      "version_kind": "release_version",
+      "version_source": "GitHub release tag",
+      "category": "Browsers",
+      "homepage": "https://github.com/brave/brave-browser",
+      "released_at": "2026-04-23T00:55:59Z",
+      "notes_url": "https://github.com/brave/brave-browser/releases/tag/v1.89.143",
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://github.com/brave/brave-browser/releases/download/v1.89.143/BraveBrowserSetup.exe",
+          "link_kind": "direct",
+          "filename": "BraveBrowserSetup.exe",
+          "size": 1277280,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-04-28T19:26:55+00:00",
+      "last_success_at": "2026-04-28T19:26:55+00:00",
+      "editions": [
+        "intl"
+      ]
+    },
+    {
+      "id": "thorium",
+      "name": "Thorium Browser",
+      "version": "138.0.7204.303",
+      "source": "GitHub Release: Alex313031/Thorium-Win",
+      "version_kind": "release_version",
+      "version_source": "GitHub release tag",
+      "category": "Browsers",
+      "homepage": "https://github.com/Alex313031/Thorium-Win",
+      "released_at": "2026-02-18T03:43:48Z",
+      "notes_url": "https://github.com/Alex313031/Thorium-Win/releases/tag/M138.0.7204.303",
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://github.com/Alex313031/Thorium-Win/releases/download/M138.0.7204.303/thorium_AVX2_mini_installer.exe",
+          "link_kind": "direct",
+          "filename": "thorium_AVX2_mini_installer.exe",
+          "size": 192860672,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-04-28T19:26:55+00:00",
+      "last_success_at": "2026-04-28T19:26:55+00:00",
+      "editions": [
+        "intl"
+      ]
+    },
+    {
+      "id": "ollama",
+      "name": "Ollama",
+      "version": "0.22.0",
+      "source": "GitHub Release: ollama/ollama",
+      "version_kind": "release_version",
+      "version_source": "GitHub release tag",
+      "category": "AI Tools",
+      "homepage": "https://github.com/ollama/ollama",
+      "released_at": "2026-04-28T15:00:25Z",
+      "notes_url": "https://github.com/ollama/ollama/releases/tag/v0.22.0",
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://github.com/ollama/ollama/releases/download/v0.22.0/OllamaSetup.exe",
+          "link_kind": "direct",
+          "filename": "OllamaSetup.exe",
+          "size": 1939292248,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-04-28T19:26:55+00:00",
+      "last_success_at": "2026-04-28T19:26:55+00:00",
+      "editions": [
+        "intl"
+      ]
+    },
+    {
+      "id": "fzf",
+      "name": "fzf",
+      "version": "0.72.0",
+      "source": "GitHub Release: junegunn/fzf",
+      "version_kind": "release_version",
+      "version_source": "GitHub release tag",
+      "category": "Developer Tools",
+      "homepage": "https://github.com/junegunn/fzf",
+      "released_at": "2026-04-26T09:09:58Z",
+      "notes_url": "https://github.com/junegunn/fzf/releases/tag/v0.72.0",
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://github.com/junegunn/fzf/releases/download/v0.72.0/fzf-0.72.0-windows_amd64.zip",
+          "link_kind": "direct",
+          "filename": "fzf-0.72.0-windows_amd64.zip",
+          "size": 2033951,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-04-28T19:26:54+00:00",
+      "last_success_at": "2026-04-28T19:26:54+00:00",
+      "editions": [
+        "intl"
+      ]
+    },
+    {
+      "id": "bat",
+      "name": "bat",
+      "version": "0.26.1",
+      "source": "GitHub Release: sharkdp/bat",
+      "version_kind": "release_version",
+      "version_source": "GitHub release tag",
+      "category": "Developer Tools",
+      "homepage": "https://github.com/sharkdp/bat",
+      "released_at": "2025-12-02T20:48:10Z",
+      "notes_url": "https://github.com/sharkdp/bat/releases/tag/v0.26.1",
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://github.com/sharkdp/bat/releases/download/v0.26.1/bat-v0.26.1-x86_64-pc-windows-msvc.zip",
+          "link_kind": "direct",
+          "filename": "bat-v0.26.1-x86_64-pc-windows-msvc.zip",
+          "size": 3613318,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-04-28T19:26:55+00:00",
+      "last_success_at": "2026-04-28T19:26:55+00:00",
+      "editions": [
+        "intl"
+      ]
+    },
+    {
+      "id": "fd",
+      "name": "fd",
+      "version": "10.4.2",
+      "source": "GitHub Release: sharkdp/fd",
+      "version_kind": "release_version",
+      "version_source": "GitHub release tag",
+      "category": "Developer Tools",
+      "homepage": "https://github.com/sharkdp/fd",
+      "released_at": "2026-03-10T07:33:26Z",
+      "notes_url": "https://github.com/sharkdp/fd/releases/tag/v10.4.2",
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://github.com/sharkdp/fd/releases/download/v10.4.2/fd-v10.4.2-x86_64-pc-windows-msvc.zip",
+          "link_kind": "direct",
+          "filename": "fd-v10.4.2-x86_64-pc-windows-msvc.zip",
+          "size": 1525898,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-04-28T19:26:55+00:00",
+      "last_success_at": "2026-04-28T19:26:55+00:00",
+      "editions": [
+        "intl"
+      ]
+    },
+    {
+      "id": "rg",
+      "name": "ripgrep",
+      "version": "15.1.0",
+      "source": "GitHub Release: BurntSushi/ripgrep",
+      "version_kind": "release_version",
+      "version_source": "GitHub release tag",
+      "category": "Developer Tools",
+      "homepage": "https://github.com/BurntSushi/ripgrep",
+      "released_at": "2025-10-22T13:00:26Z",
+      "notes_url": "https://github.com/BurntSushi/ripgrep/releases/tag/15.1.0",
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://github.com/BurntSushi/ripgrep/releases/download/15.1.0/ripgrep-15.1.0-x86_64-pc-windows-msvc.zip",
+          "link_kind": "direct",
+          "filename": "ripgrep-15.1.0-x86_64-pc-windows-msvc.zip",
+          "size": 1810687,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-04-28T19:26:55+00:00",
+      "last_success_at": "2026-04-28T19:26:55+00:00",
+      "editions": [
+        "intl"
+      ]
+    },
+    {
+      "id": "jq",
+      "name": "jq",
+      "version": "1.8.1",
+      "source": "GitHub Release: jqlang/jq",
+      "version_kind": "release_version",
+      "version_source": "GitHub release tag",
+      "category": "Developer Tools",
+      "homepage": "https://github.com/jqlang/jq",
+      "released_at": "2025-07-01T11:50:06Z",
+      "notes_url": "https://github.com/jqlang/jq/releases/tag/jq-1.8.1",
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://github.com/jqlang/jq/releases/download/jq-1.8.1/jq-windows-amd64.exe",
+          "link_kind": "direct",
+          "filename": "jq-windows-amd64.exe",
+          "size": 1026560,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-04-28T19:26:56+00:00",
+      "last_success_at": "2026-04-28T19:26:56+00:00",
+      "editions": [
+        "intl"
+      ]
+    },
+    {
+      "id": "yq",
+      "name": "yq",
+      "version": "4.53.2",
+      "source": "GitHub Release: mikefarah/yq",
+      "version_kind": "release_version",
+      "version_source": "GitHub release tag",
+      "category": "Developer Tools",
+      "homepage": "https://github.com/mikefarah/yq",
+      "released_at": "2026-04-17T06:28:18Z",
+      "notes_url": "https://github.com/mikefarah/yq/releases/tag/v4.53.2",
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://github.com/mikefarah/yq/releases/download/v4.53.2/yq_windows_amd64.exe",
+          "link_kind": "direct",
+          "filename": "yq_windows_amd64.exe",
+          "size": 14223872,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-04-28T19:26:56+00:00",
+      "last_success_at": "2026-04-28T19:26:56+00:00",
+      "editions": [
+        "intl"
+      ]
+    },
+    {
+      "id": "gh",
+      "name": "GitHub CLI",
+      "version": "2.92.0",
+      "source": "GitHub Release: cli/cli",
+      "version_kind": "release_version",
+      "version_source": "GitHub release tag",
+      "category": "Developer Tools",
+      "homepage": "https://github.com/cli/cli",
+      "released_at": "2026-04-28T11:42:05Z",
+      "notes_url": "https://github.com/cli/cli/releases/tag/v2.92.0",
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://github.com/cli/cli/releases/download/v2.92.0/gh_2.92.0_windows_amd64.zip",
+          "link_kind": "direct",
+          "filename": "gh_2.92.0_windows_amd64.zip",
+          "size": 14468591,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-04-28T19:26:56+00:00",
+      "last_success_at": "2026-04-28T19:26:56+00:00",
+      "editions": [
+        "intl"
+      ]
+    },
+    {
+      "id": "micro",
+      "name": "Micro",
+      "version": "2.0.15",
+      "source": "GitHub Release: zyedidia/micro",
+      "version_kind": "release_version",
+      "version_source": "GitHub release tag",
+      "category": "Developer Tools",
+      "homepage": "https://github.com/zyedidia/micro",
+      "released_at": "2025-12-31T12:02:53Z",
+      "notes_url": "https://github.com/micro-editor/micro/releases/tag/v2.0.15",
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://github.com/micro-editor/micro/releases/download/v2.0.15/micro-2.0.15-win64.zip",
+          "link_kind": "direct",
+          "filename": "micro-2.0.15-win64.zip",
+          "size": 5148356,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-04-28T19:26:56+00:00",
+      "last_success_at": "2026-04-28T19:26:56+00:00",
+      "editions": [
+        "intl"
+      ]
+    },
+    {
+      "id": "neovim",
+      "name": "Neovim",
+      "version": "0.12.2",
+      "source": "GitHub Release: neovim/neovim",
+      "version_kind": "release_version",
+      "version_source": "GitHub release tag",
+      "category": "Developer Tools",
+      "homepage": "https://github.com/neovim/neovim",
+      "released_at": "2026-04-22T15:03:59Z",
+      "notes_url": "https://github.com/neovim/neovim/releases/tag/v0.12.2",
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://github.com/neovim/neovim/releases/download/v0.12.2/nvim-win64.zip",
+          "link_kind": "direct",
+          "filename": "nvim-win64.zip",
+          "size": 12603005,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-04-28T19:26:56+00:00",
+      "last_success_at": "2026-04-28T19:26:56+00:00",
+      "editions": [
+        "intl"
+      ]
+    },
+    {
+      "id": "mihomo",
+      "name": "mihomo",
+      "version": "1.19.24",
+      "source": "GitHub Release: MetaCubeX/mihomo",
+      "version_kind": "release_version",
+      "version_source": "GitHub release tag",
+      "category": "Network & Proxy",
+      "homepage": "https://github.com/MetaCubeX/mihomo",
+      "released_at": "2026-04-20T01:56:58Z",
+      "notes_url": "https://github.com/MetaCubeX/mihomo/releases/tag/v1.19.24",
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://github.com/MetaCubeX/mihomo/releases/download/v1.19.24/mihomo-windows-amd64-compatible-v1.19.24.zip",
+          "link_kind": "direct",
+          "filename": "mihomo-windows-amd64-compatible-v1.19.24.zip",
+          "size": 13149241,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-04-28T19:26:56+00:00",
+      "last_success_at": "2026-04-28T19:26:56+00:00",
+      "editions": [
+        "intl"
+      ]
+    },
+    {
+      "id": "nekobox",
+      "name": "NekoBoxForPc",
+      "version": "4.0.1",
+      "source": "GitHub Release: MatsuriDayo/nekoray",
+      "version_kind": "release_version",
+      "version_source": "GitHub release tag",
+      "category": "Network & Proxy",
+      "homepage": "https://github.com/MatsuriDayo/nekoray",
+      "released_at": "2024-12-12T08:19:14Z",
+      "notes_url": "https://github.com/MatsuriDayo/nekoray/releases/tag/4.0.1",
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://github.com/MatsuriDayo/nekoray/releases/download/4.0.1/nekoray-4.0.1-2024-12-12-windows64.zip",
+          "link_kind": "direct",
+          "filename": "nekoray-4.0.1-2024-12-12-windows64.zip",
+          "size": 41719145,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-04-28T19:26:56+00:00",
+      "last_success_at": "2026-04-28T19:26:56+00:00",
+      "editions": [
+        "intl"
+      ]
+    },
+    {
+      "id": "motrix",
+      "name": "Motrix",
+      "version": "1.8.19",
+      "source": "GitHub Release: agalwood/Motrix",
+      "version_kind": "release_version",
+      "version_source": "GitHub release tag",
+      "category": "Utilities",
+      "homepage": "https://github.com/agalwood/Motrix",
+      "released_at": "2023-05-03T07:13:13Z",
+      "notes_url": "https://github.com/agalwood/Motrix/releases/tag/v1.8.19",
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://github.com/agalwood/Motrix/releases/download/v1.8.19/Motrix-1.8.19-x64.exe",
+          "link_kind": "direct",
+          "filename": "Motrix-1.8.19-x64.exe",
+          "size": 65715473,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-04-28T19:26:56+00:00",
+      "last_success_at": "2026-04-28T19:26:56+00:00",
+      "editions": [
+        "intl"
+      ]
+    },
+    {
+      "id": "marktext",
+      "name": "MarkText",
+      "version": "0.17.1",
+      "source": "GitHub Release: marktext/marktext",
+      "version_kind": "release_version",
+      "version_source": "GitHub release tag",
+      "category": "Productivity",
+      "homepage": "https://github.com/marktext/marktext",
+      "released_at": "2022-03-07T18:12:02Z",
+      "notes_url": "https://github.com/marktext/marktext/releases/tag/v0.17.1",
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://github.com/marktext/marktext/releases/download/v0.17.1/marktext-setup.exe",
+          "link_kind": "direct",
+          "filename": "marktext-setup.exe",
+          "size": 156301724,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-04-28T19:26:56+00:00",
+      "last_success_at": "2026-04-28T19:26:56+00:00",
+      "editions": [
+        "intl"
+      ]
+    },
+    {
+      "id": "zen-browser",
+      "name": "Zen Browser",
+      "version": "1.19.10b",
+      "source": "GitHub Release: zen-browser/desktop",
+      "version_kind": "release_version",
+      "version_source": "GitHub release tag",
+      "category": "Browsers",
+      "homepage": "https://github.com/zen-browser/desktop",
+      "released_at": "2026-04-27T19:40:17Z",
+      "notes_url": "https://github.com/zen-browser/desktop/releases/tag/1.19.10b",
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://github.com/zen-browser/desktop/releases/download/1.19.10b/zen.installer.exe",
+          "link_kind": "direct",
+          "filename": "zen.installer.exe",
+          "size": 93847272,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-04-28T19:26:57+00:00",
+      "last_success_at": "2026-04-28T19:26:57+00:00",
+      "editions": [
+        "intl"
+      ]
+    },
+    {
+      "id": "v2ray-core",
+      "name": "v2ray-core",
+      "version": "5.48.0",
+      "source": "GitHub Release: v2fly/v2ray-core",
+      "version_kind": "release_version",
+      "version_source": "GitHub release tag",
+      "category": "Network & Proxy",
+      "homepage": "https://github.com/v2fly/v2ray-core",
+      "released_at": "2026-03-26T21:31:57Z",
+      "notes_url": "https://github.com/v2fly/v2ray-core/releases/tag/v5.48.0",
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://github.com/v2fly/v2ray-core/releases/download/v5.48.0/v2ray-windows-64.zip",
+          "link_kind": "direct",
+          "filename": "v2ray-windows-64.zip",
+          "size": 18868614,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-04-28T19:26:57+00:00",
+      "last_success_at": "2026-04-28T19:26:57+00:00",
+      "editions": [
+        "intl"
+      ]
+    },
+    {
+      "id": "xray-core",
+      "name": "Xray-core",
+      "version": "26.3.27",
+      "source": "GitHub Release: XTLS/Xray-core",
+      "version_kind": "release_version",
+      "version_source": "GitHub release tag",
+      "category": "Network & Proxy",
+      "homepage": "https://github.com/XTLS/Xray-core",
+      "released_at": "2026-03-27T17:51:11Z",
+      "notes_url": "https://github.com/XTLS/Xray-core/releases/tag/v26.3.27",
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://github.com/XTLS/Xray-core/releases/download/v26.3.27/Xray-windows-64.zip",
+          "link_kind": "direct",
+          "filename": "Xray-windows-64.zip",
+          "size": 20913304,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-04-28T19:26:57+00:00",
+      "last_success_at": "2026-04-28T19:26:57+00:00",
+      "editions": [
+        "intl"
+      ]
+    },
+    {
+      "id": "rufus",
+      "name": "Rufus",
+      "version": "4.13",
+      "source": "GitHub Release: pbatard/rufus",
+      "version_kind": "release_version",
+      "version_source": "GitHub release tag",
+      "category": "System Utilities",
+      "homepage": "https://github.com/pbatard/rufus",
+      "released_at": "2026-02-17T21:05:01Z",
+      "notes_url": "https://github.com/pbatard/rufus/releases/tag/v4.13",
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://github.com/pbatard/rufus/releases/download/v4.13/rufus-4.13.exe",
+          "link_kind": "direct",
+          "filename": "rufus-4.13.exe",
+          "size": 1946984,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-04-28T19:26:57+00:00",
+      "last_success_at": "2026-04-28T19:26:57+00:00",
+      "editions": [
+        "intl"
+      ]
+    },
+    {
+      "id": "ventoy",
+      "name": "Ventoy",
+      "version": "1.1.12",
+      "source": "GitHub Release: ventoy/Ventoy",
+      "version_kind": "release_version",
+      "version_source": "GitHub release tag",
+      "category": "System Utilities",
+      "homepage": "https://github.com/ventoy/Ventoy",
+      "released_at": "2026-04-23T10:27:20Z",
+      "notes_url": "https://github.com/ventoy/Ventoy/releases/tag/v1.1.12",
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://github.com/ventoy/Ventoy/releases/download/v1.1.12/ventoy-1.1.12-windows.zip",
+          "link_kind": "direct",
+          "filename": "ventoy-1.1.12-windows.zip",
+          "size": 16715640,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-04-28T19:26:57+00:00",
+      "last_success_at": "2026-04-28T19:26:57+00:00",
+      "editions": [
+        "intl"
+      ]
+    },
+    {
+      "id": "powertoys",
+      "name": "PowerToys",
+      "version": "0.99.0",
+      "source": "GitHub Release: microsoft/PowerToys",
+      "version_kind": "release_version",
+      "version_source": "GitHub release tag",
+      "category": "System Utilities",
+      "homepage": "https://github.com/microsoft/PowerToys",
+      "released_at": "2026-04-28T05:49:00Z",
+      "notes_url": "https://github.com/microsoft/PowerToys/releases/tag/v0.99.0",
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://github.com/microsoft/PowerToys/releases/download/v0.99.0/PowerToysUserSetup-0.99.0-x64.exe",
+          "link_kind": "direct",
+          "filename": "PowerToysUserSetup-0.99.0-x64.exe",
+          "size": 394501224,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-04-28T19:26:57+00:00",
+      "last_success_at": "2026-04-28T19:26:57+00:00",
+      "editions": [
+        "intl"
+      ]
+    },
+    {
+      "id": "sharex",
+      "name": "ShareX",
+      "version": "19.0.2",
+      "source": "GitHub Release: ShareX/ShareX",
+      "version_kind": "release_version",
+      "version_source": "GitHub release tag",
+      "category": "System Utilities",
+      "homepage": "https://github.com/ShareX/ShareX",
+      "released_at": "2026-01-28T01:49:35Z",
+      "notes_url": "https://github.com/ShareX/ShareX/releases/tag/v19.0.2",
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://github.com/ShareX/ShareX/releases/download/v19.0.2/ShareX-19.0.2-setup.exe",
+          "link_kind": "direct",
+          "filename": "ShareX-19.0.2-setup.exe",
+          "size": 113511430,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-04-28T19:26:57+00:00",
+      "last_success_at": "2026-04-28T19:26:57+00:00",
+      "editions": [
+        "intl"
+      ]
+    },
+    {
+      "id": "audacity",
+      "name": "Audacity",
+      "version": "3.7.7",
+      "source": "GitHub Release: audacity/audacity",
+      "version_kind": "release_version",
+      "version_source": "GitHub release tag",
+      "category": "Media Players",
+      "homepage": "https://github.com/audacity/audacity",
+      "released_at": "2025-12-11T19:48:17Z",
+      "notes_url": "https://github.com/audacity/audacity/releases/tag/Audacity-3.7.7",
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://github.com/audacity/audacity/releases/download/Audacity-3.7.7/audacity-win-3.7.7-64bit.exe",
+          "link_kind": "direct",
+          "filename": "audacity-win-3.7.7-64bit.exe",
+          "size": 18543040,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-04-28T19:26:57+00:00",
+      "last_success_at": "2026-04-28T19:26:57+00:00",
+      "editions": [
+        "intl"
+      ]
+    },
+    {
+      "id": "handbrake",
+      "name": "HandBrake",
+      "version": "1.11.1",
+      "source": "GitHub Release: HandBrake/HandBrake",
+      "version_kind": "release_version",
+      "version_source": "GitHub release tag",
+      "category": "Media Players",
+      "homepage": "https://github.com/HandBrake/HandBrake",
+      "released_at": "2026-03-22T19:34:20Z",
+      "notes_url": "https://github.com/HandBrake/HandBrake/releases/tag/1.11.1",
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://github.com/HandBrake/HandBrake/releases/download/1.11.1/HandBrake-1.11.1-x86_64-Win_GUI.exe",
+          "link_kind": "direct",
+          "filename": "HandBrake-1.11.1-x86_64-Win_GUI.exe",
+          "size": 25303376,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-04-28T19:26:58+00:00",
+      "last_success_at": "2026-04-28T19:26:58+00:00",
+      "editions": [
+        "intl"
+      ]
+    },
+    {
+      "id": "ffmpeg",
+      "name": "FFmpeg",
+      "version": "latest",
+      "source": "GitHub Release: BtbN/FFmpeg-Builds",
+      "version_kind": "release_version",
+      "version_source": "GitHub release tag",
+      "category": "Media Players",
+      "homepage": "https://github.com/BtbN/FFmpeg-Builds",
+      "released_at": "2026-04-28T16:58:15Z",
+      "notes_url": "https://github.com/BtbN/FFmpeg-Builds/releases/tag/latest",
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://github.com/BtbN/FFmpeg-Builds/releases/download/latest/ffmpeg-master-latest-win64-gpl.zip",
+          "link_kind": "direct",
+          "filename": "ffmpeg-master-latest-win64-gpl.zip",
+          "size": 218962798,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-04-28T19:26:58+00:00",
+      "last_success_at": "2026-04-28T19:26:58+00:00",
+      "editions": [
+        "intl"
+      ]
+    },
+    {
+      "id": "calibre",
+      "name": "calibre",
+      "version": "9.7.0",
+      "source": "GitHub Release: kovidgoyal/calibre",
+      "version_kind": "release_version",
+      "version_source": "GitHub release tag",
+      "category": "Productivity",
+      "homepage": "https://github.com/kovidgoyal/calibre",
+      "released_at": "2026-04-10T03:26:26Z",
+      "notes_url": "https://github.com/kovidgoyal/calibre/releases/tag/v9.7.0",
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://github.com/kovidgoyal/calibre/releases/download/v9.7.0/calibre-64bit-9.7.0.msi",
+          "link_kind": "direct",
+          "filename": "calibre-64bit-9.7.0.msi",
+          "size": 221892608,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-04-28T19:26:58+00:00",
+      "last_success_at": "2026-04-28T19:26:58+00:00",
+      "editions": [
+        "intl"
+      ]
+    },
+    {
+      "id": "windows-terminal",
+      "name": "Windows Terminal",
+      "version": "1.24.10921.0",
+      "source": "GitHub Release: microsoft/terminal",
+      "version_kind": "release_version",
+      "version_source": "GitHub release tag",
+      "category": "Developer Tools",
+      "homepage": "https://github.com/microsoft/terminal",
+      "released_at": "2026-04-03T23:39:36Z",
+      "notes_url": "https://github.com/microsoft/terminal/releases/tag/v1.24.10921.0",
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://github.com/microsoft/terminal/releases/download/v1.24.10921.0/Microsoft.WindowsTerminal_1.24.10921.0_8wekyb3d8bbwe.msixbundle",
+          "link_kind": "direct",
+          "filename": "Microsoft.WindowsTerminal_1.24.10921.0_8wekyb3d8bbwe.msixbundle",
+          "size": 22287540,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-04-28T19:26:58+00:00",
+      "last_success_at": "2026-04-28T19:26:58+00:00",
+      "editions": [
+        "intl"
+      ]
+    },
+    {
+      "id": "lively",
+      "name": "Lively Wallpaper",
+      "version": "2.2.1.0",
+      "source": "GitHub Release: rocksdanister/lively",
+      "version_kind": "release_version",
+      "version_source": "GitHub release tag",
+      "category": "System Utilities",
+      "homepage": "https://github.com/rocksdanister/lively",
+      "released_at": "2025-09-18T18:01:15Z",
+      "notes_url": "https://github.com/rocksdanister/lively/releases/tag/v2.2.1.0",
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://github.com/rocksdanister/lively/releases/download/v2.2.1.0/lively_setup_x86_full_v2210.exe",
+          "link_kind": "direct",
+          "filename": "lively_setup_x86_full_v2210.exe",
+          "size": 218063717,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-04-28T19:26:58+00:00",
+      "last_success_at": "2026-04-28T19:26:58+00:00",
+      "editions": [
+        "intl"
+      ]
+    },
+    {
+      "id": "explorer-patcher",
+      "name": "ExplorerPatcher",
+      "version": "26100.4946.69.6_7384790",
+      "source": "GitHub Release: valinet/ExplorerPatcher",
+      "version_kind": "release_version",
+      "version_source": "GitHub release tag",
+      "category": "System Utilities",
+      "homepage": "https://github.com/valinet/ExplorerPatcher",
+      "released_at": "2025-11-03T22:06:24Z",
+      "notes_url": "https://github.com/valinet/ExplorerPatcher/releases/tag/26100.4946.69.6_7384790",
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://github.com/valinet/ExplorerPatcher/releases/download/26100.4946.69.6_7384790/ep_setup.exe",
+          "link_kind": "direct",
+          "filename": "ep_setup.exe",
+          "size": 12009984,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-04-28T19:26:58+00:00",
+      "last_success_at": "2026-04-28T19:26:58+00:00",
+      "editions": [
+        "intl"
+      ]
+    },
+    {
+      "id": "affine",
+      "name": "AFFiNE",
+      "version": "0.26.3",
+      "source": "GitHub Release: toeverything/AFFiNE",
+      "version_kind": "release_version",
+      "version_source": "GitHub release tag",
+      "category": "Productivity",
+      "homepage": "https://github.com/toeverything/AFFiNE",
+      "released_at": "2026-02-25T03:11:57Z",
+      "notes_url": "https://github.com/toeverything/AFFiNE/releases/tag/v0.26.3",
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://github.com/toeverything/AFFiNE/releases/download/v0.26.3/affine-0.26.3-stable-windows-x64.exe",
+          "link_kind": "direct",
+          "filename": "affine-0.26.3-stable-windows-x64.exe",
+          "size": 209312776,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-04-28T19:26:58+00:00",
+      "last_success_at": "2026-04-28T19:26:58+00:00",
+      "editions": [
+        "intl"
+      ]
+    },
+    {
+      "id": "aria2",
+      "name": "Aria2",
+      "version": "1.37.0",
+      "source": "GitHub Release: aria2/aria2",
+      "version_kind": "release_version",
+      "version_source": "GitHub release tag",
+      "category": "Utilities",
+      "homepage": "https://github.com/aria2/aria2",
+      "released_at": "2023-11-15T12:07:32Z",
+      "notes_url": "https://github.com/aria2/aria2/releases/tag/release-1.37.0",
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://github.com/aria2/aria2/releases/download/release-1.37.0/aria2-1.37.0-win-64bit-build1.zip",
+          "link_kind": "direct",
+          "filename": "aria2-1.37.0-win-64bit-build1.zip",
+          "size": 2475379,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-04-28T19:26:58+00:00",
+      "last_success_at": "2026-04-28T19:26:58+00:00",
+      "editions": [
+        "intl"
+      ]
+    },
+    {
+      "id": "yt-dlp",
+      "name": "yt-dlp",
+      "version": "2026.03.17",
+      "source": "GitHub Release: yt-dlp/yt-dlp",
+      "version_kind": "release_version",
+      "version_source": "GitHub release tag",
+      "category": "Utilities",
+      "homepage": "https://github.com/yt-dlp/yt-dlp",
+      "released_at": "2026-03-17T23:42:33Z",
+      "notes_url": "https://github.com/yt-dlp/yt-dlp/releases/tag/2026.03.17",
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://github.com/yt-dlp/yt-dlp/releases/download/2026.03.17/yt-dlp.exe",
+          "link_kind": "direct",
+          "filename": "yt-dlp.exe",
+          "size": 18448981,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-04-28T19:26:58+00:00",
+      "last_success_at": "2026-04-28T19:26:58+00:00",
+      "editions": [
+        "intl"
+      ]
+    },
+    {
+      "id": "shotcut",
+      "name": "Shotcut",
+      "version": "26.2.26",
+      "source": "GitHub Release: mltframework/shotcut",
+      "version_kind": "release_version",
+      "version_source": "GitHub release tag",
+      "category": "Productivity",
+      "homepage": "https://github.com/mltframework/shotcut",
+      "released_at": "2026-02-27T18:13:29Z",
+      "notes_url": "https://github.com/mltframework/shotcut/releases/tag/v26.2.26",
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://github.com/mltframework/shotcut/releases/download/v26.2.26/shotcut-win64-26.2.26.exe",
+          "link_kind": "direct",
+          "filename": "shotcut-win64-26.2.26.exe",
+          "size": 141017664,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-04-28T19:26:59+00:00",
+      "last_success_at": "2026-04-28T19:26:59+00:00",
+      "editions": [
+        "intl"
+      ]
+    },
+    {
+      "id": "duckstation",
+      "name": "DuckStation",
+      "version": "latest",
+      "source": "GitHub Release: stenzek/duckstation",
+      "version_kind": "release_version",
+      "version_source": "GitHub release tag",
+      "category": "Gaming",
+      "homepage": "https://github.com/stenzek/duckstation",
+      "released_at": "2026-04-26T03:36:29Z",
+      "notes_url": "https://github.com/stenzek/duckstation/releases/tag/latest",
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://github.com/stenzek/duckstation/releases/download/latest/duckstation-windows-x64-release.zip",
+          "link_kind": "direct",
+          "filename": "duckstation-windows-x64-release.zip",
+          "size": 68528164,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-04-28T19:26:59+00:00",
+      "last_success_at": "2026-04-28T19:26:59+00:00",
+      "editions": [
+        "intl"
+      ]
+    },
+    {
+      "id": "pcsx2",
+      "name": "PCSX2",
+      "version": "2.6.3",
+      "source": "GitHub Release: PCSX2/pcsx2",
+      "version_kind": "release_version",
+      "version_source": "GitHub release tag",
+      "category": "Gaming",
+      "homepage": "https://github.com/PCSX2/pcsx2",
+      "released_at": "2026-01-28T17:40:45Z",
+      "notes_url": "https://github.com/PCSX2/pcsx2/releases/tag/v2.6.3",
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://github.com/PCSX2/pcsx2/releases/download/v2.6.3/pcsx2-v2.6.3-windows-x64-Qt.7z",
+          "link_kind": "direct",
+          "filename": "pcsx2-v2.6.3-windows-x64-Qt.7z",
+          "size": 26766397,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-04-28T19:26:59+00:00",
+      "last_success_at": "2026-04-28T19:26:59+00:00",
+      "editions": [
+        "intl"
+      ]
+    },
+    {
+      "id": "playnite",
+      "name": "Playnite",
+      "version": "10.53",
+      "source": "GitHub Release: JosefNemec/Playnite",
+      "version_kind": "release_version",
+      "version_source": "GitHub release tag",
+      "category": "Gaming",
+      "homepage": "https://github.com/JosefNemec/Playnite",
+      "released_at": "2026-04-26T10:41:12Z",
+      "notes_url": "https://github.com/JosefNemec/Playnite/releases/tag/10.53",
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://github.com/JosefNemec/Playnite/releases/download/10.53/Playnite1053.exe",
+          "link_kind": "direct",
+          "filename": "Playnite1053.exe",
+          "size": 149954060,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-04-28T19:26:59+00:00",
+      "last_success_at": "2026-04-28T19:26:59+00:00",
+      "editions": [
+        "intl"
+      ]
+    },
+    {
+      "id": "alacritty",
+      "name": "Alacritty",
+      "version": "0.17.0",
+      "source": "GitHub Release: alacritty/alacritty",
+      "version_kind": "release_version",
+      "version_source": "GitHub release tag",
+      "category": "Developer Tools",
+      "homepage": "https://github.com/alacritty/alacritty",
+      "released_at": "2026-04-06T19:24:18Z",
+      "notes_url": "https://github.com/alacritty/alacritty/releases/tag/v0.17.0",
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://github.com/alacritty/alacritty/releases/download/v0.17.0/Alacritty-v0.17.0-portable.exe",
+          "link_kind": "direct",
+          "filename": "Alacritty-v0.17.0-portable.exe",
+          "size": 6003200,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-04-28T19:26:59+00:00",
+      "last_success_at": "2026-04-28T19:26:59+00:00",
+      "editions": [
+        "intl"
+      ]
+    },
+    {
+      "id": "moonlight",
+      "name": "Moonlight",
+      "version": "6.1.0",
+      "source": "GitHub Release: moonlight-stream/moonlight-qt",
+      "version_kind": "release_version",
+      "version_source": "GitHub release tag",
+      "category": "Gaming",
+      "homepage": "https://github.com/moonlight-stream/moonlight-qt",
+      "released_at": "2024-09-17T03:56:03Z",
+      "notes_url": "https://github.com/moonlight-stream/moonlight-qt/releases/tag/v6.1.0",
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://github.com/moonlight-stream/moonlight-qt/releases/download/v6.1.0/MoonlightPortable-x64-6.1.0.zip",
+          "link_kind": "direct",
+          "filename": "MoonlightPortable-x64-6.1.0.zip",
+          "size": 29502440,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-04-28T19:27:00+00:00",
+      "last_success_at": "2026-04-28T19:27:00+00:00",
+      "editions": [
+        "intl"
+      ]
+    },
+    {
+      "id": "rufus-portable",
+      "name": "Rufus Portable",
+      "version": "4.13",
+      "source": "GitHub Release: pbatard/rufus",
+      "version_kind": "release_version",
+      "version_source": "GitHub release tag",
+      "category": "System Utilities",
+      "homepage": "https://github.com/pbatard/rufus",
+      "released_at": "2026-02-17T21:05:01Z",
+      "notes_url": "https://github.com/pbatard/rufus/releases/tag/v4.13",
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://github.com/pbatard/rufus/releases/download/v4.13/rufus-4.13p.exe",
+          "link_kind": "direct",
+          "filename": "rufus-4.13p.exe",
+          "size": 1946984,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-04-28T19:26:59+00:00",
+      "last_success_at": "2026-04-28T19:26:59+00:00",
+      "editions": [
+        "intl"
+      ]
+    },
+    {
+      "id": "cemu",
+      "name": "Cemu",
+      "version": "2.6",
+      "source": "GitHub Release: cemu-project/Cemu",
+      "version_kind": "release_version",
+      "version_source": "GitHub release tag",
+      "category": "Gaming",
+      "homepage": "https://github.com/cemu-project/Cemu",
+      "released_at": "2025-02-06T13:18:18Z",
+      "notes_url": "https://github.com/cemu-project/Cemu/releases/tag/v2.6",
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://github.com/cemu-project/Cemu/releases/download/v2.6/cemu-2.6-windows-x64.zip",
+          "link_kind": "direct",
+          "filename": "cemu-2.6-windows-x64.zip",
+          "size": 26374093,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-04-28T19:26:59+00:00",
+      "last_success_at": "2026-04-28T19:26:59+00:00",
+      "editions": [
+        "intl"
+      ]
+    },
+    {
+      "id": "transmission",
+      "name": "Transmission",
+      "version": "4.1.1",
+      "source": "GitHub Release: transmission/transmission",
+      "version_kind": "release_version",
+      "version_source": "GitHub release tag",
+      "category": "Utilities",
+      "homepage": "https://github.com/transmission/transmission",
+      "released_at": "2026-02-20T04:45:41Z",
+      "notes_url": "https://github.com/transmission/transmission/releases/tag/4.1.1",
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://github.com/transmission/transmission/releases/download/4.1.1/transmission-4.1.1-qt5-x64.msi",
+          "link_kind": "direct",
+          "filename": "transmission-4.1.1-qt5-x64.msi",
+          "size": 19906560,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-04-28T19:26:59+00:00",
+      "last_success_at": "2026-04-28T19:26:59+00:00",
+      "editions": [
+        "intl"
+      ]
+    },
+    {
+      "id": "nvm-windows",
+      "name": "nvm-windows",
+      "version": "1.2.2",
+      "source": "GitHub Release: coreybutler/nvm-windows",
+      "version_kind": "release_version",
+      "version_source": "GitHub release tag",
+      "category": "Developer Tools",
+      "homepage": "https://github.com/coreybutler/nvm-windows",
+      "released_at": "2025-01-01T03:06:04Z",
+      "notes_url": "https://github.com/coreybutler/nvm-windows/releases/tag/1.2.2",
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://github.com/coreybutler/nvm-windows/releases/download/1.2.2/nvm-setup.exe",
+          "link_kind": "direct",
+          "filename": "nvm-setup.exe",
+          "size": 5612296,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-04-28T19:27:00+00:00",
+      "last_success_at": "2026-04-28T19:27:00+00:00",
+      "editions": [
+        "intl"
+      ]
+    },
+    {
+      "id": "nssm",
+      "name": "NSSM",
+      "version": "2026-04-28",
+      "source": "Official NSSM download page; no public version API",
+      "version_kind": "sync_date",
+      "version_source": "UTC sync date; no public version API",
+      "category": "Developer Tools",
+      "homepage": "https://nssm.cc/download",
+      "released_at": null,
+      "notes_url": null,
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://nssm.cc/download",
+          "link_kind": "landing_page",
+          "filename": null,
+          "size": null,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-04-28T19:26:59+00:00",
+      "last_success_at": "2026-04-28T19:26:59+00:00",
+      "editions": [
+        "intl"
+      ]
+    },
+    {
+      "id": "win-acme",
+      "name": "win-acme",
+      "version": "2.2.9.1701",
+      "source": "GitHub Release: win-acme/win-acme",
+      "version_kind": "release_version",
+      "version_source": "GitHub release tag",
+      "category": "Developer Tools",
+      "homepage": "https://github.com/win-acme/win-acme",
+      "released_at": "2024-05-25T19:07:35Z",
+      "notes_url": "https://github.com/win-acme/win-acme/releases/tag/v2.2.9.1701",
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://github.com/win-acme/win-acme/releases/download/v2.2.9.1701/win-acme.v2.2.9.1701.x64.pluggable.zip",
+          "link_kind": "direct",
+          "filename": "win-acme.v2.2.9.1701.x64.pluggable.zip",
+          "size": 37308336,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-04-28T19:26:59+00:00",
+      "last_success_at": "2026-04-28T19:26:59+00:00",
+      "editions": [
+        "intl"
+      ]
+    },
+    {
+      "id": "wsl",
+      "name": "WSL",
+      "version": "2.6.3",
+      "source": "GitHub Release: microsoft/WSL",
+      "version_kind": "release_version",
+      "version_source": "GitHub release tag",
+      "category": "System Utilities",
+      "homepage": "https://github.com/microsoft/WSL",
+      "released_at": "2025-12-12T23:34:01Z",
+      "notes_url": "https://github.com/microsoft/WSL/releases/tag/2.6.3",
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://github.com/microsoft/WSL/releases/download/2.6.3/wsl.2.6.3.0.x64.msi",
+          "link_kind": "direct",
+          "filename": "wsl.2.6.3.0.x64.msi",
+          "size": 247123968,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-04-28T19:27:00+00:00",
+      "last_success_at": "2026-04-28T19:27:00+00:00",
+      "editions": [
+        "intl"
+      ]
+    },
+    {
+      "id": "fancontrol",
+      "name": "FanControl",
+      "version": "266",
+      "source": "GitHub Release: Rem0o/FanControl.Releases",
+      "version_kind": "release_version",
+      "version_source": "GitHub release tag",
+      "category": "System Utilities",
+      "homepage": "https://github.com/Rem0o/FanControl.Releases",
+      "released_at": "2026-04-22T13:52:47Z",
+      "notes_url": "https://github.com/Rem0o/FanControl.Releases/releases/tag/V266",
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://github.com/Rem0o/FanControl.Releases/releases/download/V266/FanControl_266_net_10_0_Installer.exe",
+          "link_kind": "direct",
+          "filename": "FanControl_266_net_10_0_Installer.exe",
+          "size": 19578648,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-04-28T19:27:01+00:00",
+      "last_success_at": "2026-04-28T19:27:01+00:00",
+      "editions": [
+        "intl"
+      ]
+    },
+    {
+      "id": "sandboxie-plus",
+      "name": "Sandboxie-Plus",
+      "version": "1.17.4",
+      "source": "GitHub Release: sandboxie-plus/Sandboxie",
+      "version_kind": "release_version",
+      "version_source": "GitHub release tag",
+      "category": "System Utilities",
+      "homepage": "https://github.com/sandboxie-plus/Sandboxie",
+      "released_at": "2026-04-12T15:44:37Z",
+      "notes_url": "https://github.com/sandboxie-plus/Sandboxie/releases/tag/v1.17.4",
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://github.com/sandboxie-plus/Sandboxie/releases/download/v1.17.4/Sandboxie-Plus-x64-v1.17.4.exe",
+          "link_kind": "direct",
+          "filename": "Sandboxie-Plus-x64-v1.17.4.exe",
+          "size": 24484616,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-04-28T19:27:00+00:00",
+      "last_success_at": "2026-04-28T19:27:00+00:00",
+      "editions": [
+        "intl"
+      ]
+    },
+    {
+      "id": "fastgithub",
+      "name": "FastGithub",
+      "version": "2026-04-28",
+      "source": "GitHub project page; no public release API",
+      "version_kind": "sync_date",
+      "version_source": "UTC sync date; no public version API",
+      "category": "Network & Proxy",
+      "homepage": "https://github.com/dotnetcore/FastGithub",
+      "released_at": null,
+      "notes_url": null,
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://github.com/dotnetcore/FastGithub",
+          "link_kind": "landing_page",
+          "filename": null,
+          "size": null,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-04-28T19:26:59+00:00",
+      "last_success_at": "2026-04-28T19:26:59+00:00",
+      "editions": [
+        "intl"
+      ]
+    },
+    {
+      "id": "gnupg",
+      "name": "Gpg4win",
+      "version": "2026-04-28",
+      "source": "Official Gpg4win download page; no public version API",
+      "version_kind": "sync_date",
+      "version_source": "UTC sync date; no public version API",
+      "category": "Utilities",
+      "homepage": "https://gpg4win.org/download.html",
+      "released_at": null,
+      "notes_url": null,
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://gpg4win.org/download.html",
+          "link_kind": "landing_page",
+          "filename": null,
+          "size": null,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-04-28T19:26:59+00:00",
+      "last_success_at": "2026-04-28T19:26:59+00:00",
+      "editions": [
+        "intl"
+      ]
+    },
+    {
+      "id": "vscodium",
+      "name": "VSCodium",
+      "version": "1.116.02821",
+      "source": "GitHub Release: VSCodium/vscodium",
+      "version_kind": "release_version",
+      "version_source": "GitHub release tag",
+      "category": "Developer Tools",
+      "homepage": "https://github.com/VSCodium/vscodium",
+      "released_at": "2026-04-27T14:01:34Z",
+      "notes_url": "https://github.com/VSCodium/vscodium/releases/tag/1.116.02821",
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://github.com/VSCodium/vscodium/releases/download/1.116.02821/VSCodiumUserSetup-x64-1.116.02821.exe",
+          "link_kind": "direct",
+          "filename": "VSCodiumUserSetup-x64-1.116.02821.exe",
+          "size": 132878232,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-04-28T19:27:00+00:00",
+      "last_success_at": "2026-04-28T19:27:00+00:00",
+      "editions": [
+        "intl"
+      ]
+    },
+    {
+      "id": "keka",
+      "name": "Keka",
+      "version": "1.6.3",
+      "source": "GitHub Release: aonez/Keka",
+      "version_kind": "release_version",
+      "version_source": "GitHub release tag",
+      "category": "Utilities",
+      "homepage": "https://github.com/aonez/Keka",
+      "released_at": "2026-04-16T10:56:51Z",
+      "notes_url": "https://github.com/aonez/Keka/releases/tag/v1.6.3",
+      "assets": [
+        {
+          "platform": "mac-arm64",
+          "url": "https://github.com/aonez/Keka/releases/download/v1.6.3/Keka-1.6.3.dmg",
+          "link_kind": "direct",
+          "filename": "Keka-1.6.3.dmg",
+          "size": 36977409,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-04-28T19:27:00+00:00",
+      "last_success_at": "2026-04-28T19:27:00+00:00",
+      "editions": [
+        "intl"
+      ]
+    },
+    {
+      "id": "iina",
+      "name": "IINA",
+      "version": "1.4.2-build164",
+      "source": "GitHub Release: iina/iina",
+      "version_kind": "release_version",
+      "version_source": "GitHub release tag",
+      "category": "Media Players",
+      "homepage": "https://github.com/iina/iina",
+      "released_at": "2026-04-16T22:50:17Z",
+      "notes_url": "https://github.com/iina/iina/releases/tag/v1.4.2-build164",
+      "assets": [
+        {
+          "platform": "mac-arm64",
+          "url": "https://github.com/iina/iina/releases/download/v1.4.2-build164/IINA.v1.4.2-build164.dmg",
+          "link_kind": "direct",
+          "filename": "IINA.v1.4.2-build164.dmg",
+          "size": 109264639,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-04-28T19:27:00+00:00",
+      "last_success_at": "2026-04-28T19:27:00+00:00",
+      "editions": [
+        "intl"
+      ]
+    },
+    {
+      "id": "rectangle",
+      "name": "Rectangle",
+      "version": "0.95",
+      "source": "GitHub Release: rxhanson/Rectangle",
+      "version_kind": "release_version",
+      "version_source": "GitHub release tag",
+      "category": "System Utilities",
+      "homepage": "https://github.com/rxhanson/Rectangle",
+      "released_at": "2026-04-02T17:12:41Z",
+      "notes_url": "https://github.com/rxhanson/Rectangle/releases/tag/v0.95",
+      "assets": [
+        {
+          "platform": "mac-arm64",
+          "url": "https://github.com/rxhanson/Rectangle/releases/download/v0.95/Rectangle0.95.dmg",
+          "link_kind": "direct",
+          "filename": "Rectangle0.95.dmg",
+          "size": 3970485,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-04-28T19:27:01+00:00",
+      "last_success_at": "2026-04-28T19:27:01+00:00",
+      "editions": [
+        "intl"
+      ]
+    },
+    {
+      "id": "maccy",
+      "name": "Maccy",
+      "version": "2.6.1",
+      "source": "GitHub Release: p0deje/Maccy",
+      "version_kind": "release_version",
+      "version_source": "GitHub release tag",
+      "category": "System Utilities",
+      "homepage": "https://github.com/p0deje/Maccy",
+      "released_at": "2025-11-27T22:30:26Z",
+      "notes_url": "https://github.com/p0deje/Maccy/releases/tag/2.6.1",
+      "assets": [
+        {
+          "platform": "mac-universal",
+          "url": "https://github.com/p0deje/Maccy/releases/download/2.6.1/Maccy.app.zip",
+          "link_kind": "direct",
+          "filename": "Maccy.app.zip",
+          "size": 3385221,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-04-28T19:27:00+00:00",
+      "last_success_at": "2026-04-28T19:27:00+00:00",
+      "editions": [
+        "intl"
+      ]
+    },
+    {
+      "id": "copyq",
+      "name": "CopyQ",
+      "version": "15.0.0",
+      "source": "GitHub Release: hluk/CopyQ",
+      "version_kind": "release_version",
+      "version_source": "GitHub release tag",
+      "category": "System Utilities",
+      "homepage": "https://github.com/hluk/CopyQ",
+      "released_at": "2026-04-12T07:23:00Z",
+      "notes_url": "https://github.com/hluk/CopyQ/releases/tag/v15.0.0",
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://github.com/hluk/CopyQ/releases/download/v15.0.0/copyq-15.0.0-setup.exe",
+          "link_kind": "direct",
+          "filename": "copyq-15.0.0-setup.exe",
+          "size": 19198508,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-04-28T19:27:01+00:00",
+      "last_success_at": "2026-04-28T19:27:01+00:00",
+      "editions": [
+        "intl"
+      ]
+    },
+    {
+      "id": "firefox",
+      "name": "Mozilla Firefox",
+      "version": "150.0.1",
+      "source": "Mozilla product-details API",
+      "version_kind": "release_version",
+      "version_source": "Mozilla product-details firefox_versions.json",
+      "category": "Browsers",
+      "homepage": "https://www.mozilla.org/firefox/new/",
+      "released_at": null,
+      "notes_url": "https://www.mozilla.org/firefox/releases/",
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://download.mozilla.org/?product=firefox-latest-ssl&os=win64&lang=en-US",
+          "link_kind": null,
+          "filename": null,
+          "size": null,
+          "sha256": null
+        },
+        {
+          "platform": "mac-universal",
+          "url": "https://download.mozilla.org/?product=firefox-latest-ssl&os=osx&lang=en-US",
+          "link_kind": null,
+          "filename": null,
+          "size": null,
+          "sha256": null
+        },
+        {
+          "platform": "linux-x64",
+          "url": "https://download.mozilla.org/?product=firefox-latest-ssl&os=linux64&lang=en-US",
+          "link_kind": null,
+          "filename": null,
+          "size": null,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-04-28T19:27:00+00:00",
+      "last_success_at": "2026-04-28T19:27:00+00:00",
+      "editions": [
+        "intl"
+      ]
+    },
+    {
+      "id": "nodejs",
+      "name": "Node.js",
+      "version": "24.15.0",
+      "source": "Node.js official dist index",
+      "version_kind": "release_version",
+      "version_source": "Node.js official dist index.json",
+      "category": "Developer Tools",
+      "homepage": "https://nodejs.org/",
+      "released_at": null,
+      "notes_url": "https://nodejs.org/en/blog/release/v24.15.0",
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://nodejs.org/dist/v24.15.0/node-v24.15.0-win-x64.zip",
+          "link_kind": null,
+          "filename": null,
+          "size": null,
+          "sha256": null
+        },
+        {
+          "platform": "mac-arm64",
+          "url": "https://nodejs.org/dist/v24.15.0/node-v24.15.0-darwin-arm64.tar.gz",
+          "link_kind": null,
+          "filename": null,
+          "size": null,
+          "sha256": null
+        },
+        {
+          "platform": "mac-x64",
+          "url": "https://nodejs.org/dist/v24.15.0/node-v24.15.0-darwin-x64.tar.gz",
+          "link_kind": null,
+          "filename": null,
+          "size": null,
+          "sha256": null
+        },
+        {
+          "platform": "linux-x64",
+          "url": "https://nodejs.org/dist/v24.15.0/node-v24.15.0-linux-x64.tar.xz",
+          "link_kind": null,
+          "filename": null,
+          "size": null,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-04-28T19:27:00+00:00",
+      "last_success_at": "2026-04-28T19:27:00+00:00",
+      "editions": [
+        "intl"
+      ]
+    },
+    {
+      "id": "dbeaver",
+      "name": "DBeaver Community",
+      "version": "26.0.3",
+      "source": "GitHub Release: dbeaver/dbeaver",
+      "version_kind": "release_version",
+      "version_source": "GitHub release tag",
+      "category": "Developer Tools",
+      "homepage": "https://dbeaver.io/download/",
+      "released_at": "2026-04-19T17:08:15Z",
+      "notes_url": "https://github.com/dbeaver/dbeaver/releases/tag/26.0.3",
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://github.com/dbeaver/dbeaver/releases/download/26.0.3/dbeaver-ce-26.0.3-windows-x86_64.exe",
+          "link_kind": "direct",
+          "filename": "dbeaver-ce-26.0.3-windows-x86_64.exe",
+          "size": 116131672,
+          "sha256": null
+        },
+        {
+          "platform": "mac-arm64",
+          "url": "https://github.com/dbeaver/dbeaver/releases/download/26.0.3/dbeaver-ce-26.0.3-macos-aarch64.dmg",
+          "link_kind": "direct",
+          "filename": "dbeaver-ce-26.0.3-macos-aarch64.dmg",
+          "size": 121841798,
+          "sha256": null
+        },
+        {
+          "platform": "mac-x64",
+          "url": "https://github.com/dbeaver/dbeaver/releases/download/26.0.3/dbeaver-ce-26.0.3-macos-x86_64.dmg",
+          "link_kind": "direct",
+          "filename": "dbeaver-ce-26.0.3-macos-x86_64.dmg",
+          "size": 123015386,
+          "sha256": null
+        },
+        {
+          "platform": "linux-x64",
+          "url": "https://github.com/dbeaver/dbeaver/releases/download/26.0.3/dbeaver-ce-26.0.3-linux-x86_64.deb",
+          "link_kind": "direct",
+          "filename": "dbeaver-ce-26.0.3-linux-x86_64.deb",
+          "size": 124763968,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-04-28T19:27:01+00:00",
+      "last_success_at": "2026-04-28T19:27:01+00:00",
+      "editions": [
+        "intl"
+      ]
+    },
+    {
+      "id": "obs-studio",
+      "name": "OBS Studio",
+      "version": "32.1.2",
+      "source": "GitHub Release: obsproject/obs-studio",
+      "version_kind": "release_version",
+      "version_source": "GitHub release tag",
+      "category": "Media Players",
+      "homepage": "https://obsproject.com/",
+      "released_at": "2026-04-21T20:10:35Z",
+      "notes_url": "https://github.com/obsproject/obs-studio/releases/tag/32.1.2",
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://github.com/obsproject/obs-studio/releases/download/32.1.2/OBS-Studio-32.1.2-Windows-x64-Installer.exe",
+          "link_kind": "direct",
+          "filename": "OBS-Studio-32.1.2-Windows-x64-Installer.exe",
+          "size": 157809480,
+          "sha256": null
+        },
+        {
+          "platform": "mac-arm64",
+          "url": "https://github.com/obsproject/obs-studio/releases/download/32.1.2/OBS-Studio-32.1.2-macOS-Apple.dmg",
+          "link_kind": "direct",
+          "filename": "OBS-Studio-32.1.2-macOS-Apple.dmg",
+          "size": 187527877,
+          "sha256": null
+        },
+        {
+          "platform": "mac-x64",
+          "url": "https://github.com/obsproject/obs-studio/releases/download/32.1.2/OBS-Studio-32.1.2-macOS-Intel.dmg",
+          "link_kind": "direct",
+          "filename": "OBS-Studio-32.1.2-macOS-Intel.dmg",
+          "size": 197263771,
+          "sha256": null
+        },
+        {
+          "platform": "linux-x64",
+          "url": "https://github.com/obsproject/obs-studio/releases/download/32.1.2/OBS-Studio-32.1.2-Ubuntu-24.04-x86_64.deb",
+          "link_kind": "direct",
+          "filename": "OBS-Studio-32.1.2-Ubuntu-24.04-x86_64.deb",
+          "size": 134236418,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-04-28T19:27:01+00:00",
+      "last_success_at": "2026-04-28T19:27:01+00:00",
+      "editions": [
+        "intl"
+      ]
+    },
+    {
+      "id": "obsidian",
+      "name": "Obsidian",
+      "version": "1.12.7",
+      "source": "GitHub Release: obsidianmd/obsidian-releases",
+      "version_kind": "release_version",
+      "version_source": "GitHub release tag",
+      "category": "Productivity",
+      "homepage": "https://obsidian.md/download",
+      "released_at": "2026-03-23T15:56:19Z",
+      "notes_url": "https://github.com/obsidianmd/obsidian-releases/releases/tag/v1.12.7",
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://github.com/obsidianmd/obsidian-releases/releases/download/v1.12.7/Obsidian-1.12.7.exe",
+          "link_kind": "direct",
+          "filename": "Obsidian-1.12.7.exe",
+          "size": 295530200,
+          "sha256": null
+        },
+        {
+          "platform": "mac-universal",
+          "url": "https://github.com/obsidianmd/obsidian-releases/releases/download/v1.12.7/Obsidian-1.12.7.dmg",
+          "link_kind": "direct",
+          "filename": "Obsidian-1.12.7.dmg",
+          "size": 213334249,
+          "sha256": null
+        },
+        {
+          "platform": "linux-x64",
+          "url": "https://github.com/obsidianmd/obsidian-releases/releases/download/v1.12.7/Obsidian-1.12.7-arm64.AppImage",
+          "link_kind": "direct",
+          "filename": "Obsidian-1.12.7-arm64.AppImage",
+          "size": 124625813,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-04-28T19:27:01+00:00",
+      "last_success_at": "2026-04-28T19:27:01+00:00",
+      "editions": [
+        "intl"
+      ]
+    },
+    {
+      "id": "lazygit",
+      "name": "Lazygit",
+      "version": "0.61.1",
+      "source": "GitHub Release: jesseduffield/lazygit",
+      "version_kind": "release_version",
+      "version_source": "GitHub release tag",
+      "category": "Developer Tools",
+      "homepage": "https://github.com/jesseduffield/lazygit",
+      "released_at": "2026-04-13T20:10:26Z",
+      "notes_url": "https://github.com/jesseduffield/lazygit/releases/tag/v0.61.1",
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://github.com/jesseduffield/lazygit/releases/download/v0.61.1/lazygit_0.61.1_windows_x86_64.zip",
+          "link_kind": "direct",
+          "filename": "lazygit_0.61.1_windows_x86_64.zip",
+          "size": 6767524,
+          "sha256": null
+        },
+        {
+          "platform": "mac-arm64",
+          "url": "https://github.com/jesseduffield/lazygit/releases/download/v0.61.1/lazygit_0.61.1_darwin_arm64.tar.gz",
+          "link_kind": "direct",
+          "filename": "lazygit_0.61.1_darwin_arm64.tar.gz",
+          "size": 6186246,
+          "sha256": null
+        },
+        {
+          "platform": "linux-x64",
+          "url": "https://github.com/jesseduffield/lazygit/releases/download/v0.61.1/lazygit_0.61.1_linux_x86_64.tar.gz",
+          "link_kind": "direct",
+          "filename": "lazygit_0.61.1_linux_x86_64.tar.gz",
+          "size": 6547048,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-04-28T19:27:01+00:00",
+      "last_success_at": "2026-04-28T19:27:01+00:00",
+      "editions": [
+        "intl"
+      ]
+    },
+    {
+      "id": "peazip",
+      "name": "PeaZip",
+      "version": "11.0.0",
+      "source": "GitHub Release: peazip/PeaZip",
+      "version_kind": "release_version",
+      "version_source": "GitHub release tag",
+      "category": "Utilities",
+      "homepage": "https://peazip.github.io/",
+      "released_at": "2026-04-06T06:54:07Z",
+      "notes_url": "https://github.com/peazip/PeaZip/releases/tag/11.0.0",
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://github.com/peazip/PeaZip/releases/download/11.0.0/peazip-11.0.0.WIN64.exe",
+          "link_kind": "direct",
+          "filename": "peazip-11.0.0.WIN64.exe",
+          "size": 11350782,
+          "sha256": null
+        },
+        {
+          "platform": "mac-arm64",
+          "url": "https://github.com/peazip/PeaZip/releases/download/11.0.0/peazip-11.0.0.DARWIN.aarch64.dmg",
+          "link_kind": "direct",
+          "filename": "peazip-11.0.0.DARWIN.aarch64.dmg",
+          "size": 26018016,
+          "sha256": null
+        },
+        {
+          "platform": "linux-x64",
+          "url": "https://github.com/peazip/PeaZip/releases/download/11.0.0/peazip_11.0.0.LINUX.Qt6-1_amd64.deb",
+          "link_kind": "direct",
+          "filename": "peazip_11.0.0.LINUX.Qt6-1_amd64.deb",
+          "size": 14256550,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-04-28T19:27:01+00:00",
+      "last_success_at": "2026-04-28T19:27:01+00:00",
+      "editions": [
+        "intl"
+      ]
+    },
+    {
+      "id": "windirstat",
+      "name": "WinDirStat",
+      "version": "2.5.0",
+      "source": "GitHub Release: windirstat/windirstat",
+      "version_kind": "release_version",
+      "version_source": "GitHub release tag",
+      "category": "System Utilities",
+      "homepage": "https://windirstat.net/",
+      "released_at": "2026-01-18T00:51:15Z",
+      "notes_url": "https://github.com/windirstat/windirstat/releases/tag/release/v2.5.0",
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://github.com/windirstat/windirstat/releases/download/release/v2.5.0/WinDirStat-x64.msi",
+          "link_kind": "direct",
+          "filename": "WinDirStat-x64.msi",
+          "size": 2482176,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-04-28T19:27:02+00:00",
+      "last_success_at": "2026-04-28T19:27:02+00:00",
+      "editions": [
+        "intl"
+      ]
+    },
+    {
+      "id": "floorp",
+      "name": "Floorp Browser",
+      "version": "12.12.2",
+      "source": "GitHub Release: Floorp-Projects/Floorp",
+      "version_kind": "release_version",
+      "version_source": "GitHub release tag",
+      "category": "Browsers",
+      "homepage": "https://floorp.app/",
+      "released_at": "2026-04-23T06:48:33Z",
+      "notes_url": "https://github.com/Floorp-Projects/Floorp/releases/tag/v12.12.2",
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://github.com/Floorp-Projects/Floorp/releases/download/v12.12.2/floorp-windows-x86_64.installer.exe",
+          "link_kind": "direct",
+          "filename": "floorp-windows-x86_64.installer.exe",
+          "size": 98001184,
+          "sha256": null
+        },
+        {
+          "platform": "mac-universal",
+          "url": "https://github.com/Floorp-Projects/Floorp/releases/download/v12.12.2/floorp-macOS-universal.dmg",
+          "link_kind": "direct",
+          "filename": "floorp-macOS-universal.dmg",
+          "size": 190579440,
+          "sha256": null
+        },
+        {
+          "platform": "linux-x64",
+          "url": "https://github.com/Floorp-Projects/Floorp/releases/download/v12.12.2/floorp-linux-x86_64.tar.xz",
+          "link_kind": "direct",
+          "filename": "floorp-linux-x86_64.tar.xz",
+          "size": 92385164,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-04-28T19:27:02+00:00",
+      "last_success_at": "2026-04-28T19:27:02+00:00",
+      "editions": [
+        "intl"
+      ]
+    },
+    {
+      "id": "chromium",
+      "name": "Chromium",
+      "version": "147.0.7727.117-r1596535",
+      "source": "GitHub Release: Hibbiki/chromium-win64",
+      "version_kind": "release_version",
+      "version_source": "GitHub release tag",
+      "category": "Browsers",
+      "homepage": "https://github.com/Hibbiki/chromium-win64",
+      "released_at": "2026-04-23T22:00:49Z",
+      "notes_url": "https://github.com/Hibbiki/chromium-win64/releases/tag/v147.0.7727.117-r1596535",
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://github.com/Hibbiki/chromium-win64/releases/download/v147.0.7727.117-r1596535/mini_installer.exe",
+          "link_kind": "direct",
+          "filename": "mini_installer.exe",
+          "size": 114002944,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-04-28T19:27:02+00:00",
+      "last_success_at": "2026-04-28T19:27:02+00:00",
+      "editions": [
+        "intl"
+      ]
+    },
+    {
+      "id": "mpv",
+      "name": "mpv",
+      "version": "20260421",
+      "source": "GitHub Release: shinchiro/mpv-winbuild-cmake",
+      "version_kind": "release_version",
+      "version_source": "GitHub release tag",
+      "category": "Media Players",
+      "homepage": "https://mpv.io/",
+      "released_at": "2026-04-21T00:15:57Z",
+      "notes_url": "https://github.com/shinchiro/mpv-winbuild-cmake/releases/tag/20260421",
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://github.com/shinchiro/mpv-winbuild-cmake/releases/download/20260421/mpv-x86_64-20260421-git-5921fe5.7z",
+          "link_kind": "direct",
+          "filename": "mpv-x86_64-20260421-git-5921fe5.7z",
+          "size": 32706742,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-04-28T19:27:03+00:00",
+      "last_success_at": "2026-04-28T19:27:03+00:00",
+      "editions": [
+        "intl"
+      ]
+    },
+    {
+      "id": "losslesscut",
+      "name": "LosslessCut",
+      "version": "3.68.0",
+      "source": "GitHub Release: mifi/lossless-cut",
+      "version_kind": "release_version",
+      "version_source": "GitHub release tag",
+      "category": "Media Players",
+      "homepage": "https://github.com/mifi/lossless-cut",
+      "released_at": "2026-01-29T16:54:17Z",
+      "notes_url": "https://github.com/mifi/lossless-cut/releases/tag/v3.68.0",
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://github.com/mifi/lossless-cut/releases/download/v3.68.0/LosslessCut-win-x64.7z",
+          "link_kind": "direct",
+          "filename": "LosslessCut-win-x64.7z",
+          "size": 237123792,
+          "sha256": null
+        },
+        {
+          "platform": "mac-universal",
+          "url": "https://github.com/mifi/lossless-cut/releases/download/v3.68.0/LosslessCut-mac-universal.pkg",
+          "link_kind": "direct",
+          "filename": "LosslessCut-mac-universal.pkg",
+          "size": 391011340,
+          "sha256": null
+        },
+        {
+          "platform": "linux-x64",
+          "url": "https://github.com/mifi/lossless-cut/releases/download/v3.68.0/LosslessCut-linux-x86_64.AppImage",
+          "link_kind": "direct",
+          "filename": "LosslessCut-linux-x86_64.AppImage",
+          "size": 332597594,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-04-28T19:27:02+00:00",
+      "last_success_at": "2026-04-28T19:27:02+00:00",
+      "editions": [
+        "intl"
+      ]
+    },
+    {
+      "id": "ppsspp",
+      "name": "PPSSPP",
+      "version": "1.20.3",
+      "source": "GitHub Release: hrydgard/ppsspp",
+      "version_kind": "release_version",
+      "version_source": "GitHub release tag",
+      "category": "Gaming",
+      "homepage": "https://www.ppsspp.org/",
+      "released_at": "2026-03-15T17:52:47Z",
+      "notes_url": "https://github.com/hrydgard/ppsspp/releases/tag/v1.20.3",
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://github.com/hrydgard/ppsspp/releases/download/v1.20.3/PPSSPP-v1.20.3-Windows-x64.zip",
+          "link_kind": "direct",
+          "filename": "PPSSPP-v1.20.3-Windows-x64.zip",
+          "size": 20256448,
+          "sha256": null
+        },
+        {
+          "platform": "mac-universal",
+          "url": "https://github.com/hrydgard/ppsspp/releases/download/v1.20.3/PPSSPPSDL-macOS-v1.20.3.zip",
+          "link_kind": "direct",
+          "filename": "PPSSPPSDL-macOS-v1.20.3.zip",
+          "size": 37007215,
+          "sha256": null
+        },
+        {
+          "platform": "linux-x64",
+          "url": "https://github.com/hrydgard/ppsspp/releases/download/v1.20.3/PPSSPP-v1.20.3-anylinux-x86_64.AppImage",
+          "link_kind": "direct",
+          "filename": "PPSSPP-v1.20.3-anylinux-x86_64.AppImage",
+          "size": 54369507,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-04-28T19:27:02+00:00",
+      "last_success_at": "2026-04-28T19:27:02+00:00",
+      "editions": [
+        "intl"
+      ]
+    },
+    {
+      "id": "rpcs3",
+      "name": "RPCS3",
+      "version": "05d35972192f7cb9a3af39dac83d6bd402c6861",
+      "source": "GitHub Release: RPCS3/rpcs3-binaries-win",
+      "version_kind": "release_version",
+      "version_source": "GitHub release tag",
+      "category": "Gaming",
+      "homepage": "https://rpcs3.net/",
+      "released_at": "2026-04-28T18:12:50Z",
+      "notes_url": "https://github.com/RPCS3/rpcs3-binaries-win/releases/tag/build-e05d35972192f7cb9a3af39dac83d6bd402c6861",
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://github.com/RPCS3/rpcs3-binaries-win/releases/download/build-e05d35972192f7cb9a3af39dac83d6bd402c6861/rpcs3-v0.0.40-19261-e05d3597_win64_msvc.7z",
+          "link_kind": "direct",
+          "filename": "rpcs3-v0.0.40-19261-e05d3597_win64_msvc.7z",
+          "size": 36596955,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-04-28T19:27:02+00:00",
+      "last_success_at": "2026-04-28T19:27:02+00:00",
+      "editions": [
+        "intl"
+      ]
+    },
+    {
+      "id": "sunshine",
+      "name": "Sunshine",
+      "version": "2025.924.154138",
+      "source": "GitHub Release: LizardByte/Sunshine",
+      "version_kind": "release_version",
+      "version_source": "GitHub release tag",
+      "category": "Gaming",
+      "homepage": "https://app.lizardbyte.dev/Sunshine/",
+      "released_at": "2025-09-24T18:27:49Z",
+      "notes_url": "https://github.com/LizardByte/Sunshine/releases/tag/v2025.924.154138",
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://github.com/LizardByte/Sunshine/releases/download/v2025.924.154138/Sunshine-Windows-AMD64-installer.exe",
+          "link_kind": "direct",
+          "filename": "Sunshine-Windows-AMD64-installer.exe",
+          "size": 16788961,
+          "sha256": null
+        },
+        {
+          "platform": "win-x64-portable",
+          "url": "https://github.com/LizardByte/Sunshine/releases/download/v2025.924.154138/Sunshine-Windows-AMD64-portable.zip",
+          "link_kind": "direct",
+          "filename": "Sunshine-Windows-AMD64-portable.zip",
+          "size": 20293192,
+          "sha256": null
+        },
+        {
+          "platform": "linux-x64",
+          "url": "https://github.com/LizardByte/Sunshine/releases/download/v2025.924.154138/sunshine-ubuntu-24.04-amd64.deb",
+          "link_kind": "direct",
+          "filename": "sunshine-ubuntu-24.04-amd64.deb",
+          "size": 9411202,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-04-28T19:27:03+00:00",
+      "last_success_at": "2026-04-28T19:27:03+00:00",
+      "editions": [
+        "intl"
+      ]
+    },
+    {
+      "id": "heroic",
+      "name": "Heroic Games Launcher",
+      "version": "2.21.0",
+      "source": "GitHub Release: Heroic-Games-Launcher/HeroicGamesLauncher",
+      "version_kind": "release_version",
+      "version_source": "GitHub release tag",
+      "category": "Gaming",
+      "homepage": "https://heroicgameslauncher.com/",
+      "released_at": "2026-04-22T16:47:31Z",
+      "notes_url": "https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/releases/tag/v2.21.0",
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/releases/download/v2.21.0/Heroic-2.21.0-Setup-x64.exe",
+          "link_kind": "direct",
+          "filename": "Heroic-2.21.0-Setup-x64.exe",
+          "size": 158415088,
+          "sha256": null
+        },
+        {
+          "platform": "mac-arm64",
+          "url": "https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/releases/download/v2.21.0/Heroic-2.21.0-macOS-arm64.dmg",
+          "link_kind": "direct",
+          "filename": "Heroic-2.21.0-macOS-arm64.dmg",
+          "size": 179460944,
+          "sha256": null
+        },
+        {
+          "platform": "linux-x64",
+          "url": "https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/releases/download/v2.21.0/Heroic-2.21.0-linux-amd64.deb",
+          "link_kind": "direct",
+          "filename": "Heroic-2.21.0-linux-amd64.deb",
+          "size": 143146296,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-04-28T19:27:02+00:00",
+      "last_success_at": "2026-04-28T19:27:02+00:00",
+      "editions": [
+        "intl"
+      ]
+    },
+    {
+      "id": "jan",
+      "name": "Jan",
+      "version": "0.7.9",
+      "source": "GitHub Release: menloresearch/jan",
+      "version_kind": "release_version",
+      "version_source": "GitHub release tag",
+      "category": "AI Tools",
+      "homepage": "https://jan.ai/",
+      "released_at": "2026-03-23T06:09:34Z",
+      "notes_url": "https://github.com/janhq/jan/releases/tag/v0.7.9",
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://github.com/janhq/jan/releases/download/v0.7.9/Jan_0.7.9_x64-setup.exe",
+          "link_kind": "direct",
+          "filename": "Jan_0.7.9_x64-setup.exe",
+          "size": 55118624,
+          "sha256": null
+        },
+        {
+          "platform": "mac-universal",
+          "url": "https://github.com/janhq/jan/releases/download/v0.7.9/Jan_0.7.9_universal.dmg",
+          "link_kind": "direct",
+          "filename": "Jan_0.7.9_universal.dmg",
+          "size": 99083198,
+          "sha256": null
+        },
+        {
+          "platform": "linux-x64",
+          "url": "https://github.com/janhq/jan/releases/download/v0.7.9/Jan_0.7.9_amd64.AppImage",
+          "link_kind": "direct",
+          "filename": "Jan_0.7.9_amd64.AppImage",
+          "size": 157800952,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-04-28T19:27:03+00:00",
+      "last_success_at": "2026-04-28T19:27:03+00:00",
+      "editions": [
+        "intl"
+      ]
+    },
+    {
+      "id": "gpt4all",
+      "name": "GPT4All",
+      "version": "3.10.0",
+      "source": "GitHub Release: nomic-ai/gpt4all",
+      "version_kind": "release_version",
+      "version_source": "GitHub release tag",
+      "category": "AI Tools",
+      "homepage": "https://www.nomic.ai/gpt4all",
+      "released_at": "2025-02-25T00:41:39Z",
+      "notes_url": "https://github.com/nomic-ai/gpt4all/releases/tag/v3.10.0",
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://github.com/nomic-ai/gpt4all/releases/download/v3.10.0/gpt4all-installer-win64-v3.10.0.exe",
+          "link_kind": "direct",
+          "filename": "gpt4all-installer-win64-v3.10.0.exe",
+          "size": 744456856,
+          "sha256": null
+        },
+        {
+          "platform": "mac-universal",
+          "url": "https://github.com/nomic-ai/gpt4all/releases/download/v3.10.0/gpt4all-installer-macos-v3.10.0.dmg",
+          "link_kind": "direct",
+          "filename": "gpt4all-installer-macos-v3.10.0.dmg",
+          "size": 319600812,
+          "sha256": null
+        },
+        {
+          "platform": "linux-x64",
+          "url": "https://github.com/nomic-ai/gpt4all/releases/download/v3.10.0/gpt4all-installer-linux-v3.10.0.run",
+          "link_kind": "direct",
+          "filename": "gpt4all-installer-linux-v3.10.0.run",
+          "size": 732745048,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-04-28T19:27:03+00:00",
+      "last_success_at": "2026-04-28T19:27:03+00:00",
+      "editions": [
+        "intl"
+      ]
+    },
+    {
+      "id": "discord",
+      "name": "Discord",
+      "version": "2026-04-28",
+      "source": "Official Discord download endpoint; no public version API",
+      "version_kind": "sync_date",
+      "version_source": "UTC sync date; no public version API",
+      "category": "Messaging",
+      "homepage": "https://discord.com/download",
+      "released_at": null,
+      "notes_url": null,
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://discord.com/api/download?platform=win",
+          "link_kind": "direct",
+          "filename": null,
+          "size": null,
+          "sha256": null
+        },
+        {
+          "platform": "mac-universal",
+          "url": "https://discord.com/api/download?platform=osx",
+          "link_kind": "direct",
+          "filename": null,
+          "size": null,
+          "sha256": null
+        },
+        {
+          "platform": "linux-x64",
+          "url": "https://discord.com/download",
+          "link_kind": "landing_page",
+          "filename": null,
+          "size": null,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-04-28T19:27:02+00:00",
+      "last_success_at": "2026-04-28T19:27:02+00:00",
+      "editions": [
+        "intl"
+      ]
+    },
+    {
+      "id": "slack",
+      "name": "Slack",
+      "version": "2026-04-28",
+      "source": "Official Slack download page; no public version API",
+      "version_kind": "sync_date",
+      "version_source": "UTC sync date; no public version API",
+      "category": "Messaging",
+      "homepage": "https://slack.com/downloads/",
+      "released_at": null,
+      "notes_url": null,
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://slack.com/downloads/windows",
+          "link_kind": "landing_page",
+          "filename": null,
+          "size": null,
+          "sha256": null
+        },
+        {
+          "platform": "mac-universal",
+          "url": "https://slack.com/downloads/mac",
+          "link_kind": "landing_page",
+          "filename": null,
+          "size": null,
+          "sha256": null
+        },
+        {
+          "platform": "linux-x64",
+          "url": "https://slack.com/downloads/linux",
+          "link_kind": "landing_page",
+          "filename": null,
+          "size": null,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-04-28T19:27:02+00:00",
+      "last_success_at": "2026-04-28T19:27:02+00:00",
+      "editions": [
+        "intl"
+      ]
+    },
+    {
+      "id": "zoom",
+      "name": "Zoom Workplace",
+      "version": "2026-04-28",
+      "source": "Official Zoom download page; no public version API",
+      "version_kind": "sync_date",
+      "version_source": "UTC sync date; no public version API",
+      "category": "Messaging",
+      "homepage": "https://zoom.us/download",
+      "released_at": null,
+      "notes_url": null,
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://zoom.us/download",
+          "link_kind": "landing_page",
+          "filename": null,
+          "size": null,
+          "sha256": null
+        },
+        {
+          "platform": "mac-universal",
+          "url": "https://zoom.us/download",
+          "link_kind": "landing_page",
+          "filename": null,
+          "size": null,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-04-28T19:27:02+00:00",
+      "last_success_at": "2026-04-28T19:27:02+00:00",
+      "editions": [
+        "intl"
+      ]
+    },
+    {
+      "id": "spotify",
+      "name": "Spotify",
+      "version": "2026-04-28",
+      "source": "Official Spotify download page; no public version API",
+      "version_kind": "sync_date",
+      "version_source": "UTC sync date; no public version API",
+      "category": "Media Players",
+      "homepage": "https://www.spotify.com/download/",
+      "released_at": null,
+      "notes_url": null,
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://www.spotify.com/download/windows/",
+          "link_kind": "landing_page",
+          "filename": null,
+          "size": null,
+          "sha256": null
+        },
+        {
+          "platform": "mac-universal",
+          "url": "https://www.spotify.com/download/mac/",
+          "link_kind": "landing_page",
+          "filename": null,
+          "size": null,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-04-28T19:27:02+00:00",
+      "last_success_at": "2026-04-28T19:27:02+00:00",
+      "editions": [
+        "intl"
+      ]
+    },
+    {
+      "id": "vlc",
+      "name": "VLC media player",
+      "version": "2026-04-28",
+      "source": "Official VideoLAN download page; no public version API",
+      "version_kind": "sync_date",
+      "version_source": "UTC sync date; no public version API",
+      "category": "Media Players",
+      "homepage": "https://www.videolan.org/vlc/",
+      "released_at": null,
+      "notes_url": null,
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://www.videolan.org/vlc/download-windows.html",
+          "link_kind": "landing_page",
+          "filename": null,
+          "size": null,
+          "sha256": null
+        },
+        {
+          "platform": "mac-universal",
+          "url": "https://www.videolan.org/vlc/download-macosx.html",
+          "link_kind": "landing_page",
+          "filename": null,
+          "size": null,
+          "sha256": null
+        },
+        {
+          "platform": "linux-x64",
+          "url": "https://www.videolan.org/vlc/#download",
+          "link_kind": "landing_page",
+          "filename": null,
+          "size": null,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-04-28T19:27:02+00:00",
+      "last_success_at": "2026-04-28T19:27:02+00:00",
+      "editions": [
+        "intl"
+      ]
+    },
+    {
+      "id": "sevenzip",
+      "name": "7-Zip",
+      "version": "2026-04-28",
+      "source": "Official 7-Zip download page; no public version API",
+      "version_kind": "sync_date",
+      "version_source": "UTC sync date; no public version API",
+      "category": "Utilities",
+      "homepage": "https://www.7-zip.org/",
+      "released_at": null,
+      "notes_url": null,
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://www.7-zip.org/download.html",
+          "link_kind": "landing_page",
+          "filename": null,
+          "size": null,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-04-28T19:27:02+00:00",
+      "last_success_at": "2026-04-28T19:27:02+00:00",
+      "editions": [
+        "intl"
+      ]
+    },
+    {
+      "id": "python",
+      "name": "Python",
+      "version": "2026-04-28",
+      "source": "Official Python downloads page; no public version API",
+      "version_kind": "sync_date",
+      "version_source": "UTC sync date; no public version API",
+      "category": "Developer Tools",
+      "homepage": "https://www.python.org/downloads/",
+      "released_at": null,
+      "notes_url": null,
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://www.python.org/downloads/windows/",
+          "link_kind": "landing_page",
+          "filename": null,
+          "size": null,
+          "sha256": null
+        },
+        {
+          "platform": "mac-universal",
+          "url": "https://www.python.org/downloads/macos/",
+          "link_kind": "landing_page",
+          "filename": null,
+          "size": null,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-04-28T19:27:02+00:00",
+      "last_success_at": "2026-04-28T19:27:02+00:00",
+      "editions": [
+        "intl"
+      ]
+    },
+    {
+      "id": "go",
+      "name": "Go",
+      "version": "2026-04-28",
+      "source": "Official Go downloads page; no public version API",
+      "version_kind": "sync_date",
+      "version_source": "UTC sync date; no public version API",
+      "category": "Developer Tools",
+      "homepage": "https://go.dev/dl/",
+      "released_at": null,
+      "notes_url": null,
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://go.dev/dl/",
+          "link_kind": "landing_page",
+          "filename": null,
+          "size": null,
+          "sha256": null
+        },
+        {
+          "platform": "mac-universal",
+          "url": "https://go.dev/dl/",
+          "link_kind": "landing_page",
+          "filename": null,
+          "size": null,
+          "sha256": null
+        },
+        {
+          "platform": "linux-x64",
+          "url": "https://go.dev/dl/",
+          "link_kind": "landing_page",
+          "filename": null,
+          "size": null,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-04-28T19:27:02+00:00",
+      "last_success_at": "2026-04-28T19:27:02+00:00",
+      "editions": [
+        "intl"
+      ]
+    },
     {
       "id": "signal",
       "name": "Signal Desktop",
@@ -31,18 +3357,146 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-28T19:25:41+00:00",
-      "last_success_at": "2026-04-28T19:25:41+00:00",
+      "fetched_at": "2026-04-28T19:27:02+00:00",
+      "last_success_at": "2026-04-28T19:27:02+00:00",
+      "editions": [
+        "intl"
+      ]
+    },
+    {
+      "id": "wireguard",
+      "name": "WireGuard",
+      "version": "2026-04-28",
+      "source": "Official WireGuard download page; no public version API",
+      "version_kind": "sync_date",
+      "version_source": "UTC sync date; no public version API",
+      "category": "Network & Proxy",
+      "homepage": "https://www.wireguard.com/install/",
+      "released_at": null,
+      "notes_url": null,
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://download.wireguard.com/windows-client/wireguard-installer.exe",
+          "link_kind": "direct",
+          "filename": null,
+          "size": null,
+          "sha256": null
+        },
+        {
+          "platform": "mac-universal",
+          "url": "https://apps.apple.com/us/app/wireguard/id1451685025",
+          "link_kind": "landing_page",
+          "filename": null,
+          "size": null,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-04-28T19:27:02+00:00",
+      "last_success_at": "2026-04-28T19:27:02+00:00",
+      "editions": [
+        "intl"
+      ]
+    },
+    {
+      "id": "tailscale",
+      "name": "Tailscale",
+      "version": "2026-04-28",
+      "source": "Official Tailscale download page; no public version API",
+      "version_kind": "sync_date",
+      "version_source": "UTC sync date; no public version API",
+      "category": "Network & Proxy",
+      "homepage": "https://tailscale.com/download",
+      "released_at": null,
+      "notes_url": null,
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://pkgs.tailscale.com/stable/tailscale-setup-latest.exe",
+          "link_kind": "direct",
+          "filename": null,
+          "size": null,
+          "sha256": null
+        },
+        {
+          "platform": "mac-universal",
+          "url": "https://tailscale.com/download/mac",
+          "link_kind": "landing_page",
+          "filename": null,
+          "size": null,
+          "sha256": null
+        },
+        {
+          "platform": "linux-x64",
+          "url": "https://tailscale.com/download/linux",
+          "link_kind": "landing_page",
+          "filename": null,
+          "size": null,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-04-28T19:27:02+00:00",
+      "last_success_at": "2026-04-28T19:27:02+00:00",
+      "editions": [
+        "intl"
+      ]
+    },
+    {
+      "id": "qbittorrent",
+      "name": "qBittorrent",
+      "version": "2026-04-28",
+      "source": "Official qBittorrent download page; no public version API",
+      "version_kind": "sync_date",
+      "version_source": "UTC sync date; no public version API",
+      "category": "Utilities",
+      "homepage": "https://www.qbittorrent.org/download",
+      "released_at": null,
+      "notes_url": null,
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://www.qbittorrent.org/download",
+          "link_kind": "landing_page",
+          "filename": null,
+          "size": null,
+          "sha256": null
+        },
+        {
+          "platform": "mac-universal",
+          "url": "https://www.qbittorrent.org/download",
+          "link_kind": "landing_page",
+          "filename": null,
+          "size": null,
+          "sha256": null
+        },
+        {
+          "platform": "linux-x64",
+          "url": "https://www.qbittorrent.org/download",
+          "link_kind": "landing_page",
+          "filename": null,
+          "size": null,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-04-28T19:27:02+00:00",
+      "last_success_at": "2026-04-28T19:27:02+00:00",
       "editions": [
         "intl"
       ]
     }
   ],
   "stats": {
-    "total": 1,
-    "success": 1,
-    "failed": 0,
-    "failed_ids": [],
-    "failures": []
+    "total": 111,
+    "success": 110,
+    "failed": 1,
+    "failed_ids": [
+      "windows11-english"
+    ],
+    "failures": [
+      {
+        "id": "windows11-english",
+        "error": "Fido 连续 3 次失败，最后一次：Fido 未返回 URL。stdout='Error: We are unable to complete your request at this time. Some users, entities and locations are banned from using this service. For this reason, leveraging anonymous or location hiding technologies when connecting to this service is not generally allowed. If you believe that you encountered this problem in error, please try again. If the problem persists you may contact Microsoft Support â€“ Contact Us page for assistance. Refer to message code 715-123130 and f069656e-c4f7-464d-a683-243533b539c1.' stderr='' returncode=3"
+      }
+    ]
   }
 }
