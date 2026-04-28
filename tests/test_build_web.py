@@ -133,5 +133,5 @@ def test_web_index_uses_i18n_for_visible_copy():
 
     assert "statusText()" in html
     assert "resultCountText()" in html
-    assert "assetTitle(asset)" in html
+    assert "msg('direct_download'" in html
     assert "t('footer')" in html
