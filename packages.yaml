@@ -1441,8 +1441,8 @@ packages:
     source: Official Signal download page; no public version API
     platforms:
     - platform: win-x64
-      download_url: https://updates.signal.org/desktop/signal-desktop-win-64.exe
-      link_kind: direct
+      download_url: https://signal.org/download/windows/
+      link_kind: landing_page
     - platform: mac-universal
       download_url: https://signal.org/download/macos/
       link_kind: landing_page

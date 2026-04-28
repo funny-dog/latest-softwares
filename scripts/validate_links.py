@@ -28,11 +28,11 @@ if __package__ in (None, ""):
         LINK_KIND_LANDING_PAGE,
         is_direct_link,
     )
-    from scripts.net import get, head  # type: ignore
+    from scripts.net import get, github_headers, head  # type: ignore
 else:
     from .fetchers import FETCHERS
     from .link_utils import LINK_KIND_DIRECT, LINK_KIND_LANDING_PAGE, is_direct_link
-    from .net import get, head
+    from .net import get, github_headers, head
 
 # Windows runner 默认 cp1252，输出 ✓/✗/中文会 UnicodeEncodeError 进而崩掉整个脚本。
 # 与 sync.py / render.py / build_web.py 保持一致。
@@ -231,10 +231,22 @@ def validate_and_fix() -> int:
     return 0 if total_failed == 0 else 1
 
 
+def _is_github_url(url: str) -> bool:
+    """判断是否为 GitHub 相关 URL（release asset 下载或 API）。"""
+    return "github.com" in url or "objects.githubusercontent.com" in url
+
+
 def _check_url(url: str) -> bool:
     """HEAD 请求检查 URL 是否可达（2xx/3xx 视为有效）。"""
+    extra = github_headers() if _is_github_url(url) else None
     try:
-        resp = head(url, allow_redirects=True, timeout=TIMEOUT, retries=1)
+        resp = head(
+            url,
+            allow_redirects=True,
+            timeout=TIMEOUT,
+            retries=2,
+            headers=extra,
+        )
         return resp.status_code < 400
     except Exception:
         return False
@@ -242,13 +254,16 @@ def _check_url(url: str) -> bool:
 
 def _check_url_get_fallback(url: str) -> bool:
     """GET + Range 字节请求作为备选（部分 CDN 拒绝 HEAD 但允许 GET）。"""
+    headers: dict[str, str] = {"Range": "bytes=0-0"}
+    if _is_github_url(url):
+        headers.update(github_headers())
     try:
         resp = get(
             url,
-            headers={"Range": "bytes=0-0"},
+            headers=headers,
             timeout=TIMEOUT,
             stream=True,
-            retries=1,
+            retries=2,
         )
         resp.close()
         return resp.status_code < 400
