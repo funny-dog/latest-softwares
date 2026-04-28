@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-04-28T04:29:21+00:00",
+  "generated_at": "2026-04-28T05:43:30+00:00",
   "packages": [
     {
       "id": "windows11",
@@ -16,14 +16,14 @@
       "assets": [
         {
           "platform": "win-x64",
-          "url": "https://software.download.prss.microsoft.com/dbazure/Win11_25H2_Chinese_Simplified_x64_v2.iso?t=dcfffa46-635e-455f-9ca1-f04def8a2d03&P1=1777436960&P2=601&P3=2&P4=VOItG6GUB98m1CgDldpANX0bbd1JmznsGNKSATx0Ebo88Vp4YB%2f2j5Fj6sF6UsR8IrvXbfR1C9gU78c3RDgucUQkBXzBgESw8Kw9j6BiuGIDPYZEXZl2MtFVgJOL0DCcN9ftFfZFxOnSMF9XA3A9I1YKuKiM9zrCLiWykiJ78tKQYuzOn%2fMeZsfu8Qh3DDpiH6zzrKP9XgM07xZNSuuOa48B7Rdh1F4DqBN7TZda98LIBL6RZYy5m%2f5ZK2Fr%2bB3HY8YWXrzzNTvrgcEpdFvrTuZmCqkvVURNzoyLX%2fQcy%2fcK0zx4b4U9swnqK9JjbZQmz6Zjpxeynpk45g56R%2f1hvA%3d%3d",
+          "url": "https://software.download.prss.microsoft.com/dbazure/Win11_25H2_Chinese_Simplified_x64_v2.iso?t=37fa8c6f-bee4-479c-af72-84173ea36f54&P1=1777441409&P2=601&P3=2&P4=eCbck3avpNGY%2fCsgnl2spINP7P6BdXJyKsyscP3AiZhUjTWgO5jnfM0hC5oy6oTc9psqEajmUCnS9ywPIufsW4Ol44AvrumFywkvYWD5gaBGS6Y7MmELLYWzDJIJKHI1qIo9588CW5WJndY00tSw7dh35zpMujFVQEU1ao%2ft2H8d1C7Vv4TkKqlrTik5xyZchdZMr4MvkMnPyAFhwveg7RGeGo6TcaeTvPWbdKUKkihv%2bGN8YKKNrSchsK1evxbwhIJQlSXHpENkJqy8ihapf%2boH%2bRgp5zUENljcu1cRbd2fhN8dKemKVjiuIsX69Ylan%2fZkeMwTQlmFKVBOaTOQvQ%3d%3d",
           "filename": "Win11_25H2_Chinese_Simplified_x64_v2.iso",
           "size": null,
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-28T04:29:21+00:00",
-      "last_success_at": "2026-04-28T04:29:21+00:00"
+      "fetched_at": "2026-04-28T05:43:30+00:00",
+      "last_success_at": "2026-04-28T05:43:30+00:00"
     },
     {
       "id": "v2rayn",
@@ -66,8 +66,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-28T04:29:11+00:00",
-      "last_success_at": "2026-04-28T04:29:11+00:00"
+      "fetched_at": "2026-04-28T05:43:22+00:00",
+      "last_success_at": "2026-04-28T05:43:22+00:00"
     },
     {
       "id": "vscode",
@@ -110,8 +110,8 @@
           "sha256": "bc5017110545de218ac71df0bdcf40665ec00e9de322825e29a28eebc1e3e1a2"
         }
       ],
-      "fetched_at": "2026-04-28T04:29:12+00:00",
-      "last_success_at": "2026-04-28T04:29:12+00:00"
+      "fetched_at": "2026-04-28T05:43:23+00:00",
+      "last_success_at": "2026-04-28T05:43:23+00:00"
     },
     {
       "id": "chrome",
@@ -140,8 +140,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-28T04:29:11+00:00",
-      "last_success_at": "2026-04-28T04:29:11+00:00"
+      "fetched_at": "2026-04-28T05:43:22+00:00",
+      "last_success_at": "2026-04-28T05:43:22+00:00"
     },
     {
       "id": "steam",
@@ -163,8 +163,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-28T04:29:12+00:00",
-      "last_success_at": "2026-04-28T04:29:12+00:00"
+      "fetched_at": "2026-04-28T05:43:22+00:00",
+      "last_success_at": "2026-04-28T05:43:22+00:00"
     },
     {
       "id": "wegame",
@@ -186,8 +186,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-28T04:29:11+00:00",
-      "last_success_at": "2026-04-28T04:29:11+00:00"
+      "fetched_at": "2026-04-28T05:43:21+00:00",
+      "last_success_at": "2026-04-28T05:43:21+00:00"
     },
     {
       "id": "localsend",
@@ -216,8 +216,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-28T04:29:11+00:00",
-      "last_success_at": "2026-04-28T04:29:11+00:00"
+      "fetched_at": "2026-04-28T05:43:22+00:00",
+      "last_success_at": "2026-04-28T05:43:22+00:00"
     },
     {
       "id": "bitwarden",
@@ -246,8 +246,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-28T04:29:12+00:00",
-      "last_success_at": "2026-04-28T04:29:12+00:00"
+      "fetched_at": "2026-04-28T05:43:23+00:00",
+      "last_success_at": "2026-04-28T05:43:23+00:00"
     },
     {
       "id": "codex",
@@ -290,8 +290,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-28T04:29:13+00:00",
-      "last_success_at": "2026-04-28T04:29:13+00:00"
+      "fetched_at": "2026-04-28T05:43:24+00:00",
+      "last_success_at": "2026-04-28T05:43:24+00:00"
     },
     {
       "id": "baidunetdisk",
@@ -320,8 +320,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-28T04:29:12+00:00",
-      "last_success_at": "2026-04-28T04:29:12+00:00"
+      "fetched_at": "2026-04-28T05:43:23+00:00",
+      "last_success_at": "2026-04-28T05:43:23+00:00"
     },
     {
       "id": "geek",
@@ -343,8 +343,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-28T04:29:11+00:00",
-      "last_success_at": "2026-04-28T04:29:11+00:00"
+      "fetched_at": "2026-04-28T05:43:22+00:00",
+      "last_success_at": "2026-04-28T05:43:22+00:00"
     },
     {
       "id": "everything",
@@ -387,8 +387,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-28T04:29:12+00:00",
-      "last_success_at": "2026-04-28T04:29:12+00:00"
+      "fetched_at": "2026-04-28T05:43:23+00:00",
+      "last_success_at": "2026-04-28T05:43:23+00:00"
     },
     {
       "id": "nvidia-app",
@@ -410,8 +410,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-28T04:29:11+00:00",
-      "last_success_at": "2026-04-28T04:29:11+00:00"
+      "fetched_at": "2026-04-28T05:43:22+00:00",
+      "last_success_at": "2026-04-28T05:43:22+00:00"
     },
     {
       "id": "qq",
@@ -440,8 +440,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-28T04:29:11+00:00",
-      "last_success_at": "2026-04-28T04:29:11+00:00"
+      "fetched_at": "2026-04-28T05:43:22+00:00",
+      "last_success_at": "2026-04-28T05:43:22+00:00"
     },
     {
       "id": "wechat",
@@ -470,8 +470,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-28T04:29:15+00:00",
-      "last_success_at": "2026-04-28T04:29:15+00:00"
+      "fetched_at": "2026-04-28T05:43:25+00:00",
+      "last_success_at": "2026-04-28T05:43:25+00:00"
     },
     {
       "id": "yy",
@@ -493,8 +493,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-28T04:29:11+00:00",
-      "last_success_at": "2026-04-28T04:29:11+00:00"
+      "fetched_at": "2026-04-28T05:43:22+00:00",
+      "last_success_at": "2026-04-28T05:43:22+00:00"
     }
   ],
   "stats": {
