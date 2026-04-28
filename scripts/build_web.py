@@ -19,8 +19,10 @@ from pathlib import Path
 if __package__ in (None, ""):
     sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
     from scripts.link_utils import DIRECT_FILE_EXTENSIONS  # type: ignore
+    from scripts.editions import filter_data_by_edition, VALID_EDITIONS  # type: ignore
 else:
     from .link_utils import DIRECT_FILE_EXTENSIONS
+    from .editions import filter_data_by_edition, VALID_EDITIONS
 
 # Windows runner 默认 cp1252，输出 ✓ 会崩
 for _stream in (sys.stdout, sys.stderr):
@@ -113,12 +115,13 @@ def _json_for_inline_script(data: dict) -> str:
     )
 
 
-def inject_data() -> int:
+def inject_data(edition: str | None = None) -> int:
     if not DATA_FILE.exists():
         raise FileNotFoundError(
             f"找不到 {DATA_FILE.relative_to(REPO_ROOT)}，请先跑 scripts/sync.py"
         )
     data = json.loads(DATA_FILE.read_text(encoding="utf-8"))
+    data = filter_data_by_edition(data, edition)
     data["direct_file_extensions"] = list(DIRECT_FILE_EXTENSIONS)
     # ensure_ascii=False 让中文不被转义成 \uXXXX，体积更小
     data_json = _json_for_inline_script(data)
@@ -139,6 +142,17 @@ def inject_data() -> int:
 
 
 def main() -> int:
+    import argparse
+
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument(
+        "--edition",
+        choices=sorted(VALID_EDITIONS),
+        default=None,
+        help="只注入指定版本的软件数据（cn=国内版，intl=国际版）。",
+    )
+    args = parser.parse_args()
+
     if not WEB_SRC.exists():
         print(f"✗ 找不到 {WEB_SRC.relative_to(REPO_ROOT)}", file=sys.stderr)
         return 1
@@ -147,10 +161,11 @@ def main() -> int:
     clean_dist()
     vendor_assets = verify_vendor_assets()
     n_files = copy_static()
-    n_pkgs = inject_data()
+    n_pkgs = inject_data(edition=args.edition)
 
+    edition_label = f" [{args.edition}]" if args.edition else ""
     print(
-        f"✓ dist/ 构建完成（{n_files} 个静态文件，"
+        f"✓ dist/ 构建完成{edition_label}（{n_files} 个静态文件，"
         f"{len(vendor_assets)} 个 vendor 文件已校验，注入 {n_pkgs} 个软件数据）"
     )
     print(f"  本地预览: python -m http.server -d {DIST.relative_to(REPO_ROOT)} 8000")

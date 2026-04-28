@@ -13,6 +13,15 @@ from pathlib import Path
 
 from jinja2 import Environment, FileSystemLoader, select_autoescape
 
+# 兼容两种运行方式
+if __package__ in (None, ""):
+    import sys as _sys
+
+    _sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+    from scripts.editions import filter_data_by_edition, VALID_EDITIONS  # type: ignore
+else:
+    from .editions import filter_data_by_edition, VALID_EDITIONS
+
 # 同 sync.py，Windows cp1252 默认编码会让 print 中文/emoji 崩。
 for _stream in (sys.stdout, sys.stderr):
     if hasattr(_stream, "reconfigure"):
@@ -111,6 +120,12 @@ def main(argv: list[str] | None = None) -> int:
         action="store_true",
         help="只检查 README.md 是否与模板和数据一致，不写文件",
     )
+    parser.add_argument(
+        "--edition",
+        choices=sorted(VALID_EDITIONS),
+        default=None,
+        help="只渲染指定版本的软件（cn=国内版，intl=国际版）。",
+    )
     args = parser.parse_args(argv)
 
     if not DATA_FILE.exists():
@@ -118,7 +133,8 @@ def main(argv: list[str] | None = None) -> int:
         return 1
 
     data = json.loads(DATA_FILE.read_text(encoding="utf-8"))
-    packages = data.get("packages", [])
+    data = filter_data_by_edition(data, args.edition)
+    packages = data["packages"]
     rendered = render_markdown(data)
 
     if args.check:

@@ -1,185 +1,1502 @@
-# 软件清单 —— 用户的"控制面板"
-# 加新软件：在 packages: 下追加一项即可。90% 情况用 github_release fetcher。
-# 字段说明：
-#   id        : 唯一短标识（小写、可作文件名）
-#   name      : 显示名（README 中展示）
-#   category  : 分组（README 按 category 聚合）
-#   homepage  : 主页（可选，用于 README 链接）
-#   fetcher   : 抓取器名（必须在 scripts/fetchers/__init__.py 的 FETCHERS 中注册）
-#   args      : 透传给 fetcher 的参数
-
 packages:
-  - id: windows11
-    name: Windows 11
-    category: 操作系统
-    homepage: https://www.microsoft.com/software-download/windows11
-    fetcher: windows11_fido
-    args:
-      lang: "Chinese (Simplified)"
-      edition: "Pro"
-
-  - id: v2rayn
-    name: v2rayN
-    category: 网络代理
-    homepage: https://github.com/2dust/v2rayN
-    fetcher: github_release
-    args:
-      repo: 2dust/v2rayN
-      assets:
-        - { platform: win-x64,    pattern: "v2rayN-windows-64-desktop.zip" }
-        - { platform: win-arm64,  pattern: "v2rayN-windows-arm64-desktop.zip" }
-        - { platform: mac-arm64,  pattern: "v2rayN-macos-arm64.dmg" }
-        - { platform: mac-x64,    pattern: "v2rayN-macos-64.dmg" }
-
-  - id: vscode
-    name: Visual Studio Code
-    category: 开发工具
-    homepage: https://code.visualstudio.com
-    fetcher: vscode_official
-    args:
-      builds:
-        - { platform: win-x64,    build: "win32-x64-user" }
-        - { platform: win-arm64,  build: "win32-arm64-user" }
-        - { platform: mac-arm64,  build: "darwin-arm64-dmg" }
-        - { platform: mac-x64,    build: "darwin-x64-dmg" }
-
-  - id: chrome
-    name: Google Chrome
-    category: 浏览器
-    homepage: https://www.google.com/chrome/
-    fetcher: chrome_official
-    args:
-      platforms:
-        - { platform: win-x64,   channel: stable, os_key: win64,    download_url: "https://dl.google.com/chrome/install/standalonesetup64.exe" }
-        - { platform: mac-arm64, channel: stable, os_key: mac_arm64, download_url: "https://dl.google.com/chrome/mac/stable/GGRO/googlechrome.dmg" }
-
-  - id: steam
-    name: Steam
-    category: 游戏平台
-    homepage: https://store.steampowered.com/about/
-    fetcher: steam_official
-    args:
-      platforms:
-        - { platform: win-x64, download_url: "https://cdn.fastly.steamstatic.com/client/installer/SteamSetup.exe" }
-
-  - id: wegame
-    name: WeGame
-    category: 游戏平台
-    homepage: https://www.wegame.com.cn/
-    fetcher: wegame_official
-    args:
-      platforms:
-        - { platform: win-x64, download_url: "https://www.wegame.com.cn/client/", link_kind: landing_page }
-
-  - id: localsend
-    name: LocalSend
-    category: 通用工具
-    homepage: https://localsend.org
-    fetcher: github_release
-    args:
-      repo: localsend/localsend
-      assets:
-        - { platform: win-x64,   pattern: "LocalSend-*-windows-x86-64.exe" }
-        - { platform: mac-arm64, pattern: "LocalSend-*.dmg" }
-
-  - id: bitwarden
-    name: Bitwarden Desktop
-    category: 通用工具
-    homepage: https://bitwarden.com/download/
-    fetcher: github_release
-    args:
-      repo: bitwarden/clients
-      tag_pattern: "^desktop-v"
-      # desktop release 在 monorepo 里发布间隔大，最新 desktop 常常已被 cli/web/
-      # browser 等子产品挤出 page=1 (30 个) 窗口，必须扫到 page=2/3 才稳定命中
-      release_scan_pages: 3
-      assets:
-        - { platform: win-x64,            pattern: "Bitwarden-Installer-*.exe" }
-        - { platform: mac-universal,      pattern: "Bitwarden-*-universal.dmg" }
-
-  - id: codex
-    name: OpenAI Codex
-    category: 开发工具
-    homepage: https://github.com/openai/codex
-    fetcher: github_release
-    args:
-      repo: openai/codex
-      tag_pattern: "^rust-v"
-      # codex 大量发 alpha 版（占比约 87%），稳定版稀疏；同时给 page=1 偶发空
-      # 留 buffer，扫到 page=2 保证至少能找到 1 个稳定版
-      release_scan_pages: 2
-      assets:
-        - { platform: win-x64,    pattern: "codex-x86_64-pc-windows-msvc.exe" }
-        - { platform: win-arm64,  pattern: "codex-aarch64-pc-windows-msvc.exe" }
-        - { platform: mac-arm64, pattern: "codex-aarch64-apple-darwin.dmg" }
-        - { platform: mac-x64,    pattern: "codex-x86_64-apple-darwin.tar.gz" }
-
-  - id: baidunetdisk
-    name: 百度网盘
-    category: 通用工具
-    homepage: https://pan.baidu.com/
-    fetcher: baidunetdisk
-    args:
-      platforms:
-        - { platform: win-x64, download_url: "https://pan.baidu.com/disk/base/semdownload", link_kind: landing_page }
-        - { platform: mac-universal, download_url: "https://pan.baidu.com/disk/base/semdownload", link_kind: landing_page }
-
-  - id: geek
-    name: Geek Uninstaller
-    category: 通用工具
-    homepage: https://geekuninstaller.com/
-    fetcher: geek
-    args:
-      platforms:
-        - { platform: win-x64, download_url: "https://geekuninstaller.com/download", link_kind: landing_page }
-
-  - id: everything
-    name: Everything
-    category: 通用工具
-    homepage: https://www.voidtools.com/
-    fetcher: everything
-    args:
-      # {version} 占位符由 fetcher 解析到的真实版本动态填充
-      platforms:
-        - { platform: win-x64,          download_url: "https://www.voidtools.com/Everything-{version}.x64-Setup.exe" }
-        - { platform: win-x86,          download_url: "https://www.voidtools.com/Everything-{version}.x86-Setup.exe" }
-        - { platform: win-x64-portable, download_url: "https://www.voidtools.com/Everything-{version}.x64.zip" }
-        - { platform: win-x86-portable, download_url: "https://www.voidtools.com/Everything-{version}.x86.zip" }
-
-  - id: nvidia-app
-    name: NVIDIA App
-    category: 系统工具
-    homepage: https://www.nvidia.com/en-us/software/nvidia-app/
-    fetcher: nvidia_app
-    args:
-      platforms:
-        - { platform: win-x64, download_url: "https://www.nvidia.com/en-us/software/nvidia-app/", link_kind: landing_page }
-
-  - id: qq
-    name: QQ
-    category: 即时通讯
-    homepage: https://im.qq.com/
-    fetcher: qq_official
-    args:
-      platforms:
-        - { platform: win-x64,       download_url: "https://im.qq.com/download/", link_kind: landing_page }
-        - { platform: mac-universal, download_url: "https://im.qq.com/download/", link_kind: landing_page }
-
-  - id: wechat
-    name: 微信
-    category: 即时通讯
-    homepage: https://weixin.qq.com/
-    fetcher: wechat_official
-    args:
-      platforms:
-        - { platform: win-x64,       download_url: "https://dldir1.qq.com/weixin/Windows/WeChatSetup.exe" }
-        - { platform: mac-universal, download_url: "https://dldir1.qq.com/weixin/mac/WeChatMac.dmg" }
-
-  - id: yy
-    name: YY 语音
-    category: 即时通讯
-    homepage: https://www.yy.com/
-    fetcher: yy_official
-    args:
-      platforms:
-        - { platform: win-x64, download_url: "https://www.yy.com/", link_kind: landing_page }
+- id: windows11
+  name: Windows 11
+  category: Operating Systems
+  editions:
+  - cn
+  homepage: https://www.microsoft.com/software-download/windows11
+  fetcher: windows11_fido
+  args:
+    lang: Chinese (Simplified)
+    edition: Pro
+- id: v2rayn
+  name: v2rayN
+  category: Network & Proxy
+  editions:
+  - intl
+  homepage: https://github.com/2dust/v2rayN
+  fetcher: github_release
+  args:
+    repo: 2dust/v2rayN
+    assets:
+    - platform: win-x64
+      pattern: v2rayN-windows-64-desktop.zip
+    - platform: win-arm64
+      pattern: v2rayN-windows-arm64-desktop.zip
+    - platform: mac-arm64
+      pattern: v2rayN-macos-arm64.dmg
+    - platform: mac-x64
+      pattern: v2rayN-macos-64.dmg
+- id: vscode
+  name: Visual Studio Code
+  category: Developer Tools
+  editions:
+  - cn
+  - intl
+  homepage: https://code.visualstudio.com
+  fetcher: vscode_official
+  args:
+    builds:
+    - platform: win-x64
+      build: win32-x64-user
+    - platform: win-arm64
+      build: win32-arm64-user
+    - platform: mac-arm64
+      build: darwin-arm64-dmg
+    - platform: mac-x64
+      build: darwin-x64-dmg
+- id: chrome
+  name: Google Chrome
+  category: Browsers
+  editions:
+  - cn
+  - intl
+  homepage: https://www.google.com/chrome/
+  fetcher: chrome_official
+  args:
+    platforms:
+    - platform: win-x64
+      channel: stable
+      os_key: win64
+      download_url: https://dl.google.com/chrome/install/standalonesetup64.exe
+    - platform: mac-arm64
+      channel: stable
+      os_key: mac_arm64
+      download_url: https://dl.google.com/chrome/mac/stable/GGRO/googlechrome.dmg
+- id: steam
+  name: Steam
+  category: Gaming
+  editions:
+  - cn
+  - intl
+  homepage: https://store.steampowered.com/about/
+  fetcher: steam_official
+  args:
+    platforms:
+    - platform: win-x64
+      download_url: https://cdn.fastly.steamstatic.com/client/installer/SteamSetup.exe
+- id: localsend
+  name: LocalSend
+  category: Utilities
+  editions:
+  - cn
+  - intl
+  homepage: https://localsend.org
+  fetcher: github_release
+  args:
+    repo: localsend/localsend
+    assets:
+    - platform: win-x64
+      pattern: LocalSend-*-windows-x86-64.exe
+    - platform: mac-arm64
+      pattern: LocalSend-*.dmg
+- id: bitwarden
+  name: Bitwarden Desktop
+  category: Utilities
+  editions:
+  - cn
+  - intl
+  homepage: https://bitwarden.com/download/
+  fetcher: github_release
+  args:
+    repo: bitwarden/clients
+    tag_pattern: ^desktop-v
+    release_scan_pages: 3
+    assets:
+    - platform: win-x64
+      pattern: Bitwarden-Installer-*.exe
+    - platform: mac-universal
+      pattern: Bitwarden-*-universal.dmg
+- id: codex
+  name: OpenAI Codex
+  category: Developer Tools
+  editions:
+  - intl
+  homepage: https://github.com/openai/codex
+  fetcher: github_release
+  args:
+    repo: openai/codex
+    tag_pattern: ^rust-v
+    release_scan_pages: 2
+    assets:
+    - platform: win-x64
+      pattern: codex-x86_64-pc-windows-msvc.exe
+    - platform: win-arm64
+      pattern: codex-aarch64-pc-windows-msvc.exe
+    - platform: mac-arm64
+      pattern: codex-aarch64-apple-darwin.dmg
+    - platform: mac-x64
+      pattern: codex-x86_64-apple-darwin.tar.gz
+- id: geek
+  name: Geek Uninstaller
+  category: Utilities
+  editions:
+  - cn
+  - intl
+  homepage: https://geekuninstaller.com/
+  fetcher: geek
+  args:
+    platforms:
+    - platform: win-x64
+      download_url: https://geekuninstaller.com/download
+      link_kind: landing_page
+- id: everything
+  name: Everything
+  category: Utilities
+  editions:
+  - cn
+  - intl
+  homepage: https://www.voidtools.com/
+  fetcher: everything
+  args:
+    platforms:
+    - platform: win-x64
+      download_url: https://www.voidtools.com/Everything-{version}.x64-Setup.exe
+    - platform: win-x86
+      download_url: https://www.voidtools.com/Everything-{version}.x86-Setup.exe
+    - platform: win-x64-portable
+      download_url: https://www.voidtools.com/Everything-{version}.x64.zip
+    - platform: win-x86-portable
+      download_url: https://www.voidtools.com/Everything-{version}.x86.zip
+- id: nvidia-app
+  name: NVIDIA App
+  category: System Utilities
+  editions:
+  - cn
+  - intl
+  homepage: https://www.nvidia.com/en-us/software/nvidia-app/
+  fetcher: nvidia_app
+  args:
+    platforms:
+    - platform: win-x64
+      download_url: https://www.nvidia.com/en-us/software/nvidia-app/
+      link_kind: landing_page
+- id: git
+  name: Git for Windows
+  category: Developer Tools
+  editions:
+  - intl
+  homepage: https://github.com/git-for-windows/git
+  fetcher: github_release
+  args:
+    repo: git-for-windows/git
+    assets:
+    - platform: win-x64
+      pattern: Git-*-64-bit.exe
+- id: insomnia
+  name: Insomnia
+  category: Developer Tools
+  editions:
+  - intl
+  homepage: https://github.com/Kong/insomnia
+  fetcher: github_release
+  args:
+    repo: Kong/insomnia
+    assets:
+    - platform: win-x64
+      pattern: Insomnia.Core-*.exe
+- id: heidisql
+  name: HeidiSQL
+  category: Developer Tools
+  editions:
+  - intl
+  homepage: https://github.com/HeidiSQL/HeidiSQL
+  fetcher: github_release
+  args:
+    repo: HeidiSQL/HeidiSQL
+    assets:
+    - platform: win-x64
+      pattern: HeidiSQL_*_Setup.exe
+- id: notepadplusplus
+  name: Notepad++
+  category: Developer Tools
+  editions:
+  - intl
+  homepage: https://github.com/notepad-plus-plus/notepad-plus-plus
+  fetcher: github_release
+  args:
+    repo: notepad-plus-plus/notepad-plus-plus
+    assets:
+    - platform: win-x64
+      pattern: npp.*.Installer.x64.exe
+- id: wezterm
+  name: WezTerm
+  category: Developer Tools
+  editions:
+  - intl
+  homepage: https://github.com/wez/wezterm
+  fetcher: github_release
+  args:
+    repo: wez/wezterm
+    assets:
+    - platform: win-x64
+      pattern: WezTerm-*-setup.exe
+- id: hiddify
+  name: Hiddify Next
+  category: Network & Proxy
+  editions:
+  - intl
+  homepage: https://github.com/hiddify/hiddify-next
+  fetcher: github_release
+  args:
+    repo: hiddify/hiddify-next
+    assets:
+    - platform: win-x64
+      pattern: Hiddify-Windows-Setup-x64.exe
+- id: sing-box
+  name: sing-box
+  category: Network & Proxy
+  editions:
+  - intl
+  homepage: https://github.com/SagerNet/sing-box
+  fetcher: github_release
+  args:
+    repo: SagerNet/sing-box
+    assets:
+    - platform: win-x64
+      pattern: sing-box-*-windows-amd64.zip
+- id: trafficmonitor
+  name: TrafficMonitor
+  category: System Utilities
+  editions:
+  - intl
+  homepage: https://github.com/zhongyang219/TrafficMonitor
+  fetcher: github_release
+  args:
+    repo: zhongyang219/TrafficMonitor
+    assets:
+    - platform: win-x64
+      pattern: TrafficMonitor_V*_x64.zip
+- id: keepassxc
+  name: KeePassXC
+  category: Utilities
+  editions:
+  - intl
+  homepage: https://github.com/keepassxreboot/keepassxc
+  fetcher: github_release
+  args:
+    repo: keepassxreboot/keepassxc
+    assets:
+    - platform: win-x64
+      pattern: KeePassXC-*-Win64.msi
+- id: rustdesk
+  name: RustDesk
+  category: Utilities
+  editions:
+  - intl
+  homepage: https://github.com/rustdesk/rustdesk
+  fetcher: github_release
+  args:
+    repo: rustdesk/rustdesk
+    assets:
+    - platform: win-x64
+      pattern: rustdesk-*-x86_64.exe
+- id: telegram
+  name: Telegram Desktop
+  category: Messaging
+  editions:
+  - intl
+  homepage: https://github.com/telegramdesktop/tdesktop
+  fetcher: github_release
+  args:
+    repo: telegramdesktop/tdesktop
+    assets:
+    - platform: win-x64
+      pattern: tsetup.*.exe
+- id: logseq
+  name: Logseq
+  category: Productivity
+  editions:
+  - intl
+  homepage: https://github.com/logseq/logseq
+  fetcher: github_release
+  args:
+    repo: logseq/logseq
+    assets:
+    - platform: win-x64
+      pattern: Logseq-win-x64-*.exe
+- id: joplin
+  name: Joplin
+  category: Productivity
+  editions:
+  - intl
+  homepage: https://github.com/laurent22/joplin
+  fetcher: github_release
+  args:
+    repo: laurent22/joplin
+    assets:
+    - platform: win-x64
+      pattern: Joplin-Setup-*.exe
+- id: brave
+  name: Brave Browser
+  category: Browsers
+  editions:
+  - intl
+  homepage: https://github.com/brave/brave-browser
+  fetcher: github_release
+  args:
+    repo: brave/brave-browser
+    assets:
+    - platform: win-x64
+      pattern: BraveBrowserSetup.exe
+- id: thorium
+  name: Thorium Browser
+  category: Browsers
+  editions:
+  - intl
+  homepage: https://github.com/Alex313031/Thorium-Win
+  fetcher: github_release
+  args:
+    repo: Alex313031/Thorium-Win
+    assets:
+    - platform: win-x64
+      pattern: thorium_*.exe
+- id: ollama
+  name: Ollama
+  category: AI Tools
+  editions:
+  - intl
+  homepage: https://github.com/ollama/ollama
+  fetcher: github_release
+  args:
+    repo: ollama/ollama
+    assets:
+    - platform: win-x64
+      pattern: OllamaSetup.exe
+- id: fzf
+  name: fzf
+  category: Developer Tools
+  editions:
+  - intl
+  homepage: https://github.com/junegunn/fzf
+  fetcher: github_release
+  args:
+    repo: junegunn/fzf
+    assets:
+    - platform: win-x64
+      pattern: fzf-*-windows_amd64.zip
+- id: bat
+  name: bat
+  category: Developer Tools
+  editions:
+  - intl
+  homepage: https://github.com/sharkdp/bat
+  fetcher: github_release
+  args:
+    repo: sharkdp/bat
+    assets:
+    - platform: win-x64
+      pattern: bat-v*-x86_64-pc-windows-msvc.zip
+- id: fd
+  name: fd
+  category: Developer Tools
+  editions:
+  - intl
+  homepage: https://github.com/sharkdp/fd
+  fetcher: github_release
+  args:
+    repo: sharkdp/fd
+    assets:
+    - platform: win-x64
+      pattern: fd-v*-x86_64-pc-windows-msvc.zip
+- id: rg
+  name: ripgrep
+  category: Developer Tools
+  editions:
+  - intl
+  homepage: https://github.com/BurntSushi/ripgrep
+  fetcher: github_release
+  args:
+    repo: BurntSushi/ripgrep
+    assets:
+    - platform: win-x64
+      pattern: ripgrep-*-x86_64-pc-windows-msvc.zip
+- id: jq
+  name: jq
+  category: Developer Tools
+  editions:
+  - intl
+  homepage: https://github.com/jqlang/jq
+  fetcher: github_release
+  args:
+    repo: jqlang/jq
+    assets:
+    - platform: win-x64
+      pattern: jq-windows-amd64.exe
+- id: yq
+  name: yq
+  category: Developer Tools
+  editions:
+  - intl
+  homepage: https://github.com/mikefarah/yq
+  fetcher: github_release
+  args:
+    repo: mikefarah/yq
+    assets:
+    - platform: win-x64
+      pattern: yq_windows_amd64.exe
+- id: gh
+  name: GitHub CLI
+  category: Developer Tools
+  editions:
+  - intl
+  homepage: https://github.com/cli/cli
+  fetcher: github_release
+  args:
+    repo: cli/cli
+    assets:
+    - platform: win-x64
+      pattern: gh_*_windows_amd64.zip
+- id: micro
+  name: Micro
+  category: Developer Tools
+  editions:
+  - intl
+  homepage: https://github.com/zyedidia/micro
+  fetcher: github_release
+  args:
+    repo: zyedidia/micro
+    assets:
+    - platform: win-x64
+      pattern: micro-*-win64.zip
+- id: neovim
+  name: Neovim
+  category: Developer Tools
+  editions:
+  - intl
+  homepage: https://github.com/neovim/neovim
+  fetcher: github_release
+  args:
+    repo: neovim/neovim
+    assets:
+    - platform: win-x64
+      pattern: nvim-win64.zip
+- id: mihomo
+  name: mihomo
+  category: Network & Proxy
+  editions:
+  - intl
+  homepage: https://github.com/MetaCubeX/mihomo
+  fetcher: github_release
+  args:
+    repo: MetaCubeX/mihomo
+    assets:
+    - platform: win-x64
+      pattern: mihomo-windows-amd64-*.zip
+- id: nekobox
+  name: NekoBoxForPc
+  category: Network & Proxy
+  editions:
+  - intl
+  homepage: https://github.com/MatsuriDayo/nekoray
+  fetcher: github_release
+  args:
+    repo: MatsuriDayo/nekoray
+    assets:
+    - platform: win-x64
+      pattern: nekoray-*-windows64.zip
+- id: motrix
+  name: Motrix
+  category: Utilities
+  editions:
+  - intl
+  homepage: https://github.com/agalwood/Motrix
+  fetcher: github_release
+  args:
+    repo: agalwood/Motrix
+    assets:
+    - platform: win-x64
+      pattern: Motrix-*-x64.exe
+- id: marktext
+  name: MarkText
+  category: Productivity
+  editions:
+  - intl
+  homepage: https://github.com/marktext/marktext
+  fetcher: github_release
+  args:
+    repo: marktext/marktext
+    assets:
+    - platform: win-x64
+      pattern: marktext-setup.exe
+- id: zen-browser
+  name: Zen Browser
+  category: Browsers
+  editions:
+  - intl
+  homepage: https://github.com/zen-browser/desktop
+  fetcher: github_release
+  args:
+    repo: zen-browser/desktop
+    assets:
+    - platform: win-x64
+      pattern: zen.installer.exe
+- id: v2ray-core
+  name: v2ray-core
+  category: Network & Proxy
+  editions:
+  - intl
+  homepage: https://github.com/v2fly/v2ray-core
+  fetcher: github_release
+  args:
+    repo: v2fly/v2ray-core
+    assets:
+    - platform: win-x64
+      pattern: v2ray-windows-64.zip
+- id: xray-core
+  name: Xray-core
+  category: Network & Proxy
+  editions:
+  - intl
+  homepage: https://github.com/XTLS/Xray-core
+  fetcher: github_release
+  args:
+    repo: XTLS/Xray-core
+    assets:
+    - platform: win-x64
+      pattern: Xray-windows-64.zip
+- id: rufus
+  name: Rufus
+  category: System Utilities
+  editions:
+  - intl
+  homepage: https://github.com/pbatard/rufus
+  fetcher: github_release
+  args:
+    repo: pbatard/rufus
+    assets:
+    - platform: win-x64
+      pattern: rufus-*.exe
+- id: ventoy
+  name: Ventoy
+  category: System Utilities
+  editions:
+  - intl
+  homepage: https://github.com/ventoy/Ventoy
+  fetcher: github_release
+  args:
+    repo: ventoy/Ventoy
+    assets:
+    - platform: win-x64
+      pattern: ventoy-*-windows.zip
+- id: powertoys
+  name: PowerToys
+  category: System Utilities
+  editions:
+  - intl
+  homepage: https://github.com/microsoft/PowerToys
+  fetcher: github_release
+  args:
+    repo: microsoft/PowerToys
+    assets:
+    - platform: win-x64
+      pattern: PowerToysUserSetup-*-x64.exe
+- id: sharex
+  name: ShareX
+  category: System Utilities
+  editions:
+  - intl
+  homepage: https://github.com/ShareX/ShareX
+  fetcher: github_release
+  args:
+    repo: ShareX/ShareX
+    assets:
+    - platform: win-x64
+      pattern: ShareX-*-setup.exe
+- id: audacity
+  name: Audacity
+  category: Media Players
+  editions:
+  - intl
+  homepage: https://github.com/audacity/audacity
+  fetcher: github_release
+  args:
+    repo: audacity/audacity
+    assets:
+    - platform: win-x64
+      pattern: audacity-win-*-64bit.exe
+- id: handbrake
+  name: HandBrake
+  category: Media Players
+  editions:
+  - intl
+  homepage: https://github.com/HandBrake/HandBrake
+  fetcher: github_release
+  args:
+    repo: HandBrake/HandBrake
+    assets:
+    - platform: win-x64
+      pattern: HandBrake-*-x86_64-Win_GUI.exe
+- id: ffmpeg
+  name: FFmpeg
+  category: Media Players
+  editions:
+  - intl
+  homepage: https://github.com/BtbN/FFmpeg-Builds
+  fetcher: github_release
+  args:
+    repo: BtbN/FFmpeg-Builds
+    assets:
+    - platform: win-x64
+      pattern: ffmpeg-master-latest-win64-gpl.zip
+- id: calibre
+  name: calibre
+  category: Productivity
+  editions:
+  - intl
+  homepage: https://github.com/kovidgoyal/calibre
+  fetcher: github_release
+  args:
+    repo: kovidgoyal/calibre
+    assets:
+    - platform: win-x64
+      pattern: calibre-64bit-*.msi
+- id: windows-terminal
+  name: Windows Terminal
+  category: Developer Tools
+  editions:
+  - intl
+  homepage: https://github.com/microsoft/terminal
+  fetcher: github_release
+  args:
+    repo: microsoft/terminal
+    assets:
+    - platform: win-x64
+      pattern: Microsoft.WindowsTerminal_*.msixbundle
+- id: lively
+  name: Lively Wallpaper
+  category: System Utilities
+  editions:
+  - intl
+  homepage: https://github.com/rocksdanister/lively
+  fetcher: github_release
+  args:
+    repo: rocksdanister/lively
+    assets:
+    - platform: win-x64
+      pattern: lively_setup_x86_*.exe
+- id: explorer-patcher
+  name: ExplorerPatcher
+  category: System Utilities
+  editions:
+  - intl
+  homepage: https://github.com/valinet/ExplorerPatcher
+  fetcher: github_release
+  args:
+    repo: valinet/ExplorerPatcher
+    assets:
+    - platform: win-x64
+      pattern: ep_setup.exe
+- id: affine
+  name: AFFiNE
+  category: Productivity
+  editions:
+  - intl
+  homepage: https://github.com/toeverything/AFFiNE
+  fetcher: github_release
+  args:
+    repo: toeverything/AFFiNE
+    assets:
+    - platform: win-x64
+      pattern: affine-*-windows-x64.exe
+- id: aria2
+  name: Aria2
+  category: Utilities
+  editions:
+  - intl
+  homepage: https://github.com/aria2/aria2
+  fetcher: github_release
+  args:
+    repo: aria2/aria2
+    assets:
+    - platform: win-x64
+      pattern: aria2-*-win-64bit-build1.zip
+- id: yt-dlp
+  name: yt-dlp
+  category: Utilities
+  editions:
+  - intl
+  homepage: https://github.com/yt-dlp/yt-dlp
+  fetcher: github_release
+  args:
+    repo: yt-dlp/yt-dlp
+    assets:
+    - platform: win-x64
+      pattern: yt-dlp.exe
+- id: shotcut
+  name: Shotcut
+  category: Productivity
+  editions:
+  - intl
+  homepage: https://github.com/mltframework/shotcut
+  fetcher: github_release
+  args:
+    repo: mltframework/shotcut
+    assets:
+    - platform: win-x64
+      pattern: shotcut-win64-*.exe
+- id: duckstation
+  name: DuckStation
+  category: Gaming
+  editions:
+  - intl
+  homepage: https://github.com/stenzek/duckstation
+  fetcher: github_release
+  args:
+    repo: stenzek/duckstation
+    assets:
+    - platform: win-x64
+      pattern: duckstation-windows-x64-release.zip
+- id: pcsx2
+  name: PCSX2
+  category: Gaming
+  editions:
+  - intl
+  homepage: https://github.com/PCSX2/pcsx2
+  fetcher: github_release
+  args:
+    repo: PCSX2/pcsx2
+    assets:
+    - platform: win-x64
+      pattern: pcsx2-v*-windows-x64-Qt.7z
+- id: playnite
+  name: Playnite
+  category: Gaming
+  editions:
+  - intl
+  homepage: https://github.com/JosefNemec/Playnite
+  fetcher: github_release
+  args:
+    repo: JosefNemec/Playnite
+    assets:
+    - platform: win-x64
+      pattern: Playnite*exe
+- id: alacritty
+  name: Alacritty
+  category: Developer Tools
+  editions:
+  - intl
+  homepage: https://github.com/alacritty/alacritty
+  fetcher: github_release
+  args:
+    repo: alacritty/alacritty
+    assets:
+    - platform: win-x64
+      pattern: Alacritty-v*-portable.exe
+- id: moonlight
+  name: Moonlight
+  category: Gaming
+  editions:
+  - intl
+  homepage: https://github.com/moonlight-stream/moonlight-qt
+  fetcher: github_release
+  args:
+    repo: moonlight-stream/moonlight-qt
+    assets:
+    - platform: win-x64
+      pattern: MoonlightPortable-x64-*.zip
+- id: rufus-portable
+  name: Rufus Portable
+  category: System Utilities
+  editions:
+  - intl
+  homepage: https://github.com/pbatard/rufus
+  fetcher: github_release
+  args:
+    repo: pbatard/rufus
+    assets:
+    - platform: win-x64
+      pattern: rufus-*p.exe
+- id: cemu
+  name: Cemu
+  category: Gaming
+  editions:
+  - intl
+  homepage: https://github.com/cemu-project/Cemu
+  fetcher: github_release
+  args:
+    repo: cemu-project/Cemu
+    assets:
+    - platform: win-x64
+      pattern: cemu-*-windows-x64.zip
+- id: transmission
+  name: Transmission
+  category: Utilities
+  editions:
+  - intl
+  homepage: https://github.com/transmission/transmission
+  fetcher: github_release
+  args:
+    repo: transmission/transmission
+    assets:
+    - platform: win-x64
+      pattern: transmission-*-x64.msi
+- id: nvm-windows
+  name: nvm-windows
+  category: Developer Tools
+  editions:
+  - intl
+  homepage: https://github.com/coreybutler/nvm-windows
+  fetcher: github_release
+  args:
+    repo: coreybutler/nvm-windows
+    assets:
+    - platform: win-x64
+      pattern: nvm-setup.exe
+- id: nssm
+  name: NSSM
+  category: Developer Tools
+  editions:
+  - intl
+  homepage: https://nssm.cc/download
+  fetcher: download_page
+  args:
+    source: Official NSSM download page; no public version API
+    platforms:
+    - platform: win-x64
+      download_url: https://nssm.cc/download
+      link_kind: landing_page
+- id: win-acme
+  name: win-acme
+  category: Developer Tools
+  editions:
+  - intl
+  homepage: https://github.com/win-acme/win-acme
+  fetcher: github_release
+  args:
+    repo: win-acme/win-acme
+    assets:
+    - platform: win-x64
+      pattern: win-acme.*.x64.pluggable.zip
+- id: wsl
+  name: WSL
+  category: System Utilities
+  editions:
+  - intl
+  homepage: https://github.com/microsoft/WSL
+  fetcher: github_release
+  args:
+    repo: microsoft/WSL
+    assets:
+    - platform: win-x64
+      pattern: wsl.*.x64.msi
+- id: fancontrol
+  name: FanControl
+  category: System Utilities
+  editions:
+  - intl
+  homepage: https://github.com/Rem0o/FanControl.Releases
+  fetcher: github_release
+  args:
+    repo: Rem0o/FanControl.Releases
+    assets:
+    - platform: win-x64
+      pattern: FanControl_*_net_10_0_Installer.exe
+- id: sandboxie-plus
+  name: Sandboxie-Plus
+  category: System Utilities
+  editions:
+  - intl
+  homepage: https://github.com/sandboxie-plus/Sandboxie
+  fetcher: github_release
+  args:
+    repo: sandboxie-plus/Sandboxie
+    assets:
+    - platform: win-x64
+      pattern: Sandboxie-Plus-x64-v*.exe
+- id: fastgithub
+  name: FastGithub
+  category: Network & Proxy
+  editions:
+  - intl
+  homepage: https://github.com/dotnetcore/FastGithub
+  fetcher: download_page
+  args:
+    source: GitHub project page; no public release API
+    platforms:
+    - platform: win-x64
+      download_url: https://github.com/dotnetcore/FastGithub
+      link_kind: landing_page
+- id: gnupg
+  name: Gpg4win
+  category: Utilities
+  editions:
+  - intl
+  homepage: https://gpg4win.org/download.html
+  fetcher: download_page
+  args:
+    source: Official Gpg4win download page; no public version API
+    platforms:
+    - platform: win-x64
+      download_url: https://gpg4win.org/download.html
+      link_kind: landing_page
+- id: vscodium
+  name: VSCodium
+  category: Developer Tools
+  editions:
+  - intl
+  homepage: https://github.com/VSCodium/vscodium
+  fetcher: github_release
+  args:
+    repo: VSCodium/vscodium
+    assets:
+    - platform: win-x64
+      pattern: VSCodiumUserSetup-x64-*.exe
+- id: keka
+  name: Keka
+  category: Utilities
+  editions:
+  - intl
+  homepage: https://github.com/aonez/Keka
+  fetcher: github_release
+  args:
+    repo: aonez/Keka
+    assets:
+    - platform: mac-arm64
+      pattern: Keka-*.dmg
+- id: iina
+  name: IINA
+  category: Media Players
+  editions:
+  - intl
+  homepage: https://github.com/iina/iina
+  fetcher: github_release
+  args:
+    repo: iina/iina
+    assets:
+    - platform: mac-arm64
+      pattern: IINA.v*.dmg
+- id: rectangle
+  name: Rectangle
+  category: System Utilities
+  editions:
+  - intl
+  homepage: https://github.com/rxhanson/Rectangle
+  fetcher: github_release
+  args:
+    repo: rxhanson/Rectangle
+    assets:
+    - platform: mac-arm64
+      pattern: Rectangle*.dmg
+- id: maccy
+  name: Maccy
+  category: System Utilities
+  editions:
+  - intl
+  homepage: https://github.com/p0deje/Maccy
+  fetcher: github_release
+  args:
+    repo: p0deje/Maccy
+    assets:
+    - platform: mac-universal
+      pattern: Maccy.app.zip
+- id: copyq
+  name: CopyQ
+  category: System Utilities
+  editions:
+  - intl
+  homepage: https://github.com/hluk/CopyQ
+  fetcher: github_release
+  args:
+    repo: hluk/CopyQ
+    assets:
+    - platform: win-x64
+      pattern: copyq-*-setup.exe
+- id: windows11-english
+  name: Windows 11
+  category: Operating Systems
+  editions:
+  - intl
+  homepage: https://www.microsoft.com/software-download/windows11
+  fetcher: windows11_fido
+  args:
+    lang: English
+    edition: Pro
+- id: firefox
+  name: Mozilla Firefox
+  category: Browsers
+  editions:
+  - intl
+  homepage: https://www.mozilla.org/firefox/new/
+  fetcher: firefox_official
+  args:
+    lang: en-US
+    platforms:
+    - platform: win-x64
+      os: win64
+    - platform: mac-universal
+      os: osx
+    - platform: linux-x64
+      os: linux64
+- id: nodejs
+  name: Node.js
+  category: Developer Tools
+  editions:
+  - intl
+  homepage: https://nodejs.org/
+  fetcher: nodejs_official
+  args:
+    platforms:
+    - platform: win-x64
+      file_key: win-x64-zip
+      filename: node-{version}-win-x64.zip
+    - platform: mac-arm64
+      file_key: osx-arm64-tar
+      filename: node-{version}-darwin-arm64.tar.gz
+    - platform: mac-x64
+      file_key: osx-x64-tar
+      filename: node-{version}-darwin-x64.tar.gz
+    - platform: linux-x64
+      file_key: linux-x64
+      filename: node-{version}-linux-x64.tar.xz
+- id: dbeaver
+  name: DBeaver Community
+  category: Developer Tools
+  editions:
+  - intl
+  homepage: https://dbeaver.io/download/
+  fetcher: github_release
+  args:
+    repo: dbeaver/dbeaver
+    assets:
+    - platform: win-x64
+      pattern: dbeaver-ce-*-windows-x86_64.exe
+    - platform: mac-arm64
+      pattern: dbeaver-ce-*-macos-aarch64.dmg
+    - platform: mac-x64
+      pattern: dbeaver-ce-*-macos-x86_64.dmg
+    - platform: linux-x64
+      pattern: dbeaver-ce-*-linux-x86_64.deb
+- id: obs-studio
+  name: OBS Studio
+  category: Media Players
+  editions:
+  - intl
+  homepage: https://obsproject.com/
+  fetcher: github_release
+  args:
+    repo: obsproject/obs-studio
+    assets:
+    - platform: win-x64
+      pattern: OBS-Studio-*-Windows-x64-Installer.exe
+    - platform: mac-arm64
+      pattern: OBS-Studio-*-macOS-Apple.dmg
+    - platform: mac-x64
+      pattern: OBS-Studio-*-macOS-Intel.dmg
+    - platform: linux-x64
+      pattern: OBS-Studio-*-Ubuntu-24.04-x86_64.deb
+- id: obsidian
+  name: Obsidian
+  category: Productivity
+  editions:
+  - intl
+  homepage: https://obsidian.md/download
+  fetcher: github_release
+  args:
+    repo: obsidianmd/obsidian-releases
+    assets:
+    - platform: win-x64
+      pattern: Obsidian-*.exe
+    - platform: mac-universal
+      pattern: Obsidian-*.dmg
+    - platform: linux-x64
+      pattern: Obsidian-*.AppImage
+- id: lazygit
+  name: Lazygit
+  category: Developer Tools
+  editions:
+  - intl
+  homepage: https://github.com/jesseduffield/lazygit
+  fetcher: github_release
+  args:
+    repo: jesseduffield/lazygit
+    assets:
+    - platform: win-x64
+      pattern: lazygit_*_windows_x86_64.zip
+    - platform: mac-arm64
+      pattern: lazygit_*_darwin_arm64.tar.gz
+    - platform: linux-x64
+      pattern: lazygit_*_linux_x86_64.tar.gz
+- id: peazip
+  name: PeaZip
+  category: Utilities
+  editions:
+  - intl
+  homepage: https://peazip.github.io/
+  fetcher: github_release
+  args:
+    repo: peazip/PeaZip
+    assets:
+    - platform: win-x64
+      pattern: peazip-*.WIN64.exe
+    - platform: mac-arm64
+      pattern: peazip-*.DARWIN.aarch64.dmg
+    - platform: linux-x64
+      pattern: peazip_*.LINUX.Qt6-1_amd64.deb
+- id: windirstat
+  name: WinDirStat
+  category: System Utilities
+  editions:
+  - intl
+  homepage: https://windirstat.net/
+  fetcher: github_release
+  args:
+    repo: windirstat/windirstat
+    assets:
+    - platform: win-x64
+      pattern: WinDirStat-x64.msi
+- id: floorp
+  name: Floorp Browser
+  category: Browsers
+  editions:
+  - intl
+  homepage: https://floorp.app/
+  fetcher: github_release
+  args:
+    repo: Floorp-Projects/Floorp
+    assets:
+    - platform: win-x64
+      pattern: floorp-windows-x86_64.installer.exe
+    - platform: mac-universal
+      pattern: floorp-macOS-universal.dmg
+    - platform: linux-x64
+      pattern: floorp-linux-x86_64.tar.xz
+- id: chromium
+  name: Chromium
+  category: Browsers
+  editions:
+  - intl
+  homepage: https://github.com/Hibbiki/chromium-win64
+  fetcher: github_release
+  args:
+    repo: Hibbiki/chromium-win64
+    assets:
+    - platform: win-x64
+      pattern: mini_installer.exe
+- id: mpv
+  name: mpv
+  category: Media Players
+  editions:
+  - intl
+  homepage: https://mpv.io/
+  fetcher: github_release
+  args:
+    repo: shinchiro/mpv-winbuild-cmake
+    assets:
+    - platform: win-x64
+      pattern: mpv-x86_64-*-git-*.7z
+- id: losslesscut
+  name: LosslessCut
+  category: Media Players
+  editions:
+  - intl
+  homepage: https://github.com/mifi/lossless-cut
+  fetcher: github_release
+  args:
+    repo: mifi/lossless-cut
+    assets:
+    - platform: win-x64
+      pattern: LosslessCut-win-x64.7z
+    - platform: mac-universal
+      pattern: LosslessCut-mac-universal.pkg
+    - platform: linux-x64
+      pattern: LosslessCut-linux-x86_64.AppImage
+- id: ppsspp
+  name: PPSSPP
+  category: Gaming
+  editions:
+  - intl
+  homepage: https://www.ppsspp.org/
+  fetcher: github_release
+  args:
+    repo: hrydgard/ppsspp
+    assets:
+    - platform: win-x64
+      pattern: PPSSPP-v*-Windows-x64.zip
+    - platform: mac-universal
+      pattern: PPSSPPSDL-macOS-v*.zip
+    - platform: linux-x64
+      pattern: PPSSPP-v*-anylinux-x86_64.AppImage
+- id: rpcs3
+  name: RPCS3
+  category: Gaming
+  editions:
+  - intl
+  homepage: https://rpcs3.net/
+  fetcher: github_release
+  args:
+    repo: RPCS3/rpcs3-binaries-win
+    assets:
+    - platform: win-x64
+      pattern: rpcs3-*_win64_msvc.7z
+- id: sunshine
+  name: Sunshine
+  category: Gaming
+  editions:
+  - intl
+  homepage: https://app.lizardbyte.dev/Sunshine/
+  fetcher: github_release
+  args:
+    repo: LizardByte/Sunshine
+    assets:
+    - platform: win-x64
+      pattern: Sunshine-Windows-AMD64-installer.exe
+    - platform: win-x64-portable
+      pattern: Sunshine-Windows-AMD64-portable.zip
+    - platform: linux-x64
+      pattern: sunshine-ubuntu-24.04-amd64.deb
+- id: heroic
+  name: Heroic Games Launcher
+  category: Gaming
+  editions:
+  - intl
+  homepage: https://heroicgameslauncher.com/
+  fetcher: github_release
+  args:
+    repo: Heroic-Games-Launcher/HeroicGamesLauncher
+    assets:
+    - platform: win-x64
+      pattern: Heroic-*-Setup-x64.exe
+    - platform: mac-arm64
+      pattern: Heroic-*-macOS-arm64.dmg
+    - platform: linux-x64
+      pattern: Heroic-*-linux-amd64.deb
+- id: jan
+  name: Jan
+  category: AI Tools
+  editions:
+  - intl
+  homepage: https://jan.ai/
+  fetcher: github_release
+  args:
+    repo: menloresearch/jan
+    assets:
+    - platform: win-x64
+      pattern: Jan_*_x64-setup.exe
+    - platform: mac-universal
+      pattern: Jan_*_universal.dmg
+    - platform: linux-x64
+      pattern: Jan_*_amd64.AppImage
+- id: gpt4all
+  name: GPT4All
+  category: AI Tools
+  editions:
+  - intl
+  homepage: https://www.nomic.ai/gpt4all
+  fetcher: github_release
+  args:
+    repo: nomic-ai/gpt4all
+    assets:
+    - platform: win-x64
+      pattern: gpt4all-installer-win64-v*.exe
+    - platform: mac-universal
+      pattern: gpt4all-installer-macos-v*.dmg
+    - platform: linux-x64
+      pattern: gpt4all-installer-linux-v*.run
+- id: discord
+  name: Discord
+  category: Messaging
+  editions:
+  - intl
+  homepage: https://discord.com/download
+  fetcher: download_page
+  args:
+    source: Official Discord download endpoint; no public version API
+    platforms:
+    - platform: win-x64
+      download_url: https://discord.com/api/download?platform=win
+      link_kind: direct
+    - platform: mac-universal
+      download_url: https://discord.com/api/download?platform=osx
+      link_kind: direct
+    - platform: linux-x64
+      download_url: https://discord.com/download
+      link_kind: landing_page
+- id: slack
+  name: Slack
+  category: Messaging
+  editions:
+  - intl
+  homepage: https://slack.com/downloads/
+  fetcher: download_page
+  args:
+    source: Official Slack download page; no public version API
+    platforms:
+    - platform: win-x64
+      download_url: https://slack.com/downloads/windows
+      link_kind: landing_page
+    - platform: mac-universal
+      download_url: https://slack.com/downloads/mac
+      link_kind: landing_page
+    - platform: linux-x64
+      download_url: https://slack.com/downloads/linux
+      link_kind: landing_page
+- id: zoom
+  name: Zoom Workplace
+  category: Messaging
+  editions:
+  - intl
+  homepage: https://zoom.us/download
+  fetcher: download_page
+  args:
+    source: Official Zoom download page; no public version API
+    platforms:
+    - platform: win-x64
+      download_url: https://zoom.us/download
+      link_kind: landing_page
+    - platform: mac-universal
+      download_url: https://zoom.us/download
+      link_kind: landing_page
+- id: spotify
+  name: Spotify
+  category: Media Players
+  editions:
+  - intl
+  homepage: https://www.spotify.com/download/
+  fetcher: download_page
+  args:
+    source: Official Spotify download page; no public version API
+    platforms:
+    - platform: win-x64
+      download_url: https://www.spotify.com/download/windows/
+      link_kind: landing_page
+    - platform: mac-universal
+      download_url: https://www.spotify.com/download/mac/
+      link_kind: landing_page
+- id: vlc
+  name: VLC media player
+  category: Media Players
+  editions:
+  - intl
+  homepage: https://www.videolan.org/vlc/
+  fetcher: download_page
+  args:
+    source: Official VideoLAN download page; no public version API
+    platforms:
+    - platform: win-x64
+      download_url: https://www.videolan.org/vlc/download-windows.html
+      link_kind: landing_page
+    - platform: mac-universal
+      download_url: https://www.videolan.org/vlc/download-macosx.html
+      link_kind: landing_page
+    - platform: linux-x64
+      download_url: https://www.videolan.org/vlc/#download
+      link_kind: landing_page
+- id: sevenzip
+  name: 7-Zip
+  category: Utilities
+  editions:
+  - intl
+  homepage: https://www.7-zip.org/
+  fetcher: download_page
+  args:
+    source: Official 7-Zip download page; no public version API
+    platforms:
+    - platform: win-x64
+      download_url: https://www.7-zip.org/download.html
+      link_kind: landing_page
+- id: python
+  name: Python
+  category: Developer Tools
+  editions:
+  - intl
+  homepage: https://www.python.org/downloads/
+  fetcher: download_page
+  args:
+    source: Official Python downloads page; no public version API
+    platforms:
+    - platform: win-x64
+      download_url: https://www.python.org/downloads/windows/
+      link_kind: landing_page
+    - platform: mac-universal
+      download_url: https://www.python.org/downloads/macos/
+      link_kind: landing_page
+- id: go
+  name: Go
+  category: Developer Tools
+  editions:
+  - intl
+  homepage: https://go.dev/dl/
+  fetcher: download_page
+  args:
+    source: Official Go downloads page; no public version API
+    platforms:
+    - platform: win-x64
+      download_url: https://go.dev/dl/
+      link_kind: landing_page
+    - platform: mac-universal
+      download_url: https://go.dev/dl/
+      link_kind: landing_page
+    - platform: linux-x64
+      download_url: https://go.dev/dl/
+      link_kind: landing_page
+- id: signal
+  name: Signal Desktop
+  category: Messaging
+  editions:
+  - intl
+  homepage: https://signal.org/download/
+  fetcher: download_page
+  args:
+    source: Official Signal download page; no public version API
+    platforms:
+    - platform: win-x64
+      download_url: https://updates.signal.org/desktop/signal-desktop-win-64.exe
+      link_kind: direct
+    - platform: mac-universal
+      download_url: https://signal.org/download/macos/
+      link_kind: landing_page
+- id: wireguard
+  name: WireGuard
+  category: Network & Proxy
+  editions:
+  - intl
+  homepage: https://www.wireguard.com/install/
+  fetcher: download_page
+  args:
+    source: Official WireGuard download page; no public version API
+    platforms:
+    - platform: win-x64
+      download_url: https://download.wireguard.com/windows-client/wireguard-installer.exe
+      link_kind: direct
+    - platform: mac-universal
+      download_url: https://apps.apple.com/us/app/wireguard/id1451685025
+      link_kind: landing_page
+- id: tailscale
+  name: Tailscale
+  category: Network & Proxy
+  editions:
+  - intl
+  homepage: https://tailscale.com/download
+  fetcher: download_page
+  args:
+    source: Official Tailscale download page; no public version API
+    platforms:
+    - platform: win-x64
+      download_url: https://pkgs.tailscale.com/stable/tailscale-setup-latest.exe
+      link_kind: direct
+    - platform: mac-universal
+      download_url: https://tailscale.com/download/mac
+      link_kind: landing_page
+    - platform: linux-x64
+      download_url: https://tailscale.com/download/linux
+      link_kind: landing_page
+- id: qbittorrent
+  name: qBittorrent
+  category: Utilities
+  editions:
+  - intl
+  homepage: https://www.qbittorrent.org/download
+  fetcher: download_page
+  args:
+    source: Official qBittorrent download page; no public version API
+    platforms:
+    - platform: win-x64
+      download_url: https://www.qbittorrent.org/download
+      link_kind: landing_page
+    - platform: mac-universal
+      download_url: https://www.qbittorrent.org/download
+      link_kind: landing_page
+    - platform: linux-x64
+      download_url: https://www.qbittorrent.org/download
+      link_kind: landing_page

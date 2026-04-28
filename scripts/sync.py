@@ -38,9 +38,11 @@ if __package__ in (None, ""):
     sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
     from scripts.fetchers import FETCHERS, FetchResult  # type: ignore
     from scripts.validate_config import validate_config  # type: ignore
+    from scripts.editions import filter_by_edition, VALID_EDITIONS  # type: ignore
 else:
     from .fetchers import FETCHERS, FetchResult
     from .validate_config import validate_config
+    from .editions import filter_by_edition, VALID_EDITIONS
 
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
@@ -118,6 +120,18 @@ def _stale_from_previous(previous_entry: dict, reason: str) -> dict:
     return _normalize_version_semantics(stale)
 
 
+def _apply_config_metadata(result: dict, entry: dict) -> dict:
+    """Apply package metadata that comes from packages.yaml, not the fetcher."""
+    result["name"] = entry.get("name", result.get("name"))
+    result["category"] = entry.get("category", result.get("category"))
+    result["homepage"] = entry.get("homepage", result.get("homepage"))
+    if "editions" in entry:
+        result["editions"] = entry["editions"]
+    else:
+        result.pop("editions", None)
+    return result
+
+
 def _sync_one(
     entry: dict,
     previous: dict[str, dict],
@@ -135,6 +149,7 @@ def _sync_one(
         print(f"✗ {eid}: {msg}", file=sys.stderr)
         if eid in previous:
             stale = _stale_from_previous(previous[eid], msg)
+            _apply_config_metadata(stale, entry)
             return (eid, stale, False, (eid, msg))
         return (eid, None, False, (eid, msg))
 
@@ -147,6 +162,9 @@ def _sync_one(
         result = res.to_dict()
         _normalize_version_semantics(result)
         result["last_success_at"] = result.get("fetched_at")
+        # Keep packages.yaml-owned metadata authoritative even when fetchers
+        # return their own default labels.
+        _apply_config_metadata(result, entry)
         print(f"✓ {eid}: {res.version} ({len(res.assets)} 个平台)")
         return (eid, result, True, None)
     except Exception as e:
@@ -154,6 +172,7 @@ def _sync_one(
         print(f"✗ {eid}: {msg}", file=sys.stderr)
         if eid in previous:
             stale = _stale_from_previous(previous[eid], msg)
+            _apply_config_metadata(stale, entry)
             print(
                 f"  ↳ 复用上次数据（{previous[eid].get('version')}）", file=sys.stderr
             )
@@ -174,6 +193,12 @@ def main(argv: list[str] | None = None) -> int:
         action="append",
         metavar="ID[,ID...]",
         help="跳过指定软件 id，可逗号分隔或重复传入。",
+    )
+    parser.add_argument(
+        "--edition",
+        choices=sorted(VALID_EDITIONS),
+        default=None,
+        help="只同步指定版本的软件（cn=国内版，intl=国际版）。",
     )
     args = parser.parse_args([] if argv is None else argv)
 
@@ -198,6 +223,12 @@ def main(argv: list[str] | None = None) -> int:
 
     if not entries:
         print("过滤后没有任何软件需要同步", file=sys.stderr)
+        return 1
+
+    # edition 过滤（在 --only/--skip 之后）
+    entries = filter_by_edition(entries, args.edition)
+    if not entries:
+        print(f"edition='{args.edition}' 过滤后没有任何软件需要同步", file=sys.stderr)
         return 1
 
     previous = load_previous()

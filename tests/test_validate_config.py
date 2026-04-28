@@ -140,13 +140,43 @@ def test_redirect_fetcher_allows_missing_platforms():
 def test_allows_explicit_link_kind_on_platform_specs():
     cfg = load_current_config()
     cfg = {
-        "packages": [copy.deepcopy(next(p for p in cfg["packages"] if p["id"] == "qq"))]
+        "packages": [
+            copy.deepcopy(next(p for p in cfg["packages"] if p["id"] == "nvidia-app"))
+        ]
     }
     cfg["packages"][0]["args"]["platforms"][0]["link_kind"] = "landing_page"
 
     errors = validate_config.validate_config(cfg)
 
     assert errors == []
+
+
+def test_validates_firefox_platform_shape():
+    cfg = load_current_config()
+    cfg = {
+        "packages": [
+            copy.deepcopy(next(p for p in cfg["packages"] if p["id"] == "firefox"))
+        ]
+    }
+    del cfg["packages"][0]["args"]["platforms"][0]["os"]
+
+    errors = validate_config.validate_config(cfg)
+
+    assert any("缺少或为空字段 os" in error for error in errors)
+
+
+def test_validates_nodejs_platform_shape():
+    cfg = load_current_config()
+    cfg = {
+        "packages": [
+            copy.deepcopy(next(p for p in cfg["packages"] if p["id"] == "nodejs"))
+        ]
+    }
+    del cfg["packages"][0]["args"]["platforms"][0]["file_key"]
+
+    errors = validate_config.validate_config(cfg)
+
+    assert any("缺少或为空字段 file_key" in error for error in errors)
 
 
 def test_rejects_invalid_link_kind():

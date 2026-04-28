@@ -21,7 +21,7 @@ def test_factory_uses_today_as_version():
 
     assert _DATE_RE.match(result.version)
     assert result.id == "x"
-    assert result.source == "手动同步（无 API）"
+    assert result.source == "Official download page; no public version API"
 
 
 def test_factory_passes_through_yaml_urls():

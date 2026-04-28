@@ -1,0 +1,29 @@
+# FastAPI Cloud 部署文件过滤
+# 语法同 .gitignore，但优先级更高
+
+# ── 需要的文件（反转 .gitignore 中的排除）──
+!dist/
+
+# ── 不需要上传的文件 ──
+# 测试与开发
+tests/
+.pytest_cache/
+.ruff_cache/
+requirements-dev.txt
+
+# CI / 部署脚本（云端不需要）
+.github/
+deploy/
+
+# 文档
+README.md
+README.template.md
+AGENTS.md
+
+# 第三方脚本（Fido 仅在 Windows CI 上用）
+third_party/
+
+# 杂项
+.DS_Store
+.claude/
+.git/

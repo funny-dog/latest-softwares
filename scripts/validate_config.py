@@ -23,9 +23,11 @@ if __package__ in (None, ""):
     sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
     from scripts.fetchers import FETCHERS  # type: ignore
     from scripts.link_utils import LINK_KINDS  # type: ignore
+    from scripts.editions import validate_editions  # type: ignore
 else:
     from .fetchers import FETCHERS
     from .link_utils import LINK_KINDS
+    from .editions import validate_editions
 
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
@@ -35,6 +37,7 @@ ID_RE = re.compile(r"^[a-z0-9][a-z0-9-]*$")
 FIXED_URL_FETCHERS = {
     "steam_official",
     "baidunetdisk",
+    "download_page",
     "geek",
     "everything",
     "wechat_official",
@@ -171,6 +174,25 @@ def _validate_chrome(errors: list[str], label: str, args: dict) -> None:
         _validate_link_kind(errors, label, platform)
 
 
+def _validate_firefox(errors: list[str], label: str, args: dict) -> None:
+    platforms = _validate_list(errors, label, args, "platforms")
+    _validate_unique_platforms(errors, label, platforms)
+    for platform in platforms:
+        _require_string(errors, label, platform, "platform")
+        _require_string(errors, label, platform, "os")
+        _validate_link_kind(errors, label, platform)
+
+
+def _validate_nodejs(errors: list[str], label: str, args: dict) -> None:
+    platforms = _validate_list(errors, label, args, "platforms")
+    _validate_unique_platforms(errors, label, platforms)
+    for platform in platforms:
+        _require_string(errors, label, platform, "platform")
+        _require_string(errors, label, platform, "file_key")
+        _require_string(errors, label, platform, "filename")
+        _validate_link_kind(errors, label, platform)
+
+
 def _validate_fixed_url_platforms(errors: list[str], label: str, args: dict) -> None:
     platforms = _validate_list(errors, label, args, "platforms")
     _validate_unique_platforms(errors, label, platforms)
@@ -215,6 +237,10 @@ def _validate_fetcher_args(
         _validate_vscode(errors, label, args)
     elif fetcher_name == "chrome_official":
         _validate_chrome(errors, label, args)
+    elif fetcher_name == "firefox_official":
+        _validate_firefox(errors, label, args)
+    elif fetcher_name == "nodejs_official":
+        _validate_nodejs(errors, label, args)
     elif fetcher_name in FIXED_URL_FETCHERS:
         _validate_fixed_url_platforms(errors, label, args)
     elif fetcher_name in REDIRECT_FETCHERS:
@@ -250,6 +276,11 @@ def validate_config(config: dict) -> list[str]:
 
         _require_string(errors, label, entry, "name")
         _require_string(errors, label, entry, "category")
+
+        editions_err = validate_editions(entry.get("editions"))
+        if editions_err:
+            errors.append(f"{label}: {editions_err}")
+
         if "homepage" in entry:
             _require_url(errors, label, entry, "homepage")
 

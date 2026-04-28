@@ -28,7 +28,7 @@ def make_redirect_fetcher(
     homepage: str,
     download_page: str,
     default_platform: str = "win-x64",
-    source: str = "手动同步（无 API）",
+    source: str = "Official download page; no public version API",
 ) -> Callable[[dict[str, Any]], FetchResult]:
     """构造一个"日期版本 + URL 透传"fetcher。
 

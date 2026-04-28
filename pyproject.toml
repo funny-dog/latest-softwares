@@ -1,0 +1,15 @@
+[project]
+name = "latest-softwares"
+version = "1.0.0"
+description = "每日自动抓取最新软件版本元数据，提供 Web 前端与 JSON API。"
+requires-python = ">=3.10"
+dependencies = [
+    "fastapi[standard]",
+    "PyYAML>=6.0.3",
+    "requests>=2.33.1",
+    "Jinja2>=3.1.6",
+]
+
+[tool.fastapi]
+# FastAPI Cloud 自动检测入口；这里显式声明以确保正确
+entrypoint = "main:app"

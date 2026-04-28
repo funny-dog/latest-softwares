@@ -23,11 +23,14 @@ python scripts/render.py
 ```
 packages.yaml          ← 用户编辑的"控制面板"（唯一手动修改的配置）
     ↓ scripts/sync.py  ← 派发到 fetcher，写出 data/latest.json
-data/latest.json       ← 结构化抓取结果（schema_version: 1）
-    ↓ scripts/render.py ← Jinja2 渲染
+data/latest.json       ← 结构化抓取结果（schema_version: 2，含 editions 字段）
+    ↓ scripts/render.py ← Jinja2 渲染（可指定 --edition cn/intl）
 README.template.md     ← Jinja2 模板
     ↓
 README.md              ← 最终产物（自动覆盖，禁止手动修改）
+    ↓ scripts/build_web.py ← 构建前端（可指定 --edition cn/intl）
+dist/                  ← 构建产物（部署到阿里云或 FastAPI Cloud）
+main.py                ← FastAPI Cloud 入口（国际版）
 ```
 
 ### Fetcher 插件
@@ -51,6 +54,7 @@ README.md              ← 最终产物（自动覆盖，禁止手动修改）
   - id: powertoys
     name: PowerToys
     category: 通用工具
+    editions: [cn, intl]    # 两个版本都包含；可选 [cn] 或 [intl]，缺省默认两个都包含
     fetcher: github_release
     args:
       repo: microsoft/PowerToys
@@ -68,7 +72,30 @@ README.md              ← 最终产物（自动覆盖，禁止手动修改）
 - 触发：每日 UTC 01:00 + `packages.yaml` / scripts 变更时 push 触发 + 手动 workflow_dispatch
 - 权限：`contents: write`（auto-commit 回主分支）
 - Token：通过 `GITHUB_TOKEN` 环境变量传入，提升 API 速率限制（5000/h vs 60/h）
-- 流程：checkout → setup python → pip install → sync → render → auto-commit（`[skip ci]`）
+- 流程：checkout → setup python → pip install → sync → render → build_web(cn) → auto-commit → deploy(国内版) + deploy-intl(国际版)
+
+## Edition 系统（国内版/国际版）
+
+项目分为两个版本，通过 `packages.yaml` 中每个软件的 `editions` 字段区分：
+
+| Edition | 标识 | 部署目标 | 示例软件 |
+|---------|------|----------|----------|
+| 国内版 | `cn` | 阿里云 ECS (rsync) | 百度网盘、WeGame、QQ、微信、YY |
+| 国际版 | `intl` | FastAPI Cloud | v2rayN、Codex |
+| 两版共有 | `[cn, intl]` | 两处都部署 | VSCode、Chrome、Steam 等 |
+
+- `editions` 字段缺省时默认 `[cn, intl]`
+- 全链路支持 `--edition cn/intl` 参数：`sync.py`、`render.py`、`build_web.py`
+- 过滤逻辑统一在 `scripts/editions.py`
+- `main.py` 固定服务国际版 (`intl`)，部署在 FastAPI Cloud
+
+### FastAPI Cloud 部署
+
+- 入口：`main.py`（`pyproject.toml` 中 `[tool.fastapi] entrypoint = "main:app"`）
+- 前端：`dist/`（由 `build_web.py --edition intl` 构建）
+- API：`/api/health`、`/api/packages`（返回 intl 版软件）
+- CI 部署：`deploy-intl` job，由仓库变量 `DEPLOY_INTL_ENABLED=true` 控制
+- Secrets：`FASTAPI_CLOUD_TOKEN`（deploy token）
 
 ## 编码与平台陷阱
 
@@ -101,4 +128,5 @@ README.md              ← 最终产物（自动覆盖，禁止手动修改）
 ## 依赖
 
 - Python 3.10+，依赖见 `requirements.txt`（PyYAML, requests, Jinja2）
+- `fastapi[standard]`（国际版部署，包含 FastAPI Cloud CLI）
 - `pwsh`（PowerShell Core）用于 Windows 11 ISO 抓取

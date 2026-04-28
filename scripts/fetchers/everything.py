@@ -71,7 +71,7 @@ def fetch(args: dict[str, Any]) -> FetchResult:
         id="everything",
         name="Everything",
         version=version,
-        source="voidtools 官网",
+        source="voidtools official download page",
         version_kind=VERSION_KIND_RELEASE,
         version_source=VERSION_SOURCE_OFFICIAL_PAGE_HTML,
         homepage="https://www.voidtools.com/",

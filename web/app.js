@@ -1,8 +1,9 @@
-/* Latest Softwares 前端逻辑（Alpine.js 组件）*/
+/* Latest Softwares frontend logic (Alpine.js component). */
 
 function app() {
   return {
     // ==== state ====
+    edition: 'cn',
     query: '',
     activeCategory: 'all',
     activePlatform: 'all',
@@ -12,9 +13,83 @@ function app() {
     lastUpdated: '—',
     directFileExtensions: ['.exe', '.dmg', '.iso', '.zip', '.tar.gz', '.msi', '.pkg', '.deb', '.rpm', '.appimage', '.7z'],
 
-    // ==== 生命周期 ====
+    // ==== i18n dictionary ====
+    i18n: {
+      cn: {
+        all: '全部',
+        app_title: 'Latest Softwares',
+        status: ({ count, updated }) => `共 ${count} 项 · 最后同步 ${updated}`,
+        category: '分类',
+        platform: '平台',
+        result_count: ({ shown, total }) => `显示 ${shown} / ${total} 项`,
+        win: 'Windows',
+        mac: 'macOS',
+        linux: 'Linux',
+        search_placeholder: '搜索软件…  (vsc / win11 / chrome / 游戏)',
+        theme_light: '浅色模式',
+        theme_dark: '深色模式',
+        repo_title: '查看源仓库',
+        no_results: '未找到匹配软件',
+        no_results_hint: '试试其它关键词，或',
+        clear_filter: '清除筛选',
+        direct_download: ({ platform, size }) => `直链下载 · ${platform}${size ? ` (${size})` : ''}`,
+        landing_download: ({ platform }) => `跳转下载页 · ${platform}`,
+        release_notes: 'Release Notes →',
+        stale: ({ reason }) => `本次抓取失败，复用上次数据${reason ? `：${reason}` : ''}`,
+        warnings: ({ warnings }) => warnings.join('；'),
+        footer: '由 GitHub Actions 每日同步上游官方源 · 仅记录元数据，不托管二进制',
+        version: '版本',
+        release_version: '发布版本',
+        release_label: '发行标签',
+        build_date: '构建日期',
+        page_date: '页面日期',
+        sync_date: '同步日期',
+      },
+      intl: {
+        all: 'All',
+        app_title: 'Latest Softwares',
+        status: ({ count, updated }) => `Total ${count} items · Last synced ${updated}`,
+        category: 'Category',
+        platform: 'Platform',
+        result_count: ({ shown, total }) => `Showing ${shown} / ${total} items`,
+        win: 'Windows',
+        mac: 'macOS',
+        linux: 'Linux',
+        search_placeholder: 'Search apps...  (vscode / chrome / media / ai)',
+        theme_light: 'Switch to light mode',
+        theme_dark: 'Switch to dark mode',
+        repo_title: 'View source repository',
+        no_results: 'No matching apps found',
+        no_results_hint: 'Try another keyword, or',
+        clear_filter: 'clear all filters',
+        direct_download: ({ platform, size }) => `Direct download · ${platform}${size ? ` (${size})` : ''}`,
+        landing_download: ({ platform }) => `Download page · ${platform}`,
+        release_notes: 'Release Notes →',
+        stale: () => 'Fetch failed; using the previous successful result',
+        warnings: ({ warnings }) => warnings.join('; '),
+        footer: 'Synced daily from official upstream sources by GitHub Actions · Metadata only, no binaries hosted',
+        version: 'Version',
+        release_version: 'Release Version',
+        release_label: 'Release Label',
+        build_date: 'Build Date',
+        page_date: 'Page Date',
+        sync_date: 'Sync Date',
+      }
+    },
+
+    t(key) {
+      const dict = this.i18n[this.edition] || this.i18n.cn;
+      return dict[key] || key;
+    },
+
+    msg(key, values = {}) {
+      const value = this.t(key);
+      return typeof value === 'function' ? value(values) : value;
+    },
+
+    // ==== lifecycle ====
     init() {
-      // 主题：localStorage 优先，否则跟随系统
+      // Theme: localStorage first, then the system preference.
       const saved = localStorage.getItem('theme');
       if (saved) {
         this.dark = saved === 'dark';
@@ -22,13 +97,16 @@ function app() {
         this.dark = window.matchMedia('(prefers-color-scheme: dark)').matches;
       }
 
-      // 数据（由 build_web.py 注入）
+      // Data is injected by build_web.py.
       const data = window.__PKG_DATA__ || { packages: [], stats: {} };
-      // 排序：先按分类（packages.yaml 顺序），再按 name
+      this.edition = data.edition || 'cn';
+      document.documentElement.lang = this.edition === 'intl' ? 'en' : 'zh-CN';
+      document.title = this.t('app_title');
+      // Keep packages.yaml order so categories remain predictable.
       this.packages = data.packages || [];
       this.directFileExtensions = data.direct_file_extensions || this.directFileExtensions;
 
-      // 显示最近一次同步时间（优先使用 sync.py 写入的顶层 generated_at）
+      // Prefer the top-level generated_at written by sync.py.
       const ts = data.generated_at || this.packages
         .map(p => p.fetched_at)
         .filter(Boolean)
@@ -36,7 +114,7 @@ function app() {
         .pop();
       this.lastUpdated = ts ? this.formatDateTime(ts) : '—';
 
-      // Fuse 模糊搜索
+      // Fuse fuzzy search.
       this.fuse = new Fuse(this.packages, {
         keys: [
           { name: 'name',     weight: 0.5 },
@@ -50,21 +128,26 @@ function app() {
       });
     },
 
-    // ==== 派生状态 ====
+    // ==== derived state ====
     get categories() {
       const set = new Set();
       this.packages.forEach(p => p.category && set.add(p.category));
       return ['all', ...set];
     },
 
+    getCategoryLabel(c) {
+      if (c === 'all') return this.t('all');
+      return c;
+    },
+
     get platforms() {
-      // 检测包内出现的平台前缀，固定常见展示顺序
+      // Detect platform families in a stable display order.
       const present = new Set();
       this.packages.forEach(p =>
         p.assets?.forEach(a => present.add(a.platform.split('-')[0]))
       );
       const order = [
-        { key: 'all',   label: '全部', show: true },
+        { key: 'all',   label: this.t('all'), show: true },
         { key: 'win',   label: 'Windows', show: present.has('win') },
         { key: 'mac',   label: 'macOS',   show: present.has('mac') },
         { key: 'linux', label: 'Linux',   show: present.has('linux') },
@@ -88,7 +171,7 @@ function app() {
       return list;
     },
 
-    // ==== 动作 ====
+    // ==== actions ====
     toggleDark() {
       this.dark = !this.dark;
       localStorage.setItem('theme', this.dark ? 'dark' : 'light');
@@ -101,8 +184,8 @@ function app() {
       this.$refs.search?.focus();
     },
 
-    // ==== 直链检测 ====
-    // 剥掉查询串后看路径是否以文件扩展名结尾
+    // ==== direct-link detection ====
+    // Strip query/hash before checking the file extension.
     isDirectLink(url, linkKind = null) {
       if (linkKind === 'direct') return true;
       if (linkKind === 'landing_page') return false;
@@ -111,7 +194,7 @@ function app() {
       return this.directFileExtensions.some(ext => path.endsWith(ext));
     },
 
-    // ==== 平台徽章颜色（direct=实心填充 / page=描边空心） ====
+    // ==== platform badge colors (filled=direct, outline=landing page) ====
     badgeClass(platform, url, linkKind = null) {
       const family = platform.split('-')[0];
       const direct = this.isDirectLink(url, linkKind);
@@ -136,7 +219,39 @@ function app() {
       return colors[direct ? 'direct' : 'page'];
     },
 
-    // ==== 格式化辅助 ====
+    statusText() {
+      return this.msg('status', { count: this.packages.length, updated: this.lastUpdated });
+    },
+
+    resultCountText() {
+      return this.msg('result_count', {
+        shown: this.filtered.length,
+        total: this.packages.length,
+      });
+    },
+
+    themeTitle() {
+      return this.dark ? this.t('theme_light') : this.t('theme_dark');
+    },
+
+    staleTitle(pkg) {
+      if (pkg._stale) {
+        return this.msg('stale', { reason: pkg._stale_reason });
+      }
+      return this.msg('warnings', { warnings: pkg.warnings || [] });
+    },
+
+    assetTitle(asset) {
+      if (this.isDirectLink(asset.url, asset.link_kind)) {
+        return this.msg('direct_download', {
+          platform: asset.platform,
+          size: asset.size ? this.formatSize(asset.size) : '',
+        });
+      }
+      return this.msg('landing_download', { platform: asset.platform });
+    },
+
+    // ==== formatting helpers ====
     formatDate(iso) {
       if (!iso) return '';
       try {
@@ -167,13 +282,7 @@ function app() {
     },
 
     versionKindLabel(kind) {
-      return {
-        release_version: '发布版本',
-        release_label: '发行标签',
-        build_date: '构建日期',
-        page_date: '页面日期',
-        sync_date: '同步日期',
-      }[kind] || kind || '版本';
+      return this.t(kind) || this.t('version');
     },
   };
 }

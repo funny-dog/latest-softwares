@@ -81,6 +81,67 @@ packages:
     assert stale_pkg["version_source"] == "previous"
 
 
+def test_sync_updates_config_metadata_on_stale_entries(tmp_path, monkeypatch):
+    packages_file = tmp_path / "packages.yaml"
+    data_file = tmp_path / "latest.json"
+    packages_file.write_text(
+        """
+packages:
+  - id: windows11
+    name: Windows 11
+    category: Operating Systems
+    editions: [cn]
+    fetcher: windows11_fido
+    args:
+      lang: English
+      edition: Pro
+""",
+        encoding="utf-8",
+    )
+    data_file.write_text(
+        json.dumps(
+            {
+                "schema_version": 2,
+                "packages": [
+                    {
+                        "id": "windows11",
+                        "name": "Old Windows 11",
+                        "category": "Old",
+                        "homepage": "https://old.example.test",
+                        "editions": ["cn", "intl"],
+                        "version": "25H2",
+                        "source": "previous",
+                        "assets": [
+                            {
+                                "platform": "win-x64",
+                                "url": "https://example.test/windows.iso",
+                            }
+                        ],
+                        "fetched_at": "2026-01-01T00:00:00+00:00",
+                    }
+                ],
+            }
+        ),
+        encoding="utf-8",
+    )
+
+    def failing_fetcher(args):
+        raise RuntimeError("missing pwsh")
+
+    monkeypatch.setattr(sync, "PACKAGES_FILE", packages_file)
+    monkeypatch.setattr(sync, "DATA_FILE", data_file)
+    monkeypatch.setitem(sync.FETCHERS, "windows11_fido", failing_fetcher)
+
+    rc = sync.main()
+
+    output = json.loads(data_file.read_text(encoding="utf-8"))
+    stale_pkg = output["packages"][0]
+    assert rc == 1
+    assert stale_pkg["name"] == "Windows 11"
+    assert stale_pkg["category"] == "Operating Systems"
+    assert stale_pkg["editions"] == ["cn"]
+
+
 def test_sync_only_runs_selected_package(tmp_path, monkeypatch):
     packages_file = tmp_path / "packages.yaml"
     data_file = tmp_path / "latest.json"

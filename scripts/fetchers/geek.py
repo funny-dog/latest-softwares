@@ -64,7 +64,7 @@ def fetch(args: dict[str, Any]) -> FetchResult:
         id="geek",
         name="Geek Uninstaller",
         version=version or "unknown",
-        source="Geek Uninstaller 官网",
+        source="Geek Uninstaller official download page",
         version_kind=VERSION_KIND_RELEASE,
         version_source=VERSION_SOURCE_OFFICIAL_PAGE_HTML,
         homepage="https://geekuninstaller.com/",

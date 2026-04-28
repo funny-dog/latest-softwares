@@ -36,6 +36,40 @@ def test_json_injection_escapes_script_end_tag(tmp_path, monkeypatch):
     assert "<\\/script><script>alert(1)<\\/script>" in html
 
 
+def test_json_injection_records_requested_edition(tmp_path, monkeypatch):
+    dist = tmp_path / "dist"
+    dist.mkdir()
+    index = dist / "index.html"
+    index.write_text(
+        f"<script>window.__PKG_DATA__ = {build_web.DATA_PLACEHOLDER};</script>",
+        encoding="utf-8",
+    )
+    data_file = tmp_path / "latest.json"
+    data_file.write_text(
+        json.dumps(
+            {
+                "schema_version": 2,
+                "packages": [
+                    {"id": "cn-only", "editions": ["cn"]},
+                    {"id": "intl-only", "editions": ["intl"]},
+                ],
+                "stats": {},
+            }
+        ),
+        encoding="utf-8",
+    )
+
+    monkeypatch.setattr(build_web, "DIST", dist)
+    monkeypatch.setattr(build_web, "DATA_FILE", data_file)
+
+    build_web.inject_data(edition="intl")
+
+    html = index.read_text(encoding="utf-8")
+    assert '"edition":"intl"' in html
+    assert '"id":"intl-only"' in html
+    assert '"id":"cn-only"' not in html
+
+
 def test_web_source_uses_local_vendor_assets():
     html = (build_web.WEB_SRC / "index.html").read_text(encoding="utf-8")
 
@@ -92,3 +126,12 @@ def test_web_shows_visible_version_kind_label():
 
     assert 'x-text="versionKindLabel(pkg.version_kind)"' in html
     assert "pkg.version_source" in html
+
+
+def test_web_index_uses_i18n_for_visible_copy():
+    html = (build_web.WEB_SRC / "index.html").read_text(encoding="utf-8")
+
+    assert "statusText()" in html
+    assert "resultCountText()" in html
+    assert "assetTitle(asset)" in html
+    assert "t('footer')" in html
