@@ -90,6 +90,9 @@ packages:
     args:
       repo: bitwarden/clients
       tag_pattern: "^desktop-v"
+      # desktop release 在 monorepo 里发布间隔大，最新 desktop 常常已被 cli/web/
+      # browser 等子产品挤出 page=1 (30 个) 窗口，必须扫到 page=2/3 才稳定命中
+      release_scan_pages: 3
       assets:
         - { platform: win-x64,            pattern: "Bitwarden-Installer-*.exe" }
         - { platform: mac-universal,      pattern: "Bitwarden-*-universal.dmg" }
@@ -102,6 +105,9 @@ packages:
     args:
       repo: openai/codex
       tag_pattern: "^rust-v"
+      # codex 大量发 alpha 版（占比约 87%），稳定版稀疏；同时给 page=1 偶发空
+      # 留 buffer，扫到 page=2 保证至少能找到 1 个稳定版
+      release_scan_pages: 2
       assets:
         - { platform: win-x64,    pattern: "codex-x86_64-pc-windows-msvc.exe" }
         - { platform: win-arm64,  pattern: "codex-aarch64-pc-windows-msvc.exe" }

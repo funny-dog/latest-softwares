@@ -53,6 +53,52 @@ def test_tag_pattern_scans_configured_release_pages(monkeypatch):
     ]
 
 
+def test_empty_first_page_does_not_short_circuit_scan(monkeypatch):
+    """GitHub /releases endpoint 偶发让 page=1 返回空数组，但 page=2 仍有数据。
+
+    fetcher 必须继续扫剩余页，不能把"本页空"当成"分页结束"。
+    """
+    calls: list[str] = []
+
+    def fake_get_json(url, **kwargs):
+        calls.append(url)
+        if "page=1" in url:
+            return []  # 模拟 GitHub 边缘缓存抽风
+        return [
+            {
+                "tag_name": "desktop-v9.9.9",
+                "prerelease": False,
+                "draft": False,
+                "published_at": "2026-04-01T00:00:00Z",
+                "html_url": "https://github.com/acme/app/releases/tag/desktop-v9.9.9",
+                "assets": [
+                    {
+                        "name": "AppSetup-9.9.9.exe",
+                        "browser_download_url": "https://downloads.test/AppSetup.exe",
+                        "size": 1,
+                    }
+                ],
+            }
+        ]
+
+    monkeypatch.setattr(github_release, "get_json", fake_get_json)
+
+    result = github_release.fetch(
+        {
+            "repo": "acme/app",
+            "tag_pattern": "^desktop-v",
+            "release_scan_pages": 2,
+            "assets": [{"platform": "win-x64", "pattern": "AppSetup-*.exe"}],
+        }
+    )
+
+    assert result.version == "9.9.9"
+    assert calls == [
+        "https://api.github.com/repos/acme/app/releases?per_page=30&page=1",
+        "https://api.github.com/repos/acme/app/releases?per_page=30&page=2",
+    ]
+
+
 def test_missing_github_assets_are_reported_as_warnings(monkeypatch):
     def fake_get_json(url, **kwargs):
         return {

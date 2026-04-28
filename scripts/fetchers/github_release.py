@@ -46,9 +46,10 @@ def _pick_release(
     for page in range(1, pages + 1):
         url = f"{GITHUB_API}/repos/{repo}/releases?per_page=30&page={page}"
         releases = get_json(url, headers=github_headers(), timeout=TIMEOUT)
-        if not releases:
-            break
-        for rel in releases:
+        # 不要因为某一页空就 break：GitHub /releases endpoint 的边缘缓存层
+        # 偶发会让 page=1 返回空数组，但 page=2/3 仍有数据；早 break 会把
+        # 偶发服务异常误判为"无更多数据"，把整个抓取打挂。
+        for rel in releases or []:
             if rel.get("prerelease") or rel.get("draft"):
                 continue
             if pattern.search(rel.get("tag_name", "")):
