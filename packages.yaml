@@ -1500,3 +1500,2885 @@ packages:
     - platform: linux-x64
       download_url: https://www.qbittorrent.org/download
       link_kind: landing_page
+- id: zed
+  name: Zed
+  category: Developer Tools
+  editions:
+  - intl
+  homepage: https://github.com/zed-industries/zed
+  fetcher: github_release
+  args:
+    repo: zed-industries/zed
+    assets:
+    - platform: mac-arm64
+      pattern: Zed-*-aarch64.dmg
+    - platform: linux-x64
+      pattern: zed-linux-x86_64.tar.gz
+- id: lapce
+  name: Lapce
+  category: Developer Tools
+  editions:
+  - intl
+  homepage: https://github.com/lapce/lapce
+  fetcher: github_release
+  args:
+    repo: lapce/lapce
+    assets:
+    - platform: win-x64
+      pattern: Lapce-*-windows-x86_64.zip
+    - platform: mac-arm64
+      pattern: Lapce-*-darwin-aarch64.dmg
+    - platform: linux-x64
+      pattern: Lapce-*-linux-x86_64.tar.gz
+- id: helix
+  name: Helix
+  category: Developer Tools
+  editions:
+  - intl
+  homepage: https://github.com/helix-editor/helix
+  fetcher: github_release
+  args:
+    repo: helix-editor/helix
+    assets:
+    - platform: win-x64
+      pattern: helix-*-x86_64-windows.zip
+    - platform: mac-arm64
+      pattern: helix-*-aarch64-macos.tar.xz
+    - platform: linux-x64
+      pattern: helix-*-x86_64-linux.tar.xz
+- id: ghostty
+  name: Ghostty
+  category: Developer Tools
+  editions:
+  - intl
+  homepage: https://github.com/ghostty-org/ghostty
+  fetcher: github_release
+  args:
+    repo: ghostty-org/ghostty
+    assets:
+    - platform: mac-arm64
+      pattern: ghostty-macos-universal.zip
+- id: kitty
+  name: Kitty
+  category: Developer Tools
+  editions:
+  - intl
+  homepage: https://github.com/kovidgoyal/kitty
+  fetcher: github_release
+  args:
+    repo: kovidgoyal/kitty
+    assets:
+    - platform: mac-arm64
+      pattern: kitty-*-aarch64.txz
+- id: zellij
+  name: Zellij
+  category: Developer Tools
+  editions:
+  - intl
+  homepage: https://github.com/zellij-org/zellij
+  fetcher: github_release
+  args:
+    repo: zellij-org/zellij
+    assets:
+    - platform: win-x64
+      pattern: zellij-*-x86_64-pc-windows-msvc.zip
+    - platform: mac-arm64
+      pattern: zellij-*-aarch64-apple-darwin.tar.gz
+    - platform: linux-x64
+      pattern: zellij-*-x86_64-unknown-linux-musl.tar.gz
+- id: starship
+  name: Starship
+  category: Developer Tools
+  editions:
+  - intl
+  homepage: https://github.com/starship/starship
+  fetcher: github_release
+  args:
+    repo: starship/starship
+    assets:
+    - platform: win-x64
+      pattern: starship-x86_64-pc-windows-msvc.zip
+    - platform: mac-arm64
+      pattern: starship-aarch64-apple-darwin.tar.gz
+    - platform: linux-x64
+      pattern: starship-x86_64-unknown-linux-musl.tar.gz
+- id: nushell
+  name: Nushell
+  category: Developer Tools
+  editions:
+  - intl
+  homepage: https://github.com/nushell/nushell
+  fetcher: github_release
+  args:
+    repo: nushell/nushell
+    assets:
+    - platform: win-x64
+      pattern: nu-*-x86_64-pc-windows-msvc.zip
+    - platform: mac-arm64
+      pattern: nu-*-aarch64-apple-darwin.tar.gz
+    - platform: linux-x64
+      pattern: nu-*-x86_64-unknown-linux-gnu.tar.gz
+- id: fish
+  name: Fish Shell
+  category: Developer Tools
+  editions:
+  - intl
+  homepage: https://github.com/fish-shell/fish-shell
+  fetcher: github_release
+  args:
+    repo: fish-shell/fish-shell
+    assets:
+    - platform: mac-arm64
+      pattern: fish-*-universal.pkg
+- id: lazydocker
+  name: Lazydocker
+  category: Developer Tools
+  editions:
+  - intl
+  homepage: https://github.com/jesseduffield/lazydocker
+  fetcher: github_release
+  args:
+    repo: jesseduffield/lazydocker
+    assets:
+    - platform: win-x64
+      pattern: lazydocker_*_Windows_x86_64.zip
+    - platform: mac-arm64
+      pattern: lazydocker_*_Darwin_arm64.tar.gz
+    - platform: linux-x64
+      pattern: lazydocker_*_Linux_x86_64.tar.gz
+- id: bottom
+  name: bottom
+  category: Developer Tools
+  editions:
+  - intl
+  homepage: https://github.com/ClementTsang/bottom
+  fetcher: github_release
+  args:
+    repo: ClementTsang/bottom
+    assets:
+    - platform: win-x64
+      pattern: bottom_*_x86_64-pc-windows-msvc.tar.gz
+    - platform: mac-arm64
+      pattern: bottom_*_aarch64-apple-darwin.tar.gz
+    - platform: linux-x64
+      pattern: bottom_*_x86_64-unknown-linux-gnu.tar.gz
+- id: btop
+  name: btop++
+  category: Developer Tools
+  editions:
+  - intl
+  homepage: https://github.com/aristocratos/btop
+  fetcher: github_release
+  args:
+    repo: aristocratos/btop
+    assets:
+    - platform: win-x64
+      pattern: btop-*-x86_64-win64-bin.zip
+    - platform: mac-arm64
+      pattern: btop-*-arm64-macos-monterey.tbz
+    - platform: linux-x64
+      pattern: btop-*-x86_64-linux-musl.tbz
+- id: dust
+  name: dust
+  category: Developer Tools
+  editions:
+  - intl
+  homepage: https://github.com/bootandy/dust
+  fetcher: github_release
+  args:
+    repo: bootandy/dust
+    assets:
+    - platform: win-x64
+      pattern: dust-*-x86_64-pc-windows-msvc.zip
+    - platform: mac-arm64
+      pattern: dust-*-aarch64-apple-darwin.tar.gz
+    - platform: linux-x64
+      pattern: dust-*-x86_64-unknown-linux-gnu.tar.gz
+- id: duf
+  name: duf
+  category: Developer Tools
+  editions:
+  - intl
+  homepage: https://github.com/muesli/duf
+  fetcher: github_release
+  args:
+    repo: muesli/duf
+    assets:
+    - platform: win-x64
+      pattern: duf_*_windows_amd64.zip
+    - platform: mac-arm64
+      pattern: duf_*_darwin_arm64.tar.gz
+    - platform: linux-x64
+      pattern: duf_*_linux_amd64.tar.gz
+- id: procs
+  name: procs
+  category: Developer Tools
+  editions:
+  - intl
+  homepage: https://github.com/dalance/procs
+  fetcher: github_release
+  args:
+    repo: dalance/procs
+    assets:
+    - platform: win-x64
+      pattern: procs-*-x86_64-pc-windows-msvc.zip
+    - platform: mac-arm64
+      pattern: procs-*-aarch64-apple-darwin.tar.gz
+    - platform: linux-x64
+      pattern: procs-*-x86_64-unknown-linux-gnu.tar.gz
+- id: sd
+  name: sd
+  category: Developer Tools
+  editions:
+  - intl
+  homepage: https://github.com/chmln/sd
+  fetcher: github_release
+  args:
+    repo: chmln/sd
+    assets:
+    - platform: win-x64
+      pattern: sd-*-x86_64-pc-windows-msvc.zip
+    - platform: mac-arm64
+      pattern: sd-*-aarch64-apple-darwin.tar.gz
+    - platform: linux-x64
+      pattern: sd-*-x86_64-unknown-linux-gnu.tar.gz
+- id: delta
+  name: git-delta
+  category: Developer Tools
+  editions:
+  - intl
+  homepage: https://github.com/dandavison/delta
+  fetcher: github_release
+  args:
+    repo: dandavison/delta
+    assets:
+    - platform: win-x64
+      pattern: delta-*-x86_64-pc-windows-msvc.zip
+    - platform: mac-arm64
+      pattern: delta-*-aarch64-apple-darwin.tar.gz
+    - platform: linux-x64
+      pattern: delta-*-x86_64-unknown-linux-gnu.tar.gz
+- id: difftastic
+  name: Difftastic
+  category: Developer Tools
+  editions:
+  - intl
+  homepage: https://github.com/Wilfred/difftastic
+  fetcher: github_release
+  args:
+    repo: Wilfred/difftastic
+    assets:
+    - platform: win-x64
+      pattern: difft-x86_64-pc-windows-msvc.zip
+    - platform: mac-arm64
+      pattern: difft-aarch64-apple-darwin.tar.gz
+    - platform: linux-x64
+      pattern: difft-x86_64-unknown-linux-gnu.tar.gz
+- id: gitui
+  name: GitUI
+  category: Developer Tools
+  editions:
+  - intl
+  homepage: https://github.com/extrawurst/gitui
+  fetcher: github_release
+  args:
+    repo: extrawurst/gitui
+    assets:
+    - platform: win-x64
+      pattern: gitui-win64.tar.gz
+    - platform: mac-arm64
+      pattern: gitui-mac-arm64.tar.gz
+    - platform: linux-x64
+      pattern: gitui-linux.tar.gz
+- id: hyperfine
+  name: hyperfine
+  category: Developer Tools
+  editions:
+  - intl
+  homepage: https://github.com/sharkdp/hyperfine
+  fetcher: github_release
+  args:
+    repo: sharkdp/hyperfine
+    assets:
+    - platform: win-x64
+      pattern: hyperfine-*-x86_64-pc-windows-msvc.zip
+    - platform: mac-arm64
+      pattern: hyperfine-*-aarch64-apple-darwin.tar.gz
+    - platform: linux-x64
+      pattern: hyperfine-*-x86_64-unknown-linux-gnu.tar.gz
+- id: hexyl
+  name: hexyl
+  category: Developer Tools
+  editions:
+  - intl
+  homepage: https://github.com/sharkdp/hexyl
+  fetcher: github_release
+  args:
+    repo: sharkdp/hexyl
+    assets:
+    - platform: win-x64
+      pattern: hexyl-*-x86_64-pc-windows-msvc.zip
+    - platform: mac-arm64
+      pattern: hexyl-*-aarch64-apple-darwin.tar.gz
+    - platform: linux-x64
+      pattern: hexyl-*-x86_64-unknown-linux-gnu.tar.gz
+- id: xh
+  name: xh
+  category: Developer Tools
+  editions:
+  - intl
+  homepage: https://github.com/ducaale/xh
+  fetcher: github_release
+  args:
+    repo: ducaale/xh
+    assets:
+    - platform: win-x64
+      pattern: xh-*-x86_64-pc-windows-msvc.zip
+    - platform: mac-arm64
+      pattern: xh-*-aarch64-apple-darwin.tar.gz
+    - platform: linux-x64
+      pattern: xh-*-x86_64-unknown-linux-musl.tar.gz
+- id: ruff
+  name: Ruff
+  category: Developer Tools
+  editions:
+  - intl
+  homepage: https://github.com/astral-sh/ruff
+  fetcher: github_release
+  args:
+    repo: astral-sh/ruff
+    assets:
+    - platform: win-x64
+      pattern: ruff-*-x86_64-pc-windows-msvc.zip
+    - platform: mac-arm64
+      pattern: ruff-*-aarch64-apple-darwin.tar.gz
+    - platform: linux-x64
+      pattern: ruff-*-x86_64-unknown-linux-gnu.tar.gz
+- id: uv
+  name: uv
+  category: Developer Tools
+  editions:
+  - intl
+  homepage: https://github.com/astral-sh/uv
+  fetcher: github_release
+  args:
+    repo: astral-sh/uv
+    assets:
+    - platform: win-x64
+      pattern: uv-*-x86_64-pc-windows-msvc.zip
+    - platform: mac-arm64
+      pattern: uv-*-aarch64-apple-darwin.tar.gz
+    - platform: linux-x64
+      pattern: uv-*-x86_64-unknown-linux-gnu.tar.gz
+- id: biome
+  name: Biome
+  category: Developer Tools
+  editions:
+  - intl
+  homepage: https://github.com/biomejs/biome
+  fetcher: github_release
+  args:
+    repo: biomejs/biome
+    assets:
+    - platform: win-x64
+      pattern: biome-win-x64.exe
+    - platform: mac-arm64
+      pattern: biome-darwin-arm64
+    - platform: linux-x64
+      pattern: biome-linux-x64
+- id: nextest
+  name: cargo-nextest
+  category: Developer Tools
+  editions:
+  - intl
+  homepage: https://github.com/nextest-rs/nextest
+  fetcher: github_release
+  args:
+    repo: nextest-rs/nextest
+    assets:
+    - platform: win-x64
+      pattern: cargo-nextest-*-x86_64-pc-windows-msvc.zip
+    - platform: mac-arm64
+      pattern: cargo-nextest-*-aarch64-apple-darwin.tar.gz
+    - platform: linux-x64
+      pattern: cargo-nextest-*-x86_64-unknown-linux-gnu.tar.gz
+- id: cargo-binstall
+  name: cargo-binstall
+  category: Developer Tools
+  editions:
+  - intl
+  homepage: https://github.com/cargo-bins/cargo-binstall
+  fetcher: github_release
+  args:
+    repo: cargo-bins/cargo-binstall
+    assets:
+    - platform: win-x64
+      pattern: cargo-binstall-x86_64-pc-windows-msvc.zip
+    - platform: mac-arm64
+      pattern: cargo-binstall-aarch64-apple-darwin.zip
+    - platform: linux-x64
+      pattern: cargo-binstall-x86_64-unknown-linux-gnu.tgz
+- id: trunk
+  name: Trunk
+  category: Developer Tools
+  editions:
+  - intl
+  homepage: https://github.com/trunk-rs/trunk
+  fetcher: github_release
+  args:
+    repo: trunk-rs/trunk
+    assets:
+    - platform: win-x64
+      pattern: trunk-*-x86_64-pc-windows-msvc.zip
+    - platform: mac-arm64
+      pattern: trunk-*-aarch64-apple-darwin.tar.gz
+    - platform: linux-x64
+      pattern: trunk-*-x86_64-unknown-linux-gnu.tar.gz
+- id: lefthook
+  name: Lefthook
+  category: Developer Tools
+  editions:
+  - intl
+  homepage: https://github.com/evilmartians/lefthook
+  fetcher: github_release
+  args:
+    repo: evilmartians/lefthook
+    assets:
+    - platform: win-x64
+      pattern: lefthook_*_Windows_x86_64.zip
+    - platform: mac-arm64
+      pattern: lefthook_*_macOS_arm64.tar.gz
+    - platform: linux-x64
+      pattern: lefthook_*_Linux_x86_64.tar.gz
+- id: typos
+  name: typos
+  category: Developer Tools
+  editions:
+  - intl
+  homepage: https://github.com/crate-ci/typos
+  fetcher: github_release
+  args:
+    repo: crate-ci/typos
+    assets:
+    - platform: win-x64
+      pattern: typos-*-x86_64-pc-windows-msvc.zip
+    - platform: mac-arm64
+      pattern: typos-*-aarch64-apple-darwin.tar.gz
+    - platform: linux-x64
+      pattern: typos-*-x86_64-unknown-linux-musl.tar.gz
+- id: taplo
+  name: Taplo
+  category: Developer Tools
+  editions:
+  - intl
+  homepage: https://github.com/tamasfe/taplo
+  fetcher: github_release
+  args:
+    repo: tamasfe/taplo
+    assets:
+    - platform: win-x64
+      pattern: taplo-full-windows-x86_64.zip
+    - platform: mac-arm64
+      pattern: taplo-full-darwin-aarch64.zip
+    - platform: linux-x64
+      pattern: taplo-full-linux-x86_64.zip
+- id: tokei
+  name: tokei
+  category: Developer Tools
+  editions:
+  - intl
+  homepage: https://github.com/XAMPPRocky/tokei
+  fetcher: github_release
+  args:
+    repo: XAMPPRocky/tokei
+    assets:
+    - platform: win-x64
+      pattern: tokei-x86_64-pc-windows-msvc.zip
+    - platform: mac-arm64
+      pattern: tokei-aarch64-apple-darwin.tar.gz
+    - platform: linux-x64
+      pattern: tokei-x86_64-unknown-linux-gnu.tar.gz
+- id: grex
+  name: grex
+  category: Developer Tools
+  editions:
+  - intl
+  homepage: https://github.com/pemistahl/grex
+  fetcher: github_release
+  args:
+    repo: pemistahl/grex
+    assets:
+    - platform: win-x64
+      pattern: grex-*-x86_64-pc-windows-msvc.zip
+    - platform: mac-arm64
+      pattern: grex-*-aarch64-apple-darwin.tar.gz
+    - platform: linux-x64
+      pattern: grex-*-x86_64-unknown-linux-musl.tar.gz
+- id: just
+  name: just
+  category: Developer Tools
+  editions:
+  - intl
+  homepage: https://github.com/casey/just
+  fetcher: github_release
+  args:
+    repo: casey/just
+    assets:
+    - platform: win-x64
+      pattern: just-*-x86_64-pc-windows-msvc.zip
+    - platform: mac-arm64
+      pattern: just-*-aarch64-apple-darwin.tar.gz
+    - platform: linux-x64
+      pattern: just-*-x86_64-unknown-linux-musl.tar.gz
+- id: watchexec
+  name: watchexec
+  category: Developer Tools
+  editions:
+  - intl
+  homepage: https://github.com/watchexec/watchexec
+  fetcher: github_release
+  args:
+    repo: watchexec/watchexec
+    assets:
+    - platform: win-x64
+      pattern: watchexec-*-x86_64-pc-windows-msvc.zip
+    - platform: mac-arm64
+      pattern: watchexec-*-aarch64-apple-darwin.tar.xz
+    - platform: linux-x64
+      pattern: watchexec-*-x86_64-unknown-linux-musl.tar.xz
+- id: bandwhich
+  name: bandwhich
+  category: Developer Tools
+  editions:
+  - intl
+  homepage: https://github.com/imsnif/bandwhich
+  fetcher: github_release
+  args:
+    repo: imsnif/bandwhich
+    assets:
+    - platform: win-x64
+      pattern: bandwhich-*-x86_64-pc-windows-msvc.zip
+    - platform: mac-arm64
+      pattern: bandwhich-*-aarch64-apple-darwin.tar.gz
+    - platform: linux-x64
+      pattern: bandwhich-*-x86_64-unknown-linux-musl.tar.gz
+- id: dog
+  name: dog
+  category: Developer Tools
+  editions:
+  - intl
+  homepage: https://github.com/ogham/dog
+  fetcher: github_release
+  args:
+    repo: ogham/dog
+    assets:
+    - platform: win-x64
+      pattern: dog-v*-x86_64-pc-windows-msvc.zip
+    - platform: mac-arm64
+      pattern: dog-v*-x86_64-apple-darwin.zip
+    - platform: linux-x64
+      pattern: dog-v*-x86_64-unknown-linux-musl.zip
+- id: vivid
+  name: vivid
+  category: Developer Tools
+  editions:
+  - intl
+  homepage: https://github.com/sharkdp/vivid
+  fetcher: github_release
+  args:
+    repo: sharkdp/vivid
+    assets:
+    - platform: win-x64
+      pattern: vivid-*-x86_64-pc-windows-msvc.zip
+    - platform: mac-arm64
+      pattern: vivid-*-aarch64-apple-darwin.tar.gz
+    - platform: linux-x64
+      pattern: vivid-*-x86_64-unknown-linux-gnu.tar.gz
+- id: htmlq
+  name: htmlq
+  category: Developer Tools
+  editions:
+  - intl
+  homepage: https://github.com/mgdm/htmlq
+  fetcher: github_release
+  args:
+    repo: mgdm/htmlq
+    assets:
+    - platform: win-x64
+      pattern: htmlq-x86_64-pc-windows-msvc.zip
+    - platform: mac-arm64
+      pattern: htmlq-aarch64-apple-darwin.tar.gz
+    - platform: linux-x64
+      pattern: htmlq-x86_64-unknown-linux-musl.tar.gz
+- id: choose
+  name: choose
+  category: Developer Tools
+  editions:
+  - intl
+  homepage: https://github.com/theryangeary/choose
+  fetcher: github_release
+  args:
+    repo: theryangeary/choose
+    assets:
+    - platform: win-x64
+      pattern: choose-*-x86_64-pc-windows-msvc.zip
+    - platform: mac-arm64
+      pattern: choose-*-aarch64-apple-darwin.tar.gz
+    - platform: linux-x64
+      pattern: choose-*-x86_64-unknown-linux-musl.tar.gz
+- id: git-cliff
+  name: git-cliff
+  category: Developer Tools
+  editions:
+  - intl
+  homepage: https://github.com/orhun/git-cliff
+  fetcher: github_release
+  args:
+    repo: orhun/git-cliff
+    assets:
+    - platform: win-x64
+      pattern: git-cliff-*-x86_64-pc-windows-msvc.zip
+    - platform: mac-arm64
+      pattern: git-cliff-*-aarch64-apple-darwin.tar.gz
+    - platform: linux-x64
+      pattern: git-cliff-*-x86_64-unknown-linux-musl.tar.gz
+- id: cocogitto
+  name: Cocogitto
+  category: Developer Tools
+  editions:
+  - intl
+  homepage: https://github.com/cocogitto/cocogitto
+  fetcher: github_release
+  args:
+    repo: cocogitto/cocogitto
+    assets:
+    - platform: win-x64
+      pattern: cocogitto-*-x86_64-pc-windows-msvc.zip
+    - platform: mac-arm64
+      pattern: cocogitto-*-aarch64-apple-darwin.tar.gz
+    - platform: linux-x64
+      pattern: cocogitto-*-x86_64-unknown-linux-musl.tar.gz
+- id: mask
+  name: mask
+  category: Developer Tools
+  editions:
+  - intl
+  homepage: https://github.com/jacobdeichert/mask
+  fetcher: github_release
+  args:
+    repo: jacobdeichert/mask
+    assets:
+    - platform: win-x64
+      pattern: mask-*-x86_64-pc-windows-msvc.zip
+    - platform: mac-arm64
+      pattern: mask-*-aarch64-apple-darwin.tar.gz
+    - platform: linux-x64
+      pattern: mask-*-x86_64-unknown-linux-musl.tar.gz
+- id: miniserve
+  name: miniserve
+  category: Developer Tools
+  editions:
+  - intl
+  homepage: https://github.com/svenstaro/miniserve
+  fetcher: github_release
+  args:
+    repo: svenstaro/miniserve
+    assets:
+    - platform: win-x64
+      pattern: miniserve-*-x86_64-pc-windows-msvc.zip
+    - platform: mac-arm64
+      pattern: miniserve-*-aarch64-apple-darwin.tar.gz
+    - platform: linux-x64
+      pattern: miniserve-*-x86_64-unknown-linux-musl.tar.gz
+- id: httpie
+  name: HTTPie
+  category: Developer Tools
+  editions:
+  - intl
+  homepage: https://github.com/httpie/cli
+  fetcher: github_release
+  args:
+    repo: httpie/cli
+    assets:
+    - platform: win-x64
+      pattern: httpie-*-windows-amd64.zip
+    - platform: mac-arm64
+      pattern: httpie-*-macos-arm64
+    - platform: linux-x64
+      pattern: httpie-*-linux-amd64
+- id: libre-hardware-monitor
+  name: LibreHardwareMonitor
+  category: System Utilities
+  editions:
+  - intl
+  homepage: https://github.com/LibreHardwareMonitor/LibreHardwareMonitor
+  fetcher: github_release
+  args:
+    repo: LibreHardwareMonitor/LibreHardwareMonitor
+    assets:
+    - platform: win-x64
+      pattern: LibreHardwareMonitor-net472.zip
+- id: eartrumpet
+  name: EarTrumpet
+  category: System Utilities
+  editions:
+  - intl
+  homepage: https://github.com/File-New-Project/EarTrumpet
+  fetcher: github_release
+  args:
+    repo: File-New-Project/EarTrumpet
+    assets:
+    - platform: win-x64
+      pattern: EarTrumpet-*.appxbundle
+- id: screen-to-gif
+  name: ScreenToGif
+  category: System Utilities
+  editions:
+  - intl
+  homepage: https://github.com/NickeManarin/ScreenToGif
+  fetcher: github_release
+  args:
+    repo: NickeManarin/ScreenToGif
+    assets:
+    - platform: win-x64
+      pattern: ScreenToGif-*-Portable-x64.zip
+- id: autohotkey
+  name: AutoHotkey
+  category: System Utilities
+  editions:
+  - intl
+  homepage: https://github.com/AutoHotkey/AutoHotkey
+  fetcher: github_release
+  args:
+    repo: AutoHotkey/AutoHotkey
+    assets:
+    - platform: win-x64
+      pattern: AutoHotkey_*_setup.exe
+- id: windynamicdesktop
+  name: WinDynamicDesktop
+  category: System Utilities
+  editions:
+  - intl
+  homepage: https://github.com/t1m0thyj/WinDynamicDesktop
+  fetcher: github_release
+  args:
+    repo: t1m0thyj/WinDynamicDesktop
+    assets:
+    - platform: win-x64
+      pattern: WinDynamicDesktop-*-Setup.exe
+- id: translucent-tb
+  name: TranslucentTB
+  category: System Utilities
+  editions:
+  - intl
+  homepage: https://github.com/TranslucentTB/TranslucentTB
+  fetcher: github_release
+  args:
+    repo: TranslucentTB/TranslucentTB
+    assets:
+    - platform: win-x64
+      pattern: TranslucentTB-*.msix
+- id: windhawk
+  name: Windhawk
+  category: System Utilities
+  editions:
+  - intl
+  homepage: https://github.com/ramensoftware/windhawk
+  fetcher: github_release
+  args:
+    repo: ramensoftware/windhawk
+    assets:
+    - platform: win-x64
+      pattern: windhawk_setup.exe
+- id: everything-toolbar
+  name: EverythingToolbar
+  category: System Utilities
+  editions:
+  - intl
+  homepage: https://github.com/srwi/EverythingToolbar
+  fetcher: github_release
+  args:
+    repo: srwi/EverythingToolbar
+    assets:
+    - platform: win-x64
+      pattern: EverythingToolbar-*-x64.zip
+- id: unigetui
+  name: UniGetUI
+  category: System Utilities
+  editions:
+  - intl
+  homepage: https://github.com/marticliment/UniGetUI
+  fetcher: github_release
+  args:
+    repo: marticliment/UniGetUI
+    assets:
+    - platform: win-x64
+      pattern: UniGetUI.Installer-*-x64.exe
+- id: secureuxtheme
+  name: SecureUxTheme
+  category: System Utilities
+  editions:
+  - intl
+  homepage: https://github.com/namazso/SecureUxTheme
+  fetcher: github_release
+  args:
+    repo: namazso/SecureUxTheme
+    assets:
+    - platform: win-x64
+      pattern: SecureUxTheme-x64.msi
+- id: bleachbit
+  name: BleachBit
+  category: System Utilities
+  editions:
+  - intl
+  homepage: https://github.com/bleachbit/bleachbit
+  fetcher: github_release
+  args:
+    repo: bleachbit/bleachbit
+    assets:
+    - platform: win-x64
+      pattern: BleachBit-*-setup.exe
+- id: flameshot
+  name: Flameshot
+  category: System Utilities
+  editions:
+  - intl
+  homepage: https://github.com/flameshot-org/flameshot
+  fetcher: github_release
+  args:
+    repo: flameshot-org/flameshot
+    assets:
+    - platform: win-x64
+      pattern: flameshot-*-win64.zip
+    - platform: linux-x64
+      pattern: flameshot-*-debian-12-amd64.deb
+- id: greenshot
+  name: Greenshot
+  category: System Utilities
+  editions:
+  - intl
+  homepage: https://github.com/greenshot/greenshot
+  fetcher: github_release
+  args:
+    repo: greenshot/greenshot
+    assets:
+    - platform: win-x64
+      pattern: Greenshot-INSTALLER-*-RELEASE.exe
+- id: crystaldiskinfo
+  name: CrystalDiskInfo
+  category: System Utilities
+  editions:
+  - intl
+  homepage: https://github.com/hiyohiyo/CrystalDiskInfo
+  fetcher: github_release
+  args:
+    repo: hiyohiyo/CrystalDiskInfo
+    assets:
+    - platform: win-x64
+      pattern: CrystalDiskInfo*-x64.exe
+- id: crystaldiskmark
+  name: CrystalDiskMark
+  category: System Utilities
+  editions:
+  - intl
+  homepage: https://github.com/hiyohiyo/CrystalDiskMark
+  fetcher: github_release
+  args:
+    repo: hiyohiyo/CrystalDiskMark
+    assets:
+    - platform: win-x64
+      pattern: CrystalDiskMark*-x64.exe
+- id: xml-notepad
+  name: XML Notepad
+  category: System Utilities
+  editions:
+  - intl
+  homepage: https://github.com/microsoft/XmlNotepad
+  fetcher: github_release
+  args:
+    repo: microsoft/XmlNotepad
+    assets:
+    - platform: win-x64
+      pattern: XmlNotepad.application
+- id: imageglass
+  name: ImageGlass
+  category: System Utilities
+  editions:
+  - intl
+  homepage: https://github.com/d2phap/ImageGlass
+  fetcher: github_release
+  args:
+    repo: d2phap/ImageGlass
+    assets:
+    - platform: win-x64
+      pattern: ImageGlass_*_x64.msi
+- id: nomacs
+  name: nomacs
+  category: System Utilities
+  editions:
+  - intl
+  homepage: https://github.com/nomacs/nomacs
+  fetcher: github_release
+  args:
+    repo: nomacs/nomacs
+    assets:
+    - platform: win-x64
+      pattern: nomacs-setup-*-x64.exe
+- id: quicklook
+  name: QuickLook
+  category: System Utilities
+  editions:
+  - intl
+  homepage: https://github.com/QL-Win/QuickLook
+  fetcher: github_release
+  args:
+    repo: QL-Win/QuickLook
+    assets:
+    - platform: win-x64
+      pattern: QuickLook-*-x64.zip
+- id: files-app
+  name: Files
+  category: System Utilities
+  editions:
+  - intl
+  homepage: https://github.com/files-community/Files
+  fetcher: github_release
+  args:
+    repo: files-community/Files
+    assets:
+    - platform: win-x64
+      pattern: Files.Package_*_x64.msixbundle
+- id: compactgui
+  name: CompactGUI
+  category: System Utilities
+  editions:
+  - intl
+  homepage: https://github.com/ImminentFate/CompactGUI
+  fetcher: github_release
+  args:
+    repo: ImminentFate/CompactGUI
+    assets:
+    - platform: win-x64
+      pattern: CompactGUI.exe
+- id: openshell
+  name: Open-Shell Menu
+  category: System Utilities
+  editions:
+  - intl
+  homepage: https://github.com/Open-Shell/Open-Shell-Menu
+  fetcher: github_release
+  args:
+    repo: Open-Shell/Open-Shell-Menu
+    assets:
+    - platform: win-x64
+      pattern: OpenShellSetup_*.exe
+- id: notepad3
+  name: Notepad3
+  category: System Utilities
+  editions:
+  - intl
+  homepage: https://github.com/rizonesoft/Notepad3
+  fetcher: github_release
+  args:
+    repo: rizonesoft/Notepad3
+    assets:
+    - platform: win-x64
+      pattern: Notepad3_*_x64_Setup.exe
+- id: tabby
+  name: Tabby
+  category: System Utilities
+  editions:
+  - intl
+  homepage: https://github.com/Eugeny/tabby
+  fetcher: github_release
+  args:
+    repo: Eugeny/tabby
+    assets:
+    - platform: win-x64
+      pattern: tabby-*-x64-setup.exe
+    - platform: mac-arm64
+      pattern: tabby-*-arm64.dmg
+    - platform: linux-x64
+      pattern: tabby-*-x86_64-linux.rpm
+- id: hyper
+  name: Hyper
+  category: System Utilities
+  editions:
+  - intl
+  homepage: https://github.com/vercel/hyper
+  fetcher: github_release
+  args:
+    repo: vercel/hyper
+    assets:
+    - platform: win-x64
+      pattern: hyper-*-x64.exe
+    - platform: mac-arm64
+      pattern: hyper-*-arm64.dmg
+- id: syncthing
+  name: Syncthing
+  category: Utilities
+  editions:
+  - intl
+  homepage: https://github.com/syncthing/syncthing
+  fetcher: github_release
+  args:
+    repo: syncthing/syncthing
+    assets:
+    - platform: win-x64
+      pattern: syncthing-windows-amd64-v*.zip
+    - platform: mac-arm64
+      pattern: syncthing-macos-arm64-v*.zip
+    - platform: linux-x64
+      pattern: syncthing-linux-amd64-v*.tar.gz
+- id: nanazip
+  name: NanaZip
+  category: Utilities
+  editions:
+  - intl
+  homepage: https://github.com/M2Team/NanaZip
+  fetcher: github_release
+  args:
+    repo: M2Team/NanaZip
+    assets:
+    - platform: win-x64
+      pattern: NanaZip_*_x64.msix
+- id: doublecmd
+  name: Double Commander
+  category: Utilities
+  editions:
+  - intl
+  homepage: https://github.com/doublecmd/doublecmd
+  fetcher: github_release
+  args:
+    repo: doublecmd/doublecmd
+    assets:
+    - platform: win-x64
+      pattern: doublecmd-*-x86_64-win64.exe
+- id: onionshare
+  name: OnionShare
+  category: Utilities
+  editions:
+  - intl
+  homepage: https://github.com/onionshare/onionshare
+  fetcher: github_release
+  args:
+    repo: onionshare/onionshare
+    assets:
+    - platform: win-x64
+      pattern: OnionShare-win64-*.exe
+    - platform: mac-arm64
+      pattern: OnionShare-*-arm64.dmg
+- id: veracrypt
+  name: VeraCrypt
+  category: Utilities
+  editions:
+  - intl
+  homepage: https://github.com/veracrypt/VeraCrypt
+  fetcher: github_release
+  args:
+    repo: veracrypt/VeraCrypt
+    assets:
+    - platform: win-x64
+      pattern: VeraCrypt_Setup_*.exe
+- id: cryptomator
+  name: Cryptomator
+  category: Utilities
+  editions:
+  - intl
+  homepage: https://github.com/cryptomator/cryptomator
+  fetcher: github_release
+  args:
+    repo: cryptomator/cryptomator
+    assets:
+    - platform: win-x64
+      pattern: Cryptomator-*-x64.msi
+    - platform: mac-arm64
+      pattern: Cryptomator-*-arm64.dmg
+    - platform: linux-x64
+      pattern: cryptomator-*-x86_64.AppImage
+- id: kopia
+  name: Kopia
+  category: Utilities
+  editions:
+  - intl
+  homepage: https://github.com/kopia/kopia
+  fetcher: github_release
+  args:
+    repo: kopia/kopia
+    assets:
+    - platform: win-x64
+      pattern: kopia-*-windows-x64.zip
+    - platform: mac-arm64
+      pattern: kopia-*-macos-arm64
+    - platform: linux-x64
+      pattern: kopia-*-linux-x64
+- id: restic
+  name: restic
+  category: Utilities
+  editions:
+  - intl
+  homepage: https://github.com/restic/restic
+  fetcher: github_release
+  args:
+    repo: restic/restic
+    assets:
+    - platform: win-x64
+      pattern: restic_*_windows_amd64.zip
+    - platform: mac-arm64
+      pattern: restic_*_darwin_arm64.bz2
+    - platform: linux-x64
+      pattern: restic_*_linux_amd64.bz2
+- id: duplicati
+  name: Duplicati
+  category: Utilities
+  editions:
+  - intl
+  homepage: https://github.com/duplicati/duplicati
+  fetcher: github_release
+  args:
+    repo: duplicati/duplicati
+    assets:
+    - platform: win-x64
+      pattern: duplicati-*-x64.msi
+- id: rclone
+  name: rclone
+  category: Utilities
+  editions:
+  - intl
+  homepage: https://github.com/rclone/rclone
+  fetcher: github_release
+  args:
+    repo: rclone/rclone
+    assets:
+    - platform: win-x64
+      pattern: rclone-*-windows-amd64.zip
+    - platform: mac-arm64
+      pattern: rclone-*-osx-arm64.zip
+    - platform: linux-x64
+      pattern: rclone-*-linux-amd64.zip
+- id: gron
+  name: gron
+  category: Utilities
+  editions:
+  - intl
+  homepage: https://github.com/tomnomnom/gron
+  fetcher: github_release
+  args:
+    repo: tomnomnom/gron
+    assets:
+    - platform: win-x64
+      pattern: gron-*-amd64.exe
+    - platform: linux-x64
+      pattern: gron-*-linux-amd64.tgz
+- id: dasel
+  name: dasel
+  category: Utilities
+  editions:
+  - intl
+  homepage: https://github.com/TomWright/dasel
+  fetcher: github_release
+  args:
+    repo: TomWright/dasel
+    assets:
+    - platform: win-x64
+      pattern: dasel_windows_amd64.exe
+    - platform: mac-arm64
+      pattern: dasel_darwin_arm64
+    - platform: linux-x64
+      pattern: dasel_linux_amd64
+- id: fx
+  name: fx
+  category: Utilities
+  editions:
+  - intl
+  homepage: https://github.com/antonmedv/fx
+  fetcher: github_release
+  args:
+    repo: antonmedv/fx
+    assets:
+    - platform: win-x64
+      pattern: fx_windows_amd64.exe
+    - platform: mac-arm64
+      pattern: fx_darwin_arm64
+    - platform: linux-x64
+      pattern: fx_linux_amd64
+- id: glow
+  name: glow
+  category: Utilities
+  editions:
+  - intl
+  homepage: https://github.com/charmbracelet/glow
+  fetcher: github_release
+  args:
+    repo: charmbracelet/glow
+    assets:
+    - platform: win-x64
+      pattern: glow_*_Windows_x86_64.zip
+    - platform: mac-arm64
+      pattern: glow_*_Darwin_arm64.tar.gz
+    - platform: linux-x64
+      pattern: glow_*_Linux_x86_64.tar.gz
+- id: slides
+  name: slides
+  category: Utilities
+  editions:
+  - intl
+  homepage: https://github.com/maaslalani/slides
+  fetcher: github_release
+  args:
+    repo: maaslalani/slides
+    assets:
+    - platform: win-x64
+      pattern: slides_*_windows_amd64.tar.gz
+    - platform: mac-arm64
+      pattern: slides_*_darwin_arm64.tar.gz
+    - platform: linux-x64
+      pattern: slides_*_linux_amd64.tar.gz
+- id: soft-serve
+  name: Soft Serve
+  category: Utilities
+  editions:
+  - intl
+  homepage: https://github.com/charmbracelet/soft-serve
+  fetcher: github_release
+  args:
+    repo: charmbracelet/soft-serve
+    assets:
+    - platform: win-x64
+      pattern: soft-serve_*_Windows_x86_64.zip
+    - platform: mac-arm64
+      pattern: soft-serve_*_Darwin_arm64.tar.gz
+    - platform: linux-x64
+      pattern: soft-serve_*_Linux_x86_64.tar.gz
+- id: gum
+  name: gum
+  category: Utilities
+  editions:
+  - intl
+  homepage: https://github.com/charmbracelet/gum
+  fetcher: github_release
+  args:
+    repo: charmbracelet/gum
+    assets:
+    - platform: win-x64
+      pattern: gum_*_Windows_x86_64.zip
+    - platform: mac-arm64
+      pattern: gum_*_Darwin_arm64.tar.gz
+    - platform: linux-x64
+      pattern: gum_*_Linux_x86_64.tar.gz
+- id: vhs
+  name: vhs
+  category: Utilities
+  editions:
+  - intl
+  homepage: https://github.com/charmbracelet/vhs
+  fetcher: github_release
+  args:
+    repo: charmbracelet/vhs
+    assets:
+    - platform: win-x64
+      pattern: vhs_*_Windows_x86_64.zip
+    - platform: mac-arm64
+      pattern: vhs_*_Darwin_arm64.tar.gz
+    - platform: linux-x64
+      pattern: vhs_*_Linux_x86_64.tar.gz
+- id: charm
+  name: charm
+  category: Utilities
+  editions:
+  - intl
+  homepage: https://github.com/charmbracelet/charm
+  fetcher: github_release
+  args:
+    repo: charmbracelet/charm
+    assets:
+    - platform: win-x64
+      pattern: charm_*_Windows_x86_64.zip
+    - platform: mac-arm64
+      pattern: charm_*_Darwin_arm64.tar.gz
+    - platform: linux-x64
+      pattern: charm_*_Linux_x86_64.tar.gz
+- id: skate
+  name: skate
+  category: Utilities
+  editions:
+  - intl
+  homepage: https://github.com/charmbracelet/skate
+  fetcher: github_release
+  args:
+    repo: charmbracelet/skate
+    assets:
+    - platform: win-x64
+      pattern: skate_*_Windows_x86_64.zip
+    - platform: mac-arm64
+      pattern: skate_*_Darwin_arm64.tar.gz
+    - platform: linux-x64
+      pattern: skate_*_Linux_x86_64.tar.gz
+- id: clash-verge-rev
+  name: Clash Verge Rev
+  category: Network & Proxy
+  editions:
+  - intl
+  homepage: https://github.com/clash-verge-rev/clash-verge-rev
+  fetcher: github_release
+  args:
+    repo: clash-verge-rev/clash-verge-rev
+    assets:
+    - platform: win-x64
+      pattern: Clash.Verge_*_x64-setup.exe
+    - platform: mac-arm64
+      pattern: Clash.Verge_*_aarch64.dmg
+    - platform: linux-x64
+      pattern: clash-verge_*_amd64.deb
+- id: openvpn
+  name: OpenVPN
+  category: Network & Proxy
+  editions:
+  - intl
+  homepage: https://github.com/OpenVPN/openvpn
+  fetcher: github_release
+  args:
+    repo: OpenVPN/openvpn
+    assets:
+    - platform: win-x64
+      pattern: openvpn-*-amd64.msi
+- id: nmap
+  name: Nmap
+  category: Network & Proxy
+  editions:
+  - intl
+  homepage: https://github.com/nmap/nmap
+  fetcher: github_release
+  args:
+    repo: nmap/nmap
+    assets:
+    - platform: win-x64
+      pattern: nmap-*-setup.exe
+- id: mullvad-vpn
+  name: Mullvad VPN
+  category: Network & Proxy
+  editions:
+  - intl
+  homepage: https://github.com/mullvad/mullvadvpn-app
+  fetcher: github_release
+  args:
+    repo: mullvad/mullvadvpn-app
+    assets:
+    - platform: win-x64
+      pattern: MullvadVPN-*-amd64.exe
+    - platform: mac-arm64
+      pattern: MullvadVPN-*-arm64.pkg
+- id: outline-client
+  name: Outline Client
+  category: Network & Proxy
+  editions:
+  - intl
+  homepage: https://github.com/Jigsaw-Code/outline-apps
+  fetcher: github_release
+  args:
+    repo: Jigsaw-Code/outline-apps
+    assets:
+    - platform: win-x64
+      pattern: Outline-Client.exe
+    - platform: mac-arm64
+      pattern: Outline-Client.dmg
+- id: netbird
+  name: NetBird
+  category: Network & Proxy
+  editions:
+  - intl
+  homepage: https://github.com/netbirdio/netbird
+  fetcher: github_release
+  args:
+    repo: netbirdio/netbird
+    assets:
+    - platform: win-x64
+      pattern: netbird_*_windows_amd64.zip
+    - platform: mac-arm64
+      pattern: netbird_*_darwin_arm64.tar.gz
+    - platform: linux-x64
+      pattern: netbird_*_linux_amd64.tar.gz
+- id: headscale
+  name: Headscale
+  category: Network & Proxy
+  editions:
+  - intl
+  homepage: https://github.com/juanfont/headscale
+  fetcher: github_release
+  args:
+    repo: juanfont/headscale
+    assets:
+    - platform: linux-x64
+      pattern: headscale_*_linux_amd64
+    - platform: mac-arm64
+      pattern: headscale_*_darwin_arm64
+- id: zerotier
+  name: ZeroTier
+  category: Network & Proxy
+  editions:
+  - intl
+  homepage: https://github.com/zerotier/ZeroTierOne
+  fetcher: github_release
+  args:
+    repo: zerotier/ZeroTierOne
+    assets:
+    - platform: win-x64
+      pattern: ZeroTier One.msi
+    - platform: linux-x64
+      pattern: zerotier-one_*_amd64.deb
+- id: adguard-home
+  name: AdGuard Home
+  category: Network & Proxy
+  editions:
+  - intl
+  homepage: https://github.com/AdguardTeam/AdGuardHome
+  fetcher: github_release
+  args:
+    repo: AdguardTeam/AdGuardHome
+    assets:
+    - platform: win-x64
+      pattern: AdGuardHome_windows_amd64.zip
+    - platform: mac-arm64
+      pattern: AdGuardHome_darwin_arm64.tar.gz
+    - platform: linux-x64
+      pattern: AdGuardHome_linux_amd64.tar.gz
+- id: portmaster
+  name: Portmaster
+  category: Network & Proxy
+  editions:
+  - intl
+  homepage: https://github.com/safing/portmaster
+  fetcher: github_release
+  args:
+    repo: safing/portmaster
+    assets:
+    - platform: win-x64
+      pattern: portmaster-installer.exe
+- id: simplewall
+  name: simplewall
+  category: Network & Proxy
+  editions:
+  - intl
+  homepage: https://github.com/henrypp/simplewall
+  fetcher: github_release
+  args:
+    repo: henrypp/simplewall
+    assets:
+    - platform: win-x64
+      pattern: simplewall-*-setup.exe
+- id: putty
+  name: PuTTY
+  category: Network & Proxy
+  editions:
+  - intl
+  homepage: https://github.com/github/putty
+  fetcher: github_release
+  args:
+    repo: github/putty
+    assets:
+    - platform: win-x64
+      pattern: putty-64bit-*-installer.msi
+- id: cloudflare-warp
+  name: Cloudflare WARP
+  category: Network & Proxy
+  editions:
+  - intl
+  homepage: https://github.com/cloudflare/warp-client
+  fetcher: github_release
+  args:
+    repo: cloudflare/warp-client
+    assets:
+    - platform: win-x64
+      pattern: Cloudflare_WARP_*-x64.msi
+- id: openspeedtest
+  name: OpenSpeedTest
+  category: Network & Proxy
+  editions:
+  - intl
+  homepage: https://github.com/openspeedtest/Speed-Test
+  fetcher: github_release
+  args:
+    repo: openspeedtest/Speed-Test
+    assets:
+    - platform: linux-x64
+      pattern: OpenSpeedTest-Server-*-linux-amd64
+- id: librespeed
+  name: LibreSpeed
+  category: Network & Proxy
+  editions:
+  - intl
+  homepage: https://github.com/librespeed/speedtest-go
+  fetcher: github_release
+  args:
+    repo: librespeed/speedtest-go
+    assets:
+    - platform: win-x64
+      pattern: speedtest-go_*_windows_amd64.zip
+    - platform: mac-arm64
+      pattern: speedtest-go_*_darwin_arm64.zip
+    - platform: linux-x64
+      pattern: speedtest-go_*_linux_amd64.tar.gz
+- id: prism-launcher
+  name: Prism Launcher
+  category: Gaming
+  editions:
+  - intl
+  homepage: https://github.com/PrismLauncher/PrismLauncher
+  fetcher: github_release
+  args:
+    repo: PrismLauncher/PrismLauncher
+    assets:
+    - platform: win-x64
+      pattern: PrismLauncher-*-Windows-MSVC-Setup.exe
+    - platform: mac-arm64
+      pattern: PrismLauncher-*-macOS-arm64.dmg
+    - platform: linux-x64
+      pattern: PrismLauncher-*-x86_64.AppImage
+- id: lutris
+  name: Lutris
+  category: Gaming
+  editions:
+  - intl
+  homepage: https://github.com/lutris/lutris
+  fetcher: github_release
+  args:
+    repo: lutris/lutris
+    assets:
+    - platform: linux-x64
+      pattern: lutris_*_all.deb
+- id: mangohud
+  name: MangoHud
+  category: Gaming
+  editions:
+  - intl
+  homepage: https://github.com/flightlessmango/MangoHud
+  fetcher: github_release
+  args:
+    repo: flightlessmango/MangoHud
+    assets:
+    - platform: linux-x64
+      pattern: Mangohud-*-amd64.tar.gz
+- id: gamemode
+  name: GameMode
+  category: Gaming
+  editions:
+  - intl
+  homepage: https://github.com/FeralInteractive/gamemode
+  fetcher: github_release
+  args:
+    repo: FeralInteractive/gamemode
+    assets:
+    - platform: linux-x64
+      pattern: gamemode_*_amd64.deb
+- id: proton-ge
+  name: GE-Proton
+  category: Gaming
+  editions:
+  - intl
+  homepage: https://github.com/GloriousEggroll/proton-ge-custom
+  fetcher: github_release
+  args:
+    repo: GloriousEggroll/proton-ge-custom
+    assets:
+    - platform: linux-x64
+      pattern: GE-Proton*.tar.gz
+- id: bottles
+  name: Bottles
+  category: Gaming
+  editions:
+  - intl
+  homepage: https://github.com/bottlesdevs/Bottles
+  fetcher: github_release
+  args:
+    repo: bottlesdevs/Bottles
+    assets:
+    - platform: linux-x64
+      pattern: Bottles-*-x86_64.flatpak
+- id: vita3k
+  name: Vita3K
+  category: Gaming
+  editions:
+  - intl
+  homepage: https://github.com/Vita3K/Vita3K
+  fetcher: github_release
+  args:
+    repo: Vita3K/Vita3K
+    assets:
+    - platform: win-x64
+      pattern: Vita3K-*-win64.zip
+    - platform: mac-arm64
+      pattern: Vita3K-*-macos-arm64.dmg
+    - platform: linux-x64
+      pattern: Vita3K-*-linux-x64.AppImage
+- id: ryujinx
+  name: Ryujinx
+  category: Gaming
+  editions:
+  - intl
+  homepage: https://github.com/Ryubing/Ryujinx
+  fetcher: github_release
+  args:
+    repo: Ryubing/Ryujinx
+    assets:
+    - platform: win-x64
+      pattern: ryujinx-*-win_x64.zip
+    - platform: mac-arm64
+      pattern: ryujinx-*-macos-arm64.tar.gz
+    - platform: linux-x64
+      pattern: ryujinx-*-linux_x64.tar.gz
+- id: xemu
+  name: xemu
+  category: Gaming
+  editions:
+  - intl
+  homepage: https://github.com/xemu-project/xemu
+  fetcher: github_release
+  args:
+    repo: xemu-project/xemu
+    assets:
+    - platform: win-x64
+      pattern: xemu-win-*-zip.zip
+    - platform: mac-arm64
+      pattern: xemu-macos-*-arm64.tar.gz
+    - platform: linux-x64
+      pattern: xemu-*-x86_64.AppImage
+- id: mgba
+  name: mGBA
+  category: Gaming
+  editions:
+  - intl
+  homepage: https://github.com/mgba-emu/mgba
+  fetcher: github_release
+  args:
+    repo: mgba-emu/mgba
+    assets:
+    - platform: win-x64
+      pattern: mGBA-*-win64.7z
+    - platform: mac-arm64
+      pattern: mGBA-*-osx-arm64.tar.xz
+- id: rmg
+  name: RMG
+  category: Gaming
+  editions:
+  - intl
+  homepage: https://github.com/Rosalie241/RMG
+  fetcher: github_release
+  args:
+    repo: Rosalie241/RMG
+    assets:
+    - platform: win-x64
+      pattern: RMG-Windows-*-x86_64.exe
+    - platform: linux-x64
+      pattern: RMG-Linux-*-x86_64.AppImage
+- id: openmw
+  name: OpenMW
+  category: Gaming
+  editions:
+  - intl
+  homepage: https://github.com/OpenMW/openmw
+  fetcher: github_release
+  args:
+    repo: OpenMW/openmw
+    assets:
+    - platform: win-x64
+      pattern: OpenMW-*-win64.exe
+    - platform: mac-arm64
+      pattern: OpenMW-*-macos-arm64.dmg
+    - platform: linux-x64
+      pattern: OpenMW-*-Linux-generic64.tar.gz
+- id: dosbox-staging
+  name: DOSBox Staging
+  category: Gaming
+  editions:
+  - intl
+  homepage: https://github.com/dosbox-staging/dosbox-staging
+  fetcher: github_release
+  args:
+    repo: dosbox-staging/dosbox-staging
+    assets:
+    - platform: win-x64
+      pattern: dosbox-staging-*-windows-x64.zip
+    - platform: mac-arm64
+      pattern: dosbox-staging-*-macos-arm64.dmg
+    - platform: linux-x64
+      pattern: dosbox-staging-*-linux-x86_64.tar.xz
+- id: libretro
+  name: RetroArch
+  category: Gaming
+  editions:
+  - intl
+  homepage: https://github.com/libretro/RetroArch
+  fetcher: github_release
+  args:
+    repo: libretro/RetroArch
+    assets:
+    - platform: win-x64
+      pattern: RetroArch-*-x64-setup.exe
+    - platform: mac-arm64
+      pattern: RetroArch-*-arm64.dmg
+- id: mudlet
+  name: Mudlet
+  category: Gaming
+  editions:
+  - intl
+  homepage: https://github.com/Mudlet/Mudlet
+  fetcher: github_release
+  args:
+    repo: Mudlet/Mudlet
+    assets:
+    - platform: win-x64
+      pattern: Mudlet-*-windows-installer.exe
+    - platform: mac-arm64
+      pattern: Mudlet-*-macos-arm64.dmg
+    - platform: linux-x64
+      pattern: Mudlet-*-linux-x86_64.AppImage
+- id: kdenlive
+  name: Kdenlive
+  category: Media Players
+  editions:
+  - intl
+  homepage: https://github.com/KDE/kdenlive
+  fetcher: github_release
+  args:
+    repo: KDE/kdenlive
+    assets:
+    - platform: win-x64
+      pattern: kdenlive-*-x86_64.exe
+- id: olive
+  name: Olive Video Editor
+  category: Media Players
+  editions:
+  - intl
+  homepage: https://github.com/olive-editor/olive
+  fetcher: github_release
+  args:
+    repo: olive-editor/olive
+    assets:
+    - platform: win-x64
+      pattern: Olive-*-Windows-x86_64.zip
+    - platform: mac-arm64
+      pattern: Olive-*-macOS-arm64.dmg
+    - platform: linux-x64
+      pattern: Olive-*-Linux-x86_64.AppImage
+- id: strawberry
+  name: Strawberry Music Player
+  category: Media Players
+  editions:
+  - intl
+  homepage: https://github.com/strawberrymusicplayer/strawberry
+  fetcher: github_release
+  args:
+    repo: strawberrymusicplayer/strawberry
+    assets:
+    - platform: win-x64
+      pattern: strawberry-*-msvc-x64.exe
+- id: musicbrainz
+  name: MusicBrainz Picard
+  category: Media Players
+  editions:
+  - intl
+  homepage: https://github.com/metabrainz/picard
+  fetcher: github_release
+  args:
+    repo: metabrainz/picard
+    assets:
+    - platform: win-x64
+      pattern: musicbrainz-picard-*-win-x86_64.exe
+    - platform: mac-arm64
+      pattern: MusicBrainz-Picard-*-macOS-arm64.dmg
+- id: mkvtoolnix
+  name: MKVToolNix
+  category: Media Players
+  editions:
+  - intl
+  homepage: https://github.com/mbunkus/mkvtoolnix
+  fetcher: github_release
+  args:
+    repo: mbunkus/mkvtoolnix
+    assets:
+    - platform: win-x64
+      pattern: mkvtoolnix-64-bit-*-setup.exe
+- id: mediainfo
+  name: MediaInfo
+  category: Media Players
+  editions:
+  - intl
+  homepage: https://github.com/MediaArea/MediaInfo
+  fetcher: github_release
+  args:
+    repo: MediaArea/MediaInfo
+    assets:
+    - platform: win-x64
+      pattern: MediaInfo_GUI_*_Windows_x64.exe
+- id: gimp
+  name: GIMP
+  category: Media Players
+  editions:
+  - intl
+  homepage: https://github.com/GNOME/gimp
+  fetcher: github_release
+  args:
+    repo: GNOME/gimp
+    assets:
+    - platform: win-x64
+      pattern: gimp-*-setup.exe
+- id: krita
+  name: Krita
+  category: Media Players
+  editions:
+  - intl
+  homepage: https://github.com/KDE/krita
+  fetcher: github_release
+  args:
+    repo: KDE/krita
+    assets:
+    - platform: win-x64
+      pattern: krita-*-x64-setup.exe
+    - platform: mac-arm64
+      pattern: krita-*-arm64.dmg
+    - platform: linux-x64
+      pattern: krita-*-x86_64.appimage
+- id: inkscape
+  name: Inkscape
+  category: Media Players
+  editions:
+  - intl
+  homepage: https://github.com/inkscape/inkscape
+  fetcher: github_release
+  args:
+    repo: inkscape/inkscape
+    assets:
+    - platform: win-x64
+      pattern: inkscape-*-x64.msi
+- id: blender
+  name: Blender
+  category: Media Players
+  editions:
+  - intl
+  homepage: https://github.com/blender/blender
+  fetcher: github_release
+  args:
+    repo: blender/blender
+    assets:
+    - platform: win-x64
+      pattern: blender-*-windows-x64.msi
+    - platform: mac-arm64
+      pattern: blender-*-macos-arm64.dmg
+    - platform: linux-x64
+      pattern: blender-*-linux-x64.tar.xz
+- id: freecad
+  name: FreeCAD
+  category: Media Players
+  editions:
+  - intl
+  homepage: https://github.com/FreeCAD/FreeCAD
+  fetcher: github_release
+  args:
+    repo: FreeCAD/FreeCAD
+    assets:
+    - platform: win-x64
+      pattern: FreeCAD-*-WIN-x64-installer.exe
+    - platform: mac-arm64
+      pattern: FreeCAD-*-macOS-arm64.dmg
+    - platform: linux-x64
+      pattern: FreeCAD-*-Linux-x86_64.AppImage
+- id: openscad
+  name: OpenSCAD
+  category: Media Players
+  editions:
+  - intl
+  homepage: https://github.com/openscad/openscad
+  fetcher: github_release
+  args:
+    repo: openscad/openscad
+    assets:
+    - platform: win-x64
+      pattern: OpenSCAD-*-x86-64-Installer.exe
+- id: darktable
+  name: darktable
+  category: Media Players
+  editions:
+  - intl
+  homepage: https://github.com/darktable-org/darktable
+  fetcher: github_release
+  args:
+    repo: darktable-org/darktable
+    assets:
+    - platform: win-x64
+      pattern: darktable-*-win64.exe
+    - platform: mac-arm64
+      pattern: darktable-*-arm64.dmg
+- id: rawtherapee
+  name: RawTherapee
+  category: Media Players
+  editions:
+  - intl
+  homepage: https://github.com/Beep6581/RawTherapee
+  fetcher: github_release
+  args:
+    repo: Beep6581/RawTherapee
+    assets:
+    - platform: win-x64
+      pattern: RawTherapee_*_win64.zip
+- id: scribus
+  name: Scribus
+  category: Media Players
+  editions:
+  - intl
+  homepage: https://github.com/scribusproject/scribus
+  fetcher: github_release
+  args:
+    repo: scribusproject/scribus
+    assets:
+    - platform: win-x64
+      pattern: scribus-*-windows-x64.exe
+- id: ardour
+  name: Ardour
+  category: Media Players
+  editions:
+  - intl
+  homepage: https://github.com/Ardour/ardour
+  fetcher: github_release
+  args:
+    repo: Ardour/ardour
+    assets:
+    - platform: win-x64
+      pattern: Ardour-*-win64.exe
+    - platform: mac-arm64
+      pattern: Ardour-*-arm64.dmg
+- id: lmms
+  name: LMMS
+  category: Media Players
+  editions:
+  - intl
+  homepage: https://github.com/LMMS/lmms
+  fetcher: github_release
+  args:
+    repo: LMMS/lmms
+    assets:
+    - platform: win-x64
+      pattern: lmms-*-win64.exe
+    - platform: mac-arm64
+      pattern: lmms-*-macos-arm64.dmg
+- id: musescore
+  name: MuseScore
+  category: Media Players
+  editions:
+  - intl
+  homepage: https://github.com/musescore/MuseScore
+  fetcher: github_release
+  args:
+    repo: musescore/MuseScore
+    assets:
+    - platform: win-x64
+      pattern: MuseScore-*-x86_64.msi
+- id: openshot
+  name: OpenShot
+  category: Media Players
+  editions:
+  - intl
+  homepage: https://github.com/OpenShot/openshot-qt
+  fetcher: github_release
+  args:
+    repo: OpenShot/openshot-qt
+    assets:
+    - platform: win-x64
+      pattern: OpenShot-v*-x86_64.exe
+- id: natron
+  name: Natron
+  category: Media Players
+  editions:
+  - intl
+  homepage: https://github.com/NatronGitHub/Natron
+  fetcher: github_release
+  args:
+    repo: NatronGitHub/Natron
+    assets:
+    - platform: win-x64
+      pattern: Natron-*-Windows-x86_64.zip
+    - platform: mac-arm64
+      pattern: Natron-*-macOS-arm64.dmg
+- id: qutebrowser
+  name: qutebrowser
+  category: Browsers
+  editions:
+  - intl
+  homepage: https://github.com/qutebrowser/qutebrowser
+  fetcher: github_release
+  args:
+    repo: qutebrowser/qutebrowser
+    assets:
+    - platform: win-x64
+      pattern: qutebrowser-*-amd64.exe
+    - platform: mac-arm64
+      pattern: qutebrowser-*-arm64.dmg
+- id: falkon
+  name: Falkon
+  category: Browsers
+  editions:
+  - intl
+  homepage: https://github.com/KDE/falkon
+  fetcher: github_release
+  args:
+    repo: KDE/falkon
+    assets:
+    - platform: win-x64
+      pattern: falkon-*-setup.exe
+- id: appflowy
+  name: AppFlowy
+  category: Productivity
+  editions:
+  - intl
+  homepage: https://github.com/AppFlowy-IO/AppFlowy
+  fetcher: github_release
+  args:
+    repo: AppFlowy-IO/AppFlowy
+    assets:
+    - platform: win-x64
+      pattern: AppFlowy-*-windows-x86_64.exe
+    - platform: mac-arm64
+      pattern: AppFlowy-*-macos-arm64.dmg
+    - platform: linux-x64
+      pattern: AppFlowy-*-linux-x86_64.tar.gz
+- id: anytype
+  name: Anytype
+  category: Productivity
+  editions:
+  - intl
+  homepage: https://github.com/anyproto/anytype-ts
+  fetcher: github_release
+  args:
+    repo: anyproto/anytype-ts
+    assets:
+    - platform: win-x64
+      pattern: Anytype-*-x64.exe
+    - platform: mac-arm64
+      pattern: Anytype-*-arm64.dmg
+    - platform: linux-x64
+      pattern: Anytype-*-amd64.deb
+- id: trilium
+  name: Trilium Notes
+  category: Productivity
+  editions:
+  - intl
+  homepage: https://github.com/TriliumNext/Notes
+  fetcher: github_release
+  args:
+    repo: TriliumNext/Notes
+    assets:
+    - platform: win-x64
+      pattern: TriliumNotes-*-Windows-x64.zip
+    - platform: mac-arm64
+      pattern: TriliumNotes-*-macOS-arm64.zip
+    - platform: linux-x64
+      pattern: TriliumNotes-*-Linux-x64.zip
+- id: zettlr
+  name: Zettlr
+  category: Productivity
+  editions:
+  - intl
+  homepage: https://github.com/Zettlr/Zettlr
+  fetcher: github_release
+  args:
+    repo: Zettlr/Zettlr
+    assets:
+    - platform: win-x64
+      pattern: Zettlr-*-x64.exe
+    - platform: mac-arm64
+      pattern: Zettlr-*-arm64.dmg
+    - platform: linux-x64
+      pattern: Zettlr-*-amd64.deb
+- id: drawio
+  name: draw.io
+  category: Productivity
+  editions:
+  - intl
+  homepage: https://github.com/jgraph/drawio-desktop
+  fetcher: github_release
+  args:
+    repo: jgraph/drawio-desktop
+    assets:
+    - platform: win-x64
+      pattern: draw.io-*-windows-installer.exe
+    - platform: mac-arm64
+      pattern: draw.io-*-arm64.dmg
+    - platform: linux-x64
+      pattern: draw.io-*-x86_64.rpm
+- id: excalidraw
+  name: Excalidraw
+  category: Productivity
+  editions:
+  - intl
+  homepage: https://github.com/excalidraw/excalidraw
+  fetcher: github_release
+  args:
+    repo: excalidraw/excalidraw
+    assets:
+    - platform: win-x64
+      pattern: Excalidraw-*-x64.exe
+- id: beekeeper
+  name: Beekeeper Studio
+  category: Productivity
+  editions:
+  - intl
+  homepage: https://github.com/beekeeper-studio/beekeeper-studio
+  fetcher: github_release
+  args:
+    repo: beekeeper-studio/beekeeper-studio
+    assets:
+    - platform: win-x64
+      pattern: beekeeper-studio-*-win.exe
+    - platform: mac-arm64
+      pattern: beekeeper-studio-*-arm64.dmg
+    - platform: linux-x64
+      pattern: beekeeper-studio-*-amd64.deb
+- id: sumatrapdf
+  name: Sumatra PDF
+  category: Productivity
+  editions:
+  - intl
+  homepage: https://github.com/sumatrapdfreader/sumatrapdf
+  fetcher: github_release
+  args:
+    repo: sumatrapdfreader/sumatrapdf
+    assets:
+    - platform: win-x64
+      pattern: SumatraPDF-*-64-install.exe
+    - platform: win-x64-portable
+      pattern: SumatraPDF-*-64.zip
+- id: sioyek
+  name: Sioyek
+  category: Productivity
+  editions:
+  - intl
+  homepage: https://github.com/ahrm/sioyek
+  fetcher: github_release
+  args:
+    repo: ahrm/sioyek
+    assets:
+    - platform: win-x64
+      pattern: sioyek-release-windows.zip
+    - platform: mac-arm64
+      pattern: sioyek-apple-silicon.dmg
+    - platform: linux-x64
+      pattern: sioyek-release-linux-portable.tar.gz
+- id: pomatez
+  name: Pomatez
+  category: Productivity
+  editions:
+  - intl
+  homepage: https://github.com/roldanjr/pomatez
+  fetcher: github_release
+  args:
+    repo: roldanjr/pomatez
+    assets:
+    - platform: win-x64
+      pattern: Pomatez-*-x64.exe
+    - platform: mac-arm64
+      pattern: Pomatez-*-arm64.dmg
+    - platform: linux-x64
+      pattern: Pomatez-*-x86_64.AppImage
+- id: mindforger
+  name: MindForger
+  category: Productivity
+  editions:
+  - intl
+  homepage: https://github.com/dvorka/mindforger
+  fetcher: github_release
+  args:
+    repo: dvorka/mindforger
+    assets:
+    - platform: win-x64
+      pattern: mindforger-*-win64.exe
+- id: ghostwriter
+  name: ghostwriter
+  category: Productivity
+  editions:
+  - intl
+  homepage: https://github.com/KDE/ghostwriter
+  fetcher: github_release
+  args:
+    repo: KDE/ghostwriter
+    assets:
+    - platform: win-x64
+      pattern: ghostwriter-*-setup.exe
+- id: element
+  name: Element
+  category: Messaging
+  editions:
+  - intl
+  homepage: https://github.com/element-hq/element-desktop
+  fetcher: github_release
+  args:
+    repo: element-hq/element-desktop
+    assets:
+    - platform: win-x64
+      pattern: element-*-x64.exe
+    - platform: mac-arm64
+      pattern: element-*-arm64.dmg
+    - platform: linux-x64
+      pattern: element-*-amd64.deb
+- id: cinny
+  name: Cinny
+  category: Messaging
+  editions:
+  - intl
+  homepage: https://github.com/cinnyapp/cinny-desktop
+  fetcher: github_release
+  args:
+    repo: cinnyapp/cinny-desktop
+    assets:
+    - platform: win-x64
+      pattern: Cinny-*-x64.exe
+    - platform: mac-arm64
+      pattern: Cinny-*-arm64.dmg
+    - platform: linux-x64
+      pattern: Cinny-*-amd64.deb
+- id: hexchat
+  name: HexChat
+  category: Messaging
+  editions:
+  - intl
+  homepage: https://github.com/hexchat/hexchat
+  fetcher: github_release
+  args:
+    repo: hexchat/hexchat
+    assets:
+    - platform: win-x64
+      pattern: HexChat-*-x64.exe
+- id: protonmail-bridge
+  name: Proton Mail Bridge
+  category: Messaging
+  editions:
+  - intl
+  homepage: https://github.com/ProtonMail/proton-bridge
+  fetcher: github_release
+  args:
+    repo: ProtonMail/proton-bridge
+    assets:
+    - platform: win-x64
+      pattern: proton-bridge-*-x64.exe
+    - platform: mac-arm64
+      pattern: proton-bridge-*-arm64.dmg
+- id: localai
+  name: LocalAI
+  category: AI Tools
+  editions:
+  - intl
+  homepage: https://github.com/mudler/LocalAI
+  fetcher: github_release
+  args:
+    repo: mudler/LocalAI
+    assets:
+    - platform: win-x64
+      pattern: local-ai-*-windows-amd64.exe
+    - platform: mac-arm64
+      pattern: local-ai-*-darwin-arm64
+    - platform: linux-x64
+      pattern: local-ai-*-linux-amd64
+- id: comfyui
+  name: ComfyUI
+  category: AI Tools
+  editions:
+  - intl
+  homepage: https://github.com/comfyanonymous/ComfyUI
+  fetcher: github_release
+  args:
+    repo: comfyanonymous/ComfyUI
+    assets:
+    - platform: win-x64
+      pattern: ComfyUI_windows_portable_nvidia.7z
+- id: invokeai
+  name: InvokeAI
+  category: AI Tools
+  editions:
+  - intl
+  homepage: https://github.com/invoke-ai/InvokeAI
+  fetcher: github_release
+  args:
+    repo: invoke-ai/InvokeAI
+    assets:
+    - platform: win-x64
+      pattern: InvokeAI-*-windows.zip
+    - platform: mac-arm64
+      pattern: InvokeAI-*-macos.zip
+    - platform: linux-x64
+      pattern: InvokeAI-*-linux.tar.gz
+- id: stable-diffusion-webui
+  name: Stable Diffusion WebUI
+  category: AI Tools
+  editions:
+  - intl
+  homepage: https://github.com/AUTOMATIC1111/stable-diffusion-webui
+  fetcher: github_release
+  args:
+    repo: AUTOMATIC1111/stable-diffusion-webui
+    assets:
+    - platform: win-x64
+      pattern: stable-diffusion-webui-*-win64.zip
+- id: text-generation-webui
+  name: text-generation-webui
+  category: AI Tools
+  editions:
+  - intl
+  homepage: https://github.com/oobabooga/text-generation-webui
+  fetcher: github_release
+  args:
+    repo: oobabooga/text-generation-webui
+    assets:
+    - platform: win-x64
+      pattern: text-generation-webui-*-win64.zip
+- id: buzz
+  name: Buzz
+  category: AI Tools
+  editions:
+  - intl
+  homepage: https://github.com/chidiwilliams/buzz
+  fetcher: github_release
+  args:
+    repo: chidiwilliams/buzz
+    assets:
+    - platform: win-x64
+      pattern: Buzz-*-windows.exe
+    - platform: mac-arm64
+      pattern: Buzz-*-mac-arm64.dmg
+    - platform: linux-x64
+      pattern: Buzz-*-linux-x86_64.AppImage
+- id: whisper
+  name: Whisper
+  category: AI Tools
+  editions:
+  - intl
+  homepage: https://github.com/openai/whisper
+  fetcher: github_release
+  args:
+    repo: openai/whisper
+    assets:
+    - platform: linux-x64
+      pattern: whisper-*-linux-amd64
+- id: llama-cpp
+  name: llama.cpp
+  category: AI Tools
+  editions:
+  - intl
+  homepage: https://github.com/ggml-org/llama.cpp
+  fetcher: github_release
+  args:
+    repo: ggml-org/llama.cpp
+    assets:
+    - platform: win-x64
+      pattern: llama-*-bin-win-x64.zip
+    - platform: mac-arm64
+      pattern: llama-*-bin-macos-arm64.zip
+    - platform: linux-x64
+      pattern: llama-*-bin-linux-x64.zip
+- id: open-webui
+  name: Open WebUI
+  category: AI Tools
+  editions:
+  - intl
+  homepage: https://github.com/open-webui/open-webui
+  fetcher: github_release
+  args:
+    repo: open-webui/open-webui
+    assets:
+    - platform: win-x64
+      pattern: open-webui-*-windows-amd64.exe
+    - platform: mac-arm64
+      pattern: open-webui-*-darwin-arm64
+    - platform: linux-x64
+      pattern: open-webui-*-linux-amd64
+- id: koboldcpp
+  name: KoboldCpp
+  category: AI Tools
+  editions:
+  - intl
+  homepage: https://github.com/LostRuins/koboldcpp
+  fetcher: github_release
+  args:
+    repo: LostRuins/koboldcpp
+    assets:
+    - platform: win-x64
+      pattern: koboldcpp_*_win_x64.exe
+    - platform: mac-arm64
+      pattern: koboldcpp_*_macos_arm64
+    - platform: linux-x64
+      pattern: koboldcpp_*_linux_x64
+- id: age
+  name: age
+  category: Security & Privacy
+  editions:
+  - intl
+  homepage: https://github.com/FiloSottile/age
+  fetcher: github_release
+  args:
+    repo: FiloSottile/age
+    assets:
+    - platform: win-x64
+      pattern: age-*-windows-amd64.zip
+    - platform: mac-arm64
+      pattern: age-*-darwin-arm64.tar.gz
+    - platform: linux-x64
+      pattern: age-*-linux-amd64.tar.gz
+- id: sops
+  name: sops
+  category: Security & Privacy
+  editions:
+  - intl
+  homepage: https://github.com/getsops/sops
+  fetcher: github_release
+  args:
+    repo: getsops/sops
+    assets:
+    - platform: win-x64
+      pattern: sops-*-windows.amd64.exe
+    - platform: mac-arm64
+      pattern: sops-*-darwin.arm64
+    - platform: linux-x64
+      pattern: sops-*-linux.amd64
+- id: yubikey-manager
+  name: YubiKey Manager
+  category: Security & Privacy
+  editions:
+  - intl
+  homepage: https://github.com/Yubico/yubikey-manager
+  fetcher: github_release
+  args:
+    repo: Yubico/yubikey-manager
+    assets:
+    - platform: win-x64
+      pattern: yubikey-manager-*.exe
+    - platform: mac-arm64
+      pattern: yubikey-manager-*.dmg
+- id: clamav
+  name: ClamAV
+  category: Security & Privacy
+  editions:
+  - intl
+  homepage: https://github.com/Cisco-Talos/clamav
+  fetcher: github_release
+  args:
+    repo: Cisco-Talos/clamav
+    assets:
+    - platform: win-x64
+      pattern: clamav-*-x64.msi
+- id: gitleaks
+  name: gitleaks
+  category: Security & Privacy
+  editions:
+  - intl
+  homepage: https://github.com/gitleaks/gitleaks
+  fetcher: github_release
+  args:
+    repo: gitleaks/gitleaks
+    assets:
+    - platform: win-x64
+      pattern: gitleaks_*_windows_x64.zip
+    - platform: mac-arm64
+      pattern: gitleaks_*_darwin_arm64.tar.gz
+    - platform: linux-x64
+      pattern: gitleaks_*_linux_x64.tar.gz
+- id: docker-compose
+  name: Docker Compose
+  category: Cloud & DevOps
+  editions:
+  - intl
+  homepage: https://github.com/docker/compose
+  fetcher: github_release
+  args:
+    repo: docker/compose
+    assets:
+    - platform: win-x64
+      pattern: docker-compose-windows-x86_64.exe
+    - platform: mac-arm64
+      pattern: docker-compose-darwin-aarch64
+    - platform: linux-x64
+      pattern: docker-compose-linux-x86_64
+- id: k9s
+  name: k9s
+  category: Cloud & DevOps
+  editions:
+  - intl
+  homepage: https://github.com/derailed/k9s
+  fetcher: github_release
+  args:
+    repo: derailed/k9s
+    assets:
+    - platform: win-x64
+      pattern: k9s_Windows_amd64.zip
+    - platform: mac-arm64
+      pattern: k9s_Darwin_arm64.tar.gz
+    - platform: linux-x64
+      pattern: k9s_Linux_amd64.tar.gz
+- id: helm
+  name: Helm
+  category: Cloud & DevOps
+  editions:
+  - intl
+  homepage: https://github.com/helm/helm
+  fetcher: github_release
+  args:
+    repo: helm/helm
+    assets:
+    - platform: win-x64
+      pattern: helm-*-windows-amd64.zip
+    - platform: mac-arm64
+      pattern: helm-*-darwin-arm64.tar.gz
+    - platform: linux-x64
+      pattern: helm-*-linux-amd64.tar.gz
+- id: terraform
+  name: Terraform
+  category: Cloud & DevOps
+  editions:
+  - intl
+  homepage: https://github.com/hashicorp/terraform
+  fetcher: github_release
+  args:
+    repo: hashicorp/terraform
+    assets:
+    - platform: win-x64
+      pattern: terraform_*_windows_amd64.zip
+    - platform: mac-arm64
+      pattern: terraform_*_darwin_arm64.zip
+    - platform: linux-x64
+      pattern: terraform_*_linux_amd64.zip
+- id: vault
+  name: Vault
+  category: Cloud & DevOps
+  editions:
+  - intl
+  homepage: https://github.com/hashicorp/vault
+  fetcher: github_release
+  args:
+    repo: hashicorp/vault
+    assets:
+    - platform: win-x64
+      pattern: vault_*_windows_amd64.zip
+    - platform: mac-arm64
+      pattern: vault_*_darwin_arm64.zip
+    - platform: linux-x64
+      pattern: vault_*_linux_amd64.zip
+- id: consul
+  name: Consul
+  category: Cloud & DevOps
+  editions:
+  - intl
+  homepage: https://github.com/hashicorp/consul
+  fetcher: github_release
+  args:
+    repo: hashicorp/consul
+    assets:
+    - platform: win-x64
+      pattern: consul_*_windows_amd64.zip
+    - platform: mac-arm64
+      pattern: consul_*_darwin_arm64.zip
+    - platform: linux-x64
+      pattern: consul_*_linux_amd64.zip
+- id: nomad
+  name: Nomad
+  category: Cloud & DevOps
+  editions:
+  - intl
+  homepage: https://github.com/hashicorp/nomad
+  fetcher: github_release
+  args:
+    repo: hashicorp/nomad
+    assets:
+    - platform: win-x64
+      pattern: nomad_*_windows_amd64.zip
+    - platform: mac-arm64
+      pattern: nomad_*_darwin_arm64.zip
+    - platform: linux-x64
+      pattern: nomad_*_linux_amd64.zip
+- id: boundary
+  name: Boundary
+  category: Cloud & DevOps
+  editions:
+  - intl
+  homepage: https://github.com/hashicorp/boundary
+  fetcher: github_release
+  args:
+    repo: hashicorp/boundary
+    assets:
+    - platform: win-x64
+      pattern: boundary_*_windows_amd64.zip
+    - platform: mac-arm64
+      pattern: boundary_*_darwin_arm64.zip
+    - platform: linux-x64
+      pattern: boundary_*_linux_amd64.zip
+- id: k3s
+  name: k3s
+  category: Cloud & DevOps
+  editions:
+  - intl
+  homepage: https://github.com/k3s-io/k3s
+  fetcher: github_release
+  args:
+    repo: k3s-io/k3s
+    assets:
+    - platform: linux-x64
+      pattern: k3s
+- id: k6
+  name: k6
+  category: Cloud & DevOps
+  editions:
+  - intl
+  homepage: https://github.com/grafana/k6
+  fetcher: github_release
+  args:
+    repo: grafana/k6
+    assets:
+    - platform: win-x64
+      pattern: k6-*-windows-amd64.zip
+    - platform: mac-arm64
+      pattern: k6-*-macos-arm64.zip
+    - platform: linux-x64
+      pattern: k6-*-linux-amd64.tar.gz
+- id: oha
+  name: oha
+  category: Developer Tools
+  editions:
+  - intl
+  homepage: https://github.com/hatoo/oha
+  fetcher: github_release
+  args:
+    repo: hatoo/oha
+    assets:
+    - platform: win-x64
+      pattern: oha-*-x86_64-pc-windows-msvc.zip
+    - platform: mac-arm64
+      pattern: oha-*-aarch64-apple-darwin.tar.gz
+    - platform: linux-x64
+      pattern: oha-*-x86_64-unknown-linux-gnu.tar.gz
+- id: walk
+  name: walk
+  category: Developer Tools
+  editions:
+  - intl
+  homepage: https://github.com/antonmedv/walk
+  fetcher: github_release
+  args:
+    repo: antonmedv/walk
+    assets:
+    - platform: win-x64
+      pattern: walk_windows_amd64.exe
+    - platform: mac-arm64
+      pattern: walk_darwin_arm64
+    - platform: linux-x64
+      pattern: walk_linux_amd64
+- id: tldr
+  name: tldr
+  category: Developer Tools
+  editions:
+  - intl
+  homepage: https://github.com/tldr-pages/tlrc
+  fetcher: github_release
+  args:
+    repo: tldr-pages/tlrc
+    assets:
+    - platform: win-x64
+      pattern: tlrc-*-x86_64-pc-windows-msvc.zip
+    - platform: mac-arm64
+      pattern: tlrc-*-aarch64-apple-darwin.tar.gz
+    - platform: linux-x64
+      pattern: tlrc-*-x86_64-unknown-linux-musl.tar.gz
+- id: zoxide
+  name: zoxide
+  category: Developer Tools
+  editions:
+  - intl
+  homepage: https://github.com/ajeetdsouza/zoxide
+  fetcher: github_release
+  args:
+    repo: ajeetdsouza/zoxide
+    assets:
+    - platform: win-x64
+      pattern: zoxide-*-x86_64-pc-windows-msvc.zip
+    - platform: mac-arm64
+      pattern: zoxide-*-aarch64-apple-darwin.tar.gz
+    - platform: linux-x64
+      pattern: zoxide-*-x86_64-unknown-linux-musl.tar.gz
+- id: navi
+  name: navi
+  category: Developer Tools
+  editions:
+  - intl
+  homepage: https://github.com/denisidoro/navi
+  fetcher: github_release
+  args:
+    repo: denisidoro/navi
+    assets:
+    - platform: win-x64
+      pattern: navi-*-x86_64-pc-windows-msvc.zip
+    - platform: mac-arm64
+      pattern: navi-*-aarch64-apple-darwin.tar.gz
+    - platform: linux-x64
+      pattern: navi-*-x86_64-unknown-linux-musl.tar.gz
+- id: tealdeer
+  name: tealdeer
+  category: Developer Tools
+  editions:
+  - intl
+  homepage: https://github.com/tealdeer-rs/tealdeer
+  fetcher: github_release
+  args:
+    repo: tealdeer-rs/tealdeer
+    assets:
+    - platform: win-x64
+      pattern: tealdeer-*-x86_64-pc-windows-msvc.zip
+    - platform: mac-arm64
+      pattern: tealdeer-*-aarch64-apple-darwin.tar.gz
+    - platform: linux-x64
+      pattern: tealdeer-*-x86_64-unknown-linux-musl.tar.gz
+- id: erdtree
+  name: erdtree
+  category: Developer Tools
+  editions:
+  - intl
+  homepage: https://github.com/solidiquis/erdtree
+  fetcher: github_release
+  args:
+    repo: solidiquis/erdtree
+    assets:
+    - platform: win-x64
+      pattern: erdtree-*-x86_64-pc-windows-msvc.zip
+    - platform: mac-arm64
+      pattern: erdtree-*-aarch64-apple-darwin.tar.gz
+    - platform: linux-x64
+      pattern: erdtree-*-x86_64-unknown-linux-gnu.tar.gz
+- id: broot
+  name: broot
+  category: Developer Tools
+  editions:
+  - intl
+  homepage: https://github.com/Canop/broot
+  fetcher: github_release
+  args:
+    repo: Canop/broot
+    assets:
+    - platform: win-x64
+      pattern: broot-*-x86_64-pc-windows-msvc.zip
+    - platform: mac-arm64
+      pattern: broot-*-aarch64-apple-darwin.tar.gz
+    - platform: linux-x64
+      pattern: broot-*-x86_64-unknown-linux-gnu.tar.gz
+- id: navi-cli
+  name: mc
+  category: Developer Tools
+  editions:
+  - intl
+  homepage: https://github.com/midnight-commander/mc
+  fetcher: github_release
+  args:
+    repo: midnight-commander/mc
+    assets:
+    - platform: win-x64
+      pattern: mc-*-x64.zip
+- id: xcp
+  name: xcp
+  category: Developer Tools
+  editions:
+  - intl
+  homepage: https://github.com/tarka/xcp
+  fetcher: github_release
+  args:
+    repo: tarka/xcp
+    assets:
+    - platform: win-x64
+      pattern: xcp-*-x86_64-pc-windows-msvc.zip
+    - platform: mac-arm64
+      pattern: xcp-*-aarch64-apple-darwin.tar.gz
+    - platform: linux-x64
+      pattern: xcp-*-x86_64-unknown-linux-gnu.tar.gz
+- id: paru
+  name: paru
+  category: Developer Tools
+  editions:
+  - intl
+  homepage: https://github.com/Morganamilo/paru
+  fetcher: github_release
+  args:
+    repo: Morganamilo/paru
+    assets:
+    - platform: linux-x64
+      pattern: paru-*-x86_64.tar.zst
+- id: yay
+  name: yay
+  category: Developer Tools
+  editions:
+  - intl
+  homepage: https://github.com/Jguer/yay
+  fetcher: github_release
+  args:
+    repo: Jguer/yay
+    assets:
+    - platform: linux-x64
+      pattern: yay_*_x86_64.tar.gz
+- id: pastel-cli
+  name: pastel
+  category: Developer Tools
+  editions:
+  - intl
+  homepage: https://github.com/sharkdp/pastel
+  fetcher: github_release
+  args:
+    repo: sharkdp/pastel
+    assets:
+    - platform: win-x64
+      pattern: pastel-*-x86_64-pc-windows-msvc.zip
+    - platform: mac-arm64
+      pattern: pastel-*-aarch64-apple-darwin.tar.gz
+    - platform: linux-x64
+      pattern: pastel-*-x86_64-unknown-linux-gnu.tar.gz
+- id: pastel-color
+  name: pastel
+  category: Developer Tools
+  editions:
+  - intl
+  homepage: https://github.com/sharkdp/pastel
+  fetcher: github_release
+  args:
+    repo: sharkdp/pastel
+    assets:
+    - platform: win-x64
+      pattern: pastel-*-x86_64-pc-windows-msvc.zip
+    - platform: mac-arm64
+      pattern: pastel-*-aarch64-apple-darwin.tar.gz
+    - platform: linux-x64
+      pattern: pastel-*-x86_64-unknown-linux-gnu.tar.gz
+- id: btop-win
+  name: btop for Windows
+  category: Developer Tools
+  editions:
+  - intl
+  homepage: https://github.com/aristocratos/btop
+  fetcher: github_release
+  args:
+    repo: aristocratos/btop
+    assets:
+    - platform: win-x64
+      pattern: btop-*-x86_64-win64-bin.zip
+- id: nushell-win
+  name: Nushell (Windows)
+  category: Developer Tools
+  editions:
+  - intl
+  homepage: https://github.com/nushell/nushell
+  fetcher: github_release
+  args:
+    repo: nushell/nushell
+    assets:
+    - platform: win-x64
+      pattern: nu-*-x86_64-pc-windows-msvc.zip
+- id: starship-win
+  name: Starship (Windows)
+  category: Developer Tools
+  editions:
+  - intl
+  homepage: https://github.com/starship/starship
+  fetcher: github_release
+  args:
+    repo: starship/starship
+    assets:
+    - platform: win-x64
+      pattern: starship-x86_64-pc-windows-msvc.zip
