@@ -1,14 +1,13 @@
 from __future__ import annotations
 
 import json
-import logging
 
 from fastapi.testclient import TestClient
 
 import main
 
 
-def test_download_redirect_records_metrics(tmp_path, monkeypatch, caplog):
+def test_download_redirect_records_metrics(tmp_path, monkeypatch, capsys):
     data_file = tmp_path / "latest.json"
     stats_file = tmp_path / "stats.json"
     data_file.write_text(
@@ -36,7 +35,6 @@ def test_download_redirect_records_metrics(tmp_path, monkeypatch, caplog):
     )
     monkeypatch.setattr(main, "DATA_FILE", data_file)
     monkeypatch.setattr(main, "STATS_FILE", stats_file)
-    caplog.set_level(logging.INFO, logger="latest_softwares.metrics")
 
     client = TestClient(main.app)
 
@@ -53,14 +51,14 @@ def test_download_redirect_records_metrics(tmp_path, monkeypatch, caplog):
     assert metrics["downloads"]["total"] == 1
     assert metrics["downloads"]["packages"]["ubuntu"] == 1
     assert metrics["downloads"]["assets"]["ubuntu:desktop-amd64"] == 1
-    assert '"event":"download"' in caplog.text
-    assert '"package_id":"ubuntu"' in caplog.text
+    captured = capsys.readouterr().out
+    assert '"event":"download"' in captured
+    assert '"package_id":"ubuntu"' in captured
 
 
-def test_visit_endpoint_records_page_views(tmp_path, monkeypatch, caplog):
+def test_visit_endpoint_records_page_views(tmp_path, monkeypatch, capsys):
     stats_file = tmp_path / "stats.json"
     monkeypatch.setattr(main, "STATS_FILE", stats_file)
-    caplog.set_level(logging.INFO, logger="latest_softwares.metrics")
 
     client = TestClient(main.app)
 
@@ -71,4 +69,4 @@ def test_visit_endpoint_records_page_views(tmp_path, monkeypatch, caplog):
     assert metrics["scope"] == "instance-local"
     assert metrics["visits"]["total"] == 1
     assert metrics["visits"]["paths"]["/"] == 1
-    assert '"event":"visit"' in caplog.text
+    assert '"event":"visit"' in capsys.readouterr().out

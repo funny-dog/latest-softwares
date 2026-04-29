@@ -14,7 +14,6 @@ Deployment note:
 from __future__ import annotations
 
 import json
-import logging
 import os
 import threading
 from datetime import datetime, timezone
@@ -33,7 +32,6 @@ STATS_FILE = Path(
     os.environ.get("LATEST_SOFTWARES_STATS_FILE", "/tmp/latest-softwares-stats.json")
 )
 STATS_LOCK = threading.Lock()
-METRICS_LOGGER = logging.getLogger("latest_softwares.metrics")
 
 # This deployment serves the international edition only.
 EDITION = "intl"
@@ -130,14 +128,15 @@ def _increment_download(package_id: str, platform: str) -> None:
 
 def _log_metric_event(event: str, **payload: str) -> None:
     record = {"event": event, "timestamp": _utc_now_iso(), **payload}
-    METRICS_LOGGER.info(
-        "latest_softwares_event %s",
-        json.dumps(
+    print(
+        "latest_softwares_event "
+        + json.dumps(
             record,
             ensure_ascii=False,
             separators=(",", ":"),
             sort_keys=True,
         ),
+        flush=True,
     )
 
 
