@@ -1008,10 +1008,14 @@ packages:
   editions:
   - intl
   homepage: https://www.microsoft.com/software-download/windows11
-  fetcher: windows11_fido
+  fetcher: download_page
   args:
-    lang: English
-    edition: Pro
+    source: Official Microsoft Windows 11 download page; Fido ISO URL is environment
+      dependent
+    platforms:
+    - platform: win-x64
+      download_url: https://www.microsoft.com/software-download/windows11
+      link_kind: landing_page
 - id: firefox
   name: Mozilla Firefox
   category: Browsers
@@ -1520,16 +1524,19 @@ packages:
   editions:
   - intl
   homepage: https://github.com/lapce/lapce
-  fetcher: github_release
+  fetcher: download_page
   args:
-    repo: lapce/lapce
-    assets:
+    source: Official project download page; no stable public release asset API
+    platforms:
     - platform: win-x64
-      pattern: Lapce-*-windows-x86_64.zip
+      download_url: https://github.com/lapce/lapce/releases
+      link_kind: landing_page
     - platform: mac-arm64
-      pattern: Lapce-*-darwin-aarch64.dmg
+      download_url: https://github.com/lapce/lapce/releases
+      link_kind: landing_page
     - platform: linux-x64
-      pattern: Lapce-*-linux-x86_64.tar.gz
+      download_url: https://github.com/lapce/lapce/releases
+      link_kind: landing_page
 - id: helix
   name: Helix
   category: Developer Tools
@@ -1551,25 +1558,27 @@ packages:
   category: Developer Tools
   editions:
   - intl
-  homepage: https://github.com/ghostty-org/ghostty
-  fetcher: github_release
+  homepage: https://ghostty.org/download
+  fetcher: download_page
   args:
-    repo: ghostty-org/ghostty
-    assets:
+    source: Official project download page; no stable public release asset API
+    platforms:
     - platform: mac-arm64
-      pattern: ghostty-macos-universal.zip
+      download_url: https://ghostty.org/download
+      link_kind: landing_page
 - id: kitty
   name: Kitty
   category: Developer Tools
   editions:
   - intl
-  homepage: https://github.com/kovidgoyal/kitty
-  fetcher: github_release
+  homepage: https://sw.kovidgoyal.net/kitty/binary/
+  fetcher: download_page
   args:
-    repo: kovidgoyal/kitty
-    assets:
+    source: Official project download page; no stable public release asset API
+    platforms:
     - platform: mac-arm64
-      pattern: kitty-*-aarch64.txz
+      download_url: https://sw.kovidgoyal.net/kitty/binary/
+      link_kind: landing_page
 - id: zellij
   name: Zellij
   category: Developer Tools
@@ -1623,13 +1632,14 @@ packages:
   category: Developer Tools
   editions:
   - intl
-  homepage: https://github.com/fish-shell/fish-shell
-  fetcher: github_release
+  homepage: https://fishshell.com/
+  fetcher: download_page
   args:
-    repo: fish-shell/fish-shell
-    assets:
+    source: Official project download page; no stable public release asset API
+    platforms:
     - platform: mac-arm64
-      pattern: fish-*-universal.pkg
+      download_url: https://fishshell.com/
+      link_kind: landing_page
 - id: lazydocker
   name: Lazydocker
   category: Developer Tools
@@ -1651,33 +1661,39 @@ packages:
   category: Developer Tools
   editions:
   - intl
-  homepage: https://github.com/ClementTsang/bottom
-  fetcher: github_release
+  homepage: https://clementtsang.github.io/bottom/installation/
+  fetcher: download_page
   args:
-    repo: ClementTsang/bottom
-    assets:
+    source: Official project download page; no stable public release asset API
+    platforms:
     - platform: win-x64
-      pattern: bottom_*_x86_64-pc-windows-msvc.tar.gz
+      download_url: https://clementtsang.github.io/bottom/installation/
+      link_kind: landing_page
     - platform: mac-arm64
-      pattern: bottom_*_aarch64-apple-darwin.tar.gz
+      download_url: https://clementtsang.github.io/bottom/installation/
+      link_kind: landing_page
     - platform: linux-x64
-      pattern: bottom_*_x86_64-unknown-linux-gnu.tar.gz
+      download_url: https://clementtsang.github.io/bottom/installation/
+      link_kind: landing_page
 - id: btop
   name: btop++
   category: Developer Tools
   editions:
   - intl
-  homepage: https://github.com/aristocratos/btop
-  fetcher: github_release
+  homepage: https://github.com/aristocratos/btop/releases
+  fetcher: download_page
   args:
-    repo: aristocratos/btop
-    assets:
+    source: Official project download page; no stable public release asset API
+    platforms:
     - platform: win-x64
-      pattern: btop-*-x86_64-win64-bin.zip
+      download_url: https://github.com/aristocratos/btop/releases
+      link_kind: landing_page
     - platform: mac-arm64
-      pattern: btop-*-arm64-macos-monterey.tbz
+      download_url: https://github.com/aristocratos/btop/releases
+      link_kind: landing_page
     - platform: linux-x64
-      pattern: btop-*-x86_64-linux-musl.tbz
+      download_url: https://github.com/aristocratos/btop/releases
+      link_kind: landing_page
 - id: dust
   name: dust
   category: Developer Tools
@@ -1716,16 +1732,19 @@ packages:
   editions:
   - intl
   homepage: https://github.com/dalance/procs
-  fetcher: github_release
+  fetcher: download_page
   args:
-    repo: dalance/procs
-    assets:
+    source: Official project download page; no stable public release asset API
+    platforms:
     - platform: win-x64
-      pattern: procs-*-x86_64-pc-windows-msvc.zip
+      download_url: https://github.com/dalance/procs/releases
+      link_kind: landing_page
     - platform: mac-arm64
-      pattern: procs-*-aarch64-apple-darwin.tar.gz
+      download_url: https://github.com/dalance/procs/releases
+      link_kind: landing_page
     - platform: linux-x64
-      pattern: procs-*-x86_64-unknown-linux-gnu.tar.gz
+      download_url: https://github.com/dalance/procs/releases
+      link_kind: landing_page
 - id: sd
   name: sd
   category: Developer Tools
@@ -1780,16 +1799,19 @@ packages:
   editions:
   - intl
   homepage: https://github.com/extrawurst/gitui
-  fetcher: github_release
+  fetcher: download_page
   args:
-    repo: extrawurst/gitui
-    assets:
+    source: Official project download page; no stable public release asset API
+    platforms:
     - platform: win-x64
-      pattern: gitui-win64.tar.gz
+      download_url: https://github.com/extrawurst/gitui/releases
+      link_kind: landing_page
     - platform: mac-arm64
-      pattern: gitui-mac-arm64.tar.gz
+      download_url: https://github.com/extrawurst/gitui/releases
+      link_kind: landing_page
     - platform: linux-x64
-      pattern: gitui-linux.tar.gz
+      download_url: https://github.com/extrawurst/gitui/releases
+      link_kind: landing_page
 - id: hyperfine
   name: hyperfine
   category: Developer Tools
@@ -1843,33 +1865,39 @@ packages:
   category: Developer Tools
   editions:
   - intl
-  homepage: https://github.com/astral-sh/ruff
-  fetcher: github_release
+  homepage: https://docs.astral.sh/ruff/installation/
+  fetcher: download_page
   args:
-    repo: astral-sh/ruff
-    assets:
+    source: Official project download page; no stable public release asset API
+    platforms:
     - platform: win-x64
-      pattern: ruff-*-x86_64-pc-windows-msvc.zip
+      download_url: https://docs.astral.sh/ruff/installation/
+      link_kind: landing_page
     - platform: mac-arm64
-      pattern: ruff-*-aarch64-apple-darwin.tar.gz
+      download_url: https://docs.astral.sh/ruff/installation/
+      link_kind: landing_page
     - platform: linux-x64
-      pattern: ruff-*-x86_64-unknown-linux-gnu.tar.gz
+      download_url: https://docs.astral.sh/ruff/installation/
+      link_kind: landing_page
 - id: uv
   name: uv
   category: Developer Tools
   editions:
   - intl
-  homepage: https://github.com/astral-sh/uv
-  fetcher: github_release
+  homepage: https://docs.astral.sh/uv/getting-started/installation/
+  fetcher: download_page
   args:
-    repo: astral-sh/uv
-    assets:
+    source: Official project download page; no stable public release asset API
+    platforms:
     - platform: win-x64
-      pattern: uv-*-x86_64-pc-windows-msvc.zip
+      download_url: https://docs.astral.sh/uv/getting-started/installation/
+      link_kind: landing_page
     - platform: mac-arm64
-      pattern: uv-*-aarch64-apple-darwin.tar.gz
+      download_url: https://docs.astral.sh/uv/getting-started/installation/
+      link_kind: landing_page
     - platform: linux-x64
-      pattern: uv-*-x86_64-unknown-linux-gnu.tar.gz
+      download_url: https://docs.astral.sh/uv/getting-started/installation/
+      link_kind: landing_page
 - id: biome
   name: Biome
   category: Developer Tools
@@ -1924,32 +1952,38 @@ packages:
   editions:
   - intl
   homepage: https://github.com/trunk-rs/trunk
-  fetcher: github_release
+  fetcher: download_page
   args:
-    repo: trunk-rs/trunk
-    assets:
+    source: Official project download page; no stable public release asset API
+    platforms:
     - platform: win-x64
-      pattern: trunk-*-x86_64-pc-windows-msvc.zip
+      download_url: https://github.com/trunk-rs/trunk/releases
+      link_kind: landing_page
     - platform: mac-arm64
-      pattern: trunk-*-aarch64-apple-darwin.tar.gz
+      download_url: https://github.com/trunk-rs/trunk/releases
+      link_kind: landing_page
     - platform: linux-x64
-      pattern: trunk-*-x86_64-unknown-linux-gnu.tar.gz
+      download_url: https://github.com/trunk-rs/trunk/releases
+      link_kind: landing_page
 - id: lefthook
   name: Lefthook
   category: Developer Tools
   editions:
   - intl
   homepage: https://github.com/evilmartians/lefthook
-  fetcher: github_release
+  fetcher: download_page
   args:
-    repo: evilmartians/lefthook
-    assets:
+    source: Official project download page; no stable public release asset API
+    platforms:
     - platform: win-x64
-      pattern: lefthook_*_Windows_x86_64.zip
+      download_url: https://github.com/evilmartians/lefthook/releases
+      link_kind: landing_page
     - platform: mac-arm64
-      pattern: lefthook_*_macOS_arm64.tar.gz
+      download_url: https://github.com/evilmartians/lefthook/releases
+      link_kind: landing_page
     - platform: linux-x64
-      pattern: lefthook_*_Linux_x86_64.tar.gz
+      download_url: https://github.com/evilmartians/lefthook/releases
+      link_kind: landing_page
 - id: typos
   name: typos
   category: Developer Tools
@@ -1972,32 +2006,38 @@ packages:
   editions:
   - intl
   homepage: https://github.com/tamasfe/taplo
-  fetcher: github_release
+  fetcher: download_page
   args:
-    repo: tamasfe/taplo
-    assets:
+    source: Official project download page; no stable public release asset API
+    platforms:
     - platform: win-x64
-      pattern: taplo-full-windows-x86_64.zip
+      download_url: https://github.com/tamasfe/taplo/releases
+      link_kind: landing_page
     - platform: mac-arm64
-      pattern: taplo-full-darwin-aarch64.zip
+      download_url: https://github.com/tamasfe/taplo/releases
+      link_kind: landing_page
     - platform: linux-x64
-      pattern: taplo-full-linux-x86_64.zip
+      download_url: https://github.com/tamasfe/taplo/releases
+      link_kind: landing_page
 - id: tokei
   name: tokei
   category: Developer Tools
   editions:
   - intl
   homepage: https://github.com/XAMPPRocky/tokei
-  fetcher: github_release
+  fetcher: download_page
   args:
-    repo: XAMPPRocky/tokei
-    assets:
+    source: Official project download page; no stable public release asset API
+    platforms:
     - platform: win-x64
-      pattern: tokei-x86_64-pc-windows-msvc.zip
+      download_url: https://github.com/XAMPPRocky/tokei/releases
+      link_kind: landing_page
     - platform: mac-arm64
-      pattern: tokei-aarch64-apple-darwin.tar.gz
+      download_url: https://github.com/XAMPPRocky/tokei/releases
+      link_kind: landing_page
     - platform: linux-x64
-      pattern: tokei-x86_64-unknown-linux-gnu.tar.gz
+      download_url: https://github.com/XAMPPRocky/tokei/releases
+      link_kind: landing_page
 - id: grex
   name: grex
   category: Developer Tools
@@ -2100,32 +2140,38 @@ packages:
   editions:
   - intl
   homepage: https://github.com/mgdm/htmlq
-  fetcher: github_release
+  fetcher: download_page
   args:
-    repo: mgdm/htmlq
-    assets:
+    source: Official project download page; no stable public release asset API
+    platforms:
     - platform: win-x64
-      pattern: htmlq-x86_64-pc-windows-msvc.zip
+      download_url: https://github.com/mgdm/htmlq/releases
+      link_kind: landing_page
     - platform: mac-arm64
-      pattern: htmlq-aarch64-apple-darwin.tar.gz
+      download_url: https://github.com/mgdm/htmlq/releases
+      link_kind: landing_page
     - platform: linux-x64
-      pattern: htmlq-x86_64-unknown-linux-musl.tar.gz
+      download_url: https://github.com/mgdm/htmlq/releases
+      link_kind: landing_page
 - id: choose
   name: choose
   category: Developer Tools
   editions:
   - intl
   homepage: https://github.com/theryangeary/choose
-  fetcher: github_release
+  fetcher: download_page
   args:
-    repo: theryangeary/choose
-    assets:
+    source: Official project download page; no stable public release asset API
+    platforms:
     - platform: win-x64
-      pattern: choose-*-x86_64-pc-windows-msvc.zip
+      download_url: https://github.com/theryangeary/choose/releases
+      link_kind: landing_page
     - platform: mac-arm64
-      pattern: choose-*-aarch64-apple-darwin.tar.gz
+      download_url: https://github.com/theryangeary/choose/releases
+      link_kind: landing_page
     - platform: linux-x64
-      pattern: choose-*-x86_64-unknown-linux-musl.tar.gz
+      download_url: https://github.com/theryangeary/choose/releases
+      link_kind: landing_page
 - id: git-cliff
   name: git-cliff
   category: Developer Tools
@@ -2180,68 +2226,77 @@ packages:
   editions:
   - intl
   homepage: https://github.com/svenstaro/miniserve
-  fetcher: github_release
+  fetcher: download_page
   args:
-    repo: svenstaro/miniserve
-    assets:
+    source: Official project download page; no stable public release asset API
+    platforms:
     - platform: win-x64
-      pattern: miniserve-*-x86_64-pc-windows-msvc.zip
+      download_url: https://github.com/svenstaro/miniserve/releases
+      link_kind: landing_page
     - platform: mac-arm64
-      pattern: miniserve-*-aarch64-apple-darwin.tar.gz
+      download_url: https://github.com/svenstaro/miniserve/releases
+      link_kind: landing_page
     - platform: linux-x64
-      pattern: miniserve-*-x86_64-unknown-linux-musl.tar.gz
+      download_url: https://github.com/svenstaro/miniserve/releases
+      link_kind: landing_page
 - id: httpie
   name: HTTPie
   category: Developer Tools
   editions:
   - intl
-  homepage: https://github.com/httpie/cli
-  fetcher: github_release
+  homepage: https://httpie.io/desktop
+  fetcher: download_page
   args:
-    repo: httpie/cli
-    assets:
+    source: Official project download page; no stable public release asset API
+    platforms:
     - platform: win-x64
-      pattern: httpie-*-windows-amd64.zip
+      download_url: https://httpie.io/desktop
+      link_kind: landing_page
     - platform: mac-arm64
-      pattern: httpie-*-macos-arm64
+      download_url: https://httpie.io/desktop
+      link_kind: landing_page
     - platform: linux-x64
-      pattern: httpie-*-linux-amd64
+      download_url: https://httpie.io/desktop
+      link_kind: landing_page
 - id: libre-hardware-monitor
   name: LibreHardwareMonitor
   category: System Utilities
   editions:
   - intl
   homepage: https://github.com/LibreHardwareMonitor/LibreHardwareMonitor
-  fetcher: github_release
+  fetcher: download_page
   args:
-    repo: LibreHardwareMonitor/LibreHardwareMonitor
-    assets:
+    source: Official project download page; no stable public release asset API
+    platforms:
     - platform: win-x64
-      pattern: LibreHardwareMonitor-net472.zip
+      download_url: https://github.com/LibreHardwareMonitor/LibreHardwareMonitor/releases
+      link_kind: landing_page
 - id: eartrumpet
   name: EarTrumpet
   category: System Utilities
   editions:
   - intl
-  homepage: https://github.com/File-New-Project/EarTrumpet
-  fetcher: github_release
+  homepage: https://eartrumpet.app/
+  fetcher: download_page
   args:
-    repo: File-New-Project/EarTrumpet
-    assets:
+    source: Official project download page; no stable public release asset API
+    platforms:
     - platform: win-x64
-      pattern: EarTrumpet-*.appxbundle
+      download_url: https://eartrumpet.app/
+      link_kind: landing_page
 - id: screen-to-gif
   name: ScreenToGif
   category: System Utilities
   editions:
   - intl
   homepage: https://github.com/NickeManarin/ScreenToGif
-  fetcher: github_release
+  fetcher: download_page
   args:
-    repo: NickeManarin/ScreenToGif
-    assets:
+    source: Official project download page; no stable public release asset API
+    platforms:
     - platform: win-x64
-      pattern: ScreenToGif-*-Portable-x64.zip
+      download_url: https://github.com/NickeManarin/ScreenToGif/releases
+      link_kind: landing_page
 - id: autohotkey
   name: AutoHotkey
   category: System Utilities
@@ -2260,24 +2315,26 @@ packages:
   editions:
   - intl
   homepage: https://github.com/t1m0thyj/WinDynamicDesktop
-  fetcher: github_release
+  fetcher: download_page
   args:
-    repo: t1m0thyj/WinDynamicDesktop
-    assets:
+    source: Official project download page; no stable public release asset API
+    platforms:
     - platform: win-x64
-      pattern: WinDynamicDesktop-*-Setup.exe
+      download_url: https://github.com/t1m0thyj/WinDynamicDesktop/releases
+      link_kind: landing_page
 - id: translucent-tb
   name: TranslucentTB
   category: System Utilities
   editions:
   - intl
   homepage: https://github.com/TranslucentTB/TranslucentTB
-  fetcher: github_release
+  fetcher: download_page
   args:
-    repo: TranslucentTB/TranslucentTB
-    assets:
+    source: Official project download page; no stable public release asset API
+    platforms:
     - platform: win-x64
-      pattern: TranslucentTB-*.msix
+      download_url: https://github.com/TranslucentTB/TranslucentTB/releases
+      link_kind: landing_page
 - id: windhawk
   name: Windhawk
   category: System Utilities
@@ -2296,48 +2353,52 @@ packages:
   editions:
   - intl
   homepage: https://github.com/srwi/EverythingToolbar
-  fetcher: github_release
+  fetcher: download_page
   args:
-    repo: srwi/EverythingToolbar
-    assets:
+    source: Official project download page; no stable public release asset API
+    platforms:
     - platform: win-x64
-      pattern: EverythingToolbar-*-x64.zip
+      download_url: https://github.com/srwi/EverythingToolbar/releases
+      link_kind: landing_page
 - id: unigetui
   name: UniGetUI
   category: System Utilities
   editions:
   - intl
   homepage: https://github.com/marticliment/UniGetUI
-  fetcher: github_release
+  fetcher: download_page
   args:
-    repo: marticliment/UniGetUI
-    assets:
+    source: Official project download page; no stable public release asset API
+    platforms:
     - platform: win-x64
-      pattern: UniGetUI.Installer-*-x64.exe
+      download_url: https://github.com/marticliment/UniGetUI/releases
+      link_kind: landing_page
 - id: secureuxtheme
   name: SecureUxTheme
   category: System Utilities
   editions:
   - intl
   homepage: https://github.com/namazso/SecureUxTheme
-  fetcher: github_release
+  fetcher: download_page
   args:
-    repo: namazso/SecureUxTheme
-    assets:
+    source: Official project download page; no stable public release asset API
+    platforms:
     - platform: win-x64
-      pattern: SecureUxTheme-x64.msi
+      download_url: https://github.com/namazso/SecureUxTheme/releases
+      link_kind: landing_page
 - id: bleachbit
   name: BleachBit
   category: System Utilities
   editions:
   - intl
-  homepage: https://github.com/bleachbit/bleachbit
-  fetcher: github_release
+  homepage: https://www.bleachbit.org/download
+  fetcher: download_page
   args:
-    repo: bleachbit/bleachbit
-    assets:
+    source: Official project download page; no stable public release asset API
+    platforms:
     - platform: win-x64
-      pattern: BleachBit-*-setup.exe
+      download_url: https://www.bleachbit.org/download
+      link_kind: landing_page
 - id: flameshot
   name: Flameshot
   category: System Utilities
@@ -2369,37 +2430,40 @@ packages:
   category: System Utilities
   editions:
   - intl
-  homepage: https://github.com/hiyohiyo/CrystalDiskInfo
-  fetcher: github_release
+  homepage: https://crystalmark.info/en/software/crystaldiskinfo/
+  fetcher: download_page
   args:
-    repo: hiyohiyo/CrystalDiskInfo
-    assets:
+    source: Official project download page; no stable public release asset API
+    platforms:
     - platform: win-x64
-      pattern: CrystalDiskInfo*-x64.exe
+      download_url: https://crystalmark.info/en/software/crystaldiskinfo/
+      link_kind: landing_page
 - id: crystaldiskmark
   name: CrystalDiskMark
   category: System Utilities
   editions:
   - intl
-  homepage: https://github.com/hiyohiyo/CrystalDiskMark
-  fetcher: github_release
+  homepage: https://crystalmark.info/en/software/crystaldiskmark/
+  fetcher: download_page
   args:
-    repo: hiyohiyo/CrystalDiskMark
-    assets:
+    source: Official project download page; no stable public release asset API
+    platforms:
     - platform: win-x64
-      pattern: CrystalDiskMark*-x64.exe
+      download_url: https://crystalmark.info/en/software/crystaldiskmark/
+      link_kind: landing_page
 - id: xml-notepad
   name: XML Notepad
   category: System Utilities
   editions:
   - intl
   homepage: https://github.com/microsoft/XmlNotepad
-  fetcher: github_release
+  fetcher: download_page
   args:
-    repo: microsoft/XmlNotepad
-    assets:
+    source: Official project download page; no stable public release asset API
+    platforms:
     - platform: win-x64
-      pattern: XmlNotepad.application
+      download_url: https://github.com/microsoft/XmlNotepad/releases
+      link_kind: landing_page
 - id: imageglass
   name: ImageGlass
   category: System Utilities
@@ -2418,36 +2482,39 @@ packages:
   editions:
   - intl
   homepage: https://github.com/nomacs/nomacs
-  fetcher: github_release
+  fetcher: download_page
   args:
-    repo: nomacs/nomacs
-    assets:
+    source: Official project download page; no stable public release asset API
+    platforms:
     - platform: win-x64
-      pattern: nomacs-setup-*-x64.exe
+      download_url: https://github.com/nomacs/nomacs/releases
+      link_kind: landing_page
 - id: quicklook
   name: QuickLook
   category: System Utilities
   editions:
   - intl
   homepage: https://github.com/QL-Win/QuickLook
-  fetcher: github_release
+  fetcher: download_page
   args:
-    repo: QL-Win/QuickLook
-    assets:
+    source: Official project download page; no stable public release asset API
+    platforms:
     - platform: win-x64
-      pattern: QuickLook-*-x64.zip
+      download_url: https://github.com/QL-Win/QuickLook/releases
+      link_kind: landing_page
 - id: files-app
   name: Files
   category: System Utilities
   editions:
   - intl
   homepage: https://github.com/files-community/Files
-  fetcher: github_release
+  fetcher: download_page
   args:
-    repo: files-community/Files
-    assets:
+    source: Official project download page; no stable public release asset API
+    platforms:
     - platform: win-x64
-      pattern: Files.Package_*_x64.msixbundle
+      download_url: https://github.com/files-community/Files/releases
+      link_kind: landing_page
 - id: compactgui
   name: CompactGUI
   category: System Utilities
@@ -2505,15 +2572,17 @@ packages:
   category: System Utilities
   editions:
   - intl
-  homepage: https://github.com/vercel/hyper
-  fetcher: github_release
+  homepage: https://hyper.is/#installation
+  fetcher: download_page
   args:
-    repo: vercel/hyper
-    assets:
+    source: Official project download page; no stable public release asset API
+    platforms:
     - platform: win-x64
-      pattern: hyper-*-x64.exe
+      download_url: https://hyper.is/#installation
+      link_kind: landing_page
     - platform: mac-arm64
-      pattern: hyper-*-arm64.dmg
+      download_url: https://hyper.is/#installation
+      link_kind: landing_page
 - id: syncthing
   name: Syncthing
   category: Utilities
@@ -2536,50 +2605,55 @@ packages:
   editions:
   - intl
   homepage: https://github.com/M2Team/NanaZip
-  fetcher: github_release
+  fetcher: download_page
   args:
-    repo: M2Team/NanaZip
-    assets:
+    source: Official project download page; no stable public release asset API
+    platforms:
     - platform: win-x64
-      pattern: NanaZip_*_x64.msix
+      download_url: https://github.com/M2Team/NanaZip/releases
+      link_kind: landing_page
 - id: doublecmd
   name: Double Commander
   category: Utilities
   editions:
   - intl
   homepage: https://github.com/doublecmd/doublecmd
-  fetcher: github_release
+  fetcher: download_page
   args:
-    repo: doublecmd/doublecmd
-    assets:
+    source: Official project download page; no stable public release asset API
+    platforms:
     - platform: win-x64
-      pattern: doublecmd-*-x86_64-win64.exe
+      download_url: https://github.com/doublecmd/doublecmd/releases
+      link_kind: landing_page
 - id: onionshare
   name: OnionShare
   category: Utilities
   editions:
   - intl
   homepage: https://github.com/onionshare/onionshare
-  fetcher: github_release
+  fetcher: download_page
   args:
-    repo: onionshare/onionshare
-    assets:
+    source: Official project download page; no stable public release asset API
+    platforms:
     - platform: win-x64
-      pattern: OnionShare-win64-*.exe
+      download_url: https://github.com/onionshare/onionshare/releases
+      link_kind: landing_page
     - platform: mac-arm64
-      pattern: OnionShare-*-arm64.dmg
+      download_url: https://github.com/onionshare/onionshare/releases
+      link_kind: landing_page
 - id: veracrypt
   name: VeraCrypt
   category: Utilities
   editions:
   - intl
   homepage: https://github.com/veracrypt/VeraCrypt
-  fetcher: github_release
+  fetcher: download_page
   args:
-    repo: veracrypt/VeraCrypt
-    assets:
+    source: Official project download page; no stable public release asset API
+    platforms:
     - platform: win-x64
-      pattern: VeraCrypt_Setup_*.exe
+      download_url: https://github.com/veracrypt/VeraCrypt/releases
+      link_kind: landing_page
 - id: cryptomator
   name: Cryptomator
   category: Utilities
@@ -2634,12 +2708,13 @@ packages:
   editions:
   - intl
   homepage: https://github.com/duplicati/duplicati
-  fetcher: github_release
+  fetcher: download_page
   args:
-    repo: duplicati/duplicati
-    assets:
+    source: Official project download page; no stable public release asset API
+    platforms:
     - platform: win-x64
-      pattern: duplicati-*-x64.msi
+      download_url: https://github.com/duplicati/duplicati/releases
+      link_kind: landing_page
 - id: rclone
   name: rclone
   category: Utilities
@@ -2662,14 +2737,16 @@ packages:
   editions:
   - intl
   homepage: https://github.com/tomnomnom/gron
-  fetcher: github_release
+  fetcher: download_page
   args:
-    repo: tomnomnom/gron
-    assets:
+    source: Official project download page; no stable public release asset API
+    platforms:
     - platform: win-x64
-      pattern: gron-*-amd64.exe
+      download_url: https://github.com/tomnomnom/gron/releases
+      link_kind: landing_page
     - platform: linux-x64
-      pattern: gron-*-linux-amd64.tgz
+      download_url: https://github.com/tomnomnom/gron/releases
+      link_kind: landing_page
 - id: dasel
   name: dasel
   category: Utilities
@@ -2835,39 +2912,43 @@ packages:
   category: Network & Proxy
   editions:
   - intl
-  homepage: https://github.com/OpenVPN/openvpn
-  fetcher: github_release
+  homepage: https://openvpn.net/community-downloads/
+  fetcher: download_page
   args:
-    repo: OpenVPN/openvpn
-    assets:
+    source: Official project download page; no stable public release asset API
+    platforms:
     - platform: win-x64
-      pattern: openvpn-*-amd64.msi
+      download_url: https://openvpn.net/community-downloads/
+      link_kind: landing_page
 - id: nmap
   name: Nmap
   category: Network & Proxy
   editions:
   - intl
-  homepage: https://github.com/nmap/nmap
-  fetcher: github_release
+  homepage: https://nmap.org/download
+  fetcher: download_page
   args:
-    repo: nmap/nmap
-    assets:
+    source: Official project download page; no stable public release asset API
+    platforms:
     - platform: win-x64
-      pattern: nmap-*-setup.exe
+      download_url: https://nmap.org/download
+      link_kind: landing_page
 - id: mullvad-vpn
   name: Mullvad VPN
   category: Network & Proxy
   editions:
   - intl
-  homepage: https://github.com/mullvad/mullvadvpn-app
-  fetcher: github_release
+  homepage: https://mullvad.net/en/download/vpn/windows
+  fetcher: download_page
   args:
-    repo: mullvad/mullvadvpn-app
-    assets:
+    source: Official project download page; no stable public release asset API
+    platforms:
     - platform: win-x64
-      pattern: MullvadVPN-*-amd64.exe
+      download_url: https://mullvad.net/en/download/vpn/windows
+      link_kind: landing_page
     - platform: mac-arm64
-      pattern: MullvadVPN-*-arm64.pkg
+      download_url: https://mullvad.net/en/download/vpn/windows
+      link_kind: landing_page
 - id: outline-client
   name: Outline Client
   category: Network & Proxy
@@ -2917,15 +2998,17 @@ packages:
   category: Network & Proxy
   editions:
   - intl
-  homepage: https://github.com/zerotier/ZeroTierOne
-  fetcher: github_release
+  homepage: https://www.zerotier.com/download/
+  fetcher: download_page
   args:
-    repo: zerotier/ZeroTierOne
-    assets:
+    source: Official project download page; no stable public release asset API
+    platforms:
     - platform: win-x64
-      pattern: ZeroTier One.msi
+      download_url: https://www.zerotier.com/download/
+      link_kind: landing_page
     - platform: linux-x64
-      pattern: zerotier-one_*_amd64.deb
+      download_url: https://www.zerotier.com/download/
+      link_kind: landing_page
 - id: adguard-home
   name: AdGuard Home
   category: Network & Proxy
@@ -2947,13 +3030,14 @@ packages:
   category: Network & Proxy
   editions:
   - intl
-  homepage: https://github.com/safing/portmaster
-  fetcher: github_release
+  homepage: https://safing.io/download/
+  fetcher: download_page
   args:
-    repo: safing/portmaster
-    assets:
+    source: Official project download page; no stable public release asset API
+    platforms:
     - platform: win-x64
-      pattern: portmaster-installer.exe
+      download_url: https://safing.io/download/
+      link_kind: landing_page
 - id: simplewall
   name: simplewall
   category: Network & Proxy
@@ -2971,37 +3055,40 @@ packages:
   category: Network & Proxy
   editions:
   - intl
-  homepage: https://github.com/github/putty
-  fetcher: github_release
+  homepage: https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html
+  fetcher: download_page
   args:
-    repo: github/putty
-    assets:
+    source: Official project download page; no stable public release asset API
+    platforms:
     - platform: win-x64
-      pattern: putty-64bit-*-installer.msi
+      download_url: https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html
+      link_kind: landing_page
 - id: cloudflare-warp
   name: Cloudflare WARP
   category: Network & Proxy
   editions:
   - intl
-  homepage: https://github.com/cloudflare/warp-client
-  fetcher: github_release
+  homepage: https://one.one.one.one/
+  fetcher: download_page
   args:
-    repo: cloudflare/warp-client
-    assets:
+    source: Official project download page; no stable public release asset API
+    platforms:
     - platform: win-x64
-      pattern: Cloudflare_WARP_*-x64.msi
+      download_url: https://one.one.one.one/
+      link_kind: landing_page
 - id: openspeedtest
   name: OpenSpeedTest
   category: Network & Proxy
   editions:
   - intl
-  homepage: https://github.com/openspeedtest/Speed-Test
-  fetcher: github_release
+  homepage: https://openspeedtest.com/selfhosted-speedtest
+  fetcher: download_page
   args:
-    repo: openspeedtest/Speed-Test
-    assets:
+    source: Official project download page; no stable public release asset API
+    platforms:
     - platform: linux-x64
-      pattern: OpenSpeedTest-Server-*-linux-amd64
+      download_url: https://openspeedtest.com/selfhosted-speedtest
+      link_kind: landing_page
 - id: librespeed
   name: LibreSpeed
   category: Network & Proxy
@@ -3052,24 +3139,26 @@ packages:
   editions:
   - intl
   homepage: https://github.com/flightlessmango/MangoHud
-  fetcher: github_release
+  fetcher: download_page
   args:
-    repo: flightlessmango/MangoHud
-    assets:
+    source: Official project download page; no stable public release asset API
+    platforms:
     - platform: linux-x64
-      pattern: Mangohud-*-amd64.tar.gz
+      download_url: https://github.com/flightlessmango/MangoHud/releases
+      link_kind: landing_page
 - id: gamemode
   name: GameMode
   category: Gaming
   editions:
   - intl
   homepage: https://github.com/FeralInteractive/gamemode
-  fetcher: github_release
+  fetcher: download_page
   args:
-    repo: FeralInteractive/gamemode
-    assets:
+    source: Official project download page; no stable public release asset API
+    platforms:
     - platform: linux-x64
-      pattern: gamemode_*_amd64.deb
+      download_url: https://github.com/FeralInteractive/gamemode/releases
+      link_kind: landing_page
 - id: proton-ge
   name: GE-Proton
   category: Gaming
@@ -3087,45 +3176,52 @@ packages:
   category: Gaming
   editions:
   - intl
-  homepage: https://github.com/bottlesdevs/Bottles
-  fetcher: github_release
+  homepage: https://usebottles.com/download/
+  fetcher: download_page
   args:
-    repo: bottlesdevs/Bottles
-    assets:
+    source: Official project download page; no stable public release asset API
+    platforms:
     - platform: linux-x64
-      pattern: Bottles-*-x86_64.flatpak
+      download_url: https://usebottles.com/download/
+      link_kind: landing_page
 - id: vita3k
   name: Vita3K
   category: Gaming
   editions:
   - intl
   homepage: https://github.com/Vita3K/Vita3K
-  fetcher: github_release
+  fetcher: download_page
   args:
-    repo: Vita3K/Vita3K
-    assets:
+    source: Official project download page; no stable public release asset API
+    platforms:
     - platform: win-x64
-      pattern: Vita3K-*-win64.zip
+      download_url: https://github.com/Vita3K/Vita3K/releases
+      link_kind: landing_page
     - platform: mac-arm64
-      pattern: Vita3K-*-macos-arm64.dmg
+      download_url: https://github.com/Vita3K/Vita3K/releases
+      link_kind: landing_page
     - platform: linux-x64
-      pattern: Vita3K-*-linux-x64.AppImage
+      download_url: https://github.com/Vita3K/Vita3K/releases
+      link_kind: landing_page
 - id: ryujinx
   name: Ryujinx
   category: Gaming
   editions:
   - intl
   homepage: https://github.com/Ryubing/Ryujinx
-  fetcher: github_release
+  fetcher: download_page
   args:
-    repo: Ryubing/Ryujinx
-    assets:
+    source: Official project download page; no stable public release asset API
+    platforms:
     - platform: win-x64
-      pattern: ryujinx-*-win_x64.zip
+      download_url: https://github.com/Ryubing/Ryujinx/releases
+      link_kind: landing_page
     - platform: mac-arm64
-      pattern: ryujinx-*-macos-arm64.tar.gz
+      download_url: https://github.com/Ryubing/Ryujinx/releases
+      link_kind: landing_page
     - platform: linux-x64
-      pattern: ryujinx-*-linux_x64.tar.gz
+      download_url: https://github.com/Ryubing/Ryujinx/releases
+      link_kind: landing_page
 - id: xemu
   name: xemu
   category: Gaming
@@ -3162,14 +3258,16 @@ packages:
   editions:
   - intl
   homepage: https://github.com/Rosalie241/RMG
-  fetcher: github_release
+  fetcher: download_page
   args:
-    repo: Rosalie241/RMG
-    assets:
+    source: Official project download page; no stable public release asset API
+    platforms:
     - platform: win-x64
-      pattern: RMG-Windows-*-x86_64.exe
+      download_url: https://github.com/Rosalie241/RMG/releases
+      link_kind: landing_page
     - platform: linux-x64
-      pattern: RMG-Linux-*-x86_64.AppImage
+      download_url: https://github.com/Rosalie241/RMG/releases
+      link_kind: landing_page
 - id: openmw
   name: OpenMW
   category: Gaming
@@ -3192,196 +3290,224 @@ packages:
   editions:
   - intl
   homepage: https://github.com/dosbox-staging/dosbox-staging
-  fetcher: github_release
+  fetcher: download_page
   args:
-    repo: dosbox-staging/dosbox-staging
-    assets:
+    source: Official project download page; no stable public release asset API
+    platforms:
     - platform: win-x64
-      pattern: dosbox-staging-*-windows-x64.zip
+      download_url: https://github.com/dosbox-staging/dosbox-staging/releases
+      link_kind: landing_page
     - platform: mac-arm64
-      pattern: dosbox-staging-*-macos-arm64.dmg
+      download_url: https://github.com/dosbox-staging/dosbox-staging/releases
+      link_kind: landing_page
     - platform: linux-x64
-      pattern: dosbox-staging-*-linux-x86_64.tar.xz
+      download_url: https://github.com/dosbox-staging/dosbox-staging/releases
+      link_kind: landing_page
 - id: libretro
   name: RetroArch
   category: Gaming
   editions:
   - intl
   homepage: https://github.com/libretro/RetroArch
-  fetcher: github_release
+  fetcher: download_page
   args:
-    repo: libretro/RetroArch
-    assets:
+    source: Official project download page; no stable public release asset API
+    platforms:
     - platform: win-x64
-      pattern: RetroArch-*-x64-setup.exe
+      download_url: https://github.com/libretro/RetroArch/releases
+      link_kind: landing_page
     - platform: mac-arm64
-      pattern: RetroArch-*-arm64.dmg
+      download_url: https://github.com/libretro/RetroArch/releases
+      link_kind: landing_page
 - id: mudlet
   name: Mudlet
   category: Gaming
   editions:
   - intl
   homepage: https://github.com/Mudlet/Mudlet
-  fetcher: github_release
+  fetcher: download_page
   args:
-    repo: Mudlet/Mudlet
-    assets:
+    source: Official project download page; no stable public release asset API
+    platforms:
     - platform: win-x64
-      pattern: Mudlet-*-windows-installer.exe
+      download_url: https://github.com/Mudlet/Mudlet/releases
+      link_kind: landing_page
     - platform: mac-arm64
-      pattern: Mudlet-*-macos-arm64.dmg
+      download_url: https://github.com/Mudlet/Mudlet/releases
+      link_kind: landing_page
     - platform: linux-x64
-      pattern: Mudlet-*-linux-x86_64.AppImage
+      download_url: https://github.com/Mudlet/Mudlet/releases
+      link_kind: landing_page
 - id: kdenlive
   name: Kdenlive
   category: Media Players
   editions:
   - intl
-  homepage: https://github.com/KDE/kdenlive
-  fetcher: github_release
+  homepage: https://kdenlive.org/en/download/
+  fetcher: download_page
   args:
-    repo: KDE/kdenlive
-    assets:
+    source: Official project download page; no stable public release asset API
+    platforms:
     - platform: win-x64
-      pattern: kdenlive-*-x86_64.exe
+      download_url: https://kdenlive.org/en/download/
+      link_kind: landing_page
 - id: olive
   name: Olive Video Editor
   category: Media Players
   editions:
   - intl
   homepage: https://github.com/olive-editor/olive
-  fetcher: github_release
+  fetcher: download_page
   args:
-    repo: olive-editor/olive
-    assets:
+    source: Official project download page; no stable public release asset API
+    platforms:
     - platform: win-x64
-      pattern: Olive-*-Windows-x86_64.zip
+      download_url: https://github.com/olive-editor/olive/releases
+      link_kind: landing_page
     - platform: mac-arm64
-      pattern: Olive-*-macOS-arm64.dmg
+      download_url: https://github.com/olive-editor/olive/releases
+      link_kind: landing_page
     - platform: linux-x64
-      pattern: Olive-*-Linux-x86_64.AppImage
+      download_url: https://github.com/olive-editor/olive/releases
+      link_kind: landing_page
 - id: strawberry
   name: Strawberry Music Player
   category: Media Players
   editions:
   - intl
   homepage: https://github.com/strawberrymusicplayer/strawberry
-  fetcher: github_release
+  fetcher: download_page
   args:
-    repo: strawberrymusicplayer/strawberry
-    assets:
+    source: Official project download page; no stable public release asset API
+    platforms:
     - platform: win-x64
-      pattern: strawberry-*-msvc-x64.exe
+      download_url: https://github.com/strawberrymusicplayer/strawberry/releases
+      link_kind: landing_page
 - id: musicbrainz
   name: MusicBrainz Picard
   category: Media Players
   editions:
   - intl
   homepage: https://github.com/metabrainz/picard
-  fetcher: github_release
+  fetcher: download_page
   args:
-    repo: metabrainz/picard
-    assets:
+    source: Official project download page; no stable public release asset API
+    platforms:
     - platform: win-x64
-      pattern: musicbrainz-picard-*-win-x86_64.exe
+      download_url: https://github.com/metabrainz/picard/releases
+      link_kind: landing_page
     - platform: mac-arm64
-      pattern: MusicBrainz-Picard-*-macOS-arm64.dmg
+      download_url: https://github.com/metabrainz/picard/releases
+      link_kind: landing_page
 - id: mkvtoolnix
   name: MKVToolNix
   category: Media Players
   editions:
   - intl
-  homepage: https://github.com/mbunkus/mkvtoolnix
-  fetcher: github_release
+  homepage: https://mkvtoolnix.download/downloads.html
+  fetcher: download_page
   args:
-    repo: mbunkus/mkvtoolnix
-    assets:
+    source: Official project download page; no stable public release asset API
+    platforms:
     - platform: win-x64
-      pattern: mkvtoolnix-64-bit-*-setup.exe
+      download_url: https://mkvtoolnix.download/downloads.html
+      link_kind: landing_page
 - id: mediainfo
   name: MediaInfo
   category: Media Players
   editions:
   - intl
   homepage: https://github.com/MediaArea/MediaInfo
-  fetcher: github_release
+  fetcher: download_page
   args:
-    repo: MediaArea/MediaInfo
-    assets:
+    source: Official project download page; no stable public release asset API
+    platforms:
     - platform: win-x64
-      pattern: MediaInfo_GUI_*_Windows_x64.exe
+      download_url: https://github.com/MediaArea/MediaInfo/releases
+      link_kind: landing_page
 - id: gimp
   name: GIMP
   category: Media Players
   editions:
   - intl
-  homepage: https://github.com/GNOME/gimp
-  fetcher: github_release
+  homepage: https://www.gimp.org/downloads/
+  fetcher: download_page
   args:
-    repo: GNOME/gimp
-    assets:
+    source: Official project download page; no stable public release asset API
+    platforms:
     - platform: win-x64
-      pattern: gimp-*-setup.exe
+      download_url: https://www.gimp.org/downloads/
+      link_kind: landing_page
 - id: krita
   name: Krita
   category: Media Players
   editions:
   - intl
-  homepage: https://github.com/KDE/krita
-  fetcher: github_release
+  homepage: https://krita.org/en/download/
+  fetcher: download_page
   args:
-    repo: KDE/krita
-    assets:
+    source: Official project download page; no stable public release asset API
+    platforms:
     - platform: win-x64
-      pattern: krita-*-x64-setup.exe
+      download_url: https://krita.org/en/download/
+      link_kind: landing_page
     - platform: mac-arm64
-      pattern: krita-*-arm64.dmg
+      download_url: https://krita.org/en/download/
+      link_kind: landing_page
     - platform: linux-x64
-      pattern: krita-*-x86_64.appimage
+      download_url: https://krita.org/en/download/
+      link_kind: landing_page
 - id: inkscape
   name: Inkscape
   category: Media Players
   editions:
   - intl
-  homepage: https://github.com/inkscape/inkscape
-  fetcher: github_release
+  homepage: https://inkscape.org/release/
+  fetcher: download_page
   args:
-    repo: inkscape/inkscape
-    assets:
+    source: Official project download page; no stable public release asset API
+    platforms:
     - platform: win-x64
-      pattern: inkscape-*-x64.msi
+      download_url: https://inkscape.org/release/
+      link_kind: landing_page
 - id: blender
   name: Blender
   category: Media Players
   editions:
   - intl
-  homepage: https://github.com/blender/blender
-  fetcher: github_release
+  homepage: https://www.blender.org/download/
+  fetcher: download_page
   args:
-    repo: blender/blender
-    assets:
+    source: Official project download page; no stable public release asset API
+    platforms:
     - platform: win-x64
-      pattern: blender-*-windows-x64.msi
+      download_url: https://www.blender.org/download/
+      link_kind: landing_page
     - platform: mac-arm64
-      pattern: blender-*-macos-arm64.dmg
+      download_url: https://www.blender.org/download/
+      link_kind: landing_page
     - platform: linux-x64
-      pattern: blender-*-linux-x64.tar.xz
+      download_url: https://www.blender.org/download/
+      link_kind: landing_page
 - id: freecad
   name: FreeCAD
   category: Media Players
   editions:
   - intl
-  homepage: https://github.com/FreeCAD/FreeCAD
-  fetcher: github_release
+  homepage: https://www.freecad.org/downloads.php
+  fetcher: download_page
   args:
-    repo: FreeCAD/FreeCAD
-    assets:
+    source: Official project download page; no stable public release asset API
+    platforms:
     - platform: win-x64
-      pattern: FreeCAD-*-WIN-x64-installer.exe
+      download_url: https://www.freecad.org/downloads.php
+      link_kind: landing_page
     - platform: mac-arm64
-      pattern: FreeCAD-*-macOS-arm64.dmg
+      download_url: https://www.freecad.org/downloads.php
+      link_kind: landing_page
     - platform: linux-x64
-      pattern: FreeCAD-*-Linux-x86_64.AppImage
+      download_url: https://www.freecad.org/downloads.php
+      link_kind: landing_page
 - id: openscad
   name: OpenSCAD
   category: Media Players
@@ -3413,39 +3539,43 @@ packages:
   category: Media Players
   editions:
   - intl
-  homepage: https://github.com/Beep6581/RawTherapee
-  fetcher: github_release
+  homepage: https://www.rawtherapee.com/downloads/
+  fetcher: download_page
   args:
-    repo: Beep6581/RawTherapee
-    assets:
+    source: Official project download page; no stable public release asset API
+    platforms:
     - platform: win-x64
-      pattern: RawTherapee_*_win64.zip
+      download_url: https://www.rawtherapee.com/downloads/
+      link_kind: landing_page
 - id: scribus
   name: Scribus
   category: Media Players
   editions:
   - intl
-  homepage: https://github.com/scribusproject/scribus
-  fetcher: github_release
+  homepage: https://www.scribus.net/downloads/
+  fetcher: download_page
   args:
-    repo: scribusproject/scribus
-    assets:
+    source: Official project download page; no stable public release asset API
+    platforms:
     - platform: win-x64
-      pattern: scribus-*-windows-x64.exe
+      download_url: https://www.scribus.net/downloads/
+      link_kind: landing_page
 - id: ardour
   name: Ardour
   category: Media Players
   editions:
   - intl
-  homepage: https://github.com/Ardour/ardour
-  fetcher: github_release
+  homepage: https://ardour.org/download/
+  fetcher: download_page
   args:
-    repo: Ardour/ardour
-    assets:
+    source: Official project download page; no stable public release asset API
+    platforms:
     - platform: win-x64
-      pattern: Ardour-*-win64.exe
+      download_url: https://ardour.org/download/
+      link_kind: landing_page
     - platform: mac-arm64
-      pattern: Ardour-*-arm64.dmg
+      download_url: https://ardour.org/download/
+      link_kind: landing_page
 - id: lmms
   name: LMMS
   category: Media Players
@@ -3517,13 +3647,14 @@ packages:
   category: Browsers
   editions:
   - intl
-  homepage: https://github.com/KDE/falkon
-  fetcher: github_release
+  homepage: https://www.falkon.org/download/
+  fetcher: download_page
   args:
-    repo: KDE/falkon
-    assets:
+    source: Official project download page; no stable public release asset API
+    platforms:
     - platform: win-x64
-      pattern: falkon-*-setup.exe
+      download_url: https://www.falkon.org/download/
+      link_kind: landing_page
 - id: appflowy
   name: AppFlowy
   category: Productivity
@@ -3562,16 +3693,19 @@ packages:
   editions:
   - intl
   homepage: https://github.com/TriliumNext/Notes
-  fetcher: github_release
+  fetcher: download_page
   args:
-    repo: TriliumNext/Notes
-    assets:
+    source: Official project download page; no stable public release asset API
+    platforms:
     - platform: win-x64
-      pattern: TriliumNotes-*-Windows-x64.zip
+      download_url: https://github.com/TriliumNext/Notes/releases
+      link_kind: landing_page
     - platform: mac-arm64
-      pattern: TriliumNotes-*-macOS-arm64.zip
+      download_url: https://github.com/TriliumNext/Notes/releases
+      link_kind: landing_page
     - platform: linux-x64
-      pattern: TriliumNotes-*-Linux-x64.zip
+      download_url: https://github.com/TriliumNext/Notes/releases
+      link_kind: landing_page
 - id: zettlr
   name: Zettlr
   category: Productivity
@@ -3610,42 +3744,48 @@ packages:
   editions:
   - intl
   homepage: https://github.com/excalidraw/excalidraw
-  fetcher: github_release
+  fetcher: download_page
   args:
-    repo: excalidraw/excalidraw
-    assets:
+    source: Official project download page; no stable public release asset API
+    platforms:
     - platform: win-x64
-      pattern: Excalidraw-*-x64.exe
+      download_url: https://github.com/excalidraw/excalidraw/releases
+      link_kind: landing_page
 - id: beekeeper
   name: Beekeeper Studio
   category: Productivity
   editions:
   - intl
-  homepage: https://github.com/beekeeper-studio/beekeeper-studio
-  fetcher: github_release
+  homepage: https://www.beekeeperstudio.io/get
+  fetcher: download_page
   args:
-    repo: beekeeper-studio/beekeeper-studio
-    assets:
+    source: Official project download page; no stable public release asset API
+    platforms:
     - platform: win-x64
-      pattern: beekeeper-studio-*-win.exe
+      download_url: https://www.beekeeperstudio.io/get
+      link_kind: landing_page
     - platform: mac-arm64
-      pattern: beekeeper-studio-*-arm64.dmg
+      download_url: https://www.beekeeperstudio.io/get
+      link_kind: landing_page
     - platform: linux-x64
-      pattern: beekeeper-studio-*-amd64.deb
+      download_url: https://www.beekeeperstudio.io/get
+      link_kind: landing_page
 - id: sumatrapdf
   name: Sumatra PDF
   category: Productivity
   editions:
   - intl
-  homepage: https://github.com/sumatrapdfreader/sumatrapdf
-  fetcher: github_release
+  homepage: https://www.sumatrapdfreader.org/download-free-pdf-viewer
+  fetcher: download_page
   args:
-    repo: sumatrapdfreader/sumatrapdf
-    assets:
+    source: Official project download page; no stable public release asset API
+    platforms:
     - platform: win-x64
-      pattern: SumatraPDF-*-64-install.exe
+      download_url: https://www.sumatrapdfreader.org/download-free-pdf-viewer
+      link_kind: landing_page
     - platform: win-x64-portable
-      pattern: SumatraPDF-*-64.zip
+      download_url: https://www.sumatrapdfreader.org/download-free-pdf-viewer
+      link_kind: landing_page
 - id: sioyek
   name: Sioyek
   category: Productivity
@@ -3684,82 +3824,93 @@ packages:
   editions:
   - intl
   homepage: https://github.com/dvorka/mindforger
-  fetcher: github_release
+  fetcher: download_page
   args:
-    repo: dvorka/mindforger
-    assets:
+    source: Official project download page; no stable public release asset API
+    platforms:
     - platform: win-x64
-      pattern: mindforger-*-win64.exe
+      download_url: https://github.com/dvorka/mindforger/releases
+      link_kind: landing_page
 - id: ghostwriter
   name: ghostwriter
   category: Productivity
   editions:
   - intl
   homepage: https://github.com/KDE/ghostwriter
-  fetcher: github_release
+  fetcher: download_page
   args:
-    repo: KDE/ghostwriter
-    assets:
+    source: Official project download page; no stable public release asset API
+    platforms:
     - platform: win-x64
-      pattern: ghostwriter-*-setup.exe
+      download_url: https://github.com/KDE/ghostwriter/releases
+      link_kind: landing_page
 - id: element
   name: Element
   category: Messaging
   editions:
   - intl
-  homepage: https://github.com/element-hq/element-desktop
-  fetcher: github_release
+  homepage: https://element.io/download
+  fetcher: download_page
   args:
-    repo: element-hq/element-desktop
-    assets:
+    source: Official project download page; no stable public release asset API
+    platforms:
     - platform: win-x64
-      pattern: element-*-x64.exe
+      download_url: https://element.io/download
+      link_kind: landing_page
     - platform: mac-arm64
-      pattern: element-*-arm64.dmg
+      download_url: https://element.io/download
+      link_kind: landing_page
     - platform: linux-x64
-      pattern: element-*-amd64.deb
+      download_url: https://element.io/download
+      link_kind: landing_page
 - id: cinny
   name: Cinny
   category: Messaging
   editions:
   - intl
   homepage: https://github.com/cinnyapp/cinny-desktop
-  fetcher: github_release
+  fetcher: download_page
   args:
-    repo: cinnyapp/cinny-desktop
-    assets:
+    source: Official project download page; no stable public release asset API
+    platforms:
     - platform: win-x64
-      pattern: Cinny-*-x64.exe
+      download_url: https://github.com/cinnyapp/cinny-desktop/releases
+      link_kind: landing_page
     - platform: mac-arm64
-      pattern: Cinny-*-arm64.dmg
+      download_url: https://github.com/cinnyapp/cinny-desktop/releases
+      link_kind: landing_page
     - platform: linux-x64
-      pattern: Cinny-*-amd64.deb
+      download_url: https://github.com/cinnyapp/cinny-desktop/releases
+      link_kind: landing_page
 - id: hexchat
   name: HexChat
   category: Messaging
   editions:
   - intl
-  homepage: https://github.com/hexchat/hexchat
-  fetcher: github_release
+  homepage: https://hexchat.github.io/downloads.html
+  fetcher: download_page
   args:
-    repo: hexchat/hexchat
-    assets:
+    source: Official project download page; no stable public release asset API
+    platforms:
     - platform: win-x64
-      pattern: HexChat-*-x64.exe
+      download_url: https://hexchat.github.io/downloads.html
+      link_kind: landing_page
 - id: protonmail-bridge
   name: Proton Mail Bridge
   category: Messaging
   editions:
   - intl
-  homepage: https://github.com/ProtonMail/proton-bridge
-  fetcher: github_release
+  homepage: https://proton.me/mail/bridge
+  fetcher: download_page
   args:
-    repo: ProtonMail/proton-bridge
-    assets:
+    source: Official project download page; no stable public release asset API
+    platforms:
     - platform: win-x64
-      pattern: proton-bridge-*-x64.exe
+      download_url: https://proton.me/mail/bridge
+      link_kind: landing_page
     - platform: mac-arm64
-      pattern: proton-bridge-*-arm64.dmg
+      download_url: https://proton.me/mail/bridge
+      link_kind: landing_page
 - id: localai
   name: LocalAI
   category: AI Tools
@@ -3793,41 +3944,46 @@ packages:
   category: AI Tools
   editions:
   - intl
-  homepage: https://github.com/invoke-ai/InvokeAI
-  fetcher: github_release
+  homepage: https://github.com/invoke-ai/InvokeAI#installation
+  fetcher: download_page
   args:
-    repo: invoke-ai/InvokeAI
-    assets:
+    source: Official project download page; no stable public release asset API
+    platforms:
     - platform: win-x64
-      pattern: InvokeAI-*-windows.zip
+      download_url: https://github.com/invoke-ai/InvokeAI#installation
+      link_kind: landing_page
     - platform: mac-arm64
-      pattern: InvokeAI-*-macos.zip
+      download_url: https://github.com/invoke-ai/InvokeAI#installation
+      link_kind: landing_page
     - platform: linux-x64
-      pattern: InvokeAI-*-linux.tar.gz
+      download_url: https://github.com/invoke-ai/InvokeAI#installation
+      link_kind: landing_page
 - id: stable-diffusion-webui
   name: Stable Diffusion WebUI
   category: AI Tools
   editions:
   - intl
-  homepage: https://github.com/AUTOMATIC1111/stable-diffusion-webui
-  fetcher: github_release
+  homepage: https://github.com/AUTOMATIC1111/stable-diffusion-webui#installation-and-running
+  fetcher: download_page
   args:
-    repo: AUTOMATIC1111/stable-diffusion-webui
-    assets:
+    source: Official project download page; no stable public release asset API
+    platforms:
     - platform: win-x64
-      pattern: stable-diffusion-webui-*-win64.zip
+      download_url: https://github.com/AUTOMATIC1111/stable-diffusion-webui#installation-and-running
+      link_kind: landing_page
 - id: text-generation-webui
   name: text-generation-webui
   category: AI Tools
   editions:
   - intl
-  homepage: https://github.com/oobabooga/text-generation-webui
-  fetcher: github_release
+  homepage: https://github.com/oobabooga/text-generation-webui#installation
+  fetcher: download_page
   args:
-    repo: oobabooga/text-generation-webui
-    assets:
+    source: Official project download page; no stable public release asset API
+    platforms:
     - platform: win-x64
-      pattern: text-generation-webui-*-win64.zip
+      download_url: https://github.com/oobabooga/text-generation-webui#installation
+      link_kind: landing_page
 - id: buzz
   name: Buzz
   category: AI Tools
@@ -3849,61 +4005,71 @@ packages:
   category: AI Tools
   editions:
   - intl
-  homepage: https://github.com/openai/whisper
-  fetcher: github_release
+  homepage: https://github.com/openai/whisper#setup
+  fetcher: download_page
   args:
-    repo: openai/whisper
-    assets:
+    source: Official project download page; no stable public release asset API
+    platforms:
     - platform: linux-x64
-      pattern: whisper-*-linux-amd64
+      download_url: https://github.com/openai/whisper#setup
+      link_kind: landing_page
 - id: llama-cpp
   name: llama.cpp
   category: AI Tools
   editions:
   - intl
   homepage: https://github.com/ggml-org/llama.cpp
-  fetcher: github_release
+  fetcher: download_page
   args:
-    repo: ggml-org/llama.cpp
-    assets:
+    source: Official project download page; no stable public release asset API
+    platforms:
     - platform: win-x64
-      pattern: llama-*-bin-win-x64.zip
+      download_url: https://github.com/ggml-org/llama.cpp/releases
+      link_kind: landing_page
     - platform: mac-arm64
-      pattern: llama-*-bin-macos-arm64.zip
+      download_url: https://github.com/ggml-org/llama.cpp/releases
+      link_kind: landing_page
     - platform: linux-x64
-      pattern: llama-*-bin-linux-x64.zip
+      download_url: https://github.com/ggml-org/llama.cpp/releases
+      link_kind: landing_page
 - id: open-webui
   name: Open WebUI
   category: AI Tools
   editions:
   - intl
-  homepage: https://github.com/open-webui/open-webui
-  fetcher: github_release
+  homepage: https://docs.openwebui.com/getting-started/
+  fetcher: download_page
   args:
-    repo: open-webui/open-webui
-    assets:
+    source: Official project download page; no stable public release asset API
+    platforms:
     - platform: win-x64
-      pattern: open-webui-*-windows-amd64.exe
+      download_url: https://docs.openwebui.com/getting-started/
+      link_kind: landing_page
     - platform: mac-arm64
-      pattern: open-webui-*-darwin-arm64
+      download_url: https://docs.openwebui.com/getting-started/
+      link_kind: landing_page
     - platform: linux-x64
-      pattern: open-webui-*-linux-amd64
+      download_url: https://docs.openwebui.com/getting-started/
+      link_kind: landing_page
 - id: koboldcpp
   name: KoboldCpp
   category: AI Tools
   editions:
   - intl
   homepage: https://github.com/LostRuins/koboldcpp
-  fetcher: github_release
+  fetcher: download_page
   args:
-    repo: LostRuins/koboldcpp
-    assets:
+    source: Official project download page; no stable public release asset API
+    platforms:
     - platform: win-x64
-      pattern: koboldcpp_*_win_x64.exe
+      download_url: https://github.com/LostRuins/koboldcpp/releases
+      link_kind: landing_page
     - platform: mac-arm64
-      pattern: koboldcpp_*_macos_arm64
+      download_url: https://github.com/LostRuins/koboldcpp/releases
+      link_kind: landing_page
     - platform: linux-x64
-      pattern: koboldcpp_*_linux_x64
+      download_url: https://github.com/LostRuins/koboldcpp/releases
+      link_kind: landing_page
 - id: age
   name: age
   category: Security & Privacy
@@ -3926,42 +4092,48 @@ packages:
   editions:
   - intl
   homepage: https://github.com/getsops/sops
-  fetcher: github_release
+  fetcher: download_page
   args:
-    repo: getsops/sops
-    assets:
+    source: Official project download page; no stable public release asset API
+    platforms:
     - platform: win-x64
-      pattern: sops-*-windows.amd64.exe
+      download_url: https://github.com/getsops/sops/releases
+      link_kind: landing_page
     - platform: mac-arm64
-      pattern: sops-*-darwin.arm64
+      download_url: https://github.com/getsops/sops/releases
+      link_kind: landing_page
     - platform: linux-x64
-      pattern: sops-*-linux.amd64
+      download_url: https://github.com/getsops/sops/releases
+      link_kind: landing_page
 - id: yubikey-manager
   name: YubiKey Manager
   category: Security & Privacy
   editions:
   - intl
   homepage: https://github.com/Yubico/yubikey-manager
-  fetcher: github_release
+  fetcher: download_page
   args:
-    repo: Yubico/yubikey-manager
-    assets:
+    source: Official project download page; no stable public release asset API
+    platforms:
     - platform: win-x64
-      pattern: yubikey-manager-*.exe
+      download_url: https://github.com/Yubico/yubikey-manager/releases
+      link_kind: landing_page
     - platform: mac-arm64
-      pattern: yubikey-manager-*.dmg
+      download_url: https://github.com/Yubico/yubikey-manager/releases
+      link_kind: landing_page
 - id: clamav
   name: ClamAV
   category: Security & Privacy
   editions:
   - intl
   homepage: https://github.com/Cisco-Talos/clamav
-  fetcher: github_release
+  fetcher: download_page
   args:
-    repo: Cisco-Talos/clamav
-    assets:
+    source: Official project download page; no stable public release asset API
+    platforms:
     - platform: win-x64
-      pattern: clamav-*-x64.msi
+      download_url: https://github.com/Cisco-Talos/clamav/releases
+      link_kind: landing_page
 - id: gitleaks
   name: gitleaks
   category: Security & Privacy
@@ -4015,97 +4187,115 @@ packages:
   category: Cloud & DevOps
   editions:
   - intl
-  homepage: https://github.com/helm/helm
-  fetcher: github_release
+  homepage: https://helm.sh/docs/intro/install/
+  fetcher: download_page
   args:
-    repo: helm/helm
-    assets:
+    source: Official project download page; no stable public release asset API
+    platforms:
     - platform: win-x64
-      pattern: helm-*-windows-amd64.zip
+      download_url: https://helm.sh/docs/intro/install/
+      link_kind: landing_page
     - platform: mac-arm64
-      pattern: helm-*-darwin-arm64.tar.gz
+      download_url: https://helm.sh/docs/intro/install/
+      link_kind: landing_page
     - platform: linux-x64
-      pattern: helm-*-linux-amd64.tar.gz
+      download_url: https://helm.sh/docs/intro/install/
+      link_kind: landing_page
 - id: terraform
   name: Terraform
   category: Cloud & DevOps
   editions:
   - intl
-  homepage: https://github.com/hashicorp/terraform
-  fetcher: github_release
+  homepage: https://developer.hashicorp.com/terraform/install
+  fetcher: download_page
   args:
-    repo: hashicorp/terraform
-    assets:
+    source: Official project download page; no stable public release asset API
+    platforms:
     - platform: win-x64
-      pattern: terraform_*_windows_amd64.zip
+      download_url: https://developer.hashicorp.com/terraform/install
+      link_kind: landing_page
     - platform: mac-arm64
-      pattern: terraform_*_darwin_arm64.zip
+      download_url: https://developer.hashicorp.com/terraform/install
+      link_kind: landing_page
     - platform: linux-x64
-      pattern: terraform_*_linux_amd64.zip
+      download_url: https://developer.hashicorp.com/terraform/install
+      link_kind: landing_page
 - id: vault
   name: Vault
   category: Cloud & DevOps
   editions:
   - intl
-  homepage: https://github.com/hashicorp/vault
-  fetcher: github_release
+  homepage: https://developer.hashicorp.com/vault/install
+  fetcher: download_page
   args:
-    repo: hashicorp/vault
-    assets:
+    source: Official project download page; no stable public release asset API
+    platforms:
     - platform: win-x64
-      pattern: vault_*_windows_amd64.zip
+      download_url: https://developer.hashicorp.com/vault/install
+      link_kind: landing_page
     - platform: mac-arm64
-      pattern: vault_*_darwin_arm64.zip
+      download_url: https://developer.hashicorp.com/vault/install
+      link_kind: landing_page
     - platform: linux-x64
-      pattern: vault_*_linux_amd64.zip
+      download_url: https://developer.hashicorp.com/vault/install
+      link_kind: landing_page
 - id: consul
   name: Consul
   category: Cloud & DevOps
   editions:
   - intl
-  homepage: https://github.com/hashicorp/consul
-  fetcher: github_release
+  homepage: https://developer.hashicorp.com/consul/install
+  fetcher: download_page
   args:
-    repo: hashicorp/consul
-    assets:
+    source: Official project download page; no stable public release asset API
+    platforms:
     - platform: win-x64
-      pattern: consul_*_windows_amd64.zip
+      download_url: https://developer.hashicorp.com/consul/install
+      link_kind: landing_page
     - platform: mac-arm64
-      pattern: consul_*_darwin_arm64.zip
+      download_url: https://developer.hashicorp.com/consul/install
+      link_kind: landing_page
     - platform: linux-x64
-      pattern: consul_*_linux_amd64.zip
+      download_url: https://developer.hashicorp.com/consul/install
+      link_kind: landing_page
 - id: nomad
   name: Nomad
   category: Cloud & DevOps
   editions:
   - intl
-  homepage: https://github.com/hashicorp/nomad
-  fetcher: github_release
+  homepage: https://developer.hashicorp.com/nomad/install
+  fetcher: download_page
   args:
-    repo: hashicorp/nomad
-    assets:
+    source: Official project download page; no stable public release asset API
+    platforms:
     - platform: win-x64
-      pattern: nomad_*_windows_amd64.zip
+      download_url: https://developer.hashicorp.com/nomad/install
+      link_kind: landing_page
     - platform: mac-arm64
-      pattern: nomad_*_darwin_arm64.zip
+      download_url: https://developer.hashicorp.com/nomad/install
+      link_kind: landing_page
     - platform: linux-x64
-      pattern: nomad_*_linux_amd64.zip
+      download_url: https://developer.hashicorp.com/nomad/install
+      link_kind: landing_page
 - id: boundary
   name: Boundary
   category: Cloud & DevOps
   editions:
   - intl
-  homepage: https://github.com/hashicorp/boundary
-  fetcher: github_release
+  homepage: https://developer.hashicorp.com/boundary/install
+  fetcher: download_page
   args:
-    repo: hashicorp/boundary
-    assets:
+    source: Official project download page; no stable public release asset API
+    platforms:
     - platform: win-x64
-      pattern: boundary_*_windows_amd64.zip
+      download_url: https://developer.hashicorp.com/boundary/install
+      link_kind: landing_page
     - platform: mac-arm64
-      pattern: boundary_*_darwin_arm64.zip
+      download_url: https://developer.hashicorp.com/boundary/install
+      link_kind: landing_page
     - platform: linux-x64
-      pattern: boundary_*_linux_amd64.zip
+      download_url: https://developer.hashicorp.com/boundary/install
+      link_kind: landing_page
 - id: k3s
   name: k3s
   category: Cloud & DevOps
@@ -4140,16 +4330,19 @@ packages:
   editions:
   - intl
   homepage: https://github.com/hatoo/oha
-  fetcher: github_release
+  fetcher: download_page
   args:
-    repo: hatoo/oha
-    assets:
+    source: Official project download page; no stable public release asset API
+    platforms:
     - platform: win-x64
-      pattern: oha-*-x86_64-pc-windows-msvc.zip
+      download_url: https://github.com/hatoo/oha/releases
+      link_kind: landing_page
     - platform: mac-arm64
-      pattern: oha-*-aarch64-apple-darwin.tar.gz
+      download_url: https://github.com/hatoo/oha/releases
+      link_kind: landing_page
     - platform: linux-x64
-      pattern: oha-*-x86_64-unknown-linux-gnu.tar.gz
+      download_url: https://github.com/hatoo/oha/releases
+      link_kind: landing_page
 - id: walk
   name: walk
   category: Developer Tools
@@ -4219,61 +4412,71 @@ packages:
   category: Developer Tools
   editions:
   - intl
-  homepage: https://github.com/tealdeer-rs/tealdeer
-  fetcher: github_release
+  homepage: https://dbrgn.github.io/tealdeer/installing.html
+  fetcher: download_page
   args:
-    repo: tealdeer-rs/tealdeer
-    assets:
+    source: Official project download page; no stable public release asset API
+    platforms:
     - platform: win-x64
-      pattern: tealdeer-*-x86_64-pc-windows-msvc.zip
+      download_url: https://dbrgn.github.io/tealdeer/installing.html
+      link_kind: landing_page
     - platform: mac-arm64
-      pattern: tealdeer-*-aarch64-apple-darwin.tar.gz
+      download_url: https://dbrgn.github.io/tealdeer/installing.html
+      link_kind: landing_page
     - platform: linux-x64
-      pattern: tealdeer-*-x86_64-unknown-linux-musl.tar.gz
+      download_url: https://dbrgn.github.io/tealdeer/installing.html
+      link_kind: landing_page
 - id: erdtree
   name: erdtree
   category: Developer Tools
   editions:
   - intl
   homepage: https://github.com/solidiquis/erdtree
-  fetcher: github_release
+  fetcher: download_page
   args:
-    repo: solidiquis/erdtree
-    assets:
+    source: Official project download page; no stable public release asset API
+    platforms:
     - platform: win-x64
-      pattern: erdtree-*-x86_64-pc-windows-msvc.zip
+      download_url: https://github.com/solidiquis/erdtree/releases
+      link_kind: landing_page
     - platform: mac-arm64
-      pattern: erdtree-*-aarch64-apple-darwin.tar.gz
+      download_url: https://github.com/solidiquis/erdtree/releases
+      link_kind: landing_page
     - platform: linux-x64
-      pattern: erdtree-*-x86_64-unknown-linux-gnu.tar.gz
+      download_url: https://github.com/solidiquis/erdtree/releases
+      link_kind: landing_page
 - id: broot
   name: broot
   category: Developer Tools
   editions:
   - intl
   homepage: https://github.com/Canop/broot
-  fetcher: github_release
+  fetcher: download_page
   args:
-    repo: Canop/broot
-    assets:
+    source: Official project download page; no stable public release asset API
+    platforms:
     - platform: win-x64
-      pattern: broot-*-x86_64-pc-windows-msvc.zip
+      download_url: https://github.com/Canop/broot/releases
+      link_kind: landing_page
     - platform: mac-arm64
-      pattern: broot-*-aarch64-apple-darwin.tar.gz
+      download_url: https://github.com/Canop/broot/releases
+      link_kind: landing_page
     - platform: linux-x64
-      pattern: broot-*-x86_64-unknown-linux-gnu.tar.gz
+      download_url: https://github.com/Canop/broot/releases
+      link_kind: landing_page
 - id: navi-cli
   name: mc
   category: Developer Tools
   editions:
   - intl
   homepage: https://github.com/midnight-commander/mc
-  fetcher: github_release
+  fetcher: download_page
   args:
-    repo: midnight-commander/mc
-    assets:
+    source: Official project download page; no stable public release asset API
+    platforms:
     - platform: win-x64
-      pattern: mc-*-x64.zip
+      download_url: https://github.com/midnight-commander/mc/releases
+      link_kind: landing_page
 - id: xcp
   name: xcp
   category: Developer Tools
@@ -4352,12 +4555,13 @@ packages:
   editions:
   - intl
   homepage: https://github.com/aristocratos/btop
-  fetcher: github_release
+  fetcher: download_page
   args:
-    repo: aristocratos/btop
-    assets:
+    source: Official project download page; no stable public release asset API
+    platforms:
     - platform: win-x64
-      pattern: btop-*-x86_64-win64-bin.zip
+      download_url: https://github.com/aristocratos/btop/releases
+      link_kind: landing_page
 - id: nushell-win
   name: Nushell (Windows)
   category: Developer Tools
@@ -4921,7 +5125,8 @@ packages:
   homepage: https://learn.microsoft.com/sysinternals/downloads/sysinternals-suite
   fetcher: download_page
   args:
-    source: Official Microsoft Sysinternals download; suite version is not exposed as a public API
+    source: Official Microsoft Sysinternals download; suite version is not exposed
+      as a public API
     platforms:
     - platform: win-x64
       download_url: https://download.sysinternals.com/files/SysinternalsSuite.zip
