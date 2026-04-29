@@ -176,7 +176,7 @@ def record_visit():
     """Record a frontend page view."""
     _increment_visit("/")
     _log_metric_event("visit", path="/")
-    return JSONResponse(content={"status": "ok"})
+    return JSONResponse(content={"status": "ok", "metrics": _load_metrics()})
 
 
 @app.get("/api/download/{package_id}/{platform}", tags=["metrics"])

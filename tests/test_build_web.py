@@ -187,3 +187,14 @@ def test_web_app_records_intl_visits_through_public_api():
 
     assert "recordVisit()" in app_js
     assert "/api/visit" in app_js
+
+
+def test_web_app_displays_site_visit_and_download_counts():
+    app_js = (build_web.WEB_SRC / "app.js").read_text(encoding="utf-8")
+    html = (build_web.WEB_SRC / "index.html").read_text(encoding="utf-8")
+
+    assert "siteMetrics" in app_js
+    assert "applySiteMetrics" in app_js
+    assert "noteDownloadClick()" in app_js
+    assert "siteMetricsSummary()" in html
+    assert "noteDownloadClick()" in html

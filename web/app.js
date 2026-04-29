@@ -11,6 +11,7 @@ function app() {
     fuse: null,
     packages: [],
     stats: {},
+    siteMetrics: { loaded: false, visits: 0, downloads: 0 },
     publicSiteUrl: '',
     lastUpdated: '—',
     directFileExtensions: ['.exe', '.dmg', '.iso', '.zip', '.tar.gz', '.msi', '.pkg', '.deb', '.rpm', '.appimage', '.7z'],
@@ -23,6 +24,9 @@ function app() {
         status: ({ count, updated }) => `共 ${count} 项 · 最后同步 ${updated}`,
         total_software: '软件总数',
         total_software_value: ({ count }) => `${count} 项`,
+        site_visits: '访问',
+        site_downloads: '下载',
+        site_metrics_title: '当前运行实例的访问与下载点击统计',
         category: '分类',
         platform: '平台',
         result_count: ({ shown, total }) => `显示 ${shown} / ${total} 项`,
@@ -55,6 +59,9 @@ function app() {
         status: ({ count, updated }) => `Total ${count} items · Last synced ${updated}`,
         total_software: 'Total',
         total_software_value: ({ count }) => `${count} items`,
+        site_visits: 'Visits',
+        site_downloads: 'Downloads',
+        site_metrics_title: 'Visit and download-click counts for the current running instance',
         category: 'Category',
         platform: 'Platform',
         result_count: ({ shown, total }) => `Showing ${shown} / ${total} items`,
@@ -205,7 +212,41 @@ function app() {
       fetch(`${this.publicSiteUrl}/api/visit`, {
         method: 'POST',
         keepalive: true,
-      }).catch(() => {});
+      })
+        .then(response => response.ok ? response.json() : null)
+        .then(payload => {
+          const metrics = payload?.metrics || payload;
+          if (!this.applySiteMetrics(metrics)) this.fetchSiteMetrics();
+        })
+        .catch(() => this.fetchSiteMetrics());
+    },
+
+    fetchSiteMetrics() {
+      if (this.edition !== 'intl' || !this.publicSiteUrl) return;
+      fetch(`${this.publicSiteUrl}/api/metrics`)
+        .then(response => response.ok ? response.json() : null)
+        .then(metrics => this.applySiteMetrics(metrics))
+        .catch(() => {});
+    },
+
+    applySiteMetrics(metrics) {
+      if (!metrics?.visits || !metrics?.downloads) return false;
+      this.siteMetrics = {
+        loaded: true,
+        visits: Number(metrics.visits.total) || 0,
+        downloads: Number(metrics.downloads.total) || 0,
+      };
+      return true;
+    },
+
+    noteDownloadClick() {
+      if (this.edition !== 'intl' || !this.publicSiteUrl || !this.siteMetrics.loaded) {
+        return;
+      }
+      this.siteMetrics = {
+        ...this.siteMetrics,
+        downloads: this.siteMetrics.downloads + 1,
+      };
     },
 
     // ==== direct-link detection ====
@@ -262,6 +303,13 @@ function app() {
       return this.msg('total_software_value', { count: this.totalCount() });
     },
 
+    siteMetricsSummary() {
+      if (!this.siteMetrics.loaded) return '';
+      const visits = this.formatCount(this.siteMetrics.visits);
+      const downloads = this.formatCount(this.siteMetrics.downloads);
+      return `${this.t('site_visits')} ${visits} · ${this.t('site_downloads')} ${downloads}`;
+    },
+
     themeTitle() {
       return this.dark ? this.t('theme_light') : this.t('theme_dark');
     },
@@ -311,6 +359,11 @@ function app() {
       let i = 0, v = bytes;
       while (v >= 1024 && i < units.length - 1) { v /= 1024; i++; }
       return `${v.toFixed(v < 10 && i > 0 ? 1 : 0)} ${units[i]}`;
+    },
+
+    formatCount(value) {
+      const locale = this.edition === 'intl' ? 'en-US' : 'zh-CN';
+      return new Intl.NumberFormat(locale).format(Number(value) || 0);
     },
 
     versionKindLabel(kind) {

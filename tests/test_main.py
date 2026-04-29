@@ -65,6 +65,7 @@ def test_visit_endpoint_records_page_views(tmp_path, monkeypatch, capsys):
     response = client.post("/api/visit")
 
     assert response.status_code == 200
+    assert response.json()["metrics"]["visits"]["total"] == 1
     metrics = client.get("/api/metrics").json()
     assert metrics["scope"] == "instance-local"
     assert metrics["visits"]["total"] == 1
