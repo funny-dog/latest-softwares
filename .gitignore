@@ -3,13 +3,26 @@ __pycache__/
 .venv/
 venv/
 .env
+.env.*
+!.env.example
 .DS_Store
 .idea/
 .vscode/
+.claude/
+.fastapicloud/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+*.log
 
 # Web 构建产物（CI 临时生成，不入库）
 # 注意：dist/ 不能放在 .gitignore 中，否则 fastapi deploy 会排除它
 # dist/ 的 git 忽略通过 .git/info/exclude 实现（仅本地生效）
+
+# 一次性批量导入脚本不属于同步/部署运行链路
+scripts/add_*.py
 
 # 链接巡检报告由 CI artifact 保存，本地运行时不入库
 data/link-health.json

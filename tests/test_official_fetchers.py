@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from scripts.fetchers import download_page, firefox, nodejs
+from scripts.fetchers import download_page, fedora, firefox, nodejs, ubuntu
 
 
 def test_firefox_fetcher_uses_mozilla_product_details(monkeypatch):
@@ -62,6 +62,94 @@ def test_nodejs_fetcher_uses_latest_lts_release(monkeypatch):
     assert result.version_source == nodejs.VERSION_SOURCE
     assert result.assets[0].url.endswith("/v24.11.1/node-v24.11.1-win-x64.zip")
     assert result.assets[1].url.endswith("/v24.11.1/node-v24.11.1-linux-x64.tar.xz")
+
+
+def test_ubuntu_fetcher_uses_latest_release_index(monkeypatch):
+    responses = {
+        ubuntu.RELEASES_URL: """
+            <a href="25.10/">25.10/</a> Ubuntu 25.10 (Questing Quokka)
+            <a href="26.04/">26.04/</a> Ubuntu 26.04 LTS (Resolute Raccoon)
+        """,
+        "https://releases.ubuntu.com/26.04/": """
+            <a href="ubuntu-26.04-desktop-amd64.iso">desktop</a>
+            <a href="ubuntu-26.04-live-server-amd64.iso">server</a>
+        """,
+    }
+
+    class Response:
+        def __init__(self, text: str):
+            self.text = text
+
+        def raise_for_status(self):
+            return None
+
+    monkeypatch.setattr(ubuntu, "get", lambda url, **_: Response(responses[url]))
+
+    result = ubuntu.fetch(
+        {
+            "platforms": [
+                {
+                    "platform": "desktop-amd64",
+                    "pattern": "ubuntu-{version}-desktop-amd64.iso",
+                },
+                {
+                    "platform": "server-amd64",
+                    "pattern": "ubuntu-{version}-live-server-amd64.iso",
+                },
+            ],
+        }
+    )
+
+    assert result.version == "26.04"
+    assert result.version_source == ubuntu.VERSION_SOURCE
+    assert (
+        result.assets[0].url
+        == "https://releases.ubuntu.com/26.04/ubuntu-26.04-desktop-amd64.iso"
+    )
+    assert (
+        result.assets[1].url
+        == "https://releases.ubuntu.com/26.04/ubuntu-26.04-live-server-amd64.iso"
+    )
+
+
+def test_fedora_fetcher_uses_highest_release_directory(monkeypatch):
+    responses = {
+        fedora.RELEASES_URL: """
+            <a href="43/">43/</a>
+            <a href="44/">44/</a>
+        """,
+        "https://dl.fedoraproject.org/pub/fedora/linux/releases/44/Workstation/x86_64/iso/": """
+            <a href="Fedora-Workstation-44-1.7-x86_64-CHECKSUM">checksum</a>
+            <a href="Fedora-Workstation-Live-44-1.7.x86_64.iso">iso</a>
+        """,
+    }
+
+    class Response:
+        def __init__(self, text: str):
+            self.text = text
+
+        def raise_for_status(self):
+            return None
+
+    monkeypatch.setattr(fedora, "get", lambda url, **_: Response(responses[url]))
+
+    result = fedora.fetch(
+        {
+            "platforms": [
+                {
+                    "platform": "workstation-live-x86_64",
+                    "pattern": "Fedora-Workstation-Live-{version}-*.x86_64.iso",
+                },
+            ],
+        }
+    )
+
+    assert result.version == "44"
+    assert result.version_source == fedora.VERSION_SOURCE
+    assert result.assets[0].url == (
+        "https://dl.fedoraproject.org/pub/fedora/linux/releases/44/"
+        "Workstation/x86_64/iso/Fedora-Workstation-Live-44-1.7.x86_64.iso"
+    )
 
 
 def test_download_page_fetcher_marks_sync_date_and_preserves_link_kind():

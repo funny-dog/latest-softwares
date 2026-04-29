@@ -9,6 +9,35 @@ packages:
   args:
     lang: Chinese (Simplified)
     edition: Pro
+- id: ubuntu
+  name: Ubuntu
+  category: Operating Systems
+  editions:
+  - cn
+  - intl
+  homepage: https://ubuntu.com/download
+  fetcher: ubuntu_releases
+  args:
+    platforms:
+    - platform: desktop-amd64
+      pattern: ubuntu-{version}-desktop-amd64.iso
+    - platform: server-amd64
+      pattern: ubuntu-{version}-live-server-amd64.iso
+    - platform: wsl-amd64
+      pattern: ubuntu-{version}-wsl-amd64.wsl
+- id: fedora
+  name: Fedora Workstation
+  category: Operating Systems
+  editions:
+  - cn
+  - intl
+  homepage: https://fedoraproject.org/workstation/download/
+  fetcher: fedora_releases
+  args:
+    edition_path: Workstation/x86_64/iso
+    platforms:
+    - platform: workstation-live-x86_64
+      pattern: Fedora-Workstation-Live-{version}-*.x86_64.iso
 - id: v2rayn
   name: v2rayN
   category: Network & Proxy

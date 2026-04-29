@@ -11,6 +11,7 @@ function app() {
     fuse: null,
     packages: [],
     stats: {},
+    publicSiteUrl: '',
     lastUpdated: '—',
     directFileExtensions: ['.exe', '.dmg', '.iso', '.zip', '.tar.gz', '.msi', '.pkg', '.deb', '.rpm', '.appimage', '.7z'],
 
@@ -110,6 +111,7 @@ function app() {
       // Keep packages.yaml order so categories remain predictable.
       this.packages = data.packages || [];
       this.stats = data.stats || {};
+      this.publicSiteUrl = (data.public_site_url || '').replace(/\/$/, '');
       this.directFileExtensions = data.direct_file_extensions || this.directFileExtensions;
 
       // Prefer the top-level generated_at written by sync.py.
@@ -188,6 +190,13 @@ function app() {
       this.activeCategory = 'all';
       this.activePlatform = 'all';
       this.$refs.search?.focus();
+    },
+
+    downloadUrl(pkg, asset) {
+      if (this.edition === 'intl' && this.publicSiteUrl && pkg?.id && asset?.platform) {
+        return `${this.publicSiteUrl}/api/download/${encodeURIComponent(pkg.id)}/${encodeURIComponent(asset.platform)}`;
+      }
+      return asset.url;
     },
 
     // ==== direct-link detection ====

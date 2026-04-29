@@ -179,7 +179,7 @@
           <div class="flex flex-wrap gap-1.5">
             <template x-for="asset in pkg.assets" :key="asset.platform">
               <a
-                :href="asset.url"
+                :href="downloadUrl(pkg, asset)"
                 target="_blank" rel="noopener"
                 :class="badgeClass(asset.platform, asset.url, asset.link_kind)"
                 class="inline-flex items-center gap-1 text-xs px-2.5 py-1 rounded-md font-medium transition"

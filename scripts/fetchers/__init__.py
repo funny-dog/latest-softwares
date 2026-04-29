@@ -18,6 +18,8 @@ from . import (
     baidunetdisk,
     geek,
     everything,
+    ubuntu,
+    fedora,
 )
 from . import nvidia_app, qq, wechat, yy
 
@@ -39,6 +41,8 @@ FETCHERS: dict[str, Callable[[dict], FetchResult]] = {
     "qq_official": qq.fetch,
     "wechat_official": wechat.fetch,
     "yy_official": yy.fetch,
+    "ubuntu_releases": ubuntu.fetch,
+    "fedora_releases": fedora.fetch,
 }
 
 

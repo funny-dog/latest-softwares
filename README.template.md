@@ -7,6 +7,17 @@
 
 ---
 
+## 🌐 在线站点与统计
+
+- 国际版站点（FastAPI Cloud）：<https://latest-softwares-064facea.fastapicloud.dev/>
+- 健康检查：<https://latest-softwares-064facea.fastapicloud.dev/api/health>
+- 软件数据 API：<https://latest-softwares-064facea.fastapicloud.dev/api/packages>
+- 访问与下载点击统计：<https://latest-softwares-064facea.fastapicloud.dev/api/metrics>
+
+国际版网页中的下载按钮会先访问 `/api/download/{package_id}/{platform}` 记录点击次数，再 302 跳转到上游官方下载地址；本仓库仍不托管任何二进制文件。
+
+---
+
 ## 📦 软件清单
 
 {% for category, items in grouped %}
@@ -48,6 +59,8 @@
 | `chrome_official` | Google Chrome | `platforms[].{platform, os_key, channel, download_url}` | Google Version History API | 取决于 `download_url` |
 | `steam_official` | Steam 客户端 | `platforms[].{platform, download_url}` | Valve Client Update API（构建时间戳） | 取决于 `download_url` |
 | `windows11_fido` | Windows 11 ISO | `lang`（默认 `Chinese (Simplified)`）、`edition`（默认 `Pro`）、`arch`（默认 `x64`） | ISO URL 解析（如 `24H2`） | 直链，约 24 h 有效 |
+| `ubuntu_releases` | Ubuntu | `platforms[].{platform, pattern}` | Ubuntu releases index | 直链 |
+| `fedora_releases` | Fedora Workstation | `platforms[].{platform, pattern}` | Fedora release directory | 直链 |
 | `baidunetdisk` | 百度网盘 | `platforms[].{platform, download_url}` | 页面 `__V20_VER__`（构建日期，非客户端版本） | 取决于 `download_url` |
 | `geek` | Geek Uninstaller | `platforms[].{platform, download_url}` | 官网 HTML 解析 | 取决于 `download_url` |
 | `everything` | Everything 搜索 | `platforms[].{platform, download_url}` | 官网 HTML 解析 | 取决于 `download_url` |

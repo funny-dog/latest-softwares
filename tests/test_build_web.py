@@ -66,6 +66,9 @@ def test_json_injection_records_requested_edition(tmp_path, monkeypatch):
 
     html = index.read_text(encoding="utf-8")
     assert '"edition":"intl"' in html
+    assert (
+        '"public_site_url":"https://latest-softwares-064facea.fastapicloud.dev"' in html
+    )
     assert '"id":"intl-only"' in html
     assert '"id":"cn-only"' not in html
 
@@ -161,6 +164,7 @@ def test_web_index_uses_i18n_for_visible_copy():
     assert "resultCountText()" in html
     assert "msg('direct_download'" in html
     assert "t('footer')" in html
+    assert "downloadUrl(pkg, asset)" in html
 
 
 def test_web_app_uses_stats_total_for_visible_total():
@@ -169,3 +173,10 @@ def test_web_app_uses_stats_total_for_visible_total():
     assert "this.stats = data.stats || {}" in app_js
     assert "totalCount()" in app_js
     assert "this.stats.total" in app_js
+
+
+def test_web_app_routes_intl_downloads_through_public_api():
+    app_js = (build_web.WEB_SRC / "app.js").read_text(encoding="utf-8")
+
+    assert "publicSiteUrl" in app_js
+    assert "/api/download/" in app_js

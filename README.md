@@ -3,7 +3,18 @@
 > 由 GitHub Actions 每日自动同步上游官方源的**最新版本元数据**。
 > 仓库**不托管二进制安装包**，下载按钮直接跳到上游官方下载链接。
 >
-> 📅 **最后更新**：`2026-04-29 14:08:59` (UTC)　· 共 351 项软件
+> 📅 **最后更新**：`2026-04-29 14:56:30` (UTC)　· 共 353 项软件（其中 2 项使用上次数据，标 ⚠️）
+
+---
+
+## 🌐 在线站点与统计
+
+- 国际版站点（FastAPI Cloud）：<https://latest-softwares-064facea.fastapicloud.dev/>
+- 健康检查：<https://latest-softwares-064facea.fastapicloud.dev/api/health>
+- 软件数据 API：<https://latest-softwares-064facea.fastapicloud.dev/api/packages>
+- 访问与下载点击统计：<https://latest-softwares-064facea.fastapicloud.dev/api/metrics>
+
+国际版网页中的下载按钮会先访问 `/api/download/{package_id}/{platform}` 记录点击次数，再 302 跳转到上游官方下载地址；本仓库仍不托管任何二进制文件。
 
 ---
 
@@ -14,7 +25,8 @@
 
 | 软件 | 最新版本 | 发布日期 | 下载链接 | 来源 |
 |------|---------|---------|---------|------|
-| [**Windows 11**](https://www.microsoft.com/software-download/windows11) | `25H2` | — | [win-x64](https://software.download.prss.microsoft.com/dbazure/Win11_25H2_Chinese_Simplified_x64_v2.iso?t=40b363d8-c7df-4142-999e-45518e122fcb&P1=1777558121&P2=601&P3=2&P4=s2dcrRg1MWvev9Xy0xja7Wgd75TG3mOIkFRsQjIgrBBU2DVaLe0HCOp5VcTrVMOuF1xNe3Nq2lfP6MXOpkUcZk82XLMQtIcuuDsvESqBiye9VXDlnWOLXoGe7aerGUZaO5jGe4qs8P5fWGsJZZHob1TsmsR0K6GaP8JyQV7np0B4FOPWYYgBMNKz%2bAPs2YVkXnMwKcig3GxCUEuR2LxtI5nAtTcS0mSHECqAO%2fgB4aL%2b8v4G0aO9jMagkc3uH3dRE%2b4tTeT%2fzCYzmELEYzuLVp2X12oGWmhlGXOLMSV1ASM6morASBkpiOa%2fh5XB%2bOUnmIzV9dCDSjsWrTt9nMbj3Q%3d%3d) | Microsoft Software Download (via Fido) |
+| [**Ubuntu**](https://ubuntu.com/download) | `26.04` | — | [desktop-amd64](https://releases.ubuntu.com/26.04/ubuntu-26.04-desktop-amd64.iso) · [server-amd64](https://releases.ubuntu.com/26.04/ubuntu-26.04-live-server-amd64.iso) · [wsl-amd64](https://releases.ubuntu.com/26.04/ubuntu-26.04-wsl-amd64.wsl) | Ubuntu official releases index |
+| [**Fedora Workstation**](https://fedoraproject.org/workstation/download/) | `44` | — | [workstation-live-x86_64](https://dl.fedoraproject.org/pub/fedora/linux/releases/44/Workstation/x86_64/iso/Fedora-Workstation-Live-44-1.7.x86_64.iso) | Fedora official release directory |
 | [**Windows 11**](https://www.microsoft.com/software-download/windows11) | `2026-04-29` | — | [win-x64](https://www.microsoft.com/software-download/windows11) | Official Microsoft Windows 11 download page; Fido ISO URL is environment dependent |
 
 
@@ -83,7 +95,7 @@
 | [**Lazygit**](https://github.com/jesseduffield/lazygit) | `0.61.1` | 2026-04-13 | [win-x64](https://github.com/jesseduffield/lazygit/releases/download/v0.61.1/lazygit_0.61.1_windows_x86_64.zip) · [mac-arm64](https://github.com/jesseduffield/lazygit/releases/download/v0.61.1/lazygit_0.61.1_darwin_arm64.tar.gz) · [linux-x64](https://github.com/jesseduffield/lazygit/releases/download/v0.61.1/lazygit_0.61.1_linux_x86_64.tar.gz) | GitHub Release: jesseduffield/lazygit |
 | [**Python**](https://www.python.org/downloads/) | `2026-04-29` | — | [win-x64](https://www.python.org/downloads/windows/) · [mac-universal](https://www.python.org/downloads/macos/) | Official Python downloads page; no public version API |
 | [**Go**](https://go.dev/dl/) | `2026-04-29` | — | [win-x64](https://go.dev/dl/) · [mac-universal](https://go.dev/dl/) · [linux-x64](https://go.dev/dl/) | Official Go downloads page; no public version API |
-| [**Zed**](https://github.com/zed-industries/zed) ⚠️ | `0.233.10` | 2026-04-24 | [linux-x64](https://github.com/zed-industries/zed/releases/download/v0.233.10/zed-linux-x86_64.tar.gz) | GitHub Release: zed-industries/zed<br>⚠ mac-arm64: 没有匹配 asset pattern 'Zed-*-aarch64.dmg' |
+| [**Zed**](https://github.com/zed-industries/zed) ⚠️ | `1.0.0` | 2026-04-29 | [linux-x64](https://github.com/zed-industries/zed/releases/download/v1.0.0/zed-linux-x86_64.tar.gz) | GitHub Release: zed-industries/zed<br>⚠ mac-arm64: 没有匹配 asset pattern 'Zed-*-aarch64.dmg' |
 | [**Lapce**](https://github.com/lapce/lapce) | `2026-04-29` | — | [win-x64](https://github.com/lapce/lapce/releases) · [mac-arm64](https://github.com/lapce/lapce/releases) · [linux-x64](https://github.com/lapce/lapce/releases) | Official project download page; no stable public release asset API |
 | [**Helix**](https://github.com/helix-editor/helix) | `25.07.1` | 2025-07-18 | [win-x64](https://github.com/helix-editor/helix/releases/download/25.07.1/helix-25.07.1-x86_64-windows.zip) · [mac-arm64](https://github.com/helix-editor/helix/releases/download/25.07.1/helix-25.07.1-aarch64-macos.tar.xz) · [linux-x64](https://github.com/helix-editor/helix/releases/download/25.07.1/helix-25.07.1-x86_64-linux.tar.xz) | GitHub Release: helix-editor/helix |
 | [**Ghostty**](https://ghostty.org/download) | `2026-04-29` | — | [mac-arm64](https://ghostty.org/download) | Official project download page; no stable public release asset API |
@@ -363,7 +375,7 @@
 | [**InvokeAI**](https://github.com/invoke-ai/InvokeAI#installation) | `2026-04-29` | — | [win-x64](https://github.com/invoke-ai/InvokeAI#installation) · [mac-arm64](https://github.com/invoke-ai/InvokeAI#installation) · [linux-x64](https://github.com/invoke-ai/InvokeAI#installation) | Official project download page; no stable public release asset API |
 | [**Stable Diffusion WebUI**](https://github.com/AUTOMATIC1111/stable-diffusion-webui#installation-and-running) | `2026-04-29` | — | [win-x64](https://github.com/AUTOMATIC1111/stable-diffusion-webui#installation-and-running) | Official project download page; no stable public release asset API |
 | [**text-generation-webui**](https://github.com/oobabooga/text-generation-webui#installation) | `2026-04-29` | — | [win-x64](https://github.com/oobabooga/text-generation-webui#installation) | Official project download page; no stable public release asset API |
-| [**Buzz**](https://github.com/chidiwilliams/buzz) ⚠️ | `1.4.4` | 2026-03-14 | [win-x64](https://github.com/chidiwilliams/buzz/releases/download/v1.4.4/Buzz-1.4.4-windows.exe) · [mac-arm64](https://github.com/chidiwilliams/buzz/releases/download/v1.4.4/Buzz-1.4.4-mac-ARM64.dmg) | GitHub Release: chidiwilliams/buzz<br>⚠ linux-x64: 没有匹配 asset pattern 'Buzz-*-linux-x86_64.AppImage' |
+| [**Buzz**](https://github.com/chidiwilliams/buzz) ⚠️ | `1.4.4` | 2026-03-14 | [win-x64](https://github.com/chidiwilliams/buzz/releases/download/v1.4.4/Buzz-1.4.4-windows.exe) | GitHub Release: chidiwilliams/buzz<br>⚠ mac-arm64: 没有匹配 asset pattern 'Buzz-*-mac-arm64.dmg'; linux-x64: 没有匹配 asset pattern 'Buzz-*-linux-x86_64.AppImage' |
 | [**Whisper**](https://github.com/openai/whisper#setup) | `2026-04-29` | — | [linux-x64](https://github.com/openai/whisper#setup) | Official project download page; no stable public release asset API |
 | [**llama.cpp**](https://github.com/ggml-org/llama.cpp) | `2026-04-29` | — | [win-x64](https://github.com/ggml-org/llama.cpp/releases) · [mac-arm64](https://github.com/ggml-org/llama.cpp/releases) · [linux-x64](https://github.com/ggml-org/llama.cpp/releases) | Official project download page; no stable public release asset API |
 | [**Open WebUI**](https://docs.openwebui.com/getting-started/) | `2026-04-29` | — | [win-x64](https://docs.openwebui.com/getting-started/) · [mac-arm64](https://docs.openwebui.com/getting-started/) · [linux-x64](https://docs.openwebui.com/getting-started/) | Official project download page; no stable public release asset API |
@@ -376,7 +388,7 @@
 |------|---------|---------|---------|------|
 | [**Audacity**](https://github.com/audacity/audacity) | `3.7.7` | 2025-12-11 | [win-x64](https://github.com/audacity/audacity/releases/download/Audacity-3.7.7/audacity-win-3.7.7-64bit.exe) | GitHub Release: audacity/audacity |
 | [**HandBrake**](https://github.com/HandBrake/HandBrake) | `1.11.1` | 2026-03-22 | [win-x64](https://github.com/HandBrake/HandBrake/releases/download/1.11.1/HandBrake-1.11.1-x86_64-Win_GUI.exe) | GitHub Release: HandBrake/HandBrake |
-| [**FFmpeg**](https://github.com/BtbN/FFmpeg-Builds) | `latest` | 2026-04-28 | [win-x64](https://github.com/BtbN/FFmpeg-Builds/releases/download/latest/ffmpeg-master-latest-win64-gpl.zip) | GitHub Release: BtbN/FFmpeg-Builds |
+| [**FFmpeg**](https://github.com/BtbN/FFmpeg-Builds) ⚠️ | `latest` | 2026-04-28 | [win-x64](https://github.com/BtbN/FFmpeg-Builds/releases/download/latest/ffmpeg-master-latest-win64-gpl.zip) | GitHub Release: BtbN/FFmpeg-Builds<br>⚠ BtbN/FFmpeg-Builds@autobuild-2026-04-29-13-28: 没有任何 asset 匹配配置的 pattern，现有 asset: ['checksums.sha256', 'ffmpeg-N-124254-g397c7c7524-linux64-gpl-shared.tar.xz', 'ffmpeg-N-124254-g397c7c7524-linux64-gpl.tar.xz', 'ffmpeg-N-124254-g397c7c7524-linux64-lgpl-shared.tar.xz', 'ffmpeg-N-124254-g397c7c7524-linux64-lgpl.tar.xz']... |
 | [**IINA**](https://github.com/iina/iina) | `1.4.2-build164` | 2026-04-16 | [mac-arm64](https://github.com/iina/iina/releases/download/v1.4.2-build164/IINA.v1.4.2-build164.dmg) | GitHub Release: iina/iina |
 | [**OBS Studio**](https://obsproject.com/) | `32.1.2` | 2026-04-21 | [win-x64](https://github.com/obsproject/obs-studio/releases/download/32.1.2/OBS-Studio-32.1.2-Windows-x64-Installer.exe) · [mac-arm64](https://github.com/obsproject/obs-studio/releases/download/32.1.2/OBS-Studio-32.1.2-macOS-Apple.dmg) · [mac-x64](https://github.com/obsproject/obs-studio/releases/download/32.1.2/OBS-Studio-32.1.2-macOS-Intel.dmg) · [linux-x64](https://github.com/obsproject/obs-studio/releases/download/32.1.2/OBS-Studio-32.1.2-Ubuntu-24.04-x86_64.deb) | GitHub Release: obsproject/obs-studio |
 | [**mpv**](https://mpv.io/) | `20260421` | 2026-04-21 | [win-x64](https://github.com/shinchiro/mpv-winbuild-cmake/releases/download/20260421/mpv-x86_64-20260421-git-5921fe5.7z) | GitHub Release: shinchiro/mpv-winbuild-cmake |
@@ -468,6 +480,8 @@
 | `chrome_official` | Google Chrome | `platforms[].{platform, os_key, channel, download_url}` | Google Version History API | 取决于 `download_url` |
 | `steam_official` | Steam 客户端 | `platforms[].{platform, download_url}` | Valve Client Update API（构建时间戳） | 取决于 `download_url` |
 | `windows11_fido` | Windows 11 ISO | `lang`（默认 `Chinese (Simplified)`）、`edition`（默认 `Pro`）、`arch`（默认 `x64`） | ISO URL 解析（如 `24H2`） | 直链，约 24 h 有效 |
+| `ubuntu_releases` | Ubuntu | `platforms[].{platform, pattern}` | Ubuntu releases index | 直链 |
+| `fedora_releases` | Fedora Workstation | `platforms[].{platform, pattern}` | Fedora release directory | 直链 |
 | `baidunetdisk` | 百度网盘 | `platforms[].{platform, download_url}` | 页面 `__V20_VER__`（构建日期，非客户端版本） | 取决于 `download_url` |
 | `geek` | Geek Uninstaller | `platforms[].{platform, download_url}` | 官网 HTML 解析 | 取决于 `download_url` |
 | `everything` | Everything 搜索 | `platforms[].{platform, download_url}` | 官网 HTML 解析 | 取决于 `download_url` |

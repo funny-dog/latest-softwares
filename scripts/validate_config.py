@@ -193,6 +193,19 @@ def _validate_nodejs(errors: list[str], label: str, args: dict) -> None:
         _validate_link_kind(errors, label, platform)
 
 
+def _validate_release_directory(errors: list[str], label: str, args: dict) -> None:
+    platforms = _validate_list(errors, label, args, "platforms")
+    _validate_unique_platforms(errors, label, platforms)
+    for platform in platforms:
+        _require_string(errors, label, platform, "platform")
+        _require_string(errors, label, platform, "pattern")
+        _validate_link_kind(errors, label, platform)
+
+    edition_path = args.get("edition_path")
+    if edition_path is not None and not _is_nonempty_string(edition_path):
+        errors.append(f"{label}: edition_path 不能为空")
+
+
 def _validate_fixed_url_platforms(errors: list[str], label: str, args: dict) -> None:
     platforms = _validate_list(errors, label, args, "platforms")
     _validate_unique_platforms(errors, label, platforms)
@@ -241,6 +254,8 @@ def _validate_fetcher_args(
         _validate_firefox(errors, label, args)
     elif fetcher_name == "nodejs_official":
         _validate_nodejs(errors, label, args)
+    elif fetcher_name in {"ubuntu_releases", "fedora_releases"}:
+        _validate_release_directory(errors, label, args)
     elif fetcher_name in FIXED_URL_FETCHERS:
         _validate_fixed_url_platforms(errors, label, args)
     elif fetcher_name in REDIRECT_FETCHERS:
