@@ -3,6 +3,13 @@
 仅包含确认有 GitHub Releases 的项目。
 """
 
+import sys
+
+if hasattr(sys.stdout, "reconfigure"):
+    sys.stdout.reconfigure(encoding="utf-8")
+if hasattr(sys.stderr, "reconfigure"):
+    sys.stderr.reconfigure(encoding="utf-8")
+
 import yaml
 from pathlib import Path
 
