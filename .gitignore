@@ -27,3 +27,7 @@ scripts/add_*.py
 
 # 链接巡检报告由 CI artifact 保存，本地运行时不入库
 data/link-health.json
+
+# 本地配置文件
+AGENTS.md
+uv.lock
