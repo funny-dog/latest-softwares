@@ -12,9 +12,22 @@
 - 国际版站点（FastAPI Cloud）：<https://latest-softwares-064facea.fastapicloud.dev/>
 - 健康检查：<https://latest-softwares-064facea.fastapicloud.dev/api/health>
 - 软件数据 API：<https://latest-softwares-064facea.fastapicloud.dev/api/packages>
-- 访问与下载点击统计：<https://latest-softwares-064facea.fastapicloud.dev/api/metrics>
+- 实例内 smoke 统计：<https://latest-softwares-064facea.fastapicloud.dev/api/metrics>
 
-国际版网页中的下载按钮会先访问 `/api/download/{package_id}/{platform}` 记录点击次数，再 302 跳转到上游官方下载地址；本仓库仍不托管任何二进制文件。
+国际版网页会向 `/api/visit` 发送访问 beacon；下载按钮会先访问 `/api/download/{package_id}/{platform}`，再 302 跳转到上游官方下载地址。本仓库仍不托管任何二进制文件。
+
+FastAPI Cloud 会按请求自动扩缩实例，`/api/metrics` 只代表当前命中的运行实例，适合 smoke test，不适合作为全站总数。全站统计请看 FastAPI Cloud runtime logs 里的结构化事件：
+
+```bash
+# 最近 24 小时访问次数
+fastapi cloud logs --no-follow --since 24h | grep '"event":"visit"' | wc -l
+
+# 最近 24 小时下载点击次数
+fastapi cloud logs --no-follow --since 24h | grep '"event":"download"' | wc -l
+
+# 某个软件的下载点击次数，例如 Ubuntu
+fastapi cloud logs --no-follow --since 24h | grep '"event":"download"' | grep '"package_id":"ubuntu"' | wc -l
+```
 
 ---
 

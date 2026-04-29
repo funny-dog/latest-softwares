@@ -14,6 +14,7 @@ Deployment note:
 from __future__ import annotations
 
 import json
+import logging
 import os
 import threading
 from datetime import datetime, timezone
@@ -32,6 +33,7 @@ STATS_FILE = Path(
     os.environ.get("LATEST_SOFTWARES_STATS_FILE", "/tmp/latest-softwares-stats.json")
 )
 STATS_LOCK = threading.Lock()
+METRICS_LOGGER = logging.getLogger("latest_softwares.metrics")
 
 # This deployment serves the international edition only.
 EDITION = "intl"
@@ -60,6 +62,12 @@ def _utc_now_iso() -> str:
 def _empty_metrics() -> dict:
     return {
         "schema_version": 1,
+        "scope": "instance-local",
+        "storage": "ephemeral-file",
+        "note": (
+            "FastAPI Cloud can autoscale to multiple instances; use runtime "
+            "logs for aggregate visit and download counts."
+        ),
         "updated_at": None,
         "visits": {"total": 0, "paths": {}},
         "downloads": {"total": 0, "packages": {}, "platforms": {}, "assets": {}},
@@ -120,6 +128,19 @@ def _increment_download(package_id: str, platform: str) -> None:
         _write_metrics(metrics)
 
 
+def _log_metric_event(event: str, **payload: str) -> None:
+    record = {"event": event, "timestamp": _utc_now_iso(), **payload}
+    METRICS_LOGGER.info(
+        "latest_softwares_event %s",
+        json.dumps(
+            record,
+            ensure_ascii=False,
+            separators=(",", ":"),
+            sort_keys=True,
+        ),
+    )
+
+
 def _find_asset(package_id: str, platform: str) -> dict:
     data = filter_data_by_edition(_load_data(), EDITION)
     for package in data.get("packages", []):
@@ -155,6 +176,7 @@ def list_packages():
 def record_visit():
     """Record a frontend page view."""
     _increment_visit("/")
+    _log_metric_event("visit", path="/")
     return JSONResponse(content={"status": "ok"})
 
 
@@ -163,6 +185,12 @@ def redirect_download(package_id: str, platform: str):
     """Record a download click and redirect to the upstream asset URL."""
     asset = _find_asset(package_id, platform)
     _increment_download(package_id, platform)
+    _log_metric_event(
+        "download",
+        package_id=package_id,
+        platform=platform,
+        url=asset["url"],
+    )
     return RedirectResponse(asset["url"])
 
 
