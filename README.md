@@ -3,11 +3,19 @@
 > 由 GitHub Actions 每日自动同步上游官方源的**最新版本元数据**。
 > 仓库**不托管二进制安装包**，下载按钮直接跳到上游官方下载链接。
 >
-> 📅 **最后更新**：`2026-04-29 14:06:24` (UTC)　· 共 350 项软件
+> 📅 **最后更新**：`2026-04-29 14:08:59` (UTC)　· 共 351 项软件
 
 ---
 
 ## 📦 软件清单
+
+
+### Operating Systems
+
+| 软件 | 最新版本 | 发布日期 | 下载链接 | 来源 |
+|------|---------|---------|---------|------|
+| [**Windows 11**](https://www.microsoft.com/software-download/windows11) | `25H2` | — | [win-x64](https://software.download.prss.microsoft.com/dbazure/Win11_25H2_Chinese_Simplified_x64_v2.iso?t=40b363d8-c7df-4142-999e-45518e122fcb&P1=1777558121&P2=601&P3=2&P4=s2dcrRg1MWvev9Xy0xja7Wgd75TG3mOIkFRsQjIgrBBU2DVaLe0HCOp5VcTrVMOuF1xNe3Nq2lfP6MXOpkUcZk82XLMQtIcuuDsvESqBiye9VXDlnWOLXoGe7aerGUZaO5jGe4qs8P5fWGsJZZHob1TsmsR0K6GaP8JyQV7np0B4FOPWYYgBMNKz%2bAPs2YVkXnMwKcig3GxCUEuR2LxtI5nAtTcS0mSHECqAO%2fgB4aL%2b8v4G0aO9jMagkc3uH3dRE%2b4tTeT%2fzCYzmELEYzuLVp2X12oGWmhlGXOLMSV1ASM6morASBkpiOa%2fh5XB%2bOUnmIzV9dCDSjsWrTt9nMbj3Q%3d%3d) | Microsoft Software Download (via Fido) |
+| [**Windows 11**](https://www.microsoft.com/software-download/windows11) | `2026-04-29` | — | [win-x64](https://www.microsoft.com/software-download/windows11) | Official Microsoft Windows 11 download page; Fido ISO URL is environment dependent |
 
 
 ### Network & Proxy
@@ -355,7 +363,7 @@
 | [**InvokeAI**](https://github.com/invoke-ai/InvokeAI#installation) | `2026-04-29` | — | [win-x64](https://github.com/invoke-ai/InvokeAI#installation) · [mac-arm64](https://github.com/invoke-ai/InvokeAI#installation) · [linux-x64](https://github.com/invoke-ai/InvokeAI#installation) | Official project download page; no stable public release asset API |
 | [**Stable Diffusion WebUI**](https://github.com/AUTOMATIC1111/stable-diffusion-webui#installation-and-running) | `2026-04-29` | — | [win-x64](https://github.com/AUTOMATIC1111/stable-diffusion-webui#installation-and-running) | Official project download page; no stable public release asset API |
 | [**text-generation-webui**](https://github.com/oobabooga/text-generation-webui#installation) | `2026-04-29` | — | [win-x64](https://github.com/oobabooga/text-generation-webui#installation) | Official project download page; no stable public release asset API |
-| [**Buzz**](https://github.com/chidiwilliams/buzz) ⚠️ | `1.4.4` | 2026-03-14 | [win-x64](https://github.com/chidiwilliams/buzz/releases/download/v1.4.4/Buzz-1.4.4-windows.exe) | GitHub Release: chidiwilliams/buzz<br>⚠ mac-arm64: 没有匹配 asset pattern 'Buzz-*-mac-arm64.dmg'; linux-x64: 没有匹配 asset pattern 'Buzz-*-linux-x86_64.AppImage' |
+| [**Buzz**](https://github.com/chidiwilliams/buzz) ⚠️ | `1.4.4` | 2026-03-14 | [win-x64](https://github.com/chidiwilliams/buzz/releases/download/v1.4.4/Buzz-1.4.4-windows.exe) · [mac-arm64](https://github.com/chidiwilliams/buzz/releases/download/v1.4.4/Buzz-1.4.4-mac-ARM64.dmg) | GitHub Release: chidiwilliams/buzz<br>⚠ linux-x64: 没有匹配 asset pattern 'Buzz-*-linux-x86_64.AppImage' |
 | [**Whisper**](https://github.com/openai/whisper#setup) | `2026-04-29` | — | [linux-x64](https://github.com/openai/whisper#setup) | Official project download page; no stable public release asset API |
 | [**llama.cpp**](https://github.com/ggml-org/llama.cpp) | `2026-04-29` | — | [win-x64](https://github.com/ggml-org/llama.cpp/releases) · [mac-arm64](https://github.com/ggml-org/llama.cpp/releases) · [linux-x64](https://github.com/ggml-org/llama.cpp/releases) | Official project download page; no stable public release asset API |
 | [**Open WebUI**](https://docs.openwebui.com/getting-started/) | `2026-04-29` | — | [win-x64](https://docs.openwebui.com/getting-started/) · [mac-arm64](https://docs.openwebui.com/getting-started/) · [linux-x64](https://docs.openwebui.com/getting-started/) | Official project download page; no stable public release asset API |
@@ -398,13 +406,6 @@
 | [**Kodi**](https://kodi.tv/download/) | `2026-04-29` | — | [win-x64](https://kodi.tv/download/) · [mac-universal](https://kodi.tv/download/) · [linux-x64](https://kodi.tv/download/) | Official Kodi download page; no public version API |
 | [**Plex Media Server**](https://www.plex.tv/media-server-downloads/) | `2026-04-29` | — | [win-x64](https://www.plex.tv/media-server-downloads/) · [mac-universal](https://www.plex.tv/media-server-downloads/) · [linux-x64](https://www.plex.tv/media-server-downloads/) | Official Plex Media Server download page; no public version API |
 | [**foobar2000**](https://www.foobar2000.org/download) | `2026-04-29` | — | [win-x64](https://www.foobar2000.org/download) · [mac-universal](https://www.foobar2000.org/download) | Official foobar2000 download page; no public version API |
-
-
-### Operating Systems
-
-| 软件 | 最新版本 | 发布日期 | 下载链接 | 来源 |
-|------|---------|---------|---------|------|
-| [**Windows 11**](https://www.microsoft.com/software-download/windows11) | `2026-04-29` | — | [win-x64](https://www.microsoft.com/software-download/windows11) | Official Microsoft Windows 11 download page; Fido ISO URL is environment dependent |
 
 
 ### Security & Privacy
