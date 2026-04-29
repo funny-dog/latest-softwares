@@ -52,15 +52,15 @@ def test_download_redirect_records_metrics(tmp_path, monkeypatch):
     assert metrics["downloads"]["assets"]["ubuntu:desktop-amd64"] == 1
 
 
-def test_metrics_counts_html_page_visits_without_counting_api(tmp_path, monkeypatch):
+def test_visit_endpoint_records_page_views(tmp_path, monkeypatch):
     stats_file = tmp_path / "stats.json"
     monkeypatch.setattr(main, "STATS_FILE", stats_file)
 
     client = TestClient(main.app)
 
-    client.get("/docs", headers={"accept": "text/html"})
-    client.get("/api/health")
+    response = client.post("/api/visit")
 
+    assert response.status_code == 200
     metrics = client.get("/api/metrics").json()
     assert metrics["visits"]["total"] == 1
-    assert metrics["visits"]["paths"]["/docs"] == 1
+    assert metrics["visits"]["paths"]["/"] == 1

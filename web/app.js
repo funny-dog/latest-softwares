@@ -113,6 +113,7 @@ function app() {
       this.stats = data.stats || {};
       this.publicSiteUrl = (data.public_site_url || '').replace(/\/$/, '');
       this.directFileExtensions = data.direct_file_extensions || this.directFileExtensions;
+      this.recordVisit();
 
       // Prefer the top-level generated_at written by sync.py.
       const ts = data.generated_at || this.packages
@@ -197,6 +198,14 @@ function app() {
         return `${this.publicSiteUrl}/api/download/${encodeURIComponent(pkg.id)}/${encodeURIComponent(asset.platform)}`;
       }
       return asset.url;
+    },
+
+    recordVisit() {
+      if (this.edition !== 'intl' || !this.publicSiteUrl) return;
+      fetch(`${this.publicSiteUrl}/api/visit`, {
+        method: 'POST',
+        keepalive: true,
+      }).catch(() => {});
     },
 
     // ==== direct-link detection ====

@@ -19,7 +19,7 @@ import threading
 from datetime import datetime, timezone
 from pathlib import Path
 
-from fastapi import FastAPI, HTTPException, Request
+from fastapi import FastAPI, HTTPException
 from fastapi.responses import JSONResponse, RedirectResponse
 from fastapi.staticfiles import StaticFiles
 
@@ -120,17 +120,6 @@ def _increment_download(package_id: str, platform: str) -> None:
         _write_metrics(metrics)
 
 
-def _is_html_page_view(request: Request) -> bool:
-    if request.method != "GET":
-        return False
-    path = request.url.path
-    if path.startswith("/api/"):
-        return False
-    if Path(path).suffix and path not in {"/docs", "/redoc"}:
-        return False
-    return "text/html" in request.headers.get("accept", "")
-
-
 def _find_asset(package_id: str, platform: str) -> dict:
     data = filter_data_by_edition(_load_data(), EDITION)
     for package in data.get("packages", []):
@@ -140,14 +129,6 @@ def _find_asset(package_id: str, platform: str) -> dict:
             if asset.get("platform") == platform and asset.get("url"):
                 return asset
     raise HTTPException(status_code=404, detail="download asset not found")
-
-
-@app.middleware("http")
-async def count_html_page_views(request: Request, call_next):
-    response = await call_next(request)
-    if response.status_code < 400 and _is_html_page_view(request):
-        _increment_visit(request.url.path)
-    return response
 
 
 # JSON API
@@ -168,6 +149,13 @@ def list_packages():
     """Return all international package data."""
     data = filter_data_by_edition(_load_data(), EDITION)
     return JSONResponse(content=data)
+
+
+@app.post("/api/visit", tags=["metrics"])
+def record_visit():
+    """Record a frontend page view."""
+    _increment_visit("/")
+    return JSONResponse(content={"status": "ok"})
 
 
 @app.get("/api/download/{package_id}/{platform}", tags=["metrics"])

@@ -180,3 +180,10 @@ def test_web_app_routes_intl_downloads_through_public_api():
 
     assert "publicSiteUrl" in app_js
     assert "/api/download/" in app_js
+
+
+def test_web_app_records_intl_visits_through_public_api():
+    app_js = (build_web.WEB_SRC / "app.js").read_text(encoding="utf-8")
+
+    assert "recordVisit()" in app_js
+    assert "/api/visit" in app_js
