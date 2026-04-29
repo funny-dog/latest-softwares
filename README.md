@@ -3,7 +3,7 @@
 > 由 GitHub Actions 每日自动同步上游官方源的**最新版本元数据**。
 > 仓库**不托管二进制安装包**，下载按钮直接跳到上游官方下载链接。
 >
-> 📅 **最后更新**：`2026-04-29 15:22:02` (UTC)　· 共 353 项软件（其中 1 项使用上次数据，标 ⚠️）
+> 📅 **最后更新**：`2026-04-29 15:30:28` (UTC)　· 共 353 项软件（其中 1 项使用上次数据，标 ⚠️）
 
 ---
 
@@ -38,7 +38,7 @@ fastapi cloud logs --no-follow --since 24h | grep '"event":"download"' | grep '"
 
 | 软件 | 最新版本 | 发布日期 | 下载链接 | 来源 |
 |------|---------|---------|---------|------|
-| [**Windows 11**](https://www.microsoft.com/software-download/windows11) | `25H2` | — | [win-x64](https://software.download.prss.microsoft.com/dbazure/Win11_25H2_Chinese_Simplified_x64_v2.iso?t=3965375c-0d46-4eca-a810-fd850152b7d7&P1=1777562498&P2=601&P3=2&P4=pNMugqHM5SW%2bm%2fGYNfd4DefVhZxRYvHOGq0LCNVGm6JWyWl7gemdZTZHXjP%2fHV738JhIoHtEuGr%2bRTYdMYbXdpN%2bSs0ZmJ9%2f6xv%2f7%2fOWk4KGdYHjGZwGd5Is%2fhY63Mu7ozfsSdvF5zNJc7IsqjMNr7pMop7XJfaJxyZPbRhOarjbfpg%2bBQ26xmnJK4ECimEOgngyEYWikwzNaUwNARyO%2bblOhAMu0QSmYvh3p60tlTsIzb00jxwxFDO1RTRftzuS18BfTUhOC%2fMFOSZPtxv8%2f0A837AHMjPebwhk4y3MISAxUEfgPorP12eKIIASFqOtHrVIkbh1aamKaG4%2bbS00xQ%3d%3d) | Microsoft Software Download (via Fido) |
+| [**Windows 11**](https://www.microsoft.com/software-download/windows11) | `25H2` | — | [win-x64](https://software.download.prss.microsoft.com/dbazure/Win11_25H2_Chinese_Simplified_x64_v2.iso?t=27009f32-616e-4c4a-a9a7-993cfa7cd1b5&P1=1777563003&P2=601&P3=2&P4=uvli7elOcEYsBEGxaMOzO%2f8q0%2b5C8h6hnE4Fi4Y1guY5fs%2bBUl2J%2bRsSFf4uodnTzKKEgwWd38E%2bdn2WRuBo8Gye4RvV2aTnCYeSlHvBIA4V1eMb5p4oz0pV%2bipR8w6P5OBxkwVeJR1JtYTckG6AmxDn56nxNx2%2fPXZkXXapCfMUQKRqpmkXawACbgk%2bhUVgVzvwr1vyRzIFlRRJfeCyDcsFOQnew%2fZ32Wx2kCflbp7Pvc7%2bssR9r1VUCaiu11lf7vebY2n04ef4BRjngxFUt%2fGMJV2UU0yViC%2bw1MMMMLBFsqP%2bXFfke9Y1CU5IqvXn%2f0mLa63tLOcZxMuzfTqpxg%3d%3d) | Microsoft Software Download (via Fido) |
 | [**Ubuntu**](https://ubuntu.com/download) | `26.04` | — | [desktop-amd64](https://releases.ubuntu.com/26.04/ubuntu-26.04-desktop-amd64.iso) · [server-amd64](https://releases.ubuntu.com/26.04/ubuntu-26.04-live-server-amd64.iso) · [wsl-amd64](https://releases.ubuntu.com/26.04/ubuntu-26.04-wsl-amd64.wsl) | Ubuntu official releases index |
 | [**Fedora Workstation**](https://fedoraproject.org/workstation/download/) | `44` | — | [workstation-live-x86_64](https://dl.fedoraproject.org/pub/fedora/linux/releases/44/Workstation/x86_64/iso/Fedora-Workstation-Live-44-1.7.x86_64.iso) | Fedora official release directory |
 | [**Windows 11**](https://www.microsoft.com/software-download/windows11) | `2026-04-29` | — | [win-x64](https://www.microsoft.com/software-download/windows11) | Official Microsoft Windows 11 download page; Fido ISO URL is environment dependent |
