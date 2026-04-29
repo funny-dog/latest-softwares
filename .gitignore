@@ -9,6 +9,7 @@ venv/
 .idea/
 .vscode/
 .claude/
+.playwright-mcp/
 .fastapicloud/
 .pytest_cache/
 .ruff_cache/
