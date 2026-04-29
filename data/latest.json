@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-04-29T14:59:53+00:00",
+  "generated_at": "2026-04-29T15:11:01+00:00",
   "packages": [
     {
       "id": "windows11",
@@ -16,15 +16,15 @@
       "assets": [
         {
           "platform": "win-x64",
-          "url": "https://software.download.prss.microsoft.com/dbazure/Win11_25H2_Chinese_Simplified_x64_v2.iso?t=5da8810c-0dcf-4e53-9057-6b6818f9fc95&P1=1777561170&P2=601&P3=2&P4=Atu8scHui0xHFiLXq0PzESb5WPsTswnutKAzYKiCt2YEjMsfdirbLzehxSM%2b%2bftrTEEGJf5eGl7GeaZSrfyQa99P%2b0NYVXVATEt2R3Lnp%2f8DT%2bUvnrDtJ6BgGYWfEeZimSnuZ1VYpCBEkcoDZZ1gbwfXun5ldhnFu%2bEvVjMJ%2b8LeLRu5IceJdGy2G1gCErkDqC0CDMc0VlnohX51BSEU2YKD5Ip0QJxfPsSDtTu5%2bTIZmyBJ6Kh6pR5LfkRFB4JK3cSGBoPIQyE0eHjvY4%2bVawu9QL0C1xmzBlLrXmBMeqsdrKhygqBBBcAPffIKexGDuYOZxpG%2fa32op82qNoPTxQ%3d%3d",
+          "url": "https://software.download.prss.microsoft.com/dbazure/Win11_25H2_Chinese_Simplified_x64_v2.iso?t=b0fc2645-ee96-414a-b1da-683bd4cd607a&P1=1777561841&P2=601&P3=2&P4=XJBTxXmwRK66Rhwd8eDI8uTZNXcUhSYm6eOfOtXsWdEHYM%2bhTKb28MERcHF%2f%2fqxqG0Lh3glcU8U45jjkgWaZspTZHu61CFkHa3SiNdEAj0wk9E5IyJjyqANwYj0wwoGGRca7ghRubMDCStOJs0d1R9e%2fYtvfOHukcbLCIlF%2fPYe3z%2bc3PApCOTa0UBipDs7DqbNVUzrFV0ng3LIHLhjBQ6iKQJbT01gLOG9D%2bppeoOE0pYD4Mm7Qe1CjGhbMCinwHc7JkliMNBrx7VEB9nly2OmdFfP5uM0qctMmjeiOX1E0%2fkKk08%2bizZcLeDjv6gVW2U5fFxyJOeqGrfm9hGTbgQ%3d%3d",
           "link_kind": "direct",
           "filename": "Win11_25H2_Chinese_Simplified_x64_v2.iso",
           "size": null,
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:31+00:00",
-      "last_success_at": "2026-04-29T14:59:31+00:00",
+      "fetched_at": "2026-04-29T15:10:42+00:00",
+      "last_success_at": "2026-04-29T15:10:42+00:00",
       "editions": [
         "cn"
       ]
@@ -66,8 +66,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:26+00:00",
-      "last_success_at": "2026-04-29T14:59:26+00:00",
+      "fetched_at": "2026-04-29T15:10:36+00:00",
+      "last_success_at": "2026-04-29T15:10:36+00:00",
       "editions": [
         "cn",
         "intl"
@@ -94,8 +94,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:26+00:00",
-      "last_success_at": "2026-04-29T14:59:26+00:00",
+      "fetched_at": "2026-04-29T15:10:36+00:00",
+      "last_success_at": "2026-04-29T15:10:36+00:00",
       "editions": [
         "cn",
         "intl"
@@ -146,8 +146,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:25+00:00",
-      "last_success_at": "2026-04-29T14:59:25+00:00",
+      "fetched_at": "2026-04-29T15:10:35+00:00",
+      "last_success_at": "2026-04-29T15:10:35+00:00",
       "editions": [
         "intl"
       ]
@@ -197,8 +197,8 @@
           "sha256": "bc5017110545de218ac71df0bdcf40665ec00e9de322825e29a28eebc1e3e1a2"
         }
       ],
-      "fetched_at": "2026-04-29T14:59:25+00:00",
-      "last_success_at": "2026-04-29T14:59:25+00:00",
+      "fetched_at": "2026-04-29T15:10:36+00:00",
+      "last_success_at": "2026-04-29T15:10:36+00:00",
       "editions": [
         "cn",
         "intl"
@@ -233,8 +233,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:25+00:00",
-      "last_success_at": "2026-04-29T14:59:25+00:00",
+      "fetched_at": "2026-04-29T15:10:35+00:00",
+      "last_success_at": "2026-04-29T15:10:35+00:00",
       "editions": [
         "cn",
         "intl"
@@ -261,8 +261,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:25+00:00",
-      "last_success_at": "2026-04-29T14:59:25+00:00",
+      "fetched_at": "2026-04-29T15:10:35+00:00",
+      "last_success_at": "2026-04-29T15:10:35+00:00",
       "editions": [
         "cn",
         "intl"
@@ -297,8 +297,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:25+00:00",
-      "last_success_at": "2026-04-29T14:59:25+00:00",
+      "fetched_at": "2026-04-29T15:10:35+00:00",
+      "last_success_at": "2026-04-29T15:10:35+00:00",
       "editions": [
         "cn",
         "intl"
@@ -333,8 +333,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:25+00:00",
-      "last_success_at": "2026-04-29T14:59:25+00:00",
+      "fetched_at": "2026-04-29T15:10:36+00:00",
+      "last_success_at": "2026-04-29T15:10:36+00:00",
       "editions": [
         "cn",
         "intl"
@@ -385,8 +385,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:26+00:00",
-      "last_success_at": "2026-04-29T14:59:26+00:00",
+      "fetched_at": "2026-04-29T15:10:37+00:00",
+      "last_success_at": "2026-04-29T15:10:37+00:00",
       "editions": [
         "intl"
       ]
@@ -412,8 +412,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:25+00:00",
-      "last_success_at": "2026-04-29T14:59:25+00:00",
+      "fetched_at": "2026-04-29T15:10:35+00:00",
+      "last_success_at": "2026-04-29T15:10:35+00:00",
       "editions": [
         "cn",
         "intl"
@@ -464,8 +464,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:26+00:00",
-      "last_success_at": "2026-04-29T14:59:26+00:00",
+      "fetched_at": "2026-04-29T15:10:36+00:00",
+      "last_success_at": "2026-04-29T15:10:36+00:00",
       "editions": [
         "cn",
         "intl"
@@ -492,8 +492,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:25+00:00",
-      "last_success_at": "2026-04-29T14:59:25+00:00",
+      "fetched_at": "2026-04-29T15:10:35+00:00",
+      "last_success_at": "2026-04-29T15:10:35+00:00",
       "editions": [
         "cn",
         "intl"
@@ -520,8 +520,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:26+00:00",
-      "last_success_at": "2026-04-29T14:59:26+00:00",
+      "fetched_at": "2026-04-29T15:10:36+00:00",
+      "last_success_at": "2026-04-29T15:10:36+00:00",
       "editions": [
         "intl"
       ]
@@ -547,8 +547,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:26+00:00",
-      "last_success_at": "2026-04-29T14:59:26+00:00",
+      "fetched_at": "2026-04-29T15:10:36+00:00",
+      "last_success_at": "2026-04-29T15:10:36+00:00",
       "editions": [
         "intl"
       ]
@@ -574,8 +574,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:26+00:00",
-      "last_success_at": "2026-04-29T14:59:26+00:00",
+      "fetched_at": "2026-04-29T15:10:36+00:00",
+      "last_success_at": "2026-04-29T15:10:36+00:00",
       "editions": [
         "intl"
       ]
@@ -601,8 +601,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:27+00:00",
-      "last_success_at": "2026-04-29T14:59:27+00:00",
+      "fetched_at": "2026-04-29T15:10:37+00:00",
+      "last_success_at": "2026-04-29T15:10:37+00:00",
       "editions": [
         "intl"
       ]
@@ -628,8 +628,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:27+00:00",
-      "last_success_at": "2026-04-29T14:59:27+00:00",
+      "fetched_at": "2026-04-29T15:10:37+00:00",
+      "last_success_at": "2026-04-29T15:10:37+00:00",
       "editions": [
         "intl"
       ]
@@ -655,8 +655,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:27+00:00",
-      "last_success_at": "2026-04-29T14:59:27+00:00",
+      "fetched_at": "2026-04-29T15:10:37+00:00",
+      "last_success_at": "2026-04-29T15:10:37+00:00",
       "editions": [
         "intl"
       ]
@@ -682,8 +682,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:27+00:00",
-      "last_success_at": "2026-04-29T14:59:27+00:00",
+      "fetched_at": "2026-04-29T15:10:37+00:00",
+      "last_success_at": "2026-04-29T15:10:37+00:00",
       "editions": [
         "intl"
       ]
@@ -709,8 +709,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:27+00:00",
-      "last_success_at": "2026-04-29T14:59:27+00:00",
+      "fetched_at": "2026-04-29T15:10:38+00:00",
+      "last_success_at": "2026-04-29T15:10:38+00:00",
       "editions": [
         "intl"
       ]
@@ -736,8 +736,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:27+00:00",
-      "last_success_at": "2026-04-29T14:59:27+00:00",
+      "fetched_at": "2026-04-29T15:10:38+00:00",
+      "last_success_at": "2026-04-29T15:10:38+00:00",
       "editions": [
         "intl"
       ]
@@ -763,8 +763,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:27+00:00",
-      "last_success_at": "2026-04-29T14:59:27+00:00",
+      "fetched_at": "2026-04-29T15:10:38+00:00",
+      "last_success_at": "2026-04-29T15:10:38+00:00",
       "editions": [
         "intl"
       ]
@@ -790,8 +790,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:28+00:00",
-      "last_success_at": "2026-04-29T14:59:28+00:00",
+      "fetched_at": "2026-04-29T15:10:38+00:00",
+      "last_success_at": "2026-04-29T15:10:38+00:00",
       "editions": [
         "intl"
       ]
@@ -817,8 +817,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:28+00:00",
-      "last_success_at": "2026-04-29T14:59:28+00:00",
+      "fetched_at": "2026-04-29T15:10:38+00:00",
+      "last_success_at": "2026-04-29T15:10:38+00:00",
       "editions": [
         "intl"
       ]
@@ -844,8 +844,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:28+00:00",
-      "last_success_at": "2026-04-29T14:59:28+00:00",
+      "fetched_at": "2026-04-29T15:10:38+00:00",
+      "last_success_at": "2026-04-29T15:10:38+00:00",
       "editions": [
         "intl"
       ]
@@ -871,8 +871,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:28+00:00",
-      "last_success_at": "2026-04-29T14:59:28+00:00",
+      "fetched_at": "2026-04-29T15:10:38+00:00",
+      "last_success_at": "2026-04-29T15:10:38+00:00",
       "editions": [
         "intl"
       ]
@@ -898,8 +898,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:28+00:00",
-      "last_success_at": "2026-04-29T14:59:28+00:00",
+      "fetched_at": "2026-04-29T15:10:38+00:00",
+      "last_success_at": "2026-04-29T15:10:38+00:00",
       "editions": [
         "intl"
       ]
@@ -925,8 +925,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:28+00:00",
-      "last_success_at": "2026-04-29T14:59:28+00:00",
+      "fetched_at": "2026-04-29T15:10:39+00:00",
+      "last_success_at": "2026-04-29T15:10:39+00:00",
       "editions": [
         "intl"
       ]
@@ -952,8 +952,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:28+00:00",
-      "last_success_at": "2026-04-29T14:59:28+00:00",
+      "fetched_at": "2026-04-29T15:10:39+00:00",
+      "last_success_at": "2026-04-29T15:10:39+00:00",
       "editions": [
         "intl"
       ]
@@ -979,8 +979,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:29+00:00",
-      "last_success_at": "2026-04-29T14:59:29+00:00",
+      "fetched_at": "2026-04-29T15:10:39+00:00",
+      "last_success_at": "2026-04-29T15:10:39+00:00",
       "editions": [
         "intl"
       ]
@@ -1006,8 +1006,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:29+00:00",
-      "last_success_at": "2026-04-29T14:59:29+00:00",
+      "fetched_at": "2026-04-29T15:10:39+00:00",
+      "last_success_at": "2026-04-29T15:10:39+00:00",
       "editions": [
         "intl"
       ]
@@ -1033,8 +1033,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:29+00:00",
-      "last_success_at": "2026-04-29T14:59:29+00:00",
+      "fetched_at": "2026-04-29T15:10:39+00:00",
+      "last_success_at": "2026-04-29T15:10:39+00:00",
       "editions": [
         "intl"
       ]
@@ -1060,8 +1060,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:29+00:00",
-      "last_success_at": "2026-04-29T14:59:29+00:00",
+      "fetched_at": "2026-04-29T15:10:39+00:00",
+      "last_success_at": "2026-04-29T15:10:39+00:00",
       "editions": [
         "intl"
       ]
@@ -1087,8 +1087,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:30+00:00",
-      "last_success_at": "2026-04-29T14:59:30+00:00",
+      "fetched_at": "2026-04-29T15:10:40+00:00",
+      "last_success_at": "2026-04-29T15:10:40+00:00",
       "editions": [
         "intl"
       ]
@@ -1114,8 +1114,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:29+00:00",
-      "last_success_at": "2026-04-29T14:59:29+00:00",
+      "fetched_at": "2026-04-29T15:10:40+00:00",
+      "last_success_at": "2026-04-29T15:10:40+00:00",
       "editions": [
         "intl"
       ]
@@ -1141,8 +1141,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:30+00:00",
-      "last_success_at": "2026-04-29T14:59:30+00:00",
+      "fetched_at": "2026-04-29T15:10:40+00:00",
+      "last_success_at": "2026-04-29T15:10:40+00:00",
       "editions": [
         "intl"
       ]
@@ -1168,8 +1168,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:30+00:00",
-      "last_success_at": "2026-04-29T14:59:30+00:00",
+      "fetched_at": "2026-04-29T15:10:40+00:00",
+      "last_success_at": "2026-04-29T15:10:40+00:00",
       "editions": [
         "intl"
       ]
@@ -1195,8 +1195,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:30+00:00",
-      "last_success_at": "2026-04-29T14:59:30+00:00",
+      "fetched_at": "2026-04-29T15:10:40+00:00",
+      "last_success_at": "2026-04-29T15:10:40+00:00",
       "editions": [
         "intl"
       ]
@@ -1222,8 +1222,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:29+00:00",
-      "last_success_at": "2026-04-29T14:59:29+00:00",
+      "fetched_at": "2026-04-29T15:10:40+00:00",
+      "last_success_at": "2026-04-29T15:10:40+00:00",
       "editions": [
         "intl"
       ]
@@ -1249,8 +1249,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:30+00:00",
-      "last_success_at": "2026-04-29T14:59:30+00:00",
+      "fetched_at": "2026-04-29T15:10:40+00:00",
+      "last_success_at": "2026-04-29T15:10:40+00:00",
       "editions": [
         "intl"
       ]
@@ -1276,8 +1276,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:31+00:00",
-      "last_success_at": "2026-04-29T14:59:31+00:00",
+      "fetched_at": "2026-04-29T15:10:41+00:00",
+      "last_success_at": "2026-04-29T15:10:41+00:00",
       "editions": [
         "intl"
       ]
@@ -1303,8 +1303,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:31+00:00",
-      "last_success_at": "2026-04-29T14:59:31+00:00",
+      "fetched_at": "2026-04-29T15:10:41+00:00",
+      "last_success_at": "2026-04-29T15:10:41+00:00",
       "editions": [
         "intl"
       ]
@@ -1330,8 +1330,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:32+00:00",
-      "last_success_at": "2026-04-29T14:59:32+00:00",
+      "fetched_at": "2026-04-29T15:10:41+00:00",
+      "last_success_at": "2026-04-29T15:10:41+00:00",
       "editions": [
         "intl"
       ]
@@ -1357,8 +1357,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:31+00:00",
-      "last_success_at": "2026-04-29T14:59:31+00:00",
+      "fetched_at": "2026-04-29T15:10:41+00:00",
+      "last_success_at": "2026-04-29T15:10:41+00:00",
       "editions": [
         "intl"
       ]
@@ -1384,8 +1384,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:31+00:00",
-      "last_success_at": "2026-04-29T14:59:31+00:00",
+      "fetched_at": "2026-04-29T15:10:41+00:00",
+      "last_success_at": "2026-04-29T15:10:41+00:00",
       "editions": [
         "intl"
       ]
@@ -1411,8 +1411,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:31+00:00",
-      "last_success_at": "2026-04-29T14:59:31+00:00",
+      "fetched_at": "2026-04-29T15:10:41+00:00",
+      "last_success_at": "2026-04-29T15:10:41+00:00",
       "editions": [
         "intl"
       ]
@@ -1438,8 +1438,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:31+00:00",
-      "last_success_at": "2026-04-29T14:59:31+00:00",
+      "fetched_at": "2026-04-29T15:10:41+00:00",
+      "last_success_at": "2026-04-29T15:10:41+00:00",
       "editions": [
         "intl"
       ]
@@ -1465,8 +1465,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:31+00:00",
-      "last_success_at": "2026-04-29T14:59:31+00:00",
+      "fetched_at": "2026-04-29T15:10:42+00:00",
+      "last_success_at": "2026-04-29T15:10:42+00:00",
       "editions": [
         "intl"
       ]
@@ -1492,8 +1492,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:32+00:00",
-      "last_success_at": "2026-04-29T14:59:32+00:00",
+      "fetched_at": "2026-04-29T15:10:42+00:00",
+      "last_success_at": "2026-04-29T15:10:42+00:00",
       "editions": [
         "intl"
       ]
@@ -1519,8 +1519,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:33+00:00",
-      "last_success_at": "2026-04-29T14:59:33+00:00",
+      "fetched_at": "2026-04-29T15:10:42+00:00",
+      "last_success_at": "2026-04-29T15:10:42+00:00",
       "editions": [
         "intl"
       ]
@@ -1575,8 +1575,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:32+00:00",
-      "last_success_at": "2026-04-29T14:59:32+00:00",
+      "fetched_at": "2026-04-29T15:10:42+00:00",
+      "last_success_at": "2026-04-29T15:10:42+00:00",
       "editions": [
         "intl"
       ]
@@ -1602,8 +1602,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:32+00:00",
-      "last_success_at": "2026-04-29T14:59:32+00:00",
+      "fetched_at": "2026-04-29T15:10:42+00:00",
+      "last_success_at": "2026-04-29T15:10:42+00:00",
       "editions": [
         "intl"
       ]
@@ -1629,8 +1629,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:33+00:00",
-      "last_success_at": "2026-04-29T14:59:33+00:00",
+      "fetched_at": "2026-04-29T15:10:42+00:00",
+      "last_success_at": "2026-04-29T15:10:42+00:00",
       "editions": [
         "intl"
       ]
@@ -1656,8 +1656,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:32+00:00",
-      "last_success_at": "2026-04-29T14:59:32+00:00",
+      "fetched_at": "2026-04-29T15:10:42+00:00",
+      "last_success_at": "2026-04-29T15:10:42+00:00",
       "editions": [
         "intl"
       ]
@@ -1683,8 +1683,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:33+00:00",
-      "last_success_at": "2026-04-29T14:59:33+00:00",
+      "fetched_at": "2026-04-29T15:10:42+00:00",
+      "last_success_at": "2026-04-29T15:10:42+00:00",
       "editions": [
         "intl"
       ]
@@ -1710,8 +1710,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:33+00:00",
-      "last_success_at": "2026-04-29T14:59:33+00:00",
+      "fetched_at": "2026-04-29T15:10:43+00:00",
+      "last_success_at": "2026-04-29T15:10:43+00:00",
       "editions": [
         "intl"
       ]
@@ -1737,8 +1737,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:33+00:00",
-      "last_success_at": "2026-04-29T14:59:33+00:00",
+      "fetched_at": "2026-04-29T15:10:44+00:00",
+      "last_success_at": "2026-04-29T15:10:44+00:00",
       "editions": [
         "intl"
       ]
@@ -1764,8 +1764,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:33+00:00",
-      "last_success_at": "2026-04-29T14:59:33+00:00",
+      "fetched_at": "2026-04-29T15:10:43+00:00",
+      "last_success_at": "2026-04-29T15:10:43+00:00",
       "editions": [
         "intl"
       ]
@@ -1791,8 +1791,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:33+00:00",
-      "last_success_at": "2026-04-29T14:59:33+00:00",
+      "fetched_at": "2026-04-29T15:10:43+00:00",
+      "last_success_at": "2026-04-29T15:10:43+00:00",
       "editions": [
         "intl"
       ]
@@ -1818,8 +1818,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:33+00:00",
-      "last_success_at": "2026-04-29T14:59:33+00:00",
+      "fetched_at": "2026-04-29T15:10:43+00:00",
+      "last_success_at": "2026-04-29T15:10:43+00:00",
       "editions": [
         "intl"
       ]
@@ -1845,8 +1845,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:34+00:00",
-      "last_success_at": "2026-04-29T14:59:34+00:00",
+      "fetched_at": "2026-04-29T15:10:43+00:00",
+      "last_success_at": "2026-04-29T15:10:43+00:00",
       "editions": [
         "intl"
       ]
@@ -1872,8 +1872,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:34+00:00",
-      "last_success_at": "2026-04-29T14:59:34+00:00",
+      "fetched_at": "2026-04-29T15:10:43+00:00",
+      "last_success_at": "2026-04-29T15:10:43+00:00",
       "editions": [
         "intl"
       ]
@@ -1899,8 +1899,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:34+00:00",
-      "last_success_at": "2026-04-29T14:59:34+00:00",
+      "fetched_at": "2026-04-29T15:10:43+00:00",
+      "last_success_at": "2026-04-29T15:10:43+00:00",
       "editions": [
         "intl"
       ]
@@ -1926,8 +1926,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:34+00:00",
-      "last_success_at": "2026-04-29T14:59:34+00:00",
+      "fetched_at": "2026-04-29T15:10:44+00:00",
+      "last_success_at": "2026-04-29T15:10:44+00:00",
       "editions": [
         "intl"
       ]
@@ -1953,8 +1953,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:34+00:00",
-      "last_success_at": "2026-04-29T14:59:34+00:00",
+      "fetched_at": "2026-04-29T15:10:44+00:00",
+      "last_success_at": "2026-04-29T15:10:44+00:00",
       "editions": [
         "intl"
       ]
@@ -1980,8 +1980,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:34+00:00",
-      "last_success_at": "2026-04-29T14:59:34+00:00",
+      "fetched_at": "2026-04-29T15:10:44+00:00",
+      "last_success_at": "2026-04-29T15:10:44+00:00",
       "editions": [
         "intl"
       ]
@@ -2007,8 +2007,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:35+00:00",
-      "last_success_at": "2026-04-29T14:59:35+00:00",
+      "fetched_at": "2026-04-29T15:10:44+00:00",
+      "last_success_at": "2026-04-29T15:10:44+00:00",
       "editions": [
         "intl"
       ]
@@ -2034,8 +2034,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:33+00:00",
-      "last_success_at": "2026-04-29T14:59:33+00:00",
+      "fetched_at": "2026-04-29T15:10:43+00:00",
+      "last_success_at": "2026-04-29T15:10:43+00:00",
       "editions": [
         "intl"
       ]
@@ -2061,8 +2061,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:36+00:00",
-      "last_success_at": "2026-04-29T14:59:36+00:00",
+      "fetched_at": "2026-04-29T15:10:44+00:00",
+      "last_success_at": "2026-04-29T15:10:44+00:00",
       "editions": [
         "intl"
       ]
@@ -2088,8 +2088,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:35+00:00",
-      "last_success_at": "2026-04-29T14:59:35+00:00",
+      "fetched_at": "2026-04-29T15:10:44+00:00",
+      "last_success_at": "2026-04-29T15:10:44+00:00",
       "editions": [
         "intl"
       ]
@@ -2115,8 +2115,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:35+00:00",
-      "last_success_at": "2026-04-29T14:59:35+00:00",
+      "fetched_at": "2026-04-29T15:10:44+00:00",
+      "last_success_at": "2026-04-29T15:10:44+00:00",
       "editions": [
         "intl"
       ]
@@ -2142,8 +2142,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:35+00:00",
-      "last_success_at": "2026-04-29T14:59:35+00:00",
+      "fetched_at": "2026-04-29T15:10:45+00:00",
+      "last_success_at": "2026-04-29T15:10:45+00:00",
       "editions": [
         "intl"
       ]
@@ -2169,8 +2169,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:34+00:00",
-      "last_success_at": "2026-04-29T14:59:34+00:00",
+      "fetched_at": "2026-04-29T15:10:43+00:00",
+      "last_success_at": "2026-04-29T15:10:43+00:00",
       "editions": [
         "intl"
       ]
@@ -2196,8 +2196,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:34+00:00",
-      "last_success_at": "2026-04-29T14:59:34+00:00",
+      "fetched_at": "2026-04-29T15:10:43+00:00",
+      "last_success_at": "2026-04-29T15:10:43+00:00",
       "editions": [
         "intl"
       ]
@@ -2223,8 +2223,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:36+00:00",
-      "last_success_at": "2026-04-29T14:59:36+00:00",
+      "fetched_at": "2026-04-29T15:10:45+00:00",
+      "last_success_at": "2026-04-29T15:10:45+00:00",
       "editions": [
         "intl"
       ]
@@ -2250,8 +2250,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:34+00:00",
-      "last_success_at": "2026-04-29T14:59:34+00:00",
+      "fetched_at": "2026-04-29T15:10:45+00:00",
+      "last_success_at": "2026-04-29T15:10:45+00:00",
       "editions": [
         "intl"
       ]
@@ -2277,8 +2277,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:35+00:00",
-      "last_success_at": "2026-04-29T14:59:35+00:00",
+      "fetched_at": "2026-04-29T15:10:45+00:00",
+      "last_success_at": "2026-04-29T15:10:45+00:00",
       "editions": [
         "intl"
       ]
@@ -2304,8 +2304,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:36+00:00",
-      "last_success_at": "2026-04-29T14:59:36+00:00",
+      "fetched_at": "2026-04-29T15:10:45+00:00",
+      "last_success_at": "2026-04-29T15:10:45+00:00",
       "editions": [
         "intl"
       ]
@@ -2331,8 +2331,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:36+00:00",
-      "last_success_at": "2026-04-29T14:59:36+00:00",
+      "fetched_at": "2026-04-29T15:10:45+00:00",
+      "last_success_at": "2026-04-29T15:10:45+00:00",
       "editions": [
         "intl"
       ]
@@ -2358,8 +2358,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:36+00:00",
-      "last_success_at": "2026-04-29T14:59:36+00:00",
+      "fetched_at": "2026-04-29T15:10:45+00:00",
+      "last_success_at": "2026-04-29T15:10:45+00:00",
       "editions": [
         "intl"
       ]
@@ -2385,8 +2385,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:35+00:00",
-      "last_success_at": "2026-04-29T14:59:35+00:00",
+      "fetched_at": "2026-04-29T15:10:44+00:00",
+      "last_success_at": "2026-04-29T15:10:44+00:00",
       "editions": [
         "intl"
       ]
@@ -2428,8 +2428,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:35+00:00",
-      "last_success_at": "2026-04-29T14:59:35+00:00",
+      "fetched_at": "2026-04-29T15:10:45+00:00",
+      "last_success_at": "2026-04-29T15:10:45+00:00",
       "editions": [
         "intl"
       ]
@@ -2479,8 +2479,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:35+00:00",
-      "last_success_at": "2026-04-29T14:59:35+00:00",
+      "fetched_at": "2026-04-29T15:10:45+00:00",
+      "last_success_at": "2026-04-29T15:10:45+00:00",
       "editions": [
         "intl"
       ]
@@ -2530,8 +2530,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:36+00:00",
-      "last_success_at": "2026-04-29T14:59:36+00:00",
+      "fetched_at": "2026-04-29T15:10:46+00:00",
+      "last_success_at": "2026-04-29T15:10:46+00:00",
       "editions": [
         "intl"
       ]
@@ -2581,8 +2581,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:37+00:00",
-      "last_success_at": "2026-04-29T14:59:37+00:00",
+      "fetched_at": "2026-04-29T15:10:46+00:00",
+      "last_success_at": "2026-04-29T15:10:46+00:00",
       "editions": [
         "intl"
       ]
@@ -2624,8 +2624,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:37+00:00",
-      "last_success_at": "2026-04-29T14:59:37+00:00",
+      "fetched_at": "2026-04-29T15:10:46+00:00",
+      "last_success_at": "2026-04-29T15:10:46+00:00",
       "editions": [
         "intl"
       ]
@@ -2667,8 +2667,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:37+00:00",
-      "last_success_at": "2026-04-29T14:59:37+00:00",
+      "fetched_at": "2026-04-29T15:10:46+00:00",
+      "last_success_at": "2026-04-29T15:10:46+00:00",
       "editions": [
         "intl"
       ]
@@ -2710,8 +2710,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:37+00:00",
-      "last_success_at": "2026-04-29T14:59:37+00:00",
+      "fetched_at": "2026-04-29T15:10:46+00:00",
+      "last_success_at": "2026-04-29T15:10:46+00:00",
       "editions": [
         "intl"
       ]
@@ -2737,8 +2737,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:37+00:00",
-      "last_success_at": "2026-04-29T14:59:37+00:00",
+      "fetched_at": "2026-04-29T15:10:46+00:00",
+      "last_success_at": "2026-04-29T15:10:46+00:00",
       "editions": [
         "intl"
       ]
@@ -2780,8 +2780,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:37+00:00",
-      "last_success_at": "2026-04-29T14:59:37+00:00",
+      "fetched_at": "2026-04-29T15:10:46+00:00",
+      "last_success_at": "2026-04-29T15:10:46+00:00",
       "editions": [
         "intl"
       ]
@@ -2807,8 +2807,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:37+00:00",
-      "last_success_at": "2026-04-29T14:59:37+00:00",
+      "fetched_at": "2026-04-29T15:10:46+00:00",
+      "last_success_at": "2026-04-29T15:10:46+00:00",
       "editions": [
         "intl"
       ]
@@ -2834,8 +2834,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:37+00:00",
-      "last_success_at": "2026-04-29T14:59:37+00:00",
+      "fetched_at": "2026-04-29T15:10:47+00:00",
+      "last_success_at": "2026-04-29T15:10:47+00:00",
       "editions": [
         "intl"
       ]
@@ -2877,8 +2877,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:38+00:00",
-      "last_success_at": "2026-04-29T14:59:38+00:00",
+      "fetched_at": "2026-04-29T15:10:47+00:00",
+      "last_success_at": "2026-04-29T15:10:47+00:00",
       "editions": [
         "intl"
       ]
@@ -2920,8 +2920,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:38+00:00",
-      "last_success_at": "2026-04-29T14:59:38+00:00",
+      "fetched_at": "2026-04-29T15:10:47+00:00",
+      "last_success_at": "2026-04-29T15:10:47+00:00",
       "editions": [
         "intl"
       ]
@@ -2947,8 +2947,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:38+00:00",
-      "last_success_at": "2026-04-29T14:59:38+00:00",
+      "fetched_at": "2026-04-29T15:10:47+00:00",
+      "last_success_at": "2026-04-29T15:10:47+00:00",
       "editions": [
         "intl"
       ]
@@ -2990,8 +2990,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:39+00:00",
-      "last_success_at": "2026-04-29T14:59:39+00:00",
+      "fetched_at": "2026-04-29T15:10:47+00:00",
+      "last_success_at": "2026-04-29T15:10:47+00:00",
       "editions": [
         "intl"
       ]
@@ -3033,8 +3033,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:38+00:00",
-      "last_success_at": "2026-04-29T14:59:38+00:00",
+      "fetched_at": "2026-04-29T15:10:47+00:00",
+      "last_success_at": "2026-04-29T15:10:47+00:00",
       "editions": [
         "intl"
       ]
@@ -3076,8 +3076,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:39+00:00",
-      "last_success_at": "2026-04-29T14:59:39+00:00",
+      "fetched_at": "2026-04-29T15:10:48+00:00",
+      "last_success_at": "2026-04-29T15:10:48+00:00",
       "editions": [
         "intl"
       ]
@@ -3119,8 +3119,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:39+00:00",
-      "last_success_at": "2026-04-29T14:59:39+00:00",
+      "fetched_at": "2026-04-29T15:10:47+00:00",
+      "last_success_at": "2026-04-29T15:10:47+00:00",
       "editions": [
         "intl"
       ]
@@ -3162,8 +3162,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:37+00:00",
-      "last_success_at": "2026-04-29T14:59:37+00:00",
+      "fetched_at": "2026-04-29T15:10:46+00:00",
+      "last_success_at": "2026-04-29T15:10:46+00:00",
       "editions": [
         "intl"
       ]
@@ -3205,8 +3205,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:37+00:00",
-      "last_success_at": "2026-04-29T14:59:37+00:00",
+      "fetched_at": "2026-04-29T15:10:46+00:00",
+      "last_success_at": "2026-04-29T15:10:46+00:00",
       "editions": [
         "intl"
       ]
@@ -3240,8 +3240,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:37+00:00",
-      "last_success_at": "2026-04-29T14:59:37+00:00",
+      "fetched_at": "2026-04-29T15:10:46+00:00",
+      "last_success_at": "2026-04-29T15:10:46+00:00",
       "editions": [
         "intl"
       ]
@@ -3275,8 +3275,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:37+00:00",
-      "last_success_at": "2026-04-29T14:59:37+00:00",
+      "fetched_at": "2026-04-29T15:10:46+00:00",
+      "last_success_at": "2026-04-29T15:10:46+00:00",
       "editions": [
         "intl"
       ]
@@ -3318,8 +3318,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:37+00:00",
-      "last_success_at": "2026-04-29T14:59:37+00:00",
+      "fetched_at": "2026-04-29T15:10:46+00:00",
+      "last_success_at": "2026-04-29T15:10:46+00:00",
       "editions": [
         "intl"
       ]
@@ -3345,8 +3345,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:37+00:00",
-      "last_success_at": "2026-04-29T14:59:37+00:00",
+      "fetched_at": "2026-04-29T15:10:46+00:00",
+      "last_success_at": "2026-04-29T15:10:46+00:00",
       "editions": [
         "intl"
       ]
@@ -3380,8 +3380,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:37+00:00",
-      "last_success_at": "2026-04-29T14:59:37+00:00",
+      "fetched_at": "2026-04-29T15:10:46+00:00",
+      "last_success_at": "2026-04-29T15:10:46+00:00",
       "editions": [
         "intl"
       ]
@@ -3423,8 +3423,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:37+00:00",
-      "last_success_at": "2026-04-29T14:59:37+00:00",
+      "fetched_at": "2026-04-29T15:10:46+00:00",
+      "last_success_at": "2026-04-29T15:10:46+00:00",
       "editions": [
         "intl"
       ]
@@ -3458,8 +3458,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:37+00:00",
-      "last_success_at": "2026-04-29T14:59:37+00:00",
+      "fetched_at": "2026-04-29T15:10:46+00:00",
+      "last_success_at": "2026-04-29T15:10:46+00:00",
       "editions": [
         "intl"
       ]
@@ -3493,8 +3493,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:37+00:00",
-      "last_success_at": "2026-04-29T14:59:37+00:00",
+      "fetched_at": "2026-04-29T15:10:46+00:00",
+      "last_success_at": "2026-04-29T15:10:46+00:00",
       "editions": [
         "intl"
       ]
@@ -3536,8 +3536,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:37+00:00",
-      "last_success_at": "2026-04-29T14:59:37+00:00",
+      "fetched_at": "2026-04-29T15:10:46+00:00",
+      "last_success_at": "2026-04-29T15:10:46+00:00",
       "editions": [
         "intl"
       ]
@@ -3579,8 +3579,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:37+00:00",
-      "last_success_at": "2026-04-29T14:59:37+00:00",
+      "fetched_at": "2026-04-29T15:10:46+00:00",
+      "last_success_at": "2026-04-29T15:10:46+00:00",
       "editions": [
         "intl"
       ]
@@ -3606,11 +3606,11 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:39+00:00",
+      "fetched_at": "2026-04-29T15:10:48+00:00",
       "warnings": [
         "mac-arm64: 没有匹配 asset pattern 'Zed-*-aarch64.dmg'"
       ],
-      "last_success_at": "2026-04-29T14:59:39+00:00",
+      "last_success_at": "2026-04-29T15:10:48+00:00",
       "editions": [
         "intl"
       ]
@@ -3652,8 +3652,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:37+00:00",
-      "last_success_at": "2026-04-29T14:59:37+00:00",
+      "fetched_at": "2026-04-29T15:10:46+00:00",
+      "last_success_at": "2026-04-29T15:10:46+00:00",
       "editions": [
         "intl"
       ]
@@ -3695,8 +3695,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:39+00:00",
-      "last_success_at": "2026-04-29T14:59:39+00:00",
+      "fetched_at": "2026-04-29T15:10:48+00:00",
+      "last_success_at": "2026-04-29T15:10:48+00:00",
       "editions": [
         "intl"
       ]
@@ -3722,8 +3722,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:37+00:00",
-      "last_success_at": "2026-04-29T14:59:37+00:00",
+      "fetched_at": "2026-04-29T15:10:47+00:00",
+      "last_success_at": "2026-04-29T15:10:47+00:00",
       "editions": [
         "intl"
       ]
@@ -3749,8 +3749,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:37+00:00",
-      "last_success_at": "2026-04-29T14:59:37+00:00",
+      "fetched_at": "2026-04-29T15:10:47+00:00",
+      "last_success_at": "2026-04-29T15:10:47+00:00",
       "editions": [
         "intl"
       ]
@@ -3792,8 +3792,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:38+00:00",
-      "last_success_at": "2026-04-29T14:59:38+00:00",
+      "fetched_at": "2026-04-29T15:10:48+00:00",
+      "last_success_at": "2026-04-29T15:10:48+00:00",
       "editions": [
         "intl"
       ]
@@ -3835,8 +3835,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:39+00:00",
-      "last_success_at": "2026-04-29T14:59:39+00:00",
+      "fetched_at": "2026-04-29T15:10:48+00:00",
+      "last_success_at": "2026-04-29T15:10:48+00:00",
       "editions": [
         "intl"
       ]
@@ -3878,8 +3878,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:39+00:00",
-      "last_success_at": "2026-04-29T14:59:39+00:00",
+      "fetched_at": "2026-04-29T15:10:48+00:00",
+      "last_success_at": "2026-04-29T15:10:48+00:00",
       "editions": [
         "intl"
       ]
@@ -3905,8 +3905,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:38+00:00",
-      "last_success_at": "2026-04-29T14:59:38+00:00",
+      "fetched_at": "2026-04-29T15:10:47+00:00",
+      "last_success_at": "2026-04-29T15:10:47+00:00",
       "editions": [
         "intl"
       ]
@@ -3948,8 +3948,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:41+00:00",
-      "last_success_at": "2026-04-29T14:59:41+00:00",
+      "fetched_at": "2026-04-29T15:10:48+00:00",
+      "last_success_at": "2026-04-29T15:10:48+00:00",
       "editions": [
         "intl"
       ]
@@ -3991,8 +3991,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:38+00:00",
-      "last_success_at": "2026-04-29T14:59:38+00:00",
+      "fetched_at": "2026-04-29T15:10:47+00:00",
+      "last_success_at": "2026-04-29T15:10:47+00:00",
       "editions": [
         "intl"
       ]
@@ -4034,8 +4034,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:38+00:00",
-      "last_success_at": "2026-04-29T14:59:38+00:00",
+      "fetched_at": "2026-04-29T15:10:47+00:00",
+      "last_success_at": "2026-04-29T15:10:47+00:00",
       "editions": [
         "intl"
       ]
@@ -4069,11 +4069,11 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:40+00:00",
+      "fetched_at": "2026-04-29T15:10:48+00:00",
       "warnings": [
         "mac-arm64: 没有匹配 asset pattern 'dust-*-aarch64-apple-darwin.tar.gz'"
       ],
-      "last_success_at": "2026-04-29T14:59:40+00:00",
+      "last_success_at": "2026-04-29T15:10:48+00:00",
       "editions": [
         "intl"
       ]
@@ -4099,12 +4099,12 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:40+00:00",
+      "fetched_at": "2026-04-29T15:10:49+00:00",
       "warnings": [
         "win-x64: 没有匹配 asset pattern 'duf_*_windows_amd64.zip'",
         "linux-x64: 没有匹配 asset pattern 'duf_*_linux_amd64.tar.gz'"
       ],
-      "last_success_at": "2026-04-29T14:59:40+00:00",
+      "last_success_at": "2026-04-29T15:10:49+00:00",
       "editions": [
         "intl"
       ]
@@ -4146,8 +4146,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:39+00:00",
-      "last_success_at": "2026-04-29T14:59:39+00:00",
+      "fetched_at": "2026-04-29T15:10:47+00:00",
+      "last_success_at": "2026-04-29T15:10:47+00:00",
       "editions": [
         "intl"
       ]
@@ -4189,8 +4189,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:40+00:00",
-      "last_success_at": "2026-04-29T14:59:40+00:00",
+      "fetched_at": "2026-04-29T15:10:49+00:00",
+      "last_success_at": "2026-04-29T15:10:49+00:00",
       "editions": [
         "intl"
       ]
@@ -4232,8 +4232,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:41+00:00",
-      "last_success_at": "2026-04-29T14:59:41+00:00",
+      "fetched_at": "2026-04-29T15:10:49+00:00",
+      "last_success_at": "2026-04-29T15:10:49+00:00",
       "editions": [
         "intl"
       ]
@@ -4275,8 +4275,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:41+00:00",
-      "last_success_at": "2026-04-29T14:59:41+00:00",
+      "fetched_at": "2026-04-29T15:10:49+00:00",
+      "last_success_at": "2026-04-29T15:10:49+00:00",
       "editions": [
         "intl"
       ]
@@ -4318,8 +4318,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:39+00:00",
-      "last_success_at": "2026-04-29T14:59:39+00:00",
+      "fetched_at": "2026-04-29T15:10:48+00:00",
+      "last_success_at": "2026-04-29T15:10:48+00:00",
       "editions": [
         "intl"
       ]
@@ -4361,8 +4361,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:39+00:00",
-      "last_success_at": "2026-04-29T14:59:39+00:00",
+      "fetched_at": "2026-04-29T15:10:49+00:00",
+      "last_success_at": "2026-04-29T15:10:49+00:00",
       "editions": [
         "intl"
       ]
@@ -4404,8 +4404,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:41+00:00",
-      "last_success_at": "2026-04-29T14:59:41+00:00",
+      "fetched_at": "2026-04-29T15:10:49+00:00",
+      "last_success_at": "2026-04-29T15:10:49+00:00",
       "editions": [
         "intl"
       ]
@@ -4447,8 +4447,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:41+00:00",
-      "last_success_at": "2026-04-29T14:59:41+00:00",
+      "fetched_at": "2026-04-29T15:10:49+00:00",
+      "last_success_at": "2026-04-29T15:10:49+00:00",
       "editions": [
         "intl"
       ]
@@ -4490,8 +4490,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:39+00:00",
-      "last_success_at": "2026-04-29T14:59:39+00:00",
+      "fetched_at": "2026-04-29T15:10:48+00:00",
+      "last_success_at": "2026-04-29T15:10:48+00:00",
       "editions": [
         "intl"
       ]
@@ -4533,8 +4533,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:39+00:00",
-      "last_success_at": "2026-04-29T14:59:39+00:00",
+      "fetched_at": "2026-04-29T15:10:48+00:00",
+      "last_success_at": "2026-04-29T15:10:48+00:00",
       "editions": [
         "intl"
       ]
@@ -4568,11 +4568,11 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:41+00:00",
+      "fetched_at": "2026-04-29T15:10:49+00:00",
       "warnings": [
         "win-x64: 没有匹配 asset pattern 'biome-win-x64.exe'"
       ],
-      "last_success_at": "2026-04-29T14:59:41+00:00",
+      "last_success_at": "2026-04-29T15:10:49+00:00",
       "editions": [
         "intl"
       ]
@@ -4606,11 +4606,11 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:40+00:00",
+      "fetched_at": "2026-04-29T15:10:50+00:00",
       "warnings": [
         "mac-arm64: 没有匹配 asset pattern 'cargo-nextest-*-aarch64-apple-darwin.tar.gz'"
       ],
-      "last_success_at": "2026-04-29T14:59:40+00:00",
+      "last_success_at": "2026-04-29T15:10:50+00:00",
       "editions": [
         "intl"
       ]
@@ -4652,8 +4652,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:41+00:00",
-      "last_success_at": "2026-04-29T14:59:41+00:00",
+      "fetched_at": "2026-04-29T15:10:50+00:00",
+      "last_success_at": "2026-04-29T15:10:50+00:00",
       "editions": [
         "intl"
       ]
@@ -4695,8 +4695,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:40+00:00",
-      "last_success_at": "2026-04-29T14:59:40+00:00",
+      "fetched_at": "2026-04-29T15:10:49+00:00",
+      "last_success_at": "2026-04-29T15:10:49+00:00",
       "editions": [
         "intl"
       ]
@@ -4738,8 +4738,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:40+00:00",
-      "last_success_at": "2026-04-29T14:59:40+00:00",
+      "fetched_at": "2026-04-29T15:10:49+00:00",
+      "last_success_at": "2026-04-29T15:10:49+00:00",
       "editions": [
         "intl"
       ]
@@ -4781,8 +4781,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:41+00:00",
-      "last_success_at": "2026-04-29T14:59:41+00:00",
+      "fetched_at": "2026-04-29T15:10:50+00:00",
+      "last_success_at": "2026-04-29T15:10:50+00:00",
       "editions": [
         "intl"
       ]
@@ -4824,8 +4824,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:40+00:00",
-      "last_success_at": "2026-04-29T14:59:40+00:00",
+      "fetched_at": "2026-04-29T15:10:49+00:00",
+      "last_success_at": "2026-04-29T15:10:49+00:00",
       "editions": [
         "intl"
       ]
@@ -4867,8 +4867,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:40+00:00",
-      "last_success_at": "2026-04-29T14:59:40+00:00",
+      "fetched_at": "2026-04-29T15:10:49+00:00",
+      "last_success_at": "2026-04-29T15:10:49+00:00",
       "editions": [
         "intl"
       ]
@@ -4910,8 +4910,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:42+00:00",
-      "last_success_at": "2026-04-29T14:59:42+00:00",
+      "fetched_at": "2026-04-29T15:10:50+00:00",
+      "last_success_at": "2026-04-29T15:10:50+00:00",
       "editions": [
         "intl"
       ]
@@ -4953,8 +4953,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:42+00:00",
-      "last_success_at": "2026-04-29T14:59:42+00:00",
+      "fetched_at": "2026-04-29T15:10:50+00:00",
+      "last_success_at": "2026-04-29T15:10:50+00:00",
       "editions": [
         "intl"
       ]
@@ -4996,8 +4996,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:42+00:00",
-      "last_success_at": "2026-04-29T14:59:42+00:00",
+      "fetched_at": "2026-04-29T15:10:51+00:00",
+      "last_success_at": "2026-04-29T15:10:51+00:00",
       "editions": [
         "intl"
       ]
@@ -5039,8 +5039,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:42+00:00",
-      "last_success_at": "2026-04-29T14:59:42+00:00",
+      "fetched_at": "2026-04-29T15:10:51+00:00",
+      "last_success_at": "2026-04-29T15:10:51+00:00",
       "editions": [
         "intl"
       ]
@@ -5074,11 +5074,11 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:42+00:00",
+      "fetched_at": "2026-04-29T15:10:51+00:00",
       "warnings": [
         "linux-x64: 没有匹配 asset pattern 'dog-v*-x86_64-unknown-linux-musl.zip'"
       ],
-      "last_success_at": "2026-04-29T14:59:42+00:00",
+      "last_success_at": "2026-04-29T15:10:51+00:00",
       "editions": [
         "intl"
       ]
@@ -5120,8 +5120,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:42+00:00",
-      "last_success_at": "2026-04-29T14:59:42+00:00",
+      "fetched_at": "2026-04-29T15:10:51+00:00",
+      "last_success_at": "2026-04-29T15:10:51+00:00",
       "editions": [
         "intl"
       ]
@@ -5163,8 +5163,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:41+00:00",
-      "last_success_at": "2026-04-29T14:59:41+00:00",
+      "fetched_at": "2026-04-29T15:10:49+00:00",
+      "last_success_at": "2026-04-29T15:10:49+00:00",
       "editions": [
         "intl"
       ]
@@ -5206,8 +5206,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:41+00:00",
-      "last_success_at": "2026-04-29T14:59:41+00:00",
+      "fetched_at": "2026-04-29T15:10:49+00:00",
+      "last_success_at": "2026-04-29T15:10:49+00:00",
       "editions": [
         "intl"
       ]
@@ -5249,8 +5249,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:43+00:00",
-      "last_success_at": "2026-04-29T14:59:43+00:00",
+      "fetched_at": "2026-04-29T15:10:51+00:00",
+      "last_success_at": "2026-04-29T15:10:51+00:00",
       "editions": [
         "intl"
       ]
@@ -5284,11 +5284,11 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:43+00:00",
+      "fetched_at": "2026-04-29T15:10:51+00:00",
       "warnings": [
         "win-x64: 没有匹配 asset pattern 'cocogitto-*-x86_64-pc-windows-msvc.zip'"
       ],
-      "last_success_at": "2026-04-29T14:59:43+00:00",
+      "last_success_at": "2026-04-29T15:10:51+00:00",
       "editions": [
         "intl"
       ]
@@ -5314,12 +5314,12 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:43+00:00",
+      "fetched_at": "2026-04-29T15:10:51+00:00",
       "warnings": [
         "mac-arm64: 没有匹配 asset pattern 'mask-*-aarch64-apple-darwin.tar.gz'",
         "linux-x64: 没有匹配 asset pattern 'mask-*-x86_64-unknown-linux-musl.tar.gz'"
       ],
-      "last_success_at": "2026-04-29T14:59:43+00:00",
+      "last_success_at": "2026-04-29T15:10:51+00:00",
       "editions": [
         "intl"
       ]
@@ -5361,8 +5361,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:41+00:00",
-      "last_success_at": "2026-04-29T14:59:41+00:00",
+      "fetched_at": "2026-04-29T15:10:50+00:00",
+      "last_success_at": "2026-04-29T15:10:50+00:00",
       "editions": [
         "intl"
       ]
@@ -5404,8 +5404,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:41+00:00",
-      "last_success_at": "2026-04-29T14:59:41+00:00",
+      "fetched_at": "2026-04-29T15:10:50+00:00",
+      "last_success_at": "2026-04-29T15:10:50+00:00",
       "editions": [
         "intl"
       ]
@@ -5431,8 +5431,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:41+00:00",
-      "last_success_at": "2026-04-29T14:59:41+00:00",
+      "fetched_at": "2026-04-29T15:10:50+00:00",
+      "last_success_at": "2026-04-29T15:10:50+00:00",
       "editions": [
         "intl"
       ]
@@ -5458,8 +5458,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:41+00:00",
-      "last_success_at": "2026-04-29T14:59:41+00:00",
+      "fetched_at": "2026-04-29T15:10:50+00:00",
+      "last_success_at": "2026-04-29T15:10:50+00:00",
       "editions": [
         "intl"
       ]
@@ -5485,8 +5485,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:41+00:00",
-      "last_success_at": "2026-04-29T14:59:41+00:00",
+      "fetched_at": "2026-04-29T15:10:50+00:00",
+      "last_success_at": "2026-04-29T15:10:50+00:00",
       "editions": [
         "intl"
       ]
@@ -5512,8 +5512,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:43+00:00",
-      "last_success_at": "2026-04-29T14:59:43+00:00",
+      "fetched_at": "2026-04-29T15:10:51+00:00",
+      "last_success_at": "2026-04-29T15:10:51+00:00",
       "editions": [
         "intl"
       ]
@@ -5539,8 +5539,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:42+00:00",
-      "last_success_at": "2026-04-29T14:59:42+00:00",
+      "fetched_at": "2026-04-29T15:10:50+00:00",
+      "last_success_at": "2026-04-29T15:10:50+00:00",
       "editions": [
         "intl"
       ]
@@ -5566,8 +5566,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:42+00:00",
-      "last_success_at": "2026-04-29T14:59:42+00:00",
+      "fetched_at": "2026-04-29T15:10:50+00:00",
+      "last_success_at": "2026-04-29T15:10:50+00:00",
       "editions": [
         "intl"
       ]
@@ -5593,8 +5593,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:43+00:00",
-      "last_success_at": "2026-04-29T14:59:43+00:00",
+      "fetched_at": "2026-04-29T15:10:52+00:00",
+      "last_success_at": "2026-04-29T15:10:52+00:00",
       "editions": [
         "intl"
       ]
@@ -5620,8 +5620,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:42+00:00",
-      "last_success_at": "2026-04-29T14:59:42+00:00",
+      "fetched_at": "2026-04-29T15:10:50+00:00",
+      "last_success_at": "2026-04-29T15:10:50+00:00",
       "editions": [
         "intl"
       ]
@@ -5647,8 +5647,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:42+00:00",
-      "last_success_at": "2026-04-29T14:59:42+00:00",
+      "fetched_at": "2026-04-29T15:10:50+00:00",
+      "last_success_at": "2026-04-29T15:10:50+00:00",
       "editions": [
         "intl"
       ]
@@ -5674,8 +5674,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:42+00:00",
-      "last_success_at": "2026-04-29T14:59:42+00:00",
+      "fetched_at": "2026-04-29T15:10:50+00:00",
+      "last_success_at": "2026-04-29T15:10:50+00:00",
       "editions": [
         "intl"
       ]
@@ -5701,8 +5701,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:42+00:00",
-      "last_success_at": "2026-04-29T14:59:42+00:00",
+      "fetched_at": "2026-04-29T15:10:50+00:00",
+      "last_success_at": "2026-04-29T15:10:50+00:00",
       "editions": [
         "intl"
       ]
@@ -5728,11 +5728,11 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:43+00:00",
+      "fetched_at": "2026-04-29T15:10:52+00:00",
       "warnings": [
         "linux-x64: 没有匹配 asset pattern 'flameshot-*-debian-12-amd64.deb'"
       ],
-      "last_success_at": "2026-04-29T14:59:43+00:00",
+      "last_success_at": "2026-04-29T15:10:52+00:00",
       "editions": [
         "intl"
       ]
@@ -5758,8 +5758,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:43+00:00",
-      "last_success_at": "2026-04-29T14:59:43+00:00",
+      "fetched_at": "2026-04-29T15:10:52+00:00",
+      "last_success_at": "2026-04-29T15:10:52+00:00",
       "editions": [
         "intl"
       ]
@@ -5785,8 +5785,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:42+00:00",
-      "last_success_at": "2026-04-29T14:59:42+00:00",
+      "fetched_at": "2026-04-29T15:10:51+00:00",
+      "last_success_at": "2026-04-29T15:10:51+00:00",
       "editions": [
         "intl"
       ]
@@ -5812,8 +5812,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:42+00:00",
-      "last_success_at": "2026-04-29T14:59:42+00:00",
+      "fetched_at": "2026-04-29T15:10:51+00:00",
+      "last_success_at": "2026-04-29T15:10:51+00:00",
       "editions": [
         "intl"
       ]
@@ -5839,8 +5839,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:42+00:00",
-      "last_success_at": "2026-04-29T14:59:42+00:00",
+      "fetched_at": "2026-04-29T15:10:51+00:00",
+      "last_success_at": "2026-04-29T15:10:51+00:00",
       "editions": [
         "intl"
       ]
@@ -5866,8 +5866,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:44+00:00",
-      "last_success_at": "2026-04-29T14:59:44+00:00",
+      "fetched_at": "2026-04-29T15:10:52+00:00",
+      "last_success_at": "2026-04-29T15:10:52+00:00",
       "editions": [
         "intl"
       ]
@@ -5893,8 +5893,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:42+00:00",
-      "last_success_at": "2026-04-29T14:59:42+00:00",
+      "fetched_at": "2026-04-29T15:10:51+00:00",
+      "last_success_at": "2026-04-29T15:10:51+00:00",
       "editions": [
         "intl"
       ]
@@ -5920,8 +5920,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:42+00:00",
-      "last_success_at": "2026-04-29T14:59:42+00:00",
+      "fetched_at": "2026-04-29T15:10:51+00:00",
+      "last_success_at": "2026-04-29T15:10:51+00:00",
       "editions": [
         "intl"
       ]
@@ -5947,8 +5947,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:42+00:00",
-      "last_success_at": "2026-04-29T14:59:42+00:00",
+      "fetched_at": "2026-04-29T15:10:51+00:00",
+      "last_success_at": "2026-04-29T15:10:51+00:00",
       "editions": [
         "intl"
       ]
@@ -5974,8 +5974,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:44+00:00",
-      "last_success_at": "2026-04-29T14:59:44+00:00",
+      "fetched_at": "2026-04-29T15:10:52+00:00",
+      "last_success_at": "2026-04-29T15:10:52+00:00",
       "editions": [
         "intl"
       ]
@@ -6001,8 +6001,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:44+00:00",
-      "last_success_at": "2026-04-29T14:59:44+00:00",
+      "fetched_at": "2026-04-29T15:10:52+00:00",
+      "last_success_at": "2026-04-29T15:10:52+00:00",
       "editions": [
         "intl"
       ]
@@ -6028,8 +6028,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:44+00:00",
-      "last_success_at": "2026-04-29T14:59:44+00:00",
+      "fetched_at": "2026-04-29T15:10:52+00:00",
+      "last_success_at": "2026-04-29T15:10:52+00:00",
       "editions": [
         "intl"
       ]
@@ -6055,12 +6055,12 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:44+00:00",
+      "fetched_at": "2026-04-29T15:10:52+00:00",
       "warnings": [
         "win-x64: 没有匹配 asset pattern 'tabby-*-x64-setup.exe'",
         "linux-x64: 没有匹配 asset pattern 'tabby-*-x86_64-linux.rpm'"
       ],
-      "last_success_at": "2026-04-29T14:59:44+00:00",
+      "last_success_at": "2026-04-29T15:10:52+00:00",
       "editions": [
         "intl"
       ]
@@ -6094,8 +6094,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:43+00:00",
-      "last_success_at": "2026-04-29T14:59:43+00:00",
+      "fetched_at": "2026-04-29T15:10:51+00:00",
+      "last_success_at": "2026-04-29T15:10:51+00:00",
       "editions": [
         "intl"
       ]
@@ -6137,8 +6137,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:44+00:00",
-      "last_success_at": "2026-04-29T14:59:44+00:00",
+      "fetched_at": "2026-04-29T15:10:53+00:00",
+      "last_success_at": "2026-04-29T15:10:53+00:00",
       "editions": [
         "intl"
       ]
@@ -6164,8 +6164,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:43+00:00",
-      "last_success_at": "2026-04-29T14:59:43+00:00",
+      "fetched_at": "2026-04-29T15:10:51+00:00",
+      "last_success_at": "2026-04-29T15:10:51+00:00",
       "editions": [
         "intl"
       ]
@@ -6191,8 +6191,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:43+00:00",
-      "last_success_at": "2026-04-29T14:59:43+00:00",
+      "fetched_at": "2026-04-29T15:10:51+00:00",
+      "last_success_at": "2026-04-29T15:10:51+00:00",
       "editions": [
         "intl"
       ]
@@ -6226,8 +6226,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:43+00:00",
-      "last_success_at": "2026-04-29T14:59:43+00:00",
+      "fetched_at": "2026-04-29T15:10:51+00:00",
+      "last_success_at": "2026-04-29T15:10:51+00:00",
       "editions": [
         "intl"
       ]
@@ -6253,8 +6253,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:43+00:00",
-      "last_success_at": "2026-04-29T14:59:43+00:00",
+      "fetched_at": "2026-04-29T15:10:51+00:00",
+      "last_success_at": "2026-04-29T15:10:51+00:00",
       "editions": [
         "intl"
       ]
@@ -6296,8 +6296,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:44+00:00",
-      "last_success_at": "2026-04-29T14:59:44+00:00",
+      "fetched_at": "2026-04-29T15:10:53+00:00",
+      "last_success_at": "2026-04-29T15:10:53+00:00",
       "editions": [
         "intl"
       ]
@@ -6323,12 +6323,12 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:44+00:00",
+      "fetched_at": "2026-04-29T15:10:53+00:00",
       "warnings": [
         "mac-arm64: 没有匹配 asset pattern 'kopia-*-macos-arm64'",
         "linux-x64: 没有匹配 asset pattern 'kopia-*-linux-x64'"
       ],
-      "last_success_at": "2026-04-29T14:59:44+00:00",
+      "last_success_at": "2026-04-29T15:10:53+00:00",
       "editions": [
         "intl"
       ]
@@ -6370,8 +6370,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:45+00:00",
-      "last_success_at": "2026-04-29T14:59:45+00:00",
+      "fetched_at": "2026-04-29T15:10:53+00:00",
+      "last_success_at": "2026-04-29T15:10:53+00:00",
       "editions": [
         "intl"
       ]
@@ -6397,8 +6397,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:43+00:00",
-      "last_success_at": "2026-04-29T14:59:43+00:00",
+      "fetched_at": "2026-04-29T15:10:52+00:00",
+      "last_success_at": "2026-04-29T15:10:52+00:00",
       "editions": [
         "intl"
       ]
@@ -6440,8 +6440,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:45+00:00",
-      "last_success_at": "2026-04-29T14:59:45+00:00",
+      "fetched_at": "2026-04-29T15:10:53+00:00",
+      "last_success_at": "2026-04-29T15:10:53+00:00",
       "editions": [
         "intl"
       ]
@@ -6475,8 +6475,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:44+00:00",
-      "last_success_at": "2026-04-29T14:59:44+00:00",
+      "fetched_at": "2026-04-29T15:10:52+00:00",
+      "last_success_at": "2026-04-29T15:10:52+00:00",
       "editions": [
         "intl"
       ]
@@ -6518,8 +6518,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:45+00:00",
-      "last_success_at": "2026-04-29T14:59:45+00:00",
+      "fetched_at": "2026-04-29T15:10:54+00:00",
+      "last_success_at": "2026-04-29T15:10:54+00:00",
       "editions": [
         "intl"
       ]
@@ -6561,8 +6561,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:45+00:00",
-      "last_success_at": "2026-04-29T14:59:45+00:00",
+      "fetched_at": "2026-04-29T15:10:54+00:00",
+      "last_success_at": "2026-04-29T15:10:54+00:00",
       "editions": [
         "intl"
       ]
@@ -6604,8 +6604,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:45+00:00",
-      "last_success_at": "2026-04-29T14:59:45+00:00",
+      "fetched_at": "2026-04-29T15:10:54+00:00",
+      "last_success_at": "2026-04-29T15:10:54+00:00",
       "editions": [
         "intl"
       ]
@@ -6639,11 +6639,11 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:46+00:00",
+      "fetched_at": "2026-04-29T15:10:54+00:00",
       "warnings": [
         "win-x64: 没有匹配 asset pattern 'slides_*_windows_amd64.tar.gz'"
       ],
-      "last_success_at": "2026-04-29T14:59:46+00:00",
+      "last_success_at": "2026-04-29T15:10:54+00:00",
       "editions": [
         "intl"
       ]
@@ -6685,8 +6685,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:46+00:00",
-      "last_success_at": "2026-04-29T14:59:46+00:00",
+      "fetched_at": "2026-04-29T15:10:54+00:00",
+      "last_success_at": "2026-04-29T15:10:54+00:00",
       "editions": [
         "intl"
       ]
@@ -6728,8 +6728,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:46+00:00",
-      "last_success_at": "2026-04-29T14:59:46+00:00",
+      "fetched_at": "2026-04-29T15:10:54+00:00",
+      "last_success_at": "2026-04-29T15:10:54+00:00",
       "editions": [
         "intl"
       ]
@@ -6771,8 +6771,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:46+00:00",
-      "last_success_at": "2026-04-29T14:59:46+00:00",
+      "fetched_at": "2026-04-29T15:10:54+00:00",
+      "last_success_at": "2026-04-29T15:10:54+00:00",
       "editions": [
         "intl"
       ]
@@ -6814,8 +6814,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:46+00:00",
-      "last_success_at": "2026-04-29T14:59:46+00:00",
+      "fetched_at": "2026-04-29T15:10:55+00:00",
+      "last_success_at": "2026-04-29T15:10:55+00:00",
       "editions": [
         "intl"
       ]
@@ -6857,8 +6857,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:46+00:00",
-      "last_success_at": "2026-04-29T14:59:46+00:00",
+      "fetched_at": "2026-04-29T15:10:55+00:00",
+      "last_success_at": "2026-04-29T15:10:55+00:00",
       "editions": [
         "intl"
       ]
@@ -6892,11 +6892,11 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:46+00:00",
+      "fetched_at": "2026-04-29T15:10:55+00:00",
       "warnings": [
         "linux-x64: 没有匹配 asset pattern 'clash-verge_*_amd64.deb'"
       ],
-      "last_success_at": "2026-04-29T14:59:46+00:00",
+      "last_success_at": "2026-04-29T15:10:55+00:00",
       "editions": [
         "intl"
       ]
@@ -6922,8 +6922,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:45+00:00",
-      "last_success_at": "2026-04-29T14:59:45+00:00",
+      "fetched_at": "2026-04-29T15:10:54+00:00",
+      "last_success_at": "2026-04-29T15:10:54+00:00",
       "editions": [
         "intl"
       ]
@@ -6949,8 +6949,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:45+00:00",
-      "last_success_at": "2026-04-29T14:59:45+00:00",
+      "fetched_at": "2026-04-29T15:10:54+00:00",
+      "last_success_at": "2026-04-29T15:10:54+00:00",
       "editions": [
         "intl"
       ]
@@ -6984,8 +6984,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:45+00:00",
-      "last_success_at": "2026-04-29T14:59:45+00:00",
+      "fetched_at": "2026-04-29T15:10:54+00:00",
+      "last_success_at": "2026-04-29T15:10:54+00:00",
       "editions": [
         "intl"
       ]
@@ -7011,11 +7011,11 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:48+00:00",
+      "fetched_at": "2026-04-29T15:10:55+00:00",
       "warnings": [
         "mac-arm64: 没有匹配 asset pattern 'Outline-Client.dmg'"
       ],
-      "last_success_at": "2026-04-29T14:59:48+00:00",
+      "last_success_at": "2026-04-29T15:10:55+00:00",
       "editions": [
         "intl"
       ]
@@ -7049,11 +7049,11 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:47+00:00",
+      "fetched_at": "2026-04-29T15:10:55+00:00",
       "warnings": [
         "win-x64: 没有匹配 asset pattern 'netbird_*_windows_amd64.zip'"
       ],
-      "last_success_at": "2026-04-29T14:59:47+00:00",
+      "last_success_at": "2026-04-29T15:10:55+00:00",
       "editions": [
         "intl"
       ]
@@ -7087,8 +7087,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:47+00:00",
-      "last_success_at": "2026-04-29T14:59:47+00:00",
+      "fetched_at": "2026-04-29T15:10:55+00:00",
+      "last_success_at": "2026-04-29T15:10:55+00:00",
       "editions": [
         "intl"
       ]
@@ -7122,8 +7122,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:46+00:00",
-      "last_success_at": "2026-04-29T14:59:46+00:00",
+      "fetched_at": "2026-04-29T15:10:54+00:00",
+      "last_success_at": "2026-04-29T15:10:54+00:00",
       "editions": [
         "intl"
       ]
@@ -7157,11 +7157,11 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:47+00:00",
+      "fetched_at": "2026-04-29T15:10:55+00:00",
       "warnings": [
         "mac-arm64: 没有匹配 asset pattern 'AdGuardHome_darwin_arm64.tar.gz'"
       ],
-      "last_success_at": "2026-04-29T14:59:47+00:00",
+      "last_success_at": "2026-04-29T15:10:55+00:00",
       "editions": [
         "intl"
       ]
@@ -7187,8 +7187,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:46+00:00",
-      "last_success_at": "2026-04-29T14:59:46+00:00",
+      "fetched_at": "2026-04-29T15:10:54+00:00",
+      "last_success_at": "2026-04-29T15:10:54+00:00",
       "editions": [
         "intl"
       ]
@@ -7214,8 +7214,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:47+00:00",
-      "last_success_at": "2026-04-29T14:59:47+00:00",
+      "fetched_at": "2026-04-29T15:10:55+00:00",
+      "last_success_at": "2026-04-29T15:10:55+00:00",
       "editions": [
         "intl"
       ]
@@ -7241,8 +7241,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:46+00:00",
-      "last_success_at": "2026-04-29T14:59:46+00:00",
+      "fetched_at": "2026-04-29T15:10:54+00:00",
+      "last_success_at": "2026-04-29T15:10:54+00:00",
       "editions": [
         "intl"
       ]
@@ -7268,8 +7268,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:46+00:00",
-      "last_success_at": "2026-04-29T14:59:46+00:00",
+      "fetched_at": "2026-04-29T15:10:54+00:00",
+      "last_success_at": "2026-04-29T15:10:54+00:00",
       "editions": [
         "intl"
       ]
@@ -7295,8 +7295,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:46+00:00",
-      "last_success_at": "2026-04-29T14:59:46+00:00",
+      "fetched_at": "2026-04-29T15:10:54+00:00",
+      "last_success_at": "2026-04-29T15:10:54+00:00",
       "editions": [
         "intl"
       ]
@@ -7330,11 +7330,11 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:47+00:00",
+      "fetched_at": "2026-04-29T15:10:56+00:00",
       "warnings": [
         "mac-arm64: 没有匹配 asset pattern 'speedtest-go_*_darwin_arm64.zip'"
       ],
-      "last_success_at": "2026-04-29T14:59:47+00:00",
+      "last_success_at": "2026-04-29T15:10:56+00:00",
       "editions": [
         "intl"
       ]
@@ -7360,12 +7360,12 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:46+00:00",
+      "fetched_at": "2026-04-29T15:10:56+00:00",
       "warnings": [
         "win-x64: 没有匹配 asset pattern 'PrismLauncher-*-Windows-MSVC-Setup.exe'",
         "mac-arm64: 没有匹配 asset pattern 'PrismLauncher-*-macOS-arm64.dmg'"
       ],
-      "last_success_at": "2026-04-29T14:59:46+00:00",
+      "last_success_at": "2026-04-29T15:10:56+00:00",
       "editions": [
         "intl"
       ]
@@ -7391,8 +7391,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:48+00:00",
-      "last_success_at": "2026-04-29T14:59:48+00:00",
+      "fetched_at": "2026-04-29T15:10:56+00:00",
+      "last_success_at": "2026-04-29T15:10:56+00:00",
       "editions": [
         "intl"
       ]
@@ -7418,8 +7418,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:46+00:00",
-      "last_success_at": "2026-04-29T14:59:46+00:00",
+      "fetched_at": "2026-04-29T15:10:55+00:00",
+      "last_success_at": "2026-04-29T15:10:55+00:00",
       "editions": [
         "intl"
       ]
@@ -7445,8 +7445,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:46+00:00",
-      "last_success_at": "2026-04-29T14:59:46+00:00",
+      "fetched_at": "2026-04-29T15:10:55+00:00",
+      "last_success_at": "2026-04-29T15:10:55+00:00",
       "editions": [
         "intl"
       ]
@@ -7472,8 +7472,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:48+00:00",
-      "last_success_at": "2026-04-29T14:59:48+00:00",
+      "fetched_at": "2026-04-29T15:10:56+00:00",
+      "last_success_at": "2026-04-29T15:10:56+00:00",
       "editions": [
         "intl"
       ]
@@ -7499,8 +7499,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:46+00:00",
-      "last_success_at": "2026-04-29T14:59:46+00:00",
+      "fetched_at": "2026-04-29T15:10:55+00:00",
+      "last_success_at": "2026-04-29T15:10:55+00:00",
       "editions": [
         "intl"
       ]
@@ -7542,8 +7542,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:46+00:00",
-      "last_success_at": "2026-04-29T14:59:46+00:00",
+      "fetched_at": "2026-04-29T15:10:55+00:00",
+      "last_success_at": "2026-04-29T15:10:55+00:00",
       "editions": [
         "intl"
       ]
@@ -7585,8 +7585,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:46+00:00",
-      "last_success_at": "2026-04-29T14:59:46+00:00",
+      "fetched_at": "2026-04-29T15:10:55+00:00",
+      "last_success_at": "2026-04-29T15:10:55+00:00",
       "editions": [
         "intl"
       ]
@@ -7612,12 +7612,12 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:48+00:00",
+      "fetched_at": "2026-04-29T15:10:56+00:00",
       "warnings": [
         "win-x64: 没有匹配 asset pattern 'xemu-win-*-zip.zip'",
         "mac-arm64: 没有匹配 asset pattern 'xemu-macos-*-arm64.tar.gz'"
       ],
-      "last_success_at": "2026-04-29T14:59:48+00:00",
+      "last_success_at": "2026-04-29T15:10:56+00:00",
       "editions": [
         "intl"
       ]
@@ -7643,11 +7643,11 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:48+00:00",
+      "fetched_at": "2026-04-29T15:10:56+00:00",
       "warnings": [
         "mac-arm64: 没有匹配 asset pattern 'mGBA-*-osx-arm64.tar.xz'"
       ],
-      "last_success_at": "2026-04-29T14:59:48+00:00",
+      "last_success_at": "2026-04-29T15:10:56+00:00",
       "editions": [
         "intl"
       ]
@@ -7681,8 +7681,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:47+00:00",
-      "last_success_at": "2026-04-29T14:59:47+00:00",
+      "fetched_at": "2026-04-29T15:10:55+00:00",
+      "last_success_at": "2026-04-29T15:10:55+00:00",
       "editions": [
         "intl"
       ]
@@ -7716,11 +7716,11 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:48+00:00",
+      "fetched_at": "2026-04-29T15:10:56+00:00",
       "warnings": [
         "linux-x64: 没有匹配 asset pattern 'OpenMW-*-Linux-generic64.tar.gz'"
       ],
-      "last_success_at": "2026-04-29T14:59:48+00:00",
+      "last_success_at": "2026-04-29T15:10:56+00:00",
       "editions": [
         "intl"
       ]
@@ -7762,8 +7762,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:47+00:00",
-      "last_success_at": "2026-04-29T14:59:47+00:00",
+      "fetched_at": "2026-04-29T15:10:55+00:00",
+      "last_success_at": "2026-04-29T15:10:55+00:00",
       "editions": [
         "intl"
       ]
@@ -7797,8 +7797,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:47+00:00",
-      "last_success_at": "2026-04-29T14:59:47+00:00",
+      "fetched_at": "2026-04-29T15:10:55+00:00",
+      "last_success_at": "2026-04-29T15:10:55+00:00",
       "editions": [
         "intl"
       ]
@@ -7840,8 +7840,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:47+00:00",
-      "last_success_at": "2026-04-29T14:59:47+00:00",
+      "fetched_at": "2026-04-29T15:10:55+00:00",
+      "last_success_at": "2026-04-29T15:10:55+00:00",
       "editions": [
         "intl"
       ]
@@ -7867,8 +7867,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:47+00:00",
-      "last_success_at": "2026-04-29T14:59:47+00:00",
+      "fetched_at": "2026-04-29T15:10:55+00:00",
+      "last_success_at": "2026-04-29T15:10:55+00:00",
       "editions": [
         "intl"
       ]
@@ -7910,8 +7910,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:47+00:00",
-      "last_success_at": "2026-04-29T14:59:47+00:00",
+      "fetched_at": "2026-04-29T15:10:55+00:00",
+      "last_success_at": "2026-04-29T15:10:55+00:00",
       "editions": [
         "intl"
       ]
@@ -7937,8 +7937,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:47+00:00",
-      "last_success_at": "2026-04-29T14:59:47+00:00",
+      "fetched_at": "2026-04-29T15:10:55+00:00",
+      "last_success_at": "2026-04-29T15:10:55+00:00",
       "editions": [
         "intl"
       ]
@@ -7972,8 +7972,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:47+00:00",
-      "last_success_at": "2026-04-29T14:59:47+00:00",
+      "fetched_at": "2026-04-29T15:10:55+00:00",
+      "last_success_at": "2026-04-29T15:10:55+00:00",
       "editions": [
         "intl"
       ]
@@ -7999,8 +7999,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:47+00:00",
-      "last_success_at": "2026-04-29T14:59:47+00:00",
+      "fetched_at": "2026-04-29T15:10:55+00:00",
+      "last_success_at": "2026-04-29T15:10:55+00:00",
       "editions": [
         "intl"
       ]
@@ -8026,8 +8026,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:47+00:00",
-      "last_success_at": "2026-04-29T14:59:47+00:00",
+      "fetched_at": "2026-04-29T15:10:55+00:00",
+      "last_success_at": "2026-04-29T15:10:55+00:00",
       "editions": [
         "intl"
       ]
@@ -8053,8 +8053,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:47+00:00",
-      "last_success_at": "2026-04-29T14:59:47+00:00",
+      "fetched_at": "2026-04-29T15:10:55+00:00",
+      "last_success_at": "2026-04-29T15:10:55+00:00",
       "editions": [
         "intl"
       ]
@@ -8096,8 +8096,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:47+00:00",
-      "last_success_at": "2026-04-29T14:59:47+00:00",
+      "fetched_at": "2026-04-29T15:10:55+00:00",
+      "last_success_at": "2026-04-29T15:10:55+00:00",
       "editions": [
         "intl"
       ]
@@ -8123,8 +8123,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:47+00:00",
-      "last_success_at": "2026-04-29T14:59:47+00:00",
+      "fetched_at": "2026-04-29T15:10:55+00:00",
+      "last_success_at": "2026-04-29T15:10:55+00:00",
       "editions": [
         "intl"
       ]
@@ -8166,8 +8166,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:47+00:00",
-      "last_success_at": "2026-04-29T14:59:47+00:00",
+      "fetched_at": "2026-04-29T15:10:55+00:00",
+      "last_success_at": "2026-04-29T15:10:55+00:00",
       "editions": [
         "intl"
       ]
@@ -8209,8 +8209,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:47+00:00",
-      "last_success_at": "2026-04-29T14:59:47+00:00",
+      "fetched_at": "2026-04-29T15:10:55+00:00",
+      "last_success_at": "2026-04-29T15:10:55+00:00",
       "editions": [
         "intl"
       ]
@@ -8236,8 +8236,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:48+00:00",
-      "last_success_at": "2026-04-29T14:59:48+00:00",
+      "fetched_at": "2026-04-29T15:10:57+00:00",
+      "last_success_at": "2026-04-29T15:10:57+00:00",
       "editions": [
         "intl"
       ]
@@ -8271,8 +8271,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:49+00:00",
-      "last_success_at": "2026-04-29T14:59:49+00:00",
+      "fetched_at": "2026-04-29T15:10:57+00:00",
+      "last_success_at": "2026-04-29T15:10:57+00:00",
       "editions": [
         "intl"
       ]
@@ -8298,8 +8298,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:47+00:00",
-      "last_success_at": "2026-04-29T14:59:47+00:00",
+      "fetched_at": "2026-04-29T15:10:55+00:00",
+      "last_success_at": "2026-04-29T15:10:55+00:00",
       "editions": [
         "intl"
       ]
@@ -8325,8 +8325,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:47+00:00",
-      "last_success_at": "2026-04-29T14:59:47+00:00",
+      "fetched_at": "2026-04-29T15:10:55+00:00",
+      "last_success_at": "2026-04-29T15:10:55+00:00",
       "editions": [
         "intl"
       ]
@@ -8360,8 +8360,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:47+00:00",
-      "last_success_at": "2026-04-29T14:59:47+00:00",
+      "fetched_at": "2026-04-29T15:10:55+00:00",
+      "last_success_at": "2026-04-29T15:10:55+00:00",
       "editions": [
         "intl"
       ]
@@ -8387,11 +8387,11 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:49+00:00",
+      "fetched_at": "2026-04-29T15:10:57+00:00",
       "warnings": [
         "mac-arm64: 没有匹配 asset pattern 'lmms-*-macos-arm64.dmg'"
       ],
-      "last_success_at": "2026-04-29T14:59:49+00:00",
+      "last_success_at": "2026-04-29T15:10:57+00:00",
       "editions": [
         "intl"
       ]
@@ -8417,8 +8417,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:49+00:00",
-      "last_success_at": "2026-04-29T14:59:49+00:00",
+      "fetched_at": "2026-04-29T15:10:57+00:00",
+      "last_success_at": "2026-04-29T15:10:57+00:00",
       "editions": [
         "intl"
       ]
@@ -8444,8 +8444,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:49+00:00",
-      "last_success_at": "2026-04-29T14:59:49+00:00",
+      "fetched_at": "2026-04-29T15:10:57+00:00",
+      "last_success_at": "2026-04-29T15:10:57+00:00",
       "editions": [
         "intl"
       ]
@@ -8471,11 +8471,11 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:49+00:00",
+      "fetched_at": "2026-04-29T15:10:57+00:00",
       "warnings": [
         "mac-arm64: 没有匹配 asset pattern 'Natron-*-macOS-arm64.dmg'"
       ],
-      "last_success_at": "2026-04-29T14:59:49+00:00",
+      "last_success_at": "2026-04-29T15:10:57+00:00",
       "editions": [
         "intl"
       ]
@@ -8509,8 +8509,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:49+00:00",
-      "last_success_at": "2026-04-29T14:59:49+00:00",
+      "fetched_at": "2026-04-29T15:10:57+00:00",
+      "last_success_at": "2026-04-29T15:10:57+00:00",
       "editions": [
         "intl"
       ]
@@ -8536,8 +8536,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:48+00:00",
-      "last_success_at": "2026-04-29T14:59:48+00:00",
+      "fetched_at": "2026-04-29T15:10:56+00:00",
+      "last_success_at": "2026-04-29T15:10:56+00:00",
       "editions": [
         "intl"
       ]
@@ -8579,8 +8579,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:49+00:00",
-      "last_success_at": "2026-04-29T14:59:49+00:00",
+      "fetched_at": "2026-04-29T15:10:58+00:00",
+      "last_success_at": "2026-04-29T15:10:58+00:00",
       "editions": [
         "intl"
       ]
@@ -8606,12 +8606,12 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:49+00:00",
+      "fetched_at": "2026-04-29T15:10:58+00:00",
       "warnings": [
         "win-x64: 没有匹配 asset pattern 'Anytype-*-x64.exe'",
         "linux-x64: 没有匹配 asset pattern 'Anytype-*-amd64.deb'"
       ],
-      "last_success_at": "2026-04-29T14:59:49+00:00",
+      "last_success_at": "2026-04-29T15:10:58+00:00",
       "editions": [
         "intl"
       ]
@@ -8653,8 +8653,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:48+00:00",
-      "last_success_at": "2026-04-29T14:59:48+00:00",
+      "fetched_at": "2026-04-29T15:10:56+00:00",
+      "last_success_at": "2026-04-29T15:10:56+00:00",
       "editions": [
         "intl"
       ]
@@ -8696,8 +8696,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:50+00:00",
-      "last_success_at": "2026-04-29T14:59:50+00:00",
+      "fetched_at": "2026-04-29T15:10:58+00:00",
+      "last_success_at": "2026-04-29T15:10:58+00:00",
       "editions": [
         "intl"
       ]
@@ -8723,12 +8723,12 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:50+00:00",
+      "fetched_at": "2026-04-29T15:10:58+00:00",
       "warnings": [
         "mac-arm64: 没有匹配 asset pattern 'draw.io-*-arm64.dmg'",
         "linux-x64: 没有匹配 asset pattern 'draw.io-*-x86_64.rpm'"
       ],
-      "last_success_at": "2026-04-29T14:59:50+00:00",
+      "last_success_at": "2026-04-29T15:10:58+00:00",
       "editions": [
         "intl"
       ]
@@ -8754,8 +8754,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:49+00:00",
-      "last_success_at": "2026-04-29T14:59:49+00:00",
+      "fetched_at": "2026-04-29T15:10:57+00:00",
+      "last_success_at": "2026-04-29T15:10:57+00:00",
       "editions": [
         "intl"
       ]
@@ -8797,8 +8797,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:49+00:00",
-      "last_success_at": "2026-04-29T14:59:49+00:00",
+      "fetched_at": "2026-04-29T15:10:57+00:00",
+      "last_success_at": "2026-04-29T15:10:57+00:00",
       "editions": [
         "intl"
       ]
@@ -8832,8 +8832,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:49+00:00",
-      "last_success_at": "2026-04-29T14:59:49+00:00",
+      "fetched_at": "2026-04-29T15:10:57+00:00",
+      "last_success_at": "2026-04-29T15:10:57+00:00",
       "editions": [
         "intl"
       ]
@@ -8859,12 +8859,12 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:50+00:00",
+      "fetched_at": "2026-04-29T15:10:58+00:00",
       "warnings": [
         "mac-arm64: 没有匹配 asset pattern 'sioyek-apple-silicon.dmg'",
         "linux-x64: 没有匹配 asset pattern 'sioyek-release-linux-portable.tar.gz'"
       ],
-      "last_success_at": "2026-04-29T14:59:50+00:00",
+      "last_success_at": "2026-04-29T15:10:58+00:00",
       "editions": [
         "intl"
       ]
@@ -8898,11 +8898,11 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:50+00:00",
+      "fetched_at": "2026-04-29T15:10:59+00:00",
       "warnings": [
         "win-x64: 没有匹配 asset pattern 'Pomatez-*-x64.exe'"
       ],
-      "last_success_at": "2026-04-29T14:59:50+00:00",
+      "last_success_at": "2026-04-29T15:10:59+00:00",
       "editions": [
         "intl"
       ]
@@ -8928,8 +8928,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:49+00:00",
-      "last_success_at": "2026-04-29T14:59:49+00:00",
+      "fetched_at": "2026-04-29T15:10:57+00:00",
+      "last_success_at": "2026-04-29T15:10:57+00:00",
       "editions": [
         "intl"
       ]
@@ -8955,8 +8955,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:49+00:00",
-      "last_success_at": "2026-04-29T14:59:49+00:00",
+      "fetched_at": "2026-04-29T15:10:57+00:00",
+      "last_success_at": "2026-04-29T15:10:57+00:00",
       "editions": [
         "intl"
       ]
@@ -8998,8 +8998,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:49+00:00",
-      "last_success_at": "2026-04-29T14:59:49+00:00",
+      "fetched_at": "2026-04-29T15:10:57+00:00",
+      "last_success_at": "2026-04-29T15:10:57+00:00",
       "editions": [
         "intl"
       ]
@@ -9041,8 +9041,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:49+00:00",
-      "last_success_at": "2026-04-29T14:59:49+00:00",
+      "fetched_at": "2026-04-29T15:10:57+00:00",
+      "last_success_at": "2026-04-29T15:10:57+00:00",
       "editions": [
         "intl"
       ]
@@ -9068,8 +9068,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:49+00:00",
-      "last_success_at": "2026-04-29T14:59:49+00:00",
+      "fetched_at": "2026-04-29T15:10:57+00:00",
+      "last_success_at": "2026-04-29T15:10:57+00:00",
       "editions": [
         "intl"
       ]
@@ -9103,8 +9103,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:49+00:00",
-      "last_success_at": "2026-04-29T14:59:49+00:00",
+      "fetched_at": "2026-04-29T15:10:57+00:00",
+      "last_success_at": "2026-04-29T15:10:57+00:00",
       "editions": [
         "intl"
       ]
@@ -9138,11 +9138,11 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:50+00:00",
+      "fetched_at": "2026-04-29T15:10:58+00:00",
       "warnings": [
         "win-x64: 没有匹配 asset pattern 'local-ai-*-windows-amd64.exe'"
       ],
-      "last_success_at": "2026-04-29T14:59:50+00:00",
+      "last_success_at": "2026-04-29T15:10:58+00:00",
       "editions": [
         "intl"
       ]
@@ -9168,8 +9168,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:51+00:00",
-      "last_success_at": "2026-04-29T14:59:51+00:00",
+      "fetched_at": "2026-04-29T15:10:59+00:00",
+      "last_success_at": "2026-04-29T15:10:59+00:00",
       "editions": [
         "intl"
       ]
@@ -9211,8 +9211,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:49+00:00",
-      "last_success_at": "2026-04-29T14:59:49+00:00",
+      "fetched_at": "2026-04-29T15:10:57+00:00",
+      "last_success_at": "2026-04-29T15:10:57+00:00",
       "editions": [
         "intl"
       ]
@@ -9238,8 +9238,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:49+00:00",
-      "last_success_at": "2026-04-29T14:59:49+00:00",
+      "fetched_at": "2026-04-29T15:10:57+00:00",
+      "last_success_at": "2026-04-29T15:10:57+00:00",
       "editions": [
         "intl"
       ]
@@ -9265,8 +9265,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:49+00:00",
-      "last_success_at": "2026-04-29T14:59:49+00:00",
+      "fetched_at": "2026-04-29T15:10:57+00:00",
+      "last_success_at": "2026-04-29T15:10:57+00:00",
       "editions": [
         "intl"
       ]
@@ -9300,11 +9300,11 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:50+00:00",
+      "fetched_at": "2026-04-29T15:10:59+00:00",
       "warnings": [
         "linux-x64: 没有匹配 asset pattern 'Buzz-*-linux-x86_64.AppImage'"
       ],
-      "last_success_at": "2026-04-29T14:59:50+00:00",
+      "last_success_at": "2026-04-29T15:10:59+00:00",
       "editions": [
         "intl"
       ]
@@ -9330,8 +9330,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:49+00:00",
-      "last_success_at": "2026-04-29T14:59:49+00:00",
+      "fetched_at": "2026-04-29T15:10:57+00:00",
+      "last_success_at": "2026-04-29T15:10:57+00:00",
       "editions": [
         "intl"
       ]
@@ -9373,8 +9373,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:49+00:00",
-      "last_success_at": "2026-04-29T14:59:49+00:00",
+      "fetched_at": "2026-04-29T15:10:57+00:00",
+      "last_success_at": "2026-04-29T15:10:57+00:00",
       "editions": [
         "intl"
       ]
@@ -9416,8 +9416,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:49+00:00",
-      "last_success_at": "2026-04-29T14:59:49+00:00",
+      "fetched_at": "2026-04-29T15:10:57+00:00",
+      "last_success_at": "2026-04-29T15:10:57+00:00",
       "editions": [
         "intl"
       ]
@@ -9459,8 +9459,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:49+00:00",
-      "last_success_at": "2026-04-29T14:59:49+00:00",
+      "fetched_at": "2026-04-29T15:10:57+00:00",
+      "last_success_at": "2026-04-29T15:10:57+00:00",
       "editions": [
         "intl"
       ]
@@ -9502,8 +9502,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:51+00:00",
-      "last_success_at": "2026-04-29T14:59:51+00:00",
+      "fetched_at": "2026-04-29T15:10:59+00:00",
+      "last_success_at": "2026-04-29T15:10:59+00:00",
       "editions": [
         "intl"
       ]
@@ -9545,8 +9545,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:49+00:00",
-      "last_success_at": "2026-04-29T14:59:49+00:00",
+      "fetched_at": "2026-04-29T15:10:58+00:00",
+      "last_success_at": "2026-04-29T15:10:58+00:00",
       "editions": [
         "intl"
       ]
@@ -9580,8 +9580,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:49+00:00",
-      "last_success_at": "2026-04-29T14:59:49+00:00",
+      "fetched_at": "2026-04-29T15:10:58+00:00",
+      "last_success_at": "2026-04-29T15:10:58+00:00",
       "editions": [
         "intl"
       ]
@@ -9607,8 +9607,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:49+00:00",
-      "last_success_at": "2026-04-29T14:59:49+00:00",
+      "fetched_at": "2026-04-29T15:10:58+00:00",
+      "last_success_at": "2026-04-29T15:10:58+00:00",
       "editions": [
         "intl"
       ]
@@ -9650,8 +9650,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:51+00:00",
-      "last_success_at": "2026-04-29T14:59:51+00:00",
+      "fetched_at": "2026-04-29T15:10:59+00:00",
+      "last_success_at": "2026-04-29T15:10:59+00:00",
       "editions": [
         "intl"
       ]
@@ -9693,8 +9693,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:51+00:00",
-      "last_success_at": "2026-04-29T14:59:51+00:00",
+      "fetched_at": "2026-04-29T15:10:59+00:00",
+      "last_success_at": "2026-04-29T15:10:59+00:00",
       "editions": [
         "intl"
       ]
@@ -9736,8 +9736,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:51+00:00",
-      "last_success_at": "2026-04-29T14:59:51+00:00",
+      "fetched_at": "2026-04-29T15:10:59+00:00",
+      "last_success_at": "2026-04-29T15:10:59+00:00",
       "editions": [
         "intl"
       ]
@@ -9779,8 +9779,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:50+00:00",
-      "last_success_at": "2026-04-29T14:59:50+00:00",
+      "fetched_at": "2026-04-29T15:10:58+00:00",
+      "last_success_at": "2026-04-29T15:10:58+00:00",
       "editions": [
         "intl"
       ]
@@ -9822,8 +9822,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:50+00:00",
-      "last_success_at": "2026-04-29T14:59:50+00:00",
+      "fetched_at": "2026-04-29T15:10:58+00:00",
+      "last_success_at": "2026-04-29T15:10:58+00:00",
       "editions": [
         "intl"
       ]
@@ -9865,8 +9865,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:50+00:00",
-      "last_success_at": "2026-04-29T14:59:50+00:00",
+      "fetched_at": "2026-04-29T15:10:58+00:00",
+      "last_success_at": "2026-04-29T15:10:58+00:00",
       "editions": [
         "intl"
       ]
@@ -9908,8 +9908,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:50+00:00",
-      "last_success_at": "2026-04-29T14:59:50+00:00",
+      "fetched_at": "2026-04-29T15:10:58+00:00",
+      "last_success_at": "2026-04-29T15:10:58+00:00",
       "editions": [
         "intl"
       ]
@@ -9951,8 +9951,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:50+00:00",
-      "last_success_at": "2026-04-29T14:59:50+00:00",
+      "fetched_at": "2026-04-29T15:10:58+00:00",
+      "last_success_at": "2026-04-29T15:10:58+00:00",
       "editions": [
         "intl"
       ]
@@ -9994,8 +9994,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:50+00:00",
-      "last_success_at": "2026-04-29T14:59:50+00:00",
+      "fetched_at": "2026-04-29T15:10:58+00:00",
+      "last_success_at": "2026-04-29T15:10:58+00:00",
       "editions": [
         "intl"
       ]
@@ -10021,8 +10021,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:51+00:00",
-      "last_success_at": "2026-04-29T14:59:51+00:00",
+      "fetched_at": "2026-04-29T15:11:00+00:00",
+      "last_success_at": "2026-04-29T15:11:00+00:00",
       "editions": [
         "intl"
       ]
@@ -10064,8 +10064,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:51+00:00",
-      "last_success_at": "2026-04-29T14:59:51+00:00",
+      "fetched_at": "2026-04-29T15:11:00+00:00",
+      "last_success_at": "2026-04-29T15:11:00+00:00",
       "editions": [
         "intl"
       ]
@@ -10107,8 +10107,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:50+00:00",
-      "last_success_at": "2026-04-29T14:59:50+00:00",
+      "fetched_at": "2026-04-29T15:10:58+00:00",
+      "last_success_at": "2026-04-29T15:10:58+00:00",
       "editions": [
         "intl"
       ]
@@ -10150,8 +10150,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:51+00:00",
-      "last_success_at": "2026-04-29T14:59:51+00:00",
+      "fetched_at": "2026-04-29T15:11:00+00:00",
+      "last_success_at": "2026-04-29T15:11:00+00:00",
       "editions": [
         "intl"
       ]
@@ -10193,8 +10193,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:52+00:00",
-      "last_success_at": "2026-04-29T14:59:52+00:00",
+      "fetched_at": "2026-04-29T15:11:00+00:00",
+      "last_success_at": "2026-04-29T15:11:00+00:00",
       "editions": [
         "intl"
       ]
@@ -10236,8 +10236,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:52+00:00",
-      "last_success_at": "2026-04-29T14:59:52+00:00",
+      "fetched_at": "2026-04-29T15:11:00+00:00",
+      "last_success_at": "2026-04-29T15:11:00+00:00",
       "editions": [
         "intl"
       ]
@@ -10263,12 +10263,12 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:53+00:00",
+      "fetched_at": "2026-04-29T15:11:00+00:00",
       "warnings": [
         "win-x64: 没有匹配 asset pattern 'navi-*-x86_64-pc-windows-msvc.zip'",
         "mac-arm64: 没有匹配 asset pattern 'navi-*-aarch64-apple-darwin.tar.gz'"
       ],
-      "last_success_at": "2026-04-29T14:59:53+00:00",
+      "last_success_at": "2026-04-29T15:11:00+00:00",
       "editions": [
         "intl"
       ]
@@ -10310,8 +10310,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:51+00:00",
-      "last_success_at": "2026-04-29T14:59:51+00:00",
+      "fetched_at": "2026-04-29T15:10:59+00:00",
+      "last_success_at": "2026-04-29T15:10:59+00:00",
       "editions": [
         "intl"
       ]
@@ -10353,8 +10353,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:51+00:00",
-      "last_success_at": "2026-04-29T14:59:51+00:00",
+      "fetched_at": "2026-04-29T15:10:59+00:00",
+      "last_success_at": "2026-04-29T15:10:59+00:00",
       "editions": [
         "intl"
       ]
@@ -10396,8 +10396,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:51+00:00",
-      "last_success_at": "2026-04-29T14:59:51+00:00",
+      "fetched_at": "2026-04-29T15:10:59+00:00",
+      "last_success_at": "2026-04-29T15:10:59+00:00",
       "editions": [
         "intl"
       ]
@@ -10423,8 +10423,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:51+00:00",
-      "last_success_at": "2026-04-29T14:59:51+00:00",
+      "fetched_at": "2026-04-29T15:10:59+00:00",
+      "last_success_at": "2026-04-29T15:10:59+00:00",
       "editions": [
         "intl"
       ]
@@ -10458,11 +10458,11 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:52+00:00",
+      "fetched_at": "2026-04-29T15:11:00+00:00",
       "warnings": [
         "win-x64: 没有匹配 asset pattern 'xcp-*-x86_64-pc-windows-msvc.zip'"
       ],
-      "last_success_at": "2026-04-29T14:59:52+00:00",
+      "last_success_at": "2026-04-29T15:11:00+00:00",
       "editions": [
         "intl"
       ]
@@ -10488,8 +10488,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:52+00:00",
-      "last_success_at": "2026-04-29T14:59:52+00:00",
+      "fetched_at": "2026-04-29T15:11:01+00:00",
+      "last_success_at": "2026-04-29T15:11:01+00:00",
       "editions": [
         "intl"
       ]
@@ -10515,8 +10515,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:53+00:00",
-      "last_success_at": "2026-04-29T14:59:53+00:00",
+      "fetched_at": "2026-04-29T15:11:01+00:00",
+      "last_success_at": "2026-04-29T15:11:01+00:00",
       "editions": [
         "intl"
       ]
@@ -10558,8 +10558,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:53+00:00",
-      "last_success_at": "2026-04-29T14:59:53+00:00",
+      "fetched_at": "2026-04-29T15:11:01+00:00",
+      "last_success_at": "2026-04-29T15:11:01+00:00",
       "editions": [
         "intl"
       ]
@@ -10601,8 +10601,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:53+00:00",
-      "last_success_at": "2026-04-29T14:59:53+00:00",
+      "fetched_at": "2026-04-29T15:11:01+00:00",
+      "last_success_at": "2026-04-29T15:11:01+00:00",
       "editions": [
         "intl"
       ]
@@ -10628,8 +10628,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:51+00:00",
-      "last_success_at": "2026-04-29T14:59:51+00:00",
+      "fetched_at": "2026-04-29T15:11:00+00:00",
+      "last_success_at": "2026-04-29T15:11:00+00:00",
       "editions": [
         "intl"
       ]
@@ -10655,8 +10655,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:52+00:00",
-      "last_success_at": "2026-04-29T14:59:52+00:00",
+      "fetched_at": "2026-04-29T15:11:01+00:00",
+      "last_success_at": "2026-04-29T15:11:01+00:00",
       "editions": [
         "intl"
       ]
@@ -10682,8 +10682,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:53+00:00",
-      "last_success_at": "2026-04-29T14:59:53+00:00",
+      "fetched_at": "2026-04-29T15:11:01+00:00",
+      "last_success_at": "2026-04-29T15:11:01+00:00",
       "editions": [
         "intl"
       ]
@@ -10725,8 +10725,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:52+00:00",
-      "last_success_at": "2026-04-29T14:59:52+00:00",
+      "fetched_at": "2026-04-29T15:11:00+00:00",
+      "last_success_at": "2026-04-29T15:11:00+00:00",
       "editions": [
         "intl"
       ]
@@ -10768,8 +10768,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:52+00:00",
-      "last_success_at": "2026-04-29T14:59:52+00:00",
+      "fetched_at": "2026-04-29T15:11:00+00:00",
+      "last_success_at": "2026-04-29T15:11:00+00:00",
       "editions": [
         "intl"
       ]
@@ -10811,8 +10811,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:52+00:00",
-      "last_success_at": "2026-04-29T14:59:52+00:00",
+      "fetched_at": "2026-04-29T15:11:00+00:00",
+      "last_success_at": "2026-04-29T15:11:00+00:00",
       "editions": [
         "intl"
       ]
@@ -10854,8 +10854,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:52+00:00",
-      "last_success_at": "2026-04-29T14:59:52+00:00",
+      "fetched_at": "2026-04-29T15:11:00+00:00",
+      "last_success_at": "2026-04-29T15:11:00+00:00",
       "editions": [
         "intl"
       ]
@@ -10897,8 +10897,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:52+00:00",
-      "last_success_at": "2026-04-29T14:59:52+00:00",
+      "fetched_at": "2026-04-29T15:11:00+00:00",
+      "last_success_at": "2026-04-29T15:11:00+00:00",
       "editions": [
         "intl"
       ]
@@ -10940,8 +10940,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:52+00:00",
-      "last_success_at": "2026-04-29T14:59:52+00:00",
+      "fetched_at": "2026-04-29T15:11:00+00:00",
+      "last_success_at": "2026-04-29T15:11:00+00:00",
       "editions": [
         "intl"
       ]
@@ -10975,8 +10975,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:52+00:00",
-      "last_success_at": "2026-04-29T14:59:52+00:00",
+      "fetched_at": "2026-04-29T15:11:00+00:00",
+      "last_success_at": "2026-04-29T15:11:00+00:00",
       "editions": [
         "intl"
       ]
@@ -11010,8 +11010,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:52+00:00",
-      "last_success_at": "2026-04-29T14:59:52+00:00",
+      "fetched_at": "2026-04-29T15:11:00+00:00",
+      "last_success_at": "2026-04-29T15:11:00+00:00",
       "editions": [
         "intl"
       ]
@@ -11053,8 +11053,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:52+00:00",
-      "last_success_at": "2026-04-29T14:59:52+00:00",
+      "fetched_at": "2026-04-29T15:11:00+00:00",
+      "last_success_at": "2026-04-29T15:11:00+00:00",
       "editions": [
         "intl"
       ]
@@ -11096,8 +11096,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:52+00:00",
-      "last_success_at": "2026-04-29T14:59:52+00:00",
+      "fetched_at": "2026-04-29T15:11:00+00:00",
+      "last_success_at": "2026-04-29T15:11:00+00:00",
       "editions": [
         "intl"
       ]
@@ -11139,8 +11139,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:52+00:00",
-      "last_success_at": "2026-04-29T14:59:52+00:00",
+      "fetched_at": "2026-04-29T15:11:00+00:00",
+      "last_success_at": "2026-04-29T15:11:00+00:00",
       "editions": [
         "intl"
       ]
@@ -11182,8 +11182,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:52+00:00",
-      "last_success_at": "2026-04-29T14:59:52+00:00",
+      "fetched_at": "2026-04-29T15:11:00+00:00",
+      "last_success_at": "2026-04-29T15:11:00+00:00",
       "editions": [
         "intl"
       ]
@@ -11217,8 +11217,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:52+00:00",
-      "last_success_at": "2026-04-29T14:59:52+00:00",
+      "fetched_at": "2026-04-29T15:11:00+00:00",
+      "last_success_at": "2026-04-29T15:11:00+00:00",
       "editions": [
         "intl"
       ]
@@ -11252,8 +11252,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:52+00:00",
-      "last_success_at": "2026-04-29T14:59:52+00:00",
+      "fetched_at": "2026-04-29T15:11:00+00:00",
+      "last_success_at": "2026-04-29T15:11:00+00:00",
       "editions": [
         "intl"
       ]
@@ -11287,8 +11287,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:52+00:00",
-      "last_success_at": "2026-04-29T14:59:52+00:00",
+      "fetched_at": "2026-04-29T15:11:00+00:00",
+      "last_success_at": "2026-04-29T15:11:00+00:00",
       "editions": [
         "intl"
       ]
@@ -11322,8 +11322,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:52+00:00",
-      "last_success_at": "2026-04-29T14:59:52+00:00",
+      "fetched_at": "2026-04-29T15:11:00+00:00",
+      "last_success_at": "2026-04-29T15:11:00+00:00",
       "editions": [
         "intl"
       ]
@@ -11357,8 +11357,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:52+00:00",
-      "last_success_at": "2026-04-29T14:59:52+00:00",
+      "fetched_at": "2026-04-29T15:11:00+00:00",
+      "last_success_at": "2026-04-29T15:11:00+00:00",
       "editions": [
         "intl"
       ]
@@ -11392,8 +11392,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:52+00:00",
-      "last_success_at": "2026-04-29T14:59:52+00:00",
+      "fetched_at": "2026-04-29T15:11:00+00:00",
+      "last_success_at": "2026-04-29T15:11:00+00:00",
       "editions": [
         "intl"
       ]
@@ -11435,8 +11435,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:52+00:00",
-      "last_success_at": "2026-04-29T14:59:52+00:00",
+      "fetched_at": "2026-04-29T15:11:00+00:00",
+      "last_success_at": "2026-04-29T15:11:00+00:00",
       "editions": [
         "intl"
       ]
@@ -11478,8 +11478,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:52+00:00",
-      "last_success_at": "2026-04-29T14:59:52+00:00",
+      "fetched_at": "2026-04-29T15:11:00+00:00",
+      "last_success_at": "2026-04-29T15:11:00+00:00",
       "editions": [
         "intl"
       ]
@@ -11513,8 +11513,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:52+00:00",
-      "last_success_at": "2026-04-29T14:59:52+00:00",
+      "fetched_at": "2026-04-29T15:11:00+00:00",
+      "last_success_at": "2026-04-29T15:11:00+00:00",
       "editions": [
         "intl"
       ]
@@ -11548,8 +11548,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:52+00:00",
-      "last_success_at": "2026-04-29T14:59:52+00:00",
+      "fetched_at": "2026-04-29T15:11:00+00:00",
+      "last_success_at": "2026-04-29T15:11:00+00:00",
       "editions": [
         "intl"
       ]
@@ -11591,8 +11591,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:52+00:00",
-      "last_success_at": "2026-04-29T14:59:52+00:00",
+      "fetched_at": "2026-04-29T15:11:00+00:00",
+      "last_success_at": "2026-04-29T15:11:00+00:00",
       "editions": [
         "intl"
       ]
@@ -11634,8 +11634,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:52+00:00",
-      "last_success_at": "2026-04-29T14:59:52+00:00",
+      "fetched_at": "2026-04-29T15:11:00+00:00",
+      "last_success_at": "2026-04-29T15:11:00+00:00",
       "editions": [
         "intl"
       ]
@@ -11677,8 +11677,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:52+00:00",
-      "last_success_at": "2026-04-29T14:59:52+00:00",
+      "fetched_at": "2026-04-29T15:11:00+00:00",
+      "last_success_at": "2026-04-29T15:11:00+00:00",
       "editions": [
         "intl"
       ]
@@ -11720,8 +11720,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:52+00:00",
-      "last_success_at": "2026-04-29T14:59:52+00:00",
+      "fetched_at": "2026-04-29T15:11:00+00:00",
+      "last_success_at": "2026-04-29T15:11:00+00:00",
       "editions": [
         "intl"
       ]
@@ -11763,8 +11763,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:52+00:00",
-      "last_success_at": "2026-04-29T14:59:52+00:00",
+      "fetched_at": "2026-04-29T15:11:00+00:00",
+      "last_success_at": "2026-04-29T15:11:00+00:00",
       "editions": [
         "intl"
       ]
@@ -11798,8 +11798,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:52+00:00",
-      "last_success_at": "2026-04-29T14:59:52+00:00",
+      "fetched_at": "2026-04-29T15:11:00+00:00",
+      "last_success_at": "2026-04-29T15:11:00+00:00",
       "editions": [
         "intl"
       ]
@@ -11825,8 +11825,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:52+00:00",
-      "last_success_at": "2026-04-29T14:59:52+00:00",
+      "fetched_at": "2026-04-29T15:11:00+00:00",
+      "last_success_at": "2026-04-29T15:11:00+00:00",
       "editions": [
         "intl"
       ]
@@ -11868,8 +11868,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:52+00:00",
-      "last_success_at": "2026-04-29T14:59:52+00:00",
+      "fetched_at": "2026-04-29T15:11:00+00:00",
+      "last_success_at": "2026-04-29T15:11:00+00:00",
       "editions": [
         "intl"
       ]
@@ -11895,8 +11895,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:52+00:00",
-      "last_success_at": "2026-04-29T14:59:52+00:00",
+      "fetched_at": "2026-04-29T15:11:00+00:00",
+      "last_success_at": "2026-04-29T15:11:00+00:00",
       "editions": [
         "intl"
       ]
@@ -11922,8 +11922,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:52+00:00",
-      "last_success_at": "2026-04-29T14:59:52+00:00",
+      "fetched_at": "2026-04-29T15:11:00+00:00",
+      "last_success_at": "2026-04-29T15:11:00+00:00",
       "editions": [
         "intl"
       ]
@@ -11949,8 +11949,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:52+00:00",
-      "last_success_at": "2026-04-29T14:59:52+00:00",
+      "fetched_at": "2026-04-29T15:11:00+00:00",
+      "last_success_at": "2026-04-29T15:11:00+00:00",
       "editions": [
         "intl"
       ]
@@ -11976,8 +11976,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:52+00:00",
-      "last_success_at": "2026-04-29T14:59:52+00:00",
+      "fetched_at": "2026-04-29T15:11:00+00:00",
+      "last_success_at": "2026-04-29T15:11:00+00:00",
       "editions": [
         "intl"
       ]
@@ -12019,8 +12019,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:52+00:00",
-      "last_success_at": "2026-04-29T14:59:52+00:00",
+      "fetched_at": "2026-04-29T15:11:00+00:00",
+      "last_success_at": "2026-04-29T15:11:00+00:00",
       "editions": [
         "intl"
       ]
@@ -12062,8 +12062,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:52+00:00",
-      "last_success_at": "2026-04-29T14:59:52+00:00",
+      "fetched_at": "2026-04-29T15:11:00+00:00",
+      "last_success_at": "2026-04-29T15:11:00+00:00",
       "editions": [
         "intl"
       ]
@@ -12105,8 +12105,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:52+00:00",
-      "last_success_at": "2026-04-29T14:59:52+00:00",
+      "fetched_at": "2026-04-29T15:11:00+00:00",
+      "last_success_at": "2026-04-29T15:11:00+00:00",
       "editions": [
         "intl"
       ]
@@ -12148,8 +12148,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:52+00:00",
-      "last_success_at": "2026-04-29T14:59:52+00:00",
+      "fetched_at": "2026-04-29T15:11:00+00:00",
+      "last_success_at": "2026-04-29T15:11:00+00:00",
       "editions": [
         "intl"
       ]
@@ -12183,8 +12183,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:52+00:00",
-      "last_success_at": "2026-04-29T14:59:52+00:00",
+      "fetched_at": "2026-04-29T15:11:00+00:00",
+      "last_success_at": "2026-04-29T15:11:00+00:00",
       "editions": [
         "intl"
       ]
@@ -12218,8 +12218,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T14:59:52+00:00",
-      "last_success_at": "2026-04-29T14:59:52+00:00",
+      "fetched_at": "2026-04-29T15:11:00+00:00",
+      "last_success_at": "2026-04-29T15:11:00+00:00",
       "editions": [
         "intl"
       ]
