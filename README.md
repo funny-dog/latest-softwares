@@ -3,7 +3,7 @@
 > 由 GitHub Actions 每日自动同步上游官方源的**最新版本元数据**。
 > 仓库**不托管二进制安装包**，下载按钮直接跳到上游官方下载链接。
 >
-> 📅 **最后更新**：`2026-04-28 19:56:25` (UTC)　· 共 111 项软件（其中 1 项使用上次数据，标 ⚠️）
+> 📅 **最后更新**：`2026-04-29 04:24:54` (UTC)　· 共 111 项软件（其中 1 项使用上次数据，标 ⚠️）
 
 ---
 
@@ -14,7 +14,7 @@
 
 | 软件 | 最新版本 | 发布日期 | 下载链接 | 来源 |
 |------|---------|---------|---------|------|
-| [**Windows 11**](https://www.microsoft.com/software-download/windows11) | `25H2` | — | [win-x64](https://software.download.prss.microsoft.com/dbazure/Win11_25H2_Chinese_Simplified_x64_v2.iso?t=e09774cf-f94f-40c8-88ab-95e61bc10e55&P1=1777492561&P2=601&P3=2&P4=Rt1V23i%2fh7OlBzITvH8l%2fkssJuLGpX8PvjCqon63Cz2k3KErb4N8J9eGFOIzGwg5b8L3Cl0A%2fhv5oYujWuK00AnO2MqNiizfbx1PSuXR7UEnIjeNS%2bmsjAzu%2bFHj0KBG7q%2fLZPgo5qoR3vbFDl5VAboetIbE7rdxV0LoQOANUCBf6ngYsmN8L77cdAEFrmY4ynEuSZ5G322lg%2fQh5ga1I3RIp91uCDElTXEZsZVBJf%2fHodrMbVVMWPguug%2f0%2b%2fpyDhEImW6eSCMhpNKnERDGqE5IbYPV4Ehntyy7it8rNCrurlizQDVvFRYN4v0yux3ex%2fuPkn8q2MbJYrz54IuzyQ%3d%3d) | Microsoft Software Download (via Fido) |
+| [**Windows 11**](https://www.microsoft.com/software-download/windows11) | `25H2` | — | [win-x64](https://software.download.prss.microsoft.com/dbazure/Win11_25H2_Chinese_Simplified_x64_v2.iso?t=ed0240d2-c814-4c85-9ae2-566df8e8154b&P1=1777523069&P2=601&P3=2&P4=E%2fgH8gdWC146Ep8qgRfJdbJxOW1VtVfWTn7MWycLWZ%2fBewpx0SpoCqh%2bPFh%2bhi3YnXuuORwrE%2fXUuy1eOiDpwCOpJpEkS2oavTT988GE0Sani63vrhRE2eTGE6oxWMwvAJR3AkSSYSlwt087ASzDTW8NPhSbiDTNh1oCiq%2fv6v%2b%2bvOVMMN4zyNYUKNzMkIy2V%2fLFkcRHBfuKRTgxcEqTfX2kwlogpn1D%2bpoHQIRgRmKhl08w67DpGrhUKGXvhUcx%2baPtRvSa7shbysT6HYgGMiK1PSKVOGgiOiDUNbLL5LGW%2bzdfoyBhczUakdMZNU6NtUDRBLbGaiWZs4eE3HIm1g%3d%3d) | Microsoft Software Download (via Fido) |
 
 
 ### Network & Proxy
@@ -28,9 +28,9 @@
 | [**NekoBoxForPc**](https://github.com/MatsuriDayo/nekoray) | `4.0.1` | 2024-12-12 | [win-x64](https://github.com/MatsuriDayo/nekoray/releases/download/4.0.1/nekoray-4.0.1-2024-12-12-windows64.zip) | GitHub Release: MatsuriDayo/nekoray |
 | [**v2ray-core**](https://github.com/v2fly/v2ray-core) | `5.48.0` | 2026-03-26 | [win-x64](https://github.com/v2fly/v2ray-core/releases/download/v5.48.0/v2ray-windows-64.zip) | GitHub Release: v2fly/v2ray-core |
 | [**Xray-core**](https://github.com/XTLS/Xray-core) | `26.3.27` | 2026-03-27 | [win-x64](https://github.com/XTLS/Xray-core/releases/download/v26.3.27/Xray-windows-64.zip) | GitHub Release: XTLS/Xray-core |
-| [**FastGithub**](https://github.com/dotnetcore/FastGithub) | `2026-04-28` | — | [win-x64](https://github.com/dotnetcore/FastGithub) | GitHub project page; no public release API |
-| [**WireGuard**](https://www.wireguard.com/install/) | `2026-04-28` | — | [win-x64](https://download.wireguard.com/windows-client/wireguard-installer.exe) · [mac-universal](https://apps.apple.com/us/app/wireguard/id1451685025) | Official WireGuard download page; no public version API |
-| [**Tailscale**](https://tailscale.com/download) | `2026-04-28` | — | [win-x64](https://pkgs.tailscale.com/stable/tailscale-setup-latest.exe) · [mac-universal](https://tailscale.com/download/mac) · [linux-x64](https://tailscale.com/download/linux) | Official Tailscale download page; no public version API |
+| [**FastGithub**](https://github.com/dotnetcore/FastGithub) | `2026-04-29` | — | [win-x64](https://github.com/dotnetcore/FastGithub) | GitHub project page; no public release API |
+| [**WireGuard**](https://www.wireguard.com/install/) | `2026-04-29` | — | [win-x64](https://download.wireguard.com/windows-client/wireguard-installer.exe) · [mac-universal](https://apps.apple.com/us/app/wireguard/id1451685025) | Official WireGuard download page; no public version API |
+| [**Tailscale**](https://tailscale.com/download) | `2026-04-29` | — | [win-x64](https://pkgs.tailscale.com/stable/tailscale-setup-latest.exe) · [mac-universal](https://tailscale.com/download/mac) · [linux-x64](https://tailscale.com/download/linux) | Official Tailscale download page; no public version API |
 
 
 ### Developer Tools
@@ -56,14 +56,14 @@
 | [**Windows Terminal**](https://github.com/microsoft/terminal) | `1.24.10921.0` | 2026-04-03 | [win-x64](https://github.com/microsoft/terminal/releases/download/v1.24.10921.0/Microsoft.WindowsTerminal_1.24.10921.0_8wekyb3d8bbwe.msixbundle) | GitHub Release: microsoft/terminal |
 | [**Alacritty**](https://github.com/alacritty/alacritty) | `0.17.0` | 2026-04-06 | [win-x64](https://github.com/alacritty/alacritty/releases/download/v0.17.0/Alacritty-v0.17.0-portable.exe) | GitHub Release: alacritty/alacritty |
 | [**nvm-windows**](https://github.com/coreybutler/nvm-windows) | `1.2.2` | 2025-01-01 | [win-x64](https://github.com/coreybutler/nvm-windows/releases/download/1.2.2/nvm-setup.exe) | GitHub Release: coreybutler/nvm-windows |
-| [**NSSM**](https://nssm.cc/download) | `2026-04-28` | — | [win-x64](https://nssm.cc/download) | Official NSSM download page; no public version API |
+| [**NSSM**](https://nssm.cc/download) | `2026-04-29` | — | [win-x64](https://nssm.cc/download) | Official NSSM download page; no public version API |
 | [**win-acme**](https://github.com/win-acme/win-acme) | `2.2.9.1701` | 2024-05-25 | [win-x64](https://github.com/win-acme/win-acme/releases/download/v2.2.9.1701/win-acme.v2.2.9.1701.x64.pluggable.zip) | GitHub Release: win-acme/win-acme |
 | [**VSCodium**](https://github.com/VSCodium/vscodium) | `1.116.02821` | 2026-04-27 | [win-x64](https://github.com/VSCodium/vscodium/releases/download/1.116.02821/VSCodiumUserSetup-x64-1.116.02821.exe) | GitHub Release: VSCodium/vscodium |
 | [**Node.js**](https://nodejs.org/) | `24.15.0` | — | [win-x64](https://nodejs.org/dist/v24.15.0/node-v24.15.0-win-x64.zip) · [mac-arm64](https://nodejs.org/dist/v24.15.0/node-v24.15.0-darwin-arm64.tar.gz) · [mac-x64](https://nodejs.org/dist/v24.15.0/node-v24.15.0-darwin-x64.tar.gz) · [linux-x64](https://nodejs.org/dist/v24.15.0/node-v24.15.0-linux-x64.tar.xz) | Node.js official dist index |
 | [**DBeaver Community**](https://dbeaver.io/download/) | `26.0.3` | 2026-04-19 | [win-x64](https://github.com/dbeaver/dbeaver/releases/download/26.0.3/dbeaver-ce-26.0.3-windows-x86_64.exe) · [mac-arm64](https://github.com/dbeaver/dbeaver/releases/download/26.0.3/dbeaver-ce-26.0.3-macos-aarch64.dmg) · [mac-x64](https://github.com/dbeaver/dbeaver/releases/download/26.0.3/dbeaver-ce-26.0.3-macos-x86_64.dmg) · [linux-x64](https://github.com/dbeaver/dbeaver/releases/download/26.0.3/dbeaver-ce-26.0.3-linux-x86_64.deb) | GitHub Release: dbeaver/dbeaver |
 | [**Lazygit**](https://github.com/jesseduffield/lazygit) | `0.61.1` | 2026-04-13 | [win-x64](https://github.com/jesseduffield/lazygit/releases/download/v0.61.1/lazygit_0.61.1_windows_x86_64.zip) · [mac-arm64](https://github.com/jesseduffield/lazygit/releases/download/v0.61.1/lazygit_0.61.1_darwin_arm64.tar.gz) · [linux-x64](https://github.com/jesseduffield/lazygit/releases/download/v0.61.1/lazygit_0.61.1_linux_x86_64.tar.gz) | GitHub Release: jesseduffield/lazygit |
-| [**Python**](https://www.python.org/downloads/) | `2026-04-28` | — | [win-x64](https://www.python.org/downloads/windows/) · [mac-universal](https://www.python.org/downloads/macos/) | Official Python downloads page; no public version API |
-| [**Go**](https://go.dev/dl/) | `2026-04-28` | — | [win-x64](https://go.dev/dl/) · [mac-universal](https://go.dev/dl/) · [linux-x64](https://go.dev/dl/) | Official Go downloads page; no public version API |
+| [**Python**](https://www.python.org/downloads/) | `2026-04-29` | — | [win-x64](https://www.python.org/downloads/windows/) · [mac-universal](https://www.python.org/downloads/macos/) | Official Python downloads page; no public version API |
+| [**Go**](https://go.dev/dl/) | `2026-04-29` | — | [win-x64](https://go.dev/dl/) · [mac-universal](https://go.dev/dl/) · [linux-x64](https://go.dev/dl/) | Official Go downloads page; no public version API |
 
 
 ### Browsers
@@ -90,7 +90,7 @@
 | [**Moonlight**](https://github.com/moonlight-stream/moonlight-qt) | `6.1.0` | 2024-09-17 | [win-x64](https://github.com/moonlight-stream/moonlight-qt/releases/download/v6.1.0/MoonlightPortable-x64-6.1.0.zip) | GitHub Release: moonlight-stream/moonlight-qt |
 | [**Cemu**](https://github.com/cemu-project/Cemu) | `2.6` | 2025-02-06 | [win-x64](https://github.com/cemu-project/Cemu/releases/download/v2.6/cemu-2.6-windows-x64.zip) | GitHub Release: cemu-project/Cemu |
 | [**PPSSPP**](https://www.ppsspp.org/) | `1.20.3` | 2026-03-15 | [win-x64](https://github.com/hrydgard/ppsspp/releases/download/v1.20.3/PPSSPP-v1.20.3-Windows-x64.zip) · [mac-universal](https://github.com/hrydgard/ppsspp/releases/download/v1.20.3/PPSSPPSDL-macOS-v1.20.3.zip) · [linux-x64](https://github.com/hrydgard/ppsspp/releases/download/v1.20.3/PPSSPP-v1.20.3-anylinux-x86_64.AppImage) | GitHub Release: hrydgard/ppsspp |
-| [**RPCS3**](https://rpcs3.net/) | `05d35972192f7cb9a3af39dac83d6bd402c6861` | 2026-04-28 | [win-x64](https://github.com/RPCS3/rpcs3-binaries-win/releases/download/build-e05d35972192f7cb9a3af39dac83d6bd402c6861/rpcs3-v0.0.40-19261-e05d3597_win64_msvc.7z) | GitHub Release: RPCS3/rpcs3-binaries-win |
+| [**RPCS3**](https://rpcs3.net/) | `212935c702d228b29bbacf11f6fe02e86b655d8` | 2026-04-29 | [win-x64](https://github.com/RPCS3/rpcs3-binaries-win/releases/download/build-b212935c702d228b29bbacf11f6fe02e86b655d8/rpcs3-v0.0.40-19262-b212935c_win64_msvc.7z) | GitHub Release: RPCS3/rpcs3-binaries-win |
 | [**Sunshine**](https://app.lizardbyte.dev/Sunshine/) | `2025.924.154138` | 2025-09-24 | [win-x64](https://github.com/LizardByte/Sunshine/releases/download/v2025.924.154138/Sunshine-Windows-AMD64-installer.exe) · [win-x64-portable](https://github.com/LizardByte/Sunshine/releases/download/v2025.924.154138/Sunshine-Windows-AMD64-portable.zip) · [linux-x64](https://github.com/LizardByte/Sunshine/releases/download/v2025.924.154138/sunshine-ubuntu-24.04-amd64.deb) | GitHub Release: LizardByte/Sunshine |
 | [**Heroic Games Launcher**](https://heroicgameslauncher.com/) | `2.21.0` | 2026-04-22 | [win-x64](https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/releases/download/v2.21.0/Heroic-2.21.0-Setup-x64.exe) · [mac-arm64](https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/releases/download/v2.21.0/Heroic-2.21.0-macOS-arm64.dmg) · [linux-x64](https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/releases/download/v2.21.0/Heroic-2.21.0-linux-amd64.deb) | GitHub Release: Heroic-Games-Launcher/HeroicGamesLauncher |
 
@@ -109,18 +109,18 @@
 | [**Aria2**](https://github.com/aria2/aria2) | `1.37.0` | 2023-11-15 | [win-x64](https://github.com/aria2/aria2/releases/download/release-1.37.0/aria2-1.37.0-win-64bit-build1.zip) | GitHub Release: aria2/aria2 |
 | [**yt-dlp**](https://github.com/yt-dlp/yt-dlp) | `2026.03.17` | 2026-03-17 | [win-x64](https://github.com/yt-dlp/yt-dlp/releases/download/2026.03.17/yt-dlp.exe) | GitHub Release: yt-dlp/yt-dlp |
 | [**Transmission**](https://github.com/transmission/transmission) | `4.1.1` | 2026-02-20 | [win-x64](https://github.com/transmission/transmission/releases/download/4.1.1/transmission-4.1.1-qt5-x64.msi) | GitHub Release: transmission/transmission |
-| [**Gpg4win**](https://gpg4win.org/download.html) | `2026-04-28` | — | [win-x64](https://gpg4win.org/download.html) | Official Gpg4win download page; no public version API |
+| [**Gpg4win**](https://gpg4win.org/download.html) | `2026-04-29` | — | [win-x64](https://gpg4win.org/download.html) | Official Gpg4win download page; no public version API |
 | [**Keka**](https://github.com/aonez/Keka) | `1.6.3` | 2026-04-16 | [mac-arm64](https://github.com/aonez/Keka/releases/download/v1.6.3/Keka-1.6.3.dmg) | GitHub Release: aonez/Keka |
 | [**PeaZip**](https://peazip.github.io/) | `11.0.0` | 2026-04-06 | [win-x64](https://github.com/peazip/PeaZip/releases/download/11.0.0/peazip-11.0.0.WIN64.exe) · [mac-arm64](https://github.com/peazip/PeaZip/releases/download/11.0.0/peazip-11.0.0.DARWIN.aarch64.dmg) · [linux-x64](https://github.com/peazip/PeaZip/releases/download/11.0.0/peazip_11.0.0.LINUX.Qt6-1_amd64.deb) | GitHub Release: peazip/PeaZip |
-| [**7-Zip**](https://www.7-zip.org/) | `2026-04-28` | — | [win-x64](https://www.7-zip.org/download.html) | Official 7-Zip download page; no public version API |
-| [**qBittorrent**](https://www.qbittorrent.org/download) | `2026-04-28` | — | [win-x64](https://www.qbittorrent.org/download) · [mac-universal](https://www.qbittorrent.org/download) · [linux-x64](https://www.qbittorrent.org/download) | Official qBittorrent download page; no public version API |
+| [**7-Zip**](https://www.7-zip.org/) | `2026-04-29` | — | [win-x64](https://www.7-zip.org/download.html) | Official 7-Zip download page; no public version API |
+| [**qBittorrent**](https://www.qbittorrent.org/download) | `2026-04-29` | — | [win-x64](https://www.qbittorrent.org/download) · [mac-universal](https://www.qbittorrent.org/download) · [linux-x64](https://www.qbittorrent.org/download) | Official qBittorrent download page; no public version API |
 
 
 ### System Utilities
 
 | 软件 | 最新版本 | 发布日期 | 下载链接 | 来源 |
 |------|---------|---------|---------|------|
-| [**NVIDIA App**](https://www.nvidia.com/en-us/software/nvidia-app/) | `2026-04-28` | — | [win-x64](https://www.nvidia.com/en-us/software/nvidia-app/) | Official download page; no public version API |
+| [**NVIDIA App**](https://www.nvidia.com/en-us/software/nvidia-app/) | `2026-04-29` | — | [win-x64](https://www.nvidia.com/en-us/software/nvidia-app/) | Official download page; no public version API |
 | [**TrafficMonitor**](https://github.com/zhongyang219/TrafficMonitor) | `1.86` | 2026-03-29 | [win-x64](https://github.com/zhongyang219/TrafficMonitor/releases/download/V1.86/TrafficMonitor_V1.86_x64.zip) | GitHub Release: zhongyang219/TrafficMonitor |
 | [**Rufus**](https://github.com/pbatard/rufus) | `4.13` | 2026-02-17 | [win-x64](https://github.com/pbatard/rufus/releases/download/v4.13/rufus-4.13.exe) | GitHub Release: pbatard/rufus |
 | [**Ventoy**](https://github.com/ventoy/Ventoy) | `1.1.12` | 2026-04-23 | [win-x64](https://github.com/ventoy/Ventoy/releases/download/v1.1.12/ventoy-1.1.12-windows.zip) | GitHub Release: ventoy/Ventoy |
@@ -143,10 +143,10 @@
 | 软件 | 最新版本 | 发布日期 | 下载链接 | 来源 |
 |------|---------|---------|---------|------|
 | [**Telegram Desktop**](https://github.com/telegramdesktop/tdesktop) | `6.7.8` | 2026-04-24 | [win-x64](https://github.com/telegramdesktop/tdesktop/releases/download/v6.7.8/tsetup.6.7.8.exe) | GitHub Release: telegramdesktop/tdesktop |
-| [**Discord**](https://discord.com/download) | `2026-04-28` | — | [win-x64](https://discord.com/api/download?platform=win) · [mac-universal](https://discord.com/api/download?platform=osx) · [linux-x64](https://discord.com/download) | Official Discord download endpoint; no public version API |
-| [**Slack**](https://slack.com/downloads/) | `2026-04-28` | — | [win-x64](https://slack.com/downloads/windows) · [mac-universal](https://slack.com/downloads/mac) · [linux-x64](https://slack.com/downloads/linux) | Official Slack download page; no public version API |
-| [**Zoom Workplace**](https://zoom.us/download) | `2026-04-28` | — | [win-x64](https://zoom.us/download) · [mac-universal](https://zoom.us/download) | Official Zoom download page; no public version API |
-| [**Signal Desktop**](https://signal.org/download/) | `2026-04-28` | — | [win-x64](https://signal.org/download/windows/) · [mac-universal](https://signal.org/download/macos/) | Official Signal download page; no public version API |
+| [**Discord**](https://discord.com/download) | `2026-04-29` | — | [win-x64](https://discord.com/api/download?platform=win) · [mac-universal](https://discord.com/api/download?platform=osx) · [linux-x64](https://discord.com/download) | Official Discord download endpoint; no public version API |
+| [**Slack**](https://slack.com/downloads/) | `2026-04-29` | — | [win-x64](https://slack.com/downloads/windows) · [mac-universal](https://slack.com/downloads/mac) · [linux-x64](https://slack.com/downloads/linux) | Official Slack download page; no public version API |
+| [**Zoom Workplace**](https://zoom.us/download) | `2026-04-29` | — | [win-x64](https://zoom.us/download) · [mac-universal](https://zoom.us/download) | Official Zoom download page; no public version API |
+| [**Signal Desktop**](https://signal.org/download/) | `2026-04-29` | — | [win-x64](https://signal.org/download/windows/) · [mac-universal](https://signal.org/download/macos/) | Official Signal download page; no public version API |
 
 
 ### Productivity
@@ -182,8 +182,8 @@
 | [**OBS Studio**](https://obsproject.com/) | `32.1.2` | 2026-04-21 | [win-x64](https://github.com/obsproject/obs-studio/releases/download/32.1.2/OBS-Studio-32.1.2-Windows-x64-Installer.exe) · [mac-arm64](https://github.com/obsproject/obs-studio/releases/download/32.1.2/OBS-Studio-32.1.2-macOS-Apple.dmg) · [mac-x64](https://github.com/obsproject/obs-studio/releases/download/32.1.2/OBS-Studio-32.1.2-macOS-Intel.dmg) · [linux-x64](https://github.com/obsproject/obs-studio/releases/download/32.1.2/OBS-Studio-32.1.2-Ubuntu-24.04-x86_64.deb) | GitHub Release: obsproject/obs-studio |
 | [**mpv**](https://mpv.io/) | `20260421` | 2026-04-21 | [win-x64](https://github.com/shinchiro/mpv-winbuild-cmake/releases/download/20260421/mpv-x86_64-20260421-git-5921fe5.7z) | GitHub Release: shinchiro/mpv-winbuild-cmake |
 | [**LosslessCut**](https://github.com/mifi/lossless-cut) | `3.68.0` | 2026-01-29 | [win-x64](https://github.com/mifi/lossless-cut/releases/download/v3.68.0/LosslessCut-win-x64.7z) · [mac-universal](https://github.com/mifi/lossless-cut/releases/download/v3.68.0/LosslessCut-mac-universal.pkg) · [linux-x64](https://github.com/mifi/lossless-cut/releases/download/v3.68.0/LosslessCut-linux-x86_64.AppImage) | GitHub Release: mifi/lossless-cut |
-| [**Spotify**](https://www.spotify.com/download/) | `2026-04-28` | — | [win-x64](https://www.spotify.com/download/windows/) · [mac-universal](https://www.spotify.com/download/mac/) | Official Spotify download page; no public version API |
-| [**VLC media player**](https://www.videolan.org/vlc/) | `2026-04-28` | — | [win-x64](https://www.videolan.org/vlc/download-windows.html) · [mac-universal](https://www.videolan.org/vlc/download-macosx.html) · [linux-x64](https://www.videolan.org/vlc/#download) | Official VideoLAN download page; no public version API |
+| [**Spotify**](https://www.spotify.com/download/) | `2026-04-29` | — | [win-x64](https://www.spotify.com/download/windows/) · [mac-universal](https://www.spotify.com/download/mac/) | Official Spotify download page; no public version API |
+| [**VLC media player**](https://www.videolan.org/vlc/) | `2026-04-29` | — | [win-x64](https://www.videolan.org/vlc/download-windows.html) · [mac-universal](https://www.videolan.org/vlc/download-macosx.html) · [linux-x64](https://www.videolan.org/vlc/#download) | Official VideoLAN download page; no public version API |
 
 
 
