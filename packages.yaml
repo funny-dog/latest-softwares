@@ -4382,3 +4382,694 @@ packages:
     assets:
     - platform: win-x64
       pattern: starship-x86_64-pc-windows-msvc.zip
+- id: edge
+  name: Microsoft Edge
+  category: Browsers
+  editions:
+  - intl
+  homepage: https://www.microsoft.com/edge/download
+  fetcher: download_page
+  args:
+    source: Official Microsoft Edge download page; no public version API
+    platforms:
+    - platform: win-x64
+      download_url: https://www.microsoft.com/edge/download
+      link_kind: landing_page
+    - platform: mac-universal
+      download_url: https://www.microsoft.com/edge/download
+      link_kind: landing_page
+    - platform: linux-x64
+      download_url: https://www.microsoft.com/edge/download
+      link_kind: landing_page
+- id: opera
+  name: Opera Browser
+  category: Browsers
+  editions:
+  - intl
+  homepage: https://www.opera.com/download
+  fetcher: download_page
+  args:
+    source: Official Opera download page; no public version API
+    platforms:
+    - platform: win-x64
+      download_url: https://www.opera.com/download
+      link_kind: landing_page
+    - platform: mac-universal
+      download_url: https://www.opera.com/download
+      link_kind: landing_page
+    - platform: linux-x64
+      download_url: https://www.opera.com/download
+      link_kind: landing_page
+- id: vivaldi
+  name: Vivaldi Browser
+  category: Browsers
+  editions:
+  - intl
+  homepage: https://vivaldi.com/download/
+  fetcher: download_page
+  args:
+    source: Official Vivaldi download page; no public version API
+    platforms:
+    - platform: win-x64
+      download_url: https://vivaldi.com/download/
+      link_kind: landing_page
+    - platform: mac-universal
+      download_url: https://vivaldi.com/download/
+      link_kind: landing_page
+    - platform: linux-x64
+      download_url: https://vivaldi.com/download/
+      link_kind: landing_page
+- id: tor-browser
+  name: Tor Browser
+  category: Browsers
+  editions:
+  - intl
+  homepage: https://www.torproject.org/download/
+  fetcher: download_page
+  args:
+    source: Official Tor Project download page; no public version API
+    platforms:
+    - platform: win-x64
+      download_url: https://www.torproject.org/download/
+      link_kind: landing_page
+    - platform: mac-universal
+      download_url: https://www.torproject.org/download/
+      link_kind: landing_page
+    - platform: linux-x64
+      download_url: https://www.torproject.org/download/
+      link_kind: landing_page
+- id: librewolf
+  name: LibreWolf
+  category: Browsers
+  editions:
+  - intl
+  homepage: https://librewolf.net/installation/
+  fetcher: download_page
+  args:
+    source: Official LibreWolf installation page; no public version API
+    platforms:
+    - platform: win-x64
+      download_url: https://librewolf.net/installation/
+      link_kind: landing_page
+    - platform: mac-universal
+      download_url: https://librewolf.net/installation/
+      link_kind: landing_page
+    - platform: linux-x64
+      download_url: https://librewolf.net/installation/
+      link_kind: landing_page
+- id: mullvad-browser
+  name: Mullvad Browser
+  category: Browsers
+  editions:
+  - intl
+  homepage: https://mullvad.net/en/browser
+  fetcher: download_page
+  args:
+    source: Official Mullvad Browser download page; no public version API
+    platforms:
+    - platform: win-x64
+      download_url: https://mullvad.net/en/browser
+      link_kind: landing_page
+    - platform: mac-universal
+      download_url: https://mullvad.net/en/browser
+      link_kind: landing_page
+    - platform: linux-x64
+      download_url: https://mullvad.net/en/browser
+      link_kind: landing_page
+- id: microsoft-teams
+  name: Microsoft Teams
+  category: Messaging
+  editions:
+  - intl
+  homepage: https://www.microsoft.com/microsoft-teams/download-app
+  fetcher: download_page
+  args:
+    source: Official Microsoft Teams download page; no public version API
+    platforms:
+    - platform: win-x64
+      download_url: https://www.microsoft.com/microsoft-teams/download-app
+      link_kind: landing_page
+    - platform: mac-universal
+      download_url: https://www.microsoft.com/microsoft-teams/download-app
+      link_kind: landing_page
+- id: whatsapp
+  name: WhatsApp
+  category: Messaging
+  editions:
+  - intl
+  homepage: https://www.whatsapp.com/download
+  fetcher: download_page
+  args:
+    source: Official WhatsApp download page; no public version API
+    platforms:
+    - platform: win-x64
+      download_url: https://www.whatsapp.com/download
+      link_kind: landing_page
+    - platform: mac-universal
+      download_url: https://www.whatsapp.com/download
+      link_kind: landing_page
+- id: thunderbird
+  name: Thunderbird
+  category: Messaging
+  editions:
+  - intl
+  homepage: https://www.thunderbird.net/thunderbird/all/
+  fetcher: download_page
+  args:
+    source: Official Thunderbird download page; no public version API
+    platforms:
+    - platform: win-x64
+      download_url: https://www.thunderbird.net/thunderbird/all/
+      link_kind: landing_page
+    - platform: mac-universal
+      download_url: https://www.thunderbird.net/thunderbird/all/
+      link_kind: landing_page
+    - platform: linux-x64
+      download_url: https://www.thunderbird.net/thunderbird/all/
+      link_kind: landing_page
+- id: skype
+  name: Skype
+  category: Messaging
+  editions:
+  - intl
+  homepage: https://www.skype.com/get-skype/
+  fetcher: download_page
+  args:
+    source: Official Skype download page; no public version API
+    platforms:
+    - platform: win-x64
+      download_url: https://www.skype.com/get-skype/
+      link_kind: landing_page
+    - platform: mac-universal
+      download_url: https://www.skype.com/get-skype/
+      link_kind: landing_page
+    - platform: linux-x64
+      download_url: https://www.skype.com/get-skype/
+      link_kind: landing_page
+- id: libreoffice
+  name: LibreOffice
+  category: Productivity
+  editions:
+  - intl
+  homepage: https://www.libreoffice.org/download/download-libreoffice/
+  fetcher: download_page
+  args:
+    source: Official LibreOffice download page; no public version API
+    platforms:
+    - platform: win-x64
+      download_url: https://www.libreoffice.org/download/download-libreoffice/
+      link_kind: landing_page
+    - platform: mac-universal
+      download_url: https://www.libreoffice.org/download/download-libreoffice/
+      link_kind: landing_page
+    - platform: linux-x64
+      download_url: https://www.libreoffice.org/download/download-libreoffice/
+      link_kind: landing_page
+- id: zotero
+  name: Zotero
+  category: Productivity
+  editions:
+  - intl
+  homepage: https://www.zotero.org/download/
+  fetcher: download_page
+  args:
+    source: Official Zotero download page; no public version API
+    platforms:
+    - platform: win-x64
+      download_url: https://www.zotero.org/download/
+      link_kind: landing_page
+    - platform: mac-universal
+      download_url: https://www.zotero.org/download/
+      link_kind: landing_page
+    - platform: linux-x64
+      download_url: https://www.zotero.org/download/
+      link_kind: landing_page
+- id: notion
+  name: Notion
+  category: Productivity
+  editions:
+  - intl
+  homepage: https://www.notion.com/desktop
+  fetcher: download_page
+  args:
+    source: Official Notion desktop download page; no public version API
+    platforms:
+    - platform: win-x64
+      download_url: https://www.notion.com/desktop
+      link_kind: landing_page
+    - platform: mac-universal
+      download_url: https://www.notion.com/desktop
+      link_kind: landing_page
+- id: figma
+  name: Figma Desktop
+  category: Productivity
+  editions:
+  - intl
+  homepage: https://www.figma.com/downloads/
+  fetcher: download_page
+  args:
+    source: Official Figma downloads page; no public version API
+    platforms:
+    - platform: win-x64
+      download_url: https://www.figma.com/downloads/
+      link_kind: landing_page
+    - platform: mac-universal
+      download_url: https://www.figma.com/downloads/
+      link_kind: landing_page
+- id: dropbox
+  name: Dropbox
+  category: Productivity
+  editions:
+  - intl
+  homepage: https://www.dropbox.com/install
+  fetcher: download_page
+  args:
+    source: Official Dropbox install page; no public version API
+    platforms:
+    - platform: win-x64
+      download_url: https://www.dropbox.com/install
+      link_kind: landing_page
+    - platform: mac-universal
+      download_url: https://www.dropbox.com/install
+      link_kind: landing_page
+- id: google-drive
+  name: Google Drive for Desktop
+  category: Productivity
+  editions:
+  - intl
+  homepage: https://www.google.com/drive/download/
+  fetcher: download_page
+  args:
+    source: Official Google Drive download page; no public version API
+    platforms:
+    - platform: win-x64
+      download_url: https://www.google.com/drive/download/
+      link_kind: landing_page
+    - platform: mac-universal
+      download_url: https://www.google.com/drive/download/
+      link_kind: landing_page
+- id: onedrive
+  name: Microsoft OneDrive
+  category: Productivity
+  editions:
+  - intl
+  homepage: https://www.microsoft.com/microsoft-365/onedrive/download
+  fetcher: download_page
+  args:
+    source: Official OneDrive download page; no public version API
+    platforms:
+    - platform: win-x64
+      download_url: https://www.microsoft.com/microsoft-365/onedrive/download
+      link_kind: landing_page
+    - platform: mac-universal
+      download_url: https://www.microsoft.com/microsoft-365/onedrive/download
+      link_kind: landing_page
+- id: foxit-reader
+  name: Foxit PDF Reader
+  category: Productivity
+  editions:
+  - intl
+  homepage: https://www.foxit.com/pdf-reader/
+  fetcher: download_page
+  args:
+    source: Official Foxit PDF Reader download page; no public version API
+    platforms:
+    - platform: win-x64
+      download_url: https://www.foxit.com/pdf-reader/
+      link_kind: landing_page
+    - platform: mac-universal
+      download_url: https://www.foxit.com/pdf-reader/
+      link_kind: landing_page
+- id: onepassword
+  name: 1Password
+  category: Security & Privacy
+  editions:
+  - intl
+  homepage: https://1password.com/downloads/
+  fetcher: download_page
+  args:
+    source: Official 1Password downloads page; no public version API
+    platforms:
+    - platform: win-x64
+      download_url: https://1password.com/downloads/
+      link_kind: landing_page
+    - platform: mac-universal
+      download_url: https://1password.com/downloads/
+      link_kind: landing_page
+    - platform: linux-x64
+      download_url: https://1password.com/downloads/
+      link_kind: landing_page
+- id: proton-vpn
+  name: Proton VPN
+  category: Security & Privacy
+  editions:
+  - intl
+  homepage: https://protonvpn.com/download
+  fetcher: download_page
+  args:
+    source: Official Proton VPN download page; no public version API
+    platforms:
+    - platform: win-x64
+      download_url: https://protonvpn.com/download
+      link_kind: landing_page
+    - platform: mac-universal
+      download_url: https://protonvpn.com/download
+      link_kind: landing_page
+    - platform: linux-x64
+      download_url: https://protonvpn.com/download
+      link_kind: landing_page
+- id: malwarebytes
+  name: Malwarebytes
+  category: Security & Privacy
+  editions:
+  - intl
+  homepage: https://www.malwarebytes.com/mwb-download
+  fetcher: download_page
+  args:
+    source: Official Malwarebytes download page; no public version API
+    platforms:
+    - platform: win-x64
+      download_url: https://www.malwarebytes.com/mwb-download
+      link_kind: landing_page
+    - platform: mac-universal
+      download_url: https://www.malwarebytes.com/mwb-download
+      link_kind: landing_page
+- id: adguard
+  name: AdGuard
+  category: Security & Privacy
+  editions:
+  - intl
+  homepage: https://adguard.com/en/adguard-windows/overview.html
+  fetcher: download_page
+  args:
+    source: Official AdGuard download page; no public version API
+    platforms:
+    - platform: win-x64
+      download_url: https://adguard.com/en/adguard-windows/overview.html
+      link_kind: landing_page
+    - platform: mac-universal
+      download_url: https://adguard.com/en/adguard-mac/overview.html
+      link_kind: landing_page
+- id: docker-desktop
+  name: Docker Desktop
+  category: Developer Tools
+  editions:
+  - intl
+  homepage: https://www.docker.com/products/docker-desktop/
+  fetcher: download_page
+  args:
+    source: Official Docker Desktop download page; no public version API
+    platforms:
+    - platform: win-x64
+      download_url: https://www.docker.com/products/docker-desktop/
+      link_kind: landing_page
+    - platform: mac-universal
+      download_url: https://www.docker.com/products/docker-desktop/
+      link_kind: landing_page
+    - platform: linux-x64
+      download_url: https://www.docker.com/products/docker-desktop/
+      link_kind: landing_page
+- id: postman
+  name: Postman
+  category: Developer Tools
+  editions:
+  - intl
+  homepage: https://www.postman.com/downloads/
+  fetcher: download_page
+  args:
+    source: Official Postman downloads page; no public version API
+    platforms:
+    - platform: win-x64
+      download_url: https://www.postman.com/downloads/
+      link_kind: landing_page
+    - platform: mac-universal
+      download_url: https://www.postman.com/downloads/
+      link_kind: landing_page
+    - platform: linux-x64
+      download_url: https://www.postman.com/downloads/
+      link_kind: landing_page
+- id: cursor
+  name: Cursor
+  category: Developer Tools
+  editions:
+  - intl
+  homepage: https://cursor.com/downloads
+  fetcher: download_page
+  args:
+    source: Official Cursor downloads page; no public version API
+    platforms:
+    - platform: win-x64
+      download_url: https://cursor.com/downloads
+      link_kind: landing_page
+    - platform: mac-universal
+      download_url: https://cursor.com/downloads
+      link_kind: landing_page
+    - platform: linux-x64
+      download_url: https://cursor.com/downloads
+      link_kind: landing_page
+- id: jetbrains-toolbox
+  name: JetBrains Toolbox App
+  category: Developer Tools
+  editions:
+  - intl
+  homepage: https://www.jetbrains.com/toolbox-app/
+  fetcher: download_page
+  args:
+    source: Official JetBrains Toolbox download page; no public version API
+    platforms:
+    - platform: win-x64
+      download_url: https://www.jetbrains.com/toolbox-app/
+      link_kind: landing_page
+    - platform: mac-universal
+      download_url: https://www.jetbrains.com/toolbox-app/
+      link_kind: landing_page
+    - platform: linux-x64
+      download_url: https://www.jetbrains.com/toolbox-app/
+      link_kind: landing_page
+- id: virtualbox
+  name: VirtualBox
+  category: Developer Tools
+  editions:
+  - intl
+  homepage: https://www.virtualbox.org/wiki/Downloads
+  fetcher: download_page
+  args:
+    source: Official VirtualBox downloads page; no public version API
+    platforms:
+    - platform: win-x64
+      download_url: https://www.virtualbox.org/wiki/Downloads
+      link_kind: landing_page
+    - platform: mac-universal
+      download_url: https://www.virtualbox.org/wiki/Downloads
+      link_kind: landing_page
+    - platform: linux-x64
+      download_url: https://www.virtualbox.org/wiki/Downloads
+      link_kind: landing_page
+- id: wireshark
+  name: Wireshark
+  category: Network & Proxy
+  editions:
+  - intl
+  homepage: https://www.wireshark.org/download.html
+  fetcher: download_page
+  args:
+    source: Official Wireshark download page; no public version API
+    platforms:
+    - platform: win-x64
+      download_url: https://www.wireshark.org/download.html
+      link_kind: landing_page
+    - platform: mac-universal
+      download_url: https://www.wireshark.org/download.html
+      link_kind: landing_page
+- id: winscp
+  name: WinSCP
+  category: Network & Proxy
+  editions:
+  - intl
+  homepage: https://winscp.net/eng/download.php
+  fetcher: download_page
+  args:
+    source: Official WinSCP download page; no public version API
+    platforms:
+    - platform: win-x64
+      download_url: https://winscp.net/eng/download.php
+      link_kind: landing_page
+- id: filezilla
+  name: FileZilla Client
+  category: Network & Proxy
+  editions:
+  - intl
+  homepage: https://filezilla-project.org/download.php?show_all=1
+  fetcher: download_page
+  args:
+    source: Official FileZilla Client download page; no public version API
+    platforms:
+    - platform: win-x64
+      download_url: https://filezilla-project.org/download.php?show_all=1
+      link_kind: landing_page
+    - platform: mac-universal
+      download_url: https://filezilla-project.org/download.php?show_all=1
+      link_kind: landing_page
+    - platform: linux-x64
+      download_url: https://filezilla-project.org/download.php?show_all=1
+      link_kind: landing_page
+- id: sysinternals-suite
+  name: Sysinternals Suite
+  category: System Utilities
+  editions:
+  - intl
+  homepage: https://learn.microsoft.com/sysinternals/downloads/sysinternals-suite
+  fetcher: download_page
+  args:
+    source: Official Microsoft Sysinternals download; suite version is not exposed as a public API
+    platforms:
+    - platform: win-x64
+      download_url: https://download.sysinternals.com/files/SysinternalsSuite.zip
+      link_kind: direct
+- id: winrar
+  name: WinRAR
+  category: Utilities
+  editions:
+  - intl
+  homepage: https://www.win-rar.com/download.html
+  fetcher: download_page
+  args:
+    source: Official WinRAR download page; no public version API
+    platforms:
+    - platform: win-x64
+      download_url: https://www.win-rar.com/download.html
+      link_kind: landing_page
+- id: wiztree
+  name: WizTree
+  category: System Utilities
+  editions:
+  - intl
+  homepage: https://diskanalyzer.com/download
+  fetcher: download_page
+  args:
+    source: Official WizTree download page; no public version API
+    platforms:
+    - platform: win-x64
+      download_url: https://diskanalyzer.com/download
+      link_kind: landing_page
+- id: teracopy
+  name: TeraCopy
+  category: Utilities
+  editions:
+  - intl
+  homepage: https://www.codesector.com/teracopy
+  fetcher: download_page
+  args:
+    source: Official TeraCopy download page; no public version API
+    platforms:
+    - platform: win-x64
+      download_url: https://www.codesector.com/teracopy
+      link_kind: landing_page
+- id: anydesk
+  name: AnyDesk
+  category: Utilities
+  editions:
+  - intl
+  homepage: https://anydesk.com/en/downloads
+  fetcher: download_page
+  args:
+    source: Official AnyDesk downloads page; no public version API
+    platforms:
+    - platform: win-x64
+      download_url: https://anydesk.com/en/downloads
+      link_kind: landing_page
+    - platform: mac-universal
+      download_url: https://anydesk.com/en/downloads
+      link_kind: landing_page
+    - platform: linux-x64
+      download_url: https://anydesk.com/en/downloads
+      link_kind: landing_page
+- id: teamviewer
+  name: TeamViewer
+  category: Utilities
+  editions:
+  - intl
+  homepage: https://www.teamviewer.com/en/download/
+  fetcher: download_page
+  args:
+    source: Official TeamViewer download page; no public version API
+    platforms:
+    - platform: win-x64
+      download_url: https://www.teamviewer.com/en/download/
+      link_kind: landing_page
+    - platform: mac-universal
+      download_url: https://www.teamviewer.com/en/download/
+      link_kind: landing_page
+    - platform: linux-x64
+      download_url: https://www.teamviewer.com/en/download/
+      link_kind: landing_page
+- id: kodi
+  name: Kodi
+  category: Media Players
+  editions:
+  - intl
+  homepage: https://kodi.tv/download/
+  fetcher: download_page
+  args:
+    source: Official Kodi download page; no public version API
+    platforms:
+    - platform: win-x64
+      download_url: https://kodi.tv/download/
+      link_kind: landing_page
+    - platform: mac-universal
+      download_url: https://kodi.tv/download/
+      link_kind: landing_page
+    - platform: linux-x64
+      download_url: https://kodi.tv/download/
+      link_kind: landing_page
+- id: plex
+  name: Plex Media Server
+  category: Media Players
+  editions:
+  - intl
+  homepage: https://www.plex.tv/media-server-downloads/
+  fetcher: download_page
+  args:
+    source: Official Plex Media Server download page; no public version API
+    platforms:
+    - platform: win-x64
+      download_url: https://www.plex.tv/media-server-downloads/
+      link_kind: landing_page
+    - platform: mac-universal
+      download_url: https://www.plex.tv/media-server-downloads/
+      link_kind: landing_page
+    - platform: linux-x64
+      download_url: https://www.plex.tv/media-server-downloads/
+      link_kind: landing_page
+- id: foobar2000
+  name: foobar2000
+  category: Media Players
+  editions:
+  - intl
+  homepage: https://www.foobar2000.org/download
+  fetcher: download_page
+  args:
+    source: Official foobar2000 download page; no public version API
+    platforms:
+    - platform: win-x64
+      download_url: https://www.foobar2000.org/download
+      link_kind: landing_page
+    - platform: mac-universal
+      download_url: https://www.foobar2000.org/download
+      link_kind: landing_page
+- id: epic-games-launcher
+  name: Epic Games Launcher
+  category: Gaming
+  editions:
+  - intl
+  homepage: https://store.epicgames.com/download
+  fetcher: download_page
+  args:
+    source: Official Epic Games Store download page; no public version API
+    platforms:
+    - platform: win-x64
+      download_url: https://store.epicgames.com/download
+      link_kind: landing_page
+    - platform: mac-universal
+      download_url: https://store.epicgames.com/download
+      link_kind: landing_page
