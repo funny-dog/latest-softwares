@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-04-29T07:52:10+00:00",
+  "generated_at": "2026-04-29T08:38:01+00:00",
   "packages": [
     {
       "id": "windows11",
@@ -16,15 +16,15 @@
       "assets": [
         {
           "platform": "win-x64",
-          "url": "https://software.download.prss.microsoft.com/dbazure/Win11_25H2_Chinese_Simplified_x64_v2.iso?t=34318a3d-54df-46b6-8f2e-8d417af134d9&P1=1777535491&P2=601&P3=2&P4=a%2fHIhF2dkaPvfnJwtroosP1G05buMAmCxEBc0iS%2fgnkBUeN6OsPNXIiB%2fuBH2yHvESdlZA%2bmKTlKkUr%2fz%2bpX%2b3rlYvcSH%2fnUqkO4BUT3TotZ%2bU7vm4dcpDpQ8Wdegls6VWzIFf7ZJbDafHv94XT5p1X%2b7Cwxeg%2fsJGg73zEXIhGgebIDyzI7eWrbl3f%2fLquBiuRoJkYLObsuQ1QYATtVZSMUKKDjEe9I4UsTkqzmV1WW6EZgEzn9cFkY1uMEM2hha8ehoM3C%2f43JbGvfIekbNmfJy4EAJBiK04xO9DTj6uwK4hhk%2fyKCvZE1fe4Z7W07F1dTupM%2bzdPyTsygOEJedw%3d%3d",
+          "url": "https://software.download.prss.microsoft.com/dbazure/Win11_25H2_Chinese_Simplified_x64_v2.iso?t=1c5e4692-a701-442e-8b57-2575a91938e1&P1=1777538253&P2=601&P3=2&P4=jKKq5xUUz0LqZlfw6hAc2EyMiJG7U%2fpuJ5LvIyrmwpWKgwOqc0%2bjcb53XBNWeVs6az4dKDne3YLkTcqCpzNKx9dKbdWSzonTbs6PrOdMIQmhV11JpDrhL55jQ2Mx33vECWKfVxsoz7fAL38QC4qScs93FRChKizQkr9ooKkoDPqatyCOSVUUZU4AXNcf8J4JZkE4i1WZAMCK%2bwu%2fDvJcLY%2fT9%2fx8BG6BrGZx35Yvvw8bmEZwx%2bo4SpuRGj5SJuiqaFFG%2ftsbPMAt3lGufGpeuzRp4%2fPysisHu3s%2fbsuczkUNBUAoUPMA9MpLS9%2b8dvxxICs0%2f1XFWN25if6DUy7XYQ%3d%3d",
           "link_kind": "direct",
           "filename": "Win11_25H2_Chinese_Simplified_x64_v2.iso",
           "size": null,
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:51:32+00:00",
-      "last_success_at": "2026-04-29T07:51:32+00:00",
+      "fetched_at": "2026-04-29T08:37:34+00:00",
+      "last_success_at": "2026-04-29T08:37:34+00:00",
       "editions": [
         "cn"
       ]
@@ -74,8 +74,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:51:26+00:00",
-      "last_success_at": "2026-04-29T07:51:26+00:00",
+      "fetched_at": "2026-04-29T08:37:25+00:00",
+      "last_success_at": "2026-04-29T08:37:25+00:00",
       "editions": [
         "intl"
       ]
@@ -125,8 +125,8 @@
           "sha256": "bc5017110545de218ac71df0bdcf40665ec00e9de322825e29a28eebc1e3e1a2"
         }
       ],
-      "fetched_at": "2026-04-29T07:51:26+00:00",
-      "last_success_at": "2026-04-29T07:51:26+00:00",
+      "fetched_at": "2026-04-29T08:37:26+00:00",
+      "last_success_at": "2026-04-29T08:37:26+00:00",
       "editions": [
         "cn",
         "intl"
@@ -161,8 +161,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:51:26+00:00",
-      "last_success_at": "2026-04-29T07:51:26+00:00",
+      "fetched_at": "2026-04-29T08:37:25+00:00",
+      "last_success_at": "2026-04-29T08:37:25+00:00",
       "editions": [
         "cn",
         "intl"
@@ -189,8 +189,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:51:26+00:00",
-      "last_success_at": "2026-04-29T07:51:26+00:00",
+      "fetched_at": "2026-04-29T08:37:25+00:00",
+      "last_success_at": "2026-04-29T08:37:25+00:00",
       "editions": [
         "cn",
         "intl"
@@ -225,8 +225,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:51:26+00:00",
-      "last_success_at": "2026-04-29T07:51:26+00:00",
+      "fetched_at": "2026-04-29T08:37:25+00:00",
+      "last_success_at": "2026-04-29T08:37:25+00:00",
       "editions": [
         "cn",
         "intl"
@@ -261,8 +261,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:51:26+00:00",
-      "last_success_at": "2026-04-29T07:51:26+00:00",
+      "fetched_at": "2026-04-29T08:37:26+00:00",
+      "last_success_at": "2026-04-29T08:37:26+00:00",
       "editions": [
         "cn",
         "intl"
@@ -313,8 +313,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:51:28+00:00",
-      "last_success_at": "2026-04-29T07:51:28+00:00",
+      "fetched_at": "2026-04-29T08:37:27+00:00",
+      "last_success_at": "2026-04-29T08:37:27+00:00",
       "editions": [
         "intl"
       ]
@@ -340,8 +340,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:51:26+00:00",
-      "last_success_at": "2026-04-29T07:51:26+00:00",
+      "fetched_at": "2026-04-29T08:37:25+00:00",
+      "last_success_at": "2026-04-29T08:37:25+00:00",
       "editions": [
         "cn",
         "intl"
@@ -392,8 +392,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:51:26+00:00",
-      "last_success_at": "2026-04-29T07:51:26+00:00",
+      "fetched_at": "2026-04-29T08:37:26+00:00",
+      "last_success_at": "2026-04-29T08:37:26+00:00",
       "editions": [
         "cn",
         "intl"
@@ -420,8 +420,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:51:26+00:00",
-      "last_success_at": "2026-04-29T07:51:26+00:00",
+      "fetched_at": "2026-04-29T08:37:25+00:00",
+      "last_success_at": "2026-04-29T08:37:25+00:00",
       "editions": [
         "cn",
         "intl"
@@ -448,8 +448,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:51:26+00:00",
-      "last_success_at": "2026-04-29T07:51:26+00:00",
+      "fetched_at": "2026-04-29T08:37:26+00:00",
+      "last_success_at": "2026-04-29T08:37:26+00:00",
       "editions": [
         "intl"
       ]
@@ -475,8 +475,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:51:27+00:00",
-      "last_success_at": "2026-04-29T07:51:27+00:00",
+      "fetched_at": "2026-04-29T08:37:26+00:00",
+      "last_success_at": "2026-04-29T08:37:26+00:00",
       "editions": [
         "intl"
       ]
@@ -502,8 +502,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:51:27+00:00",
-      "last_success_at": "2026-04-29T07:51:27+00:00",
+      "fetched_at": "2026-04-29T08:37:26+00:00",
+      "last_success_at": "2026-04-29T08:37:26+00:00",
       "editions": [
         "intl"
       ]
@@ -529,8 +529,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:51:27+00:00",
-      "last_success_at": "2026-04-29T07:51:27+00:00",
+      "fetched_at": "2026-04-29T08:37:26+00:00",
+      "last_success_at": "2026-04-29T08:37:26+00:00",
       "editions": [
         "intl"
       ]
@@ -556,8 +556,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:51:28+00:00",
-      "last_success_at": "2026-04-29T07:51:28+00:00",
+      "fetched_at": "2026-04-29T08:37:26+00:00",
+      "last_success_at": "2026-04-29T08:37:26+00:00",
       "editions": [
         "intl"
       ]
@@ -583,8 +583,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:51:29+00:00",
-      "last_success_at": "2026-04-29T07:51:29+00:00",
+      "fetched_at": "2026-04-29T08:37:27+00:00",
+      "last_success_at": "2026-04-29T08:37:27+00:00",
       "editions": [
         "intl"
       ]
@@ -610,8 +610,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:51:28+00:00",
-      "last_success_at": "2026-04-29T07:51:28+00:00",
+      "fetched_at": "2026-04-29T08:37:27+00:00",
+      "last_success_at": "2026-04-29T08:37:27+00:00",
       "editions": [
         "intl"
       ]
@@ -637,8 +637,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:51:28+00:00",
-      "last_success_at": "2026-04-29T07:51:28+00:00",
+      "fetched_at": "2026-04-29T08:37:27+00:00",
+      "last_success_at": "2026-04-29T08:37:27+00:00",
       "editions": [
         "intl"
       ]
@@ -664,8 +664,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:51:28+00:00",
-      "last_success_at": "2026-04-29T07:51:28+00:00",
+      "fetched_at": "2026-04-29T08:37:27+00:00",
+      "last_success_at": "2026-04-29T08:37:27+00:00",
       "editions": [
         "intl"
       ]
@@ -691,8 +691,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:51:29+00:00",
-      "last_success_at": "2026-04-29T07:51:29+00:00",
+      "fetched_at": "2026-04-29T08:37:27+00:00",
+      "last_success_at": "2026-04-29T08:37:27+00:00",
       "editions": [
         "intl"
       ]
@@ -718,8 +718,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:51:28+00:00",
-      "last_success_at": "2026-04-29T07:51:28+00:00",
+      "fetched_at": "2026-04-29T08:37:27+00:00",
+      "last_success_at": "2026-04-29T08:37:27+00:00",
       "editions": [
         "intl"
       ]
@@ -745,8 +745,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:51:29+00:00",
-      "last_success_at": "2026-04-29T07:51:29+00:00",
+      "fetched_at": "2026-04-29T08:37:27+00:00",
+      "last_success_at": "2026-04-29T08:37:27+00:00",
       "editions": [
         "intl"
       ]
@@ -772,8 +772,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:51:29+00:00",
-      "last_success_at": "2026-04-29T07:51:29+00:00",
+      "fetched_at": "2026-04-29T08:37:28+00:00",
+      "last_success_at": "2026-04-29T08:37:28+00:00",
       "editions": [
         "intl"
       ]
@@ -799,8 +799,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:51:29+00:00",
-      "last_success_at": "2026-04-29T07:51:29+00:00",
+      "fetched_at": "2026-04-29T08:37:28+00:00",
+      "last_success_at": "2026-04-29T08:37:28+00:00",
       "editions": [
         "intl"
       ]
@@ -826,8 +826,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:51:28+00:00",
-      "last_success_at": "2026-04-29T07:51:28+00:00",
+      "fetched_at": "2026-04-29T08:37:28+00:00",
+      "last_success_at": "2026-04-29T08:37:28+00:00",
       "editions": [
         "intl"
       ]
@@ -853,8 +853,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:51:29+00:00",
-      "last_success_at": "2026-04-29T07:51:29+00:00",
+      "fetched_at": "2026-04-29T08:37:28+00:00",
+      "last_success_at": "2026-04-29T08:37:28+00:00",
       "editions": [
         "intl"
       ]
@@ -880,8 +880,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:51:29+00:00",
-      "last_success_at": "2026-04-29T07:51:29+00:00",
+      "fetched_at": "2026-04-29T08:37:28+00:00",
+      "last_success_at": "2026-04-29T08:37:28+00:00",
       "editions": [
         "intl"
       ]
@@ -907,8 +907,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:51:30+00:00",
-      "last_success_at": "2026-04-29T07:51:30+00:00",
+      "fetched_at": "2026-04-29T08:37:28+00:00",
+      "last_success_at": "2026-04-29T08:37:28+00:00",
       "editions": [
         "intl"
       ]
@@ -934,8 +934,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:51:30+00:00",
-      "last_success_at": "2026-04-29T07:51:30+00:00",
+      "fetched_at": "2026-04-29T08:37:28+00:00",
+      "last_success_at": "2026-04-29T08:37:28+00:00",
       "editions": [
         "intl"
       ]
@@ -961,8 +961,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:51:30+00:00",
-      "last_success_at": "2026-04-29T07:51:30+00:00",
+      "fetched_at": "2026-04-29T08:37:28+00:00",
+      "last_success_at": "2026-04-29T08:37:28+00:00",
       "editions": [
         "intl"
       ]
@@ -988,8 +988,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:51:30+00:00",
-      "last_success_at": "2026-04-29T07:51:30+00:00",
+      "fetched_at": "2026-04-29T08:37:29+00:00",
+      "last_success_at": "2026-04-29T08:37:29+00:00",
       "editions": [
         "intl"
       ]
@@ -1015,8 +1015,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:51:30+00:00",
-      "last_success_at": "2026-04-29T07:51:30+00:00",
+      "fetched_at": "2026-04-29T08:37:29+00:00",
+      "last_success_at": "2026-04-29T08:37:29+00:00",
       "editions": [
         "intl"
       ]
@@ -1042,8 +1042,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:51:31+00:00",
-      "last_success_at": "2026-04-29T07:51:31+00:00",
+      "fetched_at": "2026-04-29T08:37:29+00:00",
+      "last_success_at": "2026-04-29T08:37:29+00:00",
       "editions": [
         "intl"
       ]
@@ -1069,8 +1069,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:51:31+00:00",
-      "last_success_at": "2026-04-29T07:51:31+00:00",
+      "fetched_at": "2026-04-29T08:37:29+00:00",
+      "last_success_at": "2026-04-29T08:37:29+00:00",
       "editions": [
         "intl"
       ]
@@ -1096,8 +1096,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:51:31+00:00",
-      "last_success_at": "2026-04-29T07:51:31+00:00",
+      "fetched_at": "2026-04-29T08:37:29+00:00",
+      "last_success_at": "2026-04-29T08:37:29+00:00",
       "editions": [
         "intl"
       ]
@@ -1123,8 +1123,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:51:31+00:00",
-      "last_success_at": "2026-04-29T07:51:31+00:00",
+      "fetched_at": "2026-04-29T08:37:29+00:00",
+      "last_success_at": "2026-04-29T08:37:29+00:00",
       "editions": [
         "intl"
       ]
@@ -1150,8 +1150,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:51:31+00:00",
-      "last_success_at": "2026-04-29T07:51:31+00:00",
+      "fetched_at": "2026-04-29T08:37:29+00:00",
+      "last_success_at": "2026-04-29T08:37:29+00:00",
       "editions": [
         "intl"
       ]
@@ -1177,8 +1177,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:51:32+00:00",
-      "last_success_at": "2026-04-29T07:51:32+00:00",
+      "fetched_at": "2026-04-29T08:37:30+00:00",
+      "last_success_at": "2026-04-29T08:37:30+00:00",
       "editions": [
         "intl"
       ]
@@ -1204,8 +1204,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:51:32+00:00",
-      "last_success_at": "2026-04-29T07:51:32+00:00",
+      "fetched_at": "2026-04-29T08:37:30+00:00",
+      "last_success_at": "2026-04-29T08:37:30+00:00",
       "editions": [
         "intl"
       ]
@@ -1231,8 +1231,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:51:32+00:00",
-      "last_success_at": "2026-04-29T07:51:32+00:00",
+      "fetched_at": "2026-04-29T08:37:30+00:00",
+      "last_success_at": "2026-04-29T08:37:30+00:00",
       "editions": [
         "intl"
       ]
@@ -1258,8 +1258,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:51:32+00:00",
-      "last_success_at": "2026-04-29T07:51:32+00:00",
+      "fetched_at": "2026-04-29T08:37:30+00:00",
+      "last_success_at": "2026-04-29T08:37:30+00:00",
       "editions": [
         "intl"
       ]
@@ -1285,8 +1285,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:51:32+00:00",
-      "last_success_at": "2026-04-29T07:51:32+00:00",
+      "fetched_at": "2026-04-29T08:37:30+00:00",
+      "last_success_at": "2026-04-29T08:37:30+00:00",
       "editions": [
         "intl"
       ]
@@ -1312,8 +1312,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:51:32+00:00",
-      "last_success_at": "2026-04-29T07:51:32+00:00",
+      "fetched_at": "2026-04-29T08:37:30+00:00",
+      "last_success_at": "2026-04-29T08:37:30+00:00",
       "editions": [
         "intl"
       ]
@@ -1339,8 +1339,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:51:32+00:00",
-      "last_success_at": "2026-04-29T07:51:32+00:00",
+      "fetched_at": "2026-04-29T08:37:29+00:00",
+      "last_success_at": "2026-04-29T08:37:29+00:00",
       "editions": [
         "intl"
       ]
@@ -1366,8 +1366,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:51:33+00:00",
-      "last_success_at": "2026-04-29T07:51:33+00:00",
+      "fetched_at": "2026-04-29T08:37:31+00:00",
+      "last_success_at": "2026-04-29T08:37:31+00:00",
       "editions": [
         "intl"
       ]
@@ -1393,8 +1393,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:51:33+00:00",
-      "last_success_at": "2026-04-29T07:51:33+00:00",
+      "fetched_at": "2026-04-29T08:37:31+00:00",
+      "last_success_at": "2026-04-29T08:37:31+00:00",
       "editions": [
         "intl"
       ]
@@ -1420,8 +1420,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:51:33+00:00",
-      "last_success_at": "2026-04-29T07:51:33+00:00",
+      "fetched_at": "2026-04-29T08:37:31+00:00",
+      "last_success_at": "2026-04-29T08:37:31+00:00",
       "editions": [
         "intl"
       ]
@@ -1447,8 +1447,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:51:33+00:00",
-      "last_success_at": "2026-04-29T07:51:33+00:00",
+      "fetched_at": "2026-04-29T08:37:31+00:00",
+      "last_success_at": "2026-04-29T08:37:31+00:00",
       "editions": [
         "intl"
       ]
@@ -1474,8 +1474,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:51:33+00:00",
-      "last_success_at": "2026-04-29T07:51:33+00:00",
+      "fetched_at": "2026-04-29T08:37:31+00:00",
+      "last_success_at": "2026-04-29T08:37:31+00:00",
       "editions": [
         "intl"
       ]
@@ -1501,8 +1501,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:51:33+00:00",
-      "last_success_at": "2026-04-29T07:51:33+00:00",
+      "fetched_at": "2026-04-29T08:37:31+00:00",
+      "last_success_at": "2026-04-29T08:37:31+00:00",
       "editions": [
         "intl"
       ]
@@ -1528,8 +1528,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:51:33+00:00",
-      "last_success_at": "2026-04-29T07:51:33+00:00",
+      "fetched_at": "2026-04-29T08:37:30+00:00",
+      "last_success_at": "2026-04-29T08:37:30+00:00",
       "editions": [
         "intl"
       ]
@@ -1555,8 +1555,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:51:34+00:00",
-      "last_success_at": "2026-04-29T07:51:34+00:00",
+      "fetched_at": "2026-04-29T08:37:31+00:00",
+      "last_success_at": "2026-04-29T08:37:31+00:00",
       "editions": [
         "intl"
       ]
@@ -1582,8 +1582,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:51:34+00:00",
-      "last_success_at": "2026-04-29T07:51:34+00:00",
+      "fetched_at": "2026-04-29T08:37:31+00:00",
+      "last_success_at": "2026-04-29T08:37:31+00:00",
       "editions": [
         "intl"
       ]
@@ -1609,8 +1609,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:51:34+00:00",
-      "last_success_at": "2026-04-29T07:51:34+00:00",
+      "fetched_at": "2026-04-29T08:37:32+00:00",
+      "last_success_at": "2026-04-29T08:37:32+00:00",
       "editions": [
         "intl"
       ]
@@ -1636,8 +1636,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:51:34+00:00",
-      "last_success_at": "2026-04-29T07:51:34+00:00",
+      "fetched_at": "2026-04-29T08:37:32+00:00",
+      "last_success_at": "2026-04-29T08:37:32+00:00",
       "editions": [
         "intl"
       ]
@@ -1663,8 +1663,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:51:34+00:00",
-      "last_success_at": "2026-04-29T07:51:34+00:00",
+      "fetched_at": "2026-04-29T08:37:32+00:00",
+      "last_success_at": "2026-04-29T08:37:32+00:00",
       "editions": [
         "intl"
       ]
@@ -1690,8 +1690,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:51:34+00:00",
-      "last_success_at": "2026-04-29T07:51:34+00:00",
+      "fetched_at": "2026-04-29T08:37:32+00:00",
+      "last_success_at": "2026-04-29T08:37:32+00:00",
       "editions": [
         "intl"
       ]
@@ -1717,8 +1717,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:51:35+00:00",
-      "last_success_at": "2026-04-29T07:51:35+00:00",
+      "fetched_at": "2026-04-29T08:37:32+00:00",
+      "last_success_at": "2026-04-29T08:37:32+00:00",
       "editions": [
         "intl"
       ]
@@ -1744,8 +1744,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:51:35+00:00",
-      "last_success_at": "2026-04-29T07:51:35+00:00",
+      "fetched_at": "2026-04-29T08:37:32+00:00",
+      "last_success_at": "2026-04-29T08:37:32+00:00",
       "editions": [
         "intl"
       ]
@@ -1771,8 +1771,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:51:35+00:00",
-      "last_success_at": "2026-04-29T07:51:35+00:00",
+      "fetched_at": "2026-04-29T08:37:32+00:00",
+      "last_success_at": "2026-04-29T08:37:32+00:00",
       "editions": [
         "intl"
       ]
@@ -1798,8 +1798,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:51:35+00:00",
-      "last_success_at": "2026-04-29T07:51:35+00:00",
+      "fetched_at": "2026-04-29T08:37:32+00:00",
+      "last_success_at": "2026-04-29T08:37:32+00:00",
       "editions": [
         "intl"
       ]
@@ -1825,8 +1825,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:51:35+00:00",
-      "last_success_at": "2026-04-29T07:51:35+00:00",
+      "fetched_at": "2026-04-29T08:37:33+00:00",
+      "last_success_at": "2026-04-29T08:37:33+00:00",
       "editions": [
         "intl"
       ]
@@ -1852,8 +1852,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:51:35+00:00",
-      "last_success_at": "2026-04-29T07:51:35+00:00",
+      "fetched_at": "2026-04-29T08:37:33+00:00",
+      "last_success_at": "2026-04-29T08:37:33+00:00",
       "editions": [
         "intl"
       ]
@@ -1879,8 +1879,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:51:35+00:00",
-      "last_success_at": "2026-04-29T07:51:35+00:00",
+      "fetched_at": "2026-04-29T08:37:33+00:00",
+      "last_success_at": "2026-04-29T08:37:33+00:00",
       "editions": [
         "intl"
       ]
@@ -1906,8 +1906,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:51:35+00:00",
-      "last_success_at": "2026-04-29T07:51:35+00:00",
+      "fetched_at": "2026-04-29T08:37:33+00:00",
+      "last_success_at": "2026-04-29T08:37:33+00:00",
       "editions": [
         "intl"
       ]
@@ -1933,8 +1933,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:51:36+00:00",
-      "last_success_at": "2026-04-29T07:51:36+00:00",
+      "fetched_at": "2026-04-29T08:37:33+00:00",
+      "last_success_at": "2026-04-29T08:37:33+00:00",
       "editions": [
         "intl"
       ]
@@ -1960,8 +1960,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:51:34+00:00",
-      "last_success_at": "2026-04-29T07:51:34+00:00",
+      "fetched_at": "2026-04-29T08:37:32+00:00",
+      "last_success_at": "2026-04-29T08:37:32+00:00",
       "editions": [
         "intl"
       ]
@@ -1987,8 +1987,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:51:36+00:00",
-      "last_success_at": "2026-04-29T07:51:36+00:00",
+      "fetched_at": "2026-04-29T08:37:33+00:00",
+      "last_success_at": "2026-04-29T08:37:33+00:00",
       "editions": [
         "intl"
       ]
@@ -2014,8 +2014,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:51:36+00:00",
-      "last_success_at": "2026-04-29T07:51:36+00:00",
+      "fetched_at": "2026-04-29T08:37:33+00:00",
+      "last_success_at": "2026-04-29T08:37:33+00:00",
       "editions": [
         "intl"
       ]
@@ -2041,8 +2041,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:51:36+00:00",
-      "last_success_at": "2026-04-29T07:51:36+00:00",
+      "fetched_at": "2026-04-29T08:37:33+00:00",
+      "last_success_at": "2026-04-29T08:37:33+00:00",
       "editions": [
         "intl"
       ]
@@ -2068,8 +2068,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:51:36+00:00",
-      "last_success_at": "2026-04-29T07:51:36+00:00",
+      "fetched_at": "2026-04-29T08:37:34+00:00",
+      "last_success_at": "2026-04-29T08:37:34+00:00",
       "editions": [
         "intl"
       ]
@@ -2095,8 +2095,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:51:35+00:00",
-      "last_success_at": "2026-04-29T07:51:35+00:00",
+      "fetched_at": "2026-04-29T08:37:33+00:00",
+      "last_success_at": "2026-04-29T08:37:33+00:00",
       "editions": [
         "intl"
       ]
@@ -2122,8 +2122,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:51:35+00:00",
-      "last_success_at": "2026-04-29T07:51:35+00:00",
+      "fetched_at": "2026-04-29T08:37:33+00:00",
+      "last_success_at": "2026-04-29T08:37:33+00:00",
       "editions": [
         "intl"
       ]
@@ -2149,8 +2149,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:51:37+00:00",
-      "last_success_at": "2026-04-29T07:51:37+00:00",
+      "fetched_at": "2026-04-29T08:37:34+00:00",
+      "last_success_at": "2026-04-29T08:37:34+00:00",
       "editions": [
         "intl"
       ]
@@ -2176,8 +2176,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:51:37+00:00",
-      "last_success_at": "2026-04-29T07:51:37+00:00",
+      "fetched_at": "2026-04-29T08:37:34+00:00",
+      "last_success_at": "2026-04-29T08:37:34+00:00",
       "editions": [
         "intl"
       ]
@@ -2203,8 +2203,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:51:37+00:00",
-      "last_success_at": "2026-04-29T07:51:37+00:00",
+      "fetched_at": "2026-04-29T08:37:34+00:00",
+      "last_success_at": "2026-04-29T08:37:34+00:00",
       "editions": [
         "intl"
       ]
@@ -2230,8 +2230,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:51:37+00:00",
-      "last_success_at": "2026-04-29T07:51:37+00:00",
+      "fetched_at": "2026-04-29T08:37:34+00:00",
+      "last_success_at": "2026-04-29T08:37:34+00:00",
       "editions": [
         "intl"
       ]
@@ -2257,8 +2257,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:51:37+00:00",
-      "last_success_at": "2026-04-29T07:51:37+00:00",
+      "fetched_at": "2026-04-29T08:37:34+00:00",
+      "last_success_at": "2026-04-29T08:37:34+00:00",
       "editions": [
         "intl"
       ]
@@ -2284,8 +2284,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:51:38+00:00",
-      "last_success_at": "2026-04-29T07:51:38+00:00",
+      "fetched_at": "2026-04-29T08:37:34+00:00",
+      "last_success_at": "2026-04-29T08:37:34+00:00",
       "editions": [
         "intl"
       ]
@@ -2327,8 +2327,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:51:37+00:00",
-      "last_success_at": "2026-04-29T07:51:37+00:00",
+      "fetched_at": "2026-04-29T08:37:34+00:00",
+      "last_success_at": "2026-04-29T08:37:34+00:00",
       "editions": [
         "intl"
       ]
@@ -2378,8 +2378,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:51:37+00:00",
-      "last_success_at": "2026-04-29T07:51:37+00:00",
+      "fetched_at": "2026-04-29T08:37:34+00:00",
+      "last_success_at": "2026-04-29T08:37:34+00:00",
       "editions": [
         "intl"
       ]
@@ -2429,8 +2429,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:51:38+00:00",
-      "last_success_at": "2026-04-29T07:51:38+00:00",
+      "fetched_at": "2026-04-29T08:37:34+00:00",
+      "last_success_at": "2026-04-29T08:37:34+00:00",
       "editions": [
         "intl"
       ]
@@ -2480,8 +2480,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:51:38+00:00",
-      "last_success_at": "2026-04-29T07:51:38+00:00",
+      "fetched_at": "2026-04-29T08:37:35+00:00",
+      "last_success_at": "2026-04-29T08:37:35+00:00",
       "editions": [
         "intl"
       ]
@@ -2523,8 +2523,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:51:38+00:00",
-      "last_success_at": "2026-04-29T07:51:38+00:00",
+      "fetched_at": "2026-04-29T08:37:35+00:00",
+      "last_success_at": "2026-04-29T08:37:35+00:00",
       "editions": [
         "intl"
       ]
@@ -2566,8 +2566,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:51:38+00:00",
-      "last_success_at": "2026-04-29T07:51:38+00:00",
+      "fetched_at": "2026-04-29T08:37:35+00:00",
+      "last_success_at": "2026-04-29T08:37:35+00:00",
       "editions": [
         "intl"
       ]
@@ -2609,8 +2609,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:51:38+00:00",
-      "last_success_at": "2026-04-29T07:51:38+00:00",
+      "fetched_at": "2026-04-29T08:37:35+00:00",
+      "last_success_at": "2026-04-29T08:37:35+00:00",
       "editions": [
         "intl"
       ]
@@ -2636,8 +2636,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:51:38+00:00",
-      "last_success_at": "2026-04-29T07:51:38+00:00",
+      "fetched_at": "2026-04-29T08:37:35+00:00",
+      "last_success_at": "2026-04-29T08:37:35+00:00",
       "editions": [
         "intl"
       ]
@@ -2679,8 +2679,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:51:38+00:00",
-      "last_success_at": "2026-04-29T07:51:38+00:00",
+      "fetched_at": "2026-04-29T08:37:35+00:00",
+      "last_success_at": "2026-04-29T08:37:35+00:00",
       "editions": [
         "intl"
       ]
@@ -2706,8 +2706,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:51:39+00:00",
-      "last_success_at": "2026-04-29T07:51:39+00:00",
+      "fetched_at": "2026-04-29T08:37:35+00:00",
+      "last_success_at": "2026-04-29T08:37:35+00:00",
       "editions": [
         "intl"
       ]
@@ -2733,8 +2733,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:51:39+00:00",
-      "last_success_at": "2026-04-29T07:51:39+00:00",
+      "fetched_at": "2026-04-29T08:37:35+00:00",
+      "last_success_at": "2026-04-29T08:37:35+00:00",
       "editions": [
         "intl"
       ]
@@ -2776,8 +2776,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:51:39+00:00",
-      "last_success_at": "2026-04-29T07:51:39+00:00",
+      "fetched_at": "2026-04-29T08:37:35+00:00",
+      "last_success_at": "2026-04-29T08:37:35+00:00",
       "editions": [
         "intl"
       ]
@@ -2819,8 +2819,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:51:40+00:00",
-      "last_success_at": "2026-04-29T07:51:40+00:00",
+      "fetched_at": "2026-04-29T08:37:36+00:00",
+      "last_success_at": "2026-04-29T08:37:36+00:00",
       "editions": [
         "intl"
       ]
@@ -2846,8 +2846,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:51:39+00:00",
-      "last_success_at": "2026-04-29T07:51:39+00:00",
+      "fetched_at": "2026-04-29T08:37:36+00:00",
+      "last_success_at": "2026-04-29T08:37:36+00:00",
       "editions": [
         "intl"
       ]
@@ -2889,8 +2889,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:51:40+00:00",
-      "last_success_at": "2026-04-29T07:51:40+00:00",
+      "fetched_at": "2026-04-29T08:37:36+00:00",
+      "last_success_at": "2026-04-29T08:37:36+00:00",
       "editions": [
         "intl"
       ]
@@ -2932,8 +2932,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:51:40+00:00",
-      "last_success_at": "2026-04-29T07:51:40+00:00",
+      "fetched_at": "2026-04-29T08:37:36+00:00",
+      "last_success_at": "2026-04-29T08:37:36+00:00",
       "editions": [
         "intl"
       ]
@@ -2975,8 +2975,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:51:40+00:00",
-      "last_success_at": "2026-04-29T07:51:40+00:00",
+      "fetched_at": "2026-04-29T08:37:36+00:00",
+      "last_success_at": "2026-04-29T08:37:36+00:00",
       "editions": [
         "intl"
       ]
@@ -3018,8 +3018,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:51:39+00:00",
-      "last_success_at": "2026-04-29T07:51:39+00:00",
+      "fetched_at": "2026-04-29T08:37:36+00:00",
+      "last_success_at": "2026-04-29T08:37:36+00:00",
       "editions": [
         "intl"
       ]
@@ -3061,8 +3061,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:51:39+00:00",
-      "last_success_at": "2026-04-29T07:51:39+00:00",
+      "fetched_at": "2026-04-29T08:37:35+00:00",
+      "last_success_at": "2026-04-29T08:37:35+00:00",
       "editions": [
         "intl"
       ]
@@ -3104,8 +3104,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:51:39+00:00",
-      "last_success_at": "2026-04-29T07:51:39+00:00",
+      "fetched_at": "2026-04-29T08:37:35+00:00",
+      "last_success_at": "2026-04-29T08:37:35+00:00",
       "editions": [
         "intl"
       ]
@@ -3139,8 +3139,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:51:39+00:00",
-      "last_success_at": "2026-04-29T07:51:39+00:00",
+      "fetched_at": "2026-04-29T08:37:35+00:00",
+      "last_success_at": "2026-04-29T08:37:35+00:00",
       "editions": [
         "intl"
       ]
@@ -3174,8 +3174,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:51:39+00:00",
-      "last_success_at": "2026-04-29T07:51:39+00:00",
+      "fetched_at": "2026-04-29T08:37:35+00:00",
+      "last_success_at": "2026-04-29T08:37:35+00:00",
       "editions": [
         "intl"
       ]
@@ -3217,8 +3217,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:51:39+00:00",
-      "last_success_at": "2026-04-29T07:51:39+00:00",
+      "fetched_at": "2026-04-29T08:37:35+00:00",
+      "last_success_at": "2026-04-29T08:37:35+00:00",
       "editions": [
         "intl"
       ]
@@ -3244,8 +3244,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:51:39+00:00",
-      "last_success_at": "2026-04-29T07:51:39+00:00",
+      "fetched_at": "2026-04-29T08:37:35+00:00",
+      "last_success_at": "2026-04-29T08:37:35+00:00",
       "editions": [
         "intl"
       ]
@@ -3279,8 +3279,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:51:39+00:00",
-      "last_success_at": "2026-04-29T07:51:39+00:00",
+      "fetched_at": "2026-04-29T08:37:35+00:00",
+      "last_success_at": "2026-04-29T08:37:35+00:00",
       "editions": [
         "intl"
       ]
@@ -3322,8 +3322,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:51:39+00:00",
-      "last_success_at": "2026-04-29T07:51:39+00:00",
+      "fetched_at": "2026-04-29T08:37:35+00:00",
+      "last_success_at": "2026-04-29T08:37:35+00:00",
       "editions": [
         "intl"
       ]
@@ -3357,8 +3357,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:51:39+00:00",
-      "last_success_at": "2026-04-29T07:51:39+00:00",
+      "fetched_at": "2026-04-29T08:37:35+00:00",
+      "last_success_at": "2026-04-29T08:37:35+00:00",
       "editions": [
         "intl"
       ]
@@ -3392,8 +3392,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:51:39+00:00",
-      "last_success_at": "2026-04-29T07:51:39+00:00",
+      "fetched_at": "2026-04-29T08:37:35+00:00",
+      "last_success_at": "2026-04-29T08:37:35+00:00",
       "editions": [
         "intl"
       ]
@@ -3435,8 +3435,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:51:39+00:00",
-      "last_success_at": "2026-04-29T07:51:39+00:00",
+      "fetched_at": "2026-04-29T08:37:35+00:00",
+      "last_success_at": "2026-04-29T08:37:35+00:00",
       "editions": [
         "intl"
       ]
@@ -3478,8 +3478,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:51:39+00:00",
-      "last_success_at": "2026-04-29T07:51:39+00:00",
+      "fetched_at": "2026-04-29T08:37:35+00:00",
+      "last_success_at": "2026-04-29T08:37:35+00:00",
       "editions": [
         "intl"
       ]
@@ -3505,11 +3505,11 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:51:40+00:00",
+      "fetched_at": "2026-04-29T08:37:36+00:00",
       "warnings": [
         "mac-arm64: 没有匹配 asset pattern 'Zed-*-aarch64.dmg'"
       ],
-      "last_success_at": "2026-04-29T07:51:40+00:00",
+      "last_success_at": "2026-04-29T08:37:36+00:00",
       "editions": [
         "intl"
       ]
@@ -3551,8 +3551,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:51:40+00:00",
-      "last_success_at": "2026-04-29T07:51:40+00:00",
+      "fetched_at": "2026-04-29T08:37:37+00:00",
+      "last_success_at": "2026-04-29T08:37:37+00:00",
       "editions": [
         "intl"
       ]
@@ -3594,8 +3594,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:51:41+00:00",
-      "last_success_at": "2026-04-29T07:51:41+00:00",
+      "fetched_at": "2026-04-29T08:37:37+00:00",
+      "last_success_at": "2026-04-29T08:37:37+00:00",
       "editions": [
         "intl"
       ]
@@ -3637,8 +3637,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:51:41+00:00",
-      "last_success_at": "2026-04-29T07:51:41+00:00",
+      "fetched_at": "2026-04-29T08:37:37+00:00",
+      "last_success_at": "2026-04-29T08:37:37+00:00",
       "editions": [
         "intl"
       ]
@@ -3680,8 +3680,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:51:41+00:00",
-      "last_success_at": "2026-04-29T07:51:41+00:00",
+      "fetched_at": "2026-04-29T08:37:37+00:00",
+      "last_success_at": "2026-04-29T08:37:37+00:00",
       "editions": [
         "intl"
       ]
@@ -3723,8 +3723,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:51:41+00:00",
-      "last_success_at": "2026-04-29T07:51:41+00:00",
+      "fetched_at": "2026-04-29T08:37:38+00:00",
+      "last_success_at": "2026-04-29T08:37:38+00:00",
       "editions": [
         "intl"
       ]
@@ -3758,11 +3758,11 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:51:42+00:00",
+      "fetched_at": "2026-04-29T08:37:38+00:00",
       "warnings": [
         "mac-arm64: 没有匹配 asset pattern 'dust-*-aarch64-apple-darwin.tar.gz'"
       ],
-      "last_success_at": "2026-04-29T07:51:42+00:00",
+      "last_success_at": "2026-04-29T08:37:38+00:00",
       "editions": [
         "intl"
       ]
@@ -3788,12 +3788,12 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:51:42+00:00",
+      "fetched_at": "2026-04-29T08:37:38+00:00",
       "warnings": [
         "win-x64: 没有匹配 asset pattern 'duf_*_windows_amd64.zip'",
         "linux-x64: 没有匹配 asset pattern 'duf_*_linux_amd64.tar.gz'"
       ],
-      "last_success_at": "2026-04-29T07:51:42+00:00",
+      "last_success_at": "2026-04-29T08:37:38+00:00",
       "editions": [
         "intl"
       ]
@@ -3835,8 +3835,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:51:42+00:00",
-      "last_success_at": "2026-04-29T07:51:42+00:00",
+      "fetched_at": "2026-04-29T08:37:38+00:00",
+      "last_success_at": "2026-04-29T08:37:38+00:00",
       "editions": [
         "intl"
       ]
@@ -3878,8 +3878,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:51:42+00:00",
-      "last_success_at": "2026-04-29T07:51:42+00:00",
+      "fetched_at": "2026-04-29T08:37:38+00:00",
+      "last_success_at": "2026-04-29T08:37:38+00:00",
       "editions": [
         "intl"
       ]
@@ -3921,8 +3921,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:51:43+00:00",
-      "last_success_at": "2026-04-29T07:51:43+00:00",
+      "fetched_at": "2026-04-29T08:37:38+00:00",
+      "last_success_at": "2026-04-29T08:37:38+00:00",
       "editions": [
         "intl"
       ]
@@ -3964,8 +3964,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:51:43+00:00",
-      "last_success_at": "2026-04-29T07:51:43+00:00",
+      "fetched_at": "2026-04-29T08:37:39+00:00",
+      "last_success_at": "2026-04-29T08:37:39+00:00",
       "editions": [
         "intl"
       ]
@@ -4007,8 +4007,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:51:43+00:00",
-      "last_success_at": "2026-04-29T07:51:43+00:00",
+      "fetched_at": "2026-04-29T08:37:39+00:00",
+      "last_success_at": "2026-04-29T08:37:39+00:00",
       "editions": [
         "intl"
       ]
@@ -4050,8 +4050,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:51:44+00:00",
-      "last_success_at": "2026-04-29T07:51:44+00:00",
+      "fetched_at": "2026-04-29T08:37:39+00:00",
+      "last_success_at": "2026-04-29T08:37:39+00:00",
       "editions": [
         "intl"
       ]
@@ -4085,11 +4085,11 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:51:44+00:00",
+      "fetched_at": "2026-04-29T08:37:39+00:00",
       "warnings": [
         "win-x64: 没有匹配 asset pattern 'biome-win-x64.exe'"
       ],
-      "last_success_at": "2026-04-29T07:51:44+00:00",
+      "last_success_at": "2026-04-29T08:37:39+00:00",
       "editions": [
         "intl"
       ]
@@ -4123,11 +4123,11 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:51:44+00:00",
+      "fetched_at": "2026-04-29T08:37:40+00:00",
       "warnings": [
         "mac-arm64: 没有匹配 asset pattern 'cargo-nextest-*-aarch64-apple-darwin.tar.gz'"
       ],
-      "last_success_at": "2026-04-29T07:51:44+00:00",
+      "last_success_at": "2026-04-29T08:37:40+00:00",
       "editions": [
         "intl"
       ]
@@ -4169,8 +4169,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:51:44+00:00",
-      "last_success_at": "2026-04-29T07:51:44+00:00",
+      "fetched_at": "2026-04-29T08:37:40+00:00",
+      "last_success_at": "2026-04-29T08:37:40+00:00",
       "editions": [
         "intl"
       ]
@@ -4212,8 +4212,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:51:44+00:00",
-      "last_success_at": "2026-04-29T07:51:44+00:00",
+      "fetched_at": "2026-04-29T08:37:40+00:00",
+      "last_success_at": "2026-04-29T08:37:40+00:00",
       "editions": [
         "intl"
       ]
@@ -4255,8 +4255,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:51:45+00:00",
-      "last_success_at": "2026-04-29T07:51:45+00:00",
+      "fetched_at": "2026-04-29T08:37:40+00:00",
+      "last_success_at": "2026-04-29T08:37:40+00:00",
       "editions": [
         "intl"
       ]
@@ -4298,8 +4298,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:51:45+00:00",
-      "last_success_at": "2026-04-29T07:51:45+00:00",
+      "fetched_at": "2026-04-29T08:37:40+00:00",
+      "last_success_at": "2026-04-29T08:37:40+00:00",
       "editions": [
         "intl"
       ]
@@ -4341,8 +4341,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:51:45+00:00",
-      "last_success_at": "2026-04-29T07:51:45+00:00",
+      "fetched_at": "2026-04-29T08:37:41+00:00",
+      "last_success_at": "2026-04-29T08:37:41+00:00",
       "editions": [
         "intl"
       ]
@@ -4384,8 +4384,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:51:45+00:00",
-      "last_success_at": "2026-04-29T07:51:45+00:00",
+      "fetched_at": "2026-04-29T08:37:41+00:00",
+      "last_success_at": "2026-04-29T08:37:41+00:00",
       "editions": [
         "intl"
       ]
@@ -4419,11 +4419,11 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:51:46+00:00",
+      "fetched_at": "2026-04-29T08:37:41+00:00",
       "warnings": [
         "linux-x64: 没有匹配 asset pattern 'dog-v*-x86_64-unknown-linux-musl.zip'"
       ],
-      "last_success_at": "2026-04-29T07:51:46+00:00",
+      "last_success_at": "2026-04-29T08:37:41+00:00",
       "editions": [
         "intl"
       ]
@@ -4465,8 +4465,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:51:46+00:00",
-      "last_success_at": "2026-04-29T07:51:46+00:00",
+      "fetched_at": "2026-04-29T08:37:41+00:00",
+      "last_success_at": "2026-04-29T08:37:41+00:00",
       "editions": [
         "intl"
       ]
@@ -4508,8 +4508,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:51:46+00:00",
-      "last_success_at": "2026-04-29T07:51:46+00:00",
+      "fetched_at": "2026-04-29T08:37:41+00:00",
+      "last_success_at": "2026-04-29T08:37:41+00:00",
       "editions": [
         "intl"
       ]
@@ -4543,11 +4543,11 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:51:46+00:00",
+      "fetched_at": "2026-04-29T08:37:41+00:00",
       "warnings": [
         "win-x64: 没有匹配 asset pattern 'cocogitto-*-x86_64-pc-windows-msvc.zip'"
       ],
-      "last_success_at": "2026-04-29T07:51:46+00:00",
+      "last_success_at": "2026-04-29T08:37:41+00:00",
       "editions": [
         "intl"
       ]
@@ -4573,12 +4573,12 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:51:46+00:00",
+      "fetched_at": "2026-04-29T08:37:41+00:00",
       "warnings": [
         "mac-arm64: 没有匹配 asset pattern 'mask-*-aarch64-apple-darwin.tar.gz'",
         "linux-x64: 没有匹配 asset pattern 'mask-*-x86_64-unknown-linux-musl.tar.gz'"
       ],
-      "last_success_at": "2026-04-29T07:51:46+00:00",
+      "last_success_at": "2026-04-29T08:37:41+00:00",
       "editions": [
         "intl"
       ]
@@ -4604,8 +4604,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:51:47+00:00",
-      "last_success_at": "2026-04-29T07:51:47+00:00",
+      "fetched_at": "2026-04-29T08:37:42+00:00",
+      "last_success_at": "2026-04-29T08:37:42+00:00",
       "editions": [
         "intl"
       ]
@@ -4631,8 +4631,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:51:48+00:00",
-      "last_success_at": "2026-04-29T07:51:48+00:00",
+      "fetched_at": "2026-04-29T08:37:43+00:00",
+      "last_success_at": "2026-04-29T08:37:43+00:00",
       "editions": [
         "intl"
       ]
@@ -4658,11 +4658,11 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:51:49+00:00",
+      "fetched_at": "2026-04-29T08:37:43+00:00",
       "warnings": [
         "linux-x64: 没有匹配 asset pattern 'flameshot-*-debian-12-amd64.deb'"
       ],
-      "last_success_at": "2026-04-29T07:51:49+00:00",
+      "last_success_at": "2026-04-29T08:37:43+00:00",
       "editions": [
         "intl"
       ]
@@ -4688,8 +4688,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:51:49+00:00",
-      "last_success_at": "2026-04-29T07:51:49+00:00",
+      "fetched_at": "2026-04-29T08:37:43+00:00",
+      "last_success_at": "2026-04-29T08:37:43+00:00",
       "editions": [
         "intl"
       ]
@@ -4715,8 +4715,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:51:49+00:00",
-      "last_success_at": "2026-04-29T07:51:49+00:00",
+      "fetched_at": "2026-04-29T08:37:44+00:00",
+      "last_success_at": "2026-04-29T08:37:44+00:00",
       "editions": [
         "intl"
       ]
@@ -4742,8 +4742,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:51:50+00:00",
-      "last_success_at": "2026-04-29T07:51:50+00:00",
+      "fetched_at": "2026-04-29T08:37:44+00:00",
+      "last_success_at": "2026-04-29T08:37:44+00:00",
       "editions": [
         "intl"
       ]
@@ -4769,8 +4769,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:51:50+00:00",
-      "last_success_at": "2026-04-29T07:51:50+00:00",
+      "fetched_at": "2026-04-29T08:37:45+00:00",
+      "last_success_at": "2026-04-29T08:37:45+00:00",
       "editions": [
         "intl"
       ]
@@ -4796,8 +4796,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:51:50+00:00",
-      "last_success_at": "2026-04-29T07:51:50+00:00",
+      "fetched_at": "2026-04-29T08:37:45+00:00",
+      "last_success_at": "2026-04-29T08:37:45+00:00",
       "editions": [
         "intl"
       ]
@@ -4823,12 +4823,12 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:51:50+00:00",
+      "fetched_at": "2026-04-29T08:37:45+00:00",
       "warnings": [
         "win-x64: 没有匹配 asset pattern 'tabby-*-x64-setup.exe'",
         "linux-x64: 没有匹配 asset pattern 'tabby-*-x86_64-linux.rpm'"
       ],
-      "last_success_at": "2026-04-29T07:51:50+00:00",
+      "last_success_at": "2026-04-29T08:37:45+00:00",
       "editions": [
         "intl"
       ]
@@ -4854,11 +4854,11 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:51:51+00:00",
+      "fetched_at": "2026-04-29T08:37:45+00:00",
       "warnings": [
         "win-x64: 没有匹配 asset pattern 'hyper-*-x64.exe'"
       ],
-      "last_success_at": "2026-04-29T07:51:51+00:00",
+      "last_success_at": "2026-04-29T08:37:45+00:00",
       "editions": [
         "intl"
       ]
@@ -4900,8 +4900,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:51:51+00:00",
-      "last_success_at": "2026-04-29T07:51:51+00:00",
+      "fetched_at": "2026-04-29T08:37:45+00:00",
+      "last_success_at": "2026-04-29T08:37:45+00:00",
       "editions": [
         "intl"
       ]
@@ -4943,8 +4943,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:51:51+00:00",
-      "last_success_at": "2026-04-29T07:51:51+00:00",
+      "fetched_at": "2026-04-29T08:37:46+00:00",
+      "last_success_at": "2026-04-29T08:37:46+00:00",
       "editions": [
         "intl"
       ]
@@ -4970,12 +4970,12 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:51:51+00:00",
+      "fetched_at": "2026-04-29T08:37:46+00:00",
       "warnings": [
         "mac-arm64: 没有匹配 asset pattern 'kopia-*-macos-arm64'",
         "linux-x64: 没有匹配 asset pattern 'kopia-*-linux-x64'"
       ],
-      "last_success_at": "2026-04-29T07:51:51+00:00",
+      "last_success_at": "2026-04-29T08:37:46+00:00",
       "editions": [
         "intl"
       ]
@@ -5017,8 +5017,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:51:52+00:00",
-      "last_success_at": "2026-04-29T07:51:52+00:00",
+      "fetched_at": "2026-04-29T08:37:46+00:00",
+      "last_success_at": "2026-04-29T08:37:46+00:00",
       "editions": [
         "intl"
       ]
@@ -5060,8 +5060,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:51:52+00:00",
-      "last_success_at": "2026-04-29T07:51:52+00:00",
+      "fetched_at": "2026-04-29T08:37:46+00:00",
+      "last_success_at": "2026-04-29T08:37:46+00:00",
       "editions": [
         "intl"
       ]
@@ -5103,8 +5103,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:51:52+00:00",
-      "last_success_at": "2026-04-29T07:51:52+00:00",
+      "fetched_at": "2026-04-29T08:37:46+00:00",
+      "last_success_at": "2026-04-29T08:37:46+00:00",
       "editions": [
         "intl"
       ]
@@ -5146,8 +5146,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:51:52+00:00",
-      "last_success_at": "2026-04-29T07:51:52+00:00",
+      "fetched_at": "2026-04-29T08:37:46+00:00",
+      "last_success_at": "2026-04-29T08:37:46+00:00",
       "editions": [
         "intl"
       ]
@@ -5189,8 +5189,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:51:53+00:00",
-      "last_success_at": "2026-04-29T07:51:53+00:00",
+      "fetched_at": "2026-04-29T08:37:47+00:00",
+      "last_success_at": "2026-04-29T08:37:47+00:00",
       "editions": [
         "intl"
       ]
@@ -5224,11 +5224,11 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:51:53+00:00",
+      "fetched_at": "2026-04-29T08:37:47+00:00",
       "warnings": [
         "win-x64: 没有匹配 asset pattern 'slides_*_windows_amd64.tar.gz'"
       ],
-      "last_success_at": "2026-04-29T07:51:53+00:00",
+      "last_success_at": "2026-04-29T08:37:47+00:00",
       "editions": [
         "intl"
       ]
@@ -5270,8 +5270,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:51:53+00:00",
-      "last_success_at": "2026-04-29T07:51:53+00:00",
+      "fetched_at": "2026-04-29T08:37:47+00:00",
+      "last_success_at": "2026-04-29T08:37:47+00:00",
       "editions": [
         "intl"
       ]
@@ -5313,8 +5313,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:51:53+00:00",
-      "last_success_at": "2026-04-29T07:51:53+00:00",
+      "fetched_at": "2026-04-29T08:37:47+00:00",
+      "last_success_at": "2026-04-29T08:37:47+00:00",
       "editions": [
         "intl"
       ]
@@ -5356,8 +5356,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:51:53+00:00",
-      "last_success_at": "2026-04-29T07:51:53+00:00",
+      "fetched_at": "2026-04-29T08:37:47+00:00",
+      "last_success_at": "2026-04-29T08:37:47+00:00",
       "editions": [
         "intl"
       ]
@@ -5399,8 +5399,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:51:53+00:00",
-      "last_success_at": "2026-04-29T07:51:53+00:00",
+      "fetched_at": "2026-04-29T08:37:47+00:00",
+      "last_success_at": "2026-04-29T08:37:47+00:00",
       "editions": [
         "intl"
       ]
@@ -5442,8 +5442,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:51:53+00:00",
-      "last_success_at": "2026-04-29T07:51:53+00:00",
+      "fetched_at": "2026-04-29T08:37:47+00:00",
+      "last_success_at": "2026-04-29T08:37:47+00:00",
       "editions": [
         "intl"
       ]
@@ -5477,11 +5477,11 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:51:54+00:00",
+      "fetched_at": "2026-04-29T08:37:47+00:00",
       "warnings": [
         "linux-x64: 没有匹配 asset pattern 'clash-verge_*_amd64.deb'"
       ],
-      "last_success_at": "2026-04-29T07:51:54+00:00",
+      "last_success_at": "2026-04-29T08:37:47+00:00",
       "editions": [
         "intl"
       ]
@@ -5507,11 +5507,11 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:51:54+00:00",
+      "fetched_at": "2026-04-29T08:37:48+00:00",
       "warnings": [
         "mac-arm64: 没有匹配 asset pattern 'Outline-Client.dmg'"
       ],
-      "last_success_at": "2026-04-29T07:51:54+00:00",
+      "last_success_at": "2026-04-29T08:37:48+00:00",
       "editions": [
         "intl"
       ]
@@ -5545,11 +5545,11 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:51:54+00:00",
+      "fetched_at": "2026-04-29T08:37:48+00:00",
       "warnings": [
         "win-x64: 没有匹配 asset pattern 'netbird_*_windows_amd64.zip'"
       ],
-      "last_success_at": "2026-04-29T07:51:54+00:00",
+      "last_success_at": "2026-04-29T08:37:48+00:00",
       "editions": [
         "intl"
       ]
@@ -5583,8 +5583,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:51:55+00:00",
-      "last_success_at": "2026-04-29T07:51:55+00:00",
+      "fetched_at": "2026-04-29T08:37:47+00:00",
+      "last_success_at": "2026-04-29T08:37:47+00:00",
       "editions": [
         "intl"
       ]
@@ -5618,11 +5618,11 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:51:55+00:00",
+      "fetched_at": "2026-04-29T08:37:49+00:00",
       "warnings": [
         "mac-arm64: 没有匹配 asset pattern 'AdGuardHome_darwin_arm64.tar.gz'"
       ],
-      "last_success_at": "2026-04-29T07:51:55+00:00",
+      "last_success_at": "2026-04-29T08:37:49+00:00",
       "editions": [
         "intl"
       ]
@@ -5648,8 +5648,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:51:55+00:00",
-      "last_success_at": "2026-04-29T07:51:55+00:00",
+      "fetched_at": "2026-04-29T08:37:49+00:00",
+      "last_success_at": "2026-04-29T08:37:49+00:00",
       "editions": [
         "intl"
       ]
@@ -5683,11 +5683,11 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:51:56+00:00",
+      "fetched_at": "2026-04-29T08:37:49+00:00",
       "warnings": [
         "mac-arm64: 没有匹配 asset pattern 'speedtest-go_*_darwin_arm64.zip'"
       ],
-      "last_success_at": "2026-04-29T07:51:56+00:00",
+      "last_success_at": "2026-04-29T08:37:49+00:00",
       "editions": [
         "intl"
       ]
@@ -5713,12 +5713,12 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:51:56+00:00",
+      "fetched_at": "2026-04-29T08:37:49+00:00",
       "warnings": [
         "win-x64: 没有匹配 asset pattern 'PrismLauncher-*-Windows-MSVC-Setup.exe'",
         "mac-arm64: 没有匹配 asset pattern 'PrismLauncher-*-macOS-arm64.dmg'"
       ],
-      "last_success_at": "2026-04-29T07:51:56+00:00",
+      "last_success_at": "2026-04-29T08:37:49+00:00",
       "editions": [
         "intl"
       ]
@@ -5744,8 +5744,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:51:56+00:00",
-      "last_success_at": "2026-04-29T07:51:56+00:00",
+      "fetched_at": "2026-04-29T08:37:49+00:00",
+      "last_success_at": "2026-04-29T08:37:49+00:00",
       "editions": [
         "intl"
       ]
@@ -5771,8 +5771,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:51:57+00:00",
-      "last_success_at": "2026-04-29T07:51:57+00:00",
+      "fetched_at": "2026-04-29T08:37:50+00:00",
+      "last_success_at": "2026-04-29T08:37:50+00:00",
       "editions": [
         "intl"
       ]
@@ -5798,12 +5798,12 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:51:57+00:00",
+      "fetched_at": "2026-04-29T08:37:50+00:00",
       "warnings": [
         "win-x64: 没有匹配 asset pattern 'xemu-win-*-zip.zip'",
         "mac-arm64: 没有匹配 asset pattern 'xemu-macos-*-arm64.tar.gz'"
       ],
-      "last_success_at": "2026-04-29T07:51:57+00:00",
+      "last_success_at": "2026-04-29T08:37:50+00:00",
       "editions": [
         "intl"
       ]
@@ -5829,11 +5829,11 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:51:57+00:00",
+      "fetched_at": "2026-04-29T08:37:50+00:00",
       "warnings": [
         "mac-arm64: 没有匹配 asset pattern 'mGBA-*-osx-arm64.tar.xz'"
       ],
-      "last_success_at": "2026-04-29T07:51:57+00:00",
+      "last_success_at": "2026-04-29T08:37:50+00:00",
       "editions": [
         "intl"
       ]
@@ -5867,11 +5867,11 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:51:58+00:00",
+      "fetched_at": "2026-04-29T08:37:51+00:00",
       "warnings": [
         "linux-x64: 没有匹配 asset pattern 'OpenMW-*-Linux-generic64.tar.gz'"
       ],
-      "last_success_at": "2026-04-29T07:51:58+00:00",
+      "last_success_at": "2026-04-29T08:37:51+00:00",
       "editions": [
         "intl"
       ]
@@ -5897,8 +5897,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:52:00+00:00",
-      "last_success_at": "2026-04-29T07:52:00+00:00",
+      "fetched_at": "2026-04-29T08:37:53+00:00",
+      "last_success_at": "2026-04-29T08:37:53+00:00",
       "editions": [
         "intl"
       ]
@@ -5932,8 +5932,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:52:00+00:00",
-      "last_success_at": "2026-04-29T07:52:00+00:00",
+      "fetched_at": "2026-04-29T08:37:53+00:00",
+      "last_success_at": "2026-04-29T08:37:53+00:00",
       "editions": [
         "intl"
       ]
@@ -5959,11 +5959,11 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:52:01+00:00",
+      "fetched_at": "2026-04-29T08:37:53+00:00",
       "warnings": [
         "mac-arm64: 没有匹配 asset pattern 'lmms-*-macos-arm64.dmg'"
       ],
-      "last_success_at": "2026-04-29T07:52:01+00:00",
+      "last_success_at": "2026-04-29T08:37:53+00:00",
       "editions": [
         "intl"
       ]
@@ -5989,8 +5989,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:52:01+00:00",
-      "last_success_at": "2026-04-29T07:52:01+00:00",
+      "fetched_at": "2026-04-29T08:37:53+00:00",
+      "last_success_at": "2026-04-29T08:37:53+00:00",
       "editions": [
         "intl"
       ]
@@ -6016,8 +6016,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:52:01+00:00",
-      "last_success_at": "2026-04-29T07:52:01+00:00",
+      "fetched_at": "2026-04-29T08:37:54+00:00",
+      "last_success_at": "2026-04-29T08:37:54+00:00",
       "editions": [
         "intl"
       ]
@@ -6043,11 +6043,11 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:52:01+00:00",
+      "fetched_at": "2026-04-29T08:37:54+00:00",
       "warnings": [
         "mac-arm64: 没有匹配 asset pattern 'Natron-*-macOS-arm64.dmg'"
       ],
-      "last_success_at": "2026-04-29T07:52:01+00:00",
+      "last_success_at": "2026-04-29T08:37:54+00:00",
       "editions": [
         "intl"
       ]
@@ -6081,8 +6081,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:52:02+00:00",
-      "last_success_at": "2026-04-29T07:52:02+00:00",
+      "fetched_at": "2026-04-29T08:37:54+00:00",
+      "last_success_at": "2026-04-29T08:37:54+00:00",
       "editions": [
         "intl"
       ]
@@ -6124,8 +6124,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:52:02+00:00",
-      "last_success_at": "2026-04-29T07:52:02+00:00",
+      "fetched_at": "2026-04-29T08:37:54+00:00",
+      "last_success_at": "2026-04-29T08:37:54+00:00",
       "editions": [
         "intl"
       ]
@@ -6151,12 +6151,12 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:52:02+00:00",
+      "fetched_at": "2026-04-29T08:37:54+00:00",
       "warnings": [
         "win-x64: 没有匹配 asset pattern 'Anytype-*-x64.exe'",
         "linux-x64: 没有匹配 asset pattern 'Anytype-*-amd64.deb'"
       ],
-      "last_success_at": "2026-04-29T07:52:02+00:00",
+      "last_success_at": "2026-04-29T08:37:54+00:00",
       "editions": [
         "intl"
       ]
@@ -6198,8 +6198,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:52:02+00:00",
-      "last_success_at": "2026-04-29T07:52:02+00:00",
+      "fetched_at": "2026-04-29T08:37:54+00:00",
+      "last_success_at": "2026-04-29T08:37:54+00:00",
       "editions": [
         "intl"
       ]
@@ -6225,12 +6225,12 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:52:03+00:00",
+      "fetched_at": "2026-04-29T08:37:54+00:00",
       "warnings": [
         "mac-arm64: 没有匹配 asset pattern 'draw.io-*-arm64.dmg'",
         "linux-x64: 没有匹配 asset pattern 'draw.io-*-x86_64.rpm'"
       ],
-      "last_success_at": "2026-04-29T07:52:03+00:00",
+      "last_success_at": "2026-04-29T08:37:54+00:00",
       "editions": [
         "intl"
       ]
@@ -6256,12 +6256,12 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:52:03+00:00",
+      "fetched_at": "2026-04-29T08:37:55+00:00",
       "warnings": [
         "win-x64: 没有匹配 asset pattern 'beekeeper-studio-*-win.exe'",
         "linux-x64: 没有匹配 asset pattern 'beekeeper-studio-*-amd64.deb'"
       ],
-      "last_success_at": "2026-04-29T07:52:03+00:00",
+      "last_success_at": "2026-04-29T08:37:55+00:00",
       "editions": [
         "intl"
       ]
@@ -6287,12 +6287,12 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:52:03+00:00",
+      "fetched_at": "2026-04-29T08:37:55+00:00",
       "warnings": [
         "mac-arm64: 没有匹配 asset pattern 'sioyek-apple-silicon.dmg'",
         "linux-x64: 没有匹配 asset pattern 'sioyek-release-linux-portable.tar.gz'"
       ],
-      "last_success_at": "2026-04-29T07:52:03+00:00",
+      "last_success_at": "2026-04-29T08:37:55+00:00",
       "editions": [
         "intl"
       ]
@@ -6326,11 +6326,11 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:52:03+00:00",
+      "fetched_at": "2026-04-29T08:37:55+00:00",
       "warnings": [
         "win-x64: 没有匹配 asset pattern 'Pomatez-*-x64.exe'"
       ],
-      "last_success_at": "2026-04-29T07:52:03+00:00",
+      "last_success_at": "2026-04-29T08:37:55+00:00",
       "editions": [
         "intl"
       ]
@@ -6364,11 +6364,11 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:52:04+00:00",
+      "fetched_at": "2026-04-29T08:37:56+00:00",
       "warnings": [
         "win-x64: 没有匹配 asset pattern 'local-ai-*-windows-amd64.exe'"
       ],
-      "last_success_at": "2026-04-29T07:52:04+00:00",
+      "last_success_at": "2026-04-29T08:37:56+00:00",
       "editions": [
         "intl"
       ]
@@ -6394,8 +6394,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:52:05+00:00",
-      "last_success_at": "2026-04-29T07:52:05+00:00",
+      "fetched_at": "2026-04-29T08:37:56+00:00",
+      "last_success_at": "2026-04-29T08:37:56+00:00",
       "editions": [
         "intl"
       ]
@@ -6429,11 +6429,11 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:52:05+00:00",
+      "fetched_at": "2026-04-29T08:37:57+00:00",
       "warnings": [
         "linux-x64: 没有匹配 asset pattern 'Buzz-*-linux-x86_64.AppImage'"
       ],
-      "last_success_at": "2026-04-29T07:52:05+00:00",
+      "last_success_at": "2026-04-29T08:37:57+00:00",
       "editions": [
         "intl"
       ]
@@ -6475,8 +6475,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:52:06+00:00",
-      "last_success_at": "2026-04-29T07:52:06+00:00",
+      "fetched_at": "2026-04-29T08:37:57+00:00",
+      "last_success_at": "2026-04-29T08:37:57+00:00",
       "editions": [
         "intl"
       ]
@@ -6518,8 +6518,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:52:06+00:00",
-      "last_success_at": "2026-04-29T07:52:06+00:00",
+      "fetched_at": "2026-04-29T08:37:57+00:00",
+      "last_success_at": "2026-04-29T08:37:57+00:00",
       "editions": [
         "intl"
       ]
@@ -6561,8 +6561,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:52:07+00:00",
-      "last_success_at": "2026-04-29T07:52:07+00:00",
+      "fetched_at": "2026-04-29T08:37:58+00:00",
+      "last_success_at": "2026-04-29T08:37:58+00:00",
       "editions": [
         "intl"
       ]
@@ -6604,8 +6604,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:52:07+00:00",
-      "last_success_at": "2026-04-29T07:52:07+00:00",
+      "fetched_at": "2026-04-29T08:37:58+00:00",
+      "last_success_at": "2026-04-29T08:37:58+00:00",
       "editions": [
         "intl"
       ]
@@ -6631,8 +6631,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:52:07+00:00",
-      "last_success_at": "2026-04-29T07:52:07+00:00",
+      "fetched_at": "2026-04-29T08:37:59+00:00",
+      "last_success_at": "2026-04-29T08:37:59+00:00",
       "editions": [
         "intl"
       ]
@@ -6674,8 +6674,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:52:08+00:00",
-      "last_success_at": "2026-04-29T07:52:08+00:00",
+      "fetched_at": "2026-04-29T08:37:59+00:00",
+      "last_success_at": "2026-04-29T08:37:59+00:00",
       "editions": [
         "intl"
       ]
@@ -6717,8 +6717,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:52:08+00:00",
-      "last_success_at": "2026-04-29T07:52:08+00:00",
+      "fetched_at": "2026-04-29T08:37:59+00:00",
+      "last_success_at": "2026-04-29T08:37:59+00:00",
       "editions": [
         "intl"
       ]
@@ -6760,8 +6760,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:52:08+00:00",
-      "last_success_at": "2026-04-29T07:52:08+00:00",
+      "fetched_at": "2026-04-29T08:37:59+00:00",
+      "last_success_at": "2026-04-29T08:37:59+00:00",
       "editions": [
         "intl"
       ]
@@ -6803,8 +6803,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:52:08+00:00",
-      "last_success_at": "2026-04-29T07:52:08+00:00",
+      "fetched_at": "2026-04-29T08:37:59+00:00",
+      "last_success_at": "2026-04-29T08:37:59+00:00",
       "editions": [
         "intl"
       ]
@@ -6830,12 +6830,12 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:52:09+00:00",
+      "fetched_at": "2026-04-29T08:38:00+00:00",
       "warnings": [
         "win-x64: 没有匹配 asset pattern 'navi-*-x86_64-pc-windows-msvc.zip'",
         "mac-arm64: 没有匹配 asset pattern 'navi-*-aarch64-apple-darwin.tar.gz'"
       ],
-      "last_success_at": "2026-04-29T07:52:09+00:00",
+      "last_success_at": "2026-04-29T08:38:00+00:00",
       "editions": [
         "intl"
       ]
@@ -6869,11 +6869,11 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:52:09+00:00",
+      "fetched_at": "2026-04-29T08:38:00+00:00",
       "warnings": [
         "win-x64: 没有匹配 asset pattern 'xcp-*-x86_64-pc-windows-msvc.zip'"
       ],
-      "last_success_at": "2026-04-29T07:52:09+00:00",
+      "last_success_at": "2026-04-29T08:38:00+00:00",
       "editions": [
         "intl"
       ]
@@ -6899,8 +6899,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:52:09+00:00",
-      "last_success_at": "2026-04-29T07:52:09+00:00",
+      "fetched_at": "2026-04-29T08:38:00+00:00",
+      "last_success_at": "2026-04-29T08:38:00+00:00",
       "editions": [
         "intl"
       ]
@@ -6926,8 +6926,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:52:09+00:00",
-      "last_success_at": "2026-04-29T07:52:09+00:00",
+      "fetched_at": "2026-04-29T08:38:00+00:00",
+      "last_success_at": "2026-04-29T08:38:00+00:00",
       "editions": [
         "intl"
       ]
@@ -6969,8 +6969,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:52:10+00:00",
-      "last_success_at": "2026-04-29T07:52:10+00:00",
+      "fetched_at": "2026-04-29T08:38:00+00:00",
+      "last_success_at": "2026-04-29T08:38:00+00:00",
       "editions": [
         "intl"
       ]
@@ -7012,8 +7012,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:52:10+00:00",
-      "last_success_at": "2026-04-29T07:52:10+00:00",
+      "fetched_at": "2026-04-29T08:38:00+00:00",
+      "last_success_at": "2026-04-29T08:38:00+00:00",
       "editions": [
         "intl"
       ]
@@ -7039,8 +7039,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:52:10+00:00",
-      "last_success_at": "2026-04-29T07:52:10+00:00",
+      "fetched_at": "2026-04-29T08:38:01+00:00",
+      "last_success_at": "2026-04-29T08:38:01+00:00",
       "editions": [
         "intl"
       ]
@@ -7066,50 +7066,1586 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T07:52:10+00:00",
-      "last_success_at": "2026-04-29T07:52:10+00:00",
+      "fetched_at": "2026-04-29T08:38:01+00:00",
+      "last_success_at": "2026-04-29T08:38:01+00:00",
+      "editions": [
+        "intl"
+      ]
+    },
+    {
+      "id": "edge",
+      "name": "Microsoft Edge",
+      "version": "2026-04-29",
+      "source": "Official Microsoft Edge download page; no public version API",
+      "version_kind": "sync_date",
+      "version_source": "UTC sync date; no public version API",
+      "category": "Browsers",
+      "homepage": "https://www.microsoft.com/edge/download",
+      "released_at": null,
+      "notes_url": null,
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://www.microsoft.com/edge/download",
+          "link_kind": "landing_page",
+          "filename": null,
+          "size": null,
+          "sha256": null
+        },
+        {
+          "platform": "mac-universal",
+          "url": "https://www.microsoft.com/edge/download",
+          "link_kind": "landing_page",
+          "filename": null,
+          "size": null,
+          "sha256": null
+        },
+        {
+          "platform": "linux-x64",
+          "url": "https://www.microsoft.com/edge/download",
+          "link_kind": "landing_page",
+          "filename": null,
+          "size": null,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-04-29T08:38:00+00:00",
+      "last_success_at": "2026-04-29T08:38:00+00:00",
+      "editions": [
+        "intl"
+      ]
+    },
+    {
+      "id": "opera",
+      "name": "Opera Browser",
+      "version": "2026-04-29",
+      "source": "Official Opera download page; no public version API",
+      "version_kind": "sync_date",
+      "version_source": "UTC sync date; no public version API",
+      "category": "Browsers",
+      "homepage": "https://www.opera.com/download",
+      "released_at": null,
+      "notes_url": null,
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://www.opera.com/download",
+          "link_kind": "landing_page",
+          "filename": null,
+          "size": null,
+          "sha256": null
+        },
+        {
+          "platform": "mac-universal",
+          "url": "https://www.opera.com/download",
+          "link_kind": "landing_page",
+          "filename": null,
+          "size": null,
+          "sha256": null
+        },
+        {
+          "platform": "linux-x64",
+          "url": "https://www.opera.com/download",
+          "link_kind": "landing_page",
+          "filename": null,
+          "size": null,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-04-29T08:38:00+00:00",
+      "last_success_at": "2026-04-29T08:38:00+00:00",
+      "editions": [
+        "intl"
+      ]
+    },
+    {
+      "id": "vivaldi",
+      "name": "Vivaldi Browser",
+      "version": "2026-04-29",
+      "source": "Official Vivaldi download page; no public version API",
+      "version_kind": "sync_date",
+      "version_source": "UTC sync date; no public version API",
+      "category": "Browsers",
+      "homepage": "https://vivaldi.com/download/",
+      "released_at": null,
+      "notes_url": null,
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://vivaldi.com/download/",
+          "link_kind": "landing_page",
+          "filename": null,
+          "size": null,
+          "sha256": null
+        },
+        {
+          "platform": "mac-universal",
+          "url": "https://vivaldi.com/download/",
+          "link_kind": "landing_page",
+          "filename": null,
+          "size": null,
+          "sha256": null
+        },
+        {
+          "platform": "linux-x64",
+          "url": "https://vivaldi.com/download/",
+          "link_kind": "landing_page",
+          "filename": null,
+          "size": null,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-04-29T08:38:00+00:00",
+      "last_success_at": "2026-04-29T08:38:00+00:00",
+      "editions": [
+        "intl"
+      ]
+    },
+    {
+      "id": "tor-browser",
+      "name": "Tor Browser",
+      "version": "2026-04-29",
+      "source": "Official Tor Project download page; no public version API",
+      "version_kind": "sync_date",
+      "version_source": "UTC sync date; no public version API",
+      "category": "Browsers",
+      "homepage": "https://www.torproject.org/download/",
+      "released_at": null,
+      "notes_url": null,
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://www.torproject.org/download/",
+          "link_kind": "landing_page",
+          "filename": null,
+          "size": null,
+          "sha256": null
+        },
+        {
+          "platform": "mac-universal",
+          "url": "https://www.torproject.org/download/",
+          "link_kind": "landing_page",
+          "filename": null,
+          "size": null,
+          "sha256": null
+        },
+        {
+          "platform": "linux-x64",
+          "url": "https://www.torproject.org/download/",
+          "link_kind": "landing_page",
+          "filename": null,
+          "size": null,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-04-29T08:38:00+00:00",
+      "last_success_at": "2026-04-29T08:38:00+00:00",
+      "editions": [
+        "intl"
+      ]
+    },
+    {
+      "id": "librewolf",
+      "name": "LibreWolf",
+      "version": "2026-04-29",
+      "source": "Official LibreWolf installation page; no public version API",
+      "version_kind": "sync_date",
+      "version_source": "UTC sync date; no public version API",
+      "category": "Browsers",
+      "homepage": "https://librewolf.net/installation/",
+      "released_at": null,
+      "notes_url": null,
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://librewolf.net/installation/",
+          "link_kind": "landing_page",
+          "filename": null,
+          "size": null,
+          "sha256": null
+        },
+        {
+          "platform": "mac-universal",
+          "url": "https://librewolf.net/installation/",
+          "link_kind": "landing_page",
+          "filename": null,
+          "size": null,
+          "sha256": null
+        },
+        {
+          "platform": "linux-x64",
+          "url": "https://librewolf.net/installation/",
+          "link_kind": "landing_page",
+          "filename": null,
+          "size": null,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-04-29T08:38:00+00:00",
+      "last_success_at": "2026-04-29T08:38:00+00:00",
+      "editions": [
+        "intl"
+      ]
+    },
+    {
+      "id": "mullvad-browser",
+      "name": "Mullvad Browser",
+      "version": "2026-04-29",
+      "source": "Official Mullvad Browser download page; no public version API",
+      "version_kind": "sync_date",
+      "version_source": "UTC sync date; no public version API",
+      "category": "Browsers",
+      "homepage": "https://mullvad.net/en/browser",
+      "released_at": null,
+      "notes_url": null,
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://mullvad.net/en/browser",
+          "link_kind": "landing_page",
+          "filename": null,
+          "size": null,
+          "sha256": null
+        },
+        {
+          "platform": "mac-universal",
+          "url": "https://mullvad.net/en/browser",
+          "link_kind": "landing_page",
+          "filename": null,
+          "size": null,
+          "sha256": null
+        },
+        {
+          "platform": "linux-x64",
+          "url": "https://mullvad.net/en/browser",
+          "link_kind": "landing_page",
+          "filename": null,
+          "size": null,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-04-29T08:38:00+00:00",
+      "last_success_at": "2026-04-29T08:38:00+00:00",
+      "editions": [
+        "intl"
+      ]
+    },
+    {
+      "id": "microsoft-teams",
+      "name": "Microsoft Teams",
+      "version": "2026-04-29",
+      "source": "Official Microsoft Teams download page; no public version API",
+      "version_kind": "sync_date",
+      "version_source": "UTC sync date; no public version API",
+      "category": "Messaging",
+      "homepage": "https://www.microsoft.com/microsoft-teams/download-app",
+      "released_at": null,
+      "notes_url": null,
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://www.microsoft.com/microsoft-teams/download-app",
+          "link_kind": "landing_page",
+          "filename": null,
+          "size": null,
+          "sha256": null
+        },
+        {
+          "platform": "mac-universal",
+          "url": "https://www.microsoft.com/microsoft-teams/download-app",
+          "link_kind": "landing_page",
+          "filename": null,
+          "size": null,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-04-29T08:38:00+00:00",
+      "last_success_at": "2026-04-29T08:38:00+00:00",
+      "editions": [
+        "intl"
+      ]
+    },
+    {
+      "id": "whatsapp",
+      "name": "WhatsApp",
+      "version": "2026-04-29",
+      "source": "Official WhatsApp download page; no public version API",
+      "version_kind": "sync_date",
+      "version_source": "UTC sync date; no public version API",
+      "category": "Messaging",
+      "homepage": "https://www.whatsapp.com/download",
+      "released_at": null,
+      "notes_url": null,
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://www.whatsapp.com/download",
+          "link_kind": "landing_page",
+          "filename": null,
+          "size": null,
+          "sha256": null
+        },
+        {
+          "platform": "mac-universal",
+          "url": "https://www.whatsapp.com/download",
+          "link_kind": "landing_page",
+          "filename": null,
+          "size": null,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-04-29T08:38:00+00:00",
+      "last_success_at": "2026-04-29T08:38:00+00:00",
+      "editions": [
+        "intl"
+      ]
+    },
+    {
+      "id": "thunderbird",
+      "name": "Thunderbird",
+      "version": "2026-04-29",
+      "source": "Official Thunderbird download page; no public version API",
+      "version_kind": "sync_date",
+      "version_source": "UTC sync date; no public version API",
+      "category": "Messaging",
+      "homepage": "https://www.thunderbird.net/thunderbird/all/",
+      "released_at": null,
+      "notes_url": null,
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://www.thunderbird.net/thunderbird/all/",
+          "link_kind": "landing_page",
+          "filename": null,
+          "size": null,
+          "sha256": null
+        },
+        {
+          "platform": "mac-universal",
+          "url": "https://www.thunderbird.net/thunderbird/all/",
+          "link_kind": "landing_page",
+          "filename": null,
+          "size": null,
+          "sha256": null
+        },
+        {
+          "platform": "linux-x64",
+          "url": "https://www.thunderbird.net/thunderbird/all/",
+          "link_kind": "landing_page",
+          "filename": null,
+          "size": null,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-04-29T08:38:00+00:00",
+      "last_success_at": "2026-04-29T08:38:00+00:00",
+      "editions": [
+        "intl"
+      ]
+    },
+    {
+      "id": "skype",
+      "name": "Skype",
+      "version": "2026-04-29",
+      "source": "Official Skype download page; no public version API",
+      "version_kind": "sync_date",
+      "version_source": "UTC sync date; no public version API",
+      "category": "Messaging",
+      "homepage": "https://www.skype.com/get-skype/",
+      "released_at": null,
+      "notes_url": null,
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://www.skype.com/get-skype/",
+          "link_kind": "landing_page",
+          "filename": null,
+          "size": null,
+          "sha256": null
+        },
+        {
+          "platform": "mac-universal",
+          "url": "https://www.skype.com/get-skype/",
+          "link_kind": "landing_page",
+          "filename": null,
+          "size": null,
+          "sha256": null
+        },
+        {
+          "platform": "linux-x64",
+          "url": "https://www.skype.com/get-skype/",
+          "link_kind": "landing_page",
+          "filename": null,
+          "size": null,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-04-29T08:38:00+00:00",
+      "last_success_at": "2026-04-29T08:38:00+00:00",
+      "editions": [
+        "intl"
+      ]
+    },
+    {
+      "id": "libreoffice",
+      "name": "LibreOffice",
+      "version": "2026-04-29",
+      "source": "Official LibreOffice download page; no public version API",
+      "version_kind": "sync_date",
+      "version_source": "UTC sync date; no public version API",
+      "category": "Productivity",
+      "homepage": "https://www.libreoffice.org/download/download-libreoffice/",
+      "released_at": null,
+      "notes_url": null,
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://www.libreoffice.org/download/download-libreoffice/",
+          "link_kind": "landing_page",
+          "filename": null,
+          "size": null,
+          "sha256": null
+        },
+        {
+          "platform": "mac-universal",
+          "url": "https://www.libreoffice.org/download/download-libreoffice/",
+          "link_kind": "landing_page",
+          "filename": null,
+          "size": null,
+          "sha256": null
+        },
+        {
+          "platform": "linux-x64",
+          "url": "https://www.libreoffice.org/download/download-libreoffice/",
+          "link_kind": "landing_page",
+          "filename": null,
+          "size": null,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-04-29T08:38:00+00:00",
+      "last_success_at": "2026-04-29T08:38:00+00:00",
+      "editions": [
+        "intl"
+      ]
+    },
+    {
+      "id": "zotero",
+      "name": "Zotero",
+      "version": "2026-04-29",
+      "source": "Official Zotero download page; no public version API",
+      "version_kind": "sync_date",
+      "version_source": "UTC sync date; no public version API",
+      "category": "Productivity",
+      "homepage": "https://www.zotero.org/download/",
+      "released_at": null,
+      "notes_url": null,
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://www.zotero.org/download/",
+          "link_kind": "landing_page",
+          "filename": null,
+          "size": null,
+          "sha256": null
+        },
+        {
+          "platform": "mac-universal",
+          "url": "https://www.zotero.org/download/",
+          "link_kind": "landing_page",
+          "filename": null,
+          "size": null,
+          "sha256": null
+        },
+        {
+          "platform": "linux-x64",
+          "url": "https://www.zotero.org/download/",
+          "link_kind": "landing_page",
+          "filename": null,
+          "size": null,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-04-29T08:38:00+00:00",
+      "last_success_at": "2026-04-29T08:38:00+00:00",
+      "editions": [
+        "intl"
+      ]
+    },
+    {
+      "id": "notion",
+      "name": "Notion",
+      "version": "2026-04-29",
+      "source": "Official Notion desktop download page; no public version API",
+      "version_kind": "sync_date",
+      "version_source": "UTC sync date; no public version API",
+      "category": "Productivity",
+      "homepage": "https://www.notion.com/desktop",
+      "released_at": null,
+      "notes_url": null,
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://www.notion.com/desktop",
+          "link_kind": "landing_page",
+          "filename": null,
+          "size": null,
+          "sha256": null
+        },
+        {
+          "platform": "mac-universal",
+          "url": "https://www.notion.com/desktop",
+          "link_kind": "landing_page",
+          "filename": null,
+          "size": null,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-04-29T08:38:00+00:00",
+      "last_success_at": "2026-04-29T08:38:00+00:00",
+      "editions": [
+        "intl"
+      ]
+    },
+    {
+      "id": "figma",
+      "name": "Figma Desktop",
+      "version": "2026-04-29",
+      "source": "Official Figma downloads page; no public version API",
+      "version_kind": "sync_date",
+      "version_source": "UTC sync date; no public version API",
+      "category": "Productivity",
+      "homepage": "https://www.figma.com/downloads/",
+      "released_at": null,
+      "notes_url": null,
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://www.figma.com/downloads/",
+          "link_kind": "landing_page",
+          "filename": null,
+          "size": null,
+          "sha256": null
+        },
+        {
+          "platform": "mac-universal",
+          "url": "https://www.figma.com/downloads/",
+          "link_kind": "landing_page",
+          "filename": null,
+          "size": null,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-04-29T08:38:00+00:00",
+      "last_success_at": "2026-04-29T08:38:00+00:00",
+      "editions": [
+        "intl"
+      ]
+    },
+    {
+      "id": "dropbox",
+      "name": "Dropbox",
+      "version": "2026-04-29",
+      "source": "Official Dropbox install page; no public version API",
+      "version_kind": "sync_date",
+      "version_source": "UTC sync date; no public version API",
+      "category": "Productivity",
+      "homepage": "https://www.dropbox.com/install",
+      "released_at": null,
+      "notes_url": null,
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://www.dropbox.com/install",
+          "link_kind": "landing_page",
+          "filename": null,
+          "size": null,
+          "sha256": null
+        },
+        {
+          "platform": "mac-universal",
+          "url": "https://www.dropbox.com/install",
+          "link_kind": "landing_page",
+          "filename": null,
+          "size": null,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-04-29T08:38:00+00:00",
+      "last_success_at": "2026-04-29T08:38:00+00:00",
+      "editions": [
+        "intl"
+      ]
+    },
+    {
+      "id": "google-drive",
+      "name": "Google Drive for Desktop",
+      "version": "2026-04-29",
+      "source": "Official Google Drive download page; no public version API",
+      "version_kind": "sync_date",
+      "version_source": "UTC sync date; no public version API",
+      "category": "Productivity",
+      "homepage": "https://www.google.com/drive/download/",
+      "released_at": null,
+      "notes_url": null,
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://www.google.com/drive/download/",
+          "link_kind": "landing_page",
+          "filename": null,
+          "size": null,
+          "sha256": null
+        },
+        {
+          "platform": "mac-universal",
+          "url": "https://www.google.com/drive/download/",
+          "link_kind": "landing_page",
+          "filename": null,
+          "size": null,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-04-29T08:38:00+00:00",
+      "last_success_at": "2026-04-29T08:38:00+00:00",
+      "editions": [
+        "intl"
+      ]
+    },
+    {
+      "id": "onedrive",
+      "name": "Microsoft OneDrive",
+      "version": "2026-04-29",
+      "source": "Official OneDrive download page; no public version API",
+      "version_kind": "sync_date",
+      "version_source": "UTC sync date; no public version API",
+      "category": "Productivity",
+      "homepage": "https://www.microsoft.com/microsoft-365/onedrive/download",
+      "released_at": null,
+      "notes_url": null,
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://www.microsoft.com/microsoft-365/onedrive/download",
+          "link_kind": "landing_page",
+          "filename": null,
+          "size": null,
+          "sha256": null
+        },
+        {
+          "platform": "mac-universal",
+          "url": "https://www.microsoft.com/microsoft-365/onedrive/download",
+          "link_kind": "landing_page",
+          "filename": null,
+          "size": null,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-04-29T08:38:00+00:00",
+      "last_success_at": "2026-04-29T08:38:00+00:00",
+      "editions": [
+        "intl"
+      ]
+    },
+    {
+      "id": "foxit-reader",
+      "name": "Foxit PDF Reader",
+      "version": "2026-04-29",
+      "source": "Official Foxit PDF Reader download page; no public version API",
+      "version_kind": "sync_date",
+      "version_source": "UTC sync date; no public version API",
+      "category": "Productivity",
+      "homepage": "https://www.foxit.com/pdf-reader/",
+      "released_at": null,
+      "notes_url": null,
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://www.foxit.com/pdf-reader/",
+          "link_kind": "landing_page",
+          "filename": null,
+          "size": null,
+          "sha256": null
+        },
+        {
+          "platform": "mac-universal",
+          "url": "https://www.foxit.com/pdf-reader/",
+          "link_kind": "landing_page",
+          "filename": null,
+          "size": null,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-04-29T08:38:00+00:00",
+      "last_success_at": "2026-04-29T08:38:00+00:00",
+      "editions": [
+        "intl"
+      ]
+    },
+    {
+      "id": "onepassword",
+      "name": "1Password",
+      "version": "2026-04-29",
+      "source": "Official 1Password downloads page; no public version API",
+      "version_kind": "sync_date",
+      "version_source": "UTC sync date; no public version API",
+      "category": "Security & Privacy",
+      "homepage": "https://1password.com/downloads/",
+      "released_at": null,
+      "notes_url": null,
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://1password.com/downloads/",
+          "link_kind": "landing_page",
+          "filename": null,
+          "size": null,
+          "sha256": null
+        },
+        {
+          "platform": "mac-universal",
+          "url": "https://1password.com/downloads/",
+          "link_kind": "landing_page",
+          "filename": null,
+          "size": null,
+          "sha256": null
+        },
+        {
+          "platform": "linux-x64",
+          "url": "https://1password.com/downloads/",
+          "link_kind": "landing_page",
+          "filename": null,
+          "size": null,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-04-29T08:38:00+00:00",
+      "last_success_at": "2026-04-29T08:38:00+00:00",
+      "editions": [
+        "intl"
+      ]
+    },
+    {
+      "id": "proton-vpn",
+      "name": "Proton VPN",
+      "version": "2026-04-29",
+      "source": "Official Proton VPN download page; no public version API",
+      "version_kind": "sync_date",
+      "version_source": "UTC sync date; no public version API",
+      "category": "Security & Privacy",
+      "homepage": "https://protonvpn.com/download",
+      "released_at": null,
+      "notes_url": null,
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://protonvpn.com/download",
+          "link_kind": "landing_page",
+          "filename": null,
+          "size": null,
+          "sha256": null
+        },
+        {
+          "platform": "mac-universal",
+          "url": "https://protonvpn.com/download",
+          "link_kind": "landing_page",
+          "filename": null,
+          "size": null,
+          "sha256": null
+        },
+        {
+          "platform": "linux-x64",
+          "url": "https://protonvpn.com/download",
+          "link_kind": "landing_page",
+          "filename": null,
+          "size": null,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-04-29T08:38:00+00:00",
+      "last_success_at": "2026-04-29T08:38:00+00:00",
+      "editions": [
+        "intl"
+      ]
+    },
+    {
+      "id": "malwarebytes",
+      "name": "Malwarebytes",
+      "version": "2026-04-29",
+      "source": "Official Malwarebytes download page; no public version API",
+      "version_kind": "sync_date",
+      "version_source": "UTC sync date; no public version API",
+      "category": "Security & Privacy",
+      "homepage": "https://www.malwarebytes.com/mwb-download",
+      "released_at": null,
+      "notes_url": null,
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://www.malwarebytes.com/mwb-download",
+          "link_kind": "landing_page",
+          "filename": null,
+          "size": null,
+          "sha256": null
+        },
+        {
+          "platform": "mac-universal",
+          "url": "https://www.malwarebytes.com/mwb-download",
+          "link_kind": "landing_page",
+          "filename": null,
+          "size": null,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-04-29T08:38:00+00:00",
+      "last_success_at": "2026-04-29T08:38:00+00:00",
+      "editions": [
+        "intl"
+      ]
+    },
+    {
+      "id": "adguard",
+      "name": "AdGuard",
+      "version": "2026-04-29",
+      "source": "Official AdGuard download page; no public version API",
+      "version_kind": "sync_date",
+      "version_source": "UTC sync date; no public version API",
+      "category": "Security & Privacy",
+      "homepage": "https://adguard.com/en/adguard-windows/overview.html",
+      "released_at": null,
+      "notes_url": null,
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://adguard.com/en/adguard-windows/overview.html",
+          "link_kind": "landing_page",
+          "filename": null,
+          "size": null,
+          "sha256": null
+        },
+        {
+          "platform": "mac-universal",
+          "url": "https://adguard.com/en/adguard-mac/overview.html",
+          "link_kind": "landing_page",
+          "filename": null,
+          "size": null,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-04-29T08:38:00+00:00",
+      "last_success_at": "2026-04-29T08:38:00+00:00",
+      "editions": [
+        "intl"
+      ]
+    },
+    {
+      "id": "docker-desktop",
+      "name": "Docker Desktop",
+      "version": "2026-04-29",
+      "source": "Official Docker Desktop download page; no public version API",
+      "version_kind": "sync_date",
+      "version_source": "UTC sync date; no public version API",
+      "category": "Developer Tools",
+      "homepage": "https://www.docker.com/products/docker-desktop/",
+      "released_at": null,
+      "notes_url": null,
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://www.docker.com/products/docker-desktop/",
+          "link_kind": "landing_page",
+          "filename": null,
+          "size": null,
+          "sha256": null
+        },
+        {
+          "platform": "mac-universal",
+          "url": "https://www.docker.com/products/docker-desktop/",
+          "link_kind": "landing_page",
+          "filename": null,
+          "size": null,
+          "sha256": null
+        },
+        {
+          "platform": "linux-x64",
+          "url": "https://www.docker.com/products/docker-desktop/",
+          "link_kind": "landing_page",
+          "filename": null,
+          "size": null,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-04-29T08:38:00+00:00",
+      "last_success_at": "2026-04-29T08:38:00+00:00",
+      "editions": [
+        "intl"
+      ]
+    },
+    {
+      "id": "postman",
+      "name": "Postman",
+      "version": "2026-04-29",
+      "source": "Official Postman downloads page; no public version API",
+      "version_kind": "sync_date",
+      "version_source": "UTC sync date; no public version API",
+      "category": "Developer Tools",
+      "homepage": "https://www.postman.com/downloads/",
+      "released_at": null,
+      "notes_url": null,
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://www.postman.com/downloads/",
+          "link_kind": "landing_page",
+          "filename": null,
+          "size": null,
+          "sha256": null
+        },
+        {
+          "platform": "mac-universal",
+          "url": "https://www.postman.com/downloads/",
+          "link_kind": "landing_page",
+          "filename": null,
+          "size": null,
+          "sha256": null
+        },
+        {
+          "platform": "linux-x64",
+          "url": "https://www.postman.com/downloads/",
+          "link_kind": "landing_page",
+          "filename": null,
+          "size": null,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-04-29T08:38:00+00:00",
+      "last_success_at": "2026-04-29T08:38:00+00:00",
+      "editions": [
+        "intl"
+      ]
+    },
+    {
+      "id": "cursor",
+      "name": "Cursor",
+      "version": "2026-04-29",
+      "source": "Official Cursor downloads page; no public version API",
+      "version_kind": "sync_date",
+      "version_source": "UTC sync date; no public version API",
+      "category": "Developer Tools",
+      "homepage": "https://cursor.com/downloads",
+      "released_at": null,
+      "notes_url": null,
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://cursor.com/downloads",
+          "link_kind": "landing_page",
+          "filename": null,
+          "size": null,
+          "sha256": null
+        },
+        {
+          "platform": "mac-universal",
+          "url": "https://cursor.com/downloads",
+          "link_kind": "landing_page",
+          "filename": null,
+          "size": null,
+          "sha256": null
+        },
+        {
+          "platform": "linux-x64",
+          "url": "https://cursor.com/downloads",
+          "link_kind": "landing_page",
+          "filename": null,
+          "size": null,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-04-29T08:38:00+00:00",
+      "last_success_at": "2026-04-29T08:38:00+00:00",
+      "editions": [
+        "intl"
+      ]
+    },
+    {
+      "id": "jetbrains-toolbox",
+      "name": "JetBrains Toolbox App",
+      "version": "2026-04-29",
+      "source": "Official JetBrains Toolbox download page; no public version API",
+      "version_kind": "sync_date",
+      "version_source": "UTC sync date; no public version API",
+      "category": "Developer Tools",
+      "homepage": "https://www.jetbrains.com/toolbox-app/",
+      "released_at": null,
+      "notes_url": null,
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://www.jetbrains.com/toolbox-app/",
+          "link_kind": "landing_page",
+          "filename": null,
+          "size": null,
+          "sha256": null
+        },
+        {
+          "platform": "mac-universal",
+          "url": "https://www.jetbrains.com/toolbox-app/",
+          "link_kind": "landing_page",
+          "filename": null,
+          "size": null,
+          "sha256": null
+        },
+        {
+          "platform": "linux-x64",
+          "url": "https://www.jetbrains.com/toolbox-app/",
+          "link_kind": "landing_page",
+          "filename": null,
+          "size": null,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-04-29T08:38:00+00:00",
+      "last_success_at": "2026-04-29T08:38:00+00:00",
+      "editions": [
+        "intl"
+      ]
+    },
+    {
+      "id": "virtualbox",
+      "name": "VirtualBox",
+      "version": "2026-04-29",
+      "source": "Official VirtualBox downloads page; no public version API",
+      "version_kind": "sync_date",
+      "version_source": "UTC sync date; no public version API",
+      "category": "Developer Tools",
+      "homepage": "https://www.virtualbox.org/wiki/Downloads",
+      "released_at": null,
+      "notes_url": null,
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://www.virtualbox.org/wiki/Downloads",
+          "link_kind": "landing_page",
+          "filename": null,
+          "size": null,
+          "sha256": null
+        },
+        {
+          "platform": "mac-universal",
+          "url": "https://www.virtualbox.org/wiki/Downloads",
+          "link_kind": "landing_page",
+          "filename": null,
+          "size": null,
+          "sha256": null
+        },
+        {
+          "platform": "linux-x64",
+          "url": "https://www.virtualbox.org/wiki/Downloads",
+          "link_kind": "landing_page",
+          "filename": null,
+          "size": null,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-04-29T08:38:00+00:00",
+      "last_success_at": "2026-04-29T08:38:00+00:00",
+      "editions": [
+        "intl"
+      ]
+    },
+    {
+      "id": "wireshark",
+      "name": "Wireshark",
+      "version": "2026-04-29",
+      "source": "Official Wireshark download page; no public version API",
+      "version_kind": "sync_date",
+      "version_source": "UTC sync date; no public version API",
+      "category": "Network & Proxy",
+      "homepage": "https://www.wireshark.org/download.html",
+      "released_at": null,
+      "notes_url": null,
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://www.wireshark.org/download.html",
+          "link_kind": "landing_page",
+          "filename": null,
+          "size": null,
+          "sha256": null
+        },
+        {
+          "platform": "mac-universal",
+          "url": "https://www.wireshark.org/download.html",
+          "link_kind": "landing_page",
+          "filename": null,
+          "size": null,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-04-29T08:38:00+00:00",
+      "last_success_at": "2026-04-29T08:38:00+00:00",
+      "editions": [
+        "intl"
+      ]
+    },
+    {
+      "id": "winscp",
+      "name": "WinSCP",
+      "version": "2026-04-29",
+      "source": "Official WinSCP download page; no public version API",
+      "version_kind": "sync_date",
+      "version_source": "UTC sync date; no public version API",
+      "category": "Network & Proxy",
+      "homepage": "https://winscp.net/eng/download.php",
+      "released_at": null,
+      "notes_url": null,
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://winscp.net/eng/download.php",
+          "link_kind": "landing_page",
+          "filename": null,
+          "size": null,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-04-29T08:38:00+00:00",
+      "last_success_at": "2026-04-29T08:38:00+00:00",
+      "editions": [
+        "intl"
+      ]
+    },
+    {
+      "id": "filezilla",
+      "name": "FileZilla Client",
+      "version": "2026-04-29",
+      "source": "Official FileZilla Client download page; no public version API",
+      "version_kind": "sync_date",
+      "version_source": "UTC sync date; no public version API",
+      "category": "Network & Proxy",
+      "homepage": "https://filezilla-project.org/download.php?show_all=1",
+      "released_at": null,
+      "notes_url": null,
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://filezilla-project.org/download.php?show_all=1",
+          "link_kind": "landing_page",
+          "filename": null,
+          "size": null,
+          "sha256": null
+        },
+        {
+          "platform": "mac-universal",
+          "url": "https://filezilla-project.org/download.php?show_all=1",
+          "link_kind": "landing_page",
+          "filename": null,
+          "size": null,
+          "sha256": null
+        },
+        {
+          "platform": "linux-x64",
+          "url": "https://filezilla-project.org/download.php?show_all=1",
+          "link_kind": "landing_page",
+          "filename": null,
+          "size": null,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-04-29T08:38:00+00:00",
+      "last_success_at": "2026-04-29T08:38:00+00:00",
+      "editions": [
+        "intl"
+      ]
+    },
+    {
+      "id": "sysinternals-suite",
+      "name": "Sysinternals Suite",
+      "version": "2026-04-29",
+      "source": "Official Microsoft Sysinternals download; suite version is not exposed as a public API",
+      "version_kind": "sync_date",
+      "version_source": "UTC sync date; no public version API",
+      "category": "System Utilities",
+      "homepage": "https://learn.microsoft.com/sysinternals/downloads/sysinternals-suite",
+      "released_at": null,
+      "notes_url": null,
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://download.sysinternals.com/files/SysinternalsSuite.zip",
+          "link_kind": "direct",
+          "filename": null,
+          "size": null,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-04-29T08:38:00+00:00",
+      "last_success_at": "2026-04-29T08:38:00+00:00",
+      "editions": [
+        "intl"
+      ]
+    },
+    {
+      "id": "winrar",
+      "name": "WinRAR",
+      "version": "2026-04-29",
+      "source": "Official WinRAR download page; no public version API",
+      "version_kind": "sync_date",
+      "version_source": "UTC sync date; no public version API",
+      "category": "Utilities",
+      "homepage": "https://www.win-rar.com/download.html",
+      "released_at": null,
+      "notes_url": null,
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://www.win-rar.com/download.html",
+          "link_kind": "landing_page",
+          "filename": null,
+          "size": null,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-04-29T08:38:00+00:00",
+      "last_success_at": "2026-04-29T08:38:00+00:00",
+      "editions": [
+        "intl"
+      ]
+    },
+    {
+      "id": "wiztree",
+      "name": "WizTree",
+      "version": "2026-04-29",
+      "source": "Official WizTree download page; no public version API",
+      "version_kind": "sync_date",
+      "version_source": "UTC sync date; no public version API",
+      "category": "System Utilities",
+      "homepage": "https://diskanalyzer.com/download",
+      "released_at": null,
+      "notes_url": null,
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://diskanalyzer.com/download",
+          "link_kind": "landing_page",
+          "filename": null,
+          "size": null,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-04-29T08:38:00+00:00",
+      "last_success_at": "2026-04-29T08:38:00+00:00",
+      "editions": [
+        "intl"
+      ]
+    },
+    {
+      "id": "teracopy",
+      "name": "TeraCopy",
+      "version": "2026-04-29",
+      "source": "Official TeraCopy download page; no public version API",
+      "version_kind": "sync_date",
+      "version_source": "UTC sync date; no public version API",
+      "category": "Utilities",
+      "homepage": "https://www.codesector.com/teracopy",
+      "released_at": null,
+      "notes_url": null,
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://www.codesector.com/teracopy",
+          "link_kind": "landing_page",
+          "filename": null,
+          "size": null,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-04-29T08:38:00+00:00",
+      "last_success_at": "2026-04-29T08:38:00+00:00",
+      "editions": [
+        "intl"
+      ]
+    },
+    {
+      "id": "anydesk",
+      "name": "AnyDesk",
+      "version": "2026-04-29",
+      "source": "Official AnyDesk downloads page; no public version API",
+      "version_kind": "sync_date",
+      "version_source": "UTC sync date; no public version API",
+      "category": "Utilities",
+      "homepage": "https://anydesk.com/en/downloads",
+      "released_at": null,
+      "notes_url": null,
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://anydesk.com/en/downloads",
+          "link_kind": "landing_page",
+          "filename": null,
+          "size": null,
+          "sha256": null
+        },
+        {
+          "platform": "mac-universal",
+          "url": "https://anydesk.com/en/downloads",
+          "link_kind": "landing_page",
+          "filename": null,
+          "size": null,
+          "sha256": null
+        },
+        {
+          "platform": "linux-x64",
+          "url": "https://anydesk.com/en/downloads",
+          "link_kind": "landing_page",
+          "filename": null,
+          "size": null,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-04-29T08:38:00+00:00",
+      "last_success_at": "2026-04-29T08:38:00+00:00",
+      "editions": [
+        "intl"
+      ]
+    },
+    {
+      "id": "teamviewer",
+      "name": "TeamViewer",
+      "version": "2026-04-29",
+      "source": "Official TeamViewer download page; no public version API",
+      "version_kind": "sync_date",
+      "version_source": "UTC sync date; no public version API",
+      "category": "Utilities",
+      "homepage": "https://www.teamviewer.com/en/download/",
+      "released_at": null,
+      "notes_url": null,
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://www.teamviewer.com/en/download/",
+          "link_kind": "landing_page",
+          "filename": null,
+          "size": null,
+          "sha256": null
+        },
+        {
+          "platform": "mac-universal",
+          "url": "https://www.teamviewer.com/en/download/",
+          "link_kind": "landing_page",
+          "filename": null,
+          "size": null,
+          "sha256": null
+        },
+        {
+          "platform": "linux-x64",
+          "url": "https://www.teamviewer.com/en/download/",
+          "link_kind": "landing_page",
+          "filename": null,
+          "size": null,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-04-29T08:38:00+00:00",
+      "last_success_at": "2026-04-29T08:38:00+00:00",
+      "editions": [
+        "intl"
+      ]
+    },
+    {
+      "id": "kodi",
+      "name": "Kodi",
+      "version": "2026-04-29",
+      "source": "Official Kodi download page; no public version API",
+      "version_kind": "sync_date",
+      "version_source": "UTC sync date; no public version API",
+      "category": "Media Players",
+      "homepage": "https://kodi.tv/download/",
+      "released_at": null,
+      "notes_url": null,
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://kodi.tv/download/",
+          "link_kind": "landing_page",
+          "filename": null,
+          "size": null,
+          "sha256": null
+        },
+        {
+          "platform": "mac-universal",
+          "url": "https://kodi.tv/download/",
+          "link_kind": "landing_page",
+          "filename": null,
+          "size": null,
+          "sha256": null
+        },
+        {
+          "platform": "linux-x64",
+          "url": "https://kodi.tv/download/",
+          "link_kind": "landing_page",
+          "filename": null,
+          "size": null,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-04-29T08:38:00+00:00",
+      "last_success_at": "2026-04-29T08:38:00+00:00",
+      "editions": [
+        "intl"
+      ]
+    },
+    {
+      "id": "plex",
+      "name": "Plex Media Server",
+      "version": "2026-04-29",
+      "source": "Official Plex Media Server download page; no public version API",
+      "version_kind": "sync_date",
+      "version_source": "UTC sync date; no public version API",
+      "category": "Media Players",
+      "homepage": "https://www.plex.tv/media-server-downloads/",
+      "released_at": null,
+      "notes_url": null,
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://www.plex.tv/media-server-downloads/",
+          "link_kind": "landing_page",
+          "filename": null,
+          "size": null,
+          "sha256": null
+        },
+        {
+          "platform": "mac-universal",
+          "url": "https://www.plex.tv/media-server-downloads/",
+          "link_kind": "landing_page",
+          "filename": null,
+          "size": null,
+          "sha256": null
+        },
+        {
+          "platform": "linux-x64",
+          "url": "https://www.plex.tv/media-server-downloads/",
+          "link_kind": "landing_page",
+          "filename": null,
+          "size": null,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-04-29T08:38:00+00:00",
+      "last_success_at": "2026-04-29T08:38:00+00:00",
+      "editions": [
+        "intl"
+      ]
+    },
+    {
+      "id": "foobar2000",
+      "name": "foobar2000",
+      "version": "2026-04-29",
+      "source": "Official foobar2000 download page; no public version API",
+      "version_kind": "sync_date",
+      "version_source": "UTC sync date; no public version API",
+      "category": "Media Players",
+      "homepage": "https://www.foobar2000.org/download",
+      "released_at": null,
+      "notes_url": null,
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://www.foobar2000.org/download",
+          "link_kind": "landing_page",
+          "filename": null,
+          "size": null,
+          "sha256": null
+        },
+        {
+          "platform": "mac-universal",
+          "url": "https://www.foobar2000.org/download",
+          "link_kind": "landing_page",
+          "filename": null,
+          "size": null,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-04-29T08:38:00+00:00",
+      "last_success_at": "2026-04-29T08:38:00+00:00",
+      "editions": [
+        "intl"
+      ]
+    },
+    {
+      "id": "epic-games-launcher",
+      "name": "Epic Games Launcher",
+      "version": "2026-04-29",
+      "source": "Official Epic Games Store download page; no public version API",
+      "version_kind": "sync_date",
+      "version_source": "UTC sync date; no public version API",
+      "category": "Gaming",
+      "homepage": "https://store.epicgames.com/download",
+      "released_at": null,
+      "notes_url": null,
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://store.epicgames.com/download",
+          "link_kind": "landing_page",
+          "filename": null,
+          "size": null,
+          "sha256": null
+        },
+        {
+          "platform": "mac-universal",
+          "url": "https://store.epicgames.com/download",
+          "link_kind": "landing_page",
+          "filename": null,
+          "size": null,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-04-29T08:38:00+00:00",
+      "last_success_at": "2026-04-29T08:38:00+00:00",
       "editions": [
         "intl"
       ]
     }
   ],
   "stats": {
-    "total": 311,
-    "success": 208,
+    "total": 351,
+    "success": 248,
     "failed": 103,
     "failed_ids": [
       "lapce",
       "ghostty",
       "kitty",
       "fish",
-      "bottom",
       "btop",
+      "bottom",
       "procs",
       "gitui",
       "ruff",
       "uv",
+      "taplo",
       "trunk",
       "lefthook",
-      "taplo",
       "tokei",
-      "choose",
       "htmlq",
+      "choose",
       "miniserve",
       "httpie",
       "libre-hardware-monitor",
       "eartrumpet",
       "screen-to-gif",
       "windynamicdesktop",
-      "everything-toolbar",
-      "unigetui",
       "translucent-tb",
+      "everything-toolbar",
       "secureuxtheme",
+      "unigetui",
       "bleachbit",
       "crystaldiskinfo",
-      "crystaldiskmark",
       "xml-notepad",
-      "nomacs",
+      "crystaldiskmark",
       "quicklook",
+      "nomacs",
       "files-app",
       "nanazip",
       "doublecmd",
@@ -7117,9 +8653,9 @@
       "veracrypt",
       "duplicati",
       "gron",
-      "openvpn",
       "nmap",
       "mullvad-vpn",
+      "openvpn",
       "zerotier",
       "portmaster",
       "putty",
@@ -7135,9 +8671,9 @@
       "libretro",
       "mudlet",
       "kdenlive",
+      "strawberry",
       "olive",
       "musicbrainz",
-      "strawberry",
       "mkvtoolnix",
       "mediainfo",
       "gimp",
@@ -7145,8 +8681,8 @@
       "inkscape",
       "blender",
       "freecad",
-      "scribus",
       "rawtherapee",
+      "scribus",
       "ardour",
       "falkon",
       "trilium",
@@ -7155,8 +8691,8 @@
       "mindforger",
       "element",
       "ghostwriter",
-      "cinny",
       "hexchat",
+      "cinny",
       "protonmail-bridge",
       "invokeai",
       "stable-diffusion-webui",
@@ -7164,22 +8700,22 @@
       "whisper",
       "llama-cpp",
       "open-webui",
-      "koboldcpp",
-      "yubikey-manager",
-      "clamav",
-      "windows11-english",
       "sops",
+      "yubikey-manager",
+      "koboldcpp",
+      "clamav",
       "terraform",
+      "helm",
       "vault",
       "consul",
-      "boundary",
       "nomad",
-      "helm",
+      "boundary",
       "oha",
+      "tealdeer",
       "broot",
       "erdtree",
       "navi-cli",
-      "tealdeer",
+      "windows11-english",
       "btop-win"
     ],
     "failures": [
@@ -7200,12 +8736,12 @@
         "error": "fish-shell/fish-shell@4.6.0: 没有任何 asset 匹配配置的 pattern，现有 asset: ['fish-4.6.0-linux-aarch64.tar.xz', 'fish-4.6.0-linux-x86_64.tar.xz', 'fish-4.6.0.app.zip', 'fish-4.6.0.pkg', 'fish-4.6.0.tar.xz']..."
       },
       {
-        "id": "bottom",
-        "error": "ClementTsang/bottom@0.12.3: 没有任何 asset 匹配配置的 pattern，现有 asset: ['bottom-0.12.3-1.x86_64.rpm', 'bottom-musl-0.12.3-1.x86_64.rpm', 'bottom-musl_0.12.3-1_amd64.deb', 'bottom-musl_0.12.3-1_arm64.deb', 'bottom-musl_0.12.3-1_armhf.deb']..."
-      },
-      {
         "id": "btop",
         "error": "aristocratos/btop@v1.4.6: 没有任何 asset 匹配配置的 pattern，现有 asset: ['btop-aarch64-unknown-linux-musl.tbz', 'btop-arm-unknown-linux-musleabi.tbz', 'btop-armv7-unknown-linux-musleabi.tbz', 'btop-i586-unknown-linux-musl.tbz', 'btop-i686-unknown-linux-musl.tbz']..."
+      },
+      {
+        "id": "bottom",
+        "error": "ClementTsang/bottom@0.12.3: 没有任何 asset 匹配配置的 pattern，现有 asset: ['bottom-0.12.3-1.x86_64.rpm', 'bottom-musl-0.12.3-1.x86_64.rpm', 'bottom-musl_0.12.3-1_amd64.deb', 'bottom-musl_0.12.3-1_arm64.deb', 'bottom-musl_0.12.3-1_armhf.deb']..."
       },
       {
         "id": "procs",
@@ -7224,6 +8760,10 @@
         "error": "astral-sh/uv@0.11.8: 没有任何 asset 匹配配置的 pattern，现有 asset: ['dist-manifest.json', 'sha256.sum', 'source.tar.gz', 'source.tar.gz.sha256', 'uv-aarch64-apple-darwin.tar.gz']..."
       },
       {
+        "id": "taplo",
+        "error": "tamasfe/taplo@0.10.0: 没有任何 asset 匹配配置的 pattern，现有 asset: ['taplo-darwin-aarch64.gz', 'taplo-darwin-x86_64.gz', 'taplo-linux-aarch64.gz', 'taplo-linux-armv7.gz', 'taplo-linux-riscv64.gz']..."
+      },
+      {
         "id": "trunk",
         "error": "trunk-rs/trunk@v0.21.14: 没有任何 asset 匹配配置的 pattern，现有 asset: ['trunk-aarch64-apple-darwin.tar.gz', 'trunk-aarch64-apple-darwin.tar.gz.sha256', 'trunk-aarch64-unknown-linux-gnu.tar.gz', 'trunk-aarch64-unknown-linux-gnu.tar.gz.sha256', 'trunk-aarch64-unknown-linux-musl.tar.gz']..."
       },
@@ -7232,20 +8772,16 @@
         "error": "evilmartians/lefthook@v2.1.6: 没有任何 asset 匹配配置的 pattern，现有 asset: ['lefthook_2.1.6_amd64.apk', 'lefthook_2.1.6_amd64.deb', 'lefthook_2.1.6_amd64.rpm', 'lefthook_2.1.6_arm64.apk', 'lefthook_2.1.6_arm64.deb']..."
       },
       {
-        "id": "taplo",
-        "error": "tamasfe/taplo@0.10.0: 没有任何 asset 匹配配置的 pattern，现有 asset: ['taplo-darwin-aarch64.gz', 'taplo-darwin-x86_64.gz', 'taplo-linux-aarch64.gz', 'taplo-linux-armv7.gz', 'taplo-linux-riscv64.gz']..."
-      },
-      {
         "id": "tokei",
         "error": "XAMPPRocky/tokei@v14.0.0: 没有任何 asset 匹配配置的 pattern，现有 asset: []..."
       },
       {
-        "id": "choose",
-        "error": "theryangeary/choose@v1.3.7: 没有任何 asset 匹配配置的 pattern，现有 asset: ['choose-aarch64-apple-darwin', 'choose-aarch64-unknown-linux-gnu', 'choose-x86_64-pc-windows-gnu', 'choose-x86_64-pc-windows-gnu.exe', 'choose-x86_64-unknown-linux-gnu']..."
-      },
-      {
         "id": "htmlq",
         "error": "mgdm/htmlq@v0.4.0: 没有任何 asset 匹配配置的 pattern，现有 asset: ['htmlq-x86_64-darwin.tar.gz', 'htmlq-x86_64-linux.tar.gz', 'htmlq-x86_64-windows.zip']..."
+      },
+      {
+        "id": "choose",
+        "error": "theryangeary/choose@v1.3.7: 没有任何 asset 匹配配置的 pattern，现有 asset: ['choose-aarch64-apple-darwin', 'choose-aarch64-unknown-linux-gnu', 'choose-x86_64-pc-windows-gnu', 'choose-x86_64-pc-windows-gnu.exe', 'choose-x86_64-unknown-linux-gnu']..."
       },
       {
         "id": "miniserve",
@@ -7272,20 +8808,20 @@
         "error": "t1m0thyj/WinDynamicDesktop@v5.6.1: 没有任何 asset 匹配配置的 pattern，现有 asset: ['checksums.txt', 'WinDynamicDesktop_5.6.1_arm64_Portable.exe', 'WinDynamicDesktop_5.6.1_arm64_Setup.exe', 'WinDynamicDesktop_5.6.1_x64_Portable.exe', 'WinDynamicDesktop_5.6.1_x64_Setup.exe']..."
       },
       {
-        "id": "everything-toolbar",
-        "error": "srwi/EverythingToolbar@2.3.0: 没有任何 asset 匹配配置的 pattern，现有 asset: ['EverythingToolbar-2.3.0-arm64.exe', 'EverythingToolbar-2.3.0-arm64.sha256', 'EverythingToolbar-2.3.0-x64.exe', 'EverythingToolbar-2.3.0-x64.sha256']..."
-      },
-      {
-        "id": "unigetui",
-        "error": "marticliment/UniGetUI@v2026.1.7: 没有任何 asset 匹配配置的 pattern，现有 asset: ['checksums.txt', 'UniGetUI.arm64.zip', 'UniGetUI.Installer.arm64.exe', 'UniGetUI.Installer.exe', 'UniGetUI.Installer.x64.exe']..."
-      },
-      {
         "id": "translucent-tb",
         "error": "TranslucentTB/TranslucentTB@2026.1: 没有任何 asset 匹配配置的 pattern，现有 asset: ['bundle.msixbundle', 'TranslucentTB-portable-arm64.zip', 'TranslucentTB-portable-x64.zip', 'TranslucentTB.appinstaller', 'winui-arm64.appx']..."
       },
       {
+        "id": "everything-toolbar",
+        "error": "srwi/EverythingToolbar@2.3.0: 没有任何 asset 匹配配置的 pattern，现有 asset: ['EverythingToolbar-2.3.0-arm64.exe', 'EverythingToolbar-2.3.0-arm64.sha256', 'EverythingToolbar-2.3.0-x64.exe', 'EverythingToolbar-2.3.0-x64.sha256']..."
+      },
+      {
         "id": "secureuxtheme",
         "error": "namazso/SecureUxTheme@v4.0.0: 没有任何 asset 匹配配置的 pattern，现有 asset: ['SecureUxTheme_ARM64.msi', 'SecureUxTheme_x64.msi', 'SecureUxTheme_x86.msi']..."
+      },
+      {
+        "id": "unigetui",
+        "error": "marticliment/UniGetUI@v2026.1.7: 没有任何 asset 匹配配置的 pattern，现有 asset: ['checksums.txt', 'UniGetUI.arm64.zip', 'UniGetUI.Installer.arm64.exe', 'UniGetUI.Installer.exe', 'UniGetUI.Installer.x64.exe']..."
       },
       {
         "id": "bleachbit",
@@ -7296,20 +8832,20 @@
         "error": "hiyohiyo/CrystalDiskInfo: 仓库无 latest release（可能仅有 prerelease）"
       },
       {
-        "id": "crystaldiskmark",
-        "error": "hiyohiyo/CrystalDiskMark: 仓库无 latest release（可能仅有 prerelease）"
-      },
-      {
         "id": "xml-notepad",
         "error": "microsoft/XmlNotepad@2.9.0.21: 没有任何 asset 匹配配置的 pattern，现有 asset: ['XmlNotepadPackage_2.9.0.21_AnyCPU.msixbundle', 'XmlNotepadSetup.zip']..."
       },
       {
-        "id": "nomacs",
-        "error": "nomacs/nomacs@3.22.1: 没有任何 asset 匹配配置的 pattern，现有 asset: ['nomacs-3.22.1-8f3dff6-neon-24.04-x86_64-quazip-gcc-2404.AppImage.zip', 'nomacs-3.22.1-8f3dff6f-macOS-15.7.4-arm64-quazip-qt6.zip', 'nomacs-3.22.1-8f3dff6f-macOS-15.7.5-x86_64-quazip-qt6.zip', 'nomacs-portable-win.zip', 'nomacs-setup-x64.msi']..."
+        "id": "crystaldiskmark",
+        "error": "hiyohiyo/CrystalDiskMark: 仓库无 latest release（可能仅有 prerelease）"
       },
       {
         "id": "quicklook",
         "error": "QL-Win/QuickLook@4.5.0: 没有任何 asset 匹配配置的 pattern，现有 asset: ['QuickLook-4.5.0.7z', 'QuickLook-4.5.0.appx', 'QuickLook-4.5.0.exe', 'QuickLook-4.5.0.msi', 'QuickLook-4.5.0.zip']..."
+      },
+      {
+        "id": "nomacs",
+        "error": "nomacs/nomacs@3.22.1: 没有任何 asset 匹配配置的 pattern，现有 asset: ['nomacs-3.22.1-8f3dff6-neon-24.04-x86_64-quazip-gcc-2404.AppImage.zip', 'nomacs-3.22.1-8f3dff6f-macOS-15.7.4-arm64-quazip-qt6.zip', 'nomacs-3.22.1-8f3dff6f-macOS-15.7.5-x86_64-quazip-qt6.zip', 'nomacs-portable-win.zip', 'nomacs-setup-x64.msi']..."
       },
       {
         "id": "files-app",
@@ -7340,16 +8876,16 @@
         "error": "tomnomnom/gron@v0.7.1: 没有任何 asset 匹配配置的 pattern，现有 asset: ['gron-darwin-amd64-0.7.1.tgz', 'gron-darwin-arm64-0.7.1.tgz', 'gron-freebsd-386-0.7.1.tgz', 'gron-freebsd-amd64-0.7.1.tgz', 'gron-freebsd-arm64-0.7.1.tgz']..."
       },
       {
-        "id": "openvpn",
-        "error": "OpenVPN/openvpn@v2.7.3: 没有任何 asset 匹配配置的 pattern，现有 asset: ['openvpn-2.7.3.tar.gz', 'openvpn-2.7.3.tar.gz.asc']..."
-      },
-      {
         "id": "nmap",
         "error": "nmap/nmap: 仓库无 latest release（可能仅有 prerelease）"
       },
       {
         "id": "mullvad-vpn",
         "error": "mullvad/mullvadvpn-app@2026.2: 没有任何 asset 匹配配置的 pattern，现有 asset: ['MullvadVPN-2026.2.exe', 'MullvadVPN-2026.2.exe.asc', 'MullvadVPN-2026.2.pkg', 'MullvadVPN-2026.2.pkg.asc', 'MullvadVPN-2026.2_aarch64.rpm']..."
+      },
+      {
+        "id": "openvpn",
+        "error": "OpenVPN/openvpn@v2.7.3: 没有任何 asset 匹配配置的 pattern，现有 asset: ['openvpn-2.7.3.tar.gz', 'openvpn-2.7.3.tar.gz.asc']..."
       },
       {
         "id": "zerotier",
@@ -7412,16 +8948,16 @@
         "error": "KDE/kdenlive: 仓库无 latest release（可能仅有 prerelease）"
       },
       {
+        "id": "strawberry",
+        "error": "strawberrymusicplayer/strawberry@1.2.19: 没有任何 asset 匹配配置的 pattern，现有 asset: ['strawberry-1.2.19-1.fc42.src.rpm', 'strawberry-1.2.19-1.fc42.x86_64.rpm', 'strawberry-1.2.19-1.fc43.src.rpm', 'strawberry-1.2.19-1.fc43.x86_64.rpm', 'strawberry-1.2.19-1.fc44.src.rpm']..."
+      },
+      {
         "id": "olive",
         "error": "olive-editor/olive: 仓库无 latest release（可能仅有 prerelease）"
       },
       {
         "id": "musicbrainz",
         "error": "metabrainz/picard@release-2.13.3: 没有任何 asset 匹配配置的 pattern，现有 asset: ['MusicBrainz-Picard-2.13.3-macOS-10.12.dmg', 'MusicBrainz-Picard-2.13.3-macOS-10.14.dmg', 'MusicBrainz-Picard-2.13.3.exe', 'MusicBrainz-Picard-2.13.3_unsigned.msix', 'picard-2.13.3.tar.gz']..."
-      },
-      {
-        "id": "strawberry",
-        "error": "strawberrymusicplayer/strawberry@1.2.19: 没有任何 asset 匹配配置的 pattern，现有 asset: ['strawberry-1.2.19-1.fc42.src.rpm', 'strawberry-1.2.19-1.fc42.x86_64.rpm', 'strawberry-1.2.19-1.fc43.src.rpm', 'strawberry-1.2.19-1.fc43.x86_64.rpm', 'strawberry-1.2.19-1.fc44.src.rpm']..."
       },
       {
         "id": "mkvtoolnix",
@@ -7452,12 +8988,12 @@
         "error": "FreeCAD/FreeCAD@1.1.1: 没有任何 asset 匹配配置的 pattern，现有 asset: ['FreeCAD_1.1.1-Linux-aarch64-py311.AppImage', 'FreeCAD_1.1.1-Linux-aarch64-py311.AppImage-SHA256.txt', 'FreeCAD_1.1.1-Linux-aarch64-py311.AppImage.zsync', 'FreeCAD_1.1.1-Linux-x86_64-py311.AppImage', 'FreeCAD_1.1.1-Linux-x86_64-py311.AppImage-SHA256.txt']..."
       },
       {
-        "id": "scribus",
-        "error": "scribusproject/scribus: 仓库无 latest release（可能仅有 prerelease）"
-      },
-      {
         "id": "rawtherapee",
         "error": "Beep6581/RawTherapee@5.12: 没有任何 asset 匹配配置的 pattern，现有 asset: ['rawtherapee-5.12.tar.xz', 'rawtherapee-5.12.tar.xz.sha256', 'RawTherapee_5.12_debug-AboutThisBuild.txt', 'RawTherapee_5.12_debug.AppImage', 'RawTherapee_5.12_debug.AppImage.sha256']..."
+      },
+      {
+        "id": "scribus",
+        "error": "scribusproject/scribus: 仓库无 latest release（可能仅有 prerelease）"
       },
       {
         "id": "ardour",
@@ -7492,12 +9028,12 @@
         "error": "KDE/ghostwriter@2.1.6: 没有任何 asset 匹配配置的 pattern，现有 asset: ['ghostwriter_2.1.6_win64_portable.zip']..."
       },
       {
-        "id": "cinny",
-        "error": "cinnyapp/cinny-desktop@v4.11.2: 没有任何 asset 匹配配置的 pattern，现有 asset: ['cinny-desktop-v4.11.2.zip', 'Cinny_desktop-universal.app.tar.gz', 'Cinny_desktop-universal.app.tar.gz.sig', 'Cinny_desktop-universal.dmg', 'Cinny_desktop-x86_64.AppImage']..."
-      },
-      {
         "id": "hexchat",
         "error": "hexchat/hexchat@v2.16.2: 没有任何 asset 匹配配置的 pattern，现有 asset: ['hexchat-2.16.2.tar.xz', 'hexchat-2.16.2.tar.xz.sha256sum', 'HexChat.2.16.2.x64.exe', 'HexChat.2.16.2.x86.exe']..."
+      },
+      {
+        "id": "cinny",
+        "error": "cinnyapp/cinny-desktop@v4.11.2: 没有任何 asset 匹配配置的 pattern，现有 asset: ['cinny-desktop-v4.11.2.zip', 'Cinny_desktop-universal.app.tar.gz', 'Cinny_desktop-universal.app.tar.gz.sig', 'Cinny_desktop-universal.dmg', 'Cinny_desktop-x86_64.AppImage']..."
       },
       {
         "id": "protonmail-bridge",
@@ -7528,28 +9064,28 @@
         "error": "open-webui/open-webui@v0.9.2: 没有任何 asset 匹配配置的 pattern，现有 asset: []..."
       },
       {
-        "id": "koboldcpp",
-        "error": "LostRuins/koboldcpp@v1.112.2: 没有任何 asset 匹配配置的 pattern，现有 asset: ['koboldcpp-linux-x64', 'koboldcpp-linux-x64-nocuda', 'koboldcpp-linux-x64-oldpc', 'koboldcpp-mac-arm64', 'koboldcpp-nocuda.exe']..."
+        "id": "sops",
+        "error": "getsops/sops@v3.12.2: 没有任何 asset 匹配配置的 pattern，现有 asset: ['sops-3.12.2-1.aarch64.rpm', 'sops-3.12.2-1.x86_64.rpm', 'sops-v3.12.2.amd64.exe', 'sops-v3.12.2.amd64.exe.spdx.sbom.json', 'sops-v3.12.2.arm64.exe']..."
       },
       {
         "id": "yubikey-manager",
         "error": "Yubico/yubikey-manager@5.9.1: 没有任何 asset 匹配配置的 pattern，现有 asset: ['yubikey-manager-5.9.1-mac.pkg', 'yubikey-manager-5.9.1-mac.pkg.sig', 'yubikey-manager-5.9.1-win64.msi', 'yubikey-manager-5.9.1-win64.msi.sig', 'yubikey_manager-5.9.1-py3-none-any.whl']..."
       },
       {
+        "id": "koboldcpp",
+        "error": "LostRuins/koboldcpp@v1.112.2: 没有任何 asset 匹配配置的 pattern，现有 asset: ['koboldcpp-linux-x64', 'koboldcpp-linux-x64-nocuda', 'koboldcpp-linux-x64-oldpc', 'koboldcpp-mac-arm64', 'koboldcpp-nocuda.exe']..."
+      },
+      {
         "id": "clamav",
         "error": "Cisco-Talos/clamav@clamav-1.5.2: 没有任何 asset 匹配配置的 pattern，现有 asset: ['clamav-1.5.2.linux.aarch64.deb', 'clamav-1.5.2.linux.aarch64.deb.sig', 'clamav-1.5.2.linux.aarch64.rpm', 'clamav-1.5.2.linux.aarch64.rpm.sig', 'clamav-1.5.2.linux.x86_64.deb']..."
       },
       {
-        "id": "windows11-english",
-        "error": "Fido 连续 3 次失败，最后一次：Fido 未返回 URL。stdout='Error: We are unable to complete your request at this time. Some users, entities and locations are banned from using this service. For this reason, leveraging anonymous or location hiding technologies when connecting to this service is not generally allowed. If you believe that you encountered this problem in error, please try again. If the problem persists you may contact Microsoft Support â€“ Contact Us page for assistance. Refer to message code 715-123130 and 080bb640-e5f9-4408-8954-420f2aaa4885.' stderr='' returncode=3"
-      },
-      {
-        "id": "sops",
-        "error": "getsops/sops@v3.12.2: 没有任何 asset 匹配配置的 pattern，现有 asset: ['sops-3.12.2-1.aarch64.rpm', 'sops-3.12.2-1.x86_64.rpm', 'sops-v3.12.2.amd64.exe', 'sops-v3.12.2.amd64.exe.spdx.sbom.json', 'sops-v3.12.2.arm64.exe']..."
-      },
-      {
         "id": "terraform",
         "error": "hashicorp/terraform@v1.14.9: 没有任何 asset 匹配配置的 pattern，现有 asset: []..."
+      },
+      {
+        "id": "helm",
+        "error": "helm/helm@v4.1.4: 没有任何 asset 匹配配置的 pattern，现有 asset: ['helm-v4.1.4-darwin-amd64.tar.gz.asc', 'helm-v4.1.4-darwin-amd64.tar.gz.sha256.asc', 'helm-v4.1.4-darwin-amd64.tar.gz.sha256sum.asc', 'helm-v4.1.4-darwin-arm64.tar.gz.asc', 'helm-v4.1.4-darwin-arm64.tar.gz.sha256.asc']..."
       },
       {
         "id": "vault",
@@ -7560,20 +9096,20 @@
         "error": "hashicorp/consul@v1.22.7: 没有任何 asset 匹配配置的 pattern，现有 asset: []..."
       },
       {
-        "id": "boundary",
-        "error": "hashicorp/boundary@v0.21.2: 没有任何 asset 匹配配置的 pattern，现有 asset: []..."
-      },
-      {
         "id": "nomad",
         "error": "hashicorp/nomad@v2.0.0: 没有任何 asset 匹配配置的 pattern，现有 asset: []..."
       },
       {
-        "id": "helm",
-        "error": "helm/helm@v4.1.4: 没有任何 asset 匹配配置的 pattern，现有 asset: ['helm-v4.1.4-darwin-amd64.tar.gz.asc', 'helm-v4.1.4-darwin-amd64.tar.gz.sha256.asc', 'helm-v4.1.4-darwin-amd64.tar.gz.sha256sum.asc', 'helm-v4.1.4-darwin-arm64.tar.gz.asc', 'helm-v4.1.4-darwin-arm64.tar.gz.sha256.asc']..."
+        "id": "boundary",
+        "error": "hashicorp/boundary@v0.21.2: 没有任何 asset 匹配配置的 pattern，现有 asset: []..."
       },
       {
         "id": "oha",
         "error": "hatoo/oha@v1.14.0: 没有任何 asset 匹配配置的 pattern，现有 asset: ['oha-linux-amd64', 'oha-linux-amd64-pgo', 'oha-linux-arm64', 'oha-macos-amd64', 'oha-macos-arm64']..."
+      },
+      {
+        "id": "tealdeer",
+        "error": "tealdeer-rs/tealdeer@v1.8.1: 没有任何 asset 匹配配置的 pattern，现有 asset: ['completions_bash', 'completions_fish', 'completions_zsh', 'LICENSE-APACHE.txt', 'LICENSE-MIT.txt']..."
       },
       {
         "id": "broot",
@@ -7588,8 +9124,8 @@
         "error": "midnight-commander/mc: 仓库无 latest release（可能仅有 prerelease）"
       },
       {
-        "id": "tealdeer",
-        "error": "tealdeer-rs/tealdeer@v1.8.1: 没有任何 asset 匹配配置的 pattern，现有 asset: ['completions_bash', 'completions_fish', 'completions_zsh', 'LICENSE-APACHE.txt', 'LICENSE-MIT.txt']..."
+        "id": "windows11-english",
+        "error": "Fido 连续 3 次失败，最后一次：Fido 未返回 URL。stdout='Error: We are unable to complete your request at this time. Some users, entities and locations are banned from using this service. For this reason, leveraging anonymous or location hiding technologies when connecting to this service is not generally allowed. If you believe that you encountered this problem in error, please try again. If the problem persists you may contact Microsoft Support â€“ Contact Us page for assistance. Refer to message code 715-123130 and eb096ced-126d-4969-b489-fa8a64f0c5ff.' stderr='' returncode=3"
       },
       {
         "id": "btop-win",
