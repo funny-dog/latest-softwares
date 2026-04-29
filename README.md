@@ -3,7 +3,7 @@
 > 由 GitHub Actions 每日自动同步上游官方源的**最新版本元数据**。
 > 仓库**不托管二进制安装包**，下载按钮直接跳到上游官方下载链接。
 >
-> 📅 **最后更新**：`2026-04-29 14:56:30` (UTC)　· 共 353 项软件（其中 2 项使用上次数据，标 ⚠️）
+> 📅 **最后更新**：`2026-04-29 14:59:53` (UTC)　· 共 353 项软件（其中 1 项使用上次数据，标 ⚠️）
 
 ---
 
@@ -25,6 +25,7 @@
 
 | 软件 | 最新版本 | 发布日期 | 下载链接 | 来源 |
 |------|---------|---------|---------|------|
+| [**Windows 11**](https://www.microsoft.com/software-download/windows11) | `25H2` | — | [win-x64](https://software.download.prss.microsoft.com/dbazure/Win11_25H2_Chinese_Simplified_x64_v2.iso?t=5da8810c-0dcf-4e53-9057-6b6818f9fc95&P1=1777561170&P2=601&P3=2&P4=Atu8scHui0xHFiLXq0PzESb5WPsTswnutKAzYKiCt2YEjMsfdirbLzehxSM%2b%2bftrTEEGJf5eGl7GeaZSrfyQa99P%2b0NYVXVATEt2R3Lnp%2f8DT%2bUvnrDtJ6BgGYWfEeZimSnuZ1VYpCBEkcoDZZ1gbwfXun5ldhnFu%2bEvVjMJ%2b8LeLRu5IceJdGy2G1gCErkDqC0CDMc0VlnohX51BSEU2YKD5Ip0QJxfPsSDtTu5%2bTIZmyBJ6Kh6pR5LfkRFB4JK3cSGBoPIQyE0eHjvY4%2bVawu9QL0C1xmzBlLrXmBMeqsdrKhygqBBBcAPffIKexGDuYOZxpG%2fa32op82qNoPTxQ%3d%3d) | Microsoft Software Download (via Fido) |
 | [**Ubuntu**](https://ubuntu.com/download) | `26.04` | — | [desktop-amd64](https://releases.ubuntu.com/26.04/ubuntu-26.04-desktop-amd64.iso) · [server-amd64](https://releases.ubuntu.com/26.04/ubuntu-26.04-live-server-amd64.iso) · [wsl-amd64](https://releases.ubuntu.com/26.04/ubuntu-26.04-wsl-amd64.wsl) | Ubuntu official releases index |
 | [**Fedora Workstation**](https://fedoraproject.org/workstation/download/) | `44` | — | [workstation-live-x86_64](https://dl.fedoraproject.org/pub/fedora/linux/releases/44/Workstation/x86_64/iso/Fedora-Workstation-Live-44-1.7.x86_64.iso) | Fedora official release directory |
 | [**Windows 11**](https://www.microsoft.com/software-download/windows11) | `2026-04-29` | — | [win-x64](https://www.microsoft.com/software-download/windows11) | Official Microsoft Windows 11 download page; Fido ISO URL is environment dependent |
@@ -375,7 +376,7 @@
 | [**InvokeAI**](https://github.com/invoke-ai/InvokeAI#installation) | `2026-04-29` | — | [win-x64](https://github.com/invoke-ai/InvokeAI#installation) · [mac-arm64](https://github.com/invoke-ai/InvokeAI#installation) · [linux-x64](https://github.com/invoke-ai/InvokeAI#installation) | Official project download page; no stable public release asset API |
 | [**Stable Diffusion WebUI**](https://github.com/AUTOMATIC1111/stable-diffusion-webui#installation-and-running) | `2026-04-29` | — | [win-x64](https://github.com/AUTOMATIC1111/stable-diffusion-webui#installation-and-running) | Official project download page; no stable public release asset API |
 | [**text-generation-webui**](https://github.com/oobabooga/text-generation-webui#installation) | `2026-04-29` | — | [win-x64](https://github.com/oobabooga/text-generation-webui#installation) | Official project download page; no stable public release asset API |
-| [**Buzz**](https://github.com/chidiwilliams/buzz) ⚠️ | `1.4.4` | 2026-03-14 | [win-x64](https://github.com/chidiwilliams/buzz/releases/download/v1.4.4/Buzz-1.4.4-windows.exe) | GitHub Release: chidiwilliams/buzz<br>⚠ mac-arm64: 没有匹配 asset pattern 'Buzz-*-mac-arm64.dmg'; linux-x64: 没有匹配 asset pattern 'Buzz-*-linux-x86_64.AppImage' |
+| [**Buzz**](https://github.com/chidiwilliams/buzz) ⚠️ | `1.4.4` | 2026-03-14 | [win-x64](https://github.com/chidiwilliams/buzz/releases/download/v1.4.4/Buzz-1.4.4-windows.exe) · [mac-arm64](https://github.com/chidiwilliams/buzz/releases/download/v1.4.4/Buzz-1.4.4-mac-ARM64.dmg) | GitHub Release: chidiwilliams/buzz<br>⚠ linux-x64: 没有匹配 asset pattern 'Buzz-*-linux-x86_64.AppImage' |
 | [**Whisper**](https://github.com/openai/whisper#setup) | `2026-04-29` | — | [linux-x64](https://github.com/openai/whisper#setup) | Official project download page; no stable public release asset API |
 | [**llama.cpp**](https://github.com/ggml-org/llama.cpp) | `2026-04-29` | — | [win-x64](https://github.com/ggml-org/llama.cpp/releases) · [mac-arm64](https://github.com/ggml-org/llama.cpp/releases) · [linux-x64](https://github.com/ggml-org/llama.cpp/releases) | Official project download page; no stable public release asset API |
 | [**Open WebUI**](https://docs.openwebui.com/getting-started/) | `2026-04-29` | — | [win-x64](https://docs.openwebui.com/getting-started/) · [mac-arm64](https://docs.openwebui.com/getting-started/) · [linux-x64](https://docs.openwebui.com/getting-started/) | Official project download page; no stable public release asset API |
