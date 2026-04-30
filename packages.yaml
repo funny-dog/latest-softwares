@@ -261,17 +261,21 @@ packages:
     - platform: win-x64
       pattern: WezTerm-*-setup.exe
 - id: hiddify
-  name: Hiddify Next
+  name: Hiddify
   category: Network & Proxy
   editions:
   - intl
-  homepage: https://github.com/hiddify/hiddify-next
+  homepage: https://hiddify.com
   fetcher: github_release
   args:
-    repo: hiddify/hiddify-next
+    repo: hiddify/hiddify-app
     assets:
     - platform: win-x64
       pattern: Hiddify-Windows-Setup-x64.exe
+    - platform: mac-universal
+      pattern: Hiddify-MacOS-Installer.pkg
+    - platform: linux-x64
+      pattern: Hiddify-Linux-x64-AppImage.AppImage
 - id: sing-box
   name: sing-box
   category: Network & Proxy
@@ -5307,3 +5311,57 @@ packages:
     - platform: mac-universal
       download_url: https://store.epicgames.com/download
       link_kind: landing_page
+- id: anki
+  name: Anki
+  category: Productivity
+  editions:
+  - intl
+  homepage: https://apps.ankiweb.net/
+  fetcher: download_page
+  args:
+    source: Official Anki download page; no public version API
+    platforms:
+    - platform: win-x64
+      download_url: https://apps.ankiweb.net/
+      link_kind: landing_page
+    - platform: mac-universal
+      download_url: https://apps.ankiweb.net/
+      link_kind: landing_page
+    - platform: linux-x64
+      download_url: https://apps.ankiweb.net/
+      link_kind: landing_page
+- id: typora
+  name: Typora
+  category: Productivity
+  editions:
+  - intl
+  homepage: https://typora.io
+  fetcher: download_page
+  args:
+    source: Official Typora download page; no public version API
+    platforms:
+    - platform: win-x64
+      download_url: https://typora.io/#download
+      link_kind: landing_page
+    - platform: mac-universal
+      download_url: https://typora.io/#download
+      link_kind: landing_page
+    - platform: linux-x64
+      download_url: https://typora.io/#download
+      link_kind: landing_page
+- id: claude-code
+  name: Claude Code
+  category: AI Tools
+  editions:
+  - intl
+  homepage: https://github.com/anthropics/claude-code
+  fetcher: github_release
+  args:
+    repo: anthropics/claude-code
+    assets:
+    - platform: win-x64
+      pattern: claude-win32-x64.zip
+    - platform: mac-universal
+      pattern: claude-darwin-arm64.tar.gz
+    - platform: linux-x64
+      pattern: claude-linux-x64.tar.gz
