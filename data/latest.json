@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-04-29T17:33:06+00:00",
+  "generated_at": "2026-04-30T04:28:03+00:00",
   "packages": [
     {
       "id": "windows11",
@@ -16,15 +16,15 @@
       "assets": [
         {
           "platform": "win-x64",
-          "url": "https://software.download.prss.microsoft.com/dbazure/Win11_25H2_Chinese_Simplified_x64_v2.iso?t=d854d51d-b870-42f2-b8fa-974e8f83fe0b&P1=1777570369&P2=601&P3=2&P4=Ga%2f3YNWWwyY%2bLq3fINHIpXpAQDWE0eNtObP6kDQYqw5KexEv9kMgLW0a1Uf3UpyeQMV9OAVOPY8QBnxZgL6MU8fZ6wsGhMC%2fsXPlsWa5Q45JEX3wMQSDAZ9KMnWELrVrg7vft5OQDEyp39KSgmtv%2ffzAI35RPfp3Fx3NPjyz2yBySF3rhtx3UjmO0G6hEIG9XEEOj1wbIpVz2HlER%2fUULWBaEvZuLB8DUHRz7VJnysWJFVVADLoM8qDyKpVslKvT4LE4lV75SSZn8PWkBw508oXHNOAmUGGzwp%2bqGhb7vpMoEG57beA3BvUgJKK6dMi3gpPNgwmYEgvggjd8kx2wIA%3d%3d",
+          "url": "https://software.download.prss.microsoft.com/dbazure/Win11_25H2_Chinese_Simplified_x64_v2.iso?t=2ee32b3c-7ca5-4e2a-9e9b-544701dd5103&P1=1777609662&P2=601&P3=2&P4=nnF4FMBkznWhBQovlSpjStoRCFC11QYRPQAW0Jb%2bQX1NLLvObXetAS7QeOJCUQZh2Dx8hqlcEBIkotD1tIIX7Lft841RNPnHS%2f67yZGNkEs2KuSIZ0pcM6kbbsuWXAe3cZnmhYAFKct3sScrPRQQLQ3eS032ur2FI4LICoCAtmHqb5%2bgdRZAChc%2fiPd0QhV7xYMadrNXQSWkADYMSESCRBLZRPfOjx1pV6UNL96h%2fsLGUxZ9EStlDq9oDhRxaUKtscA23fY2x52xBwhgcn4N1cuf36mtHPXdmLaplUNspKDqPV6ti2EZFRjgrCujvB%2f0IXsF3Os2s4gmZ4kR12p6gw%3d%3d",
           "link_kind": "direct",
           "filename": "Win11_25H2_Chinese_Simplified_x64_v2.iso",
           "size": null,
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:50+00:00",
-      "last_success_at": "2026-04-29T17:32:50+00:00",
+      "fetched_at": "2026-04-30T04:27:43+00:00",
+      "last_success_at": "2026-04-30T04:27:43+00:00",
       "editions": [
         "cn"
       ]
@@ -66,8 +66,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:43+00:00",
-      "last_success_at": "2026-04-29T17:32:43+00:00",
+      "fetched_at": "2026-04-30T04:27:38+00:00",
+      "last_success_at": "2026-04-30T04:27:38+00:00",
       "editions": [
         "cn",
         "intl"
@@ -94,8 +94,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:43+00:00",
-      "last_success_at": "2026-04-29T17:32:43+00:00",
+      "fetched_at": "2026-04-30T04:27:38+00:00",
+      "last_success_at": "2026-04-30T04:27:38+00:00",
       "editions": [
         "cn",
         "intl"
@@ -146,8 +146,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:43+00:00",
-      "last_success_at": "2026-04-29T17:32:43+00:00",
+      "fetched_at": "2026-04-30T04:27:38+00:00",
+      "last_success_at": "2026-04-30T04:27:38+00:00",
       "editions": [
         "intl"
       ]
@@ -155,50 +155,50 @@
     {
       "id": "vscode",
       "name": "Visual Studio Code",
-      "version": "1.117.0",
+      "version": "1.118.1",
       "source": "VSCode Build Manifest",
       "version_kind": "release_version",
       "version_source": "VSCode Build Manifest productVersion",
       "category": "Developer Tools",
       "homepage": "https://code.visualstudio.com",
-      "released_at": "2026-04-21T23:19:50+00:00",
-      "notes_url": "https://code.visualstudio.com/updates/v1_117",
+      "released_at": "2026-04-29T14:47:33+00:00",
+      "notes_url": "https://code.visualstudio.com/updates/v1_118",
       "assets": [
         {
           "platform": "win-x64",
-          "url": "https://vscode.download.prss.microsoft.com/dbazure/download/stable/10c8e557c8b9f9ed0a87f61f1c9a44bde731c409/VSCodeUserSetup-x64-1.117.0.exe",
+          "url": "https://vscode.download.prss.microsoft.com/dbazure/download/stable/034f571df509819cc10b0c8129f66ef77a542f0e/VSCodeUserSetup-x64-1.118.1.exe",
           "link_kind": "direct",
           "filename": null,
           "size": null,
-          "sha256": "9f3061d1b1b17b8240d435ed948e555c729537876aa7495d03d6102721665157"
+          "sha256": "6e7e786cecec0e9de275fc58bb25ca608da637945e8bd249fd103ed8e9dc2050"
         },
         {
           "platform": "win-arm64",
-          "url": "https://vscode.download.prss.microsoft.com/dbazure/download/stable/10c8e557c8b9f9ed0a87f61f1c9a44bde731c409/VSCodeUserSetup-arm64-1.117.0.exe",
+          "url": "https://vscode.download.prss.microsoft.com/dbazure/download/stable/034f571df509819cc10b0c8129f66ef77a542f0e/VSCodeUserSetup-arm64-1.118.1.exe",
           "link_kind": "direct",
           "filename": null,
           "size": null,
-          "sha256": "342893e696415116ff4eb86381b5067ccd7893517beb0487f0ed7f709f07061c"
+          "sha256": "3e9073c9829c1ac2f61ac90fbd81f57e830c8d19e90d1decbede10c1627578c0"
         },
         {
           "platform": "mac-arm64",
-          "url": "https://vscode.download.prss.microsoft.com/dbazure/download/stable/10c8e557c8b9f9ed0a87f61f1c9a44bde731c409/VSCode-darwin-arm64.dmg",
+          "url": "https://vscode.download.prss.microsoft.com/dbazure/download/stable/034f571df509819cc10b0c8129f66ef77a542f0e/VSCode-darwin-arm64.dmg",
           "link_kind": "direct",
           "filename": null,
           "size": null,
-          "sha256": "21fbec0fbc5407bf747f7c2ed11e87bf585140ccc778717e76d7a08e2bcea7fe"
+          "sha256": "88db1b49959501886309a9ecf3d8b7c14f37d49203364f37355b1e9fe03c8c4b"
         },
         {
           "platform": "mac-x64",
-          "url": "https://vscode.download.prss.microsoft.com/dbazure/download/stable/10c8e557c8b9f9ed0a87f61f1c9a44bde731c409/VSCode-darwin-x64.dmg",
+          "url": "https://vscode.download.prss.microsoft.com/dbazure/download/stable/034f571df509819cc10b0c8129f66ef77a542f0e/VSCode-darwin-x64.dmg",
           "link_kind": "direct",
           "filename": null,
           "size": null,
-          "sha256": "bc5017110545de218ac71df0bdcf40665ec00e9de322825e29a28eebc1e3e1a2"
+          "sha256": "999d81a03f16b8743614ceb1d64d6ab638203d08c2bbacd4c5f842a98c07f1fe"
         }
       ],
-      "fetched_at": "2026-04-29T17:32:43+00:00",
-      "last_success_at": "2026-04-29T17:32:43+00:00",
+      "fetched_at": "2026-04-30T04:27:38+00:00",
+      "last_success_at": "2026-04-30T04:27:38+00:00",
       "editions": [
         "cn",
         "intl"
@@ -207,7 +207,7 @@
     {
       "id": "chrome",
       "name": "Google Chrome",
-      "version": "148.0.7778.56",
+      "version": "148.0.7778.97",
       "source": "Google Version History API",
       "version_kind": "release_version",
       "version_source": "Google Version History API",
@@ -233,8 +233,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:43+00:00",
-      "last_success_at": "2026-04-29T17:32:43+00:00",
+      "fetched_at": "2026-04-30T04:27:38+00:00",
+      "last_success_at": "2026-04-30T04:27:38+00:00",
       "editions": [
         "cn",
         "intl"
@@ -261,8 +261,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:43+00:00",
-      "last_success_at": "2026-04-29T17:32:43+00:00",
+      "fetched_at": "2026-04-30T04:27:37+00:00",
+      "last_success_at": "2026-04-30T04:27:37+00:00",
       "editions": [
         "cn",
         "intl"
@@ -297,8 +297,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:43+00:00",
-      "last_success_at": "2026-04-29T17:32:43+00:00",
+      "fetched_at": "2026-04-30T04:27:38+00:00",
+      "last_success_at": "2026-04-30T04:27:38+00:00",
       "editions": [
         "cn",
         "intl"
@@ -333,8 +333,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:43+00:00",
-      "last_success_at": "2026-04-29T17:32:43+00:00",
+      "fetched_at": "2026-04-30T04:27:38+00:00",
+      "last_success_at": "2026-04-30T04:27:38+00:00",
       "editions": [
         "cn",
         "intl"
@@ -385,8 +385,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:45+00:00",
-      "last_success_at": "2026-04-29T17:32:45+00:00",
+      "fetched_at": "2026-04-30T04:27:39+00:00",
+      "last_success_at": "2026-04-30T04:27:39+00:00",
       "editions": [
         "intl"
       ]
@@ -412,8 +412,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:44+00:00",
-      "last_success_at": "2026-04-29T17:32:44+00:00",
+      "fetched_at": "2026-04-30T04:27:38+00:00",
+      "last_success_at": "2026-04-30T04:27:38+00:00",
       "editions": [
         "cn",
         "intl"
@@ -464,8 +464,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:44+00:00",
-      "last_success_at": "2026-04-29T17:32:44+00:00",
+      "fetched_at": "2026-04-30T04:27:39+00:00",
+      "last_success_at": "2026-04-30T04:27:39+00:00",
       "editions": [
         "cn",
         "intl"
@@ -474,7 +474,7 @@
     {
       "id": "nvidia-app",
       "name": "NVIDIA App",
-      "version": "2026-04-29",
+      "version": "2026-04-30",
       "source": "Official download page; no public version API",
       "version_kind": "sync_date",
       "version_source": "UTC sync date; no public version API",
@@ -492,8 +492,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:43+00:00",
-      "last_success_at": "2026-04-29T17:32:43+00:00",
+      "fetched_at": "2026-04-30T04:27:38+00:00",
+      "last_success_at": "2026-04-30T04:27:38+00:00",
       "editions": [
         "cn",
         "intl"
@@ -520,8 +520,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:44+00:00",
-      "last_success_at": "2026-04-29T17:32:44+00:00",
+      "fetched_at": "2026-04-30T04:27:39+00:00",
+      "last_success_at": "2026-04-30T04:27:39+00:00",
       "editions": [
         "intl"
       ]
@@ -547,8 +547,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:44+00:00",
-      "last_success_at": "2026-04-29T17:32:44+00:00",
+      "fetched_at": "2026-04-30T04:27:39+00:00",
+      "last_success_at": "2026-04-30T04:27:39+00:00",
       "editions": [
         "intl"
       ]
@@ -574,8 +574,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:44+00:00",
-      "last_success_at": "2026-04-29T17:32:44+00:00",
+      "fetched_at": "2026-04-30T04:27:39+00:00",
+      "last_success_at": "2026-04-30T04:27:39+00:00",
       "editions": [
         "intl"
       ]
@@ -601,8 +601,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:44+00:00",
-      "last_success_at": "2026-04-29T17:32:44+00:00",
+      "fetched_at": "2026-04-30T04:27:39+00:00",
+      "last_success_at": "2026-04-30T04:27:39+00:00",
       "editions": [
         "intl"
       ]
@@ -628,8 +628,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:44+00:00",
-      "last_success_at": "2026-04-29T17:32:44+00:00",
+      "fetched_at": "2026-04-30T04:27:39+00:00",
+      "last_success_at": "2026-04-30T04:27:39+00:00",
       "editions": [
         "intl"
       ]
@@ -655,8 +655,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:44+00:00",
-      "last_success_at": "2026-04-29T17:32:44+00:00",
+      "fetched_at": "2026-04-30T04:27:39+00:00",
+      "last_success_at": "2026-04-30T04:27:39+00:00",
       "editions": [
         "intl"
       ]
@@ -682,8 +682,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:45+00:00",
-      "last_success_at": "2026-04-29T17:32:45+00:00",
+      "fetched_at": "2026-04-30T04:27:40+00:00",
+      "last_success_at": "2026-04-30T04:27:40+00:00",
       "editions": [
         "intl"
       ]
@@ -709,8 +709,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:45+00:00",
-      "last_success_at": "2026-04-29T17:32:45+00:00",
+      "fetched_at": "2026-04-30T04:27:40+00:00",
+      "last_success_at": "2026-04-30T04:27:40+00:00",
       "editions": [
         "intl"
       ]
@@ -736,8 +736,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:45+00:00",
-      "last_success_at": "2026-04-29T17:32:45+00:00",
+      "fetched_at": "2026-04-30T04:27:40+00:00",
+      "last_success_at": "2026-04-30T04:27:40+00:00",
       "editions": [
         "intl"
       ]
@@ -763,8 +763,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:45+00:00",
-      "last_success_at": "2026-04-29T17:32:45+00:00",
+      "fetched_at": "2026-04-30T04:27:40+00:00",
+      "last_success_at": "2026-04-30T04:27:40+00:00",
       "editions": [
         "intl"
       ]
@@ -790,8 +790,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:45+00:00",
-      "last_success_at": "2026-04-29T17:32:45+00:00",
+      "fetched_at": "2026-04-30T04:27:40+00:00",
+      "last_success_at": "2026-04-30T04:27:40+00:00",
       "editions": [
         "intl"
       ]
@@ -817,8 +817,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:45+00:00",
-      "last_success_at": "2026-04-29T17:32:45+00:00",
+      "fetched_at": "2026-04-30T04:27:40+00:00",
+      "last_success_at": "2026-04-30T04:27:40+00:00",
       "editions": [
         "intl"
       ]
@@ -844,8 +844,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:45+00:00",
-      "last_success_at": "2026-04-29T17:32:45+00:00",
+      "fetched_at": "2026-04-30T04:27:41+00:00",
+      "last_success_at": "2026-04-30T04:27:41+00:00",
       "editions": [
         "intl"
       ]
@@ -871,8 +871,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:45+00:00",
-      "last_success_at": "2026-04-29T17:32:45+00:00",
+      "fetched_at": "2026-04-30T04:27:41+00:00",
+      "last_success_at": "2026-04-30T04:27:41+00:00",
       "editions": [
         "intl"
       ]
@@ -898,8 +898,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:45+00:00",
-      "last_success_at": "2026-04-29T17:32:45+00:00",
+      "fetched_at": "2026-04-30T04:27:41+00:00",
+      "last_success_at": "2026-04-30T04:27:41+00:00",
       "editions": [
         "intl"
       ]
@@ -925,8 +925,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:46+00:00",
-      "last_success_at": "2026-04-29T17:32:46+00:00",
+      "fetched_at": "2026-04-30T04:27:41+00:00",
+      "last_success_at": "2026-04-30T04:27:41+00:00",
       "editions": [
         "intl"
       ]
@@ -952,8 +952,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:46+00:00",
-      "last_success_at": "2026-04-29T17:32:46+00:00",
+      "fetched_at": "2026-04-30T04:27:41+00:00",
+      "last_success_at": "2026-04-30T04:27:41+00:00",
       "editions": [
         "intl"
       ]
@@ -979,8 +979,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:46+00:00",
-      "last_success_at": "2026-04-29T17:32:46+00:00",
+      "fetched_at": "2026-04-30T04:27:41+00:00",
+      "last_success_at": "2026-04-30T04:27:41+00:00",
       "editions": [
         "intl"
       ]
@@ -1006,8 +1006,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:46+00:00",
-      "last_success_at": "2026-04-29T17:32:46+00:00",
+      "fetched_at": "2026-04-30T04:27:41+00:00",
+      "last_success_at": "2026-04-30T04:27:41+00:00",
       "editions": [
         "intl"
       ]
@@ -1033,8 +1033,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:46+00:00",
-      "last_success_at": "2026-04-29T17:32:46+00:00",
+      "fetched_at": "2026-04-30T04:27:42+00:00",
+      "last_success_at": "2026-04-30T04:27:42+00:00",
       "editions": [
         "intl"
       ]
@@ -1060,8 +1060,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:46+00:00",
-      "last_success_at": "2026-04-29T17:32:46+00:00",
+      "fetched_at": "2026-04-30T04:27:42+00:00",
+      "last_success_at": "2026-04-30T04:27:42+00:00",
       "editions": [
         "intl"
       ]
@@ -1087,8 +1087,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:46+00:00",
-      "last_success_at": "2026-04-29T17:32:46+00:00",
+      "fetched_at": "2026-04-30T04:27:42+00:00",
+      "last_success_at": "2026-04-30T04:27:42+00:00",
       "editions": [
         "intl"
       ]
@@ -1114,8 +1114,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:46+00:00",
-      "last_success_at": "2026-04-29T17:32:46+00:00",
+      "fetched_at": "2026-04-30T04:27:42+00:00",
+      "last_success_at": "2026-04-30T04:27:42+00:00",
       "editions": [
         "intl"
       ]
@@ -1141,8 +1141,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:47+00:00",
-      "last_success_at": "2026-04-29T17:32:47+00:00",
+      "fetched_at": "2026-04-30T04:27:42+00:00",
+      "last_success_at": "2026-04-30T04:27:42+00:00",
       "editions": [
         "intl"
       ]
@@ -1168,8 +1168,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:47+00:00",
-      "last_success_at": "2026-04-29T17:32:47+00:00",
+      "fetched_at": "2026-04-30T04:27:42+00:00",
+      "last_success_at": "2026-04-30T04:27:42+00:00",
       "editions": [
         "intl"
       ]
@@ -1195,8 +1195,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:47+00:00",
-      "last_success_at": "2026-04-29T17:32:47+00:00",
+      "fetched_at": "2026-04-30T04:27:42+00:00",
+      "last_success_at": "2026-04-30T04:27:42+00:00",
       "editions": [
         "intl"
       ]
@@ -1222,8 +1222,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:47+00:00",
-      "last_success_at": "2026-04-29T17:32:47+00:00",
+      "fetched_at": "2026-04-30T04:27:43+00:00",
+      "last_success_at": "2026-04-30T04:27:43+00:00",
       "editions": [
         "intl"
       ]
@@ -1249,8 +1249,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:47+00:00",
-      "last_success_at": "2026-04-29T17:32:47+00:00",
+      "fetched_at": "2026-04-30T04:27:43+00:00",
+      "last_success_at": "2026-04-30T04:27:43+00:00",
       "editions": [
         "intl"
       ]
@@ -1276,8 +1276,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:48+00:00",
-      "last_success_at": "2026-04-29T17:32:48+00:00",
+      "fetched_at": "2026-04-30T04:27:43+00:00",
+      "last_success_at": "2026-04-30T04:27:43+00:00",
       "editions": [
         "intl"
       ]
@@ -1303,8 +1303,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:47+00:00",
-      "last_success_at": "2026-04-29T17:32:47+00:00",
+      "fetched_at": "2026-04-30T04:27:43+00:00",
+      "last_success_at": "2026-04-30T04:27:43+00:00",
       "editions": [
         "intl"
       ]
@@ -1330,8 +1330,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:47+00:00",
-      "last_success_at": "2026-04-29T17:32:47+00:00",
+      "fetched_at": "2026-04-30T04:27:43+00:00",
+      "last_success_at": "2026-04-30T04:27:43+00:00",
       "editions": [
         "intl"
       ]
@@ -1357,8 +1357,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:48+00:00",
-      "last_success_at": "2026-04-29T17:32:48+00:00",
+      "fetched_at": "2026-04-30T04:27:42+00:00",
+      "last_success_at": "2026-04-30T04:27:42+00:00",
       "editions": [
         "intl"
       ]
@@ -1384,8 +1384,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:48+00:00",
-      "last_success_at": "2026-04-29T17:32:48+00:00",
+      "fetched_at": "2026-04-30T04:27:43+00:00",
+      "last_success_at": "2026-04-30T04:27:43+00:00",
       "editions": [
         "intl"
       ]
@@ -1411,8 +1411,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:48+00:00",
-      "last_success_at": "2026-04-29T17:32:48+00:00",
+      "fetched_at": "2026-04-30T04:27:43+00:00",
+      "last_success_at": "2026-04-30T04:27:43+00:00",
       "editions": [
         "intl"
       ]
@@ -1438,8 +1438,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:48+00:00",
-      "last_success_at": "2026-04-29T17:32:48+00:00",
+      "fetched_at": "2026-04-30T04:27:43+00:00",
+      "last_success_at": "2026-04-30T04:27:43+00:00",
       "editions": [
         "intl"
       ]
@@ -1465,8 +1465,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:48+00:00",
-      "last_success_at": "2026-04-29T17:32:48+00:00",
+      "fetched_at": "2026-04-30T04:27:44+00:00",
+      "last_success_at": "2026-04-30T04:27:44+00:00",
       "editions": [
         "intl"
       ]
@@ -1492,8 +1492,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:48+00:00",
-      "last_success_at": "2026-04-29T17:32:48+00:00",
+      "fetched_at": "2026-04-30T04:27:44+00:00",
+      "last_success_at": "2026-04-30T04:27:44+00:00",
       "editions": [
         "intl"
       ]
@@ -1519,8 +1519,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:49+00:00",
-      "last_success_at": "2026-04-29T17:32:49+00:00",
+      "fetched_at": "2026-04-30T04:27:45+00:00",
+      "last_success_at": "2026-04-30T04:27:45+00:00",
       "editions": [
         "intl"
       ]
@@ -1546,8 +1546,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:49+00:00",
-      "last_success_at": "2026-04-29T17:32:49+00:00",
+      "fetched_at": "2026-04-30T04:27:44+00:00",
+      "last_success_at": "2026-04-30T04:27:44+00:00",
       "editions": [
         "intl"
       ]
@@ -1573,8 +1573,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:49+00:00",
-      "last_success_at": "2026-04-29T17:32:49+00:00",
+      "fetched_at": "2026-04-30T04:27:44+00:00",
+      "last_success_at": "2026-04-30T04:27:44+00:00",
       "editions": [
         "intl"
       ]
@@ -1600,8 +1600,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:49+00:00",
-      "last_success_at": "2026-04-29T17:32:49+00:00",
+      "fetched_at": "2026-04-30T04:27:44+00:00",
+      "last_success_at": "2026-04-30T04:27:44+00:00",
       "editions": [
         "intl"
       ]
@@ -1627,8 +1627,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:49+00:00",
-      "last_success_at": "2026-04-29T17:32:49+00:00",
+      "fetched_at": "2026-04-30T04:27:44+00:00",
+      "last_success_at": "2026-04-30T04:27:44+00:00",
       "editions": [
         "intl"
       ]
@@ -1654,8 +1654,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:48+00:00",
-      "last_success_at": "2026-04-29T17:32:48+00:00",
+      "fetched_at": "2026-04-30T04:27:45+00:00",
+      "last_success_at": "2026-04-30T04:27:45+00:00",
       "editions": [
         "intl"
       ]
@@ -1681,8 +1681,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:49+00:00",
-      "last_success_at": "2026-04-29T17:32:49+00:00",
+      "fetched_at": "2026-04-30T04:27:44+00:00",
+      "last_success_at": "2026-04-30T04:27:44+00:00",
       "editions": [
         "intl"
       ]
@@ -1708,8 +1708,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:49+00:00",
-      "last_success_at": "2026-04-29T17:32:49+00:00",
+      "fetched_at": "2026-04-30T04:27:45+00:00",
+      "last_success_at": "2026-04-30T04:27:45+00:00",
       "editions": [
         "intl"
       ]
@@ -1735,8 +1735,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:49+00:00",
-      "last_success_at": "2026-04-29T17:32:49+00:00",
+      "fetched_at": "2026-04-30T04:27:45+00:00",
+      "last_success_at": "2026-04-30T04:27:45+00:00",
       "editions": [
         "intl"
       ]
@@ -1762,8 +1762,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:50+00:00",
-      "last_success_at": "2026-04-29T17:32:50+00:00",
+      "fetched_at": "2026-04-30T04:27:45+00:00",
+      "last_success_at": "2026-04-30T04:27:45+00:00",
       "editions": [
         "intl"
       ]
@@ -1789,8 +1789,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:50+00:00",
-      "last_success_at": "2026-04-29T17:32:50+00:00",
+      "fetched_at": "2026-04-30T04:27:45+00:00",
+      "last_success_at": "2026-04-30T04:27:45+00:00",
       "editions": [
         "intl"
       ]
@@ -1816,8 +1816,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:50+00:00",
-      "last_success_at": "2026-04-29T17:32:50+00:00",
+      "fetched_at": "2026-04-30T04:27:45+00:00",
+      "last_success_at": "2026-04-30T04:27:45+00:00",
       "editions": [
         "intl"
       ]
@@ -1843,8 +1843,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:50+00:00",
-      "last_success_at": "2026-04-29T17:32:50+00:00",
+      "fetched_at": "2026-04-30T04:27:45+00:00",
+      "last_success_at": "2026-04-30T04:27:45+00:00",
       "editions": [
         "intl"
       ]
@@ -1870,8 +1870,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:50+00:00",
-      "last_success_at": "2026-04-29T17:32:50+00:00",
+      "fetched_at": "2026-04-30T04:27:46+00:00",
+      "last_success_at": "2026-04-30T04:27:46+00:00",
       "editions": [
         "intl"
       ]
@@ -1897,8 +1897,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:50+00:00",
-      "last_success_at": "2026-04-29T17:32:50+00:00",
+      "fetched_at": "2026-04-30T04:27:46+00:00",
+      "last_success_at": "2026-04-30T04:27:46+00:00",
       "editions": [
         "intl"
       ]
@@ -1924,8 +1924,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:50+00:00",
-      "last_success_at": "2026-04-29T17:32:50+00:00",
+      "fetched_at": "2026-04-30T04:27:46+00:00",
+      "last_success_at": "2026-04-30T04:27:46+00:00",
       "editions": [
         "intl"
       ]
@@ -1951,8 +1951,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:50+00:00",
-      "last_success_at": "2026-04-29T17:32:50+00:00",
+      "fetched_at": "2026-04-30T04:27:46+00:00",
+      "last_success_at": "2026-04-30T04:27:46+00:00",
       "editions": [
         "intl"
       ]
@@ -1978,8 +1978,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:51+00:00",
-      "last_success_at": "2026-04-29T17:32:51+00:00",
+      "fetched_at": "2026-04-30T04:27:46+00:00",
+      "last_success_at": "2026-04-30T04:27:46+00:00",
       "editions": [
         "intl"
       ]
@@ -2005,8 +2005,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:51+00:00",
-      "last_success_at": "2026-04-29T17:32:51+00:00",
+      "fetched_at": "2026-04-30T04:27:46+00:00",
+      "last_success_at": "2026-04-30T04:27:46+00:00",
       "editions": [
         "intl"
       ]
@@ -2014,7 +2014,7 @@
     {
       "id": "nssm",
       "name": "NSSM",
-      "version": "2026-04-29",
+      "version": "2026-04-30",
       "source": "Official NSSM download page; no public version API",
       "version_kind": "sync_date",
       "version_source": "UTC sync date; no public version API",
@@ -2032,8 +2032,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:50+00:00",
-      "last_success_at": "2026-04-29T17:32:50+00:00",
+      "fetched_at": "2026-04-30T04:27:45+00:00",
+      "last_success_at": "2026-04-30T04:27:45+00:00",
       "editions": [
         "intl"
       ]
@@ -2059,8 +2059,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:51+00:00",
-      "last_success_at": "2026-04-29T17:32:51+00:00",
+      "fetched_at": "2026-04-30T04:27:46+00:00",
+      "last_success_at": "2026-04-30T04:27:46+00:00",
       "editions": [
         "intl"
       ]
@@ -2086,8 +2086,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:51+00:00",
-      "last_success_at": "2026-04-29T17:32:51+00:00",
+      "fetched_at": "2026-04-30T04:27:46+00:00",
+      "last_success_at": "2026-04-30T04:27:46+00:00",
       "editions": [
         "intl"
       ]
@@ -2113,8 +2113,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:51+00:00",
-      "last_success_at": "2026-04-29T17:32:51+00:00",
+      "fetched_at": "2026-04-30T04:27:47+00:00",
+      "last_success_at": "2026-04-30T04:27:47+00:00",
       "editions": [
         "intl"
       ]
@@ -2140,8 +2140,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:51+00:00",
-      "last_success_at": "2026-04-29T17:32:51+00:00",
+      "fetched_at": "2026-04-30T04:27:47+00:00",
+      "last_success_at": "2026-04-30T04:27:47+00:00",
       "editions": [
         "intl"
       ]
@@ -2149,7 +2149,7 @@
     {
       "id": "fastgithub",
       "name": "FastGithub",
-      "version": "2026-04-29",
+      "version": "2026-04-30",
       "source": "GitHub project page; no public release API",
       "version_kind": "sync_date",
       "version_source": "UTC sync date; no public version API",
@@ -2167,8 +2167,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:50+00:00",
-      "last_success_at": "2026-04-29T17:32:50+00:00",
+      "fetched_at": "2026-04-30T04:27:46+00:00",
+      "last_success_at": "2026-04-30T04:27:46+00:00",
       "editions": [
         "intl"
       ]
@@ -2176,7 +2176,7 @@
     {
       "id": "gnupg",
       "name": "Gpg4win",
-      "version": "2026-04-29",
+      "version": "2026-04-30",
       "source": "Official Gpg4win download page; no public version API",
       "version_kind": "sync_date",
       "version_source": "UTC sync date; no public version API",
@@ -2194,8 +2194,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:50+00:00",
-      "last_success_at": "2026-04-29T17:32:50+00:00",
+      "fetched_at": "2026-04-30T04:27:46+00:00",
+      "last_success_at": "2026-04-30T04:27:46+00:00",
       "editions": [
         "intl"
       ]
@@ -2221,8 +2221,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:52+00:00",
-      "last_success_at": "2026-04-29T17:32:52+00:00",
+      "fetched_at": "2026-04-30T04:27:47+00:00",
+      "last_success_at": "2026-04-30T04:27:47+00:00",
       "editions": [
         "intl"
       ]
@@ -2248,8 +2248,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:52+00:00",
-      "last_success_at": "2026-04-29T17:32:52+00:00",
+      "fetched_at": "2026-04-30T04:27:47+00:00",
+      "last_success_at": "2026-04-30T04:27:47+00:00",
       "editions": [
         "intl"
       ]
@@ -2275,8 +2275,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:52+00:00",
-      "last_success_at": "2026-04-29T17:32:52+00:00",
+      "fetched_at": "2026-04-30T04:27:47+00:00",
+      "last_success_at": "2026-04-30T04:27:47+00:00",
       "editions": [
         "intl"
       ]
@@ -2302,8 +2302,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:52+00:00",
-      "last_success_at": "2026-04-29T17:32:52+00:00",
+      "fetched_at": "2026-04-30T04:27:48+00:00",
+      "last_success_at": "2026-04-30T04:27:48+00:00",
       "editions": [
         "intl"
       ]
@@ -2329,8 +2329,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:52+00:00",
-      "last_success_at": "2026-04-29T17:32:52+00:00",
+      "fetched_at": "2026-04-30T04:27:48+00:00",
+      "last_success_at": "2026-04-30T04:27:48+00:00",
       "editions": [
         "intl"
       ]
@@ -2356,8 +2356,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:52+00:00",
-      "last_success_at": "2026-04-29T17:32:52+00:00",
+      "fetched_at": "2026-04-30T04:27:48+00:00",
+      "last_success_at": "2026-04-30T04:27:48+00:00",
       "editions": [
         "intl"
       ]
@@ -2365,7 +2365,7 @@
     {
       "id": "windows11-english",
       "name": "Windows 11",
-      "version": "2026-04-29",
+      "version": "2026-04-30",
       "source": "Official Microsoft Windows 11 download page; Fido ISO URL is environment dependent",
       "version_kind": "sync_date",
       "version_source": "UTC sync date; no public version API",
@@ -2383,8 +2383,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:51+00:00",
-      "last_success_at": "2026-04-29T17:32:51+00:00",
+      "fetched_at": "2026-04-30T04:27:46+00:00",
+      "last_success_at": "2026-04-30T04:27:46+00:00",
       "editions": [
         "intl"
       ]
@@ -2426,8 +2426,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:52+00:00",
-      "last_success_at": "2026-04-29T17:32:52+00:00",
+      "fetched_at": "2026-04-30T04:27:47+00:00",
+      "last_success_at": "2026-04-30T04:27:47+00:00",
       "editions": [
         "intl"
       ]
@@ -2477,8 +2477,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:52+00:00",
-      "last_success_at": "2026-04-29T17:32:52+00:00",
+      "fetched_at": "2026-04-30T04:27:47+00:00",
+      "last_success_at": "2026-04-30T04:27:47+00:00",
       "editions": [
         "intl"
       ]
@@ -2528,8 +2528,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:52+00:00",
-      "last_success_at": "2026-04-29T17:32:52+00:00",
+      "fetched_at": "2026-04-30T04:27:48+00:00",
+      "last_success_at": "2026-04-30T04:27:48+00:00",
       "editions": [
         "intl"
       ]
@@ -2579,8 +2579,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:52+00:00",
-      "last_success_at": "2026-04-29T17:32:52+00:00",
+      "fetched_at": "2026-04-30T04:27:48+00:00",
+      "last_success_at": "2026-04-30T04:27:48+00:00",
       "editions": [
         "intl"
       ]
@@ -2622,8 +2622,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:53+00:00",
-      "last_success_at": "2026-04-29T17:32:53+00:00",
+      "fetched_at": "2026-04-30T04:27:48+00:00",
+      "last_success_at": "2026-04-30T04:27:48+00:00",
       "editions": [
         "intl"
       ]
@@ -2665,8 +2665,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:53+00:00",
-      "last_success_at": "2026-04-29T17:32:53+00:00",
+      "fetched_at": "2026-04-30T04:27:48+00:00",
+      "last_success_at": "2026-04-30T04:27:48+00:00",
       "editions": [
         "intl"
       ]
@@ -2708,8 +2708,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:53+00:00",
-      "last_success_at": "2026-04-29T17:32:53+00:00",
+      "fetched_at": "2026-04-30T04:27:48+00:00",
+      "last_success_at": "2026-04-30T04:27:48+00:00",
       "editions": [
         "intl"
       ]
@@ -2735,8 +2735,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:53+00:00",
-      "last_success_at": "2026-04-29T17:32:53+00:00",
+      "fetched_at": "2026-04-30T04:27:49+00:00",
+      "last_success_at": "2026-04-30T04:27:49+00:00",
       "editions": [
         "intl"
       ]
@@ -2778,8 +2778,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:53+00:00",
-      "last_success_at": "2026-04-29T17:32:53+00:00",
+      "fetched_at": "2026-04-30T04:27:49+00:00",
+      "last_success_at": "2026-04-30T04:27:49+00:00",
       "editions": [
         "intl"
       ]
@@ -2805,8 +2805,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:53+00:00",
-      "last_success_at": "2026-04-29T17:32:53+00:00",
+      "fetched_at": "2026-04-30T04:27:49+00:00",
+      "last_success_at": "2026-04-30T04:27:49+00:00",
       "editions": [
         "intl"
       ]
@@ -2832,8 +2832,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:53+00:00",
-      "last_success_at": "2026-04-29T17:32:53+00:00",
+      "fetched_at": "2026-04-30T04:27:50+00:00",
+      "last_success_at": "2026-04-30T04:27:50+00:00",
       "editions": [
         "intl"
       ]
@@ -2875,8 +2875,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:53+00:00",
-      "last_success_at": "2026-04-29T17:32:53+00:00",
+      "fetched_at": "2026-04-30T04:27:49+00:00",
+      "last_success_at": "2026-04-30T04:27:49+00:00",
       "editions": [
         "intl"
       ]
@@ -2918,8 +2918,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:54+00:00",
-      "last_success_at": "2026-04-29T17:32:54+00:00",
+      "fetched_at": "2026-04-30T04:27:49+00:00",
+      "last_success_at": "2026-04-30T04:27:49+00:00",
       "editions": [
         "intl"
       ]
@@ -2927,26 +2927,26 @@
     {
       "id": "rpcs3",
       "name": "RPCS3",
-      "version": "212935c702d228b29bbacf11f6fe02e86b655d8",
+      "version": "3cf1da7b771d9077e68987dc845aa1eb2952fd1",
       "source": "GitHub Release: RPCS3/rpcs3-binaries-win",
       "version_kind": "release_version",
       "version_source": "GitHub release tag",
       "category": "Gaming",
       "homepage": "https://rpcs3.net/",
-      "released_at": "2026-04-29T03:25:17Z",
-      "notes_url": "https://github.com/RPCS3/rpcs3-binaries-win/releases/tag/build-b212935c702d228b29bbacf11f6fe02e86b655d8",
+      "released_at": "2026-04-29T17:58:19Z",
+      "notes_url": "https://github.com/RPCS3/rpcs3-binaries-win/releases/tag/build-f3cf1da7b771d9077e68987dc845aa1eb2952fd1",
       "assets": [
         {
           "platform": "win-x64",
-          "url": "https://github.com/RPCS3/rpcs3-binaries-win/releases/download/build-b212935c702d228b29bbacf11f6fe02e86b655d8/rpcs3-v0.0.40-19262-b212935c_win64_msvc.7z",
+          "url": "https://github.com/RPCS3/rpcs3-binaries-win/releases/download/build-f3cf1da7b771d9077e68987dc845aa1eb2952fd1/rpcs3-v0.0.40-19264-f3cf1da7_win64_msvc.7z",
           "link_kind": "direct",
-          "filename": "rpcs3-v0.0.40-19262-b212935c_win64_msvc.7z",
-          "size": 36598605,
+          "filename": "rpcs3-v0.0.40-19264-f3cf1da7_win64_msvc.7z",
+          "size": 36595062,
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:54+00:00",
-      "last_success_at": "2026-04-29T17:32:54+00:00",
+      "fetched_at": "2026-04-30T04:27:49+00:00",
+      "last_success_at": "2026-04-30T04:27:49+00:00",
       "editions": [
         "intl"
       ]
@@ -2988,8 +2988,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:54+00:00",
-      "last_success_at": "2026-04-29T17:32:54+00:00",
+      "fetched_at": "2026-04-30T04:27:50+00:00",
+      "last_success_at": "2026-04-30T04:27:50+00:00",
       "editions": [
         "intl"
       ]
@@ -3031,8 +3031,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:54+00:00",
-      "last_success_at": "2026-04-29T17:32:54+00:00",
+      "fetched_at": "2026-04-30T04:27:50+00:00",
+      "last_success_at": "2026-04-30T04:27:50+00:00",
       "editions": [
         "intl"
       ]
@@ -3074,8 +3074,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:54+00:00",
-      "last_success_at": "2026-04-29T17:32:54+00:00",
+      "fetched_at": "2026-04-30T04:27:49+00:00",
+      "last_success_at": "2026-04-30T04:27:49+00:00",
       "editions": [
         "intl"
       ]
@@ -3117,8 +3117,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:54+00:00",
-      "last_success_at": "2026-04-29T17:32:54+00:00",
+      "fetched_at": "2026-04-30T04:27:50+00:00",
+      "last_success_at": "2026-04-30T04:27:50+00:00",
       "editions": [
         "intl"
       ]
@@ -3126,7 +3126,7 @@
     {
       "id": "discord",
       "name": "Discord",
-      "version": "2026-04-29",
+      "version": "2026-04-30",
       "source": "Official Discord download endpoint; no public version API",
       "version_kind": "sync_date",
       "version_source": "UTC sync date; no public version API",
@@ -3160,8 +3160,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:53+00:00",
-      "last_success_at": "2026-04-29T17:32:53+00:00",
+      "fetched_at": "2026-04-30T04:27:49+00:00",
+      "last_success_at": "2026-04-30T04:27:49+00:00",
       "editions": [
         "intl"
       ]
@@ -3169,7 +3169,7 @@
     {
       "id": "slack",
       "name": "Slack",
-      "version": "2026-04-29",
+      "version": "2026-04-30",
       "source": "Official Slack download page; no public version API",
       "version_kind": "sync_date",
       "version_source": "UTC sync date; no public version API",
@@ -3203,8 +3203,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:53+00:00",
-      "last_success_at": "2026-04-29T17:32:53+00:00",
+      "fetched_at": "2026-04-30T04:27:49+00:00",
+      "last_success_at": "2026-04-30T04:27:49+00:00",
       "editions": [
         "intl"
       ]
@@ -3212,7 +3212,7 @@
     {
       "id": "zoom",
       "name": "Zoom Workplace",
-      "version": "2026-04-29",
+      "version": "2026-04-30",
       "source": "Official Zoom download page; no public version API",
       "version_kind": "sync_date",
       "version_source": "UTC sync date; no public version API",
@@ -3238,8 +3238,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:53+00:00",
-      "last_success_at": "2026-04-29T17:32:53+00:00",
+      "fetched_at": "2026-04-30T04:27:49+00:00",
+      "last_success_at": "2026-04-30T04:27:49+00:00",
       "editions": [
         "intl"
       ]
@@ -3247,7 +3247,7 @@
     {
       "id": "spotify",
       "name": "Spotify",
-      "version": "2026-04-29",
+      "version": "2026-04-30",
       "source": "Official Spotify download page; no public version API",
       "version_kind": "sync_date",
       "version_source": "UTC sync date; no public version API",
@@ -3273,8 +3273,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:53+00:00",
-      "last_success_at": "2026-04-29T17:32:53+00:00",
+      "fetched_at": "2026-04-30T04:27:49+00:00",
+      "last_success_at": "2026-04-30T04:27:49+00:00",
       "editions": [
         "intl"
       ]
@@ -3282,7 +3282,7 @@
     {
       "id": "vlc",
       "name": "VLC media player",
-      "version": "2026-04-29",
+      "version": "2026-04-30",
       "source": "Official VideoLAN download page; no public version API",
       "version_kind": "sync_date",
       "version_source": "UTC sync date; no public version API",
@@ -3316,8 +3316,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:53+00:00",
-      "last_success_at": "2026-04-29T17:32:53+00:00",
+      "fetched_at": "2026-04-30T04:27:49+00:00",
+      "last_success_at": "2026-04-30T04:27:49+00:00",
       "editions": [
         "intl"
       ]
@@ -3325,7 +3325,7 @@
     {
       "id": "sevenzip",
       "name": "7-Zip",
-      "version": "2026-04-29",
+      "version": "2026-04-30",
       "source": "Official 7-Zip download page; no public version API",
       "version_kind": "sync_date",
       "version_source": "UTC sync date; no public version API",
@@ -3343,8 +3343,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:53+00:00",
-      "last_success_at": "2026-04-29T17:32:53+00:00",
+      "fetched_at": "2026-04-30T04:27:49+00:00",
+      "last_success_at": "2026-04-30T04:27:49+00:00",
       "editions": [
         "intl"
       ]
@@ -3352,7 +3352,7 @@
     {
       "id": "python",
       "name": "Python",
-      "version": "2026-04-29",
+      "version": "2026-04-30",
       "source": "Official Python downloads page; no public version API",
       "version_kind": "sync_date",
       "version_source": "UTC sync date; no public version API",
@@ -3378,8 +3378,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:53+00:00",
-      "last_success_at": "2026-04-29T17:32:53+00:00",
+      "fetched_at": "2026-04-30T04:27:49+00:00",
+      "last_success_at": "2026-04-30T04:27:49+00:00",
       "editions": [
         "intl"
       ]
@@ -3387,7 +3387,7 @@
     {
       "id": "go",
       "name": "Go",
-      "version": "2026-04-29",
+      "version": "2026-04-30",
       "source": "Official Go downloads page; no public version API",
       "version_kind": "sync_date",
       "version_source": "UTC sync date; no public version API",
@@ -3421,8 +3421,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:53+00:00",
-      "last_success_at": "2026-04-29T17:32:53+00:00",
+      "fetched_at": "2026-04-30T04:27:49+00:00",
+      "last_success_at": "2026-04-30T04:27:49+00:00",
       "editions": [
         "intl"
       ]
@@ -3430,7 +3430,7 @@
     {
       "id": "signal",
       "name": "Signal Desktop",
-      "version": "2026-04-29",
+      "version": "2026-04-30",
       "source": "Official Signal download page; no public version API",
       "version_kind": "sync_date",
       "version_source": "UTC sync date; no public version API",
@@ -3456,8 +3456,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:53+00:00",
-      "last_success_at": "2026-04-29T17:32:53+00:00",
+      "fetched_at": "2026-04-30T04:27:49+00:00",
+      "last_success_at": "2026-04-30T04:27:49+00:00",
       "editions": [
         "intl"
       ]
@@ -3465,7 +3465,7 @@
     {
       "id": "wireguard",
       "name": "WireGuard",
-      "version": "2026-04-29",
+      "version": "2026-04-30",
       "source": "Official WireGuard download page; no public version API",
       "version_kind": "sync_date",
       "version_source": "UTC sync date; no public version API",
@@ -3491,8 +3491,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:53+00:00",
-      "last_success_at": "2026-04-29T17:32:53+00:00",
+      "fetched_at": "2026-04-30T04:27:49+00:00",
+      "last_success_at": "2026-04-30T04:27:49+00:00",
       "editions": [
         "intl"
       ]
@@ -3500,7 +3500,7 @@
     {
       "id": "tailscale",
       "name": "Tailscale",
-      "version": "2026-04-29",
+      "version": "2026-04-30",
       "source": "Official Tailscale download page; no public version API",
       "version_kind": "sync_date",
       "version_source": "UTC sync date; no public version API",
@@ -3534,8 +3534,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:53+00:00",
-      "last_success_at": "2026-04-29T17:32:53+00:00",
+      "fetched_at": "2026-04-30T04:27:49+00:00",
+      "last_success_at": "2026-04-30T04:27:49+00:00",
       "editions": [
         "intl"
       ]
@@ -3543,7 +3543,7 @@
     {
       "id": "qbittorrent",
       "name": "qBittorrent",
-      "version": "2026-04-29",
+      "version": "2026-04-30",
       "source": "Official qBittorrent download page; no public version API",
       "version_kind": "sync_date",
       "version_source": "UTC sync date; no public version API",
@@ -3577,8 +3577,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:53+00:00",
-      "last_success_at": "2026-04-29T17:32:53+00:00",
+      "fetched_at": "2026-04-30T04:27:49+00:00",
+      "last_success_at": "2026-04-30T04:27:49+00:00",
       "editions": [
         "intl"
       ]
@@ -3604,11 +3604,11 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:54+00:00",
+      "fetched_at": "2026-04-30T04:27:50+00:00",
       "warnings": [
         "mac-arm64: 没有匹配 asset pattern 'Zed-*-aarch64.dmg'"
       ],
-      "last_success_at": "2026-04-29T17:32:54+00:00",
+      "last_success_at": "2026-04-30T04:27:50+00:00",
       "editions": [
         "intl"
       ]
@@ -3616,7 +3616,7 @@
     {
       "id": "lapce",
       "name": "Lapce",
-      "version": "2026-04-29",
+      "version": "2026-04-30",
       "source": "Official project download page; no stable public release asset API",
       "version_kind": "sync_date",
       "version_source": "UTC sync date; no public version API",
@@ -3650,8 +3650,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:53+00:00",
-      "last_success_at": "2026-04-29T17:32:53+00:00",
+      "fetched_at": "2026-04-30T04:27:49+00:00",
+      "last_success_at": "2026-04-30T04:27:49+00:00",
       "editions": [
         "intl"
       ]
@@ -3693,8 +3693,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:54+00:00",
-      "last_success_at": "2026-04-29T17:32:54+00:00",
+      "fetched_at": "2026-04-30T04:27:50+00:00",
+      "last_success_at": "2026-04-30T04:27:50+00:00",
       "editions": [
         "intl"
       ]
@@ -3702,7 +3702,7 @@
     {
       "id": "ghostty",
       "name": "Ghostty",
-      "version": "2026-04-29",
+      "version": "2026-04-30",
       "source": "Official project download page; no stable public release asset API",
       "version_kind": "sync_date",
       "version_source": "UTC sync date; no public version API",
@@ -3720,8 +3720,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:53+00:00",
-      "last_success_at": "2026-04-29T17:32:53+00:00",
+      "fetched_at": "2026-04-30T04:27:49+00:00",
+      "last_success_at": "2026-04-30T04:27:49+00:00",
       "editions": [
         "intl"
       ]
@@ -3729,7 +3729,7 @@
     {
       "id": "kitty",
       "name": "Kitty",
-      "version": "2026-04-29",
+      "version": "2026-04-30",
       "source": "Official project download page; no stable public release asset API",
       "version_kind": "sync_date",
       "version_source": "UTC sync date; no public version API",
@@ -3747,8 +3747,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:53+00:00",
-      "last_success_at": "2026-04-29T17:32:53+00:00",
+      "fetched_at": "2026-04-30T04:27:49+00:00",
+      "last_success_at": "2026-04-30T04:27:49+00:00",
       "editions": [
         "intl"
       ]
@@ -3790,8 +3790,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:55+00:00",
-      "last_success_at": "2026-04-29T17:32:55+00:00",
+      "fetched_at": "2026-04-30T04:27:50+00:00",
+      "last_success_at": "2026-04-30T04:27:50+00:00",
       "editions": [
         "intl"
       ]
@@ -3833,8 +3833,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:55+00:00",
-      "last_success_at": "2026-04-29T17:32:55+00:00",
+      "fetched_at": "2026-04-30T04:27:50+00:00",
+      "last_success_at": "2026-04-30T04:27:50+00:00",
       "editions": [
         "intl"
       ]
@@ -3876,8 +3876,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:55+00:00",
-      "last_success_at": "2026-04-29T17:32:55+00:00",
+      "fetched_at": "2026-04-30T04:27:50+00:00",
+      "last_success_at": "2026-04-30T04:27:50+00:00",
       "editions": [
         "intl"
       ]
@@ -3885,7 +3885,7 @@
     {
       "id": "fish",
       "name": "Fish Shell",
-      "version": "2026-04-29",
+      "version": "2026-04-30",
       "source": "Official project download page; no stable public release asset API",
       "version_kind": "sync_date",
       "version_source": "UTC sync date; no public version API",
@@ -3903,8 +3903,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:54+00:00",
-      "last_success_at": "2026-04-29T17:32:54+00:00",
+      "fetched_at": "2026-04-30T04:27:49+00:00",
+      "last_success_at": "2026-04-30T04:27:49+00:00",
       "editions": [
         "intl"
       ]
@@ -3946,8 +3946,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:56+00:00",
-      "last_success_at": "2026-04-29T17:32:56+00:00",
+      "fetched_at": "2026-04-30T04:27:51+00:00",
+      "last_success_at": "2026-04-30T04:27:51+00:00",
       "editions": [
         "intl"
       ]
@@ -3955,7 +3955,7 @@
     {
       "id": "bottom",
       "name": "bottom",
-      "version": "2026-04-29",
+      "version": "2026-04-30",
       "source": "Official project download page; no stable public release asset API",
       "version_kind": "sync_date",
       "version_source": "UTC sync date; no public version API",
@@ -3989,8 +3989,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:54+00:00",
-      "last_success_at": "2026-04-29T17:32:54+00:00",
+      "fetched_at": "2026-04-30T04:27:50+00:00",
+      "last_success_at": "2026-04-30T04:27:50+00:00",
       "editions": [
         "intl"
       ]
@@ -3998,7 +3998,7 @@
     {
       "id": "btop",
       "name": "btop++",
-      "version": "2026-04-29",
+      "version": "2026-04-30",
       "source": "Official project download page; no stable public release asset API",
       "version_kind": "sync_date",
       "version_source": "UTC sync date; no public version API",
@@ -4032,8 +4032,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:54+00:00",
-      "last_success_at": "2026-04-29T17:32:54+00:00",
+      "fetched_at": "2026-04-30T04:27:50+00:00",
+      "last_success_at": "2026-04-30T04:27:50+00:00",
       "editions": [
         "intl"
       ]
@@ -4067,11 +4067,11 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:55+00:00",
+      "fetched_at": "2026-04-30T04:27:51+00:00",
       "warnings": [
         "mac-arm64: 没有匹配 asset pattern 'dust-*-aarch64-apple-darwin.tar.gz'"
       ],
-      "last_success_at": "2026-04-29T17:32:55+00:00",
+      "last_success_at": "2026-04-30T04:27:51+00:00",
       "editions": [
         "intl"
       ]
@@ -4097,12 +4097,12 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:55+00:00",
+      "fetched_at": "2026-04-30T04:27:51+00:00",
       "warnings": [
         "win-x64: 没有匹配 asset pattern 'duf_*_windows_amd64.zip'",
         "linux-x64: 没有匹配 asset pattern 'duf_*_linux_amd64.tar.gz'"
       ],
-      "last_success_at": "2026-04-29T17:32:55+00:00",
+      "last_success_at": "2026-04-30T04:27:51+00:00",
       "editions": [
         "intl"
       ]
@@ -4110,7 +4110,7 @@
     {
       "id": "procs",
       "name": "procs",
-      "version": "2026-04-29",
+      "version": "2026-04-30",
       "source": "Official project download page; no stable public release asset API",
       "version_kind": "sync_date",
       "version_source": "UTC sync date; no public version API",
@@ -4144,8 +4144,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:54+00:00",
-      "last_success_at": "2026-04-29T17:32:54+00:00",
+      "fetched_at": "2026-04-30T04:27:50+00:00",
+      "last_success_at": "2026-04-30T04:27:50+00:00",
       "editions": [
         "intl"
       ]
@@ -4187,8 +4187,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:55+00:00",
-      "last_success_at": "2026-04-29T17:32:55+00:00",
+      "fetched_at": "2026-04-30T04:27:51+00:00",
+      "last_success_at": "2026-04-30T04:27:51+00:00",
       "editions": [
         "intl"
       ]
@@ -4230,8 +4230,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:55+00:00",
-      "last_success_at": "2026-04-29T17:32:55+00:00",
+      "fetched_at": "2026-04-30T04:27:51+00:00",
+      "last_success_at": "2026-04-30T04:27:51+00:00",
       "editions": [
         "intl"
       ]
@@ -4273,8 +4273,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:56+00:00",
-      "last_success_at": "2026-04-29T17:32:56+00:00",
+      "fetched_at": "2026-04-30T04:27:51+00:00",
+      "last_success_at": "2026-04-30T04:27:51+00:00",
       "editions": [
         "intl"
       ]
@@ -4282,7 +4282,7 @@
     {
       "id": "gitui",
       "name": "GitUI",
-      "version": "2026-04-29",
+      "version": "2026-04-30",
       "source": "Official project download page; no stable public release asset API",
       "version_kind": "sync_date",
       "version_source": "UTC sync date; no public version API",
@@ -4316,8 +4316,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:54+00:00",
-      "last_success_at": "2026-04-29T17:32:54+00:00",
+      "fetched_at": "2026-04-30T04:27:50+00:00",
+      "last_success_at": "2026-04-30T04:27:50+00:00",
       "editions": [
         "intl"
       ]
@@ -4359,8 +4359,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:55+00:00",
-      "last_success_at": "2026-04-29T17:32:55+00:00",
+      "fetched_at": "2026-04-30T04:27:51+00:00",
+      "last_success_at": "2026-04-30T04:27:51+00:00",
       "editions": [
         "intl"
       ]
@@ -4402,8 +4402,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:56+00:00",
-      "last_success_at": "2026-04-29T17:32:56+00:00",
+      "fetched_at": "2026-04-30T04:27:51+00:00",
+      "last_success_at": "2026-04-30T04:27:51+00:00",
       "editions": [
         "intl"
       ]
@@ -4445,8 +4445,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:57+00:00",
-      "last_success_at": "2026-04-29T17:32:57+00:00",
+      "fetched_at": "2026-04-30T04:27:52+00:00",
+      "last_success_at": "2026-04-30T04:27:52+00:00",
       "editions": [
         "intl"
       ]
@@ -4454,7 +4454,7 @@
     {
       "id": "ruff",
       "name": "Ruff",
-      "version": "2026-04-29",
+      "version": "2026-04-30",
       "source": "Official project download page; no stable public release asset API",
       "version_kind": "sync_date",
       "version_source": "UTC sync date; no public version API",
@@ -4488,8 +4488,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:55+00:00",
-      "last_success_at": "2026-04-29T17:32:55+00:00",
+      "fetched_at": "2026-04-30T04:27:50+00:00",
+      "last_success_at": "2026-04-30T04:27:50+00:00",
       "editions": [
         "intl"
       ]
@@ -4497,7 +4497,7 @@
     {
       "id": "uv",
       "name": "uv",
-      "version": "2026-04-29",
+      "version": "2026-04-30",
       "source": "Official project download page; no stable public release asset API",
       "version_kind": "sync_date",
       "version_source": "UTC sync date; no public version API",
@@ -4531,8 +4531,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:55+00:00",
-      "last_success_at": "2026-04-29T17:32:55+00:00",
+      "fetched_at": "2026-04-30T04:27:50+00:00",
+      "last_success_at": "2026-04-30T04:27:50+00:00",
       "editions": [
         "intl"
       ]
@@ -4566,11 +4566,11 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:56+00:00",
+      "fetched_at": "2026-04-30T04:27:52+00:00",
       "warnings": [
         "win-x64: 没有匹配 asset pattern 'biome-win-x64.exe'"
       ],
-      "last_success_at": "2026-04-29T17:32:56+00:00",
+      "last_success_at": "2026-04-30T04:27:52+00:00",
       "editions": [
         "intl"
       ]
@@ -4604,11 +4604,11 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:56+00:00",
+      "fetched_at": "2026-04-30T04:27:52+00:00",
       "warnings": [
         "mac-arm64: 没有匹配 asset pattern 'cargo-nextest-*-aarch64-apple-darwin.tar.gz'"
       ],
-      "last_success_at": "2026-04-29T17:32:56+00:00",
+      "last_success_at": "2026-04-30T04:27:52+00:00",
       "editions": [
         "intl"
       ]
@@ -4650,8 +4650,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:56+00:00",
-      "last_success_at": "2026-04-29T17:32:56+00:00",
+      "fetched_at": "2026-04-30T04:27:52+00:00",
+      "last_success_at": "2026-04-30T04:27:52+00:00",
       "editions": [
         "intl"
       ]
@@ -4659,7 +4659,7 @@
     {
       "id": "trunk",
       "name": "Trunk",
-      "version": "2026-04-29",
+      "version": "2026-04-30",
       "source": "Official project download page; no stable public release asset API",
       "version_kind": "sync_date",
       "version_source": "UTC sync date; no public version API",
@@ -4693,8 +4693,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:55+00:00",
-      "last_success_at": "2026-04-29T17:32:55+00:00",
+      "fetched_at": "2026-04-30T04:27:51+00:00",
+      "last_success_at": "2026-04-30T04:27:51+00:00",
       "editions": [
         "intl"
       ]
@@ -4702,7 +4702,7 @@
     {
       "id": "lefthook",
       "name": "Lefthook",
-      "version": "2026-04-29",
+      "version": "2026-04-30",
       "source": "Official project download page; no stable public release asset API",
       "version_kind": "sync_date",
       "version_source": "UTC sync date; no public version API",
@@ -4736,8 +4736,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:55+00:00",
-      "last_success_at": "2026-04-29T17:32:55+00:00",
+      "fetched_at": "2026-04-30T04:27:51+00:00",
+      "last_success_at": "2026-04-30T04:27:51+00:00",
       "editions": [
         "intl"
       ]
@@ -4779,8 +4779,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:56+00:00",
-      "last_success_at": "2026-04-29T17:32:56+00:00",
+      "fetched_at": "2026-04-30T04:27:52+00:00",
+      "last_success_at": "2026-04-30T04:27:52+00:00",
       "editions": [
         "intl"
       ]
@@ -4788,7 +4788,7 @@
     {
       "id": "taplo",
       "name": "Taplo",
-      "version": "2026-04-29",
+      "version": "2026-04-30",
       "source": "Official project download page; no stable public release asset API",
       "version_kind": "sync_date",
       "version_source": "UTC sync date; no public version API",
@@ -4822,8 +4822,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:55+00:00",
-      "last_success_at": "2026-04-29T17:32:55+00:00",
+      "fetched_at": "2026-04-30T04:27:51+00:00",
+      "last_success_at": "2026-04-30T04:27:51+00:00",
       "editions": [
         "intl"
       ]
@@ -4831,7 +4831,7 @@
     {
       "id": "tokei",
       "name": "tokei",
-      "version": "2026-04-29",
+      "version": "2026-04-30",
       "source": "Official project download page; no stable public release asset API",
       "version_kind": "sync_date",
       "version_source": "UTC sync date; no public version API",
@@ -4865,8 +4865,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:55+00:00",
-      "last_success_at": "2026-04-29T17:32:55+00:00",
+      "fetched_at": "2026-04-30T04:27:51+00:00",
+      "last_success_at": "2026-04-30T04:27:51+00:00",
       "editions": [
         "intl"
       ]
@@ -4908,8 +4908,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:57+00:00",
-      "last_success_at": "2026-04-29T17:32:57+00:00",
+      "fetched_at": "2026-04-30T04:27:52+00:00",
+      "last_success_at": "2026-04-30T04:27:52+00:00",
       "editions": [
         "intl"
       ]
@@ -4951,8 +4951,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:56+00:00",
-      "last_success_at": "2026-04-29T17:32:56+00:00",
+      "fetched_at": "2026-04-30T04:27:52+00:00",
+      "last_success_at": "2026-04-30T04:27:52+00:00",
       "editions": [
         "intl"
       ]
@@ -4994,8 +4994,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:57+00:00",
-      "last_success_at": "2026-04-29T17:32:57+00:00",
+      "fetched_at": "2026-04-30T04:27:52+00:00",
+      "last_success_at": "2026-04-30T04:27:52+00:00",
       "editions": [
         "intl"
       ]
@@ -5037,8 +5037,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:57+00:00",
-      "last_success_at": "2026-04-29T17:32:57+00:00",
+      "fetched_at": "2026-04-30T04:27:53+00:00",
+      "last_success_at": "2026-04-30T04:27:53+00:00",
       "editions": [
         "intl"
       ]
@@ -5072,11 +5072,11 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:57+00:00",
+      "fetched_at": "2026-04-30T04:27:53+00:00",
       "warnings": [
         "linux-x64: 没有匹配 asset pattern 'dog-v*-x86_64-unknown-linux-musl.zip'"
       ],
-      "last_success_at": "2026-04-29T17:32:57+00:00",
+      "last_success_at": "2026-04-30T04:27:53+00:00",
       "editions": [
         "intl"
       ]
@@ -5118,8 +5118,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:57+00:00",
-      "last_success_at": "2026-04-29T17:32:57+00:00",
+      "fetched_at": "2026-04-30T04:27:53+00:00",
+      "last_success_at": "2026-04-30T04:27:53+00:00",
       "editions": [
         "intl"
       ]
@@ -5127,7 +5127,7 @@
     {
       "id": "htmlq",
       "name": "htmlq",
-      "version": "2026-04-29",
+      "version": "2026-04-30",
       "source": "Official project download page; no stable public release asset API",
       "version_kind": "sync_date",
       "version_source": "UTC sync date; no public version API",
@@ -5161,8 +5161,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:56+00:00",
-      "last_success_at": "2026-04-29T17:32:56+00:00",
+      "fetched_at": "2026-04-30T04:27:52+00:00",
+      "last_success_at": "2026-04-30T04:27:52+00:00",
       "editions": [
         "intl"
       ]
@@ -5170,7 +5170,7 @@
     {
       "id": "choose",
       "name": "choose",
-      "version": "2026-04-29",
+      "version": "2026-04-30",
       "source": "Official project download page; no stable public release asset API",
       "version_kind": "sync_date",
       "version_source": "UTC sync date; no public version API",
@@ -5204,8 +5204,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:56+00:00",
-      "last_success_at": "2026-04-29T17:32:56+00:00",
+      "fetched_at": "2026-04-30T04:27:52+00:00",
+      "last_success_at": "2026-04-30T04:27:52+00:00",
       "editions": [
         "intl"
       ]
@@ -5247,8 +5247,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:57+00:00",
-      "last_success_at": "2026-04-29T17:32:57+00:00",
+      "fetched_at": "2026-04-30T04:27:53+00:00",
+      "last_success_at": "2026-04-30T04:27:53+00:00",
       "editions": [
         "intl"
       ]
@@ -5282,11 +5282,11 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:58+00:00",
+      "fetched_at": "2026-04-30T04:27:53+00:00",
       "warnings": [
         "win-x64: 没有匹配 asset pattern 'cocogitto-*-x86_64-pc-windows-msvc.zip'"
       ],
-      "last_success_at": "2026-04-29T17:32:58+00:00",
+      "last_success_at": "2026-04-30T04:27:53+00:00",
       "editions": [
         "intl"
       ]
@@ -5312,12 +5312,12 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:58+00:00",
+      "fetched_at": "2026-04-30T04:27:53+00:00",
       "warnings": [
         "mac-arm64: 没有匹配 asset pattern 'mask-*-aarch64-apple-darwin.tar.gz'",
         "linux-x64: 没有匹配 asset pattern 'mask-*-x86_64-unknown-linux-musl.tar.gz'"
       ],
-      "last_success_at": "2026-04-29T17:32:58+00:00",
+      "last_success_at": "2026-04-30T04:27:53+00:00",
       "editions": [
         "intl"
       ]
@@ -5325,7 +5325,7 @@
     {
       "id": "miniserve",
       "name": "miniserve",
-      "version": "2026-04-29",
+      "version": "2026-04-30",
       "source": "Official project download page; no stable public release asset API",
       "version_kind": "sync_date",
       "version_source": "UTC sync date; no public version API",
@@ -5359,8 +5359,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:56+00:00",
-      "last_success_at": "2026-04-29T17:32:56+00:00",
+      "fetched_at": "2026-04-30T04:27:52+00:00",
+      "last_success_at": "2026-04-30T04:27:52+00:00",
       "editions": [
         "intl"
       ]
@@ -5368,7 +5368,7 @@
     {
       "id": "httpie",
       "name": "HTTPie",
-      "version": "2026-04-29",
+      "version": "2026-04-30",
       "source": "Official project download page; no stable public release asset API",
       "version_kind": "sync_date",
       "version_source": "UTC sync date; no public version API",
@@ -5402,8 +5402,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:56+00:00",
-      "last_success_at": "2026-04-29T17:32:56+00:00",
+      "fetched_at": "2026-04-30T04:27:52+00:00",
+      "last_success_at": "2026-04-30T04:27:52+00:00",
       "editions": [
         "intl"
       ]
@@ -5411,7 +5411,7 @@
     {
       "id": "libre-hardware-monitor",
       "name": "LibreHardwareMonitor",
-      "version": "2026-04-29",
+      "version": "2026-04-30",
       "source": "Official project download page; no stable public release asset API",
       "version_kind": "sync_date",
       "version_source": "UTC sync date; no public version API",
@@ -5429,8 +5429,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:56+00:00",
-      "last_success_at": "2026-04-29T17:32:56+00:00",
+      "fetched_at": "2026-04-30T04:27:52+00:00",
+      "last_success_at": "2026-04-30T04:27:52+00:00",
       "editions": [
         "intl"
       ]
@@ -5438,7 +5438,7 @@
     {
       "id": "eartrumpet",
       "name": "EarTrumpet",
-      "version": "2026-04-29",
+      "version": "2026-04-30",
       "source": "Official project download page; no stable public release asset API",
       "version_kind": "sync_date",
       "version_source": "UTC sync date; no public version API",
@@ -5456,8 +5456,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:56+00:00",
-      "last_success_at": "2026-04-29T17:32:56+00:00",
+      "fetched_at": "2026-04-30T04:27:52+00:00",
+      "last_success_at": "2026-04-30T04:27:52+00:00",
       "editions": [
         "intl"
       ]
@@ -5465,7 +5465,7 @@
     {
       "id": "screen-to-gif",
       "name": "ScreenToGif",
-      "version": "2026-04-29",
+      "version": "2026-04-30",
       "source": "Official project download page; no stable public release asset API",
       "version_kind": "sync_date",
       "version_source": "UTC sync date; no public version API",
@@ -5483,8 +5483,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:56+00:00",
-      "last_success_at": "2026-04-29T17:32:56+00:00",
+      "fetched_at": "2026-04-30T04:27:52+00:00",
+      "last_success_at": "2026-04-30T04:27:52+00:00",
       "editions": [
         "intl"
       ]
@@ -5510,8 +5510,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:58+00:00",
-      "last_success_at": "2026-04-29T17:32:58+00:00",
+      "fetched_at": "2026-04-30T04:27:53+00:00",
+      "last_success_at": "2026-04-30T04:27:53+00:00",
       "editions": [
         "intl"
       ]
@@ -5519,7 +5519,7 @@
     {
       "id": "windynamicdesktop",
       "name": "WinDynamicDesktop",
-      "version": "2026-04-29",
+      "version": "2026-04-30",
       "source": "Official project download page; no stable public release asset API",
       "version_kind": "sync_date",
       "version_source": "UTC sync date; no public version API",
@@ -5537,8 +5537,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:57+00:00",
-      "last_success_at": "2026-04-29T17:32:57+00:00",
+      "fetched_at": "2026-04-30T04:27:52+00:00",
+      "last_success_at": "2026-04-30T04:27:52+00:00",
       "editions": [
         "intl"
       ]
@@ -5546,7 +5546,7 @@
     {
       "id": "translucent-tb",
       "name": "TranslucentTB",
-      "version": "2026-04-29",
+      "version": "2026-04-30",
       "source": "Official project download page; no stable public release asset API",
       "version_kind": "sync_date",
       "version_source": "UTC sync date; no public version API",
@@ -5564,8 +5564,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:57+00:00",
-      "last_success_at": "2026-04-29T17:32:57+00:00",
+      "fetched_at": "2026-04-30T04:27:52+00:00",
+      "last_success_at": "2026-04-30T04:27:52+00:00",
       "editions": [
         "intl"
       ]
@@ -5591,8 +5591,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:58+00:00",
-      "last_success_at": "2026-04-29T17:32:58+00:00",
+      "fetched_at": "2026-04-30T04:27:53+00:00",
+      "last_success_at": "2026-04-30T04:27:53+00:00",
       "editions": [
         "intl"
       ]
@@ -5600,7 +5600,7 @@
     {
       "id": "everything-toolbar",
       "name": "EverythingToolbar",
-      "version": "2026-04-29",
+      "version": "2026-04-30",
       "source": "Official project download page; no stable public release asset API",
       "version_kind": "sync_date",
       "version_source": "UTC sync date; no public version API",
@@ -5618,8 +5618,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:57+00:00",
-      "last_success_at": "2026-04-29T17:32:57+00:00",
+      "fetched_at": "2026-04-30T04:27:52+00:00",
+      "last_success_at": "2026-04-30T04:27:52+00:00",
       "editions": [
         "intl"
       ]
@@ -5627,7 +5627,7 @@
     {
       "id": "unigetui",
       "name": "UniGetUI",
-      "version": "2026-04-29",
+      "version": "2026-04-30",
       "source": "Official project download page; no stable public release asset API",
       "version_kind": "sync_date",
       "version_source": "UTC sync date; no public version API",
@@ -5645,8 +5645,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:57+00:00",
-      "last_success_at": "2026-04-29T17:32:57+00:00",
+      "fetched_at": "2026-04-30T04:27:52+00:00",
+      "last_success_at": "2026-04-30T04:27:52+00:00",
       "editions": [
         "intl"
       ]
@@ -5654,7 +5654,7 @@
     {
       "id": "secureuxtheme",
       "name": "SecureUxTheme",
-      "version": "2026-04-29",
+      "version": "2026-04-30",
       "source": "Official project download page; no stable public release asset API",
       "version_kind": "sync_date",
       "version_source": "UTC sync date; no public version API",
@@ -5672,8 +5672,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:57+00:00",
-      "last_success_at": "2026-04-29T17:32:57+00:00",
+      "fetched_at": "2026-04-30T04:27:52+00:00",
+      "last_success_at": "2026-04-30T04:27:52+00:00",
       "editions": [
         "intl"
       ]
@@ -5681,7 +5681,7 @@
     {
       "id": "bleachbit",
       "name": "BleachBit",
-      "version": "2026-04-29",
+      "version": "2026-04-30",
       "source": "Official project download page; no stable public release asset API",
       "version_kind": "sync_date",
       "version_source": "UTC sync date; no public version API",
@@ -5699,8 +5699,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:57+00:00",
-      "last_success_at": "2026-04-29T17:32:57+00:00",
+      "fetched_at": "2026-04-30T04:27:52+00:00",
+      "last_success_at": "2026-04-30T04:27:52+00:00",
       "editions": [
         "intl"
       ]
@@ -5726,11 +5726,11 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:58+00:00",
+      "fetched_at": "2026-04-30T04:27:54+00:00",
       "warnings": [
         "linux-x64: 没有匹配 asset pattern 'flameshot-*-debian-12-amd64.deb'"
       ],
-      "last_success_at": "2026-04-29T17:32:58+00:00",
+      "last_success_at": "2026-04-30T04:27:54+00:00",
       "editions": [
         "intl"
       ]
@@ -5756,8 +5756,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:58+00:00",
-      "last_success_at": "2026-04-29T17:32:58+00:00",
+      "fetched_at": "2026-04-30T04:27:54+00:00",
+      "last_success_at": "2026-04-30T04:27:54+00:00",
       "editions": [
         "intl"
       ]
@@ -5765,7 +5765,7 @@
     {
       "id": "crystaldiskinfo",
       "name": "CrystalDiskInfo",
-      "version": "2026-04-29",
+      "version": "2026-04-30",
       "source": "Official project download page; no stable public release asset API",
       "version_kind": "sync_date",
       "version_source": "UTC sync date; no public version API",
@@ -5783,8 +5783,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:57+00:00",
-      "last_success_at": "2026-04-29T17:32:57+00:00",
+      "fetched_at": "2026-04-30T04:27:53+00:00",
+      "last_success_at": "2026-04-30T04:27:53+00:00",
       "editions": [
         "intl"
       ]
@@ -5792,7 +5792,7 @@
     {
       "id": "crystaldiskmark",
       "name": "CrystalDiskMark",
-      "version": "2026-04-29",
+      "version": "2026-04-30",
       "source": "Official project download page; no stable public release asset API",
       "version_kind": "sync_date",
       "version_source": "UTC sync date; no public version API",
@@ -5810,8 +5810,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:57+00:00",
-      "last_success_at": "2026-04-29T17:32:57+00:00",
+      "fetched_at": "2026-04-30T04:27:53+00:00",
+      "last_success_at": "2026-04-30T04:27:53+00:00",
       "editions": [
         "intl"
       ]
@@ -5819,7 +5819,7 @@
     {
       "id": "xml-notepad",
       "name": "XML Notepad",
-      "version": "2026-04-29",
+      "version": "2026-04-30",
       "source": "Official project download page; no stable public release asset API",
       "version_kind": "sync_date",
       "version_source": "UTC sync date; no public version API",
@@ -5837,8 +5837,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:57+00:00",
-      "last_success_at": "2026-04-29T17:32:57+00:00",
+      "fetched_at": "2026-04-30T04:27:53+00:00",
+      "last_success_at": "2026-04-30T04:27:53+00:00",
       "editions": [
         "intl"
       ]
@@ -5864,8 +5864,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:57+00:00",
-      "last_success_at": "2026-04-29T17:32:57+00:00",
+      "fetched_at": "2026-04-30T04:27:54+00:00",
+      "last_success_at": "2026-04-30T04:27:54+00:00",
       "editions": [
         "intl"
       ]
@@ -5873,7 +5873,7 @@
     {
       "id": "nomacs",
       "name": "nomacs",
-      "version": "2026-04-29",
+      "version": "2026-04-30",
       "source": "Official project download page; no stable public release asset API",
       "version_kind": "sync_date",
       "version_source": "UTC sync date; no public version API",
@@ -5891,8 +5891,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:57+00:00",
-      "last_success_at": "2026-04-29T17:32:57+00:00",
+      "fetched_at": "2026-04-30T04:27:53+00:00",
+      "last_success_at": "2026-04-30T04:27:53+00:00",
       "editions": [
         "intl"
       ]
@@ -5900,7 +5900,7 @@
     {
       "id": "quicklook",
       "name": "QuickLook",
-      "version": "2026-04-29",
+      "version": "2026-04-30",
       "source": "Official project download page; no stable public release asset API",
       "version_kind": "sync_date",
       "version_source": "UTC sync date; no public version API",
@@ -5918,8 +5918,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:57+00:00",
-      "last_success_at": "2026-04-29T17:32:57+00:00",
+      "fetched_at": "2026-04-30T04:27:53+00:00",
+      "last_success_at": "2026-04-30T04:27:53+00:00",
       "editions": [
         "intl"
       ]
@@ -5927,7 +5927,7 @@
     {
       "id": "files-app",
       "name": "Files",
-      "version": "2026-04-29",
+      "version": "2026-04-30",
       "source": "Official project download page; no stable public release asset API",
       "version_kind": "sync_date",
       "version_source": "UTC sync date; no public version API",
@@ -5945,8 +5945,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:57+00:00",
-      "last_success_at": "2026-04-29T17:32:57+00:00",
+      "fetched_at": "2026-04-30T04:27:53+00:00",
+      "last_success_at": "2026-04-30T04:27:53+00:00",
       "editions": [
         "intl"
       ]
@@ -5972,8 +5972,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:58+00:00",
-      "last_success_at": "2026-04-29T17:32:58+00:00",
+      "fetched_at": "2026-04-30T04:27:54+00:00",
+      "last_success_at": "2026-04-30T04:27:54+00:00",
       "editions": [
         "intl"
       ]
@@ -5999,8 +5999,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:58+00:00",
-      "last_success_at": "2026-04-29T17:32:58+00:00",
+      "fetched_at": "2026-04-30T04:27:54+00:00",
+      "last_success_at": "2026-04-30T04:27:54+00:00",
       "editions": [
         "intl"
       ]
@@ -6026,8 +6026,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:58+00:00",
-      "last_success_at": "2026-04-29T17:32:58+00:00",
+      "fetched_at": "2026-04-30T04:27:54+00:00",
+      "last_success_at": "2026-04-30T04:27:54+00:00",
       "editions": [
         "intl"
       ]
@@ -6053,12 +6053,12 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:59+00:00",
+      "fetched_at": "2026-04-30T04:27:54+00:00",
       "warnings": [
         "win-x64: 没有匹配 asset pattern 'tabby-*-x64-setup.exe'",
         "linux-x64: 没有匹配 asset pattern 'tabby-*-x86_64-linux.rpm'"
       ],
-      "last_success_at": "2026-04-29T17:32:59+00:00",
+      "last_success_at": "2026-04-30T04:27:54+00:00",
       "editions": [
         "intl"
       ]
@@ -6066,7 +6066,7 @@
     {
       "id": "hyper",
       "name": "Hyper",
-      "version": "2026-04-29",
+      "version": "2026-04-30",
       "source": "Official project download page; no stable public release asset API",
       "version_kind": "sync_date",
       "version_source": "UTC sync date; no public version API",
@@ -6092,8 +6092,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:58+00:00",
-      "last_success_at": "2026-04-29T17:32:58+00:00",
+      "fetched_at": "2026-04-30T04:27:53+00:00",
+      "last_success_at": "2026-04-30T04:27:53+00:00",
       "editions": [
         "intl"
       ]
@@ -6135,8 +6135,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:59+00:00",
-      "last_success_at": "2026-04-29T17:32:59+00:00",
+      "fetched_at": "2026-04-30T04:27:55+00:00",
+      "last_success_at": "2026-04-30T04:27:55+00:00",
       "editions": [
         "intl"
       ]
@@ -6144,7 +6144,7 @@
     {
       "id": "nanazip",
       "name": "NanaZip",
-      "version": "2026-04-29",
+      "version": "2026-04-30",
       "source": "Official project download page; no stable public release asset API",
       "version_kind": "sync_date",
       "version_source": "UTC sync date; no public version API",
@@ -6162,8 +6162,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:58+00:00",
-      "last_success_at": "2026-04-29T17:32:58+00:00",
+      "fetched_at": "2026-04-30T04:27:53+00:00",
+      "last_success_at": "2026-04-30T04:27:53+00:00",
       "editions": [
         "intl"
       ]
@@ -6171,7 +6171,7 @@
     {
       "id": "doublecmd",
       "name": "Double Commander",
-      "version": "2026-04-29",
+      "version": "2026-04-30",
       "source": "Official project download page; no stable public release asset API",
       "version_kind": "sync_date",
       "version_source": "UTC sync date; no public version API",
@@ -6189,8 +6189,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:58+00:00",
-      "last_success_at": "2026-04-29T17:32:58+00:00",
+      "fetched_at": "2026-04-30T04:27:53+00:00",
+      "last_success_at": "2026-04-30T04:27:53+00:00",
       "editions": [
         "intl"
       ]
@@ -6198,7 +6198,7 @@
     {
       "id": "onionshare",
       "name": "OnionShare",
-      "version": "2026-04-29",
+      "version": "2026-04-30",
       "source": "Official project download page; no stable public release asset API",
       "version_kind": "sync_date",
       "version_source": "UTC sync date; no public version API",
@@ -6224,8 +6224,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:58+00:00",
-      "last_success_at": "2026-04-29T17:32:58+00:00",
+      "fetched_at": "2026-04-30T04:27:53+00:00",
+      "last_success_at": "2026-04-30T04:27:53+00:00",
       "editions": [
         "intl"
       ]
@@ -6233,7 +6233,7 @@
     {
       "id": "veracrypt",
       "name": "VeraCrypt",
-      "version": "2026-04-29",
+      "version": "2026-04-30",
       "source": "Official project download page; no stable public release asset API",
       "version_kind": "sync_date",
       "version_source": "UTC sync date; no public version API",
@@ -6251,8 +6251,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:58+00:00",
-      "last_success_at": "2026-04-29T17:32:58+00:00",
+      "fetched_at": "2026-04-30T04:27:53+00:00",
+      "last_success_at": "2026-04-30T04:27:53+00:00",
       "editions": [
         "intl"
       ]
@@ -6294,8 +6294,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:59+00:00",
-      "last_success_at": "2026-04-29T17:32:59+00:00",
+      "fetched_at": "2026-04-30T04:27:55+00:00",
+      "last_success_at": "2026-04-30T04:27:55+00:00",
       "editions": [
         "intl"
       ]
@@ -6321,12 +6321,12 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:59+00:00",
+      "fetched_at": "2026-04-30T04:27:55+00:00",
       "warnings": [
         "mac-arm64: 没有匹配 asset pattern 'kopia-*-macos-arm64'",
         "linux-x64: 没有匹配 asset pattern 'kopia-*-linux-x64'"
       ],
-      "last_success_at": "2026-04-29T17:32:59+00:00",
+      "last_success_at": "2026-04-30T04:27:55+00:00",
       "editions": [
         "intl"
       ]
@@ -6368,8 +6368,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:59+00:00",
-      "last_success_at": "2026-04-29T17:32:59+00:00",
+      "fetched_at": "2026-04-30T04:27:55+00:00",
+      "last_success_at": "2026-04-30T04:27:55+00:00",
       "editions": [
         "intl"
       ]
@@ -6377,7 +6377,7 @@
     {
       "id": "duplicati",
       "name": "Duplicati",
-      "version": "2026-04-29",
+      "version": "2026-04-30",
       "source": "Official project download page; no stable public release asset API",
       "version_kind": "sync_date",
       "version_source": "UTC sync date; no public version API",
@@ -6395,8 +6395,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:58+00:00",
-      "last_success_at": "2026-04-29T17:32:58+00:00",
+      "fetched_at": "2026-04-30T04:27:54+00:00",
+      "last_success_at": "2026-04-30T04:27:54+00:00",
       "editions": [
         "intl"
       ]
@@ -6438,8 +6438,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:59+00:00",
-      "last_success_at": "2026-04-29T17:32:59+00:00",
+      "fetched_at": "2026-04-30T04:27:55+00:00",
+      "last_success_at": "2026-04-30T04:27:55+00:00",
       "editions": [
         "intl"
       ]
@@ -6447,7 +6447,7 @@
     {
       "id": "gron",
       "name": "gron",
-      "version": "2026-04-29",
+      "version": "2026-04-30",
       "source": "Official project download page; no stable public release asset API",
       "version_kind": "sync_date",
       "version_source": "UTC sync date; no public version API",
@@ -6473,8 +6473,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:58+00:00",
-      "last_success_at": "2026-04-29T17:32:58+00:00",
+      "fetched_at": "2026-04-30T04:27:54+00:00",
+      "last_success_at": "2026-04-30T04:27:54+00:00",
       "editions": [
         "intl"
       ]
@@ -6516,8 +6516,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:59+00:00",
-      "last_success_at": "2026-04-29T17:32:59+00:00",
+      "fetched_at": "2026-04-30T04:27:55+00:00",
+      "last_success_at": "2026-04-30T04:27:55+00:00",
       "editions": [
         "intl"
       ]
@@ -6559,8 +6559,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:59+00:00",
-      "last_success_at": "2026-04-29T17:32:59+00:00",
+      "fetched_at": "2026-04-30T04:27:55+00:00",
+      "last_success_at": "2026-04-30T04:27:55+00:00",
       "editions": [
         "intl"
       ]
@@ -6602,8 +6602,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:59+00:00",
-      "last_success_at": "2026-04-29T17:32:59+00:00",
+      "fetched_at": "2026-04-30T04:27:55+00:00",
+      "last_success_at": "2026-04-30T04:27:55+00:00",
       "editions": [
         "intl"
       ]
@@ -6637,11 +6637,11 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:33:00+00:00",
+      "fetched_at": "2026-04-30T04:27:56+00:00",
       "warnings": [
         "win-x64: 没有匹配 asset pattern 'slides_*_windows_amd64.tar.gz'"
       ],
-      "last_success_at": "2026-04-29T17:33:00+00:00",
+      "last_success_at": "2026-04-30T04:27:56+00:00",
       "editions": [
         "intl"
       ]
@@ -6683,8 +6683,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:33:00+00:00",
-      "last_success_at": "2026-04-29T17:33:00+00:00",
+      "fetched_at": "2026-04-30T04:27:56+00:00",
+      "last_success_at": "2026-04-30T04:27:56+00:00",
       "editions": [
         "intl"
       ]
@@ -6726,8 +6726,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:33:01+00:00",
-      "last_success_at": "2026-04-29T17:33:01+00:00",
+      "fetched_at": "2026-04-30T04:27:56+00:00",
+      "last_success_at": "2026-04-30T04:27:56+00:00",
       "editions": [
         "intl"
       ]
@@ -6769,8 +6769,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:33:00+00:00",
-      "last_success_at": "2026-04-29T17:33:00+00:00",
+      "fetched_at": "2026-04-30T04:27:56+00:00",
+      "last_success_at": "2026-04-30T04:27:56+00:00",
       "editions": [
         "intl"
       ]
@@ -6812,8 +6812,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:33:00+00:00",
-      "last_success_at": "2026-04-29T17:33:00+00:00",
+      "fetched_at": "2026-04-30T04:27:56+00:00",
+      "last_success_at": "2026-04-30T04:27:56+00:00",
       "editions": [
         "intl"
       ]
@@ -6855,8 +6855,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:33:01+00:00",
-      "last_success_at": "2026-04-29T17:33:01+00:00",
+      "fetched_at": "2026-04-30T04:27:56+00:00",
+      "last_success_at": "2026-04-30T04:27:56+00:00",
       "editions": [
         "intl"
       ]
@@ -6890,11 +6890,11 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:33:01+00:00",
+      "fetched_at": "2026-04-30T04:27:56+00:00",
       "warnings": [
         "linux-x64: 没有匹配 asset pattern 'clash-verge_*_amd64.deb'"
       ],
-      "last_success_at": "2026-04-29T17:33:01+00:00",
+      "last_success_at": "2026-04-30T04:27:56+00:00",
       "editions": [
         "intl"
       ]
@@ -6902,7 +6902,7 @@
     {
       "id": "openvpn",
       "name": "OpenVPN",
-      "version": "2026-04-29",
+      "version": "2026-04-30",
       "source": "Official project download page; no stable public release asset API",
       "version_kind": "sync_date",
       "version_source": "UTC sync date; no public version API",
@@ -6920,8 +6920,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:59+00:00",
-      "last_success_at": "2026-04-29T17:32:59+00:00",
+      "fetched_at": "2026-04-30T04:27:55+00:00",
+      "last_success_at": "2026-04-30T04:27:55+00:00",
       "editions": [
         "intl"
       ]
@@ -6929,7 +6929,7 @@
     {
       "id": "nmap",
       "name": "Nmap",
-      "version": "2026-04-29",
+      "version": "2026-04-30",
       "source": "Official project download page; no stable public release asset API",
       "version_kind": "sync_date",
       "version_source": "UTC sync date; no public version API",
@@ -6947,8 +6947,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:59+00:00",
-      "last_success_at": "2026-04-29T17:32:59+00:00",
+      "fetched_at": "2026-04-30T04:27:55+00:00",
+      "last_success_at": "2026-04-30T04:27:55+00:00",
       "editions": [
         "intl"
       ]
@@ -6956,7 +6956,7 @@
     {
       "id": "mullvad-vpn",
       "name": "Mullvad VPN",
-      "version": "2026-04-29",
+      "version": "2026-04-30",
       "source": "Official project download page; no stable public release asset API",
       "version_kind": "sync_date",
       "version_source": "UTC sync date; no public version API",
@@ -6982,8 +6982,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:32:59+00:00",
-      "last_success_at": "2026-04-29T17:32:59+00:00",
+      "fetched_at": "2026-04-30T04:27:55+00:00",
+      "last_success_at": "2026-04-30T04:27:55+00:00",
       "editions": [
         "intl"
       ]
@@ -7009,11 +7009,11 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:33:02+00:00",
+      "fetched_at": "2026-04-30T04:27:56+00:00",
       "warnings": [
         "mac-arm64: 没有匹配 asset pattern 'Outline-Client.dmg'"
       ],
-      "last_success_at": "2026-04-29T17:33:02+00:00",
+      "last_success_at": "2026-04-30T04:27:56+00:00",
       "editions": [
         "intl"
       ]
@@ -7021,37 +7021,37 @@
     {
       "id": "netbird",
       "name": "NetBird",
-      "version": "0.70.2",
+      "version": "0.70.4",
       "source": "GitHub Release: netbirdio/netbird",
       "version_kind": "release_version",
       "version_source": "GitHub release tag",
       "category": "Network & Proxy",
       "homepage": "https://github.com/netbirdio/netbird",
-      "released_at": "2026-04-29T09:33:17Z",
-      "notes_url": "https://github.com/netbirdio/netbird/releases/tag/v0.70.2",
+      "released_at": "2026-04-29T22:35:11Z",
+      "notes_url": "https://github.com/netbirdio/netbird/releases/tag/v0.70.4",
       "assets": [
         {
           "platform": "mac-arm64",
-          "url": "https://github.com/netbirdio/netbird/releases/download/v0.70.2/netbird_0.70.2_darwin_arm64.tar.gz",
+          "url": "https://github.com/netbirdio/netbird/releases/download/v0.70.4/netbird_0.70.4_darwin_arm64.tar.gz",
           "link_kind": "direct",
-          "filename": "netbird_0.70.2_darwin_arm64.tar.gz",
-          "size": 11659135,
+          "filename": "netbird_0.70.4_darwin_arm64.tar.gz",
+          "size": 11657972,
           "sha256": null
         },
         {
           "platform": "linux-x64",
-          "url": "https://github.com/netbirdio/netbird/releases/download/v0.70.2/netbird_0.70.2_linux_amd64.tar.gz",
+          "url": "https://github.com/netbirdio/netbird/releases/download/v0.70.4/netbird_0.70.4_linux_amd64.tar.gz",
           "link_kind": "direct",
-          "filename": "netbird_0.70.2_linux_amd64.tar.gz",
-          "size": 13780090,
+          "filename": "netbird_0.70.4_linux_amd64.tar.gz",
+          "size": 13781090,
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:33:00+00:00",
+      "fetched_at": "2026-04-30T04:27:57+00:00",
       "warnings": [
         "win-x64: 没有匹配 asset pattern 'netbird_*_windows_amd64.zip'"
       ],
-      "last_success_at": "2026-04-29T17:33:00+00:00",
+      "last_success_at": "2026-04-30T04:27:57+00:00",
       "editions": [
         "intl"
       ]
@@ -7085,8 +7085,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:33:01+00:00",
-      "last_success_at": "2026-04-29T17:33:01+00:00",
+      "fetched_at": "2026-04-30T04:27:57+00:00",
+      "last_success_at": "2026-04-30T04:27:57+00:00",
       "editions": [
         "intl"
       ]
@@ -7094,7 +7094,7 @@
     {
       "id": "zerotier",
       "name": "ZeroTier",
-      "version": "2026-04-29",
+      "version": "2026-04-30",
       "source": "Official project download page; no stable public release asset API",
       "version_kind": "sync_date",
       "version_source": "UTC sync date; no public version API",
@@ -7120,8 +7120,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:33:00+00:00",
-      "last_success_at": "2026-04-29T17:33:00+00:00",
+      "fetched_at": "2026-04-30T04:27:56+00:00",
+      "last_success_at": "2026-04-30T04:27:56+00:00",
       "editions": [
         "intl"
       ]
@@ -7155,11 +7155,11 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:33:01+00:00",
+      "fetched_at": "2026-04-30T04:27:57+00:00",
       "warnings": [
         "mac-arm64: 没有匹配 asset pattern 'AdGuardHome_darwin_arm64.tar.gz'"
       ],
-      "last_success_at": "2026-04-29T17:33:01+00:00",
+      "last_success_at": "2026-04-30T04:27:57+00:00",
       "editions": [
         "intl"
       ]
@@ -7167,7 +7167,7 @@
     {
       "id": "portmaster",
       "name": "Portmaster",
-      "version": "2026-04-29",
+      "version": "2026-04-30",
       "source": "Official project download page; no stable public release asset API",
       "version_kind": "sync_date",
       "version_source": "UTC sync date; no public version API",
@@ -7185,8 +7185,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:33:00+00:00",
-      "last_success_at": "2026-04-29T17:33:00+00:00",
+      "fetched_at": "2026-04-30T04:27:56+00:00",
+      "last_success_at": "2026-04-30T04:27:56+00:00",
       "editions": [
         "intl"
       ]
@@ -7212,8 +7212,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:33:01+00:00",
-      "last_success_at": "2026-04-29T17:33:01+00:00",
+      "fetched_at": "2026-04-30T04:27:57+00:00",
+      "last_success_at": "2026-04-30T04:27:57+00:00",
       "editions": [
         "intl"
       ]
@@ -7221,7 +7221,7 @@
     {
       "id": "putty",
       "name": "PuTTY",
-      "version": "2026-04-29",
+      "version": "2026-04-30",
       "source": "Official project download page; no stable public release asset API",
       "version_kind": "sync_date",
       "version_source": "UTC sync date; no public version API",
@@ -7239,8 +7239,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:33:00+00:00",
-      "last_success_at": "2026-04-29T17:33:00+00:00",
+      "fetched_at": "2026-04-30T04:27:56+00:00",
+      "last_success_at": "2026-04-30T04:27:56+00:00",
       "editions": [
         "intl"
       ]
@@ -7248,7 +7248,7 @@
     {
       "id": "cloudflare-warp",
       "name": "Cloudflare WARP",
-      "version": "2026-04-29",
+      "version": "2026-04-30",
       "source": "Official project download page; no stable public release asset API",
       "version_kind": "sync_date",
       "version_source": "UTC sync date; no public version API",
@@ -7266,8 +7266,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:33:00+00:00",
-      "last_success_at": "2026-04-29T17:33:00+00:00",
+      "fetched_at": "2026-04-30T04:27:56+00:00",
+      "last_success_at": "2026-04-30T04:27:56+00:00",
       "editions": [
         "intl"
       ]
@@ -7275,7 +7275,7 @@
     {
       "id": "openspeedtest",
       "name": "OpenSpeedTest",
-      "version": "2026-04-29",
+      "version": "2026-04-30",
       "source": "Official project download page; no stable public release asset API",
       "version_kind": "sync_date",
       "version_source": "UTC sync date; no public version API",
@@ -7293,8 +7293,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:33:00+00:00",
-      "last_success_at": "2026-04-29T17:33:00+00:00",
+      "fetched_at": "2026-04-30T04:27:56+00:00",
+      "last_success_at": "2026-04-30T04:27:56+00:00",
       "editions": [
         "intl"
       ]
@@ -7328,11 +7328,11 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:33:01+00:00",
+      "fetched_at": "2026-04-30T04:27:57+00:00",
       "warnings": [
         "mac-arm64: 没有匹配 asset pattern 'speedtest-go_*_darwin_arm64.zip'"
       ],
-      "last_success_at": "2026-04-29T17:33:01+00:00",
+      "last_success_at": "2026-04-30T04:27:57+00:00",
       "editions": [
         "intl"
       ]
@@ -7358,12 +7358,12 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:33:01+00:00",
+      "fetched_at": "2026-04-30T04:27:57+00:00",
       "warnings": [
         "win-x64: 没有匹配 asset pattern 'PrismLauncher-*-Windows-MSVC-Setup.exe'",
         "mac-arm64: 没有匹配 asset pattern 'PrismLauncher-*-macOS-arm64.dmg'"
       ],
-      "last_success_at": "2026-04-29T17:33:01+00:00",
+      "last_success_at": "2026-04-30T04:27:57+00:00",
       "editions": [
         "intl"
       ]
@@ -7389,8 +7389,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:33:02+00:00",
-      "last_success_at": "2026-04-29T17:33:02+00:00",
+      "fetched_at": "2026-04-30T04:27:57+00:00",
+      "last_success_at": "2026-04-30T04:27:57+00:00",
       "editions": [
         "intl"
       ]
@@ -7398,7 +7398,7 @@
     {
       "id": "mangohud",
       "name": "MangoHud",
-      "version": "2026-04-29",
+      "version": "2026-04-30",
       "source": "Official project download page; no stable public release asset API",
       "version_kind": "sync_date",
       "version_source": "UTC sync date; no public version API",
@@ -7416,8 +7416,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:33:01+00:00",
-      "last_success_at": "2026-04-29T17:33:01+00:00",
+      "fetched_at": "2026-04-30T04:27:56+00:00",
+      "last_success_at": "2026-04-30T04:27:56+00:00",
       "editions": [
         "intl"
       ]
@@ -7425,7 +7425,7 @@
     {
       "id": "gamemode",
       "name": "GameMode",
-      "version": "2026-04-29",
+      "version": "2026-04-30",
       "source": "Official project download page; no stable public release asset API",
       "version_kind": "sync_date",
       "version_source": "UTC sync date; no public version API",
@@ -7443,8 +7443,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:33:01+00:00",
-      "last_success_at": "2026-04-29T17:33:01+00:00",
+      "fetched_at": "2026-04-30T04:27:56+00:00",
+      "last_success_at": "2026-04-30T04:27:56+00:00",
       "editions": [
         "intl"
       ]
@@ -7470,8 +7470,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:33:02+00:00",
-      "last_success_at": "2026-04-29T17:33:02+00:00",
+      "fetched_at": "2026-04-30T04:27:57+00:00",
+      "last_success_at": "2026-04-30T04:27:57+00:00",
       "editions": [
         "intl"
       ]
@@ -7479,7 +7479,7 @@
     {
       "id": "bottles",
       "name": "Bottles",
-      "version": "2026-04-29",
+      "version": "2026-04-30",
       "source": "Official project download page; no stable public release asset API",
       "version_kind": "sync_date",
       "version_source": "UTC sync date; no public version API",
@@ -7497,8 +7497,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:33:01+00:00",
-      "last_success_at": "2026-04-29T17:33:01+00:00",
+      "fetched_at": "2026-04-30T04:27:56+00:00",
+      "last_success_at": "2026-04-30T04:27:56+00:00",
       "editions": [
         "intl"
       ]
@@ -7506,7 +7506,7 @@
     {
       "id": "vita3k",
       "name": "Vita3K",
-      "version": "2026-04-29",
+      "version": "2026-04-30",
       "source": "Official project download page; no stable public release asset API",
       "version_kind": "sync_date",
       "version_source": "UTC sync date; no public version API",
@@ -7540,8 +7540,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:33:01+00:00",
-      "last_success_at": "2026-04-29T17:33:01+00:00",
+      "fetched_at": "2026-04-30T04:27:56+00:00",
+      "last_success_at": "2026-04-30T04:27:56+00:00",
       "editions": [
         "intl"
       ]
@@ -7549,7 +7549,7 @@
     {
       "id": "ryujinx",
       "name": "Ryujinx",
-      "version": "2026-04-29",
+      "version": "2026-04-30",
       "source": "Official project download page; no stable public release asset API",
       "version_kind": "sync_date",
       "version_source": "UTC sync date; no public version API",
@@ -7583,8 +7583,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:33:01+00:00",
-      "last_success_at": "2026-04-29T17:33:01+00:00",
+      "fetched_at": "2026-04-30T04:27:56+00:00",
+      "last_success_at": "2026-04-30T04:27:56+00:00",
       "editions": [
         "intl"
       ]
@@ -7610,12 +7610,12 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:33:02+00:00",
+      "fetched_at": "2026-04-30T04:27:58+00:00",
       "warnings": [
         "win-x64: 没有匹配 asset pattern 'xemu-win-*-zip.zip'",
         "mac-arm64: 没有匹配 asset pattern 'xemu-macos-*-arm64.tar.gz'"
       ],
-      "last_success_at": "2026-04-29T17:33:02+00:00",
+      "last_success_at": "2026-04-30T04:27:58+00:00",
       "editions": [
         "intl"
       ]
@@ -7641,11 +7641,11 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:33:02+00:00",
+      "fetched_at": "2026-04-30T04:27:58+00:00",
       "warnings": [
         "mac-arm64: 没有匹配 asset pattern 'mGBA-*-osx-arm64.tar.xz'"
       ],
-      "last_success_at": "2026-04-29T17:33:02+00:00",
+      "last_success_at": "2026-04-30T04:27:58+00:00",
       "editions": [
         "intl"
       ]
@@ -7653,7 +7653,7 @@
     {
       "id": "rmg",
       "name": "RMG",
-      "version": "2026-04-29",
+      "version": "2026-04-30",
       "source": "Official project download page; no stable public release asset API",
       "version_kind": "sync_date",
       "version_source": "UTC sync date; no public version API",
@@ -7679,8 +7679,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:33:01+00:00",
-      "last_success_at": "2026-04-29T17:33:01+00:00",
+      "fetched_at": "2026-04-30T04:27:57+00:00",
+      "last_success_at": "2026-04-30T04:27:57+00:00",
       "editions": [
         "intl"
       ]
@@ -7714,11 +7714,11 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:33:02+00:00",
+      "fetched_at": "2026-04-30T04:27:58+00:00",
       "warnings": [
         "linux-x64: 没有匹配 asset pattern 'OpenMW-*-Linux-generic64.tar.gz'"
       ],
-      "last_success_at": "2026-04-29T17:33:02+00:00",
+      "last_success_at": "2026-04-30T04:27:58+00:00",
       "editions": [
         "intl"
       ]
@@ -7726,7 +7726,7 @@
     {
       "id": "dosbox-staging",
       "name": "DOSBox Staging",
-      "version": "2026-04-29",
+      "version": "2026-04-30",
       "source": "Official project download page; no stable public release asset API",
       "version_kind": "sync_date",
       "version_source": "UTC sync date; no public version API",
@@ -7760,8 +7760,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:33:01+00:00",
-      "last_success_at": "2026-04-29T17:33:01+00:00",
+      "fetched_at": "2026-04-30T04:27:57+00:00",
+      "last_success_at": "2026-04-30T04:27:57+00:00",
       "editions": [
         "intl"
       ]
@@ -7769,7 +7769,7 @@
     {
       "id": "libretro",
       "name": "RetroArch",
-      "version": "2026-04-29",
+      "version": "2026-04-30",
       "source": "Official project download page; no stable public release asset API",
       "version_kind": "sync_date",
       "version_source": "UTC sync date; no public version API",
@@ -7795,8 +7795,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:33:01+00:00",
-      "last_success_at": "2026-04-29T17:33:01+00:00",
+      "fetched_at": "2026-04-30T04:27:57+00:00",
+      "last_success_at": "2026-04-30T04:27:57+00:00",
       "editions": [
         "intl"
       ]
@@ -7804,7 +7804,7 @@
     {
       "id": "mudlet",
       "name": "Mudlet",
-      "version": "2026-04-29",
+      "version": "2026-04-30",
       "source": "Official project download page; no stable public release asset API",
       "version_kind": "sync_date",
       "version_source": "UTC sync date; no public version API",
@@ -7838,8 +7838,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:33:01+00:00",
-      "last_success_at": "2026-04-29T17:33:01+00:00",
+      "fetched_at": "2026-04-30T04:27:57+00:00",
+      "last_success_at": "2026-04-30T04:27:57+00:00",
       "editions": [
         "intl"
       ]
@@ -7847,7 +7847,7 @@
     {
       "id": "kdenlive",
       "name": "Kdenlive",
-      "version": "2026-04-29",
+      "version": "2026-04-30",
       "source": "Official project download page; no stable public release asset API",
       "version_kind": "sync_date",
       "version_source": "UTC sync date; no public version API",
@@ -7865,8 +7865,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:33:01+00:00",
-      "last_success_at": "2026-04-29T17:33:01+00:00",
+      "fetched_at": "2026-04-30T04:27:57+00:00",
+      "last_success_at": "2026-04-30T04:27:57+00:00",
       "editions": [
         "intl"
       ]
@@ -7874,7 +7874,7 @@
     {
       "id": "olive",
       "name": "Olive Video Editor",
-      "version": "2026-04-29",
+      "version": "2026-04-30",
       "source": "Official project download page; no stable public release asset API",
       "version_kind": "sync_date",
       "version_source": "UTC sync date; no public version API",
@@ -7908,8 +7908,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:33:01+00:00",
-      "last_success_at": "2026-04-29T17:33:01+00:00",
+      "fetched_at": "2026-04-30T04:27:57+00:00",
+      "last_success_at": "2026-04-30T04:27:57+00:00",
       "editions": [
         "intl"
       ]
@@ -7917,7 +7917,7 @@
     {
       "id": "strawberry",
       "name": "Strawberry Music Player",
-      "version": "2026-04-29",
+      "version": "2026-04-30",
       "source": "Official project download page; no stable public release asset API",
       "version_kind": "sync_date",
       "version_source": "UTC sync date; no public version API",
@@ -7935,8 +7935,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:33:01+00:00",
-      "last_success_at": "2026-04-29T17:33:01+00:00",
+      "fetched_at": "2026-04-30T04:27:57+00:00",
+      "last_success_at": "2026-04-30T04:27:57+00:00",
       "editions": [
         "intl"
       ]
@@ -7944,7 +7944,7 @@
     {
       "id": "musicbrainz",
       "name": "MusicBrainz Picard",
-      "version": "2026-04-29",
+      "version": "2026-04-30",
       "source": "Official project download page; no stable public release asset API",
       "version_kind": "sync_date",
       "version_source": "UTC sync date; no public version API",
@@ -7970,8 +7970,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:33:01+00:00",
-      "last_success_at": "2026-04-29T17:33:01+00:00",
+      "fetched_at": "2026-04-30T04:27:57+00:00",
+      "last_success_at": "2026-04-30T04:27:57+00:00",
       "editions": [
         "intl"
       ]
@@ -7979,7 +7979,7 @@
     {
       "id": "mkvtoolnix",
       "name": "MKVToolNix",
-      "version": "2026-04-29",
+      "version": "2026-04-30",
       "source": "Official project download page; no stable public release asset API",
       "version_kind": "sync_date",
       "version_source": "UTC sync date; no public version API",
@@ -7997,8 +7997,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:33:01+00:00",
-      "last_success_at": "2026-04-29T17:33:01+00:00",
+      "fetched_at": "2026-04-30T04:27:57+00:00",
+      "last_success_at": "2026-04-30T04:27:57+00:00",
       "editions": [
         "intl"
       ]
@@ -8006,7 +8006,7 @@
     {
       "id": "mediainfo",
       "name": "MediaInfo",
-      "version": "2026-04-29",
+      "version": "2026-04-30",
       "source": "Official project download page; no stable public release asset API",
       "version_kind": "sync_date",
       "version_source": "UTC sync date; no public version API",
@@ -8024,8 +8024,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:33:01+00:00",
-      "last_success_at": "2026-04-29T17:33:01+00:00",
+      "fetched_at": "2026-04-30T04:27:57+00:00",
+      "last_success_at": "2026-04-30T04:27:57+00:00",
       "editions": [
         "intl"
       ]
@@ -8033,7 +8033,7 @@
     {
       "id": "gimp",
       "name": "GIMP",
-      "version": "2026-04-29",
+      "version": "2026-04-30",
       "source": "Official project download page; no stable public release asset API",
       "version_kind": "sync_date",
       "version_source": "UTC sync date; no public version API",
@@ -8051,8 +8051,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:33:01+00:00",
-      "last_success_at": "2026-04-29T17:33:01+00:00",
+      "fetched_at": "2026-04-30T04:27:57+00:00",
+      "last_success_at": "2026-04-30T04:27:57+00:00",
       "editions": [
         "intl"
       ]
@@ -8060,7 +8060,7 @@
     {
       "id": "krita",
       "name": "Krita",
-      "version": "2026-04-29",
+      "version": "2026-04-30",
       "source": "Official project download page; no stable public release asset API",
       "version_kind": "sync_date",
       "version_source": "UTC sync date; no public version API",
@@ -8094,8 +8094,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:33:01+00:00",
-      "last_success_at": "2026-04-29T17:33:01+00:00",
+      "fetched_at": "2026-04-30T04:27:57+00:00",
+      "last_success_at": "2026-04-30T04:27:57+00:00",
       "editions": [
         "intl"
       ]
@@ -8103,7 +8103,7 @@
     {
       "id": "inkscape",
       "name": "Inkscape",
-      "version": "2026-04-29",
+      "version": "2026-04-30",
       "source": "Official project download page; no stable public release asset API",
       "version_kind": "sync_date",
       "version_source": "UTC sync date; no public version API",
@@ -8121,8 +8121,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:33:01+00:00",
-      "last_success_at": "2026-04-29T17:33:01+00:00",
+      "fetched_at": "2026-04-30T04:27:57+00:00",
+      "last_success_at": "2026-04-30T04:27:57+00:00",
       "editions": [
         "intl"
       ]
@@ -8130,7 +8130,7 @@
     {
       "id": "blender",
       "name": "Blender",
-      "version": "2026-04-29",
+      "version": "2026-04-30",
       "source": "Official project download page; no stable public release asset API",
       "version_kind": "sync_date",
       "version_source": "UTC sync date; no public version API",
@@ -8164,8 +8164,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:33:01+00:00",
-      "last_success_at": "2026-04-29T17:33:01+00:00",
+      "fetched_at": "2026-04-30T04:27:57+00:00",
+      "last_success_at": "2026-04-30T04:27:57+00:00",
       "editions": [
         "intl"
       ]
@@ -8173,7 +8173,7 @@
     {
       "id": "freecad",
       "name": "FreeCAD",
-      "version": "2026-04-29",
+      "version": "2026-04-30",
       "source": "Official project download page; no stable public release asset API",
       "version_kind": "sync_date",
       "version_source": "UTC sync date; no public version API",
@@ -8207,8 +8207,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:33:01+00:00",
-      "last_success_at": "2026-04-29T17:33:01+00:00",
+      "fetched_at": "2026-04-30T04:27:57+00:00",
+      "last_success_at": "2026-04-30T04:27:57+00:00",
       "editions": [
         "intl"
       ]
@@ -8234,8 +8234,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:33:02+00:00",
-      "last_success_at": "2026-04-29T17:33:02+00:00",
+      "fetched_at": "2026-04-30T04:27:58+00:00",
+      "last_success_at": "2026-04-30T04:27:58+00:00",
       "editions": [
         "intl"
       ]
@@ -8269,8 +8269,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:33:02+00:00",
-      "last_success_at": "2026-04-29T17:33:02+00:00",
+      "fetched_at": "2026-04-30T04:27:59+00:00",
+      "last_success_at": "2026-04-30T04:27:59+00:00",
       "editions": [
         "intl"
       ]
@@ -8278,7 +8278,7 @@
     {
       "id": "rawtherapee",
       "name": "RawTherapee",
-      "version": "2026-04-29",
+      "version": "2026-04-30",
       "source": "Official project download page; no stable public release asset API",
       "version_kind": "sync_date",
       "version_source": "UTC sync date; no public version API",
@@ -8296,8 +8296,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:33:01+00:00",
-      "last_success_at": "2026-04-29T17:33:01+00:00",
+      "fetched_at": "2026-04-30T04:27:57+00:00",
+      "last_success_at": "2026-04-30T04:27:57+00:00",
       "editions": [
         "intl"
       ]
@@ -8305,7 +8305,7 @@
     {
       "id": "scribus",
       "name": "Scribus",
-      "version": "2026-04-29",
+      "version": "2026-04-30",
       "source": "Official project download page; no stable public release asset API",
       "version_kind": "sync_date",
       "version_source": "UTC sync date; no public version API",
@@ -8323,8 +8323,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:33:01+00:00",
-      "last_success_at": "2026-04-29T17:33:01+00:00",
+      "fetched_at": "2026-04-30T04:27:57+00:00",
+      "last_success_at": "2026-04-30T04:27:57+00:00",
       "editions": [
         "intl"
       ]
@@ -8332,7 +8332,7 @@
     {
       "id": "ardour",
       "name": "Ardour",
-      "version": "2026-04-29",
+      "version": "2026-04-30",
       "source": "Official project download page; no stable public release asset API",
       "version_kind": "sync_date",
       "version_source": "UTC sync date; no public version API",
@@ -8358,8 +8358,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:33:01+00:00",
-      "last_success_at": "2026-04-29T17:33:01+00:00",
+      "fetched_at": "2026-04-30T04:27:57+00:00",
+      "last_success_at": "2026-04-30T04:27:57+00:00",
       "editions": [
         "intl"
       ]
@@ -8385,11 +8385,11 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:33:03+00:00",
+      "fetched_at": "2026-04-30T04:27:58+00:00",
       "warnings": [
         "mac-arm64: 没有匹配 asset pattern 'lmms-*-macos-arm64.dmg'"
       ],
-      "last_success_at": "2026-04-29T17:33:03+00:00",
+      "last_success_at": "2026-04-30T04:27:58+00:00",
       "editions": [
         "intl"
       ]
@@ -8415,8 +8415,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:33:03+00:00",
-      "last_success_at": "2026-04-29T17:33:03+00:00",
+      "fetched_at": "2026-04-30T04:27:59+00:00",
+      "last_success_at": "2026-04-30T04:27:59+00:00",
       "editions": [
         "intl"
       ]
@@ -8442,8 +8442,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:33:03+00:00",
-      "last_success_at": "2026-04-29T17:33:03+00:00",
+      "fetched_at": "2026-04-30T04:27:59+00:00",
+      "last_success_at": "2026-04-30T04:27:59+00:00",
       "editions": [
         "intl"
       ]
@@ -8469,11 +8469,11 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:33:03+00:00",
+      "fetched_at": "2026-04-30T04:27:59+00:00",
       "warnings": [
         "mac-arm64: 没有匹配 asset pattern 'Natron-*-macOS-arm64.dmg'"
       ],
-      "last_success_at": "2026-04-29T17:33:03+00:00",
+      "last_success_at": "2026-04-30T04:27:59+00:00",
       "editions": [
         "intl"
       ]
@@ -8507,8 +8507,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:33:03+00:00",
-      "last_success_at": "2026-04-29T17:33:03+00:00",
+      "fetched_at": "2026-04-30T04:27:59+00:00",
+      "last_success_at": "2026-04-30T04:27:59+00:00",
       "editions": [
         "intl"
       ]
@@ -8516,7 +8516,7 @@
     {
       "id": "falkon",
       "name": "Falkon",
-      "version": "2026-04-29",
+      "version": "2026-04-30",
       "source": "Official project download page; no stable public release asset API",
       "version_kind": "sync_date",
       "version_source": "UTC sync date; no public version API",
@@ -8534,8 +8534,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:33:02+00:00",
-      "last_success_at": "2026-04-29T17:33:02+00:00",
+      "fetched_at": "2026-04-30T04:27:58+00:00",
+      "last_success_at": "2026-04-30T04:27:58+00:00",
       "editions": [
         "intl"
       ]
@@ -8577,8 +8577,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:33:03+00:00",
-      "last_success_at": "2026-04-29T17:33:03+00:00",
+      "fetched_at": "2026-04-30T04:27:59+00:00",
+      "last_success_at": "2026-04-30T04:27:59+00:00",
       "editions": [
         "intl"
       ]
@@ -8586,30 +8586,30 @@
     {
       "id": "anytype",
       "name": "Anytype",
-      "version": "0.55.0",
+      "version": "0.55.1",
       "source": "GitHub Release: anyproto/anytype-ts",
       "version_kind": "release_version",
       "version_source": "GitHub release tag",
       "category": "Productivity",
       "homepage": "https://github.com/anyproto/anytype-ts",
-      "released_at": "2026-04-29T15:31:03Z",
-      "notes_url": "https://github.com/anyproto/anytype-ts/releases/tag/v0.55.0",
+      "released_at": "2026-04-29T22:14:55Z",
+      "notes_url": "https://github.com/anyproto/anytype-ts/releases/tag/v0.55.1",
       "assets": [
         {
           "platform": "mac-arm64",
-          "url": "https://github.com/anyproto/anytype-ts/releases/download/v0.55.0/Anytype-0.55.0-mac-arm64.dmg",
+          "url": "https://github.com/anyproto/anytype-ts/releases/download/v0.55.1/Anytype-0.55.1-mac-arm64.dmg",
           "link_kind": "direct",
-          "filename": "Anytype-0.55.0-mac-arm64.dmg",
-          "size": 249491639,
+          "filename": "Anytype-0.55.1-mac-arm64.dmg",
+          "size": 251143841,
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:33:03+00:00",
+      "fetched_at": "2026-04-30T04:27:59+00:00",
       "warnings": [
         "win-x64: 没有匹配 asset pattern 'Anytype-*-x64.exe'",
         "linux-x64: 没有匹配 asset pattern 'Anytype-*-amd64.deb'"
       ],
-      "last_success_at": "2026-04-29T17:33:03+00:00",
+      "last_success_at": "2026-04-30T04:27:59+00:00",
       "editions": [
         "intl"
       ]
@@ -8617,7 +8617,7 @@
     {
       "id": "trilium",
       "name": "Trilium Notes",
-      "version": "2026-04-29",
+      "version": "2026-04-30",
       "source": "Official project download page; no stable public release asset API",
       "version_kind": "sync_date",
       "version_source": "UTC sync date; no public version API",
@@ -8651,8 +8651,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:33:02+00:00",
-      "last_success_at": "2026-04-29T17:33:02+00:00",
+      "fetched_at": "2026-04-30T04:27:58+00:00",
+      "last_success_at": "2026-04-30T04:27:58+00:00",
       "editions": [
         "intl"
       ]
@@ -8694,8 +8694,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:33:03+00:00",
-      "last_success_at": "2026-04-29T17:33:03+00:00",
+      "fetched_at": "2026-04-30T04:28:00+00:00",
+      "last_success_at": "2026-04-30T04:28:00+00:00",
       "editions": [
         "intl"
       ]
@@ -8721,12 +8721,12 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:33:03+00:00",
+      "fetched_at": "2026-04-30T04:28:00+00:00",
       "warnings": [
         "mac-arm64: 没有匹配 asset pattern 'draw.io-*-arm64.dmg'",
         "linux-x64: 没有匹配 asset pattern 'draw.io-*-x86_64.rpm'"
       ],
-      "last_success_at": "2026-04-29T17:33:03+00:00",
+      "last_success_at": "2026-04-30T04:28:00+00:00",
       "editions": [
         "intl"
       ]
@@ -8734,7 +8734,7 @@
     {
       "id": "excalidraw",
       "name": "Excalidraw",
-      "version": "2026-04-29",
+      "version": "2026-04-30",
       "source": "Official project download page; no stable public release asset API",
       "version_kind": "sync_date",
       "version_source": "UTC sync date; no public version API",
@@ -8752,8 +8752,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:33:02+00:00",
-      "last_success_at": "2026-04-29T17:33:02+00:00",
+      "fetched_at": "2026-04-30T04:27:58+00:00",
+      "last_success_at": "2026-04-30T04:27:58+00:00",
       "editions": [
         "intl"
       ]
@@ -8761,7 +8761,7 @@
     {
       "id": "beekeeper",
       "name": "Beekeeper Studio",
-      "version": "2026-04-29",
+      "version": "2026-04-30",
       "source": "Official project download page; no stable public release asset API",
       "version_kind": "sync_date",
       "version_source": "UTC sync date; no public version API",
@@ -8795,8 +8795,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:33:02+00:00",
-      "last_success_at": "2026-04-29T17:33:02+00:00",
+      "fetched_at": "2026-04-30T04:27:58+00:00",
+      "last_success_at": "2026-04-30T04:27:58+00:00",
       "editions": [
         "intl"
       ]
@@ -8804,7 +8804,7 @@
     {
       "id": "sumatrapdf",
       "name": "Sumatra PDF",
-      "version": "2026-04-29",
+      "version": "2026-04-30",
       "source": "Official project download page; no stable public release asset API",
       "version_kind": "sync_date",
       "version_source": "UTC sync date; no public version API",
@@ -8830,8 +8830,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:33:02+00:00",
-      "last_success_at": "2026-04-29T17:33:02+00:00",
+      "fetched_at": "2026-04-30T04:27:58+00:00",
+      "last_success_at": "2026-04-30T04:27:58+00:00",
       "editions": [
         "intl"
       ]
@@ -8857,12 +8857,12 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:33:03+00:00",
+      "fetched_at": "2026-04-30T04:28:00+00:00",
       "warnings": [
         "mac-arm64: 没有匹配 asset pattern 'sioyek-apple-silicon.dmg'",
         "linux-x64: 没有匹配 asset pattern 'sioyek-release-linux-portable.tar.gz'"
       ],
-      "last_success_at": "2026-04-29T17:33:03+00:00",
+      "last_success_at": "2026-04-30T04:28:00+00:00",
       "editions": [
         "intl"
       ]
@@ -8896,11 +8896,11 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:33:04+00:00",
+      "fetched_at": "2026-04-30T04:28:01+00:00",
       "warnings": [
         "win-x64: 没有匹配 asset pattern 'Pomatez-*-x64.exe'"
       ],
-      "last_success_at": "2026-04-29T17:33:04+00:00",
+      "last_success_at": "2026-04-30T04:28:01+00:00",
       "editions": [
         "intl"
       ]
@@ -8908,7 +8908,7 @@
     {
       "id": "mindforger",
       "name": "MindForger",
-      "version": "2026-04-29",
+      "version": "2026-04-30",
       "source": "Official project download page; no stable public release asset API",
       "version_kind": "sync_date",
       "version_source": "UTC sync date; no public version API",
@@ -8926,8 +8926,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:33:03+00:00",
-      "last_success_at": "2026-04-29T17:33:03+00:00",
+      "fetched_at": "2026-04-30T04:27:59+00:00",
+      "last_success_at": "2026-04-30T04:27:59+00:00",
       "editions": [
         "intl"
       ]
@@ -8935,7 +8935,7 @@
     {
       "id": "ghostwriter",
       "name": "ghostwriter",
-      "version": "2026-04-29",
+      "version": "2026-04-30",
       "source": "Official project download page; no stable public release asset API",
       "version_kind": "sync_date",
       "version_source": "UTC sync date; no public version API",
@@ -8953,8 +8953,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:33:03+00:00",
-      "last_success_at": "2026-04-29T17:33:03+00:00",
+      "fetched_at": "2026-04-30T04:27:59+00:00",
+      "last_success_at": "2026-04-30T04:27:59+00:00",
       "editions": [
         "intl"
       ]
@@ -8962,7 +8962,7 @@
     {
       "id": "element",
       "name": "Element",
-      "version": "2026-04-29",
+      "version": "2026-04-30",
       "source": "Official project download page; no stable public release asset API",
       "version_kind": "sync_date",
       "version_source": "UTC sync date; no public version API",
@@ -8996,8 +8996,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:33:03+00:00",
-      "last_success_at": "2026-04-29T17:33:03+00:00",
+      "fetched_at": "2026-04-30T04:27:59+00:00",
+      "last_success_at": "2026-04-30T04:27:59+00:00",
       "editions": [
         "intl"
       ]
@@ -9005,7 +9005,7 @@
     {
       "id": "cinny",
       "name": "Cinny",
-      "version": "2026-04-29",
+      "version": "2026-04-30",
       "source": "Official project download page; no stable public release asset API",
       "version_kind": "sync_date",
       "version_source": "UTC sync date; no public version API",
@@ -9039,8 +9039,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:33:03+00:00",
-      "last_success_at": "2026-04-29T17:33:03+00:00",
+      "fetched_at": "2026-04-30T04:27:59+00:00",
+      "last_success_at": "2026-04-30T04:27:59+00:00",
       "editions": [
         "intl"
       ]
@@ -9048,7 +9048,7 @@
     {
       "id": "hexchat",
       "name": "HexChat",
-      "version": "2026-04-29",
+      "version": "2026-04-30",
       "source": "Official project download page; no stable public release asset API",
       "version_kind": "sync_date",
       "version_source": "UTC sync date; no public version API",
@@ -9066,8 +9066,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:33:03+00:00",
-      "last_success_at": "2026-04-29T17:33:03+00:00",
+      "fetched_at": "2026-04-30T04:27:59+00:00",
+      "last_success_at": "2026-04-30T04:27:59+00:00",
       "editions": [
         "intl"
       ]
@@ -9075,7 +9075,7 @@
     {
       "id": "protonmail-bridge",
       "name": "Proton Mail Bridge",
-      "version": "2026-04-29",
+      "version": "2026-04-30",
       "source": "Official project download page; no stable public release asset API",
       "version_kind": "sync_date",
       "version_source": "UTC sync date; no public version API",
@@ -9101,8 +9101,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:33:03+00:00",
-      "last_success_at": "2026-04-29T17:33:03+00:00",
+      "fetched_at": "2026-04-30T04:27:59+00:00",
+      "last_success_at": "2026-04-30T04:27:59+00:00",
       "editions": [
         "intl"
       ]
@@ -9136,11 +9136,11 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:33:04+00:00",
+      "fetched_at": "2026-04-30T04:28:00+00:00",
       "warnings": [
         "win-x64: 没有匹配 asset pattern 'local-ai-*-windows-amd64.exe'"
       ],
-      "last_success_at": "2026-04-29T17:33:04+00:00",
+      "last_success_at": "2026-04-30T04:28:00+00:00",
       "editions": [
         "intl"
       ]
@@ -9166,8 +9166,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:33:04+00:00",
-      "last_success_at": "2026-04-29T17:33:04+00:00",
+      "fetched_at": "2026-04-30T04:28:00+00:00",
+      "last_success_at": "2026-04-30T04:28:00+00:00",
       "editions": [
         "intl"
       ]
@@ -9175,7 +9175,7 @@
     {
       "id": "invokeai",
       "name": "InvokeAI",
-      "version": "2026-04-29",
+      "version": "2026-04-30",
       "source": "Official project download page; no stable public release asset API",
       "version_kind": "sync_date",
       "version_source": "UTC sync date; no public version API",
@@ -9209,8 +9209,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:33:03+00:00",
-      "last_success_at": "2026-04-29T17:33:03+00:00",
+      "fetched_at": "2026-04-30T04:27:59+00:00",
+      "last_success_at": "2026-04-30T04:27:59+00:00",
       "editions": [
         "intl"
       ]
@@ -9218,7 +9218,7 @@
     {
       "id": "stable-diffusion-webui",
       "name": "Stable Diffusion WebUI",
-      "version": "2026-04-29",
+      "version": "2026-04-30",
       "source": "Official project download page; no stable public release asset API",
       "version_kind": "sync_date",
       "version_source": "UTC sync date; no public version API",
@@ -9236,8 +9236,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:33:03+00:00",
-      "last_success_at": "2026-04-29T17:33:03+00:00",
+      "fetched_at": "2026-04-30T04:27:59+00:00",
+      "last_success_at": "2026-04-30T04:27:59+00:00",
       "editions": [
         "intl"
       ]
@@ -9245,7 +9245,7 @@
     {
       "id": "text-generation-webui",
       "name": "text-generation-webui",
-      "version": "2026-04-29",
+      "version": "2026-04-30",
       "source": "Official project download page; no stable public release asset API",
       "version_kind": "sync_date",
       "version_source": "UTC sync date; no public version API",
@@ -9263,8 +9263,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:33:03+00:00",
-      "last_success_at": "2026-04-29T17:33:03+00:00",
+      "fetched_at": "2026-04-30T04:27:59+00:00",
+      "last_success_at": "2026-04-30T04:27:59+00:00",
       "editions": [
         "intl"
       ]
@@ -9298,11 +9298,11 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:33:04+00:00",
+      "fetched_at": "2026-04-30T04:28:00+00:00",
       "warnings": [
         "linux-x64: 没有匹配 asset pattern 'Buzz-*-linux-x86_64.AppImage'"
       ],
-      "last_success_at": "2026-04-29T17:33:04+00:00",
+      "last_success_at": "2026-04-30T04:28:00+00:00",
       "editions": [
         "intl"
       ]
@@ -9310,7 +9310,7 @@
     {
       "id": "whisper",
       "name": "Whisper",
-      "version": "2026-04-29",
+      "version": "2026-04-30",
       "source": "Official project download page; no stable public release asset API",
       "version_kind": "sync_date",
       "version_source": "UTC sync date; no public version API",
@@ -9328,8 +9328,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:33:03+00:00",
-      "last_success_at": "2026-04-29T17:33:03+00:00",
+      "fetched_at": "2026-04-30T04:27:59+00:00",
+      "last_success_at": "2026-04-30T04:27:59+00:00",
       "editions": [
         "intl"
       ]
@@ -9337,7 +9337,7 @@
     {
       "id": "llama-cpp",
       "name": "llama.cpp",
-      "version": "2026-04-29",
+      "version": "2026-04-30",
       "source": "Official project download page; no stable public release asset API",
       "version_kind": "sync_date",
       "version_source": "UTC sync date; no public version API",
@@ -9371,8 +9371,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:33:03+00:00",
-      "last_success_at": "2026-04-29T17:33:03+00:00",
+      "fetched_at": "2026-04-30T04:27:59+00:00",
+      "last_success_at": "2026-04-30T04:27:59+00:00",
       "editions": [
         "intl"
       ]
@@ -9380,7 +9380,7 @@
     {
       "id": "open-webui",
       "name": "Open WebUI",
-      "version": "2026-04-29",
+      "version": "2026-04-30",
       "source": "Official project download page; no stable public release asset API",
       "version_kind": "sync_date",
       "version_source": "UTC sync date; no public version API",
@@ -9414,8 +9414,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:33:03+00:00",
-      "last_success_at": "2026-04-29T17:33:03+00:00",
+      "fetched_at": "2026-04-30T04:27:59+00:00",
+      "last_success_at": "2026-04-30T04:27:59+00:00",
       "editions": [
         "intl"
       ]
@@ -9423,7 +9423,7 @@
     {
       "id": "koboldcpp",
       "name": "KoboldCpp",
-      "version": "2026-04-29",
+      "version": "2026-04-30",
       "source": "Official project download page; no stable public release asset API",
       "version_kind": "sync_date",
       "version_source": "UTC sync date; no public version API",
@@ -9457,8 +9457,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:33:03+00:00",
-      "last_success_at": "2026-04-29T17:33:03+00:00",
+      "fetched_at": "2026-04-30T04:27:59+00:00",
+      "last_success_at": "2026-04-30T04:27:59+00:00",
       "editions": [
         "intl"
       ]
@@ -9500,8 +9500,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:33:04+00:00",
-      "last_success_at": "2026-04-29T17:33:04+00:00",
+      "fetched_at": "2026-04-30T04:28:00+00:00",
+      "last_success_at": "2026-04-30T04:28:00+00:00",
       "editions": [
         "intl"
       ]
@@ -9509,7 +9509,7 @@
     {
       "id": "sops",
       "name": "sops",
-      "version": "2026-04-29",
+      "version": "2026-04-30",
       "source": "Official project download page; no stable public release asset API",
       "version_kind": "sync_date",
       "version_source": "UTC sync date; no public version API",
@@ -9543,8 +9543,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:33:03+00:00",
-      "last_success_at": "2026-04-29T17:33:03+00:00",
+      "fetched_at": "2026-04-30T04:27:59+00:00",
+      "last_success_at": "2026-04-30T04:27:59+00:00",
       "editions": [
         "intl"
       ]
@@ -9552,7 +9552,7 @@
     {
       "id": "yubikey-manager",
       "name": "YubiKey Manager",
-      "version": "2026-04-29",
+      "version": "2026-04-30",
       "source": "Official project download page; no stable public release asset API",
       "version_kind": "sync_date",
       "version_source": "UTC sync date; no public version API",
@@ -9578,8 +9578,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:33:03+00:00",
-      "last_success_at": "2026-04-29T17:33:03+00:00",
+      "fetched_at": "2026-04-30T04:27:59+00:00",
+      "last_success_at": "2026-04-30T04:27:59+00:00",
       "editions": [
         "intl"
       ]
@@ -9587,7 +9587,7 @@
     {
       "id": "clamav",
       "name": "ClamAV",
-      "version": "2026-04-29",
+      "version": "2026-04-30",
       "source": "Official project download page; no stable public release asset API",
       "version_kind": "sync_date",
       "version_source": "UTC sync date; no public version API",
@@ -9605,8 +9605,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:33:03+00:00",
-      "last_success_at": "2026-04-29T17:33:03+00:00",
+      "fetched_at": "2026-04-30T04:27:59+00:00",
+      "last_success_at": "2026-04-30T04:27:59+00:00",
       "editions": [
         "intl"
       ]
@@ -9648,8 +9648,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:33:04+00:00",
-      "last_success_at": "2026-04-29T17:33:04+00:00",
+      "fetched_at": "2026-04-30T04:28:01+00:00",
+      "last_success_at": "2026-04-30T04:28:01+00:00",
       "editions": [
         "intl"
       ]
@@ -9691,8 +9691,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:33:04+00:00",
-      "last_success_at": "2026-04-29T17:33:04+00:00",
+      "fetched_at": "2026-04-30T04:28:00+00:00",
+      "last_success_at": "2026-04-30T04:28:00+00:00",
       "editions": [
         "intl"
       ]
@@ -9734,8 +9734,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:33:04+00:00",
-      "last_success_at": "2026-04-29T17:33:04+00:00",
+      "fetched_at": "2026-04-30T04:28:01+00:00",
+      "last_success_at": "2026-04-30T04:28:01+00:00",
       "editions": [
         "intl"
       ]
@@ -9743,7 +9743,7 @@
     {
       "id": "helm",
       "name": "Helm",
-      "version": "2026-04-29",
+      "version": "2026-04-30",
       "source": "Official project download page; no stable public release asset API",
       "version_kind": "sync_date",
       "version_source": "UTC sync date; no public version API",
@@ -9777,8 +9777,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:33:03+00:00",
-      "last_success_at": "2026-04-29T17:33:03+00:00",
+      "fetched_at": "2026-04-30T04:28:00+00:00",
+      "last_success_at": "2026-04-30T04:28:00+00:00",
       "editions": [
         "intl"
       ]
@@ -9786,7 +9786,7 @@
     {
       "id": "terraform",
       "name": "Terraform",
-      "version": "2026-04-29",
+      "version": "2026-04-30",
       "source": "Official project download page; no stable public release asset API",
       "version_kind": "sync_date",
       "version_source": "UTC sync date; no public version API",
@@ -9820,8 +9820,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:33:03+00:00",
-      "last_success_at": "2026-04-29T17:33:03+00:00",
+      "fetched_at": "2026-04-30T04:28:00+00:00",
+      "last_success_at": "2026-04-30T04:28:00+00:00",
       "editions": [
         "intl"
       ]
@@ -9829,7 +9829,7 @@
     {
       "id": "vault",
       "name": "Vault",
-      "version": "2026-04-29",
+      "version": "2026-04-30",
       "source": "Official project download page; no stable public release asset API",
       "version_kind": "sync_date",
       "version_source": "UTC sync date; no public version API",
@@ -9863,8 +9863,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:33:03+00:00",
-      "last_success_at": "2026-04-29T17:33:03+00:00",
+      "fetched_at": "2026-04-30T04:28:00+00:00",
+      "last_success_at": "2026-04-30T04:28:00+00:00",
       "editions": [
         "intl"
       ]
@@ -9872,7 +9872,7 @@
     {
       "id": "consul",
       "name": "Consul",
-      "version": "2026-04-29",
+      "version": "2026-04-30",
       "source": "Official project download page; no stable public release asset API",
       "version_kind": "sync_date",
       "version_source": "UTC sync date; no public version API",
@@ -9906,8 +9906,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:33:03+00:00",
-      "last_success_at": "2026-04-29T17:33:03+00:00",
+      "fetched_at": "2026-04-30T04:28:00+00:00",
+      "last_success_at": "2026-04-30T04:28:00+00:00",
       "editions": [
         "intl"
       ]
@@ -9915,7 +9915,7 @@
     {
       "id": "nomad",
       "name": "Nomad",
-      "version": "2026-04-29",
+      "version": "2026-04-30",
       "source": "Official project download page; no stable public release asset API",
       "version_kind": "sync_date",
       "version_source": "UTC sync date; no public version API",
@@ -9949,8 +9949,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:33:03+00:00",
-      "last_success_at": "2026-04-29T17:33:03+00:00",
+      "fetched_at": "2026-04-30T04:28:00+00:00",
+      "last_success_at": "2026-04-30T04:28:00+00:00",
       "editions": [
         "intl"
       ]
@@ -9958,7 +9958,7 @@
     {
       "id": "boundary",
       "name": "Boundary",
-      "version": "2026-04-29",
+      "version": "2026-04-30",
       "source": "Official project download page; no stable public release asset API",
       "version_kind": "sync_date",
       "version_source": "UTC sync date; no public version API",
@@ -9992,8 +9992,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:33:03+00:00",
-      "last_success_at": "2026-04-29T17:33:03+00:00",
+      "fetched_at": "2026-04-30T04:28:00+00:00",
+      "last_success_at": "2026-04-30T04:28:00+00:00",
       "editions": [
         "intl"
       ]
@@ -10019,8 +10019,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:33:05+00:00",
-      "last_success_at": "2026-04-29T17:33:05+00:00",
+      "fetched_at": "2026-04-30T04:28:01+00:00",
+      "last_success_at": "2026-04-30T04:28:01+00:00",
       "editions": [
         "intl"
       ]
@@ -10028,42 +10028,42 @@
     {
       "id": "k6",
       "name": "k6",
-      "version": "2.0.0-rc1",
+      "version": "1.7.1",
       "source": "GitHub Release: grafana/k6",
       "version_kind": "release_version",
       "version_source": "GitHub release tag",
       "category": "Cloud & DevOps",
       "homepage": "https://github.com/grafana/k6",
-      "released_at": "2026-04-28T10:05:12Z",
-      "notes_url": "https://github.com/grafana/k6/releases/tag/v2.0.0-rc1",
+      "released_at": "2026-03-30T10:54:31Z",
+      "notes_url": "https://github.com/grafana/k6/releases/tag/v1.7.1",
       "assets": [
         {
           "platform": "win-x64",
-          "url": "https://github.com/grafana/k6/releases/download/v2.0.0-rc1/k6-v2.0.0-rc1-windows-amd64.zip",
+          "url": "https://github.com/grafana/k6/releases/download/v1.7.1/k6-v1.7.1-windows-amd64.zip",
           "link_kind": "direct",
-          "filename": "k6-v2.0.0-rc1-windows-amd64.zip",
-          "size": 29799272,
+          "filename": "k6-v1.7.1-windows-amd64.zip",
+          "size": 32720089,
           "sha256": null
         },
         {
           "platform": "mac-arm64",
-          "url": "https://github.com/grafana/k6/releases/download/v2.0.0-rc1/k6-v2.0.0-rc1-macos-arm64.zip",
+          "url": "https://github.com/grafana/k6/releases/download/v1.7.1/k6-v1.7.1-macos-arm64.zip",
           "link_kind": "direct",
-          "filename": "k6-v2.0.0-rc1-macos-arm64.zip",
-          "size": 28811207,
+          "filename": "k6-v1.7.1-macos-arm64.zip",
+          "size": 31754438,
           "sha256": null
         },
         {
           "platform": "linux-x64",
-          "url": "https://github.com/grafana/k6/releases/download/v2.0.0-rc1/k6-v2.0.0-rc1-linux-amd64.tar.gz",
+          "url": "https://github.com/grafana/k6/releases/download/v1.7.1/k6-v1.7.1-linux-amd64.tar.gz",
           "link_kind": "direct",
-          "filename": "k6-v2.0.0-rc1-linux-amd64.tar.gz",
-          "size": 29519112,
+          "filename": "k6-v1.7.1-linux-amd64.tar.gz",
+          "size": 32428070,
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:33:05+00:00",
-      "last_success_at": "2026-04-29T17:33:05+00:00",
+      "fetched_at": "2026-04-30T04:28:01+00:00",
+      "last_success_at": "2026-04-30T04:28:01+00:00",
       "editions": [
         "intl"
       ]
@@ -10071,7 +10071,7 @@
     {
       "id": "oha",
       "name": "oha",
-      "version": "2026-04-29",
+      "version": "2026-04-30",
       "source": "Official project download page; no stable public release asset API",
       "version_kind": "sync_date",
       "version_source": "UTC sync date; no public version API",
@@ -10105,8 +10105,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:33:04+00:00",
-      "last_success_at": "2026-04-29T17:33:04+00:00",
+      "fetched_at": "2026-04-30T04:28:00+00:00",
+      "last_success_at": "2026-04-30T04:28:00+00:00",
       "editions": [
         "intl"
       ]
@@ -10148,8 +10148,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:33:05+00:00",
-      "last_success_at": "2026-04-29T17:33:05+00:00",
+      "fetched_at": "2026-04-30T04:28:01+00:00",
+      "last_success_at": "2026-04-30T04:28:01+00:00",
       "editions": [
         "intl"
       ]
@@ -10191,8 +10191,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:33:05+00:00",
-      "last_success_at": "2026-04-29T17:33:05+00:00",
+      "fetched_at": "2026-04-30T04:28:02+00:00",
+      "last_success_at": "2026-04-30T04:28:02+00:00",
       "editions": [
         "intl"
       ]
@@ -10234,8 +10234,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:33:05+00:00",
-      "last_success_at": "2026-04-29T17:33:05+00:00",
+      "fetched_at": "2026-04-30T04:28:02+00:00",
+      "last_success_at": "2026-04-30T04:28:02+00:00",
       "editions": [
         "intl"
       ]
@@ -10261,12 +10261,12 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:33:05+00:00",
+      "fetched_at": "2026-04-30T04:28:02+00:00",
       "warnings": [
         "win-x64: 没有匹配 asset pattern 'navi-*-x86_64-pc-windows-msvc.zip'",
         "mac-arm64: 没有匹配 asset pattern 'navi-*-aarch64-apple-darwin.tar.gz'"
       ],
-      "last_success_at": "2026-04-29T17:33:05+00:00",
+      "last_success_at": "2026-04-30T04:28:02+00:00",
       "editions": [
         "intl"
       ]
@@ -10274,7 +10274,7 @@
     {
       "id": "tealdeer",
       "name": "tealdeer",
-      "version": "2026-04-29",
+      "version": "2026-04-30",
       "source": "Official project download page; no stable public release asset API",
       "version_kind": "sync_date",
       "version_source": "UTC sync date; no public version API",
@@ -10308,8 +10308,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:33:04+00:00",
-      "last_success_at": "2026-04-29T17:33:04+00:00",
+      "fetched_at": "2026-04-30T04:28:00+00:00",
+      "last_success_at": "2026-04-30T04:28:00+00:00",
       "editions": [
         "intl"
       ]
@@ -10317,7 +10317,7 @@
     {
       "id": "erdtree",
       "name": "erdtree",
-      "version": "2026-04-29",
+      "version": "2026-04-30",
       "source": "Official project download page; no stable public release asset API",
       "version_kind": "sync_date",
       "version_source": "UTC sync date; no public version API",
@@ -10351,8 +10351,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:33:04+00:00",
-      "last_success_at": "2026-04-29T17:33:04+00:00",
+      "fetched_at": "2026-04-30T04:28:00+00:00",
+      "last_success_at": "2026-04-30T04:28:00+00:00",
       "editions": [
         "intl"
       ]
@@ -10360,7 +10360,7 @@
     {
       "id": "broot",
       "name": "broot",
-      "version": "2026-04-29",
+      "version": "2026-04-30",
       "source": "Official project download page; no stable public release asset API",
       "version_kind": "sync_date",
       "version_source": "UTC sync date; no public version API",
@@ -10394,8 +10394,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:33:04+00:00",
-      "last_success_at": "2026-04-29T17:33:04+00:00",
+      "fetched_at": "2026-04-30T04:28:00+00:00",
+      "last_success_at": "2026-04-30T04:28:00+00:00",
       "editions": [
         "intl"
       ]
@@ -10403,7 +10403,7 @@
     {
       "id": "navi-cli",
       "name": "mc",
-      "version": "2026-04-29",
+      "version": "2026-04-30",
       "source": "Official project download page; no stable public release asset API",
       "version_kind": "sync_date",
       "version_source": "UTC sync date; no public version API",
@@ -10421,8 +10421,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:33:04+00:00",
-      "last_success_at": "2026-04-29T17:33:04+00:00",
+      "fetched_at": "2026-04-30T04:28:00+00:00",
+      "last_success_at": "2026-04-30T04:28:00+00:00",
       "editions": [
         "intl"
       ]
@@ -10456,11 +10456,11 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:33:05+00:00",
+      "fetched_at": "2026-04-30T04:28:02+00:00",
       "warnings": [
         "win-x64: 没有匹配 asset pattern 'xcp-*-x86_64-pc-windows-msvc.zip'"
       ],
-      "last_success_at": "2026-04-29T17:33:05+00:00",
+      "last_success_at": "2026-04-30T04:28:02+00:00",
       "editions": [
         "intl"
       ]
@@ -10486,8 +10486,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:33:05+00:00",
-      "last_success_at": "2026-04-29T17:33:05+00:00",
+      "fetched_at": "2026-04-30T04:28:02+00:00",
+      "last_success_at": "2026-04-30T04:28:02+00:00",
       "editions": [
         "intl"
       ]
@@ -10513,8 +10513,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:33:05+00:00",
-      "last_success_at": "2026-04-29T17:33:05+00:00",
+      "fetched_at": "2026-04-30T04:28:02+00:00",
+      "last_success_at": "2026-04-30T04:28:02+00:00",
       "editions": [
         "intl"
       ]
@@ -10556,8 +10556,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:33:06+00:00",
-      "last_success_at": "2026-04-29T17:33:06+00:00",
+      "fetched_at": "2026-04-30T04:28:02+00:00",
+      "last_success_at": "2026-04-30T04:28:02+00:00",
       "editions": [
         "intl"
       ]
@@ -10599,8 +10599,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:33:06+00:00",
-      "last_success_at": "2026-04-29T17:33:06+00:00",
+      "fetched_at": "2026-04-30T04:28:02+00:00",
+      "last_success_at": "2026-04-30T04:28:02+00:00",
       "editions": [
         "intl"
       ]
@@ -10608,7 +10608,7 @@
     {
       "id": "btop-win",
       "name": "btop for Windows",
-      "version": "2026-04-29",
+      "version": "2026-04-30",
       "source": "Official project download page; no stable public release asset API",
       "version_kind": "sync_date",
       "version_source": "UTC sync date; no public version API",
@@ -10626,8 +10626,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:33:05+00:00",
-      "last_success_at": "2026-04-29T17:33:05+00:00",
+      "fetched_at": "2026-04-30T04:28:01+00:00",
+      "last_success_at": "2026-04-30T04:28:01+00:00",
       "editions": [
         "intl"
       ]
@@ -10653,8 +10653,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:33:06+00:00",
-      "last_success_at": "2026-04-29T17:33:06+00:00",
+      "fetched_at": "2026-04-30T04:28:03+00:00",
+      "last_success_at": "2026-04-30T04:28:03+00:00",
       "editions": [
         "intl"
       ]
@@ -10680,8 +10680,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:33:06+00:00",
-      "last_success_at": "2026-04-29T17:33:06+00:00",
+      "fetched_at": "2026-04-30T04:28:03+00:00",
+      "last_success_at": "2026-04-30T04:28:03+00:00",
       "editions": [
         "intl"
       ]
@@ -10689,7 +10689,7 @@
     {
       "id": "edge",
       "name": "Microsoft Edge",
-      "version": "2026-04-29",
+      "version": "2026-04-30",
       "source": "Official Microsoft Edge download page; no public version API",
       "version_kind": "sync_date",
       "version_source": "UTC sync date; no public version API",
@@ -10723,8 +10723,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:33:05+00:00",
-      "last_success_at": "2026-04-29T17:33:05+00:00",
+      "fetched_at": "2026-04-30T04:28:02+00:00",
+      "last_success_at": "2026-04-30T04:28:02+00:00",
       "editions": [
         "intl"
       ]
@@ -10732,7 +10732,7 @@
     {
       "id": "opera",
       "name": "Opera Browser",
-      "version": "2026-04-29",
+      "version": "2026-04-30",
       "source": "Official Opera download page; no public version API",
       "version_kind": "sync_date",
       "version_source": "UTC sync date; no public version API",
@@ -10766,8 +10766,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:33:05+00:00",
-      "last_success_at": "2026-04-29T17:33:05+00:00",
+      "fetched_at": "2026-04-30T04:28:02+00:00",
+      "last_success_at": "2026-04-30T04:28:02+00:00",
       "editions": [
         "intl"
       ]
@@ -10775,7 +10775,7 @@
     {
       "id": "vivaldi",
       "name": "Vivaldi Browser",
-      "version": "2026-04-29",
+      "version": "2026-04-30",
       "source": "Official Vivaldi download page; no public version API",
       "version_kind": "sync_date",
       "version_source": "UTC sync date; no public version API",
@@ -10809,8 +10809,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:33:05+00:00",
-      "last_success_at": "2026-04-29T17:33:05+00:00",
+      "fetched_at": "2026-04-30T04:28:02+00:00",
+      "last_success_at": "2026-04-30T04:28:02+00:00",
       "editions": [
         "intl"
       ]
@@ -10818,7 +10818,7 @@
     {
       "id": "tor-browser",
       "name": "Tor Browser",
-      "version": "2026-04-29",
+      "version": "2026-04-30",
       "source": "Official Tor Project download page; no public version API",
       "version_kind": "sync_date",
       "version_source": "UTC sync date; no public version API",
@@ -10852,8 +10852,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:33:05+00:00",
-      "last_success_at": "2026-04-29T17:33:05+00:00",
+      "fetched_at": "2026-04-30T04:28:02+00:00",
+      "last_success_at": "2026-04-30T04:28:02+00:00",
       "editions": [
         "intl"
       ]
@@ -10861,7 +10861,7 @@
     {
       "id": "librewolf",
       "name": "LibreWolf",
-      "version": "2026-04-29",
+      "version": "2026-04-30",
       "source": "Official LibreWolf installation page; no public version API",
       "version_kind": "sync_date",
       "version_source": "UTC sync date; no public version API",
@@ -10895,8 +10895,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:33:05+00:00",
-      "last_success_at": "2026-04-29T17:33:05+00:00",
+      "fetched_at": "2026-04-30T04:28:02+00:00",
+      "last_success_at": "2026-04-30T04:28:02+00:00",
       "editions": [
         "intl"
       ]
@@ -10904,7 +10904,7 @@
     {
       "id": "mullvad-browser",
       "name": "Mullvad Browser",
-      "version": "2026-04-29",
+      "version": "2026-04-30",
       "source": "Official Mullvad Browser download page; no public version API",
       "version_kind": "sync_date",
       "version_source": "UTC sync date; no public version API",
@@ -10938,8 +10938,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:33:05+00:00",
-      "last_success_at": "2026-04-29T17:33:05+00:00",
+      "fetched_at": "2026-04-30T04:28:02+00:00",
+      "last_success_at": "2026-04-30T04:28:02+00:00",
       "editions": [
         "intl"
       ]
@@ -10947,7 +10947,7 @@
     {
       "id": "microsoft-teams",
       "name": "Microsoft Teams",
-      "version": "2026-04-29",
+      "version": "2026-04-30",
       "source": "Official Microsoft Teams download page; no public version API",
       "version_kind": "sync_date",
       "version_source": "UTC sync date; no public version API",
@@ -10973,8 +10973,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:33:05+00:00",
-      "last_success_at": "2026-04-29T17:33:05+00:00",
+      "fetched_at": "2026-04-30T04:28:02+00:00",
+      "last_success_at": "2026-04-30T04:28:02+00:00",
       "editions": [
         "intl"
       ]
@@ -10982,7 +10982,7 @@
     {
       "id": "whatsapp",
       "name": "WhatsApp",
-      "version": "2026-04-29",
+      "version": "2026-04-30",
       "source": "Official WhatsApp download page; no public version API",
       "version_kind": "sync_date",
       "version_source": "UTC sync date; no public version API",
@@ -11008,8 +11008,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:33:05+00:00",
-      "last_success_at": "2026-04-29T17:33:05+00:00",
+      "fetched_at": "2026-04-30T04:28:02+00:00",
+      "last_success_at": "2026-04-30T04:28:02+00:00",
       "editions": [
         "intl"
       ]
@@ -11017,7 +11017,7 @@
     {
       "id": "thunderbird",
       "name": "Thunderbird",
-      "version": "2026-04-29",
+      "version": "2026-04-30",
       "source": "Official Thunderbird download page; no public version API",
       "version_kind": "sync_date",
       "version_source": "UTC sync date; no public version API",
@@ -11051,8 +11051,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:33:05+00:00",
-      "last_success_at": "2026-04-29T17:33:05+00:00",
+      "fetched_at": "2026-04-30T04:28:02+00:00",
+      "last_success_at": "2026-04-30T04:28:02+00:00",
       "editions": [
         "intl"
       ]
@@ -11060,7 +11060,7 @@
     {
       "id": "skype",
       "name": "Skype",
-      "version": "2026-04-29",
+      "version": "2026-04-30",
       "source": "Official Skype download page; no public version API",
       "version_kind": "sync_date",
       "version_source": "UTC sync date; no public version API",
@@ -11094,8 +11094,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:33:05+00:00",
-      "last_success_at": "2026-04-29T17:33:05+00:00",
+      "fetched_at": "2026-04-30T04:28:02+00:00",
+      "last_success_at": "2026-04-30T04:28:02+00:00",
       "editions": [
         "intl"
       ]
@@ -11103,7 +11103,7 @@
     {
       "id": "libreoffice",
       "name": "LibreOffice",
-      "version": "2026-04-29",
+      "version": "2026-04-30",
       "source": "Official LibreOffice download page; no public version API",
       "version_kind": "sync_date",
       "version_source": "UTC sync date; no public version API",
@@ -11137,8 +11137,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:33:05+00:00",
-      "last_success_at": "2026-04-29T17:33:05+00:00",
+      "fetched_at": "2026-04-30T04:28:02+00:00",
+      "last_success_at": "2026-04-30T04:28:02+00:00",
       "editions": [
         "intl"
       ]
@@ -11146,7 +11146,7 @@
     {
       "id": "zotero",
       "name": "Zotero",
-      "version": "2026-04-29",
+      "version": "2026-04-30",
       "source": "Official Zotero download page; no public version API",
       "version_kind": "sync_date",
       "version_source": "UTC sync date; no public version API",
@@ -11180,8 +11180,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:33:05+00:00",
-      "last_success_at": "2026-04-29T17:33:05+00:00",
+      "fetched_at": "2026-04-30T04:28:02+00:00",
+      "last_success_at": "2026-04-30T04:28:02+00:00",
       "editions": [
         "intl"
       ]
@@ -11189,7 +11189,7 @@
     {
       "id": "notion",
       "name": "Notion",
-      "version": "2026-04-29",
+      "version": "2026-04-30",
       "source": "Official Notion desktop download page; no public version API",
       "version_kind": "sync_date",
       "version_source": "UTC sync date; no public version API",
@@ -11215,8 +11215,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:33:05+00:00",
-      "last_success_at": "2026-04-29T17:33:05+00:00",
+      "fetched_at": "2026-04-30T04:28:02+00:00",
+      "last_success_at": "2026-04-30T04:28:02+00:00",
       "editions": [
         "intl"
       ]
@@ -11224,7 +11224,7 @@
     {
       "id": "figma",
       "name": "Figma Desktop",
-      "version": "2026-04-29",
+      "version": "2026-04-30",
       "source": "Official Figma downloads page; no public version API",
       "version_kind": "sync_date",
       "version_source": "UTC sync date; no public version API",
@@ -11250,8 +11250,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:33:05+00:00",
-      "last_success_at": "2026-04-29T17:33:05+00:00",
+      "fetched_at": "2026-04-30T04:28:02+00:00",
+      "last_success_at": "2026-04-30T04:28:02+00:00",
       "editions": [
         "intl"
       ]
@@ -11259,7 +11259,7 @@
     {
       "id": "dropbox",
       "name": "Dropbox",
-      "version": "2026-04-29",
+      "version": "2026-04-30",
       "source": "Official Dropbox install page; no public version API",
       "version_kind": "sync_date",
       "version_source": "UTC sync date; no public version API",
@@ -11285,8 +11285,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:33:05+00:00",
-      "last_success_at": "2026-04-29T17:33:05+00:00",
+      "fetched_at": "2026-04-30T04:28:02+00:00",
+      "last_success_at": "2026-04-30T04:28:02+00:00",
       "editions": [
         "intl"
       ]
@@ -11294,7 +11294,7 @@
     {
       "id": "google-drive",
       "name": "Google Drive for Desktop",
-      "version": "2026-04-29",
+      "version": "2026-04-30",
       "source": "Official Google Drive download page; no public version API",
       "version_kind": "sync_date",
       "version_source": "UTC sync date; no public version API",
@@ -11320,8 +11320,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:33:05+00:00",
-      "last_success_at": "2026-04-29T17:33:05+00:00",
+      "fetched_at": "2026-04-30T04:28:02+00:00",
+      "last_success_at": "2026-04-30T04:28:02+00:00",
       "editions": [
         "intl"
       ]
@@ -11329,7 +11329,7 @@
     {
       "id": "onedrive",
       "name": "Microsoft OneDrive",
-      "version": "2026-04-29",
+      "version": "2026-04-30",
       "source": "Official OneDrive download page; no public version API",
       "version_kind": "sync_date",
       "version_source": "UTC sync date; no public version API",
@@ -11355,8 +11355,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:33:05+00:00",
-      "last_success_at": "2026-04-29T17:33:05+00:00",
+      "fetched_at": "2026-04-30T04:28:02+00:00",
+      "last_success_at": "2026-04-30T04:28:02+00:00",
       "editions": [
         "intl"
       ]
@@ -11364,7 +11364,7 @@
     {
       "id": "foxit-reader",
       "name": "Foxit PDF Reader",
-      "version": "2026-04-29",
+      "version": "2026-04-30",
       "source": "Official Foxit PDF Reader download page; no public version API",
       "version_kind": "sync_date",
       "version_source": "UTC sync date; no public version API",
@@ -11390,8 +11390,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:33:05+00:00",
-      "last_success_at": "2026-04-29T17:33:05+00:00",
+      "fetched_at": "2026-04-30T04:28:02+00:00",
+      "last_success_at": "2026-04-30T04:28:02+00:00",
       "editions": [
         "intl"
       ]
@@ -11399,7 +11399,7 @@
     {
       "id": "onepassword",
       "name": "1Password",
-      "version": "2026-04-29",
+      "version": "2026-04-30",
       "source": "Official 1Password downloads page; no public version API",
       "version_kind": "sync_date",
       "version_source": "UTC sync date; no public version API",
@@ -11433,8 +11433,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:33:05+00:00",
-      "last_success_at": "2026-04-29T17:33:05+00:00",
+      "fetched_at": "2026-04-30T04:28:02+00:00",
+      "last_success_at": "2026-04-30T04:28:02+00:00",
       "editions": [
         "intl"
       ]
@@ -11442,7 +11442,7 @@
     {
       "id": "proton-vpn",
       "name": "Proton VPN",
-      "version": "2026-04-29",
+      "version": "2026-04-30",
       "source": "Official Proton VPN download page; no public version API",
       "version_kind": "sync_date",
       "version_source": "UTC sync date; no public version API",
@@ -11476,8 +11476,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:33:05+00:00",
-      "last_success_at": "2026-04-29T17:33:05+00:00",
+      "fetched_at": "2026-04-30T04:28:02+00:00",
+      "last_success_at": "2026-04-30T04:28:02+00:00",
       "editions": [
         "intl"
       ]
@@ -11485,7 +11485,7 @@
     {
       "id": "malwarebytes",
       "name": "Malwarebytes",
-      "version": "2026-04-29",
+      "version": "2026-04-30",
       "source": "Official Malwarebytes download page; no public version API",
       "version_kind": "sync_date",
       "version_source": "UTC sync date; no public version API",
@@ -11511,8 +11511,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:33:05+00:00",
-      "last_success_at": "2026-04-29T17:33:05+00:00",
+      "fetched_at": "2026-04-30T04:28:02+00:00",
+      "last_success_at": "2026-04-30T04:28:02+00:00",
       "editions": [
         "intl"
       ]
@@ -11520,7 +11520,7 @@
     {
       "id": "adguard",
       "name": "AdGuard",
-      "version": "2026-04-29",
+      "version": "2026-04-30",
       "source": "Official AdGuard download page; no public version API",
       "version_kind": "sync_date",
       "version_source": "UTC sync date; no public version API",
@@ -11546,8 +11546,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:33:05+00:00",
-      "last_success_at": "2026-04-29T17:33:05+00:00",
+      "fetched_at": "2026-04-30T04:28:02+00:00",
+      "last_success_at": "2026-04-30T04:28:02+00:00",
       "editions": [
         "intl"
       ]
@@ -11555,7 +11555,7 @@
     {
       "id": "docker-desktop",
       "name": "Docker Desktop",
-      "version": "2026-04-29",
+      "version": "2026-04-30",
       "source": "Official Docker Desktop download page; no public version API",
       "version_kind": "sync_date",
       "version_source": "UTC sync date; no public version API",
@@ -11589,8 +11589,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:33:05+00:00",
-      "last_success_at": "2026-04-29T17:33:05+00:00",
+      "fetched_at": "2026-04-30T04:28:02+00:00",
+      "last_success_at": "2026-04-30T04:28:02+00:00",
       "editions": [
         "intl"
       ]
@@ -11598,7 +11598,7 @@
     {
       "id": "postman",
       "name": "Postman",
-      "version": "2026-04-29",
+      "version": "2026-04-30",
       "source": "Official Postman downloads page; no public version API",
       "version_kind": "sync_date",
       "version_source": "UTC sync date; no public version API",
@@ -11632,8 +11632,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:33:05+00:00",
-      "last_success_at": "2026-04-29T17:33:05+00:00",
+      "fetched_at": "2026-04-30T04:28:02+00:00",
+      "last_success_at": "2026-04-30T04:28:02+00:00",
       "editions": [
         "intl"
       ]
@@ -11641,7 +11641,7 @@
     {
       "id": "cursor",
       "name": "Cursor",
-      "version": "2026-04-29",
+      "version": "2026-04-30",
       "source": "Official Cursor downloads page; no public version API",
       "version_kind": "sync_date",
       "version_source": "UTC sync date; no public version API",
@@ -11675,8 +11675,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:33:05+00:00",
-      "last_success_at": "2026-04-29T17:33:05+00:00",
+      "fetched_at": "2026-04-30T04:28:02+00:00",
+      "last_success_at": "2026-04-30T04:28:02+00:00",
       "editions": [
         "intl"
       ]
@@ -11684,7 +11684,7 @@
     {
       "id": "jetbrains-toolbox",
       "name": "JetBrains Toolbox App",
-      "version": "2026-04-29",
+      "version": "2026-04-30",
       "source": "Official JetBrains Toolbox download page; no public version API",
       "version_kind": "sync_date",
       "version_source": "UTC sync date; no public version API",
@@ -11718,8 +11718,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:33:05+00:00",
-      "last_success_at": "2026-04-29T17:33:05+00:00",
+      "fetched_at": "2026-04-30T04:28:02+00:00",
+      "last_success_at": "2026-04-30T04:28:02+00:00",
       "editions": [
         "intl"
       ]
@@ -11727,7 +11727,7 @@
     {
       "id": "virtualbox",
       "name": "VirtualBox",
-      "version": "2026-04-29",
+      "version": "2026-04-30",
       "source": "Official VirtualBox downloads page; no public version API",
       "version_kind": "sync_date",
       "version_source": "UTC sync date; no public version API",
@@ -11761,8 +11761,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:33:05+00:00",
-      "last_success_at": "2026-04-29T17:33:05+00:00",
+      "fetched_at": "2026-04-30T04:28:02+00:00",
+      "last_success_at": "2026-04-30T04:28:02+00:00",
       "editions": [
         "intl"
       ]
@@ -11770,7 +11770,7 @@
     {
       "id": "wireshark",
       "name": "Wireshark",
-      "version": "2026-04-29",
+      "version": "2026-04-30",
       "source": "Official Wireshark download page; no public version API",
       "version_kind": "sync_date",
       "version_source": "UTC sync date; no public version API",
@@ -11796,8 +11796,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:33:05+00:00",
-      "last_success_at": "2026-04-29T17:33:05+00:00",
+      "fetched_at": "2026-04-30T04:28:02+00:00",
+      "last_success_at": "2026-04-30T04:28:02+00:00",
       "editions": [
         "intl"
       ]
@@ -11805,7 +11805,7 @@
     {
       "id": "winscp",
       "name": "WinSCP",
-      "version": "2026-04-29",
+      "version": "2026-04-30",
       "source": "Official WinSCP download page; no public version API",
       "version_kind": "sync_date",
       "version_source": "UTC sync date; no public version API",
@@ -11823,8 +11823,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:33:05+00:00",
-      "last_success_at": "2026-04-29T17:33:05+00:00",
+      "fetched_at": "2026-04-30T04:28:02+00:00",
+      "last_success_at": "2026-04-30T04:28:02+00:00",
       "editions": [
         "intl"
       ]
@@ -11832,7 +11832,7 @@
     {
       "id": "filezilla",
       "name": "FileZilla Client",
-      "version": "2026-04-29",
+      "version": "2026-04-30",
       "source": "Official FileZilla Client download page; no public version API",
       "version_kind": "sync_date",
       "version_source": "UTC sync date; no public version API",
@@ -11866,8 +11866,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:33:05+00:00",
-      "last_success_at": "2026-04-29T17:33:05+00:00",
+      "fetched_at": "2026-04-30T04:28:02+00:00",
+      "last_success_at": "2026-04-30T04:28:02+00:00",
       "editions": [
         "intl"
       ]
@@ -11875,7 +11875,7 @@
     {
       "id": "sysinternals-suite",
       "name": "Sysinternals Suite",
-      "version": "2026-04-29",
+      "version": "2026-04-30",
       "source": "Official Microsoft Sysinternals download; suite version is not exposed as a public API",
       "version_kind": "sync_date",
       "version_source": "UTC sync date; no public version API",
@@ -11893,8 +11893,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:33:05+00:00",
-      "last_success_at": "2026-04-29T17:33:05+00:00",
+      "fetched_at": "2026-04-30T04:28:02+00:00",
+      "last_success_at": "2026-04-30T04:28:02+00:00",
       "editions": [
         "intl"
       ]
@@ -11902,7 +11902,7 @@
     {
       "id": "winrar",
       "name": "WinRAR",
-      "version": "2026-04-29",
+      "version": "2026-04-30",
       "source": "Official WinRAR download page; no public version API",
       "version_kind": "sync_date",
       "version_source": "UTC sync date; no public version API",
@@ -11920,8 +11920,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:33:05+00:00",
-      "last_success_at": "2026-04-29T17:33:05+00:00",
+      "fetched_at": "2026-04-30T04:28:02+00:00",
+      "last_success_at": "2026-04-30T04:28:02+00:00",
       "editions": [
         "intl"
       ]
@@ -11929,7 +11929,7 @@
     {
       "id": "wiztree",
       "name": "WizTree",
-      "version": "2026-04-29",
+      "version": "2026-04-30",
       "source": "Official WizTree download page; no public version API",
       "version_kind": "sync_date",
       "version_source": "UTC sync date; no public version API",
@@ -11947,8 +11947,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:33:05+00:00",
-      "last_success_at": "2026-04-29T17:33:05+00:00",
+      "fetched_at": "2026-04-30T04:28:02+00:00",
+      "last_success_at": "2026-04-30T04:28:02+00:00",
       "editions": [
         "intl"
       ]
@@ -11956,7 +11956,7 @@
     {
       "id": "teracopy",
       "name": "TeraCopy",
-      "version": "2026-04-29",
+      "version": "2026-04-30",
       "source": "Official TeraCopy download page; no public version API",
       "version_kind": "sync_date",
       "version_source": "UTC sync date; no public version API",
@@ -11974,8 +11974,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:33:05+00:00",
-      "last_success_at": "2026-04-29T17:33:05+00:00",
+      "fetched_at": "2026-04-30T04:28:02+00:00",
+      "last_success_at": "2026-04-30T04:28:02+00:00",
       "editions": [
         "intl"
       ]
@@ -11983,7 +11983,7 @@
     {
       "id": "anydesk",
       "name": "AnyDesk",
-      "version": "2026-04-29",
+      "version": "2026-04-30",
       "source": "Official AnyDesk downloads page; no public version API",
       "version_kind": "sync_date",
       "version_source": "UTC sync date; no public version API",
@@ -12017,8 +12017,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:33:05+00:00",
-      "last_success_at": "2026-04-29T17:33:05+00:00",
+      "fetched_at": "2026-04-30T04:28:02+00:00",
+      "last_success_at": "2026-04-30T04:28:02+00:00",
       "editions": [
         "intl"
       ]
@@ -12026,7 +12026,7 @@
     {
       "id": "teamviewer",
       "name": "TeamViewer",
-      "version": "2026-04-29",
+      "version": "2026-04-30",
       "source": "Official TeamViewer download page; no public version API",
       "version_kind": "sync_date",
       "version_source": "UTC sync date; no public version API",
@@ -12060,8 +12060,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:33:05+00:00",
-      "last_success_at": "2026-04-29T17:33:05+00:00",
+      "fetched_at": "2026-04-30T04:28:02+00:00",
+      "last_success_at": "2026-04-30T04:28:02+00:00",
       "editions": [
         "intl"
       ]
@@ -12069,7 +12069,7 @@
     {
       "id": "kodi",
       "name": "Kodi",
-      "version": "2026-04-29",
+      "version": "2026-04-30",
       "source": "Official Kodi download page; no public version API",
       "version_kind": "sync_date",
       "version_source": "UTC sync date; no public version API",
@@ -12103,8 +12103,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:33:05+00:00",
-      "last_success_at": "2026-04-29T17:33:05+00:00",
+      "fetched_at": "2026-04-30T04:28:02+00:00",
+      "last_success_at": "2026-04-30T04:28:02+00:00",
       "editions": [
         "intl"
       ]
@@ -12112,7 +12112,7 @@
     {
       "id": "plex",
       "name": "Plex Media Server",
-      "version": "2026-04-29",
+      "version": "2026-04-30",
       "source": "Official Plex Media Server download page; no public version API",
       "version_kind": "sync_date",
       "version_source": "UTC sync date; no public version API",
@@ -12146,8 +12146,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:33:05+00:00",
-      "last_success_at": "2026-04-29T17:33:05+00:00",
+      "fetched_at": "2026-04-30T04:28:02+00:00",
+      "last_success_at": "2026-04-30T04:28:02+00:00",
       "editions": [
         "intl"
       ]
@@ -12155,7 +12155,7 @@
     {
       "id": "foobar2000",
       "name": "foobar2000",
-      "version": "2026-04-29",
+      "version": "2026-04-30",
       "source": "Official foobar2000 download page; no public version API",
       "version_kind": "sync_date",
       "version_source": "UTC sync date; no public version API",
@@ -12181,8 +12181,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:33:05+00:00",
-      "last_success_at": "2026-04-29T17:33:05+00:00",
+      "fetched_at": "2026-04-30T04:28:02+00:00",
+      "last_success_at": "2026-04-30T04:28:02+00:00",
       "editions": [
         "intl"
       ]
@@ -12190,7 +12190,7 @@
     {
       "id": "epic-games-launcher",
       "name": "Epic Games Launcher",
-      "version": "2026-04-29",
+      "version": "2026-04-30",
       "source": "Official Epic Games Store download page; no public version API",
       "version_kind": "sync_date",
       "version_source": "UTC sync date; no public version API",
@@ -12216,8 +12216,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-04-29T17:33:05+00:00",
-      "last_success_at": "2026-04-29T17:33:05+00:00",
+      "fetched_at": "2026-04-30T04:28:02+00:00",
+      "last_success_at": "2026-04-30T04:28:02+00:00",
       "editions": [
         "intl"
       ]
