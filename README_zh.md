@@ -10,10 +10,6 @@
 ## 🌐 在线站点
 
 - 站点：<https://latest-softwares-064facea.fastapicloud.dev/>
-- 健康检查：<https://latest-softwares-064facea.fastapicloud.dev/api/health>
-- 软件数据 API：<https://latest-softwares-064facea.fastapicloud.dev/api/packages>
-
-网页会向 `/api/visit` 发送访问 beacon；下载按钮会先访问 `/api/download/{package_id}/{platform}`，再 302 跳转到上游官方下载地址。本仓库不托管任何二进制文件。
 
 ---
 

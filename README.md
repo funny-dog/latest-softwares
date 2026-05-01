@@ -10,10 +10,6 @@
 ## 🌐 Live Site
 
 - Site: <https://latest-softwares-064facea.fastapicloud.dev/>
-- Health check: <https://latest-softwares-064facea.fastapicloud.dev/api/health>
-- Packages API: <https://latest-softwares-064facea.fastapicloud.dev/api/packages>
-
-The web page sends a visit beacon to `/api/visit`; download buttons first hit `/api/download/{package_id}/{platform}` then 302-redirect to the upstream official URL. This repository does not host any binaries.
 
 ---
 
