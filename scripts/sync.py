@@ -147,7 +147,7 @@ def _write_sync_log(eid: str, fetcher: str, status: str, error: str | None) -> N
         "fetcher": fetcher,
         "status": status,
         "error": error,
-        "timestamp": datetime.now().isoformat(),
+        "timestamp": _utc_now_iso(),
     }
     LOG_FILE.parent.mkdir(parents=True, exist_ok=True)
     with open(LOG_FILE, "a", encoding="utf-8") as f:
