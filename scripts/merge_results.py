@@ -114,7 +114,9 @@ def main() -> int:
 
     paths: list[Path] = []
     if args.shards_dir:
-        paths.extend(sorted(args.shards_dir.glob("*.json")))
+        # download-artifact 把每个 artifact 放在以 artifact 名命名的子目录中，
+        # 如 shard-0/latest.json，需要递归扫描。
+        paths.extend(sorted(args.shards_dir.glob("**/*.json")))
     paths.extend(Path(f) for f in args.files)
 
     if not paths:
