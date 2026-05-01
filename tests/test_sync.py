@@ -12,13 +12,14 @@ def test_sync_rejects_invalid_config_before_writing(tmp_path, monkeypatch, capsy
     packages_file.write_text("packages: []\n", encoding="utf-8")
 
     monkeypatch.setattr(sync, "PACKAGES_FILE", packages_file)
+    monkeypatch.setattr(sync, "PACKAGES_DIR", tmp_path / "nonexistent_packages_dir")
     monkeypatch.setattr(sync, "DATA_FILE", data_file)
 
     rc = sync.main()
 
     assert rc == 1
     assert not data_file.exists()
-    assert "packages.yaml 配置校验失败" in capsys.readouterr().err
+    assert "配置校验失败" in capsys.readouterr().err
 
 
 def test_sync_records_stale_reason_and_failed_ids(tmp_path, monkeypatch):
@@ -61,6 +62,7 @@ packages:
         raise RuntimeError("temporary upstream failure")
 
     monkeypatch.setattr(sync, "PACKAGES_FILE", packages_file)
+    monkeypatch.setattr(sync, "PACKAGES_DIR", tmp_path / "nonexistent_packages_dir")
     monkeypatch.setattr(sync, "DATA_FILE", data_file)
     monkeypatch.setitem(sync.FETCHERS, "github_release", failing_fetcher)
 
@@ -129,6 +131,7 @@ packages:
         raise RuntimeError("missing pwsh")
 
     monkeypatch.setattr(sync, "PACKAGES_FILE", packages_file)
+    monkeypatch.setattr(sync, "PACKAGES_DIR", tmp_path / "nonexistent_packages_dir")
     monkeypatch.setattr(sync, "DATA_FILE", data_file)
     monkeypatch.setitem(sync.FETCHERS, "windows11_fido", failing_fetcher)
 
@@ -182,6 +185,7 @@ packages:
         )
 
     monkeypatch.setattr(sync, "PACKAGES_FILE", packages_file)
+    monkeypatch.setattr(sync, "PACKAGES_DIR", tmp_path / "nonexistent_packages_dir")
     monkeypatch.setattr(sync, "DATA_FILE", data_file)
     monkeypatch.setitem(sync.FETCHERS, "github_release", fake_fetcher)
 
@@ -234,6 +238,7 @@ packages:
         )
 
     monkeypatch.setattr(sync, "PACKAGES_FILE", packages_file)
+    monkeypatch.setattr(sync, "PACKAGES_DIR", tmp_path / "nonexistent_packages_dir")
     monkeypatch.setattr(sync, "DATA_FILE", data_file)
     monkeypatch.setitem(sync.FETCHERS, "github_release", fake_fetcher)
 

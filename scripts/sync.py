@@ -48,6 +48,7 @@ else:
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
 PACKAGES_FILE = REPO_ROOT / "packages.yaml"
+PACKAGES_DIR = REPO_ROOT / "packages"
 DATA_FILE = REPO_ROOT / "data" / "latest.json"
 MAX_WORKERS = 10  # API 请求 I/O 密集型，10-15 线程可获得最佳吞吐
 
@@ -79,6 +80,26 @@ def _normalize_version_semantics(entry: dict[str, Any]) -> dict[str, Any]:
         entry.get("source") or "previous latest.json entry",
     )
     return entry
+
+
+def _load_packages_dir(packages_dir: Path) -> dict:
+    """从 packages/ 目录加载并合并所有 yaml 文件"""
+    all_packages: list[dict[str, Any]] = []
+    for yaml_file in sorted(packages_dir.glob("*.yaml")):
+        if yaml_file.name.startswith("_"):
+            continue
+        with open(yaml_file, "r", encoding="utf-8") as f:
+            data = yaml.safe_load(f)
+        all_packages.extend(data.get("packages", []))
+    return {"packages": all_packages}
+
+
+def load_packages_config() -> dict:
+    """加载软件包配置，支持目录或单文件"""
+    if PACKAGES_DIR.is_dir():
+        return _load_packages_dir(PACKAGES_DIR)
+    else:
+        return yaml.safe_load(PACKAGES_FILE.read_text(encoding="utf-8"))
 
 
 def _filter_entries(
@@ -227,10 +248,10 @@ def main(argv: list[str] | None = None) -> int:
     )
     args = parser.parse_args([] if argv is None else argv)
 
-    cfg = yaml.safe_load(PACKAGES_FILE.read_text(encoding="utf-8"))
+    cfg = load_packages_config()
     errors = validate_config(cfg)
     if errors:
-        print("packages.yaml 配置校验失败：", file=sys.stderr)
+        print("配置校验失败：", file=sys.stderr)
         for error in errors:
             print(f"- {error}", file=sys.stderr)
         return 1
