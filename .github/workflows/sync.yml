@@ -186,7 +186,7 @@ jobs:
           pip install -r requirements.txt -r requirements-dev.txt
 
       - name: Download shard artifacts
-        uses: actions/download-artifact@v6
+        uses: actions/download-artifact@v8
         with:
           pattern: shard-*
           path: /tmp/shards
@@ -254,7 +254,7 @@ jobs:
         run: pip install -r requirements.txt -r requirements-dev.txt
 
       - name: Download latest data artifact
-        uses: actions/download-artifact@v6
+        uses: actions/download-artifact@v8
         with:
           name: latest-data
           path: data/
@@ -288,7 +288,7 @@ jobs:
 
     steps:
       - name: Download dist artifact
-        uses: actions/download-artifact@v6
+        uses: actions/download-artifact@v8
         with:
           name: dist
           path: dist/
@@ -399,7 +399,7 @@ jobs:
         run: pip install -r requirements.txt "fastapi[standard]"
 
       - name: Download latest data artifact
-        uses: actions/download-artifact@v6
+        uses: actions/download-artifact@v8
         with:
           name: latest-data
           path: data/
