@@ -18,8 +18,6 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 
-import yaml
-
 if __package__ in (None, ""):
     sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
     from scripts.fetchers import FETCHERS  # type: ignore
@@ -29,10 +27,12 @@ if __package__ in (None, ""):
         is_direct_link,
     )
     from scripts.net import get, github_headers, head  # type: ignore
+    from scripts.config_loader import load_packages_config  # type: ignore
 else:
     from .fetchers import FETCHERS
     from .link_utils import LINK_KIND_DIRECT, LINK_KIND_LANDING_PAGE, is_direct_link
     from .net import get, github_headers, head
+    from .config_loader import load_packages_config
 
 # Windows runner 默认 cp1252，输出 ✓/✗/中文会 UnicodeEncodeError 进而崩掉整个脚本。
 # 与 sync.py / render.py / build_web.py 保持一致。
@@ -45,7 +45,6 @@ for _stream in (sys.stdout, sys.stderr):
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
 DATA_FILE = REPO_ROOT / "data" / "latest.json"
-PACKAGES_FILE = REPO_ROOT / "packages.yaml"
 LINK_HEALTH_FILE = REPO_ROOT / "data" / "link-health.json"
 
 TIMEOUT = 30
@@ -107,7 +106,7 @@ def _write_health_report(report: dict[str, Any]) -> None:
 
 def validate_and_fix() -> int:
     data = json.loads(DATA_FILE.read_text(encoding="utf-8"))
-    cfg = yaml.safe_load(PACKAGES_FILE.read_text(encoding="utf-8"))
+    cfg = load_packages_config()
     configs = {entry["id"]: entry for entry in cfg.get("packages", [])}
 
     # ==== Phase 1: 收集所有待检查的直链 URL ====

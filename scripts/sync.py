@@ -1,6 +1,6 @@
 """主同步入口。
 
-读 packages.yaml → 派发到 fetcher → 汇总写入 data/latest.json。
+读 packages/ 配置 → 派发到 fetcher → 汇总写入 data/latest.json。
 
 设计原则：
   - 单个 fetcher 失败不中断流程（其它软件继续）

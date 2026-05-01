@@ -19,7 +19,7 @@ on:
   push:
     branches: [main, master]
     paths:
-      - 'packages.yaml'
+      - 'packages/**'
       - 'requirements*.txt'
       - 'scripts/**'
       - 'tests/**'
@@ -30,7 +30,7 @@ on:
   pull_request:
     branches: [main, master]
     paths:
-      - 'packages.yaml'
+      - 'packages/**'
       - 'requirements*.txt'
       - 'scripts/**'
       - 'tests/**'
@@ -80,7 +80,7 @@ jobs:
 
   # ==========================================================================
   # Job 1: 计算分片矩阵
-  #   读 packages.yaml，输出 JSON 数组供 sync-shard 的 matrix 使用。
+  #   读 packages/ 目录，输出 JSON 数组供 sync-shard 的 matrix 使用。
   # ==========================================================================
   generate-shards:
     if: github.event_name != 'pull_request'

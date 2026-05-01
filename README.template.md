@@ -32,7 +32,7 @@
 
 ## 🔧 Adding New Software
 
-The project's "control panel" is [`packages.yaml`](packages.yaml) in the repository root. To add a new software item, simply append an entry:
+The project's "control panel" is the [`packages/`](packages/) directory. To add a new software item, simply append an entry to the appropriate yaml file:
 
 ```yaml
   - id: powertoys                    # unique slug
@@ -80,7 +80,7 @@ The system automatically determines link type from the `download_url` file exten
 - **Direct**: URL ends with `.exe` / `.dmg` / `.iso` / `.zip` / `.tar.gz` / `.msi` / `.pkg` etc., download starts immediately. Shown as **filled badges** in the web UI.
 - **Landing page**: URL points to a download webpage (no file extension), user must manually click download on that page. Shown as **outlined badges** in the web UI.
 
-If the URL extension cannot be reliably determined, explicitly set `link_kind: direct` or `link_kind: landing_page` in the platform config in `packages.yaml`.
+If the URL extension cannot be reliably determined, explicitly set `link_kind: direct` or `link_kind: landing_page` in the platform config in `packages/`.
 
 **Version Field Semantics**
 
@@ -99,7 +99,7 @@ Current data contract version: `schema_version: 2`.
 
 - **Scheduled**: Daily at UTC `01:00` (Beijing time 09:00)
 - **Manual**: Run workflow from the Actions page
-- **Config changes**: Triggered immediately on `packages.yaml` push
+- **Config changes**: Triggered immediately on `packages/` push
 
 Workflow file: [`.github/workflows/sync.yml`](.github/workflows/sync.yml)
 

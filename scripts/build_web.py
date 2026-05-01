@@ -17,15 +17,15 @@ import shutil
 import sys
 from pathlib import Path
 
-import yaml
-
 if __package__ in (None, ""):
     sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
     from scripts.link_utils import DIRECT_FILE_EXTENSIONS  # type: ignore
     from scripts.editions import filter_data_by_edition, VALID_EDITIONS  # type: ignore
+    from scripts.config_loader import load_packages_config  # type: ignore
 else:
     from .link_utils import DIRECT_FILE_EXTENSIONS
     from .editions import filter_data_by_edition, VALID_EDITIONS
+    from .config_loader import load_packages_config
 
 # Windows runner 默认 cp1252，输出 ✓ 会崩
 for _stream in (sys.stdout, sys.stderr):
@@ -39,7 +39,6 @@ for _stream in (sys.stdout, sys.stderr):
 REPO_ROOT = Path(__file__).resolve().parents[1]
 WEB_SRC = REPO_ROOT / "web"
 DATA_FILE = REPO_ROOT / "data" / "latest.json"
-PACKAGES_FILE = REPO_ROOT / "packages.yaml"
 DIST = REPO_ROOT / "dist"
 VENDOR_MANIFEST = WEB_SRC / "vendor" / "manifest.json"
 VERSIONED_ASSETS = (
@@ -152,10 +151,8 @@ def inject_asset_versions() -> dict[str, str]:
 
 
 def _merge_desc_from_config(data: dict) -> None:
-    """从 packages.yaml 合并 desc_cn/desc_en 到 data 中。"""
-    if not PACKAGES_FILE.exists():
-        return
-    cfg = yaml.safe_load(PACKAGES_FILE.read_text(encoding="utf-8"))
+    """从 packages 配置合并 desc_cn/desc_en 到 data 中。"""
+    cfg = load_packages_config()
     desc_map: dict[str, dict[str, str]] = {}
     for entry in cfg.get("packages", []):
         eid = entry.get("id")

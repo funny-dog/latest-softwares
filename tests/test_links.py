@@ -105,7 +105,8 @@ packages:
     )
 
     monkeypatch.setattr(validate_links, "DATA_FILE", data_file)
-    monkeypatch.setattr(validate_links, "PACKAGES_FILE", packages_file)
+    monkeypatch.setattr("scripts.config_loader.PACKAGES_DIR", tmp_path / "nonexistent_packages_dir")
+    monkeypatch.setattr("scripts.config_loader.PACKAGES_FILE", packages_file)
     monkeypatch.setattr(validate_links, "LINK_HEALTH_FILE", health_file)
     monkeypatch.setattr(validate_links, "_check_url_robust", lambda url: True)
 

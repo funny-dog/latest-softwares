@@ -32,7 +32,7 @@
 
 ## 🔧 添加新软件
 
-仓库的"控制面板"是根目录的 [`packages.yaml`](packages.yaml)。要加新软件，只需追加一项：
+仓库的"控制面板"是 [`packages/`](packages/) 目录。要加新软件，只需追加一项：
 
 ```yaml
   - id: powertoys                    # 唯一短标识
@@ -80,7 +80,7 @@
 - **直链**：URL 以 `.exe` / `.dmg` / `.iso` / `.zip` / `.tar.gz` / `.msi` / `.pkg` 等文件扩展名结尾，点击立即开始下载。Web 界面中对应**实心填充**徽章。
 - **跳转页**：URL 指向一个下载网页（无文件后缀），点击后需在页面上再手动选择下载。Web 界面中对应**空心描边**徽章。
 
-如 URL 后缀无法可靠判断，可在 `packages.yaml` 的 platform 配置中显式写 `link_kind: direct` 或 `link_kind: landing_page`。
+如 URL 后缀无法可靠判断，可在 `packages/` 的 platform 配置中显式写 `link_kind: direct` 或 `link_kind: landing_page`。
 
 **版本字段语义**
 
@@ -99,7 +99,7 @@
 
 - **定时**：每日 UTC `01:00`（北京时间 09:00）
 - **手动**：仓库 Actions 页面点 *Run workflow*
-- **配置变更**：`packages.yaml` 改动 push 时立即触发
+- **配置变更**：`packages/` 改动 push 时立即触发
 
 工作流文件：[`.github/workflows/sync.yml`](.github/workflows/sync.yml)
 

@@ -1,4 +1,4 @@
-"""Validate packages.yaml before running network-heavy sync tasks."""
+"""Validate packages/ config before running network-heavy sync tasks."""
 
 from __future__ import annotations
 
@@ -24,15 +24,15 @@ if __package__ in (None, ""):
     from scripts.fetchers import FETCHERS  # type: ignore
     from scripts.link_utils import LINK_KINDS  # type: ignore
     from scripts.editions import validate_editions  # type: ignore
+    from scripts.config_loader import load_packages_config, PACKAGES_DIR  # type: ignore
 else:
     from .fetchers import FETCHERS
     from .link_utils import LINK_KINDS
     from .editions import validate_editions
+    from .config_loader import load_packages_config, PACKAGES_DIR
 
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
-PACKAGES_FILE = REPO_ROOT / "packages.yaml"
-PACKAGES_DIR = REPO_ROOT / "packages"
 ID_RE = re.compile(r"^[a-z0-9][a-z0-9-]*$")
 
 FIXED_URL_FETCHERS = {
@@ -343,7 +343,7 @@ def validate_config(config: dict) -> list[str]:
 
 
 def main() -> int:
-    config = yaml.safe_load(PACKAGES_FILE.read_text(encoding="utf-8"))
+    config = load_packages_config()
     errors = validate_config(config)
 
     # 检查 packages/ 目录下跨文件 id 唯一性

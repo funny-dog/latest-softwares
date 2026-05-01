@@ -24,10 +24,11 @@ for _stream in (sys.stdout, sys.stderr):
 from itertools import cycle
 from pathlib import Path
 
-import yaml
-
-REPO_ROOT = Path(__file__).resolve().parents[1]
-PACKAGES_FILE = REPO_ROOT / "packages.yaml"
+if __package__ in (None, ""):
+    sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+    from scripts.config_loader import load_packages_config  # type: ignore
+else:
+    from .config_loader import load_packages_config
 
 
 def partition_ids(ids: list[str], n: int) -> list[str]:
@@ -51,7 +52,7 @@ def main() -> int:
     )
     args = parser.parse_args()
 
-    cfg = yaml.safe_load(PACKAGES_FILE.read_text(encoding="utf-8"))
+    cfg = load_packages_config()
     entries = cfg.get("packages", [])
 
     if args.edition:

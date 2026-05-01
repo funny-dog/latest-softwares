@@ -43,7 +43,7 @@ pre-commit run --all-files
 
 完整架构说明见 `AGENTS.md`，以下为 Claude Code 高频关注的要点：
 
-- **唯一手动编辑的文件**：`packages.yaml`（软件清单）。README.md 和 data/latest.json 都是自动生成的，不要手动修改。
+- **唯一手动编辑的配置**：`packages/` 目录（软件清单，按版本拆分）。README.md 和 data/latest.json 都是自动生成的，不要手动修改。
 - **fetcher 插件机制**：`scripts/fetchers/` 下按模块实现 `fetch(args) -> FetchResult`，在 `__init__.py` 的 `FETCHERS` 字典注册。90% 的软件用 `github_release` fetcher。
 - **Edition 系统**：每个软件通过 `editions: [cn]` / `[intl]` / `[cn, intl]` 标记归属版本，过滤逻辑在 `scripts/editions.py`。
 - **容错设计**：单个 fetcher 失败不影响其他软件，失败的沿用旧数据并标记 ⚠️。

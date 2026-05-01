@@ -6,10 +6,11 @@ from pathlib import Path
 import yaml
 
 from scripts import validate_config
+from scripts.config_loader import load_packages_config
 
 
 def load_current_config() -> dict:
-    return yaml.safe_load(Path("packages.yaml").read_text(encoding="utf-8"))
+    return load_packages_config()
 
 
 def test_current_packages_yaml_is_valid():
