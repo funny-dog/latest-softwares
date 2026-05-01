@@ -21,6 +21,7 @@ import argparse
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime, timezone
 from pathlib import Path
+from typing import Any
 
 import yaml
 
@@ -36,9 +37,9 @@ for _stream in (sys.stdout, sys.stderr):
 # 兼容两种运行方式：作为模块（python -m scripts.sync）或作为脚本（python scripts/sync.py）
 if __package__ in (None, ""):
     sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
-    from scripts.fetchers import FETCHERS, FetchResult  # type: ignore
-    from scripts.validate_config import validate_config  # type: ignore
-    from scripts.editions import filter_by_edition, VALID_EDITIONS  # type: ignore
+    from scripts.fetchers import FETCHERS, FetchResult
+    from scripts.validate_config import validate_config
+    from scripts.editions import filter_by_edition, VALID_EDITIONS
 else:
     from .fetchers import FETCHERS, FetchResult
     from .validate_config import validate_config
@@ -70,7 +71,7 @@ def _parse_id_filter(values: list[str] | None) -> set[str]:
     return ids
 
 
-def _normalize_version_semantics(entry: dict) -> dict:
+def _normalize_version_semantics(entry: dict[str, Any]) -> dict[str, Any]:
     """Backfill version semantics for freshly fetched or stale legacy entries."""
     entry.setdefault("version_kind", "release_version")
     entry.setdefault(
@@ -81,11 +82,11 @@ def _normalize_version_semantics(entry: dict) -> dict:
 
 
 def _filter_entries(
-    entries: list[dict],
+    entries: list[dict[str, Any]],
     *,
     only: set[str],
     skip: set[str],
-) -> list[dict]:
+) -> list[dict[str, Any]]:
     configured = {entry["id"] for entry in entries}
     unknown = sorted((only | skip) - configured)
     if unknown:
@@ -98,7 +99,7 @@ def _filter_entries(
     return filtered
 
 
-def load_previous() -> dict[str, dict]:
+def load_previous() -> dict[str, dict[str, Any]]:
     """读上一次的 latest.json，返回 id -> entry 的映射。"""
     if not DATA_FILE.exists():
         return {}
@@ -110,7 +111,7 @@ def load_previous() -> dict[str, dict]:
         return {}
 
 
-def _stale_from_previous(previous_entry: dict, reason: str) -> dict:
+def _stale_from_previous(previous_entry: dict[str, Any], reason: str) -> dict[str, Any]:
     stale = dict(previous_entry)
     stale["_stale"] = True
     stale["_stale_reason"] = reason
@@ -120,7 +121,7 @@ def _stale_from_previous(previous_entry: dict, reason: str) -> dict:
     return _normalize_version_semantics(stale)
 
 
-def _apply_config_metadata(result: dict, entry: dict) -> dict:
+def _apply_config_metadata(result: dict[str, Any], entry: dict[str, Any]) -> dict[str, Any]:
     """Apply package metadata that comes from packages.yaml, not the fetcher."""
     result["name"] = entry.get("name", result.get("name"))
     result["category"] = entry.get("category", result.get("category"))
@@ -137,9 +138,9 @@ def _apply_config_metadata(result: dict, entry: dict) -> dict:
 
 
 def _sync_one(
-    entry: dict,
-    previous: dict[str, dict],
-) -> tuple[str, dict | None, bool, tuple[str, str] | None]:
+    entry: dict[str, Any],
+    previous: dict[str, dict[str, Any]],
+) -> tuple[str, dict[str, Any] | None, bool, tuple[str, str] | None]:
     """运行单个 fetcher，返回 (index, result_dict, ok, error_info)。
 
     此函数由 ThreadPoolExecutor 并发调用，只读 previous，无副作用。
@@ -241,7 +242,7 @@ def main(argv: list[str] | None = None) -> int:
     failures: list[tuple[str, str]] = []
 
     # 保存 entries 的有序结果，按 index 重建（因为 as_completed 无序）
-    result_map: dict[str, dict] = {}
+    result_map: dict[str, dict[str, Any]] = {}
     # entries 的位置 → id 的有序映射
     order: list[str] = [e["id"] for e in entries]
 

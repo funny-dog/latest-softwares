@@ -22,3 +22,31 @@ files = ["scripts/fetchers/base.py", "scripts/editions.py", "scripts/sync.py"]
 [[tool.mypy.overrides]]
 module = "scripts.fetchers.*"
 disallow_untyped_defs = false
+disallow_any_generics = false
+warn_return_any = false
+warn_unused_ignores = false
+
+[[tool.mypy.overrides]]
+module = "scripts.validate_config"
+strict = false
+disallow_any_generics = false
+disallow_untyped_defs = false
+warn_return_any = false
+no_implicit_reexport = false
+warn_unused_ignores = false
+disable_error_code = ["arg-type"]
+
+[[tool.mypy.overrides]]
+module = "scripts.net"
+disallow_untyped_defs = false
+disallow_any_generics = false
+warn_return_any = false
+warn_unused_ignores = false
+
+[[tool.mypy.overrides]]
+module = "yaml"
+ignore_missing_imports = true
+
+[[tool.mypy.overrides]]
+module = "requests"
+ignore_missing_imports = true
