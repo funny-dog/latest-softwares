@@ -1,5 +1,6 @@
 # .pre-commit-config.yaml
 repos:
+  # 注意: rev 需与 requirements-dev.txt 中的 ruff 版本保持一致
   - repo: https://github.com/astral-sh/ruff-pre-commit
     rev: v0.15.12
     hooks:
@@ -10,7 +11,7 @@ repos:
     rev: v5.0.0
     hooks:
       - id: check-yaml
-        exclude: ^packages\.yaml$
+        exclude: ^packages\.yaml$  # 已有 validate_config.py 校验，此处跳过
       - id: check-added-large-files
         args: ['--maxkb=500']
       - id: end-of-file-fixer
