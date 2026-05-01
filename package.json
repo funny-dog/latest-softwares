@@ -1,0 +1,10 @@
+{
+  "name": "latest-softwares-web",
+  "private": true,
+  "devDependencies": {
+    "esbuild": "0.24.0"
+  },
+  "scripts": {
+    "build": "node scripts/build_assets.mjs"
+  }
+}
