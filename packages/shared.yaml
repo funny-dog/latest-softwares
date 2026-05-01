@@ -1,0 +1,1401 @@
+packages:
+- id: ubuntu
+  name: Ubuntu
+  category: Operating Systems
+  editions:
+  - cn
+  - intl
+  homepage: https://ubuntu.com/download
+  fetcher: ubuntu_releases
+  args:
+    platforms:
+    - platform: desktop-amd64
+      pattern: ubuntu-{version}-desktop-amd64.iso
+    - platform: server-amd64
+      pattern: ubuntu-{version}-live-server-amd64.iso
+    - platform: wsl-amd64
+      pattern: ubuntu-{version}-wsl-amd64.wsl
+  desc_cn: Canonical 维护的流行 Linux 发行版，适合桌面和服务器
+  desc_en: Popular Linux distribution maintained by Canonical for desktop and server
+- id: fedora
+  name: Fedora Workstation
+  category: Operating Systems
+  editions:
+  - cn
+  - intl
+  homepage: https://fedoraproject.org/workstation/download/
+  fetcher: fedora_releases
+  args:
+    edition_path: Workstation/x86_64/iso
+    platforms:
+    - platform: workstation-live-x86_64
+      pattern: Fedora-Workstation-Live-{version}-*.x86_64.iso
+  desc_cn: Red Hat 赞助的前沿 Linux 发行版，率先采用新技术
+  desc_en: Cutting-edge Linux distribution sponsored by Red Hat, early adopter of
+    new tech
+- id: v2rayn
+  name: v2rayN
+  category: Network & Proxy
+  editions:
+  - intl
+  - cn
+  homepage: https://github.com/2dust/v2rayN
+  fetcher: github_release
+  args:
+    repo: 2dust/v2rayN
+    assets:
+    - platform: win-x64
+      pattern: v2rayN-windows-64-desktop.zip
+    - platform: win-arm64
+      pattern: v2rayN-windows-arm64-desktop.zip
+    - platform: mac-arm64
+      pattern: v2rayN-macos-arm64.dmg
+    - platform: mac-x64
+      pattern: v2rayN-macos-64.dmg
+  desc_cn: Windows 平台的 V2Ray 图形客户端，支持多种代理协议
+  desc_en: V2Ray GUI client for Windows with multi-protocol proxy support
+- id: vscode
+  name: Visual Studio Code
+  category: Developer Tools
+  editions:
+  - cn
+  - intl
+  homepage: https://code.visualstudio.com
+  fetcher: vscode_official
+  args:
+    builds:
+    - platform: win-x64
+      build: win32-x64-user
+    - platform: win-arm64
+      build: win32-arm64-user
+    - platform: mac-arm64
+      build: darwin-arm64-dmg
+    - platform: mac-x64
+      build: darwin-x64-dmg
+  desc_cn: 微软出品的轻量级代码编辑器，支持丰富的扩展生态
+  desc_en: Lightweight code editor by Microsoft with rich extension ecosystem
+- id: chrome
+  name: Google Chrome
+  category: Browsers
+  editions:
+  - cn
+  - intl
+  homepage: https://www.google.com/chrome/
+  fetcher: chrome_official
+  args:
+    platforms:
+    - platform: win-x64
+      channel: stable
+      os_key: win64
+      download_url: https://dl.google.com/chrome/install/standalonesetup64.exe
+    - platform: mac-arm64
+      channel: stable
+      os_key: mac_arm64
+      download_url: https://dl.google.com/chrome/mac/stable/GGRO/googlechrome.dmg
+  desc_cn: Google 出品的全球最流行的浏览器，速度快安全性好
+  desc_en: World's most popular browser by Google, fast and secure
+- id: steam
+  name: Steam
+  category: Gaming
+  editions:
+  - cn
+  - intl
+  homepage: https://store.steampowered.com/about/
+  fetcher: steam_official
+  args:
+    platforms:
+    - platform: win-x64
+      download_url: https://cdn.fastly.steamstatic.com/client/installer/SteamSetup.exe
+  desc_cn: Valve 的游戏平台，全球最大的 PC 游戏分发平台
+  desc_en: Gaming platform by Valve, the world's largest PC game distribution platform
+- id: localsend
+  name: LocalSend
+  category: Utilities
+  editions:
+  - cn
+  - intl
+  homepage: https://localsend.org
+  fetcher: github_release
+  args:
+    repo: localsend/localsend
+    assets:
+    - platform: win-x64
+      pattern: LocalSend-*-windows-x86-64.exe
+    - platform: mac-arm64
+      pattern: LocalSend-*.dmg
+  desc_cn: 局域网文件传输工具，AirDrop 的跨平台替代品
+  desc_en: LAN file transfer tool, cross-platform alternative to AirDrop
+- id: bitwarden
+  name: Bitwarden Desktop
+  category: Utilities
+  editions:
+  - cn
+  - intl
+  homepage: https://bitwarden.com/download/
+  fetcher: github_release
+  args:
+    repo: bitwarden/clients
+    tag_pattern: ^desktop-v
+    release_scan_pages: 3
+    assets:
+    - platform: win-x64
+      pattern: Bitwarden-Installer-*.exe
+    - platform: mac-universal
+      pattern: Bitwarden-*-universal.dmg
+  desc_cn: 开源密码管理器，跨平台同步加密存储
+  desc_en: Open-source password manager with cross-platform encrypted sync
+- id: codex
+  name: OpenAI Codex
+  category: Developer Tools
+  editions:
+  - intl
+  - cn
+  homepage: https://github.com/openai/codex
+  fetcher: github_release
+  args:
+    repo: openai/codex
+    tag_pattern: ^rust-v
+    release_scan_pages: 2
+    assets:
+    - platform: win-x64
+      pattern: codex-x86_64-pc-windows-msvc.exe
+    - platform: win-arm64
+      pattern: codex-aarch64-pc-windows-msvc.exe
+    - platform: mac-arm64
+      pattern: codex-aarch64-apple-darwin.dmg
+    - platform: mac-x64
+      pattern: codex-x86_64-apple-darwin.tar.gz
+  desc_cn: OpenAI 推出的 AI 编程助手，自动编写和调试代码
+  desc_en: AI coding assistant by OpenAI for automated code writing and debugging
+- id: geek
+  name: Geek Uninstaller
+  category: Utilities
+  editions:
+  - cn
+  - intl
+  homepage: https://geekuninstaller.com/
+  fetcher: geek
+  args:
+    platforms:
+    - platform: win-x64
+      download_url: https://geekuninstaller.com/download
+      link_kind: landing_page
+  desc_cn: 轻量级 Windows 软件卸载工具，彻底清理残留
+  desc_en: Lightweight Windows software uninstaller that thoroughly cleans residuals
+- id: everything
+  name: Everything
+  category: Utilities
+  editions:
+  - cn
+  - intl
+  homepage: https://www.voidtools.com/
+  fetcher: everything
+  args:
+    platforms:
+    - platform: win-x64
+      download_url: https://www.voidtools.com/Everything-{version}.x64-Setup.exe
+    - platform: win-x86
+      download_url: https://www.voidtools.com/Everything-{version}.x86-Setup.exe
+    - platform: win-x64-portable
+      download_url: https://www.voidtools.com/Everything-{version}.x64.zip
+    - platform: win-x86-portable
+      download_url: https://www.voidtools.com/Everything-{version}.x86.zip
+  desc_cn: 极速文件名搜索工具，秒级定位任何文件
+  desc_en: Ultra-fast file name search tool, locate any file in seconds
+- id: nvidia-app
+  name: NVIDIA App
+  category: System Utilities
+  editions:
+  - cn
+  - intl
+  homepage: https://www.nvidia.com/en-us/software/nvidia-app/
+  fetcher: nvidia_app
+  args:
+    platforms:
+    - platform: win-x64
+      download_url: https://www.nvidia.com/en-us/software/nvidia-app/
+      link_kind: landing_page
+  desc_cn: NVIDIA 显卡管理工具，驱动更新和游戏优化
+  desc_en: NVIDIA GPU management tool for driver updates and game optimization
+- id: git
+  name: Git for Windows
+  category: Developer Tools
+  editions:
+  - intl
+  - cn
+  homepage: https://github.com/git-for-windows/git
+  fetcher: github_release
+  args:
+    repo: git-for-windows/git
+    assets:
+    - platform: win-x64
+      pattern: Git-*-64-bit.exe
+  desc_cn: 分布式版本控制系统 Windows 移植版，开发者必备
+  desc_en: Windows port of the distributed version control system, essential for developers
+- id: insomnia
+  name: Insomnia
+  category: Developer Tools
+  editions:
+  - intl
+  - cn
+  homepage: https://github.com/Kong/insomnia
+  fetcher: github_release
+  args:
+    repo: Kong/insomnia
+    assets:
+    - platform: win-x64
+      pattern: Insomnia.Core-*.exe
+  desc_cn: 开源 REST 和 GraphQL API 测试工具，界面简洁
+  desc_en: Open-source REST and GraphQL API testing tool with clean UI
+- id: heidisql
+  name: HeidiSQL
+  category: Developer Tools
+  editions:
+  - intl
+  - cn
+  homepage: https://github.com/HeidiSQL/HeidiSQL
+  fetcher: github_release
+  args:
+    repo: HeidiSQL/HeidiSQL
+    assets:
+    - platform: win-x64
+      pattern: HeidiSQL_*_Setup.exe
+  desc_cn: 免费的 MySQL/MariaDB/PostgreSQL 数据库管理工具
+  desc_en: Free MySQL/MariaDB/PostgreSQL database management tool
+- id: notepadplusplus
+  name: Notepad++
+  category: Developer Tools
+  editions:
+  - intl
+  - cn
+  homepage: https://github.com/notepad-plus-plus/notepad-plus-plus
+  fetcher: github_release
+  args:
+    repo: notepad-plus-plus/notepad-plus-plus
+    assets:
+    - platform: win-x64
+      pattern: npp.*.Installer.x64.exe
+  desc_cn: 免费的 Windows 源代码编辑器，支持多种编程语言
+  desc_en: Free Windows source code editor with multi-language support
+- id: wezterm
+  name: WezTerm
+  category: Developer Tools
+  editions:
+  - intl
+  - cn
+  homepage: https://github.com/wez/wezterm
+  fetcher: github_release
+  args:
+    repo: wez/wezterm
+    assets:
+    - platform: win-x64
+      pattern: WezTerm-*-setup.exe
+  desc_cn: GPU 加速的跨平台终端模拟器，支持 Lua 配置
+  desc_en: GPU-accelerated cross-platform terminal emulator with Lua configuration
+- id: hiddify
+  name: Hiddify
+  category: Network & Proxy
+  editions:
+  - intl
+  - cn
+  homepage: https://hiddify.com
+  fetcher: github_release
+  args:
+    repo: hiddify/hiddify-app
+    assets:
+    - platform: win-x64
+      pattern: Hiddify-Windows-Setup-x64.exe
+    - platform: mac-universal
+      pattern: Hiddify-MacOS-Installer.pkg
+    - platform: linux-x64
+      pattern: Hiddify-Linux-x64-AppImage.AppImage
+  desc_cn: 多协议代理客户端，支持 V2Ray、Clash 等主流协议
+  desc_en: Multi-protocol proxy client supporting V2Ray, Clash and other protocols
+- id: sing-box
+  name: sing-box
+  category: Network & Proxy
+  editions:
+  - intl
+  - cn
+  homepage: https://github.com/SagerNet/sing-box
+  fetcher: github_release
+  args:
+    repo: SagerNet/sing-box
+    assets:
+    - platform: win-x64
+      pattern: sing-box-*-windows-amd64.zip
+  desc_cn: 通用代理平台，支持多种协议的下一代网络代理工具
+  desc_en: Universal proxy platform supporting multiple protocols as next-gen network
+    tool
+- id: trafficmonitor
+  name: TrafficMonitor
+  category: System Utilities
+  editions:
+  - intl
+  - cn
+  homepage: https://github.com/zhongyang219/TrafficMonitor
+  fetcher: github_release
+  args:
+    repo: zhongyang219/TrafficMonitor
+    assets:
+    - platform: win-x64
+      pattern: TrafficMonitor_V*_x64.zip
+  desc_cn: Windows 网速和系统资源悬浮窗监控工具
+  desc_en: Windows network speed and system resource floating monitor
+- id: keepassxc
+  name: KeePassXC
+  category: Utilities
+  editions:
+  - intl
+  - cn
+  homepage: https://github.com/keepassxreboot/keepassxc
+  fetcher: github_release
+  args:
+    repo: keepassxreboot/keepassxc
+    assets:
+    - platform: win-x64
+      pattern: KeePassXC-*-Win64.msi
+  desc_cn: 离线密码管理器，本地加密存储密码数据库
+  desc_en: Offline password manager with locally encrypted password database
+- id: rustdesk
+  name: RustDesk
+  category: Utilities
+  editions:
+  - intl
+  - cn
+  homepage: https://github.com/rustdesk/rustdesk
+  fetcher: github_release
+  args:
+    repo: rustdesk/rustdesk
+    assets:
+    - platform: win-x64
+      pattern: rustdesk-*-x86_64.exe
+  desc_cn: 开源远程桌面软件，可自建服务器
+  desc_en: Open-source remote desktop software with self-hosted server support
+- id: telegram
+  name: Telegram Desktop
+  category: Messaging
+  editions:
+  - intl
+  - cn
+  homepage: https://github.com/telegramdesktop/tdesktop
+  fetcher: github_release
+  args:
+    repo: telegramdesktop/tdesktop
+    assets:
+    - platform: win-x64
+      pattern: tsetup.*.exe
+  desc_cn: 注重安全和速度的即时通讯工具，支持大群组和频道
+  desc_en: Security and speed-focused messenger with large groups and channels
+- id: logseq
+  name: Logseq
+  category: Productivity
+  editions:
+  - intl
+  - cn
+  homepage: https://github.com/logseq/logseq
+  fetcher: github_release
+  args:
+    repo: logseq/logseq
+    assets:
+    - platform: win-x64
+      pattern: Logseq-win-x64-*.exe
+  desc_cn: 开源知识管理和笔记工具，基于大纲和双向链接
+  desc_en: Open-source knowledge management and note-taking with outlines and bidirectional
+    links
+- id: joplin
+  name: Joplin
+  category: Productivity
+  editions:
+  - intl
+  - cn
+  homepage: https://github.com/laurent22/joplin
+  fetcher: github_release
+  args:
+    repo: laurent22/joplin
+    assets:
+    - platform: win-x64
+      pattern: Joplin-Setup-*.exe
+  desc_cn: 开源笔记和待办工具，支持 Markdown 和端到端加密
+  desc_en: Open-source note-taking and to-do app with Markdown and E2E encryption
+- id: brave
+  name: Brave Browser
+  category: Browsers
+  editions:
+  - intl
+  - cn
+  homepage: https://github.com/brave/brave-browser
+  fetcher: github_release
+  args:
+    repo: brave/brave-browser
+    assets:
+    - platform: win-x64
+      pattern: BraveBrowserSetup.exe
+  desc_cn: 内置广告拦截和隐私保护的浏览器，基于 Chromium
+  desc_en: Browser with built-in ad blocking and privacy protection, based on Chromium
+- id: thorium
+  name: Thorium Browser
+  category: Browsers
+  editions:
+  - intl
+  - cn
+  homepage: https://github.com/Alex313031/Thorium-Win
+  fetcher: github_release
+  args:
+    repo: Alex313031/Thorium-Win
+    assets:
+    - platform: win-x64
+      pattern: thorium_*.exe
+  desc_cn: 性能优化的 Chromium 分支，针对速度特别调优
+  desc_en: Performance-optimized Chromium fork, specifically tuned for speed
+- id: ollama
+  name: Ollama
+  category: AI Tools
+  editions:
+  - intl
+  - cn
+  homepage: https://github.com/ollama/ollama
+  fetcher: github_release
+  args:
+    repo: ollama/ollama
+    assets:
+    - platform: win-x64
+      pattern: OllamaSetup.exe
+  desc_cn: 本地运行大语言模型的工具，一键部署 LLM
+  desc_en: Tool for running large language models locally with one-click deployment
+- id: fzf
+  name: fzf
+  category: Developer Tools
+  editions:
+  - intl
+  - cn
+  homepage: https://github.com/junegunn/fzf
+  fetcher: github_release
+  args:
+    repo: junegunn/fzf
+    assets:
+    - platform: win-x64
+      pattern: fzf-*-windows_amd64.zip
+  desc_cn: 通用的命令行模糊查找器，极速搜索文件和历史
+  desc_en: General-purpose command-line fuzzy finder for fast file and history search
+- id: bat
+  name: bat
+  category: Developer Tools
+  editions:
+  - intl
+  - cn
+  homepage: https://github.com/sharkdp/bat
+  fetcher: github_release
+  args:
+    repo: sharkdp/bat
+    assets:
+    - platform: win-x64
+      pattern: bat-v*-x86_64-pc-windows-msvc.zip
+  desc_cn: 带语法高亮和 Git 集成的 cat 替代品
+  desc_en: cat alternative with syntax highlighting and Git integration
+- id: fd
+  name: fd
+  category: Developer Tools
+  editions:
+  - intl
+  - cn
+  homepage: https://github.com/sharkdp/fd
+  fetcher: github_release
+  args:
+    repo: sharkdp/fd
+    assets:
+    - platform: win-x64
+      pattern: fd-v*-x86_64-pc-windows-msvc.zip
+  desc_cn: 更快速友好的 find 替代工具
+  desc_en: Faster and more user-friendly alternative to find
+- id: rg
+  name: ripgrep
+  category: Developer Tools
+  editions:
+  - intl
+  - cn
+  homepage: https://github.com/BurntSushi/ripgrep
+  fetcher: github_release
+  args:
+    repo: BurntSushi/ripgrep
+    assets:
+    - platform: win-x64
+      pattern: ripgrep-*-x86_64-pc-windows-msvc.zip
+  desc_cn: 超快的文本搜索工具，grep 的现代替代品
+  desc_en: Ultra-fast text search tool, modern alternative to grep
+- id: jq
+  name: jq
+  category: Developer Tools
+  editions:
+  - intl
+  - cn
+  homepage: https://github.com/jqlang/jq
+  fetcher: github_release
+  args:
+    repo: jqlang/jq
+    assets:
+    - platform: win-x64
+      pattern: jq-windows-amd64.exe
+  desc_cn: 命令行 JSON 处理器，轻量级且功能强大
+  desc_en: Command-line JSON processor, lightweight yet powerful
+- id: yq
+  name: yq
+  category: Developer Tools
+  editions:
+  - intl
+  - cn
+  homepage: https://github.com/mikefarah/yq
+  fetcher: github_release
+  args:
+    repo: mikefarah/yq
+    assets:
+    - platform: win-x64
+      pattern: yq_windows_amd64.exe
+  desc_cn: YAML/JSON/XML 命令行处理工具，jq 的多格式版
+  desc_en: YAML/JSON/XML command-line processor, multi-format version of jq
+- id: gh
+  name: GitHub CLI
+  category: Developer Tools
+  editions:
+  - intl
+  - cn
+  homepage: https://github.com/cli/cli
+  fetcher: github_release
+  args:
+    repo: cli/cli
+    assets:
+    - platform: win-x64
+      pattern: gh_*_windows_amd64.zip
+  desc_cn: GitHub 官方命令行工具，管理 PR/Issue/Release
+  desc_en: Official GitHub CLI for managing PRs, Issues, and Releases
+- id: micro
+  name: Micro
+  category: Developer Tools
+  editions:
+  - intl
+  - cn
+  homepage: https://github.com/zyedidia/micro
+  fetcher: github_release
+  args:
+    repo: zyedidia/micro
+    assets:
+    - platform: win-x64
+      pattern: micro-*-win64.zip
+  desc_cn: 现代化的终端文本编辑器，易上手且支持插件
+  desc_en: Modern terminal text editor that's easy to learn with plugin support
+- id: neovim
+  name: Neovim
+  category: Developer Tools
+  editions:
+  - intl
+  - cn
+  homepage: https://github.com/neovim/neovim
+  fetcher: github_release
+  args:
+    repo: neovim/neovim
+    assets:
+    - platform: win-x64
+      pattern: nvim-win64.zip
+  desc_cn: Vim 的现代化重构版本，更好的扩展性和 API
+  desc_en: Modernized refactor of Vim with better extensibility and API
+- id: mihomo
+  name: mihomo
+  category: Network & Proxy
+  editions:
+  - intl
+  - cn
+  homepage: https://github.com/MetaCubeX/mihomo
+  fetcher: github_release
+  args:
+    repo: MetaCubeX/mihomo
+    assets:
+    - platform: win-x64
+      pattern: mihomo-windows-amd64-*.zip
+  desc_cn: Clash.Meta 内核，支持更多代理协议和规则引擎
+  desc_en: Clash.Meta kernel with extended proxy protocol and rule engine support
+- id: motrix
+  name: Motrix
+  category: Utilities
+  editions:
+  - intl
+  - cn
+  homepage: https://github.com/agalwood/Motrix
+  fetcher: github_release
+  args:
+    repo: agalwood/Motrix
+    assets:
+    - platform: win-x64
+      pattern: Motrix-*-x64.exe
+  desc_cn: 开源下载工具，支持 HTTP/FTP/BT/磁力链接
+  desc_en: Open-source download manager supporting HTTP/FTP/BitTorrent/magnet links
+- id: marktext
+  name: MarkText
+  category: Productivity
+  editions:
+  - intl
+  - cn
+  homepage: https://github.com/marktext/marktext
+  fetcher: github_release
+  args:
+    repo: marktext/marktext
+    assets:
+    - platform: win-x64
+      pattern: marktext-setup.exe
+  desc_cn: 简洁的 Markdown 编辑器，实时预览所见即所得
+  desc_en: Clean Markdown editor with real-time WYSIWYG preview
+- id: xray-core
+  name: Xray-core
+  category: Network & Proxy
+  editions:
+  - intl
+  - cn
+  homepage: https://github.com/XTLS/Xray-core
+  fetcher: github_release
+  args:
+    repo: XTLS/Xray-core
+    assets:
+    - platform: win-x64
+      pattern: Xray-windows-64.zip
+  desc_cn: Xray 核心引擎，V2Ray 的增强分支，性能更优
+  desc_en: Xray core engine, enhanced V2Ray fork with better performance
+- id: audacity
+  name: Audacity
+  category: Media Players
+  editions:
+  - intl
+  - cn
+  homepage: https://github.com/audacity/audacity
+  fetcher: github_release
+  args:
+    repo: audacity/audacity
+    assets:
+    - platform: win-x64
+      pattern: audacity-win-*-64bit.exe
+  desc_cn: 开源音频编辑器，录制和编辑音频的专业工具
+  desc_en: Open-source audio editor for professional recording and editing
+- id: calibre
+  name: calibre
+  category: Productivity
+  editions:
+  - intl
+  - cn
+  homepage: https://github.com/kovidgoyal/calibre
+  fetcher: github_release
+  args:
+    repo: kovidgoyal/calibre
+    assets:
+    - platform: win-x64
+      pattern: calibre-64bit-*.msi
+  desc_cn: 电子书管理工具，格式转换和设备同步一站式方案
+  desc_en: E-book management tool for format conversion and device sync
+- id: windows-terminal
+  name: Windows Terminal
+  category: Developer Tools
+  editions:
+  - intl
+  - cn
+  homepage: https://github.com/microsoft/terminal
+  fetcher: github_release
+  args:
+    repo: microsoft/terminal
+    assets:
+    - platform: win-x64
+      pattern: Microsoft.WindowsTerminal_*.msixbundle
+  desc_cn: 微软推出的现代化 Windows 终端，支持多标签和 GPU 加速
+  desc_en: Modern Windows terminal by Microsoft with tabs and GPU acceleration
+- id: affine
+  name: AFFiNE
+  category: Productivity
+  editions:
+  - intl
+  - cn
+  homepage: https://github.com/toeverything/AFFiNE
+  fetcher: github_release
+  args:
+    repo: toeverything/AFFiNE
+    assets:
+    - platform: win-x64
+      pattern: affine-*-windows-x64.exe
+  desc_cn: 开源知识库和协作平台，融合文档、白板和数据库
+  desc_en: Open-source knowledge base and collaboration platform with docs, whiteboard,
+    and databases
+- id: shotcut
+  name: Shotcut
+  category: Productivity
+  editions:
+  - intl
+  - cn
+  homepage: https://github.com/mltframework/shotcut
+  fetcher: github_release
+  args:
+    repo: mltframework/shotcut
+    assets:
+    - platform: win-x64
+      pattern: shotcut-win64-*.exe
+  desc_cn: 免费开源的跨平台视频编辑器
+  desc_en: Free open-source cross-platform video editor
+- id: dbeaver
+  name: DBeaver Community
+  category: Developer Tools
+  editions:
+  - intl
+  - cn
+  homepage: https://dbeaver.io/download/
+  fetcher: github_release
+  args:
+    repo: dbeaver/dbeaver
+    assets:
+    - platform: win-x64
+      pattern: dbeaver-ce-*-windows-x86_64.exe
+    - platform: mac-arm64
+      pattern: dbeaver-ce-*-macos-aarch64.dmg
+    - platform: mac-x64
+      pattern: dbeaver-ce-*-macos-x86_64.dmg
+    - platform: linux-x64
+      pattern: dbeaver-ce-*-linux-x86_64.deb
+  desc_cn: 免费的通用数据库工具，支持所有主流数据库
+  desc_en: Free universal database tool supporting all major databases
+- id: obs-studio
+  name: OBS Studio
+  category: Media Players
+  editions:
+  - intl
+  - cn
+  homepage: https://obsproject.com/
+  fetcher: github_release
+  args:
+    repo: obsproject/obs-studio
+    assets:
+    - platform: win-x64
+      pattern: OBS-Studio-*-Windows-x64-Installer.exe
+    - platform: mac-arm64
+      pattern: OBS-Studio-*-macOS-Apple.dmg
+    - platform: mac-x64
+      pattern: OBS-Studio-*-macOS-Intel.dmg
+    - platform: linux-x64
+      pattern: OBS-Studio-*-Ubuntu-24.04-x86_64.deb
+  desc_cn: 开源直播和录屏工具，专业级的流媒体方案
+  desc_en: Open-source live streaming and screen recording tool for professional streaming
+- id: mpv
+  name: mpv
+  category: Media Players
+  editions:
+  - intl
+  - cn
+  homepage: https://mpv.io/
+  fetcher: github_release
+  args:
+    repo: shinchiro/mpv-winbuild-cmake
+    assets:
+    - platform: win-x64
+      pattern: mpv-x86_64-*-git-*.7z
+  desc_cn: 轻量强大的跨平台视频播放器，支持丰富配置
+  desc_en: Lightweight powerful cross-platform video player with rich configuration
+- id: zed
+  name: Zed
+  category: Developer Tools
+  editions:
+  - intl
+  - cn
+  homepage: https://github.com/zed-industries/zed
+  fetcher: github_release
+  args:
+    repo: zed-industries/zed
+    assets:
+    - platform: mac-arm64
+      pattern: Zed-*-aarch64.dmg
+    - platform: linux-x64
+      pattern: zed-linux-x86_64.tar.gz
+  desc_cn: 高性能多人协作代码编辑器，基于 Rust 构建
+  desc_en: High-performance multiplayer code editor built in Rust
+- id: lapce
+  name: Lapce
+  category: Developer Tools
+  editions:
+  - intl
+  - cn
+  homepage: https://github.com/lapce/lapce
+  fetcher: download_page
+  args:
+    source: Official project download page; no stable public release asset API
+    platforms:
+    - platform: win-x64
+      download_url: https://github.com/lapce/lapce/releases
+      link_kind: landing_page
+    - platform: mac-arm64
+      download_url: https://github.com/lapce/lapce/releases
+      link_kind: landing_page
+    - platform: linux-x64
+      download_url: https://github.com/lapce/lapce/releases
+      link_kind: landing_page
+  desc_cn: 用 Rust 编写的快速轻量级代码编辑器
+  desc_en: Fast and lightweight code editor written in Rust
+- id: helix
+  name: Helix
+  category: Developer Tools
+  editions:
+  - intl
+  - cn
+  homepage: https://github.com/helix-editor/helix
+  fetcher: github_release
+  args:
+    repo: helix-editor/helix
+    assets:
+    - platform: win-x64
+      pattern: helix-*-x86_64-windows.zip
+    - platform: mac-arm64
+      pattern: helix-*-aarch64-macos.tar.xz
+    - platform: linux-x64
+      pattern: helix-*-x86_64-linux.tar.xz
+  desc_cn: 基于 Kakoune 的终端代码编辑器，支持 LSP 和树状选择
+  desc_en: Kakoune-inspired terminal code editor with LSP and tree-sitter support
+- id: flameshot
+  name: Flameshot
+  category: System Utilities
+  editions:
+  - intl
+  - cn
+  homepage: https://github.com/flameshot-org/flameshot
+  fetcher: github_release
+  args:
+    repo: flameshot-org/flameshot
+    assets:
+    - platform: win-x64
+      pattern: flameshot-*-win64.zip
+    - platform: linux-x64
+      pattern: flameshot-*-debian-12-amd64.deb
+  desc_cn: 功能强大的截图工具，支持标注和编辑
+  desc_en: Powerful screenshot tool with annotation and editing support
+- id: tabby
+  name: Tabby
+  category: System Utilities
+  editions:
+  - intl
+  - cn
+  homepage: https://github.com/Eugeny/tabby
+  fetcher: github_release
+  args:
+    repo: Eugeny/tabby
+    assets:
+    - platform: win-x64
+      pattern: tabby-*-x64-setup.exe
+    - platform: mac-arm64
+      pattern: tabby-*-arm64.dmg
+    - platform: linux-x64
+      pattern: tabby-*-x86_64-linux.rpm
+  desc_cn: 跨平台终端模拟器，支持 SSH 和串口连接
+  desc_en: Cross-platform terminal emulator with SSH and serial port support
+- id: syncthing
+  name: Syncthing
+  category: Utilities
+  editions:
+  - intl
+  - cn
+  homepage: https://github.com/syncthing/syncthing
+  fetcher: github_release
+  args:
+    repo: syncthing/syncthing
+    assets:
+    - platform: win-x64
+      pattern: syncthing-windows-amd64-v*.zip
+    - platform: mac-arm64
+      pattern: syncthing-macos-arm64-v*.zip
+    - platform: linux-x64
+      pattern: syncthing-linux-amd64-v*.tar.gz
+  desc_cn: 去中心化文件同步工具，P2P 实时同步
+  desc_en: Decentralized file synchronization tool with real-time P2P sync
+- id: clash-verge-rev
+  name: Clash Verge Rev
+  category: Network & Proxy
+  editions:
+  - intl
+  - cn
+  homepage: https://github.com/clash-verge-rev/clash-verge-rev
+  fetcher: github_release
+  args:
+    repo: clash-verge-rev/clash-verge-rev
+    assets:
+    - platform: win-x64
+      pattern: Clash.Verge_*_x64-setup.exe
+    - platform: mac-arm64
+      pattern: Clash.Verge_*_aarch64.dmg
+    - platform: linux-x64
+      pattern: clash-verge_*_amd64.deb
+  desc_cn: Clash Verge 的增强版，基于 Tauri 的跨平台代理客户端
+  desc_en: Enhanced Clash Verge, cross-platform proxy client built with Tauri
+- id: openscad
+  name: OpenSCAD
+  category: Media Players
+  editions:
+  - intl
+  - cn
+  homepage: https://github.com/openscad/openscad
+  fetcher: github_release
+  args:
+    repo: openscad/openscad
+    assets:
+    - platform: win-x64
+      pattern: OpenSCAD-*-x86-64-Installer.exe
+  desc_cn: 程序员的 3D CAD 工具，用代码描述 3D 模型
+  desc_en: 3D CAD tool for programmers, describe 3D models with code
+- id: lmms
+  name: LMMS
+  category: Media Players
+  editions:
+  - intl
+  - cn
+  homepage: https://github.com/LMMS/lmms
+  fetcher: github_release
+  args:
+    repo: LMMS/lmms
+    assets:
+    - platform: win-x64
+      pattern: lmms-*-win64.exe
+    - platform: mac-arm64
+      pattern: lmms-*-macos-arm64.dmg
+  desc_cn: 开源音乐制作工具，电子音乐创作的免费方案
+  desc_en: Open-source music production tool for free electronic music creation
+- id: musescore
+  name: MuseScore
+  category: Media Players
+  editions:
+  - intl
+  - cn
+  homepage: https://github.com/musescore/MuseScore
+  fetcher: github_release
+  args:
+    repo: musescore/MuseScore
+    assets:
+    - platform: win-x64
+      pattern: MuseScore-*-x86_64.msi
+  desc_cn: 开源乐谱编辑器，创建和播放乐谱
+  desc_en: Open-source music notation editor for creating and playing sheet music
+- id: appflowy
+  name: AppFlowy
+  category: Productivity
+  editions:
+  - intl
+  - cn
+  homepage: https://github.com/AppFlowy-IO/AppFlowy
+  fetcher: github_release
+  args:
+    repo: AppFlowy-IO/AppFlowy
+    assets:
+    - platform: win-x64
+      pattern: AppFlowy-*-windows-x86_64.exe
+    - platform: mac-arm64
+      pattern: AppFlowy-*-macos-arm64.dmg
+    - platform: linux-x64
+      pattern: AppFlowy-*-linux-x86_64.tar.gz
+  desc_cn: 开源的 Notion 替代品，笔记和项目管理
+  desc_en: Open-source Notifer alternative for notes and project management
+- id: drawio
+  name: draw.io
+  category: Productivity
+  editions:
+  - intl
+  - cn
+  homepage: https://github.com/jgraph/drawio-desktop
+  fetcher: github_release
+  args:
+    repo: jgraph/drawio-desktop
+    assets:
+    - platform: win-x64
+      pattern: draw.io-*-windows-installer.exe
+    - platform: mac-arm64
+      pattern: draw.io-*-arm64.dmg
+    - platform: linux-x64
+      pattern: draw.io-*-x86_64.rpm
+  desc_cn: 免费的在线绘图工具，支持流程图/UML/架构图
+  desc_en: Free online diagramming tool for flowcharts, UML, and architecture diagrams
+- id: devtoys
+  name: DevToys
+  category: System Utilities
+  desc_cn: 开发者瑞士军刀，JSON/URL/Base64 等常用工具合集
+  desc_en: Swiss army knife for developers with JSON/URL/Base64 and other utilities
+  homepage: https://devtoys.app
+  fetcher: github_release
+  args:
+    repo: DevToys-app/DevToys
+    assets:
+    - platform: mac-arm64
+      pattern: devtoys_osx_arm64.zip
+    - platform: mac-x64
+      pattern: devtoys_osx_x64.zip
+- id: stats
+  name: Stats
+  category: System Utilities
+  desc_cn: macOS 菜单栏系统监控工具，显示 CPU/内存/网络/温度
+  desc_en: macOS menu bar system monitor showing CPU/memory/network/temperature
+  homepage: https://github.com/exelban/stats
+  fetcher: github_release
+  args:
+    repo: exelban/stats
+    assets:
+    - platform: mac-universal
+      pattern: Stats.dmg
+- id: betterdisplay
+  name: BetterDisplay
+  category: System Utilities
+  desc_cn: macOS 显示器管理工具，解锁 HiDPI 分辨率和亮度控制
+  desc_en: macOS display management tool for unlocking HiDPI resolutions and brightness
+    control
+  homepage: https://github.com/waydabber/BetterDisplay
+  fetcher: github_release
+  args:
+    repo: waydabber/BetterDisplay
+    assets:
+    - platform: mac-universal
+      pattern: BetterDisplay-*.dmg
+- id: utm
+  name: UTM
+  category: Developer Tools
+  desc_cn: macOS 虚拟机工具，支持运行 Windows/Linux/Android
+  desc_en: Virtualization tool for macOS to run Windows/Linux/Android
+  homepage: https://mac.getutm.app
+  fetcher: github_release
+  args:
+    repo: utmapp/UTM
+    assets:
+    - platform: mac-universal
+      pattern: UTM.dmg
+- id: tunnelblick
+  name: Tunnelblick
+  category: Network & Proxy
+  desc_cn: macOS OpenVPN 客户端，免费开源的 VPN 连接工具
+  desc_en: Free open-source OpenVPN client for macOS
+  homepage: https://tunnelblick.net
+  fetcher: github_release
+  args:
+    repo: Tunnelblick/Tunnelblick
+    assets:
+    - platform: mac-universal
+      pattern: Tunnelblick_*.dmg
+- id: quickrecorder
+  name: QuickRecorder
+  category: System Utilities
+  desc_cn: 轻量级 macOS 屏幕录制工具，支持窗口录制和系统音频
+  desc_en: Lightweight macOS screen recorder with window capture and system audio
+  homepage: https://github.com/lihaoyun6/QuickRecorder
+  fetcher: github_release
+  args:
+    repo: lihaoyun6/QuickRecorder
+    assets:
+    - platform: mac-universal
+      pattern: QuickRecorder*.dmg
+- id: nimble-commander
+  name: Nimble Commander
+  category: System Utilities
+  desc_cn: macOS 双面板文件管理器，Total Commander 风格
+  desc_en: Dual-panel file manager for macOS, Total Commander style
+  homepage: https://magnumbytes.com
+  fetcher: github_release
+  args:
+    repo: mikekazakov/nimble-commander
+    assets:
+    - platform: mac-universal
+      pattern: nimble-commander-*.dmg
+- id: portkiller
+  name: PortKiller
+  category: Developer Tools
+  desc_cn: macOS 端口占用查看和释放工具，一键杀掉占用端口的进程
+  desc_en: macOS port usage viewer and killer, one-click to free occupied ports
+  homepage: https://github.com/gupsammy/PortKiller
+  fetcher: github_release
+  args:
+    repo: gupsammy/PortKiller
+    assets:
+    - platform: mac-universal
+      pattern: PortKiller.dmg
+- id: pearcleaner
+  name: Pearcleaner
+  category: System Utilities
+  desc_cn: macOS 应用卸载清理工具，彻底删除残留文件
+  desc_en: macOS app uninstaller that thoroughly removes residual files
+  homepage: https://github.com/alienator88/Pearcleaner
+  fetcher: github_release
+  args:
+    repo: alienator88/Pearcleaner
+    assets:
+    - platform: mac-arm64
+      pattern: Pearcleaner-arm.zip
+    - platform: mac-x64
+      pattern: Pearcleaner-intel.zip
+- id: input-source-pro
+  name: Input Source Pro
+  category: System Utilities
+  desc_cn: macOS 输入法管理工具，按应用自动切换输入法
+  desc_en: macOS input source manager that auto-switches per application
+  homepage: https://github.com/runjuu/InputSourcePro
+  fetcher: github_release
+  args:
+    repo: runjuu/InputSourcePro
+    assets:
+    - platform: mac-universal
+      pattern: Input.Source.Pro.*.dmg
+- id: cmux
+  name: cmux
+  category: Developer Tools
+  desc_cn: AI 驱动的终端复用工具，智能管理多个终端会话
+  desc_en: AI-powered terminal multiplexer for smart session management
+  homepage: https://cmux.dev
+  fetcher: github_release
+  args:
+    repo: manaflow-ai/cmux
+    assets:
+    - platform: mac-universal
+      pattern: cmux-macos.dmg
+- id: paseo
+  name: Paseo
+  category: Productivity
+  desc_cn: macOS 步行导航应用，简洁的步行路线规划
+  desc_en: Walking navigation app for macOS with clean route planning
+  homepage: https://getpaseo.com
+  fetcher: github_release
+  args:
+    repo: getpaseo/paseo
+    assets:
+    - platform: mac-arm64
+      pattern: Paseo-*-arm64.dmg
+    - platform: mac-x64
+      pattern: Paseo-*-x64.dmg
+- id: readest
+  name: Readest
+  category: Productivity
+  desc_cn: 跨平台电子书阅读器，支持 EPUB/PDF/MOBI 等格式
+  desc_en: Cross-platform e-book reader supporting EPUB/PDF/MOBI formats
+  homepage: https://readest.com
+  fetcher: github_release
+  args:
+    repo: readest/readest
+    assets:
+    - platform: mac-universal
+      pattern: Readest_*_universal.dmg
+- id: finetune
+  name: FineTune
+  category: System Utilities
+  desc_cn: macOS 系统微调工具，自定义隐藏系统设置
+  desc_en: macOS system tweaker for customizing hidden system settings
+  homepage: https://github.com/ronitsingh10/FineTune
+  fetcher: github_release
+  args:
+    repo: ronitsingh10/FineTune
+    assets:
+    - platform: mac-universal
+      pattern: FineTune.dmg
+- id: opencode
+  name: OpenCode
+  category: Developer Tools
+  desc_cn: 开源 AI 编程助手，终端内智能代码操作
+  desc_en: Open-source AI coding assistant for terminal-based code operations
+  homepage: https://opencode.ai
+  fetcher: github_release
+  args:
+    repo: opencode-ai/opencode
+    assets:
+    - platform: mac-arm64
+      pattern: opencode-mac-arm64.tar.gz
+    - platform: mac-x64
+      pattern: opencode-mac-x86_64.tar.gz
+- id: swiftbar
+  name: SwiftBar
+  category: System Utilities
+  desc_cn: macOS 菜单栏自定义工具，用脚本添加菜单栏组件
+  desc_en: macOS menu bar customization tool with scriptable widgets
+  homepage: https://swiftbar.app
+  fetcher: github_release
+  args:
+    repo: swiftbar/SwiftBar
+    assets:
+    - platform: mac-universal
+      pattern: SwiftBar*.zip
+- id: appports
+  name: AppPorts
+  category: Developer Tools
+  desc_cn: macOS 应用端口管理工具，查看应用的网络连接
+  desc_en: macOS app port management tool for viewing network connections
+  homepage: https://github.com/wzh4869/AppPorts
+  fetcher: github_release
+  args:
+    repo: wzh4869/AppPorts
+    assets:
+    - platform: mac-universal
+      pattern: AppPorts*.dmg
+- id: easydict
+  name: Easydict
+  category: Utilities
+  desc_cn: macOS 翻译和词典工具，支持划词翻译和多引擎查询
+  desc_en: macOS translation and dictionary tool with text selection and multi-engine
+    lookup
+  homepage: https://github.com/tisfeng/Easydict
+  fetcher: github_release
+  args:
+    repo: tisfeng/Easydict
+    assets:
+    - platform: mac-universal
+      pattern: Easydict.dmg
+- id: raycast
+  name: Raycast
+  category: System Utilities
+  desc_cn: macOS 效率启动器，替代 Spotlight，支持插件扩展
+  desc_en: macOS productivity launcher replacing Spotlight with plugin support
+  homepage: https://www.raycast.com
+  fetcher: download_page
+  args:
+    platforms:
+    - platform: mac-universal
+      download_url: https://releases.raycast.com/releases/latest/download?arch=universal&channel=stable
+- id: deepl
+  name: DeepL
+  category: Utilities
+  desc_cn: 高质量 AI 翻译工具，支持 30+ 语言互译
+  desc_en: High-quality AI translation tool supporting 30+ languages
+  homepage: https://www.deepl.com
+  fetcher: download_page
+  args:
+    platforms:
+    - platform: mac-universal
+      download_url: https://www.deepl.com/macos/app/installer/download
+- id: tableplus
+  name: TablePlus
+  category: Developer Tools
+  desc_cn: 现代化数据库管理工具，支持 MySQL/PostgreSQL/Redis 等
+  desc_en: Modern database management tool supporting MySQL/PostgreSQL/Redis and more
+  homepage: https://tableplus.com
+  fetcher: download_page
+  args:
+    platforms:
+    - platform: mac-universal
+      download_url: https://tableplus.com/release/mac/tableplus-latest.dmg
+- id: snipaste
+  name: Snipaste
+  category: System Utilities
+  desc_cn: 截图和贴图工具，截图后可贴到屏幕上做参考
+  desc_en: Screenshot and pin tool that pins captures to screen as reference
+  homepage: https://www.snipaste.com
+  fetcher: download_page
+  args:
+    platforms:
+    - platform: mac-universal
+      download_url: https://www.snipaste.com/download.html
+- id: dash
+  name: Dash
+  category: Developer Tools
+  desc_cn: API 文档浏览器，离线查看 200+ 技术文档
+  desc_en: API documentation browser for offline access to 200+ tech docs
+  homepage: https://kapeli.com/dash
+  fetcher: download_page
+  args:
+    platforms:
+    - platform: mac-universal
+      download_url: https://kapeli.com/dash/download
+- id: xmind
+  name: XMind
+  category: Productivity
+  desc_cn: 专业思维导图工具，支持多种结构和导出格式
+  desc_en: Professional mind mapping tool with multiple structures and export formats
+  homepage: https://xmind.app
+  fetcher: download_page
+  args:
+    platforms:
+    - platform: mac-universal
+      download_url: https://xmind.app/download/
+- id: orbstack
+  name: OrbStack
+  category: Developer Tools
+  desc_cn: macOS 轻量级 Docker 和 Linux 虚拟机，比 Docker Desktop 更快
+  desc_en: Lightweight Docker and Linux VM for macOS, faster than Docker Desktop
+  homepage: https://orbstack.dev
+  fetcher: download_page
+  args:
+    platforms:
+    - platform: mac-universal
+      download_url: https://orbstack.dev/download
+- id: termius
+  name: Termius
+  category: Developer Tools
+  desc_cn: 跨平台 SSH 客户端，支持团队协作和密钥管理
+  desc_en: Cross-platform SSH client with team collaboration and key management
+  homepage: https://termius.com
+  fetcher: download_page
+  args:
+    platforms:
+    - platform: mac-universal
+      download_url: https://termius.com/download/mac
+- id: macs-fan-control
+  name: Macs Fan Control
+  category: System Utilities
+  desc_cn: Mac 风扇控制工具，手动调节风扇转速和温度监控
+  desc_en: Mac fan control tool for manual fan speed adjustment and temperature monitoring
+  homepage: https://crystalidea.com/macs-fan-control
+  fetcher: download_page
+  args:
+    platforms:
+    - platform: mac-universal
+      download_url: https://crystalidea.com/macs-fan-control/download
+- id: finalshell
+  name: FinalShell
+  category: Developer Tools
+  desc_cn: 一体化服务器管理工具，SSH/文件传输/系统监控
+  desc_en: All-in-one server management tool with SSH/file transfer/system monitoring
+  homepage: https://www.hostbuf.com
+  fetcher: download_page
+  args:
+    platforms:
+    - platform: mac-universal
+      download_url: http://www.hostbuf.com/downloads/finalshell_install.pkg
+- id: navicat-premium-lite
+  name: Navicat Premium Lite
+  category: Developer Tools
+  desc_cn: 免费数据库管理工具，支持 MySQL/PostgreSQL/SQLite 等
+  desc_en: Free database management tool supporting MySQL/PostgreSQL/SQLite and more
+  homepage: https://www.navicat.com/en/download/navicat-premium-lite
+  fetcher: download_page
+  args:
+    platforms:
+    - platform: mac-universal
+      download_url: https://www.navicat.com/en/download/navicat-premium-lite
+- id: doubao
+  name: Doubao
+  category: AI Tools
+  desc_cn: 字节跳动 AI 助手，支持对话/写作/翻译等多种功能
+  desc_en: AI assistant by ByteDance with chat/writing/translation and more
+  homepage: https://www.doubao.com
+  fetcher: download_page
+  args:
+    platforms:
+    - platform: mac-universal
+      download_url: https://www.doubao.com/download
+- id: wps-office
+  name: WPS Office
+  category: Productivity
+  desc_cn: 金山办公套件，兼容 Microsoft Office 格式
+  desc_en: Office suite by Kingsoft, compatible with Microsoft Office formats
+  homepage: https://www.wps.com
+  fetcher: download_page
+  args:
+    platforms:
+    - platform: mac-universal
+      download_url: https://mac.wps.cn
+- id: wechat
+  name: WeChat
+  category: Messaging
+  desc_cn: 国民级即时通讯应用，支持文字/语音/视频通话
+  desc_en: China's leading messaging app with text/voice/video calls
+  homepage: https://weixin.qq.com
+  fetcher: wechat_official
+  args:
+    platforms:
+    - platform: mac-universal
+      download_url: https://dldir1.qq.com/weixin/mac/WeChatMac.dmg
+- id: qq
+  name: QQ
+  category: Messaging
+  desc_cn: 腾讯即时通讯工具，支持文件传输和群组聊天
+  desc_en: Tencent messaging app with file transfer and group chat
+  homepage: https://im.qq.com
+  fetcher: qq_official
+  args:
+    platforms:
+    - platform: mac-universal
+      download_url: https://im.qq.com/macqq/index.shtml

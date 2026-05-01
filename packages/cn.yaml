@@ -1,0 +1,747 @@
+packages:
+- id: windows11
+  name: Windows 11
+  category: Operating Systems
+  editions:
+  - cn
+  homepage: https://www.microsoft.com/software-download/windows11
+  fetcher: windows11_fido
+  args:
+    lang: Chinese (Simplified)
+    edition: Pro
+  desc_cn: 微软最新桌面操作系统，采用现代化 UI 设计，深度集成 AI 功能
+  desc_en: Microsoft's latest desktop OS with modern UI design and deep AI integration
+- id: v2raya
+  name: v2rayA
+  category: Network & Proxy
+  editions:
+  - cn
+  homepage: https://github.com/v2rayA/v2rayA
+  fetcher: github_release
+  args:
+    repo: v2rayA/v2rayA
+    assets:
+    - platform: win-x64
+      pattern: v2raya_windows_x64_*.exe
+    - platform: mac-arm64
+      pattern: v2raya_macos_arm64_*.pkg
+    - platform: mac-x64
+      pattern: v2raya_macos_x64_*.pkg
+    - platform: linux-x64
+      pattern: v2raya_linux_x64_*.deb
+  desc_cn: V2Ray 的 Web GUI 客户端，支持 VMess/VLESS/SS/Trojan 等协议
+  desc_en: Web GUI client for V2Ray supporting VMess/VLESS/SS/Trojan protocols
+- id: qv2ray
+  name: Qv2ray
+  category: Network & Proxy
+  editions:
+  - cn
+  homepage: https://github.com/Qv2ray/Qv2ray
+  fetcher: github_release
+  args:
+    repo: Qv2ray/Qv2ray
+    assets:
+    - platform: win-x64
+      pattern: Qv2ray-*-Windows-x64.exe
+    - platform: mac-x64
+      pattern: Qv2ray-*-macOS-x64.dmg
+    - platform: linux-x64
+      pattern: Qv2ray-*-Linux-x64.AppImage
+  desc_cn: 跨平台 V2Ray/SSR/Trojan GUI 客户端，插件式可扩展
+  desc_en: Cross-platform V2Ray/SSR/Trojan GUI client with plugin support
+- id: subconverter
+  name: Subconverter
+  category: Network & Proxy
+  editions:
+  - cn
+  homepage: https://github.com/tindy2013/subconverter
+  fetcher: github_release
+  args:
+    repo: tindy2013/subconverter
+    assets:
+    - platform: win-x64
+      pattern: subconverter_win64.7z
+    - platform: mac-x64
+      pattern: subconverter_darwin64.tar.gz
+    - platform: linux-x64
+      pattern: subconverter_linux64.tar.gz
+  desc_cn: 订阅转换工具，支持多种代理订阅格式互转
+  desc_en: Subscription converter supporting multiple proxy subscription formats
+- id: sub-store
+  name: Sub-Store
+  category: Network & Proxy
+  editions:
+  - cn
+  homepage: https://github.com/sub-store-org/Sub-Store
+  fetcher: github_release
+  args:
+    repo: sub-store-org/Sub-Store
+    assets:
+    - platform: linux-x64
+      pattern: Sub-Store-*
+  desc_cn: 高级订阅管理器，支持 QX/Loon/Surge/Shadowrocket 等
+  desc_en: Advanced subscription manager for QX, Loon, Surge, Shadowrocket
+- id: anytls
+  name: anytls-go
+  category: Network & Proxy
+  editions:
+  - cn
+  homepage: https://github.com/anytls/anytls-go
+  fetcher: github_release
+  args:
+    repo: anytls/anytls-go
+    assets:
+    - platform: win-x64
+      pattern: anytls_*_windows_amd64.zip
+    - platform: mac-arm64
+      pattern: anytls_*_darwin_arm64.zip
+    - platform: linux-x64
+      pattern: anytls_*_linux_amd64.zip
+  desc_cn: 新一代 TLS 代理协议工具
+  desc_en: Next-generation TLS proxy protocol tool
+- id: frp
+  name: frp
+  category: Network & Proxy
+  editions:
+  - cn
+  homepage: https://github.com/fatedier/frp
+  fetcher: github_release
+  args:
+    repo: fatedier/frp
+    assets:
+    - platform: win-x64
+      pattern: frp_*_windows_amd64.zip
+    - platform: mac-arm64
+      pattern: frp_*_darwin_arm64.tar.gz
+    - platform: mac-x64
+      pattern: frp_*_darwin_amd64.tar.gz
+    - platform: linux-x64
+      pattern: frp_*_linux_amd64.tar.gz
+  desc_cn: 快速反向代理，将内网服务暴露到公网
+  desc_en: Fast reverse proxy to expose local servers behind NAT to the internet
+- id: alist
+  name: AList
+  category: Network & Proxy
+  editions:
+  - cn
+  homepage: https://github.com/AlistGo/alist
+  fetcher: github_release
+  args:
+    repo: AlistGo/alist
+    assets:
+    - platform: win-x64
+      pattern: alist-windows-amd64.zip
+    - platform: mac-arm64
+      pattern: alist-darwin-arm64.tar.gz
+    - platform: mac-x64
+      pattern: alist-darwin-amd64.tar.gz
+    - platform: linux-x64
+      pattern: alist-linux-amd64.tar.gz
+  desc_cn: 支持多存储的文件列表/WebDAV 程序
+  desc_en: File list/WebDAV program supporting multiple storage providers
+- id: cloudreve
+  name: Cloudreve
+  category: Network & Proxy
+  editions:
+  - cn
+  homepage: https://github.com/cloudreve/cloudreve
+  fetcher: github_release
+  args:
+    repo: cloudreve/cloudreve
+    assets:
+    - platform: win-x64
+      pattern: cloudreve_*_windows_amd64.zip
+    - platform: mac-arm64
+      pattern: cloudreve_*_darwin_arm64.tar.gz
+    - platform: mac-x64
+      pattern: cloudreve_*_darwin_amd64.tar.gz
+    - platform: linux-x64
+      pattern: cloudreve_*_linux_amd64.tar.gz
+  desc_cn: 自建网盘/云盘系统，支持多存储后端
+  desc_en: Self-hosted file management and sharing system with multi-storage support
+- id: gopeed
+  name: Gopeed
+  category: Download Tools
+  editions:
+  - cn
+  homepage: https://github.com/GopeedLab/gopeed
+  fetcher: github_release
+  args:
+    repo: GopeedLab/gopeed
+    assets:
+    - platform: win-x64
+      pattern: Gopeed-*-windows-amd64.exe
+    - platform: mac-arm64
+      pattern: Gopeed-*-macos-arm64.dmg
+    - platform: mac-x64
+      pattern: Gopeed-*-macos-amd64.dmg
+    - platform: linux-x64
+      pattern: Gopeed-*-linux-amd64.AppImage
+  desc_cn: 高速下载管理器，支持 HTTP/BT/磁力/ed2k，跨平台
+  desc_en: Fast download manager for HTTP, BitTorrent, Magnet, and ed2k
+- id: biliup
+  name: biliup
+  category: Download Tools
+  editions:
+  - cn
+  homepage: https://github.com/biliup/biliup
+  fetcher: github_release
+  args:
+    repo: biliup/biliup
+    assets:
+    - platform: win-x64
+      pattern: biliupR-*-x86_64-windows.zip
+    - platform: mac-x64
+      pattern: biliupR-*-x86_64-macos.tar.xz
+    - platform: linux-x64
+      pattern: biliupR-*-x86_64-linux.tar.xz
+  desc_cn: B 站直播/视频录制上传工具
+  desc_en: Bilibili live stream/video recording and uploading tool
+- id: yazi
+  name: Yazi
+  category: Developer Tools
+  editions:
+  - cn
+  homepage: https://github.com/sxyazi/yazi
+  fetcher: github_release
+  args:
+    repo: sxyazi/yazi
+    assets:
+    - platform: win-x64
+      pattern: yazi-x86_64-pc-windows-msvc.zip
+    - platform: mac-arm64
+      pattern: yazi-aarch64-apple-darwin.zip
+    - platform: mac-x64
+      pattern: yazi-x86_64-apple-darwin.zip
+    - platform: linux-x64
+      pattern: yazi-x86_64-unknown-linux-gnu.zip
+  desc_cn: 用 Rust 编写的超快终端文件管理器
+  desc_en: Blazing fast terminal file manager written in Rust
+- id: eza
+  name: eza
+  category: Developer Tools
+  editions:
+  - cn
+  homepage: https://github.com/eza-community/eza
+  fetcher: github_release
+  args:
+    repo: eza-community/eza
+    assets:
+    - platform: win-x64
+      pattern: eza.exe_x86_64-pc-windows-gnu.zip
+    - platform: mac-arm64
+      pattern: eza_aarch64-apple-darwin.tar.gz
+    - platform: mac-x64
+      pattern: eza_x86_64-apple-darwin.tar.gz
+    - platform: linux-x64
+      pattern: eza_x86_64-unknown-linux-gnu.tar.gz
+  desc_cn: 现代 ls 替代品，支持颜色和 Git 状态
+  desc_en: Modern ls replacement with colors and Git status
+- id: rye
+  name: Rye
+  category: Developer Tools
+  editions:
+  - cn
+  homepage: https://github.com/astral-sh/rye
+  fetcher: github_release
+  args:
+    repo: astral-sh/rye
+    assets:
+    - platform: win-x64
+      pattern: rye-x86_64-pc-windows-msvc.zip
+    - platform: mac-arm64
+      pattern: rye-aarch64-apple-darwin.tar.gz
+    - platform: mac-x64
+      pattern: rye-x86_64-apple-darwin.tar.gz
+    - platform: linux-x64
+      pattern: rye-x86_64-unknown-linux-gnu.tar.gz
+  desc_cn: Python 项目管理工具，统一 pip/virtualenv/poetry
+  desc_en: Python project management tool unifying pip/virtualenv/poetry
+- id: another-redis-desktop-manager
+  name: Another Redis Desktop Manager
+  category: Developer Tools
+  editions:
+  - cn
+  homepage: https://github.com/qishibo/AnotherRedisDesktopManager
+  fetcher: github_release
+  args:
+    repo: qishibo/AnotherRedisDesktopManager
+    assets:
+    - platform: win-x64
+      pattern: Another-Redis-Desktop-Manager-*-win-x64-installer.exe
+    - platform: mac-arm64
+      pattern: Another-Redis-Desktop-Manager-*-mac-arm64.dmg
+    - platform: mac-x64
+      pattern: Another-Redis-Desktop-Manager-*-mac-x64.dmg
+    - platform: linux-x64
+      pattern: Another-Redis-Desktop-Manager-*-linux-x86_64.AppImage
+  desc_cn: 更快更好的 Redis 桌面管理器
+  desc_en: Faster, better and more stable Redis desktop manager
+- id: tiny-rdm
+  name: Tiny RDM
+  category: Developer Tools
+  editions:
+  - cn
+  homepage: https://github.com/tiny-craft/tiny-rdm
+  fetcher: github_release
+  args:
+    repo: tiny-craft/tiny-rdm
+    assets:
+    - platform: win-x64
+      pattern: TinyRDM_Setup_*_windows_x64.exe
+    - platform: win-arm64
+      pattern: TinyRDM_Setup_*_windows_arm64.exe
+    - platform: mac-arm64
+      pattern: TinyRDM_*_mac_arm64.dmg
+    - platform: mac-x64
+      pattern: TinyRDM_*_mac_intel.dmg
+  desc_cn: 现代化轻量级 Redis 桌面管理器
+  desc_en: Modern lightweight Redis desktop manager
+- id: clickhouse
+  name: ClickHouse
+  category: Cloud & DevOps
+  editions:
+  - cn
+  homepage: https://clickhouse.com
+  fetcher: github_release
+  args:
+    repo: ClickHouse/ClickHouse
+    assets:
+    - platform: linux-x64
+      pattern: clickhouse-common-static-*-amd64.tgz
+  desc_cn: 高性能列式 OLAP 数据库，适用于实时分析
+  desc_en: High-performance columnar OLAP database for real-time analytics
+- id: bruno
+  name: Bruno
+  category: Developer Tools
+  editions:
+  - cn
+  homepage: https://github.com/usebruno/bruno
+  fetcher: github_release
+  args:
+    repo: usebruno/bruno
+    assets:
+    - platform: win-x64
+      pattern: bruno_*_x64_win.exe
+    - platform: win-arm64
+      pattern: bruno_*_arm64_win.exe
+    - platform: mac-arm64
+      pattern: bruno_*_arm64_mac.dmg
+    - platform: mac-x64
+      pattern: bruno_*_x64_mac.dmg
+  desc_cn: 开源 API 客户端，Insomnia/Postman 替代品
+  desc_en: Open-source API client, alternative to Insomnia/Postman
+- id: hoppscotch
+  name: Hoppscotch
+  category: Developer Tools
+  editions:
+  - cn
+  homepage: https://github.com/hoppscotch/hoppscotch
+  fetcher: github_release
+  args:
+    repo: hoppscotch/hoppscotch
+    assets:
+    - platform: win-x64
+      pattern: Hoppscotch-*-win-x64.exe
+    - platform: mac-arm64
+      pattern: Hoppscotch-*-mac-arm64.dmg
+    - platform: linux-x64
+      pattern: Hoppscotch-*-linux-x64.AppImage
+  desc_cn: 开源 API 开发生态系统，轻量快速
+  desc_en: Open-source API development ecosystem, lightweight and fast
+- id: prusaslicer
+  name: PrusaSlicer
+  category: Utilities
+  editions:
+  - cn
+  homepage: https://github.com/prusa3d/PrusaSlicer
+  fetcher: github_release
+  args:
+    repo: prusa3d/PrusaSlicer
+    assets:
+    - platform: win-x64
+      pattern: PrusaSlicer-*.zip
+    - platform: mac-x64
+      pattern: PrusaSlicer-*.dmg
+  desc_cn: 专业 3D 打印切片软件
+  desc_en: Professional 3D printing slicer software
+- id: spotube
+  name: Spotube
+  category: Media Players
+  editions:
+  - cn
+  homepage: https://github.com/KRTirtho/spotube
+  fetcher: github_release
+  args:
+    repo: KRTirtho/spotube
+    assets:
+    - platform: win-x64
+      pattern: Spotube-windows-x86_64-setup.exe
+    - platform: mac-x64
+      pattern: Spotube-macos-universal.dmg
+    - platform: linux-x64
+      pattern: Spotube-linux-x86_64.AppImage
+  desc_cn: 免费 Spotify 客户端，无需 Premium
+  desc_en: Free Spotify client, no Premium required
+- id: nexttrace
+  name: NextTrace
+  category: System Utilities
+  editions:
+  - cn
+  homepage: https://github.com/nxtrace/NTrace-core
+  fetcher: github_release
+  args:
+    repo: nxtrace/NTrace-core
+    assets:
+    - platform: win-x64
+      pattern: nexttrace_windows_amd64.exe
+    - platform: mac-arm64
+      pattern: nexttrace_darwin_arm64
+    - platform: mac-x64
+      pattern: nexttrace_darwin_amd64
+    - platform: linux-x64
+      pattern: nexttrace_linux_amd64
+  desc_cn: 开源可视化路由追踪工具
+  desc_en: Open source visual route tracking CLI tool
+- id: podman
+  name: Podman
+  category: Cloud & DevOps
+  editions:
+  - cn
+  homepage: https://podman.io
+  fetcher: github_release
+  args:
+    repo: containers/podman
+    assets:
+    - platform: win-x64
+      pattern: podman-*-setup.exe
+    - platform: mac-arm64
+      pattern: podman-installer-macos-arm64.pkg
+    - platform: mac-x64
+      pattern: podman-installer-macos-amd64.pkg
+  desc_cn: 无守护进程的容器引擎，Docker 替代品
+  desc_en: Daemonless container engine, Docker alternative
+- id: quickemu
+  name: Quickemu
+  category: System Utilities
+  editions:
+  - cn
+  homepage: https://github.com/quickemu-project/quickemu
+  fetcher: github_release
+  args:
+    repo: quickemu-project/quickemu
+    assets:
+    - platform: linux-x64
+      pattern: quickemu_*_all.deb
+  desc_cn: 快速创建和运行优化的虚拟机
+  desc_en: Quickly create and run optimized virtual machines
+- id: netdata
+  name: Netdata
+  category: Cloud & DevOps
+  editions:
+  - cn
+  homepage: https://github.com/netdata/netdata
+  fetcher: github_release
+  args:
+    repo: netdata/netdata
+    assets:
+    - platform: linux-x64
+      pattern: netdata-x86_64-*.gz.run
+  desc_cn: 实时性能和健康监控平台
+  desc_en: Real-time performance and health monitoring platform
+- id: stirling-pdf
+  name: Stirling-PDF
+  category: Utilities
+  editions:
+  - cn
+  homepage: https://github.com/Stirling-Tools/Stirling-PDF
+  fetcher: github_release
+  args:
+    repo: Stirling-Tools/Stirling-PDF
+    assets:
+    - platform: win-x64
+      pattern: Stirling-PDF-windows-x86_64.msi
+    - platform: mac-arm64
+      pattern: Stirling-PDF-macos-aarch64.dmg
+    - platform: mac-x64
+      pattern: Stirling-PDF-macos-x86_64.dmg
+    - platform: linux-x64
+      pattern: Stirling-PDF-linux-x86_64.AppImage
+  desc_cn: 本地托管的 PDF 全能工具
+  desc_en: Locally hosted one-stop-shop for all your PDF needs
+- id: vaultwarden
+  name: Vaultwarden
+  category: Security & Privacy
+  editions:
+  - cn
+  homepage: https://github.com/dani-garcia/vaultwarden
+  fetcher: github_release
+  args:
+    repo: dani-garcia/vaultwarden
+    assets:
+    - platform: linux-x64
+      pattern: vaultwarden-*-x86_64-*.tar.gz
+  desc_cn: Bitwarden 兼容的自托管密码管理服务器
+  desc_en: Unofficial Bitwarden compatible self-hosted password manager
+- id: authelia
+  name: Authelia
+  category: Security & Privacy
+  editions:
+  - cn
+  homepage: https://github.com/authelia/authelia
+  fetcher: github_release
+  args:
+    repo: authelia/authelia
+    assets:
+    - platform: linux-x64
+      pattern: authelia-*-linux-amd64.tar.gz
+  desc_cn: 开源认证和授权服务器，支持双因素认证
+  desc_en: Open-source authentication and authorization server with 2FA
+- id: prometheus
+  name: Prometheus
+  category: Cloud & DevOps
+  editions:
+  - cn
+  homepage: https://prometheus.io
+  fetcher: github_release
+  args:
+    repo: prometheus/prometheus
+    assets:
+    - platform: linux-x64
+      pattern: prometheus-*-linux-amd64.tar.gz
+    - platform: mac-arm64
+      pattern: prometheus-*-darwin-arm64.tar.gz
+    - platform: mac-x64
+      pattern: prometheus-*-darwin-amd64.tar.gz
+  desc_cn: 开源监控和告警系统
+  desc_en: Open-source monitoring and alerting system
+- id: n8n
+  name: n8n
+  category: Productivity
+  editions:
+  - cn
+  homepage: https://n8n.io
+  fetcher: github_release
+  args:
+    repo: n8n-io/n8n
+    assets:
+    - platform: linux-x64
+      pattern: n8n-*-linux-x64.tar.gz
+  desc_cn: 开源工作流自动化平台，支持 400+ 集成
+  desc_en: Open-source workflow automation platform with 400+ integrations
+- id: appsmith
+  name: Appsmith
+  category: Developer Tools
+  editions:
+  - cn
+  homepage: https://github.com/appsmithorg/appsmith
+  fetcher: github_release
+  args:
+    repo: appsmithorg/appsmith
+    assets:
+    - platform: linux-x64
+      pattern: appsmith-server-*.jar
+  desc_cn: 开源低代码内部工具构建平台
+  desc_en: Open-source low-code platform for building internal tools
+- id: nocodb
+  name: NocoDB
+  category: Developer Tools
+  editions:
+  - cn
+  homepage: https://github.com/nocodb/nocodb
+  fetcher: github_release
+  args:
+    repo: nocodb/nocodb
+    assets:
+    - platform: linux-x64
+      pattern: NocoDB-*.AppImage
+  desc_cn: 开源 Airtable 替代品，将数据库转为智能表格
+  desc_en: Open-source Airtable alternative, turns any database into smart spreadsheet
+- id: pocketbase
+  name: PocketBase
+  category: Developer Tools
+  editions:
+  - cn
+  homepage: https://github.com/pocketbase/pocketbase
+  fetcher: github_release
+  args:
+    repo: pocketbase/pocketbase
+    assets:
+    - platform: win-x64
+      pattern: pocketbase_*_windows_amd64.zip
+    - platform: mac-arm64
+      pattern: pocketbase_*_darwin_arm64.zip
+    - platform: mac-x64
+      pattern: pocketbase_*_darwin_amd64.zip
+    - platform: linux-x64
+      pattern: pocketbase_*_linux_amd64.zip
+  desc_cn: 单文件后端即服务，含数据库、认证和 API
+  desc_en: Single file backend-as-a-service with database, auth, and API
+- id: chatgpt-desktop
+  name: ChatGPT Desktop
+  category: AI Tools
+  editions:
+  - cn
+  homepage: https://github.com/lencx/ChatGPT
+  fetcher: github_release
+  args:
+    repo: lencx/ChatGPT
+    assets:
+    - platform: win-x64
+      pattern: ChatGPT_*_windows_x86_64.msi
+    - platform: mac-arm64
+      pattern: ChatGPT_*_macos_aarch64.dmg
+    - platform: mac-x64
+      pattern: ChatGPT_*_macos_x86_64.dmg
+    - platform: linux-x64
+      pattern: ChatGPT_*_linux_x86_64.deb
+  desc_cn: ChatGPT 桌面客户端，支持快捷键和系统托盘
+  desc_en: ChatGPT desktop app with keyboard shortcuts and system tray
+- id: lobe-chat
+  name: LobeHub
+  category: AI Tools
+  editions:
+  - cn
+  homepage: https://github.com/lobehub/lobehub
+  fetcher: github_release
+  args:
+    repo: lobehub/lobehub
+    assets:
+    - platform: win-x64
+      pattern: LobeHub-*-setup.exe
+    - platform: mac-arm64
+      pattern: LobeHub-*-arm64.dmg
+    - platform: mac-x64
+      pattern: LobeHub-*-x64.dmg
+  desc_cn: 开源 AI 聊天框架，支持多种 AI 模型
+  desc_en: Open-source AI chat framework supporting multiple AI models
+- id: chatbox
+  name: Chatbox
+  category: AI Tools
+  editions:
+  - cn
+  homepage: https://github.com/chatboxai/chatbox
+  fetcher: github_release
+  args:
+    repo: chatboxai/chatbox
+    assets:
+    - platform: win-x64
+      pattern: Chatbox-*-Setup.exe
+    - platform: mac-arm64
+      pattern: Chatbox-*-arm64.dmg
+    - platform: mac-x64
+      pattern: Chatbox-*-x64.dmg
+    - platform: linux-x64
+      pattern: Chatbox-*-x86_64.AppImage
+  desc_cn: 跨平台 AI 桌面客户端，支持 OpenAI/Claude/本地模型
+  desc_en: Cross-platform AI desktop client supporting OpenAI/Claude/local models
+- id: gitea
+  name: Gitea
+  category: Cloud & DevOps
+  editions:
+  - cn
+  homepage: https://gitea.io
+  fetcher: github_release
+  args:
+    repo: go-gitea/gitea
+    assets:
+    - platform: win-x64
+      pattern: gitea-*-windows-amd64.exe
+    - platform: mac-arm64
+      pattern: gitea-*-darwin-arm64
+    - platform: mac-x64
+      pattern: gitea-*-darwin-amd64
+    - platform: linux-x64
+      pattern: gitea-*-linux-amd64
+  desc_cn: 轻量级自托管 Git 服务，Go 语言编写
+  desc_en: Lightweight self-hosted Git service written in Go
+- id: uptime-kuma
+  name: Uptime Kuma
+  category: Cloud & DevOps
+  editions:
+  - cn
+  homepage: https://github.com/louislam/uptime-kuma
+  fetcher: github_release
+  args:
+    repo: louislam/uptime-kuma
+    assets:
+    - platform: linux-x64
+      pattern: dist.tar.gz
+  desc_cn: 自托管监控工具，Uptime Robot 替代品
+  desc_en: Self-hosted monitoring tool, Uptime Robot alternative
+- id: bitwarden-client
+  name: Bitwarden
+  category: Security & Privacy
+  editions:
+  - cn
+  homepage: https://github.com/bitwarden/clients
+  fetcher: github_release
+  args:
+    repo: bitwarden/clients
+    assets:
+    - platform: win-x64
+      pattern: Bitwarden-*-x64.msi
+    - platform: mac-arm64
+      pattern: Bitwarden-*-universal.dmg
+    - platform: mac-x64
+      pattern: Bitwarden-*-x64.dmg
+  desc_cn: 开源密码管理器客户端，跨平台同步
+  desc_en: Open-source password manager client with cross-platform sync
+- id: ueli
+  name: Ueli
+  category: System Utilities
+  editions:
+  - cn
+  homepage: https://github.com/oliverschwendener/ueli
+  fetcher: github_release
+  args:
+    repo: oliverschwendener/ueli
+    assets:
+    - platform: win-x64
+      pattern: Ueli-*-win.zip
+    - platform: mac-arm64
+      pattern: Ueli-*-arm64.dmg
+    - platform: mac-x64
+      pattern: Ueli-*-mac.zip
+    - platform: linux-x64
+      pattern: Ueli-*-linux-x86_64.deb
+  desc_cn: 跨平台应用启动器，快速搜索和启动程序
+  desc_en: Cross-platform application launcher with fast search
+- id: signal-desktop
+  name: Signal
+  category: Messaging
+  editions:
+  - cn
+  homepage: https://github.com/signalapp/Signal-Desktop
+  fetcher: github_release
+  args:
+    repo: signalapp/Signal-Desktop
+    assets:
+    - platform: win-x64
+      pattern: signal-desktop-win-*-x64.exe
+    - platform: mac-x64
+      pattern: signal-desktop-mac-*-x64.dmg
+    - platform: linux-x64
+      pattern: signal-desktop-linux-*-amd64.deb
+  desc_cn: 注重隐私的加密通讯应用
+  desc_en: Privacy-focused encrypted messaging app
+- id: powershell
+  name: PowerShell
+  category: Developer Tools
+  editions:
+  - cn
+  homepage: https://github.com/PowerShell/PowerShell
+  fetcher: github_release
+  args:
+    repo: PowerShell/PowerShell
+    assets:
+    - platform: win-x64
+      pattern: PowerShell-*-win-x64.msi
+    - platform: mac-arm64
+      pattern: powershell-*-osx-arm64.pkg
+    - platform: mac-x64
+      pattern: powershell-*-osx-x64.pkg
+    - platform: linux-x64
+      pattern: powershell-*-linux-x64.tar.gz
+  desc_cn: 跨平台自动化和配置管理框架
+  desc_en: Cross-platform automation and configuration management framework
