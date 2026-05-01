@@ -206,6 +206,8 @@ jobs:
         run: python scripts/render.py --check
 
       - name: Build web (dist/) — 国内版
+        env:
+          CN_PUBLIC_SITE_URL: ${{ vars.CN_PUBLIC_SITE_URL || 'http://localhost:8080' }}
         run: python scripts/build_web.py --edition cn
 
       - name: Commit data + README back to repo
