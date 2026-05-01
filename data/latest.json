@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-05-01T09:13:28+00:00",
+  "generated_at": "2026-05-01T09:43:35+00:00",
   "packages": [
     {
       "id": "windows11",
@@ -70,8 +70,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:54+00:00",
-      "last_success_at": "2026-05-01T09:12:54+00:00",
+      "fetched_at": "2026-05-01T09:43:05+00:00",
+      "last_success_at": "2026-05-01T09:43:05+00:00",
       "editions": [
         "cn",
         "intl"
@@ -100,8 +100,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:46+00:00",
-      "last_success_at": "2026-05-01T09:12:46+00:00",
+      "fetched_at": "2026-05-01T09:43:03+00:00",
+      "last_success_at": "2026-05-01T09:43:03+00:00",
       "editions": [
         "cn",
         "intl"
@@ -154,10 +154,11 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:50+00:00",
-      "last_success_at": "2026-05-01T09:12:50+00:00",
+      "fetched_at": "2026-05-01T09:43:02+00:00",
+      "last_success_at": "2026-05-01T09:43:02+00:00",
       "editions": [
-        "intl"
+        "intl",
+        "cn"
       ],
       "desc_cn": "Windows 平台的 V2Ray 图形客户端，支持多种代理协议",
       "desc_en": "V2Ray GUI client for Windows with multi-protocol proxy support"
@@ -207,8 +208,8 @@
           "sha256": "999d81a03f16b8743614ceb1d64d6ab638203d08c2bbacd4c5f842a98c07f1fe"
         }
       ],
-      "fetched_at": "2026-05-01T09:12:54+00:00",
-      "last_success_at": "2026-05-01T09:12:54+00:00",
+      "fetched_at": "2026-05-01T09:43:05+00:00",
+      "last_success_at": "2026-05-01T09:43:05+00:00",
       "editions": [
         "cn",
         "intl"
@@ -245,8 +246,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:46+00:00",
-      "last_success_at": "2026-05-01T09:12:46+00:00",
+      "fetched_at": "2026-05-01T09:43:03+00:00",
+      "last_success_at": "2026-05-01T09:43:03+00:00",
       "editions": [
         "cn",
         "intl"
@@ -275,8 +276,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:50+00:00",
-      "last_success_at": "2026-05-01T09:12:50+00:00",
+      "fetched_at": "2026-05-01T09:43:02+00:00",
+      "last_success_at": "2026-05-01T09:43:02+00:00",
       "editions": [
         "cn",
         "intl"
@@ -313,8 +314,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:54+00:00",
-      "last_success_at": "2026-05-01T09:12:54+00:00",
+      "fetched_at": "2026-05-01T09:43:04+00:00",
+      "last_success_at": "2026-05-01T09:43:04+00:00",
       "editions": [
         "cn",
         "intl"
@@ -351,8 +352,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:46+00:00",
-      "last_success_at": "2026-05-01T09:12:46+00:00",
+      "fetched_at": "2026-05-01T09:43:04+00:00",
+      "last_success_at": "2026-05-01T09:43:04+00:00",
       "editions": [
         "cn",
         "intl"
@@ -405,10 +406,11 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:52+00:00",
-      "last_success_at": "2026-05-01T09:12:52+00:00",
+      "fetched_at": "2026-05-01T09:43:03+00:00",
+      "last_success_at": "2026-05-01T09:43:03+00:00",
       "editions": [
-        "intl"
+        "intl",
+        "cn"
       ],
       "desc_cn": "OpenAI 推出的 AI 编程助手，自动编写和调试代码",
       "desc_en": "AI coding assistant by OpenAI for automated code writing and debugging"
@@ -434,8 +436,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:54+00:00",
-      "last_success_at": "2026-05-01T09:12:54+00:00",
+      "fetched_at": "2026-05-01T09:43:04+00:00",
+      "last_success_at": "2026-05-01T09:43:04+00:00",
       "editions": [
         "cn",
         "intl"
@@ -488,8 +490,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:46+00:00",
-      "last_success_at": "2026-05-01T09:12:46+00:00",
+      "fetched_at": "2026-05-01T09:43:04+00:00",
+      "last_success_at": "2026-05-01T09:43:04+00:00",
       "editions": [
         "cn",
         "intl"
@@ -518,8 +520,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:50+00:00",
-      "last_success_at": "2026-05-01T09:12:50+00:00",
+      "fetched_at": "2026-05-01T09:43:01+00:00",
+      "last_success_at": "2026-05-01T09:43:01+00:00",
       "editions": [
         "cn",
         "intl"
@@ -548,10 +550,11 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:54+00:00",
-      "last_success_at": "2026-05-01T09:12:54+00:00",
+      "fetched_at": "2026-05-01T09:43:04+00:00",
+      "last_success_at": "2026-05-01T09:43:04+00:00",
       "editions": [
-        "intl"
+        "intl",
+        "cn"
       ],
       "desc_cn": "分布式版本控制系统 Windows 移植版，开发者必备",
       "desc_en": "Windows port of the distributed version control system, essential for developers"
@@ -577,10 +580,11 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:46+00:00",
-      "last_success_at": "2026-05-01T09:12:46+00:00",
+      "fetched_at": "2026-05-01T09:43:04+00:00",
+      "last_success_at": "2026-05-01T09:43:04+00:00",
       "editions": [
-        "intl"
+        "intl",
+        "cn"
       ],
       "desc_cn": "开源 REST 和 GraphQL API 测试工具，界面简洁",
       "desc_en": "Open-source REST and GraphQL API testing tool with clean UI"
@@ -606,10 +610,11 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:50+00:00",
-      "last_success_at": "2026-05-01T09:12:50+00:00",
+      "fetched_at": "2026-05-01T09:43:02+00:00",
+      "last_success_at": "2026-05-01T09:43:02+00:00",
       "editions": [
-        "intl"
+        "intl",
+        "cn"
       ],
       "desc_cn": "免费的 MySQL/MariaDB/PostgreSQL 数据库管理工具",
       "desc_en": "Free MySQL/MariaDB/PostgreSQL database management tool"
@@ -635,10 +640,11 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:54+00:00",
-      "last_success_at": "2026-05-01T09:12:54+00:00",
+      "fetched_at": "2026-05-01T09:43:04+00:00",
+      "last_success_at": "2026-05-01T09:43:04+00:00",
       "editions": [
-        "intl"
+        "intl",
+        "cn"
       ],
       "desc_cn": "免费的 Windows 源代码编辑器，支持多种编程语言",
       "desc_en": "Free Windows source code editor with multi-language support"
@@ -664,10 +670,11 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:46+00:00",
-      "last_success_at": "2026-05-01T09:12:46+00:00",
+      "fetched_at": "2026-05-01T09:43:04+00:00",
+      "last_success_at": "2026-05-01T09:43:04+00:00",
       "editions": [
-        "intl"
+        "intl",
+        "cn"
       ],
       "desc_cn": "GPU 加速的跨平台终端模拟器，支持 Lua 配置",
       "desc_en": "GPU-accelerated cross-platform terminal emulator with Lua configuration"
@@ -709,10 +716,11 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:50+00:00",
-      "last_success_at": "2026-05-01T09:12:50+00:00",
+      "fetched_at": "2026-05-01T09:43:02+00:00",
+      "last_success_at": "2026-05-01T09:43:02+00:00",
       "editions": [
-        "intl"
+        "intl",
+        "cn"
       ],
       "desc_cn": "多协议代理客户端，支持 V2Ray、Clash 等主流协议",
       "desc_en": "Multi-protocol proxy client supporting V2Ray, Clash and other protocols"
@@ -738,10 +746,11 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:54+00:00",
-      "last_success_at": "2026-05-01T09:12:54+00:00",
+      "fetched_at": "2026-05-01T09:43:04+00:00",
+      "last_success_at": "2026-05-01T09:43:04+00:00",
       "editions": [
-        "intl"
+        "intl",
+        "cn"
       ],
       "desc_cn": "通用代理平台，支持多种协议的下一代网络代理工具",
       "desc_en": "Universal proxy platform supporting multiple protocols as next-gen network tool"
@@ -767,10 +776,11 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:46+00:00",
-      "last_success_at": "2026-05-01T09:12:46+00:00",
+      "fetched_at": "2026-05-01T09:43:03+00:00",
+      "last_success_at": "2026-05-01T09:43:03+00:00",
       "editions": [
-        "intl"
+        "intl",
+        "cn"
       ],
       "desc_cn": "Windows 网速和系统资源悬浮窗监控工具",
       "desc_en": "Windows network speed and system resource floating monitor"
@@ -796,10 +806,11 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:50+00:00",
-      "last_success_at": "2026-05-01T09:12:50+00:00",
+      "fetched_at": "2026-05-01T09:43:02+00:00",
+      "last_success_at": "2026-05-01T09:43:02+00:00",
       "editions": [
-        "intl"
+        "intl",
+        "cn"
       ],
       "desc_cn": "离线密码管理器，本地加密存储密码数据库",
       "desc_en": "Offline password manager with locally encrypted password database"
@@ -825,10 +836,11 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:54+00:00",
-      "last_success_at": "2026-05-01T09:12:54+00:00",
+      "fetched_at": "2026-05-01T09:43:05+00:00",
+      "last_success_at": "2026-05-01T09:43:05+00:00",
       "editions": [
-        "intl"
+        "intl",
+        "cn"
       ],
       "desc_cn": "开源远程桌面软件，可自建服务器",
       "desc_en": "Open-source remote desktop software with self-hosted server support"
@@ -854,10 +866,11 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:46+00:00",
-      "last_success_at": "2026-05-01T09:12:46+00:00",
+      "fetched_at": "2026-05-01T09:43:04+00:00",
+      "last_success_at": "2026-05-01T09:43:04+00:00",
       "editions": [
-        "intl"
+        "intl",
+        "cn"
       ],
       "desc_cn": "注重安全和速度的即时通讯工具，支持大群组和频道",
       "desc_en": "Security and speed-focused messenger with large groups and channels"
@@ -883,10 +896,11 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:50+00:00",
-      "last_success_at": "2026-05-01T09:12:50+00:00",
+      "fetched_at": "2026-05-01T09:43:02+00:00",
+      "last_success_at": "2026-05-01T09:43:02+00:00",
       "editions": [
-        "intl"
+        "intl",
+        "cn"
       ],
       "desc_cn": "开源知识管理和笔记工具，基于大纲和双向链接",
       "desc_en": "Open-source knowledge management and note-taking with outlines and bidirectional links"
@@ -912,10 +926,11 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:54+00:00",
-      "last_success_at": "2026-05-01T09:12:54+00:00",
+      "fetched_at": "2026-05-01T09:43:05+00:00",
+      "last_success_at": "2026-05-01T09:43:05+00:00",
       "editions": [
-        "intl"
+        "intl",
+        "cn"
       ],
       "desc_cn": "开源笔记和待办工具，支持 Markdown 和端到端加密",
       "desc_en": "Open-source note-taking and to-do app with Markdown and E2E encryption"
@@ -941,10 +956,11 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:46+00:00",
-      "last_success_at": "2026-05-01T09:12:46+00:00",
+      "fetched_at": "2026-05-01T09:43:04+00:00",
+      "last_success_at": "2026-05-01T09:43:04+00:00",
       "editions": [
-        "intl"
+        "intl",
+        "cn"
       ],
       "desc_cn": "内置广告拦截和隐私保护的浏览器，基于 Chromium",
       "desc_en": "Browser with built-in ad blocking and privacy protection, based on Chromium"
@@ -970,10 +986,11 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:50+00:00",
-      "last_success_at": "2026-05-01T09:12:50+00:00",
+      "fetched_at": "2026-05-01T09:43:02+00:00",
+      "last_success_at": "2026-05-01T09:43:02+00:00",
       "editions": [
-        "intl"
+        "intl",
+        "cn"
       ],
       "desc_cn": "性能优化的 Chromium 分支，针对速度特别调优",
       "desc_en": "Performance-optimized Chromium fork, specifically tuned for speed"
@@ -999,10 +1016,11 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:54+00:00",
-      "last_success_at": "2026-05-01T09:12:54+00:00",
+      "fetched_at": "2026-05-01T09:43:05+00:00",
+      "last_success_at": "2026-05-01T09:43:05+00:00",
       "editions": [
-        "intl"
+        "intl",
+        "cn"
       ],
       "desc_cn": "本地运行大语言模型的工具，一键部署 LLM",
       "desc_en": "Tool for running large language models locally with one-click deployment"
@@ -1028,10 +1046,11 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:46+00:00",
-      "last_success_at": "2026-05-01T09:12:46+00:00",
+      "fetched_at": "2026-05-01T09:43:04+00:00",
+      "last_success_at": "2026-05-01T09:43:04+00:00",
       "editions": [
-        "intl"
+        "intl",
+        "cn"
       ],
       "desc_cn": "通用的命令行模糊查找器，极速搜索文件和历史",
       "desc_en": "General-purpose command-line fuzzy finder for fast file and history search"
@@ -1057,10 +1076,11 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:51+00:00",
-      "last_success_at": "2026-05-01T09:12:51+00:00",
+      "fetched_at": "2026-05-01T09:43:02+00:00",
+      "last_success_at": "2026-05-01T09:43:02+00:00",
       "editions": [
-        "intl"
+        "intl",
+        "cn"
       ],
       "desc_cn": "带语法高亮和 Git 集成的 cat 替代品",
       "desc_en": "cat alternative with syntax highlighting and Git integration"
@@ -1086,10 +1106,11 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:54+00:00",
-      "last_success_at": "2026-05-01T09:12:54+00:00",
+      "fetched_at": "2026-05-01T09:43:05+00:00",
+      "last_success_at": "2026-05-01T09:43:05+00:00",
       "editions": [
-        "intl"
+        "intl",
+        "cn"
       ],
       "desc_cn": "更快速友好的 find 替代工具",
       "desc_en": "Faster and more user-friendly alternative to find"
@@ -1115,10 +1136,11 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:47+00:00",
-      "last_success_at": "2026-05-01T09:12:47+00:00",
+      "fetched_at": "2026-05-01T09:43:04+00:00",
+      "last_success_at": "2026-05-01T09:43:04+00:00",
       "editions": [
-        "intl"
+        "intl",
+        "cn"
       ],
       "desc_cn": "超快的文本搜索工具，grep 的现代替代品",
       "desc_en": "Ultra-fast text search tool, modern alternative to grep"
@@ -1144,10 +1166,11 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:51+00:00",
-      "last_success_at": "2026-05-01T09:12:51+00:00",
+      "fetched_at": "2026-05-01T09:43:02+00:00",
+      "last_success_at": "2026-05-01T09:43:02+00:00",
       "editions": [
-        "intl"
+        "intl",
+        "cn"
       ],
       "desc_cn": "命令行 JSON 处理器，轻量级且功能强大",
       "desc_en": "Command-line JSON processor, lightweight yet powerful"
@@ -1173,10 +1196,11 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:54+00:00",
-      "last_success_at": "2026-05-01T09:12:54+00:00",
+      "fetched_at": "2026-05-01T09:43:05+00:00",
+      "last_success_at": "2026-05-01T09:43:05+00:00",
       "editions": [
-        "intl"
+        "intl",
+        "cn"
       ],
       "desc_cn": "YAML/JSON/XML 命令行处理工具，jq 的多格式版",
       "desc_en": "YAML/JSON/XML command-line processor, multi-format version of jq"
@@ -1202,10 +1226,11 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:46+00:00",
-      "last_success_at": "2026-05-01T09:12:46+00:00",
+      "fetched_at": "2026-05-01T09:43:04+00:00",
+      "last_success_at": "2026-05-01T09:43:04+00:00",
       "editions": [
-        "intl"
+        "intl",
+        "cn"
       ],
       "desc_cn": "GitHub 官方命令行工具，管理 PR/Issue/Release",
       "desc_en": "Official GitHub CLI for managing PRs, Issues, and Releases"
@@ -1231,10 +1256,11 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:51+00:00",
-      "last_success_at": "2026-05-01T09:12:51+00:00",
+      "fetched_at": "2026-05-01T09:43:02+00:00",
+      "last_success_at": "2026-05-01T09:43:02+00:00",
       "editions": [
-        "intl"
+        "intl",
+        "cn"
       ],
       "desc_cn": "现代化的终端文本编辑器，易上手且支持插件",
       "desc_en": "Modern terminal text editor that's easy to learn with plugin support"
@@ -1260,10 +1286,11 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:54+00:00",
-      "last_success_at": "2026-05-01T09:12:54+00:00",
+      "fetched_at": "2026-05-01T09:43:05+00:00",
+      "last_success_at": "2026-05-01T09:43:05+00:00",
       "editions": [
-        "intl"
+        "intl",
+        "cn"
       ],
       "desc_cn": "Vim 的现代化重构版本，更好的扩展性和 API",
       "desc_en": "Modernized refactor of Vim with better extensibility and API"
@@ -1289,10 +1316,11 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:47+00:00",
-      "last_success_at": "2026-05-01T09:12:47+00:00",
+      "fetched_at": "2026-05-01T09:43:04+00:00",
+      "last_success_at": "2026-05-01T09:43:04+00:00",
       "editions": [
-        "intl"
+        "intl",
+        "cn"
       ],
       "desc_cn": "Clash.Meta 内核，支持更多代理协议和规则引擎",
       "desc_en": "Clash.Meta kernel with extended proxy protocol and rule engine support"
@@ -1318,8 +1346,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:51+00:00",
-      "last_success_at": "2026-05-01T09:12:51+00:00",
+      "fetched_at": "2026-05-01T09:43:02+00:00",
+      "last_success_at": "2026-05-01T09:43:02+00:00",
       "editions": [
         "intl"
       ],
@@ -1347,10 +1375,11 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:54+00:00",
-      "last_success_at": "2026-05-01T09:12:54+00:00",
+      "fetched_at": "2026-05-01T09:43:05+00:00",
+      "last_success_at": "2026-05-01T09:43:05+00:00",
       "editions": [
-        "intl"
+        "intl",
+        "cn"
       ],
       "desc_cn": "开源下载工具，支持 HTTP/FTP/BT/磁力链接",
       "desc_en": "Open-source download manager supporting HTTP/FTP/BitTorrent/magnet links"
@@ -1376,10 +1405,11 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:47+00:00",
-      "last_success_at": "2026-05-01T09:12:47+00:00",
+      "fetched_at": "2026-05-01T09:43:04+00:00",
+      "last_success_at": "2026-05-01T09:43:04+00:00",
       "editions": [
-        "intl"
+        "intl",
+        "cn"
       ],
       "desc_cn": "简洁的 Markdown 编辑器，实时预览所见即所得",
       "desc_en": "Clean Markdown editor with real-time WYSIWYG preview"
@@ -1405,8 +1435,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:51+00:00",
-      "last_success_at": "2026-05-01T09:12:51+00:00",
+      "fetched_at": "2026-05-01T09:43:02+00:00",
+      "last_success_at": "2026-05-01T09:43:02+00:00",
       "editions": [
         "intl"
       ],
@@ -1434,8 +1464,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:54+00:00",
-      "last_success_at": "2026-05-01T09:12:54+00:00",
+      "fetched_at": "2026-05-01T09:43:05+00:00",
+      "last_success_at": "2026-05-01T09:43:05+00:00",
       "editions": [
         "intl"
       ],
@@ -1463,10 +1493,11 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:47+00:00",
-      "last_success_at": "2026-05-01T09:12:47+00:00",
+      "fetched_at": "2026-05-01T09:43:04+00:00",
+      "last_success_at": "2026-05-01T09:43:04+00:00",
       "editions": [
-        "intl"
+        "intl",
+        "cn"
       ],
       "desc_cn": "Xray 核心引擎，V2Ray 的增强分支，性能更优",
       "desc_en": "Xray core engine, enhanced V2Ray fork with better performance"
@@ -1492,8 +1523,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:51+00:00",
-      "last_success_at": "2026-05-01T09:12:51+00:00",
+      "fetched_at": "2026-05-01T09:43:02+00:00",
+      "last_success_at": "2026-05-01T09:43:02+00:00",
       "editions": [
         "intl"
       ],
@@ -1521,8 +1552,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:54+00:00",
-      "last_success_at": "2026-05-01T09:12:54+00:00",
+      "fetched_at": "2026-05-01T09:43:05+00:00",
+      "last_success_at": "2026-05-01T09:43:05+00:00",
       "editions": [
         "intl"
       ],
@@ -1550,8 +1581,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:47+00:00",
-      "last_success_at": "2026-05-01T09:12:47+00:00",
+      "fetched_at": "2026-05-01T09:43:04+00:00",
+      "last_success_at": "2026-05-01T09:43:04+00:00",
       "editions": [
         "intl"
       ],
@@ -1610,10 +1641,11 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:54+00:00",
-      "last_success_at": "2026-05-01T09:12:54+00:00",
+      "fetched_at": "2026-05-01T09:43:05+00:00",
+      "last_success_at": "2026-05-01T09:43:05+00:00",
       "editions": [
-        "intl"
+        "intl",
+        "cn"
       ],
       "desc_cn": "开源音频编辑器，录制和编辑音频的专业工具",
       "desc_en": "Open-source audio editor for professional recording and editing"
@@ -1639,8 +1671,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:46+00:00",
-      "last_success_at": "2026-05-01T09:12:46+00:00",
+      "fetched_at": "2026-05-01T09:43:04+00:00",
+      "last_success_at": "2026-05-01T09:43:04+00:00",
       "editions": [
         "intl"
       ],
@@ -1668,8 +1700,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:52+00:00",
-      "last_success_at": "2026-05-01T09:12:52+00:00",
+      "fetched_at": "2026-05-01T09:43:02+00:00",
+      "last_success_at": "2026-05-01T09:43:02+00:00",
       "editions": [
         "intl"
       ],
@@ -1697,10 +1729,11 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:54+00:00",
-      "last_success_at": "2026-05-01T09:12:54+00:00",
+      "fetched_at": "2026-05-01T09:43:06+00:00",
+      "last_success_at": "2026-05-01T09:43:06+00:00",
       "editions": [
-        "intl"
+        "intl",
+        "cn"
       ],
       "desc_cn": "电子书管理工具，格式转换和设备同步一站式方案",
       "desc_en": "E-book management tool for format conversion and device sync"
@@ -1726,10 +1759,11 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:47+00:00",
-      "last_success_at": "2026-05-01T09:12:47+00:00",
+      "fetched_at": "2026-05-01T09:43:04+00:00",
+      "last_success_at": "2026-05-01T09:43:04+00:00",
       "editions": [
-        "intl"
+        "intl",
+        "cn"
       ],
       "desc_cn": "微软推出的现代化 Windows 终端，支持多标签和 GPU 加速",
       "desc_en": "Modern Windows terminal by Microsoft with tabs and GPU acceleration"
@@ -1755,8 +1789,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:52+00:00",
-      "last_success_at": "2026-05-01T09:12:52+00:00",
+      "fetched_at": "2026-05-01T09:43:02+00:00",
+      "last_success_at": "2026-05-01T09:43:02+00:00",
       "editions": [
         "intl"
       ],
@@ -1784,8 +1818,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:55+00:00",
-      "last_success_at": "2026-05-01T09:12:55+00:00",
+      "fetched_at": "2026-05-01T09:43:06+00:00",
+      "last_success_at": "2026-05-01T09:43:06+00:00",
       "editions": [
         "intl"
       ],
@@ -1813,10 +1847,11 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:47+00:00",
-      "last_success_at": "2026-05-01T09:12:47+00:00",
+      "fetched_at": "2026-05-01T09:43:04+00:00",
+      "last_success_at": "2026-05-01T09:43:04+00:00",
       "editions": [
-        "intl"
+        "intl",
+        "cn"
       ],
       "desc_cn": "开源知识库和协作平台，融合文档、白板和数据库",
       "desc_en": "Open-source knowledge base and collaboration platform with docs, whiteboard, and databases"
@@ -1842,8 +1877,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:52+00:00",
-      "last_success_at": "2026-05-01T09:12:52+00:00",
+      "fetched_at": "2026-05-01T09:43:03+00:00",
+      "last_success_at": "2026-05-01T09:43:03+00:00",
       "editions": [
         "intl"
       ],
@@ -1871,8 +1906,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:55+00:00",
-      "last_success_at": "2026-05-01T09:12:55+00:00",
+      "fetched_at": "2026-05-01T09:43:06+00:00",
+      "last_success_at": "2026-05-01T09:43:06+00:00",
       "editions": [
         "intl"
       ],
@@ -1900,10 +1935,11 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:47+00:00",
-      "last_success_at": "2026-05-01T09:12:47+00:00",
+      "fetched_at": "2026-05-01T09:43:04+00:00",
+      "last_success_at": "2026-05-01T09:43:04+00:00",
       "editions": [
-        "intl"
+        "intl",
+        "cn"
       ],
       "desc_cn": "免费开源的跨平台视频编辑器",
       "desc_en": "Free open-source cross-platform video editor"
@@ -1929,8 +1965,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:52+00:00",
-      "last_success_at": "2026-05-01T09:12:52+00:00",
+      "fetched_at": "2026-05-01T09:43:03+00:00",
+      "last_success_at": "2026-05-01T09:43:03+00:00",
       "editions": [
         "intl"
       ],
@@ -1958,8 +1994,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:55+00:00",
-      "last_success_at": "2026-05-01T09:12:55+00:00",
+      "fetched_at": "2026-05-01T09:43:06+00:00",
+      "last_success_at": "2026-05-01T09:43:06+00:00",
       "editions": [
         "intl"
       ],
@@ -1987,8 +2023,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:47+00:00",
-      "last_success_at": "2026-05-01T09:12:47+00:00",
+      "fetched_at": "2026-05-01T09:43:04+00:00",
+      "last_success_at": "2026-05-01T09:43:04+00:00",
       "editions": [
         "intl"
       ],
@@ -2016,8 +2052,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:52+00:00",
-      "last_success_at": "2026-05-01T09:12:52+00:00",
+      "fetched_at": "2026-05-01T09:43:03+00:00",
+      "last_success_at": "2026-05-01T09:43:03+00:00",
       "editions": [
         "intl"
       ],
@@ -2045,8 +2081,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:55+00:00",
-      "last_success_at": "2026-05-01T09:12:55+00:00",
+      "fetched_at": "2026-05-01T09:43:05+00:00",
+      "last_success_at": "2026-05-01T09:43:05+00:00",
       "editions": [
         "intl"
       ],
@@ -2074,8 +2110,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:47+00:00",
-      "last_success_at": "2026-05-01T09:12:47+00:00",
+      "fetched_at": "2026-05-01T09:43:04+00:00",
+      "last_success_at": "2026-05-01T09:43:04+00:00",
       "editions": [
         "intl"
       ],
@@ -2103,8 +2139,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:53+00:00",
-      "last_success_at": "2026-05-01T09:12:53+00:00",
+      "fetched_at": "2026-05-01T09:43:03+00:00",
+      "last_success_at": "2026-05-01T09:43:03+00:00",
       "editions": [
         "intl"
       ],
@@ -2132,8 +2168,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:55+00:00",
-      "last_success_at": "2026-05-01T09:12:55+00:00",
+      "fetched_at": "2026-05-01T09:43:06+00:00",
+      "last_success_at": "2026-05-01T09:43:06+00:00",
       "editions": [
         "intl"
       ],
@@ -2161,8 +2197,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:47+00:00",
-      "last_success_at": "2026-05-01T09:12:47+00:00",
+      "fetched_at": "2026-05-01T09:43:05+00:00",
+      "last_success_at": "2026-05-01T09:43:05+00:00",
       "editions": [
         "intl"
       ],
@@ -2190,8 +2226,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:51+00:00",
-      "last_success_at": "2026-05-01T09:12:51+00:00",
+      "fetched_at": "2026-05-01T09:43:02+00:00",
+      "last_success_at": "2026-05-01T09:43:02+00:00",
       "editions": [
         "intl"
       ],
@@ -2219,8 +2255,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:55+00:00",
-      "last_success_at": "2026-05-01T09:12:55+00:00",
+      "fetched_at": "2026-05-01T09:43:05+00:00",
+      "last_success_at": "2026-05-01T09:43:05+00:00",
       "editions": [
         "intl"
       ],
@@ -2248,8 +2284,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:47+00:00",
-      "last_success_at": "2026-05-01T09:12:47+00:00",
+      "fetched_at": "2026-05-01T09:43:05+00:00",
+      "last_success_at": "2026-05-01T09:43:05+00:00",
       "editions": [
         "intl"
       ],
@@ -2277,8 +2313,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:52+00:00",
-      "last_success_at": "2026-05-01T09:12:52+00:00",
+      "fetched_at": "2026-05-01T09:43:03+00:00",
+      "last_success_at": "2026-05-01T09:43:03+00:00",
       "editions": [
         "intl"
       ],
@@ -2306,8 +2342,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:55+00:00",
-      "last_success_at": "2026-05-01T09:12:55+00:00",
+      "fetched_at": "2026-05-01T09:43:05+00:00",
+      "last_success_at": "2026-05-01T09:43:05+00:00",
       "editions": [
         "intl"
       ],
@@ -2335,8 +2371,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:47+00:00",
-      "last_success_at": "2026-05-01T09:12:47+00:00",
+      "fetched_at": "2026-05-01T09:43:04+00:00",
+      "last_success_at": "2026-05-01T09:43:04+00:00",
       "editions": [
         "intl"
       ],
@@ -2364,8 +2400,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:51+00:00",
-      "last_success_at": "2026-05-01T09:12:51+00:00",
+      "fetched_at": "2026-05-01T09:43:02+00:00",
+      "last_success_at": "2026-05-01T09:43:02+00:00",
       "editions": [
         "intl"
       ],
@@ -2393,8 +2429,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:55+00:00",
-      "last_success_at": "2026-05-01T09:12:55+00:00",
+      "fetched_at": "2026-05-01T09:43:06+00:00",
+      "last_success_at": "2026-05-01T09:43:06+00:00",
       "editions": [
         "intl"
       ],
@@ -2422,8 +2458,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:47+00:00",
-      "last_success_at": "2026-05-01T09:12:47+00:00",
+      "fetched_at": "2026-05-01T09:43:05+00:00",
+      "last_success_at": "2026-05-01T09:43:05+00:00",
       "editions": [
         "intl"
       ],
@@ -2451,8 +2487,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:53+00:00",
-      "last_success_at": "2026-05-01T09:12:53+00:00",
+      "fetched_at": "2026-05-01T09:43:02+00:00",
+      "last_success_at": "2026-05-01T09:43:02+00:00",
       "editions": [
         "intl"
       ],
@@ -2480,8 +2516,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:55+00:00",
-      "last_success_at": "2026-05-01T09:12:55+00:00",
+      "fetched_at": "2026-05-01T09:43:05+00:00",
+      "last_success_at": "2026-05-01T09:43:05+00:00",
       "editions": [
         "intl"
       ],
@@ -2509,8 +2545,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:47+00:00",
-      "last_success_at": "2026-05-01T09:12:47+00:00",
+      "fetched_at": "2026-05-01T09:43:05+00:00",
+      "last_success_at": "2026-05-01T09:43:05+00:00",
       "editions": [
         "intl"
       ],
@@ -2538,8 +2574,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:52+00:00",
-      "last_success_at": "2026-05-01T09:12:52+00:00",
+      "fetched_at": "2026-05-01T09:43:03+00:00",
+      "last_success_at": "2026-05-01T09:43:03+00:00",
       "editions": [
         "intl"
       ],
@@ -2573,7 +2609,9 @@
         "intl"
       ],
       "desc_cn": "微软最新桌面操作系统（英文版），采用现代化 UI 设计",
-      "desc_en": "Microsoft's latest desktop OS (English edition) with modern UI design"
+      "desc_en": "Microsoft's latest desktop OS (English edition) with modern UI design",
+      "_stale": true,
+      "_stale_reason": "not included in any sync shard"
     },
     {
       "id": "firefox",
@@ -2612,8 +2650,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:47+00:00",
-      "last_success_at": "2026-05-01T09:12:47+00:00",
+      "fetched_at": "2026-05-01T09:43:05+00:00",
+      "last_success_at": "2026-05-01T09:43:05+00:00",
       "editions": [
         "intl"
       ],
@@ -2665,8 +2703,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:52+00:00",
-      "last_success_at": "2026-05-01T09:12:52+00:00",
+      "fetched_at": "2026-05-01T09:43:04+00:00",
+      "last_success_at": "2026-05-01T09:43:04+00:00",
       "editions": [
         "intl"
       ],
@@ -2718,10 +2756,11 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:55+00:00",
-      "last_success_at": "2026-05-01T09:12:55+00:00",
+      "fetched_at": "2026-05-01T09:43:03+00:00",
+      "last_success_at": "2026-05-01T09:43:03+00:00",
       "editions": [
-        "intl"
+        "intl",
+        "cn"
       ],
       "desc_cn": "免费的通用数据库工具，支持所有主流数据库",
       "desc_en": "Free universal database tool supporting all major databases"
@@ -2771,10 +2810,11 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:47+00:00",
-      "last_success_at": "2026-05-01T09:12:47+00:00",
+      "fetched_at": "2026-05-01T09:43:06+00:00",
+      "last_success_at": "2026-05-01T09:43:06+00:00",
       "editions": [
-        "intl"
+        "intl",
+        "cn"
       ],
       "desc_cn": "开源直播和录屏工具，专业级的流媒体方案",
       "desc_en": "Open-source live streaming and screen recording tool for professional streaming"
@@ -2816,8 +2856,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:52+00:00",
-      "last_success_at": "2026-05-01T09:12:52+00:00",
+      "fetched_at": "2026-05-01T09:43:05+00:00",
+      "last_success_at": "2026-05-01T09:43:05+00:00",
       "editions": [
         "intl"
       ],
@@ -2861,8 +2901,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:55+00:00",
-      "last_success_at": "2026-05-01T09:12:55+00:00",
+      "fetched_at": "2026-05-01T09:43:03+00:00",
+      "last_success_at": "2026-05-01T09:43:03+00:00",
       "editions": [
         "intl"
       ],
@@ -2906,8 +2946,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:47+00:00",
-      "last_success_at": "2026-05-01T09:12:47+00:00",
+      "fetched_at": "2026-05-01T09:43:06+00:00",
+      "last_success_at": "2026-05-01T09:43:06+00:00",
       "editions": [
         "intl"
       ],
@@ -2935,8 +2975,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:52+00:00",
-      "last_success_at": "2026-05-01T09:12:52+00:00",
+      "fetched_at": "2026-05-01T09:43:05+00:00",
+      "last_success_at": "2026-05-01T09:43:05+00:00",
       "editions": [
         "intl"
       ],
@@ -2980,8 +3020,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:55+00:00",
-      "last_success_at": "2026-05-01T09:12:55+00:00",
+      "fetched_at": "2026-05-01T09:43:03+00:00",
+      "last_success_at": "2026-05-01T09:43:03+00:00",
       "editions": [
         "intl"
       ],
@@ -3009,8 +3049,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:47+00:00",
-      "last_success_at": "2026-05-01T09:12:47+00:00",
+      "fetched_at": "2026-05-01T09:43:06+00:00",
+      "last_success_at": "2026-05-01T09:43:06+00:00",
       "editions": [
         "intl"
       ],
@@ -3038,10 +3078,11 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:53+00:00",
-      "last_success_at": "2026-05-01T09:12:53+00:00",
+      "fetched_at": "2026-05-01T09:43:05+00:00",
+      "last_success_at": "2026-05-01T09:43:05+00:00",
       "editions": [
-        "intl"
+        "intl",
+        "cn"
       ],
       "desc_cn": "轻量强大的跨平台视频播放器，支持丰富配置",
       "desc_en": "Lightweight powerful cross-platform video player with rich configuration"
@@ -3083,8 +3124,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:55+00:00",
-      "last_success_at": "2026-05-01T09:12:55+00:00",
+      "fetched_at": "2026-05-01T09:43:03+00:00",
+      "last_success_at": "2026-05-01T09:43:03+00:00",
       "editions": [
         "intl"
       ],
@@ -3128,8 +3169,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:47+00:00",
-      "last_success_at": "2026-05-01T09:12:47+00:00",
+      "fetched_at": "2026-05-01T09:43:06+00:00",
+      "last_success_at": "2026-05-01T09:43:06+00:00",
       "editions": [
         "intl"
       ],
@@ -3157,8 +3198,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:52+00:00",
-      "last_success_at": "2026-05-01T09:12:52+00:00",
+      "fetched_at": "2026-05-01T09:43:05+00:00",
+      "last_success_at": "2026-05-01T09:43:05+00:00",
       "editions": [
         "intl"
       ],
@@ -3202,8 +3243,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:55+00:00",
-      "last_success_at": "2026-05-01T09:12:55+00:00",
+      "fetched_at": "2026-05-01T09:43:03+00:00",
+      "last_success_at": "2026-05-01T09:43:03+00:00",
       "editions": [
         "intl"
       ],
@@ -3247,8 +3288,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:47+00:00",
-      "last_success_at": "2026-05-01T09:12:47+00:00",
+      "fetched_at": "2026-05-01T09:43:06+00:00",
+      "last_success_at": "2026-05-01T09:43:06+00:00",
       "editions": [
         "intl"
       ],
@@ -3292,8 +3333,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:53+00:00",
-      "last_success_at": "2026-05-01T09:12:53+00:00",
+      "fetched_at": "2026-05-01T09:43:05+00:00",
+      "last_success_at": "2026-05-01T09:43:05+00:00",
       "editions": [
         "intl"
       ],
@@ -3337,8 +3378,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:55+00:00",
-      "last_success_at": "2026-05-01T09:12:55+00:00",
+      "fetched_at": "2026-05-01T09:43:03+00:00",
+      "last_success_at": "2026-05-01T09:43:03+00:00",
       "editions": [
         "intl"
       ],
@@ -3382,8 +3423,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:47+00:00",
-      "last_success_at": "2026-05-01T09:12:47+00:00",
+      "fetched_at": "2026-05-01T09:43:06+00:00",
+      "last_success_at": "2026-05-01T09:43:06+00:00",
       "editions": [
         "intl"
       ],
@@ -3427,8 +3468,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:52+00:00",
-      "last_success_at": "2026-05-01T09:12:52+00:00",
+      "fetched_at": "2026-05-01T09:43:04+00:00",
+      "last_success_at": "2026-05-01T09:43:04+00:00",
       "editions": [
         "intl"
       ],
@@ -3464,8 +3505,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:55+00:00",
-      "last_success_at": "2026-05-01T09:12:55+00:00",
+      "fetched_at": "2026-05-01T09:43:03+00:00",
+      "last_success_at": "2026-05-01T09:43:03+00:00",
       "editions": [
         "intl"
       ],
@@ -3501,8 +3542,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:47+00:00",
-      "last_success_at": "2026-05-01T09:12:47+00:00",
+      "fetched_at": "2026-05-01T09:43:06+00:00",
+      "last_success_at": "2026-05-01T09:43:06+00:00",
       "editions": [
         "intl"
       ],
@@ -3546,8 +3587,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:52+00:00",
-      "last_success_at": "2026-05-01T09:12:52+00:00",
+      "fetched_at": "2026-05-01T09:43:04+00:00",
+      "last_success_at": "2026-05-01T09:43:04+00:00",
       "editions": [
         "intl"
       ],
@@ -3575,8 +3616,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:55+00:00",
-      "last_success_at": "2026-05-01T09:12:55+00:00",
+      "fetched_at": "2026-05-01T09:43:03+00:00",
+      "last_success_at": "2026-05-01T09:43:03+00:00",
       "editions": [
         "intl"
       ],
@@ -3612,8 +3653,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:47+00:00",
-      "last_success_at": "2026-05-01T09:12:47+00:00",
+      "fetched_at": "2026-05-01T09:43:06+00:00",
+      "last_success_at": "2026-05-01T09:43:06+00:00",
       "editions": [
         "intl"
       ],
@@ -3657,8 +3698,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:52+00:00",
-      "last_success_at": "2026-05-01T09:12:52+00:00",
+      "fetched_at": "2026-05-01T09:43:04+00:00",
+      "last_success_at": "2026-05-01T09:43:04+00:00",
       "editions": [
         "intl"
       ],
@@ -3694,8 +3735,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:55+00:00",
-      "last_success_at": "2026-05-01T09:12:55+00:00",
+      "fetched_at": "2026-05-01T09:43:03+00:00",
+      "last_success_at": "2026-05-01T09:43:03+00:00",
       "editions": [
         "intl"
       ],
@@ -3731,8 +3772,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:47+00:00",
-      "last_success_at": "2026-05-01T09:12:47+00:00",
+      "fetched_at": "2026-05-01T09:43:06+00:00",
+      "last_success_at": "2026-05-01T09:43:06+00:00",
       "editions": [
         "intl"
       ],
@@ -3776,8 +3817,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:52+00:00",
-      "last_success_at": "2026-05-01T09:12:52+00:00",
+      "fetched_at": "2026-05-01T09:43:04+00:00",
+      "last_success_at": "2026-05-01T09:43:04+00:00",
       "editions": [
         "intl"
       ],
@@ -3821,8 +3862,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:55+00:00",
-      "last_success_at": "2026-05-01T09:12:55+00:00",
+      "fetched_at": "2026-05-01T09:43:03+00:00",
+      "last_success_at": "2026-05-01T09:43:03+00:00",
       "editions": [
         "intl"
       ],
@@ -3850,13 +3891,14 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:47+00:00",
+      "fetched_at": "2026-05-01T09:43:06+00:00",
       "warnings": [
         "mac-arm64: 没有匹配 asset pattern 'Zed-*-aarch64.dmg'"
       ],
-      "last_success_at": "2026-05-01T09:12:47+00:00",
+      "last_success_at": "2026-05-01T09:43:06+00:00",
       "editions": [
-        "intl"
+        "intl",
+        "cn"
       ],
       "desc_cn": "高性能多人协作代码编辑器，基于 Rust 构建",
       "desc_en": "High-performance multiplayer code editor built in Rust"
@@ -3898,10 +3940,11 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:52+00:00",
-      "last_success_at": "2026-05-01T09:12:52+00:00",
+      "fetched_at": "2026-05-01T09:43:04+00:00",
+      "last_success_at": "2026-05-01T09:43:04+00:00",
       "editions": [
-        "intl"
+        "intl",
+        "cn"
       ],
       "desc_cn": "用 Rust 编写的快速轻量级代码编辑器",
       "desc_en": "Fast and lightweight code editor written in Rust"
@@ -3943,10 +3986,11 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:55+00:00",
-      "last_success_at": "2026-05-01T09:12:55+00:00",
+      "fetched_at": "2026-05-01T09:43:03+00:00",
+      "last_success_at": "2026-05-01T09:43:03+00:00",
       "editions": [
-        "intl"
+        "intl",
+        "cn"
       ],
       "desc_cn": "基于 Kakoune 的终端代码编辑器，支持 LSP 和树状选择",
       "desc_en": "Kakoune-inspired terminal code editor with LSP and tree-sitter support"
@@ -3972,8 +4016,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:47+00:00",
-      "last_success_at": "2026-05-01T09:12:47+00:00",
+      "fetched_at": "2026-05-01T09:43:06+00:00",
+      "last_success_at": "2026-05-01T09:43:06+00:00",
       "editions": [
         "intl"
       ],
@@ -4001,8 +4045,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:52+00:00",
-      "last_success_at": "2026-05-01T09:12:52+00:00",
+      "fetched_at": "2026-05-01T09:43:04+00:00",
+      "last_success_at": "2026-05-01T09:43:04+00:00",
       "editions": [
         "intl"
       ],
@@ -4046,8 +4090,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:55+00:00",
-      "last_success_at": "2026-05-01T09:12:55+00:00",
+      "fetched_at": "2026-05-01T09:43:03+00:00",
+      "last_success_at": "2026-05-01T09:43:03+00:00",
       "editions": [
         "intl"
       ],
@@ -4091,8 +4135,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:47+00:00",
-      "last_success_at": "2026-05-01T09:12:47+00:00",
+      "fetched_at": "2026-05-01T09:43:06+00:00",
+      "last_success_at": "2026-05-01T09:43:06+00:00",
       "editions": [
         "intl"
       ],
@@ -4136,8 +4180,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:53+00:00",
-      "last_success_at": "2026-05-01T09:12:53+00:00",
+      "fetched_at": "2026-05-01T09:43:05+00:00",
+      "last_success_at": "2026-05-01T09:43:05+00:00",
       "editions": [
         "intl"
       ],
@@ -4165,8 +4209,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:55+00:00",
-      "last_success_at": "2026-05-01T09:12:55+00:00",
+      "fetched_at": "2026-05-01T09:43:03+00:00",
+      "last_success_at": "2026-05-01T09:43:03+00:00",
       "editions": [
         "intl"
       ],
@@ -4210,8 +4254,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:47+00:00",
-      "last_success_at": "2026-05-01T09:12:47+00:00",
+      "fetched_at": "2026-05-01T09:43:06+00:00",
+      "last_success_at": "2026-05-01T09:43:06+00:00",
       "editions": [
         "intl"
       ],
@@ -4255,8 +4299,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:52+00:00",
-      "last_success_at": "2026-05-01T09:12:52+00:00",
+      "fetched_at": "2026-05-01T09:43:05+00:00",
+      "last_success_at": "2026-05-01T09:43:05+00:00",
       "editions": [
         "intl"
       ],
@@ -4300,8 +4344,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:55+00:00",
-      "last_success_at": "2026-05-01T09:12:55+00:00",
+      "fetched_at": "2026-05-01T09:43:03+00:00",
+      "last_success_at": "2026-05-01T09:43:03+00:00",
       "editions": [
         "intl"
       ],
@@ -4337,11 +4381,11 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:48+00:00",
+      "fetched_at": "2026-05-01T09:43:07+00:00",
       "warnings": [
         "mac-arm64: 没有匹配 asset pattern 'dust-*-aarch64-apple-darwin.tar.gz'"
       ],
-      "last_success_at": "2026-05-01T09:12:48+00:00",
+      "last_success_at": "2026-05-01T09:43:07+00:00",
       "editions": [
         "intl"
       ],
@@ -4369,12 +4413,12 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:53+00:00",
+      "fetched_at": "2026-05-01T09:43:05+00:00",
       "warnings": [
         "win-x64: 没有匹配 asset pattern 'duf_*_windows_amd64.zip'",
         "linux-x64: 没有匹配 asset pattern 'duf_*_linux_amd64.tar.gz'"
       ],
-      "last_success_at": "2026-05-01T09:12:53+00:00",
+      "last_success_at": "2026-05-01T09:43:05+00:00",
       "editions": [
         "intl"
       ],
@@ -4418,8 +4462,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:55+00:00",
-      "last_success_at": "2026-05-01T09:12:55+00:00",
+      "fetched_at": "2026-05-01T09:43:03+00:00",
+      "last_success_at": "2026-05-01T09:43:03+00:00",
       "editions": [
         "intl"
       ],
@@ -4463,8 +4507,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:48+00:00",
-      "last_success_at": "2026-05-01T09:12:48+00:00",
+      "fetched_at": "2026-05-01T09:43:07+00:00",
+      "last_success_at": "2026-05-01T09:43:07+00:00",
       "editions": [
         "intl"
       ],
@@ -4508,8 +4552,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:53+00:00",
-      "last_success_at": "2026-05-01T09:12:53+00:00",
+      "fetched_at": "2026-05-01T09:43:05+00:00",
+      "last_success_at": "2026-05-01T09:43:05+00:00",
       "editions": [
         "intl"
       ],
@@ -4553,8 +4597,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:56+00:00",
-      "last_success_at": "2026-05-01T09:12:56+00:00",
+      "fetched_at": "2026-05-01T09:43:03+00:00",
+      "last_success_at": "2026-05-01T09:43:03+00:00",
       "editions": [
         "intl"
       ],
@@ -4598,8 +4642,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:47+00:00",
-      "last_success_at": "2026-05-01T09:12:47+00:00",
+      "fetched_at": "2026-05-01T09:43:06+00:00",
+      "last_success_at": "2026-05-01T09:43:06+00:00",
       "editions": [
         "intl"
       ],
@@ -4643,8 +4687,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:53+00:00",
-      "last_success_at": "2026-05-01T09:12:53+00:00",
+      "fetched_at": "2026-05-01T09:43:05+00:00",
+      "last_success_at": "2026-05-01T09:43:05+00:00",
       "editions": [
         "intl"
       ],
@@ -4688,8 +4732,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:56+00:00",
-      "last_success_at": "2026-05-01T09:12:56+00:00",
+      "fetched_at": "2026-05-01T09:43:03+00:00",
+      "last_success_at": "2026-05-01T09:43:03+00:00",
       "editions": [
         "intl"
       ],
@@ -4733,8 +4777,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:48+00:00",
-      "last_success_at": "2026-05-01T09:12:48+00:00",
+      "fetched_at": "2026-05-01T09:43:07+00:00",
+      "last_success_at": "2026-05-01T09:43:07+00:00",
       "editions": [
         "intl"
       ],
@@ -4778,8 +4822,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:52+00:00",
-      "last_success_at": "2026-05-01T09:12:52+00:00",
+      "fetched_at": "2026-05-01T09:43:05+00:00",
+      "last_success_at": "2026-05-01T09:43:05+00:00",
       "editions": [
         "intl"
       ],
@@ -4823,8 +4867,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:55+00:00",
-      "last_success_at": "2026-05-01T09:12:55+00:00",
+      "fetched_at": "2026-05-01T09:43:03+00:00",
+      "last_success_at": "2026-05-01T09:43:03+00:00",
       "editions": [
         "intl"
       ],
@@ -4860,11 +4904,11 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:48+00:00",
+      "fetched_at": "2026-05-01T09:43:07+00:00",
       "warnings": [
         "win-x64: 没有匹配 asset pattern 'biome-win-x64.exe'"
       ],
-      "last_success_at": "2026-05-01T09:12:48+00:00",
+      "last_success_at": "2026-05-01T09:43:07+00:00",
       "editions": [
         "intl"
       ],
@@ -4900,11 +4944,11 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:53+00:00",
+      "fetched_at": "2026-05-01T09:43:05+00:00",
       "warnings": [
         "mac-arm64: 没有匹配 asset pattern 'cargo-nextest-*-aarch64-apple-darwin.tar.gz'"
       ],
-      "last_success_at": "2026-05-01T09:12:53+00:00",
+      "last_success_at": "2026-05-01T09:43:05+00:00",
       "editions": [
         "intl"
       ],
@@ -4948,8 +4992,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:56+00:00",
-      "last_success_at": "2026-05-01T09:12:56+00:00",
+      "fetched_at": "2026-05-01T09:43:03+00:00",
+      "last_success_at": "2026-05-01T09:43:03+00:00",
       "editions": [
         "intl"
       ],
@@ -4993,8 +5037,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:47+00:00",
-      "last_success_at": "2026-05-01T09:12:47+00:00",
+      "fetched_at": "2026-05-01T09:43:06+00:00",
+      "last_success_at": "2026-05-01T09:43:06+00:00",
       "editions": [
         "intl"
       ],
@@ -5038,8 +5082,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:53+00:00",
-      "last_success_at": "2026-05-01T09:12:53+00:00",
+      "fetched_at": "2026-05-01T09:43:05+00:00",
+      "last_success_at": "2026-05-01T09:43:05+00:00",
       "editions": [
         "intl"
       ],
@@ -5083,8 +5127,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:56+00:00",
-      "last_success_at": "2026-05-01T09:12:56+00:00",
+      "fetched_at": "2026-05-01T09:43:03+00:00",
+      "last_success_at": "2026-05-01T09:43:03+00:00",
       "editions": [
         "intl"
       ],
@@ -5128,8 +5172,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:47+00:00",
-      "last_success_at": "2026-05-01T09:12:47+00:00",
+      "fetched_at": "2026-05-01T09:43:06+00:00",
+      "last_success_at": "2026-05-01T09:43:06+00:00",
       "editions": [
         "intl"
       ],
@@ -5173,8 +5217,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:53+00:00",
-      "last_success_at": "2026-05-01T09:12:53+00:00",
+      "fetched_at": "2026-05-01T09:43:05+00:00",
+      "last_success_at": "2026-05-01T09:43:05+00:00",
       "editions": [
         "intl"
       ],
@@ -5218,8 +5262,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:56+00:00",
-      "last_success_at": "2026-05-01T09:12:56+00:00",
+      "fetched_at": "2026-05-01T09:43:03+00:00",
+      "last_success_at": "2026-05-01T09:43:03+00:00",
       "editions": [
         "intl"
       ],
@@ -5263,8 +5307,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:48+00:00",
-      "last_success_at": "2026-05-01T09:12:48+00:00",
+      "fetched_at": "2026-05-01T09:43:07+00:00",
+      "last_success_at": "2026-05-01T09:43:07+00:00",
       "editions": [
         "intl"
       ],
@@ -5308,8 +5352,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:53+00:00",
-      "last_success_at": "2026-05-01T09:12:53+00:00",
+      "fetched_at": "2026-05-01T09:43:05+00:00",
+      "last_success_at": "2026-05-01T09:43:05+00:00",
       "editions": [
         "intl"
       ],
@@ -5353,8 +5397,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:56+00:00",
-      "last_success_at": "2026-05-01T09:12:56+00:00",
+      "fetched_at": "2026-05-01T09:43:03+00:00",
+      "last_success_at": "2026-05-01T09:43:03+00:00",
       "editions": [
         "intl"
       ],
@@ -5390,11 +5434,11 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:48+00:00",
+      "fetched_at": "2026-05-01T09:43:07+00:00",
       "warnings": [
         "linux-x64: 没有匹配 asset pattern 'dog-v*-x86_64-unknown-linux-musl.zip'"
       ],
-      "last_success_at": "2026-05-01T09:12:48+00:00",
+      "last_success_at": "2026-05-01T09:43:07+00:00",
       "editions": [
         "intl"
       ],
@@ -5438,8 +5482,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:53+00:00",
-      "last_success_at": "2026-05-01T09:12:53+00:00",
+      "fetched_at": "2026-05-01T09:43:05+00:00",
+      "last_success_at": "2026-05-01T09:43:05+00:00",
       "editions": [
         "intl"
       ],
@@ -5483,8 +5527,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:55+00:00",
-      "last_success_at": "2026-05-01T09:12:55+00:00",
+      "fetched_at": "2026-05-01T09:43:03+00:00",
+      "last_success_at": "2026-05-01T09:43:03+00:00",
       "editions": [
         "intl"
       ],
@@ -5528,8 +5572,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:47+00:00",
-      "last_success_at": "2026-05-01T09:12:47+00:00",
+      "fetched_at": "2026-05-01T09:43:06+00:00",
+      "last_success_at": "2026-05-01T09:43:06+00:00",
       "editions": [
         "intl"
       ],
@@ -5573,8 +5617,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:53+00:00",
-      "last_success_at": "2026-05-01T09:12:53+00:00",
+      "fetched_at": "2026-05-01T09:43:05+00:00",
+      "last_success_at": "2026-05-01T09:43:05+00:00",
       "editions": [
         "intl"
       ],
@@ -5610,11 +5654,11 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:56+00:00",
+      "fetched_at": "2026-05-01T09:43:04+00:00",
       "warnings": [
         "win-x64: 没有匹配 asset pattern 'cocogitto-*-x86_64-pc-windows-msvc.zip'"
       ],
-      "last_success_at": "2026-05-01T09:12:56+00:00",
+      "last_success_at": "2026-05-01T09:43:04+00:00",
       "editions": [
         "intl"
       ],
@@ -5642,12 +5686,12 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:48+00:00",
+      "fetched_at": "2026-05-01T09:43:07+00:00",
       "warnings": [
         "mac-arm64: 没有匹配 asset pattern 'mask-*-aarch64-apple-darwin.tar.gz'",
         "linux-x64: 没有匹配 asset pattern 'mask-*-x86_64-unknown-linux-musl.tar.gz'"
       ],
-      "last_success_at": "2026-05-01T09:12:48+00:00",
+      "last_success_at": "2026-05-01T09:43:07+00:00",
       "editions": [
         "intl"
       ],
@@ -5691,8 +5735,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:53+00:00",
-      "last_success_at": "2026-05-01T09:12:53+00:00",
+      "fetched_at": "2026-05-01T09:43:05+00:00",
+      "last_success_at": "2026-05-01T09:43:05+00:00",
       "editions": [
         "intl"
       ],
@@ -5736,8 +5780,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:55+00:00",
-      "last_success_at": "2026-05-01T09:12:55+00:00",
+      "fetched_at": "2026-05-01T09:43:03+00:00",
+      "last_success_at": "2026-05-01T09:43:03+00:00",
       "editions": [
         "intl"
       ],
@@ -5765,8 +5809,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:47+00:00",
-      "last_success_at": "2026-05-01T09:12:47+00:00",
+      "fetched_at": "2026-05-01T09:43:06+00:00",
+      "last_success_at": "2026-05-01T09:43:06+00:00",
       "editions": [
         "intl"
       ],
@@ -5794,8 +5838,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:53+00:00",
-      "last_success_at": "2026-05-01T09:12:53+00:00",
+      "fetched_at": "2026-05-01T09:43:05+00:00",
+      "last_success_at": "2026-05-01T09:43:05+00:00",
       "editions": [
         "intl"
       ],
@@ -5823,8 +5867,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:55+00:00",
-      "last_success_at": "2026-05-01T09:12:55+00:00",
+      "fetched_at": "2026-05-01T09:43:03+00:00",
+      "last_success_at": "2026-05-01T09:43:03+00:00",
       "editions": [
         "intl"
       ],
@@ -5852,8 +5896,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:48+00:00",
-      "last_success_at": "2026-05-01T09:12:48+00:00",
+      "fetched_at": "2026-05-01T09:43:07+00:00",
+      "last_success_at": "2026-05-01T09:43:07+00:00",
       "editions": [
         "intl"
       ],
@@ -5881,8 +5925,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:53+00:00",
-      "last_success_at": "2026-05-01T09:12:53+00:00",
+      "fetched_at": "2026-05-01T09:43:05+00:00",
+      "last_success_at": "2026-05-01T09:43:05+00:00",
       "editions": [
         "intl"
       ],
@@ -5910,8 +5954,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:55+00:00",
-      "last_success_at": "2026-05-01T09:12:55+00:00",
+      "fetched_at": "2026-05-01T09:43:03+00:00",
+      "last_success_at": "2026-05-01T09:43:03+00:00",
       "editions": [
         "intl"
       ],
@@ -5939,8 +5983,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:48+00:00",
-      "last_success_at": "2026-05-01T09:12:48+00:00",
+      "fetched_at": "2026-05-01T09:43:07+00:00",
+      "last_success_at": "2026-05-01T09:43:07+00:00",
       "editions": [
         "intl"
       ],
@@ -5968,8 +6012,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:53+00:00",
-      "last_success_at": "2026-05-01T09:12:53+00:00",
+      "fetched_at": "2026-05-01T09:43:05+00:00",
+      "last_success_at": "2026-05-01T09:43:05+00:00",
       "editions": [
         "intl"
       ],
@@ -5997,8 +6041,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:55+00:00",
-      "last_success_at": "2026-05-01T09:12:55+00:00",
+      "fetched_at": "2026-05-01T09:43:03+00:00",
+      "last_success_at": "2026-05-01T09:43:03+00:00",
       "editions": [
         "intl"
       ],
@@ -6026,8 +6070,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:47+00:00",
-      "last_success_at": "2026-05-01T09:12:47+00:00",
+      "fetched_at": "2026-05-01T09:43:06+00:00",
+      "last_success_at": "2026-05-01T09:43:06+00:00",
       "editions": [
         "intl"
       ],
@@ -6055,8 +6099,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:53+00:00",
-      "last_success_at": "2026-05-01T09:12:53+00:00",
+      "fetched_at": "2026-05-01T09:43:05+00:00",
+      "last_success_at": "2026-05-01T09:43:05+00:00",
       "editions": [
         "intl"
       ],
@@ -6084,13 +6128,14 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:56+00:00",
+      "fetched_at": "2026-05-01T09:43:04+00:00",
       "warnings": [
         "linux-x64: 没有匹配 asset pattern 'flameshot-*-debian-12-amd64.deb'"
       ],
-      "last_success_at": "2026-05-01T09:12:56+00:00",
+      "last_success_at": "2026-05-01T09:43:04+00:00",
       "editions": [
-        "intl"
+        "intl",
+        "cn"
       ],
       "desc_cn": "功能强大的截图工具，支持标注和编辑",
       "desc_en": "Powerful screenshot tool with annotation and editing support"
@@ -6116,8 +6161,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:48+00:00",
-      "last_success_at": "2026-05-01T09:12:48+00:00",
+      "fetched_at": "2026-05-01T09:43:07+00:00",
+      "last_success_at": "2026-05-01T09:43:07+00:00",
       "editions": [
         "intl"
       ],
@@ -6145,8 +6190,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:53+00:00",
-      "last_success_at": "2026-05-01T09:12:53+00:00",
+      "fetched_at": "2026-05-01T09:43:05+00:00",
+      "last_success_at": "2026-05-01T09:43:05+00:00",
       "editions": [
         "intl"
       ],
@@ -6174,8 +6219,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:55+00:00",
-      "last_success_at": "2026-05-01T09:12:55+00:00",
+      "fetched_at": "2026-05-01T09:43:03+00:00",
+      "last_success_at": "2026-05-01T09:43:03+00:00",
       "editions": [
         "intl"
       ],
@@ -6203,8 +6248,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:48+00:00",
-      "last_success_at": "2026-05-01T09:12:48+00:00",
+      "fetched_at": "2026-05-01T09:43:07+00:00",
+      "last_success_at": "2026-05-01T09:43:07+00:00",
       "editions": [
         "intl"
       ],
@@ -6232,8 +6277,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:53+00:00",
-      "last_success_at": "2026-05-01T09:12:53+00:00",
+      "fetched_at": "2026-05-01T09:43:05+00:00",
+      "last_success_at": "2026-05-01T09:43:05+00:00",
       "editions": [
         "intl"
       ],
@@ -6261,8 +6306,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:55+00:00",
-      "last_success_at": "2026-05-01T09:12:55+00:00",
+      "fetched_at": "2026-05-01T09:43:03+00:00",
+      "last_success_at": "2026-05-01T09:43:03+00:00",
       "editions": [
         "intl"
       ],
@@ -6290,8 +6335,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:48+00:00",
-      "last_success_at": "2026-05-01T09:12:48+00:00",
+      "fetched_at": "2026-05-01T09:43:07+00:00",
+      "last_success_at": "2026-05-01T09:43:07+00:00",
       "editions": [
         "intl"
       ],
@@ -6319,8 +6364,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:53+00:00",
-      "last_success_at": "2026-05-01T09:12:53+00:00",
+      "fetched_at": "2026-05-01T09:43:05+00:00",
+      "last_success_at": "2026-05-01T09:43:05+00:00",
       "editions": [
         "intl"
       ],
@@ -6348,8 +6393,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:56+00:00",
-      "last_success_at": "2026-05-01T09:12:56+00:00",
+      "fetched_at": "2026-05-01T09:43:04+00:00",
+      "last_success_at": "2026-05-01T09:43:04+00:00",
       "editions": [
         "intl"
       ],
@@ -6377,8 +6422,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:48+00:00",
-      "last_success_at": "2026-05-01T09:12:48+00:00",
+      "fetched_at": "2026-05-01T09:43:08+00:00",
+      "last_success_at": "2026-05-01T09:43:08+00:00",
       "editions": [
         "intl"
       ],
@@ -6406,8 +6451,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:54+00:00",
-      "last_success_at": "2026-05-01T09:12:54+00:00",
+      "fetched_at": "2026-05-01T09:43:06+00:00",
+      "last_success_at": "2026-05-01T09:43:06+00:00",
       "editions": [
         "intl"
       ],
@@ -6435,14 +6480,15 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:56+00:00",
+      "fetched_at": "2026-05-01T09:43:04+00:00",
       "warnings": [
         "win-x64: 没有匹配 asset pattern 'tabby-*-x64-setup.exe'",
         "linux-x64: 没有匹配 asset pattern 'tabby-*-x86_64-linux.rpm'"
       ],
-      "last_success_at": "2026-05-01T09:12:56+00:00",
+      "last_success_at": "2026-05-01T09:43:04+00:00",
       "editions": [
-        "intl"
+        "intl",
+        "cn"
       ],
       "desc_cn": "跨平台终端模拟器，支持 SSH 和串口连接",
       "desc_en": "Cross-platform terminal emulator with SSH and serial port support"
@@ -6476,8 +6522,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:48+00:00",
-      "last_success_at": "2026-05-01T09:12:48+00:00",
+      "fetched_at": "2026-05-01T09:43:07+00:00",
+      "last_success_at": "2026-05-01T09:43:07+00:00",
       "editions": [
         "intl"
       ],
@@ -6521,10 +6567,11 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:54+00:00",
-      "last_success_at": "2026-05-01T09:12:54+00:00",
+      "fetched_at": "2026-05-01T09:43:06+00:00",
+      "last_success_at": "2026-05-01T09:43:06+00:00",
       "editions": [
-        "intl"
+        "intl",
+        "cn"
       ],
       "desc_cn": "去中心化文件同步工具，P2P 实时同步",
       "desc_en": "Decentralized file synchronization tool with real-time P2P sync"
@@ -6550,8 +6597,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:56+00:00",
-      "last_success_at": "2026-05-01T09:12:56+00:00",
+      "fetched_at": "2026-05-01T09:43:03+00:00",
+      "last_success_at": "2026-05-01T09:43:03+00:00",
       "editions": [
         "intl"
       ],
@@ -6579,8 +6626,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:48+00:00",
-      "last_success_at": "2026-05-01T09:12:48+00:00",
+      "fetched_at": "2026-05-01T09:43:07+00:00",
+      "last_success_at": "2026-05-01T09:43:07+00:00",
       "editions": [
         "intl"
       ],
@@ -6616,8 +6663,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:53+00:00",
-      "last_success_at": "2026-05-01T09:12:53+00:00",
+      "fetched_at": "2026-05-01T09:43:05+00:00",
+      "last_success_at": "2026-05-01T09:43:05+00:00",
       "editions": [
         "intl"
       ],
@@ -6645,8 +6692,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:56+00:00",
-      "last_success_at": "2026-05-01T09:12:56+00:00",
+      "fetched_at": "2026-05-01T09:43:03+00:00",
+      "last_success_at": "2026-05-01T09:43:03+00:00",
       "editions": [
         "intl"
       ],
@@ -6690,8 +6737,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:48+00:00",
-      "last_success_at": "2026-05-01T09:12:48+00:00",
+      "fetched_at": "2026-05-01T09:43:07+00:00",
+      "last_success_at": "2026-05-01T09:43:07+00:00",
       "editions": [
         "intl"
       ],
@@ -6719,12 +6766,12 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:54+00:00",
+      "fetched_at": "2026-05-01T09:43:06+00:00",
       "warnings": [
         "mac-arm64: 没有匹配 asset pattern 'kopia-*-macos-arm64'",
         "linux-x64: 没有匹配 asset pattern 'kopia-*-linux-x64'"
       ],
-      "last_success_at": "2026-05-01T09:12:54+00:00",
+      "last_success_at": "2026-05-01T09:43:06+00:00",
       "editions": [
         "intl"
       ],
@@ -6768,8 +6815,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:56+00:00",
-      "last_success_at": "2026-05-01T09:12:56+00:00",
+      "fetched_at": "2026-05-01T09:43:04+00:00",
+      "last_success_at": "2026-05-01T09:43:04+00:00",
       "editions": [
         "intl"
       ],
@@ -6797,8 +6844,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:48+00:00",
-      "last_success_at": "2026-05-01T09:12:48+00:00",
+      "fetched_at": "2026-05-01T09:43:07+00:00",
+      "last_success_at": "2026-05-01T09:43:07+00:00",
       "editions": [
         "intl"
       ],
@@ -6842,8 +6889,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:54+00:00",
-      "last_success_at": "2026-05-01T09:12:54+00:00",
+      "fetched_at": "2026-05-01T09:43:06+00:00",
+      "last_success_at": "2026-05-01T09:43:06+00:00",
       "editions": [
         "intl"
       ],
@@ -6879,8 +6926,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:56+00:00",
-      "last_success_at": "2026-05-01T09:12:56+00:00",
+      "fetched_at": "2026-05-01T09:43:03+00:00",
+      "last_success_at": "2026-05-01T09:43:03+00:00",
       "editions": [
         "intl"
       ],
@@ -6924,8 +6971,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:48+00:00",
-      "last_success_at": "2026-05-01T09:12:48+00:00",
+      "fetched_at": "2026-05-01T09:43:07+00:00",
+      "last_success_at": "2026-05-01T09:43:07+00:00",
       "editions": [
         "intl"
       ],
@@ -6969,8 +7016,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:54+00:00",
-      "last_success_at": "2026-05-01T09:12:54+00:00",
+      "fetched_at": "2026-05-01T09:43:06+00:00",
+      "last_success_at": "2026-05-01T09:43:06+00:00",
       "editions": [
         "intl"
       ],
@@ -7014,8 +7061,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:56+00:00",
-      "last_success_at": "2026-05-01T09:12:56+00:00",
+      "fetched_at": "2026-05-01T09:43:04+00:00",
+      "last_success_at": "2026-05-01T09:43:04+00:00",
       "editions": [
         "intl"
       ],
@@ -7051,11 +7098,11 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:48+00:00",
+      "fetched_at": "2026-05-01T09:43:07+00:00",
       "warnings": [
         "win-x64: 没有匹配 asset pattern 'slides_*_windows_amd64.tar.gz'"
       ],
-      "last_success_at": "2026-05-01T09:12:48+00:00",
+      "last_success_at": "2026-05-01T09:43:07+00:00",
       "editions": [
         "intl"
       ],
@@ -7099,8 +7146,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:54+00:00",
-      "last_success_at": "2026-05-01T09:12:54+00:00",
+      "fetched_at": "2026-05-01T09:43:06+00:00",
+      "last_success_at": "2026-05-01T09:43:06+00:00",
       "editions": [
         "intl"
       ],
@@ -7144,8 +7191,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:56+00:00",
-      "last_success_at": "2026-05-01T09:12:56+00:00",
+      "fetched_at": "2026-05-01T09:43:04+00:00",
+      "last_success_at": "2026-05-01T09:43:04+00:00",
       "editions": [
         "intl"
       ],
@@ -7189,8 +7236,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:48+00:00",
-      "last_success_at": "2026-05-01T09:12:48+00:00",
+      "fetched_at": "2026-05-01T09:43:08+00:00",
+      "last_success_at": "2026-05-01T09:43:08+00:00",
       "editions": [
         "intl"
       ],
@@ -7234,8 +7281,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:54+00:00",
-      "last_success_at": "2026-05-01T09:12:54+00:00",
+      "fetched_at": "2026-05-01T09:43:06+00:00",
+      "last_success_at": "2026-05-01T09:43:06+00:00",
       "editions": [
         "intl"
       ],
@@ -7279,8 +7326,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:56+00:00",
-      "last_success_at": "2026-05-01T09:12:56+00:00",
+      "fetched_at": "2026-05-01T09:43:04+00:00",
+      "last_success_at": "2026-05-01T09:43:04+00:00",
       "editions": [
         "intl"
       ],
@@ -7316,13 +7363,14 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:48+00:00",
+      "fetched_at": "2026-05-01T09:43:08+00:00",
       "warnings": [
         "linux-x64: 没有匹配 asset pattern 'clash-verge_*_amd64.deb'"
       ],
-      "last_success_at": "2026-05-01T09:12:48+00:00",
+      "last_success_at": "2026-05-01T09:43:08+00:00",
       "editions": [
-        "intl"
+        "intl",
+        "cn"
       ],
       "desc_cn": "Clash Verge 的增强版，基于 Tauri 的跨平台代理客户端",
       "desc_en": "Enhanced Clash Verge, cross-platform proxy client built with Tauri"
@@ -7348,8 +7396,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:53+00:00",
-      "last_success_at": "2026-05-01T09:12:53+00:00",
+      "fetched_at": "2026-05-01T09:43:05+00:00",
+      "last_success_at": "2026-05-01T09:43:05+00:00",
       "editions": [
         "intl"
       ],
@@ -7377,8 +7425,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:56+00:00",
-      "last_success_at": "2026-05-01T09:12:56+00:00",
+      "fetched_at": "2026-05-01T09:43:03+00:00",
+      "last_success_at": "2026-05-01T09:43:03+00:00",
       "editions": [
         "intl"
       ],
@@ -7414,8 +7462,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:48+00:00",
-      "last_success_at": "2026-05-01T09:12:48+00:00",
+      "fetched_at": "2026-05-01T09:43:07+00:00",
+      "last_success_at": "2026-05-01T09:43:07+00:00",
       "editions": [
         "intl"
       ],
@@ -7443,11 +7491,11 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:54+00:00",
+      "fetched_at": "2026-05-01T09:43:06+00:00",
       "warnings": [
         "mac-arm64: 没有匹配 asset pattern 'Outline-Client.dmg'"
       ],
-      "last_success_at": "2026-05-01T09:12:54+00:00",
+      "last_success_at": "2026-05-01T09:43:06+00:00",
       "editions": [
         "intl"
       ],
@@ -7483,11 +7531,11 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:56+00:00",
+      "fetched_at": "2026-05-01T09:43:04+00:00",
       "warnings": [
         "win-x64: 没有匹配 asset pattern 'netbird_*_windows_amd64.zip'"
       ],
-      "last_success_at": "2026-05-01T09:12:56+00:00",
+      "last_success_at": "2026-05-01T09:43:04+00:00",
       "editions": [
         "intl"
       ],
@@ -7523,8 +7571,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:48+00:00",
-      "last_success_at": "2026-05-01T09:12:48+00:00",
+      "fetched_at": "2026-05-01T09:43:07+00:00",
+      "last_success_at": "2026-05-01T09:43:07+00:00",
       "editions": [
         "intl"
       ],
@@ -7560,8 +7608,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:53+00:00",
-      "last_success_at": "2026-05-01T09:12:53+00:00",
+      "fetched_at": "2026-05-01T09:43:05+00:00",
+      "last_success_at": "2026-05-01T09:43:05+00:00",
       "editions": [
         "intl"
       ],
@@ -7597,11 +7645,11 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:56+00:00",
+      "fetched_at": "2026-05-01T09:43:04+00:00",
       "warnings": [
         "mac-arm64: 没有匹配 asset pattern 'AdGuardHome_darwin_arm64.tar.gz'"
       ],
-      "last_success_at": "2026-05-01T09:12:56+00:00",
+      "last_success_at": "2026-05-01T09:43:04+00:00",
       "editions": [
         "intl"
       ],
@@ -7629,8 +7677,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:48+00:00",
-      "last_success_at": "2026-05-01T09:12:48+00:00",
+      "fetched_at": "2026-05-01T09:43:07+00:00",
+      "last_success_at": "2026-05-01T09:43:07+00:00",
       "editions": [
         "intl"
       ],
@@ -7658,8 +7706,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:54+00:00",
-      "last_success_at": "2026-05-01T09:12:54+00:00",
+      "fetched_at": "2026-05-01T09:43:06+00:00",
+      "last_success_at": "2026-05-01T09:43:06+00:00",
       "editions": [
         "intl"
       ],
@@ -7687,8 +7735,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:56+00:00",
-      "last_success_at": "2026-05-01T09:12:56+00:00",
+      "fetched_at": "2026-05-01T09:43:04+00:00",
+      "last_success_at": "2026-05-01T09:43:04+00:00",
       "editions": [
         "intl"
       ],
@@ -7716,8 +7764,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:48+00:00",
-      "last_success_at": "2026-05-01T09:12:48+00:00",
+      "fetched_at": "2026-05-01T09:43:07+00:00",
+      "last_success_at": "2026-05-01T09:43:07+00:00",
       "editions": [
         "intl"
       ],
@@ -7745,8 +7793,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:54+00:00",
-      "last_success_at": "2026-05-01T09:12:54+00:00",
+      "fetched_at": "2026-05-01T09:43:05+00:00",
+      "last_success_at": "2026-05-01T09:43:05+00:00",
       "editions": [
         "intl"
       ],
@@ -7782,11 +7830,11 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:56+00:00",
+      "fetched_at": "2026-05-01T09:43:04+00:00",
       "warnings": [
         "mac-arm64: 没有匹配 asset pattern 'speedtest-go_*_darwin_arm64.zip'"
       ],
-      "last_success_at": "2026-05-01T09:12:56+00:00",
+      "last_success_at": "2026-05-01T09:43:04+00:00",
       "editions": [
         "intl"
       ],
@@ -7814,12 +7862,12 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:48+00:00",
+      "fetched_at": "2026-05-01T09:43:08+00:00",
       "warnings": [
         "win-x64: 没有匹配 asset pattern 'PrismLauncher-*-Windows-MSVC-Setup.exe'",
         "mac-arm64: 没有匹配 asset pattern 'PrismLauncher-*-macOS-arm64.dmg'"
       ],
-      "last_success_at": "2026-05-01T09:12:48+00:00",
+      "last_success_at": "2026-05-01T09:43:08+00:00",
       "editions": [
         "intl"
       ],
@@ -7847,8 +7895,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:55+00:00",
-      "last_success_at": "2026-05-01T09:12:55+00:00",
+      "fetched_at": "2026-05-01T09:43:06+00:00",
+      "last_success_at": "2026-05-01T09:43:06+00:00",
       "editions": [
         "intl"
       ],
@@ -7876,8 +7924,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:56+00:00",
-      "last_success_at": "2026-05-01T09:12:56+00:00",
+      "fetched_at": "2026-05-01T09:43:04+00:00",
+      "last_success_at": "2026-05-01T09:43:04+00:00",
       "editions": [
         "intl"
       ],
@@ -7905,8 +7953,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:48+00:00",
-      "last_success_at": "2026-05-01T09:12:48+00:00",
+      "fetched_at": "2026-05-01T09:43:07+00:00",
+      "last_success_at": "2026-05-01T09:43:07+00:00",
       "editions": [
         "intl"
       ],
@@ -7934,8 +7982,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:54+00:00",
-      "last_success_at": "2026-05-01T09:12:54+00:00",
+      "fetched_at": "2026-05-01T09:43:06+00:00",
+      "last_success_at": "2026-05-01T09:43:06+00:00",
       "editions": [
         "intl"
       ],
@@ -7963,8 +8011,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:56+00:00",
-      "last_success_at": "2026-05-01T09:12:56+00:00",
+      "fetched_at": "2026-05-01T09:43:04+00:00",
+      "last_success_at": "2026-05-01T09:43:04+00:00",
       "editions": [
         "intl"
       ],
@@ -8008,8 +8056,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:48+00:00",
-      "last_success_at": "2026-05-01T09:12:48+00:00",
+      "fetched_at": "2026-05-01T09:43:07+00:00",
+      "last_success_at": "2026-05-01T09:43:07+00:00",
       "editions": [
         "intl"
       ],
@@ -8053,8 +8101,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:54+00:00",
-      "last_success_at": "2026-05-01T09:12:54+00:00",
+      "fetched_at": "2026-05-01T09:43:06+00:00",
+      "last_success_at": "2026-05-01T09:43:06+00:00",
       "editions": [
         "intl"
       ],
@@ -8082,12 +8130,12 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:56+00:00",
+      "fetched_at": "2026-05-01T09:43:04+00:00",
       "warnings": [
         "win-x64: 没有匹配 asset pattern 'xemu-win-*-zip.zip'",
         "mac-arm64: 没有匹配 asset pattern 'xemu-macos-*-arm64.tar.gz'"
       ],
-      "last_success_at": "2026-05-01T09:12:56+00:00",
+      "last_success_at": "2026-05-01T09:43:04+00:00",
       "editions": [
         "intl"
       ],
@@ -8115,11 +8163,11 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:48+00:00",
+      "fetched_at": "2026-05-01T09:43:08+00:00",
       "warnings": [
         "mac-arm64: 没有匹配 asset pattern 'mGBA-*-osx-arm64.tar.xz'"
       ],
-      "last_success_at": "2026-05-01T09:12:48+00:00",
+      "last_success_at": "2026-05-01T09:43:08+00:00",
       "editions": [
         "intl"
       ],
@@ -8155,8 +8203,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:54+00:00",
-      "last_success_at": "2026-05-01T09:12:54+00:00",
+      "fetched_at": "2026-05-01T09:43:06+00:00",
+      "last_success_at": "2026-05-01T09:43:06+00:00",
       "editions": [
         "intl"
       ],
@@ -8192,11 +8240,11 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:56+00:00",
+      "fetched_at": "2026-05-01T09:43:04+00:00",
       "warnings": [
         "linux-x64: 没有匹配 asset pattern 'OpenMW-*-Linux-generic64.tar.gz'"
       ],
-      "last_success_at": "2026-05-01T09:12:56+00:00",
+      "last_success_at": "2026-05-01T09:43:04+00:00",
       "editions": [
         "intl"
       ],
@@ -8240,8 +8288,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:48+00:00",
-      "last_success_at": "2026-05-01T09:12:48+00:00",
+      "fetched_at": "2026-05-01T09:43:07+00:00",
+      "last_success_at": "2026-05-01T09:43:07+00:00",
       "editions": [
         "intl"
       ],
@@ -8277,8 +8325,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:54+00:00",
-      "last_success_at": "2026-05-01T09:12:54+00:00",
+      "fetched_at": "2026-05-01T09:43:06+00:00",
+      "last_success_at": "2026-05-01T09:43:06+00:00",
       "editions": [
         "intl"
       ],
@@ -8322,8 +8370,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:56+00:00",
-      "last_success_at": "2026-05-01T09:12:56+00:00",
+      "fetched_at": "2026-05-01T09:43:04+00:00",
+      "last_success_at": "2026-05-01T09:43:04+00:00",
       "editions": [
         "intl"
       ],
@@ -8351,8 +8399,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:48+00:00",
-      "last_success_at": "2026-05-01T09:12:48+00:00",
+      "fetched_at": "2026-05-01T09:43:07+00:00",
+      "last_success_at": "2026-05-01T09:43:07+00:00",
       "editions": [
         "intl"
       ],
@@ -8396,8 +8444,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:54+00:00",
-      "last_success_at": "2026-05-01T09:12:54+00:00",
+      "fetched_at": "2026-05-01T09:43:06+00:00",
+      "last_success_at": "2026-05-01T09:43:06+00:00",
       "editions": [
         "intl"
       ],
@@ -8425,8 +8473,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:56+00:00",
-      "last_success_at": "2026-05-01T09:12:56+00:00",
+      "fetched_at": "2026-05-01T09:43:04+00:00",
+      "last_success_at": "2026-05-01T09:43:04+00:00",
       "editions": [
         "intl"
       ],
@@ -8462,8 +8510,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:48+00:00",
-      "last_success_at": "2026-05-01T09:12:48+00:00",
+      "fetched_at": "2026-05-01T09:43:07+00:00",
+      "last_success_at": "2026-05-01T09:43:07+00:00",
       "editions": [
         "intl"
       ],
@@ -8491,8 +8539,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:54+00:00",
-      "last_success_at": "2026-05-01T09:12:54+00:00",
+      "fetched_at": "2026-05-01T09:43:06+00:00",
+      "last_success_at": "2026-05-01T09:43:06+00:00",
       "editions": [
         "intl"
       ],
@@ -8520,8 +8568,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:56+00:00",
-      "last_success_at": "2026-05-01T09:12:56+00:00",
+      "fetched_at": "2026-05-01T09:43:04+00:00",
+      "last_success_at": "2026-05-01T09:43:04+00:00",
       "editions": [
         "intl"
       ],
@@ -8549,8 +8597,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:48+00:00",
-      "last_success_at": "2026-05-01T09:12:48+00:00",
+      "fetched_at": "2026-05-01T09:43:07+00:00",
+      "last_success_at": "2026-05-01T09:43:07+00:00",
       "editions": [
         "intl"
       ],
@@ -8594,8 +8642,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:54+00:00",
-      "last_success_at": "2026-05-01T09:12:54+00:00",
+      "fetched_at": "2026-05-01T09:43:06+00:00",
+      "last_success_at": "2026-05-01T09:43:06+00:00",
       "editions": [
         "intl"
       ],
@@ -8623,8 +8671,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:56+00:00",
-      "last_success_at": "2026-05-01T09:12:56+00:00",
+      "fetched_at": "2026-05-01T09:43:04+00:00",
+      "last_success_at": "2026-05-01T09:43:04+00:00",
       "editions": [
         "intl"
       ],
@@ -8668,8 +8716,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:48+00:00",
-      "last_success_at": "2026-05-01T09:12:48+00:00",
+      "fetched_at": "2026-05-01T09:43:07+00:00",
+      "last_success_at": "2026-05-01T09:43:07+00:00",
       "editions": [
         "intl"
       ],
@@ -8713,8 +8761,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:54+00:00",
-      "last_success_at": "2026-05-01T09:12:54+00:00",
+      "fetched_at": "2026-05-01T09:43:06+00:00",
+      "last_success_at": "2026-05-01T09:43:06+00:00",
       "editions": [
         "intl"
       ],
@@ -8742,10 +8790,11 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:57+00:00",
-      "last_success_at": "2026-05-01T09:12:57+00:00",
+      "fetched_at": "2026-05-01T09:43:04+00:00",
+      "last_success_at": "2026-05-01T09:43:04+00:00",
       "editions": [
-        "intl"
+        "intl",
+        "cn"
       ],
       "desc_cn": "程序员的 3D CAD 工具，用代码描述 3D 模型",
       "desc_en": "3D CAD tool for programmers, describe 3D models with code"
@@ -8779,8 +8828,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:49+00:00",
-      "last_success_at": "2026-05-01T09:12:49+00:00",
+      "fetched_at": "2026-05-01T09:43:08+00:00",
+      "last_success_at": "2026-05-01T09:43:08+00:00",
       "editions": [
         "intl"
       ],
@@ -8808,8 +8857,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:54+00:00",
-      "last_success_at": "2026-05-01T09:12:54+00:00",
+      "fetched_at": "2026-05-01T09:43:06+00:00",
+      "last_success_at": "2026-05-01T09:43:06+00:00",
       "editions": [
         "intl"
       ],
@@ -8837,8 +8886,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:56+00:00",
-      "last_success_at": "2026-05-01T09:12:56+00:00",
+      "fetched_at": "2026-05-01T09:43:04+00:00",
+      "last_success_at": "2026-05-01T09:43:04+00:00",
       "editions": [
         "intl"
       ],
@@ -8874,8 +8923,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:48+00:00",
-      "last_success_at": "2026-05-01T09:12:48+00:00",
+      "fetched_at": "2026-05-01T09:43:07+00:00",
+      "last_success_at": "2026-05-01T09:43:07+00:00",
       "editions": [
         "intl"
       ],
@@ -8903,13 +8952,14 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:55+00:00",
+      "fetched_at": "2026-05-01T09:43:06+00:00",
       "warnings": [
         "mac-arm64: 没有匹配 asset pattern 'lmms-*-macos-arm64.dmg'"
       ],
-      "last_success_at": "2026-05-01T09:12:55+00:00",
+      "last_success_at": "2026-05-01T09:43:06+00:00",
       "editions": [
-        "intl"
+        "intl",
+        "cn"
       ],
       "desc_cn": "开源音乐制作工具，电子音乐创作的免费方案",
       "desc_en": "Open-source music production tool for free electronic music creation"
@@ -8935,10 +8985,11 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:57+00:00",
-      "last_success_at": "2026-05-01T09:12:57+00:00",
+      "fetched_at": "2026-05-01T09:43:04+00:00",
+      "last_success_at": "2026-05-01T09:43:04+00:00",
       "editions": [
-        "intl"
+        "intl",
+        "cn"
       ],
       "desc_cn": "开源乐谱编辑器，创建和播放乐谱",
       "desc_en": "Open-source music notation editor for creating and playing sheet music"
@@ -8964,8 +9015,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:49+00:00",
-      "last_success_at": "2026-05-01T09:12:49+00:00",
+      "fetched_at": "2026-05-01T09:43:08+00:00",
+      "last_success_at": "2026-05-01T09:43:08+00:00",
       "editions": [
         "intl"
       ],
@@ -8993,11 +9044,11 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:54+00:00",
+      "fetched_at": "2026-05-01T09:43:06+00:00",
       "warnings": [
         "mac-arm64: 没有匹配 asset pattern 'Natron-*-macOS-arm64.dmg'"
       ],
-      "last_success_at": "2026-05-01T09:12:54+00:00",
+      "last_success_at": "2026-05-01T09:43:06+00:00",
       "editions": [
         "intl"
       ],
@@ -9033,8 +9084,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:57+00:00",
-      "last_success_at": "2026-05-01T09:12:57+00:00",
+      "fetched_at": "2026-05-01T09:43:04+00:00",
+      "last_success_at": "2026-05-01T09:43:04+00:00",
       "editions": [
         "intl"
       ],
@@ -9062,8 +9113,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:48+00:00",
-      "last_success_at": "2026-05-01T09:12:48+00:00",
+      "fetched_at": "2026-05-01T09:43:07+00:00",
+      "last_success_at": "2026-05-01T09:43:07+00:00",
       "editions": [
         "intl"
       ],
@@ -9107,10 +9158,11 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:55+00:00",
-      "last_success_at": "2026-05-01T09:12:55+00:00",
+      "fetched_at": "2026-05-01T09:43:06+00:00",
+      "last_success_at": "2026-05-01T09:43:06+00:00",
       "editions": [
-        "intl"
+        "intl",
+        "cn"
       ],
       "desc_cn": "开源的 Notion 替代品，笔记和项目管理",
       "desc_en": "Open-source Notifer alternative for notes and project management"
@@ -9136,12 +9188,12 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:57+00:00",
+      "fetched_at": "2026-05-01T09:43:04+00:00",
       "warnings": [
         "win-x64: 没有匹配 asset pattern 'Anytype-*-x64.exe'",
         "linux-x64: 没有匹配 asset pattern 'Anytype-*-amd64.deb'"
       ],
-      "last_success_at": "2026-05-01T09:12:57+00:00",
+      "last_success_at": "2026-05-01T09:43:04+00:00",
       "editions": [
         "intl"
       ],
@@ -9185,8 +9237,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:48+00:00",
-      "last_success_at": "2026-05-01T09:12:48+00:00",
+      "fetched_at": "2026-05-01T09:43:07+00:00",
+      "last_success_at": "2026-05-01T09:43:07+00:00",
       "editions": [
         "intl"
       ],
@@ -9230,8 +9282,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:54+00:00",
-      "last_success_at": "2026-05-01T09:12:54+00:00",
+      "fetched_at": "2026-05-01T09:43:06+00:00",
+      "last_success_at": "2026-05-01T09:43:06+00:00",
       "editions": [
         "intl"
       ],
@@ -9259,14 +9311,15 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:57+00:00",
+      "fetched_at": "2026-05-01T09:43:04+00:00",
       "warnings": [
         "mac-arm64: 没有匹配 asset pattern 'draw.io-*-arm64.dmg'",
         "linux-x64: 没有匹配 asset pattern 'draw.io-*-x86_64.rpm'"
       ],
-      "last_success_at": "2026-05-01T09:12:57+00:00",
+      "last_success_at": "2026-05-01T09:43:04+00:00",
       "editions": [
-        "intl"
+        "intl",
+        "cn"
       ],
       "desc_cn": "免费的在线绘图工具，支持流程图/UML/架构图",
       "desc_en": "Free online diagramming tool for flowcharts, UML, and architecture diagrams"
@@ -9292,8 +9345,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:48+00:00",
-      "last_success_at": "2026-05-01T09:12:48+00:00",
+      "fetched_at": "2026-05-01T09:43:07+00:00",
+      "last_success_at": "2026-05-01T09:43:07+00:00",
       "editions": [
         "intl"
       ],
@@ -9337,8 +9390,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:54+00:00",
-      "last_success_at": "2026-05-01T09:12:54+00:00",
+      "fetched_at": "2026-05-01T09:43:06+00:00",
+      "last_success_at": "2026-05-01T09:43:06+00:00",
       "editions": [
         "intl"
       ],
@@ -9374,8 +9427,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:56+00:00",
-      "last_success_at": "2026-05-01T09:12:56+00:00",
+      "fetched_at": "2026-05-01T09:43:04+00:00",
+      "last_success_at": "2026-05-01T09:43:04+00:00",
       "editions": [
         "intl"
       ],
@@ -9403,12 +9456,12 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:49+00:00",
+      "fetched_at": "2026-05-01T09:43:08+00:00",
       "warnings": [
         "mac-arm64: 没有匹配 asset pattern 'sioyek-apple-silicon.dmg'",
         "linux-x64: 没有匹配 asset pattern 'sioyek-release-linux-portable.tar.gz'"
       ],
-      "last_success_at": "2026-05-01T09:12:49+00:00",
+      "last_success_at": "2026-05-01T09:43:08+00:00",
       "editions": [
         "intl"
       ],
@@ -9444,11 +9497,11 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:55+00:00",
+      "fetched_at": "2026-05-01T09:43:07+00:00",
       "warnings": [
         "win-x64: 没有匹配 asset pattern 'Pomatez-*-x64.exe'"
       ],
-      "last_success_at": "2026-05-01T09:12:55+00:00",
+      "last_success_at": "2026-05-01T09:43:07+00:00",
       "editions": [
         "intl"
       ],
@@ -9476,8 +9529,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:56+00:00",
-      "last_success_at": "2026-05-01T09:12:56+00:00",
+      "fetched_at": "2026-05-01T09:43:04+00:00",
+      "last_success_at": "2026-05-01T09:43:04+00:00",
       "editions": [
         "intl"
       ],
@@ -9505,8 +9558,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:48+00:00",
-      "last_success_at": "2026-05-01T09:12:48+00:00",
+      "fetched_at": "2026-05-01T09:43:07+00:00",
+      "last_success_at": "2026-05-01T09:43:07+00:00",
       "editions": [
         "intl"
       ],
@@ -9550,8 +9603,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:54+00:00",
-      "last_success_at": "2026-05-01T09:12:54+00:00",
+      "fetched_at": "2026-05-01T09:43:06+00:00",
+      "last_success_at": "2026-05-01T09:43:06+00:00",
       "editions": [
         "intl"
       ],
@@ -9595,8 +9648,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:56+00:00",
-      "last_success_at": "2026-05-01T09:12:56+00:00",
+      "fetched_at": "2026-05-01T09:43:04+00:00",
+      "last_success_at": "2026-05-01T09:43:04+00:00",
       "editions": [
         "intl"
       ],
@@ -9624,8 +9677,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:48+00:00",
-      "last_success_at": "2026-05-01T09:12:48+00:00",
+      "fetched_at": "2026-05-01T09:43:07+00:00",
+      "last_success_at": "2026-05-01T09:43:07+00:00",
       "editions": [
         "intl"
       ],
@@ -9661,8 +9714,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:54+00:00",
-      "last_success_at": "2026-05-01T09:12:54+00:00",
+      "fetched_at": "2026-05-01T09:43:06+00:00",
+      "last_success_at": "2026-05-01T09:43:06+00:00",
       "editions": [
         "intl"
       ],
@@ -9698,11 +9751,11 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:57+00:00",
+      "fetched_at": "2026-05-01T09:43:04+00:00",
       "warnings": [
         "win-x64: 没有匹配 asset pattern 'local-ai-*-windows-amd64.exe'"
       ],
-      "last_success_at": "2026-05-01T09:12:57+00:00",
+      "last_success_at": "2026-05-01T09:43:04+00:00",
       "editions": [
         "intl"
       ],
@@ -9730,8 +9783,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:49+00:00",
-      "last_success_at": "2026-05-01T09:12:49+00:00",
+      "fetched_at": "2026-05-01T09:43:08+00:00",
+      "last_success_at": "2026-05-01T09:43:08+00:00",
       "editions": [
         "intl"
       ],
@@ -9775,8 +9828,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:54+00:00",
-      "last_success_at": "2026-05-01T09:12:54+00:00",
+      "fetched_at": "2026-05-01T09:43:06+00:00",
+      "last_success_at": "2026-05-01T09:43:06+00:00",
       "editions": [
         "intl"
       ],
@@ -9804,8 +9857,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:56+00:00",
-      "last_success_at": "2026-05-01T09:12:56+00:00",
+      "fetched_at": "2026-05-01T09:43:04+00:00",
+      "last_success_at": "2026-05-01T09:43:04+00:00",
       "editions": [
         "intl"
       ],
@@ -9833,8 +9886,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:48+00:00",
-      "last_success_at": "2026-05-01T09:12:48+00:00",
+      "fetched_at": "2026-05-01T09:43:07+00:00",
+      "last_success_at": "2026-05-01T09:43:07+00:00",
       "editions": [
         "intl"
       ],
@@ -9862,12 +9915,12 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:55+00:00",
+      "fetched_at": "2026-05-01T09:43:06+00:00",
       "warnings": [
         "mac-arm64: 没有匹配 asset pattern 'Buzz-*-mac-arm64.dmg'",
         "linux-x64: 没有匹配 asset pattern 'Buzz-*-linux-x86_64.AppImage'"
       ],
-      "last_success_at": "2026-05-01T09:12:55+00:00",
+      "last_success_at": "2026-05-01T09:43:06+00:00",
       "editions": [
         "intl"
       ],
@@ -9895,8 +9948,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:56+00:00",
-      "last_success_at": "2026-05-01T09:12:56+00:00",
+      "fetched_at": "2026-05-01T09:43:04+00:00",
+      "last_success_at": "2026-05-01T09:43:04+00:00",
       "editions": [
         "intl"
       ],
@@ -9940,8 +9993,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:48+00:00",
-      "last_success_at": "2026-05-01T09:12:48+00:00",
+      "fetched_at": "2026-05-01T09:43:07+00:00",
+      "last_success_at": "2026-05-01T09:43:07+00:00",
       "editions": [
         "intl"
       ],
@@ -9985,8 +10038,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:54+00:00",
-      "last_success_at": "2026-05-01T09:12:54+00:00",
+      "fetched_at": "2026-05-01T09:43:06+00:00",
+      "last_success_at": "2026-05-01T09:43:06+00:00",
       "editions": [
         "intl"
       ],
@@ -10030,8 +10083,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:56+00:00",
-      "last_success_at": "2026-05-01T09:12:56+00:00",
+      "fetched_at": "2026-05-01T09:43:04+00:00",
+      "last_success_at": "2026-05-01T09:43:04+00:00",
       "editions": [
         "intl"
       ],
@@ -10075,8 +10128,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:49+00:00",
-      "last_success_at": "2026-05-01T09:12:49+00:00",
+      "fetched_at": "2026-05-01T09:43:08+00:00",
+      "last_success_at": "2026-05-01T09:43:08+00:00",
       "editions": [
         "intl"
       ],
@@ -10120,8 +10173,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:54+00:00",
-      "last_success_at": "2026-05-01T09:12:54+00:00",
+      "fetched_at": "2026-05-01T09:43:06+00:00",
+      "last_success_at": "2026-05-01T09:43:06+00:00",
       "editions": [
         "intl"
       ],
@@ -10157,8 +10210,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:56+00:00",
-      "last_success_at": "2026-05-01T09:12:56+00:00",
+      "fetched_at": "2026-05-01T09:43:04+00:00",
+      "last_success_at": "2026-05-01T09:43:04+00:00",
       "editions": [
         "intl"
       ],
@@ -10186,8 +10239,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:48+00:00",
-      "last_success_at": "2026-05-01T09:12:48+00:00",
+      "fetched_at": "2026-05-01T09:43:08+00:00",
+      "last_success_at": "2026-05-01T09:43:08+00:00",
       "editions": [
         "intl"
       ],
@@ -10231,8 +10284,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:55+00:00",
-      "last_success_at": "2026-05-01T09:12:55+00:00",
+      "fetched_at": "2026-05-01T09:43:06+00:00",
+      "last_success_at": "2026-05-01T09:43:06+00:00",
       "editions": [
         "intl"
       ],
@@ -10276,8 +10329,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:57+00:00",
-      "last_success_at": "2026-05-01T09:12:57+00:00",
+      "fetched_at": "2026-05-01T09:43:04+00:00",
+      "last_success_at": "2026-05-01T09:43:04+00:00",
       "editions": [
         "intl"
       ],
@@ -10321,8 +10374,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:49+00:00",
-      "last_success_at": "2026-05-01T09:12:49+00:00",
+      "fetched_at": "2026-05-01T09:43:08+00:00",
+      "last_success_at": "2026-05-01T09:43:08+00:00",
       "editions": [
         "intl"
       ],
@@ -10366,8 +10419,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:54+00:00",
-      "last_success_at": "2026-05-01T09:12:54+00:00",
+      "fetched_at": "2026-05-01T09:43:06+00:00",
+      "last_success_at": "2026-05-01T09:43:06+00:00",
       "editions": [
         "intl"
       ],
@@ -10411,8 +10464,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:56+00:00",
-      "last_success_at": "2026-05-01T09:12:56+00:00",
+      "fetched_at": "2026-05-01T09:43:04+00:00",
+      "last_success_at": "2026-05-01T09:43:04+00:00",
       "editions": [
         "intl"
       ],
@@ -10456,8 +10509,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:48+00:00",
-      "last_success_at": "2026-05-01T09:12:48+00:00",
+      "fetched_at": "2026-05-01T09:43:08+00:00",
+      "last_success_at": "2026-05-01T09:43:08+00:00",
       "editions": [
         "intl"
       ],
@@ -10501,8 +10554,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:54+00:00",
-      "last_success_at": "2026-05-01T09:12:54+00:00",
+      "fetched_at": "2026-05-01T09:43:06+00:00",
+      "last_success_at": "2026-05-01T09:43:06+00:00",
       "editions": [
         "intl"
       ],
@@ -10546,8 +10599,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:56+00:00",
-      "last_success_at": "2026-05-01T09:12:56+00:00",
+      "fetched_at": "2026-05-01T09:43:04+00:00",
+      "last_success_at": "2026-05-01T09:43:04+00:00",
       "editions": [
         "intl"
       ],
@@ -10591,8 +10644,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:48+00:00",
-      "last_success_at": "2026-05-01T09:12:48+00:00",
+      "fetched_at": "2026-05-01T09:43:08+00:00",
+      "last_success_at": "2026-05-01T09:43:08+00:00",
       "editions": [
         "intl"
       ],
@@ -10620,8 +10673,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:55+00:00",
-      "last_success_at": "2026-05-01T09:12:55+00:00",
+      "fetched_at": "2026-05-01T09:43:07+00:00",
+      "last_success_at": "2026-05-01T09:43:07+00:00",
       "editions": [
         "intl"
       ],
@@ -10665,8 +10718,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:57+00:00",
-      "last_success_at": "2026-05-01T09:12:57+00:00",
+      "fetched_at": "2026-05-01T09:43:04+00:00",
+      "last_success_at": "2026-05-01T09:43:04+00:00",
       "editions": [
         "intl"
       ],
@@ -10710,8 +10763,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:48+00:00",
-      "last_success_at": "2026-05-01T09:12:48+00:00",
+      "fetched_at": "2026-05-01T09:43:08+00:00",
+      "last_success_at": "2026-05-01T09:43:08+00:00",
       "editions": [
         "intl"
       ],
@@ -10755,8 +10808,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:55+00:00",
-      "last_success_at": "2026-05-01T09:12:55+00:00",
+      "fetched_at": "2026-05-01T09:43:07+00:00",
+      "last_success_at": "2026-05-01T09:43:07+00:00",
       "editions": [
         "intl"
       ],
@@ -10800,8 +10853,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:57+00:00",
-      "last_success_at": "2026-05-01T09:12:57+00:00",
+      "fetched_at": "2026-05-01T09:43:04+00:00",
+      "last_success_at": "2026-05-01T09:43:04+00:00",
       "editions": [
         "intl"
       ],
@@ -10845,8 +10898,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:49+00:00",
-      "last_success_at": "2026-05-01T09:12:49+00:00",
+      "fetched_at": "2026-05-01T09:43:08+00:00",
+      "last_success_at": "2026-05-01T09:43:08+00:00",
       "editions": [
         "intl"
       ],
@@ -10874,12 +10927,12 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:55+00:00",
+      "fetched_at": "2026-05-01T09:43:07+00:00",
       "warnings": [
         "win-x64: 没有匹配 asset pattern 'navi-*-x86_64-pc-windows-msvc.zip'",
         "mac-arm64: 没有匹配 asset pattern 'navi-*-aarch64-apple-darwin.tar.gz'"
       ],
-      "last_success_at": "2026-05-01T09:12:55+00:00",
+      "last_success_at": "2026-05-01T09:43:07+00:00",
       "editions": [
         "intl"
       ],
@@ -10923,8 +10976,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:56+00:00",
-      "last_success_at": "2026-05-01T09:12:56+00:00",
+      "fetched_at": "2026-05-01T09:43:04+00:00",
+      "last_success_at": "2026-05-01T09:43:04+00:00",
       "editions": [
         "intl"
       ],
@@ -10968,8 +11021,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:48+00:00",
-      "last_success_at": "2026-05-01T09:12:48+00:00",
+      "fetched_at": "2026-05-01T09:43:08+00:00",
+      "last_success_at": "2026-05-01T09:43:08+00:00",
       "editions": [
         "intl"
       ],
@@ -11013,8 +11066,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:55+00:00",
-      "last_success_at": "2026-05-01T09:12:55+00:00",
+      "fetched_at": "2026-05-01T09:43:06+00:00",
+      "last_success_at": "2026-05-01T09:43:06+00:00",
       "editions": [
         "intl"
       ],
@@ -11042,8 +11095,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:56+00:00",
-      "last_success_at": "2026-05-01T09:12:56+00:00",
+      "fetched_at": "2026-05-01T09:43:04+00:00",
+      "last_success_at": "2026-05-01T09:43:04+00:00",
       "editions": [
         "intl"
       ],
@@ -11079,11 +11132,11 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:49+00:00",
+      "fetched_at": "2026-05-01T09:43:09+00:00",
       "warnings": [
         "win-x64: 没有匹配 asset pattern 'xcp-*-x86_64-pc-windows-msvc.zip'"
       ],
-      "last_success_at": "2026-05-01T09:12:49+00:00",
+      "last_success_at": "2026-05-01T09:43:09+00:00",
       "editions": [
         "intl"
       ],
@@ -11111,8 +11164,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:55+00:00",
-      "last_success_at": "2026-05-01T09:12:55+00:00",
+      "fetched_at": "2026-05-01T09:43:07+00:00",
+      "last_success_at": "2026-05-01T09:43:07+00:00",
       "editions": [
         "intl"
       ],
@@ -11140,8 +11193,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:57+00:00",
-      "last_success_at": "2026-05-01T09:12:57+00:00",
+      "fetched_at": "2026-05-01T09:43:04+00:00",
+      "last_success_at": "2026-05-01T09:43:04+00:00",
       "editions": [
         "intl"
       ],
@@ -11185,8 +11238,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:49+00:00",
-      "last_success_at": "2026-05-01T09:12:49+00:00",
+      "fetched_at": "2026-05-01T09:43:09+00:00",
+      "last_success_at": "2026-05-01T09:43:09+00:00",
       "editions": [
         "intl"
       ],
@@ -11236,7 +11289,9 @@
         "intl"
       ],
       "desc_cn": "命令行颜色工具，生成、转换和操作颜色",
-      "desc_en": "Command-line color tool for generating, converting, and manipulating colors"
+      "desc_en": "Command-line color tool for generating, converting, and manipulating colors",
+      "_stale": true,
+      "_stale_reason": "not included in any sync shard"
     },
     {
       "id": "btop-win",
@@ -11259,8 +11314,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:57+00:00",
-      "last_success_at": "2026-05-01T09:12:57+00:00",
+      "fetched_at": "2026-05-01T09:43:06+00:00",
+      "last_success_at": "2026-05-01T09:43:06+00:00",
       "editions": [
         "intl"
       ],
@@ -11288,8 +11343,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:49+00:00",
-      "last_success_at": "2026-05-01T09:12:49+00:00",
+      "fetched_at": "2026-05-01T09:43:05+00:00",
+      "last_success_at": "2026-05-01T09:43:05+00:00",
       "editions": [
         "intl"
       ],
@@ -11317,8 +11372,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:56+00:00",
-      "last_success_at": "2026-05-01T09:12:56+00:00",
+      "fetched_at": "2026-05-01T09:43:09+00:00",
+      "last_success_at": "2026-05-01T09:43:09+00:00",
       "editions": [
         "intl"
       ],
@@ -11362,8 +11417,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:57+00:00",
-      "last_success_at": "2026-05-01T09:12:57+00:00",
+      "fetched_at": "2026-05-01T09:43:06+00:00",
+      "last_success_at": "2026-05-01T09:43:06+00:00",
       "editions": [
         "intl"
       ],
@@ -11407,8 +11462,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:49+00:00",
-      "last_success_at": "2026-05-01T09:12:49+00:00",
+      "fetched_at": "2026-05-01T09:43:04+00:00",
+      "last_success_at": "2026-05-01T09:43:04+00:00",
       "editions": [
         "intl"
       ],
@@ -11452,8 +11507,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:55+00:00",
-      "last_success_at": "2026-05-01T09:12:55+00:00",
+      "fetched_at": "2026-05-01T09:43:08+00:00",
+      "last_success_at": "2026-05-01T09:43:08+00:00",
       "editions": [
         "intl"
       ],
@@ -11497,8 +11552,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:57+00:00",
-      "last_success_at": "2026-05-01T09:12:57+00:00",
+      "fetched_at": "2026-05-01T09:43:06+00:00",
+      "last_success_at": "2026-05-01T09:43:06+00:00",
       "editions": [
         "intl"
       ],
@@ -11542,8 +11597,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:49+00:00",
-      "last_success_at": "2026-05-01T09:12:49+00:00",
+      "fetched_at": "2026-05-01T09:43:04+00:00",
+      "last_success_at": "2026-05-01T09:43:04+00:00",
       "editions": [
         "intl"
       ],
@@ -11587,8 +11642,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:55+00:00",
-      "last_success_at": "2026-05-01T09:12:55+00:00",
+      "fetched_at": "2026-05-01T09:43:08+00:00",
+      "last_success_at": "2026-05-01T09:43:08+00:00",
       "editions": [
         "intl"
       ],
@@ -11624,8 +11679,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:57+00:00",
-      "last_success_at": "2026-05-01T09:12:57+00:00",
+      "fetched_at": "2026-05-01T09:43:06+00:00",
+      "last_success_at": "2026-05-01T09:43:06+00:00",
       "editions": [
         "intl"
       ],
@@ -11661,8 +11716,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:49+00:00",
-      "last_success_at": "2026-05-01T09:12:49+00:00",
+      "fetched_at": "2026-05-01T09:43:04+00:00",
+      "last_success_at": "2026-05-01T09:43:04+00:00",
       "editions": [
         "intl"
       ],
@@ -11706,8 +11761,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:55+00:00",
-      "last_success_at": "2026-05-01T09:12:55+00:00",
+      "fetched_at": "2026-05-01T09:43:08+00:00",
+      "last_success_at": "2026-05-01T09:43:08+00:00",
       "editions": [
         "intl"
       ],
@@ -11751,8 +11806,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:57+00:00",
-      "last_success_at": "2026-05-01T09:12:57+00:00",
+      "fetched_at": "2026-05-01T09:43:06+00:00",
+      "last_success_at": "2026-05-01T09:43:06+00:00",
       "editions": [
         "intl"
       ],
@@ -11796,8 +11851,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:49+00:00",
-      "last_success_at": "2026-05-01T09:12:49+00:00",
+      "fetched_at": "2026-05-01T09:43:04+00:00",
+      "last_success_at": "2026-05-01T09:43:04+00:00",
       "editions": [
         "intl"
       ],
@@ -11841,8 +11896,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:55+00:00",
-      "last_success_at": "2026-05-01T09:12:55+00:00",
+      "fetched_at": "2026-05-01T09:43:08+00:00",
+      "last_success_at": "2026-05-01T09:43:08+00:00",
       "editions": [
         "intl"
       ],
@@ -11878,8 +11933,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:57+00:00",
-      "last_success_at": "2026-05-01T09:12:57+00:00",
+      "fetched_at": "2026-05-01T09:43:06+00:00",
+      "last_success_at": "2026-05-01T09:43:06+00:00",
       "editions": [
         "intl"
       ],
@@ -11915,8 +11970,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:49+00:00",
-      "last_success_at": "2026-05-01T09:12:49+00:00",
+      "fetched_at": "2026-05-01T09:43:04+00:00",
+      "last_success_at": "2026-05-01T09:43:04+00:00",
       "editions": [
         "intl"
       ],
@@ -11952,8 +12007,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:55+00:00",
-      "last_success_at": "2026-05-01T09:12:55+00:00",
+      "fetched_at": "2026-05-01T09:43:08+00:00",
+      "last_success_at": "2026-05-01T09:43:08+00:00",
       "editions": [
         "intl"
       ],
@@ -11989,8 +12044,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:57+00:00",
-      "last_success_at": "2026-05-01T09:12:57+00:00",
+      "fetched_at": "2026-05-01T09:43:06+00:00",
+      "last_success_at": "2026-05-01T09:43:06+00:00",
       "editions": [
         "intl"
       ],
@@ -12026,8 +12081,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:49+00:00",
-      "last_success_at": "2026-05-01T09:12:49+00:00",
+      "fetched_at": "2026-05-01T09:43:04+00:00",
+      "last_success_at": "2026-05-01T09:43:04+00:00",
       "editions": [
         "intl"
       ],
@@ -12063,8 +12118,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:55+00:00",
-      "last_success_at": "2026-05-01T09:12:55+00:00",
+      "fetched_at": "2026-05-01T09:43:08+00:00",
+      "last_success_at": "2026-05-01T09:43:08+00:00",
       "editions": [
         "intl"
       ],
@@ -12108,8 +12163,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:57+00:00",
-      "last_success_at": "2026-05-01T09:12:57+00:00",
+      "fetched_at": "2026-05-01T09:43:06+00:00",
+      "last_success_at": "2026-05-01T09:43:06+00:00",
       "editions": [
         "intl"
       ],
@@ -12153,8 +12208,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:49+00:00",
-      "last_success_at": "2026-05-01T09:12:49+00:00",
+      "fetched_at": "2026-05-01T09:43:04+00:00",
+      "last_success_at": "2026-05-01T09:43:04+00:00",
       "editions": [
         "intl"
       ],
@@ -12190,8 +12245,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:55+00:00",
-      "last_success_at": "2026-05-01T09:12:55+00:00",
+      "fetched_at": "2026-05-01T09:43:08+00:00",
+      "last_success_at": "2026-05-01T09:43:08+00:00",
       "editions": [
         "intl"
       ],
@@ -12227,8 +12282,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:57+00:00",
-      "last_success_at": "2026-05-01T09:12:57+00:00",
+      "fetched_at": "2026-05-01T09:43:06+00:00",
+      "last_success_at": "2026-05-01T09:43:06+00:00",
       "editions": [
         "intl"
       ],
@@ -12272,8 +12327,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:49+00:00",
-      "last_success_at": "2026-05-01T09:12:49+00:00",
+      "fetched_at": "2026-05-01T09:43:04+00:00",
+      "last_success_at": "2026-05-01T09:43:04+00:00",
       "editions": [
         "intl"
       ],
@@ -12317,8 +12372,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:55+00:00",
-      "last_success_at": "2026-05-01T09:12:55+00:00",
+      "fetched_at": "2026-05-01T09:43:08+00:00",
+      "last_success_at": "2026-05-01T09:43:08+00:00",
       "editions": [
         "intl"
       ],
@@ -12362,8 +12417,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:57+00:00",
-      "last_success_at": "2026-05-01T09:12:57+00:00",
+      "fetched_at": "2026-05-01T09:43:06+00:00",
+      "last_success_at": "2026-05-01T09:43:06+00:00",
       "editions": [
         "intl"
       ],
@@ -12407,8 +12462,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:49+00:00",
-      "last_success_at": "2026-05-01T09:12:49+00:00",
+      "fetched_at": "2026-05-01T09:43:04+00:00",
+      "last_success_at": "2026-05-01T09:43:04+00:00",
       "editions": [
         "intl"
       ],
@@ -12452,8 +12507,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:55+00:00",
-      "last_success_at": "2026-05-01T09:12:55+00:00",
+      "fetched_at": "2026-05-01T09:43:08+00:00",
+      "last_success_at": "2026-05-01T09:43:08+00:00",
       "editions": [
         "intl"
       ],
@@ -12489,8 +12544,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:57+00:00",
-      "last_success_at": "2026-05-01T09:12:57+00:00",
+      "fetched_at": "2026-05-01T09:43:06+00:00",
+      "last_success_at": "2026-05-01T09:43:06+00:00",
       "editions": [
         "intl"
       ],
@@ -12518,8 +12573,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:49+00:00",
-      "last_success_at": "2026-05-01T09:12:49+00:00",
+      "fetched_at": "2026-05-01T09:43:04+00:00",
+      "last_success_at": "2026-05-01T09:43:04+00:00",
       "editions": [
         "intl"
       ],
@@ -12563,8 +12618,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:55+00:00",
-      "last_success_at": "2026-05-01T09:12:55+00:00",
+      "fetched_at": "2026-05-01T09:43:08+00:00",
+      "last_success_at": "2026-05-01T09:43:08+00:00",
       "editions": [
         "intl"
       ],
@@ -12592,8 +12647,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:57+00:00",
-      "last_success_at": "2026-05-01T09:12:57+00:00",
+      "fetched_at": "2026-05-01T09:43:06+00:00",
+      "last_success_at": "2026-05-01T09:43:06+00:00",
       "editions": [
         "intl"
       ],
@@ -12621,8 +12676,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:49+00:00",
-      "last_success_at": "2026-05-01T09:12:49+00:00",
+      "fetched_at": "2026-05-01T09:43:04+00:00",
+      "last_success_at": "2026-05-01T09:43:04+00:00",
       "editions": [
         "intl"
       ],
@@ -12650,8 +12705,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:55+00:00",
-      "last_success_at": "2026-05-01T09:12:55+00:00",
+      "fetched_at": "2026-05-01T09:43:08+00:00",
+      "last_success_at": "2026-05-01T09:43:08+00:00",
       "editions": [
         "intl"
       ],
@@ -12679,8 +12734,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:57+00:00",
-      "last_success_at": "2026-05-01T09:12:57+00:00",
+      "fetched_at": "2026-05-01T09:43:06+00:00",
+      "last_success_at": "2026-05-01T09:43:06+00:00",
       "editions": [
         "intl"
       ],
@@ -12724,8 +12779,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:49+00:00",
-      "last_success_at": "2026-05-01T09:12:49+00:00",
+      "fetched_at": "2026-05-01T09:43:04+00:00",
+      "last_success_at": "2026-05-01T09:43:04+00:00",
       "editions": [
         "intl"
       ],
@@ -12769,8 +12824,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:55+00:00",
-      "last_success_at": "2026-05-01T09:12:55+00:00",
+      "fetched_at": "2026-05-01T09:43:08+00:00",
+      "last_success_at": "2026-05-01T09:43:08+00:00",
       "editions": [
         "intl"
       ],
@@ -12814,8 +12869,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:57+00:00",
-      "last_success_at": "2026-05-01T09:12:57+00:00",
+      "fetched_at": "2026-05-01T09:43:06+00:00",
+      "last_success_at": "2026-05-01T09:43:06+00:00",
       "editions": [
         "intl"
       ],
@@ -12859,8 +12914,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:49+00:00",
-      "last_success_at": "2026-05-01T09:12:49+00:00",
+      "fetched_at": "2026-05-01T09:43:04+00:00",
+      "last_success_at": "2026-05-01T09:43:04+00:00",
       "editions": [
         "intl"
       ],
@@ -12896,8 +12951,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:55+00:00",
-      "last_success_at": "2026-05-01T09:12:55+00:00",
+      "fetched_at": "2026-05-01T09:43:08+00:00",
+      "last_success_at": "2026-05-01T09:43:08+00:00",
       "editions": [
         "intl"
       ],
@@ -12933,8 +12988,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:57+00:00",
-      "last_success_at": "2026-05-01T09:12:57+00:00",
+      "fetched_at": "2026-05-01T09:43:06+00:00",
+      "last_success_at": "2026-05-01T09:43:06+00:00",
       "editions": [
         "intl"
       ],
@@ -12978,8 +13033,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:49+00:00",
-      "last_success_at": "2026-05-01T09:12:49+00:00",
+      "fetched_at": "2026-05-01T09:43:04+00:00",
+      "last_success_at": "2026-05-01T09:43:04+00:00",
       "editions": [
         "intl"
       ],
@@ -13023,8 +13078,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:55+00:00",
-      "last_success_at": "2026-05-01T09:12:55+00:00",
+      "fetched_at": "2026-05-01T09:43:08+00:00",
+      "last_success_at": "2026-05-01T09:43:08+00:00",
       "editions": [
         "intl"
       ],
@@ -13099,8 +13154,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:56+00:00",
-      "last_success_at": "2026-05-01T09:12:56+00:00",
+      "fetched_at": "2026-05-01T09:43:09+00:00",
+      "last_success_at": "2026-05-01T09:43:09+00:00",
       "desc_cn": "macOS 菜单栏系统监控工具，显示 CPU/内存/网络/温度",
       "desc_en": "macOS menu bar system monitor showing CPU/memory/network/temperature"
     },
@@ -13125,8 +13180,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:56+00:00",
-      "last_success_at": "2026-05-01T09:12:56+00:00",
+      "fetched_at": "2026-05-01T09:43:09+00:00",
+      "last_success_at": "2026-05-01T09:43:09+00:00",
       "desc_cn": "macOS OpenVPN 客户端，免费开源的 VPN 连接工具",
       "desc_en": "Free open-source OpenVPN client for macOS"
     },
@@ -13151,8 +13206,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:56+00:00",
-      "last_success_at": "2026-05-01T09:12:56+00:00",
+      "fetched_at": "2026-05-01T09:43:09+00:00",
+      "last_success_at": "2026-05-01T09:43:09+00:00",
       "desc_cn": "macOS 端口占用查看和释放工具，一键杀掉占用端口的进程",
       "desc_en": "macOS port usage viewer and killer, one-click to free occupied ports"
     },
@@ -13177,8 +13232,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:56+00:00",
-      "last_success_at": "2026-05-01T09:12:56+00:00",
+      "fetched_at": "2026-05-01T09:43:09+00:00",
+      "last_success_at": "2026-05-01T09:43:09+00:00",
       "desc_cn": "AI 驱动的终端复用工具，智能管理多个终端会话",
       "desc_en": "AI-powered terminal multiplexer for smart session management"
     },
@@ -13203,8 +13258,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:56+00:00",
-      "last_success_at": "2026-05-01T09:12:56+00:00",
+      "fetched_at": "2026-05-01T09:43:09+00:00",
+      "last_success_at": "2026-05-01T09:43:09+00:00",
       "desc_cn": "macOS 系统微调工具，自定义隐藏系统设置",
       "desc_en": "macOS system tweaker for customizing hidden system settings"
     },
@@ -13229,8 +13284,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:56+00:00",
-      "last_success_at": "2026-05-01T09:12:56+00:00",
+      "fetched_at": "2026-05-01T09:43:09+00:00",
+      "last_success_at": "2026-05-01T09:43:09+00:00",
       "desc_cn": "macOS 应用端口管理工具，查看应用的网络连接",
       "desc_en": "macOS app port management tool for viewing network connections"
     },
@@ -13255,8 +13310,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:55+00:00",
-      "last_success_at": "2026-05-01T09:12:55+00:00",
+      "fetched_at": "2026-05-01T09:43:08+00:00",
+      "last_success_at": "2026-05-01T09:43:08+00:00",
       "desc_cn": "高质量 AI 翻译工具，支持 30+ 语言互译",
       "desc_en": "High-quality AI translation tool supporting 30+ languages"
     },
@@ -13281,8 +13336,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:55+00:00",
-      "last_success_at": "2026-05-01T09:12:55+00:00",
+      "fetched_at": "2026-05-01T09:43:08+00:00",
+      "last_success_at": "2026-05-01T09:43:08+00:00",
       "desc_cn": "API 文档浏览器，离线查看 200+ 技术文档",
       "desc_en": "API documentation browser for offline access to 200+ tech docs"
     },
@@ -13307,8 +13362,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:55+00:00",
-      "last_success_at": "2026-05-01T09:12:55+00:00",
+      "fetched_at": "2026-05-01T09:43:08+00:00",
+      "last_success_at": "2026-05-01T09:43:08+00:00",
       "desc_cn": "跨平台 SSH 客户端，支持团队协作和密钥管理",
       "desc_en": "Cross-platform SSH client with team collaboration and key management"
     },
@@ -13333,8 +13388,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:55+00:00",
-      "last_success_at": "2026-05-01T09:12:55+00:00",
+      "fetched_at": "2026-05-01T09:43:08+00:00",
+      "last_success_at": "2026-05-01T09:43:08+00:00",
       "desc_cn": "免费数据库管理工具，支持 MySQL/PostgreSQL/SQLite 等",
       "desc_en": "Free database management tool supporting MySQL/PostgreSQL/SQLite and more"
     },
@@ -13359,8 +13414,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:13:00+00:00",
-      "last_success_at": "2026-05-01T09:13:00+00:00",
+      "fetched_at": "2026-05-01T09:43:11+00:00",
+      "last_success_at": "2026-05-01T09:43:11+00:00",
       "desc_cn": "国民级即时通讯应用，支持文字/语音/视频通话",
       "desc_en": "China's leading messaging app with text/voice/video calls"
     },
@@ -13385,8 +13440,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:57+00:00",
-      "last_success_at": "2026-05-01T09:12:57+00:00",
+      "fetched_at": "2026-05-01T09:43:07+00:00",
+      "last_success_at": "2026-05-01T09:43:07+00:00",
       "desc_cn": "macOS 显示器管理工具，解锁 HiDPI 分辨率和亮度控制",
       "desc_en": "macOS display management tool for unlocking HiDPI resolutions and brightness control"
     },
@@ -13411,8 +13466,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:57+00:00",
-      "last_success_at": "2026-05-01T09:12:57+00:00",
+      "fetched_at": "2026-05-01T09:43:07+00:00",
+      "last_success_at": "2026-05-01T09:43:07+00:00",
       "desc_cn": "轻量级 macOS 屏幕录制工具，支持窗口录制和系统音频",
       "desc_en": "Lightweight macOS screen recorder with window capture and system audio"
     },
@@ -13445,8 +13500,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:57+00:00",
-      "last_success_at": "2026-05-01T09:12:57+00:00",
+      "fetched_at": "2026-05-01T09:43:07+00:00",
+      "last_success_at": "2026-05-01T09:43:07+00:00",
       "desc_cn": "macOS 应用卸载清理工具，彻底删除残留文件",
       "desc_en": "macOS app uninstaller that thoroughly removes residual files"
     },
@@ -13479,8 +13534,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:57+00:00",
-      "last_success_at": "2026-05-01T09:12:57+00:00",
+      "fetched_at": "2026-05-01T09:43:07+00:00",
+      "last_success_at": "2026-05-01T09:43:07+00:00",
       "desc_cn": "macOS 步行导航应用，简洁的步行路线规划",
       "desc_en": "Walking navigation app for macOS with clean route planning"
     },
@@ -13513,8 +13568,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:57+00:00",
-      "last_success_at": "2026-05-01T09:12:57+00:00",
+      "fetched_at": "2026-05-01T09:43:07+00:00",
+      "last_success_at": "2026-05-01T09:43:07+00:00",
       "desc_cn": "开源 AI 编程助手，终端内智能代码操作",
       "desc_en": "Open-source AI coding assistant for terminal-based code operations"
     },
@@ -13539,8 +13594,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:57+00:00",
-      "last_success_at": "2026-05-01T09:12:57+00:00",
+      "fetched_at": "2026-05-01T09:43:07+00:00",
+      "last_success_at": "2026-05-01T09:43:07+00:00",
       "desc_cn": "macOS 翻译和词典工具，支持划词翻译和多引擎查询",
       "desc_en": "macOS translation and dictionary tool with text selection and multi-engine lookup"
     },
@@ -13565,8 +13620,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:57+00:00",
-      "last_success_at": "2026-05-01T09:12:57+00:00",
+      "fetched_at": "2026-05-01T09:43:07+00:00",
+      "last_success_at": "2026-05-01T09:43:07+00:00",
       "desc_cn": "现代化数据库管理工具，支持 MySQL/PostgreSQL/Redis 等",
       "desc_en": "Modern database management tool supporting MySQL/PostgreSQL/Redis and more"
     },
@@ -13591,8 +13646,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:57+00:00",
-      "last_success_at": "2026-05-01T09:12:57+00:00",
+      "fetched_at": "2026-05-01T09:43:07+00:00",
+      "last_success_at": "2026-05-01T09:43:07+00:00",
       "desc_cn": "专业思维导图工具，支持多种结构和导出格式",
       "desc_en": "Professional mind mapping tool with multiple structures and export formats"
     },
@@ -13617,8 +13672,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:57+00:00",
-      "last_success_at": "2026-05-01T09:12:57+00:00",
+      "fetched_at": "2026-05-01T09:43:07+00:00",
+      "last_success_at": "2026-05-01T09:43:07+00:00",
       "desc_cn": "Mac 风扇控制工具，手动调节风扇转速和温度监控",
       "desc_en": "Mac fan control tool for manual fan speed adjustment and temperature monitoring"
     },
@@ -13643,8 +13698,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:57+00:00",
-      "last_success_at": "2026-05-01T09:12:57+00:00",
+      "fetched_at": "2026-05-01T09:43:07+00:00",
+      "last_success_at": "2026-05-01T09:43:07+00:00",
       "desc_cn": "字节跳动 AI 助手，支持对话/写作/翻译等多种功能",
       "desc_en": "AI assistant by ByteDance with chat/writing/translation and more"
     },
@@ -13669,8 +13724,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:57+00:00",
-      "last_success_at": "2026-05-01T09:12:57+00:00",
+      "fetched_at": "2026-05-01T09:43:07+00:00",
+      "last_success_at": "2026-05-01T09:43:07+00:00",
       "desc_cn": "腾讯即时通讯工具，支持文件传输和群组聊天",
       "desc_en": "Tencent messaging app with file transfer and group chat"
     },
@@ -13695,8 +13750,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:49+00:00",
-      "last_success_at": "2026-05-01T09:12:49+00:00",
+      "fetched_at": "2026-05-01T09:43:05+00:00",
+      "last_success_at": "2026-05-01T09:43:05+00:00",
       "desc_cn": "macOS 虚拟机工具，支持运行 Windows/Linux/Android",
       "desc_en": "Virtualization tool for macOS to run Windows/Linux/Android"
     },
@@ -13721,8 +13776,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:49+00:00",
-      "last_success_at": "2026-05-01T09:12:49+00:00",
+      "fetched_at": "2026-05-01T09:43:05+00:00",
+      "last_success_at": "2026-05-01T09:43:05+00:00",
       "desc_cn": "macOS 双面板文件管理器，Total Commander 风格",
       "desc_en": "Dual-panel file manager for macOS, Total Commander style"
     },
@@ -13747,8 +13802,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:49+00:00",
-      "last_success_at": "2026-05-01T09:12:49+00:00",
+      "fetched_at": "2026-05-01T09:43:05+00:00",
+      "last_success_at": "2026-05-01T09:43:05+00:00",
       "desc_cn": "macOS 输入法管理工具，按应用自动切换输入法",
       "desc_en": "macOS input source manager that auto-switches per application"
     },
@@ -13773,8 +13828,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:49+00:00",
-      "last_success_at": "2026-05-01T09:12:49+00:00",
+      "fetched_at": "2026-05-01T09:43:05+00:00",
+      "last_success_at": "2026-05-01T09:43:05+00:00",
       "desc_cn": "跨平台电子书阅读器，支持 EPUB/PDF/MOBI 等格式",
       "desc_en": "Cross-platform e-book reader supporting EPUB/PDF/MOBI formats"
     },
@@ -13799,8 +13854,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:49+00:00",
-      "last_success_at": "2026-05-01T09:12:49+00:00",
+      "fetched_at": "2026-05-01T09:43:05+00:00",
+      "last_success_at": "2026-05-01T09:43:05+00:00",
       "desc_cn": "macOS 菜单栏自定义工具，用脚本添加菜单栏组件",
       "desc_en": "macOS menu bar customization tool with scriptable widgets"
     },
@@ -13825,8 +13880,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:49+00:00",
-      "last_success_at": "2026-05-01T09:12:49+00:00",
+      "fetched_at": "2026-05-01T09:43:04+00:00",
+      "last_success_at": "2026-05-01T09:43:04+00:00",
       "desc_cn": "macOS 效率启动器，替代 Spotlight，支持插件扩展",
       "desc_en": "macOS productivity launcher replacing Spotlight with plugin support"
     },
@@ -13851,8 +13906,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:49+00:00",
-      "last_success_at": "2026-05-01T09:12:49+00:00",
+      "fetched_at": "2026-05-01T09:43:04+00:00",
+      "last_success_at": "2026-05-01T09:43:04+00:00",
       "desc_cn": "截图和贴图工具，截图后可贴到屏幕上做参考",
       "desc_en": "Screenshot and pin tool that pins captures to screen as reference"
     },
@@ -13877,8 +13932,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:49+00:00",
-      "last_success_at": "2026-05-01T09:12:49+00:00",
+      "fetched_at": "2026-05-01T09:43:04+00:00",
+      "last_success_at": "2026-05-01T09:43:04+00:00",
       "desc_cn": "macOS 轻量级 Docker 和 Linux 虚拟机，比 Docker Desktop 更快",
       "desc_en": "Lightweight Docker and Linux VM for macOS, faster than Docker Desktop"
     },
@@ -13903,8 +13958,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:49+00:00",
-      "last_success_at": "2026-05-01T09:12:49+00:00",
+      "fetched_at": "2026-05-01T09:43:04+00:00",
+      "last_success_at": "2026-05-01T09:43:04+00:00",
       "desc_cn": "一体化服务器管理工具，SSH/文件传输/系统监控",
       "desc_en": "All-in-one server management tool with SSH/file transfer/system monitoring"
     },
@@ -13929,19 +13984,1299 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T09:12:49+00:00",
-      "last_success_at": "2026-05-01T09:12:49+00:00",
+      "fetched_at": "2026-05-01T09:43:04+00:00",
+      "last_success_at": "2026-05-01T09:43:04+00:00",
       "desc_cn": "金山办公套件，兼容 Microsoft Office 格式",
       "desc_en": "Office suite by Kingsoft, compatible with Microsoft Office formats"
+    },
+    {
+      "id": "v2raya",
+      "name": "v2rayA",
+      "version": "2.2.7.5",
+      "source": "GitHub Release: v2rayA/v2rayA",
+      "version_kind": "release_version",
+      "version_source": "GitHub release tag",
+      "category": "Network & Proxy",
+      "homepage": "https://github.com/v2rayA/v2rayA",
+      "released_at": "2026-01-25T00:48:10Z",
+      "notes_url": "https://github.com/v2rayA/v2rayA/releases/tag/v2.2.7.5",
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://github.com/v2rayA/v2rayA/releases/download/v2.2.7.5/v2raya_windows_x64_2.2.7.5.exe",
+          "link_kind": "direct",
+          "filename": "v2raya_windows_x64_2.2.7.5.exe",
+          "size": 30923776,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-05-01T09:43:05+00:00",
+      "warnings": [
+        "mac-arm64: 没有匹配 asset pattern 'v2raya_macos_arm64_*.pkg'",
+        "mac-x64: 没有匹配 asset pattern 'v2raya_macos_x64_*.pkg'",
+        "linux-x64: 没有匹配 asset pattern 'v2raya_linux_x64_*.deb'"
+      ],
+      "last_success_at": "2026-05-01T09:43:05+00:00",
+      "editions": [
+        "cn"
+      ],
+      "desc_cn": "V2Ray 的 Web GUI 客户端，支持 VMess/VLESS/SS/Trojan 等协议",
+      "desc_en": "Web GUI client for V2Ray supporting VMess/VLESS/SS/Trojan protocols"
+    },
+    {
+      "id": "alist",
+      "name": "AList",
+      "version": "3.60.0",
+      "source": "GitHub Release: AlistGo/alist",
+      "version_kind": "release_version",
+      "version_source": "GitHub release tag",
+      "category": "Network & Proxy",
+      "homepage": "https://github.com/AlistGo/alist",
+      "released_at": "2026-04-20T01:58:35Z",
+      "notes_url": "https://github.com/AlistGo/alist/releases/tag/v3.60.0",
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://github.com/AlistGo/alist/releases/download/v3.60.0/alist-windows-amd64.zip",
+          "link_kind": "direct",
+          "filename": "alist-windows-amd64.zip",
+          "size": 44039399,
+          "sha256": null
+        },
+        {
+          "platform": "mac-arm64",
+          "url": "https://github.com/AlistGo/alist/releases/download/v3.60.0/alist-darwin-arm64.tar.gz",
+          "link_kind": "direct",
+          "filename": "alist-darwin-arm64.tar.gz",
+          "size": 41953003,
+          "sha256": null
+        },
+        {
+          "platform": "mac-x64",
+          "url": "https://github.com/AlistGo/alist/releases/download/v3.60.0/alist-darwin-amd64.tar.gz",
+          "link_kind": "direct",
+          "filename": "alist-darwin-amd64.tar.gz",
+          "size": 43901754,
+          "sha256": null
+        },
+        {
+          "platform": "linux-x64",
+          "url": "https://github.com/AlistGo/alist/releases/download/v3.60.0/alist-linux-amd64.tar.gz",
+          "link_kind": "direct",
+          "filename": "alist-linux-amd64.tar.gz",
+          "size": 43485975,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-05-01T09:43:05+00:00",
+      "last_success_at": "2026-05-01T09:43:05+00:00",
+      "editions": [
+        "cn"
+      ],
+      "desc_cn": "支持多存储的文件列表/WebDAV 程序",
+      "desc_en": "File list/WebDAV program supporting multiple storage providers"
+    },
+    {
+      "id": "biliup",
+      "name": "biliup",
+      "version": "1.1.29",
+      "source": "GitHub Release: biliup/biliup",
+      "version_kind": "release_version",
+      "version_source": "GitHub release tag",
+      "category": "Download Tools",
+      "homepage": "https://github.com/biliup/biliup",
+      "released_at": "2026-03-01T13:16:18Z",
+      "notes_url": "https://github.com/biliup/biliup/releases/tag/v1.1.29",
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://github.com/biliup/biliup/releases/download/v1.1.29/biliupR-v1.1.29-x86_64-windows.zip",
+          "link_kind": "direct",
+          "filename": "biliupR-v1.1.29-x86_64-windows.zip",
+          "size": 10256791,
+          "sha256": null
+        },
+        {
+          "platform": "mac-x64",
+          "url": "https://github.com/biliup/biliup/releases/download/v1.1.29/biliupR-v1.1.29-x86_64-macos.tar.xz",
+          "link_kind": "direct",
+          "filename": "biliupR-v1.1.29-x86_64-macos.tar.xz",
+          "size": 7095724,
+          "sha256": null
+        },
+        {
+          "platform": "linux-x64",
+          "url": "https://github.com/biliup/biliup/releases/download/v1.1.29/biliupR-v1.1.29-x86_64-linux.tar.xz",
+          "link_kind": "direct",
+          "filename": "biliupR-v1.1.29-x86_64-linux.tar.xz",
+          "size": 7308040,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-05-01T09:43:05+00:00",
+      "last_success_at": "2026-05-01T09:43:05+00:00",
+      "editions": [
+        "cn"
+      ],
+      "desc_cn": "B 站直播/视频录制上传工具",
+      "desc_en": "Bilibili live stream/video recording and uploading tool"
+    },
+    {
+      "id": "clickhouse",
+      "name": "ClickHouse",
+      "version": "25.10.7.6-stable",
+      "source": "GitHub Release: ClickHouse/ClickHouse",
+      "version_kind": "release_version",
+      "version_source": "GitHub release tag",
+      "category": "Cloud & DevOps",
+      "homepage": "https://clickhouse.com",
+      "released_at": "2026-04-30T08:09:25Z",
+      "notes_url": "https://github.com/ClickHouse/ClickHouse/releases/tag/v25.10.7.6-stable",
+      "assets": [
+        {
+          "platform": "linux-x64",
+          "url": "https://github.com/ClickHouse/ClickHouse/releases/download/v25.10.7.6-stable/clickhouse-common-static-25.10.7.6-amd64.tgz",
+          "link_kind": "direct",
+          "filename": "clickhouse-common-static-25.10.7.6-amd64.tgz",
+          "size": 190671493,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-05-01T09:43:05+00:00",
+      "last_success_at": "2026-05-01T09:43:05+00:00",
+      "editions": [
+        "cn"
+      ],
+      "desc_cn": "高性能列式 OLAP 数据库，适用于实时分析",
+      "desc_en": "High-performance columnar OLAP database for real-time analytics"
+    },
+    {
+      "id": "prusaslicer",
+      "name": "PrusaSlicer",
+      "version": "2.9.4",
+      "source": "GitHub Release: prusa3d/PrusaSlicer",
+      "version_kind": "release_version",
+      "version_source": "GitHub release tag",
+      "category": "Utilities",
+      "homepage": "https://github.com/prusa3d/PrusaSlicer",
+      "released_at": "2025-11-07T15:15:20Z",
+      "notes_url": "https://github.com/prusa3d/PrusaSlicer/releases/tag/version_2.9.4",
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://github.com/prusa3d/PrusaSlicer/releases/download/version_2.9.4/PrusaSlicer-2.9.4.zip",
+          "link_kind": "direct",
+          "filename": "PrusaSlicer-2.9.4.zip",
+          "size": 103694968,
+          "sha256": null
+        },
+        {
+          "platform": "mac-x64",
+          "url": "https://github.com/prusa3d/PrusaSlicer/releases/download/version_2.9.4/PrusaSlicer-2.9.4.dmg",
+          "link_kind": "direct",
+          "filename": "PrusaSlicer-2.9.4.dmg",
+          "size": 139267797,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-05-01T09:43:05+00:00",
+      "last_success_at": "2026-05-01T09:43:05+00:00",
+      "editions": [
+        "cn"
+      ],
+      "desc_cn": "专业 3D 打印切片软件",
+      "desc_en": "Professional 3D printing slicer software"
+    },
+    {
+      "id": "podman",
+      "name": "Podman",
+      "version": "5.8.2",
+      "source": "GitHub Release: containers/podman",
+      "version_kind": "release_version",
+      "version_source": "GitHub release tag",
+      "category": "Cloud & DevOps",
+      "homepage": "https://podman.io",
+      "released_at": "2026-04-14T17:56:41Z",
+      "notes_url": "https://github.com/containers/podman/releases/tag/v5.8.2",
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://github.com/containers/podman/releases/download/v5.8.2/podman-5.8.2-setup.exe",
+          "link_kind": "direct",
+          "filename": "podman-5.8.2-setup.exe",
+          "size": 28113288,
+          "sha256": null
+        },
+        {
+          "platform": "mac-arm64",
+          "url": "https://github.com/containers/podman/releases/download/v5.8.2/podman-installer-macos-arm64.pkg",
+          "link_kind": "direct",
+          "filename": "podman-installer-macos-arm64.pkg",
+          "size": 59692114,
+          "sha256": null
+        },
+        {
+          "platform": "mac-x64",
+          "url": "https://github.com/containers/podman/releases/download/v5.8.2/podman-installer-macos-amd64.pkg",
+          "link_kind": "direct",
+          "filename": "podman-installer-macos-amd64.pkg",
+          "size": 61580581,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-05-01T09:43:05+00:00",
+      "last_success_at": "2026-05-01T09:43:05+00:00",
+      "editions": [
+        "cn"
+      ],
+      "desc_cn": "无守护进程的容器引擎，Docker 替代品",
+      "desc_en": "Daemonless container engine, Docker alternative"
+    },
+    {
+      "id": "stirling-pdf",
+      "name": "Stirling-PDF",
+      "version": "2.10.0",
+      "source": "GitHub Release: Stirling-Tools/Stirling-PDF",
+      "version_kind": "release_version",
+      "version_source": "GitHub release tag",
+      "category": "Utilities",
+      "homepage": "https://github.com/Stirling-Tools/Stirling-PDF",
+      "released_at": "2026-04-24T13:12:51Z",
+      "notes_url": "https://github.com/Stirling-Tools/Stirling-PDF/releases/tag/v2.10.0",
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://github.com/Stirling-Tools/Stirling-PDF/releases/download/v2.10.0/Stirling-PDF-windows-x86_64.msi",
+          "link_kind": "direct",
+          "filename": "Stirling-PDF-windows-x86_64.msi",
+          "size": 221446144,
+          "sha256": null
+        },
+        {
+          "platform": "mac-arm64",
+          "url": "https://github.com/Stirling-Tools/Stirling-PDF/releases/download/v2.10.0/Stirling-PDF-macos-aarch64.dmg",
+          "link_kind": "direct",
+          "filename": "Stirling-PDF-macos-aarch64.dmg",
+          "size": 222028726,
+          "sha256": null
+        },
+        {
+          "platform": "mac-x64",
+          "url": "https://github.com/Stirling-Tools/Stirling-PDF/releases/download/v2.10.0/Stirling-PDF-macos-x86_64.dmg",
+          "link_kind": "direct",
+          "filename": "Stirling-PDF-macos-x86_64.dmg",
+          "size": 223758967,
+          "sha256": null
+        },
+        {
+          "platform": "linux-x64",
+          "url": "https://github.com/Stirling-Tools/Stirling-PDF/releases/download/v2.10.0/Stirling-PDF-linux-x86_64.AppImage",
+          "link_kind": "direct",
+          "filename": "Stirling-PDF-linux-x86_64.AppImage",
+          "size": 310032888,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-05-01T09:43:05+00:00",
+      "last_success_at": "2026-05-01T09:43:05+00:00",
+      "editions": [
+        "cn"
+      ],
+      "desc_cn": "本地托管的 PDF 全能工具",
+      "desc_en": "Locally hosted one-stop-shop for all your PDF needs"
+    },
+    {
+      "id": "lobe-chat",
+      "name": "LobeHub",
+      "version": "2.1.56",
+      "source": "GitHub Release: lobehub/lobehub",
+      "version_kind": "release_version",
+      "version_source": "GitHub release tag",
+      "category": "AI Tools",
+      "homepage": "https://github.com/lobehub/lobehub",
+      "released_at": "2026-05-01T07:50:15Z",
+      "notes_url": "https://github.com/lobehub/lobehub/releases/tag/v2.1.56",
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://github.com/lobehub/lobehub/releases/download/v2.1.56/LobeHub-2.1.56-setup.exe",
+          "link_kind": "direct",
+          "filename": "LobeHub-2.1.56-setup.exe",
+          "size": 140175853,
+          "sha256": null
+        },
+        {
+          "platform": "mac-arm64",
+          "url": "https://github.com/lobehub/lobehub/releases/download/v2.1.56/LobeHub-2.1.56-arm64.dmg",
+          "link_kind": "direct",
+          "filename": "LobeHub-2.1.56-arm64.dmg",
+          "size": 144572566,
+          "sha256": null
+        },
+        {
+          "platform": "mac-x64",
+          "url": "https://github.com/lobehub/lobehub/releases/download/v2.1.56/LobeHub-2.1.56-x64.dmg",
+          "link_kind": "direct",
+          "filename": "LobeHub-2.1.56-x64.dmg",
+          "size": 151661582,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-05-01T09:43:05+00:00",
+      "last_success_at": "2026-05-01T09:43:05+00:00",
+      "editions": [
+        "cn"
+      ],
+      "desc_cn": "开源 AI 聊天框架，支持多种 AI 模型",
+      "desc_en": "Open-source AI chat framework supporting multiple AI models"
+    },
+    {
+      "id": "uptime-kuma",
+      "name": "Uptime Kuma",
+      "version": "2.3.0",
+      "source": "GitHub Release: louislam/uptime-kuma",
+      "version_kind": "release_version",
+      "version_source": "GitHub release tag",
+      "category": "Cloud & DevOps",
+      "homepage": "https://github.com/louislam/uptime-kuma",
+      "released_at": "2026-05-01T04:01:17Z",
+      "notes_url": "https://github.com/louislam/uptime-kuma/releases/tag/2.3.0",
+      "assets": [
+        {
+          "platform": "linux-x64",
+          "url": "https://github.com/louislam/uptime-kuma/releases/download/2.3.0/dist.tar.gz",
+          "link_kind": "direct",
+          "filename": "dist.tar.gz",
+          "size": 6956791,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-05-01T09:43:05+00:00",
+      "last_success_at": "2026-05-01T09:43:05+00:00",
+      "editions": [
+        "cn"
+      ],
+      "desc_cn": "自托管监控工具，Uptime Robot 替代品",
+      "desc_en": "Self-hosted monitoring tool, Uptime Robot alternative"
+    },
+    {
+      "id": "qv2ray",
+      "name": "Qv2ray",
+      "version": "2.7.0",
+      "source": "GitHub Release: Qv2ray/Qv2ray",
+      "version_kind": "release_version",
+      "version_source": "GitHub release tag",
+      "category": "Network & Proxy",
+      "homepage": "https://github.com/Qv2ray/Qv2ray",
+      "released_at": "2021-08-17T03:06:20Z",
+      "notes_url": "https://github.com/Qv2ray/Qv2ray/releases/tag/v2.7.0",
+      "assets": [
+        {
+          "platform": "mac-x64",
+          "url": "https://github.com/Qv2ray/Qv2ray/releases/download/v2.7.0/Qv2ray-v2.7.0-macOS-x64.dmg",
+          "link_kind": "direct",
+          "filename": "Qv2ray-v2.7.0-macOS-x64.dmg",
+          "size": 16895420,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-05-01T09:43:09+00:00",
+      "warnings": [
+        "win-x64: 没有匹配 asset pattern 'Qv2ray-*-Windows-x64.exe'",
+        "linux-x64: 没有匹配 asset pattern 'Qv2ray-*-Linux-x64.AppImage'"
+      ],
+      "last_success_at": "2026-05-01T09:43:09+00:00",
+      "editions": [
+        "cn"
+      ],
+      "desc_cn": "跨平台 V2Ray/SSR/Trojan GUI 客户端，插件式可扩展",
+      "desc_en": "Cross-platform V2Ray/SSR/Trojan GUI client with plugin support"
+    },
+    {
+      "id": "anytls",
+      "name": "anytls-go",
+      "version": "0.0.12",
+      "source": "GitHub Release: anytls/anytls-go",
+      "version_kind": "release_version",
+      "version_source": "GitHub release tag",
+      "category": "Network & Proxy",
+      "homepage": "https://github.com/anytls/anytls-go",
+      "released_at": "2026-01-12T09:42:56Z",
+      "notes_url": "https://github.com/anytls/anytls-go/releases/tag/v0.0.12",
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://github.com/anytls/anytls-go/releases/download/v0.0.12/anytls_0.0.12_windows_amd64.zip",
+          "link_kind": "direct",
+          "filename": "anytls_0.0.12_windows_amd64.zip",
+          "size": 5075395,
+          "sha256": null
+        },
+        {
+          "platform": "mac-arm64",
+          "url": "https://github.com/anytls/anytls-go/releases/download/v0.0.12/anytls_0.0.12_darwin_arm64.zip",
+          "link_kind": "direct",
+          "filename": "anytls_0.0.12_darwin_arm64.zip",
+          "size": 4644438,
+          "sha256": null
+        },
+        {
+          "platform": "linux-x64",
+          "url": "https://github.com/anytls/anytls-go/releases/download/v0.0.12/anytls_0.0.12_linux_amd64.zip",
+          "link_kind": "direct",
+          "filename": "anytls_0.0.12_linux_amd64.zip",
+          "size": 4942109,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-05-01T09:43:09+00:00",
+      "last_success_at": "2026-05-01T09:43:09+00:00",
+      "editions": [
+        "cn"
+      ],
+      "desc_cn": "新一代 TLS 代理协议工具",
+      "desc_en": "Next-generation TLS proxy protocol tool"
+    },
+    {
+      "id": "cloudreve",
+      "name": "Cloudreve",
+      "version": "4.15.0",
+      "source": "GitHub Release: cloudreve/cloudreve",
+      "version_kind": "release_version",
+      "version_source": "GitHub release tag",
+      "category": "Network & Proxy",
+      "homepage": "https://github.com/cloudreve/cloudreve",
+      "released_at": "2026-03-14T02:49:43Z",
+      "notes_url": "https://github.com/cloudreve/cloudreve/releases/tag/4.15.0",
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://github.com/cloudreve/cloudreve/releases/download/4.15.0/cloudreve_4.15.0_windows_amd64.zip",
+          "link_kind": "direct",
+          "filename": "cloudreve_4.15.0_windows_amd64.zip",
+          "size": 37743749,
+          "sha256": null
+        },
+        {
+          "platform": "mac-arm64",
+          "url": "https://github.com/cloudreve/cloudreve/releases/download/4.15.0/cloudreve_4.15.0_darwin_arm64.tar.gz",
+          "link_kind": "direct",
+          "filename": "cloudreve_4.15.0_darwin_arm64.tar.gz",
+          "size": 36179390,
+          "sha256": null
+        },
+        {
+          "platform": "mac-x64",
+          "url": "https://github.com/cloudreve/cloudreve/releases/download/4.15.0/cloudreve_4.15.0_darwin_amd64.tar.gz",
+          "link_kind": "direct",
+          "filename": "cloudreve_4.15.0_darwin_amd64.tar.gz",
+          "size": 37722290,
+          "sha256": null
+        },
+        {
+          "platform": "linux-x64",
+          "url": "https://github.com/cloudreve/cloudreve/releases/download/4.15.0/cloudreve_4.15.0_linux_amd64.tar.gz",
+          "link_kind": "direct",
+          "filename": "cloudreve_4.15.0_linux_amd64.tar.gz",
+          "size": 37323080,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-05-01T09:43:09+00:00",
+      "last_success_at": "2026-05-01T09:43:09+00:00",
+      "editions": [
+        "cn"
+      ],
+      "desc_cn": "自建网盘/云盘系统，支持多存储后端",
+      "desc_en": "Self-hosted file management and sharing system with multi-storage support"
+    },
+    {
+      "id": "yazi",
+      "name": "Yazi",
+      "version": "26.1.22",
+      "source": "GitHub Release: sxyazi/yazi",
+      "version_kind": "release_version",
+      "version_source": "GitHub release tag",
+      "category": "Developer Tools",
+      "homepage": "https://github.com/sxyazi/yazi",
+      "released_at": "2026-01-22T15:57:14Z",
+      "notes_url": "https://github.com/sxyazi/yazi/releases/tag/v26.1.22",
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://github.com/sxyazi/yazi/releases/download/v26.1.22/yazi-x86_64-pc-windows-msvc.zip",
+          "link_kind": "direct",
+          "filename": "yazi-x86_64-pc-windows-msvc.zip",
+          "size": 12499399,
+          "sha256": null
+        },
+        {
+          "platform": "mac-arm64",
+          "url": "https://github.com/sxyazi/yazi/releases/download/v26.1.22/yazi-aarch64-apple-darwin.zip",
+          "link_kind": "direct",
+          "filename": "yazi-aarch64-apple-darwin.zip",
+          "size": 8868809,
+          "sha256": null
+        },
+        {
+          "platform": "mac-x64",
+          "url": "https://github.com/sxyazi/yazi/releases/download/v26.1.22/yazi-x86_64-apple-darwin.zip",
+          "link_kind": "direct",
+          "filename": "yazi-x86_64-apple-darwin.zip",
+          "size": 9959485,
+          "sha256": null
+        },
+        {
+          "platform": "linux-x64",
+          "url": "https://github.com/sxyazi/yazi/releases/download/v26.1.22/yazi-x86_64-unknown-linux-gnu.zip",
+          "link_kind": "direct",
+          "filename": "yazi-x86_64-unknown-linux-gnu.zip",
+          "size": 10540818,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-05-01T09:43:09+00:00",
+      "last_success_at": "2026-05-01T09:43:09+00:00",
+      "editions": [
+        "cn"
+      ],
+      "desc_cn": "用 Rust 编写的超快终端文件管理器",
+      "desc_en": "Blazing fast terminal file manager written in Rust"
+    },
+    {
+      "id": "bruno",
+      "name": "Bruno",
+      "version": "3.3.0",
+      "source": "GitHub Release: usebruno/bruno",
+      "version_kind": "release_version",
+      "version_source": "GitHub release tag",
+      "category": "Developer Tools",
+      "homepage": "https://github.com/usebruno/bruno",
+      "released_at": "2026-04-22T17:00:24Z",
+      "notes_url": "https://github.com/usebruno/bruno/releases/tag/v3.3.0",
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://github.com/usebruno/bruno/releases/download/v3.3.0/bruno_3.3.0_x64_win.exe",
+          "link_kind": "direct",
+          "filename": "bruno_3.3.0_x64_win.exe",
+          "size": 117892944,
+          "sha256": null
+        },
+        {
+          "platform": "win-arm64",
+          "url": "https://github.com/usebruno/bruno/releases/download/v3.3.0/bruno_3.3.0_arm64_win.exe",
+          "link_kind": "direct",
+          "filename": "bruno_3.3.0_arm64_win.exe",
+          "size": 119701352,
+          "sha256": null
+        },
+        {
+          "platform": "mac-arm64",
+          "url": "https://github.com/usebruno/bruno/releases/download/v3.3.0/bruno_3.3.0_arm64_mac.dmg",
+          "link_kind": "direct",
+          "filename": "bruno_3.3.0_arm64_mac.dmg",
+          "size": 158753224,
+          "sha256": null
+        },
+        {
+          "platform": "mac-x64",
+          "url": "https://github.com/usebruno/bruno/releases/download/v3.3.0/bruno_3.3.0_x64_mac.dmg",
+          "link_kind": "direct",
+          "filename": "bruno_3.3.0_x64_mac.dmg",
+          "size": 165119969,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-05-01T09:43:10+00:00",
+      "last_success_at": "2026-05-01T09:43:10+00:00",
+      "editions": [
+        "cn"
+      ],
+      "desc_cn": "开源 API 客户端，Insomnia/Postman 替代品",
+      "desc_en": "Open-source API client, alternative to Insomnia/Postman"
+    },
+    {
+      "id": "spotube",
+      "name": "Spotube",
+      "version": "5.1.1",
+      "source": "GitHub Release: KRTirtho/spotube",
+      "version_kind": "release_version",
+      "version_source": "GitHub release tag",
+      "category": "Media Players",
+      "homepage": "https://github.com/KRTirtho/spotube",
+      "released_at": "2026-02-24T13:15:09Z",
+      "notes_url": "https://github.com/KRTirtho/spotube/releases/tag/v5.1.1",
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://github.com/KRTirtho/spotube/releases/download/v5.1.1/Spotube-windows-x86_64-setup.exe",
+          "link_kind": "direct",
+          "filename": "Spotube-windows-x86_64-setup.exe",
+          "size": 38267362,
+          "sha256": null
+        },
+        {
+          "platform": "mac-x64",
+          "url": "https://github.com/KRTirtho/spotube/releases/download/v5.1.1/Spotube-macos-universal.dmg",
+          "link_kind": "direct",
+          "filename": "Spotube-macos-universal.dmg",
+          "size": 63272683,
+          "sha256": null
+        },
+        {
+          "platform": "linux-x64",
+          "url": "https://github.com/KRTirtho/spotube/releases/download/v5.1.1/Spotube-linux-x86_64.AppImage",
+          "link_kind": "direct",
+          "filename": "Spotube-linux-x86_64.AppImage",
+          "size": 105986552,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-05-01T09:43:10+00:00",
+      "last_success_at": "2026-05-01T09:43:10+00:00",
+      "editions": [
+        "cn"
+      ],
+      "desc_cn": "免费 Spotify 客户端，无需 Premium",
+      "desc_en": "Free Spotify client, no Premium required"
+    },
+    {
+      "id": "quickemu",
+      "name": "Quickemu",
+      "version": "4.9.9",
+      "source": "GitHub Release: quickemu-project/quickemu",
+      "version_kind": "release_version",
+      "version_source": "GitHub release tag",
+      "category": "System Utilities",
+      "homepage": "https://github.com/quickemu-project/quickemu",
+      "released_at": "2026-02-10T13:30:37Z",
+      "notes_url": "https://github.com/quickemu-project/quickemu/releases/tag/4.9.9",
+      "assets": [
+        {
+          "platform": "linux-x64",
+          "url": "https://github.com/quickemu-project/quickemu/releases/download/4.9.9/quickemu_4.9.9-1_all.deb",
+          "link_kind": "direct",
+          "filename": "quickemu_4.9.9-1_all.deb",
+          "size": 72344,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-05-01T09:43:10+00:00",
+      "last_success_at": "2026-05-01T09:43:10+00:00",
+      "editions": [
+        "cn"
+      ],
+      "desc_cn": "快速创建和运行优化的虚拟机",
+      "desc_en": "Quickly create and run optimized virtual machines"
+    },
+    {
+      "id": "pocketbase",
+      "name": "PocketBase",
+      "version": "0.37.4",
+      "source": "GitHub Release: pocketbase/pocketbase",
+      "version_kind": "release_version",
+      "version_source": "GitHub release tag",
+      "category": "Developer Tools",
+      "homepage": "https://github.com/pocketbase/pocketbase",
+      "released_at": "2026-04-27T06:55:53Z",
+      "notes_url": "https://github.com/pocketbase/pocketbase/releases/tag/v0.37.4",
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://github.com/pocketbase/pocketbase/releases/download/v0.37.4/pocketbase_0.37.4_windows_amd64.zip",
+          "link_kind": "direct",
+          "filename": "pocketbase_0.37.4_windows_amd64.zip",
+          "size": 12240080,
+          "sha256": null
+        },
+        {
+          "platform": "mac-arm64",
+          "url": "https://github.com/pocketbase/pocketbase/releases/download/v0.37.4/pocketbase_0.37.4_darwin_arm64.zip",
+          "link_kind": "direct",
+          "filename": "pocketbase_0.37.4_darwin_arm64.zip",
+          "size": 11512289,
+          "sha256": null
+        },
+        {
+          "platform": "mac-x64",
+          "url": "https://github.com/pocketbase/pocketbase/releases/download/v0.37.4/pocketbase_0.37.4_darwin_amd64.zip",
+          "link_kind": "direct",
+          "filename": "pocketbase_0.37.4_darwin_amd64.zip",
+          "size": 12166838,
+          "sha256": null
+        },
+        {
+          "platform": "linux-x64",
+          "url": "https://github.com/pocketbase/pocketbase/releases/download/v0.37.4/pocketbase_0.37.4_linux_amd64.zip",
+          "link_kind": "direct",
+          "filename": "pocketbase_0.37.4_linux_amd64.zip",
+          "size": 11980549,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-05-01T09:43:10+00:00",
+      "last_success_at": "2026-05-01T09:43:10+00:00",
+      "editions": [
+        "cn"
+      ],
+      "desc_cn": "单文件后端即服务，含数据库、认证和 API",
+      "desc_en": "Single file backend-as-a-service with database, auth, and API"
+    },
+    {
+      "id": "powershell",
+      "name": "PowerShell",
+      "version": "7.6.1",
+      "source": "GitHub Release: PowerShell/PowerShell",
+      "version_kind": "release_version",
+      "version_source": "GitHub release tag",
+      "category": "Developer Tools",
+      "homepage": "https://github.com/PowerShell/PowerShell",
+      "released_at": "2026-04-21T20:10:36Z",
+      "notes_url": "https://github.com/PowerShell/PowerShell/releases/tag/v7.6.1",
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://github.com/PowerShell/PowerShell/releases/download/v7.6.1/PowerShell-7.6.1-win-x64.msi",
+          "link_kind": "direct",
+          "filename": "PowerShell-7.6.1-win-x64.msi",
+          "size": 114909184,
+          "sha256": null
+        },
+        {
+          "platform": "mac-arm64",
+          "url": "https://github.com/PowerShell/PowerShell/releases/download/v7.6.1/powershell-7.6.1-osx-arm64.pkg",
+          "link_kind": "direct",
+          "filename": "powershell-7.6.1-osx-arm64.pkg",
+          "size": 72717267,
+          "sha256": null
+        },
+        {
+          "platform": "mac-x64",
+          "url": "https://github.com/PowerShell/PowerShell/releases/download/v7.6.1/powershell-7.6.1-osx-x64.pkg",
+          "link_kind": "direct",
+          "filename": "powershell-7.6.1-osx-x64.pkg",
+          "size": 76810706,
+          "sha256": null
+        },
+        {
+          "platform": "linux-x64",
+          "url": "https://github.com/PowerShell/PowerShell/releases/download/v7.6.1/powershell-7.6.1-linux-x64.tar.gz",
+          "link_kind": "direct",
+          "filename": "powershell-7.6.1-linux-x64.tar.gz",
+          "size": 77667171,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-05-01T09:43:10+00:00",
+      "last_success_at": "2026-05-01T09:43:10+00:00",
+      "editions": [
+        "cn"
+      ],
+      "desc_cn": "跨平台自动化和配置管理框架",
+      "desc_en": "Cross-platform automation and configuration management framework"
+    },
+    {
+      "id": "subconverter",
+      "name": "Subconverter",
+      "version": "0.9.0",
+      "source": "GitHub Release: tindy2013/subconverter",
+      "version_kind": "release_version",
+      "version_source": "GitHub release tag",
+      "category": "Network & Proxy",
+      "homepage": "https://github.com/tindy2013/subconverter",
+      "released_at": "2024-04-08T10:09:55Z",
+      "notes_url": "https://github.com/tindy2013/subconverter/releases/tag/v0.9.0",
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://github.com/tindy2013/subconverter/releases/download/v0.9.0/subconverter_win64.7z",
+          "link_kind": "direct",
+          "filename": "subconverter_win64.7z",
+          "size": 2477763,
+          "sha256": null
+        },
+        {
+          "platform": "mac-x64",
+          "url": "https://github.com/tindy2013/subconverter/releases/download/v0.9.0/subconverter_darwin64.tar.gz",
+          "link_kind": "direct",
+          "filename": "subconverter_darwin64.tar.gz",
+          "size": 2850195,
+          "sha256": null
+        },
+        {
+          "platform": "linux-x64",
+          "url": "https://github.com/tindy2013/subconverter/releases/download/v0.9.0/subconverter_linux64.tar.gz",
+          "link_kind": "direct",
+          "filename": "subconverter_linux64.tar.gz",
+          "size": 3757718,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-05-01T09:43:07+00:00",
+      "last_success_at": "2026-05-01T09:43:07+00:00",
+      "editions": [
+        "cn"
+      ],
+      "desc_cn": "订阅转换工具，支持多种代理订阅格式互转",
+      "desc_en": "Subscription converter supporting multiple proxy subscription formats"
+    },
+    {
+      "id": "frp",
+      "name": "frp",
+      "version": "0.68.1",
+      "source": "GitHub Release: fatedier/frp",
+      "version_kind": "release_version",
+      "version_source": "GitHub release tag",
+      "category": "Network & Proxy",
+      "homepage": "https://github.com/fatedier/frp",
+      "released_at": "2026-04-13T17:37:42Z",
+      "notes_url": "https://github.com/fatedier/frp/releases/tag/v0.68.1",
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://github.com/fatedier/frp/releases/download/v0.68.1/frp_0.68.1_windows_amd64.zip",
+          "link_kind": "direct",
+          "filename": "frp_0.68.1_windows_amd64.zip",
+          "size": 14111798,
+          "sha256": null
+        },
+        {
+          "platform": "mac-arm64",
+          "url": "https://github.com/fatedier/frp/releases/download/v0.68.1/frp_0.68.1_darwin_arm64.tar.gz",
+          "link_kind": "direct",
+          "filename": "frp_0.68.1_darwin_arm64.tar.gz",
+          "size": 12825610,
+          "sha256": null
+        },
+        {
+          "platform": "mac-x64",
+          "url": "https://github.com/fatedier/frp/releases/download/v0.68.1/frp_0.68.1_darwin_amd64.tar.gz",
+          "link_kind": "direct",
+          "filename": "frp_0.68.1_darwin_amd64.tar.gz",
+          "size": 14135388,
+          "sha256": null
+        },
+        {
+          "platform": "linux-x64",
+          "url": "https://github.com/fatedier/frp/releases/download/v0.68.1/frp_0.68.1_linux_amd64.tar.gz",
+          "link_kind": "direct",
+          "filename": "frp_0.68.1_linux_amd64.tar.gz",
+          "size": 14101122,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-05-01T09:43:07+00:00",
+      "last_success_at": "2026-05-01T09:43:07+00:00",
+      "editions": [
+        "cn"
+      ],
+      "desc_cn": "快速反向代理，将内网服务暴露到公网",
+      "desc_en": "Fast reverse proxy to expose local servers behind NAT to the internet"
+    },
+    {
+      "id": "gopeed",
+      "name": "Gopeed",
+      "version": "1.9.3",
+      "source": "GitHub Release: GopeedLab/gopeed",
+      "version_kind": "release_version",
+      "version_source": "GitHub release tag",
+      "category": "Download Tools",
+      "homepage": "https://github.com/GopeedLab/gopeed",
+      "released_at": "2026-03-18T12:54:20Z",
+      "notes_url": "https://github.com/GopeedLab/gopeed/releases/tag/v1.9.3",
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://github.com/GopeedLab/gopeed/releases/download/v1.9.3/Gopeed-v1.9.3-windows-amd64.exe",
+          "link_kind": "direct",
+          "filename": "Gopeed-v1.9.3-windows-amd64.exe",
+          "size": 26467613,
+          "sha256": null
+        },
+        {
+          "platform": "mac-arm64",
+          "url": "https://github.com/GopeedLab/gopeed/releases/download/v1.9.3/Gopeed-v1.9.3-macos-arm64.dmg",
+          "link_kind": "direct",
+          "filename": "Gopeed-v1.9.3-macos-arm64.dmg",
+          "size": 39394569,
+          "sha256": null
+        },
+        {
+          "platform": "mac-x64",
+          "url": "https://github.com/GopeedLab/gopeed/releases/download/v1.9.3/Gopeed-v1.9.3-macos-amd64.dmg",
+          "link_kind": "direct",
+          "filename": "Gopeed-v1.9.3-macos-amd64.dmg",
+          "size": 40877453,
+          "sha256": null
+        },
+        {
+          "platform": "linux-x64",
+          "url": "https://github.com/GopeedLab/gopeed/releases/download/v1.9.3/Gopeed-v1.9.3-linux-amd64.AppImage",
+          "link_kind": "direct",
+          "filename": "Gopeed-v1.9.3-linux-amd64.AppImage",
+          "size": 38304248,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-05-01T09:43:07+00:00",
+      "last_success_at": "2026-05-01T09:43:07+00:00",
+      "editions": [
+        "cn"
+      ],
+      "desc_cn": "高速下载管理器，支持 HTTP/BT/磁力/ed2k，跨平台",
+      "desc_en": "Fast download manager for HTTP, BitTorrent, Magnet, and ed2k"
+    },
+    {
+      "id": "eza",
+      "name": "eza",
+      "version": "0.23.4",
+      "source": "GitHub Release: eza-community/eza",
+      "version_kind": "release_version",
+      "version_source": "GitHub release tag",
+      "category": "Developer Tools",
+      "homepage": "https://github.com/eza-community/eza",
+      "released_at": "2025-10-03T20:44:49Z",
+      "notes_url": "https://github.com/eza-community/eza/releases/tag/v0.23.4",
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://github.com/eza-community/eza/releases/download/v0.23.4/eza.exe_x86_64-pc-windows-gnu.zip",
+          "link_kind": "direct",
+          "filename": "eza.exe_x86_64-pc-windows-gnu.zip",
+          "size": 1300597,
+          "sha256": null
+        },
+        {
+          "platform": "linux-x64",
+          "url": "https://github.com/eza-community/eza/releases/download/v0.23.4/eza_x86_64-unknown-linux-gnu.tar.gz",
+          "link_kind": "direct",
+          "filename": "eza_x86_64-unknown-linux-gnu.tar.gz",
+          "size": 1050865,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-05-01T09:43:07+00:00",
+      "warnings": [
+        "mac-arm64: 没有匹配 asset pattern 'eza_aarch64-apple-darwin.tar.gz'",
+        "mac-x64: 没有匹配 asset pattern 'eza_x86_64-apple-darwin.tar.gz'"
+      ],
+      "last_success_at": "2026-05-01T09:43:07+00:00",
+      "editions": [
+        "cn"
+      ],
+      "desc_cn": "现代 ls 替代品，支持颜色和 Git 状态",
+      "desc_en": "Modern ls replacement with colors and Git status"
+    },
+    {
+      "id": "tiny-rdm",
+      "name": "Tiny RDM",
+      "version": "1.2.7",
+      "source": "GitHub Release: tiny-craft/tiny-rdm",
+      "version_kind": "release_version",
+      "version_source": "GitHub release tag",
+      "category": "Developer Tools",
+      "homepage": "https://github.com/tiny-craft/tiny-rdm",
+      "released_at": "2026-03-30T15:43:48Z",
+      "notes_url": "https://github.com/tiny-craft/tiny-rdm/releases/tag/v1.2.7",
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://github.com/tiny-craft/tiny-rdm/releases/download/v1.2.7/TinyRDM_Setup_1.2.7_windows_x64.exe",
+          "link_kind": "direct",
+          "filename": "TinyRDM_Setup_1.2.7_windows_x64.exe",
+          "size": 13655960,
+          "sha256": null
+        },
+        {
+          "platform": "win-arm64",
+          "url": "https://github.com/tiny-craft/tiny-rdm/releases/download/v1.2.7/TinyRDM_Setup_1.2.7_windows_arm64.exe",
+          "link_kind": "direct",
+          "filename": "TinyRDM_Setup_1.2.7_windows_arm64.exe",
+          "size": 12713336,
+          "sha256": null
+        },
+        {
+          "platform": "mac-arm64",
+          "url": "https://github.com/tiny-craft/tiny-rdm/releases/download/v1.2.7/TinyRDM_1.2.7_mac_arm64.dmg",
+          "link_kind": "direct",
+          "filename": "TinyRDM_1.2.7_mac_arm64.dmg",
+          "size": 9118130,
+          "sha256": null
+        },
+        {
+          "platform": "mac-x64",
+          "url": "https://github.com/tiny-craft/tiny-rdm/releases/download/v1.2.7/TinyRDM_1.2.7_mac_intel.dmg",
+          "link_kind": "direct",
+          "filename": "TinyRDM_1.2.7_mac_intel.dmg",
+          "size": 9923392,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-05-01T09:43:07+00:00",
+      "last_success_at": "2026-05-01T09:43:07+00:00",
+      "editions": [
+        "cn"
+      ],
+      "desc_cn": "现代化轻量级 Redis 桌面管理器",
+      "desc_en": "Modern lightweight Redis desktop manager"
+    },
+    {
+      "id": "nexttrace",
+      "name": "NextTrace",
+      "version": "1.6.4",
+      "source": "GitHub Release: nxtrace/NTrace-core",
+      "version_kind": "release_version",
+      "version_source": "GitHub release tag",
+      "category": "System Utilities",
+      "homepage": "https://github.com/nxtrace/NTrace-core",
+      "released_at": "2026-04-23T01:47:48Z",
+      "notes_url": "https://github.com/nxtrace/NTrace-core/releases/tag/v1.6.4",
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://github.com/nxtrace/NTrace-core/releases/download/v1.6.4/nexttrace_windows_amd64.exe",
+          "link_kind": "direct",
+          "filename": "nexttrace_windows_amd64.exe",
+          "size": 27313152,
+          "sha256": null
+        },
+        {
+          "platform": "mac-arm64",
+          "url": "https://github.com/nxtrace/NTrace-core/releases/download/v1.6.4/nexttrace_darwin_arm64",
+          "link_kind": "direct",
+          "filename": "nexttrace_darwin_arm64",
+          "size": 25168050,
+          "sha256": null
+        },
+        {
+          "platform": "mac-x64",
+          "url": "https://github.com/nxtrace/NTrace-core/releases/download/v1.6.4/nexttrace_darwin_amd64",
+          "link_kind": "direct",
+          "filename": "nexttrace_darwin_amd64",
+          "size": 26914920,
+          "sha256": null
+        },
+        {
+          "platform": "linux-x64",
+          "url": "https://github.com/nxtrace/NTrace-core/releases/download/v1.6.4/nexttrace_linux_amd64",
+          "link_kind": "direct",
+          "filename": "nexttrace_linux_amd64",
+          "size": 9416228,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-05-01T09:43:07+00:00",
+      "last_success_at": "2026-05-01T09:43:07+00:00",
+      "editions": [
+        "cn"
+      ],
+      "desc_cn": "开源可视化路由追踪工具",
+      "desc_en": "Open source visual route tracking CLI tool"
+    },
+    {
+      "id": "netdata",
+      "name": "Netdata",
+      "version": "2.10.3",
+      "source": "GitHub Release: netdata/netdata",
+      "version_kind": "release_version",
+      "version_source": "GitHub release tag",
+      "category": "Cloud & DevOps",
+      "homepage": "https://github.com/netdata/netdata",
+      "released_at": "2026-04-27T17:04:47Z",
+      "notes_url": "https://github.com/netdata/netdata/releases/tag/v2.10.3",
+      "assets": [
+        {
+          "platform": "linux-x64",
+          "url": "https://github.com/netdata/netdata/releases/download/v2.10.3/netdata-x86_64-latest.gz.run",
+          "link_kind": "direct",
+          "filename": "netdata-x86_64-latest.gz.run",
+          "size": 189682725,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-05-01T09:43:07+00:00",
+      "last_success_at": "2026-05-01T09:43:07+00:00",
+      "editions": [
+        "cn"
+      ],
+      "desc_cn": "实时性能和健康监控平台",
+      "desc_en": "Real-time performance and health monitoring platform"
+    },
+    {
+      "id": "authelia",
+      "name": "Authelia",
+      "version": "4.39.19",
+      "source": "GitHub Release: authelia/authelia",
+      "version_kind": "release_version",
+      "version_source": "GitHub release tag",
+      "category": "Security & Privacy",
+      "homepage": "https://github.com/authelia/authelia",
+      "released_at": "2026-04-12T07:25:12Z",
+      "notes_url": "https://github.com/authelia/authelia/releases/tag/v4.39.19",
+      "assets": [
+        {
+          "platform": "linux-x64",
+          "url": "https://github.com/authelia/authelia/releases/download/v4.39.19/authelia-v4.39.19-linux-amd64.tar.gz",
+          "link_kind": "direct",
+          "filename": "authelia-v4.39.19-linux-amd64.tar.gz",
+          "size": 19540068,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-05-01T09:43:08+00:00",
+      "last_success_at": "2026-05-01T09:43:08+00:00",
+      "editions": [
+        "cn"
+      ],
+      "desc_cn": "开源认证和授权服务器，支持双因素认证",
+      "desc_en": "Open-source authentication and authorization server with 2FA"
+    },
+    {
+      "id": "chatgpt-desktop",
+      "name": "ChatGPT Desktop",
+      "version": "1.1.0",
+      "source": "GitHub Release: lencx/ChatGPT",
+      "version_kind": "release_version",
+      "version_source": "GitHub release tag",
+      "category": "AI Tools",
+      "homepage": "https://github.com/lencx/ChatGPT",
+      "released_at": "2023-08-03T13:51:20Z",
+      "notes_url": "https://github.com/lencx/ChatGPT/releases/tag/v1.1.0",
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://github.com/lencx/ChatGPT/releases/download/v1.1.0/ChatGPT_1.1.0_windows_x86_64.msi",
+          "link_kind": "direct",
+          "filename": "ChatGPT_1.1.0_windows_x86_64.msi",
+          "size": 6508544,
+          "sha256": null
+        },
+        {
+          "platform": "mac-arm64",
+          "url": "https://github.com/lencx/ChatGPT/releases/download/v1.1.0/ChatGPT_1.1.0_macos_aarch64.dmg",
+          "link_kind": "direct",
+          "filename": "ChatGPT_1.1.0_macos_aarch64.dmg",
+          "size": 5309057,
+          "sha256": null
+        },
+        {
+          "platform": "mac-x64",
+          "url": "https://github.com/lencx/ChatGPT/releases/download/v1.1.0/ChatGPT_1.1.0_macos_x86_64.dmg",
+          "link_kind": "direct",
+          "filename": "ChatGPT_1.1.0_macos_x86_64.dmg",
+          "size": 5328662,
+          "sha256": null
+        },
+        {
+          "platform": "linux-x64",
+          "url": "https://github.com/lencx/ChatGPT/releases/download/v1.1.0/ChatGPT_1.1.0_linux_x86_64.deb",
+          "link_kind": "direct",
+          "filename": "ChatGPT_1.1.0_linux_x86_64.deb",
+          "size": 5342458,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-05-01T09:43:08+00:00",
+      "last_success_at": "2026-05-01T09:43:08+00:00",
+      "editions": [
+        "cn"
+      ],
+      "desc_cn": "ChatGPT 桌面客户端，支持快捷键和系统托盘",
+      "desc_en": "ChatGPT desktop app with keyboard shortcuts and system tray"
+    },
+    {
+      "id": "gitea",
+      "name": "Gitea",
+      "version": "1.26.1",
+      "source": "GitHub Release: go-gitea/gitea",
+      "version_kind": "release_version",
+      "version_source": "GitHub release tag",
+      "category": "Cloud & DevOps",
+      "homepage": "https://gitea.io",
+      "released_at": "2026-04-24T22:30:45Z",
+      "notes_url": "https://github.com/go-gitea/gitea/releases/tag/v1.26.1",
+      "assets": [
+        {
+          "platform": "linux-x64",
+          "url": "https://github.com/go-gitea/gitea/releases/download/v1.26.1/gitea-1.26.1-linux-amd64",
+          "link_kind": "direct",
+          "filename": "gitea-1.26.1-linux-amd64",
+          "size": 118523280,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-05-01T09:43:08+00:00",
+      "warnings": [
+        "win-x64: 没有匹配 asset pattern 'gitea-*-windows-amd64.exe'",
+        "mac-arm64: 没有匹配 asset pattern 'gitea-*-darwin-arm64'",
+        "mac-x64: 没有匹配 asset pattern 'gitea-*-darwin-amd64'"
+      ],
+      "last_success_at": "2026-05-01T09:43:08+00:00",
+      "editions": [
+        "cn"
+      ],
+      "desc_cn": "轻量级自托管 Git 服务，Go 语言编写",
+      "desc_en": "Lightweight self-hosted Git service written in Go"
+    },
+    {
+      "id": "ueli",
+      "name": "Ueli",
+      "version": "9.28.0",
+      "source": "GitHub Release: oliverschwendener/ueli",
+      "version_kind": "release_version",
+      "version_source": "GitHub release tag",
+      "category": "System Utilities",
+      "homepage": "https://github.com/oliverschwendener/ueli",
+      "released_at": "2026-04-23T06:31:02Z",
+      "notes_url": "https://github.com/oliverschwendener/ueli/releases/tag/v9.28.0",
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://github.com/oliverschwendener/ueli/releases/download/v9.28.0/Ueli-9.28.0-win.zip",
+          "link_kind": "direct",
+          "filename": "Ueli-9.28.0-win.zip",
+          "size": 209403027,
+          "sha256": null
+        },
+        {
+          "platform": "mac-arm64",
+          "url": "https://github.com/oliverschwendener/ueli/releases/download/v9.28.0/Ueli-9.28.0-arm64.dmg",
+          "link_kind": "direct",
+          "filename": "Ueli-9.28.0-arm64.dmg",
+          "size": 185765006,
+          "sha256": null
+        },
+        {
+          "platform": "mac-x64",
+          "url": "https://github.com/oliverschwendener/ueli/releases/download/v9.28.0/Ueli-9.28.0-arm64-mac.zip",
+          "link_kind": "direct",
+          "filename": "Ueli-9.28.0-arm64-mac.zip",
+          "size": 179640562,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-05-01T09:43:08+00:00",
+      "warnings": [
+        "linux-x64: 没有匹配 asset pattern 'Ueli-*-linux-x86_64.deb'"
+      ],
+      "last_success_at": "2026-05-01T09:43:08+00:00",
+      "editions": [
+        "cn"
+      ],
+      "desc_cn": "跨平台应用启动器，快速搜索和启动程序",
+      "desc_en": "Cross-platform application launcher with fast search"
     }
   ],
   "stats": {
-    "total": 388,
-    "success": 385,
-    "failed": 3,
+    "total": 417,
+    "success": 412,
+    "failed": 5,
     "failed_ids": [
       "windows11",
       "sharex",
+      "windows11-english",
+      "pastel-color",
       "claude-code"
     ],
     "failures": [
@@ -13952,6 +15287,14 @@
       {
         "id": "sharex",
         "error": "ShareX/ShareX@v20.0.4: 没有任何 asset 匹配配置的 pattern，现有 asset: ['ShareX-20.0.4-portable-x64.zip', 'ShareX-20.0.4-setup-x64.exe']..."
+      },
+      {
+        "id": "windows11-english",
+        "error": "not included in any sync shard"
+      },
+      {
+        "id": "pastel-color",
+        "error": "not included in any sync shard"
       },
       {
         "id": "claude-code",
