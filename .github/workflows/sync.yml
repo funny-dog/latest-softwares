@@ -212,7 +212,7 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v7
         with:
           commit_message: 'chore(data): sync latest software [skip ci]'
-          file_pattern: 'data/latest.json README.md'
+          file_pattern: 'data/latest.json README.md data/site_metrics.json'
           commit_user_name: 'github-actions[bot]'
           commit_user_email: '41898282+github-actions[bot]@users.noreply.github.com'
 
@@ -326,6 +326,31 @@ jobs:
           rsync -avz --delete \
             -e "ssh -i ~/.ssh/deploy_key -p $PORT -o StrictHostKeyChecking=accept-new" \
             dist/ "$SSH_USER@$SSH_HOST:$DEPLOY_PATH/"
+
+      - name: Checkout (for backend deploy)
+        uses: actions/checkout@v6
+
+      - name: Deploy API backend to Aliyun
+        env:
+          SSH_HOST:    ${{ secrets.ALIYUN_HOST }}
+          SSH_USER:    ${{ secrets.ALIYUN_USER }}
+          SSH_PORT:    ${{ secrets.ALIYUN_PORT }}
+        run: |
+          PORT="${SSH_PORT:-22}"
+          SSH_CMD="ssh -i ~/.ssh/deploy_key -p $PORT -o StrictHostKeyChecking=accept-new"
+          # 同步后端代码和包数据
+          rsync -avz --delete \
+            -e "$SSH_CMD" \
+            --exclude '__pycache__' --exclude '.venv' --exclude 'tests' \
+            --exclude 'web/' --exclude 'dist/' --exclude '.github/' \
+            --exclude 'scripts/' --exclude '.fastapicloud/' \
+            ./ "$SSH_USER@$SSH_HOST:/opt/latest-softwares/"
+          # 同步包数据到后端目录
+          rsync -avz \
+            -e "$SSH_CMD" \
+            data/latest.json "$SSH_USER@$SSH_HOST:/opt/latest-softwares/data/"
+          # 重启 API 服务
+          $SSH_CMD "$SSH_USER@$SSH_HOST" "sudo systemctl restart latest-softwares-api" || true
 
       - name: Summary
         env:

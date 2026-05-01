@@ -1,14 +1,14 @@
-"""Latest Softwares FastAPI Cloud entrypoint for the international edition.
+"""Latest Softwares 国内版 API 后端。
 
-Responsibilities:
-  - GET /api/packages returns international package data filtered by edition
-  - GET /api/health returns health metadata
-  - GET / serves the static frontend built by build_web.py --edition intl
+部署在阿里云 VPS 上，由 nginx 反向代理（/api/ → 127.0.0.1:8001）。
+提供访问统计、下载点击追踪和重定向功能。
 
-Deployment note:
-  dist/ is ignored by .gitignore and re-included for FastAPI Cloud through
-  .fastapicloudignore. Build it before deployment:
-    python scripts/build_web.py --edition intl
+统计数据存储在独立于部署目录的位置（默认 /var/lib/latest-softwares/metrics.json），
+不受 rsync --delete 影响。
+
+环境变量：
+  LATEST_SOFTWARES_METRICS_FILE — 统计文件路径（默认 /var/lib/latest-softwares/metrics.json）
+  LATEST_SOFTWARES_DATA_FILE    — 包数据文件路径（默认 data/latest.json）
 """
 
 from __future__ import annotations
@@ -21,33 +21,29 @@ from pathlib import Path
 
 from fastapi import FastAPI, HTTPException
 from fastapi.responses import JSONResponse, RedirectResponse
-from fastapi.staticfiles import StaticFiles
 
-from scripts.editions import filter_data_by_edition
-
-ROOT = Path(__file__).resolve().parent
-DATA_FILE = ROOT / "data" / "latest.json"
-DIST_DIR = ROOT / "dist"
+ROOT = Path(__file__).resolve().parents[1]
+DATA_FILE = Path(
+    os.environ.get("LATEST_SOFTWARES_DATA_FILE", str(ROOT / "data" / "latest.json"))
+)
 STATS_FILE = Path(
-    os.environ.get("LATEST_SOFTWARES_STATS_FILE", str(ROOT / "data" / "site_metrics.json"))
+    os.environ.get(
+        "LATEST_SOFTWARES_METRICS_FILE", "/var/lib/latest-softwares/metrics.json"
+    )
 )
 STATS_LOCK = threading.Lock()
 
-# This deployment serves the international edition only.
-EDITION = "intl"
+EDITION = "cn"
 
 app = FastAPI(
-    title="Latest Softwares API (International)",
-    description=(
-        "Daily metadata sync for latest software releases, with a JSON API "
-        "and static web frontend for the international edition."
-    ),
+    title="Latest Softwares API (CN)",
+    description="国内版访问统计与下载追踪 API",
     version="1.0.0",
 )
 
 
 def _load_data() -> dict:
-    """Load data/latest.json or return an empty shell when it is missing."""
+    """加载包数据，文件不存在时返回空结构。"""
     if DATA_FILE.exists():
         return json.loads(DATA_FILE.read_text(encoding="utf-8"))
     return {"schema_version": 2, "packages": [], "stats": {}}
@@ -61,11 +57,7 @@ def _empty_metrics() -> dict:
     return {
         "schema_version": 1,
         "scope": "instance-local",
-        "storage": "ephemeral-file",
-        "note": (
-            "FastAPI Cloud can autoscale to multiple instances; use runtime "
-            "logs for aggregate visit and download counts."
-        ),
+        "storage": "persistent-file",
         "updated_at": None,
         "visits": {"total": 0, "paths": {}},
         "downloads": {"total": 0, "packages": {}, "platforms": {}, "assets": {}},
@@ -126,24 +118,13 @@ def _increment_download(package_id: str, platform: str) -> None:
         _write_metrics(metrics)
 
 
-def _log_metric_event(event: str, **payload: str) -> None:
-    record = {"event": event, "timestamp": _utc_now_iso(), **payload}
-    print(
-        "latest_softwares_event "
-        + json.dumps(
-            record,
-            ensure_ascii=False,
-            separators=(",", ":"),
-            sort_keys=True,
-        ),
-        flush=True,
-    )
-
-
 def _find_asset(package_id: str, platform: str) -> dict:
-    data = filter_data_by_edition(_load_data(), EDITION)
+    data = _load_data()
     for package in data.get("packages", []):
         if package.get("id") != package_id:
+            continue
+        editions = package.get("editions", ["cn", "intl"])
+        if EDITION not in editions:
             continue
         for asset in package.get("assets", []):
             if asset.get("platform") == platform and asset.get("url"):
@@ -151,58 +132,41 @@ def _find_asset(package_id: str, platform: str) -> dict:
     raise HTTPException(status_code=404, detail="download asset not found")
 
 
-# JSON API
+# ── API 端点 ──────────────────────────────────────
+
+
 @app.get("/api/health", tags=["meta"])
 def health():
-    """Return health metadata."""
-    data = filter_data_by_edition(_load_data(), EDITION)
+    """健康检查。"""
+    data = _load_data()
+    cn_packages = [
+        p for p in data.get("packages", [])
+        if EDITION in p.get("editions", ["cn", "intl"])
+    ]
     return {
         "status": "ok",
         "edition": EDITION,
-        "packages_count": len(data.get("packages", [])),
+        "packages_count": len(cn_packages),
         "generated_at": data.get("generated_at"),
     }
 
 
-@app.get("/api/packages", tags=["packages"])
-def list_packages():
-    """Return all international package data."""
-    data = filter_data_by_edition(_load_data(), EDITION)
-    return JSONResponse(content=data)
-
-
 @app.post("/api/visit", tags=["metrics"])
 def record_visit():
-    """Record a frontend page view."""
+    """记录一次页面访问。"""
     _increment_visit("/")
-    _log_metric_event("visit", path="/")
     return JSONResponse(content={"status": "ok", "metrics": _load_metrics()})
-
-
-@app.get("/api/download/{package_id}/{platform}", tags=["metrics"])
-def redirect_download(package_id: str, platform: str):
-    """Record a download click and redirect to the upstream asset URL."""
-    asset = _find_asset(package_id, platform)
-    _increment_download(package_id, platform)
-    _log_metric_event(
-        "download",
-        package_id=package_id,
-        platform=platform,
-        url=asset["url"],
-    )
-    return RedirectResponse(asset["url"])
 
 
 @app.get("/api/metrics", tags=["metrics"])
 def metrics():
-    """Return lightweight visit and download-click counters."""
+    """返回访问和下载统计。"""
     return JSONResponse(content=_load_metrics())
 
 
-# Static frontend. dist/ must be built with build_web.py --edition intl.
-if DIST_DIR.is_dir():
-    app.mount(
-        "/",
-        StaticFiles(directory=str(DIST_DIR), html=True),
-        name="static",
-    )
+@app.get("/api/download/{package_id}/{platform}", tags=["metrics"])
+def redirect_download(package_id: str, platform: str):
+    """记录下载点击并重定向到上游资源。"""
+    asset = _find_asset(package_id, platform)
+    _increment_download(package_id, platform)
+    return RedirectResponse(asset["url"])

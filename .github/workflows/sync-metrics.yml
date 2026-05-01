@@ -1,0 +1,52 @@
+name: Sync Site Metrics
+
+# 定时从 FastAPI Cloud 拉取访问/下载统计并 commit 回 repo，
+# 防止 intl 版每次重新部署时统计数据丢失。
+
+on:
+  schedule:
+    # 每 6 小时运行一次（UTC 00/06/12/18）
+    - cron: '17 */6 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  sync-metrics:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Fetch metrics from FastAPI Cloud
+        id: fetch
+        env:
+          METRICS_URL: "https://latest-softwares-064facea.fastapicloud.dev/api/metrics"
+        run: |
+          HTTP_CODE=$(curl -sSL -o /tmp/metrics.json -w '%{http_code}' --max-time 15 "$METRICS_URL" || echo "000")
+
+          if [ "$HTTP_CODE" -ge 200 ] && [ "$HTTP_CODE" -lt 300 ]; then
+            echo "status=ok" >> "$GITHUB_OUTPUT"
+            echo "Metrics fetched successfully (HTTP $HTTP_CODE)"
+          else
+            echo "status=fail" >> "$GITHUB_OUTPUT"
+            echo "Failed to fetch metrics (HTTP $HTTP_CODE), skipping commit" >&2
+          fi
+
+      - name: Update metrics file
+        if: steps.fetch.outputs.status == 'ok'
+        run: |
+          mkdir -p data
+          cp /tmp/metrics.json data/site_metrics.json
+
+      - name: Commit metrics to repo
+        if: steps.fetch.outputs.status == 'ok'
+        uses: stefanzweifel/git-auto-commit-action@v7
+        with:
+          commit_message: 'chore(data): sync site metrics [skip ci]'
+          file_pattern: 'data/site_metrics.json'
+          commit_user_name: 'github-actions[bot]'
+          commit_user_email: '41898282+github-actions[bot]@users.noreply.github.com'

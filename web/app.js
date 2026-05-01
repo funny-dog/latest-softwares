@@ -220,14 +220,14 @@ function app() {
     },
 
     downloadUrl(pkg, asset) {
-      if (this.edition === 'intl' && this.publicSiteUrl && pkg?.id && asset?.platform) {
+      if (this.publicSiteUrl && pkg?.id && asset?.platform) {
         return `${this.publicSiteUrl}/api/download/${encodeURIComponent(pkg.id)}/${encodeURIComponent(asset.platform)}`;
       }
       return asset.url;
     },
 
     recordVisit() {
-      if (this.edition !== 'intl' || !this.publicSiteUrl) return;
+      if (!this.publicSiteUrl) return;
       fetch(`${this.publicSiteUrl}/api/visit`, {
         method: 'POST',
         keepalive: true,
@@ -241,7 +241,7 @@ function app() {
     },
 
     fetchSiteMetrics() {
-      if (this.edition !== 'intl' || !this.publicSiteUrl) return;
+      if (!this.publicSiteUrl) return;
       fetch(`${this.publicSiteUrl}/api/metrics`)
         .then(response => response.ok ? response.json() : null)
         .then(metrics => this.applySiteMetrics(metrics))
@@ -259,7 +259,7 @@ function app() {
     },
 
     noteDownloadClick() {
-      if (this.edition !== 'intl' || !this.publicSiteUrl || !this.siteMetrics.loaded) {
+      if (!this.publicSiteUrl || !this.siteMetrics.loaded) {
         return;
       }
       this.siteMetrics = {

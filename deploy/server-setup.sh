@@ -21,6 +21,8 @@ set -euo pipefail
 readonly DEPLOY_PATH="/var/www/latest-softwares"
 readonly NGINX_SITE="/etc/nginx/sites-available/latest-softwares"
 readonly DEPLOY_KEY="$HOME/.ssh/latest-softwares-deploy"
+readonly API_DIR="/opt/latest-softwares"
+readonly METRICS_DIR="/var/lib/latest-softwares"
 
 echo "=============================================================="
 echo "  Latest Softwares — 阿里云 ECS 一次性初始化"
@@ -28,13 +30,13 @@ echo "=============================================================="
 
 # ---------- Step 1: 装包 ----------
 echo
-echo "[1/5] 安装 nginx..."
+echo "[1/7] 安装 nginx + Python..."
 sudo apt-get update -y
-sudo apt-get install -y nginx rsync
+sudo apt-get install -y nginx rsync python3 python3-venv python3-pip
 
 # ---------- Step 2: 部署目录 ----------
 echo
-echo "[2/5] 创建部署目录 $DEPLOY_PATH ..."
+echo "[2/7] 创建部署目录 $DEPLOY_PATH ..."
 sudo mkdir -p "$DEPLOY_PATH"
 sudo chown -R "$USER:$USER" "$DEPLOY_PATH"
 # 写一个占位首页，方便首次访问还没 rsync 时不 404
@@ -49,7 +51,7 @@ EOF
 
 # ---------- Step 3: nginx 配置 ----------
 echo
-echo "[3/5] 写 nginx 站点配置..."
+echo "[3/7] 写 nginx 站点配置..."
 sudo tee "$NGINX_SITE" > /dev/null <<'NGINX_CONF'
 server {
     listen 8080 default_server;
@@ -59,6 +61,15 @@ server {
     root /var/www/latest-softwares;
     index index.html;
     charset utf-8;
+
+    # API 反向代理（CN 版后端）
+    location /api/ {
+        proxy_pass http://127.0.0.1:8001;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto $scheme;
+    }
 
     location / {
         try_files $uri $uri/ /index.html;
@@ -91,9 +102,44 @@ sudo rm -f /etc/nginx/sites-enabled/default
 sudo nginx -t
 sudo systemctl reload nginx
 
-# ---------- Step 4: deploy key ----------
+# ---------- Step 4: API 后端 ----------
 echo
-echo "[4/5] 生成 deploy SSH key..."
+echo "[4/7] 部署 API 后端..."
+sudo mkdir -p "$API_DIR/data" "$METRICS_DIR"
+sudo chown -R "$USER:$USER" "$API_DIR"
+sudo chown -R www-data:www-data "$METRICS_DIR"
+
+# 创建 Python 虚拟环境
+python3 -m venv "$API_DIR/venv"
+"$API_DIR/venv/bin/pip" install --quiet fastapi uvicorn
+
+# 写入 systemd 服务
+sudo tee /etc/systemd/system/latest-softwares-api.service > /dev/null <<SERVICE_CONF
+[Unit]
+Description=Latest Softwares CN API Server
+After=network.target
+
+[Service]
+Type=simple
+User=www-data
+WorkingDirectory=$API_DIR
+ExecStart=$API_DIR/venv/bin/uvicorn deploy.cn_server:app --host 127.0.0.1 --port 8001
+Restart=always
+RestartSec=5
+Environment="LATEST_SOFTWARES_METRICS_FILE=$METRICS_DIR/metrics.json"
+Environment="LATEST_SOFTWARES_DATA_FILE=$API_DIR/data/latest.json"
+
+[Install]
+WantedBy=multi-user.target
+SERVICE_CONF
+
+sudo systemctl daemon-reload
+sudo systemctl enable latest-softwares-api
+echo "  API 后端服务已配置（端口 8001，首次部署后自动启动）"
+
+# ---------- Step 5: deploy key ----------
+echo
+echo "[5/7] 生成 deploy SSH key..."
 if [ -f "$DEPLOY_KEY" ]; then
   echo "  发现现有 deploy key（$DEPLOY_KEY），跳过生成"
 else
@@ -113,7 +159,17 @@ else
   echo "  公钥已存在 authorized_keys 中，跳过"
 fi
 
-# ---------- Step 5: 总结 ----------
+# ---------- Step 6: 防火墙 ----------
+echo
+echo "[6/7] 检查防火墙..."
+if command -v ufw &>/dev/null; then
+  sudo ufw allow 8080/tcp comment "Latest Softwares" 2>/dev/null || true
+  echo "  ufw 已放行 8080"
+else
+  echo "  未检测到 ufw，请手动确认阿里云安全组已放行 TCP 8080"
+fi
+
+# ---------- Step 7: 总结 ----------
 echo
 echo "=============================================================="
 echo "  ✅ 服务器初始化完成"

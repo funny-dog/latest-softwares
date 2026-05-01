@@ -12,6 +12,7 @@ from __future__ import annotations
 
 import hashlib
 import json
+import os
 import shutil
 import sys
 from pathlib import Path
@@ -54,6 +55,7 @@ DATA_PLACEHOLDER = (
     '/*__DATA__*/ {"schema_version": 2, "packages": [], "stats": {}} /*__DATA__*/'
 )
 PUBLIC_SITE_URL = "https://latest-softwares-064facea.fastapicloud.dev"
+CN_PUBLIC_SITE_URL = os.environ.get("CN_PUBLIC_SITE_URL", "http://localhost:8080")
 
 
 def clean_dist() -> None:
@@ -183,6 +185,8 @@ def inject_data(edition: str | None = None) -> int:
     data["direct_file_extensions"] = list(DIRECT_FILE_EXTENSIONS)
     if edition == "intl":
         data["public_site_url"] = PUBLIC_SITE_URL
+    elif edition == "cn":
+        data["public_site_url"] = CN_PUBLIC_SITE_URL
     # ensure_ascii=False 让中文不被转义成 \uXXXX，体积更小
     data_json = _json_for_inline_script(data)
     replacement = f"/*__DATA__*/ {data_json} /*__DATA__*/"
