@@ -10,18 +10,16 @@
 #   ssh user@<aliyun-ip> 'bash /tmp/server-setup.sh'
 #
 # 这个脚本会：
-#   1. 装 nginx + apache2-utils
+#   1. 装 nginx
 #   2. 创建部署目录 /var/www/latest-softwares
-#   3. 引导你为初始用户配 Basic Auth 密码
-#   4. 写 nginx 站点配置（监听 8080，启用 Basic Auth）
-#   5. 生成专门的 deploy SSH key 并加到 authorized_keys
-#   6. 提示你把私钥粘贴到 GitHub Secrets
+#   3. 写 nginx 站点配置（监听 8080）
+#   4. 生成专门的 deploy SSH key 并加到 authorized_keys
+#   5. 提示你把私钥粘贴到 GitHub Secrets
 
 set -euo pipefail
 
 readonly DEPLOY_PATH="/var/www/latest-softwares"
 readonly NGINX_SITE="/etc/nginx/sites-available/latest-softwares"
-readonly HTPASSWD_FILE="/etc/nginx/.htpasswd"
 readonly DEPLOY_KEY="$HOME/.ssh/latest-softwares-deploy"
 
 echo "=============================================================="
@@ -30,13 +28,13 @@ echo "=============================================================="
 
 # ---------- Step 1: 装包 ----------
 echo
-echo "[1/6] 安装 nginx + apache2-utils..."
+echo "[1/5] 安装 nginx..."
 sudo apt-get update -y
-sudo apt-get install -y nginx apache2-utils rsync
+sudo apt-get install -y nginx rsync
 
 # ---------- Step 2: 部署目录 ----------
 echo
-echo "[2/6] 创建部署目录 $DEPLOY_PATH ..."
+echo "[2/5] 创建部署目录 $DEPLOY_PATH ..."
 sudo mkdir -p "$DEPLOY_PATH"
 sudo chown -R "$USER:$USER" "$DEPLOY_PATH"
 # 写一个占位首页，方便首次访问还没 rsync 时不 404
@@ -49,25 +47,9 @@ cat > "$DEPLOY_PATH/index.html" <<'EOF'
 </body>
 EOF
 
-# ---------- Step 3: Basic Auth ----------
+# ---------- Step 3: nginx 配置 ----------
 echo
-echo "[3/6] 配置 HTTP Basic Auth 用户..."
-read -rp "  请输入第一个用户名 (例: alice): " FIRST_USER
-if [ -f "$HTPASSWD_FILE" ]; then
-  sudo htpasswd "$HTPASSWD_FILE" "$FIRST_USER"
-else
-  sudo htpasswd -c "$HTPASSWD_FILE" "$FIRST_USER"
-fi
-
-while true; do
-  read -rp "  再加一个用户？输入用户名（直接回车跳过）: " EXTRA
-  [ -z "$EXTRA" ] && break
-  sudo htpasswd "$HTPASSWD_FILE" "$EXTRA"
-done
-
-# ---------- Step 4: nginx 配置 ----------
-echo
-echo "[4/6] 写 nginx 站点配置..."
+echo "[3/5] 写 nginx 站点配置..."
 sudo tee "$NGINX_SITE" > /dev/null <<'NGINX_CONF'
 server {
     listen 8080 default_server;
@@ -77,9 +59,6 @@ server {
     root /var/www/latest-softwares;
     index index.html;
     charset utf-8;
-
-    auth_basic "Restricted";
-    auth_basic_user_file /etc/nginx/.htpasswd;
 
     location / {
         try_files $uri $uri/ /index.html;
@@ -112,9 +91,9 @@ sudo rm -f /etc/nginx/sites-enabled/default
 sudo nginx -t
 sudo systemctl reload nginx
 
-# ---------- Step 5: deploy key ----------
+# ---------- Step 4: deploy key ----------
 echo
-echo "[5/6] 生成 deploy SSH key..."
+echo "[4/5] 生成 deploy SSH key..."
 if [ -f "$DEPLOY_KEY" ]; then
   echo "  发现现有 deploy key（$DEPLOY_KEY），跳过生成"
 else
@@ -134,7 +113,7 @@ else
   echo "  公钥已存在 authorized_keys 中，跳过"
 fi
 
-# ---------- Step 6: 总结 ----------
+# ---------- Step 5: 总结 ----------
 echo
 echo "=============================================================="
 echo "  ✅ 服务器初始化完成"
