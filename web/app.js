@@ -155,7 +155,24 @@ function app() {
 
     getCategoryLabel(c) {
       if (c === 'all') return this.t('all');
-      return c;
+      const catI18n = {
+        cn: {
+          'AI Tools': 'AI 工具',
+          'Browsers': '浏览器',
+          'Cloud & DevOps': '云服务与运维',
+          'Developer Tools': '开发工具',
+          'Gaming': '游戏',
+          'Media Players': '媒体与创作',
+          'Messaging': '通讯',
+          'Network & Proxy': '网络与代理',
+          'Operating Systems': '操作系统',
+          'Productivity': '效率办公',
+          'Security & Privacy': '安全与隐私',
+          'System Utilities': '系统工具',
+          'Utilities': '实用工具',
+        },
+      };
+      return (catI18n[this.edition] || {})[c] || c;
     },
 
     get platforms() {
