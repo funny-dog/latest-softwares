@@ -25,7 +25,6 @@ on:
       - 'tests/**'
       - 'README.template.md'
       - 'web/**'
-      - 'deploy/**'
       - '.github/workflows/sync.yml'
   pull_request:
     branches: [main, master]
@@ -47,8 +46,7 @@ concurrency:
 
 jobs:
   # ==========================================================================
-  # Job 0: PR 轻量检查 —— 仅 PR 触发，跑在 ubuntu 上以节省启动时间
-  #   不跑真实 sync / Fido / 网络密集的 validate_links —— 那些留给 main 分支
+  # Job 0: PR 轻量检查 —— 仅 PR 触发
   # ==========================================================================
   pr-checks:
     if: github.event_name == 'pull_request'
@@ -72,7 +70,6 @@ jobs:
       - name: Lint + test
         uses: ./.github/actions/python-lint-test
 
-      # 用仓库内已 commit 的 data/latest.json 验证 README 渲染一致性
       - name: Check rendered README
         run: python scripts/render.py --check
 
@@ -80,14 +77,15 @@ jobs:
         run: python scripts/build_web.py
 
   # ==========================================================================
-  # Job 1: 数据同步 + 渲染 README + 构建 web 产物
-  #   用 windows-latest 是为了让 Fido.ps1 能跑（OSVersion.Platform 硬检查）
-  #   PR 不跑此 job —— 真实 sync 涉及 Microsoft / GitHub 等多源网络请求
+  # Job 1: 计算分片矩阵
+  #   读 packages.yaml，输出 JSON 数组供 sync-shard 的 matrix 使用。
   # ==========================================================================
-  sync:
+  generate-shards:
     if: github.event_name != 'pull_request'
-    runs-on: windows-latest
-    timeout-minutes: 20
+    runs-on: ubuntu-latest
+    timeout-minutes: 2
+    outputs:
+      shards: ${{ steps.partition.outputs.shards }}
 
     steps:
       - name: Checkout
@@ -98,46 +96,94 @@ jobs:
         with:
           python-version: '3.12'
 
-      # 拆出独立的 cache step：setup-python 内置的 cache 一旦在 restore 阶段
-      # 异常终止，会把整个 step 的日志（含 Python 安装输出）一并吞掉，难以排查。
-      - name: Locate pip cache dir
-        id: pip-cache
-        run: echo "dir=$(pip cache dir)" >> $env:GITHUB_OUTPUT
+      - name: Compute partition
+        id: partition
+        run: |
+          SHARDS=$(python scripts/partition_ids.py 3)
+          echo "shards=$SHARDS" >> "$GITHUB_OUTPUT"
+          echo "分片矩阵: $SHARDS"
 
-      - name: Cache pip wheels
-        uses: actions/cache@v4
+  # ==========================================================================
+  # Job 2: 并行 sync —— 每个分片独立运行 sync.py --only
+  #   ubuntu-latest 预装 pwsh，windows11 fetcher 可跨平台运行。
+  # ==========================================================================
+  sync:
+    needs: generate-shards
+    if: github.event_name != 'pull_request'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    strategy:
+      fail-fast: false
+      matrix:
+        shard: ${{ fromJson(needs.generate-shards.outputs.shards) }}
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Setup Python
+        uses: actions/setup-python@v6
         with:
-          path: ${{ steps.pip-cache.outputs.dir }}
-          key: ${{ runner.os }}-pip-${{ hashFiles('requirements*.txt') }}
-          restore-keys: |
-            ${{ runner.os }}-pip-
+          python-version: '3.12'
+          cache: 'pip'
+          cache-dependency-path: requirements*.txt
 
       - name: Install Python dependencies
         run: pip install -r requirements.txt -r requirements-dev.txt
 
-      - name: Lint + test
-        uses: ./.github/actions/python-lint-test
-
-      - name: Verify pwsh
-        run: pwsh --version
-
-      - name: Run sync
-        # 用 env 包住 workflow_dispatch 的用户输入，避免 ${{ }} 直接拼进 run
-        # 字符串导致 shell 注入。PowerShell 这边再用 splatting 安全拼参数。
+      - name: Sync shard
         env:
-          # 走 GITHUB_TOKEN 提高 GitHub API 速率限制（5000/h vs 60/h）
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           SYNC_ONLY: ${{ inputs.only }}
           SYNC_SKIP: ${{ inputs.skip }}
-        shell: pwsh
+          SHARD_IDS: ${{ matrix.shard }}
         run: |
-          $cmdArgs = @()
-          if ($env:SYNC_ONLY) { $cmdArgs += @('--only', $env:SYNC_ONLY) }
-          if ($env:SYNC_SKIP) { $cmdArgs += @('--skip', $env:SYNC_SKIP) }
-          python scripts/sync.py @cmdArgs
+          ARGS=()
+          if [ -n "$SHARD_IDS" ]; then ARGS+=(--only "$SHARD_IDS"); fi
+          if [ -n "$SYNC_ONLY" ]; then ARGS+=(--only "$SYNC_ONLY"); fi
+          if [ -n "$SYNC_SKIP" ]; then ARGS+=(--skip "$SYNC_SKIP"); fi
+          python scripts/sync.py "${ARGS[@]}"
 
-      # sync.py 重写了 latest.json，再跑一次 schema 校验拦截新引入的数据问题
-      # （fetcher 静默返回空 assets / 占位符未替换 / 非法 URL 等）
+      - name: Upload partial result
+        uses: actions/upload-artifact@v6
+        with:
+          name: shard-${{ strategy.job-index }}
+          path: data/latest.json
+          retention-days: 1
+
+  # ==========================================================================
+  # Job 3: 合并分片 + 渲染 README + 构建 web + 回写仓库
+  # ==========================================================================
+  sync-merge:
+    needs: sync
+    if: github.event_name != 'pull_request'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Setup Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+          cache-dependency-path: requirements*.txt
+
+      - name: Install Python dependencies
+        run: |
+          pip install -r requirements.txt -r requirements-dev.txt
+
+      - name: Download shard artifacts
+        uses: actions/download-artifact@v6
+        with:
+          pattern: shard-*
+          path: /tmp/shards
+
+      - name: Merge shard results
+        run: python scripts/merge_results.py --shards-dir /tmp/shards
+
       - name: Re-validate latest.json schema
         run: python -m pytest tests/test_latest_json_schema.py -q
 
@@ -173,14 +219,12 @@ jobs:
           retention-days: 7
 
   # ==========================================================================
-  # Job 2: 真实下载链接巡检
-  #   独立 job 隔离外部网络抖动，避免主同步/部署日志被链接巡检噪声淹没。
-  #   结果通过 data/link-health.json artifact 暴露；PR 不跑真实网络巡检。
+  # Job 4: 真实下载链接巡检
   # ==========================================================================
   link-check:
-    needs: sync
+    needs: sync-merge
     if: github.event_name != 'pull_request'
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     timeout-minutes: 12
 
     steps:
@@ -222,12 +266,10 @@ jobs:
           retention-days: 14
 
   # ==========================================================================
-  # Job 3: 部署 dist/ 到阿里云
-  #   独立 job 用 ubuntu-latest（自带 rsync，windows runner 没有）
-  #   由仓库变量 DEPLOY_ENABLED=true 控制是否启用 —— 没配 secrets 时跳过
+  # Job 5: 部署 dist/ 到阿里云
   # ==========================================================================
   deploy:
-    needs: sync
+    needs: sync-merge
     if: github.event_name != 'pull_request' && vars.DEPLOY_ENABLED == 'true'
     runs-on: ubuntu-latest
     timeout-minutes: 5
@@ -285,15 +327,12 @@ jobs:
           SSH_HOST: ${{ secrets.ALIYUN_HOST }}
         run: |
           echo "✅ 国内版已部署到 http://$SSH_HOST:8080/"
-          echo "  浏览器访问需要 Basic Auth 用户名/密码（在服务器 htpasswd 配置）"
 
   # ==========================================================================
-  # Job 4: 部署国际版到 FastAPI Cloud
-  #   重新构建 dist/ 为 intl 版，然后通过 fastapi deploy 部署
-  #   由仓库变量 DEPLOY_INTL_ENABLED=true 控制是否启用
+  # Job 6: 部署国际版到 FastAPI Cloud
   # ==========================================================================
   deploy-intl:
-    needs: sync
+    needs: sync-merge
     if: github.event_name != 'pull_request' && vars.DEPLOY_INTL_ENABLED == 'true'
     runs-on: ubuntu-latest
     timeout-minutes: 10

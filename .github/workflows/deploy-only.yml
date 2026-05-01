@@ -1,0 +1,79 @@
+name: Deploy Only (Aliyun)
+
+# 当只修改 deploy/ 目录时，直接复用上次 sync 产物部署，跳过完整 sync 流程。
+
+on:
+  push:
+    branches: [main, master]
+    paths:
+      - 'deploy/**'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: deploy-aliyun
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+
+    steps:
+      - name: Download dist from last successful sync
+        uses: dawidd6/action-download-artifact@v6
+        with:
+          workflow: sync.yml
+          name: dist
+          path: dist/
+          workflow_conclusion: success
+          branch: main
+          if_no_artifact_found: fail
+
+      - name: Validate deploy secrets
+        env:
+          ALIYUN_DEPLOY_KEY:  ${{ secrets.ALIYUN_DEPLOY_KEY }}
+          ALIYUN_HOST:        ${{ secrets.ALIYUN_HOST }}
+          ALIYUN_USER:        ${{ secrets.ALIYUN_USER }}
+          ALIYUN_DEPLOY_PATH: ${{ secrets.ALIYUN_DEPLOY_PATH }}
+        run: |
+          missing=()
+          [ -n "${ALIYUN_DEPLOY_KEY:-}" ] || missing+=("ALIYUN_DEPLOY_KEY")
+          [ -n "${ALIYUN_HOST:-}" ] || missing+=("ALIYUN_HOST")
+          [ -n "${ALIYUN_USER:-}" ] || missing+=("ALIYUN_USER")
+          [ -n "${ALIYUN_DEPLOY_PATH:-}" ] || missing+=("ALIYUN_DEPLOY_PATH")
+          if [ "${#missing[@]}" -gt 0 ]; then
+            printf 'Missing required deploy secrets: %s\n' "${missing[*]}" >&2
+            exit 1
+          fi
+
+      - name: Setup SSH
+        env:
+          SSH_KEY:  ${{ secrets.ALIYUN_DEPLOY_KEY }}
+          SSH_HOST: ${{ secrets.ALIYUN_HOST }}
+          SSH_PORT: ${{ secrets.ALIYUN_PORT }}
+        run: |
+          mkdir -p ~/.ssh
+          printf '%s\n' "$SSH_KEY" > ~/.ssh/deploy_key
+          chmod 600 ~/.ssh/deploy_key
+          PORT="${SSH_PORT:-22}"
+          ssh-keyscan -p "$PORT" -H "$SSH_HOST" >> ~/.ssh/known_hosts 2>/dev/null
+
+      - name: Deploy to Aliyun via rsync
+        env:
+          SSH_HOST:    ${{ secrets.ALIYUN_HOST }}
+          SSH_USER:    ${{ secrets.ALIYUN_USER }}
+          SSH_PORT:    ${{ secrets.ALIYUN_PORT }}
+          DEPLOY_PATH: ${{ secrets.ALIYUN_DEPLOY_PATH }}
+        run: |
+          PORT="${SSH_PORT:-22}"
+          rsync -avz --delete \
+            -e "ssh -i ~/.ssh/deploy_key -p $PORT -o StrictHostKeyChecking=accept-new" \
+            dist/ "$SSH_USER@$SSH_HOST:$DEPLOY_PATH/"
+
+      - name: Summary
+        env:
+          SSH_HOST: ${{ secrets.ALIYUN_HOST }}
+        run: |
+          echo "✅ 国内版已部署到 http://$SSH_HOST:8080/（deploy-only 模式）"

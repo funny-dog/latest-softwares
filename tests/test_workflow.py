@@ -30,7 +30,7 @@ def test_workflow_dispatch_exposes_sync_filters():
     assert "skip:" in workflow
     assert "SYNC_ONLY: ${{ inputs.only }}" in workflow
     assert "SYNC_SKIP: ${{ inputs.skip }}" in workflow
-    assert "python scripts/sync.py @cmdArgs" in workflow
+    assert "python scripts/sync.py" in workflow
 
 
 def test_network_link_check_is_split_into_own_job():
