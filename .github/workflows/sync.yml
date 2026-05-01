@@ -149,6 +149,11 @@ jobs:
           if [ -n "$SYNC_SKIP" ]; then ARGS+=(--skip "$SYNC_SKIP"); fi
           python scripts/sync.py "${ARGS[@]}"
 
+      - name: Check sync failure rate
+        if: ${{ !cancelled() }}
+        shell: bash
+        run: python scripts/check_sync_health.py --max-fail-rate 0.10
+
       - name: Upload partial result
         uses: actions/upload-artifact@v6
         with:
