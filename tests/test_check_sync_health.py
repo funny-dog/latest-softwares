@@ -1,7 +1,7 @@
 # tests/test_check_sync_health.py
+from __future__ import annotations
+
 import json
-import pytest
-from pathlib import Path
 from scripts.check_sync_health import check_sync_health
 
 

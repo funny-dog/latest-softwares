@@ -1,5 +1,7 @@
 """检查同步失败率，超过阈值时返回非零退出码"""
 
+from __future__ import annotations
+
 import json
 import sys
 from pathlib import Path
