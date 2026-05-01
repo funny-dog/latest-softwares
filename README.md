@@ -3,7 +3,7 @@
 > **Latest version metadata** automatically synced from official upstream sources daily by GitHub Actions.
 > This repository **does not host binary installers** — download buttons link directly to upstream official downloads.
 >
-> 📅 **Last updated**: `2026-05-01 08:24:45` (UTC) · 356 software items (2 using previous data, marked ⚠️)
+> 📅 **Last updated**: `2026-05-01 09:02:40` (UTC) · 388 software items (2 using previous data, marked ⚠️)
 
 ---
 
@@ -62,6 +62,7 @@ The web page sends a visit beacon to `/api/visit`; download buttons first hit `/
 | [**Wireshark**](https://www.wireshark.org/download.html) | `2026-05-01` | — | [win-x64](https://www.wireshark.org/download.html) · [mac-universal](https://www.wireshark.org/download.html) | Official Wireshark download page; no public version API |
 | [**WinSCP**](https://winscp.net/eng/download.php) | `2026-05-01` | — | [win-x64](https://winscp.net/eng/download.php) | Official WinSCP download page; no public version API |
 | [**FileZilla Client**](https://filezilla-project.org/download.php?show_all=1) | `2026-05-01` | — | [win-x64](https://filezilla-project.org/download.php?show_all=1) · [mac-universal](https://filezilla-project.org/download.php?show_all=1) · [linux-x64](https://filezilla-project.org/download.php?show_all=1) | Official FileZilla Client download page; no public version API |
+| [**Tunnelblick**](https://tunnelblick.net) | `8.0.1` | 2026-03-28 | [mac-universal](https://github.com/Tunnelblick/Tunnelblick/releases/download/v8.0.1/Tunnelblick_8.0.1_build_6301.dmg) | GitHub Release: Tunnelblick/Tunnelblick |
 
 
 ### Developer Tools
@@ -162,6 +163,17 @@ The web page sends a visit beacon to `/api/visit`; download buttons first hit `/
 | [**Cursor**](https://cursor.com/downloads) | `2026-05-01` | — | [win-x64](https://cursor.com/downloads) · [mac-universal](https://cursor.com/downloads) · [linux-x64](https://cursor.com/downloads) | Official Cursor downloads page; no public version API |
 | [**JetBrains Toolbox App**](https://www.jetbrains.com/toolbox-app/) | `2026-05-01` | — | [win-x64](https://www.jetbrains.com/toolbox-app/) · [mac-universal](https://www.jetbrains.com/toolbox-app/) · [linux-x64](https://www.jetbrains.com/toolbox-app/) | Official JetBrains Toolbox download page; no public version API |
 | [**VirtualBox**](https://www.virtualbox.org/wiki/Downloads) | `2026-05-01` | — | [win-x64](https://www.virtualbox.org/wiki/Downloads) · [mac-universal](https://www.virtualbox.org/wiki/Downloads) · [linux-x64](https://www.virtualbox.org/wiki/Downloads) | Official VirtualBox downloads page; no public version API |
+| [**PortKiller**](https://github.com/gupsammy/PortKiller) | `0.3.0` | 2025-12-06 | [mac-universal](https://github.com/gupsammy/PortKiller/releases/download/v0.3.0/PortKiller.dmg) | GitHub Release: gupsammy/PortKiller |
+| [**cmux**](https://cmux.dev) | `0.63.2` | 2026-04-06 | [mac-universal](https://github.com/manaflow-ai/cmux/releases/download/v0.63.2/cmux-macos.dmg) | GitHub Release: manaflow-ai/cmux |
+| [**AppPorts**](https://github.com/wzh4869/AppPorts) | `1.5.5` | 2026-04-29 | [mac-universal](https://github.com/wzh4869/AppPorts/releases/download/1.5.5/AppPorts1.5.5.dmg) | GitHub Release: wzh4869/AppPorts |
+| [**Dash**](https://kapeli.com/dash) | `2026-05-01` | — | [mac-universal](https://kapeli.com/dash/download) | Official download page; no public version API |
+| [**Termius**](https://termius.com) | `2026-05-01` | — | [mac-universal](https://termius.com/download/mac) | Official download page; no public version API |
+| [**Navicat Premium Lite**](https://www.navicat.com/en/download/navicat-premium-lite) | `2026-05-01` | — | [mac-universal](https://www.navicat.com/en/download/navicat-premium-lite) | Official download page; no public version API |
+| [**OpenCode**](https://opencode.ai) | `0.0.55` | 2025-06-27 | [mac-arm64](https://github.com/opencode-ai/opencode/releases/download/v0.0.55/opencode-mac-arm64.tar.gz) · [mac-x64](https://github.com/opencode-ai/opencode/releases/download/v0.0.55/opencode-mac-x86_64.tar.gz) | GitHub Release: opencode-ai/opencode |
+| [**TablePlus**](https://tableplus.com) | `2026-05-01` | — | [mac-universal](https://tableplus.com/release/mac/tableplus-latest.dmg) | Official download page; no public version API |
+| [**UTM**](https://mac.getutm.app) | `4.7.5` | 2026-01-03 | [mac-universal](https://github.com/utmapp/UTM/releases/download/v4.7.5/UTM.dmg) | GitHub Release: utmapp/UTM |
+| [**OrbStack**](https://orbstack.dev) | `2026-05-01` | — | [mac-universal](https://orbstack.dev/download) | Official download page; no public version API |
+| [**FinalShell**](https://www.hostbuf.com) | `2026-05-01` | — | [mac-universal](http://www.hostbuf.com/downloads/finalshell_install.pkg) | Official download page; no public version API |
 
 
 ### Browsers
@@ -260,6 +272,8 @@ The web page sends a visit beacon to `/api/visit`; download buttons first hit `/
 | [**TeraCopy**](https://www.codesector.com/teracopy) | `2026-05-01` | — | [win-x64](https://www.codesector.com/teracopy) | Official TeraCopy download page; no public version API |
 | [**AnyDesk**](https://anydesk.com/en/downloads) | `2026-05-01` | — | [win-x64](https://anydesk.com/en/downloads) · [mac-universal](https://anydesk.com/en/downloads) · [linux-x64](https://anydesk.com/en/downloads) | Official AnyDesk downloads page; no public version API |
 | [**TeamViewer**](https://www.teamviewer.com/en/download/) | `2026-05-01` | — | [win-x64](https://www.teamviewer.com/en/download/) · [mac-universal](https://www.teamviewer.com/en/download/) · [linux-x64](https://www.teamviewer.com/en/download/) | Official TeamViewer download page; no public version API |
+| [**DeepL**](https://www.deepl.com) | `2026-05-01` | — | [mac-universal](https://www.deepl.com/macos/app/installer/download) | Official download page; no public version API |
+| [**Easydict**](https://github.com/tisfeng/Easydict) | `2.18.1` | 2026-04-06 | [mac-universal](https://github.com/tisfeng/Easydict/releases/download/2.18.1/Easydict.dmg) | GitHub Release: tisfeng/Easydict |
 
 
 ### System Utilities
@@ -309,6 +323,17 @@ The web page sends a visit beacon to `/api/visit`; download buttons first hit `/
 | [**Hyper**](https://hyper.is/#installation) | `2026-05-01` | — | [win-x64](https://hyper.is/#installation) · [mac-arm64](https://hyper.is/#installation) | Official project download page; no stable public release asset API |
 | [**Sysinternals Suite**](https://learn.microsoft.com/sysinternals/downloads/sysinternals-suite) | `2026-05-01` | — | [win-x64](https://download.sysinternals.com/files/SysinternalsSuite.zip) | Official Microsoft Sysinternals download; suite version is not exposed as a public API |
 | [**WizTree**](https://diskanalyzer.com/download) | `2026-05-01` | — | [win-x64](https://diskanalyzer.com/download) | Official WizTree download page; no public version API |
+| [**Stats**](https://github.com/exelban/stats) | `2.12.12` | 2026-04-26 | [mac-universal](https://github.com/exelban/stats/releases/download/v2.12.12/Stats.dmg) | GitHub Release: exelban/stats |
+| [**FineTune**](https://github.com/ronitsingh10/FineTune) | `1.6.0` | 2026-04-23 | [mac-universal](https://github.com/ronitsingh10/FineTune/releases/download/v1.6.0/FineTune.dmg) | GitHub Release: ronitsingh10/FineTune |
+| [**BetterDisplay**](https://github.com/waydabber/BetterDisplay) | `4.2.3` | 2026-03-12 | [mac-universal](https://github.com/waydabber/BetterDisplay/releases/download/v4.2.3/BetterDisplay-v4.2.3.dmg) | GitHub Release: waydabber/BetterDisplay |
+| [**QuickRecorder**](https://github.com/lihaoyun6/QuickRecorder) | `1.6.9` | 2025-06-11 | [mac-universal](https://github.com/lihaoyun6/QuickRecorder/releases/download/1.6.9/QuickRecorder_v1.6.9.dmg) | GitHub Release: lihaoyun6/QuickRecorder |
+| [**Pearcleaner**](https://github.com/alienator88/Pearcleaner) | `5.4.3` | 2025-11-26 | [mac-arm64](https://github.com/alienator88/Pearcleaner/releases/download/5.4.3/Pearcleaner-arm.zip) · [mac-x64](https://github.com/alienator88/Pearcleaner/releases/download/5.4.3/Pearcleaner-intel.zip) | GitHub Release: alienator88/Pearcleaner |
+| [**Macs Fan Control**](https://crystalidea.com/macs-fan-control) | `2026-05-01` | — | [mac-universal](https://crystalidea.com/macs-fan-control/download) | Official download page; no public version API |
+| [**Nimble Commander**](https://magnumbytes.com) | `1.8.0` | 2025-12-19 | [mac-universal](https://github.com/mikekazakov/nimble-commander/releases/download/v1.8.0/nimble-commander-1.8.0.4282.dmg) | GitHub Release: mikekazakov/nimble-commander |
+| [**Input Source Pro**](https://github.com/runjuu/InputSourcePro) | `2.9.0` | 2026-01-18 | [mac-universal](https://github.com/runjuu/InputSourcePro/releases/download/2.9.0/Input.Source.Pro.2.9.0.dmg) | GitHub Release: runjuu/InputSourcePro |
+| [**SwiftBar**](https://swiftbar.app) | `2.0.1` | 2025-02-27 | [mac-universal](https://github.com/swiftbar/SwiftBar/releases/download/v2.0.1/SwiftBar.v2.0.1.b536.zip) | GitHub Release: swiftbar/SwiftBar |
+| [**Raycast**](https://www.raycast.com) | `2026-05-01` | — | [mac-universal](https://releases.raycast.com/releases/latest/download?arch=universal&channel=stable) | Official download page; no public version API |
+| [**Snipaste**](https://www.snipaste.com) | `2026-05-01` | — | [mac-universal](https://www.snipaste.com/download.html) | Official download page; no public version API |
 
 
 ### Messaging
@@ -328,6 +353,8 @@ The web page sends a visit beacon to `/api/visit`; download buttons first hit `/
 | [**WhatsApp**](https://www.whatsapp.com/download) | `2026-05-01` | — | [win-x64](https://www.whatsapp.com/download) · [mac-universal](https://www.whatsapp.com/download) | Official WhatsApp download page; no public version API |
 | [**Thunderbird**](https://www.thunderbird.net/thunderbird/all/) | `2026-05-01` | — | [win-x64](https://www.thunderbird.net/thunderbird/all/) · [mac-universal](https://www.thunderbird.net/thunderbird/all/) · [linux-x64](https://www.thunderbird.net/thunderbird/all/) | Official Thunderbird download page; no public version API |
 | [**Skype**](https://www.skype.com/get-skype/) | `2026-05-01` | — | [win-x64](https://www.skype.com/get-skype/) · [mac-universal](https://www.skype.com/get-skype/) · [linux-x64](https://www.skype.com/get-skype/) | Official Skype download page; no public version API |
+| [**WeChat**](https://weixin.qq.com) | `8.0.72` | — | [mac-universal](https://dldir1.qq.com/weixin/mac/WeChatMac.dmg) | 微信官网 |
+| [**QQ**](https://im.qq.com) | `2026-05-01` | — | [mac-universal](https://im.qq.com/macqq/index.shtml) | Official download page; no public version API |
 
 
 ### Productivity
@@ -363,6 +390,10 @@ The web page sends a visit beacon to `/api/visit`; download buttons first hit `/
 | [**Foxit PDF Reader**](https://www.foxit.com/pdf-reader/) | `2026-05-01` | — | [win-x64](https://www.foxit.com/pdf-reader/) · [mac-universal](https://www.foxit.com/pdf-reader/) | Official Foxit PDF Reader download page; no public version API |
 | [**Anki**](https://apps.ankiweb.net/) | `2026-05-01` | — | [win-x64](https://apps.ankiweb.net/) · [mac-universal](https://apps.ankiweb.net/) · [linux-x64](https://apps.ankiweb.net/) | Official Anki download page; no public version API |
 | [**Typora**](https://typora.io) | `2026-05-01` | — | [win-x64](https://typora.io/#download) · [mac-universal](https://typora.io/#download) · [linux-x64](https://typora.io/#download) | Official Typora download page; no public version API |
+| [**Paseo**](https://getpaseo.com) | `0.1.64` | 2026-04-28 | [mac-arm64](https://github.com/getpaseo/paseo/releases/download/v0.1.64/Paseo-0.1.64-arm64.dmg) · [mac-x64](https://github.com/getpaseo/paseo/releases/download/v0.1.64/Paseo-0.1.64-x64.dmg) | GitHub Release: getpaseo/paseo |
+| [**XMind**](https://xmind.app) | `2026-05-01` | — | [mac-universal](https://xmind.app/download/) | Official download page; no public version API |
+| [**Readest**](https://readest.com) | `0.10.6` | 2026-04-13 | [mac-universal](https://github.com/readest/readest/releases/download/v0.10.6/Readest_0.10.6_universal.dmg) | GitHub Release: readest/readest |
+| [**WPS Office**](https://www.wps.com) | `2026-05-01` | — | [mac-universal](https://mac.wps.cn) | Official download page; no public version API |
 
 
 ### AI Tools
@@ -383,6 +414,7 @@ The web page sends a visit beacon to `/api/visit`; download buttons first hit `/
 | [**Open WebUI**](https://docs.openwebui.com/getting-started/) | `2026-05-01` | — | [win-x64](https://docs.openwebui.com/getting-started/) · [mac-arm64](https://docs.openwebui.com/getting-started/) · [linux-x64](https://docs.openwebui.com/getting-started/) | Official project download page; no stable public release asset API |
 | [**KoboldCpp**](https://github.com/LostRuins/koboldcpp) | `2026-05-01` | — | [win-x64](https://github.com/LostRuins/koboldcpp/releases) · [mac-arm64](https://github.com/LostRuins/koboldcpp/releases) · [linux-x64](https://github.com/LostRuins/koboldcpp/releases) | Official project download page; no stable public release asset API |
 | [**Claude Code**](https://github.com/anthropics/claude-code) ⚠️ | `2.1.123` | 2026-04-29 | [win-x64](https://github.com/anthropics/claude-code/releases/download/v2.1.123/claude-win32-x64.zip) · [mac-universal](https://github.com/anthropics/claude-code/releases/download/v2.1.123/claude-darwin-arm64.tar.gz) · [linux-x64](https://github.com/anthropics/claude-code/releases/download/v2.1.123/claude-linux-x64.tar.gz) | GitHub Release: anthropics/claude-code<br>⚠ anthropics/claude-code@v2.1.126: 没有任何 asset 匹配配置的 pattern，现有 asset: []... |
+| [**Doubao**](https://www.doubao.com) | `2026-05-01` | — | [mac-universal](https://www.doubao.com/download) | Official download page; no public version API |
 
 
 ### Media Players
