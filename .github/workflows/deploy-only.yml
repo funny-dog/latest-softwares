@@ -22,7 +22,7 @@ jobs:
 
     steps:
       - name: Download dist from last successful sync
-        uses: dawidd6/action-download-artifact@v6
+        uses: dawidd6/action-download-artifact@v21
         with:
           workflow: sync.yml
           name: dist
