@@ -14,6 +14,7 @@ import hashlib
 import json
 import os
 import shutil
+import subprocess
 import sys
 from pathlib import Path
 
@@ -57,6 +58,37 @@ PUBLIC_SITE_URL = "https://latest-softwares-064facea.fastapicloud.dev"
 CN_PUBLIC_SITE_URL = os.environ.get("CN_PUBLIC_SITE_URL", "http://localhost:8080")
 
 
+ASSET_MANIFEST = WEB_SRC / "dist" / "asset-manifest.json"
+
+
+def run_frontend_build() -> dict[str, str] | None:
+    """运行前端构建，返回 asset manifest。
+
+    Returns:
+        Asset manifest 字典，如果构建失败返回 None。
+    """
+    try:
+        result = subprocess.run(
+            ["npm", "run", "build"],
+            capture_output=True,
+            text=True,
+            cwd=REPO_ROOT,
+        )
+        if result.returncode != 0:
+            print(
+                f"⚠ 前端构建失败，使用原文件: {result.stderr.strip()}",
+                file=sys.stderr,
+            )
+            return None
+
+        if ASSET_MANIFEST.exists():
+            return json.loads(ASSET_MANIFEST.read_text(encoding="utf-8"))
+        return None
+    except FileNotFoundError:
+        print("⚠ Node.js 未安装，使用原文件", file=sys.stderr)
+        return None
+
+
 def clean_dist() -> None:
     if DIST.exists():
         for entry in DIST.iterdir():
@@ -68,9 +100,17 @@ def clean_dist() -> None:
         DIST.mkdir(parents=True)
 
 
-def copy_static() -> int:
+def copy_static(skip: set[str] | None = None) -> int:
+    """复制 web/ 静态文件到 dist/。
+
+    Args:
+        skip: 要跳过的顶层文件名集合（如已由前端构建处理的 hashed 文件）。
+    """
+    skip = skip or set()
     count = 0
     for src in WEB_SRC.iterdir():
+        if src.name in skip:
+            continue
         target = DIST / src.name
         if src.is_file():
             shutil.copy2(src, target)
@@ -150,6 +190,26 @@ def inject_asset_versions() -> dict[str, str]:
     return versions
 
 
+def _copy_hashed_assets(manifest: dict[str, str]) -> None:
+    """从 web/dist/ 复制 hashed 资源到 dist/ 并更新 index.html 引用。"""
+    src_dist = WEB_SRC / "dist"
+    for original_name, hashed_name in manifest.items():
+        src_file = src_dist / hashed_name
+        if src_file.is_file():
+            shutil.copy2(src_file, DIST / hashed_name)
+
+    # 更新 index.html 中的资源引用
+    index = DIST / "index.html"
+    html = index.read_text(encoding="utf-8")
+    for original_name, hashed_name in manifest.items():
+        for attr in ("href", "src"):
+            html = html.replace(
+                f'{attr}="{original_name}"',
+                f'{attr}="{hashed_name}"',
+            )
+    index.write_text(html, encoding="utf-8")
+
+
 def _merge_desc_from_config(data: dict) -> None:
     """从 packages 配置合并 desc_cn/desc_en 到 data 中。"""
     cfg = load_packages_config()
@@ -221,15 +281,29 @@ def main() -> int:
     DIST.mkdir(parents=True, exist_ok=True)
     clean_dist()
     vendor_assets = verify_vendor_assets()
-    n_files = copy_static()
-    versioned_assets = inject_asset_versions()
+
+    # 尝试运行前端构建管道（minify + hashed 文件名）
+    asset_manifest = run_frontend_build()
+    if asset_manifest:
+        # 跳过已有 hashed 版本的源文件，避免覆盖
+        skip_files = set(asset_manifest.keys())
+        n_files = copy_static(skip=skip_files)
+        _copy_hashed_assets(asset_manifest)
+        n_files += len(asset_manifest)
+        versioned_assets: dict[str, str] = {}
+    else:
+        n_files = copy_static()
+        versioned_assets = inject_asset_versions()
+
     n_pkgs = inject_data(edition=args.edition)
 
     edition_label = f" [{args.edition}]" if args.edition else ""
+    build_mode = "hashed" if asset_manifest else "legacy"
     print(
         f"✓ dist/ 构建完成{edition_label}（{n_files} 个静态文件，"
         f"{len(vendor_assets)} 个 vendor 文件已校验，"
-        f"{len(versioned_assets)} 个静态资源已加版本，注入 {n_pkgs} 个软件数据）"
+        f"{len(versioned_assets)} 个静态资源已加版本，注入 {n_pkgs} 个软件数据"
+        f"，构建模式: {build_mode}）"
     )
     print(f"  本地预览: python -m http.server -d {DIST.relative_to(REPO_ROOT)} 8000")
     return 0
