@@ -3,7 +3,7 @@
 > **Latest version metadata** automatically synced from official upstream sources daily by GitHub Actions.
 > This repository **does not host binary installers** — download buttons link directly to upstream official downloads.
 >
-> 📅 **Last updated**: `2026-05-01 09:02:40` (UTC) · 388 software items (2 using previous data, marked ⚠️)
+> 📅 **Last updated**: `2026-05-01 09:05:10` (UTC) · 388 software items (3 using previous data, marked ⚠️)
 
 ---
 
@@ -281,7 +281,7 @@
 | [**Rufus**](https://github.com/pbatard/rufus) | `4.14` | 2026-04-30 | [win-x64](https://github.com/pbatard/rufus/releases/download/v4.14/rufus-4.14.exe) | GitHub Release: pbatard/rufus |
 | [**Ventoy**](https://github.com/ventoy/Ventoy) | `1.1.12` | 2026-04-23 | [win-x64](https://github.com/ventoy/Ventoy/releases/download/v1.1.12/ventoy-1.1.12-windows.zip) | GitHub Release: ventoy/Ventoy |
 | [**PowerToys**](https://github.com/microsoft/PowerToys) | `0.99.1` | 2026-04-29 | [win-x64](https://github.com/microsoft/PowerToys/releases/download/v0.99.1/PowerToysUserSetup-0.99.1-x64.exe) | GitHub Release: microsoft/PowerToys |
-| [**ShareX**](https://github.com/ShareX/ShareX) | `19.0.2` | 2026-01-28 | [win-x64](https://github.com/ShareX/ShareX/releases/download/v19.0.2/ShareX-19.0.2-setup.exe) | GitHub Release: ShareX/ShareX |
+| [**ShareX**](https://github.com/ShareX/ShareX) ⚠️ | `19.0.2` | 2026-01-28 | [win-x64](https://github.com/ShareX/ShareX/releases/download/v19.0.2/ShareX-19.0.2-setup.exe) | GitHub Release: ShareX/ShareX<br>⚠ ShareX/ShareX@v20.0.4: 没有任何 asset 匹配配置的 pattern，现有 asset: ['ShareX-20.0.4-portable-x64.zip', 'ShareX-20.0.4-setup-x64.exe']... |
 | [**Lively Wallpaper**](https://github.com/rocksdanister/lively) | `2.2.1.0` | 2025-09-18 | [win-x64](https://github.com/rocksdanister/lively/releases/download/v2.2.1.0/lively_setup_x86_full_v2210.exe) | GitHub Release: rocksdanister/lively |
 | [**ExplorerPatcher**](https://github.com/valinet/ExplorerPatcher) | `26100.4946.69.6_7384790` | 2025-11-03 | [win-x64](https://github.com/valinet/ExplorerPatcher/releases/download/26100.4946.69.6_7384790/ep_setup.exe) | GitHub Release: valinet/ExplorerPatcher |
 | [**Rufus Portable**](https://github.com/pbatard/rufus) | `4.14` | 2026-04-30 | [win-x64](https://github.com/pbatard/rufus/releases/download/v4.14/rufus-4.14p.exe) | GitHub Release: pbatard/rufus |
