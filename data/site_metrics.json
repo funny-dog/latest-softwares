@@ -1,0 +1,1 @@
+{"schema_version":1,"scope":"instance-local","storage":"ephemeral-file","note":"FastAPI Cloud can autoscale to multiple instances; use runtime logs for aggregate visit and download counts.","updated_at":null,"visits":{"total":0,"paths":{}},"downloads":{"total":0,"packages":{},"platforms":{},"assets":{}}}
