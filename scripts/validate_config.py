@@ -32,6 +32,7 @@ else:
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
 PACKAGES_FILE = REPO_ROOT / "packages.yaml"
+PACKAGES_DIR = REPO_ROOT / "packages"
 ID_RE = re.compile(r"^[a-z0-9][a-z0-9-]*$")
 
 FIXED_URL_FETCHERS = {
@@ -262,6 +263,29 @@ def _validate_fetcher_args(
         _validate_redirect_platforms(errors, label, args)
 
 
+def validate_cross_file_uniqueness(packages_dir: Path) -> list[str]:
+    """检查 packages/ 目录下所有文件的 id 唯一性"""
+    errors: list[str] = []
+    seen_ids: set[str] = set()
+
+    for yaml_file in sorted(packages_dir.glob("*.yaml")):
+        if yaml_file.name.startswith("_"):
+            continue
+        with open(yaml_file, "r", encoding="utf-8") as f:
+            data = yaml.safe_load(f)
+        if not isinstance(data, dict):
+            continue
+        for pkg in data.get("packages", []):
+            if not isinstance(pkg, dict):
+                continue
+            pkg_id = pkg.get("id")
+            if pkg_id in seen_ids:
+                errors.append(f"重复的 id '{pkg_id}' 在 {yaml_file.name} 中")
+            seen_ids.add(pkg_id)
+
+    return errors
+
+
 def validate_config(config: dict) -> list[str]:
     """Return validation errors for a loaded packages.yaml document."""
     errors: list[str] = []
@@ -321,6 +345,12 @@ def validate_config(config: dict) -> list[str]:
 def main() -> int:
     config = yaml.safe_load(PACKAGES_FILE.read_text(encoding="utf-8"))
     errors = validate_config(config)
+
+    # 检查 packages/ 目录下跨文件 id 唯一性
+    if PACKAGES_DIR.is_dir():
+        cross_file_errors = validate_cross_file_uniqueness(PACKAGES_DIR)
+        errors.extend(cross_file_errors)
+
     if errors:
         print("packages.yaml 配置校验失败：", file=sys.stderr)
         for error in errors:

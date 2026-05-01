@@ -191,3 +191,55 @@ def test_rejects_invalid_link_kind():
     errors = validate_config.validate_config(cfg)
 
     assert any("link_kind 必须是 direct 或 landing_page" in error for error in errors)
+
+
+def test_validate_cross_file_uniqueness(tmp_path):
+    """测试跨文件 id 唯一性检查"""
+    packages_dir = tmp_path / "packages"
+    packages_dir.mkdir()
+
+    # 创建两个有重复 id 的文件
+    (packages_dir / "cn.yaml").write_text(
+        "packages:\n  - id: firefox\n    name: Firefox\n"
+    )
+    (packages_dir / "intl.yaml").write_text(
+        "packages:\n"
+        "  - id: firefox\n    name: Firefox International\n"
+        "  - id: chrome\n    name: Chrome\n"
+    )
+
+    errors = validate_config.validate_cross_file_uniqueness(packages_dir)
+    assert len(errors) == 1
+    assert "firefox" in errors[0]
+
+
+def test_validate_cross_file_uniqueness_no_duplicates(tmp_path):
+    """测试跨文件无重复 id 时返回空列表"""
+    packages_dir = tmp_path / "packages"
+    packages_dir.mkdir()
+
+    (packages_dir / "cn.yaml").write_text(
+        "packages:\n  - id: firefox\n    name: Firefox\n"
+    )
+    (packages_dir / "intl.yaml").write_text(
+        "packages:\n  - id: chrome\n    name: Chrome\n"
+    )
+
+    errors = validate_config.validate_cross_file_uniqueness(packages_dir)
+    assert errors == []
+
+
+def test_validate_cross_file_skips_underscore_files(tmp_path):
+    """测试以 _ 开头的文件被跳过"""
+    packages_dir = tmp_path / "packages"
+    packages_dir.mkdir()
+
+    (packages_dir / "_template.yaml").write_text(
+        "packages:\n  - id: firefox\n    name: Firefox\n"
+    )
+    (packages_dir / "cn.yaml").write_text(
+        "packages:\n  - id: firefox\n    name: Firefox CN\n"
+    )
+
+    errors = validate_config.validate_cross_file_uniqueness(packages_dir)
+    assert errors == []
