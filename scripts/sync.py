@@ -137,6 +137,23 @@ def _apply_config_metadata(result: dict[str, Any], entry: dict[str, Any]) -> dic
     return result
 
 
+LOG_FILE = REPO_ROOT / "data" / "sync_errors.jsonl"
+
+
+def _write_sync_log(eid: str, fetcher: str, status: str, error: str | None) -> None:
+    """追加同步结果到 JSONL 日志文件"""
+    log_entry = {
+        "id": eid,
+        "fetcher": fetcher,
+        "status": status,
+        "error": error,
+        "timestamp": datetime.now().isoformat(),
+    }
+    LOG_FILE.parent.mkdir(parents=True, exist_ok=True)
+    with open(LOG_FILE, "a", encoding="utf-8") as f:
+        f.write(json.dumps(log_entry, ensure_ascii=False) + "\n")
+
+
 def _sync_one(
     entry: dict[str, Any],
     previous: dict[str, dict[str, Any]],
@@ -152,6 +169,7 @@ def _sync_one(
     if fetcher is None:
         msg = f"未知 fetcher: {fetcher_name}"
         print(f"✗ {eid}: {msg}", file=sys.stderr)
+        _write_sync_log(eid, fetcher_name, "fail", msg)
         if eid in previous:
             stale = _stale_from_previous(previous[eid], msg)
             _apply_config_metadata(stale, entry)
@@ -171,10 +189,12 @@ def _sync_one(
         # return their own default labels.
         _apply_config_metadata(result, entry)
         print(f"✓ {eid}: {res.version} ({len(res.assets)} 个平台)")
+        _write_sync_log(eid, fetcher_name, "ok", None)
         return (eid, result, True, None)
     except Exception as e:
         msg = str(e)
         print(f"✗ {eid}: {msg}", file=sys.stderr)
+        _write_sync_log(eid, fetcher_name, "fail", msg)
         if eid in previous:
             stale = _stale_from_previous(previous[eid], msg)
             _apply_config_metadata(stale, entry)
