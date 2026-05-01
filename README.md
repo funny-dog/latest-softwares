@@ -5,7 +5,7 @@
 > **Latest version metadata** automatically synced from official upstream sources daily by GitHub Actions.
 > This repository **does not host binary installers** — download buttons link directly to upstream official downloads.
 >
-> 📅 **Last updated**: `2026-05-01 09:43:35` (UTC) · 417 software items (5 using previous data, marked ⚠️)
+> 📅 **Last updated**: `2026-05-01 13:37:44` (UTC) · 417 software items (6 using previous data, marked ⚠️)
 
 ---
 
@@ -441,7 +441,7 @@
 |----------|---------------|----------|----------|--------|
 | [**Audacity**](https://github.com/audacity/audacity) | `3.7.7` | 2025-12-11 | [win-x64](https://github.com/audacity/audacity/releases/download/Audacity-3.7.7/audacity-win-3.7.7-64bit.exe) | GitHub Release: audacity/audacity |
 | [**HandBrake**](https://github.com/HandBrake/HandBrake) | `1.11.1` | 2026-03-22 | [win-x64](https://github.com/HandBrake/HandBrake/releases/download/1.11.1/HandBrake-1.11.1-x86_64-Win_GUI.exe) | GitHub Release: HandBrake/HandBrake |
-| [**FFmpeg**](https://github.com/BtbN/FFmpeg-Builds) | `latest` | 2026-04-30 | [win-x64](https://github.com/BtbN/FFmpeg-Builds/releases/download/latest/ffmpeg-master-latest-win64-gpl.zip) | GitHub Release: BtbN/FFmpeg-Builds |
+| [**FFmpeg**](https://github.com/BtbN/FFmpeg-Builds) ⚠️ | `latest` | 2026-04-30 | [win-x64](https://github.com/BtbN/FFmpeg-Builds/releases/download/latest/ffmpeg-master-latest-win64-gpl.zip) | GitHub Release: BtbN/FFmpeg-Builds<br>⚠ BtbN/FFmpeg-Builds@autobuild-2026-05-01-13-18: 没有任何 asset 匹配配置的 pattern，现有 asset: ['checksums.sha256', 'ffmpeg-N-124294-g739fc9249c-linux64-gpl-shared.tar.xz', 'ffmpeg-N-124294-g739fc9249c-linux64-gpl.tar.xz', 'ffmpeg-N-124294-g739fc9249c-linux64-lgpl-shared.tar.xz', 'ffmpeg-N-124294-g739fc9249c-linux64-lgpl.tar.xz']... |
 | [**IINA**](https://github.com/iina/iina) | `1.4.2-build164` | 2026-04-16 | [mac-arm64](https://github.com/iina/iina/releases/download/v1.4.2-build164/IINA.v1.4.2-build164.dmg) | GitHub Release: iina/iina |
 | [**OBS Studio**](https://obsproject.com/) | `32.1.2` | 2026-04-21 | [win-x64](https://github.com/obsproject/obs-studio/releases/download/32.1.2/OBS-Studio-32.1.2-Windows-x64-Installer.exe) · [mac-arm64](https://github.com/obsproject/obs-studio/releases/download/32.1.2/OBS-Studio-32.1.2-macOS-Apple.dmg) · [mac-x64](https://github.com/obsproject/obs-studio/releases/download/32.1.2/OBS-Studio-32.1.2-macOS-Intel.dmg) · [linux-x64](https://github.com/obsproject/obs-studio/releases/download/32.1.2/OBS-Studio-32.1.2-Ubuntu-24.04-x86_64.deb) | GitHub Release: obsproject/obs-studio |
 | [**mpv**](https://mpv.io/) | `20260421` | 2026-04-21 | [win-x64](https://github.com/shinchiro/mpv-winbuild-cmake/releases/download/20260421/mpv-x86_64-20260421-git-5921fe5.7z) | GitHub Release: shinchiro/mpv-winbuild-cmake |
