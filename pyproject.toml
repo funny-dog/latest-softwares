@@ -13,3 +13,12 @@ dependencies = [
 [tool.fastapi]
 # FastAPI Cloud 自动检测入口；这里显式声明以确保正确
 entrypoint = "main:app"
+
+[tool.mypy]
+python_version = "3.10"
+strict = true
+files = ["scripts/fetchers/base.py", "scripts/editions.py", "scripts/sync.py"]
+
+[[tool.mypy.overrides]]
+module = "scripts.fetchers.*"
+disallow_untyped_defs = false
