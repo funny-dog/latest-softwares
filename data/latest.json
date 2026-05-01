@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-05-01T07:03:14+00:00",
+  "generated_at": "2026-05-01T07:50:10+00:00",
   "packages": [
     {
       "id": "windows11",
@@ -29,7 +29,9 @@
         "cn"
       ],
       "_stale": true,
-      "_stale_reason": "Fido 连续 3 次失败，最后一次：Fido 未返回 URL。stdout='Error: This feature is not available on this platform.' stderr='' returncode=147"
+      "_stale_reason": "Fido 连续 3 次失败，最后一次：Fido 未返回 URL。stdout='Error: This feature is not available on this platform.' stderr='' returncode=147",
+      "desc_cn": "微软最新桌面操作系统，采用现代化 UI 设计，深度集成 AI 功能",
+      "desc_en": "Microsoft's latest desktop OS with modern UI design and deep AI integration"
     },
     {
       "id": "ubuntu",
@@ -68,12 +70,14 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:35+00:00",
-      "last_success_at": "2026-05-01T07:02:35+00:00",
+      "fetched_at": "2026-05-01T07:49:38+00:00",
+      "last_success_at": "2026-05-01T07:49:38+00:00",
       "editions": [
         "cn",
         "intl"
-      ]
+      ],
+      "desc_cn": "Canonical 维护的流行 Linux 发行版，适合桌面和服务器",
+      "desc_en": "Popular Linux distribution maintained by Canonical for desktop and server"
     },
     {
       "id": "fedora",
@@ -96,12 +100,14 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:34+00:00",
-      "last_success_at": "2026-05-01T07:02:34+00:00",
+      "fetched_at": "2026-05-01T07:49:39+00:00",
+      "last_success_at": "2026-05-01T07:49:39+00:00",
       "editions": [
         "cn",
         "intl"
-      ]
+      ],
+      "desc_cn": "Red Hat 赞助的前沿 Linux 发行版，率先采用新技术",
+      "desc_en": "Cutting-edge Linux distribution sponsored by Red Hat, early adopter of new tech"
     },
     {
       "id": "v2rayn",
@@ -148,11 +154,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:35+00:00",
-      "last_success_at": "2026-05-01T07:02:35+00:00",
+      "fetched_at": "2026-05-01T07:49:36+00:00",
+      "last_success_at": "2026-05-01T07:49:36+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "Windows 平台的 V2Ray 图形客户端，支持多种代理协议",
+      "desc_en": "V2Ray GUI client for Windows with multi-protocol proxy support"
     },
     {
       "id": "vscode",
@@ -199,12 +207,14 @@
           "sha256": "999d81a03f16b8743614ceb1d64d6ab638203d08c2bbacd4c5f842a98c07f1fe"
         }
       ],
-      "fetched_at": "2026-05-01T07:02:35+00:00",
-      "last_success_at": "2026-05-01T07:02:35+00:00",
+      "fetched_at": "2026-05-01T07:49:38+00:00",
+      "last_success_at": "2026-05-01T07:49:38+00:00",
       "editions": [
         "cn",
         "intl"
-      ]
+      ],
+      "desc_cn": "微软出品的轻量级代码编辑器，支持丰富的扩展生态",
+      "desc_en": "Lightweight code editor by Microsoft with rich extension ecosystem"
     },
     {
       "id": "chrome",
@@ -235,12 +245,14 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:34+00:00",
-      "last_success_at": "2026-05-01T07:02:34+00:00",
+      "fetched_at": "2026-05-01T07:49:39+00:00",
+      "last_success_at": "2026-05-01T07:49:39+00:00",
       "editions": [
         "cn",
         "intl"
-      ]
+      ],
+      "desc_cn": "Google 出品的全球最流行的浏览器，速度快安全性好",
+      "desc_en": "World's most popular browser by Google, fast and secure"
     },
     {
       "id": "steam",
@@ -263,12 +275,14 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:35+00:00",
-      "last_success_at": "2026-05-01T07:02:35+00:00",
+      "fetched_at": "2026-05-01T07:49:37+00:00",
+      "last_success_at": "2026-05-01T07:49:37+00:00",
       "editions": [
         "cn",
         "intl"
-      ]
+      ],
+      "desc_cn": "Valve 的游戏平台，全球最大的 PC 游戏分发平台",
+      "desc_en": "Gaming platform by Valve, the world's largest PC game distribution platform"
     },
     {
       "id": "localsend",
@@ -299,12 +313,14 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:34+00:00",
-      "last_success_at": "2026-05-01T07:02:34+00:00",
+      "fetched_at": "2026-05-01T07:49:37+00:00",
+      "last_success_at": "2026-05-01T07:49:37+00:00",
       "editions": [
         "cn",
         "intl"
-      ]
+      ],
+      "desc_cn": "局域网文件传输工具，AirDrop 的跨平台替代品",
+      "desc_en": "LAN file transfer tool, cross-platform alternative to AirDrop"
     },
     {
       "id": "bitwarden",
@@ -335,12 +351,14 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:34+00:00",
-      "last_success_at": "2026-05-01T07:02:34+00:00",
+      "fetched_at": "2026-05-01T07:49:39+00:00",
+      "last_success_at": "2026-05-01T07:49:39+00:00",
       "editions": [
         "cn",
         "intl"
-      ]
+      ],
+      "desc_cn": "开源密码管理器，跨平台同步加密存储",
+      "desc_en": "Open-source password manager with cross-platform encrypted sync"
     },
     {
       "id": "codex",
@@ -387,11 +405,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:37+00:00",
-      "last_success_at": "2026-05-01T07:02:37+00:00",
+      "fetched_at": "2026-05-01T07:49:38+00:00",
+      "last_success_at": "2026-05-01T07:49:38+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "OpenAI 推出的 AI 编程助手，自动编写和调试代码",
+      "desc_en": "AI coding assistant by OpenAI for automated code writing and debugging"
     },
     {
       "id": "geek",
@@ -414,12 +434,14 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:34+00:00",
-      "last_success_at": "2026-05-01T07:02:34+00:00",
+      "fetched_at": "2026-05-01T07:49:37+00:00",
+      "last_success_at": "2026-05-01T07:49:37+00:00",
       "editions": [
         "cn",
         "intl"
-      ]
+      ],
+      "desc_cn": "轻量级 Windows 软件卸载工具，彻底清理残留",
+      "desc_en": "Lightweight Windows software uninstaller that thoroughly cleans residuals"
     },
     {
       "id": "everything",
@@ -466,12 +488,14 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:34+00:00",
-      "last_success_at": "2026-05-01T07:02:34+00:00",
+      "fetched_at": "2026-05-01T07:49:39+00:00",
+      "last_success_at": "2026-05-01T07:49:39+00:00",
       "editions": [
         "cn",
         "intl"
-      ]
+      ],
+      "desc_cn": "极速文件名搜索工具，秒级定位任何文件",
+      "desc_en": "Ultra-fast file name search tool, locate any file in seconds"
     },
     {
       "id": "nvidia-app",
@@ -494,12 +518,14 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:35+00:00",
-      "last_success_at": "2026-05-01T07:02:35+00:00",
+      "fetched_at": "2026-05-01T07:49:36+00:00",
+      "last_success_at": "2026-05-01T07:49:36+00:00",
       "editions": [
         "cn",
         "intl"
-      ]
+      ],
+      "desc_cn": "NVIDIA 显卡管理工具，驱动更新和游戏优化",
+      "desc_en": "NVIDIA GPU management tool for driver updates and game optimization"
     },
     {
       "id": "git",
@@ -522,11 +548,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:34+00:00",
-      "last_success_at": "2026-05-01T07:02:34+00:00",
+      "fetched_at": "2026-05-01T07:49:37+00:00",
+      "last_success_at": "2026-05-01T07:49:37+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "分布式版本控制系统 Windows 移植版，开发者必备",
+      "desc_en": "Windows port of the distributed version control system, essential for developers"
     },
     {
       "id": "insomnia",
@@ -549,11 +577,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:34+00:00",
-      "last_success_at": "2026-05-01T07:02:34+00:00",
+      "fetched_at": "2026-05-01T07:49:39+00:00",
+      "last_success_at": "2026-05-01T07:49:39+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "开源 REST 和 GraphQL API 测试工具，界面简洁",
+      "desc_en": "Open-source REST and GraphQL API testing tool with clean UI"
     },
     {
       "id": "heidisql",
@@ -576,11 +606,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:35+00:00",
-      "last_success_at": "2026-05-01T07:02:35+00:00",
+      "fetched_at": "2026-05-01T07:49:36+00:00",
+      "last_success_at": "2026-05-01T07:49:36+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "免费的 MySQL/MariaDB/PostgreSQL 数据库管理工具",
+      "desc_en": "Free MySQL/MariaDB/PostgreSQL database management tool"
     },
     {
       "id": "notepadplusplus",
@@ -603,11 +635,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:34+00:00",
-      "last_success_at": "2026-05-01T07:02:34+00:00",
+      "fetched_at": "2026-05-01T07:49:37+00:00",
+      "last_success_at": "2026-05-01T07:49:37+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "免费的 Windows 源代码编辑器，支持多种编程语言",
+      "desc_en": "Free Windows source code editor with multi-language support"
     },
     {
       "id": "wezterm",
@@ -630,11 +664,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:34+00:00",
-      "last_success_at": "2026-05-01T07:02:34+00:00",
+      "fetched_at": "2026-05-01T07:49:39+00:00",
+      "last_success_at": "2026-05-01T07:49:39+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "GPU 加速的跨平台终端模拟器，支持 Lua 配置",
+      "desc_en": "GPU-accelerated cross-platform terminal emulator with Lua configuration"
     },
     {
       "id": "hiddify",
@@ -673,11 +709,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:35+00:00",
-      "last_success_at": "2026-05-01T07:02:35+00:00",
+      "fetched_at": "2026-05-01T07:49:36+00:00",
+      "last_success_at": "2026-05-01T07:49:36+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "多协议代理客户端，支持 V2Ray、Clash 等主流协议",
+      "desc_en": "Multi-protocol proxy client supporting V2Ray, Clash and other protocols"
     },
     {
       "id": "sing-box",
@@ -700,11 +738,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:34+00:00",
-      "last_success_at": "2026-05-01T07:02:34+00:00",
+      "fetched_at": "2026-05-01T07:49:37+00:00",
+      "last_success_at": "2026-05-01T07:49:37+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "通用代理平台，支持多种协议的下一代网络代理工具",
+      "desc_en": "Universal proxy platform supporting multiple protocols as next-gen network tool"
     },
     {
       "id": "trafficmonitor",
@@ -727,11 +767,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:34+00:00",
-      "last_success_at": "2026-05-01T07:02:34+00:00",
+      "fetched_at": "2026-05-01T07:49:38+00:00",
+      "last_success_at": "2026-05-01T07:49:38+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "Windows 网速和系统资源悬浮窗监控工具",
+      "desc_en": "Windows network speed and system resource floating monitor"
     },
     {
       "id": "keepassxc",
@@ -754,11 +796,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:35+00:00",
-      "last_success_at": "2026-05-01T07:02:35+00:00",
+      "fetched_at": "2026-05-01T07:49:36+00:00",
+      "last_success_at": "2026-05-01T07:49:36+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "离线密码管理器，本地加密存储密码数据库",
+      "desc_en": "Offline password manager with locally encrypted password database"
     },
     {
       "id": "rustdesk",
@@ -781,11 +825,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:34+00:00",
-      "last_success_at": "2026-05-01T07:02:34+00:00",
+      "fetched_at": "2026-05-01T07:49:38+00:00",
+      "last_success_at": "2026-05-01T07:49:38+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "开源远程桌面软件，可自建服务器",
+      "desc_en": "Open-source remote desktop software with self-hosted server support"
     },
     {
       "id": "telegram",
@@ -808,11 +854,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:34+00:00",
-      "last_success_at": "2026-05-01T07:02:34+00:00",
+      "fetched_at": "2026-05-01T07:49:39+00:00",
+      "last_success_at": "2026-05-01T07:49:39+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "注重安全和速度的即时通讯工具，支持大群组和频道",
+      "desc_en": "Security and speed-focused messenger with large groups and channels"
     },
     {
       "id": "logseq",
@@ -835,11 +883,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:35+00:00",
-      "last_success_at": "2026-05-01T07:02:35+00:00",
+      "fetched_at": "2026-05-01T07:49:36+00:00",
+      "last_success_at": "2026-05-01T07:49:36+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "开源知识管理和笔记工具，基于大纲和双向链接",
+      "desc_en": "Open-source knowledge management and note-taking with outlines and bidirectional links"
     },
     {
       "id": "joplin",
@@ -862,11 +912,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:34+00:00",
-      "last_success_at": "2026-05-01T07:02:34+00:00",
+      "fetched_at": "2026-05-01T07:49:38+00:00",
+      "last_success_at": "2026-05-01T07:49:38+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "开源笔记和待办工具，支持 Markdown 和端到端加密",
+      "desc_en": "Open-source note-taking and to-do app with Markdown and E2E encryption"
     },
     {
       "id": "brave",
@@ -889,11 +941,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:34+00:00",
-      "last_success_at": "2026-05-01T07:02:34+00:00",
+      "fetched_at": "2026-05-01T07:49:39+00:00",
+      "last_success_at": "2026-05-01T07:49:39+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "内置广告拦截和隐私保护的浏览器，基于 Chromium",
+      "desc_en": "Browser with built-in ad blocking and privacy protection, based on Chromium"
     },
     {
       "id": "thorium",
@@ -916,11 +970,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:35+00:00",
-      "last_success_at": "2026-05-01T07:02:35+00:00",
+      "fetched_at": "2026-05-01T07:49:37+00:00",
+      "last_success_at": "2026-05-01T07:49:37+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "性能优化的 Chromium 分支，针对速度特别调优",
+      "desc_en": "Performance-optimized Chromium fork, specifically tuned for speed"
     },
     {
       "id": "ollama",
@@ -943,11 +999,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:35+00:00",
-      "last_success_at": "2026-05-01T07:02:35+00:00",
+      "fetched_at": "2026-05-01T07:49:38+00:00",
+      "last_success_at": "2026-05-01T07:49:38+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "本地运行大语言模型的工具，一键部署 LLM",
+      "desc_en": "Tool for running large language models locally with one-click deployment"
     },
     {
       "id": "fzf",
@@ -970,11 +1028,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:34+00:00",
-      "last_success_at": "2026-05-01T07:02:34+00:00",
+      "fetched_at": "2026-05-01T07:49:39+00:00",
+      "last_success_at": "2026-05-01T07:49:39+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "通用的命令行模糊查找器，极速搜索文件和历史",
+      "desc_en": "General-purpose command-line fuzzy finder for fast file and history search"
     },
     {
       "id": "bat",
@@ -997,11 +1057,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:36+00:00",
-      "last_success_at": "2026-05-01T07:02:36+00:00",
+      "fetched_at": "2026-05-01T07:49:37+00:00",
+      "last_success_at": "2026-05-01T07:49:37+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "带语法高亮和 Git 集成的 cat 替代品",
+      "desc_en": "cat alternative with syntax highlighting and Git integration"
     },
     {
       "id": "fd",
@@ -1024,11 +1086,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:35+00:00",
-      "last_success_at": "2026-05-01T07:02:35+00:00",
+      "fetched_at": "2026-05-01T07:49:39+00:00",
+      "last_success_at": "2026-05-01T07:49:39+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "更快速友好的 find 替代工具",
+      "desc_en": "Faster and more user-friendly alternative to find"
     },
     {
       "id": "rg",
@@ -1051,11 +1115,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:34+00:00",
-      "last_success_at": "2026-05-01T07:02:34+00:00",
+      "fetched_at": "2026-05-01T07:49:39+00:00",
+      "last_success_at": "2026-05-01T07:49:39+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "超快的文本搜索工具，grep 的现代替代品",
+      "desc_en": "Ultra-fast text search tool, modern alternative to grep"
     },
     {
       "id": "jq",
@@ -1078,11 +1144,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:36+00:00",
-      "last_success_at": "2026-05-01T07:02:36+00:00",
+      "fetched_at": "2026-05-01T07:49:37+00:00",
+      "last_success_at": "2026-05-01T07:49:37+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "命令行 JSON 处理器，轻量级且功能强大",
+      "desc_en": "Command-line JSON processor, lightweight yet powerful"
     },
     {
       "id": "yq",
@@ -1105,11 +1173,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:35+00:00",
-      "last_success_at": "2026-05-01T07:02:35+00:00",
+      "fetched_at": "2026-05-01T07:49:38+00:00",
+      "last_success_at": "2026-05-01T07:49:38+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "YAML/JSON/XML 命令行处理工具，jq 的多格式版",
+      "desc_en": "YAML/JSON/XML command-line processor, multi-format version of jq"
     },
     {
       "id": "gh",
@@ -1132,11 +1202,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:34+00:00",
-      "last_success_at": "2026-05-01T07:02:34+00:00",
+      "fetched_at": "2026-05-01T07:49:39+00:00",
+      "last_success_at": "2026-05-01T07:49:39+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "GitHub 官方命令行工具，管理 PR/Issue/Release",
+      "desc_en": "Official GitHub CLI for managing PRs, Issues, and Releases"
     },
     {
       "id": "micro",
@@ -1159,11 +1231,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:36+00:00",
-      "last_success_at": "2026-05-01T07:02:36+00:00",
+      "fetched_at": "2026-05-01T07:49:37+00:00",
+      "last_success_at": "2026-05-01T07:49:37+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "现代化的终端文本编辑器，易上手且支持插件",
+      "desc_en": "Modern terminal text editor that's easy to learn with plugin support"
     },
     {
       "id": "neovim",
@@ -1186,11 +1260,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:35+00:00",
-      "last_success_at": "2026-05-01T07:02:35+00:00",
+      "fetched_at": "2026-05-01T07:49:38+00:00",
+      "last_success_at": "2026-05-01T07:49:38+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "Vim 的现代化重构版本，更好的扩展性和 API",
+      "desc_en": "Modernized refactor of Vim with better extensibility and API"
     },
     {
       "id": "mihomo",
@@ -1213,11 +1289,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:35+00:00",
-      "last_success_at": "2026-05-01T07:02:35+00:00",
+      "fetched_at": "2026-05-01T07:49:39+00:00",
+      "last_success_at": "2026-05-01T07:49:39+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "Clash.Meta 内核，支持更多代理协议和规则引擎",
+      "desc_en": "Clash.Meta kernel with extended proxy protocol and rule engine support"
     },
     {
       "id": "nekobox",
@@ -1240,11 +1318,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:36+00:00",
-      "last_success_at": "2026-05-01T07:02:36+00:00",
+      "fetched_at": "2026-05-01T07:49:36+00:00",
+      "last_success_at": "2026-05-01T07:49:36+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "基于 sing-box 的 Android 代理客户端",
+      "desc_en": "Android proxy client based on sing-box"
     },
     {
       "id": "motrix",
@@ -1267,11 +1347,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:35+00:00",
-      "last_success_at": "2026-05-01T07:02:35+00:00",
+      "fetched_at": "2026-05-01T07:49:38+00:00",
+      "last_success_at": "2026-05-01T07:49:38+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "开源下载工具，支持 HTTP/FTP/BT/磁力链接",
+      "desc_en": "Open-source download manager supporting HTTP/FTP/BitTorrent/magnet links"
     },
     {
       "id": "marktext",
@@ -1294,11 +1376,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:34+00:00",
-      "last_success_at": "2026-05-01T07:02:34+00:00",
+      "fetched_at": "2026-05-01T07:49:39+00:00",
+      "last_success_at": "2026-05-01T07:49:39+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "简洁的 Markdown 编辑器，实时预览所见即所得",
+      "desc_en": "Clean Markdown editor with real-time WYSIWYG preview"
     },
     {
       "id": "zen-browser",
@@ -1321,11 +1405,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:36+00:00",
-      "last_success_at": "2026-05-01T07:02:36+00:00",
+      "fetched_at": "2026-05-01T07:49:37+00:00",
+      "last_success_at": "2026-05-01T07:49:37+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "注重隐私的 Firefox 分支，自定义程度高",
+      "desc_en": "Privacy-focused Firefox fork with high customizability"
     },
     {
       "id": "v2ray-core",
@@ -1348,11 +1434,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:35+00:00",
-      "last_success_at": "2026-05-01T07:02:35+00:00",
+      "fetched_at": "2026-05-01T07:49:38+00:00",
+      "last_success_at": "2026-05-01T07:49:38+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "V2Ray 核心引擎，支持 VMess、VLESS 等多种代理协议",
+      "desc_en": "V2Ray core engine supporting VMess, VLESS and other proxy protocols"
     },
     {
       "id": "xray-core",
@@ -1375,11 +1463,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:34+00:00",
-      "last_success_at": "2026-05-01T07:02:34+00:00",
+      "fetched_at": "2026-05-01T07:49:39+00:00",
+      "last_success_at": "2026-05-01T07:49:39+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "Xray 核心引擎，V2Ray 的增强分支，性能更优",
+      "desc_en": "Xray core engine, enhanced V2Ray fork with better performance"
     },
     {
       "id": "rufus",
@@ -1402,11 +1492,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:36+00:00",
-      "last_success_at": "2026-05-01T07:02:36+00:00",
+      "fetched_at": "2026-05-01T07:49:37+00:00",
+      "last_success_at": "2026-05-01T07:49:37+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "USB 启动盘制作工具，快速创建可引导 USB",
+      "desc_en": "USB bootable drive creator for quickly making bootable USB drives"
     },
     {
       "id": "ventoy",
@@ -1429,11 +1521,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:35+00:00",
-      "last_success_at": "2026-05-01T07:02:35+00:00",
+      "fetched_at": "2026-05-01T07:49:38+00:00",
+      "last_success_at": "2026-05-01T07:49:38+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "多系统 USB 启动盘方案，直接放 ISO 文件即可启动",
+      "desc_en": "Multi-system USB boot solution, just copy ISO files to boot"
     },
     {
       "id": "powertoys",
@@ -1456,11 +1550,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:34+00:00",
-      "last_success_at": "2026-05-01T07:02:34+00:00",
+      "fetched_at": "2026-05-01T07:49:39+00:00",
+      "last_success_at": "2026-05-01T07:49:39+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "Windows 高级用户工具集，窗口管理和效率提升",
+      "desc_en": "Windows power user utilities for window management and productivity"
     },
     {
       "id": "sharex",
@@ -1483,11 +1579,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:36+00:00",
-      "last_success_at": "2026-05-01T07:02:36+00:00",
+      "fetched_at": "2026-05-01T07:49:37+00:00",
+      "last_success_at": "2026-05-01T07:49:37+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "Windows 截图和屏幕录制工具，功能全面的免费工具",
+      "desc_en": "Windows screenshot and screen recording tool, feature-rich and free"
     },
     {
       "id": "audacity",
@@ -1510,11 +1608,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:35+00:00",
-      "last_success_at": "2026-05-01T07:02:35+00:00",
+      "fetched_at": "2026-05-01T07:49:38+00:00",
+      "last_success_at": "2026-05-01T07:49:38+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "开源音频编辑器，录制和编辑音频的专业工具",
+      "desc_en": "Open-source audio editor for professional recording and editing"
     },
     {
       "id": "handbrake",
@@ -1537,11 +1637,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:34+00:00",
-      "last_success_at": "2026-05-01T07:02:34+00:00",
+      "fetched_at": "2026-05-01T07:49:39+00:00",
+      "last_success_at": "2026-05-01T07:49:39+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "开源视频转码工具，支持多种格式和预设",
+      "desc_en": "Open-source video transcoder with multiple formats and presets"
     },
     {
       "id": "ffmpeg",
@@ -1564,11 +1666,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:36+00:00",
-      "last_success_at": "2026-05-01T07:02:36+00:00",
+      "fetched_at": "2026-05-01T07:49:37+00:00",
+      "last_success_at": "2026-05-01T07:49:37+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "多媒体处理命令行工具，音视频转码和处理的瑞士军刀",
+      "desc_en": "Multimedia command-line tool, the Swiss army knife for audio/video processing"
     },
     {
       "id": "calibre",
@@ -1591,11 +1695,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:35+00:00",
-      "last_success_at": "2026-05-01T07:02:35+00:00",
+      "fetched_at": "2026-05-01T07:49:39+00:00",
+      "last_success_at": "2026-05-01T07:49:39+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "电子书管理工具，格式转换和设备同步一站式方案",
+      "desc_en": "E-book management tool for format conversion and device sync"
     },
     {
       "id": "windows-terminal",
@@ -1618,11 +1724,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:34+00:00",
-      "last_success_at": "2026-05-01T07:02:34+00:00",
+      "fetched_at": "2026-05-01T07:49:39+00:00",
+      "last_success_at": "2026-05-01T07:49:39+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "微软推出的现代化 Windows 终端，支持多标签和 GPU 加速",
+      "desc_en": "Modern Windows terminal by Microsoft with tabs and GPU acceleration"
     },
     {
       "id": "lively",
@@ -1645,11 +1753,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:37+00:00",
-      "last_success_at": "2026-05-01T07:02:37+00:00",
+      "fetched_at": "2026-05-01T07:49:37+00:00",
+      "last_success_at": "2026-05-01T07:49:37+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "Windows 动态壁纸工具，支持视频和网页壁纸",
+      "desc_en": "Windows animated wallpaper tool supporting video and web wallpapers"
     },
     {
       "id": "explorer-patcher",
@@ -1672,11 +1782,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:35+00:00",
-      "last_success_at": "2026-05-01T07:02:35+00:00",
+      "fetched_at": "2026-05-01T07:49:38+00:00",
+      "last_success_at": "2026-05-01T07:49:38+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "Windows 资源管理器增强工具，恢复经典功能",
+      "desc_en": "Windows Explorer enhancement tool for restoring classic features"
     },
     {
       "id": "affine",
@@ -1699,11 +1811,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:35+00:00",
-      "last_success_at": "2026-05-01T07:02:35+00:00",
+      "fetched_at": "2026-05-01T07:49:39+00:00",
+      "last_success_at": "2026-05-01T07:49:39+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "开源知识库和协作平台，融合文档、白板和数据库",
+      "desc_en": "Open-source knowledge base and collaboration platform with docs, whiteboard, and databases"
     },
     {
       "id": "aria2",
@@ -1726,11 +1840,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:37+00:00",
-      "last_success_at": "2026-05-01T07:02:37+00:00",
+      "fetched_at": "2026-05-01T07:49:37+00:00",
+      "last_success_at": "2026-05-01T07:49:37+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "轻量级多协议命令行下载工具，支持并行下载",
+      "desc_en": "Lightweight multi-protocol command-line downloader with parallel downloads"
     },
     {
       "id": "yt-dlp",
@@ -1753,11 +1869,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:35+00:00",
-      "last_success_at": "2026-05-01T07:02:35+00:00",
+      "fetched_at": "2026-05-01T07:49:39+00:00",
+      "last_success_at": "2026-05-01T07:49:39+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "功能强大的视频下载工具，支持数千个网站",
+      "desc_en": "Powerful video downloader supporting thousands of websites"
     },
     {
       "id": "shotcut",
@@ -1780,11 +1898,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:35+00:00",
-      "last_success_at": "2026-05-01T07:02:35+00:00",
+      "fetched_at": "2026-05-01T07:49:39+00:00",
+      "last_success_at": "2026-05-01T07:49:39+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "免费开源的跨平台视频编辑器",
+      "desc_en": "Free open-source cross-platform video editor"
     },
     {
       "id": "duckstation",
@@ -1807,11 +1927,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:37+00:00",
-      "last_success_at": "2026-05-01T07:02:37+00:00",
+      "fetched_at": "2026-05-01T07:49:37+00:00",
+      "last_success_at": "2026-05-01T07:49:37+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "高精度 PlayStation 1 模拟器，支持增强渲染",
+      "desc_en": "High-accuracy PlayStation 1 emulator with enhanced rendering"
     },
     {
       "id": "pcsx2",
@@ -1834,11 +1956,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:35+00:00",
-      "last_success_at": "2026-05-01T07:02:35+00:00",
+      "fetched_at": "2026-05-01T07:49:38+00:00",
+      "last_success_at": "2026-05-01T07:49:38+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "PlayStation 2 模拟器，兼容大量 PS2 游戏",
+      "desc_en": "PlayStation 2 emulator with high game compatibility"
     },
     {
       "id": "playnite",
@@ -1861,11 +1985,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:35+00:00",
-      "last_success_at": "2026-05-01T07:02:35+00:00",
+      "fetched_at": "2026-05-01T07:49:39+00:00",
+      "last_success_at": "2026-05-01T07:49:39+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "统一游戏库管理工具，聚合所有平台游戏",
+      "desc_en": "Unified game library manager aggregating games from all platforms"
     },
     {
       "id": "alacritty",
@@ -1888,11 +2014,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:37+00:00",
-      "last_success_at": "2026-05-01T07:02:37+00:00",
+      "fetched_at": "2026-05-01T07:49:37+00:00",
+      "last_success_at": "2026-05-01T07:49:37+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "GPU 加速的跨平台终端模拟器，极致性能",
+      "desc_en": "GPU-accelerated cross-platform terminal emulator focused on performance"
     },
     {
       "id": "moonlight",
@@ -1915,11 +2043,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:35+00:00",
-      "last_success_at": "2026-05-01T07:02:35+00:00",
+      "fetched_at": "2026-05-01T07:49:39+00:00",
+      "last_success_at": "2026-05-01T07:49:39+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "开源游戏串流客户端，配合 NVIDIA GameStream 使用",
+      "desc_en": "Open-source game streaming client for NVIDIA GameStream"
     },
     {
       "id": "rufus-portable",
@@ -1942,11 +2072,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:35+00:00",
-      "last_success_at": "2026-05-01T07:02:35+00:00",
+      "fetched_at": "2026-05-01T07:49:39+00:00",
+      "last_success_at": "2026-05-01T07:49:39+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "便携版 USB 启动盘制作工具，无需安装",
+      "desc_en": "Portable USB bootable drive creator, no installation required"
     },
     {
       "id": "cemu",
@@ -1969,11 +2101,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:37+00:00",
-      "last_success_at": "2026-05-01T07:02:37+00:00",
+      "fetched_at": "2026-05-01T07:49:37+00:00",
+      "last_success_at": "2026-05-01T07:49:37+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "Wii U 模拟器，可运行大部分 Wii U 游戏",
+      "desc_en": "Wii U emulator capable of running most Wii U games"
     },
     {
       "id": "transmission",
@@ -1996,11 +2130,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:35+00:00",
-      "last_success_at": "2026-05-01T07:02:35+00:00",
+      "fetched_at": "2026-05-01T07:49:39+00:00",
+      "last_success_at": "2026-05-01T07:49:39+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "轻量级 BitTorrent 客户端，简洁高效",
+      "desc_en": "Lightweight BitTorrent client, simple and efficient"
     },
     {
       "id": "nvm-windows",
@@ -2023,11 +2159,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:35+00:00",
-      "last_success_at": "2026-05-01T07:02:35+00:00",
+      "fetched_at": "2026-05-01T07:49:39+00:00",
+      "last_success_at": "2026-05-01T07:49:39+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "Windows 版 Node.js 版本管理器，轻松切换 Node 版本",
+      "desc_en": "Node.js version manager for Windows, easily switch between Node versions"
     },
     {
       "id": "nssm",
@@ -2050,11 +2188,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:36+00:00",
-      "last_success_at": "2026-05-01T07:02:36+00:00",
+      "fetched_at": "2026-05-01T07:49:37+00:00",
+      "last_success_at": "2026-05-01T07:49:37+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "Windows 服务管理工具，将任意程序注册为系统服务",
+      "desc_en": "Windows service manager, register any program as a system service"
     },
     {
       "id": "win-acme",
@@ -2077,11 +2217,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:35+00:00",
-      "last_success_at": "2026-05-01T07:02:35+00:00",
+      "fetched_at": "2026-05-01T07:49:38+00:00",
+      "last_success_at": "2026-05-01T07:49:38+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "Windows 上的 ACME 客户端，自动申请和续期 Let's Encrypt 证书",
+      "desc_en": "ACME client for Windows, auto-request and renew Let's Encrypt certificates"
     },
     {
       "id": "wsl",
@@ -2104,11 +2246,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:35+00:00",
-      "last_success_at": "2026-05-01T07:02:35+00:00",
+      "fetched_at": "2026-05-01T07:49:39+00:00",
+      "last_success_at": "2026-05-01T07:49:39+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "Windows 子系统 for Linux，在 Windows 原生运行 Linux",
+      "desc_en": "Windows Subsystem for Linux, run Linux natively on Windows"
     },
     {
       "id": "fancontrol",
@@ -2131,11 +2275,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:37+00:00",
-      "last_success_at": "2026-05-01T07:02:37+00:00",
+      "fetched_at": "2026-05-01T07:49:37+00:00",
+      "last_success_at": "2026-05-01T07:49:37+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "Windows 风扇转速控制工具，基于温度曲线自动调节",
+      "desc_en": "Windows fan speed controller with temperature-based auto adjustment"
     },
     {
       "id": "sandboxie-plus",
@@ -2158,11 +2304,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:35+00:00",
-      "last_success_at": "2026-05-01T07:02:35+00:00",
+      "fetched_at": "2026-05-01T07:49:39+00:00",
+      "last_success_at": "2026-05-01T07:49:39+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "Windows 沙盒工具，安全运行和测试程序",
+      "desc_en": "Windows sandbox tool for safely running and testing programs"
     },
     {
       "id": "fastgithub",
@@ -2185,11 +2333,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:34+00:00",
-      "last_success_at": "2026-05-01T07:02:34+00:00",
+      "fetched_at": "2026-05-01T07:49:39+00:00",
+      "last_success_at": "2026-05-01T07:49:39+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "GitHub 加速工具，解决国内访问 GitHub 慢的问题",
+      "desc_en": "GitHub acceleration tool for faster access in China"
     },
     {
       "id": "gnupg",
@@ -2212,11 +2362,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:36+00:00",
-      "last_success_at": "2026-05-01T07:02:36+00:00",
+      "fetched_at": "2026-05-01T07:49:37+00:00",
+      "last_success_at": "2026-05-01T07:49:37+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "Windows 版 GPG 加密工具套件",
+      "desc_en": "GPG encryption toolkit for Windows"
     },
     {
       "id": "vscodium",
@@ -2239,11 +2391,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:35+00:00",
-      "last_success_at": "2026-05-01T07:02:35+00:00",
+      "fetched_at": "2026-05-01T07:49:40+00:00",
+      "last_success_at": "2026-05-01T07:49:40+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "VS Code 的去遥测开源版本，无微软追踪",
+      "desc_en": "Telemetry-free open-source build of VS Code without Microsoft tracking"
     },
     {
       "id": "keka",
@@ -2266,11 +2420,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:35+00:00",
-      "last_success_at": "2026-05-01T07:02:35+00:00",
+      "fetched_at": "2026-05-01T07:49:39+00:00",
+      "last_success_at": "2026-05-01T07:49:39+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "macOS 文件归档工具，支持多种压缩格式",
+      "desc_en": "macOS file archiver supporting multiple compression formats"
     },
     {
       "id": "iina",
@@ -2293,11 +2449,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:37+00:00",
-      "last_success_at": "2026-05-01T07:02:37+00:00",
+      "fetched_at": "2026-05-01T07:49:37+00:00",
+      "last_success_at": "2026-05-01T07:49:37+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "macOS 原生视频播放器，基于 mpv 简洁优雅",
+      "desc_en": "macOS native video player based on mpv, clean and elegant"
     },
     {
       "id": "rectangle",
@@ -2320,11 +2478,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:35+00:00",
-      "last_success_at": "2026-05-01T07:02:35+00:00",
+      "fetched_at": "2026-05-01T07:49:39+00:00",
+      "last_success_at": "2026-05-01T07:49:39+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "macOS 窗口管理工具，键盘快捷键快速排列窗口",
+      "desc_en": "macOS window management tool for quick window tiling with keyboard shortcuts"
     },
     {
       "id": "maccy",
@@ -2347,11 +2507,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:35+00:00",
-      "last_success_at": "2026-05-01T07:02:35+00:00",
+      "fetched_at": "2026-05-01T07:49:39+00:00",
+      "last_success_at": "2026-05-01T07:49:39+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "macOS 剪贴板历史管理工具，轻量快速",
+      "desc_en": "macOS clipboard history manager, lightweight and fast"
     },
     {
       "id": "copyq",
@@ -2374,11 +2536,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:37+00:00",
-      "last_success_at": "2026-05-01T07:02:37+00:00",
+      "fetched_at": "2026-05-01T07:49:37+00:00",
+      "last_success_at": "2026-05-01T07:49:37+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "跨平台剪贴板管理工具，支持搜索和脚本",
+      "desc_en": "Cross-platform clipboard manager with search and scripting support"
     },
     {
       "id": "windows11-english",
@@ -2401,11 +2565,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:35+00:00",
-      "last_success_at": "2026-05-01T07:02:35+00:00",
+      "fetched_at": "2026-05-01T07:49:38+00:00",
+      "last_success_at": "2026-05-01T07:49:38+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "微软最新桌面操作系统（英文版），采用现代化 UI 设计",
+      "desc_en": "Microsoft's latest desktop OS (English edition) with modern UI design"
     },
     {
       "id": "firefox",
@@ -2444,11 +2610,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:35+00:00",
-      "last_success_at": "2026-05-01T07:02:35+00:00",
+      "fetched_at": "2026-05-01T07:49:39+00:00",
+      "last_success_at": "2026-05-01T07:49:39+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "Mozilla 开发的开源浏览器，注重隐私和开放网络",
+      "desc_en": "Open-source browser by Mozilla focused on privacy and open web"
     },
     {
       "id": "nodejs",
@@ -2495,11 +2663,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:37+00:00",
-      "last_success_at": "2026-05-01T07:02:37+00:00",
+      "fetched_at": "2026-05-01T07:49:37+00:00",
+      "last_success_at": "2026-05-01T07:49:37+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "基于 Chrome V8 引擎的 JavaScript 运行时，构建网络应用",
+      "desc_en": "JavaScript runtime built on Chrome's V8 engine for building network apps"
     },
     {
       "id": "dbeaver",
@@ -2546,11 +2716,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:35+00:00",
-      "last_success_at": "2026-05-01T07:02:35+00:00",
+      "fetched_at": "2026-05-01T07:49:39+00:00",
+      "last_success_at": "2026-05-01T07:49:39+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "免费的通用数据库工具，支持所有主流数据库",
+      "desc_en": "Free universal database tool supporting all major databases"
     },
     {
       "id": "obs-studio",
@@ -2597,11 +2769,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:35+00:00",
-      "last_success_at": "2026-05-01T07:02:35+00:00",
+      "fetched_at": "2026-05-01T07:49:39+00:00",
+      "last_success_at": "2026-05-01T07:49:39+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "开源直播和录屏工具，专业级的流媒体方案",
+      "desc_en": "Open-source live streaming and screen recording tool for professional streaming"
     },
     {
       "id": "obsidian",
@@ -2640,11 +2814,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:37+00:00",
-      "last_success_at": "2026-05-01T07:02:37+00:00",
+      "fetched_at": "2026-05-01T07:49:37+00:00",
+      "last_success_at": "2026-05-01T07:49:37+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "知识管理和笔记工具，基于双向链接构建个人知识库",
+      "desc_en": "Knowledge management and note-taking with bidirectional links for personal knowledge base"
     },
     {
       "id": "lazygit",
@@ -2683,11 +2859,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:35+00:00",
-      "last_success_at": "2026-05-01T07:02:35+00:00",
+      "fetched_at": "2026-05-01T07:49:39+00:00",
+      "last_success_at": "2026-05-01T07:49:39+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "终端 Git 图形化界面，用键盘高效操作 Git",
+      "desc_en": "Terminal UI for Git, efficiently operate Git with keyboard"
     },
     {
       "id": "peazip",
@@ -2726,11 +2904,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:35+00:00",
-      "last_success_at": "2026-05-01T07:02:35+00:00",
+      "fetched_at": "2026-05-01T07:49:39+00:00",
+      "last_success_at": "2026-05-01T07:49:39+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "免费的文件归档工具，支持 200+ 格式",
+      "desc_en": "Free file archiver supporting 200+ archive formats"
     },
     {
       "id": "windirstat",
@@ -2753,11 +2933,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:37+00:00",
-      "last_success_at": "2026-05-01T07:02:37+00:00",
+      "fetched_at": "2026-05-01T07:49:37+00:00",
+      "last_success_at": "2026-05-01T07:49:37+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "Windows 磁盘使用分析工具，可视化查看空间占用",
+      "desc_en": "Windows disk usage analyzer with visual space usage display"
     },
     {
       "id": "floorp",
@@ -2796,11 +2978,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:35+00:00",
-      "last_success_at": "2026-05-01T07:02:35+00:00",
+      "fetched_at": "2026-05-01T07:49:39+00:00",
+      "last_success_at": "2026-05-01T07:49:39+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "基于 Firefox 的日本浏览器，丰富自定义选项",
+      "desc_en": "Japanese browser based on Firefox with extensive customization options"
     },
     {
       "id": "chromium",
@@ -2823,11 +3007,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:35+00:00",
-      "last_success_at": "2026-05-01T07:02:35+00:00",
+      "fetched_at": "2026-05-01T07:49:39+00:00",
+      "last_success_at": "2026-05-01T07:49:39+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "Google Chrome 的开源基础项目，无专有组件",
+      "desc_en": "Open-source project behind Google Chrome, without proprietary components"
     },
     {
       "id": "mpv",
@@ -2850,11 +3036,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:37+00:00",
-      "last_success_at": "2026-05-01T07:02:37+00:00",
+      "fetched_at": "2026-05-01T07:49:37+00:00",
+      "last_success_at": "2026-05-01T07:49:37+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "轻量强大的跨平台视频播放器，支持丰富配置",
+      "desc_en": "Lightweight powerful cross-platform video player with rich configuration"
     },
     {
       "id": "losslesscut",
@@ -2893,11 +3081,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:35+00:00",
-      "last_success_at": "2026-05-01T07:02:35+00:00",
+      "fetched_at": "2026-05-01T07:49:39+00:00",
+      "last_success_at": "2026-05-01T07:49:39+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "无损视频剪辑工具，快速裁切无需重新编码",
+      "desc_en": "Lossless video cutting tool for fast trimming without re-encoding"
     },
     {
       "id": "ppsspp",
@@ -2936,11 +3126,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:35+00:00",
-      "last_success_at": "2026-05-01T07:02:35+00:00",
+      "fetched_at": "2026-05-01T07:49:40+00:00",
+      "last_success_at": "2026-05-01T07:49:40+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "跨平台 PSP 模拟器，支持高清渲染",
+      "desc_en": "Cross-platform PSP emulator with HD rendering support"
     },
     {
       "id": "rpcs3",
@@ -2963,11 +3155,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:37+00:00",
-      "last_success_at": "2026-05-01T07:02:37+00:00",
+      "fetched_at": "2026-05-01T07:49:37+00:00",
+      "last_success_at": "2026-05-01T07:49:37+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "PlayStation 3 模拟器，持续改善兼容性",
+      "desc_en": "PlayStation 3 emulator with continuously improving compatibility"
     },
     {
       "id": "sunshine",
@@ -3006,11 +3200,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:36+00:00",
-      "last_success_at": "2026-05-01T07:02:36+00:00",
+      "fetched_at": "2026-05-01T07:49:39+00:00",
+      "last_success_at": "2026-05-01T07:49:39+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "自托管的游戏串流服务器，Moonlight 的服务端",
+      "desc_en": "Self-hosted game streaming server, server-side for Moonlight"
     },
     {
       "id": "heroic",
@@ -3049,11 +3245,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:35+00:00",
-      "last_success_at": "2026-05-01T07:02:35+00:00",
+      "fetched_at": "2026-05-01T07:49:40+00:00",
+      "last_success_at": "2026-05-01T07:49:40+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "Epic Games 和 GOG 的开源游戏启动器",
+      "desc_en": "Open-source game launcher for Epic Games and GOG"
     },
     {
       "id": "jan",
@@ -3092,11 +3290,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:38+00:00",
-      "last_success_at": "2026-05-01T07:02:38+00:00",
+      "fetched_at": "2026-05-01T07:49:38+00:00",
+      "last_success_at": "2026-05-01T07:49:38+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "开源的本地 AI 对话工具，支持多种模型",
+      "desc_en": "Open-source local AI chat tool supporting multiple models"
     },
     {
       "id": "gpt4all",
@@ -3135,11 +3335,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:35+00:00",
-      "last_success_at": "2026-05-01T07:02:35+00:00",
+      "fetched_at": "2026-05-01T07:49:39+00:00",
+      "last_success_at": "2026-05-01T07:49:39+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "本地运行的大语言模型，无需联网保护隐私",
+      "desc_en": "Local large language model that runs without internet for privacy"
     },
     {
       "id": "discord",
@@ -3178,11 +3380,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:35+00:00",
-      "last_success_at": "2026-05-01T07:02:35+00:00",
+      "fetched_at": "2026-05-01T07:49:39+00:00",
+      "last_success_at": "2026-05-01T07:49:39+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "游戏和社区语音聊天平台，支持文字/语音/视频",
+      "desc_en": "Gaming and community voice chat platform with text/voice/video"
     },
     {
       "id": "slack",
@@ -3221,11 +3425,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:37+00:00",
-      "last_success_at": "2026-05-01T07:02:37+00:00",
+      "fetched_at": "2026-05-01T07:49:37+00:00",
+      "last_success_at": "2026-05-01T07:49:37+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "企业团队协作工具，频道式沟通集成多种服务",
+      "desc_en": "Enterprise team collaboration tool with channel-based communication"
     },
     {
       "id": "zoom",
@@ -3256,11 +3462,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:35+00:00",
-      "last_success_at": "2026-05-01T07:02:35+00:00",
+      "fetched_at": "2026-05-01T07:49:39+00:00",
+      "last_success_at": "2026-05-01T07:49:39+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "视频会议和在线协作平台，稳定可靠的远程会议",
+      "desc_en": "Video conferencing and online collaboration platform for reliable remote meetings"
     },
     {
       "id": "spotify",
@@ -3291,11 +3499,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:35+00:00",
-      "last_success_at": "2026-05-01T07:02:35+00:00",
+      "fetched_at": "2026-05-01T07:49:39+00:00",
+      "last_success_at": "2026-05-01T07:49:39+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "全球最大的音乐流媒体平台，海量曲库和个性化推荐",
+      "desc_en": "World's largest music streaming platform with vast library and personalized recommendations"
     },
     {
       "id": "vlc",
@@ -3334,11 +3544,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:37+00:00",
-      "last_success_at": "2026-05-01T07:02:37+00:00",
+      "fetched_at": "2026-05-01T07:49:37+00:00",
+      "last_success_at": "2026-05-01T07:49:37+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "开源跨平台媒体播放器，支持几乎所有格式",
+      "desc_en": "Open-source cross-platform media player supporting nearly all formats"
     },
     {
       "id": "sevenzip",
@@ -3361,11 +3573,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:35+00:00",
-      "last_success_at": "2026-05-01T07:02:35+00:00",
+      "fetched_at": "2026-05-01T07:49:39+00:00",
+      "last_success_at": "2026-05-01T07:49:39+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "开源的高压缩比文件归档工具，支持多种格式",
+      "desc_en": "Open-source high-ratio file archiver supporting multiple formats"
     },
     {
       "id": "python",
@@ -3396,11 +3610,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:35+00:00",
-      "last_success_at": "2026-05-01T07:02:35+00:00",
+      "fetched_at": "2026-05-01T07:49:39+00:00",
+      "last_success_at": "2026-05-01T07:49:39+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "广泛使用的高级编程语言，适合快速开发和数据科学",
+      "desc_en": "Widely-used high-level programming language for rapid development and data science"
     },
     {
       "id": "go",
@@ -3439,11 +3655,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:37+00:00",
-      "last_success_at": "2026-05-01T07:02:37+00:00",
+      "fetched_at": "2026-05-01T07:49:37+00:00",
+      "last_success_at": "2026-05-01T07:49:37+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "Google 开发的编译型编程语言，并发性能优秀",
+      "desc_en": "Compiled programming language by Google with excellent concurrency support"
     },
     {
       "id": "signal",
@@ -3474,11 +3692,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:35+00:00",
-      "last_success_at": "2026-05-01T07:02:35+00:00",
+      "fetched_at": "2026-05-01T07:49:39+00:00",
+      "last_success_at": "2026-05-01T07:49:39+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "端到端加密的安全通讯工具，隐私保护标杆",
+      "desc_en": "End-to-end encrypted secure messenger, gold standard for privacy"
     },
     {
       "id": "wireguard",
@@ -3509,11 +3729,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:35+00:00",
-      "last_success_at": "2026-05-01T07:02:35+00:00",
+      "fetched_at": "2026-05-01T07:49:39+00:00",
+      "last_success_at": "2026-05-01T07:49:39+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "下一代高性能 VPN 协议，简洁快速安全",
+      "desc_en": "Next-gen high-performance VPN protocol, simple fast and secure"
     },
     {
       "id": "tailscale",
@@ -3552,11 +3774,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:37+00:00",
-      "last_success_at": "2026-05-01T07:02:37+00:00",
+      "fetched_at": "2026-05-01T07:49:37+00:00",
+      "last_success_at": "2026-05-01T07:49:37+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "基于 WireGuard 的零配置 VPN，设备互联只需登录账号",
+      "desc_en": "Zero-config VPN based on WireGuard, connect devices by simply signing in"
     },
     {
       "id": "qbittorrent",
@@ -3595,11 +3819,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:35+00:00",
-      "last_success_at": "2026-05-01T07:02:35+00:00",
+      "fetched_at": "2026-05-01T07:49:39+00:00",
+      "last_success_at": "2026-05-01T07:49:39+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "免费开源的 BitTorrent 客户端，无广告无捆绑",
+      "desc_en": "Free open-source BitTorrent client without ads or bundled software"
     },
     {
       "id": "zed",
@@ -3622,14 +3848,16 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:35+00:00",
+      "fetched_at": "2026-05-01T07:49:40+00:00",
       "warnings": [
         "mac-arm64: 没有匹配 asset pattern 'Zed-*-aarch64.dmg'"
       ],
-      "last_success_at": "2026-05-01T07:02:35+00:00",
+      "last_success_at": "2026-05-01T07:49:40+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "高性能多人协作代码编辑器，基于 Rust 构建",
+      "desc_en": "High-performance multiplayer code editor built in Rust"
     },
     {
       "id": "lapce",
@@ -3668,11 +3896,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:37+00:00",
-      "last_success_at": "2026-05-01T07:02:37+00:00",
+      "fetched_at": "2026-05-01T07:49:37+00:00",
+      "last_success_at": "2026-05-01T07:49:37+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "用 Rust 编写的快速轻量级代码编辑器",
+      "desc_en": "Fast and lightweight code editor written in Rust"
     },
     {
       "id": "helix",
@@ -3711,11 +3941,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:35+00:00",
-      "last_success_at": "2026-05-01T07:02:35+00:00",
+      "fetched_at": "2026-05-01T07:49:40+00:00",
+      "last_success_at": "2026-05-01T07:49:40+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "基于 Kakoune 的终端代码编辑器，支持 LSP 和树状选择",
+      "desc_en": "Kakoune-inspired terminal code editor with LSP and tree-sitter support"
     },
     {
       "id": "ghostty",
@@ -3738,11 +3970,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:35+00:00",
-      "last_success_at": "2026-05-01T07:02:35+00:00",
+      "fetched_at": "2026-05-01T07:49:39+00:00",
+      "last_success_at": "2026-05-01T07:49:39+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "Zig 编写的快速跨平台终端模拟器",
+      "desc_en": "Fast cross-platform terminal emulator written in Zig"
     },
     {
       "id": "kitty",
@@ -3765,11 +3999,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:37+00:00",
-      "last_success_at": "2026-05-01T07:02:37+00:00",
+      "fetched_at": "2026-05-01T07:49:37+00:00",
+      "last_success_at": "2026-05-01T07:49:37+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "GPU 加速的跨平台终端模拟器，功能丰富",
+      "desc_en": "GPU-accelerated cross-platform terminal emulator with rich features"
     },
     {
       "id": "zellij",
@@ -3808,11 +4044,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:35+00:00",
-      "last_success_at": "2026-05-01T07:02:35+00:00",
+      "fetched_at": "2026-05-01T07:49:40+00:00",
+      "last_success_at": "2026-05-01T07:49:40+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "Rust 编写的终端复用器，比 tmux 更现代易用",
+      "desc_en": "Terminal multiplexer written in Rust, more modern and user-friendly than tmux"
     },
     {
       "id": "starship",
@@ -3851,11 +4089,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:35+00:00",
-      "last_success_at": "2026-05-01T07:02:35+00:00",
+      "fetched_at": "2026-05-01T07:49:40+00:00",
+      "last_success_at": "2026-05-01T07:49:40+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "跨 shell 的自定义提示符工具，快速可定制",
+      "desc_en": "Cross-shell customizable prompt tool, fast and highly configurable"
     },
     {
       "id": "nushell",
@@ -3894,11 +4134,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:38+00:00",
-      "last_success_at": "2026-05-01T07:02:38+00:00",
+      "fetched_at": "2026-05-01T07:49:38+00:00",
+      "last_success_at": "2026-05-01T07:49:38+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "用结构化数据思路设计的新型 Shell",
+      "desc_en": "New type of shell designed with structured data approach"
     },
     {
       "id": "fish",
@@ -3921,11 +4163,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:35+00:00",
-      "last_success_at": "2026-05-01T07:02:35+00:00",
+      "fetched_at": "2026-05-01T07:49:39+00:00",
+      "last_success_at": "2026-05-01T07:49:39+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "智能友好的命令行 Shell，开箱即用无需配置",
+      "desc_en": "Smart and user-friendly command line shell, works out of the box"
     },
     {
       "id": "lazydocker",
@@ -3964,11 +4208,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:35+00:00",
-      "last_success_at": "2026-05-01T07:02:35+00:00",
+      "fetched_at": "2026-05-01T07:49:40+00:00",
+      "last_success_at": "2026-05-01T07:49:40+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "终端 Docker 管理界面，一站式管理容器和服务",
+      "desc_en": "Terminal UI for Docker, manage containers and services in one place"
     },
     {
       "id": "bottom",
@@ -4007,11 +4253,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:37+00:00",
-      "last_success_at": "2026-05-01T07:02:37+00:00",
+      "fetched_at": "2026-05-01T07:49:37+00:00",
+      "last_success_at": "2026-05-01T07:49:37+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "跨平台终端系统监控工具，支持多种图表",
+      "desc_en": "Cross-platform terminal system monitor with multiple visualization widgets"
     },
     {
       "id": "btop",
@@ -4050,11 +4298,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:35+00:00",
-      "last_success_at": "2026-05-01T07:02:35+00:00",
+      "fetched_at": "2026-05-01T07:49:39+00:00",
+      "last_success_at": "2026-05-01T07:49:39+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "美观的终端系统资源监控工具，支持鼠标操作",
+      "desc_en": "Beautiful terminal system resource monitor with mouse support"
     },
     {
       "id": "dust",
@@ -4085,14 +4335,16 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:36+00:00",
+      "fetched_at": "2026-05-01T07:49:40+00:00",
       "warnings": [
         "mac-arm64: 没有匹配 asset pattern 'dust-*-aarch64-apple-darwin.tar.gz'"
       ],
-      "last_success_at": "2026-05-01T07:02:36+00:00",
+      "last_success_at": "2026-05-01T07:49:40+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "更直观的 du 替代工具，快速查看磁盘占用",
+      "desc_en": "More intuitive du alternative for quickly viewing disk usage"
     },
     {
       "id": "duf",
@@ -4115,15 +4367,17 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:38+00:00",
+      "fetched_at": "2026-05-01T07:49:38+00:00",
       "warnings": [
         "win-x64: 没有匹配 asset pattern 'duf_*_windows_amd64.zip'",
         "linux-x64: 没有匹配 asset pattern 'duf_*_linux_amd64.tar.gz'"
       ],
-      "last_success_at": "2026-05-01T07:02:38+00:00",
+      "last_success_at": "2026-05-01T07:49:38+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "更友好的 df 替代工具，美观展示磁盘空间",
+      "desc_en": "More user-friendly df alternative with beautiful disk space display"
     },
     {
       "id": "procs",
@@ -4162,11 +4416,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:35+00:00",
-      "last_success_at": "2026-05-01T07:02:35+00:00",
+      "fetched_at": "2026-05-01T07:49:39+00:00",
+      "last_success_at": "2026-05-01T07:49:39+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "ps 替代工具，彩色输出，支持增量搜索",
+      "desc_en": "ps alternative with colored output and incremental search"
     },
     {
       "id": "sd",
@@ -4205,11 +4461,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:35+00:00",
-      "last_success_at": "2026-05-01T07:02:35+00:00",
+      "fetched_at": "2026-05-01T07:49:40+00:00",
+      "last_success_at": "2026-05-01T07:49:40+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "直观的 sed 替代工具，用更简洁的语法做文本替换",
+      "desc_en": "Intuitive sed alternative with simpler syntax for text replacement"
     },
     {
       "id": "delta",
@@ -4248,11 +4506,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:38+00:00",
-      "last_success_at": "2026-05-01T07:02:38+00:00",
+      "fetched_at": "2026-05-01T07:49:38+00:00",
+      "last_success_at": "2026-05-01T07:49:38+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "Git diff 增强工具，语法高亮、行号、side-by-side 对比",
+      "desc_en": "Git diff enhancer with syntax highlighting, line numbers, and side-by-side view"
     },
     {
       "id": "difftastic",
@@ -4291,11 +4551,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:35+00:00",
-      "last_success_at": "2026-05-01T07:02:35+00:00",
+      "fetched_at": "2026-05-01T07:49:40+00:00",
+      "last_success_at": "2026-05-01T07:49:40+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "基于语法树的结构化 diff 工具，理解代码语义",
+      "desc_en": "Structural diff tool based on syntax trees that understands code semantics"
     },
     {
       "id": "gitui",
@@ -4334,11 +4596,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:35+00:00",
-      "last_success_at": "2026-05-01T07:02:35+00:00",
+      "fetched_at": "2026-05-01T07:49:39+00:00",
+      "last_success_at": "2026-05-01T07:49:39+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "终端 Git 客户端，快速的 TUI 界面",
+      "desc_en": "Terminal Git client with fast TUI interface"
     },
     {
       "id": "hyperfine",
@@ -4377,11 +4641,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:38+00:00",
-      "last_success_at": "2026-05-01T07:02:38+00:00",
+      "fetched_at": "2026-05-01T07:49:38+00:00",
+      "last_success_at": "2026-05-01T07:49:38+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "命令行基准测试工具，支持统计分析和参数化",
+      "desc_en": "Command-line benchmarking tool with statistical analysis and parameterization"
     },
     {
       "id": "hexyl",
@@ -4420,11 +4686,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:36+00:00",
-      "last_success_at": "2026-05-01T07:02:36+00:00",
+      "fetched_at": "2026-05-01T07:49:40+00:00",
+      "last_success_at": "2026-05-01T07:49:40+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "终端十六进制查看器，彩色标注不同字节类型",
+      "desc_en": "Terminal hex viewer with colored annotations for different byte types"
     },
     {
       "id": "xh",
@@ -4463,11 +4731,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:35+00:00",
-      "last_success_at": "2026-05-01T07:02:35+00:00",
+      "fetched_at": "2026-05-01T07:49:40+00:00",
+      "last_success_at": "2026-05-01T07:49:40+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "友好的 HTTP 客户端，HTTPie 的 Rust 替代品",
+      "desc_en": "Friendly HTTP client, Rust alternative to HTTPie"
     },
     {
       "id": "ruff",
@@ -4506,11 +4776,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:37+00:00",
-      "last_success_at": "2026-05-01T07:02:37+00:00",
+      "fetched_at": "2026-05-01T07:49:37+00:00",
+      "last_success_at": "2026-05-01T07:49:37+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "超快的 Python 代码检查和格式化工具，Rust 编写",
+      "desc_en": "Ultra-fast Python linter and formatter written in Rust"
     },
     {
       "id": "uv",
@@ -4549,11 +4821,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:35+00:00",
-      "last_success_at": "2026-05-01T07:02:35+00:00",
+      "fetched_at": "2026-05-01T07:49:39+00:00",
+      "last_success_at": "2026-05-01T07:49:39+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "超快的 Python 包管理工具，Rust 编写的 pip 替代品",
+      "desc_en": "Ultra-fast Python package manager, Rust-based pip alternative"
     },
     {
       "id": "biome",
@@ -4584,14 +4858,16 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:36+00:00",
+      "fetched_at": "2026-05-01T07:49:40+00:00",
       "warnings": [
         "win-x64: 没有匹配 asset pattern 'biome-win-x64.exe'"
       ],
-      "last_success_at": "2026-05-01T07:02:36+00:00",
+      "last_success_at": "2026-05-01T07:49:40+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "快速的 Web 前端工具链，ESLint + Prettier 的替代品",
+      "desc_en": "Fast web frontend toolchain, alternative to ESLint + Prettier"
     },
     {
       "id": "nextest",
@@ -4622,14 +4898,16 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:38+00:00",
+      "fetched_at": "2026-05-01T07:49:38+00:00",
       "warnings": [
         "mac-arm64: 没有匹配 asset pattern 'cargo-nextest-*-aarch64-apple-darwin.tar.gz'"
       ],
-      "last_success_at": "2026-05-01T07:02:38+00:00",
+      "last_success_at": "2026-05-01T07:49:38+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "Rust 的下一代测试运行器，并行执行速度更快",
+      "desc_en": "Next-gen test runner for Rust, faster with parallel execution"
     },
     {
       "id": "cargo-binstall",
@@ -4668,11 +4946,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:35+00:00",
-      "last_success_at": "2026-05-01T07:02:35+00:00",
+      "fetched_at": "2026-05-01T07:49:40+00:00",
+      "last_success_at": "2026-05-01T07:49:40+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "无需编译直接安装 Rust 二进制文件的 Cargo 插件",
+      "desc_en": "Cargo plugin to install Rust binaries directly without compilation"
     },
     {
       "id": "trunk",
@@ -4711,11 +4991,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:35+00:00",
-      "last_success_at": "2026-05-01T07:02:35+00:00",
+      "fetched_at": "2026-05-01T07:49:39+00:00",
+      "last_success_at": "2026-05-01T07:49:39+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "WebAssembly 应用的构建工具和开发服务器",
+      "desc_en": "Build tool and development server for WebAssembly applications"
     },
     {
       "id": "lefthook",
@@ -4754,11 +5036,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:37+00:00",
-      "last_success_at": "2026-05-01T07:02:37+00:00",
+      "fetched_at": "2026-05-01T07:49:37+00:00",
+      "last_success_at": "2026-05-01T07:49:37+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "快速的 Git hooks 管理工具，支持并行执行",
+      "desc_en": "Fast Git hooks manager with parallel execution support"
     },
     {
       "id": "typos",
@@ -4797,11 +5081,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:36+00:00",
-      "last_success_at": "2026-05-01T07:02:36+00:00",
+      "fetched_at": "2026-05-01T07:49:40+00:00",
+      "last_success_at": "2026-05-01T07:49:40+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "源代码拼写检查工具，快速检测变量名和注释中的拼写错误",
+      "desc_en": "Source code spell checker for detecting typos in variable names and comments"
     },
     {
       "id": "taplo",
@@ -4840,11 +5126,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:35+00:00",
-      "last_success_at": "2026-05-01T07:02:35+00:00",
+      "fetched_at": "2026-05-01T07:49:39+00:00",
+      "last_success_at": "2026-05-01T07:49:39+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "TOML 格式化和校验工具，支持 LSP",
+      "desc_en": "TOML formatter and linter with LSP support"
     },
     {
       "id": "tokei",
@@ -4883,11 +5171,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:37+00:00",
-      "last_success_at": "2026-05-01T07:02:37+00:00",
+      "fetched_at": "2026-05-01T07:49:37+00:00",
+      "last_success_at": "2026-05-01T07:49:37+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "快速的代码行数统计工具，支持 200+ 编程语言",
+      "desc_en": "Fast code line counter supporting 200+ programming languages"
     },
     {
       "id": "grex",
@@ -4926,11 +5216,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:36+00:00",
-      "last_success_at": "2026-05-01T07:02:36+00:00",
+      "fetched_at": "2026-05-01T07:49:40+00:00",
+      "last_success_at": "2026-05-01T07:49:40+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "从测试用例自动生成正则表达式的命令行工具",
+      "desc_en": "Command-line tool to generate regex from test cases automatically"
     },
     {
       "id": "just",
@@ -4969,11 +5261,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:36+00:00",
-      "last_success_at": "2026-05-01T07:02:36+00:00",
+      "fetched_at": "2026-05-01T07:49:40+00:00",
+      "last_success_at": "2026-05-01T07:49:40+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "现代化的命令运行器，类似 make 但更简洁易用",
+      "desc_en": "Modern command runner, like make but simpler and more user-friendly"
     },
     {
       "id": "watchexec",
@@ -5012,11 +5306,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:38+00:00",
-      "last_success_at": "2026-05-01T07:02:38+00:00",
+      "fetched_at": "2026-05-01T07:49:38+00:00",
+      "last_success_at": "2026-05-01T07:49:38+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "文件变化监控工具，自动重跑命令",
+      "desc_en": "File watcher that automatically re-runs commands on changes"
     },
     {
       "id": "bandwhich",
@@ -5055,11 +5351,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:36+00:00",
-      "last_success_at": "2026-05-01T07:02:36+00:00",
+      "fetched_at": "2026-05-01T07:49:40+00:00",
+      "last_success_at": "2026-05-01T07:49:40+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "终端网络带宽监控工具，按进程和连接分类",
+      "desc_en": "Terminal bandwidth monitor categorized by process and connection"
     },
     {
       "id": "dog",
@@ -5090,14 +5388,16 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:36+00:00",
+      "fetched_at": "2026-05-01T07:49:40+00:00",
       "warnings": [
         "linux-x64: 没有匹配 asset pattern 'dog-v*-x86_64-unknown-linux-musl.zip'"
       ],
-      "last_success_at": "2026-05-01T07:02:36+00:00",
+      "last_success_at": "2026-05-01T07:49:40+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "友好的 DNS 查询工具，dig 的现代替代品",
+      "desc_en": "Friendly DNS query tool, modern alternative to dig"
     },
     {
       "id": "vivid",
@@ -5136,11 +5436,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:38+00:00",
-      "last_success_at": "2026-05-01T07:02:38+00:00",
+      "fetched_at": "2026-05-01T07:49:38+00:00",
+      "last_success_at": "2026-05-01T07:49:38+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "LS_COLORS 生成工具，为 ls 命令添加彩色输出",
+      "desc_en": "LS_COLORS generator for adding color to ls command output"
     },
     {
       "id": "htmlq",
@@ -5179,11 +5481,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:35+00:00",
-      "last_success_at": "2026-05-01T07:02:35+00:00",
+      "fetched_at": "2026-05-01T07:49:39+00:00",
+      "last_success_at": "2026-05-01T07:49:39+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "命令行 HTML 解析工具，像 jq 一样提取 HTML 内容",
+      "desc_en": "Command-line HTML parser, extract HTML content like jq for JSON"
     },
     {
       "id": "choose",
@@ -5222,11 +5526,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:35+00:00",
-      "last_success_at": "2026-05-01T07:02:35+00:00",
+      "fetched_at": "2026-05-01T07:49:40+00:00",
+      "last_success_at": "2026-05-01T07:49:40+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "cut/awk 的简洁替代品，用更直观的语法选择列",
+      "desc_en": "Simpler alternative to cut/awk with more intuitive column selection syntax"
     },
     {
       "id": "git-cliff",
@@ -5265,11 +5571,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:38+00:00",
-      "last_success_at": "2026-05-01T07:02:38+00:00",
+      "fetched_at": "2026-05-01T07:49:38+00:00",
+      "last_success_at": "2026-05-01T07:49:38+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "基于 git 提交记录自动生成变更日志的工具",
+      "desc_en": "Changelog generator based on git commit history"
     },
     {
       "id": "cocogitto",
@@ -5300,14 +5608,16 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:36+00:00",
+      "fetched_at": "2026-05-01T07:49:40+00:00",
       "warnings": [
         "win-x64: 没有匹配 asset pattern 'cocogitto-*-x86_64-pc-windows-msvc.zip'"
       ],
-      "last_success_at": "2026-05-01T07:02:36+00:00",
+      "last_success_at": "2026-05-01T07:49:40+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "Conventional Commits 工具集，自动化版本管理和发布",
+      "desc_en": "Conventional Commits toolkit for automated versioning and release"
     },
     {
       "id": "mask",
@@ -5330,15 +5640,17 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:35+00:00",
+      "fetched_at": "2026-05-01T07:49:40+00:00",
       "warnings": [
         "mac-arm64: 没有匹配 asset pattern 'mask-*-aarch64-apple-darwin.tar.gz'",
         "linux-x64: 没有匹配 asset pattern 'mask-*-x86_64-unknown-linux-musl.tar.gz'"
       ],
-      "last_success_at": "2026-05-01T07:02:35+00:00",
+      "last_success_at": "2026-05-01T07:49:40+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "用 Markdown 编写的命令运行器，任务定义即文档",
+      "desc_en": "Command runner written in Markdown, task definitions serve as documentation"
     },
     {
       "id": "miniserve",
@@ -5377,11 +5689,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:38+00:00",
-      "last_success_at": "2026-05-01T07:02:38+00:00",
+      "fetched_at": "2026-05-01T07:49:38+00:00",
+      "last_success_at": "2026-05-01T07:49:38+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "轻量级 HTTP 文件服务器，一行命令共享文件",
+      "desc_en": "Lightweight HTTP file server, share files with a single command"
     },
     {
       "id": "httpie",
@@ -5420,11 +5734,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:35+00:00",
-      "last_success_at": "2026-05-01T07:02:35+00:00",
+      "fetched_at": "2026-05-01T07:49:40+00:00",
+      "last_success_at": "2026-05-01T07:49:40+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "人性化的命令行 HTTP 客户端，API 调试利器",
+      "desc_en": "Human-friendly command-line HTTP client, great for API debugging"
     },
     {
       "id": "libre-hardware-monitor",
@@ -5447,11 +5763,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:35+00:00",
-      "last_success_at": "2026-05-01T07:02:35+00:00",
+      "fetched_at": "2026-05-01T07:49:40+00:00",
+      "last_success_at": "2026-05-01T07:49:40+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "开源硬件监控工具，温度/电压/风扇转速",
+      "desc_en": "Open-source hardware monitor for temperature, voltage, and fan speed"
     },
     {
       "id": "eartrumpet",
@@ -5474,11 +5792,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:38+00:00",
-      "last_success_at": "2026-05-01T07:02:38+00:00",
+      "fetched_at": "2026-05-01T07:49:38+00:00",
+      "last_success_at": "2026-05-01T07:49:38+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "Windows 音量管理工具，按应用独立控制音量",
+      "desc_en": "Windows volume manager for per-app volume control"
     },
     {
       "id": "screen-to-gif",
@@ -5501,11 +5821,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:35+00:00",
-      "last_success_at": "2026-05-01T07:02:35+00:00",
+      "fetched_at": "2026-05-01T07:49:40+00:00",
+      "last_success_at": "2026-05-01T07:49:40+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "屏幕录制工具，直接导出为 GIF 动画",
+      "desc_en": "Screen recorder that exports directly to GIF animation"
     },
     {
       "id": "autohotkey",
@@ -5528,11 +5850,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:36+00:00",
-      "last_success_at": "2026-05-01T07:02:36+00:00",
+      "fetched_at": "2026-05-01T07:49:40+00:00",
+      "last_success_at": "2026-05-01T07:49:40+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "Windows 自动化脚本工具，自定义快捷键和宏",
+      "desc_en": "Windows automation scripting tool for custom hotkeys and macros"
     },
     {
       "id": "windynamicdesktop",
@@ -5555,11 +5879,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:38+00:00",
-      "last_success_at": "2026-05-01T07:02:38+00:00",
+      "fetched_at": "2026-05-01T07:49:38+00:00",
+      "last_success_at": "2026-05-01T07:49:38+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "Windows 动态桌面壁纸，随时间自动切换壁纸",
+      "desc_en": "Windows dynamic desktop wallpaper that changes with time of day"
     },
     {
       "id": "translucent-tb",
@@ -5582,11 +5908,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:35+00:00",
-      "last_success_at": "2026-05-01T07:02:35+00:00",
+      "fetched_at": "2026-05-01T07:49:40+00:00",
+      "last_success_at": "2026-05-01T07:49:40+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "任务栏透明化工具，美化 Windows 任务栏",
+      "desc_en": "Taskbar transparency tool for beautifying Windows taskbar"
     },
     {
       "id": "windhawk",
@@ -5609,11 +5937,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:36+00:00",
-      "last_success_at": "2026-05-01T07:02:36+00:00",
+      "fetched_at": "2026-05-01T07:49:40+00:00",
+      "last_success_at": "2026-05-01T07:49:40+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "Windows 自定义修改平台，社区驱动的系统增强",
+      "desc_en": "Windows customization platform with community-driven system enhancements"
     },
     {
       "id": "everything-toolbar",
@@ -5636,11 +5966,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:38+00:00",
-      "last_success_at": "2026-05-01T07:02:38+00:00",
+      "fetched_at": "2026-05-01T07:49:38+00:00",
+      "last_success_at": "2026-05-01T07:49:38+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "Everything 搜索集成到任务栏，快速搜索文件",
+      "desc_en": "Everything search integrated into the taskbar for quick file search"
     },
     {
       "id": "unigetui",
@@ -5663,11 +5995,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:35+00:00",
-      "last_success_at": "2026-05-01T07:02:35+00:00",
+      "fetched_at": "2026-05-01T07:49:40+00:00",
+      "last_success_at": "2026-05-01T07:49:40+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "Windows 软件包管理图形界面，winget/Scoop/Chocolatey 统一管理",
+      "desc_en": "GUI for Windows package managers, unified winget/Scoop/Chocolatey management"
     },
     {
       "id": "secureuxtheme",
@@ -5690,11 +6024,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:35+00:00",
-      "last_success_at": "2026-05-01T07:02:35+00:00",
+      "fetched_at": "2026-05-01T07:49:40+00:00",
+      "last_success_at": "2026-05-01T07:49:40+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "Windows 主题解锁工具，安装第三方主题",
+      "desc_en": "Windows theme unlocker for installing third-party themes"
     },
     {
       "id": "bleachbit",
@@ -5717,11 +6053,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:38+00:00",
-      "last_success_at": "2026-05-01T07:02:38+00:00",
+      "fetched_at": "2026-05-01T07:49:38+00:00",
+      "last_success_at": "2026-05-01T07:49:38+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "系统清理工具，释放磁盘空间保护隐私",
+      "desc_en": "System cleaning tool for freeing disk space and protecting privacy"
     },
     {
       "id": "flameshot",
@@ -5744,14 +6082,16 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:36+00:00",
+      "fetched_at": "2026-05-01T07:49:40+00:00",
       "warnings": [
         "linux-x64: 没有匹配 asset pattern 'flameshot-*-debian-12-amd64.deb'"
       ],
-      "last_success_at": "2026-05-01T07:02:36+00:00",
+      "last_success_at": "2026-05-01T07:49:40+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "功能强大的截图工具，支持标注和编辑",
+      "desc_en": "Powerful screenshot tool with annotation and editing support"
     },
     {
       "id": "greenshot",
@@ -5774,11 +6114,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:36+00:00",
-      "last_success_at": "2026-05-01T07:02:36+00:00",
+      "fetched_at": "2026-05-01T07:49:40+00:00",
+      "last_success_at": "2026-05-01T07:49:40+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "轻量级截图工具，快速截图和简单标注",
+      "desc_en": "Lightweight screenshot tool for quick capture and simple annotation"
     },
     {
       "id": "crystaldiskinfo",
@@ -5801,11 +6143,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:38+00:00",
-      "last_success_at": "2026-05-01T07:02:38+00:00",
+      "fetched_at": "2026-05-01T07:49:38+00:00",
+      "last_success_at": "2026-05-01T07:49:38+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "硬盘健康监控工具，读取 S.M.A.R.T. 信息",
+      "desc_en": "Hard drive health monitor that reads S.M.A.R.T. data"
     },
     {
       "id": "crystaldiskmark",
@@ -5828,11 +6172,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:35+00:00",
-      "last_success_at": "2026-05-01T07:02:35+00:00",
+      "fetched_at": "2026-05-01T07:49:40+00:00",
+      "last_success_at": "2026-05-01T07:49:40+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "磁盘性能基准测试工具，测试读写速度",
+      "desc_en": "Disk performance benchmark tool for testing read/write speeds"
     },
     {
       "id": "xml-notepad",
@@ -5855,11 +6201,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:35+00:00",
-      "last_success_at": "2026-05-01T07:02:35+00:00",
+      "fetched_at": "2026-05-01T07:49:40+00:00",
+      "last_success_at": "2026-05-01T07:49:40+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "微软出品的 XML 编辑器，树状结构可视化编辑",
+      "desc_en": "XML editor by Microsoft with tree-structured visual editing"
     },
     {
       "id": "imageglass",
@@ -5882,11 +6230,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:38+00:00",
-      "last_success_at": "2026-05-01T07:02:38+00:00",
+      "fetched_at": "2026-05-01T07:49:38+00:00",
+      "last_success_at": "2026-05-01T07:49:38+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "轻量级图片查看器，支持多种格式快速浏览",
+      "desc_en": "Lightweight image viewer with fast multi-format browsing"
     },
     {
       "id": "nomacs",
@@ -5909,11 +6259,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:35+00:00",
-      "last_success_at": "2026-05-01T07:02:35+00:00",
+      "fetched_at": "2026-05-01T07:49:40+00:00",
+      "last_success_at": "2026-05-01T07:49:40+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "开源图片查看器，支持基本编辑和批量处理",
+      "desc_en": "Open-source image viewer with basic editing and batch processing"
     },
     {
       "id": "quicklook",
@@ -5936,11 +6288,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:35+00:00",
-      "last_success_at": "2026-05-01T07:02:35+00:00",
+      "fetched_at": "2026-05-01T07:49:40+00:00",
+      "last_success_at": "2026-05-01T07:49:40+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "Windows 文件预览工具，macOS Quick Look 的移植",
+      "desc_en": "Windows file preview tool, port of macOS Quick Look feature"
     },
     {
       "id": "files-app",
@@ -5963,11 +6317,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:38+00:00",
-      "last_success_at": "2026-05-01T07:02:38+00:00",
+      "fetched_at": "2026-05-01T07:49:38+00:00",
+      "last_success_at": "2026-05-01T07:49:38+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "现代化的 Windows 文件管理器，标签页和美观 UI",
+      "desc_en": "Modern Windows file manager with tabs and beautiful UI"
     },
     {
       "id": "compactgui",
@@ -5990,11 +6346,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:36+00:00",
-      "last_success_at": "2026-05-01T07:02:36+00:00",
+      "fetched_at": "2026-05-01T07:49:40+00:00",
+      "last_success_at": "2026-05-01T07:49:40+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "Windows 文件压缩图形工具，NTFS 压缩更易用",
+      "desc_en": "GUI for Windows file compression, makes NTFS compression user-friendly"
     },
     {
       "id": "openshell",
@@ -6017,11 +6375,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:36+00:00",
-      "last_success_at": "2026-05-01T07:02:36+00:00",
+      "fetched_at": "2026-05-01T07:49:40+00:00",
+      "last_success_at": "2026-05-01T07:49:40+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "Windows 开始菜单增强工具，恢复经典开始菜单",
+      "desc_en": "Windows Start menu enhancer for restoring classic Start menu"
     },
     {
       "id": "notepad3",
@@ -6044,11 +6404,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:38+00:00",
-      "last_success_at": "2026-05-01T07:02:38+00:00",
+      "fetched_at": "2026-05-01T07:49:38+00:00",
+      "last_success_at": "2026-05-01T07:49:38+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "轻量级 Notepad 替代品，支持语法高亮",
+      "desc_en": "Lightweight Notepad replacement with syntax highlighting"
     },
     {
       "id": "tabby",
@@ -6071,15 +6433,17 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:36+00:00",
+      "fetched_at": "2026-05-01T07:49:40+00:00",
       "warnings": [
         "win-x64: 没有匹配 asset pattern 'tabby-*-x64-setup.exe'",
         "linux-x64: 没有匹配 asset pattern 'tabby-*-x86_64-linux.rpm'"
       ],
-      "last_success_at": "2026-05-01T07:02:36+00:00",
+      "last_success_at": "2026-05-01T07:49:40+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "跨平台终端模拟器，支持 SSH 和串口连接",
+      "desc_en": "Cross-platform terminal emulator with SSH and serial port support"
     },
     {
       "id": "hyper",
@@ -6110,11 +6474,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:35+00:00",
-      "last_success_at": "2026-05-01T07:02:35+00:00",
+      "fetched_at": "2026-05-01T07:49:40+00:00",
+      "last_success_at": "2026-05-01T07:49:40+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "基于 Web 技术的终端模拟器，可扩展性强",
+      "desc_en": "Terminal emulator built on web technologies with high extensibility"
     },
     {
       "id": "syncthing",
@@ -6153,11 +6519,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:38+00:00",
-      "last_success_at": "2026-05-01T07:02:38+00:00",
+      "fetched_at": "2026-05-01T07:49:38+00:00",
+      "last_success_at": "2026-05-01T07:49:38+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "去中心化文件同步工具，P2P 实时同步",
+      "desc_en": "Decentralized file synchronization tool with real-time P2P sync"
     },
     {
       "id": "nanazip",
@@ -6180,11 +6548,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:35+00:00",
-      "last_success_at": "2026-05-01T07:02:35+00:00",
+      "fetched_at": "2026-05-01T07:49:40+00:00",
+      "last_success_at": "2026-05-01T07:49:40+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "基于 7-Zip 的现代化 Windows 归档工具",
+      "desc_en": "Modern Windows archiver based on 7-Zip"
     },
     {
       "id": "doublecmd",
@@ -6207,11 +6577,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:35+00:00",
-      "last_success_at": "2026-05-01T07:02:35+00:00",
+      "fetched_at": "2026-05-01T07:49:40+00:00",
+      "last_success_at": "2026-05-01T07:49:40+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "跨平台双面板文件管理器，Total Commander 替代品",
+      "desc_en": "Cross-platform dual-panel file manager, alternative to Total Commander"
     },
     {
       "id": "onionshare",
@@ -6242,11 +6614,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:38+00:00",
-      "last_success_at": "2026-05-01T07:02:38+00:00",
+      "fetched_at": "2026-05-01T07:49:38+00:00",
+      "last_success_at": "2026-05-01T07:49:38+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "通过 Tor 网络安全共享文件和托管网站",
+      "desc_en": "Securely share files and host websites over Tor network"
     },
     {
       "id": "veracrypt",
@@ -6269,11 +6643,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:35+00:00",
-      "last_success_at": "2026-05-01T07:02:35+00:00",
+      "fetched_at": "2026-05-01T07:49:40+00:00",
+      "last_success_at": "2026-05-01T07:49:40+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "磁盘加密工具，创建加密卷或加密整个分区",
+      "desc_en": "Disk encryption tool for creating encrypted volumes or full-disk encryption"
     },
     {
       "id": "cryptomator",
@@ -6312,11 +6688,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:36+00:00",
-      "last_success_at": "2026-05-01T07:02:36+00:00",
+      "fetched_at": "2026-05-01T07:49:40+00:00",
+      "last_success_at": "2026-05-01T07:49:40+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "云存储加密工具，为云端文件添加客户端加密",
+      "desc_en": "Cloud storage encryption tool for client-side encryption of cloud files"
     },
     {
       "id": "kopia",
@@ -6339,15 +6717,17 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:39+00:00",
+      "fetched_at": "2026-05-01T07:49:38+00:00",
       "warnings": [
         "mac-arm64: 没有匹配 asset pattern 'kopia-*-macos-arm64'",
         "linux-x64: 没有匹配 asset pattern 'kopia-*-linux-x64'"
       ],
-      "last_success_at": "2026-05-01T07:02:39+00:00",
+      "last_success_at": "2026-05-01T07:49:38+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "跨平台备份工具，支持增量快照和多后端存储",
+      "desc_en": "Cross-platform backup tool with incremental snapshots and multi-backend storage"
     },
     {
       "id": "restic",
@@ -6386,11 +6766,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:36+00:00",
-      "last_success_at": "2026-05-01T07:02:36+00:00",
+      "fetched_at": "2026-05-01T07:49:40+00:00",
+      "last_success_at": "2026-05-01T07:49:40+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "快速安全的备份工具，支持去重和加密",
+      "desc_en": "Fast and secure backup tool with deduplication and encryption"
     },
     {
       "id": "duplicati",
@@ -6413,11 +6795,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:35+00:00",
-      "last_success_at": "2026-05-01T07:02:35+00:00",
+      "fetched_at": "2026-05-01T07:49:40+00:00",
+      "last_success_at": "2026-05-01T07:49:40+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "免费备份软件，支持加密和云存储后端",
+      "desc_en": "Free backup software with encryption and cloud storage backend support"
     },
     {
       "id": "rclone",
@@ -6456,11 +6840,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:39+00:00",
-      "last_success_at": "2026-05-01T07:02:39+00:00",
+      "fetched_at": "2026-05-01T07:49:38+00:00",
+      "last_success_at": "2026-05-01T07:49:38+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "命令行云存储同步工具，支持 70+ 云存储服务",
+      "desc_en": "Command-line cloud storage sync tool supporting 70+ cloud services"
     },
     {
       "id": "gron",
@@ -6491,11 +6877,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:36+00:00",
-      "last_success_at": "2026-05-01T07:02:36+00:00",
+      "fetched_at": "2026-05-01T07:49:40+00:00",
+      "last_success_at": "2026-05-01T07:49:40+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "将 JSON 转为可 grep 的离散行，方便搜索",
+      "desc_en": "Make JSON greppable by converting to discrete searchable lines"
     },
     {
       "id": "dasel",
@@ -6534,11 +6922,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:36+00:00",
-      "last_success_at": "2026-05-01T07:02:36+00:00",
+      "fetched_at": "2026-05-01T07:49:40+00:00",
+      "last_success_at": "2026-05-01T07:49:40+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "命令行 JSON/YAML/TOML/XML 查询和修改工具",
+      "desc_en": "Command-line tool for querying and modifying JSON/YAML/TOML/XML"
     },
     {
       "id": "fx",
@@ -6577,11 +6967,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:39+00:00",
-      "last_success_at": "2026-05-01T07:02:39+00:00",
+      "fetched_at": "2026-05-01T07:49:38+00:00",
+      "last_success_at": "2026-05-01T07:49:38+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "交互式 JSON 浏览器和处理器，支持 JavaScript 查询",
+      "desc_en": "Interactive JSON viewer and processor with JavaScript queries"
     },
     {
       "id": "glow",
@@ -6620,11 +7012,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:36+00:00",
-      "last_success_at": "2026-05-01T07:02:36+00:00",
+      "fetched_at": "2026-05-01T07:49:41+00:00",
+      "last_success_at": "2026-05-01T07:49:41+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "终端 Markdown 渲染器，美化显示 Markdown 文件",
+      "desc_en": "Terminal Markdown renderer for beautifully displaying Markdown files"
     },
     {
       "id": "slides",
@@ -6655,14 +7049,16 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:36+00:00",
+      "fetched_at": "2026-05-01T07:49:40+00:00",
       "warnings": [
         "win-x64: 没有匹配 asset pattern 'slides_*_windows_amd64.tar.gz'"
       ],
-      "last_success_at": "2026-05-01T07:02:36+00:00",
+      "last_success_at": "2026-05-01T07:49:40+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "终端幻灯片工具，用 Markdown 做演示文稿",
+      "desc_en": "Terminal presentation tool for creating slides from Markdown"
     },
     {
       "id": "soft-serve",
@@ -6701,11 +7097,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:39+00:00",
-      "last_success_at": "2026-05-01T07:02:39+00:00",
+      "fetched_at": "2026-05-01T07:49:38+00:00",
+      "last_success_at": "2026-05-01T07:49:38+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "自托管 Git 服务器，支持 SSH 和 Web 界面",
+      "desc_en": "Self-hosted Git server with SSH and web interface"
     },
     {
       "id": "gum",
@@ -6744,11 +7142,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:36+00:00",
-      "last_success_at": "2026-05-01T07:02:36+00:00",
+      "fetched_at": "2026-05-01T07:49:41+00:00",
+      "last_success_at": "2026-05-01T07:49:41+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "终端 UI 组件工具，用 shell 脚本打造交互界面",
+      "desc_en": "Terminal UI component toolkit for building interactive shell scripts"
     },
     {
       "id": "vhs",
@@ -6787,11 +7187,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:36+00:00",
-      "last_success_at": "2026-05-01T07:02:36+00:00",
+      "fetched_at": "2026-05-01T07:49:40+00:00",
+      "last_success_at": "2026-05-01T07:49:40+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "终端录制工具，自动生成 GIF 演示",
+      "desc_en": "Terminal recording tool that automatically generates GIF demos"
     },
     {
       "id": "charm",
@@ -6830,11 +7232,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:39+00:00",
-      "last_success_at": "2026-05-01T07:02:39+00:00",
+      "fetched_at": "2026-05-01T07:49:38+00:00",
+      "last_success_at": "2026-05-01T07:49:38+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "Charm CLI 工具集，终端美化和数据存储",
+      "desc_en": "Charm CLI toolkit for terminal beautification and data storage"
     },
     {
       "id": "skate",
@@ -6873,11 +7277,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:36+00:00",
-      "last_success_at": "2026-05-01T07:02:36+00:00",
+      "fetched_at": "2026-05-01T07:49:41+00:00",
+      "last_success_at": "2026-05-01T07:49:41+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "Charm 的键值存储工具，终端中的小型数据库",
+      "desc_en": "Key-value store by Charm, a small database in your terminal"
     },
     {
       "id": "clash-verge-rev",
@@ -6908,14 +7314,16 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:36+00:00",
+      "fetched_at": "2026-05-01T07:49:40+00:00",
       "warnings": [
         "linux-x64: 没有匹配 asset pattern 'clash-verge_*_amd64.deb'"
       ],
-      "last_success_at": "2026-05-01T07:02:36+00:00",
+      "last_success_at": "2026-05-01T07:49:40+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "Clash Verge 的增强版，基于 Tauri 的跨平台代理客户端",
+      "desc_en": "Enhanced Clash Verge, cross-platform proxy client built with Tauri"
     },
     {
       "id": "openvpn",
@@ -6938,11 +7346,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:38+00:00",
-      "last_success_at": "2026-05-01T07:02:38+00:00",
+      "fetched_at": "2026-05-01T07:49:38+00:00",
+      "last_success_at": "2026-05-01T07:49:38+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "开源 VPN 解决方案，支持站点间和远程访问 VPN",
+      "desc_en": "Open-source VPN solution for site-to-site and remote access"
     },
     {
       "id": "nmap",
@@ -6965,11 +7375,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:36+00:00",
-      "last_success_at": "2026-05-01T07:02:36+00:00",
+      "fetched_at": "2026-05-01T07:49:40+00:00",
+      "last_success_at": "2026-05-01T07:49:40+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "网络发现和安全审计工具，业界标准的端口扫描器",
+      "desc_en": "Network discovery and security auditing tool, industry-standard port scanner"
     },
     {
       "id": "mullvad-vpn",
@@ -7000,11 +7412,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:36+00:00",
-      "last_success_at": "2026-05-01T07:02:36+00:00",
+      "fetched_at": "2026-05-01T07:49:40+00:00",
+      "last_success_at": "2026-05-01T07:49:40+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "注重隐私的 VPN 服务，无需注册，支持匿名支付",
+      "desc_en": "Privacy-focused VPN service requiring no signup, supports anonymous payment"
     },
     {
       "id": "outline-client",
@@ -7027,14 +7441,16 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:39+00:00",
+      "fetched_at": "2026-05-01T07:49:39+00:00",
       "warnings": [
         "mac-arm64: 没有匹配 asset pattern 'Outline-Client.dmg'"
       ],
-      "last_success_at": "2026-05-01T07:02:39+00:00",
+      "last_success_at": "2026-05-01T07:49:39+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "Jigsaw 开发的 VPN 客户端，简单易用的翻墙工具",
+      "desc_en": "VPN client by Jigsaw, simple and easy-to-use censorship circumvention tool"
     },
     {
       "id": "netbird",
@@ -7065,14 +7481,16 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:36+00:00",
+      "fetched_at": "2026-05-01T07:49:41+00:00",
       "warnings": [
         "win-x64: 没有匹配 asset pattern 'netbird_*_windows_amd64.zip'"
       ],
-      "last_success_at": "2026-05-01T07:02:36+00:00",
+      "last_success_at": "2026-05-01T07:49:41+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "基于 WireGuard 的零配置私有网络方案",
+      "desc_en": "Zero-config private networking solution built on WireGuard"
     },
     {
       "id": "headscale",
@@ -7103,11 +7521,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:36+00:00",
-      "last_success_at": "2026-05-01T07:02:36+00:00",
+      "fetched_at": "2026-05-01T07:49:40+00:00",
+      "last_success_at": "2026-05-01T07:49:40+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "Tailscale 控制服务器的开源自托管实现",
+      "desc_en": "Open-source self-hosted implementation of Tailscale control server"
     },
     {
       "id": "zerotier",
@@ -7138,11 +7558,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:38+00:00",
-      "last_success_at": "2026-05-01T07:02:38+00:00",
+      "fetched_at": "2026-05-01T07:49:38+00:00",
+      "last_success_at": "2026-05-01T07:49:38+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "全球虚拟局域网方案，简单创建安全的点对点网络",
+      "desc_en": "Global virtual LAN solution for simple secure peer-to-peer networking"
     },
     {
       "id": "adguard-home",
@@ -7173,14 +7595,16 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:36+00:00",
+      "fetched_at": "2026-05-01T07:49:41+00:00",
       "warnings": [
         "mac-arm64: 没有匹配 asset pattern 'AdGuardHome_darwin_arm64.tar.gz'"
       ],
-      "last_success_at": "2026-05-01T07:02:36+00:00",
+      "last_success_at": "2026-05-01T07:49:41+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "全网广告和跟踪器拦截 DNS 服务器",
+      "desc_en": "Network-wide ad and tracker blocking DNS server"
     },
     {
       "id": "portmaster",
@@ -7203,11 +7627,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:36+00:00",
-      "last_success_at": "2026-05-01T07:02:36+00:00",
+      "fetched_at": "2026-05-01T07:49:40+00:00",
+      "last_success_at": "2026-05-01T07:49:40+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "应用级网络防火墙，可视化管理每个程序的网络连接",
+      "desc_en": "Application-level network firewall with per-app connection visualization"
     },
     {
       "id": "simplewall",
@@ -7230,11 +7656,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:39+00:00",
-      "last_success_at": "2026-05-01T07:02:39+00:00",
+      "fetched_at": "2026-05-01T07:49:38+00:00",
+      "last_success_at": "2026-05-01T07:49:38+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "轻量级 Windows 过滤平台防火墙，无依赖无后台",
+      "desc_en": "Lightweight Windows Filtering Platform firewall, no dependencies or background processes"
     },
     {
       "id": "putty",
@@ -7257,11 +7685,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:36+00:00",
-      "last_success_at": "2026-05-01T07:02:36+00:00",
+      "fetched_at": "2026-05-01T07:49:40+00:00",
+      "last_success_at": "2026-05-01T07:49:40+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "经典的 SSH 和 Telnet 客户端，Windows 远程连接必备工具",
+      "desc_en": "Classic SSH and Telnet client, essential remote connection tool for Windows"
     },
     {
       "id": "cloudflare-warp",
@@ -7284,11 +7714,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:36+00:00",
-      "last_success_at": "2026-05-01T07:02:36+00:00",
+      "fetched_at": "2026-05-01T07:49:40+00:00",
+      "last_success_at": "2026-05-01T07:49:40+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "Cloudflare 提供的免费 VPN 和 DNS 解析加速服务",
+      "desc_en": "Free VPN and DNS resolution acceleration service by Cloudflare"
     },
     {
       "id": "openspeedtest",
@@ -7311,11 +7743,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:38+00:00",
-      "last_success_at": "2026-05-01T07:02:38+00:00",
+      "fetched_at": "2026-05-01T07:49:38+00:00",
+      "last_success_at": "2026-05-01T07:49:38+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "纯 HTML/JS 网络测速工具，可自部署",
+      "desc_en": "Pure HTML/JS network speed test tool, self-hostable"
     },
     {
       "id": "librespeed",
@@ -7346,14 +7780,16 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:36+00:00",
+      "fetched_at": "2026-05-01T07:49:41+00:00",
       "warnings": [
         "mac-arm64: 没有匹配 asset pattern 'speedtest-go_*_darwin_arm64.zip'"
       ],
-      "last_success_at": "2026-05-01T07:02:36+00:00",
+      "last_success_at": "2026-05-01T07:49:41+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "开源轻量级网络测速方案，支持自部署",
+      "desc_en": "Open-source lightweight network speed test, supports self-hosting"
     },
     {
       "id": "prism-launcher",
@@ -7376,15 +7812,17 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:36+00:00",
+      "fetched_at": "2026-05-01T07:49:40+00:00",
       "warnings": [
         "win-x64: 没有匹配 asset pattern 'PrismLauncher-*-Windows-MSVC-Setup.exe'",
         "mac-arm64: 没有匹配 asset pattern 'PrismLauncher-*-macOS-arm64.dmg'"
       ],
-      "last_success_at": "2026-05-01T07:02:36+00:00",
+      "last_success_at": "2026-05-01T07:49:40+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "Minecraft 启动器，支持多版本和 Mod 管理",
+      "desc_en": "Minecraft launcher with multi-version and mod management"
     },
     {
       "id": "lutris",
@@ -7407,11 +7845,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:39+00:00",
-      "last_success_at": "2026-05-01T07:02:39+00:00",
+      "fetched_at": "2026-05-01T07:49:38+00:00",
+      "last_success_at": "2026-05-01T07:49:38+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "Linux 游戏管理平台，统一管理各类游戏",
+      "desc_en": "Linux gaming platform for unified game management"
     },
     {
       "id": "mangohud",
@@ -7434,11 +7874,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:36+00:00",
-      "last_success_at": "2026-05-01T07:02:36+00:00",
+      "fetched_at": "2026-05-01T07:49:40+00:00",
+      "last_success_at": "2026-05-01T07:49:40+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "Linux 游戏性能监控叠加层，显示 FPS 和系统信息",
+      "desc_en": "Linux gaming performance overlay showing FPS and system info"
     },
     {
       "id": "gamemode",
@@ -7461,11 +7903,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:36+00:00",
-      "last_success_at": "2026-05-01T07:02:36+00:00",
+      "fetched_at": "2026-05-01T07:49:40+00:00",
+      "last_success_at": "2026-05-01T07:49:40+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "Linux 游戏优化守护进程，自动调整系统设置",
+      "desc_en": "Linux gaming optimization daemon that auto-tunes system settings"
     },
     {
       "id": "proton-ge",
@@ -7488,11 +7932,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:39+00:00",
-      "last_success_at": "2026-05-01T07:02:39+00:00",
+      "fetched_at": "2026-05-01T07:49:38+00:00",
+      "last_success_at": "2026-05-01T07:49:38+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "社区维护的 Proton 构建版，兼容更多 Windows 游戏",
+      "desc_en": "Community-maintained Proton build with better Windows game compatibility"
     },
     {
       "id": "bottles",
@@ -7515,11 +7961,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:36+00:00",
-      "last_success_at": "2026-05-01T07:02:36+00:00",
+      "fetched_at": "2026-05-01T07:49:40+00:00",
+      "last_success_at": "2026-05-01T07:49:40+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "Linux 上运行 Windows 软件的图形化管理工具",
+      "desc_en": "GUI tool for running Windows software on Linux"
     },
     {
       "id": "vita3k",
@@ -7558,11 +8006,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:36+00:00",
-      "last_success_at": "2026-05-01T07:02:36+00:00",
+      "fetched_at": "2026-05-01T07:49:40+00:00",
+      "last_success_at": "2026-05-01T07:49:40+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "PlayStation Vita 模拟器，支持商业游戏",
+      "desc_en": "PlayStation Vita emulator with commercial game support"
     },
     {
       "id": "ryujinx",
@@ -7601,11 +8051,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:39+00:00",
-      "last_success_at": "2026-05-01T07:02:39+00:00",
+      "fetched_at": "2026-05-01T07:49:38+00:00",
+      "last_success_at": "2026-05-01T07:49:38+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "Nintendo Switch 模拟器，C# 编写兼容性好",
+      "desc_en": "Nintendo Switch emulator written in C# with good compatibility"
     },
     {
       "id": "xemu",
@@ -7628,15 +8080,17 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:36+00:00",
+      "fetched_at": "2026-05-01T07:49:41+00:00",
       "warnings": [
         "win-x64: 没有匹配 asset pattern 'xemu-win-*-zip.zip'",
         "mac-arm64: 没有匹配 asset pattern 'xemu-macos-*-arm64.tar.gz'"
       ],
-      "last_success_at": "2026-05-01T07:02:36+00:00",
+      "last_success_at": "2026-05-01T07:49:41+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "原始 Xbox 模拟器，基于 x86 硬件模拟",
+      "desc_en": "Original Xbox emulator based on x86 hardware emulation"
     },
     {
       "id": "mgba",
@@ -7659,14 +8113,16 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:36+00:00",
+      "fetched_at": "2026-05-01T07:49:40+00:00",
       "warnings": [
         "mac-arm64: 没有匹配 asset pattern 'mGBA-*-osx-arm64.tar.xz'"
       ],
-      "last_success_at": "2026-05-01T07:02:36+00:00",
+      "last_success_at": "2026-05-01T07:49:40+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "高精度 Game Boy Advance 模拟器",
+      "desc_en": "High-accuracy Game Boy Advance emulator"
     },
     {
       "id": "rmg",
@@ -7697,11 +8153,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:39+00:00",
-      "last_success_at": "2026-05-01T07:02:39+00:00",
+      "fetched_at": "2026-05-01T07:49:38+00:00",
+      "last_success_at": "2026-05-01T07:49:38+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "Rosalie's Mupen64 GUI，N64 模拟器图形前端",
+      "desc_en": "Rosalie's Mupen64 GUI, graphical frontend for N64 emulation"
     },
     {
       "id": "openmw",
@@ -7732,14 +8190,16 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:36+00:00",
+      "fetched_at": "2026-05-01T07:49:41+00:00",
       "warnings": [
         "linux-x64: 没有匹配 asset pattern 'OpenMW-*-Linux-generic64.tar.gz'"
       ],
-      "last_success_at": "2026-05-01T07:02:36+00:00",
+      "last_success_at": "2026-05-01T07:49:41+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "开源的 Morrowind 引擎重制版，支持现代系统",
+      "desc_en": "Open-source Morrowind engine reimplementation for modern systems"
     },
     {
       "id": "dosbox-staging",
@@ -7778,11 +8238,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:36+00:00",
-      "last_success_at": "2026-05-01T07:02:36+00:00",
+      "fetched_at": "2026-05-01T07:49:40+00:00",
+      "last_success_at": "2026-05-01T07:49:40+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "现代化的 DOS 模拟器，改善 DOS 游戏体验",
+      "desc_en": "Modern DOS emulator for improved DOS gaming experience"
     },
     {
       "id": "libretro",
@@ -7813,11 +8275,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:39+00:00",
-      "last_success_at": "2026-05-01T07:02:39+00:00",
+      "fetched_at": "2026-05-01T07:49:38+00:00",
+      "last_success_at": "2026-05-01T07:49:38+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "RetroArch 多合一复古游戏模拟器前端",
+      "desc_en": "RetroArch all-in-one retro gaming emulator frontend"
     },
     {
       "id": "mudlet",
@@ -7856,11 +8320,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:36+00:00",
-      "last_success_at": "2026-05-01T07:02:36+00:00",
+      "fetched_at": "2026-05-01T07:49:40+00:00",
+      "last_success_at": "2026-05-01T07:49:40+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "功能丰富的 MUD 客户端，支持脚本和触发器",
+      "desc_en": "Feature-rich MUD client with scripting and trigger support"
     },
     {
       "id": "kdenlive",
@@ -7883,11 +8349,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:36+00:00",
-      "last_success_at": "2026-05-01T07:02:36+00:00",
+      "fetched_at": "2026-05-01T07:49:40+00:00",
+      "last_success_at": "2026-05-01T07:49:40+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "KDE 开源视频编辑器，多轨道非线性编辑",
+      "desc_en": "KDE open-source video editor with multi-track non-linear editing"
     },
     {
       "id": "olive",
@@ -7926,11 +8394,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:39+00:00",
-      "last_success_at": "2026-05-01T07:02:39+00:00",
+      "fetched_at": "2026-05-01T07:49:38+00:00",
+      "last_success_at": "2026-05-01T07:49:38+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "开源非线性视频编辑器，现代化的编辑体验",
+      "desc_en": "Open-source non-linear video editor with modern editing experience"
     },
     {
       "id": "strawberry",
@@ -7953,11 +8423,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:36+00:00",
-      "last_success_at": "2026-05-01T07:02:36+00:00",
+      "fetched_at": "2026-05-01T07:49:40+00:00",
+      "last_success_at": "2026-05-01T07:49:40+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "开源音乐播放器，Clementine 的分支支持高解析音频",
+      "desc_en": "Open-source music player, Clementine fork with Hi-Res audio support"
     },
     {
       "id": "musicbrainz",
@@ -7988,11 +8460,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:36+00:00",
-      "last_success_at": "2026-05-01T07:02:36+00:00",
+      "fetched_at": "2026-05-01T07:49:40+00:00",
+      "last_success_at": "2026-05-01T07:49:40+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "音乐文件标签自动识别和整理工具",
+      "desc_en": "Automatic music file tag identification and organization tool"
     },
     {
       "id": "mkvtoolnix",
@@ -8015,11 +8489,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:39+00:00",
-      "last_success_at": "2026-05-01T07:02:39+00:00",
+      "fetched_at": "2026-05-01T07:49:38+00:00",
+      "last_success_at": "2026-05-01T07:49:38+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "MKV 容器格式处理工具集，封装/解封装/编辑",
+      "desc_en": "MKV container format toolkit for muxing, demuxing, and editing"
     },
     {
       "id": "mediainfo",
@@ -8042,11 +8518,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:36+00:00",
-      "last_success_at": "2026-05-01T07:02:36+00:00",
+      "fetched_at": "2026-05-01T07:49:40+00:00",
+      "last_success_at": "2026-05-01T07:49:40+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "媒体文件技术信息查看工具，分析音视频参数",
+      "desc_en": "Media file technical information viewer for analyzing audio/video parameters"
     },
     {
       "id": "gimp",
@@ -8069,11 +8547,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:36+00:00",
-      "last_success_at": "2026-05-01T07:02:36+00:00",
+      "fetched_at": "2026-05-01T07:49:40+00:00",
+      "last_success_at": "2026-05-01T07:49:40+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "开源图像编辑器，功能丰富的 Photoshop 替代品",
+      "desc_en": "Open-source image editor, feature-rich alternative to Photoshop"
     },
     {
       "id": "krita",
@@ -8112,11 +8592,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:39+00:00",
-      "last_success_at": "2026-05-01T07:02:39+00:00",
+      "fetched_at": "2026-05-01T07:49:38+00:00",
+      "last_success_at": "2026-05-01T07:49:38+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "开源数字绘画工具，面向概念艺术和插画创作",
+      "desc_en": "Open-source digital painting tool for concept art and illustration"
     },
     {
       "id": "inkscape",
@@ -8139,11 +8621,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:36+00:00",
-      "last_success_at": "2026-05-01T07:02:36+00:00",
+      "fetched_at": "2026-05-01T07:49:40+00:00",
+      "last_success_at": "2026-05-01T07:49:40+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "开源矢量图形编辑器，SVG 格式的专业编辑工具",
+      "desc_en": "Open-source vector graphics editor, professional SVG editing tool"
     },
     {
       "id": "blender",
@@ -8182,11 +8666,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:36+00:00",
-      "last_success_at": "2026-05-01T07:02:36+00:00",
+      "fetched_at": "2026-05-01T07:49:40+00:00",
+      "last_success_at": "2026-05-01T07:49:40+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "开源 3D 创作套件，建模/动画/渲染/后期一体化",
+      "desc_en": "Open-source 3D creation suite for modeling, animation, rendering, and compositing"
     },
     {
       "id": "freecad",
@@ -8225,11 +8711,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:39+00:00",
-      "last_success_at": "2026-05-01T07:02:39+00:00",
+      "fetched_at": "2026-05-01T07:49:38+00:00",
+      "last_success_at": "2026-05-01T07:49:38+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "开源参数化 3D CAD 建模工具，面向工程设计",
+      "desc_en": "Open-source parametric 3D CAD modeler for engineering design"
     },
     {
       "id": "openscad",
@@ -8252,11 +8740,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:37+00:00",
-      "last_success_at": "2026-05-01T07:02:37+00:00",
+      "fetched_at": "2026-05-01T07:49:41+00:00",
+      "last_success_at": "2026-05-01T07:49:41+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "程序员的 3D CAD 工具，用代码描述 3D 模型",
+      "desc_en": "3D CAD tool for programmers, describe 3D models with code"
     },
     {
       "id": "darktable",
@@ -8287,11 +8777,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:36+00:00",
-      "last_success_at": "2026-05-01T07:02:36+00:00",
+      "fetched_at": "2026-05-01T07:49:41+00:00",
+      "last_success_at": "2026-05-01T07:49:41+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "开源摄影后期处理工具，RAW 照片编辑和管理",
+      "desc_en": "Open-source photography post-processing tool for RAW photo editing and management"
     },
     {
       "id": "rawtherapee",
@@ -8314,11 +8806,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:39+00:00",
-      "last_success_at": "2026-05-01T07:02:39+00:00",
+      "fetched_at": "2026-05-01T07:49:38+00:00",
+      "last_success_at": "2026-05-01T07:49:38+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "开源 RAW 照片处理工具，高质量的图像处理引擎",
+      "desc_en": "Open-source RAW photo processing tool with high-quality image processing engine"
     },
     {
       "id": "scribus",
@@ -8341,11 +8835,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:36+00:00",
-      "last_success_at": "2026-05-01T07:02:36+00:00",
+      "fetched_at": "2026-05-01T07:49:40+00:00",
+      "last_success_at": "2026-05-01T07:49:40+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "开源桌面排版工具，专业级页面设计",
+      "desc_en": "Open-source desktop publishing tool for professional page design"
     },
     {
       "id": "ardour",
@@ -8376,11 +8872,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:36+00:00",
-      "last_success_at": "2026-05-01T07:02:36+00:00",
+      "fetched_at": "2026-05-01T07:49:40+00:00",
+      "last_success_at": "2026-05-01T07:49:40+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "开源数字音频工作站，多轨录音和混音",
+      "desc_en": "Open-source digital audio workstation for multi-track recording and mixing"
     },
     {
       "id": "lmms",
@@ -8403,14 +8901,16 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:39+00:00",
+      "fetched_at": "2026-05-01T07:49:39+00:00",
       "warnings": [
         "mac-arm64: 没有匹配 asset pattern 'lmms-*-macos-arm64.dmg'"
       ],
-      "last_success_at": "2026-05-01T07:02:39+00:00",
+      "last_success_at": "2026-05-01T07:49:39+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "开源音乐制作工具，电子音乐创作的免费方案",
+      "desc_en": "Open-source music production tool for free electronic music creation"
     },
     {
       "id": "musescore",
@@ -8433,11 +8933,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:36+00:00",
-      "last_success_at": "2026-05-01T07:02:36+00:00",
+      "fetched_at": "2026-05-01T07:49:41+00:00",
+      "last_success_at": "2026-05-01T07:49:41+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "开源乐谱编辑器，创建和播放乐谱",
+      "desc_en": "Open-source music notation editor for creating and playing sheet music"
     },
     {
       "id": "openshot",
@@ -8460,11 +8962,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:36+00:00",
-      "last_success_at": "2026-05-01T07:02:36+00:00",
+      "fetched_at": "2026-05-01T07:49:41+00:00",
+      "last_success_at": "2026-05-01T07:49:41+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "开源跨平台视频编辑器，简单易用的剪辑工具",
+      "desc_en": "Open-source cross-platform video editor, simple and easy-to-use editing tool"
     },
     {
       "id": "natron",
@@ -8487,14 +8991,16 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:39+00:00",
+      "fetched_at": "2026-05-01T07:49:38+00:00",
       "warnings": [
         "mac-arm64: 没有匹配 asset pattern 'Natron-*-macOS-arm64.dmg'"
       ],
-      "last_success_at": "2026-05-01T07:02:39+00:00",
+      "last_success_at": "2026-05-01T07:49:38+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "开源合成工具，视觉特效和节点式合成",
+      "desc_en": "Open-source compositing tool for visual effects and node-based compositing"
     },
     {
       "id": "qutebrowser",
@@ -8525,11 +9031,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:36+00:00",
-      "last_success_at": "2026-05-01T07:02:36+00:00",
+      "fetched_at": "2026-05-01T07:49:41+00:00",
+      "last_success_at": "2026-05-01T07:49:41+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "键盘驱动的极简浏览器，Vim 操作风格",
+      "desc_en": "Keyboard-driven minimalist browser with Vim-style controls"
     },
     {
       "id": "falkon",
@@ -8552,11 +9060,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:36+00:00",
-      "last_success_at": "2026-05-01T07:02:36+00:00",
+      "fetched_at": "2026-05-01T07:49:40+00:00",
+      "last_success_at": "2026-05-01T07:49:40+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "轻量级跨平台浏览器，基于 QtWebEngine",
+      "desc_en": "Lightweight cross-platform browser based on QtWebEngine"
     },
     {
       "id": "appflowy",
@@ -8595,11 +9105,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:39+00:00",
-      "last_success_at": "2026-05-01T07:02:39+00:00",
+      "fetched_at": "2026-05-01T07:49:39+00:00",
+      "last_success_at": "2026-05-01T07:49:39+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "开源的 Notion 替代品，笔记和项目管理",
+      "desc_en": "Open-source Notifer alternative for notes and project management"
     },
     {
       "id": "anytype",
@@ -8622,15 +9134,17 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:36+00:00",
+      "fetched_at": "2026-05-01T07:49:41+00:00",
       "warnings": [
         "win-x64: 没有匹配 asset pattern 'Anytype-*-x64.exe'",
         "linux-x64: 没有匹配 asset pattern 'Anytype-*-amd64.deb'"
       ],
-      "last_success_at": "2026-05-01T07:02:36+00:00",
+      "last_success_at": "2026-05-01T07:49:41+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "去中心化的笔记和知识管理工具，数据归用户所有",
+      "desc_en": "Decentralized note and knowledge management tool with user-owned data"
     },
     {
       "id": "trilium",
@@ -8669,11 +9183,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:36+00:00",
-      "last_success_at": "2026-05-01T07:02:36+00:00",
+      "fetched_at": "2026-05-01T07:49:40+00:00",
+      "last_success_at": "2026-05-01T07:49:40+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "层级化笔记应用，支持关系图和脚本",
+      "desc_en": "Hierarchical note-taking app with relation graphs and scripting"
     },
     {
       "id": "zettlr",
@@ -8712,11 +9228,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:39+00:00",
-      "last_success_at": "2026-05-01T07:02:39+00:00",
+      "fetched_at": "2026-05-01T07:49:39+00:00",
+      "last_success_at": "2026-05-01T07:49:39+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "面向学术写作的 Markdown 编辑器，支持引用管理",
+      "desc_en": "Markdown editor for academic writing with citation management"
     },
     {
       "id": "drawio",
@@ -8739,15 +9257,17 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:37+00:00",
+      "fetched_at": "2026-05-01T07:49:42+00:00",
       "warnings": [
         "mac-arm64: 没有匹配 asset pattern 'draw.io-*-arm64.dmg'",
         "linux-x64: 没有匹配 asset pattern 'draw.io-*-x86_64.rpm'"
       ],
-      "last_success_at": "2026-05-01T07:02:37+00:00",
+      "last_success_at": "2026-05-01T07:49:42+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "免费的在线绘图工具，支持流程图/UML/架构图",
+      "desc_en": "Free online diagramming tool for flowcharts, UML, and architecture diagrams"
     },
     {
       "id": "excalidraw",
@@ -8770,11 +9290,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:36+00:00",
-      "last_success_at": "2026-05-01T07:02:36+00:00",
+      "fetched_at": "2026-05-01T07:49:40+00:00",
+      "last_success_at": "2026-05-01T07:49:40+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "手绘风格的在线白板工具，轻松创建图表",
+      "desc_en": "Hand-drawn style online whiteboard tool for easy diagram creation"
     },
     {
       "id": "beekeeper",
@@ -8813,11 +9335,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:39+00:00",
-      "last_success_at": "2026-05-01T07:02:39+00:00",
+      "fetched_at": "2026-05-01T07:49:38+00:00",
+      "last_success_at": "2026-05-01T07:49:38+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "跨平台数据库管理工具，支持多种数据库",
+      "desc_en": "Cross-platform database management tool supporting multiple databases"
     },
     {
       "id": "sumatrapdf",
@@ -8848,11 +9372,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:36+00:00",
-      "last_success_at": "2026-05-01T07:02:36+00:00",
+      "fetched_at": "2026-05-01T07:49:41+00:00",
+      "last_success_at": "2026-05-01T07:49:41+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "轻量级 Windows PDF 阅读器，启动极快",
+      "desc_en": "Lightweight Windows PDF reader with ultra-fast startup"
     },
     {
       "id": "sioyek",
@@ -8875,15 +9401,17 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:36+00:00",
+      "fetched_at": "2026-05-01T07:49:41+00:00",
       "warnings": [
         "mac-arm64: 没有匹配 asset pattern 'sioyek-apple-silicon.dmg'",
         "linux-x64: 没有匹配 asset pattern 'sioyek-release-linux-portable.tar.gz'"
       ],
-      "last_success_at": "2026-05-01T07:02:36+00:00",
+      "last_success_at": "2026-05-01T07:49:41+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "面向学术论文的 PDF 阅读器，支持全文搜索和引用跳转",
+      "desc_en": "PDF reader for academic papers with full-text search and citation jumping"
     },
     {
       "id": "pomatez",
@@ -8914,14 +9442,16 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:40+00:00",
+      "fetched_at": "2026-05-01T07:49:39+00:00",
       "warnings": [
         "win-x64: 没有匹配 asset pattern 'Pomatez-*-x64.exe'"
       ],
-      "last_success_at": "2026-05-01T07:02:40+00:00",
+      "last_success_at": "2026-05-01T07:49:39+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "番茄钟效率工具，帮助保持专注和时间管理",
+      "desc_en": "Pomodoro timer tool for maintaining focus and time management"
     },
     {
       "id": "mindforger",
@@ -8944,11 +9474,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:36+00:00",
-      "last_success_at": "2026-05-01T07:02:36+00:00",
+      "fetched_at": "2026-05-01T07:49:41+00:00",
+      "last_success_at": "2026-05-01T07:49:41+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "知识管理 IDE，Markdown 笔记和思维导图",
+      "desc_en": "Knowledge management IDE with Markdown notes and mind maps"
     },
     {
       "id": "ghostwriter",
@@ -8971,11 +9503,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:36+00:00",
-      "last_success_at": "2026-05-01T07:02:36+00:00",
+      "fetched_at": "2026-05-01T07:49:40+00:00",
+      "last_success_at": "2026-05-01T07:49:40+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "无干扰的 Markdown 写作工具，专注内容创作",
+      "desc_en": "Distraction-free Markdown writing tool focused on content creation"
     },
     {
       "id": "element",
@@ -9014,11 +9548,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:39+00:00",
-      "last_success_at": "2026-05-01T07:02:39+00:00",
+      "fetched_at": "2026-05-01T07:49:38+00:00",
+      "last_success_at": "2026-05-01T07:49:38+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "Matrix 协议的即时通讯客户端，去中心化聊天",
+      "desc_en": "Instant messaging client for the Matrix protocol, decentralized chat"
     },
     {
       "id": "cinny",
@@ -9057,11 +9593,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:36+00:00",
-      "last_success_at": "2026-05-01T07:02:36+00:00",
+      "fetched_at": "2026-05-01T07:49:41+00:00",
+      "last_success_at": "2026-05-01T07:49:41+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "轻量级 Matrix 聊天客户端，界面简洁美观",
+      "desc_en": "Lightweight Matrix chat client with clean and beautiful UI"
     },
     {
       "id": "hexchat",
@@ -9084,11 +9622,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:36+00:00",
-      "last_success_at": "2026-05-01T07:02:36+00:00",
+      "fetched_at": "2026-05-01T07:49:40+00:00",
+      "last_success_at": "2026-05-01T07:49:40+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "开源 IRC 客户端，经典的网络聊天工具",
+      "desc_en": "Open-source IRC client, classic internet chat tool"
     },
     {
       "id": "protonmail-bridge",
@@ -9119,11 +9659,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:39+00:00",
-      "last_success_at": "2026-05-01T07:02:39+00:00",
+      "fetched_at": "2026-05-01T07:49:38+00:00",
+      "last_success_at": "2026-05-01T07:49:38+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "Proton Mail 桌面桥接工具，本地邮件客户端收发加密邮件",
+      "desc_en": "Proton Mail desktop bridge for sending/receiving encrypted emails in local clients"
     },
     {
       "id": "localai",
@@ -9154,14 +9696,16 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:37+00:00",
+      "fetched_at": "2026-05-01T07:49:42+00:00",
       "warnings": [
         "win-x64: 没有匹配 asset pattern 'local-ai-*-windows-amd64.exe'"
       ],
-      "last_success_at": "2026-05-01T07:02:37+00:00",
+      "last_success_at": "2026-05-01T07:49:42+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "OpenAI API 兼容的本地 AI 推理服务",
+      "desc_en": "OpenAI API compatible local AI inference service"
     },
     {
       "id": "comfyui",
@@ -9184,11 +9728,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:37+00:00",
-      "last_success_at": "2026-05-01T07:02:37+00:00",
+      "fetched_at": "2026-05-01T07:49:41+00:00",
+      "last_success_at": "2026-05-01T07:49:41+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "基于节点的 Stable Diffusion 图形界面，灵活的工作流",
+      "desc_en": "Node-based Stable Diffusion GUI with flexible workflows"
     },
     {
       "id": "invokeai",
@@ -9227,11 +9773,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:39+00:00",
-      "last_success_at": "2026-05-01T07:02:39+00:00",
+      "fetched_at": "2026-05-01T07:49:38+00:00",
+      "last_success_at": "2026-05-01T07:49:38+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "AI 图像生成工具，支持 Stable Diffusion 模型",
+      "desc_en": "AI image generation tool supporting Stable Diffusion models"
     },
     {
       "id": "stable-diffusion-webui",
@@ -9254,11 +9802,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:36+00:00",
-      "last_success_at": "2026-05-01T07:02:36+00:00",
+      "fetched_at": "2026-05-01T07:49:41+00:00",
+      "last_success_at": "2026-05-01T07:49:41+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "Stable Diffusion 的 Web 图形界面，文生图和图生图",
+      "desc_en": "Web GUI for Stable Diffusion, text-to-image and image-to-image"
     },
     {
       "id": "text-generation-webui",
@@ -9281,11 +9831,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:36+00:00",
-      "last_success_at": "2026-05-01T07:02:36+00:00",
+      "fetched_at": "2026-05-01T07:49:40+00:00",
+      "last_success_at": "2026-05-01T07:49:40+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "大语言模型 Web 界面，本地运行多种 LLM",
+      "desc_en": "Web UI for large language models, run multiple LLMs locally"
     },
     {
       "id": "buzz",
@@ -9308,15 +9860,17 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:40+00:00",
+      "fetched_at": "2026-05-01T07:49:39+00:00",
       "warnings": [
         "mac-arm64: 没有匹配 asset pattern 'Buzz-*-mac-arm64.dmg'",
         "linux-x64: 没有匹配 asset pattern 'Buzz-*-linux-x86_64.AppImage'"
       ],
-      "last_success_at": "2026-05-01T07:02:40+00:00",
+      "last_success_at": "2026-05-01T07:49:39+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "基于 Whisper 的离线语音转文字工具",
+      "desc_en": "Offline speech-to-text tool based on Whisper"
     },
     {
       "id": "whisper",
@@ -9339,11 +9893,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:36+00:00",
-      "last_success_at": "2026-05-01T07:02:36+00:00",
+      "fetched_at": "2026-05-01T07:49:41+00:00",
+      "last_success_at": "2026-05-01T07:49:41+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "OpenAI 的语音识别模型，支持多语言转录",
+      "desc_en": "OpenAI's speech recognition model with multi-language transcription"
     },
     {
       "id": "llama-cpp",
@@ -9382,11 +9938,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:36+00:00",
-      "last_success_at": "2026-05-01T07:02:36+00:00",
+      "fetched_at": "2026-05-01T07:49:40+00:00",
+      "last_success_at": "2026-05-01T07:49:40+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "LLaMA 模型的 C/C++ 推理引擎，CPU 友好",
+      "desc_en": "C/C++ inference engine for LLaMA models, CPU-friendly"
     },
     {
       "id": "open-webui",
@@ -9425,11 +9983,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:39+00:00",
-      "last_success_at": "2026-05-01T07:02:39+00:00",
+      "fetched_at": "2026-05-01T07:49:38+00:00",
+      "last_success_at": "2026-05-01T07:49:38+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "大语言模型 Web 界面，支持 Ollama 和 OpenAI API",
+      "desc_en": "Web UI for LLMs supporting Ollama and OpenAI API"
     },
     {
       "id": "koboldcpp",
@@ -9468,11 +10028,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:36+00:00",
-      "last_success_at": "2026-05-01T07:02:36+00:00",
+      "fetched_at": "2026-05-01T07:49:41+00:00",
+      "last_success_at": "2026-05-01T07:49:41+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "LLaMA 模型的简易运行工具，支持多种模型格式",
+      "desc_en": "Easy-to-run LLaMA model tool supporting multiple model formats"
     },
     {
       "id": "age",
@@ -9511,11 +10073,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:37+00:00",
-      "last_success_at": "2026-05-01T07:02:37+00:00",
+      "fetched_at": "2026-05-01T07:49:41+00:00",
+      "last_success_at": "2026-05-01T07:49:41+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "现代化的文件加密工具，简洁且安全",
+      "desc_en": "Modern file encryption tool, simple and secure"
     },
     {
       "id": "sops",
@@ -9554,11 +10118,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:39+00:00",
-      "last_success_at": "2026-05-01T07:02:39+00:00",
+      "fetched_at": "2026-05-01T07:49:38+00:00",
+      "last_success_at": "2026-05-01T07:49:38+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "Secrets 管理工具，支持多种加密后端",
+      "desc_en": "Secrets management tool supporting multiple encryption backends"
     },
     {
       "id": "yubikey-manager",
@@ -9589,11 +10155,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:36+00:00",
-      "last_success_at": "2026-05-01T07:02:36+00:00",
+      "fetched_at": "2026-05-01T07:49:41+00:00",
+      "last_success_at": "2026-05-01T07:49:41+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "YubiKey 硬件密钥管理工具，配置和管理安全密钥",
+      "desc_en": "YubiKey hardware key management tool for configuring security keys"
     },
     {
       "id": "clamav",
@@ -9616,11 +10184,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:36+00:00",
-      "last_success_at": "2026-05-01T07:02:36+00:00",
+      "fetched_at": "2026-05-01T07:49:40+00:00",
+      "last_success_at": "2026-05-01T07:49:40+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "开源防病毒引擎，支持多种平台",
+      "desc_en": "Open-source anti-virus engine supporting multiple platforms"
     },
     {
       "id": "gitleaks",
@@ -9659,11 +10229,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:40+00:00",
-      "last_success_at": "2026-05-01T07:02:40+00:00",
+      "fetched_at": "2026-05-01T07:49:38+00:00",
+      "last_success_at": "2026-05-01T07:49:38+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "Git 仓库敏感信息扫描工具，防止密钥泄露",
+      "desc_en": "Git repository secret scanner to prevent credential leaks"
     },
     {
       "id": "docker-compose",
@@ -9702,11 +10274,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:37+00:00",
-      "last_success_at": "2026-05-01T07:02:37+00:00",
+      "fetched_at": "2026-05-01T07:49:42+00:00",
+      "last_success_at": "2026-05-01T07:49:42+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "多容器 Docker 应用编排工具，YAML 定义服务",
+      "desc_en": "Multi-container Docker application orchestration tool using YAML"
     },
     {
       "id": "k9s",
@@ -9745,11 +10319,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:37+00:00",
-      "last_success_at": "2026-05-01T07:02:37+00:00",
+      "fetched_at": "2026-05-01T07:49:41+00:00",
+      "last_success_at": "2026-05-01T07:49:41+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "Kubernetes 终端管理界面，实时监控和操作集群资源",
+      "desc_en": "Terminal UI for Kubernetes, real-time cluster resource monitoring and management"
     },
     {
       "id": "helm",
@@ -9788,11 +10364,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:39+00:00",
-      "last_success_at": "2026-05-01T07:02:39+00:00",
+      "fetched_at": "2026-05-01T07:49:38+00:00",
+      "last_success_at": "2026-05-01T07:49:38+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "Kubernetes 包管理器，简化应用部署和管理",
+      "desc_en": "Kubernetes package manager for simplified application deployment"
     },
     {
       "id": "terraform",
@@ -9831,11 +10409,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:36+00:00",
-      "last_success_at": "2026-05-01T07:02:36+00:00",
+      "fetched_at": "2026-05-01T07:49:41+00:00",
+      "last_success_at": "2026-05-01T07:49:41+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "基础设施即代码工具，声明式管理云资源",
+      "desc_en": "Infrastructure as Code tool for declarative cloud resource management"
     },
     {
       "id": "vault",
@@ -9874,11 +10454,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:36+00:00",
-      "last_success_at": "2026-05-01T07:02:36+00:00",
+      "fetched_at": "2026-05-01T07:49:40+00:00",
+      "last_success_at": "2026-05-01T07:49:40+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "HashiCorp 密钥管理工具，安全存储和访问敏感数据",
+      "desc_en": "Secret management tool by HashiCorp for secure sensitive data storage"
     },
     {
       "id": "consul",
@@ -9917,11 +10499,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:39+00:00",
-      "last_success_at": "2026-05-01T07:02:39+00:00",
+      "fetched_at": "2026-05-01T07:49:38+00:00",
+      "last_success_at": "2026-05-01T07:49:38+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "服务发现和配置管理平台，支持多数据中心",
+      "desc_en": "Service discovery and configuration management platform with multi-datacenter support"
     },
     {
       "id": "nomad",
@@ -9960,11 +10544,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:36+00:00",
-      "last_success_at": "2026-05-01T07:02:36+00:00",
+      "fetched_at": "2026-05-01T07:49:41+00:00",
+      "last_success_at": "2026-05-01T07:49:41+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "灵活的工作负载编排器，支持容器和非容器应用",
+      "desc_en": "Flexible workload orchestrator supporting containerized and non-containerized apps"
     },
     {
       "id": "boundary",
@@ -10003,11 +10589,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:36+00:00",
-      "last_success_at": "2026-05-01T07:02:36+00:00",
+      "fetched_at": "2026-05-01T07:49:40+00:00",
+      "last_success_at": "2026-05-01T07:49:40+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "安全远程访问方案，基于身份的零信任网络",
+      "desc_en": "Secure remote access solution with identity-based zero-trust networking"
     },
     {
       "id": "k3s",
@@ -10030,11 +10618,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:40+00:00",
-      "last_success_at": "2026-05-01T07:02:40+00:00",
+      "fetched_at": "2026-05-01T07:49:39+00:00",
+      "last_success_at": "2026-05-01T07:49:39+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "轻量级 Kubernetes 发行版，适合边缘计算和 IoT",
+      "desc_en": "Lightweight Kubernetes distribution for edge computing and IoT"
     },
     {
       "id": "k6",
@@ -10073,11 +10663,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:37+00:00",
-      "last_success_at": "2026-05-01T07:02:37+00:00",
+      "fetched_at": "2026-05-01T07:49:42+00:00",
+      "last_success_at": "2026-05-01T07:49:42+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "现代负载测试工具，用 JavaScript 编写测试脚本",
+      "desc_en": "Modern load testing tool with JavaScript test scripts"
     },
     {
       "id": "oha",
@@ -10116,11 +10708,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:36+00:00",
-      "last_success_at": "2026-05-01T07:02:36+00:00",
+      "fetched_at": "2026-05-01T07:49:40+00:00",
+      "last_success_at": "2026-05-01T07:49:40+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "HTTP 负载测试工具，类似 ab 和 wrk 但更现代",
+      "desc_en": "HTTP load testing tool, modern alternative to ab and wrk"
     },
     {
       "id": "walk",
@@ -10159,11 +10753,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:40+00:00",
-      "last_success_at": "2026-05-01T07:02:40+00:00",
+      "fetched_at": "2026-05-01T07:49:39+00:00",
+      "last_success_at": "2026-05-01T07:49:39+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "Windows 目录递归遍历工具，快速搜索文件",
+      "desc_en": "Windows directory recursive walker for fast file search"
     },
     {
       "id": "tldr",
@@ -10202,11 +10798,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:37+00:00",
-      "last_success_at": "2026-05-01T07:02:37+00:00",
+      "fetched_at": "2026-05-01T07:49:42+00:00",
+      "last_success_at": "2026-05-01T07:49:42+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "简化版 man pages，用实例展示命令用法",
+      "desc_en": "Simplified man pages showing command usage with practical examples"
     },
     {
       "id": "zoxide",
@@ -10245,11 +10843,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:37+00:00",
-      "last_success_at": "2026-05-01T07:02:37+00:00",
+      "fetched_at": "2026-05-01T07:49:41+00:00",
+      "last_success_at": "2026-05-01T07:49:41+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "智能 cd 命令替代品，根据频率和最近使用排序目录",
+      "desc_en": "Smart cd alternative that ranks directories by frequency and recency"
     },
     {
       "id": "navi",
@@ -10272,15 +10872,17 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:40+00:00",
+      "fetched_at": "2026-05-01T07:49:39+00:00",
       "warnings": [
         "win-x64: 没有匹配 asset pattern 'navi-*-x86_64-pc-windows-msvc.zip'",
         "mac-arm64: 没有匹配 asset pattern 'navi-*-aarch64-apple-darwin.tar.gz'"
       ],
-      "last_success_at": "2026-05-01T07:02:40+00:00",
+      "last_success_at": "2026-05-01T07:49:39+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "交互式命令行备忘录工具，边用边学 CLI 命令",
+      "desc_en": "Interactive command-line cheatsheet tool, learn CLI commands while using them"
     },
     {
       "id": "tealdeer",
@@ -10319,11 +10921,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:36+00:00",
-      "last_success_at": "2026-05-01T07:02:36+00:00",
+      "fetched_at": "2026-05-01T07:49:41+00:00",
+      "last_success_at": "2026-05-01T07:49:41+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "tldr 的快速 Rust 实现，命令速查客户端",
+      "desc_en": "Fast Rust implementation of tldr, command cheatsheet client"
     },
     {
       "id": "erdtree",
@@ -10362,11 +10966,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:36+00:00",
-      "last_success_at": "2026-05-01T07:02:36+00:00",
+      "fetched_at": "2026-05-01T07:49:40+00:00",
+      "last_success_at": "2026-05-01T07:49:40+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "现代化的文件树查看工具，替代 tree 命令",
+      "desc_en": "Modern file tree viewer, alternative to tree command"
     },
     {
       "id": "broot",
@@ -10405,11 +11011,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:39+00:00",
-      "last_success_at": "2026-05-01T07:02:39+00:00",
+      "fetched_at": "2026-05-01T07:49:39+00:00",
+      "last_success_at": "2026-05-01T07:49:39+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "终端文件管理器，模糊搜索和树状浏览",
+      "desc_en": "Terminal file manager with fuzzy search and tree browsing"
     },
     {
       "id": "navi-cli",
@@ -10432,11 +11040,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:36+00:00",
-      "last_success_at": "2026-05-01T07:02:36+00:00",
+      "fetched_at": "2026-05-01T07:49:41+00:00",
+      "last_success_at": "2026-05-01T07:49:41+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "Midnight Commander 风格的终端文件管理器",
+      "desc_en": "Midnight Commander-style terminal file manager"
     },
     {
       "id": "xcp",
@@ -10467,14 +11077,16 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:37+00:00",
+      "fetched_at": "2026-05-01T07:49:41+00:00",
       "warnings": [
         "win-x64: 没有匹配 asset pattern 'xcp-*-x86_64-pc-windows-msvc.zip'"
       ],
-      "last_success_at": "2026-05-01T07:02:37+00:00",
+      "last_success_at": "2026-05-01T07:49:41+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "更高效的 cp 命令替代工具，Rust 编写",
+      "desc_en": "More efficient cp alternative written in Rust"
     },
     {
       "id": "paru",
@@ -10497,11 +11109,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:40+00:00",
-      "last_success_at": "2026-05-01T07:02:40+00:00",
+      "fetched_at": "2026-05-01T07:49:39+00:00",
+      "last_success_at": "2026-05-01T07:49:39+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "Arch Linux 的 AUR 助手，自动解决依赖",
+      "desc_en": "AUR helper for Arch Linux with automatic dependency resolution"
     },
     {
       "id": "yay",
@@ -10524,11 +11138,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:37+00:00",
-      "last_success_at": "2026-05-01T07:02:37+00:00",
+      "fetched_at": "2026-05-01T07:49:42+00:00",
+      "last_success_at": "2026-05-01T07:49:42+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "Arch Linux 的 AUR 助手，兼容 pacman 命令",
+      "desc_en": "AUR helper for Arch Linux, compatible with pacman commands"
     },
     {
       "id": "pastel-cli",
@@ -10567,11 +11183,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:37+00:00",
-      "last_success_at": "2026-05-01T07:02:37+00:00",
+      "fetched_at": "2026-05-01T07:49:41+00:00",
+      "last_success_at": "2026-05-01T07:49:41+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "命令行颜色工具，生成、转换和操作颜色",
+      "desc_en": "Command-line color tool for generating, converting, and manipulating colors"
     },
     {
       "id": "pastel-color",
@@ -10610,11 +11228,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:40+00:00",
-      "last_success_at": "2026-05-01T07:02:40+00:00",
+      "fetched_at": "2026-05-01T07:49:39+00:00",
+      "last_success_at": "2026-05-01T07:49:39+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "命令行颜色工具，生成、转换和操作颜色",
+      "desc_en": "Command-line color tool for generating, converting, and manipulating colors"
     },
     {
       "id": "btop-win",
@@ -10637,11 +11257,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:36+00:00",
-      "last_success_at": "2026-05-01T07:02:36+00:00",
+      "fetched_at": "2026-05-01T07:49:41+00:00",
+      "last_success_at": "2026-05-01T07:49:41+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "美观的终端系统监控工具（Windows 版）",
+      "desc_en": "Beautiful terminal system resource monitor (Windows build)"
     },
     {
       "id": "nushell-win",
@@ -10664,11 +11286,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:37+00:00",
-      "last_success_at": "2026-05-01T07:02:37+00:00",
+      "fetched_at": "2026-05-01T07:49:41+00:00",
+      "last_success_at": "2026-05-01T07:49:41+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "结构化数据 Shell（Windows 版）",
+      "desc_en": "Structured data shell (Windows build)"
     },
     {
       "id": "starship-win",
@@ -10691,11 +11315,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:40+00:00",
-      "last_success_at": "2026-05-01T07:02:40+00:00",
+      "fetched_at": "2026-05-01T07:49:39+00:00",
+      "last_success_at": "2026-05-01T07:49:39+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "跨 shell 自定义提示符（Windows 版）",
+      "desc_en": "Cross-shell customizable prompt (Windows build)"
     },
     {
       "id": "edge",
@@ -10734,11 +11360,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:36+00:00",
-      "last_success_at": "2026-05-01T07:02:36+00:00",
+      "fetched_at": "2026-05-01T07:49:41+00:00",
+      "last_success_at": "2026-05-01T07:49:41+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "微软基于 Chromium 的浏览器，深度集成 Windows 和 AI",
+      "desc_en": "Microsoft's Chromium-based browser with deep Windows and AI integration"
     },
     {
       "id": "opera",
@@ -10777,11 +11405,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:36+00:00",
-      "last_success_at": "2026-05-01T07:02:36+00:00",
+      "fetched_at": "2026-05-01T07:49:41+00:00",
+      "last_success_at": "2026-05-01T07:49:41+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "功能丰富的浏览器，内置 VPN 和工作区管理",
+      "desc_en": "Feature-rich browser with built-in VPN and workspace management"
     },
     {
       "id": "vivaldi",
@@ -10820,11 +11450,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:40+00:00",
-      "last_success_at": "2026-05-01T07:02:40+00:00",
+      "fetched_at": "2026-05-01T07:49:39+00:00",
+      "last_success_at": "2026-05-01T07:49:39+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "高度可定制的浏览器，为高级用户打造",
+      "desc_en": "Highly customizable browser built for power users"
     },
     {
       "id": "tor-browser",
@@ -10863,11 +11495,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:36+00:00",
-      "last_success_at": "2026-05-01T07:02:36+00:00",
+      "fetched_at": "2026-05-01T07:49:41+00:00",
+      "last_success_at": "2026-05-01T07:49:41+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "Tor 匿名网络浏览器，保护用户隐私和匿名性",
+      "desc_en": "Tor anonymous network browser for privacy and anonymity protection"
     },
     {
       "id": "librewolf",
@@ -10906,11 +11540,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:36+00:00",
-      "last_success_at": "2026-05-01T07:02:36+00:00",
+      "fetched_at": "2026-05-01T07:49:41+00:00",
+      "last_success_at": "2026-05-01T07:49:41+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "注重隐私的 Firefox 分支，默认禁用遥测",
+      "desc_en": "Privacy-focused Firefox fork with telemetry disabled by default"
     },
     {
       "id": "mullvad-browser",
@@ -10949,11 +11585,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:40+00:00",
-      "last_success_at": "2026-05-01T07:02:40+00:00",
+      "fetched_at": "2026-05-01T07:49:39+00:00",
+      "last_success_at": "2026-05-01T07:49:39+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "Mullvad 与 Tor 项目合作的隐私浏览器",
+      "desc_en": "Privacy browser by Mullvad in collaboration with the Tor Project"
     },
     {
       "id": "microsoft-teams",
@@ -10984,11 +11622,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:36+00:00",
-      "last_success_at": "2026-05-01T07:02:36+00:00",
+      "fetched_at": "2026-05-01T07:49:41+00:00",
+      "last_success_at": "2026-05-01T07:49:41+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "微软团队协作平台，集成 Office 365 办公套件",
+      "desc_en": "Microsoft team collaboration platform integrated with Office 365"
     },
     {
       "id": "whatsapp",
@@ -11019,11 +11659,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:36+00:00",
-      "last_success_at": "2026-05-01T07:02:36+00:00",
+      "fetched_at": "2026-05-01T07:49:41+00:00",
+      "last_success_at": "2026-05-01T07:49:41+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "Meta 旗下的全球流行即时通讯工具，端到端加密",
+      "desc_en": "Worldwide popular messenger by Meta with end-to-end encryption"
     },
     {
       "id": "thunderbird",
@@ -11062,11 +11704,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:40+00:00",
-      "last_success_at": "2026-05-01T07:02:40+00:00",
+      "fetched_at": "2026-05-01T07:49:39+00:00",
+      "last_success_at": "2026-05-01T07:49:39+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "Mozilla 开发的开源邮件客户端，支持多账户管理",
+      "desc_en": "Open-source email client by Mozilla with multi-account support"
     },
     {
       "id": "skype",
@@ -11105,11 +11749,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:36+00:00",
-      "last_success_at": "2026-05-01T07:02:36+00:00",
+      "fetched_at": "2026-05-01T07:49:41+00:00",
+      "last_success_at": "2026-05-01T07:49:41+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "微软的视频通话和即时通讯工具",
+      "desc_en": "Video calling and instant messaging tool by Microsoft"
     },
     {
       "id": "libreoffice",
@@ -11148,11 +11794,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:36+00:00",
-      "last_success_at": "2026-05-01T07:02:36+00:00",
+      "fetched_at": "2026-05-01T07:49:41+00:00",
+      "last_success_at": "2026-05-01T07:49:41+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "免费开源的办公套件，兼容 Microsoft Office 格式",
+      "desc_en": "Free open-source office suite compatible with Microsoft Office formats"
     },
     {
       "id": "zotero",
@@ -11191,11 +11839,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:40+00:00",
-      "last_success_at": "2026-05-01T07:02:40+00:00",
+      "fetched_at": "2026-05-01T07:49:39+00:00",
+      "last_success_at": "2026-05-01T07:49:39+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "学术文献管理工具，收集整理和引用研究资料",
+      "desc_en": "Academic reference manager for collecting, organizing, and citing research materials"
     },
     {
       "id": "notion",
@@ -11226,11 +11876,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:36+00:00",
-      "last_success_at": "2026-05-01T07:02:36+00:00",
+      "fetched_at": "2026-05-01T07:49:41+00:00",
+      "last_success_at": "2026-05-01T07:49:41+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "全能协作工具，笔记/项目管理/数据库/Wiki 集于一体",
+      "desc_en": "All-in-one collaboration tool combining notes, project management, databases, and wiki"
     },
     {
       "id": "figma",
@@ -11261,11 +11913,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:36+00:00",
-      "last_success_at": "2026-05-01T07:02:36+00:00",
+      "fetched_at": "2026-05-01T07:49:41+00:00",
+      "last_success_at": "2026-05-01T07:49:41+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "协作设计工具，UI/UX 设计和原型制作",
+      "desc_en": "Collaborative design tool for UI/UX design and prototyping"
     },
     {
       "id": "dropbox",
@@ -11296,11 +11950,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:40+00:00",
-      "last_success_at": "2026-05-01T07:02:40+00:00",
+      "fetched_at": "2026-05-01T07:49:39+00:00",
+      "last_success_at": "2026-05-01T07:49:39+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "云存储和文件同步服务，跨设备访问文件",
+      "desc_en": "Cloud storage and file sync service for cross-device file access"
     },
     {
       "id": "google-drive",
@@ -11331,11 +11987,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:36+00:00",
-      "last_success_at": "2026-05-01T07:02:36+00:00",
+      "fetched_at": "2026-05-01T07:49:41+00:00",
+      "last_success_at": "2026-05-01T07:49:41+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "Google 云存储桌面客户端，同步文件到本地",
+      "desc_en": "Google cloud storage desktop client for local file sync"
     },
     {
       "id": "onedrive",
@@ -11366,11 +12024,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:36+00:00",
-      "last_success_at": "2026-05-01T07:02:36+00:00",
+      "fetched_at": "2026-05-01T07:49:41+00:00",
+      "last_success_at": "2026-05-01T07:49:41+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "微软云存储服务，深度集成 Windows 和 Office",
+      "desc_en": "Microsoft cloud storage service deeply integrated with Windows and Office"
     },
     {
       "id": "foxit-reader",
@@ -11401,11 +12061,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:40+00:00",
-      "last_success_at": "2026-05-01T07:02:40+00:00",
+      "fetched_at": "2026-05-01T07:49:39+00:00",
+      "last_success_at": "2026-05-01T07:49:39+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "快速轻量的 PDF 阅读器，支持注释和表单",
+      "desc_en": "Fast and lightweight PDF reader with annotation and form support"
     },
     {
       "id": "onepassword",
@@ -11444,11 +12106,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:36+00:00",
-      "last_success_at": "2026-05-01T07:02:36+00:00",
+      "fetched_at": "2026-05-01T07:49:41+00:00",
+      "last_success_at": "2026-05-01T07:49:41+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "跨平台密码管理器，安全存储和自动填充密码",
+      "desc_en": "Cross-platform password manager for secure storage and auto-fill"
     },
     {
       "id": "proton-vpn",
@@ -11487,11 +12151,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:36+00:00",
-      "last_success_at": "2026-05-01T07:02:36+00:00",
+      "fetched_at": "2026-05-01T07:49:41+00:00",
+      "last_success_at": "2026-05-01T07:49:41+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "Proton 提供的 VPN 服务，瑞士隐私法律保护",
+      "desc_en": "VPN service by Proton, protected by Swiss privacy laws"
     },
     {
       "id": "malwarebytes",
@@ -11522,11 +12188,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:40+00:00",
-      "last_success_at": "2026-05-01T07:02:40+00:00",
+      "fetched_at": "2026-05-01T07:49:39+00:00",
+      "last_success_at": "2026-05-01T07:49:39+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "恶意软件查杀工具，实时保护和按需扫描",
+      "desc_en": "Malware removal tool with real-time protection and on-demand scanning"
     },
     {
       "id": "adguard",
@@ -11557,11 +12225,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:36+00:00",
-      "last_success_at": "2026-05-01T07:02:36+00:00",
+      "fetched_at": "2026-05-01T07:49:41+00:00",
+      "last_success_at": "2026-05-01T07:49:41+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "全平台广告拦截工具，系统级广告和跟踪器过滤",
+      "desc_en": "Cross-platform ad blocker with system-level ad and tracker filtering"
     },
     {
       "id": "docker-desktop",
@@ -11600,11 +12270,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:36+00:00",
-      "last_success_at": "2026-05-01T07:02:36+00:00",
+      "fetched_at": "2026-05-01T07:49:41+00:00",
+      "last_success_at": "2026-05-01T07:49:41+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "Docker 容器桌面应用，一站式构建和管理容器",
+      "desc_en": "Docker container desktop app for building and managing containers in one place"
     },
     {
       "id": "postman",
@@ -11643,11 +12315,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:40+00:00",
-      "last_success_at": "2026-05-01T07:02:40+00:00",
+      "fetched_at": "2026-05-01T07:49:39+00:00",
+      "last_success_at": "2026-05-01T07:49:39+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "API 开发协作平台，测试和文档一站式解决方案",
+      "desc_en": "API development collaboration platform for testing and documentation"
     },
     {
       "id": "cursor",
@@ -11686,11 +12360,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:36+00:00",
-      "last_success_at": "2026-05-01T07:02:36+00:00",
+      "fetched_at": "2026-05-01T07:49:41+00:00",
+      "last_success_at": "2026-05-01T07:49:41+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "AI 驱动的代码编辑器，基于 VS Code 深度集成 AI",
+      "desc_en": "AI-powered code editor with deep AI built on VS Code"
     },
     {
       "id": "jetbrains-toolbox",
@@ -11729,11 +12405,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:36+00:00",
-      "last_success_at": "2026-05-01T07:02:36+00:00",
+      "fetched_at": "2026-05-01T07:49:41+00:00",
+      "last_success_at": "2026-05-01T07:49:41+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "JetBrains IDE 管理工具，一键安装和更新所有 IDE",
+      "desc_en": "JetBrains IDE manager for one-click install and update of all IDEs"
     },
     {
       "id": "virtualbox",
@@ -11772,11 +12450,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:40+00:00",
-      "last_success_at": "2026-05-01T07:02:40+00:00",
+      "fetched_at": "2026-05-01T07:49:39+00:00",
+      "last_success_at": "2026-05-01T07:49:39+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "Oracle 开源虚拟机软件，在一台电脑上运行多个操作系统",
+      "desc_en": "Open-source virtualization software by Oracle to run multiple OS on one machine"
     },
     {
       "id": "wireshark",
@@ -11807,11 +12487,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:36+00:00",
-      "last_success_at": "2026-05-01T07:02:36+00:00",
+      "fetched_at": "2026-05-01T07:49:41+00:00",
+      "last_success_at": "2026-05-01T07:49:41+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "网络协议分析工具，业界标准的抓包和分析软件",
+      "desc_en": "Network protocol analyzer, industry-standard packet capture and analysis tool"
     },
     {
       "id": "winscp",
@@ -11834,11 +12516,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:36+00:00",
-      "last_success_at": "2026-05-01T07:02:36+00:00",
+      "fetched_at": "2026-05-01T07:49:41+00:00",
+      "last_success_at": "2026-05-01T07:49:41+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "Windows 的 SFTP/FTP/SCP 客户端，安全文件传输",
+      "desc_en": "SFTP/FTP/SCP client for Windows, secure file transfer"
     },
     {
       "id": "filezilla",
@@ -11877,11 +12561,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:40+00:00",
-      "last_success_at": "2026-05-01T07:02:40+00:00",
+      "fetched_at": "2026-05-01T07:49:39+00:00",
+      "last_success_at": "2026-05-01T07:49:39+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "免费的跨平台 FTP 客户端，支持多种文件传输协议",
+      "desc_en": "Free cross-platform FTP client supporting multiple file transfer protocols"
     },
     {
       "id": "sysinternals-suite",
@@ -11904,11 +12590,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:36+00:00",
-      "last_success_at": "2026-05-01T07:02:36+00:00",
+      "fetched_at": "2026-05-01T07:49:41+00:00",
+      "last_success_at": "2026-05-01T07:49:41+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "微软官方 Windows 高级诊断工具集",
+      "desc_en": "Official Microsoft advanced Windows diagnostics toolkit"
     },
     {
       "id": "winrar",
@@ -11931,11 +12619,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:36+00:00",
-      "last_success_at": "2026-05-01T07:02:36+00:00",
+      "fetched_at": "2026-05-01T07:49:41+00:00",
+      "last_success_at": "2026-05-01T07:49:41+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "经典压缩解压工具，RAR 格式的官方实现",
+      "desc_en": "Classic compression tool, official RAR format implementation"
     },
     {
       "id": "wiztree",
@@ -11958,11 +12648,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:40+00:00",
-      "last_success_at": "2026-05-01T07:02:40+00:00",
+      "fetched_at": "2026-05-01T07:49:39+00:00",
+      "last_success_at": "2026-05-01T07:49:39+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "极速磁盘空间分析工具，秒级扫描显示占用",
+      "desc_en": "Ultra-fast disk space analyzer with instant scan and usage display"
     },
     {
       "id": "teracopy",
@@ -11985,11 +12677,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:36+00:00",
-      "last_success_at": "2026-05-01T07:02:36+00:00",
+      "fetched_at": "2026-05-01T07:49:41+00:00",
+      "last_success_at": "2026-05-01T07:49:41+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "Windows 文件复制加速工具，支持校验和恢复",
+      "desc_en": "Windows file copy acceleration tool with verification and resume support"
     },
     {
       "id": "anydesk",
@@ -12028,11 +12722,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:36+00:00",
-      "last_success_at": "2026-05-01T07:02:36+00:00",
+      "fetched_at": "2026-05-01T07:49:41+00:00",
+      "last_success_at": "2026-05-01T07:49:41+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "远程桌面软件，低延迟跨设备远程控制",
+      "desc_en": "Remote desktop software with low-latency cross-device remote control"
     },
     {
       "id": "teamviewer",
@@ -12071,11 +12767,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:40+00:00",
-      "last_success_at": "2026-05-01T07:02:40+00:00",
+      "fetched_at": "2026-05-01T07:49:39+00:00",
+      "last_success_at": "2026-05-01T07:49:39+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "远程控制和在线协作工具，跨平台远程支持",
+      "desc_en": "Remote control and online collaboration tool for cross-platform remote support"
     },
     {
       "id": "kodi",
@@ -12114,11 +12812,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:36+00:00",
-      "last_success_at": "2026-05-01T07:02:36+00:00",
+      "fetched_at": "2026-05-01T07:49:41+00:00",
+      "last_success_at": "2026-05-01T07:49:41+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "开源媒体中心软件，管理和播放影视音乐",
+      "desc_en": "Open-source media center software for managing and playing media"
     },
     {
       "id": "plex",
@@ -12157,11 +12857,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:36+00:00",
-      "last_success_at": "2026-05-01T07:02:36+00:00",
+      "fetched_at": "2026-05-01T07:49:41+00:00",
+      "last_success_at": "2026-05-01T07:49:41+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "媒体服务器方案，组织和串流个人影视库",
+      "desc_en": "Media server solution for organizing and streaming personal media library"
     },
     {
       "id": "foobar2000",
@@ -12192,11 +12894,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:40+00:00",
-      "last_success_at": "2026-05-01T07:02:40+00:00",
+      "fetched_at": "2026-05-01T07:49:39+00:00",
+      "last_success_at": "2026-05-01T07:49:39+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "高度可定制的 Windows 音乐播放器，轻量且音质好",
+      "desc_en": "Highly customizable Windows music player, lightweight with great audio quality"
     },
     {
       "id": "epic-games-launcher",
@@ -12227,11 +12931,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:36+00:00",
-      "last_success_at": "2026-05-01T07:02:36+00:00",
+      "fetched_at": "2026-05-01T07:49:41+00:00",
+      "last_success_at": "2026-05-01T07:49:41+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "Epic Games 官方游戏平台，独占游戏和每周免费领取",
+      "desc_en": "Official Epic Games platform with exclusives and weekly free games"
     },
     {
       "id": "anki",
@@ -12270,11 +12976,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:36+00:00",
-      "last_success_at": "2026-05-01T07:02:36+00:00",
+      "fetched_at": "2026-05-01T07:49:41+00:00",
+      "last_success_at": "2026-05-01T07:49:41+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "间隔重复记忆卡片工具，高效记忆学习内容",
+      "desc_en": "Spaced repetition flashcard tool for efficient content memorization"
     },
     {
       "id": "typora",
@@ -12313,11 +13021,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-05-01T07:02:40+00:00",
-      "last_success_at": "2026-05-01T07:02:40+00:00",
+      "fetched_at": "2026-05-01T07:49:39+00:00",
+      "last_success_at": "2026-05-01T07:49:39+00:00",
       "editions": [
         "intl"
-      ]
+      ],
+      "desc_cn": "极简的 Markdown 编辑器，所见即所得无分栏",
+      "desc_en": "Minimalist Markdown editor with seamless WYSIWYG preview"
     },
     {
       "id": "claude-code",
@@ -12362,7 +13072,9 @@
         "intl"
       ],
       "_stale": true,
-      "_stale_reason": "anthropics/claude-code@v2.1.126: 没有任何 asset 匹配配置的 pattern，现有 asset: []..."
+      "_stale_reason": "anthropics/claude-code@v2.1.126: 没有任何 asset 匹配配置的 pattern，现有 asset: []...",
+      "desc_cn": "Anthropic 的 AI 编程助手，终端内智能代码操作",
+      "desc_en": "AI coding assistant by Anthropic for intelligent code operations in terminal"
     }
   ],
   "stats": {
