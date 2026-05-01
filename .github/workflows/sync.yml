@@ -155,7 +155,7 @@ jobs:
         run: python scripts/check_sync_health.py --max-fail-rate 0.10
 
       - name: Upload partial result
-        uses: actions/upload-artifact@v6
+        uses: actions/upload-artifact@v7
         with:
           name: shard-${{ strategy.job-index }}
           path: data/latest.json
@@ -198,7 +198,7 @@ jobs:
         run: python -m pytest tests/test_latest_json_schema.py -q
 
       - name: Upload latest data artifact
-        uses: actions/upload-artifact@v6
+        uses: actions/upload-artifact@v7
         with:
           name: latest-data
           path: data/latest.json
@@ -224,7 +224,7 @@ jobs:
           commit_user_email: '41898282+github-actions[bot]@users.noreply.github.com'
 
       - name: Upload dist artifact
-        uses: actions/upload-artifact@v6
+        uses: actions/upload-artifact@v7
         with:
           name: dist
           path: dist/
@@ -270,7 +270,7 @@ jobs:
 
       - name: Upload link health artifact
         if: ${{ always() }}
-        uses: actions/upload-artifact@v6
+        uses: actions/upload-artifact@v7
         with:
           name: link-health
           path: data/link-health.json
