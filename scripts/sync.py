@@ -129,6 +129,10 @@ def _apply_config_metadata(result: dict, entry: dict) -> dict:
         result["editions"] = entry["editions"]
     else:
         result.pop("editions", None)
+    # 传递双语描述（可选字段）
+    for desc_key in ("desc_cn", "desc_en"):
+        if desc_key in entry:
+            result[desc_key] = entry[desc_key]
     return result
 
 

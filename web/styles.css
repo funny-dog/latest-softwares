@@ -27,6 +27,14 @@ input[type="search"]::-webkit-search-results-decoration {
 .dark ::-webkit-scrollbar-thumb { background: rgb(63 63 70 / 0.6); background-clip: padding-box; border: 2px solid transparent; }
 .dark ::-webkit-scrollbar-thumb:hover { background: rgb(82 82 91 / 0.8); background-clip: padding-box; border: 2px solid transparent; }
 
+/* 两行截断（兼容旧版 Tailwind） */
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+
 /* Visible focus rings for keyboard navigation. */
 a:focus-visible, button:focus-visible, input:focus-visible {
   outline: 2px solid rgb(139 92 246);   /* violet-500 */

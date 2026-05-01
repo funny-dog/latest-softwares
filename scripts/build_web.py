@@ -16,6 +16,8 @@ import shutil
 import sys
 from pathlib import Path
 
+import yaml
+
 if __package__ in (None, ""):
     sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
     from scripts.link_utils import DIRECT_FILE_EXTENSIONS  # type: ignore
@@ -36,6 +38,7 @@ for _stream in (sys.stdout, sys.stderr):
 REPO_ROOT = Path(__file__).resolve().parents[1]
 WEB_SRC = REPO_ROOT / "web"
 DATA_FILE = REPO_ROOT / "data" / "latest.json"
+PACKAGES_FILE = REPO_ROOT / "packages.yaml"
 DIST = REPO_ROOT / "dist"
 VENDOR_MANIFEST = WEB_SRC / "vendor" / "manifest.json"
 VERSIONED_ASSETS = (
@@ -146,12 +149,36 @@ def inject_asset_versions() -> dict[str, str]:
     return versions
 
 
+def _merge_desc_from_config(data: dict) -> None:
+    """从 packages.yaml 合并 desc_cn/desc_en 到 data 中。"""
+    if not PACKAGES_FILE.exists():
+        return
+    cfg = yaml.safe_load(PACKAGES_FILE.read_text(encoding="utf-8"))
+    desc_map: dict[str, dict[str, str]] = {}
+    for entry in cfg.get("packages", []):
+        eid = entry.get("id")
+        if not eid:
+            continue
+        desc: dict[str, str] = {}
+        if "desc_cn" in entry:
+            desc["desc_cn"] = entry["desc_cn"]
+        if "desc_en" in entry:
+            desc["desc_en"] = entry["desc_en"]
+        if desc:
+            desc_map[eid] = desc
+    for pkg in data.get("packages", []):
+        pkg_desc = desc_map.get(pkg.get("id"))
+        if pkg_desc:
+            pkg.update(pkg_desc)
+
+
 def inject_data(edition: str | None = None) -> int:
     if not DATA_FILE.exists():
         raise FileNotFoundError(
             f"找不到 {DATA_FILE.relative_to(REPO_ROOT)}，请先跑 scripts/sync.py"
         )
     data = json.loads(DATA_FILE.read_text(encoding="utf-8"))
+    _merge_desc_from_config(data)
     data = filter_data_by_edition(data, edition)
     data["direct_file_extensions"] = list(DIRECT_FILE_EXTENSIONS)
     if edition == "intl":

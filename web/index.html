@@ -146,15 +146,24 @@
     >
       <template x-for="pkg in filtered" :key="pkg.id">
         <article class="group rounded-xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900 p-5 hover:border-zinc-300 dark:hover:border-zinc-700 hover:shadow-sm transition-all">
-          <!-- Header: name + category -->
+          <!-- Header: icon + name + category -->
           <div class="flex items-start justify-between gap-2 mb-3">
             <a
               :href="pkg.homepage || '#'"
               target="_blank" rel="noopener"
-              class="min-w-0 flex-1"
+              class="min-w-0 flex-1 flex items-start gap-2.5"
             >
-              <h3 class="font-semibold text-base truncate group-hover:text-violet-600 dark:group-hover:text-violet-400 transition" x-text="pkg.name"></h3>
-              <p class="text-xs text-zinc-400 dark:text-zinc-500 mt-0.5 font-mono" x-text="pkg.id"></p>
+              <img
+                :src="faviconUrl(pkg.homepage)"
+                @error="$el.style.display='none'"
+                class="w-8 h-8 rounded mt-0.5 shrink-0 bg-zinc-100 dark:bg-zinc-800"
+                loading="lazy"
+                alt=""
+              />
+              <div class="min-w-0">
+                <h3 class="font-semibold text-base truncate group-hover:text-violet-600 dark:group-hover:text-violet-400 transition" x-text="pkg.name"></h3>
+                <p class="text-xs text-zinc-400 dark:text-zinc-500 mt-0.5 font-mono" x-text="pkg.id"></p>
+              </div>
             </a>
             <span
               x-show="pkg.category"
@@ -162,6 +171,13 @@
               x-text="pkg.category"
             ></span>
           </div>
+
+          <!-- Description -->
+          <p
+            x-show="editionDesc(pkg)"
+            x-text="editionDesc(pkg)"
+            class="text-xs text-zinc-500 dark:text-zinc-400 mb-3 line-clamp-2 leading-relaxed"
+          ></p>
 
           <!-- Version + date -->
           <div class="flex items-center gap-3 text-xs text-zinc-500 dark:text-zinc-400 mb-4">

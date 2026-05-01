@@ -133,9 +133,11 @@ function app() {
       // Fuse fuzzy search.
       this.fuse = new Fuse(this.packages, {
         keys: [
-          { name: 'name',     weight: 0.5 },
-          { name: 'id',       weight: 0.3 },
-          { name: 'category', weight: 0.15 },
+          { name: 'name',     weight: 0.45 },
+          { name: 'id',       weight: 0.25 },
+          { name: 'category', weight: 0.1 },
+          { name: 'desc_cn',  weight: 0.1 },
+          { name: 'desc_en',  weight: 0.05 },
           { name: 'version',  weight: 0.05 },
         ],
         threshold: 0.4,
@@ -368,6 +370,22 @@ function app() {
 
     versionKindLabel(kind) {
       return this.t(kind) || this.t('version');
+    },
+
+    // 根据当前 edition 返回对应语言的描述
+    editionDesc(pkg) {
+      if (this.edition === 'intl') return pkg.desc_en || pkg.desc_cn || '';
+      return pkg.desc_cn || pkg.desc_en || '';
+    },
+
+    // 从 homepage 提取 favicon.im 图标 URL
+    faviconUrl(homepage) {
+      if (!homepage) return '';
+      try {
+        return `https://favicon.im/${new URL(homepage).hostname}`;
+      } catch {
+        return '';
+      }
     },
   };
 }
