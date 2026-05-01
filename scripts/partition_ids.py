@@ -13,6 +13,8 @@ from __future__ import annotations
 import argparse
 import json
 import sys
+from itertools import cycle
+from pathlib import Path
 
 # 兼容 Windows runner（cp1252 默认编码）下的非 ASCII 输出。
 for _stream in (sys.stdout, sys.stderr):
@@ -21,8 +23,6 @@ for _stream in (sys.stdout, sys.stderr):
             _stream.reconfigure(encoding="utf-8", errors="replace")
         except Exception:
             pass
-from itertools import cycle
-from pathlib import Path
 
 if __package__ in (None, ""):
     sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
@@ -56,9 +56,7 @@ def main() -> int:
     entries = cfg.get("packages", [])
 
     if args.edition:
-        entries = [
-            e for e in entries if args.edition in e.get("editions", [])
-        ]
+        entries = [e for e in entries if args.edition in e.get("editions", [])]
 
     ids = [e["id"] for e in entries]
     if not ids:

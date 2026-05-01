@@ -14,6 +14,8 @@ from __future__ import annotations
 import argparse
 import json
 import sys
+from datetime import datetime, timezone
+from pathlib import Path
 
 # 兼容 Windows runner（cp1252 默认编码）下的非 ASCII 输出。
 for _stream in (sys.stdout, sys.stderr):
@@ -22,8 +24,6 @@ for _stream in (sys.stdout, sys.stderr):
             _stream.reconfigure(encoding="utf-8", errors="replace")
         except Exception:
             pass
-from datetime import datetime, timezone
-from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
 DATA_FILE = REPO_ROOT / "data" / "latest.json"

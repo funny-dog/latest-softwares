@@ -6,6 +6,14 @@ import json
 import sys
 from pathlib import Path
 
+# Windows cp1252 默认编码会让 print 中文/emoji 崩。
+for _stream in (sys.stdout, sys.stderr):
+    if hasattr(_stream, "reconfigure"):
+        try:
+            _stream.reconfigure(encoding="utf-8", errors="replace")
+        except Exception:
+            pass
+
 
 def check_sync_health(log_file: Path, max_fail_rate: float = 0.10) -> bool:
     """

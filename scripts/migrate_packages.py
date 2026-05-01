@@ -4,6 +4,14 @@ import yaml
 import sys
 from pathlib import Path
 
+# Windows cp1252 默认编码会让 print 中文/emoji 崩。
+for _stream in (sys.stdout, sys.stderr):
+    if hasattr(_stream, "reconfigure"):
+        try:
+            _stream.reconfigure(encoding="utf-8", errors="replace")
+        except Exception:
+            pass
+
 
 def migrate_packages(source: Path, target_dir: Path) -> dict[str, int]:
     """
@@ -97,14 +105,26 @@ def main() -> int:
         with open(args.source, "r", encoding="utf-8") as f:
             data = yaml.safe_load(f)
         packages = data.get("packages", [])
-        shared = sum(1 for p in packages if "cn" in p.get("editions", []) and "intl" in p.get("editions", []))
-        cn = sum(1 for p in packages if "cn" in p.get("editions", []) and "intl" not in p.get("editions", []))
-        intl = sum(1 for p in packages if "intl" in p.get("editions", []) and "cn" not in p.get("editions", []))
+        shared = sum(
+            1
+            for p in packages
+            if "cn" in p.get("editions", []) and "intl" in p.get("editions", [])
+        )
+        cn = sum(
+            1
+            for p in packages
+            if "cn" in p.get("editions", []) and "intl" not in p.get("editions", [])
+        )
+        intl = sum(
+            1
+            for p in packages
+            if "intl" in p.get("editions", []) and "cn" not in p.get("editions", [])
+        )
         print(f"统计: shared={shared}, cn={cn}, intl={intl}, total={len(packages)}")
         return 0
 
     stats = migrate_packages(args.source, args.target_dir)
-    print(f"✓ 迁移完成:")
+    print("✓ 迁移完成:")
     print(f"  shared: {stats['shared']}")
     print(f"  cn: {stats['cn']}")
     print(f"  intl: {stats['intl']}")

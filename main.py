@@ -29,7 +29,9 @@ ROOT = Path(__file__).resolve().parent
 DATA_FILE = ROOT / "data" / "latest.json"
 DIST_DIR = ROOT / "dist"
 STATS_FILE = Path(
-    os.environ.get("LATEST_SOFTWARES_STATS_FILE", str(ROOT / "data" / "site_metrics.json"))
+    os.environ.get(
+        "LATEST_SOFTWARES_STATS_FILE", str(ROOT / "data" / "site_metrics.json")
+    )
 )
 STATS_LOCK = threading.Lock()
 

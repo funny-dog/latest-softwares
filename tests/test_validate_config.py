@@ -1,9 +1,6 @@
 from __future__ import annotations
 
 import copy
-from pathlib import Path
-
-import yaml
 
 from scripts import validate_config
 from scripts.config_loader import load_packages_config

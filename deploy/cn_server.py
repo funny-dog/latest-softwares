@@ -140,7 +140,8 @@ def health():
     """健康检查。"""
     data = _load_data()
     cn_packages = [
-        p for p in data.get("packages", [])
+        p
+        for p in data.get("packages", [])
         if EDITION in p.get("editions", ["cn", "intl"])
     ]
     return {

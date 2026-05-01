@@ -82,7 +82,7 @@ def _normalize_version_semantics(entry: dict[str, Any]) -> dict[str, Any]:
     return entry
 
 
-def _load_packages_dir(packages_dir: Path) -> dict:
+def _load_packages_dir(packages_dir: Path) -> dict[str, Any]:
     """从 packages/ 目录加载并合并所有 yaml 文件"""
     all_packages: list[dict[str, Any]] = []
     for yaml_file in sorted(packages_dir.glob("*.yaml")):
@@ -94,12 +94,15 @@ def _load_packages_dir(packages_dir: Path) -> dict:
     return {"packages": all_packages}
 
 
-def load_packages_config() -> dict:
+def load_packages_config() -> dict[str, Any]:
     """加载软件包配置，支持目录或单文件"""
     if PACKAGES_DIR.is_dir():
         return _load_packages_dir(PACKAGES_DIR)
     else:
-        return yaml.safe_load(PACKAGES_FILE.read_text(encoding="utf-8"))
+        result: dict[str, Any] = yaml.safe_load(
+            PACKAGES_FILE.read_text(encoding="utf-8")
+        )
+        return result
 
 
 def _filter_entries(
@@ -142,7 +145,9 @@ def _stale_from_previous(previous_entry: dict[str, Any], reason: str) -> dict[st
     return _normalize_version_semantics(stale)
 
 
-def _apply_config_metadata(result: dict[str, Any], entry: dict[str, Any]) -> dict[str, Any]:
+def _apply_config_metadata(
+    result: dict[str, Any], entry: dict[str, Any]
+) -> dict[str, Any]:
     """Apply package metadata that comes from packages.yaml, not the fetcher."""
     result["name"] = entry.get("name", result.get("name"))
     result["category"] = entry.get("category", result.get("category"))

@@ -33,4 +33,7 @@ def load_packages_config() -> dict[str, Any]:
     if PACKAGES_DIR.is_dir():
         return _load_packages_dir(PACKAGES_DIR)
     else:
-        return yaml.safe_load(PACKAGES_FILE.read_text(encoding="utf-8"))
+        result: dict[str, Any] = yaml.safe_load(
+            PACKAGES_FILE.read_text(encoding="utf-8")
+        )
+        return result

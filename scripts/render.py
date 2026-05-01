@@ -173,7 +173,10 @@ def main(argv: list[str] | None = None) -> int:
     ok = True
     for template_file, output_file in [README_EN, README_ZH]:
         if not template_file.exists():
-            print(f"⚠ 跳过 {template_file.relative_to(REPO_ROOT)}（文件不存在）", file=sys.stderr)
+            print(
+                f"⚠ 跳过 {template_file.relative_to(REPO_ROOT)}（文件不存在）",
+                file=sys.stderr,
+            )
             continue
         if not _render_one(data, template_file, output_file, check=args.check):
             ok = False
