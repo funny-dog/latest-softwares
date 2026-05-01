@@ -33,8 +33,10 @@ for _stream in (sys.stdout, sys.stderr):
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
 DATA_FILE = REPO_ROOT / "data" / "latest.json"
-TEMPLATE_FILE = REPO_ROOT / "README.template.md"
-OUTPUT_FILE = REPO_ROOT / "README.md"
+
+# 双语模板配置：(模板文件, 输出文件)
+README_EN = (REPO_ROOT / "README.template.md", REPO_ROOT / "README.md")
+README_ZH = (REPO_ROOT / "README_zh.template.md", REPO_ROOT / "README_zh.md")
 
 UNCATEGORIZED = "其他"
 
@@ -84,7 +86,7 @@ def _latest_fetched_at(packages: list[dict]) -> str | None:
     return values[-1] if values else None
 
 
-def render_markdown(data: dict) -> str:
+def render_markdown(data: dict, template_file: Path) -> str:
     packages = data.get("packages", [])
     stats = data.get("stats", {})
     updated_at = (
@@ -94,7 +96,7 @@ def render_markdown(data: dict) -> str:
     )
 
     env = Environment(
-        loader=FileSystemLoader(str(TEMPLATE_FILE.parent)),
+        loader=FileSystemLoader(str(template_file.parent)),
         autoescape=select_autoescape(
             enabled_extensions=()
         ),  # Markdown 不需要 HTML 转义
@@ -104,7 +106,7 @@ def render_markdown(data: dict) -> str:
     )
     env.filters["fmt_date"] = fmt_date
 
-    tmpl = env.get_template(TEMPLATE_FILE.name)
+    tmpl = env.get_template(template_file.name)
     return tmpl.render(
         updated_at=_format_updated_at(updated_at),
         grouped=group_by_category(packages),
@@ -113,12 +115,45 @@ def render_markdown(data: dict) -> str:
     )
 
 
+def _render_one(
+    data: dict,
+    template_file: Path,
+    output_file: Path,
+    *,
+    check: bool,
+) -> bool:
+    """渲染单个模板，返回是否成功。check=True 时只校验不写入。"""
+    rendered = render_markdown(data, template_file)
+
+    if check:
+        if not output_file.exists():
+            print(f"✗ 找不到 {output_file.relative_to(REPO_ROOT)}", file=sys.stderr)
+            return False
+        current = output_file.read_text(encoding="utf-8")
+        if current != rendered:
+            print(
+                f"✗ {output_file.relative_to(REPO_ROOT)} 与模板渲染结果不一致",
+                file=sys.stderr,
+            )
+            return False
+        print(f"✓ {output_file.relative_to(REPO_ROOT)} 已是最新")
+        return True
+
+    output_file.write_text(rendered, encoding="utf-8")
+    packages = data.get("packages", [])
+    print(
+        f"✓ 写入 {output_file.relative_to(REPO_ROOT)}"
+        f"（{len(packages)} 项软件，分 {len(group_by_category(packages))} 组）"
+    )
+    return True
+
+
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument(
         "--check",
         action="store_true",
-        help="只检查 README.md 是否与模板和数据一致，不写文件",
+        help="只检查 README.md / README_zh.md 是否与模板和数据一致，不写文件",
     )
     parser.add_argument(
         "--edition",
@@ -134,28 +169,16 @@ def main(argv: list[str] | None = None) -> int:
 
     data = json.loads(DATA_FILE.read_text(encoding="utf-8"))
     data = filter_data_by_edition(data, args.edition)
-    packages = data["packages"]
-    rendered = render_markdown(data)
 
-    if args.check:
-        if not OUTPUT_FILE.exists():
-            print(f"找不到 {OUTPUT_FILE}", file=sys.stderr)
-            return 1
-        current = OUTPUT_FILE.read_text(encoding="utf-8")
-        if current != rendered:
-            print(
-                f"{OUTPUT_FILE.relative_to(REPO_ROOT)} 与模板渲染结果不一致",
-                file=sys.stderr,
-            )
-            return 1
-        print(f"{OUTPUT_FILE.relative_to(REPO_ROOT)} 已是最新")
-        return 0
+    ok = True
+    for template_file, output_file in [README_EN, README_ZH]:
+        if not template_file.exists():
+            print(f"⚠ 跳过 {template_file.relative_to(REPO_ROOT)}（文件不存在）", file=sys.stderr)
+            continue
+        if not _render_one(data, template_file, output_file, check=args.check):
+            ok = False
 
-    OUTPUT_FILE.write_text(rendered, encoding="utf-8")
-    print(
-        f"写入 {OUTPUT_FILE.relative_to(REPO_ROOT)}（{len(packages)} 项软件，分 {len(group_by_category(packages))} 组）"
-    )
-    return 0
+    return 0 if ok else 1
 
 
 if __name__ == "__main__":

@@ -1,29 +1,29 @@
-# 🚀 Latest Windows / macOS Software Releases
+# 🚀 最新 Windows / macOS 软件速递
 
-> **Latest version metadata** automatically synced from official upstream sources daily by GitHub Actions.
-> This repository **does not host binary installers** — download buttons link directly to upstream official downloads.
+> 由 GitHub Actions 每日自动同步上游官方源的**最新版本元数据**。
+> 仓库**不托管二进制安装包**，下载按钮直接跳到上游官方下载链接。
 >
-> 📅 **Last updated**: `2026-05-01 08:09:23` (UTC) · 356 software items (2 using previous data, marked ⚠️)
+> 📅 **最后更新**：`2026-05-01 08:09:23` (UTC)　· 共 356 项软件（其中 2 项使用上次数据，标 ⚠️）
 
 ---
 
-## 🌐 Live Site
+## 🌐 在线站点
 
-- Site: <https://latest-softwares-064facea.fastapicloud.dev/>
-- Health check: <https://latest-softwares-064facea.fastapicloud.dev/api/health>
-- Packages API: <https://latest-softwares-064facea.fastapicloud.dev/api/packages>
+- 站点：<https://latest-softwares-064facea.fastapicloud.dev/>
+- 健康检查：<https://latest-softwares-064facea.fastapicloud.dev/api/health>
+- 软件数据 API：<https://latest-softwares-064facea.fastapicloud.dev/api/packages>
 
-The web page sends a visit beacon to `/api/visit`; download buttons first hit `/api/download/{package_id}/{platform}` then 302-redirect to the upstream official URL. This repository does not host any binaries.
+网页会向 `/api/visit` 发送访问 beacon；下载按钮会先访问 `/api/download/{package_id}/{platform}`，再 302 跳转到上游官方下载地址。本仓库不托管任何二进制文件。
 
 ---
 
-## 📦 Software List
+## 📦 软件清单
 
 
 ### Operating Systems
 
-| Software | Latest Version | Released | Download | Source |
-|----------|---------------|----------|----------|--------|
+| 软件 | 最新版本 | 发布日期 | 下载链接 | 来源 |
+|------|---------|---------|---------|------|
 | [**Windows 11**](https://www.microsoft.com/software-download/windows11) ⚠️ | `25H2` | — | [win-x64](https://software.download.prss.microsoft.com/dbazure/Win11_25H2_Chinese_Simplified_x64_v2.iso?t=91d98c2b-e74a-470d-80fe-e367e42602c3&P1=1777703945&P2=601&P3=2&P4=x5sP3J4J07g1Km7UTwWyEMVvcc0q4P852AxxNdr78JCxetneF2XuZnjiLvuAPMLMF3Un8VgUt2dUg5lXbe90H1VdFZmkFW0vrkwWlzQwIbyMl6Vc27JTHlzAlPKFbE0305PPpqAFIGIA%2bxb35Kx0xOMlaN4Cfh4IyEOZR5bXFixYGnoY3bRRNvTrV6NJ%2bF7lK72dn%2fZuOPGq0JdIKWmapNxN61mpFB3xmCMmFn8USgyngWiNh%2bdWsS68rp1naHdiPLtrq2HDEaPbjq4fQ0YdD9llT4Zzj5xaY2dGcRrdg57jrbmz0VnSMIVRDBgNNjcuGMPx81gSvu3RLWemUtBNeQ%3d%3d) | Microsoft Software Download (via Fido)<br>⚠ Fido 连续 3 次失败，最后一次：Fido 未返回 URL。stdout='Error: This feature is not available on this platform.' stderr='' returncode=147 |
 | [**Ubuntu**](https://ubuntu.com/download) | `26.04` | — | [desktop-amd64](https://releases.ubuntu.com/26.04/ubuntu-26.04-desktop-amd64.iso) · [server-amd64](https://releases.ubuntu.com/26.04/ubuntu-26.04-live-server-amd64.iso) · [wsl-amd64](https://releases.ubuntu.com/26.04/ubuntu-26.04-wsl-amd64.wsl) | Ubuntu official releases index |
 | [**Fedora Workstation**](https://fedoraproject.org/workstation/download/) | `44` | — | [workstation-live-x86_64](https://dl.fedoraproject.org/pub/fedora/linux/releases/44/Workstation/x86_64/iso/Fedora-Workstation-Live-44-1.7.x86_64.iso) | Fedora official release directory |
@@ -32,8 +32,8 @@ The web page sends a visit beacon to `/api/visit`; download buttons first hit `/
 
 ### Network & Proxy
 
-| Software | Latest Version | Released | Download | Source |
-|----------|---------------|----------|----------|--------|
+| 软件 | 最新版本 | 发布日期 | 下载链接 | 来源 |
+|------|---------|---------|---------|------|
 | [**v2rayN**](https://github.com/2dust/v2rayN) | `7.20.4` | 2026-04-16 | [win-x64](https://github.com/2dust/v2rayN/releases/download/7.20.4/v2rayN-windows-64-desktop.zip) · [win-arm64](https://github.com/2dust/v2rayN/releases/download/7.20.4/v2rayN-windows-arm64-desktop.zip) · [mac-arm64](https://github.com/2dust/v2rayN/releases/download/7.20.4/v2rayN-macos-arm64.dmg) · [mac-x64](https://github.com/2dust/v2rayN/releases/download/7.20.4/v2rayN-macos-64.dmg) | GitHub Release: 2dust/v2rayN |
 | [**Hiddify**](https://hiddify.com) | `4.1.1` | 2026-03-05 | [win-x64](https://github.com/hiddify/hiddify-app/releases/download/v4.1.1/Hiddify-Windows-Setup-x64.exe) · [mac-universal](https://github.com/hiddify/hiddify-app/releases/download/v4.1.1/Hiddify-MacOS-Installer.pkg) · [linux-x64](https://github.com/hiddify/hiddify-app/releases/download/v4.1.1/Hiddify-Linux-x64-AppImage.AppImage) | GitHub Release: hiddify/hiddify-app |
 | [**sing-box**](https://github.com/SagerNet/sing-box) | `1.13.11` | 2026-04-23 | [win-x64](https://github.com/SagerNet/sing-box/releases/download/v1.13.11/sing-box-1.13.11-windows-amd64.zip) | GitHub Release: SagerNet/sing-box |
@@ -66,8 +66,8 @@ The web page sends a visit beacon to `/api/visit`; download buttons first hit `/
 
 ### Developer Tools
 
-| Software | Latest Version | Released | Download | Source |
-|----------|---------------|----------|----------|--------|
+| 软件 | 最新版本 | 发布日期 | 下载链接 | 来源 |
+|------|---------|---------|---------|------|
 | [**Visual Studio Code**](https://code.visualstudio.com) | `1.118.1` | 2026-04-29 | [win-x64](https://vscode.download.prss.microsoft.com/dbazure/download/stable/034f571df509819cc10b0c8129f66ef77a542f0e/VSCodeUserSetup-x64-1.118.1.exe) · [win-arm64](https://vscode.download.prss.microsoft.com/dbazure/download/stable/034f571df509819cc10b0c8129f66ef77a542f0e/VSCodeUserSetup-arm64-1.118.1.exe) · [mac-arm64](https://vscode.download.prss.microsoft.com/dbazure/download/stable/034f571df509819cc10b0c8129f66ef77a542f0e/VSCode-darwin-arm64.dmg) · [mac-x64](https://vscode.download.prss.microsoft.com/dbazure/download/stable/034f571df509819cc10b0c8129f66ef77a542f0e/VSCode-darwin-x64.dmg) | VSCode Build Manifest |
 | [**OpenAI Codex**](https://github.com/openai/codex) | `0.128.0` | 2026-04-30 | [win-x64](https://github.com/openai/codex/releases/download/rust-v0.128.0/codex-x86_64-pc-windows-msvc.exe) · [win-arm64](https://github.com/openai/codex/releases/download/rust-v0.128.0/codex-aarch64-pc-windows-msvc.exe) · [mac-arm64](https://github.com/openai/codex/releases/download/rust-v0.128.0/codex-aarch64-apple-darwin.dmg) · [mac-x64](https://github.com/openai/codex/releases/download/rust-v0.128.0/codex-x86_64-apple-darwin.tar.gz) | GitHub Release: openai/codex |
 | [**Git for Windows**](https://github.com/git-for-windows/git) | `2.54.0.windows.1` | 2026-04-20 | [win-x64](https://github.com/git-for-windows/git/releases/download/v2.54.0.windows.1/Git-2.54.0-64-bit.exe) | GitHub Release: git-for-windows/git |
@@ -166,8 +166,8 @@ The web page sends a visit beacon to `/api/visit`; download buttons first hit `/
 
 ### Browsers
 
-| Software | Latest Version | Released | Download | Source |
-|----------|---------------|----------|----------|--------|
+| 软件 | 最新版本 | 发布日期 | 下载链接 | 来源 |
+|------|---------|---------|---------|------|
 | [**Google Chrome**](https://www.google.com/chrome/) | `148.0.7778.97` | — | [win-x64](https://dl.google.com/chrome/install/standalonesetup64.exe) · [mac-arm64](https://dl.google.com/chrome/mac/stable/GGRO/googlechrome.dmg) | Google Version History API |
 | [**Brave Browser**](https://github.com/brave/brave-browser) | `1.89.145` | 2026-04-29 | [win-x64](https://github.com/brave/brave-browser/releases/download/v1.89.145/BraveBrowserSetup.exe) | GitHub Release: brave/brave-browser |
 | [**Thorium Browser**](https://github.com/Alex313031/Thorium-Win) | `138.0.7204.303` | 2026-02-18 | [win-x64](https://github.com/Alex313031/Thorium-Win/releases/download/M138.0.7204.303/thorium_AVX2_mini_installer.exe) | GitHub Release: Alex313031/Thorium-Win |
@@ -187,8 +187,8 @@ The web page sends a visit beacon to `/api/visit`; download buttons first hit `/
 
 ### Gaming
 
-| Software | Latest Version | Released | Download | Source |
-|----------|---------------|----------|----------|--------|
+| 软件 | 最新版本 | 发布日期 | 下载链接 | 来源 |
+|------|---------|---------|---------|------|
 | [**Steam**](https://store.steampowered.com/about/) | `2026-01-30` | — | [win-x64](https://cdn.fastly.steamstatic.com/client/installer/SteamSetup.exe) | Valve Client Update API |
 | [**DuckStation**](https://github.com/stenzek/duckstation) | `latest` | 2026-04-26 | [win-x64](https://github.com/stenzek/duckstation/releases/download/latest/duckstation-windows-x64-release.zip) | GitHub Release: stenzek/duckstation |
 | [**PCSX2**](https://github.com/PCSX2/pcsx2) | `2.6.3` | 2026-01-28 | [win-x64](https://github.com/PCSX2/pcsx2/releases/download/v2.6.3/pcsx2-v2.6.3-windows-x64-Qt.7z) | GitHub Release: PCSX2/pcsx2 |
@@ -219,8 +219,8 @@ The web page sends a visit beacon to `/api/visit`; download buttons first hit `/
 
 ### Utilities
 
-| Software | Latest Version | Released | Download | Source |
-|----------|---------------|----------|----------|--------|
+| 软件 | 最新版本 | 发布日期 | 下载链接 | 来源 |
+|------|---------|---------|---------|------|
 | [**LocalSend**](https://localsend.org) | `1.17.0` | 2025-02-20 | [win-x64](https://github.com/localsend/localsend/releases/download/v1.17.0/LocalSend-1.17.0-windows-x86-64.exe) · [mac-arm64](https://github.com/localsend/localsend/releases/download/v1.17.0/LocalSend-1.17.0.dmg) | GitHub Release: localsend/localsend |
 | [**Bitwarden Desktop**](https://bitwarden.com/download/) | `2026.3.1` | 2026-04-02 | [win-x64](https://github.com/bitwarden/clients/releases/download/desktop-v2026.3.1/Bitwarden-Installer-2026.3.1.exe) · [mac-universal](https://github.com/bitwarden/clients/releases/download/desktop-v2026.3.1/Bitwarden-2026.3.1-universal.dmg) | GitHub Release: bitwarden/clients |
 | [**Geek Uninstaller**](https://geekuninstaller.com/) | `1.5.3.170` | — | [win-x64](https://geekuninstaller.com/download) | Geek Uninstaller official download page |
@@ -264,8 +264,8 @@ The web page sends a visit beacon to `/api/visit`; download buttons first hit `/
 
 ### System Utilities
 
-| Software | Latest Version | Released | Download | Source |
-|----------|---------------|----------|----------|--------|
+| 软件 | 最新版本 | 发布日期 | 下载链接 | 来源 |
+|------|---------|---------|---------|------|
 | [**NVIDIA App**](https://www.nvidia.com/en-us/software/nvidia-app/) | `2026-05-01` | — | [win-x64](https://www.nvidia.com/en-us/software/nvidia-app/) | Official download page; no public version API |
 | [**TrafficMonitor**](https://github.com/zhongyang219/TrafficMonitor) | `1.86` | 2026-03-29 | [win-x64](https://github.com/zhongyang219/TrafficMonitor/releases/download/V1.86/TrafficMonitor_V1.86_x64.zip) | GitHub Release: zhongyang219/TrafficMonitor |
 | [**Rufus**](https://github.com/pbatard/rufus) | `4.14` | 2026-04-30 | [win-x64](https://github.com/pbatard/rufus/releases/download/v4.14/rufus-4.14.exe) | GitHub Release: pbatard/rufus |
@@ -313,8 +313,8 @@ The web page sends a visit beacon to `/api/visit`; download buttons first hit `/
 
 ### Messaging
 
-| Software | Latest Version | Released | Download | Source |
-|----------|---------------|----------|----------|--------|
+| 软件 | 最新版本 | 发布日期 | 下载链接 | 来源 |
+|------|---------|---------|---------|------|
 | [**Telegram Desktop**](https://github.com/telegramdesktop/tdesktop) | `6.7.8` | 2026-04-24 | [win-x64](https://github.com/telegramdesktop/tdesktop/releases/download/v6.7.8/tsetup.6.7.8.exe) | GitHub Release: telegramdesktop/tdesktop |
 | [**Discord**](https://discord.com/download) | `2026-05-01` | — | [win-x64](https://discord.com/api/download?platform=win) · [mac-universal](https://discord.com/api/download?platform=osx) · [linux-x64](https://discord.com/download) | Official Discord download endpoint; no public version API |
 | [**Slack**](https://slack.com/downloads/) | `2026-05-01` | — | [win-x64](https://slack.com/downloads/windows) · [mac-universal](https://slack.com/downloads/mac) · [linux-x64](https://slack.com/downloads/linux) | Official Slack download page; no public version API |
@@ -332,8 +332,8 @@ The web page sends a visit beacon to `/api/visit`; download buttons first hit `/
 
 ### Productivity
 
-| Software | Latest Version | Released | Download | Source |
-|----------|---------------|----------|----------|--------|
+| 软件 | 最新版本 | 发布日期 | 下载链接 | 来源 |
+|------|---------|---------|---------|------|
 | [**Logseq**](https://github.com/logseq/logseq) | `0.10.15` | 2025-12-01 | [win-x64](https://github.com/logseq/logseq/releases/download/0.10.15/Logseq-win-x64-0.10.15.exe) | GitHub Release: logseq/logseq |
 | [**Joplin**](https://github.com/laurent22/joplin) | `3.5.13` | 2026-02-25 | [win-x64](https://github.com/laurent22/joplin/releases/download/v3.5.13/Joplin-Setup-3.5.13.exe) | GitHub Release: laurent22/joplin |
 | [**MarkText**](https://github.com/marktext/marktext) | `0.17.1` | 2022-03-07 | [win-x64](https://github.com/marktext/marktext/releases/download/v0.17.1/marktext-setup.exe) | GitHub Release: marktext/marktext |
@@ -367,8 +367,8 @@ The web page sends a visit beacon to `/api/visit`; download buttons first hit `/
 
 ### AI Tools
 
-| Software | Latest Version | Released | Download | Source |
-|----------|---------------|----------|----------|--------|
+| 软件 | 最新版本 | 发布日期 | 下载链接 | 来源 |
+|------|---------|---------|---------|------|
 | [**Ollama**](https://github.com/ollama/ollama) | `0.22.1` | 2026-04-28 | [win-x64](https://github.com/ollama/ollama/releases/download/v0.22.1/OllamaSetup.exe) | GitHub Release: ollama/ollama |
 | [**Jan**](https://jan.ai/) | `0.7.9` | 2026-03-23 | [win-x64](https://github.com/janhq/jan/releases/download/v0.7.9/Jan_0.7.9_x64-setup.exe) · [mac-universal](https://github.com/janhq/jan/releases/download/v0.7.9/Jan_0.7.9_universal.dmg) · [linux-x64](https://github.com/janhq/jan/releases/download/v0.7.9/Jan_0.7.9_amd64.AppImage) | GitHub Release: menloresearch/jan |
 | [**GPT4All**](https://www.nomic.ai/gpt4all) | `3.10.0` | 2025-02-25 | [win-x64](https://github.com/nomic-ai/gpt4all/releases/download/v3.10.0/gpt4all-installer-win64-v3.10.0.exe) · [mac-universal](https://github.com/nomic-ai/gpt4all/releases/download/v3.10.0/gpt4all-installer-macos-v3.10.0.dmg) · [linux-x64](https://github.com/nomic-ai/gpt4all/releases/download/v3.10.0/gpt4all-installer-linux-v3.10.0.run) | GitHub Release: nomic-ai/gpt4all |
@@ -387,8 +387,8 @@ The web page sends a visit beacon to `/api/visit`; download buttons first hit `/
 
 ### Media Players
 
-| Software | Latest Version | Released | Download | Source |
-|----------|---------------|----------|----------|--------|
+| 软件 | 最新版本 | 发布日期 | 下载链接 | 来源 |
+|------|---------|---------|---------|------|
 | [**Audacity**](https://github.com/audacity/audacity) | `3.7.7` | 2025-12-11 | [win-x64](https://github.com/audacity/audacity/releases/download/Audacity-3.7.7/audacity-win-3.7.7-64bit.exe) | GitHub Release: audacity/audacity |
 | [**HandBrake**](https://github.com/HandBrake/HandBrake) | `1.11.1` | 2026-03-22 | [win-x64](https://github.com/HandBrake/HandBrake/releases/download/1.11.1/HandBrake-1.11.1-x86_64-Win_GUI.exe) | GitHub Release: HandBrake/HandBrake |
 | [**FFmpeg**](https://github.com/BtbN/FFmpeg-Builds) | `latest` | 2026-04-30 | [win-x64](https://github.com/BtbN/FFmpeg-Builds/releases/download/latest/ffmpeg-master-latest-win64-gpl.zip) | GitHub Release: BtbN/FFmpeg-Builds |
@@ -425,8 +425,8 @@ The web page sends a visit beacon to `/api/visit`; download buttons first hit `/
 
 ### Security & Privacy
 
-| Software | Latest Version | Released | Download | Source |
-|----------|---------------|----------|----------|--------|
+| 软件 | 最新版本 | 发布日期 | 下载链接 | 来源 |
+|------|---------|---------|---------|------|
 | [**age**](https://github.com/FiloSottile/age) | `1.3.1` | 2025-12-28 | [win-x64](https://github.com/FiloSottile/age/releases/download/v1.3.1/age-v1.3.1-windows-amd64.zip) · [mac-arm64](https://github.com/FiloSottile/age/releases/download/v1.3.1/age-v1.3.1-darwin-arm64.tar.gz) · [linux-x64](https://github.com/FiloSottile/age/releases/download/v1.3.1/age-v1.3.1-linux-amd64.tar.gz) | GitHub Release: FiloSottile/age |
 | [**sops**](https://github.com/getsops/sops) | `2026-05-01` | — | [win-x64](https://github.com/getsops/sops/releases) · [mac-arm64](https://github.com/getsops/sops/releases) · [linux-x64](https://github.com/getsops/sops/releases) | Official project download page; no stable public release asset API |
 | [**YubiKey Manager**](https://github.com/Yubico/yubikey-manager) | `2026-05-01` | — | [win-x64](https://github.com/Yubico/yubikey-manager/releases) · [mac-arm64](https://github.com/Yubico/yubikey-manager/releases) | Official project download page; no stable public release asset API |
@@ -440,8 +440,8 @@ The web page sends a visit beacon to `/api/visit`; download buttons first hit `/
 
 ### Cloud & DevOps
 
-| Software | Latest Version | Released | Download | Source |
-|----------|---------------|----------|----------|--------|
+| 软件 | 最新版本 | 发布日期 | 下载链接 | 来源 |
+|------|---------|---------|---------|------|
 | [**Docker Compose**](https://github.com/docker/compose) | `5.1.3` | 2026-04-15 | [win-x64](https://github.com/docker/compose/releases/download/v5.1.3/docker-compose-windows-x86_64.exe) · [mac-arm64](https://github.com/docker/compose/releases/download/v5.1.3/docker-compose-darwin-aarch64) · [linux-x64](https://github.com/docker/compose/releases/download/v5.1.3/docker-compose-linux-x86_64) | GitHub Release: docker/compose |
 | [**k9s**](https://github.com/derailed/k9s) | `0.50.18` | 2026-01-11 | [win-x64](https://github.com/derailed/k9s/releases/download/v0.50.18/k9s_Windows_amd64.zip) · [mac-arm64](https://github.com/derailed/k9s/releases/download/v0.50.18/k9s_Darwin_arm64.tar.gz) · [linux-x64](https://github.com/derailed/k9s/releases/download/v0.50.18/k9s_Linux_amd64.tar.gz) | GitHub Release: derailed/k9s |
 | [**Helm**](https://helm.sh/docs/intro/install/) | `2026-05-01` | — | [win-x64](https://helm.sh/docs/intro/install/) · [mac-arm64](https://helm.sh/docs/intro/install/) · [linux-x64](https://helm.sh/docs/intro/install/) | Official project download page; no stable public release asset API |
@@ -457,82 +457,82 @@ The web page sends a visit beacon to `/api/visit`; download buttons first hit `/
 
 ---
 
-## 🔧 Adding New Software
+## 🔧 添加新软件
 
-The project's "control panel" is [`packages.yaml`](packages.yaml) in the repository root. To add a new software item, simply append an entry:
+仓库的"控制面板"是根目录的 [`packages.yaml`](packages.yaml)。要加新软件，只需追加一项：
 
 ```yaml
-  - id: powertoys                    # unique slug
-    name: PowerToys                  # display name
-    category: Utilities              # README grouping
-    fetcher: github_release          # fetcher plugin (this one works for most)
+  - id: powertoys                    # 唯一短标识
+    name: PowerToys                  # 显示名
+    category: 通用工具               # README 分组
+    fetcher: github_release          # 抓取器（多数情况选这个）
     args:
       repo: microsoft/PowerToys
       assets:
         - { platform: win-x64, pattern: "PowerToysUserSetup-*-x64.exe" }
 ```
 
-After committing, the scheduled task (or an immediate push trigger) will pick it up on the next run, and the new row will appear in the README table.
+提交后定时任务（或 push 时立即触发）会在下次运行时自动抓取，README 表格里就会出现新行。
 
-### Available Fetchers
+### 可用的 fetcher
 
-| Fetcher | Use Case | Key `args` Fields | Version Source | Download Link |
-|---------|----------|-------------------|----------------|---------------|
-| `github_release` | Software published via GitHub Releases (**default choice**) | `repo`, `assets[].{platform, pattern}` | Release tag | Direct (GitHub asset) |
-| `vscode_official` | VS Code | `builds[].{platform, build}` (`build` is VSCode API `platform.os`, e.g. `win32-x64-user`) | VSCode Build Manifest API | Direct |
-| `chrome_official` | Google Chrome | `platforms[].{platform, os_key, channel, download_url}` | Google Version History API | Depends on `download_url` |
-| `steam_official` | Steam client | `platforms[].{platform, download_url}` | Valve Client Update API (build timestamp) | Depends on `download_url` |
-| `windows11_fido` | Windows 11 ISO | `lang` (default `Chinese (Simplified)`), `edition` (default `Pro`), `arch` (default `x64`) | ISO URL parsing (e.g. `25H2`) | Direct, ~24h expiry |
-| `ubuntu_releases` | Ubuntu | `platforms[].{platform, pattern}` | Ubuntu releases index | Direct |
-| `fedora_releases` | Fedora Workstation | `platforms[].{platform, pattern}` | Fedora release directory | Direct |
-| `baidunetdisk` | Baidu Netdisk | `platforms[].{platform, download_url}` | Page `__V20_VER__` (build date, not client version) | Depends on `download_url` |
-| `geek` | Geek Uninstaller | `platforms[].{platform, download_url}` | Official HTML parsing | Depends on `download_url` |
-| `everything` | Everything Search | `platforms[].{platform, download_url}` | Official HTML parsing | Depends on `download_url` |
-| `wechat_official` | WeChat PC | `platforms[].{platform, download_url}` | Official HTML parsing; falls back to today's date | Depends on `download_url` |
-| `wegame_official` | WeGame | `platforms[].{platform, download_url?}` (can be omitted entirely) | Today's date (SPA, no public API) | Fixed redirect page |
-| `nvidia_app` | NVIDIA App | `platforms[].{platform, download_url?}` (can be omitted entirely) | Today's date (SPA, no public API) | Fixed redirect page |
-| `qq_official` | Tencent QQ (QQNT) | `platforms[].{platform, download_url?}` (can be omitted entirely) | Today's date (SPA, no public API) | Fixed redirect page |
-| `yy_official` | YY Voice | `platforms[].{platform, download_url?}` (can be omitted entirely) | Today's date (SPA, no public API) | Fixed redirect page |
+| fetcher | 适用场景 | 关键 args 字段 | 版本号来源 | 下载链接 |
+|---------|---------|--------------|----------|--------|
+| `github_release` | GitHub Releases 发布的软件（**通用首选**） | `repo`、`assets[].{platform, pattern}` | Release tag | 直链（GitHub asset） |
+| `vscode_official` | VS Code | `builds[].{platform, build}`（`build` 为 VSCode API 的 `platform.os`，如 `win32-x64-user`） | VSCode Build Manifest API | 直链 |
+| `chrome_official` | Google Chrome | `platforms[].{platform, os_key, channel, download_url}` | Google Version History API | 取决于 `download_url` |
+| `steam_official` | Steam 客户端 | `platforms[].{platform, download_url}` | Valve Client Update API（构建时间戳） | 取决于 `download_url` |
+| `windows11_fido` | Windows 11 ISO | `lang`（默认 `Chinese (Simplified)`）、`edition`（默认 `Pro`）、`arch`（默认 `x64`） | ISO URL 解析（如 `24H2`） | 直链，约 24 h 有效 |
+| `ubuntu_releases` | Ubuntu | `platforms[].{platform, pattern}` | Ubuntu releases index | 直链 |
+| `fedora_releases` | Fedora Workstation | `platforms[].{platform, pattern}` | Fedora release directory | 直链 |
+| `baidunetdisk` | 百度网盘 | `platforms[].{platform, download_url}` | 页面 `__V20_VER__`（构建日期，非客户端版本） | 取决于 `download_url` |
+| `geek` | Geek Uninstaller | `platforms[].{platform, download_url}` | 官网 HTML 解析 | 取决于 `download_url` |
+| `everything` | Everything 搜索 | `platforms[].{platform, download_url}` | 官网 HTML 解析 | 取决于 `download_url` |
+| `wechat_official` | 微信 PC 客户端 | `platforms[].{platform, download_url}` | 官网 HTML 解析；失败时退为当天日期 | 取决于 `download_url` |
+| `wegame_official` | WeGame | `platforms[].{platform, download_url?}`（可整体省略；缺 URL 时使用下载页） | 当天日期（SPA，无公开 API） | 固定跳转页 |
+| `nvidia_app` | NVIDIA App | `platforms[].{platform, download_url?}`（可整体省略；缺 URL 时使用下载页） | 当天日期（SPA，无公开 API） | 固定跳转页 |
+| `qq_official` | 腾讯 QQ（QQNT） | `platforms[].{platform, download_url?}`（可整体省略；缺 URL 时使用下载页） | 当天日期（SPA，无公开 API） | 固定跳转页 |
+| `yy_official` | YY 语音 | `platforms[].{platform, download_url?}`（可整体省略；缺 URL 时使用下载页） | 当天日期（SPA，无公开 API） | 固定跳转页 |
 
-**`github_release` Extended Parameters**
+**`github_release` 扩展参数**
 
-- `tag_pattern` (regex) — For monorepos, filters release tags to find the target sub-product.
-- `release_scan_pages` (integer, default `1`) — Only meaningful with `tag_pattern`; controls pagination depth (30 releases per page).
-- `warnings` — Runtime field, not configured in yaml. When a platform's `pattern` doesn't match any asset in the release, that platform is skipped and recorded in `warnings`.
+- `tag_pattern`（正则）—— monorepo 场景，用正则从 release 列表中筛出目标子产品的 tag。
+- `release_scan_pages`（整数，默认 `1`）—— 仅当 `tag_pattern` 存在时有意义，控制翻页深度（每页 30 个 release）。
+- `warnings` —— 运行时字段，不在 yaml 中配置。当某个 platform 的 `pattern` 在当次 Release 的 assets 里未找到匹配文件时，该 platform 跳过并记入 `warnings`。
 
-**Direct Links vs Landing Pages**
+**直链 vs 跳转页**
 
-The system automatically determines link type from the `download_url` file extension:
+系统根据 `download_url` 的路径后缀自动判断类型，无需手动标注：
 
-- **Direct**: URL ends with `.exe` / `.dmg` / `.iso` / `.zip` / `.tar.gz` / `.msi` / `.pkg` etc., download starts immediately. Shown as **filled badges** in the web UI.
-- **Landing page**: URL points to a download webpage (no file extension), user must manually click download on that page. Shown as **outlined badges** in the web UI.
+- **直链**：URL 以 `.exe` / `.dmg` / `.iso` / `.zip` / `.tar.gz` / `.msi` / `.pkg` 等文件扩展名结尾，点击立即开始下载。Web 界面中对应**实心填充**徽章。
+- **跳转页**：URL 指向一个下载网页（无文件后缀），点击后需在页面上再手动选择下载。Web 界面中对应**空心描边**徽章。
 
-If the URL extension cannot be reliably determined, explicitly set `link_kind: direct` or `link_kind: landing_page` in the platform config in `packages.yaml`.
+如 URL 后缀无法可靠判断，可在 `packages.yaml` 的 platform 配置中显式写 `link_kind: direct` 或 `link_kind: landing_page`。
 
-**Version Field Semantics**
+**版本字段语义**
 
-Each entry in `data/latest.json` includes `version_kind` and `version_source`:
+`data/latest.json` 每个软件条目都会写入 `version_kind` 和 `version_source`：
 
-- `release_version`: Upstream release version, e.g. GitHub Release tag, official manifest.
-- `release_label`: Release label, e.g. `25H2` from Windows 11 ISO filename.
-- `build_date` / `page_date`: When upstream only exposes a build time or page update date.
-- `sync_date`: Upstream has no public version API; this field indicates the sync date.
+- `release_version`：上游发布版本号，例如 GitHub Release tag、官方 manifest。
+- `release_label`：发行标签，例如 Windows 11 ISO 文件名中的 `25H2`。
+- `build_date` / `page_date`：上游只暴露构建时间或页面更新时间时，展示为日期。
+- `sync_date`：上游没有公开版本 API，只能确认下载入口，本字段表示本次同步日期。
 
-Current data contract version: `schema_version: 2`.
+当前数据契约版本为 `schema_version: 2`。
 
 ---
 
-## ⚙️ Workflow
+## ⚙️ 工作流
 
-- **Scheduled**: Daily at UTC `01:00` (Beijing time 09:00)
-- **Manual**: Run workflow from the Actions page
-- **Config changes**: Triggered immediately on `packages.yaml` push
+- **定时**：每日 UTC `01:00`（北京时间 09:00）
+- **手动**：仓库 Actions 页面点 *Run workflow*
+- **配置变更**：`packages.yaml` 改动 push 时立即触发
 
-Workflow file: [`.github/workflows/sync.yml`](.github/workflows/sync.yml)
+工作流文件：[`.github/workflows/sync.yml`](.github/workflows/sync.yml)
 
-Raw fetched data: [`data/latest.json`](data/latest.json)
+抓取结果原始数据：[`data/latest.json`](data/latest.json)
 
-For local debugging, you can sync only specific packages:
+本地调试时可以只同步部分软件：
 
 ```bash
 python -m scripts.sync --only vscode,chrome
@@ -542,9 +542,9 @@ python -m scripts.render
 
 ---
 
-## 🤝 Credits
+## 🤝 致谢
 
-- [pbatard/Fido](https://github.com/pbatard/Fido) — Windows ISO direct link generator, GPL v3
-- All upstream official sources
+- [pbatard/Fido](https://github.com/pbatard/Fido) —— Windows ISO 直链生成器，GPL v3 协议
+- 各软件上游官方源
 
-> This repository is maintained automatically by GitHub Actions. README content is auto-generated — do not edit manually (overwritten on each sync).
+> 本仓库由 GitHub Actions 自动维护，README 内容请勿手动修改（每次同步会被覆盖）。
