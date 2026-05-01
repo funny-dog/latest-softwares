@@ -1,3 +1,5 @@
+[English](README.md) | [中文](README_zh.md)
+
 # 🚀 Latest Windows / macOS Software Releases
 
 > **Latest version metadata** automatically synced from official upstream sources daily by GitHub Actions.

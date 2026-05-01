@@ -1,3 +1,5 @@
+[English](README.md) | [中文](README_zh.md)
+
 # 🚀 最新 Windows / macOS 软件速递
 
 > 由 GitHub Actions 每日自动同步上游官方源的**最新版本元数据**。
