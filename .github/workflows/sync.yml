@@ -348,9 +348,10 @@ jobs:
           # 同步后端代码和包数据
           rsync -avz --delete \
             -e "$SSH_CMD" \
-            --exclude '__pycache__' --exclude '.venv' --exclude 'tests' \
-            --exclude 'web/' --exclude 'dist/' --exclude '.github/' \
-            --exclude 'scripts/' --exclude '.fastapicloud/' \
+            --exclude '__pycache__' --exclude '.venv' --exclude 'venv/' \
+            --exclude 'tests/' --exclude 'web/' --exclude 'dist/' \
+            --exclude '.github/' --exclude 'scripts/' --exclude '.fastapicloud/' \
+            --exclude '.ruff_cache/' --exclude '.mypy_cache/' --exclude '.pytest_cache/' \
             ./ "$SSH_USER@$SSH_HOST:/opt/latest-softwares/"
           # 同步包数据到后端目录
           rsync -avz \

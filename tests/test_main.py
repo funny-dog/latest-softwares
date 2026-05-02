@@ -9,7 +9,7 @@ import main
 
 def test_download_redirect_records_metrics(tmp_path, monkeypatch, capsys):
     data_file = tmp_path / "latest.json"
-    stats_file = tmp_path / "stats.json"
+    db_file = tmp_path / "metrics.db"
     data_file.write_text(
         json.dumps(
             {
@@ -34,7 +34,7 @@ def test_download_redirect_records_metrics(tmp_path, monkeypatch, capsys):
         encoding="utf-8",
     )
     monkeypatch.setattr(main, "DATA_FILE", data_file)
-    monkeypatch.setattr(main, "STATS_FILE", stats_file)
+    monkeypatch.setattr(main, "DB_PATH", db_file)
 
     client = TestClient(main.app)
 
@@ -57,8 +57,8 @@ def test_download_redirect_records_metrics(tmp_path, monkeypatch, capsys):
 
 
 def test_visit_endpoint_records_page_views(tmp_path, monkeypatch, capsys):
-    stats_file = tmp_path / "stats.json"
-    monkeypatch.setattr(main, "STATS_FILE", stats_file)
+    db_file = tmp_path / "metrics.db"
+    monkeypatch.setattr(main, "DB_PATH", db_file)
 
     client = TestClient(main.app)
 
