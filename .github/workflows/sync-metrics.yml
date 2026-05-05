@@ -12,6 +12,10 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: sync-site-metrics
+  cancel-in-progress: false
+
 jobs:
   sync-metrics:
     runs-on: ubuntu-latest
@@ -26,15 +30,18 @@ jobs:
         env:
           METRICS_URL: "https://latest-softwares-064facea.fastapicloud.dev/api/metrics"
         run: |
-          HTTP_CODE=$(curl -sSL -o /tmp/metrics.json -w '%{http_code}' --max-time 15 "$METRICS_URL" || echo "000")
-
-          if [ "$HTTP_CODE" -ge 200 ] && [ "$HTTP_CODE" -lt 300 ]; then
-            echo "status=ok" >> "$GITHUB_OUTPUT"
-            echo "Metrics fetched successfully (HTTP $HTTP_CODE)"
-          else
-            echo "status=fail" >> "$GITHUB_OUTPUT"
-            echo "Failed to fetch metrics (HTTP $HTTP_CODE), skipping commit" >&2
-          fi
+          for attempt in 1 2 3; do
+            HTTP_CODE=$(curl -sSL -o /tmp/metrics.json -w '%{http_code}' --max-time 15 "$METRICS_URL" || echo "000")
+            if [ "$HTTP_CODE" -ge 200 ] && [ "$HTTP_CODE" -lt 300 ]; then
+              echo "status=ok" >> "$GITHUB_OUTPUT"
+              echo "Metrics fetched successfully (HTTP $HTTP_CODE, attempt $attempt)"
+              exit 0
+            fi
+            echo "Attempt $attempt failed (HTTP $HTTP_CODE)" >&2
+            [ "$attempt" -lt 3 ] && sleep 5
+          done
+          echo "status=fail" >> "$GITHUB_OUTPUT"
+          echo "Failed to fetch metrics after 3 attempts (HTTP $HTTP_CODE), skipping commit" >&2
 
       - name: Update metrics file
         if: steps.fetch.outputs.status == 'ok'
