@@ -20,6 +20,8 @@ import threading
 from datetime import datetime, timezone
 from pathlib import Path
 
+from contextlib import asynccontextmanager
+
 from fastapi import FastAPI, HTTPException
 from fastapi.responses import JSONResponse, RedirectResponse
 from fastapi.staticfiles import StaticFiles
@@ -29,16 +31,27 @@ from scripts.editions import filter_data_by_edition
 ROOT = Path(__file__).resolve().parent
 DATA_FILE = ROOT / "data" / "latest.json"
 DIST_DIR = ROOT / "dist"
-# SQLite 数据库路径（持久化存储）
 DB_PATH = Path(
     os.environ.get(
         "LATEST_SOFTWARES_STATS_DB", str(ROOT / "data" / "site_metrics.db")
+    )
+)
+SEED_FILE = Path(
+    os.environ.get(
+        "LATEST_SOFTWARES_STATS_SEED", str(ROOT / "data" / "site_metrics.json")
     )
 )
 STATS_LOCK = threading.Lock()
 
 # This deployment serves the international edition only.
 EDITION = "intl"
+
+
+@asynccontextmanager
+async def _lifespan(_app: FastAPI):
+    _seed_db_from_json()
+    yield
+
 
 app = FastAPI(
     title="Latest Softwares API (International)",
@@ -47,6 +60,7 @@ app = FastAPI(
         "and static web frontend for the international edition."
     ),
     version="1.0.0",
+    lifespan=_lifespan,
 )
 
 
@@ -62,7 +76,6 @@ def _utc_now_iso() -> str:
 
 
 def _init_db() -> None:
-    """初始化 SQLite 数据库表结构。"""
     DB_PATH.parent.mkdir(parents=True, exist_ok=True)
     conn = sqlite3.connect(str(DB_PATH))
     conn.execute(
@@ -91,6 +104,57 @@ def _init_db() -> None:
         )
         """
     )
+    conn.commit()
+    conn.close()
+
+
+def _seed_db_from_json() -> None:
+    if not SEED_FILE.exists():
+        return
+    try:
+        seed = json.loads(SEED_FILE.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        return
+    if not seed.get("visits") and not seed.get("downloads"):
+        return
+    _init_db()
+    conn = sqlite3.connect(str(DB_PATH))
+    row = conn.execute(
+        "SELECT value FROM metrics WHERE key = 'visits_total'"
+    ).fetchone()
+    if row is not None and int(row[0]) > 0:
+        conn.close()
+        return
+    visits_total = seed.get("visits", {}).get("total", 0)
+    if visits_total:
+        conn.execute(
+            "INSERT INTO metrics (key, value) VALUES ('visits_total', ?)",
+            (str(visits_total),),
+        )
+    for path, count in seed.get("visits", {}).get("paths", {}).items():
+        if count:
+            conn.execute(
+                "INSERT INTO visits (path, count) VALUES (?, ?)", (path, count)
+            )
+    downloads_total = seed.get("downloads", {}).get("total", 0)
+    if downloads_total:
+        conn.execute(
+            "INSERT INTO metrics (key, value) VALUES ('downloads_total', ?)",
+            (str(downloads_total),),
+        )
+    for asset_key, count in seed.get("downloads", {}).get("assets", {}).items():
+        if ":" in asset_key and count:
+            package_id, platform = asset_key.split(":", 1)
+            conn.execute(
+                "INSERT INTO downloads (package_id, platform, count) VALUES (?, ?, ?)",
+                (package_id, platform, count),
+            )
+    updated_at = seed.get("updated_at")
+    if updated_at:
+        conn.execute(
+            "INSERT INTO metrics (key, value) VALUES ('updated_at', ?)",
+            (updated_at,),
+        )
     conn.commit()
     conn.close()
 
@@ -212,8 +276,6 @@ def _increment_download(package_id: str, platform: str) -> None:
         )
         conn.commit()
         conn.close()
-
-
 
 
 def _log_metric_event(event: str, **payload: str) -> None:

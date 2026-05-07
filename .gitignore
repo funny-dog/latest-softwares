@@ -31,6 +31,9 @@ data/link-health.json
 # 结构化同步日志（运行时追加，不入库）
 data/sync_errors.jsonl
 
+# SQLite 运行时数据库（FastAPI Cloud 临时存储，不入库）
+data/site_metrics.db
+
 # Node.js
 node_modules/
 

@@ -379,6 +379,18 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v6
 
+      - name: Fetch current metrics from live instance
+        env:
+          METRICS_URL: "https://latest-softwares-064facea.fastapicloud.dev/api/metrics"
+        run: |
+          HTTP_CODE=$(curl -sSL -o data/site_metrics.json -w '%{http_code}' --max-time 15 "$METRICS_URL" || echo "000")
+          if [ "$HTTP_CODE" -ge 200 ] && [ "$HTTP_CODE" -lt 300 ]; then
+            echo "Metrics fetched (HTTP $HTTP_CODE)"
+          else
+            echo "Metrics fetch failed (HTTP $HTTP_CODE), using repo copy"
+            rm -f data/site_metrics.json
+          fi
+
       - uses: actions/setup-node@v4
         with:
           node-version: '20'
