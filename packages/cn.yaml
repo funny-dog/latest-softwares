@@ -31,24 +31,6 @@ packages:
       pattern: v2raya_linux_x64_*.deb
   desc_cn: V2Ray 的 Web GUI 客户端，支持 VMess/VLESS/SS/Trojan 等协议
   desc_en: Web GUI client for V2Ray supporting VMess/VLESS/SS/Trojan protocols
-- id: qv2ray
-  name: Qv2ray
-  category: Network & Proxy
-  editions:
-  - cn
-  homepage: https://github.com/Qv2ray/Qv2ray
-  fetcher: github_release
-  args:
-    repo: Qv2ray/Qv2ray
-    assets:
-    - platform: win-x64
-      pattern: Qv2ray-*-Windows-x64.exe
-    - platform: mac-x64
-      pattern: Qv2ray-*-macOS-x64.dmg
-    - platform: linux-x64
-      pattern: Qv2ray-*-Linux-x64.AppImage
-  desc_cn: 跨平台 V2Ray/SSR/Trojan GUI 客户端，插件式可扩展
-  desc_en: Cross-platform V2Ray/SSR/Trojan GUI client with plugin support
 - id: subconverter
   name: Subconverter
   category: Network & Proxy
@@ -81,24 +63,6 @@ packages:
       pattern: Sub-Store-*
   desc_cn: 高级订阅管理器，支持 QX/Loon/Surge/Shadowrocket 等
   desc_en: Advanced subscription manager for QX, Loon, Surge, Shadowrocket
-- id: anytls
-  name: anytls-go
-  category: Network & Proxy
-  editions:
-  - cn
-  homepage: https://github.com/anytls/anytls-go
-  fetcher: github_release
-  args:
-    repo: anytls/anytls-go
-    assets:
-    - platform: win-x64
-      pattern: anytls_*_windows_amd64.zip
-    - platform: mac-arm64
-      pattern: anytls_*_darwin_arm64.zip
-    - platform: linux-x64
-      pattern: anytls_*_linux_amd64.zip
-  desc_cn: 新一代 TLS 代理协议工具
-  desc_en: Next-generation TLS proxy protocol tool
 - id: frp
   name: frp
   category: Network & Proxy
@@ -139,46 +103,6 @@ packages:
       pattern: alist-linux-amd64.tar.gz
   desc_cn: 支持多存储的文件列表/WebDAV 程序
   desc_en: File list/WebDAV program supporting multiple storage providers
-- id: cloudreve
-  name: Cloudreve
-  category: Network & Proxy
-  editions:
-  - cn
-  homepage: https://github.com/cloudreve/cloudreve
-  fetcher: github_release
-  args:
-    repo: cloudreve/cloudreve
-    assets:
-    - platform: win-x64
-      pattern: cloudreve_*_windows_amd64.zip
-    - platform: mac-arm64
-      pattern: cloudreve_*_darwin_arm64.tar.gz
-    - platform: mac-x64
-      pattern: cloudreve_*_darwin_amd64.tar.gz
-    - platform: linux-x64
-      pattern: cloudreve_*_linux_amd64.tar.gz
-  desc_cn: 自建网盘/云盘系统，支持多存储后端
-  desc_en: Self-hosted file management and sharing system with multi-storage support
-- id: gopeed
-  name: Gopeed
-  category: Download Tools
-  editions:
-  - cn
-  homepage: https://github.com/GopeedLab/gopeed
-  fetcher: github_release
-  args:
-    repo: GopeedLab/gopeed
-    assets:
-    - platform: win-x64
-      pattern: Gopeed-*-windows-amd64.exe
-    - platform: mac-arm64
-      pattern: Gopeed-*-macos-arm64.dmg
-    - platform: mac-x64
-      pattern: Gopeed-*-macos-amd64.dmg
-    - platform: linux-x64
-      pattern: Gopeed-*-linux-amd64.AppImage
-  desc_cn: 高速下载管理器，支持 HTTP/BT/磁力/ed2k，跨平台
-  desc_en: Fast download manager for HTTP, BitTorrent, Magnet, and ed2k
 - id: biliup
   name: biliup
   category: Download Tools
@@ -197,66 +121,6 @@ packages:
       pattern: biliupR-*-x86_64-linux.tar.xz
   desc_cn: B 站直播/视频录制上传工具
   desc_en: Bilibili live stream/video recording and uploading tool
-- id: yazi
-  name: Yazi
-  category: Developer Tools
-  editions:
-  - cn
-  homepage: https://github.com/sxyazi/yazi
-  fetcher: github_release
-  args:
-    repo: sxyazi/yazi
-    assets:
-    - platform: win-x64
-      pattern: yazi-x86_64-pc-windows-msvc.zip
-    - platform: mac-arm64
-      pattern: yazi-aarch64-apple-darwin.zip
-    - platform: mac-x64
-      pattern: yazi-x86_64-apple-darwin.zip
-    - platform: linux-x64
-      pattern: yazi-x86_64-unknown-linux-gnu.zip
-  desc_cn: 用 Rust 编写的超快终端文件管理器
-  desc_en: Blazing fast terminal file manager written in Rust
-- id: eza
-  name: eza
-  category: Developer Tools
-  editions:
-  - cn
-  homepage: https://github.com/eza-community/eza
-  fetcher: github_release
-  args:
-    repo: eza-community/eza
-    assets:
-    - platform: win-x64
-      pattern: eza.exe_x86_64-pc-windows-gnu.zip
-    - platform: mac-arm64
-      pattern: eza_aarch64-apple-darwin.tar.gz
-    - platform: mac-x64
-      pattern: eza_x86_64-apple-darwin.tar.gz
-    - platform: linux-x64
-      pattern: eza_x86_64-unknown-linux-gnu.tar.gz
-  desc_cn: 现代 ls 替代品，支持颜色和 Git 状态
-  desc_en: Modern ls replacement with colors and Git status
-- id: rye
-  name: Rye
-  category: Developer Tools
-  editions:
-  - cn
-  homepage: https://github.com/astral-sh/rye
-  fetcher: github_release
-  args:
-    repo: astral-sh/rye
-    assets:
-    - platform: win-x64
-      pattern: rye-x86_64-pc-windows-msvc.zip
-    - platform: mac-arm64
-      pattern: rye-aarch64-apple-darwin.tar.gz
-    - platform: mac-x64
-      pattern: rye-x86_64-apple-darwin.tar.gz
-    - platform: linux-x64
-      pattern: rye-x86_64-unknown-linux-gnu.tar.gz
-  desc_cn: Python 项目管理工具，统一 pip/virtualenv/poetry
-  desc_en: Python project management tool unifying pip/virtualenv/poetry
 - id: another-redis-desktop-manager
   name: Another Redis Desktop Manager
   category: Developer Tools
@@ -331,58 +195,6 @@ packages:
       pattern: bruno_*_x64_mac.dmg
   desc_cn: 开源 API 客户端，Insomnia/Postman 替代品
   desc_en: Open-source API client, alternative to Insomnia/Postman
-- id: hoppscotch
-  name: Hoppscotch
-  category: Developer Tools
-  editions:
-  - cn
-  homepage: https://github.com/hoppscotch/hoppscotch
-  fetcher: github_release
-  args:
-    repo: hoppscotch/hoppscotch
-    assets:
-    - platform: win-x64
-      pattern: Hoppscotch-*-win-x64.exe
-    - platform: mac-arm64
-      pattern: Hoppscotch-*-mac-arm64.dmg
-    - platform: linux-x64
-      pattern: Hoppscotch-*-linux-x64.AppImage
-  desc_cn: 开源 API 开发生态系统，轻量快速
-  desc_en: Open-source API development ecosystem, lightweight and fast
-- id: prusaslicer
-  name: PrusaSlicer
-  category: Utilities
-  editions:
-  - cn
-  homepage: https://github.com/prusa3d/PrusaSlicer
-  fetcher: github_release
-  args:
-    repo: prusa3d/PrusaSlicer
-    assets:
-    - platform: win-x64
-      pattern: PrusaSlicer-*.zip
-    - platform: mac-x64
-      pattern: PrusaSlicer-*.dmg
-  desc_cn: 专业 3D 打印切片软件
-  desc_en: Professional 3D printing slicer software
-- id: spotube
-  name: Spotube
-  category: Media Players
-  editions:
-  - cn
-  homepage: https://github.com/KRTirtho/spotube
-  fetcher: github_release
-  args:
-    repo: KRTirtho/spotube
-    assets:
-    - platform: win-x64
-      pattern: Spotube-windows-x86_64-setup.exe
-    - platform: mac-x64
-      pattern: Spotube-macos-universal.dmg
-    - platform: linux-x64
-      pattern: Spotube-linux-x86_64.AppImage
-  desc_cn: 免费 Spotify 客户端，无需 Premium
-  desc_en: Free Spotify client, no Premium required
 - id: nexttrace
   name: NextTrace
   category: System Utilities
@@ -403,52 +215,6 @@ packages:
       pattern: nexttrace_linux_amd64
   desc_cn: 开源可视化路由追踪工具
   desc_en: Open source visual route tracking CLI tool
-- id: podman
-  name: Podman
-  category: Cloud & DevOps
-  editions:
-  - cn
-  homepage: https://podman.io
-  fetcher: github_release
-  args:
-    repo: containers/podman
-    assets:
-    - platform: win-x64
-      pattern: podman-*-setup.exe
-    - platform: mac-arm64
-      pattern: podman-installer-macos-arm64.pkg
-    - platform: mac-x64
-      pattern: podman-installer-macos-amd64.pkg
-  desc_cn: 无守护进程的容器引擎，Docker 替代品
-  desc_en: Daemonless container engine, Docker alternative
-- id: quickemu
-  name: Quickemu
-  category: System Utilities
-  editions:
-  - cn
-  homepage: https://github.com/quickemu-project/quickemu
-  fetcher: github_release
-  args:
-    repo: quickemu-project/quickemu
-    assets:
-    - platform: linux-x64
-      pattern: quickemu_*_all.deb
-  desc_cn: 快速创建和运行优化的虚拟机
-  desc_en: Quickly create and run optimized virtual machines
-- id: netdata
-  name: Netdata
-  category: Cloud & DevOps
-  editions:
-  - cn
-  homepage: https://github.com/netdata/netdata
-  fetcher: github_release
-  args:
-    repo: netdata/netdata
-    assets:
-    - platform: linux-x64
-      pattern: netdata-x86_64-*.gz.run
-  desc_cn: 实时性能和健康监控平台
-  desc_en: Real-time performance and health monitoring platform
 - id: stirling-pdf
   name: Stirling-PDF
   category: Utilities
@@ -483,20 +249,6 @@ packages:
       pattern: vaultwarden-*-x86_64-*.tar.gz
   desc_cn: Bitwarden 兼容的自托管密码管理服务器
   desc_en: Unofficial Bitwarden compatible self-hosted password manager
-- id: authelia
-  name: Authelia
-  category: Security & Privacy
-  editions:
-  - cn
-  homepage: https://github.com/authelia/authelia
-  fetcher: github_release
-  args:
-    repo: authelia/authelia
-    assets:
-    - platform: linux-x64
-      pattern: authelia-*-linux-amd64.tar.gz
-  desc_cn: 开源认证和授权服务器，支持双因素认证
-  desc_en: Open-source authentication and authorization server with 2FA
 - id: prometheus
   name: Prometheus
   category: Cloud & DevOps
@@ -557,46 +309,6 @@ packages:
       pattern: NocoDB-*.AppImage
   desc_cn: 开源 Airtable 替代品，将数据库转为智能表格
   desc_en: Open-source Airtable alternative, turns any database into smart spreadsheet
-- id: pocketbase
-  name: PocketBase
-  category: Developer Tools
-  editions:
-  - cn
-  homepage: https://github.com/pocketbase/pocketbase
-  fetcher: github_release
-  args:
-    repo: pocketbase/pocketbase
-    assets:
-    - platform: win-x64
-      pattern: pocketbase_*_windows_amd64.zip
-    - platform: mac-arm64
-      pattern: pocketbase_*_darwin_arm64.zip
-    - platform: mac-x64
-      pattern: pocketbase_*_darwin_amd64.zip
-    - platform: linux-x64
-      pattern: pocketbase_*_linux_amd64.zip
-  desc_cn: 单文件后端即服务，含数据库、认证和 API
-  desc_en: Single file backend-as-a-service with database, auth, and API
-- id: chatgpt-desktop
-  name: ChatGPT Desktop
-  category: AI Tools
-  editions:
-  - cn
-  homepage: https://github.com/lencx/ChatGPT
-  fetcher: github_release
-  args:
-    repo: lencx/ChatGPT
-    assets:
-    - platform: win-x64
-      pattern: ChatGPT_*_windows_x86_64.msi
-    - platform: mac-arm64
-      pattern: ChatGPT_*_macos_aarch64.dmg
-    - platform: mac-x64
-      pattern: ChatGPT_*_macos_x86_64.dmg
-    - platform: linux-x64
-      pattern: ChatGPT_*_linux_x86_64.deb
-  desc_cn: ChatGPT 桌面客户端，支持快捷键和系统托盘
-  desc_en: ChatGPT desktop app with keyboard shortcuts and system tray
 - id: lobe-chat
   name: LobeHub
   category: AI Tools
@@ -687,44 +399,6 @@ packages:
       pattern: Bitwarden-*-x64.dmg
   desc_cn: 开源密码管理器客户端，跨平台同步
   desc_en: Open-source password manager client with cross-platform sync
-- id: ueli
-  name: Ueli
-  category: System Utilities
-  editions:
-  - cn
-  homepage: https://github.com/oliverschwendener/ueli
-  fetcher: github_release
-  args:
-    repo: oliverschwendener/ueli
-    assets:
-    - platform: win-x64
-      pattern: Ueli-*-win.zip
-    - platform: mac-arm64
-      pattern: Ueli-*-arm64.dmg
-    - platform: mac-x64
-      pattern: Ueli-*-mac.zip
-    - platform: linux-x64
-      pattern: Ueli-*-linux-x86_64.deb
-  desc_cn: 跨平台应用启动器，快速搜索和启动程序
-  desc_en: Cross-platform application launcher with fast search
-- id: signal-desktop
-  name: Signal
-  category: Messaging
-  editions:
-  - cn
-  homepage: https://github.com/signalapp/Signal-Desktop
-  fetcher: github_release
-  args:
-    repo: signalapp/Signal-Desktop
-    assets:
-    - platform: win-x64
-      pattern: signal-desktop-win-*-x64.exe
-    - platform: mac-x64
-      pattern: signal-desktop-mac-*-x64.dmg
-    - platform: linux-x64
-      pattern: signal-desktop-linux-*-amd64.deb
-  desc_cn: 注重隐私的加密通讯应用
-  desc_en: Privacy-focused encrypted messaging app
 - id: powershell
   name: PowerShell
   category: Developer Tools
@@ -1203,3 +877,253 @@ packages:
       link_kind: landing_page
   desc_cn: 搜狗智能输入法，支持语音输入和智能纠错
   desc_en: Sogou smart input method with voice input and intelligent error correction
+- id: kugou-music
+  name: 酷狗音乐
+  category: Media Players
+  editions:
+  - cn
+  homepage: https://www.kugou.com/
+  fetcher: download_page
+  args:
+    platforms:
+    - platform: win-x64
+      download_url: https://www.kugou.com/download/
+      link_kind: landing_page
+  desc_cn: 国内领先音乐播放器，海量曲库和K歌功能
+  desc_en: Leading Chinese music player with massive library and karaoke features
+- id: kuwo-music
+  name: 酷我音乐
+  category: Media Players
+  editions:
+  - cn
+  homepage: https://www.kuwo.cn/
+  fetcher: download_page
+  args:
+    platforms:
+    - platform: win-x64
+      download_url: https://www.kuwo.cn/download
+      link_kind: landing_page
+  desc_cn: 腾讯旗下音乐平台，无损音质和歌词同步
+  desc_en: Tencent's music platform with lossless audio and synced lyrics
+- id: ximalaya
+  name: 喜马拉雅
+  category: Media Players
+  editions:
+  - cn
+  homepage: https://www.ximalaya.com/
+  fetcher: download_page
+  args:
+    platforms:
+    - platform: win-x64
+      download_url: https://www.ximalaya.com/download/
+      link_kind: landing_page
+    - platform: mac-x64
+      download_url: https://www.ximalaya.com/download/
+      link_kind: landing_page
+  desc_cn: 国内最大音频平台，有声书/播客/相声/课程
+  desc_en: China's largest audio platform for audiobooks, podcasts, and courses
+- id: youdao-dict
+  name: 网易有道词典
+  category: Productivity
+  editions:
+  - cn
+  homepage: https://www.youdao.com/
+  fetcher: download_page
+  args:
+    platforms:
+    - platform: win-x64
+      download_url: https://www.youdao.com/download/
+      link_kind: landing_page
+    - platform: mac-x64
+      download_url: https://www.youdao.com/download/
+      link_kind: landing_page
+  desc_cn: 多语种翻译词典，支持划词翻译和离线词库
+  desc_en: Multi-language translation dictionary with text selection and offline support
+- id: tencent-docs
+  name: 腾讯文档
+  category: Productivity
+  editions:
+  - cn
+  homepage: https://docs.qq.com/
+  fetcher: download_page
+  args:
+    platforms:
+    - platform: win-x64
+      download_url: https://docs.qq.com/download
+      link_kind: landing_page
+  desc_cn: 在线协作文档工具，支持多人实时编辑
+  desc_en: Online collaborative document tool with real-time multi-user editing
+- id: shimo
+  name: 石墨文档
+  category: Productivity
+  editions:
+  - cn
+  homepage: https://shimo.im/
+  fetcher: download_page
+  args:
+    platforms:
+    - platform: win-x64
+      download_url: https://shimo.im/download
+      link_kind: landing_page
+    - platform: mac-x64
+      download_url: https://shimo.im/download
+      link_kind: landing_page
+  desc_cn: 在线协作文档和表格，企业团队协作
+  desc_en: Online collaborative docs and spreadsheets for enterprise teamwork
+- id: meitu
+  name: 美图秀秀
+  category: Utilities
+  editions:
+  - cn
+  homepage: https://pc.meitu.com/
+  fetcher: download_page
+  args:
+    platforms:
+    - platform: win-x64
+      download_url: https://pc.meitu.com/
+      link_kind: landing_page
+  desc_cn: 国民级图片编辑工具，一键美颜和滤镜
+  desc_en: Popular image editing tool with one-click beauty and filters
+- id: format-factory
+  name: 格式工厂
+  category: Utilities
+  editions:
+  - cn
+  homepage: http://www.pcfreetime.com/
+  fetcher: download_page
+  args:
+    platforms:
+    - platform: win-x64
+      download_url: http://www.pcfreetime.com/formatfactory/CN/index.html
+      link_kind: landing_page
+  desc_cn: 万能多媒体格式转换工具，支持视频/音频/图片
+  desc_en: Universal multimedia format converter for video/audio/image
+- id: 360zip
+  name: 360 压缩
+  category: Utilities
+  editions:
+  - cn
+  homepage: https://yasuo.360.cn/
+  fetcher: download_page
+  args:
+    platforms:
+    - platform: win-x64
+      download_url: https://yasuo.360.cn/
+      link_kind: landing_page
+  desc_cn: 免费解压缩软件，支持多种压缩格式
+  desc_en: Free decompression software supporting multiple archive formats
+- id: tencent-pc-manager
+  name: 腾讯电脑管家
+  category: Security & Privacy
+  editions:
+  - cn
+  homepage: https://guanjia.qq.com/
+  fetcher: download_page
+  args:
+    platforms:
+    - platform: win-x64
+      download_url: https://guanjia.qq.com/
+      link_kind: landing_page
+  desc_cn: 腾讯安全软件，病毒查杀和系统优化
+  desc_en: Tencent security software with virus scanning and system optimization
+- id: 360safe
+  name: 360 安全卫士
+  category: Security & Privacy
+  editions:
+  - cn
+  homepage: https://www.360.cn/
+  fetcher: download_page
+  args:
+    platforms:
+    - platform: win-x64
+      download_url: https://www.360.cn/
+      link_kind: landing_page
+  desc_cn: 360 安全防护软件，木马查杀和电脑体检
+  desc_en: 360 security software with trojan removal and PC health check
+- id: baidu-input
+  name: 百度输入法
+  category: System Utilities
+  editions:
+  - cn
+  homepage: https://shurufa.baidu.com/
+  fetcher: download_page
+  args:
+    platforms:
+    - platform: win-x64
+      download_url: https://shurufa.baidu.com/
+      link_kind: landing_page
+  desc_cn: 百度智能输入法，AI 语音输入和手写识别
+  desc_en: Baidu smart input method with AI voice input and handwriting recognition
+- id: weiyun
+  name: 腾讯微云
+  category: Utilities
+  editions:
+  - cn
+  homepage: https://www.weiyun.com/
+  fetcher: download_page
+  args:
+    platforms:
+    - platform: win-x64
+      download_url: https://www.weiyun.com/download
+      link_kind: landing_page
+  desc_cn: 腾讯云存储服务，文件同步和在线预览
+  desc_en: Tencent's cloud storage service with file sync and online preview
+- id: wps-pdf
+  name: WPS PDF
+  category: Productivity
+  editions:
+  - cn
+  homepage: https://www.wps.cn/
+  fetcher: download_page
+  args:
+    platforms:
+    - platform: win-x64
+      download_url: https://www.wps.cn/product/wps-pdf
+      link_kind: landing_page
+  desc_cn: WPS 出品的 PDF 工具，阅读/编辑/转换一体化
+  desc_en: PDF tool by WPS with reading, editing, and conversion in one
+- id: netease-mail
+  name: 网易邮箱大师
+  category: Productivity
+  editions:
+  - cn
+  homepage: https://mail.163.com/dashi/
+  fetcher: download_page
+  args:
+    platforms:
+    - platform: win-x64
+      download_url: https://mail.163.com/dashi/download.htm
+      link_kind: landing_page
+    - platform: mac-x64
+      download_url: https://mail.163.com/dashi/download.htm
+      link_kind: landing_page
+  desc_cn: 网易邮件客户端，多邮箱聚合管理
+  desc_en: NetEase email client with multi-account aggregation
+- id: potplayer-cn
+  name: PotPlayer
+  category: Media Players
+  editions:
+  - cn
+  homepage: https://potplayer.daum.net/
+  fetcher: download_page
+  args:
+    platforms:
+    - platform: win-x64
+      download_url: https://potplayer.daum.net/
+      link_kind: landing_page
+  desc_cn: 高性能视频播放器，支持多种格式和硬件加速
+  desc_en: High-performance video player with multi-format and hardware acceleration
+- id: snipaste-cn
+  name: Snipaste
+  category: System Utilities
+  editions:
+  - cn
+  homepage: https://www.snipaste.com/
+  fetcher: download_page
+  args:
+    platforms:
+    - platform: win-x64
+      download_url: https://www.snipaste.com/download.html
+      link_kind: landing_page
+  desc_cn: 截图贴图神器，截图后可贴到屏幕上做参考
+  desc_en: Screenshot and pin tool that pins captures to screen as reference
