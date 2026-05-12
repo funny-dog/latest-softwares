@@ -745,3 +745,461 @@ packages:
       pattern: powershell-*-linux-x64.tar.gz
   desc_cn: 跨平台自动化和配置管理框架
   desc_en: Cross-platform automation and configuration management framework
+- id: baidunetdisk
+  name: 百度网盘
+  category: Utilities
+  editions:
+  - cn
+  homepage: https://pan.baidu.com/
+  fetcher: baidunetdisk
+  args:
+    platforms:
+    - platform: win-x64
+      download_url: https://pan.baidu.com/disk/cmsdata?do=client
+      link_kind: landing_page
+    - platform: mac-x64
+      download_url: https://pan.baidu.com/disk/cmsdata?do=client
+      link_kind: landing_page
+  desc_cn: 百度旗下云存储服务，支持文件同步和在线预览
+  desc_en: Baidu's cloud storage service with file sync and online preview
+- id: aliyundrive
+  name: 阿里云盘
+  category: Utilities
+  editions:
+  - cn
+  homepage: https://www.aliyundrive.com/
+  fetcher: download_page
+  args:
+    platforms:
+    - platform: win-x64
+      download_url: https://www.aliyundrive.com/download
+      link_kind: landing_page
+    - platform: mac-x64
+      download_url: https://www.aliyundrive.com/download
+      link_kind: landing_page
+  desc_cn: 阿里巴巴旗下云存储服务，不限速大容量
+  desc_en: Alibaba's cloud storage service with unlimited speed and large capacity
+- id: nutstore
+  name: 坚果云
+  category: Utilities
+  editions:
+  - cn
+  homepage: https://www.jianguoyun.com/
+  fetcher: download_page
+  args:
+    platforms:
+    - platform: win-x64
+      download_url: https://www.jianguoyun.com/s/downloads
+      link_kind: landing_page
+    - platform: mac-x64
+      download_url: https://www.jianguoyun.com/s/downloads
+      link_kind: landing_page
+  desc_cn: 支持增量同步的云存储服务，办公文档协作
+  desc_en: Cloud storage with incremental sync and office document collaboration
+- id: dingtalk
+  name: 钉钉
+  category: Messaging
+  editions:
+  - cn
+  homepage: https://www.dingtalk.com/
+  fetcher: download_page
+  args:
+    platforms:
+    - platform: win-x64
+      download_url: https://www.dingtalk.com/download
+      link_kind: landing_page
+    - platform: mac-x64
+      download_url: https://www.dingtalk.com/download
+      link_kind: landing_page
+  desc_cn: 阿里巴巴企业协同办公平台，即时通讯和视频会议
+  desc_en: Alibaba's enterprise collaboration platform with IM and video conferencing
+- id: feishu
+  name: 飞书
+  category: Messaging
+  editions:
+  - cn
+  homepage: https://www.feishu.cn/
+  fetcher: download_page
+  args:
+    platforms:
+    - platform: win-x64
+      download_url: https://www.feishu.cn/download
+      link_kind: landing_page
+    - platform: mac-x64
+      download_url: https://www.feishu.cn/download
+      link_kind: landing_page
+  desc_cn: 字节跳动企业协作平台，文档/日历/视频会议一体化
+  desc_en: ByteDance's enterprise collaboration platform with docs, calendar, and video
+- id: tencent-meeting
+  name: 腾讯会议
+  category: Messaging
+  editions:
+  - cn
+  homepage: https://meeting.tencent.com/
+  fetcher: download_page
+  args:
+    platforms:
+    - platform: win-x64
+      download_url: https://meeting.tencent.com/download/
+      link_kind: landing_page
+    - platform: mac-x64
+      download_url: https://meeting.tencent.com/download/
+      link_kind: landing_page
+  desc_cn: 腾讯云视频会议服务，支持大规模在线会议
+  desc_en: Tencent Cloud video conferencing service for large-scale online meetings
+- id: wegame
+  name: WeGame
+  category: Gaming
+  editions:
+  - cn
+  homepage: https://www.wegame.com.cn/
+  fetcher: wegame_official
+  args:
+    platforms:
+    - platform: win-x64
+      download_url: https://www.wegame.com.cn/client/
+      link_kind: landing_page
+  desc_cn: 腾讯游戏平台，提供游戏下载和社区服务
+  desc_en: Tencent's gaming platform for game downloads and community services
+- id: yy
+  name: YY 语音
+  category: Messaging
+  editions:
+  - cn
+  homepage: https://www.yy.com/
+  fetcher: yy_official
+  args:
+    platforms:
+    - platform: win-x64
+      download_url: https://www.yy.com/
+      link_kind: landing_page
+  desc_cn: 在线语音通讯和直播平台，游戏语音首选
+  desc_en: Online voice communication and live streaming platform for gaming
+- id: kimi
+  name: Kimi
+  category: AI Tools
+  editions:
+  - cn
+  homepage: https://kimi.moonshot.cn/
+  fetcher: download_page
+  args:
+    platforms:
+    - platform: win-x64
+      download_url: https://kimi.moonshot.cn/download
+      link_kind: landing_page
+    - platform: mac-x64
+      download_url: https://kimi.moonshot.cn/download
+      link_kind: landing_page
+  desc_cn: 月之暗面 AI 助手，支持长文本理解和文件分析
+  desc_en: Moonshot AI's assistant with long-text understanding and file analysis
+- id: tongyi
+  name: 通义千问
+  category: AI Tools
+  editions:
+  - cn
+  homepage: https://tongyi.aliyun.com/
+  fetcher: download_page
+  args:
+    platforms:
+    - platform: win-x64
+      download_url: https://tongyi.aliyun.com/download
+      link_kind: landing_page
+    - platform: mac-x64
+      download_url: https://tongyi.aliyun.com/download
+      link_kind: landing_page
+  desc_cn: 阿里云大模型 AI 助手，多模态理解和创作
+  desc_en: Alibaba Cloud's LLM assistant with multimodal understanding and creation
+- id: chatglm
+  name: 智谱清言
+  category: AI Tools
+  editions:
+  - cn
+  homepage: https://chatglm.cn/
+  fetcher: download_page
+  args:
+    platforms:
+    - platform: win-x64
+      download_url: https://chatglm.cn/download
+      link_kind: landing_page
+    - platform: mac-x64
+      download_url: https://chatglm.cn/download
+      link_kind: landing_page
+  desc_cn: 智谱 AI 大模型助手，基于 GLM 模型的对话和创作
+  desc_en: Zhipu AI's assistant based on GLM models for conversation and creation
+- id: sparkdesk
+  name: 讯飞星火
+  category: AI Tools
+  editions:
+  - cn
+  homepage: https://xinghuo.xfyun.cn/
+  fetcher: download_page
+  args:
+    platforms:
+    - platform: win-x64
+      download_url: https://xinghuo.xfyun.cn/download
+      link_kind: landing_page
+    - platform: mac-x64
+      download_url: https://xinghuo.xfyun.cn/download
+      link_kind: landing_page
+  desc_cn: 科大讯飞 AI 助手，语音识别和多模态交互
+  desc_en: iFlytek's AI assistant with speech recognition and multimodal interaction
+- id: xunlei
+  name: 迅雷
+  category: Download Tools
+  editions:
+  - cn
+  homepage: https://www.xunlei.com/
+  fetcher: download_page
+  args:
+    platforms:
+    - platform: win-x64
+      download_url: https://www.xunlei.com/
+      link_kind: landing_page
+  desc_cn: 老牌下载工具，支持 HTTP/BT/磁力/电驴等协议
+  desc_en: Veteran download tool supporting HTTP/BT/magnet/eDonkey protocols
+- id: netease-cloud-music
+  name: 网易云音乐
+  category: Media Players
+  editions:
+  - cn
+  homepage: https://music.163.com/
+  fetcher: download_page
+  args:
+    platforms:
+    - platform: win-x64
+      download_url: https://music.163.com/#/download
+      link_kind: landing_page
+    - platform: mac-x64
+      download_url: https://music.163.com/#/download
+      link_kind: landing_page
+  desc_cn: 网易音乐流媒体平台，个性化推荐和社交互动
+  desc_en: NetEase music streaming platform with personalized recommendations
+- id: bilibili
+  name: 哔哩哔哩
+  category: Media Players
+  editions:
+  - cn
+  homepage: https://www.bilibili.com/
+  fetcher: download_page
+  args:
+    platforms:
+    - platform: win-x64
+      download_url: https://app.bilibili.com/
+      link_kind: landing_page
+  desc_cn: 年轻人喜爱的视频社区，弹幕互动和创作者生态
+  desc_en: Popular video community with bullet comments and creator ecosystem
+- id: qq-music
+  name: QQ音乐
+  category: Media Players
+  editions:
+  - cn
+  homepage: https://y.qq.com/
+  fetcher: download_page
+  args:
+    platforms:
+    - platform: win-x64
+      download_url: https://y.qq.com/download/
+      link_kind: landing_page
+    - platform: mac-x64
+      download_url: https://y.qq.com/download/
+      link_kind: landing_page
+  desc_cn: 腾讯音乐流媒体平台，海量正版曲库和歌词
+  desc_en: Tencent's music streaming platform with massive licensed music library
+- id: tencent-video
+  name: 腾讯视频
+  category: Media Players
+  editions:
+  - cn
+  homepage: https://v.qq.com/
+  fetcher: download_page
+  args:
+    platforms:
+    - platform: win-x64
+      download_url: https://v.qq.com/download.html
+      link_kind: landing_page
+  desc_cn: 腾讯视频流媒体平台，影视剧综艺直播
+  desc_en: Tencent's video streaming platform for movies, shows, and live content
+- id: iqiyi
+  name: 爱奇艺
+  category: Media Players
+  editions:
+  - cn
+  homepage: https://www.iqiyi.com/
+  fetcher: download_page
+  args:
+    platforms:
+    - platform: win-x64
+      download_url: https://www.iqiyi.com/opensource
+      link_kind: landing_page
+  desc_cn: 百度旗下视频流媒体平台，影视剧和综艺内容
+  desc_en: Baidu-backed video streaming platform for movies and variety shows
+- id: huorong
+  name: 火绒安全
+  category: Security & Privacy
+  editions:
+  - cn
+  homepage: https://www.huorong.cn/
+  fetcher: download_page
+  args:
+    platforms:
+    - platform: win-x64
+      download_url: https://www.huorong.cn/
+      link_kind: landing_page
+  desc_cn: 轻量级国产安全软件，弹窗拦截和病毒防护
+  desc_en: Lightweight Chinese security software with popup blocking and virus protection
+- id: sunlogin
+  name: 向日葵远程控制
+  category: System Utilities
+  editions:
+  - cn
+  homepage: https://sunlogin.oray.com/
+  fetcher: download_page
+  args:
+    platforms:
+    - platform: win-x64
+      download_url: https://sunlogin.oray.com/download/
+      link_kind: landing_page
+    - platform: mac-x64
+      download_url: https://sunlogin.oray.com/download/
+      link_kind: landing_page
+  desc_cn: 贝锐旗下远程控制软件，跨设备远程桌面
+  desc_en: Oray's remote control software for cross-device remote desktop
+- id: todesk
+  name: ToDesk
+  category: System Utilities
+  editions:
+  - cn
+  homepage: https://www.todesk.com/
+  fetcher: download_page
+  args:
+    platforms:
+    - platform: win-x64
+      download_url: https://www.todesk.com/download
+      link_kind: landing_page
+    - platform: mac-x64
+      download_url: https://www.todesk.com/download
+      link_kind: landing_page
+  desc_cn: 免费流畅的远程控制软件，低延迟桌面共享
+  desc_en: Free and smooth remote control software with low-latency desktop sharing
+- id: 360ee
+  name: 360 极速浏览器
+  category: Browsers
+  editions:
+  - cn
+  homepage: https://browser.360.cn/ee/
+  fetcher: download_page
+  args:
+    platforms:
+    - platform: win-x64
+      download_url: https://browser.360.cn/ee/
+      link_kind: landing_page
+  desc_cn: 基于 Chromium 的国产浏览器，双核极速切换
+  desc_en: Chromium-based Chinese browser with dual-engine fast switching
+- id: youdao-note
+  name: 有道云笔记
+  category: Productivity
+  editions:
+  - cn
+  homepage: https://note.youdao.com/
+  fetcher: download_page
+  args:
+    platforms:
+    - platform: win-x64
+      download_url: https://note.youdao.com/download.html
+      link_kind: landing_page
+    - platform: mac-x64
+      download_url: https://note.youdao.com/download.html
+      link_kind: landing_page
+  desc_cn: 网易旗下笔记工具，支持 Markdown 和多端同步
+  desc_en: NetEase's note-taking tool with Markdown and multi-device sync
+- id: foxit-reader-cn
+  name: 福昕 PDF
+  category: Productivity
+  editions:
+  - cn
+  homepage: https://www.foxitsoftware.cn/
+  fetcher: download_page
+  args:
+    platforms:
+    - platform: win-x64
+      download_url: https://www.foxitsoftware.cn/downloads/
+      link_kind: landing_page
+  desc_cn: 国产 PDF 阅读器和编辑器，轻量快速
+  desc_en: Chinese PDF reader and editor, lightweight and fast
+- id: picgo
+  name: PicGo
+  category: Developer Tools
+  editions:
+  - cn
+  homepage: https://github.com/Molunerfinn/PicGo
+  fetcher: github_release
+  args:
+    repo: Molunerfinn/PicGo
+    assets:
+    - platform: win-x64
+      pattern: PicGo-Setup-*.exe
+    - platform: mac-x64
+      pattern: PicGo-*.dmg
+  desc_cn: 图片上传和管理工具，支持多种图床
+  desc_en: Image upload and management tool supporting multiple image hosting services
+- id: switchhosts
+  name: SwitchHosts
+  category: Developer Tools
+  editions:
+  - cn
+  homepage: https://github.com/oldj/SwitchHosts
+  fetcher: github_release
+  args:
+    repo: oldj/SwitchHosts
+    assets:
+    - platform: win-x64
+      pattern: SwitchHosts*_windows_x64*.zip
+    - platform: mac-x64
+      pattern: SwitchHosts*_mac_x64*.dmg
+  desc_cn: Hosts 文件管理工具，快速切换 hosts 配置
+  desc_en: Hosts file management tool for quick hosts configuration switching
+- id: apifox
+  name: Apifox
+  category: Developer Tools
+  editions:
+  - cn
+  homepage: https://apifox.com/
+  fetcher: download_page
+  args:
+    platforms:
+    - platform: win-x64
+      download_url: https://apifox.com/download/
+      link_kind: landing_page
+    - platform: mac-x64
+      download_url: https://apifox.com/download/
+      link_kind: landing_page
+  desc_cn: API 开发协作平台，集接口文档/调试/Mock/测试于一体
+  desc_en: API development collaboration platform combining docs, debugging, mock, and testing
+- id: uu-accelerator
+  name: 网易 UU 加速器
+  category: Gaming
+  editions:
+  - cn
+  homepage: https://uu.163.com/
+  fetcher: download_page
+  args:
+    platforms:
+    - platform: win-x64
+      download_url: https://uu.163.com/download/
+      link_kind: landing_page
+  desc_cn: 网易游戏加速器，降低延迟优化网络
+  desc_en: NetEase's game accelerator for reducing latency and optimizing network
+- id: sogou-input
+  name: 搜狗输入法
+  category: System Utilities
+  editions:
+  - cn
+  homepage: https://shurufa.sogou.com/
+  fetcher: download_page
+  args:
+    platforms:
+    - platform: win-x64
+      download_url: https://shurufa.sogou.com/
+      link_kind: landing_page
+  desc_cn: 搜狗智能输入法，支持语音输入和智能纠错
+  desc_en: Sogou smart input method with voice input and intelligent error correction
