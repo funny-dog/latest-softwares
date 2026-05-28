@@ -1,0 +1,70 @@
+# Dependabot 配置 —— 自动监控依赖升级与安全补丁
+#
+# 覆盖三个生态：
+#   1. pip            —— requirements.txt + requirements-dev.txt（项目根目录）
+#   2. npm            —— package.json + package-lock.json（改进项 6 esbuild 构建链引入）
+#   3. github-actions —— workflows 中的 action（含第三方 dawidd6 / stefanzweifel）
+#
+# 策略：minor + patch 分组成单个 PR（降低噪音），major 单独开 PR（便于人工审查破坏性变更）。
+version: 2
+updates:
+  # ---- Python 依赖 ----
+  - package-ecosystem: "pip"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+      time: "09:00"
+      timezone: "Asia/Shanghai"
+    open-pull-requests-limit: 5
+    commit-message:
+      prefix: "chore(deps)"
+    labels:
+      - "dependencies"
+      - "python"
+    groups:
+      python-minor-patch:
+        update-types:
+          - "minor"
+          - "patch"
+    # major 版本不分组：fastapi / pydantic 等的 major 升级可能含破坏性变更，单独 PR 审查。
+
+  # ---- 前端构建工具（esbuild）----
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+      time: "09:00"
+      timezone: "Asia/Shanghai"
+    open-pull-requests-limit: 5
+    commit-message:
+      prefix: "chore(deps)"
+    labels:
+      - "dependencies"
+      - "javascript"
+    groups:
+      npm-minor-patch:
+        update-types:
+          - "minor"
+          - "patch"
+
+  # ---- GitHub Actions ----
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "monday"
+      time: "09:00"
+      timezone: "Asia/Shanghai"
+    open-pull-requests-limit: 5
+    commit-message:
+      prefix: "chore(ci)"
+    labels:
+      - "dependencies"
+      - "github-actions"
+    groups:
+      actions-minor-patch:
+        update-types:
+          - "minor"
+          - "patch"
