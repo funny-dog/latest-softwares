@@ -68,7 +68,8 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument(
         "--new-ids-file", default=str(REPO_ROOT / "discover_new_ids.txt")
     )
-    args = parser.parse_args([] if argv is None else argv)
+    # argv 为 None 时 argparse 自动读 sys.argv[1:]；测试传显式列表。
+    args = parser.parse_args(argv)
 
     candidates = discover(min_stars=args.min_stars, max_scan=args.max_scan)
     print(f"发现 {len(candidates)} 个高星候选")
