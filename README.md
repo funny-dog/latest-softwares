@@ -5,7 +5,7 @@
 > **Latest version metadata** automatically synced from official upstream sources daily by GitHub Actions.
 > This repository **does not host binary installers** — download buttons link directly to upstream official downloads.
 >
-> 📅 **Last updated**: `2026-05-29 05:04:01` (UTC) · 460 software items (18 using previous data, marked ⚠️)
+> 📅 **Last updated**: `2026-05-29 08:36:13` (UTC) · 460 software items (18 using previous data, marked ⚠️)
 
 ---
 
