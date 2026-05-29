@@ -32,9 +32,7 @@ ROOT = Path(__file__).resolve().parent
 DATA_FILE = ROOT / "data" / "latest.json"
 DIST_DIR = ROOT / "dist"
 DB_PATH = Path(
-    os.environ.get(
-        "LATEST_SOFTWARES_STATS_DB", str(ROOT / "data" / "site_metrics.db")
-    )
+    os.environ.get("LATEST_SOFTWARES_STATS_DB", str(ROOT / "data" / "site_metrics.db"))
 )
 SEED_FILE = Path(
     os.environ.get(
@@ -207,9 +205,7 @@ def _load_metrics() -> dict:
     metrics["downloads"]["assets"] = assets
 
     # 加载更新时间
-    row = conn.execute(
-        "SELECT value FROM metrics WHERE key = 'updated_at'"
-    ).fetchone()
+    row = conn.execute("SELECT value FROM metrics WHERE key = 'updated_at'").fetchone()
     metrics["updated_at"] = row[0] if row else None
 
     conn.close()

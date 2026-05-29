@@ -122,7 +122,12 @@ def test_seed_db_skips_when_db_already_has_data(tmp_path, monkeypatch):
         json.dumps(
             {
                 "visits": {"total": 999, "paths": {}},
-                "downloads": {"total": 0, "packages": {}, "platforms": {}, "assets": {}},
+                "downloads": {
+                    "total": 0,
+                    "packages": {},
+                    "platforms": {},
+                    "assets": {},
+                },
             }
         ),
         encoding="utf-8",
@@ -132,9 +137,7 @@ def test_seed_db_skips_when_db_already_has_data(tmp_path, monkeypatch):
 
     main._init_db()
     conn = __import__("sqlite3").connect(str(db_file))
-    conn.execute(
-        "INSERT INTO metrics (key, value) VALUES ('visits_total', '10')"
-    )
+    conn.execute("INSERT INTO metrics (key, value) VALUES ('visits_total', '10')")
     conn.commit()
     conn.close()
 
@@ -164,7 +167,12 @@ def test_seed_db_skips_empty_seed(tmp_path, monkeypatch):
         json.dumps(
             {
                 "visits": {"total": 0, "paths": {}},
-                "downloads": {"total": 0, "packages": {}, "platforms": {}, "assets": {}},
+                "downloads": {
+                    "total": 0,
+                    "packages": {},
+                    "platforms": {},
+                    "assets": {},
+                },
             }
         ),
         encoding="utf-8",
