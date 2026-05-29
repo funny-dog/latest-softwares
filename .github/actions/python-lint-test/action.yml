@@ -92,6 +92,22 @@ runs:
           tests/test_everything.py \
           -q
 
+    - name: Test - discover
+      if: ${{ !cancelled() }}
+      shell: bash
+      run: |
+        python -m pytest \
+          tests/test_discover_asset_infer.py \
+          tests/test_discover_categorize.py \
+          tests/test_discover_dedup.py \
+          tests/test_discover_translate.py \
+          tests/test_discover_generate.py \
+          tests/test_discover_github.py \
+          tests/test_discover_corroborate.py \
+          tests/test_discover_aggregate.py \
+          tests/test_discover_cli.py \
+          -q
+
     - name: Test - workflow.yml self-check
       if: ${{ !cancelled() }}
       shell: bash
