@@ -32,7 +32,12 @@ def discover(min_stars: int, max_scan: int) -> list[Candidate]:
             f"{_GITHUB_API}/search/repositories"
             f"?q={query}&sort=stars&order=desc&per_page={_PER_PAGE}&page={page}"
         )
-        data = get_json(url, headers=github_headers(), timeout=_TIMEOUT)
+        try:
+            data = get_json(url, headers=github_headers(), timeout=_TIMEOUT)
+        except Exception:
+            # 限流（403 secondary rate limit）/ 网络抖动：用已收集的候选继续，
+            # 不让单次 search 失败崩掉整轮（与管道其它网络调用的容错一致）。
+            break
         items = data.get("items", []) if isinstance(data, dict) else []
         if not items:
             break

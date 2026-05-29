@@ -80,6 +80,7 @@ def main(argv: list[str] | None = None) -> int:
 
     entries: list[dict] = []
     new_ids: list[str] = []
+    seen_ids: set[str] = set()
     for cand, pattern in selected:
         entry = build_entry(
             repo=cand.repo,
@@ -89,9 +90,24 @@ def main(argv: list[str] | None = None) -> int:
             desc_en=cand.description,
             desc_cn=translate_to_zh(cand.description),
         )
+        entry_id = entry["id"]
+        # 跳过空 id 或批内重复 id：单个异常名不应让整轮校验失败而丢掉其它好候选。
+        if not entry_id:
+            print(
+                f"⚠ 跳过 {cand.repo}：名称 {cand.name!r} 无法生成合法 id",
+                file=sys.stderr,
+            )
+            continue
+        if entry_id in seen_ids:
+            print(
+                f"⚠ 跳过 {cand.repo}：id {entry_id!r} 与本批其它候选冲突",
+                file=sys.stderr,
+            )
+            continue
+        seen_ids.add(entry_id)
         entries.append(entry)
-        new_ids.append(entry["id"])
-        print(f"✓ {entry['id']}: {cand.repo} ({cand.stars}★) → {pattern}")
+        new_ids.append(entry_id)
+        print(f"✓ {entry_id}: {cand.repo} ({cand.stars}★) → {pattern}")
 
     output_path = Path(args.output)
     if entries:

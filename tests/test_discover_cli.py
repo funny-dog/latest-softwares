@@ -140,3 +140,49 @@ def test_cli_no_candidates_writes_empty_ids(tmp_path, monkeypatch):
     rc = discover_popular.main(["--output", str(out), "--new-ids-file", str(ids_file)])
     assert rc == 0
     assert ids_file.read_text(encoding="utf-8").strip() == ""
+
+
+def test_cli_skips_batch_duplicate_ids(tmp_path, monkeypatch):
+    """两个候选 slug 成相同 id 时，跳过重复者而非让整轮校验失败。"""
+    from scripts.discover.models import Candidate
+
+    out = tmp_path / "shared.yaml"
+    out.write_text(
+        "packages:\n"
+        "- id: seed\n"
+        "  name: Seed\n"
+        "  category: Utilities\n"
+        "  editions:\n"
+        "  - cn\n"
+        "  - intl\n"
+        "  fetcher: github_release\n"
+        "  args:\n"
+        "    repo: x/seed\n"
+        "    assets:\n"
+        "    - platform: win-x64\n"
+        "      pattern: seed-*.exe\n"
+        "  desc_cn: 种子\n"
+        "  desc_en: seed\n",
+        encoding="utf-8",
+    )
+    ids_file = tmp_path / "new_ids.txt"
+    # 两个不同 repo 但 name 都 slug 成 "cli"
+    dup = [
+        Candidate(repo="org-a/cli", name="CLI", stars=9000, description="tool a"),
+        Candidate(repo="org-b/cli", name="cli", stars=8000, description="tool b"),
+    ]
+    monkeypatch.setattr(discover_popular, "discover", lambda **kw: dup)
+    monkeypatch.setattr(
+        discover_popular,
+        "select_candidates",
+        lambda c, **kw: [(dup[0], "a-*.exe"), (dup[1], "b-*.exe")],
+    )
+    monkeypatch.setattr(
+        discover_popular, "categorize", lambda topics, desc: "Developer Tools"
+    )
+    monkeypatch.setattr(discover_popular, "translate_to_zh", lambda t: "命令行工具")
+
+    rc = discover_popular.main(["--output", str(out), "--new-ids-file", str(ids_file)])
+    assert rc == 0
+    # 只保留第一个 cli，第二个重复被跳过
+    assert ids_file.read_text(encoding="utf-8").strip() == "cli"
