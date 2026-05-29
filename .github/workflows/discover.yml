@@ -1,0 +1,65 @@
+name: Discover popular software
+
+on:
+  schedule:
+    # 双周：每月 1 号与 15 号 02:00 UTC（GitHub Actions cron 无原生双周，用双日期近似）
+    - cron: "0 2 1,15 * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  discover:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+
+      - name: Install deps
+        run: pip install -r requirements.txt
+
+      - name: Run discovery
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python -m scripts.discover --output packages/shared.yaml --new-ids-file discover_new_ids.txt
+
+      - name: Validate config
+        run: python scripts/validate_config.py
+
+      - name: Dry-run sync for new ids
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          IDS=$(tr '\n' ',' < discover_new_ids.txt | sed 's/,$//')
+          if [ -n "$IDS" ]; then
+            # dry-run 仅为在日志中暴露新条目的 fetcher 能否解析；
+            # || true 不让其阻断 PR（validate_config 才是硬门槛）。
+            python -m scripts.sync --only "$IDS" || true
+          else
+            echo "无新候选，跳过 dry-run"
+          fi
+
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v7
+        with:
+          # 只提交 shared.yaml：dry-run 改动的 data/latest.json 与临时
+          # discover_new_ids.txt 都不会进 PR，保证纯追加干净 diff。
+          add-paths: packages/shared.yaml
+          branch: auto/discover
+          delete-branch: true
+          title: "chore(discover): 自动发现的热门软件候选"
+          commit-message: "chore(discover): 自动发现热门软件候选（待人工 review）"
+          body: |
+            本 PR 由 discover workflow 自动生成。
+
+            请 review：
+            - [ ] 核对每条 `desc_cn`（自动翻译，可能需润色）
+            - [ ] 确认 `category` 合理
+            - [ ] 如不适合国内版，把 `editions` 从 `[cn, intl]` 改为 `[intl]`
+            - [ ] 确认 `args.assets[].pattern` 能匹配到 Windows 安装包
+        # 无变更时该 action 不会开 PR
