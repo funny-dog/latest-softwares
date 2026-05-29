@@ -8,18 +8,6 @@ from __future__ import annotations
 
 import re
 
-# 命中 Windows 的标记词
-_WIN_TOKENS = (
-    "windows",
-    "win64",
-    "win32",
-    "win",
-    "x64",
-    "amd64",
-    "x86_64",
-    "setup",
-    "installer",
-)
 # 明确排除的非 Windows / 非 x64 标记
 _EXCLUDE_TOKENS = (
     "arm64",
