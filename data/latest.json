@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-06-01T05:52:51+00:00",
+  "generated_at": "2026-06-01T19:33:30+00:00",
   "packages": [
     {
       "id": "firefox",
@@ -39,8 +39,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:10+00:00",
-      "last_success_at": "2026-06-01T05:52:10+00:00",
+      "fetched_at": "2026-06-01T19:32:52+00:00",
+      "last_success_at": "2026-06-01T19:32:52+00:00",
       "editions": [
         "intl"
       ],
@@ -76,8 +76,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:13+00:00",
-      "last_success_at": "2026-06-01T05:52:13+00:00",
+      "fetched_at": "2026-06-01T19:32:55+00:00",
+      "last_success_at": "2026-06-01T19:32:55+00:00",
       "editions": [
         "cn",
         "intl"
@@ -122,8 +122,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:07+00:00",
-      "last_success_at": "2026-06-01T05:52:07+00:00",
+      "fetched_at": "2026-06-01T19:32:52+00:00",
+      "last_success_at": "2026-06-01T19:32:52+00:00",
       "editions": [
         "cn"
       ],
@@ -133,50 +133,50 @@
     {
       "id": "frp",
       "name": "frp",
-      "version": "0.69.0",
+      "version": "0.69.1",
       "source": "GitHub Release: fatedier/frp",
       "version_kind": "release_version",
       "version_source": "GitHub release tag",
       "category": "Network & Proxy",
       "homepage": "https://github.com/fatedier/frp",
-      "released_at": "2026-05-21T17:11:56Z",
-      "notes_url": "https://github.com/fatedier/frp/releases/tag/v0.69.0",
+      "released_at": "2026-06-01T10:17:17Z",
+      "notes_url": "https://github.com/fatedier/frp/releases/tag/v0.69.1",
       "assets": [
         {
           "platform": "win-x64",
-          "url": "https://github.com/fatedier/frp/releases/download/v0.69.0/frp_0.69.0_windows_amd64.zip",
+          "url": "https://github.com/fatedier/frp/releases/download/v0.69.1/frp_0.69.1_windows_amd64.zip",
           "link_kind": "direct",
-          "filename": "frp_0.69.0_windows_amd64.zip",
-          "size": 14182750,
+          "filename": "frp_0.69.1_windows_amd64.zip",
+          "size": 14192042,
           "sha256": null
         },
         {
           "platform": "mac-arm64",
-          "url": "https://github.com/fatedier/frp/releases/download/v0.69.0/frp_0.69.0_darwin_arm64.tar.gz",
+          "url": "https://github.com/fatedier/frp/releases/download/v0.69.1/frp_0.69.1_darwin_arm64.tar.gz",
           "link_kind": "direct",
-          "filename": "frp_0.69.0_darwin_arm64.tar.gz",
-          "size": 12908999,
+          "filename": "frp_0.69.1_darwin_arm64.tar.gz",
+          "size": 12916620,
           "sha256": null
         },
         {
           "platform": "mac-x64",
-          "url": "https://github.com/fatedier/frp/releases/download/v0.69.0/frp_0.69.0_darwin_amd64.tar.gz",
+          "url": "https://github.com/fatedier/frp/releases/download/v0.69.1/frp_0.69.1_darwin_amd64.tar.gz",
           "link_kind": "direct",
-          "filename": "frp_0.69.0_darwin_amd64.tar.gz",
-          "size": 14207897,
+          "filename": "frp_0.69.1_darwin_amd64.tar.gz",
+          "size": 14219712,
           "sha256": null
         },
         {
           "platform": "linux-x64",
-          "url": "https://github.com/fatedier/frp/releases/download/v0.69.0/frp_0.69.0_linux_amd64.tar.gz",
+          "url": "https://github.com/fatedier/frp/releases/download/v0.69.1/frp_0.69.1_linux_amd64.tar.gz",
           "link_kind": "direct",
-          "filename": "frp_0.69.0_linux_amd64.tar.gz",
-          "size": 14176749,
+          "filename": "frp_0.69.1_linux_amd64.tar.gz",
+          "size": 14189005,
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:08+00:00",
-      "last_success_at": "2026-06-01T05:52:08+00:00",
+      "fetched_at": "2026-06-01T19:32:51+00:00",
+      "last_success_at": "2026-06-01T19:32:51+00:00",
       "editions": [
         "cn"
       ],
@@ -326,8 +326,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:07+00:00",
-      "last_success_at": "2026-06-01T05:52:07+00:00",
+      "fetched_at": "2026-06-01T19:32:52+00:00",
+      "last_success_at": "2026-06-01T19:32:52+00:00",
       "editions": [
         "cn"
       ],
@@ -379,8 +379,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:07+00:00",
-      "last_success_at": "2026-06-01T05:52:07+00:00",
+      "fetched_at": "2026-06-01T19:32:52+00:00",
+      "last_success_at": "2026-06-01T19:32:52+00:00",
       "editions": [
         "cn"
       ],
@@ -525,13 +525,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:07+00:00",
+      "fetched_at": "2026-06-01T19:32:52+00:00",
       "warnings": [
         "win-x64: 没有匹配 asset pattern 'gitea-*-windows-amd64.exe'",
         "mac-arm64: 没有匹配 asset pattern 'gitea-*-darwin-arm64'",
         "mac-x64: 没有匹配 asset pattern 'gitea-*-darwin-amd64'"
       ],
-      "last_success_at": "2026-06-01T05:52:07+00:00",
+      "last_success_at": "2026-06-01T19:32:52+00:00",
       "editions": [
         "cn"
       ],
@@ -609,8 +609,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:09+00:00",
-      "last_success_at": "2026-06-01T05:52:09+00:00",
+      "fetched_at": "2026-06-01T19:32:54+00:00",
+      "last_success_at": "2026-06-01T19:32:54+00:00",
       "editions": [
         "intl"
       ],
@@ -638,8 +638,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:09+00:00",
-      "last_success_at": "2026-06-01T05:52:09+00:00",
+      "fetched_at": "2026-06-01T19:32:54+00:00",
+      "last_success_at": "2026-06-01T19:32:54+00:00",
       "editions": [
         "intl"
       ],
@@ -667,8 +667,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:09+00:00",
-      "last_success_at": "2026-06-01T05:52:09+00:00",
+      "fetched_at": "2026-06-01T19:32:54+00:00",
+      "last_success_at": "2026-06-01T19:32:54+00:00",
       "editions": [
         "intl"
       ],
@@ -696,8 +696,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:09+00:00",
-      "last_success_at": "2026-06-01T05:52:09+00:00",
+      "fetched_at": "2026-06-01T19:32:54+00:00",
+      "last_success_at": "2026-06-01T19:32:54+00:00",
       "editions": [
         "intl"
       ],
@@ -725,8 +725,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:09+00:00",
-      "last_success_at": "2026-06-01T05:52:09+00:00",
+      "fetched_at": "2026-06-01T19:32:54+00:00",
+      "last_success_at": "2026-06-01T19:32:54+00:00",
       "editions": [
         "intl"
       ],
@@ -754,8 +754,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:09+00:00",
-      "last_success_at": "2026-06-01T05:52:09+00:00",
+      "fetched_at": "2026-06-01T19:32:54+00:00",
+      "last_success_at": "2026-06-01T19:32:54+00:00",
       "editions": [
         "intl"
       ],
@@ -783,8 +783,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:09+00:00",
-      "last_success_at": "2026-06-01T05:52:09+00:00",
+      "fetched_at": "2026-06-01T19:32:54+00:00",
+      "last_success_at": "2026-06-01T19:32:54+00:00",
       "editions": [
         "intl"
       ],
@@ -812,8 +812,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:09+00:00",
-      "last_success_at": "2026-06-01T05:52:09+00:00",
+      "fetched_at": "2026-06-01T19:32:54+00:00",
+      "last_success_at": "2026-06-01T19:32:54+00:00",
       "editions": [
         "intl"
       ],
@@ -841,8 +841,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:09+00:00",
-      "last_success_at": "2026-06-01T05:52:09+00:00",
+      "fetched_at": "2026-06-01T19:32:54+00:00",
+      "last_success_at": "2026-06-01T19:32:54+00:00",
       "editions": [
         "intl"
       ],
@@ -870,8 +870,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:09+00:00",
-      "last_success_at": "2026-06-01T05:52:09+00:00",
+      "fetched_at": "2026-06-01T19:32:54+00:00",
+      "last_success_at": "2026-06-01T19:32:54+00:00",
       "editions": [
         "intl"
       ],
@@ -899,8 +899,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:09+00:00",
-      "last_success_at": "2026-06-01T05:52:09+00:00",
+      "fetched_at": "2026-06-01T19:32:54+00:00",
+      "last_success_at": "2026-06-01T19:32:54+00:00",
       "editions": [
         "intl"
       ],
@@ -952,8 +952,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:09+00:00",
-      "last_success_at": "2026-06-01T05:52:09+00:00",
+      "fetched_at": "2026-06-01T19:32:54+00:00",
+      "last_success_at": "2026-06-01T19:32:54+00:00",
       "editions": [
         "intl"
       ],
@@ -997,8 +997,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:09+00:00",
-      "last_success_at": "2026-06-01T05:52:09+00:00",
+      "fetched_at": "2026-06-01T19:32:55+00:00",
+      "last_success_at": "2026-06-01T19:32:55+00:00",
       "editions": [
         "intl"
       ],
@@ -1026,8 +1026,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:09+00:00",
-      "last_success_at": "2026-06-01T05:52:09+00:00",
+      "fetched_at": "2026-06-01T19:32:55+00:00",
+      "last_success_at": "2026-06-01T19:32:55+00:00",
       "editions": [
         "intl"
       ],
@@ -1055,8 +1055,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:09+00:00",
-      "last_success_at": "2026-06-01T05:52:09+00:00",
+      "fetched_at": "2026-06-01T19:32:55+00:00",
+      "last_success_at": "2026-06-01T19:32:55+00:00",
       "editions": [
         "intl"
       ],
@@ -1066,42 +1066,42 @@
     {
       "id": "jan",
       "name": "Jan",
-      "version": "0.8.1",
+      "version": "0.8.2",
       "source": "GitHub Release: menloresearch/jan",
       "version_kind": "release_version",
       "version_source": "GitHub release tag",
       "category": "AI Tools",
       "homepage": "https://jan.ai/",
-      "released_at": "2026-05-29T03:09:50Z",
-      "notes_url": "https://github.com/janhq/jan/releases/tag/v0.8.1",
+      "released_at": "2026-06-01T11:50:01Z",
+      "notes_url": "https://github.com/janhq/jan/releases/tag/v0.8.2",
       "assets": [
         {
           "platform": "win-x64",
-          "url": "https://github.com/janhq/jan/releases/download/v0.8.1/Jan_0.8.1_x64-setup.exe",
+          "url": "https://github.com/janhq/jan/releases/download/v0.8.2/Jan_0.8.2_x64-setup.exe",
           "link_kind": "direct",
-          "filename": "Jan_0.8.1_x64-setup.exe",
-          "size": 57277344,
+          "filename": "Jan_0.8.2_x64-setup.exe",
+          "size": 57328416,
           "sha256": null
         },
         {
           "platform": "mac-universal",
-          "url": "https://github.com/janhq/jan/releases/download/v0.8.1/Jan_0.8.1_universal.dmg",
+          "url": "https://github.com/janhq/jan/releases/download/v0.8.2/Jan_0.8.2_universal.dmg",
           "link_kind": "direct",
-          "filename": "Jan_0.8.1_universal.dmg",
-          "size": 100312206,
+          "filename": "Jan_0.8.2_universal.dmg",
+          "size": 100340367,
           "sha256": null
         },
         {
           "platform": "linux-x64",
-          "url": "https://github.com/janhq/jan/releases/download/v0.8.1/Jan_0.8.1_amd64.AppImage",
+          "url": "https://github.com/janhq/jan/releases/download/v0.8.2/Jan_0.8.2_amd64.AppImage",
           "link_kind": "direct",
-          "filename": "Jan_0.8.1_amd64.AppImage",
-          "size": 155466232,
+          "filename": "Jan_0.8.2_amd64.AppImage",
+          "size": 155400696,
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:10+00:00",
-      "last_success_at": "2026-06-01T05:52:10+00:00",
+      "fetched_at": "2026-06-01T19:32:55+00:00",
+      "last_success_at": "2026-06-01T19:32:55+00:00",
       "editions": [
         "intl"
       ],
@@ -1145,8 +1145,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:09+00:00",
-      "last_success_at": "2026-06-01T05:52:09+00:00",
+      "fetched_at": "2026-06-01T19:32:54+00:00",
+      "last_success_at": "2026-06-01T19:32:54+00:00",
       "editions": [
         "intl"
       ],
@@ -1190,8 +1190,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:09+00:00",
-      "last_success_at": "2026-06-01T05:52:09+00:00",
+      "fetched_at": "2026-06-01T19:32:54+00:00",
+      "last_success_at": "2026-06-01T19:32:54+00:00",
       "editions": [
         "intl"
       ],
@@ -1235,8 +1235,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:09+00:00",
-      "last_success_at": "2026-06-01T05:52:09+00:00",
+      "fetched_at": "2026-06-01T19:32:54+00:00",
+      "last_success_at": "2026-06-01T19:32:54+00:00",
       "editions": [
         "intl"
       ],
@@ -1280,8 +1280,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:09+00:00",
-      "last_success_at": "2026-06-01T05:52:09+00:00",
+      "fetched_at": "2026-06-01T19:32:54+00:00",
+      "last_success_at": "2026-06-01T19:32:54+00:00",
       "editions": [
         "intl"
       ],
@@ -1309,8 +1309,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:09+00:00",
-      "last_success_at": "2026-06-01T05:52:09+00:00",
+      "fetched_at": "2026-06-01T19:32:54+00:00",
+      "last_success_at": "2026-06-01T19:32:54+00:00",
       "editions": [
         "intl"
       ],
@@ -1354,8 +1354,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:10+00:00",
-      "last_success_at": "2026-06-01T05:52:10+00:00",
+      "fetched_at": "2026-06-01T19:32:55+00:00",
+      "last_success_at": "2026-06-01T19:32:55+00:00",
       "editions": [
         "intl"
       ],
@@ -1399,8 +1399,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:09+00:00",
-      "last_success_at": "2026-06-01T05:52:09+00:00",
+      "fetched_at": "2026-06-01T19:32:54+00:00",
+      "last_success_at": "2026-06-01T19:32:54+00:00",
       "editions": [
         "intl"
       ],
@@ -1428,12 +1428,12 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:10+00:00",
+      "fetched_at": "2026-06-01T19:32:55+00:00",
       "warnings": [
         "win-x64: 没有匹配 asset pattern 'duf_*_windows_amd64.zip'",
         "linux-x64: 没有匹配 asset pattern 'duf_*_linux_amd64.tar.gz'"
       ],
-      "last_success_at": "2026-06-01T05:52:10+00:00",
+      "last_success_at": "2026-06-01T19:32:55+00:00",
       "editions": [
         "intl"
       ],
@@ -1477,8 +1477,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:10+00:00",
-      "last_success_at": "2026-06-01T05:52:10+00:00",
+      "fetched_at": "2026-06-01T19:32:55+00:00",
+      "last_success_at": "2026-06-01T19:32:55+00:00",
       "editions": [
         "intl"
       ],
@@ -1522,8 +1522,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:10+00:00",
-      "last_success_at": "2026-06-01T05:52:10+00:00",
+      "fetched_at": "2026-06-01T19:32:55+00:00",
+      "last_success_at": "2026-06-01T19:32:55+00:00",
       "editions": [
         "intl"
       ],
@@ -1567,8 +1567,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:09+00:00",
-      "last_success_at": "2026-06-01T05:52:09+00:00",
+      "fetched_at": "2026-06-01T19:32:54+00:00",
+      "last_success_at": "2026-06-01T19:32:54+00:00",
       "editions": [
         "intl"
       ],
@@ -1604,11 +1604,11 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:10+00:00",
+      "fetched_at": "2026-06-01T19:32:55+00:00",
       "warnings": [
         "mac-arm64: 没有匹配 asset pattern 'cargo-nextest-*-aarch64-apple-darwin.tar.gz'"
       ],
-      "last_success_at": "2026-06-01T05:52:10+00:00",
+      "last_success_at": "2026-06-01T19:32:55+00:00",
       "editions": [
         "intl"
       ],
@@ -1652,8 +1652,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:09+00:00",
-      "last_success_at": "2026-06-01T05:52:09+00:00",
+      "fetched_at": "2026-06-01T19:32:55+00:00",
+      "last_success_at": "2026-06-01T19:32:55+00:00",
       "editions": [
         "intl"
       ],
@@ -1697,8 +1697,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:09+00:00",
-      "last_success_at": "2026-06-01T05:52:09+00:00",
+      "fetched_at": "2026-06-01T19:32:55+00:00",
+      "last_success_at": "2026-06-01T19:32:55+00:00",
       "editions": [
         "intl"
       ],
@@ -1742,8 +1742,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:10+00:00",
-      "last_success_at": "2026-06-01T05:52:10+00:00",
+      "fetched_at": "2026-06-01T19:32:55+00:00",
+      "last_success_at": "2026-06-01T19:32:55+00:00",
       "editions": [
         "intl"
       ],
@@ -1787,8 +1787,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:10+00:00",
-      "last_success_at": "2026-06-01T05:52:10+00:00",
+      "fetched_at": "2026-06-01T19:32:55+00:00",
+      "last_success_at": "2026-06-01T19:32:55+00:00",
       "editions": [
         "intl"
       ],
@@ -1832,8 +1832,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:10+00:00",
-      "last_success_at": "2026-06-01T05:52:10+00:00",
+      "fetched_at": "2026-06-01T19:32:55+00:00",
+      "last_success_at": "2026-06-01T19:32:55+00:00",
       "editions": [
         "intl"
       ],
@@ -1877,8 +1877,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:09+00:00",
-      "last_success_at": "2026-06-01T05:52:09+00:00",
+      "fetched_at": "2026-06-01T19:32:55+00:00",
+      "last_success_at": "2026-06-01T19:32:55+00:00",
       "editions": [
         "intl"
       ],
@@ -1906,8 +1906,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:09+00:00",
-      "last_success_at": "2026-06-01T05:52:09+00:00",
+      "fetched_at": "2026-06-01T19:32:55+00:00",
+      "last_success_at": "2026-06-01T19:32:55+00:00",
       "editions": [
         "intl"
       ],
@@ -1935,8 +1935,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:09+00:00",
-      "last_success_at": "2026-06-01T05:52:09+00:00",
+      "fetched_at": "2026-06-01T19:32:55+00:00",
+      "last_success_at": "2026-06-01T19:32:55+00:00",
       "editions": [
         "intl"
       ],
@@ -1964,8 +1964,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:09+00:00",
-      "last_success_at": "2026-06-01T05:52:09+00:00",
+      "fetched_at": "2026-06-01T19:32:55+00:00",
+      "last_success_at": "2026-06-01T19:32:55+00:00",
       "editions": [
         "intl"
       ],
@@ -1993,8 +1993,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:09+00:00",
-      "last_success_at": "2026-06-01T05:52:09+00:00",
+      "fetched_at": "2026-06-01T19:32:55+00:00",
+      "last_success_at": "2026-06-01T19:32:55+00:00",
       "editions": [
         "intl"
       ],
@@ -2022,8 +2022,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:09+00:00",
-      "last_success_at": "2026-06-01T05:52:09+00:00",
+      "fetched_at": "2026-06-01T19:32:55+00:00",
+      "last_success_at": "2026-06-01T19:32:55+00:00",
       "editions": [
         "intl"
       ],
@@ -2051,8 +2051,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:09+00:00",
-      "last_success_at": "2026-06-01T05:52:09+00:00",
+      "fetched_at": "2026-06-01T19:32:55+00:00",
+      "last_success_at": "2026-06-01T19:32:55+00:00",
       "editions": [
         "intl"
       ],
@@ -2080,8 +2080,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:10+00:00",
-      "last_success_at": "2026-06-01T05:52:10+00:00",
+      "fetched_at": "2026-06-01T19:32:56+00:00",
+      "last_success_at": "2026-06-01T19:32:56+00:00",
       "editions": [
         "intl"
       ],
@@ -2117,8 +2117,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:10+00:00",
-      "last_success_at": "2026-06-01T05:52:10+00:00",
+      "fetched_at": "2026-06-01T19:32:55+00:00",
+      "last_success_at": "2026-06-01T19:32:55+00:00",
       "editions": [
         "intl"
       ],
@@ -2154,8 +2154,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:10+00:00",
-      "last_success_at": "2026-06-01T05:52:10+00:00",
+      "fetched_at": "2026-06-01T19:32:55+00:00",
+      "last_success_at": "2026-06-01T19:32:55+00:00",
       "editions": [
         "intl"
       ],
@@ -2183,12 +2183,12 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:10+00:00",
+      "fetched_at": "2026-06-01T19:32:55+00:00",
       "warnings": [
         "mac-arm64: 没有匹配 asset pattern 'kopia-*-macos-arm64'",
         "linux-x64: 没有匹配 asset pattern 'kopia-*-linux-x64'"
       ],
-      "last_success_at": "2026-06-01T05:52:10+00:00",
+      "last_success_at": "2026-06-01T19:32:55+00:00",
       "editions": [
         "intl"
       ],
@@ -2232,8 +2232,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:10+00:00",
-      "last_success_at": "2026-06-01T05:52:10+00:00",
+      "fetched_at": "2026-06-01T19:32:55+00:00",
+      "last_success_at": "2026-06-01T19:32:55+00:00",
       "editions": [
         "intl"
       ],
@@ -2277,8 +2277,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:10+00:00",
-      "last_success_at": "2026-06-01T05:52:10+00:00",
+      "fetched_at": "2026-06-01T19:32:56+00:00",
+      "last_success_at": "2026-06-01T19:32:56+00:00",
       "editions": [
         "intl"
       ],
@@ -2322,8 +2322,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:10+00:00",
-      "last_success_at": "2026-06-01T05:52:10+00:00",
+      "fetched_at": "2026-06-01T19:32:56+00:00",
+      "last_success_at": "2026-06-01T19:32:56+00:00",
       "editions": [
         "intl"
       ],
@@ -2367,8 +2367,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:10+00:00",
-      "last_success_at": "2026-06-01T05:52:10+00:00",
+      "fetched_at": "2026-06-01T19:32:56+00:00",
+      "last_success_at": "2026-06-01T19:32:56+00:00",
       "editions": [
         "intl"
       ],
@@ -2396,8 +2396,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:10+00:00",
-      "last_success_at": "2026-06-01T05:52:10+00:00",
+      "fetched_at": "2026-06-01T19:32:55+00:00",
+      "last_success_at": "2026-06-01T19:32:55+00:00",
       "editions": [
         "intl"
       ],
@@ -2433,11 +2433,11 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:10+00:00",
+      "fetched_at": "2026-06-01T19:32:56+00:00",
       "warnings": [
         "win-x64: 没有匹配 asset pattern 'netbird_*_windows_amd64.zip'"
       ],
-      "last_success_at": "2026-06-01T05:52:10+00:00",
+      "last_success_at": "2026-06-01T19:32:56+00:00",
       "editions": [
         "intl"
       ],
@@ -2473,11 +2473,11 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:10+00:00",
+      "fetched_at": "2026-06-01T19:32:56+00:00",
       "warnings": [
         "mac-arm64: 没有匹配 asset pattern 'AdGuardHome_darwin_arm64.tar.gz'"
       ],
-      "last_success_at": "2026-06-01T05:52:10+00:00",
+      "last_success_at": "2026-06-01T19:32:56+00:00",
       "editions": [
         "intl"
       ],
@@ -2505,8 +2505,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:10+00:00",
-      "last_success_at": "2026-06-01T05:52:10+00:00",
+      "fetched_at": "2026-06-01T19:32:55+00:00",
+      "last_success_at": "2026-06-01T19:32:55+00:00",
       "editions": [
         "intl"
       ],
@@ -2542,11 +2542,11 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:11+00:00",
+      "fetched_at": "2026-06-01T19:32:56+00:00",
       "warnings": [
         "mac-arm64: 没有匹配 asset pattern 'speedtest-go_*_darwin_arm64.zip'"
       ],
-      "last_success_at": "2026-06-01T05:52:11+00:00",
+      "last_success_at": "2026-06-01T19:32:56+00:00",
       "editions": [
         "intl"
       ],
@@ -2574,8 +2574,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:10+00:00",
-      "last_success_at": "2026-06-01T05:52:10+00:00",
+      "fetched_at": "2026-06-01T19:32:55+00:00",
+      "last_success_at": "2026-06-01T19:32:55+00:00",
       "editions": [
         "intl"
       ],
@@ -2603,8 +2603,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:10+00:00",
-      "last_success_at": "2026-06-01T05:52:10+00:00",
+      "fetched_at": "2026-06-01T19:32:55+00:00",
+      "last_success_at": "2026-06-01T19:32:55+00:00",
       "editions": [
         "intl"
       ],
@@ -2632,12 +2632,12 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:11+00:00",
+      "fetched_at": "2026-06-01T19:32:56+00:00",
       "warnings": [
         "win-x64: 没有匹配 asset pattern 'xemu-win-*-zip.zip'",
         "mac-arm64: 没有匹配 asset pattern 'xemu-macos-*-arm64.tar.gz'"
       ],
-      "last_success_at": "2026-06-01T05:52:11+00:00",
+      "last_success_at": "2026-06-01T19:32:56+00:00",
       "editions": [
         "intl"
       ],
@@ -2673,11 +2673,11 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:11+00:00",
+      "fetched_at": "2026-06-01T19:32:56+00:00",
       "warnings": [
         "linux-x64: 没有匹配 asset pattern 'OpenMW-*-Linux-generic64.tar.gz'"
       ],
-      "last_success_at": "2026-06-01T05:52:11+00:00",
+      "last_success_at": "2026-06-01T19:32:56+00:00",
       "editions": [
         "intl"
       ],
@@ -2721,8 +2721,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:10+00:00",
-      "last_success_at": "2026-06-01T05:52:10+00:00",
+      "fetched_at": "2026-06-01T19:32:56+00:00",
+      "last_success_at": "2026-06-01T19:32:56+00:00",
       "editions": [
         "intl"
       ],
@@ -2750,8 +2750,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:10+00:00",
-      "last_success_at": "2026-06-01T05:52:10+00:00",
+      "fetched_at": "2026-06-01T19:32:56+00:00",
+      "last_success_at": "2026-06-01T19:32:56+00:00",
       "editions": [
         "intl"
       ],
@@ -2779,8 +2779,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:10+00:00",
-      "last_success_at": "2026-06-01T05:52:10+00:00",
+      "fetched_at": "2026-06-01T19:32:56+00:00",
+      "last_success_at": "2026-06-01T19:32:56+00:00",
       "editions": [
         "intl"
       ],
@@ -2808,8 +2808,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:10+00:00",
-      "last_success_at": "2026-06-01T05:52:10+00:00",
+      "fetched_at": "2026-06-01T19:32:56+00:00",
+      "last_success_at": "2026-06-01T19:32:56+00:00",
       "editions": [
         "intl"
       ],
@@ -2845,8 +2845,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:11+00:00",
-      "last_success_at": "2026-06-01T05:52:11+00:00",
+      "fetched_at": "2026-06-01T19:32:56+00:00",
+      "last_success_at": "2026-06-01T19:32:56+00:00",
       "editions": [
         "intl"
       ],
@@ -2882,8 +2882,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:10+00:00",
-      "last_success_at": "2026-06-01T05:52:10+00:00",
+      "fetched_at": "2026-06-01T19:32:56+00:00",
+      "last_success_at": "2026-06-01T19:32:56+00:00",
       "editions": [
         "intl"
       ],
@@ -2919,8 +2919,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:11+00:00",
-      "last_success_at": "2026-06-01T05:52:11+00:00",
+      "fetched_at": "2026-06-01T19:32:56+00:00",
+      "last_success_at": "2026-06-01T19:32:56+00:00",
       "editions": [
         "intl"
       ],
@@ -2964,8 +2964,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:10+00:00",
-      "last_success_at": "2026-06-01T05:52:10+00:00",
+      "fetched_at": "2026-06-01T19:32:56+00:00",
+      "last_success_at": "2026-06-01T19:32:56+00:00",
       "editions": [
         "intl"
       ],
@@ -3009,8 +3009,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:10+00:00",
-      "last_success_at": "2026-06-01T05:52:10+00:00",
+      "fetched_at": "2026-06-01T19:32:56+00:00",
+      "last_success_at": "2026-06-01T19:32:56+00:00",
       "editions": [
         "intl"
       ],
@@ -3046,11 +3046,11 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:11+00:00",
+      "fetched_at": "2026-06-01T19:32:57+00:00",
       "warnings": [
         "win-x64: 没有匹配 asset pattern 'Pomatez-*-x64.exe'"
       ],
-      "last_success_at": "2026-06-01T05:52:11+00:00",
+      "last_success_at": "2026-06-01T19:32:57+00:00",
       "editions": [
         "intl"
       ],
@@ -3094,8 +3094,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:10+00:00",
-      "last_success_at": "2026-06-01T05:52:10+00:00",
+      "fetched_at": "2026-06-01T19:32:56+00:00",
+      "last_success_at": "2026-06-01T19:32:56+00:00",
       "editions": [
         "intl"
       ],
@@ -3131,8 +3131,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:10+00:00",
-      "last_success_at": "2026-06-01T05:52:10+00:00",
+      "fetched_at": "2026-06-01T19:32:56+00:00",
+      "last_success_at": "2026-06-01T19:32:56+00:00",
       "editions": [
         "intl"
       ],
@@ -3176,8 +3176,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:10+00:00",
-      "last_success_at": "2026-06-01T05:52:10+00:00",
+      "fetched_at": "2026-06-01T19:32:56+00:00",
+      "last_success_at": "2026-06-01T19:32:56+00:00",
       "editions": [
         "intl"
       ],
@@ -3205,12 +3205,12 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:11+00:00",
+      "fetched_at": "2026-06-01T19:32:56+00:00",
       "warnings": [
         "mac-arm64: 没有匹配 asset pattern 'Buzz-*-mac-arm64.dmg'",
         "linux-x64: 没有匹配 asset pattern 'Buzz-*-linux-x86_64.AppImage'"
       ],
-      "last_success_at": "2026-06-01T05:52:11+00:00",
+      "last_success_at": "2026-06-01T19:32:56+00:00",
       "editions": [
         "intl"
       ],
@@ -3254,8 +3254,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:10+00:00",
-      "last_success_at": "2026-06-01T05:52:10+00:00",
+      "fetched_at": "2026-06-01T19:32:56+00:00",
+      "last_success_at": "2026-06-01T19:32:56+00:00",
       "editions": [
         "intl"
       ],
@@ -3299,8 +3299,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:10+00:00",
-      "last_success_at": "2026-06-01T05:52:10+00:00",
+      "fetched_at": "2026-06-01T19:32:56+00:00",
+      "last_success_at": "2026-06-01T19:32:56+00:00",
       "editions": [
         "intl"
       ],
@@ -3344,8 +3344,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:11+00:00",
-      "last_success_at": "2026-06-01T05:52:11+00:00",
+      "fetched_at": "2026-06-01T19:32:57+00:00",
+      "last_success_at": "2026-06-01T19:32:57+00:00",
       "editions": [
         "intl"
       ],
@@ -3389,8 +3389,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:10+00:00",
-      "last_success_at": "2026-06-01T05:52:10+00:00",
+      "fetched_at": "2026-06-01T19:32:56+00:00",
+      "last_success_at": "2026-06-01T19:32:56+00:00",
       "editions": [
         "intl"
       ],
@@ -3434,8 +3434,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:10+00:00",
-      "last_success_at": "2026-06-01T05:52:10+00:00",
+      "fetched_at": "2026-06-01T19:32:56+00:00",
+      "last_success_at": "2026-06-01T19:32:56+00:00",
       "editions": [
         "intl"
       ],
@@ -3463,8 +3463,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:11+00:00",
-      "last_success_at": "2026-06-01T05:52:11+00:00",
+      "fetched_at": "2026-06-01T19:32:57+00:00",
+      "last_success_at": "2026-06-01T19:32:57+00:00",
       "editions": [
         "intl"
       ],
@@ -3508,8 +3508,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:11+00:00",
-      "last_success_at": "2026-06-01T05:52:11+00:00",
+      "fetched_at": "2026-06-01T19:32:57+00:00",
+      "last_success_at": "2026-06-01T19:32:57+00:00",
       "editions": [
         "intl"
       ],
@@ -3537,12 +3537,12 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:11+00:00",
+      "fetched_at": "2026-06-01T19:32:57+00:00",
       "warnings": [
         "win-x64: 没有匹配 asset pattern 'navi-*-x86_64-pc-windows-msvc.zip'",
         "mac-arm64: 没有匹配 asset pattern 'navi-*-aarch64-apple-darwin.tar.gz'"
       ],
-      "last_success_at": "2026-06-01T05:52:11+00:00",
+      "last_success_at": "2026-06-01T19:32:57+00:00",
       "editions": [
         "intl"
       ],
@@ -3586,8 +3586,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:11+00:00",
-      "last_success_at": "2026-06-01T05:52:11+00:00",
+      "fetched_at": "2026-06-01T19:32:56+00:00",
+      "last_success_at": "2026-06-01T19:32:56+00:00",
       "editions": [
         "intl"
       ],
@@ -3615,8 +3615,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:11+00:00",
-      "last_success_at": "2026-06-01T05:52:11+00:00",
+      "fetched_at": "2026-06-01T19:32:57+00:00",
+      "last_success_at": "2026-06-01T19:32:57+00:00",
       "editions": [
         "intl"
       ],
@@ -3644,8 +3644,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:11+00:00",
-      "last_success_at": "2026-06-01T05:52:11+00:00",
+      "fetched_at": "2026-06-01T19:32:56+00:00",
+      "last_success_at": "2026-06-01T19:32:56+00:00",
       "editions": [
         "intl"
       ],
@@ -3689,8 +3689,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:11+00:00",
-      "last_success_at": "2026-06-01T05:52:11+00:00",
+      "fetched_at": "2026-06-01T19:32:56+00:00",
+      "last_success_at": "2026-06-01T19:32:56+00:00",
       "editions": [
         "intl"
       ],
@@ -3734,8 +3734,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:11+00:00",
-      "last_success_at": "2026-06-01T05:52:11+00:00",
+      "fetched_at": "2026-06-01T19:32:56+00:00",
+      "last_success_at": "2026-06-01T19:32:56+00:00",
       "editions": [
         "intl"
       ],
@@ -3771,8 +3771,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:11+00:00",
-      "last_success_at": "2026-06-01T05:52:11+00:00",
+      "fetched_at": "2026-06-01T19:32:56+00:00",
+      "last_success_at": "2026-06-01T19:32:56+00:00",
       "editions": [
         "intl"
       ],
@@ -3816,8 +3816,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:11+00:00",
-      "last_success_at": "2026-06-01T05:52:11+00:00",
+      "fetched_at": "2026-06-01T19:32:56+00:00",
+      "last_success_at": "2026-06-01T19:32:56+00:00",
       "editions": [
         "intl"
       ],
@@ -3853,8 +3853,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:11+00:00",
-      "last_success_at": "2026-06-01T05:52:11+00:00",
+      "fetched_at": "2026-06-01T19:32:56+00:00",
+      "last_success_at": "2026-06-01T19:32:56+00:00",
       "editions": [
         "intl"
       ],
@@ -3890,8 +3890,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:11+00:00",
-      "last_success_at": "2026-06-01T05:52:11+00:00",
+      "fetched_at": "2026-06-01T19:32:56+00:00",
+      "last_success_at": "2026-06-01T19:32:56+00:00",
       "editions": [
         "intl"
       ],
@@ -3935,8 +3935,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:11+00:00",
-      "last_success_at": "2026-06-01T05:52:11+00:00",
+      "fetched_at": "2026-06-01T19:32:56+00:00",
+      "last_success_at": "2026-06-01T19:32:56+00:00",
       "editions": [
         "intl"
       ],
@@ -3972,8 +3972,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:11+00:00",
-      "last_success_at": "2026-06-01T05:52:11+00:00",
+      "fetched_at": "2026-06-01T19:32:56+00:00",
+      "last_success_at": "2026-06-01T19:32:56+00:00",
       "editions": [
         "intl"
       ],
@@ -4017,8 +4017,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:11+00:00",
-      "last_success_at": "2026-06-01T05:52:11+00:00",
+      "fetched_at": "2026-06-01T19:32:56+00:00",
+      "last_success_at": "2026-06-01T19:32:56+00:00",
       "editions": [
         "intl"
       ],
@@ -4054,8 +4054,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:11+00:00",
-      "last_success_at": "2026-06-01T05:52:11+00:00",
+      "fetched_at": "2026-06-01T19:32:56+00:00",
+      "last_success_at": "2026-06-01T19:32:56+00:00",
       "editions": [
         "intl"
       ],
@@ -4083,8 +4083,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:11+00:00",
-      "last_success_at": "2026-06-01T05:52:11+00:00",
+      "fetched_at": "2026-06-01T19:32:56+00:00",
+      "last_success_at": "2026-06-01T19:32:56+00:00",
       "editions": [
         "intl"
       ],
@@ -4112,8 +4112,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:11+00:00",
-      "last_success_at": "2026-06-01T05:52:11+00:00",
+      "fetched_at": "2026-06-01T19:32:56+00:00",
+      "last_success_at": "2026-06-01T19:32:56+00:00",
       "editions": [
         "intl"
       ],
@@ -4157,8 +4157,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:11+00:00",
-      "last_success_at": "2026-06-01T05:52:11+00:00",
+      "fetched_at": "2026-06-01T19:32:56+00:00",
+      "last_success_at": "2026-06-01T19:32:56+00:00",
       "editions": [
         "intl"
       ],
@@ -4194,8 +4194,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:11+00:00",
-      "last_success_at": "2026-06-01T05:52:11+00:00",
+      "fetched_at": "2026-06-01T19:32:56+00:00",
+      "last_success_at": "2026-06-01T19:32:56+00:00",
       "editions": [
         "intl"
       ],
@@ -4247,8 +4247,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:11+00:00",
-      "last_success_at": "2026-06-01T05:52:11+00:00",
+      "fetched_at": "2026-06-01T19:32:57+00:00",
+      "last_success_at": "2026-06-01T19:32:57+00:00",
       "editions": [
         "intl",
         "cn"
@@ -4277,8 +4277,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:11+00:00",
-      "last_success_at": "2026-06-01T05:52:11+00:00",
+      "fetched_at": "2026-06-01T19:32:57+00:00",
+      "last_success_at": "2026-06-01T19:32:57+00:00",
       "editions": [
         "cn",
         "intl"
@@ -4289,45 +4289,45 @@
     {
       "id": "codex",
       "name": "OpenAI Codex",
-      "version": "0.135.0",
+      "version": "0.136.0",
       "source": "GitHub Release: openai/codex",
       "version_kind": "release_version",
       "version_source": "GitHub release tag",
       "category": "Developer Tools",
       "homepage": "https://github.com/openai/codex",
-      "released_at": "2026-05-28T17:31:35Z",
-      "notes_url": "https://github.com/openai/codex/releases/tag/rust-v0.135.0",
+      "released_at": "2026-06-01T17:49:22Z",
+      "notes_url": "https://github.com/openai/codex/releases/tag/rust-v0.136.0",
       "assets": [
         {
           "platform": "win-x64",
-          "url": "https://github.com/openai/codex/releases/download/rust-v0.135.0/codex-x86_64-pc-windows-msvc.exe",
+          "url": "https://github.com/openai/codex/releases/download/rust-v0.136.0/codex-x86_64-pc-windows-msvc.exe",
           "link_kind": "direct",
           "filename": "codex-x86_64-pc-windows-msvc.exe",
-          "size": 242541872,
+          "size": 246156592,
           "sha256": null
         },
         {
           "platform": "win-arm64",
-          "url": "https://github.com/openai/codex/releases/download/rust-v0.135.0/codex-aarch64-pc-windows-msvc.exe",
+          "url": "https://github.com/openai/codex/releases/download/rust-v0.136.0/codex-aarch64-pc-windows-msvc.exe",
           "link_kind": "direct",
           "filename": "codex-aarch64-pc-windows-msvc.exe",
-          "size": 205370160,
+          "size": 208412976,
           "sha256": null
         },
         {
           "platform": "mac-x64",
-          "url": "https://github.com/openai/codex/releases/download/rust-v0.135.0/codex-x86_64-apple-darwin.tar.gz",
+          "url": "https://github.com/openai/codex/releases/download/rust-v0.136.0/codex-x86_64-apple-darwin.tar.gz",
           "link_kind": "direct",
           "filename": "codex-x86_64-apple-darwin.tar.gz",
-          "size": 90645663,
+          "size": 91851334,
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:13+00:00",
+      "fetched_at": "2026-06-01T19:32:59+00:00",
       "warnings": [
         "mac-arm64: 没有匹配 asset pattern 'codex-aarch64-apple-darwin.dmg'"
       ],
-      "last_success_at": "2026-06-01T05:52:13+00:00",
+      "last_success_at": "2026-06-01T19:32:59+00:00",
       "editions": [
         "intl",
         "cn"
@@ -4356,8 +4356,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:11+00:00",
-      "last_success_at": "2026-06-01T05:52:11+00:00",
+      "fetched_at": "2026-06-01T19:32:57+00:00",
+      "last_success_at": "2026-06-01T19:32:57+00:00",
       "editions": [
         "cn",
         "intl"
@@ -4386,8 +4386,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:11+00:00",
-      "last_success_at": "2026-06-01T05:52:11+00:00",
+      "fetched_at": "2026-06-01T19:32:57+00:00",
+      "last_success_at": "2026-06-01T19:32:57+00:00",
       "editions": [
         "intl",
         "cn"
@@ -4432,8 +4432,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:11+00:00",
-      "last_success_at": "2026-06-01T05:52:11+00:00",
+      "fetched_at": "2026-06-01T19:32:57+00:00",
+      "last_success_at": "2026-06-01T19:32:57+00:00",
       "editions": [
         "intl",
         "cn"
@@ -4462,8 +4462,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:12+00:00",
-      "last_success_at": "2026-06-01T05:52:12+00:00",
+      "fetched_at": "2026-06-01T19:32:57+00:00",
+      "last_success_at": "2026-06-01T19:32:57+00:00",
       "editions": [
         "intl",
         "cn"
@@ -4492,8 +4492,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:12+00:00",
-      "last_success_at": "2026-06-01T05:52:12+00:00",
+      "fetched_at": "2026-06-01T19:32:57+00:00",
+      "last_success_at": "2026-06-01T19:32:57+00:00",
       "editions": [
         "intl",
         "cn"
@@ -4522,8 +4522,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:12+00:00",
-      "last_success_at": "2026-06-01T05:52:12+00:00",
+      "fetched_at": "2026-06-01T19:32:57+00:00",
+      "last_success_at": "2026-06-01T19:32:57+00:00",
       "editions": [
         "intl",
         "cn"
@@ -4552,8 +4552,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:12+00:00",
-      "last_success_at": "2026-06-01T05:52:12+00:00",
+      "fetched_at": "2026-06-01T19:32:58+00:00",
+      "last_success_at": "2026-06-01T19:32:58+00:00",
       "editions": [
         "intl",
         "cn"
@@ -4582,8 +4582,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:12+00:00",
-      "last_success_at": "2026-06-01T05:52:12+00:00",
+      "fetched_at": "2026-06-01T19:32:58+00:00",
+      "last_success_at": "2026-06-01T19:32:58+00:00",
       "editions": [
         "intl",
         "cn"
@@ -4612,8 +4612,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:12+00:00",
-      "last_success_at": "2026-06-01T05:52:12+00:00",
+      "fetched_at": "2026-06-01T19:32:58+00:00",
+      "last_success_at": "2026-06-01T19:32:58+00:00",
       "editions": [
         "intl",
         "cn"
@@ -4642,8 +4642,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:12+00:00",
-      "last_success_at": "2026-06-01T05:52:12+00:00",
+      "fetched_at": "2026-06-01T19:32:58+00:00",
+      "last_success_at": "2026-06-01T19:32:58+00:00",
       "editions": [
         "intl",
         "cn"
@@ -4672,8 +4672,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:12+00:00",
-      "last_success_at": "2026-06-01T05:52:12+00:00",
+      "fetched_at": "2026-06-01T19:32:58+00:00",
+      "last_success_at": "2026-06-01T19:32:58+00:00",
       "editions": [
         "intl",
         "cn"
@@ -4702,8 +4702,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:12+00:00",
-      "last_success_at": "2026-06-01T05:52:12+00:00",
+      "fetched_at": "2026-06-01T19:32:58+00:00",
+      "last_success_at": "2026-06-01T19:32:58+00:00",
       "editions": [
         "intl",
         "cn"
@@ -4756,8 +4756,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:12+00:00",
-      "last_success_at": "2026-06-01T05:52:12+00:00",
+      "fetched_at": "2026-06-01T19:32:58+00:00",
+      "last_success_at": "2026-06-01T19:32:58+00:00",
       "editions": [
         "intl",
         "cn"
@@ -4802,8 +4802,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:12+00:00",
-      "last_success_at": "2026-06-01T05:52:12+00:00",
+      "fetched_at": "2026-06-01T19:32:57+00:00",
+      "last_success_at": "2026-06-01T19:32:57+00:00",
       "editions": [
         "intl",
         "cn"
@@ -4832,12 +4832,12 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:12+00:00",
+      "fetched_at": "2026-06-01T19:32:58+00:00",
       "warnings": [
         "win-x64: 没有匹配 asset pattern 'tabby-*-x64-setup.exe'",
         "linux-x64: 没有匹配 asset pattern 'tabby-*-x86_64-linux.rpm'"
       ],
-      "last_success_at": "2026-06-01T05:52:12+00:00",
+      "last_success_at": "2026-06-01T19:32:58+00:00",
       "editions": [
         "intl",
         "cn"
@@ -4866,8 +4866,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:13+00:00",
-      "last_success_at": "2026-06-01T05:52:13+00:00",
+      "fetched_at": "2026-06-01T19:32:58+00:00",
+      "last_success_at": "2026-06-01T19:32:58+00:00",
       "editions": [
         "intl",
         "cn"
@@ -4912,8 +4912,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:12+00:00",
-      "last_success_at": "2026-06-01T05:52:12+00:00",
+      "fetched_at": "2026-06-01T19:32:59+00:00",
+      "last_success_at": "2026-06-01T19:32:59+00:00",
       "editions": [
         "intl",
         "cn"
@@ -4942,8 +4942,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:13+00:00",
-      "last_success_at": "2026-06-01T05:52:13+00:00",
+      "fetched_at": "2026-06-01T19:32:58+00:00",
+      "last_success_at": "2026-06-01T19:32:58+00:00",
       "desc_cn": "macOS 菜单栏系统监控工具，显示 CPU/内存/网络/温度",
       "desc_en": "macOS menu bar system monitor showing CPU/memory/network/temperature"
     },
@@ -4968,8 +4968,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:13+00:00",
-      "last_success_at": "2026-06-01T05:52:13+00:00",
+      "fetched_at": "2026-06-01T19:32:59+00:00",
+      "last_success_at": "2026-06-01T19:32:59+00:00",
       "desc_cn": "macOS OpenVPN 客户端，免费开源的 VPN 连接工具",
       "desc_en": "Free open-source OpenVPN client for macOS"
     },
@@ -4994,34 +4994,34 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:13+00:00",
-      "last_success_at": "2026-06-01T05:52:13+00:00",
+      "fetched_at": "2026-06-01T19:32:59+00:00",
+      "last_success_at": "2026-06-01T19:32:59+00:00",
       "desc_cn": "macOS 端口占用查看和释放工具，一键杀掉占用端口的进程",
       "desc_en": "macOS port usage viewer and killer, one-click to free occupied ports"
     },
     {
       "id": "cmux",
       "name": "cmux",
-      "version": "0.64.10",
+      "version": "0.64.11",
       "source": "GitHub Release: manaflow-ai/cmux",
       "version_kind": "release_version",
       "version_source": "GitHub release tag",
       "category": "Developer Tools",
       "homepage": "https://cmux.dev",
-      "released_at": "2026-05-23T13:03:45Z",
-      "notes_url": "https://github.com/manaflow-ai/cmux/releases/tag/v0.64.10",
+      "released_at": "2026-06-01T12:44:02Z",
+      "notes_url": "https://github.com/manaflow-ai/cmux/releases/tag/v0.64.11",
       "assets": [
         {
           "platform": "mac-universal",
-          "url": "https://github.com/manaflow-ai/cmux/releases/download/v0.64.10/cmux-macos.dmg",
+          "url": "https://github.com/manaflow-ai/cmux/releases/download/v0.64.11/cmux-macos.dmg",
           "link_kind": "direct",
           "filename": "cmux-macos.dmg",
-          "size": 57682966,
+          "size": 69702688,
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:13+00:00",
-      "last_success_at": "2026-06-01T05:52:13+00:00",
+      "fetched_at": "2026-06-01T19:32:59+00:00",
+      "last_success_at": "2026-06-01T19:32:59+00:00",
       "desc_cn": "AI 驱动的终端复用工具，智能管理多个终端会话",
       "desc_en": "AI-powered terminal multiplexer for smart session management"
     },
@@ -5046,8 +5046,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:13+00:00",
-      "last_success_at": "2026-06-01T05:52:13+00:00",
+      "fetched_at": "2026-06-01T19:32:59+00:00",
+      "last_success_at": "2026-06-01T19:32:59+00:00",
       "desc_cn": "macOS 系统微调工具，自定义隐藏系统设置",
       "desc_en": "macOS system tweaker for customizing hidden system settings"
     },
@@ -5072,8 +5072,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:13+00:00",
-      "last_success_at": "2026-06-01T05:52:13+00:00",
+      "fetched_at": "2026-06-01T19:32:59+00:00",
+      "last_success_at": "2026-06-01T19:32:59+00:00",
       "desc_cn": "macOS 应用端口管理工具，查看应用的网络连接",
       "desc_en": "macOS app port management tool for viewing network connections"
     },
@@ -5098,8 +5098,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:12+00:00",
-      "last_success_at": "2026-06-01T05:52:12+00:00",
+      "fetched_at": "2026-06-01T19:32:58+00:00",
+      "last_success_at": "2026-06-01T19:32:58+00:00",
       "desc_cn": "高质量 AI 翻译工具，支持 30+ 语言互译",
       "desc_en": "High-quality AI translation tool supporting 30+ languages"
     },
@@ -5124,8 +5124,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:12+00:00",
-      "last_success_at": "2026-06-01T05:52:12+00:00",
+      "fetched_at": "2026-06-01T19:32:58+00:00",
+      "last_success_at": "2026-06-01T19:32:58+00:00",
       "desc_cn": "API 文档浏览器，离线查看 200+ 技术文档",
       "desc_en": "API documentation browser for offline access to 200+ tech docs"
     },
@@ -5150,8 +5150,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:12+00:00",
-      "last_success_at": "2026-06-01T05:52:12+00:00",
+      "fetched_at": "2026-06-01T19:32:58+00:00",
+      "last_success_at": "2026-06-01T19:32:58+00:00",
       "desc_cn": "跨平台 SSH 客户端，支持团队协作和密钥管理",
       "desc_en": "Cross-platform SSH client with team collaboration and key management"
     },
@@ -5176,8 +5176,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:12+00:00",
-      "last_success_at": "2026-06-01T05:52:12+00:00",
+      "fetched_at": "2026-06-01T19:32:58+00:00",
+      "last_success_at": "2026-06-01T19:32:58+00:00",
       "desc_cn": "免费数据库管理工具，支持 MySQL/PostgreSQL/SQLite 等",
       "desc_en": "Free database management tool supporting MySQL/PostgreSQL/SQLite and more"
     },
@@ -5202,8 +5202,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:16+00:00",
-      "last_success_at": "2026-06-01T05:52:16+00:00",
+      "fetched_at": "2026-06-01T19:33:02+00:00",
+      "last_success_at": "2026-06-01T19:33:02+00:00",
       "desc_cn": "国民级即时通讯应用，支持文字/语音/视频通话",
       "desc_en": "China's leading messaging app with text/voice/video calls"
     },
@@ -5228,13 +5228,13 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:08+00:00",
+      "fetched_at": "2026-06-01T19:32:51+00:00",
       "warnings": [
         "mac-arm64: 没有匹配 asset pattern 'v2raya_macos_arm64_*.pkg'",
         "mac-x64: 没有匹配 asset pattern 'v2raya_macos_x64_*.pkg'",
         "linux-x64: 没有匹配 asset pattern 'v2raya_linux_x64_*.deb'"
       ],
-      "last_success_at": "2026-06-01T05:52:08+00:00",
+      "last_success_at": "2026-06-01T19:32:51+00:00",
       "editions": [
         "cn"
       ],
@@ -5286,8 +5286,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:07+00:00",
-      "last_success_at": "2026-06-01T05:52:07+00:00",
+      "fetched_at": "2026-06-01T19:32:52+00:00",
+      "last_success_at": "2026-06-01T19:32:52+00:00",
       "editions": [
         "cn"
       ],
@@ -5331,8 +5331,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:09+00:00",
-      "last_success_at": "2026-06-01T05:52:09+00:00",
+      "fetched_at": "2026-06-01T19:32:53+00:00",
+      "last_success_at": "2026-06-01T19:32:53+00:00",
       "editions": [
         "cn"
       ],
@@ -5360,8 +5360,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:09+00:00",
-      "last_success_at": "2026-06-01T05:52:09+00:00",
+      "fetched_at": "2026-06-01T19:32:53+00:00",
+      "last_success_at": "2026-06-01T19:32:53+00:00",
       "editions": [
         "cn"
       ],
@@ -5483,12 +5483,12 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:09+00:00",
+      "fetched_at": "2026-06-01T19:32:53+00:00",
       "warnings": [
         "mac-arm64: 没有匹配 asset pattern 'Stirling-PDF-macos-aarch64.dmg'",
         "mac-x64: 没有匹配 asset pattern 'Stirling-PDF-macos-x86_64.dmg'"
       ],
-      "last_success_at": "2026-06-01T05:52:09+00:00",
+      "last_success_at": "2026-06-01T19:32:53+00:00",
       "editions": [
         "cn"
       ],
@@ -5532,8 +5532,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:10+00:00",
-      "last_success_at": "2026-06-01T05:52:10+00:00",
+      "fetched_at": "2026-06-01T19:32:54+00:00",
+      "last_success_at": "2026-06-01T19:32:54+00:00",
       "editions": [
         "cn"
       ],
@@ -5561,8 +5561,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:10+00:00",
-      "last_success_at": "2026-06-01T05:52:10+00:00",
+      "fetched_at": "2026-06-01T19:32:54+00:00",
+      "last_success_at": "2026-06-01T19:32:54+00:00",
       "editions": [
         "cn"
       ],
@@ -5590,8 +5590,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:08+00:00",
-      "last_success_at": "2026-06-01T05:52:08+00:00",
+      "fetched_at": "2026-06-01T19:32:51+00:00",
+      "last_success_at": "2026-06-01T19:32:51+00:00",
       "editions": [
         "intl"
       ],
@@ -5619,8 +5619,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:07+00:00",
-      "last_success_at": "2026-06-01T05:52:07+00:00",
+      "fetched_at": "2026-06-01T19:32:51+00:00",
+      "last_success_at": "2026-06-01T19:32:51+00:00",
       "editions": [
         "intl"
       ],
@@ -5648,8 +5648,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:08+00:00",
-      "last_success_at": "2026-06-01T05:52:08+00:00",
+      "fetched_at": "2026-06-01T19:32:51+00:00",
+      "last_success_at": "2026-06-01T19:32:51+00:00",
       "editions": [
         "intl"
       ],
@@ -5677,8 +5677,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:08+00:00",
-      "last_success_at": "2026-06-01T05:52:08+00:00",
+      "fetched_at": "2026-06-01T19:32:52+00:00",
+      "last_success_at": "2026-06-01T19:32:52+00:00",
       "editions": [
         "intl"
       ],
@@ -5706,8 +5706,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:08+00:00",
-      "last_success_at": "2026-06-01T05:52:08+00:00",
+      "fetched_at": "2026-06-01T19:32:52+00:00",
+      "last_success_at": "2026-06-01T19:32:52+00:00",
       "editions": [
         "intl"
       ],
@@ -5735,8 +5735,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:08+00:00",
-      "last_success_at": "2026-06-01T05:52:08+00:00",
+      "fetched_at": "2026-06-01T19:32:52+00:00",
+      "last_success_at": "2026-06-01T19:32:52+00:00",
       "editions": [
         "intl"
       ],
@@ -5764,8 +5764,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:08+00:00",
-      "last_success_at": "2026-06-01T05:52:08+00:00",
+      "fetched_at": "2026-06-01T19:32:52+00:00",
+      "last_success_at": "2026-06-01T19:32:52+00:00",
       "editions": [
         "intl"
       ],
@@ -5793,8 +5793,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:07+00:00",
-      "last_success_at": "2026-06-01T05:52:07+00:00",
+      "fetched_at": "2026-06-01T19:32:51+00:00",
+      "last_success_at": "2026-06-01T19:32:51+00:00",
       "editions": [
         "intl"
       ],
@@ -5822,8 +5822,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:08+00:00",
-      "last_success_at": "2026-06-01T05:52:08+00:00",
+      "fetched_at": "2026-06-01T19:32:52+00:00",
+      "last_success_at": "2026-06-01T19:32:52+00:00",
       "editions": [
         "intl"
       ],
@@ -5851,8 +5851,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:07+00:00",
-      "last_success_at": "2026-06-01T05:52:07+00:00",
+      "fetched_at": "2026-06-01T19:32:51+00:00",
+      "last_success_at": "2026-06-01T19:32:51+00:00",
       "editions": [
         "intl"
       ],
@@ -5880,8 +5880,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:08+00:00",
-      "last_success_at": "2026-06-01T05:52:08+00:00",
+      "fetched_at": "2026-06-01T19:32:52+00:00",
+      "last_success_at": "2026-06-01T19:32:52+00:00",
       "editions": [
         "intl"
       ],
@@ -5909,8 +5909,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:08+00:00",
-      "last_success_at": "2026-06-01T05:52:08+00:00",
+      "fetched_at": "2026-06-01T19:32:52+00:00",
+      "last_success_at": "2026-06-01T19:32:52+00:00",
       "editions": [
         "intl"
       ],
@@ -5954,8 +5954,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:08+00:00",
-      "last_success_at": "2026-06-01T05:52:08+00:00",
+      "fetched_at": "2026-06-01T19:32:52+00:00",
+      "last_success_at": "2026-06-01T19:32:52+00:00",
       "editions": [
         "intl"
       ],
@@ -5983,8 +5983,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:08+00:00",
-      "last_success_at": "2026-06-01T05:52:08+00:00",
+      "fetched_at": "2026-06-01T19:32:52+00:00",
+      "last_success_at": "2026-06-01T19:32:52+00:00",
       "editions": [
         "intl"
       ],
@@ -6028,8 +6028,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:08+00:00",
-      "last_success_at": "2026-06-01T05:52:08+00:00",
+      "fetched_at": "2026-06-01T19:32:52+00:00",
+      "last_success_at": "2026-06-01T19:32:52+00:00",
       "editions": [
         "intl"
       ],
@@ -6073,8 +6073,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:08+00:00",
-      "last_success_at": "2026-06-01T05:52:08+00:00",
+      "fetched_at": "2026-06-01T19:32:52+00:00",
+      "last_success_at": "2026-06-01T19:32:52+00:00",
       "editions": [
         "intl"
       ],
@@ -6118,8 +6118,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:08+00:00",
-      "last_success_at": "2026-06-01T05:52:08+00:00",
+      "fetched_at": "2026-06-01T19:32:52+00:00",
+      "last_success_at": "2026-06-01T19:32:52+00:00",
       "editions": [
         "intl"
       ],
@@ -6155,8 +6155,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:08+00:00",
-      "last_success_at": "2026-06-01T05:52:08+00:00",
+      "fetched_at": "2026-06-01T19:32:52+00:00",
+      "last_success_at": "2026-06-01T19:32:52+00:00",
       "editions": [
         "intl"
       ],
@@ -6184,8 +6184,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:08+00:00",
-      "last_success_at": "2026-06-01T05:52:08+00:00",
+      "fetched_at": "2026-06-01T19:32:52+00:00",
+      "last_success_at": "2026-06-01T19:32:52+00:00",
       "editions": [
         "intl"
       ],
@@ -6221,8 +6221,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:08+00:00",
-      "last_success_at": "2026-06-01T05:52:08+00:00",
+      "fetched_at": "2026-06-01T19:32:52+00:00",
+      "last_success_at": "2026-06-01T19:32:52+00:00",
       "editions": [
         "intl"
       ],
@@ -6266,8 +6266,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:08+00:00",
-      "last_success_at": "2026-06-01T05:52:08+00:00",
+      "fetched_at": "2026-06-01T19:32:52+00:00",
+      "last_success_at": "2026-06-01T19:32:52+00:00",
       "editions": [
         "intl"
       ],
@@ -6311,8 +6311,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:08+00:00",
-      "last_success_at": "2026-06-01T05:52:08+00:00",
+      "fetched_at": "2026-06-01T19:32:53+00:00",
+      "last_success_at": "2026-06-01T19:32:53+00:00",
       "editions": [
         "intl"
       ],
@@ -6340,8 +6340,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:08+00:00",
-      "last_success_at": "2026-06-01T05:52:08+00:00",
+      "fetched_at": "2026-06-01T19:32:52+00:00",
+      "last_success_at": "2026-06-01T19:32:52+00:00",
       "editions": [
         "intl"
       ],
@@ -6385,8 +6385,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:08+00:00",
-      "last_success_at": "2026-06-01T05:52:08+00:00",
+      "fetched_at": "2026-06-01T19:32:52+00:00",
+      "last_success_at": "2026-06-01T19:32:52+00:00",
       "editions": [
         "intl"
       ],
@@ -6430,8 +6430,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:08+00:00",
-      "last_success_at": "2026-06-01T05:52:08+00:00",
+      "fetched_at": "2026-06-01T19:32:52+00:00",
+      "last_success_at": "2026-06-01T19:32:52+00:00",
       "editions": [
         "intl"
       ],
@@ -6475,8 +6475,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:08+00:00",
-      "last_success_at": "2026-06-01T05:52:08+00:00",
+      "fetched_at": "2026-06-01T19:32:53+00:00",
+      "last_success_at": "2026-06-01T19:32:53+00:00",
       "editions": [
         "intl"
       ],
@@ -6520,8 +6520,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:08+00:00",
-      "last_success_at": "2026-06-01T05:52:08+00:00",
+      "fetched_at": "2026-06-01T19:32:53+00:00",
+      "last_success_at": "2026-06-01T19:32:53+00:00",
       "editions": [
         "intl"
       ],
@@ -6565,8 +6565,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:08+00:00",
-      "last_success_at": "2026-06-01T05:52:08+00:00",
+      "fetched_at": "2026-06-01T19:32:52+00:00",
+      "last_success_at": "2026-06-01T19:32:52+00:00",
       "editions": [
         "intl"
       ],
@@ -6610,8 +6610,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:08+00:00",
-      "last_success_at": "2026-06-01T05:52:08+00:00",
+      "fetched_at": "2026-06-01T19:32:53+00:00",
+      "last_success_at": "2026-06-01T19:32:53+00:00",
       "editions": [
         "intl"
       ],
@@ -6655,8 +6655,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:08+00:00",
-      "last_success_at": "2026-06-01T05:52:08+00:00",
+      "fetched_at": "2026-06-01T19:32:53+00:00",
+      "last_success_at": "2026-06-01T19:32:53+00:00",
       "editions": [
         "intl"
       ],
@@ -6700,8 +6700,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:08+00:00",
-      "last_success_at": "2026-06-01T05:52:08+00:00",
+      "fetched_at": "2026-06-01T19:32:53+00:00",
+      "last_success_at": "2026-06-01T19:32:53+00:00",
       "editions": [
         "intl"
       ],
@@ -6745,8 +6745,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:09+00:00",
-      "last_success_at": "2026-06-01T05:52:09+00:00",
+      "fetched_at": "2026-06-01T19:32:53+00:00",
+      "last_success_at": "2026-06-01T19:32:53+00:00",
       "editions": [
         "intl"
       ],
@@ -6790,8 +6790,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:08+00:00",
-      "last_success_at": "2026-06-01T05:52:08+00:00",
+      "fetched_at": "2026-06-01T19:32:52+00:00",
+      "last_success_at": "2026-06-01T19:32:52+00:00",
       "editions": [
         "intl"
       ],
@@ -6827,11 +6827,11 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:09+00:00",
+      "fetched_at": "2026-06-01T19:32:53+00:00",
       "warnings": [
         "win-x64: 没有匹配 asset pattern 'cocogitto-*-x86_64-pc-windows-msvc.zip'"
       ],
-      "last_success_at": "2026-06-01T05:52:09+00:00",
+      "last_success_at": "2026-06-01T19:32:53+00:00",
       "editions": [
         "intl"
       ],
@@ -6875,8 +6875,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:08+00:00",
-      "last_success_at": "2026-06-01T05:52:08+00:00",
+      "fetched_at": "2026-06-01T19:32:52+00:00",
+      "last_success_at": "2026-06-01T19:32:52+00:00",
       "editions": [
         "intl"
       ],
@@ -6904,8 +6904,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:08+00:00",
-      "last_success_at": "2026-06-01T05:52:08+00:00",
+      "fetched_at": "2026-06-01T19:32:52+00:00",
+      "last_success_at": "2026-06-01T19:32:52+00:00",
       "editions": [
         "intl"
       ],
@@ -6933,8 +6933,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:08+00:00",
-      "last_success_at": "2026-06-01T05:52:08+00:00",
+      "fetched_at": "2026-06-01T19:32:52+00:00",
+      "last_success_at": "2026-06-01T19:32:52+00:00",
       "editions": [
         "intl"
       ],
@@ -6962,8 +6962,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:08+00:00",
-      "last_success_at": "2026-06-01T05:52:08+00:00",
+      "fetched_at": "2026-06-01T19:32:52+00:00",
+      "last_success_at": "2026-06-01T19:32:52+00:00",
       "editions": [
         "intl"
       ],
@@ -6991,8 +6991,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:09+00:00",
-      "last_success_at": "2026-06-01T05:52:09+00:00",
+      "fetched_at": "2026-06-01T19:32:53+00:00",
+      "last_success_at": "2026-06-01T19:32:53+00:00",
       "editions": [
         "intl"
       ],
@@ -7020,8 +7020,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:08+00:00",
-      "last_success_at": "2026-06-01T05:52:08+00:00",
+      "fetched_at": "2026-06-01T19:32:52+00:00",
+      "last_success_at": "2026-06-01T19:32:52+00:00",
       "editions": [
         "intl"
       ],
@@ -7049,8 +7049,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:08+00:00",
-      "last_success_at": "2026-06-01T05:52:08+00:00",
+      "fetched_at": "2026-06-01T19:32:52+00:00",
+      "last_success_at": "2026-06-01T19:32:52+00:00",
       "editions": [
         "intl"
       ],
@@ -7078,8 +7078,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:09+00:00",
-      "last_success_at": "2026-06-01T05:52:09+00:00",
+      "fetched_at": "2026-06-01T19:32:53+00:00",
+      "last_success_at": "2026-06-01T19:32:53+00:00",
       "editions": [
         "intl"
       ],
@@ -7107,8 +7107,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:08+00:00",
-      "last_success_at": "2026-06-01T05:52:08+00:00",
+      "fetched_at": "2026-06-01T19:32:53+00:00",
+      "last_success_at": "2026-06-01T19:32:53+00:00",
       "editions": [
         "intl"
       ],
@@ -7136,8 +7136,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:08+00:00",
-      "last_success_at": "2026-06-01T05:52:08+00:00",
+      "fetched_at": "2026-06-01T19:32:53+00:00",
+      "last_success_at": "2026-06-01T19:32:53+00:00",
       "editions": [
         "intl"
       ],
@@ -7181,8 +7181,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:09+00:00",
-      "last_success_at": "2026-06-01T05:52:09+00:00",
+      "fetched_at": "2026-06-01T19:32:53+00:00",
+      "last_success_at": "2026-06-01T19:32:53+00:00",
       "editions": [
         "intl"
       ],
@@ -7218,8 +7218,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:08+00:00",
-      "last_success_at": "2026-06-01T05:52:08+00:00",
+      "fetched_at": "2026-06-01T19:32:53+00:00",
+      "last_success_at": "2026-06-01T19:32:53+00:00",
       "editions": [
         "intl"
       ],
@@ -7263,8 +7263,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:09+00:00",
-      "last_success_at": "2026-06-01T05:52:09+00:00",
+      "fetched_at": "2026-06-01T19:32:53+00:00",
+      "last_success_at": "2026-06-01T19:32:53+00:00",
       "editions": [
         "intl"
       ],
@@ -7308,8 +7308,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:09+00:00",
-      "last_success_at": "2026-06-01T05:52:09+00:00",
+      "fetched_at": "2026-06-01T19:32:54+00:00",
+      "last_success_at": "2026-06-01T19:32:54+00:00",
       "editions": [
         "intl"
       ],
@@ -7353,8 +7353,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:09+00:00",
-      "last_success_at": "2026-06-01T05:52:09+00:00",
+      "fetched_at": "2026-06-01T19:32:54+00:00",
+      "last_success_at": "2026-06-01T19:32:54+00:00",
       "editions": [
         "intl"
       ],
@@ -7390,8 +7390,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:08+00:00",
-      "last_success_at": "2026-06-01T05:52:08+00:00",
+      "fetched_at": "2026-06-01T19:32:53+00:00",
+      "last_success_at": "2026-06-01T19:32:53+00:00",
       "editions": [
         "intl"
       ],
@@ -7427,8 +7427,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:09+00:00",
-      "last_success_at": "2026-06-01T05:52:09+00:00",
+      "fetched_at": "2026-06-01T19:32:54+00:00",
+      "last_success_at": "2026-06-01T19:32:54+00:00",
       "editions": [
         "intl"
       ],
@@ -7456,8 +7456,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:08+00:00",
-      "last_success_at": "2026-06-01T05:52:08+00:00",
+      "fetched_at": "2026-06-01T19:32:53+00:00",
+      "last_success_at": "2026-06-01T19:32:53+00:00",
       "editions": [
         "intl"
       ],
@@ -7485,8 +7485,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:08+00:00",
-      "last_success_at": "2026-06-01T05:52:08+00:00",
+      "fetched_at": "2026-06-01T19:32:53+00:00",
+      "last_success_at": "2026-06-01T19:32:53+00:00",
       "editions": [
         "intl"
       ],
@@ -7514,12 +7514,12 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:09+00:00",
+      "fetched_at": "2026-06-01T19:32:54+00:00",
       "warnings": [
         "win-x64: 没有匹配 asset pattern 'PrismLauncher-*-Windows-MSVC-Setup.exe'",
         "mac-arm64: 没有匹配 asset pattern 'PrismLauncher-*-macOS-arm64.dmg'"
       ],
-      "last_success_at": "2026-06-01T05:52:09+00:00",
+      "last_success_at": "2026-06-01T19:32:54+00:00",
       "editions": [
         "intl"
       ],
@@ -7547,8 +7547,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:09+00:00",
-      "last_success_at": "2026-06-01T05:52:09+00:00",
+      "fetched_at": "2026-06-01T19:32:53+00:00",
+      "last_success_at": "2026-06-01T19:32:53+00:00",
       "editions": [
         "intl"
       ],
@@ -7592,8 +7592,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:09+00:00",
-      "last_success_at": "2026-06-01T05:52:09+00:00",
+      "fetched_at": "2026-06-01T19:32:53+00:00",
+      "last_success_at": "2026-06-01T19:32:53+00:00",
       "editions": [
         "intl"
       ],
@@ -7621,11 +7621,11 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:09+00:00",
+      "fetched_at": "2026-06-01T19:32:54+00:00",
       "warnings": [
         "mac-arm64: 没有匹配 asset pattern 'mGBA-*-osx-arm64.tar.xz'"
       ],
-      "last_success_at": "2026-06-01T05:52:09+00:00",
+      "last_success_at": "2026-06-01T19:32:54+00:00",
       "editions": [
         "intl"
       ],
@@ -7669,8 +7669,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:09+00:00",
-      "last_success_at": "2026-06-01T05:52:09+00:00",
+      "fetched_at": "2026-06-01T19:32:53+00:00",
+      "last_success_at": "2026-06-01T19:32:53+00:00",
       "editions": [
         "intl"
       ],
@@ -7698,8 +7698,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:09+00:00",
-      "last_success_at": "2026-06-01T05:52:09+00:00",
+      "fetched_at": "2026-06-01T19:32:53+00:00",
+      "last_success_at": "2026-06-01T19:32:53+00:00",
       "editions": [
         "intl"
       ],
@@ -7735,8 +7735,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:09+00:00",
-      "last_success_at": "2026-06-01T05:52:09+00:00",
+      "fetched_at": "2026-06-01T19:32:53+00:00",
+      "last_success_at": "2026-06-01T19:32:53+00:00",
       "editions": [
         "intl"
       ],
@@ -7764,8 +7764,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:09+00:00",
-      "last_success_at": "2026-06-01T05:52:09+00:00",
+      "fetched_at": "2026-06-01T19:32:53+00:00",
+      "last_success_at": "2026-06-01T19:32:53+00:00",
       "editions": [
         "intl"
       ],
@@ -7809,8 +7809,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:09+00:00",
-      "last_success_at": "2026-06-01T05:52:09+00:00",
+      "fetched_at": "2026-06-01T19:32:53+00:00",
+      "last_success_at": "2026-06-01T19:32:53+00:00",
       "editions": [
         "intl"
       ],
@@ -7838,8 +7838,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:09+00:00",
-      "last_success_at": "2026-06-01T05:52:09+00:00",
+      "fetched_at": "2026-06-01T19:32:53+00:00",
+      "last_success_at": "2026-06-01T19:32:53+00:00",
       "editions": [
         "intl"
       ],
@@ -7867,8 +7867,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:09+00:00",
-      "last_success_at": "2026-06-01T05:52:09+00:00",
+      "fetched_at": "2026-06-01T19:32:54+00:00",
+      "last_success_at": "2026-06-01T19:32:54+00:00",
       "editions": [
         "intl"
       ],
@@ -7896,8 +7896,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:09+00:00",
-      "last_success_at": "2026-06-01T05:52:09+00:00",
+      "fetched_at": "2026-06-01T19:32:53+00:00",
+      "last_success_at": "2026-06-01T19:32:53+00:00",
       "editions": [
         "intl"
       ],
@@ -7941,8 +7941,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:09+00:00",
-      "last_success_at": "2026-06-01T05:52:09+00:00",
+      "fetched_at": "2026-06-01T19:32:54+00:00",
+      "last_success_at": "2026-06-01T19:32:54+00:00",
       "editions": [
         "intl"
       ],
@@ -7978,8 +7978,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:09+00:00",
-      "last_success_at": "2026-06-01T05:52:09+00:00",
+      "fetched_at": "2026-06-01T19:32:53+00:00",
+      "last_success_at": "2026-06-01T19:32:53+00:00",
       "editions": [
         "intl"
       ],
@@ -8007,8 +8007,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:09+00:00",
-      "last_success_at": "2026-06-01T05:52:09+00:00",
+      "fetched_at": "2026-06-01T19:32:53+00:00",
+      "last_success_at": "2026-06-01T19:32:53+00:00",
       "editions": [
         "intl"
       ],
@@ -8052,8 +8052,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:09+00:00",
-      "last_success_at": "2026-06-01T05:52:09+00:00",
+      "fetched_at": "2026-06-01T19:32:53+00:00",
+      "last_success_at": "2026-06-01T19:32:53+00:00",
       "editions": [
         "intl"
       ],
@@ -8089,11 +8089,11 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:09+00:00",
+      "fetched_at": "2026-06-01T19:32:54+00:00",
       "warnings": [
         "win-x64: 没有匹配 asset pattern 'local-ai-*-windows-amd64.exe'"
       ],
-      "last_success_at": "2026-06-01T05:52:09+00:00",
+      "last_success_at": "2026-06-01T19:32:54+00:00",
       "editions": [
         "intl"
       ],
@@ -8121,8 +8121,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:09+00:00",
-      "last_success_at": "2026-06-01T05:52:09+00:00",
+      "fetched_at": "2026-06-01T19:32:53+00:00",
+      "last_success_at": "2026-06-01T19:32:53+00:00",
       "editions": [
         "intl"
       ],
@@ -8150,8 +8150,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:09+00:00",
-      "last_success_at": "2026-06-01T05:52:09+00:00",
+      "fetched_at": "2026-06-01T19:32:53+00:00",
+      "last_success_at": "2026-06-01T19:32:53+00:00",
       "editions": [
         "intl"
       ],
@@ -8195,8 +8195,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:09+00:00",
-      "last_success_at": "2026-06-01T05:52:09+00:00",
+      "fetched_at": "2026-06-01T19:32:53+00:00",
+      "last_success_at": "2026-06-01T19:32:53+00:00",
       "editions": [
         "intl"
       ],
@@ -8232,8 +8232,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:09+00:00",
-      "last_success_at": "2026-06-01T05:52:09+00:00",
+      "fetched_at": "2026-06-01T19:32:53+00:00",
+      "last_success_at": "2026-06-01T19:32:53+00:00",
       "editions": [
         "intl"
       ],
@@ -8277,8 +8277,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:09+00:00",
-      "last_success_at": "2026-06-01T05:52:09+00:00",
+      "fetched_at": "2026-06-01T19:32:54+00:00",
+      "last_success_at": "2026-06-01T19:32:54+00:00",
       "editions": [
         "intl"
       ],
@@ -8322,8 +8322,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:09+00:00",
-      "last_success_at": "2026-06-01T05:52:09+00:00",
+      "fetched_at": "2026-06-01T19:32:53+00:00",
+      "last_success_at": "2026-06-01T19:32:53+00:00",
       "editions": [
         "intl"
       ],
@@ -8367,8 +8367,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:09+00:00",
-      "last_success_at": "2026-06-01T05:52:09+00:00",
+      "fetched_at": "2026-06-01T19:32:53+00:00",
+      "last_success_at": "2026-06-01T19:32:53+00:00",
       "editions": [
         "intl"
       ],
@@ -8412,8 +8412,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:09+00:00",
-      "last_success_at": "2026-06-01T05:52:09+00:00",
+      "fetched_at": "2026-06-01T19:32:54+00:00",
+      "last_success_at": "2026-06-01T19:32:54+00:00",
       "editions": [
         "intl"
       ],
@@ -8457,8 +8457,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:09+00:00",
-      "last_success_at": "2026-06-01T05:52:09+00:00",
+      "fetched_at": "2026-06-01T19:32:54+00:00",
+      "last_success_at": "2026-06-01T19:32:54+00:00",
       "editions": [
         "intl"
       ],
@@ -8502,8 +8502,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:09+00:00",
-      "last_success_at": "2026-06-01T05:52:09+00:00",
+      "fetched_at": "2026-06-01T19:32:54+00:00",
+      "last_success_at": "2026-06-01T19:32:54+00:00",
       "editions": [
         "intl"
       ],
@@ -8531,8 +8531,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:09+00:00",
-      "last_success_at": "2026-06-01T05:52:09+00:00",
+      "fetched_at": "2026-06-01T19:32:54+00:00",
+      "last_success_at": "2026-06-01T19:32:54+00:00",
       "editions": [
         "intl"
       ],
@@ -8560,8 +8560,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:09+00:00",
-      "last_success_at": "2026-06-01T05:52:09+00:00",
+      "fetched_at": "2026-06-01T19:32:54+00:00",
+      "last_success_at": "2026-06-01T19:32:54+00:00",
       "editions": [
         "intl"
       ],
@@ -8589,8 +8589,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:10+00:00",
-      "last_success_at": "2026-06-01T05:52:10+00:00",
+      "fetched_at": "2026-06-01T19:32:55+00:00",
+      "last_success_at": "2026-06-01T19:32:55+00:00",
       "editions": [
         "intl"
       ],
@@ -8634,8 +8634,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:09+00:00",
-      "last_success_at": "2026-06-01T05:52:09+00:00",
+      "fetched_at": "2026-06-01T19:32:54+00:00",
+      "last_success_at": "2026-06-01T19:32:54+00:00",
       "editions": [
         "intl"
       ],
@@ -8679,8 +8679,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:09+00:00",
-      "last_success_at": "2026-06-01T05:52:09+00:00",
+      "fetched_at": "2026-06-01T19:32:54+00:00",
+      "last_success_at": "2026-06-01T19:32:54+00:00",
       "editions": [
         "intl"
       ],
@@ -8716,8 +8716,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:09+00:00",
-      "last_success_at": "2026-06-01T05:52:09+00:00",
+      "fetched_at": "2026-06-01T19:32:54+00:00",
+      "last_success_at": "2026-06-01T19:32:54+00:00",
       "editions": [
         "intl"
       ],
@@ -8761,8 +8761,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:09+00:00",
-      "last_success_at": "2026-06-01T05:52:09+00:00",
+      "fetched_at": "2026-06-01T19:32:54+00:00",
+      "last_success_at": "2026-06-01T19:32:54+00:00",
       "editions": [
         "intl"
       ],
@@ -8798,8 +8798,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:09+00:00",
-      "last_success_at": "2026-06-01T05:52:09+00:00",
+      "fetched_at": "2026-06-01T19:32:54+00:00",
+      "last_success_at": "2026-06-01T19:32:54+00:00",
       "editions": [
         "intl"
       ],
@@ -8835,8 +8835,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:09+00:00",
-      "last_success_at": "2026-06-01T05:52:09+00:00",
+      "fetched_at": "2026-06-01T19:32:54+00:00",
+      "last_success_at": "2026-06-01T19:32:54+00:00",
       "editions": [
         "intl"
       ],
@@ -8880,8 +8880,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:09+00:00",
-      "last_success_at": "2026-06-01T05:52:09+00:00",
+      "fetched_at": "2026-06-01T19:32:54+00:00",
+      "last_success_at": "2026-06-01T19:32:54+00:00",
       "editions": [
         "intl"
       ],
@@ -8925,8 +8925,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:09+00:00",
-      "last_success_at": "2026-06-01T05:52:09+00:00",
+      "fetched_at": "2026-06-01T19:32:54+00:00",
+      "last_success_at": "2026-06-01T19:32:54+00:00",
       "editions": [
         "intl"
       ],
@@ -8970,8 +8970,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:09+00:00",
-      "last_success_at": "2026-06-01T05:52:09+00:00",
+      "fetched_at": "2026-06-01T19:32:54+00:00",
+      "last_success_at": "2026-06-01T19:32:54+00:00",
       "editions": [
         "intl"
       ],
@@ -8999,8 +8999,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:09+00:00",
-      "last_success_at": "2026-06-01T05:52:09+00:00",
+      "fetched_at": "2026-06-01T19:32:54+00:00",
+      "last_success_at": "2026-06-01T19:32:54+00:00",
       "editions": [
         "intl"
       ],
@@ -9028,8 +9028,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:09+00:00",
-      "last_success_at": "2026-06-01T05:52:09+00:00",
+      "fetched_at": "2026-06-01T19:32:54+00:00",
+      "last_success_at": "2026-06-01T19:32:54+00:00",
       "editions": [
         "intl"
       ],
@@ -9073,8 +9073,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:09+00:00",
-      "last_success_at": "2026-06-01T05:52:09+00:00",
+      "fetched_at": "2026-06-01T19:32:54+00:00",
+      "last_success_at": "2026-06-01T19:32:54+00:00",
       "editions": [
         "intl"
       ],
@@ -9118,8 +9118,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:09+00:00",
-      "last_success_at": "2026-06-01T05:52:09+00:00",
+      "fetched_at": "2026-06-01T19:32:54+00:00",
+      "last_success_at": "2026-06-01T19:32:54+00:00",
       "editions": [
         "intl"
       ],
@@ -9163,8 +9163,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:09+00:00",
-      "last_success_at": "2026-06-01T05:52:09+00:00",
+      "fetched_at": "2026-06-01T19:32:54+00:00",
+      "last_success_at": "2026-06-01T19:32:54+00:00",
       "editions": [
         "intl"
       ],
@@ -9208,8 +9208,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:10+00:00",
-      "last_success_at": "2026-06-01T05:52:10+00:00",
+      "fetched_at": "2026-06-01T19:32:54+00:00",
+      "last_success_at": "2026-06-01T19:32:54+00:00",
       "editions": [
         "cn",
         "intl"
@@ -9262,8 +9262,8 @@
           "sha256": "f153353bebe1b84f2646aadbef01ee5ce9119f2ba6ea65f20a572d0b181692e3"
         }
       ],
-      "fetched_at": "2026-06-01T05:52:10+00:00",
-      "last_success_at": "2026-06-01T05:52:10+00:00",
+      "fetched_at": "2026-06-01T19:32:55+00:00",
+      "last_success_at": "2026-06-01T19:32:55+00:00",
       "editions": [
         "cn",
         "intl"
@@ -9300,8 +9300,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:10+00:00",
-      "last_success_at": "2026-06-01T05:52:10+00:00",
+      "fetched_at": "2026-06-01T19:32:55+00:00",
+      "last_success_at": "2026-06-01T19:32:55+00:00",
       "editions": [
         "cn",
         "intl"
@@ -9330,8 +9330,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:10+00:00",
-      "last_success_at": "2026-06-01T05:52:10+00:00",
+      "fetched_at": "2026-06-01T19:32:54+00:00",
+      "last_success_at": "2026-06-01T19:32:54+00:00",
       "editions": [
         "cn",
         "intl"
@@ -9360,8 +9360,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:10+00:00",
-      "last_success_at": "2026-06-01T05:52:10+00:00",
+      "fetched_at": "2026-06-01T19:32:55+00:00",
+      "last_success_at": "2026-06-01T19:32:55+00:00",
       "editions": [
         "intl",
         "cn"
@@ -9390,8 +9390,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:10+00:00",
-      "last_success_at": "2026-06-01T05:52:10+00:00",
+      "fetched_at": "2026-06-01T19:32:55+00:00",
+      "last_success_at": "2026-06-01T19:32:55+00:00",
       "editions": [
         "intl",
         "cn"
@@ -9420,8 +9420,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:10+00:00",
-      "last_success_at": "2026-06-01T05:52:10+00:00",
+      "fetched_at": "2026-06-01T19:32:55+00:00",
+      "last_success_at": "2026-06-01T19:32:55+00:00",
       "editions": [
         "intl",
         "cn"
@@ -9450,8 +9450,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:10+00:00",
-      "last_success_at": "2026-06-01T05:52:10+00:00",
+      "fetched_at": "2026-06-01T19:32:55+00:00",
+      "last_success_at": "2026-06-01T19:32:55+00:00",
       "editions": [
         "intl",
         "cn"
@@ -9480,8 +9480,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:10+00:00",
-      "last_success_at": "2026-06-01T05:52:10+00:00",
+      "fetched_at": "2026-06-01T19:32:55+00:00",
+      "last_success_at": "2026-06-01T19:32:55+00:00",
       "editions": [
         "intl",
         "cn"
@@ -9510,8 +9510,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:10+00:00",
-      "last_success_at": "2026-06-01T05:52:10+00:00",
+      "fetched_at": "2026-06-01T19:32:55+00:00",
+      "last_success_at": "2026-06-01T19:32:55+00:00",
       "editions": [
         "intl",
         "cn"
@@ -9540,8 +9540,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:10+00:00",
-      "last_success_at": "2026-06-01T05:52:10+00:00",
+      "fetched_at": "2026-06-01T19:32:55+00:00",
+      "last_success_at": "2026-06-01T19:32:55+00:00",
       "editions": [
         "intl",
         "cn"
@@ -9570,8 +9570,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:10+00:00",
-      "last_success_at": "2026-06-01T05:52:10+00:00",
+      "fetched_at": "2026-06-01T19:32:55+00:00",
+      "last_success_at": "2026-06-01T19:32:55+00:00",
       "editions": [
         "intl",
         "cn"
@@ -9600,8 +9600,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:10+00:00",
-      "last_success_at": "2026-06-01T05:52:10+00:00",
+      "fetched_at": "2026-06-01T19:32:55+00:00",
+      "last_success_at": "2026-06-01T19:32:55+00:00",
       "editions": [
         "intl",
         "cn"
@@ -9662,8 +9662,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:10+00:00",
-      "last_success_at": "2026-06-01T05:52:10+00:00",
+      "fetched_at": "2026-06-01T19:32:56+00:00",
+      "last_success_at": "2026-06-01T19:32:56+00:00",
       "editions": [
         "intl",
         "cn"
@@ -9692,8 +9692,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:10+00:00",
-      "last_success_at": "2026-06-01T05:52:10+00:00",
+      "fetched_at": "2026-06-01T19:32:56+00:00",
+      "last_success_at": "2026-06-01T19:32:56+00:00",
       "editions": [
         "intl",
         "cn"
@@ -9722,8 +9722,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:10+00:00",
-      "last_success_at": "2026-06-01T05:52:10+00:00",
+      "fetched_at": "2026-06-01T19:32:56+00:00",
+      "last_success_at": "2026-06-01T19:32:56+00:00",
       "editions": [
         "intl",
         "cn"
@@ -9768,8 +9768,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:10+00:00",
-      "last_success_at": "2026-06-01T05:52:10+00:00",
+      "fetched_at": "2026-06-01T19:32:56+00:00",
+      "last_success_at": "2026-06-01T19:32:56+00:00",
       "editions": [
         "intl",
         "cn"
@@ -9814,8 +9814,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:10+00:00",
-      "last_success_at": "2026-06-01T05:52:10+00:00",
+      "fetched_at": "2026-06-01T19:32:56+00:00",
+      "last_success_at": "2026-06-01T19:32:56+00:00",
       "editions": [
         "intl",
         "cn"
@@ -9844,11 +9844,11 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:11+00:00",
+      "fetched_at": "2026-06-01T19:32:56+00:00",
       "warnings": [
         "mac-arm64: 没有匹配 asset pattern 'lmms-*-macos-arm64.dmg'"
       ],
-      "last_success_at": "2026-06-01T05:52:11+00:00",
+      "last_success_at": "2026-06-01T19:32:56+00:00",
       "editions": [
         "intl",
         "cn"
@@ -9877,12 +9877,12 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:11+00:00",
+      "fetched_at": "2026-06-01T19:32:56+00:00",
       "warnings": [
         "mac-arm64: 没有匹配 asset pattern 'draw.io-*-arm64.dmg'",
         "linux-x64: 没有匹配 asset pattern 'draw.io-*-x86_64.rpm'"
       ],
-      "last_success_at": "2026-06-01T05:52:11+00:00",
+      "last_success_at": "2026-06-01T19:32:56+00:00",
       "editions": [
         "intl",
         "cn"
@@ -9911,8 +9911,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:11+00:00",
-      "last_success_at": "2026-06-01T05:52:11+00:00",
+      "fetched_at": "2026-06-01T19:32:56+00:00",
+      "last_success_at": "2026-06-01T19:32:56+00:00",
       "desc_cn": "macOS 显示器管理工具，解锁 HiDPI 分辨率和亮度控制",
       "desc_en": "macOS display management tool for unlocking HiDPI resolutions and brightness control"
     },
@@ -9937,8 +9937,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:11+00:00",
-      "last_success_at": "2026-06-01T05:52:11+00:00",
+      "fetched_at": "2026-06-01T19:32:56+00:00",
+      "last_success_at": "2026-06-01T19:32:56+00:00",
       "desc_cn": "轻量级 macOS 屏幕录制工具，支持窗口录制和系统音频",
       "desc_en": "Lightweight macOS screen recorder with window capture and system audio"
     },
@@ -9971,8 +9971,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:11+00:00",
-      "last_success_at": "2026-06-01T05:52:11+00:00",
+      "fetched_at": "2026-06-01T19:32:56+00:00",
+      "last_success_at": "2026-06-01T19:32:56+00:00",
       "desc_cn": "macOS 应用卸载清理工具，彻底删除残留文件",
       "desc_en": "macOS app uninstaller that thoroughly removes residual files"
     },
@@ -10005,8 +10005,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:11+00:00",
-      "last_success_at": "2026-06-01T05:52:11+00:00",
+      "fetched_at": "2026-06-01T19:32:56+00:00",
+      "last_success_at": "2026-06-01T19:32:56+00:00",
       "desc_cn": "macOS 步行导航应用，简洁的步行路线规划",
       "desc_en": "Walking navigation app for macOS with clean route planning"
     },
@@ -10039,8 +10039,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:11+00:00",
-      "last_success_at": "2026-06-01T05:52:11+00:00",
+      "fetched_at": "2026-06-01T19:32:56+00:00",
+      "last_success_at": "2026-06-01T19:32:56+00:00",
       "desc_cn": "开源 AI 编程助手，终端内智能代码操作",
       "desc_en": "Open-source AI coding assistant for terminal-based code operations"
     },
@@ -10065,8 +10065,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:11+00:00",
-      "last_success_at": "2026-06-01T05:52:11+00:00",
+      "fetched_at": "2026-06-01T19:32:57+00:00",
+      "last_success_at": "2026-06-01T19:32:57+00:00",
       "desc_cn": "macOS 翻译和词典工具，支持划词翻译和多引擎查询",
       "desc_en": "macOS translation and dictionary tool with text selection and multi-engine lookup"
     },
@@ -10091,8 +10091,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:10+00:00",
-      "last_success_at": "2026-06-01T05:52:10+00:00",
+      "fetched_at": "2026-06-01T19:32:56+00:00",
+      "last_success_at": "2026-06-01T19:32:56+00:00",
       "desc_cn": "现代化数据库管理工具，支持 MySQL/PostgreSQL/Redis 等",
       "desc_en": "Modern database management tool supporting MySQL/PostgreSQL/Redis and more"
     },
@@ -10117,8 +10117,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:10+00:00",
-      "last_success_at": "2026-06-01T05:52:10+00:00",
+      "fetched_at": "2026-06-01T19:32:56+00:00",
+      "last_success_at": "2026-06-01T19:32:56+00:00",
       "desc_cn": "专业思维导图工具，支持多种结构和导出格式",
       "desc_en": "Professional mind mapping tool with multiple structures and export formats"
     },
@@ -10143,8 +10143,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:10+00:00",
-      "last_success_at": "2026-06-01T05:52:10+00:00",
+      "fetched_at": "2026-06-01T19:32:56+00:00",
+      "last_success_at": "2026-06-01T19:32:56+00:00",
       "desc_cn": "Mac 风扇控制工具，手动调节风扇转速和温度监控",
       "desc_en": "Mac fan control tool for manual fan speed adjustment and temperature monitoring"
     },
@@ -10169,8 +10169,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:10+00:00",
-      "last_success_at": "2026-06-01T05:52:10+00:00",
+      "fetched_at": "2026-06-01T19:32:56+00:00",
+      "last_success_at": "2026-06-01T19:32:56+00:00",
       "desc_cn": "字节跳动 AI 助手，支持对话/写作/翻译等多种功能",
       "desc_en": "AI assistant by ByteDance with chat/writing/translation and more"
     },
@@ -10195,8 +10195,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:10+00:00",
-      "last_success_at": "2026-06-01T05:52:10+00:00",
+      "fetched_at": "2026-06-01T19:32:56+00:00",
+      "last_success_at": "2026-06-01T19:32:56+00:00",
       "desc_cn": "腾讯即时通讯工具，支持文件传输和群组聊天",
       "desc_en": "Tencent messaging app with file transfer and group chat"
     },
@@ -10437,8 +10437,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:08+00:00",
-      "last_success_at": "2026-06-01T05:52:08+00:00",
+      "fetched_at": "2026-06-01T19:32:51+00:00",
+      "last_success_at": "2026-06-01T19:32:51+00:00",
       "editions": [
         "cn"
       ],
@@ -10623,8 +10623,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:07+00:00",
-      "last_success_at": "2026-06-01T05:52:07+00:00",
+      "fetched_at": "2026-06-01T19:32:51+00:00",
+      "last_success_at": "2026-06-01T19:32:51+00:00",
       "editions": [
         "cn"
       ],
@@ -10652,8 +10652,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:10+00:00",
-      "last_success_at": "2026-06-01T05:52:10+00:00",
+      "fetched_at": "2026-06-01T19:32:52+00:00",
+      "last_success_at": "2026-06-01T19:32:52+00:00",
       "editions": [
         "intl"
       ],
@@ -10681,8 +10681,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:10+00:00",
-      "last_success_at": "2026-06-01T05:52:10+00:00",
+      "fetched_at": "2026-06-01T19:32:52+00:00",
+      "last_success_at": "2026-06-01T19:32:52+00:00",
       "editions": [
         "intl"
       ],
@@ -10698,7 +10698,7 @@
       "version_source": "GitHub release tag",
       "category": "Media Players",
       "homepage": "https://github.com/BtbN/FFmpeg-Builds",
-      "released_at": "2026-05-31T14:27:26Z",
+      "released_at": "2026-06-01T16:06:45Z",
       "notes_url": "https://github.com/BtbN/FFmpeg-Builds/releases/tag/latest",
       "assets": [
         {
@@ -10706,12 +10706,12 @@
           "url": "https://github.com/BtbN/FFmpeg-Builds/releases/download/latest/ffmpeg-master-latest-win64-gpl.zip",
           "link_kind": "direct",
           "filename": "ffmpeg-master-latest-win64-gpl.zip",
-          "size": 221447018,
+          "size": 221450686,
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:10+00:00",
-      "last_success_at": "2026-06-01T05:52:10+00:00",
+      "fetched_at": "2026-06-01T19:32:52+00:00",
+      "last_success_at": "2026-06-01T19:32:52+00:00",
       "editions": [
         "intl"
       ],
@@ -10739,8 +10739,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:10+00:00",
-      "last_success_at": "2026-06-01T05:52:10+00:00",
+      "fetched_at": "2026-06-01T19:32:52+00:00",
+      "last_success_at": "2026-06-01T19:32:52+00:00",
       "editions": [
         "intl"
       ],
@@ -10768,8 +10768,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:10+00:00",
-      "last_success_at": "2026-06-01T05:52:10+00:00",
+      "fetched_at": "2026-06-01T19:32:52+00:00",
+      "last_success_at": "2026-06-01T19:32:52+00:00",
       "editions": [
         "intl"
       ],
@@ -10797,8 +10797,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:10+00:00",
-      "last_success_at": "2026-06-01T05:52:10+00:00",
+      "fetched_at": "2026-06-01T19:32:52+00:00",
+      "last_success_at": "2026-06-01T19:32:52+00:00",
       "editions": [
         "intl"
       ],
@@ -10826,8 +10826,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:10+00:00",
-      "last_success_at": "2026-06-01T05:52:10+00:00",
+      "fetched_at": "2026-06-01T19:32:53+00:00",
+      "last_success_at": "2026-06-01T19:32:53+00:00",
       "editions": [
         "intl"
       ],
@@ -10855,8 +10855,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:10+00:00",
-      "last_success_at": "2026-06-01T05:52:10+00:00",
+      "fetched_at": "2026-06-01T19:32:53+00:00",
+      "last_success_at": "2026-06-01T19:32:53+00:00",
       "editions": [
         "intl"
       ],
@@ -10884,8 +10884,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:10+00:00",
-      "last_success_at": "2026-06-01T05:52:10+00:00",
+      "fetched_at": "2026-06-01T19:32:53+00:00",
+      "last_success_at": "2026-06-01T19:32:53+00:00",
       "editions": [
         "intl"
       ],
@@ -10913,8 +10913,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:10+00:00",
-      "last_success_at": "2026-06-01T05:52:10+00:00",
+      "fetched_at": "2026-06-01T19:32:53+00:00",
+      "last_success_at": "2026-06-01T19:32:53+00:00",
       "editions": [
         "intl"
       ],
@@ -10942,8 +10942,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:10+00:00",
-      "last_success_at": "2026-06-01T05:52:10+00:00",
+      "fetched_at": "2026-06-01T19:32:53+00:00",
+      "last_success_at": "2026-06-01T19:32:53+00:00",
       "editions": [
         "intl"
       ],
@@ -10987,8 +10987,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:11+00:00",
-      "last_success_at": "2026-06-01T05:52:11+00:00",
+      "fetched_at": "2026-06-01T19:32:53+00:00",
+      "last_success_at": "2026-06-01T19:32:53+00:00",
       "editions": [
         "intl"
       ],
@@ -11032,8 +11032,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:11+00:00",
-      "last_success_at": "2026-06-01T05:52:11+00:00",
+      "fetched_at": "2026-06-01T19:32:53+00:00",
+      "last_success_at": "2026-06-01T19:32:53+00:00",
       "editions": [
         "intl"
       ],
@@ -11077,8 +11077,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:11+00:00",
-      "last_success_at": "2026-06-01T05:52:11+00:00",
+      "fetched_at": "2026-06-01T19:32:53+00:00",
+      "last_success_at": "2026-06-01T19:32:53+00:00",
       "editions": [
         "intl"
       ],
@@ -11122,8 +11122,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:11+00:00",
-      "last_success_at": "2026-06-01T05:52:11+00:00",
+      "fetched_at": "2026-06-01T19:32:53+00:00",
+      "last_success_at": "2026-06-01T19:32:53+00:00",
       "editions": [
         "intl"
       ],
@@ -11167,8 +11167,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:10+00:00",
-      "last_success_at": "2026-06-01T05:52:10+00:00",
+      "fetched_at": "2026-06-01T19:32:53+00:00",
+      "last_success_at": "2026-06-01T19:32:53+00:00",
       "editions": [
         "intl"
       ],
@@ -11204,8 +11204,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:10+00:00",
-      "last_success_at": "2026-06-01T05:52:10+00:00",
+      "fetched_at": "2026-06-01T19:32:53+00:00",
+      "last_success_at": "2026-06-01T19:32:53+00:00",
       "editions": [
         "intl"
       ],
@@ -11241,8 +11241,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:10+00:00",
-      "last_success_at": "2026-06-01T05:52:10+00:00",
+      "fetched_at": "2026-06-01T19:32:53+00:00",
+      "last_success_at": "2026-06-01T19:32:53+00:00",
       "editions": [
         "intl"
       ],
@@ -11278,8 +11278,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:10+00:00",
-      "last_success_at": "2026-06-01T05:52:10+00:00",
+      "fetched_at": "2026-06-01T19:32:53+00:00",
+      "last_success_at": "2026-06-01T19:32:53+00:00",
       "editions": [
         "intl"
       ],
@@ -11307,8 +11307,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:10+00:00",
-      "last_success_at": "2026-06-01T05:52:10+00:00",
+      "fetched_at": "2026-06-01T19:32:53+00:00",
+      "last_success_at": "2026-06-01T19:32:53+00:00",
       "editions": [
         "intl"
       ],
@@ -11352,8 +11352,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:11+00:00",
-      "last_success_at": "2026-06-01T05:52:11+00:00",
+      "fetched_at": "2026-06-01T19:32:53+00:00",
+      "last_success_at": "2026-06-01T19:32:53+00:00",
       "editions": [
         "intl"
       ],
@@ -11397,8 +11397,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:11+00:00",
-      "last_success_at": "2026-06-01T05:52:11+00:00",
+      "fetched_at": "2026-06-01T19:32:53+00:00",
+      "last_success_at": "2026-06-01T19:32:53+00:00",
       "editions": [
         "intl"
       ],
@@ -11434,11 +11434,11 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:11+00:00",
+      "fetched_at": "2026-06-01T19:32:53+00:00",
       "warnings": [
         "mac-arm64: 没有匹配 asset pattern 'dust-*-aarch64-apple-darwin.tar.gz'"
       ],
-      "last_success_at": "2026-06-01T05:52:11+00:00",
+      "last_success_at": "2026-06-01T19:32:53+00:00",
       "editions": [
         "intl"
       ],
@@ -11482,8 +11482,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:11+00:00",
-      "last_success_at": "2026-06-01T05:52:11+00:00",
+      "fetched_at": "2026-06-01T19:32:53+00:00",
+      "last_success_at": "2026-06-01T19:32:53+00:00",
       "editions": [
         "intl"
       ],
@@ -11527,8 +11527,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:10+00:00",
-      "last_success_at": "2026-06-01T05:52:10+00:00",
+      "fetched_at": "2026-06-01T19:32:53+00:00",
+      "last_success_at": "2026-06-01T19:32:53+00:00",
       "editions": [
         "intl"
       ],
@@ -11572,8 +11572,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:11+00:00",
-      "last_success_at": "2026-06-01T05:52:11+00:00",
+      "fetched_at": "2026-06-01T19:32:53+00:00",
+      "last_success_at": "2026-06-01T19:32:53+00:00",
       "editions": [
         "intl"
       ],
@@ -11609,11 +11609,11 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:11+00:00",
+      "fetched_at": "2026-06-01T19:32:53+00:00",
       "warnings": [
         "win-x64: 没有匹配 asset pattern 'biome-win-x64.exe'"
       ],
-      "last_success_at": "2026-06-01T05:52:11+00:00",
+      "last_success_at": "2026-06-01T19:32:53+00:00",
       "editions": [
         "intl"
       ],
@@ -11657,8 +11657,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:11+00:00",
-      "last_success_at": "2026-06-01T05:52:11+00:00",
+      "fetched_at": "2026-06-01T19:32:53+00:00",
+      "last_success_at": "2026-06-01T19:32:53+00:00",
       "editions": [
         "intl"
       ],
@@ -11702,8 +11702,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:11+00:00",
-      "last_success_at": "2026-06-01T05:52:11+00:00",
+      "fetched_at": "2026-06-01T19:32:53+00:00",
+      "last_success_at": "2026-06-01T19:32:53+00:00",
       "editions": [
         "intl"
       ],
@@ -11747,8 +11747,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:11+00:00",
-      "last_success_at": "2026-06-01T05:52:11+00:00",
+      "fetched_at": "2026-06-01T19:32:53+00:00",
+      "last_success_at": "2026-06-01T19:32:53+00:00",
       "editions": [
         "intl"
       ],
@@ -11784,11 +11784,11 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:11+00:00",
+      "fetched_at": "2026-06-01T19:32:53+00:00",
       "warnings": [
         "linux-x64: 没有匹配 asset pattern 'dog-v*-x86_64-unknown-linux-musl.zip'"
       ],
-      "last_success_at": "2026-06-01T05:52:11+00:00",
+      "last_success_at": "2026-06-01T19:32:53+00:00",
       "editions": [
         "intl"
       ],
@@ -11832,8 +11832,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:11+00:00",
-      "last_success_at": "2026-06-01T05:52:11+00:00",
+      "fetched_at": "2026-06-01T19:32:53+00:00",
+      "last_success_at": "2026-06-01T19:32:53+00:00",
       "editions": [
         "intl"
       ],
@@ -11861,12 +11861,12 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:11+00:00",
+      "fetched_at": "2026-06-01T19:32:53+00:00",
       "warnings": [
         "mac-arm64: 没有匹配 asset pattern 'mask-*-aarch64-apple-darwin.tar.gz'",
         "linux-x64: 没有匹配 asset pattern 'mask-*-x86_64-unknown-linux-musl.tar.gz'"
       ],
-      "last_success_at": "2026-06-01T05:52:11+00:00",
+      "last_success_at": "2026-06-01T19:32:53+00:00",
       "editions": [
         "intl"
       ],
@@ -11894,8 +11894,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:11+00:00",
-      "last_success_at": "2026-06-01T05:52:11+00:00",
+      "fetched_at": "2026-06-01T19:32:53+00:00",
+      "last_success_at": "2026-06-01T19:32:53+00:00",
       "editions": [
         "intl"
       ],
@@ -11923,8 +11923,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:11+00:00",
-      "last_success_at": "2026-06-01T05:52:11+00:00",
+      "fetched_at": "2026-06-01T19:32:54+00:00",
+      "last_success_at": "2026-06-01T19:32:54+00:00",
       "editions": [
         "intl"
       ],
@@ -11952,8 +11952,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:11+00:00",
-      "last_success_at": "2026-06-01T05:52:11+00:00",
+      "fetched_at": "2026-06-01T19:32:54+00:00",
+      "last_success_at": "2026-06-01T19:32:54+00:00",
       "editions": [
         "intl"
       ],
@@ -11981,8 +11981,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:11+00:00",
-      "last_success_at": "2026-06-01T05:52:11+00:00",
+      "fetched_at": "2026-06-01T19:32:53+00:00",
+      "last_success_at": "2026-06-01T19:32:53+00:00",
       "editions": [
         "intl"
       ],
@@ -12010,8 +12010,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:11+00:00",
-      "last_success_at": "2026-06-01T05:52:11+00:00",
+      "fetched_at": "2026-06-01T19:32:53+00:00",
+      "last_success_at": "2026-06-01T19:32:53+00:00",
       "editions": [
         "intl"
       ],
@@ -12039,8 +12039,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:11+00:00",
-      "last_success_at": "2026-06-01T05:52:11+00:00",
+      "fetched_at": "2026-06-01T19:32:54+00:00",
+      "last_success_at": "2026-06-01T19:32:54+00:00",
       "editions": [
         "intl"
       ],
@@ -12068,8 +12068,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:11+00:00",
-      "last_success_at": "2026-06-01T05:52:11+00:00",
+      "fetched_at": "2026-06-01T19:32:53+00:00",
+      "last_success_at": "2026-06-01T19:32:53+00:00",
       "editions": [
         "intl"
       ],
@@ -12097,8 +12097,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:12+00:00",
-      "last_success_at": "2026-06-01T05:52:12+00:00",
+      "fetched_at": "2026-06-01T19:32:54+00:00",
+      "last_success_at": "2026-06-01T19:32:54+00:00",
       "editions": [
         "intl"
       ],
@@ -12126,8 +12126,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:11+00:00",
-      "last_success_at": "2026-06-01T05:52:11+00:00",
+      "fetched_at": "2026-06-01T19:32:53+00:00",
+      "last_success_at": "2026-06-01T19:32:53+00:00",
       "editions": [
         "intl"
       ],
@@ -12171,8 +12171,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:12+00:00",
-      "last_success_at": "2026-06-01T05:52:12+00:00",
+      "fetched_at": "2026-06-01T19:32:54+00:00",
+      "last_success_at": "2026-06-01T19:32:54+00:00",
       "editions": [
         "intl"
       ],
@@ -12200,8 +12200,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:11+00:00",
-      "last_success_at": "2026-06-01T05:52:11+00:00",
+      "fetched_at": "2026-06-01T19:32:53+00:00",
+      "last_success_at": "2026-06-01T19:32:53+00:00",
       "editions": [
         "intl"
       ],
@@ -12245,8 +12245,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:12+00:00",
-      "last_success_at": "2026-06-01T05:52:12+00:00",
+      "fetched_at": "2026-06-01T19:32:54+00:00",
+      "last_success_at": "2026-06-01T19:32:54+00:00",
       "editions": [
         "intl"
       ],
@@ -12282,11 +12282,11 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:12+00:00",
+      "fetched_at": "2026-06-01T19:32:54+00:00",
       "warnings": [
         "win-x64: 没有匹配 asset pattern 'slides_*_windows_amd64.tar.gz'"
       ],
-      "last_success_at": "2026-06-01T05:52:12+00:00",
+      "last_success_at": "2026-06-01T19:32:54+00:00",
       "editions": [
         "intl"
       ],
@@ -12330,8 +12330,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:12+00:00",
-      "last_success_at": "2026-06-01T05:52:12+00:00",
+      "fetched_at": "2026-06-01T19:32:54+00:00",
+      "last_success_at": "2026-06-01T19:32:54+00:00",
       "editions": [
         "intl"
       ],
@@ -12359,8 +12359,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:11+00:00",
-      "last_success_at": "2026-06-01T05:52:11+00:00",
+      "fetched_at": "2026-06-01T19:32:53+00:00",
+      "last_success_at": "2026-06-01T19:32:53+00:00",
       "editions": [
         "intl"
       ],
@@ -12388,11 +12388,11 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:12+00:00",
+      "fetched_at": "2026-06-01T19:32:54+00:00",
       "warnings": [
         "mac-arm64: 没有匹配 asset pattern 'Outline-Client.dmg'"
       ],
-      "last_success_at": "2026-06-01T05:52:12+00:00",
+      "last_success_at": "2026-06-01T19:32:54+00:00",
       "editions": [
         "intl"
       ],
@@ -12428,8 +12428,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:11+00:00",
-      "last_success_at": "2026-06-01T05:52:11+00:00",
+      "fetched_at": "2026-06-01T19:32:53+00:00",
+      "last_success_at": "2026-06-01T19:32:53+00:00",
       "editions": [
         "intl"
       ],
@@ -12457,8 +12457,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:12+00:00",
-      "last_success_at": "2026-06-01T05:52:12+00:00",
+      "fetched_at": "2026-06-01T19:32:54+00:00",
+      "last_success_at": "2026-06-01T19:32:54+00:00",
       "editions": [
         "intl"
       ],
@@ -12486,8 +12486,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:11+00:00",
-      "last_success_at": "2026-06-01T05:52:11+00:00",
+      "fetched_at": "2026-06-01T19:32:54+00:00",
+      "last_success_at": "2026-06-01T19:32:54+00:00",
       "editions": [
         "intl"
       ],
@@ -12515,8 +12515,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:12+00:00",
-      "last_success_at": "2026-06-01T05:52:12+00:00",
+      "fetched_at": "2026-06-01T19:32:54+00:00",
+      "last_success_at": "2026-06-01T19:32:54+00:00",
       "editions": [
         "intl"
       ],
@@ -12544,8 +12544,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:12+00:00",
-      "last_success_at": "2026-06-01T05:52:12+00:00",
+      "fetched_at": "2026-06-01T19:32:54+00:00",
+      "last_success_at": "2026-06-01T19:32:54+00:00",
       "editions": [
         "intl"
       ],
@@ -12589,8 +12589,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:12+00:00",
-      "last_success_at": "2026-06-01T05:52:12+00:00",
+      "fetched_at": "2026-06-01T19:32:54+00:00",
+      "last_success_at": "2026-06-01T19:32:54+00:00",
       "editions": [
         "intl"
       ],
@@ -12626,8 +12626,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:12+00:00",
-      "last_success_at": "2026-06-01T05:52:12+00:00",
+      "fetched_at": "2026-06-01T19:32:54+00:00",
+      "last_success_at": "2026-06-01T19:32:54+00:00",
       "editions": [
         "intl"
       ],
@@ -12663,8 +12663,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:12+00:00",
-      "last_success_at": "2026-06-01T05:52:12+00:00",
+      "fetched_at": "2026-06-01T19:32:54+00:00",
+      "last_success_at": "2026-06-01T19:32:54+00:00",
       "editions": [
         "intl"
       ],
@@ -12708,8 +12708,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:12+00:00",
-      "last_success_at": "2026-06-01T05:52:12+00:00",
+      "fetched_at": "2026-06-01T19:32:54+00:00",
+      "last_success_at": "2026-06-01T19:32:54+00:00",
       "editions": [
         "intl"
       ],
@@ -12737,8 +12737,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:12+00:00",
-      "last_success_at": "2026-06-01T05:52:12+00:00",
+      "fetched_at": "2026-06-01T19:32:54+00:00",
+      "last_success_at": "2026-06-01T19:32:54+00:00",
       "editions": [
         "intl"
       ],
@@ -12782,8 +12782,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:12+00:00",
-      "last_success_at": "2026-06-01T05:52:12+00:00",
+      "fetched_at": "2026-06-01T19:32:54+00:00",
+      "last_success_at": "2026-06-01T19:32:54+00:00",
       "editions": [
         "intl"
       ],
@@ -12827,8 +12827,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:12+00:00",
-      "last_success_at": "2026-06-01T05:52:12+00:00",
+      "fetched_at": "2026-06-01T19:32:54+00:00",
+      "last_success_at": "2026-06-01T19:32:54+00:00",
       "editions": [
         "intl"
       ],
@@ -12856,8 +12856,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:12+00:00",
-      "last_success_at": "2026-06-01T05:52:12+00:00",
+      "fetched_at": "2026-06-01T19:32:54+00:00",
+      "last_success_at": "2026-06-01T19:32:54+00:00",
       "editions": [
         "intl"
       ],
@@ -12885,11 +12885,11 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:12+00:00",
+      "fetched_at": "2026-06-01T19:32:54+00:00",
       "warnings": [
         "mac-arm64: 没有匹配 asset pattern 'Natron-*-macOS-arm64.dmg'"
       ],
-      "last_success_at": "2026-06-01T05:52:12+00:00",
+      "last_success_at": "2026-06-01T19:32:54+00:00",
       "editions": [
         "intl"
       ],
@@ -12917,12 +12917,12 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:12+00:00",
+      "fetched_at": "2026-06-01T19:32:54+00:00",
       "warnings": [
         "win-x64: 没有匹配 asset pattern 'Anytype-*-x64.exe'",
         "linux-x64: 没有匹配 asset pattern 'Anytype-*-amd64.deb'"
       ],
-      "last_success_at": "2026-06-01T05:52:12+00:00",
+      "last_success_at": "2026-06-01T19:32:54+00:00",
       "editions": [
         "intl"
       ],
@@ -12950,8 +12950,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:12+00:00",
-      "last_success_at": "2026-06-01T05:52:12+00:00",
+      "fetched_at": "2026-06-01T19:32:54+00:00",
+      "last_success_at": "2026-06-01T19:32:54+00:00",
       "editions": [
         "intl"
       ],
@@ -12979,12 +12979,12 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:12+00:00",
+      "fetched_at": "2026-06-01T19:32:54+00:00",
       "warnings": [
         "mac-arm64: 没有匹配 asset pattern 'sioyek-apple-silicon.dmg'",
         "linux-x64: 没有匹配 asset pattern 'sioyek-release-linux-portable.tar.gz'"
       ],
-      "last_success_at": "2026-06-01T05:52:12+00:00",
+      "last_success_at": "2026-06-01T19:32:54+00:00",
       "editions": [
         "intl"
       ],
@@ -13012,8 +13012,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:12+00:00",
-      "last_success_at": "2026-06-01T05:52:12+00:00",
+      "fetched_at": "2026-06-01T19:32:54+00:00",
+      "last_success_at": "2026-06-01T19:32:54+00:00",
       "editions": [
         "intl"
       ],
@@ -13041,8 +13041,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:12+00:00",
-      "last_success_at": "2026-06-01T05:52:12+00:00",
+      "fetched_at": "2026-06-01T19:32:54+00:00",
+      "last_success_at": "2026-06-01T19:32:54+00:00",
       "editions": [
         "intl"
       ],
@@ -13052,26 +13052,26 @@
     {
       "id": "comfyui",
       "name": "ComfyUI",
-      "version": "0.22.0",
+      "version": "0.23.0",
       "source": "GitHub Release: comfyanonymous/ComfyUI",
       "version_kind": "release_version",
       "version_source": "GitHub release tag",
       "category": "AI Tools",
       "homepage": "https://github.com/comfyanonymous/ComfyUI",
-      "released_at": "2026-05-20T19:26:20Z",
-      "notes_url": "https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.22.0",
+      "released_at": "2026-06-01T17:56:51Z",
+      "notes_url": "https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.23.0",
       "assets": [
         {
           "platform": "win-x64",
-          "url": "https://github.com/Comfy-Org/ComfyUI/releases/download/v0.22.0/ComfyUI_windows_portable_nvidia.7z",
+          "url": "https://github.com/Comfy-Org/ComfyUI/releases/download/v0.23.0/ComfyUI_windows_portable_nvidia.7z",
           "link_kind": "direct",
           "filename": "ComfyUI_windows_portable_nvidia.7z",
-          "size": 2008033059,
+          "size": 2041888490,
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:13+00:00",
-      "last_success_at": "2026-06-01T05:52:13+00:00",
+      "fetched_at": "2026-06-01T19:32:55+00:00",
+      "last_success_at": "2026-06-01T19:32:55+00:00",
       "editions": [
         "intl"
       ],
@@ -13099,8 +13099,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:12+00:00",
-      "last_success_at": "2026-06-01T05:52:12+00:00",
+      "fetched_at": "2026-06-01T19:32:54+00:00",
+      "last_success_at": "2026-06-01T19:32:54+00:00",
       "editions": [
         "intl"
       ],
@@ -13144,8 +13144,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:12+00:00",
-      "last_success_at": "2026-06-01T05:52:12+00:00",
+      "fetched_at": "2026-06-01T19:32:54+00:00",
+      "last_success_at": "2026-06-01T19:32:54+00:00",
       "editions": [
         "intl"
       ],
@@ -13189,8 +13189,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:13+00:00",
-      "last_success_at": "2026-06-01T05:52:13+00:00",
+      "fetched_at": "2026-06-01T19:32:55+00:00",
+      "last_success_at": "2026-06-01T19:32:55+00:00",
       "editions": [
         "intl"
       ],
@@ -13218,8 +13218,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:12+00:00",
-      "last_success_at": "2026-06-01T05:52:12+00:00",
+      "fetched_at": "2026-06-01T19:32:54+00:00",
+      "last_success_at": "2026-06-01T19:32:54+00:00",
       "editions": [
         "intl"
       ],
@@ -13263,8 +13263,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:13+00:00",
-      "last_success_at": "2026-06-01T05:52:13+00:00",
+      "fetched_at": "2026-06-01T19:32:55+00:00",
+      "last_success_at": "2026-06-01T19:32:55+00:00",
       "editions": [
         "intl"
       ],
@@ -13308,8 +13308,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:12+00:00",
-      "last_success_at": "2026-06-01T05:52:12+00:00",
+      "fetched_at": "2026-06-01T19:32:54+00:00",
+      "last_success_at": "2026-06-01T19:32:54+00:00",
       "editions": [
         "intl"
       ],
@@ -13353,8 +13353,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:12+00:00",
-      "last_success_at": "2026-06-01T05:52:12+00:00",
+      "fetched_at": "2026-06-01T19:32:54+00:00",
+      "last_success_at": "2026-06-01T19:32:54+00:00",
       "editions": [
         "intl"
       ],
@@ -13398,8 +13398,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:12+00:00",
-      "last_success_at": "2026-06-01T05:52:12+00:00",
+      "fetched_at": "2026-06-01T19:32:54+00:00",
+      "last_success_at": "2026-06-01T19:32:54+00:00",
       "editions": [
         "intl"
       ],
@@ -13443,8 +13443,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:13+00:00",
-      "last_success_at": "2026-06-01T05:52:13+00:00",
+      "fetched_at": "2026-06-01T19:32:55+00:00",
+      "last_success_at": "2026-06-01T19:32:55+00:00",
       "editions": [
         "intl"
       ],
@@ -13488,8 +13488,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:12+00:00",
-      "last_success_at": "2026-06-01T05:52:12+00:00",
+      "fetched_at": "2026-06-01T19:32:54+00:00",
+      "last_success_at": "2026-06-01T19:32:54+00:00",
       "editions": [
         "intl"
       ],
@@ -13525,11 +13525,11 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:13+00:00",
+      "fetched_at": "2026-06-01T19:32:55+00:00",
       "warnings": [
         "win-x64: 没有匹配 asset pattern 'xcp-*-x86_64-pc-windows-msvc.zip'"
       ],
-      "last_success_at": "2026-06-01T05:52:13+00:00",
+      "last_success_at": "2026-06-01T19:32:55+00:00",
       "editions": [
         "intl"
       ],
@@ -13573,8 +13573,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:13+00:00",
-      "last_success_at": "2026-06-01T05:52:13+00:00",
+      "fetched_at": "2026-06-01T19:32:55+00:00",
+      "last_success_at": "2026-06-01T19:32:55+00:00",
       "editions": [
         "intl"
       ],
@@ -13602,8 +13602,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:13+00:00",
-      "last_success_at": "2026-06-01T05:52:13+00:00",
+      "fetched_at": "2026-06-01T19:32:55+00:00",
+      "last_success_at": "2026-06-01T19:32:55+00:00",
       "editions": [
         "intl"
       ],
@@ -13647,8 +13647,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:12+00:00",
-      "last_success_at": "2026-06-01T05:52:12+00:00",
+      "fetched_at": "2026-06-01T19:32:54+00:00",
+      "last_success_at": "2026-06-01T19:32:54+00:00",
       "editions": [
         "intl"
       ],
@@ -13692,8 +13692,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:12+00:00",
-      "last_success_at": "2026-06-01T05:52:12+00:00",
+      "fetched_at": "2026-06-01T19:32:54+00:00",
+      "last_success_at": "2026-06-01T19:32:54+00:00",
       "editions": [
         "intl"
       ],
@@ -13737,8 +13737,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:12+00:00",
-      "last_success_at": "2026-06-01T05:52:12+00:00",
+      "fetched_at": "2026-06-01T19:32:54+00:00",
+      "last_success_at": "2026-06-01T19:32:54+00:00",
       "editions": [
         "intl"
       ],
@@ -13782,8 +13782,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:12+00:00",
-      "last_success_at": "2026-06-01T05:52:12+00:00",
+      "fetched_at": "2026-06-01T19:32:54+00:00",
+      "last_success_at": "2026-06-01T19:32:54+00:00",
       "editions": [
         "intl"
       ],
@@ -13819,8 +13819,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:12+00:00",
-      "last_success_at": "2026-06-01T05:52:12+00:00",
+      "fetched_at": "2026-06-01T19:32:54+00:00",
+      "last_success_at": "2026-06-01T19:32:54+00:00",
       "editions": [
         "intl"
       ],
@@ -13856,8 +13856,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:12+00:00",
-      "last_success_at": "2026-06-01T05:52:12+00:00",
+      "fetched_at": "2026-06-01T19:32:54+00:00",
+      "last_success_at": "2026-06-01T19:32:54+00:00",
       "editions": [
         "intl"
       ],
@@ -13893,8 +13893,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:12+00:00",
-      "last_success_at": "2026-06-01T05:52:12+00:00",
+      "fetched_at": "2026-06-01T19:32:54+00:00",
+      "last_success_at": "2026-06-01T19:32:54+00:00",
       "editions": [
         "intl"
       ],
@@ -13938,8 +13938,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:12+00:00",
-      "last_success_at": "2026-06-01T05:52:12+00:00",
+      "fetched_at": "2026-06-01T19:32:54+00:00",
+      "last_success_at": "2026-06-01T19:32:54+00:00",
       "editions": [
         "intl"
       ],
@@ -13983,8 +13983,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:12+00:00",
-      "last_success_at": "2026-06-01T05:52:12+00:00",
+      "fetched_at": "2026-06-01T19:32:54+00:00",
+      "last_success_at": "2026-06-01T19:32:54+00:00",
       "editions": [
         "intl"
       ],
@@ -14028,8 +14028,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:12+00:00",
-      "last_success_at": "2026-06-01T05:52:12+00:00",
+      "fetched_at": "2026-06-01T19:32:54+00:00",
+      "last_success_at": "2026-06-01T19:32:54+00:00",
       "editions": [
         "intl"
       ],
@@ -14057,8 +14057,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:12+00:00",
-      "last_success_at": "2026-06-01T05:52:12+00:00",
+      "fetched_at": "2026-06-01T19:32:54+00:00",
+      "last_success_at": "2026-06-01T19:32:54+00:00",
       "editions": [
         "intl"
       ],
@@ -14102,8 +14102,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:12+00:00",
-      "last_success_at": "2026-06-01T05:52:12+00:00",
+      "fetched_at": "2026-06-01T19:32:54+00:00",
+      "last_success_at": "2026-06-01T19:32:54+00:00",
       "editions": [
         "intl"
       ],
@@ -14139,8 +14139,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:12+00:00",
-      "last_success_at": "2026-06-01T05:52:12+00:00",
+      "fetched_at": "2026-06-01T19:32:54+00:00",
+      "last_success_at": "2026-06-01T19:32:54+00:00",
       "editions": [
         "intl"
       ],
@@ -14184,8 +14184,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:12+00:00",
-      "last_success_at": "2026-06-01T05:52:12+00:00",
+      "fetched_at": "2026-06-01T19:32:54+00:00",
+      "last_success_at": "2026-06-01T19:32:54+00:00",
       "editions": [
         "intl"
       ],
@@ -14213,8 +14213,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:13+00:00",
-      "last_success_at": "2026-06-01T05:52:13+00:00",
+      "fetched_at": "2026-06-01T19:32:55+00:00",
+      "last_success_at": "2026-06-01T19:32:55+00:00",
       "editions": [
         "cn",
         "intl"
@@ -14251,8 +14251,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:13+00:00",
-      "last_success_at": "2026-06-01T05:52:13+00:00",
+      "fetched_at": "2026-06-01T19:32:56+00:00",
+      "last_success_at": "2026-06-01T19:32:56+00:00",
       "editions": [
         "cn",
         "intl"
@@ -14305,8 +14305,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:13+00:00",
-      "last_success_at": "2026-06-01T05:52:13+00:00",
+      "fetched_at": "2026-06-01T19:32:55+00:00",
+      "last_success_at": "2026-06-01T19:32:55+00:00",
       "editions": [
         "cn",
         "intl"
@@ -14335,8 +14335,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:13+00:00",
-      "last_success_at": "2026-06-01T05:52:13+00:00",
+      "fetched_at": "2026-06-01T19:32:55+00:00",
+      "last_success_at": "2026-06-01T19:32:55+00:00",
       "editions": [
         "intl",
         "cn"
@@ -14365,8 +14365,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:13+00:00",
-      "last_success_at": "2026-06-01T05:52:13+00:00",
+      "fetched_at": "2026-06-01T19:32:55+00:00",
+      "last_success_at": "2026-06-01T19:32:55+00:00",
       "editions": [
         "intl",
         "cn"
@@ -14395,8 +14395,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:13+00:00",
-      "last_success_at": "2026-06-01T05:52:13+00:00",
+      "fetched_at": "2026-06-01T19:32:55+00:00",
+      "last_success_at": "2026-06-01T19:32:55+00:00",
       "editions": [
         "intl",
         "cn"
@@ -14425,8 +14425,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:13+00:00",
-      "last_success_at": "2026-06-01T05:52:13+00:00",
+      "fetched_at": "2026-06-01T19:32:55+00:00",
+      "last_success_at": "2026-06-01T19:32:55+00:00",
       "editions": [
         "intl",
         "cn"
@@ -14455,8 +14455,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:13+00:00",
-      "last_success_at": "2026-06-01T05:52:13+00:00",
+      "fetched_at": "2026-06-01T19:32:55+00:00",
+      "last_success_at": "2026-06-01T19:32:55+00:00",
       "editions": [
         "intl",
         "cn"
@@ -14485,8 +14485,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:14+00:00",
-      "last_success_at": "2026-06-01T05:52:14+00:00",
+      "fetched_at": "2026-06-01T19:32:55+00:00",
+      "last_success_at": "2026-06-01T19:32:55+00:00",
       "editions": [
         "intl",
         "cn"
@@ -14515,8 +14515,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:14+00:00",
-      "last_success_at": "2026-06-01T05:52:14+00:00",
+      "fetched_at": "2026-06-01T19:32:56+00:00",
+      "last_success_at": "2026-06-01T19:32:56+00:00",
       "editions": [
         "intl",
         "cn"
@@ -14545,8 +14545,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:14+00:00",
-      "last_success_at": "2026-06-01T05:52:14+00:00",
+      "fetched_at": "2026-06-01T19:32:56+00:00",
+      "last_success_at": "2026-06-01T19:32:56+00:00",
       "editions": [
         "intl",
         "cn"
@@ -14575,8 +14575,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:14+00:00",
-      "last_success_at": "2026-06-01T05:52:14+00:00",
+      "fetched_at": "2026-06-01T19:32:56+00:00",
+      "last_success_at": "2026-06-01T19:32:56+00:00",
       "editions": [
         "intl",
         "cn"
@@ -14605,8 +14605,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:14+00:00",
-      "last_success_at": "2026-06-01T05:52:14+00:00",
+      "fetched_at": "2026-06-01T19:32:56+00:00",
+      "last_success_at": "2026-06-01T19:32:56+00:00",
       "editions": [
         "intl",
         "cn"
@@ -14635,8 +14635,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:14+00:00",
-      "last_success_at": "2026-06-01T05:52:14+00:00",
+      "fetched_at": "2026-06-01T19:32:56+00:00",
+      "last_success_at": "2026-06-01T19:32:56+00:00",
       "editions": [
         "intl",
         "cn"
@@ -14689,8 +14689,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:14+00:00",
-      "last_success_at": "2026-06-01T05:52:14+00:00",
+      "fetched_at": "2026-06-01T19:32:56+00:00",
+      "last_success_at": "2026-06-01T19:32:56+00:00",
       "editions": [
         "intl",
         "cn"
@@ -14719,11 +14719,11 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:14+00:00",
+      "fetched_at": "2026-06-01T19:32:56+00:00",
       "warnings": [
         "mac-arm64: 没有匹配 asset pattern 'Zed-*-aarch64.dmg'"
       ],
-      "last_success_at": "2026-06-01T05:52:14+00:00",
+      "last_success_at": "2026-06-01T19:32:56+00:00",
       "editions": [
         "intl",
         "cn"
@@ -14752,11 +14752,11 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:14+00:00",
+      "fetched_at": "2026-06-01T19:32:56+00:00",
       "warnings": [
         "linux-x64: 没有匹配 asset pattern 'flameshot-*-debian-12-amd64.deb'"
       ],
-      "last_success_at": "2026-06-01T05:52:14+00:00",
+      "last_success_at": "2026-06-01T19:32:56+00:00",
       "editions": [
         "intl",
         "cn"
@@ -14793,11 +14793,11 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:14+00:00",
+      "fetched_at": "2026-06-01T19:32:56+00:00",
       "warnings": [
         "linux-x64: 没有匹配 asset pattern 'clash-verge_*_amd64.deb'"
       ],
-      "last_success_at": "2026-06-01T05:52:14+00:00",
+      "last_success_at": "2026-06-01T19:32:56+00:00",
       "editions": [
         "intl",
         "cn"
@@ -14826,8 +14826,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:14+00:00",
-      "last_success_at": "2026-06-01T05:52:14+00:00",
+      "fetched_at": "2026-06-01T19:32:56+00:00",
+      "last_success_at": "2026-06-01T19:32:56+00:00",
       "editions": [
         "intl",
         "cn"
@@ -14856,8 +14856,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:14+00:00",
-      "last_success_at": "2026-06-01T05:52:14+00:00",
+      "fetched_at": "2026-06-01T19:32:56+00:00",
+      "last_success_at": "2026-06-01T19:32:56+00:00",
       "desc_cn": "macOS 虚拟机工具，支持运行 Windows/Linux/Android",
       "desc_en": "Virtualization tool for macOS to run Windows/Linux/Android"
     },
@@ -14882,8 +14882,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:14+00:00",
-      "last_success_at": "2026-06-01T05:52:14+00:00",
+      "fetched_at": "2026-06-01T19:32:56+00:00",
+      "last_success_at": "2026-06-01T19:32:56+00:00",
       "desc_cn": "macOS 双面板文件管理器，Total Commander 风格",
       "desc_en": "Dual-panel file manager for macOS, Total Commander style"
     },
@@ -14908,8 +14908,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:14+00:00",
-      "last_success_at": "2026-06-01T05:52:14+00:00",
+      "fetched_at": "2026-06-01T19:32:56+00:00",
+      "last_success_at": "2026-06-01T19:32:56+00:00",
       "desc_cn": "macOS 输入法管理工具，按应用自动切换输入法",
       "desc_en": "macOS input source manager that auto-switches per application"
     },
@@ -14934,8 +14934,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:15+00:00",
-      "last_success_at": "2026-06-01T05:52:15+00:00",
+      "fetched_at": "2026-06-01T19:32:56+00:00",
+      "last_success_at": "2026-06-01T19:32:56+00:00",
       "desc_cn": "跨平台电子书阅读器，支持 EPUB/PDF/MOBI 等格式",
       "desc_en": "Cross-platform e-book reader supporting EPUB/PDF/MOBI formats"
     },
@@ -14960,8 +14960,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:15+00:00",
-      "last_success_at": "2026-06-01T05:52:15+00:00",
+      "fetched_at": "2026-06-01T19:32:56+00:00",
+      "last_success_at": "2026-06-01T19:32:56+00:00",
       "desc_cn": "macOS 菜单栏自定义工具，用脚本添加菜单栏组件",
       "desc_en": "macOS menu bar customization tool with scriptable widgets"
     },
@@ -14986,8 +14986,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:14+00:00",
-      "last_success_at": "2026-06-01T05:52:14+00:00",
+      "fetched_at": "2026-06-01T19:32:56+00:00",
+      "last_success_at": "2026-06-01T19:32:56+00:00",
       "desc_cn": "macOS 效率启动器，替代 Spotlight，支持插件扩展",
       "desc_en": "macOS productivity launcher replacing Spotlight with plugin support"
     },
@@ -15004,6 +15004,14 @@
       "notes_url": null,
       "assets": [
         {
+          "platform": "win-x64",
+          "url": "https://www.snipaste.com/download.html",
+          "link_kind": "landing_page",
+          "filename": null,
+          "size": null,
+          "sha256": null
+        },
+        {
           "platform": "mac-universal",
           "url": "https://www.snipaste.com/download.html",
           "link_kind": "landing_page",
@@ -15012,8 +15020,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:14+00:00",
-      "last_success_at": "2026-06-01T05:52:14+00:00",
+      "fetched_at": "2026-06-01T19:32:56+00:00",
+      "last_success_at": "2026-06-01T19:32:56+00:00",
       "desc_cn": "截图和贴图工具，截图后可贴到屏幕上做参考",
       "desc_en": "Screenshot and pin tool that pins captures to screen as reference"
     },
@@ -15038,8 +15046,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:14+00:00",
-      "last_success_at": "2026-06-01T05:52:14+00:00",
+      "fetched_at": "2026-06-01T19:32:56+00:00",
+      "last_success_at": "2026-06-01T19:32:56+00:00",
       "desc_cn": "macOS 轻量级 Docker 和 Linux 虚拟机，比 Docker Desktop 更快",
       "desc_en": "Lightweight Docker and Linux VM for macOS, faster than Docker Desktop"
     },
@@ -15064,8 +15072,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:14+00:00",
-      "last_success_at": "2026-06-01T05:52:14+00:00",
+      "fetched_at": "2026-06-01T19:32:56+00:00",
+      "last_success_at": "2026-06-01T19:32:56+00:00",
       "desc_cn": "一体化服务器管理工具，SSH/文件传输/系统监控",
       "desc_en": "All-in-one server management tool with SSH/file transfer/system monitoring"
     },
@@ -15090,8 +15098,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:14+00:00",
-      "last_success_at": "2026-06-01T05:52:14+00:00",
+      "fetched_at": "2026-06-01T19:32:56+00:00",
+      "last_success_at": "2026-06-01T19:32:56+00:00",
       "desc_cn": "金山办公套件，兼容 Microsoft Office 格式",
       "desc_en": "Office suite by Kingsoft, compatible with Microsoft Office formats"
     },
@@ -15132,8 +15140,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:11+00:00",
-      "last_success_at": "2026-06-01T05:52:11+00:00",
+      "fetched_at": "2026-06-01T19:32:57+00:00",
+      "last_success_at": "2026-06-01T19:32:57+00:00",
       "editions": [
         "intl"
       ],
@@ -15169,8 +15177,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:10+00:00",
-      "last_success_at": "2026-06-01T05:52:10+00:00",
+      "fetched_at": "2026-06-01T19:32:53+00:00",
+      "last_success_at": "2026-06-01T19:32:53+00:00",
       "editions": [
         "cn"
       ],
@@ -15206,8 +15214,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:09+00:00",
-      "last_success_at": "2026-06-01T05:52:09+00:00",
+      "fetched_at": "2026-06-01T19:32:51+00:00",
+      "last_success_at": "2026-06-01T19:32:51+00:00",
       "editions": [
         "cn"
       ],
@@ -15235,8 +15243,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:09+00:00",
-      "last_success_at": "2026-06-01T05:52:09+00:00",
+      "fetched_at": "2026-06-01T19:32:51+00:00",
+      "last_success_at": "2026-06-01T19:32:51+00:00",
       "editions": [
         "cn"
       ],
@@ -15272,8 +15280,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:09+00:00",
-      "last_success_at": "2026-06-01T05:52:09+00:00",
+      "fetched_at": "2026-06-01T19:32:51+00:00",
+      "last_success_at": "2026-06-01T19:32:51+00:00",
       "editions": [
         "cn"
       ],
@@ -15301,8 +15309,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:09+00:00",
-      "last_success_at": "2026-06-01T05:52:09+00:00",
+      "fetched_at": "2026-06-01T19:32:51+00:00",
+      "last_success_at": "2026-06-01T19:32:51+00:00",
       "editions": [
         "cn"
       ],
@@ -15338,8 +15346,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:09+00:00",
-      "last_success_at": "2026-06-01T05:52:09+00:00",
+      "fetched_at": "2026-06-01T19:32:51+00:00",
+      "last_success_at": "2026-06-01T19:32:51+00:00",
       "editions": [
         "cn"
       ],
@@ -15367,8 +15375,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:09+00:00",
-      "last_success_at": "2026-06-01T05:52:09+00:00",
+      "fetched_at": "2026-06-01T19:32:51+00:00",
+      "last_success_at": "2026-06-01T19:32:51+00:00",
       "editions": [
         "cn"
       ],
@@ -15396,8 +15404,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:09+00:00",
-      "last_success_at": "2026-06-01T05:52:09+00:00",
+      "fetched_at": "2026-06-01T19:32:51+00:00",
+      "last_success_at": "2026-06-01T19:32:51+00:00",
       "editions": [
         "cn"
       ],
@@ -15425,11 +15433,11 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:10+00:00",
+      "fetched_at": "2026-06-01T19:32:52+00:00",
       "warnings": [
         "win-x64: 没有匹配 asset pattern 'PicGo-Setup-*.exe'"
       ],
-      "last_success_at": "2026-06-01T05:52:10+00:00",
+      "last_success_at": "2026-06-01T19:32:52+00:00",
       "editions": [
         "cn"
       ],
@@ -15457,8 +15465,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:09+00:00",
-      "last_success_at": "2026-06-01T05:52:09+00:00",
+      "fetched_at": "2026-06-01T19:32:51+00:00",
+      "last_success_at": "2026-06-01T19:32:51+00:00",
       "editions": [
         "cn"
       ],
@@ -15494,8 +15502,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:08+00:00",
-      "last_success_at": "2026-06-01T05:52:08+00:00",
+      "fetched_at": "2026-06-01T19:32:53+00:00",
+      "last_success_at": "2026-06-01T19:32:53+00:00",
       "editions": [
         "cn"
       ],
@@ -15531,8 +15539,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:08+00:00",
-      "last_success_at": "2026-06-01T05:52:08+00:00",
+      "fetched_at": "2026-06-01T19:32:53+00:00",
+      "last_success_at": "2026-06-01T19:32:53+00:00",
       "editions": [
         "cn"
       ],
@@ -15560,8 +15568,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:08+00:00",
-      "last_success_at": "2026-06-01T05:52:08+00:00",
+      "fetched_at": "2026-06-01T19:32:53+00:00",
+      "last_success_at": "2026-06-01T19:32:53+00:00",
       "editions": [
         "cn"
       ],
@@ -15597,8 +15605,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:08+00:00",
-      "last_success_at": "2026-06-01T05:52:08+00:00",
+      "fetched_at": "2026-06-01T19:32:53+00:00",
+      "last_success_at": "2026-06-01T19:32:53+00:00",
       "editions": [
         "cn"
       ],
@@ -15634,8 +15642,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:08+00:00",
-      "last_success_at": "2026-06-01T05:52:08+00:00",
+      "fetched_at": "2026-06-01T19:32:53+00:00",
+      "last_success_at": "2026-06-01T19:32:53+00:00",
       "editions": [
         "cn"
       ],
@@ -15663,8 +15671,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:08+00:00",
-      "last_success_at": "2026-06-01T05:52:08+00:00",
+      "fetched_at": "2026-06-01T19:32:53+00:00",
+      "last_success_at": "2026-06-01T19:32:53+00:00",
       "editions": [
         "cn"
       ],
@@ -15700,8 +15708,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:08+00:00",
-      "last_success_at": "2026-06-01T05:52:08+00:00",
+      "fetched_at": "2026-06-01T19:32:53+00:00",
+      "last_success_at": "2026-06-01T19:32:53+00:00",
       "editions": [
         "cn"
       ],
@@ -15737,8 +15745,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:08+00:00",
-      "last_success_at": "2026-06-01T05:52:08+00:00",
+      "fetched_at": "2026-06-01T19:32:53+00:00",
+      "last_success_at": "2026-06-01T19:32:53+00:00",
       "editions": [
         "cn"
       ],
@@ -15800,8 +15808,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:08+00:00",
-      "last_success_at": "2026-06-01T05:52:08+00:00",
+      "fetched_at": "2026-06-01T19:32:53+00:00",
+      "last_success_at": "2026-06-01T19:32:53+00:00",
       "editions": [
         "cn"
       ],
@@ -15837,8 +15845,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:07+00:00",
-      "last_success_at": "2026-06-01T05:52:07+00:00",
+      "fetched_at": "2026-06-01T19:32:50+00:00",
+      "last_success_at": "2026-06-01T19:32:50+00:00",
       "editions": [
         "cn"
       ],
@@ -15874,8 +15882,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:07+00:00",
-      "last_success_at": "2026-06-01T05:52:07+00:00",
+      "fetched_at": "2026-06-01T19:32:50+00:00",
+      "last_success_at": "2026-06-01T19:32:50+00:00",
       "editions": [
         "cn"
       ],
@@ -15911,8 +15919,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:07+00:00",
-      "last_success_at": "2026-06-01T05:52:07+00:00",
+      "fetched_at": "2026-06-01T19:32:50+00:00",
+      "last_success_at": "2026-06-01T19:32:50+00:00",
       "editions": [
         "cn"
       ],
@@ -15948,8 +15956,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:07+00:00",
-      "last_success_at": "2026-06-01T05:52:07+00:00",
+      "fetched_at": "2026-06-01T19:32:50+00:00",
+      "last_success_at": "2026-06-01T19:32:50+00:00",
       "editions": [
         "cn"
       ],
@@ -15977,8 +15985,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:07+00:00",
-      "last_success_at": "2026-06-01T05:52:07+00:00",
+      "fetched_at": "2026-06-01T19:32:50+00:00",
+      "last_success_at": "2026-06-01T19:32:50+00:00",
       "editions": [
         "cn"
       ],
@@ -16006,8 +16014,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:07+00:00",
-      "last_success_at": "2026-06-01T05:52:07+00:00",
+      "fetched_at": "2026-06-01T19:32:50+00:00",
+      "last_success_at": "2026-06-01T19:32:50+00:00",
       "editions": [
         "cn"
       ],
@@ -16043,8 +16051,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:07+00:00",
-      "last_success_at": "2026-06-01T05:52:07+00:00",
+      "fetched_at": "2026-06-01T19:32:50+00:00",
+      "last_success_at": "2026-06-01T19:32:50+00:00",
       "editions": [
         "cn"
       ],
@@ -16072,8 +16080,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:07+00:00",
-      "last_success_at": "2026-06-01T05:52:07+00:00",
+      "fetched_at": "2026-06-01T19:32:50+00:00",
+      "last_success_at": "2026-06-01T19:32:50+00:00",
       "editions": [
         "cn"
       ],
@@ -16109,8 +16117,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:07+00:00",
-      "last_success_at": "2026-06-01T05:52:07+00:00",
+      "fetched_at": "2026-06-01T19:32:50+00:00",
+      "last_success_at": "2026-06-01T19:32:50+00:00",
       "editions": [
         "cn"
       ],
@@ -16138,8 +16146,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:09+00:00",
-      "last_success_at": "2026-06-01T05:52:09+00:00",
+      "fetched_at": "2026-06-01T19:32:51+00:00",
+      "last_success_at": "2026-06-01T19:32:51+00:00",
       "editions": [
         "cn"
       ],
@@ -16167,8 +16175,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:09+00:00",
-      "last_success_at": "2026-06-01T05:52:09+00:00",
+      "fetched_at": "2026-06-01T19:32:51+00:00",
+      "last_success_at": "2026-06-01T19:32:51+00:00",
       "editions": [
         "cn"
       ],
@@ -16196,8 +16204,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:09+00:00",
-      "last_success_at": "2026-06-01T05:52:09+00:00",
+      "fetched_at": "2026-06-01T19:32:51+00:00",
+      "last_success_at": "2026-06-01T19:32:51+00:00",
       "editions": [
         "cn"
       ],
@@ -16225,8 +16233,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:09+00:00",
-      "last_success_at": "2026-06-01T05:52:09+00:00",
+      "fetched_at": "2026-06-01T19:32:51+00:00",
+      "last_success_at": "2026-06-01T19:32:51+00:00",
       "editions": [
         "cn"
       ],
@@ -16254,8 +16262,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:09+00:00",
-      "last_success_at": "2026-06-01T05:52:09+00:00",
+      "fetched_at": "2026-06-01T19:32:51+00:00",
+      "last_success_at": "2026-06-01T19:32:51+00:00",
       "editions": [
         "cn"
       ],
@@ -16289,7 +16297,9 @@
         "cn"
       ],
       "desc_cn": "截图贴图神器，截图后可贴到屏幕上做参考",
-      "desc_en": "Screenshot and pin tool that pins captures to screen as reference"
+      "desc_en": "Screenshot and pin tool that pins captures to screen as reference",
+      "_stale": true,
+      "_stale_reason": "not included in any sync shard"
     },
     {
       "id": "ximalaya",
@@ -16320,8 +16330,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:08+00:00",
-      "last_success_at": "2026-06-01T05:52:08+00:00",
+      "fetched_at": "2026-06-01T19:32:53+00:00",
+      "last_success_at": "2026-06-01T19:32:53+00:00",
       "editions": [
         "cn"
       ],
@@ -16357,8 +16367,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:08+00:00",
-      "last_success_at": "2026-06-01T05:52:08+00:00",
+      "fetched_at": "2026-06-01T19:32:53+00:00",
+      "last_success_at": "2026-06-01T19:32:53+00:00",
       "editions": [
         "cn"
       ],
@@ -16386,8 +16396,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:08+00:00",
-      "last_success_at": "2026-06-01T05:52:08+00:00",
+      "fetched_at": "2026-06-01T19:32:53+00:00",
+      "last_success_at": "2026-06-01T19:32:53+00:00",
       "editions": [
         "cn"
       ],
@@ -16415,8 +16425,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:08+00:00",
-      "last_success_at": "2026-06-01T05:52:08+00:00",
+      "fetched_at": "2026-06-01T19:32:53+00:00",
+      "last_success_at": "2026-06-01T19:32:53+00:00",
       "editions": [
         "cn"
       ],
@@ -16452,8 +16462,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:08+00:00",
-      "last_success_at": "2026-06-01T05:52:08+00:00",
+      "fetched_at": "2026-06-01T19:32:53+00:00",
+      "last_success_at": "2026-06-01T19:32:53+00:00",
       "editions": [
         "cn"
       ],
@@ -16481,8 +16491,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:07+00:00",
-      "last_success_at": "2026-06-01T05:52:07+00:00",
+      "fetched_at": "2026-06-01T19:32:50+00:00",
+      "last_success_at": "2026-06-01T19:32:50+00:00",
       "editions": [
         "cn"
       ],
@@ -16518,8 +16528,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:07+00:00",
-      "last_success_at": "2026-06-01T05:52:07+00:00",
+      "fetched_at": "2026-06-01T19:32:50+00:00",
+      "last_success_at": "2026-06-01T19:32:50+00:00",
       "editions": [
         "cn"
       ],
@@ -16547,8 +16557,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:07+00:00",
-      "last_success_at": "2026-06-01T05:52:07+00:00",
+      "fetched_at": "2026-06-01T19:32:50+00:00",
+      "last_success_at": "2026-06-01T19:32:50+00:00",
       "editions": [
         "cn"
       ],
@@ -16576,8 +16586,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:07+00:00",
-      "last_success_at": "2026-06-01T05:52:07+00:00",
+      "fetched_at": "2026-06-01T19:32:50+00:00",
+      "last_success_at": "2026-06-01T19:32:50+00:00",
       "editions": [
         "cn"
       ],
@@ -16605,8 +16615,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:07+00:00",
-      "last_success_at": "2026-06-01T05:52:07+00:00",
+      "fetched_at": "2026-06-01T19:32:50+00:00",
+      "last_success_at": "2026-06-01T19:32:50+00:00",
       "editions": [
         "cn"
       ],
@@ -16634,8 +16644,8 @@
           "sha256": null
         }
       ],
-      "fetched_at": "2026-06-01T05:52:07+00:00",
-      "last_success_at": "2026-06-01T05:52:07+00:00",
+      "fetched_at": "2026-06-01T19:32:50+00:00",
+      "last_success_at": "2026-06-01T19:32:50+00:00",
       "editions": [
         "cn"
       ],
@@ -16675,13 +16685,827 @@
       "desc_cn": "开源密码管理器客户端，跨平台同步",
       "desc_en": "Open-source password manager client with cross-platform sync",
       "_stale": true,
-      "_stale_reason": "bitwarden/clients@cli-v2026.5.0: 没有任何 asset 匹配配置的 pattern，现有 asset: ['bitwarden-cli-2026.5.0-npm-build.zip', 'bitwarden-cli.2026.5.0.nupkg', 'bw-linux-2026.5.0.zip', 'bw-linux-arm64-2026.5.0.zip', 'bw-macos-2026.5.0.zip']..."
+      "_stale_reason": "not included in any sync shard"
+    },
+    {
+      "id": "wecom",
+      "name": "企业微信",
+      "version": "2026-06-01",
+      "source": "Official download page; no public version API",
+      "version_kind": "sync_date",
+      "version_source": "UTC sync date; no public version API",
+      "category": "Messaging",
+      "homepage": "https://work.weixin.qq.com/",
+      "released_at": null,
+      "notes_url": null,
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://work.weixin.qq.com/",
+          "link_kind": "landing_page",
+          "filename": null,
+          "size": null,
+          "sha256": null
+        },
+        {
+          "platform": "mac-universal",
+          "url": "https://work.weixin.qq.com/",
+          "link_kind": "landing_page",
+          "filename": null,
+          "size": null,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-06-01T19:32:53+00:00",
+      "last_success_at": "2026-06-01T19:32:53+00:00",
+      "editions": [
+        "cn"
+      ],
+      "desc_cn": "腾讯出品的企业办公沟通工具，连接微信生态",
+      "desc_en": "Tencent enterprise messaging and office tool connected to WeChat"
+    },
+    {
+      "id": "mgtv",
+      "name": "芒果TV",
+      "version": "2026-06-01",
+      "source": "Official download page; no public version API",
+      "version_kind": "sync_date",
+      "version_source": "UTC sync date; no public version API",
+      "category": "Media Players",
+      "homepage": "https://www.mgtv.com/",
+      "released_at": null,
+      "notes_url": null,
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://www.mgtv.com/",
+          "link_kind": "landing_page",
+          "filename": null,
+          "size": null,
+          "sha256": null
+        },
+        {
+          "platform": "mac-universal",
+          "url": "https://www.mgtv.com/",
+          "link_kind": "landing_page",
+          "filename": null,
+          "size": null,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-06-01T19:32:53+00:00",
+      "last_success_at": "2026-06-01T19:32:53+00:00",
+      "editions": [
+        "cn"
+      ],
+      "desc_cn": "湖南广电旗下视频平台，综艺与自制剧资源丰富",
+      "desc_en": "Hunan TV video platform rich in variety shows and originals"
+    },
+    {
+      "id": "eudic",
+      "name": "欧路词典",
+      "version": "2026-06-01",
+      "source": "Official download page; no public version API",
+      "version_kind": "sync_date",
+      "version_source": "UTC sync date; no public version API",
+      "category": "Productivity",
+      "homepage": "https://www.eudic.net/",
+      "released_at": null,
+      "notes_url": null,
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://www.eudic.net/",
+          "link_kind": "landing_page",
+          "filename": null,
+          "size": null,
+          "sha256": null
+        },
+        {
+          "platform": "mac-universal",
+          "url": "https://www.eudic.net/",
+          "link_kind": "landing_page",
+          "filename": null,
+          "size": null,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-06-01T19:32:53+00:00",
+      "last_success_at": "2026-06-01T19:32:53+00:00",
+      "editions": [
+        "cn"
+      ],
+      "desc_cn": "强大的离线词典与生词本，支持扩展词库",
+      "desc_en": "Powerful offline dictionary with vocabulary notebook and add-on dictionaries"
+    },
+    {
+      "id": "dida",
+      "name": "滴答清单",
+      "version": "2026-06-01",
+      "source": "Official download page; no public version API",
+      "version_kind": "sync_date",
+      "version_source": "UTC sync date; no public version API",
+      "category": "Productivity",
+      "homepage": "https://dida365.com/",
+      "released_at": null,
+      "notes_url": null,
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://dida365.com/",
+          "link_kind": "landing_page",
+          "filename": null,
+          "size": null,
+          "sha256": null
+        },
+        {
+          "platform": "mac-universal",
+          "url": "https://dida365.com/",
+          "link_kind": "landing_page",
+          "filename": null,
+          "size": null,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-06-01T19:32:53+00:00",
+      "last_success_at": "2026-06-01T19:32:53+00:00",
+      "editions": [
+        "cn"
+      ],
+      "desc_cn": "跨平台待办与日程管理工具，支持番茄专注",
+      "desc_en": "Cross-platform to-do and schedule manager with Pomodoro focus"
+    },
+    {
+      "id": "qqbrowser",
+      "name": "QQ浏览器",
+      "version": "2026-06-01",
+      "source": "Official download page; no public version API",
+      "version_kind": "sync_date",
+      "version_source": "UTC sync date; no public version API",
+      "category": "Browsers",
+      "homepage": "https://browser.qq.com/",
+      "released_at": null,
+      "notes_url": null,
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://browser.qq.com/",
+          "link_kind": "landing_page",
+          "filename": null,
+          "size": null,
+          "sha256": null
+        },
+        {
+          "platform": "mac-universal",
+          "url": "https://browser.qq.com/",
+          "link_kind": "landing_page",
+          "filename": null,
+          "size": null,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-06-01T19:32:53+00:00",
+      "last_success_at": "2026-06-01T19:32:53+00:00",
+      "editions": [
+        "cn"
+      ],
+      "desc_cn": "腾讯出品的多功能浏览器，云同步与小程序",
+      "desc_en": "Multifunctional browser by Tencent with cloud sync and mini-programs"
+    },
+    {
+      "id": "tencent-lemon",
+      "name": "腾讯柠檬清理",
+      "version": "2026-06-01",
+      "source": "Official download page; no public version API",
+      "version_kind": "sync_date",
+      "version_source": "UTC sync date; no public version API",
+      "category": "System Utilities",
+      "homepage": "https://lemon.qq.com/",
+      "released_at": null,
+      "notes_url": null,
+      "assets": [
+        {
+          "platform": "mac-universal",
+          "url": "https://lemon.qq.com/",
+          "link_kind": "landing_page",
+          "filename": null,
+          "size": null,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-06-01T19:32:53+00:00",
+      "last_success_at": "2026-06-01T19:32:53+00:00",
+      "editions": [
+        "cn"
+      ],
+      "desc_cn": "腾讯出品的 macOS 清理工具，深度垃圾清理与监控",
+      "desc_en": "macOS cleanup tool by Tencent with deep junk cleaning and monitoring"
+    },
+    {
+      "id": "lx-music",
+      "name": "洛雪音乐助手",
+      "version": "2.12.2",
+      "source": "GitHub Release: lyswhut/lx-music-desktop",
+      "version_kind": "release_version",
+      "version_source": "GitHub release tag",
+      "category": "Media Players",
+      "homepage": "https://github.com/lyswhut/lx-music-desktop",
+      "released_at": "2026-05-01T05:35:34Z",
+      "notes_url": "https://github.com/lyswhut/lx-music-desktop/releases/tag/v2.12.2",
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://github.com/lyswhut/lx-music-desktop/releases/download/v2.12.2/lx-music-desktop-v2.12.2-x64-Setup.exe",
+          "link_kind": "direct",
+          "filename": "lx-music-desktop-v2.12.2-x64-Setup.exe",
+          "size": 107044670,
+          "sha256": null
+        },
+        {
+          "platform": "mac-arm64",
+          "url": "https://github.com/lyswhut/lx-music-desktop/releases/download/v2.12.2/lx-music-desktop-2.12.2-arm64.dmg",
+          "link_kind": "direct",
+          "filename": "lx-music-desktop-2.12.2-arm64.dmg",
+          "size": 124320718,
+          "sha256": null
+        },
+        {
+          "platform": "mac-x64",
+          "url": "https://github.com/lyswhut/lx-music-desktop/releases/download/v2.12.2/lx-music-desktop-2.12.2-x64.dmg",
+          "link_kind": "direct",
+          "filename": "lx-music-desktop-2.12.2-x64.dmg",
+          "size": 129107177,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-06-01T19:32:54+00:00",
+      "last_success_at": "2026-06-01T19:32:54+00:00",
+      "editions": [
+        "cn"
+      ],
+      "desc_cn": "开源的聚合音乐播放器，支持多平台音源",
+      "desc_en": "Open-source aggregated music player supporting multiple sources"
+    },
+    {
+      "id": "foxmail",
+      "name": "Foxmail",
+      "version": "2026-06-01",
+      "source": "Official download page; no public version API",
+      "version_kind": "sync_date",
+      "version_source": "UTC sync date; no public version API",
+      "category": "Productivity",
+      "homepage": "https://www.foxmail.com/",
+      "released_at": null,
+      "notes_url": null,
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://www.foxmail.com/",
+          "link_kind": "landing_page",
+          "filename": null,
+          "size": null,
+          "sha256": null
+        },
+        {
+          "platform": "mac-universal",
+          "url": "https://www.foxmail.com/",
+          "link_kind": "landing_page",
+          "filename": null,
+          "size": null,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-06-01T19:32:50+00:00",
+      "last_success_at": "2026-06-01T19:32:50+00:00",
+      "editions": [
+        "cn"
+      ],
+      "desc_cn": "腾讯出品的经典邮件客户端，多账号统一管理",
+      "desc_en": "Classic email client by Tencent with unified multi-account management"
+    },
+    {
+      "id": "qqplayer",
+      "name": "QQ影音",
+      "version": "2026-06-01",
+      "source": "Official download page; no public version API",
+      "version_kind": "sync_date",
+      "version_source": "UTC sync date; no public version API",
+      "category": "Media Players",
+      "homepage": "https://player.qq.com/",
+      "released_at": null,
+      "notes_url": null,
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://player.qq.com/",
+          "link_kind": "landing_page",
+          "filename": null,
+          "size": null,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-06-01T19:32:50+00:00",
+      "last_success_at": "2026-06-01T19:32:50+00:00",
+      "editions": [
+        "cn"
+      ],
+      "desc_cn": "腾讯出品的轻量高清播放器，支持全格式硬件加速",
+      "desc_en": "Lightweight HD player by Tencent with all-format hardware acceleration"
+    },
+    {
+      "id": "ludashi",
+      "name": "鲁大师",
+      "version": "2026-06-01",
+      "source": "Official download page; no public version API",
+      "version_kind": "sync_date",
+      "version_source": "UTC sync date; no public version API",
+      "category": "System Utilities",
+      "homepage": "https://www.ludashi.com/",
+      "released_at": null,
+      "notes_url": null,
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://www.ludashi.com/",
+          "link_kind": "landing_page",
+          "filename": null,
+          "size": null,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-06-01T19:32:50+00:00",
+      "last_success_at": "2026-06-01T19:32:50+00:00",
+      "editions": [
+        "cn"
+      ],
+      "desc_cn": "硬件检测与跑分工具，温度监控和驱动管理",
+      "desc_en": "Hardware detection and benchmark tool with temperature monitoring"
+    },
+    {
+      "id": "yuque",
+      "name": "语雀",
+      "version": "2026-06-01",
+      "source": "Official download page; no public version API",
+      "version_kind": "sync_date",
+      "version_source": "UTC sync date; no public version API",
+      "category": "Productivity",
+      "homepage": "https://www.yuque.com/",
+      "released_at": null,
+      "notes_url": null,
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://www.yuque.com/",
+          "link_kind": "landing_page",
+          "filename": null,
+          "size": null,
+          "sha256": null
+        },
+        {
+          "platform": "mac-universal",
+          "url": "https://www.yuque.com/",
+          "link_kind": "landing_page",
+          "filename": null,
+          "size": null,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-06-01T19:32:50+00:00",
+      "last_success_at": "2026-06-01T19:32:50+00:00",
+      "editions": [
+        "cn"
+      ],
+      "desc_cn": "蚂蚁出品的知识库与文档协作平台",
+      "desc_en": "Knowledge base and document collaboration platform by Ant Group"
+    },
+    {
+      "id": "tianyiyun",
+      "name": "天翼云盘",
+      "version": "2026-06-01",
+      "source": "Official download page; no public version API",
+      "version_kind": "sync_date",
+      "version_source": "UTC sync date; no public version API",
+      "category": "Utilities",
+      "homepage": "https://cloud.189.cn/",
+      "released_at": null,
+      "notes_url": null,
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://cloud.189.cn/",
+          "link_kind": "landing_page",
+          "filename": null,
+          "size": null,
+          "sha256": null
+        },
+        {
+          "platform": "mac-universal",
+          "url": "https://cloud.189.cn/",
+          "link_kind": "landing_page",
+          "filename": null,
+          "size": null,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-06-01T19:32:50+00:00",
+      "last_success_at": "2026-06-01T19:32:50+00:00",
+      "editions": [
+        "cn"
+      ],
+      "desc_cn": "中国电信旗下网盘，大容量备份与高速下载",
+      "desc_en": "China Telecom cloud drive with large-capacity backup and fast download"
+    },
+    {
+      "id": "edrawmax",
+      "name": "亿图图示",
+      "version": "2026-06-01",
+      "source": "Official download page; no public version API",
+      "version_kind": "sync_date",
+      "version_source": "UTC sync date; no public version API",
+      "category": "Productivity",
+      "homepage": "https://www.edrawsoft.cn/edrawmax/",
+      "released_at": null,
+      "notes_url": null,
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://www.edrawsoft.cn/edrawmax/",
+          "link_kind": "landing_page",
+          "filename": null,
+          "size": null,
+          "sha256": null
+        },
+        {
+          "platform": "mac-universal",
+          "url": "https://www.edrawsoft.cn/edrawmax/",
+          "link_kind": "landing_page",
+          "filename": null,
+          "size": null,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-06-01T19:32:50+00:00",
+      "last_success_at": "2026-06-01T19:32:50+00:00",
+      "editions": [
+        "cn"
+      ],
+      "desc_cn": "全能图形图表绘制软件，海量模板与符号库",
+      "desc_en": "All-in-one diagram software with abundant templates and symbol libraries"
+    },
+    {
+      "id": "pot",
+      "name": "Pot 翻译",
+      "version": "3.0.7",
+      "source": "GitHub Release: pot-app/pot-desktop",
+      "version_kind": "release_version",
+      "version_source": "GitHub release tag",
+      "category": "Utilities",
+      "homepage": "https://github.com/pot-app/pot-desktop",
+      "released_at": "2025-05-10T01:14:01Z",
+      "notes_url": "https://github.com/pot-app/pot-desktop/releases/tag/3.0.7",
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://github.com/pot-app/pot-desktop/releases/download/3.0.7/pot_3.0.7_x64-setup.exe",
+          "link_kind": "direct",
+          "filename": "pot_3.0.7_x64-setup.exe",
+          "size": 34105974,
+          "sha256": null
+        },
+        {
+          "platform": "mac-arm64",
+          "url": "https://github.com/pot-app/pot-desktop/releases/download/3.0.7/pot_3.0.7_aarch64.dmg",
+          "link_kind": "direct",
+          "filename": "pot_3.0.7_aarch64.dmg",
+          "size": 36444036,
+          "sha256": null
+        },
+        {
+          "platform": "mac-x64",
+          "url": "https://github.com/pot-app/pot-desktop/releases/download/3.0.7/pot_3.0.7_x64.dmg",
+          "link_kind": "direct",
+          "filename": "pot_3.0.7_x64.dmg",
+          "size": 37194990,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-06-01T19:32:51+00:00",
+      "last_success_at": "2026-06-01T19:32:51+00:00",
+      "editions": [
+        "cn"
+      ],
+      "desc_cn": "开源跨平台划词翻译与 OCR 工具，多翻译引擎",
+      "desc_en": "Open-source cross-platform translation and OCR tool with multiple engines"
+    },
+    {
+      "id": "jianying",
+      "name": "剪映专业版",
+      "version": "2026-06-01",
+      "source": "Official download page; no public version API",
+      "version_kind": "sync_date",
+      "version_source": "UTC sync date; no public version API",
+      "category": "Media Players",
+      "homepage": "https://www.capcut.cn/",
+      "released_at": null,
+      "notes_url": null,
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://www.capcut.cn/",
+          "link_kind": "landing_page",
+          "filename": null,
+          "size": null,
+          "sha256": null
+        },
+        {
+          "platform": "mac-universal",
+          "url": "https://www.capcut.cn/",
+          "link_kind": "landing_page",
+          "filename": null,
+          "size": null,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-06-01T19:32:51+00:00",
+      "last_success_at": "2026-06-01T19:32:51+00:00",
+      "editions": [
+        "cn"
+      ],
+      "desc_cn": "抖音官方出品的全能视频剪辑工具，模板丰富、智能字幕",
+      "desc_en": "All-in-one video editor by Douyin with rich templates and auto-captions"
+    },
+    {
+      "id": "youku",
+      "name": "优酷",
+      "version": "2026-06-01",
+      "source": "Official download page; no public version API",
+      "version_kind": "sync_date",
+      "version_source": "UTC sync date; no public version API",
+      "category": "Media Players",
+      "homepage": "https://www.youku.com/",
+      "released_at": null,
+      "notes_url": null,
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://www.youku.com/",
+          "link_kind": "landing_page",
+          "filename": null,
+          "size": null,
+          "sha256": null
+        },
+        {
+          "platform": "mac-universal",
+          "url": "https://www.youku.com/",
+          "link_kind": "landing_page",
+          "filename": null,
+          "size": null,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-06-01T19:32:51+00:00",
+      "last_success_at": "2026-06-01T19:32:51+00:00",
+      "editions": [
+        "cn"
+      ],
+      "desc_cn": "阿里巴巴旗下视频平台客户端，支持高清离线缓存",
+      "desc_en": "Alibaba video platform client with HD offline caching"
+    },
+    {
+      "id": "iciba",
+      "name": "金山词霸",
+      "version": "2026-06-01",
+      "source": "Official download page; no public version API",
+      "version_kind": "sync_date",
+      "version_source": "UTC sync date; no public version API",
+      "category": "Productivity",
+      "homepage": "https://www.iciba.com/",
+      "released_at": null,
+      "notes_url": null,
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://www.iciba.com/",
+          "link_kind": "landing_page",
+          "filename": null,
+          "size": null,
+          "sha256": null
+        },
+        {
+          "platform": "mac-universal",
+          "url": "https://www.iciba.com/",
+          "link_kind": "landing_page",
+          "filename": null,
+          "size": null,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-06-01T19:32:51+00:00",
+      "last_success_at": "2026-06-01T19:32:51+00:00",
+      "editions": [
+        "cn"
+      ],
+      "desc_cn": "金山出品的老牌词典翻译工具，海量权威词库",
+      "desc_en": "Veteran dictionary and translation tool by Kingsoft with authoritative corpus"
+    },
+    {
+      "id": "yinxiang",
+      "name": "印象笔记",
+      "version": "2026-06-01",
+      "source": "Official download page; no public version API",
+      "version_kind": "sync_date",
+      "version_source": "UTC sync date; no public version API",
+      "category": "Productivity",
+      "homepage": "https://www.yinxiang.com/",
+      "released_at": null,
+      "notes_url": null,
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://www.yinxiang.com/",
+          "link_kind": "landing_page",
+          "filename": null,
+          "size": null,
+          "sha256": null
+        },
+        {
+          "platform": "mac-universal",
+          "url": "https://www.yinxiang.com/",
+          "link_kind": "landing_page",
+          "filename": null,
+          "size": null,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-06-01T19:32:51+00:00",
+      "last_success_at": "2026-06-01T19:32:51+00:00",
+      "editions": [
+        "cn"
+      ],
+      "desc_cn": "老牌云笔记应用，多端同步与全文检索",
+      "desc_en": "Veteran cloud note app with cross-device sync and full-text search"
+    },
+    {
+      "id": "quark",
+      "name": "夸克浏览器",
+      "version": "2026-06-01",
+      "source": "Official download page; no public version API",
+      "version_kind": "sync_date",
+      "version_source": "UTC sync date; no public version API",
+      "category": "Browsers",
+      "homepage": "https://pc.quark.cn/",
+      "released_at": null,
+      "notes_url": null,
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://pc.quark.cn/",
+          "link_kind": "landing_page",
+          "filename": null,
+          "size": null,
+          "sha256": null
+        },
+        {
+          "platform": "mac-universal",
+          "url": "https://pc.quark.cn/",
+          "link_kind": "landing_page",
+          "filename": null,
+          "size": null,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-06-01T19:32:51+00:00",
+      "last_success_at": "2026-06-01T19:32:51+00:00",
+      "editions": [
+        "cn"
+      ],
+      "desc_cn": "阿里出品的极简浏览器，集成 AI 搜索与网盘",
+      "desc_en": "Minimalist browser by Alibaba with built-in AI search and cloud drive"
+    },
+    {
+      "id": "cajviewer",
+      "name": "CAJViewer",
+      "version": "2026-06-01",
+      "source": "Official download page; no public version API",
+      "version_kind": "sync_date",
+      "version_source": "UTC sync date; no public version API",
+      "category": "Productivity",
+      "homepage": "https://cajviewer.cnki.net/",
+      "released_at": null,
+      "notes_url": null,
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://cajviewer.cnki.net/",
+          "link_kind": "landing_page",
+          "filename": null,
+          "size": null,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-06-01T19:32:51+00:00",
+      "last_success_at": "2026-06-01T19:32:51+00:00",
+      "editions": [
+        "cn"
+      ],
+      "desc_cn": "知网官方文献阅读器，支持 CAJ 和 PDF 格式",
+      "desc_en": "CNKI official literature reader supporting CAJ and PDF formats"
+    },
+    {
+      "id": "siyuan",
+      "name": "思源笔记",
+      "version": "3.6.5",
+      "source": "GitHub Release: siyuan-note/siyuan",
+      "version_kind": "release_version",
+      "version_source": "GitHub release tag",
+      "category": "Productivity",
+      "homepage": "https://github.com/siyuan-note/siyuan",
+      "released_at": "2026-04-21T06:22:00Z",
+      "notes_url": "https://github.com/siyuan-note/siyuan/releases/tag/v3.6.5",
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://github.com/siyuan-note/siyuan/releases/download/v3.6.5/siyuan-3.6.5-win.exe",
+          "link_kind": "direct",
+          "filename": "siyuan-3.6.5-win.exe",
+          "size": 175903008,
+          "sha256": null
+        },
+        {
+          "platform": "mac-arm64",
+          "url": "https://github.com/siyuan-note/siyuan/releases/download/v3.6.5/siyuan-3.6.5-mac-arm64.dmg",
+          "link_kind": "direct",
+          "filename": "siyuan-3.6.5-mac-arm64.dmg",
+          "size": 197273483,
+          "sha256": null
+        },
+        {
+          "platform": "mac-x64",
+          "url": "https://github.com/siyuan-note/siyuan/releases/download/v3.6.5/siyuan-3.6.5-mac.dmg",
+          "link_kind": "direct",
+          "filename": "siyuan-3.6.5-mac.dmg",
+          "size": 194396823,
+          "sha256": null
+        },
+        {
+          "platform": "linux-x64",
+          "url": "https://github.com/siyuan-note/siyuan/releases/download/v3.6.5/siyuan-3.6.5-linux.AppImage",
+          "link_kind": "direct",
+          "filename": "siyuan-3.6.5-linux.AppImage",
+          "size": 196439671,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-06-01T19:32:52+00:00",
+      "last_success_at": "2026-06-01T19:32:52+00:00",
+      "editions": [
+        "cn"
+      ],
+      "desc_cn": "本地优先的开源块级笔记软件，支持双向链接",
+      "desc_en": "Local-first open-source block-based note app with bidirectional links"
+    },
+    {
+      "id": "listen1",
+      "name": "Listen1",
+      "version": "2.33.0",
+      "source": "GitHub Release: listen1/listen1_desktop",
+      "version_kind": "release_version",
+      "version_source": "GitHub release tag",
+      "category": "Media Players",
+      "homepage": "https://github.com/listen1/listen1_desktop",
+      "released_at": "2025-06-17T13:48:54Z",
+      "notes_url": "https://github.com/listen1/listen1_desktop/releases/tag/v2.33.0",
+      "assets": [
+        {
+          "platform": "win-x64",
+          "url": "https://github.com/listen1/listen1_desktop/releases/download/v2.33.0/listen1_2.33.0_win_x64.exe",
+          "link_kind": "direct",
+          "filename": "listen1_2.33.0_win_x64.exe",
+          "size": 81316949,
+          "sha256": null
+        },
+        {
+          "platform": "mac-universal",
+          "url": "https://github.com/listen1/listen1_desktop/releases/download/v2.33.0/listen1_2.33.0_mac_universal.dmg",
+          "link_kind": "direct",
+          "filename": "listen1_2.33.0_mac_universal.dmg",
+          "size": 179975793,
+          "sha256": null
+        }
+      ],
+      "fetched_at": "2026-06-01T19:32:52+00:00",
+      "last_success_at": "2026-06-01T19:32:52+00:00",
+      "editions": [
+        "cn"
+      ],
+      "desc_cn": "开源聚合音乐播放器，一站式搜索多家音乐",
+      "desc_en": "Open-source aggregated music player searching across platforms"
     }
   ],
   "stats": {
-    "total": 460,
-    "success": 442,
-    "failed": 18,
+    "total": 482,
+    "success": 463,
+    "failed": 19,
     "failed_ids": [
       "gopeed",
       "eza",
@@ -16700,6 +17524,7 @@
       "quickemu",
       "pocketbase",
       "switchhosts",
+      "snipaste-cn",
       "bitwarden-client"
     ],
     "failures": [
@@ -16772,8 +17597,12 @@
         "error": "oldj/SwitchHosts@v5.0.0: 没有任何 asset 匹配配置的 pattern，现有 asset: ['latest.json', 'SwitchHosts-5.0.0-linux-aarch64.AppImage', 'SwitchHosts-5.0.0-linux-aarch64.rpm', 'SwitchHosts-5.0.0-linux-aarch64.rpm.sig', 'SwitchHosts-5.0.0-linux-amd64.AppImage']..."
       },
       {
+        "id": "snipaste-cn",
+        "error": "not included in any sync shard"
+      },
+      {
         "id": "bitwarden-client",
-        "error": "bitwarden/clients@cli-v2026.5.0: 没有任何 asset 匹配配置的 pattern，现有 asset: ['bitwarden-cli-2026.5.0-npm-build.zip', 'bitwarden-cli.2026.5.0.nupkg', 'bw-linux-2026.5.0.zip', 'bw-linux-arm64-2026.5.0.zip', 'bw-macos-2026.5.0.zip']..."
+        "error": "not included in any sync shard"
       }
     ]
   }
