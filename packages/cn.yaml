@@ -381,24 +381,6 @@ packages:
       pattern: dist.tar.gz
   desc_cn: 自托管监控工具，Uptime Robot 替代品
   desc_en: Self-hosted monitoring tool, Uptime Robot alternative
-- id: bitwarden-client
-  name: Bitwarden
-  category: Security & Privacy
-  editions:
-  - cn
-  homepage: https://github.com/bitwarden/clients
-  fetcher: github_release
-  args:
-    repo: bitwarden/clients
-    assets:
-    - platform: win-x64
-      pattern: Bitwarden-*-x64.msi
-    - platform: mac-arm64
-      pattern: Bitwarden-*-universal.dmg
-    - platform: mac-x64
-      pattern: Bitwarden-*-x64.dmg
-  desc_cn: 开源密码管理器客户端，跨平台同步
-  desc_en: Open-source password manager client with cross-platform sync
 - id: powershell
   name: PowerShell
   category: Developer Tools
@@ -1113,17 +1095,369 @@ packages:
       link_kind: landing_page
   desc_cn: 高性能视频播放器，支持多种格式和硬件加速
   desc_en: High-performance video player with multi-format and hardware acceleration
-- id: snipaste-cn
-  name: Snipaste
-  category: System Utilities
+- id: jianying
+  name: 剪映专业版
+  category: Media Players
   editions:
   - cn
-  homepage: https://www.snipaste.com/
+  homepage: https://www.capcut.cn/
   fetcher: download_page
   args:
     platforms:
     - platform: win-x64
-      download_url: https://www.snipaste.com/download.html
+      download_url: https://www.capcut.cn/
       link_kind: landing_page
-  desc_cn: 截图贴图神器，截图后可贴到屏幕上做参考
-  desc_en: Screenshot and pin tool that pins captures to screen as reference
+    - platform: mac-universal
+      download_url: https://www.capcut.cn/
+      link_kind: landing_page
+  desc_cn: 抖音官方出品的全能视频剪辑工具，模板丰富、智能字幕
+  desc_en: All-in-one video editor by Douyin with rich templates and auto-captions
+- id: wecom
+  name: 企业微信
+  category: Messaging
+  editions:
+  - cn
+  homepage: https://work.weixin.qq.com/
+  fetcher: download_page
+  args:
+    platforms:
+    - platform: win-x64
+      download_url: https://work.weixin.qq.com/
+      link_kind: landing_page
+    - platform: mac-universal
+      download_url: https://work.weixin.qq.com/
+      link_kind: landing_page
+  desc_cn: 腾讯出品的企业办公沟通工具，连接微信生态
+  desc_en: Tencent enterprise messaging and office tool connected to WeChat
+- id: foxmail
+  name: Foxmail
+  category: Productivity
+  editions:
+  - cn
+  homepage: https://www.foxmail.com/
+  fetcher: download_page
+  args:
+    platforms:
+    - platform: win-x64
+      download_url: https://www.foxmail.com/
+      link_kind: landing_page
+    - platform: mac-universal
+      download_url: https://www.foxmail.com/
+      link_kind: landing_page
+  desc_cn: 腾讯出品的经典邮件客户端，多账号统一管理
+  desc_en: Classic email client by Tencent with unified multi-account management
+- id: youku
+  name: 优酷
+  category: Media Players
+  editions:
+  - cn
+  homepage: https://www.youku.com/
+  fetcher: download_page
+  args:
+    platforms:
+    - platform: win-x64
+      download_url: https://www.youku.com/
+      link_kind: landing_page
+    - platform: mac-universal
+      download_url: https://www.youku.com/
+      link_kind: landing_page
+  desc_cn: 阿里巴巴旗下视频平台客户端，支持高清离线缓存
+  desc_en: Alibaba video platform client with HD offline caching
+- id: mgtv
+  name: 芒果TV
+  category: Media Players
+  editions:
+  - cn
+  homepage: https://www.mgtv.com/
+  fetcher: download_page
+  args:
+    platforms:
+    - platform: win-x64
+      download_url: https://www.mgtv.com/
+      link_kind: landing_page
+    - platform: mac-universal
+      download_url: https://www.mgtv.com/
+      link_kind: landing_page
+  desc_cn: 湖南广电旗下视频平台，综艺与自制剧资源丰富
+  desc_en: Hunan TV video platform rich in variety shows and originals
+- id: qqplayer
+  name: QQ影音
+  category: Media Players
+  editions:
+  - cn
+  homepage: https://player.qq.com/
+  fetcher: download_page
+  args:
+    platforms:
+    - platform: win-x64
+      download_url: https://player.qq.com/
+      link_kind: landing_page
+  desc_cn: 腾讯出品的轻量高清播放器，支持全格式硬件加速
+  desc_en: Lightweight HD player by Tencent with all-format hardware acceleration
+- id: iciba
+  name: 金山词霸
+  category: Productivity
+  editions:
+  - cn
+  homepage: https://www.iciba.com/
+  fetcher: download_page
+  args:
+    platforms:
+    - platform: win-x64
+      download_url: https://www.iciba.com/
+      link_kind: landing_page
+    - platform: mac-universal
+      download_url: https://www.iciba.com/
+      link_kind: landing_page
+  desc_cn: 金山出品的老牌词典翻译工具，海量权威词库
+  desc_en: Veteran dictionary and translation tool by Kingsoft with authoritative corpus
+- id: eudic
+  name: 欧路词典
+  category: Productivity
+  editions:
+  - cn
+  homepage: https://www.eudic.net/
+  fetcher: download_page
+  args:
+    platforms:
+    - platform: win-x64
+      download_url: https://www.eudic.net/
+      link_kind: landing_page
+    - platform: mac-universal
+      download_url: https://www.eudic.net/
+      link_kind: landing_page
+  desc_cn: 强大的离线词典与生词本，支持扩展词库
+  desc_en: Powerful offline dictionary with vocabulary notebook and add-on dictionaries
+- id: ludashi
+  name: 鲁大师
+  category: System Utilities
+  editions:
+  - cn
+  homepage: https://www.ludashi.com/
+  fetcher: download_page
+  args:
+    platforms:
+    - platform: win-x64
+      download_url: https://www.ludashi.com/
+      link_kind: landing_page
+  desc_cn: 硬件检测与跑分工具，温度监控和驱动管理
+  desc_en: Hardware detection and benchmark tool with temperature monitoring
+- id: yinxiang
+  name: 印象笔记
+  category: Productivity
+  editions:
+  - cn
+  homepage: https://www.yinxiang.com/
+  fetcher: download_page
+  args:
+    platforms:
+    - platform: win-x64
+      download_url: https://www.yinxiang.com/
+      link_kind: landing_page
+    - platform: mac-universal
+      download_url: https://www.yinxiang.com/
+      link_kind: landing_page
+  desc_cn: 老牌云笔记应用，多端同步与全文检索
+  desc_en: Veteran cloud note app with cross-device sync and full-text search
+- id: dida
+  name: 滴答清单
+  category: Productivity
+  editions:
+  - cn
+  homepage: https://dida365.com/
+  fetcher: download_page
+  args:
+    platforms:
+    - platform: win-x64
+      download_url: https://dida365.com/
+      link_kind: landing_page
+    - platform: mac-universal
+      download_url: https://dida365.com/
+      link_kind: landing_page
+  desc_cn: 跨平台待办与日程管理工具，支持番茄专注
+  desc_en: Cross-platform to-do and schedule manager with Pomodoro focus
+- id: yuque
+  name: 语雀
+  category: Productivity
+  editions:
+  - cn
+  homepage: https://www.yuque.com/
+  fetcher: download_page
+  args:
+    platforms:
+    - platform: win-x64
+      download_url: https://www.yuque.com/
+      link_kind: landing_page
+    - platform: mac-universal
+      download_url: https://www.yuque.com/
+      link_kind: landing_page
+  desc_cn: 蚂蚁出品的知识库与文档协作平台
+  desc_en: Knowledge base and document collaboration platform by Ant Group
+- id: quark
+  name: 夸克浏览器
+  category: Browsers
+  editions:
+  - cn
+  homepage: https://pc.quark.cn/
+  fetcher: download_page
+  args:
+    platforms:
+    - platform: win-x64
+      download_url: https://pc.quark.cn/
+      link_kind: landing_page
+    - platform: mac-universal
+      download_url: https://pc.quark.cn/
+      link_kind: landing_page
+  desc_cn: 阿里出品的极简浏览器，集成 AI 搜索与网盘
+  desc_en: Minimalist browser by Alibaba with built-in AI search and cloud drive
+- id: qqbrowser
+  name: QQ浏览器
+  category: Browsers
+  editions:
+  - cn
+  homepage: https://browser.qq.com/
+  fetcher: download_page
+  args:
+    platforms:
+    - platform: win-x64
+      download_url: https://browser.qq.com/
+      link_kind: landing_page
+    - platform: mac-universal
+      download_url: https://browser.qq.com/
+      link_kind: landing_page
+  desc_cn: 腾讯出品的多功能浏览器，云同步与小程序
+  desc_en: Multifunctional browser by Tencent with cloud sync and mini-programs
+- id: tianyiyun
+  name: 天翼云盘
+  category: Utilities
+  editions:
+  - cn
+  homepage: https://cloud.189.cn/
+  fetcher: download_page
+  args:
+    platforms:
+    - platform: win-x64
+      download_url: https://cloud.189.cn/
+      link_kind: landing_page
+    - platform: mac-universal
+      download_url: https://cloud.189.cn/
+      link_kind: landing_page
+  desc_cn: 中国电信旗下网盘，大容量备份与高速下载
+  desc_en: China Telecom cloud drive with large-capacity backup and fast download
+- id: cajviewer
+  name: CAJViewer
+  category: Productivity
+  editions:
+  - cn
+  homepage: https://cajviewer.cnki.net/
+  fetcher: download_page
+  args:
+    platforms:
+    - platform: win-x64
+      download_url: https://cajviewer.cnki.net/
+      link_kind: landing_page
+  desc_cn: 知网官方文献阅读器，支持 CAJ 和 PDF 格式
+  desc_en: CNKI official literature reader supporting CAJ and PDF formats
+- id: tencent-lemon
+  name: 腾讯柠檬清理
+  category: System Utilities
+  editions:
+  - cn
+  homepage: https://lemon.qq.com/
+  fetcher: download_page
+  args:
+    platforms:
+    - platform: mac-universal
+      download_url: https://lemon.qq.com/
+      link_kind: landing_page
+  desc_cn: 腾讯出品的 macOS 清理工具，深度垃圾清理与监控
+  desc_en: macOS cleanup tool by Tencent with deep junk cleaning and monitoring
+- id: edrawmax
+  name: 亿图图示
+  category: Productivity
+  editions:
+  - cn
+  homepage: https://www.edrawsoft.cn/edrawmax/
+  fetcher: download_page
+  args:
+    platforms:
+    - platform: win-x64
+      download_url: https://www.edrawsoft.cn/edrawmax/
+      link_kind: landing_page
+    - platform: mac-universal
+      download_url: https://www.edrawsoft.cn/edrawmax/
+      link_kind: landing_page
+  desc_cn: 全能图形图表绘制软件，海量模板与符号库
+  desc_en: All-in-one diagram software with abundant templates and symbol libraries
+- id: siyuan
+  name: 思源笔记
+  category: Productivity
+  editions:
+  - cn
+  homepage: https://github.com/siyuan-note/siyuan
+  fetcher: github_release
+  args:
+    repo: siyuan-note/siyuan
+    assets:
+    - platform: win-x64
+      pattern: siyuan-*-win.exe
+    - platform: mac-arm64
+      pattern: siyuan-*-mac-arm64.dmg
+    - platform: mac-x64
+      pattern: siyuan-*-mac.dmg
+    - platform: linux-x64
+      pattern: siyuan-*-linux.AppImage
+  desc_cn: 本地优先的开源块级笔记软件，支持双向链接
+  desc_en: Local-first open-source block-based note app with bidirectional links
+- id: lx-music
+  name: 洛雪音乐助手
+  category: Media Players
+  editions:
+  - cn
+  homepage: https://github.com/lyswhut/lx-music-desktop
+  fetcher: github_release
+  args:
+    repo: lyswhut/lx-music-desktop
+    assets:
+    - platform: win-x64
+      pattern: lx-music-desktop-v*-x64-Setup.exe
+    - platform: mac-arm64
+      pattern: lx-music-desktop-*-arm64.dmg
+    - platform: mac-x64
+      pattern: lx-music-desktop-*-x64.dmg
+  desc_cn: 开源的聚合音乐播放器，支持多平台音源
+  desc_en: Open-source aggregated music player supporting multiple sources
+- id: pot
+  name: Pot 翻译
+  category: Utilities
+  editions:
+  - cn
+  homepage: https://github.com/pot-app/pot-desktop
+  fetcher: github_release
+  args:
+    repo: pot-app/pot-desktop
+    assets:
+    - platform: win-x64
+      pattern: pot_*_x64-setup.exe
+    - platform: mac-arm64
+      pattern: pot_*_aarch64.dmg
+    - platform: mac-x64
+      pattern: pot_*_x64.dmg
+  desc_cn: 开源跨平台划词翻译与 OCR 工具，多翻译引擎
+  desc_en: Open-source cross-platform translation and OCR tool with multiple engines
+- id: listen1
+  name: Listen1
+  category: Media Players
+  editions:
+  - cn
+  homepage: https://github.com/listen1/listen1_desktop
+  fetcher: github_release
+  args:
+    repo: listen1/listen1_desktop
+    assets:
+    - platform: win-x64
+      pattern: listen1_*_win_x64.exe
+    - platform: mac-universal
+      pattern: listen1_*_mac_universal.dmg
+  desc_cn: 开源聚合音乐播放器，一站式搜索多家音乐
+  desc_en: Open-source aggregated music player searching across platforms

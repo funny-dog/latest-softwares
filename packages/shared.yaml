@@ -1276,6 +1276,9 @@ packages:
   fetcher: download_page
   args:
     platforms:
+    - platform: win-x64
+      download_url: https://www.snipaste.com/download.html
+      link_kind: landing_page
     - platform: mac-universal
       download_url: https://www.snipaste.com/download.html
 - id: dash
