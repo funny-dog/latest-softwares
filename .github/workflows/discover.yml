@@ -45,7 +45,7 @@ jobs:
           fi
 
       - name: Create Pull Request
-        uses: peter-evans/create-pull-request@v7
+        uses: peter-evans/create-pull-request@v8
         with:
           # 只提交 shared.yaml：dry-run 改动的 data/latest.json 与临时
           # discover_new_ids.txt 都不会进 PR，保证纯追加干净 diff。
