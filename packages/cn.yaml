@@ -1459,3 +1459,172 @@ packages:
       pattern: listen1_*_mac_universal.dmg
   desc_cn: 开源聚合音乐播放器，一站式搜索多家音乐
   desc_en: Open-source aggregated music player searching across platforms
+- id: league-of-legends
+  name: 英雄联盟
+  category: Gaming
+  editions:
+  - cn
+  homepage: https://lol.qq.com/
+  fetcher: download_page
+  args:
+    platforms:
+    - platform: win-x64
+      download_url: https://lol.qq.com/
+      link_kind: landing_page
+  desc_cn: 拳头游戏开发、腾讯代理的 5v5 多人在线竞技游戏（MOBA）
+  desc_en: 5v5 multiplayer online battle arena (MOBA) by Riot Games, published by
+    Tencent
+- id: dnf
+  name: 地下城与勇士
+  category: Gaming
+  editions:
+  - cn
+  homepage: https://dnf.qq.com/
+  fetcher: download_page
+  args:
+    platforms:
+    - platform: win-x64
+      download_url: https://dnf.qq.com/
+      link_kind: landing_page
+  desc_cn: 腾讯代理的横版格斗动作角色扮演网游，经典刷图玩法
+  desc_en: Side-scrolling beat-em-up action RPG online game published by Tencent
+- id: crossfire
+  name: 穿越火线
+  category: Gaming
+  editions:
+  - cn
+  homepage: https://cf.qq.com/
+  fetcher: download_page
+  args:
+    platforms:
+    - platform: win-x64
+      download_url: https://cf.qq.com/
+      link_kind: landing_page
+  desc_cn: 腾讯代理的第一人称射击网游，经典爆破与团队竞技
+  desc_en: First-person shooter online game with classic bomb-defusal and team modes
+- id: valorant
+  name: 无畏契约
+  category: Gaming
+  editions:
+  - cn
+  homepage: https://val.qq.com/
+  fetcher: download_page
+  args:
+    platforms:
+    - platform: win-x64
+      download_url: https://val.qq.com/
+      link_kind: landing_page
+  desc_cn: 拳头游戏开发的 5v5 英雄射击竞技游戏
+  desc_en: 5v5 character-based tactical shooter by Riot Games
+- id: delta-force
+  name: 三角洲行动
+  category: Gaming
+  editions:
+  - cn
+  homepage: https://df.qq.com/
+  fetcher: download_page
+  args:
+    platforms:
+    - platform: win-x64
+      download_url: https://df.qq.com/
+      link_kind: landing_page
+  desc_cn: 腾讯天美开发的多模式军事射击网游，含大战场与烽火地带
+  desc_en: Multi-mode military shooter online game by Tencent TiMi Studios
+- id: naraka-bladepoint
+  name: 永劫无间
+  category: Gaming
+  editions:
+  - cn
+  homepage: https://www.yjwujian.cn/
+  fetcher: download_page
+  args:
+    platforms:
+    - platform: win-x64
+      download_url: https://www.yjwujian.cn/
+      link_kind: landing_page
+  desc_cn: 网易开发的多人冷兵器动作竞技吃鸡游戏
+  desc_en: Multiplayer melee battle-royale action game by NetEase
+- id: justice-online
+  name: 逆水寒
+  category: Gaming
+  editions:
+  - cn
+  homepage: https://n.163.com/
+  fetcher: download_page
+  args:
+    platforms:
+    - platform: win-x64
+      download_url: https://n.163.com/
+      link_kind: landing_page
+  desc_cn: 网易开发的武侠题材 MMORPG 端游
+  desc_en: Wuxia-themed MMORPG by NetEase
+- id: fantasy-westward-journey
+  name: 梦幻西游
+  category: Gaming
+  editions:
+  - cn
+  homepage: https://xyq.163.com/
+  fetcher: download_page
+  args:
+    platforms:
+    - platform: win-x64
+      download_url: https://xyq.163.com/
+      link_kind: landing_page
+  desc_cn: 网易经典回合制 MMORPG，国民级西游题材网游
+  desc_en: Classic turn-based MMORPG by NetEase based on Journey to the West
+- id: genshin-impact
+  name: 原神
+  category: Gaming
+  editions:
+  - cn
+  homepage: https://ys.mihoyo.com/
+  fetcher: download_page
+  args:
+    platforms:
+    - platform: win-x64
+      download_url: https://ys.mihoyo.com/
+      link_kind: landing_page
+  desc_cn: 米哈游开发的开放世界冒险 RPG 游戏
+  desc_en: Open-world action RPG by miHoYo
+- id: honkai-star-rail
+  name: 崩坏：星穹铁道
+  category: Gaming
+  editions:
+  - cn
+  homepage: https://sr.mihoyo.com/
+  fetcher: download_page
+  args:
+    platforms:
+    - platform: win-x64
+      download_url: https://sr.mihoyo.com/
+      link_kind: landing_page
+  desc_cn: 米哈游开发的回合制策略 RPG 游戏
+  desc_en: Turn-based strategy RPG by miHoYo
+- id: dota2
+  name: DOTA2
+  category: Gaming
+  editions:
+  - cn
+  homepage: https://www.dota2.com.cn/
+  fetcher: download_page
+  args:
+    platforms:
+    - platform: win-x64
+      download_url: https://www.dota2.com.cn/
+      link_kind: landing_page
+  desc_cn: Valve 开发、完美世界代理的 5v5 多人在线竞技游戏（MOBA）
+  desc_en: 5v5 MOBA by Valve, published in China by Perfect World
+- id: jx3
+  name: 剑网3
+  category: Gaming
+  editions:
+  - cn
+  homepage: https://jx3.xoyo.com/
+  fetcher: download_page
+  args:
+    platforms:
+    - platform: win-x64
+      download_url: https://jx3.xoyo.com/
+      link_kind: landing_page
+  desc_cn: 西山居开发的武侠 3D MMORPG 端游
+  desc_en: Wuxia 3D MMORPG by Seasun (Kingsoft)
