@@ -1162,8 +1162,8 @@ packages:
     assets:
     - platform: win-x64
       pattern: dust-*-x86_64-pc-windows-msvc.zip
-    - platform: mac-arm64
-      pattern: dust-*-aarch64-apple-darwin.tar.gz
+    - platform: mac-x64
+      pattern: dust-*-x86_64-apple-darwin.tar.gz
     - platform: linux-x64
       pattern: dust-*-x86_64-unknown-linux-gnu.tar.gz
   desc_cn: 更直观的 du 替代工具，快速查看磁盘占用
@@ -1179,11 +1179,11 @@ packages:
     repo: muesli/duf
     assets:
     - platform: win-x64
-      pattern: duf_*_windows_amd64.zip
+      pattern: duf_*_windows_x86_64.zip
     - platform: mac-arm64
       pattern: duf_*_darwin_arm64.tar.gz
     - platform: linux-x64
-      pattern: duf_*_linux_amd64.tar.gz
+      pattern: duf_*_linux_x86_64.tar.gz
   desc_cn: 更友好的 df 替代工具，美观展示磁盘空间
   desc_en: More user-friendly df alternative with beautiful disk space display
 - id: procs
@@ -1390,7 +1390,7 @@ packages:
     repo: biomejs/biome
     assets:
     - platform: win-x64
-      pattern: biome-win-x64.exe
+      pattern: biome-win32-x64.exe
     - platform: mac-arm64
       pattern: biome-darwin-arm64
     - platform: linux-x64
@@ -1409,8 +1409,8 @@ packages:
     assets:
     - platform: win-x64
       pattern: cargo-nextest-*-x86_64-pc-windows-msvc.zip
-    - platform: mac-arm64
-      pattern: cargo-nextest-*-aarch64-apple-darwin.tar.gz
+    - platform: mac-universal
+      pattern: cargo-nextest-*-universal-apple-darwin.tar.gz
     - platform: linux-x64
       pattern: cargo-nextest-*-x86_64-unknown-linux-gnu.tar.gz
   desc_cn: Rust 的下一代测试运行器，并行执行速度更快
@@ -1714,7 +1714,7 @@ packages:
     repo: cocogitto/cocogitto
     assets:
     - platform: win-x64
-      pattern: cocogitto-*-x86_64-pc-windows-msvc.zip
+      pattern: cocogitto-*-x86_64-pc-windows-msvc.tar.gz
     - platform: mac-arm64
       pattern: cocogitto-*-aarch64-apple-darwin.tar.gz
     - platform: linux-x64
@@ -1734,9 +1734,9 @@ packages:
     - platform: win-x64
       pattern: mask-*-x86_64-pc-windows-msvc.zip
     - platform: mac-arm64
-      pattern: mask-*-aarch64-apple-darwin.tar.gz
+      pattern: mask-*-aarch64-apple-darwin.zip
     - platform: linux-x64
-      pattern: mask-*-x86_64-unknown-linux-musl.tar.gz
+      pattern: mask-*-x86_64-unknown-linux-musl.zip
   desc_cn: 用 Markdown 编写的命令运行器，任务定义即文档
   desc_en: Command runner written in Markdown, task definitions serve as documentation
 - id: miniserve
@@ -2216,9 +2216,9 @@ packages:
     - platform: win-x64
       pattern: kopia-*-windows-x64.zip
     - platform: mac-arm64
-      pattern: kopia-*-macos-arm64
+      pattern: kopia-*-macOS-arm64.tar.gz
     - platform: linux-x64
-      pattern: kopia-*-linux-x64
+      pattern: kopia-*-linux-x64.tar.gz
   desc_cn: 跨平台备份工具，支持增量快照和多后端存储
   desc_en: Cross-platform backup tool with incremental snapshots and multi-backend
     storage
@@ -2355,8 +2355,6 @@ packages:
   args:
     repo: maaslalani/slides
     assets:
-    - platform: win-x64
-      pattern: slides_*_windows_amd64.tar.gz
     - platform: mac-arm64
       pattern: slides_*_darwin_arm64.tar.gz
     - platform: linux-x64
@@ -2511,10 +2509,11 @@ packages:
   args:
     repo: Jigsaw-Code/outline-apps
     assets:
+    # macOS 客户端仅在 App Store 发布，GitHub Release 不含 .dmg
     - platform: win-x64
       pattern: Outline-Client.exe
-    - platform: mac-arm64
-      pattern: Outline-Client.dmg
+    - platform: linux-x64
+      pattern: Outline-Client.AppImage
   desc_cn: Jigsaw 开发的 VPN 客户端，简单易用的翻墙工具
   desc_en: VPN client by Jigsaw, simple and easy-to-use censorship circumvention tool
 - id: netbird
@@ -2528,7 +2527,7 @@ packages:
     repo: netbirdio/netbird
     assets:
     - platform: win-x64
-      pattern: netbird_*_windows_amd64.zip
+      pattern: netbird_*_windows_amd64.tar.gz
     - platform: mac-arm64
       pattern: netbird_*_darwin_arm64.tar.gz
     - platform: linux-x64
@@ -2582,7 +2581,7 @@ packages:
     - platform: win-x64
       pattern: AdGuardHome_windows_amd64.zip
     - platform: mac-arm64
-      pattern: AdGuardHome_darwin_arm64.tar.gz
+      pattern: AdGuardHome_darwin_arm64.zip
     - platform: linux-x64
       pattern: AdGuardHome_linux_amd64.tar.gz
   desc_cn: 全网广告和跟踪器拦截 DNS 服务器
@@ -2675,7 +2674,7 @@ packages:
     - platform: win-x64
       pattern: speedtest-go_*_windows_amd64.zip
     - platform: mac-arm64
-      pattern: speedtest-go_*_darwin_arm64.zip
+      pattern: speedtest-go_*_darwin_arm64.tar.gz
     - platform: linux-x64
       pattern: speedtest-go_*_linux_amd64.tar.gz
   desc_cn: 开源轻量级网络测速方案，支持自部署
@@ -2843,8 +2842,8 @@ packages:
     assets:
     - platform: win-x64
       pattern: mGBA-*-win64.7z
-    - platform: mac-arm64
-      pattern: mGBA-*-osx-arm64.tar.xz
+    - platform: mac-universal
+      pattern: mGBA-*-macos.dmg
   desc_cn: 高精度 Game Boy Advance 模拟器
   desc_en: High-accuracy Game Boy Advance emulator
 - id: rmg
@@ -3228,8 +3227,8 @@ packages:
     assets:
     - platform: win-x64
       pattern: Natron-*-Windows-x86_64.zip
-    - platform: mac-arm64
-      pattern: Natron-*-macOS-arm64.dmg
+    - platform: mac-x64
+      pattern: Natron-*-macOS12-x86_64.dmg
   desc_cn: 开源合成工具，视觉特效和节点式合成
   desc_en: Open-source compositing tool for visual effects and node-based compositing
 - id: qutebrowser
@@ -3274,11 +3273,11 @@ packages:
     repo: anyproto/anytype-ts
     assets:
     - platform: win-x64
-      pattern: Anytype-*-x64.exe
+      pattern: Anytype.Setup.*.exe
     - platform: mac-arm64
       pattern: Anytype-*-arm64.dmg
     - platform: linux-x64
-      pattern: Anytype-*-amd64.deb
+      pattern: anytype_*_amd64.deb
   desc_cn: 去中心化的笔记和知识管理工具，数据归用户所有
   desc_en: Decentralized note and knowledge management tool with user-owned data
 - id: trilium
@@ -3386,10 +3385,10 @@ packages:
     assets:
     - platform: win-x64
       pattern: sioyek-release-windows.zip
-    - platform: mac-arm64
-      pattern: sioyek-apple-silicon.dmg
+    - platform: mac-universal
+      pattern: sioyek-release-mac.zip
     - platform: linux-x64
-      pattern: sioyek-release-linux-portable.tar.gz
+      pattern: sioyek-release-linux-portable.zip
   desc_cn: 面向学术论文的 PDF 阅读器，支持全文搜索和引用跳转
   desc_en: PDF reader for academic papers with full-text search and citation jumping
 - id: pomatez
@@ -3403,7 +3402,7 @@ packages:
     repo: roldanjr/pomatez
     assets:
     - platform: win-x64
-      pattern: Pomatez-*-x64.exe
+      pattern: Pomatez-*-win-x64-setup.exe
     - platform: mac-arm64
       pattern: Pomatez-*-arm64.dmg
     - platform: linux-x64
@@ -3526,8 +3525,6 @@ packages:
   args:
     repo: mudler/LocalAI
     assets:
-    - platform: win-x64
-      pattern: local-ai-*-windows-amd64.exe
     - platform: mac-arm64
       pattern: local-ai-*-darwin-arm64
     - platform: linux-x64
@@ -3612,9 +3609,7 @@ packages:
     - platform: win-x64
       pattern: Buzz-*-windows.exe
     - platform: mac-arm64
-      pattern: Buzz-*-mac-arm64.dmg
-    - platform: linux-x64
-      pattern: Buzz-*-linux-x86_64.AppImage
+      pattern: Buzz-*-mac-ARM64.dmg
   desc_cn: 基于 Whisper 的离线语音转文字工具
   desc_en: Offline speech-to-text tool based on Whisper
 - id: whisper
@@ -4163,8 +4158,6 @@ packages:
   args:
     repo: tarka/xcp
     assets:
-    - platform: win-x64
-      pattern: xcp-*-x86_64-pc-windows-msvc.zip
     - platform: mac-arm64
       pattern: xcp-*-aarch64-apple-darwin.tar.gz
     - platform: linux-x64

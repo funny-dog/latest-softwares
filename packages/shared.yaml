@@ -878,11 +878,11 @@ packages:
     repo: Eugeny/tabby
     assets:
     - platform: win-x64
-      pattern: tabby-*-x64-setup.exe
+      pattern: tabby-*-setup-x64.exe
     - platform: mac-arm64
       pattern: tabby-*-arm64.dmg
     - platform: linux-x64
-      pattern: tabby-*-x86_64-linux.rpm
+      pattern: tabby-*-linux-x64.rpm
   desc_cn: 跨平台终端模拟器，支持 SSH 和串口连接
   desc_en: Cross-platform terminal emulator with SSH and serial port support
 - id: syncthing
@@ -951,8 +951,8 @@ packages:
     assets:
     - platform: win-x64
       pattern: lmms-*-win64.exe
-    - platform: mac-arm64
-      pattern: lmms-*-macos-arm64.dmg
+    - platform: mac-x64
+      pattern: lmms-*-mac10.14.dmg
   desc_cn: 开源音乐制作工具，电子音乐创作的免费方案
   desc_en: Open-source music production tool for free electronic music creation
 - id: musescore
@@ -1003,9 +1003,9 @@ packages:
     - platform: win-x64
       pattern: draw.io-*-windows-installer.exe
     - platform: mac-arm64
-      pattern: draw.io-*-arm64.dmg
+      pattern: draw.io-arm64-*.dmg
     - platform: linux-x64
-      pattern: draw.io-*-x86_64.rpm
+      pattern: drawio-x86_64-*.rpm
   desc_cn: 免费的在线绘图工具，支持流程图/UML/架构图
   desc_en: Free online diagramming tool for flowcharts, UML, and architecture diagrams
 - id: devtoys
