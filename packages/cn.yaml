@@ -1469,7 +1469,7 @@ packages:
   args:
     platforms:
     - platform: win-x64
-      download_url: https://lol.qq.com/
+      download_url: https://lol.qq.com/download.shtml
       link_kind: landing_page
   desc_cn: 拳头游戏开发、腾讯代理的 5v5 多人在线竞技游戏（MOBA）
   desc_en: 5v5 multiplayer online battle arena (MOBA) by Riot Games, published by
@@ -1484,7 +1484,7 @@ packages:
   args:
     platforms:
     - platform: win-x64
-      download_url: https://dnf.qq.com/
+      download_url: https://dnf.qq.com/web2015/down.shtml
       link_kind: landing_page
   desc_cn: 腾讯代理的横版格斗动作角色扮演网游，经典刷图玩法
   desc_en: Side-scrolling beat-em-up action RPG online game published by Tencent
@@ -1498,7 +1498,7 @@ packages:
   args:
     platforms:
     - platform: win-x64
-      download_url: https://cf.qq.com/
+      download_url: https://cf.qq.com/web201105/download.shtml
       link_kind: landing_page
   desc_cn: 腾讯代理的第一人称射击网游，经典爆破与团队竞技
   desc_en: First-person shooter online game with classic bomb-defusal and team modes
@@ -1512,7 +1512,7 @@ packages:
   args:
     platforms:
     - platform: win-x64
-      download_url: https://val.qq.com/
+      download_url: https://val.qq.com/download.html
       link_kind: landing_page
   desc_cn: 拳头游戏开发的 5v5 英雄射击竞技游戏
   desc_en: 5v5 character-based tactical shooter by Riot Games
@@ -1540,7 +1540,7 @@ packages:
   args:
     platforms:
     - platform: win-x64
-      download_url: https://www.yjwujian.cn/
+      download_url: https://www.yjwujian.cn/download/
       link_kind: landing_page
   desc_cn: 网易开发的多人冷兵器动作竞技吃鸡游戏
   desc_en: Multiplayer melee battle-royale action game by NetEase
@@ -1554,7 +1554,7 @@ packages:
   args:
     platforms:
     - platform: win-x64
-      download_url: https://n.163.com/
+      download_url: https://n.163.com/download/
       link_kind: landing_page
   desc_cn: 网易开发的武侠题材 MMORPG 端游
   desc_en: Wuxia-themed MMORPG by NetEase
@@ -1568,7 +1568,7 @@ packages:
   args:
     platforms:
     - platform: win-x64
-      download_url: https://xyq.163.com/
+      download_url: https://xyq.163.com/download/
       link_kind: landing_page
   desc_cn: 网易经典回合制 MMORPG，国民级西游题材网游
   desc_en: Classic turn-based MMORPG by NetEase based on Journey to the West
@@ -1610,7 +1610,7 @@ packages:
   args:
     platforms:
     - platform: win-x64
-      download_url: https://www.dota2.com.cn/
+      download_url: https://www.dota2.com.cn/download/
       link_kind: landing_page
   desc_cn: Valve 开发、完美世界代理的 5v5 多人在线竞技游戏（MOBA）
   desc_en: 5v5 MOBA by Valve, published in China by Perfect World
@@ -1624,7 +1624,7 @@ packages:
   args:
     platforms:
     - platform: win-x64
-      download_url: https://jx3.xoyo.com/
+      download_url: https://jx3.xoyo.com/download/
       link_kind: landing_page
   desc_cn: 西山居开发的武侠 3D MMORPG 端游
   desc_en: Wuxia 3D MMORPG by Seasun (Kingsoft)
