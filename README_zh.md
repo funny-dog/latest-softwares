@@ -5,7 +5,7 @@
 > 由 GitHub Actions 每日自动同步上游官方源的**最新版本元数据**。
 > 仓库**不托管二进制安装包**，下载按钮直接跳到上游官方下载链接。
 >
-> 📅 **最后更新**：`2026-06-04 06:50:19` (UTC)　· 共 495 项软件（其中 18 项使用上次数据，标 ⚠️）
+> 📅 **最后更新**：`2026-06-04 07:44:40` (UTC)　· 共 495 项软件（其中 18 项使用上次数据，标 ⚠️）
 
 ---
 
@@ -172,7 +172,7 @@
 | [**PowerShell**](https://github.com/PowerShell/PowerShell) | `7.6.2` | 2026-05-21 | [win-x64](https://github.com/PowerShell/PowerShell/releases/download/v7.6.2/PowerShell-7.6.2-win-x64.msi) · [mac-arm64](https://github.com/PowerShell/PowerShell/releases/download/v7.6.2/powershell-7.6.2-osx-arm64.pkg) · [mac-x64](https://github.com/PowerShell/PowerShell/releases/download/v7.6.2/powershell-7.6.2-osx-x64.pkg) · [linux-x64](https://github.com/PowerShell/PowerShell/releases/download/v7.6.2/powershell-7.6.2-linux-x64.tar.gz) | GitHub Release: PowerShell/PowerShell |
 | [**win-acme**](https://github.com/win-acme/win-acme) | `2.2.9.1701` | 2024-05-25 | [win-x64](https://github.com/win-acme/win-acme/releases/download/v2.2.9.1701/win-acme.v2.2.9.1701.x64.pluggable.zip) | GitHub Release: win-acme/win-acme |
 | [**VSCodium**](https://github.com/VSCodium/vscodium) | `1.121.03429` | 2026-05-22 | [win-x64](https://github.com/VSCodium/vscodium/releases/download/1.121.03429/VSCodiumUserSetup-x64-1.121.03429.exe) | GitHub Release: VSCodium/vscodium |
-| [**Lazygit**](https://github.com/jesseduffield/lazygit) | `0.62.1` | 2026-05-28 | [win-x64](https://github.com/jesseduffield/lazygit/releases/download/v0.62.1/lazygit_0.62.1_windows_x86_64.zip) · [mac-arm64](https://github.com/jesseduffield/lazygit/releases/download/v0.62.1/lazygit_0.62.1_darwin_arm64.tar.gz) · [linux-x64](https://github.com/jesseduffield/lazygit/releases/download/v0.62.1/lazygit_0.62.1_linux_x86_64.tar.gz) | GitHub Release: jesseduffield/lazygit |
+| [**Lazygit**](https://github.com/jesseduffield/lazygit) | `0.62.2` | 2026-06-04 | [win-x64](https://github.com/jesseduffield/lazygit/releases/download/v0.62.2/lazygit_0.62.2_windows_x86_64.zip) · [mac-arm64](https://github.com/jesseduffield/lazygit/releases/download/v0.62.2/lazygit_0.62.2_darwin_arm64.tar.gz) · [linux-x64](https://github.com/jesseduffield/lazygit/releases/download/v0.62.2/lazygit_0.62.2_linux_x86_64.tar.gz) | GitHub Release: jesseduffield/lazygit |
 | [**Python**](https://www.python.org/downloads/) | `2026-06-04` | — | [win-x64](https://www.python.org/downloads/windows/) · [mac-universal](https://www.python.org/downloads/macos/) | Official Python downloads page; no public version API |
 | [**Ghostty**](https://ghostty.org/download) | `2026-06-04` | — | [mac-arm64](https://ghostty.org/download) | Official project download page; no stable public release asset API |
 | [**Starship**](https://github.com/starship/starship) | `1.25.1` | 2026-04-30 | [win-x64](https://github.com/starship/starship/releases/download/v1.25.1/starship-x86_64-pc-windows-msvc.zip) · [mac-arm64](https://github.com/starship/starship/releases/download/v1.25.1/starship-aarch64-apple-darwin.tar.gz) · [linux-x64](https://github.com/starship/starship/releases/download/v1.25.1/starship-x86_64-unknown-linux-musl.tar.gz) | GitHub Release: starship/starship |
