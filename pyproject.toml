@@ -8,6 +8,8 @@ dependencies = [
     "PyYAML>=6.0.3",
     "requests>=2.33.1",
     "Jinja2>=3.1.6",
+    # 远程统计持久化(Turso/libSQL);仅在配置 TURSO_DATABASE_URL 时导入使用。
+    "libsql>=0.1.11",
 ]
 
 [tool.fastapi]

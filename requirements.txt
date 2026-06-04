@@ -5,3 +5,6 @@ fastapi[standard]==0.136.1
 PyYAML==6.0.3
 requests==2.33.1
 Jinja2==3.1.6
+# 远程统计持久化:serverless 上本地 SQLite 不持久,改写远程 Turso/libSQL。
+# 仅在配置了 TURSO_DATABASE_URL 时(生产部署)才会被导入使用。
+libsql==0.1.11

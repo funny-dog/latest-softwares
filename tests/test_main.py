@@ -1,6 +1,9 @@
 from __future__ import annotations
 
 import json
+import sqlite3
+import sys
+import types
 
 from fastapi.testclient import TestClient
 
@@ -212,3 +215,45 @@ def test_lifespan_seeds_db_on_startup(tmp_path, monkeypatch):
         assert metrics["visits"]["total"] == 7
         assert metrics["downloads"]["total"] == 3
         assert metrics["downloads"]["assets"]["firefox:win-x64"] == 3
+
+
+def test_connect_falls_back_to_local_sqlite(tmp_path, monkeypatch):
+    """未配置 Turso 时,_connect() 返回本地 sqlite3 连接。"""
+    monkeypatch.setattr(main, "TURSO_URL", "")
+    monkeypatch.setattr(main, "DB_PATH", tmp_path / "metrics.db")
+
+    conn = main._connect()
+    assert isinstance(conn, sqlite3.Connection)
+    conn.close()
+
+
+def test_connect_uses_remote_when_turso_configured(monkeypatch):
+    """配置了 TURSO_DATABASE_URL 时,_connect() 用 libsql 连远程,并透传 url + token。"""
+    calls = {}
+    fake_libsql = types.ModuleType("libsql")
+
+    def _fake_connect(url, auth_token=None):
+        calls["url"] = url
+        calls["auth_token"] = auth_token
+        return "REMOTE_CONN"
+
+    fake_libsql.connect = _fake_connect
+    monkeypatch.setitem(sys.modules, "libsql", fake_libsql)
+    monkeypatch.setattr(main, "TURSO_URL", "libsql://demo.turso.io")
+    monkeypatch.setattr(main, "TURSO_AUTH_TOKEN", "secret-token")
+
+    assert main._connect() == "REMOTE_CONN"
+    assert calls == {"url": "libsql://demo.turso.io", "auth_token": "secret-token"}
+
+
+def test_metrics_scope_reflects_storage_mode(monkeypatch):
+    """scope/storage 标签随存储模式切换,避免误导。"""
+    monkeypatch.setattr(main, "TURSO_URL", "")
+    local = main._empty_metrics()
+    assert local["scope"] == "instance-local"
+    assert local["storage"] == "local-sqlite"
+
+    monkeypatch.setattr(main, "TURSO_URL", "libsql://demo.turso.io")
+    remote = main._empty_metrics()
+    assert remote["scope"] == "global"
+    assert remote["storage"] == "turso-libsql"

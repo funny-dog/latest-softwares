@@ -41,6 +41,17 @@ SEED_FILE = Path(
 )
 STATS_LOCK = threading.Lock()
 
+# 远程持久化(Turso / libSQL)。
+# serverless 容器(FastAPI Cloud)的本地文件系统是临时的:冷启动会清空、多实例各持一份,
+# 本地 SQLite 因此无法跨重启 / 实例持久,计数会永远停在「访问 1 · 下载 0」。
+# 配置下面两个环境变量后,计数改写入远程 libSQL,实现真正的跨实例持久;
+# 未配置时回退到本地 SQLite(本地开发 / pytest / CI)。
+TURSO_URL = os.environ.get("TURSO_DATABASE_URL", "").strip()
+TURSO_AUTH_TOKEN = os.environ.get("TURSO_AUTH_TOKEN", "").strip()
+
+# 记录已建表的存储目标(DB_PATH / TURSO_URL),避免每个请求重复建表(远程时尤其昂贵)。
+_INITIALIZED_TARGETS: set[str] = set()
+
 # This deployment serves the international edition only.
 EDITION = "intl"
 
@@ -73,9 +84,34 @@ def _utc_now_iso() -> str:
     return datetime.now(timezone.utc).isoformat(timespec="seconds")
 
 
+def _use_remote() -> bool:
+    """配置了 Turso 连接串时返回 True(写远程 libSQL),否则用本地 SQLite。"""
+    return bool(TURSO_URL)
+
+
+def _connect():
+    """返回一个 DBAPI 连接。
+
+    生产(配置了 TURSO_DATABASE_URL)连远程 Turso/libSQL,实现跨实例持久;
+    本地 / 测试 / CI 回退到本地 SQLite。libsql 的 API 与 sqlite3 基本一致
+    (execute / fetchone / commit / close),故上层调用无需区分。
+    """
+    if _use_remote():
+        import libsql  # 延迟导入:不连远程时无需安装该依赖
+
+        return libsql.connect(TURSO_URL, auth_token=TURSO_AUTH_TOKEN)
+    return sqlite3.connect(str(DB_PATH))
+
+
 def _init_db() -> None:
-    DB_PATH.parent.mkdir(parents=True, exist_ok=True)
-    conn = sqlite3.connect(str(DB_PATH))
+    # 按目标缓存:建表每进程每库只做一次。远程 libSQL 下每条语句都是一次 HTTP 往返,
+    # 避免每个请求都重复 CREATE TABLE。键含 DB_PATH/TURSO_URL,故测试切换库时会重新建表。
+    target = TURSO_URL or str(DB_PATH)
+    if target in _INITIALIZED_TARGETS:
+        return
+    if not _use_remote():
+        DB_PATH.parent.mkdir(parents=True, exist_ok=True)
+    conn = _connect()
     conn.execute(
         """
         CREATE TABLE IF NOT EXISTS metrics (
@@ -104,6 +140,7 @@ def _init_db() -> None:
     )
     conn.commit()
     conn.close()
+    _INITIALIZED_TARGETS.add(target)
 
 
 def _seed_db_from_json() -> None:
@@ -116,7 +153,7 @@ def _seed_db_from_json() -> None:
     if not seed.get("visits") and not seed.get("downloads"):
         return
     _init_db()
-    conn = sqlite3.connect(str(DB_PATH))
+    conn = _connect()
     row = conn.execute(
         "SELECT value FROM metrics WHERE key = 'visits_total'"
     ).fetchone()
@@ -160,8 +197,8 @@ def _seed_db_from_json() -> None:
 def _empty_metrics() -> dict:
     return {
         "schema_version": 1,
-        "scope": "instance-local",
-        "storage": "persistent-sqlite",
+        "scope": "global" if _use_remote() else "instance-local",
+        "storage": "turso-libsql" if _use_remote() else "local-sqlite",
         "updated_at": None,
         "visits": {"total": 0, "paths": {}},
         "downloads": {"total": 0, "packages": {}, "platforms": {}, "assets": {}},
@@ -170,7 +207,7 @@ def _empty_metrics() -> dict:
 
 def _load_metrics() -> dict:
     _init_db()
-    conn = sqlite3.connect(str(DB_PATH))
+    conn = _connect()
     metrics = _empty_metrics()
 
     # 加载总访问量
@@ -215,7 +252,7 @@ def _load_metrics() -> dict:
 def _increment_visit(path: str) -> None:
     with STATS_LOCK:
         _init_db()
-        conn = sqlite3.connect(str(DB_PATH))
+        conn = _connect()
         # 更新总访问量
         conn.execute(
             """
@@ -246,7 +283,7 @@ def _increment_visit(path: str) -> None:
 def _increment_download(package_id: str, platform: str) -> None:
     with STATS_LOCK:
         _init_db()
-        conn = sqlite3.connect(str(DB_PATH))
+        conn = _connect()
         # 更新总下载量
         conn.execute(
             """
