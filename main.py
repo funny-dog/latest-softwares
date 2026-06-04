@@ -217,7 +217,9 @@ def _load_metrics() -> dict:
     metrics["visits"]["total"] = int(row[0]) if row else 0
 
     # 加载各路径访问量
-    for path, count in conn.execute("SELECT path, count FROM visits"):
+    # 注意：必须 .fetchall()。libsql 的 Cursor 不可直接迭代（sqlite3 可以），
+    # fetchall() 对两者都返回 list，兼容本地 SQLite 与远程 libSQL。
+    for path, count in conn.execute("SELECT path, count FROM visits").fetchall():
         metrics["visits"]["paths"][path] = count
 
     # 加载总下载量
@@ -232,7 +234,7 @@ def _load_metrics() -> dict:
     assets = {}
     for package_id, platform, count in conn.execute(
         "SELECT package_id, platform, count FROM downloads"
-    ):
+    ).fetchall():
         assets[f"{package_id}:{platform}"] = count
         packages[package_id] = packages.get(package_id, 0) + count
         platforms[platform] = platforms.get(platform, 0) + count

@@ -5,6 +5,7 @@ import sqlite3
 import sys
 import types
 
+import pytest
 from fastapi.testclient import TestClient
 
 import main
@@ -244,6 +245,32 @@ def test_connect_uses_remote_when_turso_configured(monkeypatch):
 
     assert main._connect() == "REMOTE_CONN"
     assert calls == {"url": "libsql://demo.turso.io", "auth_token": "secret-token"}
+
+
+def test_libsql_backend_visit_and_metrics(tmp_path, monkeypatch):
+    """用真实 libsql(本地文件模式)跑完整 visit→metrics 流程。
+
+    libsql 的 Cursor 不可直接迭代(sqlite3 可以),`for row in conn.execute(...)`
+    会抛 TypeError。本地 sqlite3 测试覆盖不到该差异,只有真实 libsql 能暴露。
+    libsql 本地文件模式的游标行为与远程 Turso 一致,故无需联网即可回归此 bug。
+    """
+    libsql = pytest.importorskip("libsql")
+    db_file = tmp_path / "libsql_local.db"
+
+    # 让连接层走真实 libsql(本地文件),复现远程 libSQL 的游标语义
+    monkeypatch.setattr(main, "_connect", lambda: libsql.connect(str(db_file)))
+    monkeypatch.setattr(main, "_INITIALIZED_TARGETS", set())
+
+    client = TestClient(main.app)
+    for _ in range(3):
+        assert client.post("/api/visit").status_code == 200
+
+    # 修复前这里会 500(TypeError: Cursor not iterable),修复后正常累加
+    metrics = client.get("/api/metrics")
+    assert metrics.status_code == 200
+    body = metrics.json()
+    assert body["visits"]["total"] == 3
+    assert body["visits"]["paths"]["/"] == 3
 
 
 def test_metrics_scope_reflects_storage_mode(monkeypatch):
