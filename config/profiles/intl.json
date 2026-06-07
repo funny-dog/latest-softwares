@@ -1,0 +1,14 @@
+{
+  "edition": "intl",
+  "title": "Latest Softwares API (International)",
+  "description": "Daily metadata sync for latest software releases, with a JSON API and static web frontend for the international edition.",
+  "data_file": "data/latest.json",
+  "serve_static": true,
+  "packages_endpoint": true,
+  "log_events": true,
+  "store": {
+    "type": "sql",
+    "db_path": "data/site_metrics.db",
+    "seed_file": "data/site_metrics.json"
+  }
+}

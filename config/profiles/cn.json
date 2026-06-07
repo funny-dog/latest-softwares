@@ -1,0 +1,13 @@
+{
+  "edition": "cn",
+  "title": "Latest Softwares API (CN)",
+  "description": "国内版访问统计与下载追踪 API",
+  "data_file": "data/latest.json",
+  "serve_static": false,
+  "packages_endpoint": false,
+  "log_events": false,
+  "store": {
+    "type": "json_file",
+    "metrics_file": "/var/lib/latest-softwares/metrics.json"
+  }
+}
