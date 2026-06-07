@@ -47,6 +47,7 @@ pre-commit run --all-files
 - **fetcher 插件机制**：`scripts/fetchers/` 下按模块实现 `fetch(args) -> FetchResult`，在 `__init__.py` 的 `FETCHERS` 字典注册。90% 的软件用 `github_release` fetcher。
 - **Edition 系统**：每个软件通过 `editions: [cn]` / `[intl]` / `[cn, intl]` 标记归属版本，过滤逻辑在 `app_core/editions.py`（`scripts/editions.py` 为向后兼容的 re-export）。
 - **共享 API 内核 `app_core/`**：国际版 `main.py` 与国内版 `deploy/cn_server.py` 共用 `app_core/app_factory.py` 的 `create_app()`（端点只写一遍），差异只剩存储后端——`SqlMetricsStore`（intl，本地 SQLite/远程 Turso）vs `JsonFileMetricsStore`（cn，持久文件）。改 `app_core` 须守住：零 `scripts/` 依赖（cn 部署排除 scripts/）、`libsql` 延迟导入、保留入口 `app` 变量。
+- **部署 profile 驱动**：两版差异（edition / 存储后端 / 是否挂静态 / packages 端点 / 日志 / seed）声明在 `config/profiles/{cn,intl}.json`，由 `app_core/app_builder.py` 的 `build_app("<name>")` 装配。入口 `app.py`（按 `APP_PROFILE` 选，默认 intl）/ `main.py`（FastAPI Cloud 锚点 `main:app`）/ `deploy/cn_server.py`（现网 systemd 锚点）均退化为一行 shim。新增部署目标 = 加一份 JSON + 设 `APP_PROFILE` + 入口指向 `app:app`。secret（`TURSO_*`）只走环境变量，不进 profile。用 JSON 而非 TOML/YAML 是因 cn 运行时仅 stdlib 可用。
 - **容错设计**：单个 fetcher 失败不影响其他软件，失败的沿用旧数据并标记 ⚠️。
 - **自动发现管道**：`scripts/discover/`（入口 `python -m scripts.discover`）双周从 GitHub 高星 repo + winget/Scoop 交叉验证发现热门软件，自动生成条目追加到 `packages/shared.yaml` 并开 PR 供人工 review（`.github/workflows/discover.yml`，不自动合并）。详见 `AGENTS.md`。
 
