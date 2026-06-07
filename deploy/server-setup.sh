@@ -123,11 +123,10 @@ After=network.target
 Type=simple
 User=www-data
 WorkingDirectory=$API_DIR
-ExecStart=$API_DIR/venv/bin/uvicorn deploy.cn_server:app --host 127.0.0.1 --port 8001
+ExecStart=$API_DIR/venv/bin/uvicorn app:app --host 127.0.0.1 --port 8001
 Restart=always
 RestartSec=5
-Environment="LATEST_SOFTWARES_METRICS_FILE=$METRICS_DIR/metrics.json"
-Environment="LATEST_SOFTWARES_DATA_FILE=$API_DIR/data/latest.json"
+Environment="APP_PROFILE=cn"
 
 [Install]
 WantedBy=multi-user.target

@@ -6,11 +6,11 @@ After=network.target
 Type=simple
 User=www-data
 WorkingDirectory=/opt/latest-softwares
-ExecStart=/opt/latest-softwares/venv/bin/uvicorn deploy.cn_server:app --host 127.0.0.1 --port 8001
+ExecStart=/opt/latest-softwares/venv/bin/uvicorn app:app --host 127.0.0.1 --port 8001
 Restart=always
 RestartSec=5
-Environment="LATEST_SOFTWARES_METRICS_FILE=/var/lib/latest-softwares/metrics.json"
-Environment="LATEST_SOFTWARES_DATA_FILE=/opt/latest-softwares/data/latest.json"
+# 入口与差异统一:APP_PROFILE 选 profile,路径/存储均由 config/profiles/cn.json 提供。
+Environment="APP_PROFILE=cn"
 
 [Install]
 WantedBy=multi-user.target

@@ -72,6 +72,27 @@ jobs:
             -e "ssh -i ~/.ssh/deploy_key -p $PORT -o StrictHostKeyChecking=accept-new" \
             dist/ "$SSH_USER@$SSH_HOST:$DEPLOY_PATH/"
 
+      - name: Checkout (for backend deploy)
+        uses: actions/checkout@v6
+
+      - name: Deploy API backend to Aliyun
+        env:
+          SSH_HOST:    ${{ secrets.ALIYUN_HOST }}
+          SSH_USER:    ${{ secrets.ALIYUN_USER }}
+          SSH_PORT:    ${{ secrets.ALIYUN_PORT }}
+        run: |
+          PORT="${SSH_PORT:-22}"
+          SSH_CMD="ssh -i ~/.ssh/deploy_key -p $PORT -o StrictHostKeyChecking=accept-new"
+          # 同步后端代码 + profile(config/ 不在排除列表,会一并送达)
+          rsync -avz --delete \
+            -e "$SSH_CMD" \
+            --exclude '__pycache__' --exclude '.venv' --exclude 'venv/' \
+            --exclude 'tests/' --exclude 'web/' --exclude 'dist/' \
+            --exclude '.github/' --exclude 'scripts/' --exclude '.fastapicloud/' \
+            --exclude '.ruff_cache/' --exclude '.mypy_cache/' --exclude '.pytest_cache/' \
+            ./ "$SSH_USER@$SSH_HOST:/opt/latest-softwares/"
+          $SSH_CMD "$SSH_USER@$SSH_HOST" "sudo systemctl restart latest-softwares-api" || true
+
       - name: Summary
         env:
           SSH_HOST: ${{ secrets.ALIYUN_HOST }}
