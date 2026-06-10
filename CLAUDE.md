@@ -57,6 +57,7 @@ pre-commit run --all-files
 - CI 运行在 `windows-latest`（Fido.ps1 硬要求 Windows），本地开发可在 macOS/Linux
 - `sync.py` 和 `render.py` 开头将 stdout/stderr reconfigure 为 UTF-8（应对 Windows cp1252）
 - 前端 vendor JS 本地化并 pin 版本，升级需改 `web/vendor/manifest.json` 后运行 `python scripts/update_vendor.py --update`
+- **不要自动启动本地 dev server**：除非用户明确要求，否则不主动用 `uvicorn`/preview 起本地端口。`.claude/launch.json` 已存好两版配置（intl-api:8000 / cn-api:8001），需要时再按它启动。
 
 ## 依赖管理
 
