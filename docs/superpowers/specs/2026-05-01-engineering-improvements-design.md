@@ -13,7 +13,8 @@
 - **开发依赖**：2 个（ruff、pytest）
 
 ### 现有基础设施
-- **CI/CD**：3 个 workflow 文件（sync.yml、deploy-only.yml、sync-metrics.yml）
+- **CI/CD**：5 个 workflow 文件（sync.yml、deploy.yml、deploy-cn.yml、sync-metrics.yml、discover.yml）
+  〔2026-06 更新：原 deploy-only.yml 已并入 deploy-cn.yml；部署逻辑从 sync.yml 拆为独立的 deploy.yml（国际版 / FastAPI Cloud）与 deploy-cn.yml（国内版 / 阿里云），均由 sync 完成后 workflow_run 接力触发〕
 - **代码质量**：ruff check + ruff format（仅 CI 检查）
 - **测试**：pytest 覆盖 12 个测试模块
 - **前端**：app.js 14.3K + vendor ~470KB，无构建管道

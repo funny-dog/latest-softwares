@@ -51,7 +51,7 @@ jobs:
       # 复用上一次成功 sync 构建并上传的 dist(--edition cn);与拆分前一致,不重建。
       # workflow_run 触发时,这即为刚跑完那次 sync 的产物。
       - name: Download dist from last successful sync
-        uses: dawidd6/action-download-artifact@v6
+        uses: dawidd6/action-download-artifact@v21
         with:
           workflow: sync.yml
           name: dist
