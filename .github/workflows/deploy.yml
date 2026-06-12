@@ -1,0 +1,103 @@
+name: Deploy Intl to FastAPI Cloud
+
+# 国际版(intl)持续部署 —— 从 sync.yml 的 deploy-intl job 拆分而来的独立 workflow。
+#
+# 触发策略(三选一,互不重叠):
+#   1) workflow_run: 每当 "Sync Latest Software" 成功跑完(每日 cron / sync 路径的 push
+#      / 手动 dispatch),接力部署最新数据。这是数据刷新的主路径,与拆分前完全一致。
+#      —— 数据同步提交带 [skip ci] 不会触发 push,但 workflow_run 由"工作流完成"触发,
+#         不受 [skip ci] 影响,所以每日数据照常部署。
+#   2) push: 仅限 sync.yml 不覆盖的应用代码路径(app_core / main.py / app.py / config
+#      / requirements / 本文件),补上"只改 API 代码也自动部署"这一缺口。这些路径与
+#      sync.yml 的 push 路径不相交,因此不会和 (1) 重复触发。
+#   3) workflow_dispatch: 需要时手动部署。
+#
+# 认证:仓库 Secret FASTAPI_CLOUD_TOKEN / FASTAPI_CLOUD_APP_ID(setup-ci 已写入),
+#       CI 用 token 部署,无需本机 fastapi login。
+
+on:
+  workflow_run:
+    workflows: ["Sync Latest Software"]
+    types: [completed]
+  push:
+    branches: [main, master]
+    paths:
+      - 'app_core/**'
+      - 'main.py'
+      - 'app.py'
+      - 'config/**'
+      - 'requirements*.txt'
+      - '.github/workflows/deploy.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: deploy-intl-fastapi-cloud
+  cancel-in-progress: false
+
+jobs:
+  deploy-intl:
+    # 开关:仓库变量 DEPLOY_INTL_ENABLED=true 才部署。
+    # 经由 workflow_run 触发时,只在源工作流"成功"且"非 PR 触发"时才部署。
+    if: >-
+      vars.DEPLOY_INTL_ENABLED == 'true' &&
+      (github.event_name != 'workflow_run' ||
+       (github.event.workflow_run.conclusion == 'success' &&
+        github.event.workflow_run.event != 'pull_request'))
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      # 始终检出 main 最新 tip —— 拿到 sync-merge 刚提交回仓库的最新 data/latest.json,
+      # 替代原 job 的 "Download latest data artifact"(artifact 内容与提交文件一致)。
+      - name: Checkout
+        uses: actions/checkout@v6
+        with:
+          ref: main
+
+      - name: Fetch current metrics from live instance
+        env:
+          METRICS_URL: "https://latest-softwares-064facea.fastapicloud.dev/api/metrics"
+        run: |
+          HTTP_CODE=$(curl -sSL -o data/site_metrics.json -w '%{http_code}' --max-time 15 "$METRICS_URL" || echo "000")
+          if [ "$HTTP_CODE" -ge 200 ] && [ "$HTTP_CODE" -lt 300 ]; then
+            echo "Metrics fetched (HTTP $HTTP_CODE)"
+          else
+            echo "Metrics fetch failed (HTTP $HTTP_CODE), using repo copy"
+            rm -f data/site_metrics.json
+          fi
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install Node dependencies
+        run: npm ci
+
+      - name: Build frontend assets
+        run: npm run build
+
+      - name: Setup Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+          cache-dependency-path: requirements*.txt
+
+      - name: Install Python dependencies
+        run: pip install -r requirements.txt "fastapi[standard]"
+
+      - name: Build web (dist/) — 国际版
+        run: python scripts/build_web.py --edition intl
+
+      - name: Deploy to FastAPI Cloud
+        env:
+          FASTAPI_CLOUD_TOKEN: ${{ secrets.FASTAPI_CLOUD_TOKEN }}
+          FASTAPI_CLOUD_APP_ID: ${{ secrets.FASTAPI_CLOUD_APP_ID }}
+        run: fastapi deploy
+
+      - name: Summary
+        run: |
+          echo "✅ 国际版已部署到 FastAPI Cloud"
