@@ -5,12 +5,15 @@ from pathlib import Path
 
 
 WORKFLOW = Path(".github/workflows/sync.yml")
+DEPLOY_INTL = Path(".github/workflows/deploy.yml")
+DEPLOY_CN = Path(".github/workflows/deploy-cn.yml")
 PYTHON_LINT_TEST_ACTION = Path(".github/actions/python-lint-test/action.yml")
 SCRIPTS_DIR = Path("scripts")
 
 
 def test_deploy_job_has_secret_preflight():
-    workflow = WORKFLOW.read_text(encoding="utf-8")
+    """国内版(阿里云)部署前必须 fail-fast 校验 secret —— 部署拆分后位于 deploy-cn.yml。"""
+    workflow = DEPLOY_CN.read_text(encoding="utf-8")
 
     assert "Validate deploy secrets" in workflow
     for name in (
@@ -44,7 +47,8 @@ def test_network_link_check_is_split_into_own_job():
 
 def test_link_check_writes_step_summary():
     workflow = WORKFLOW.read_text(encoding="utf-8")
-    link_job = workflow.split("\n  link-check:", 1)[1].split("\n  deploy:", 1)[0]
+    # link-check 现为 sync.yml 最后一个 job（deploy 已拆出），取其到文件末尾即可。
+    link_job = workflow.split("\n  link-check:", 1)[1]
 
     assert "Write link health summary" in link_job
     assert "python scripts/link_health_summary.py data/link-health.json" in link_job
@@ -53,7 +57,7 @@ def test_link_check_writes_step_summary():
 def test_link_check_uses_synced_latest_data_artifact():
     workflow = WORKFLOW.read_text(encoding="utf-8")
     sync_job = workflow.split("\n  sync:", 1)[1].split("\n  link-check:", 1)[0]
-    link_job = workflow.split("\n  link-check:", 1)[1].split("\n  deploy:", 1)[0]
+    link_job = workflow.split("\n  link-check:", 1)[1]
 
     assert "Upload latest data artifact" in sync_job
     assert "name: latest-data" in sync_job
@@ -64,11 +68,18 @@ def test_link_check_uses_synced_latest_data_artifact():
 
 
 def test_deploy_does_not_wait_for_link_check():
-    workflow = WORKFLOW.read_text(encoding="utf-8")
-    deploy_job = workflow.split("\n  deploy:", 1)[1]
+    """部署拆分为独立 workflow 后,应在 Sync 成功后接力触发(workflow_run),
+    而不被 flaky 的 link-check 阻塞 —— 两版 deploy 都不应引用 link-check。
 
-    assert "needs: sync" in deploy_job
-    assert "needs: link-check" not in deploy_job
+    拆分前由 `needs: sync` + 不写 `needs: link-check` 表达此意图;拆分后等价于
+    `workflow_run: workflows: ["Sync Latest Software"]`(接力 Sync)且全文不提 link-check。
+    """
+    for path in (DEPLOY_INTL, DEPLOY_CN):
+        workflow = path.read_text(encoding="utf-8")
+        # 接力 Sync 完成后部署最新数据（替代拆分前的 needs: sync）
+        assert 'workflows: ["Sync Latest Software"]' in workflow, path
+        # 不依赖、也不等待 link-check
+        assert "link-check" not in workflow, path
 
 
 def test_python_lint_test_action_splits_test_steps():
