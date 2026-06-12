@@ -5,7 +5,7 @@
 > 由 GitHub Actions 每日自动同步上游官方源的**最新版本元数据**。
 > 仓库**不托管二进制安装包**，下载按钮直接跳到上游官方下载链接。
 >
-> 📅 **最后更新**：`2026-06-12 16:28:12` (UTC)　· 共 495 项软件（其中 20 项使用上次数据，标 ⚠️）
+> 📅 **最后更新**：`2026-06-12 16:35:40` (UTC)　· 共 495 项软件（其中 20 项使用上次数据，标 ⚠️）
 
 ---
 
@@ -36,7 +36,7 @@
 | [**Floorp Browser**](https://floorp.app/) | `12.14.2` | 2026-05-16 | [win-x64](https://github.com/Floorp-Projects/Floorp/releases/download/v12.14.2/floorp-windows-x86_64.installer.exe) · [mac-universal](https://github.com/Floorp-Projects/Floorp/releases/download/v12.14.2/floorp-macOS-universal.dmg) · [linux-x64](https://github.com/Floorp-Projects/Floorp/releases/download/v12.14.2/floorp-linux-x86_64.tar.xz) | GitHub Release: Floorp-Projects/Floorp |
 | [**Vivaldi Browser**](https://vivaldi.com/download/) | `2026-06-12` | — | [win-x64](https://vivaldi.com/download/) · [mac-universal](https://vivaldi.com/download/) · [linux-x64](https://vivaldi.com/download/) | Official Vivaldi download page; no public version API |
 | [**Mullvad Browser**](https://mullvad.net/en/browser) | `2026-06-12` | — | [win-x64](https://mullvad.net/en/browser) · [mac-universal](https://mullvad.net/en/browser) · [linux-x64](https://mullvad.net/en/browser) | Official Mullvad Browser download page; no public version API |
-| [**Brave Browser**](https://github.com/brave/brave-browser) | `1.91.171` | 2026-06-09 | [win-x64](https://github.com/brave/brave-browser/releases/download/v1.91.171/BraveBrowserSetup.exe) | GitHub Release: brave/brave-browser |
+| [**Brave Browser**](https://github.com/brave/brave-browser) | `1.91.172` | 2026-06-12 | [win-x64](https://github.com/brave/brave-browser/releases/download/v1.91.172/BraveBrowserSetup.exe) | GitHub Release: brave/brave-browser |
 | [**360 极速浏览器**](https://browser.360.cn/ee/) | `2026-06-12` | — | [win-x64](https://browser.360.cn/ee/) | Official download page; no public version API |
 | [**QQ浏览器**](https://browser.qq.com/) | `2026-06-12` | — | [win-x64](https://browser.qq.com/) · [mac-universal](https://browser.qq.com/) | Official download page; no public version API |
 | [**夸克浏览器**](https://pc.quark.cn/) | `2026-06-12` | — | [win-x64](https://pc.quark.cn/) · [mac-universal](https://pc.quark.cn/) | Official download page; no public version API |
