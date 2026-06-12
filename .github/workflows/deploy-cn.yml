@@ -1,26 +1,55 @@
-name: Deploy Only (Aliyun)
+name: Deploy CN to Aliyun
 
-# 当只修改 deploy/ 目录时，直接复用上次 sync 产物部署，跳过完整 sync 流程。
+# 国内版(cn)持续部署 —— 由 sync.yml 的 deploy job + 旧的 deploy-only.yml 合并而成的独立 workflow,
+# 与国际版 deploy.yml 对称。
+#
+# 触发策略(互不重叠):
+#   1) workflow_run: "Sync Latest Software" 成功跑完后接力,部署当日最新数据(原 sync.yml deploy job 的角色)。
+#   2) push: 仅限 cn 相关 / 共享代码路径(deploy / app_core / config / requirements / 本文件),
+#      覆盖旧 deploy-only.yml「只改部署配置就重新部署」的快路径。这些路径与 sync.yml 的 push
+#      路径不相交,因此不会和 (1) 重复触发。
+#   3) workflow_dispatch: 需要时手动部署。
+#
+# 部署目标:自管 Aliyun VPS —— 静态由 nginx 服务($DEPLOY_PATH),后端由 systemd 跑(/opt/latest-softwares)。
+# 机制:SSH + rsync + systemctl restart。凭据:Secret ALIYUN_DEPLOY_KEY / HOST / USER / PORT / DEPLOY_PATH。
 
 on:
+  workflow_run:
+    workflows: ["Sync Latest Software"]
+    types: [completed]
   push:
     branches: [main, master]
     paths:
       - 'deploy/**'
+      - 'app_core/**'
+      - 'config/**'
+      - 'requirements*.txt'
+      - '.github/workflows/deploy-cn.yml'
+  workflow_dispatch:
 
 permissions:
   contents: read
+  actions: read   # dawidd6/action-download-artifact 需要读 sync.yml 的运行与产物
 
 concurrency:
-  group: deploy-aliyun
+  group: deploy-cn-aliyun
   cancel-in-progress: false
 
 jobs:
-  deploy:
+  deploy-cn:
+    # 开关:仓库变量 DEPLOY_ENABLED=true 才部署。
+    # 经 workflow_run 触发时,只在源工作流"成功"且"非 PR 触发"时才部署。
+    if: >-
+      vars.DEPLOY_ENABLED == 'true' &&
+      (github.event_name != 'workflow_run' ||
+       (github.event.workflow_run.conclusion == 'success' &&
+        github.event.workflow_run.event != 'pull_request'))
     runs-on: ubuntu-latest
     timeout-minutes: 5
 
     steps:
+      # 复用上一次成功 sync 构建并上传的 dist(--edition cn);与拆分前一致,不重建。
+      # workflow_run 触发时,这即为刚跑完那次 sync 的产物。
       - name: Download dist from last successful sync
         uses: dawidd6/action-download-artifact@v6
         with:
@@ -72,8 +101,11 @@ jobs:
             -e "ssh -i ~/.ssh/deploy_key -p $PORT -o StrictHostKeyChecking=accept-new" \
             dist/ "$SSH_USER@$SSH_HOST:$DEPLOY_PATH/"
 
+      # dist 已推送到服务器后再 checkout —— checkout 默认会 git clean 掉 untracked 的 dist/,顺序不可颠倒。
       - name: Checkout (for backend deploy)
         uses: actions/checkout@v6
+        with:
+          ref: main
 
       - name: Deploy API backend to Aliyun
         env:
@@ -83,7 +115,7 @@ jobs:
         run: |
           PORT="${SSH_PORT:-22}"
           SSH_CMD="ssh -i ~/.ssh/deploy_key -p $PORT -o StrictHostKeyChecking=accept-new"
-          # 同步后端代码 + profile(config/ 不在排除列表,会一并送达)
+          # 同步后端代码和包数据
           rsync -avz --delete \
             -e "$SSH_CMD" \
             --exclude '__pycache__' --exclude '.venv' --exclude 'venv/' \
@@ -91,10 +123,15 @@ jobs:
             --exclude '.github/' --exclude 'scripts/' --exclude '.fastapicloud/' \
             --exclude '.ruff_cache/' --exclude '.mypy_cache/' --exclude '.pytest_cache/' \
             ./ "$SSH_USER@$SSH_HOST:/opt/latest-softwares/"
+          # 同步包数据到后端目录
+          rsync -avz \
+            -e "$SSH_CMD" \
+            data/latest.json "$SSH_USER@$SSH_HOST:/opt/latest-softwares/data/"
+          # 重启 API 服务
           $SSH_CMD "$SSH_USER@$SSH_HOST" "sudo systemctl restart latest-softwares-api" || true
 
       - name: Summary
         env:
           SSH_HOST: ${{ secrets.ALIYUN_HOST }}
         run: |
-          echo "✅ 国内版已部署到 http://$SSH_HOST:8080/（deploy-only 模式）"
+          echo "✅ 国内版已部署到 http://$SSH_HOST:8080/"
