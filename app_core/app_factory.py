@@ -30,9 +30,7 @@ def _log_event(event: str, **payload: str) -> None:
     record = {"event": event, "timestamp": utc_now_iso(), **payload}
     print(
         "latest_softwares_event "
-        + json.dumps(
-            record, ensure_ascii=False, separators=(",", ":"), sort_keys=True
-        ),
+        + json.dumps(record, ensure_ascii=False, separators=(",", ":"), sort_keys=True),
         flush=True,
     )
 

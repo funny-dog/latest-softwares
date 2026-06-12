@@ -80,9 +80,7 @@ def build_app(
     lifespan = None
     seed = profile["store"].get("seed_file")
     if isinstance(store, SqlMetricsStore) and seed:
-        seed_path = _resolve(
-            os.environ.get("LATEST_SOFTWARES_STATS_SEED", seed), root
-        )
+        seed_path = _resolve(os.environ.get("LATEST_SOFTWARES_STATS_SEED", seed), root)
 
         @asynccontextmanager
         async def lifespan(_app: FastAPI):  # noqa: F811

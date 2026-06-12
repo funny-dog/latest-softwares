@@ -18,27 +18,43 @@ from app_core.store import JsonFileMetricsStore, SqlMetricsStore
 def profiles_dir(tmp_path):
     d = tmp_path / "profiles"
     d.mkdir()
-    (d / "cn.json").write_text(json.dumps({
-        "edition": "cn",
-        "title": "CN",
-        "description": "cn desc",
-        "data_file": "data/latest.json",
-        "serve_static": False,
-        "packages_endpoint": False,
-        "log_events": False,
-        "store": {"type": "json_file", "metrics_file": str(tmp_path / "m.json")},
-    }), encoding="utf-8")
-    (d / "intl.json").write_text(json.dumps({
-        "edition": "intl",
-        "title": "INTL",
-        "description": "intl desc",
-        "data_file": "data/latest.json",
-        "serve_static": True,
-        "packages_endpoint": True,
-        "log_events": True,
-        "store": {"type": "sql", "db_path": str(tmp_path / "m.db"),
-                  "seed_file": str(tmp_path / "seed.json")},
-    }), encoding="utf-8")
+    (d / "cn.json").write_text(
+        json.dumps(
+            {
+                "edition": "cn",
+                "title": "CN",
+                "description": "cn desc",
+                "data_file": "data/latest.json",
+                "serve_static": False,
+                "packages_endpoint": False,
+                "log_events": False,
+                "store": {
+                    "type": "json_file",
+                    "metrics_file": str(tmp_path / "m.json"),
+                },
+            }
+        ),
+        encoding="utf-8",
+    )
+    (d / "intl.json").write_text(
+        json.dumps(
+            {
+                "edition": "intl",
+                "title": "INTL",
+                "description": "intl desc",
+                "data_file": "data/latest.json",
+                "serve_static": True,
+                "packages_endpoint": True,
+                "log_events": True,
+                "store": {
+                    "type": "sql",
+                    "db_path": str(tmp_path / "m.db"),
+                    "seed_file": str(tmp_path / "seed.json"),
+                },
+            }
+        ),
+        encoding="utf-8",
+    )
     return d
 
 
@@ -120,8 +136,14 @@ def test_build_app_default_profile_from_env(profiles_dir, tmp_path, monkeypatch)
 
 def test_real_profiles_loadable_and_complete():
     """仓库内真实 profile 必须可加载且含必备字段(防手滑漏字段)。"""
-    required = {"edition", "data_file", "serve_static",
-                "packages_endpoint", "log_events", "store"}
+    required = {
+        "edition",
+        "data_file",
+        "serve_static",
+        "packages_endpoint",
+        "log_events",
+        "store",
+    }
     for name, edition in [("cn", "cn"), ("intl", "intl")]:
         profile = app_builder.load_profile(name)  # 用真实 PROFILES_DIR
         assert required <= set(profile), f"{name} 缺字段"

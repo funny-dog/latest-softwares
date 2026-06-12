@@ -218,9 +218,7 @@ class SqlMetricsStore(MetricsStore):
 
         # 必须 .fetchall():libsql 的 Cursor 不可直接迭代(sqlite3 可以),
         # fetchall() 对两者都返回 list。
-        for path, count in conn.execute(
-            "SELECT path, count FROM visits"
-        ).fetchall():
+        for path, count in conn.execute("SELECT path, count FROM visits").fetchall():
             metrics["visits"]["paths"][path] = count
 
         row = conn.execute(
