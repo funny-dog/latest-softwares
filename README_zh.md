@@ -5,7 +5,7 @@
 > 由 GitHub Actions 每日自动同步上游官方源的**最新版本元数据**。
 > 仓库**不托管二进制安装包**，下载按钮直接跳到上游官方下载链接。
 >
-> 📅 **最后更新**：`2026-07-16 03:54:45` (UTC)　· 共 495 项软件（其中 21 项使用上次数据，标 ⚠️）
+> 📅 **最后更新**：`2026-07-16 17:07:25` (UTC)　· 共 495 项软件（其中 21 项使用上次数据，标 ⚠️）
 
 ---
 
@@ -413,7 +413,7 @@
 | 软件 | 最新版本 | 发布日期 | 下载链接 | 来源 |
 |------|---------|---------|---------|------|
 | [**Playnite**](https://github.com/JosefNemec/Playnite) | `10.56` | 2026-05-26 | [win-x64](https://github.com/JosefNemec/Playnite/releases/download/10.56/Playnite1056.exe) | GitHub Release: JosefNemec/Playnite |
-| [**RPCS3**](https://rpcs3.net/) | `1269ebff279809415d0fea0e22c9c4620c3bccfc` | 2026-07-15 | [win-x64](https://github.com/RPCS3/rpcs3-binaries-win/releases/download/build-1269ebff279809415d0fea0e22c9c4620c3bccfc/rpcs3-v0.0.41-19572-1269ebff_win64_msvc.7z) | GitHub Release: RPCS3/rpcs3-binaries-win |
+| [**RPCS3**](https://rpcs3.net/) | `43712bac68cd174f4c7305bfcd41d04db51c` | 2026-07-16 | [win-x64](https://github.com/RPCS3/rpcs3-binaries-win/releases/download/build-cdbc43712bac68cd174f4c7305bfcd41d04db51c/rpcs3-v0.0.41-19574-cdbc4371_win64_msvc.7z) | GitHub Release: RPCS3/rpcs3-binaries-win |
 | [**MangoHud**](https://github.com/flightlessmango/MangoHud) | `2026-07-16` | — | [linux-x64](https://github.com/flightlessmango/MangoHud/releases) | Official project download page; no stable public release asset API |
 | [**Bottles**](https://usebottles.com/download/) | `2026-07-16` | — | [linux-x64](https://usebottles.com/download/) | Official project download page; no stable public release asset API |
 | [**xemu**](https://github.com/xemu-project/xemu) ⚠️ | `0.8.136` | 2026-06-08 | [linux-x64](https://github.com/xemu-project/xemu/releases/download/v0.8.136/xemu-0.8.136-dbg-x86_64.AppImage) | GitHub Release: xemu-project/xemu<br>⚠ win-x64: 没有匹配 asset pattern 'xemu-win-*-zip.zip'; mac-arm64: 没有匹配 asset pattern 'xemu-macos-*-arm64.tar.gz' |
@@ -558,8 +558,8 @@
 | [**MarkText**](https://github.com/marktext/marktext) ⚠️ | `0.17.1` | 2022-03-07 | [win-x64](https://github.com/marktext/marktext/releases/download/v0.17.1/marktext-setup.exe) | GitHub Release: marktext/marktext<br>⚠ marktext/marktext@v0.19.1: 没有任何 asset 匹配配置的 pattern，现有 asset: ['builder-debug.yml', 'latest-linux.yml', 'latest-mac.yml', 'latest.yml', 'marktext-linux-0.19.1.AppImage']... |
 | [**calibre**](https://github.com/kovidgoyal/calibre) | `9.11.0` | 2026-07-03 | [win-x64](https://github.com/kovidgoyal/calibre/releases/download/v9.11.0/calibre-64bit-9.11.0.msi) | GitHub Release: kovidgoyal/calibre |
 | [**Shotcut**](https://github.com/mltframework/shotcut) | `26.6.25` | 2026-06-26 | [win-x64](https://github.com/mltframework/shotcut/releases/download/v26.6.25/shotcut-win64-26.6.25.exe) | GitHub Release: mltframework/shotcut |
-| [**draw.io**](https://github.com/jgraph/drawio-desktop) | `30.3.11` | 2026-07-14 | [win-x64](https://github.com/jgraph/drawio-desktop/releases/download/v30.3.11/draw.io-30.3.11-windows-installer.exe) · [mac-arm64](https://github.com/jgraph/drawio-desktop/releases/download/v30.3.11/draw.io-arm64-30.3.11.dmg) · [linux-x64](https://github.com/jgraph/drawio-desktop/releases/download/v30.3.11/drawio-x86_64-30.3.11.rpm) | GitHub Release: jgraph/drawio-desktop |
-| [**Paseo**](https://getpaseo.com) | `0.1.108` | 2026-07-15 | [mac-arm64](https://github.com/getpaseo/paseo/releases/download/v0.1.108/Paseo-0.1.108-arm64.dmg) · [mac-x64](https://github.com/getpaseo/paseo/releases/download/v0.1.108/Paseo-0.1.108-x64.dmg) | GitHub Release: getpaseo/paseo |
+| [**draw.io**](https://github.com/jgraph/drawio-desktop) | `30.3.13` | 2026-07-16 | [win-x64](https://github.com/jgraph/drawio-desktop/releases/download/v30.3.13/draw.io-30.3.13-windows-installer.exe) · [mac-arm64](https://github.com/jgraph/drawio-desktop/releases/download/v30.3.13/draw.io-arm64-30.3.13.dmg) · [linux-x64](https://github.com/jgraph/drawio-desktop/releases/download/v30.3.13/drawio-x86_64-30.3.13.rpm) | GitHub Release: jgraph/drawio-desktop |
+| [**Paseo**](https://getpaseo.com) | `0.1.109` | 2026-07-16 | [mac-arm64](https://github.com/getpaseo/paseo/releases/download/v0.1.109/Paseo-0.1.109-arm64.dmg) · [mac-x64](https://github.com/getpaseo/paseo/releases/download/v0.1.109/Paseo-0.1.109-x64.dmg) | GitHub Release: getpaseo/paseo |
 | [**XMind**](https://xmind.app) | `2026-07-16` | — | [mac-universal](https://xmind.app/download/) | Official download page; no public version API |
 | [**Anytype**](https://github.com/anyproto/anytype-ts) | `0.55.23-alpha` | 2026-07-10 | [win-x64](https://github.com/anyproto/anytype-ts/releases/download/v0.55.23-alpha/Anytype.Setup.0.55.23-alpha.exe) · [mac-arm64](https://github.com/anyproto/anytype-ts/releases/download/v0.55.23-alpha/Anytype-0.55.23-alpha-mac-arm64.dmg) · [linux-x64](https://github.com/anyproto/anytype-ts/releases/download/v0.55.23-alpha/anytype_0.55.23-alpha_amd64.deb) | GitHub Release: anyproto/anytype-ts |
 | [**Excalidraw**](https://github.com/excalidraw/excalidraw) | `2026-07-16` | — | [win-x64](https://github.com/excalidraw/excalidraw/releases) | Official project download page; no stable public release asset API |
