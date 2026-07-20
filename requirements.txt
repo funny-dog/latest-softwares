@@ -1,7 +1,7 @@
 # 生产依赖 —— 精确 pin 提高 pip 可复现性。
 # 升级流程：编辑此处版本号 → 本地 pip install -r 验证 → 跑 pytest → 提交 PR。
 # 配合 CI 全套测试验证，避免上游隐式 minor 升级带来的回归。
-fastapi[standard]==0.136.3
+fastapi[standard]==0.139.2
 PyYAML==6.0.3
 requests==2.34.2
 Jinja2==3.1.6
