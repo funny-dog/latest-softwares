@@ -2,7 +2,7 @@
   "name": "latest-softwares-web",
   "private": true,
   "devDependencies": {
-    "esbuild": "0.28.0"
+    "esbuild": "0.28.1"
   },
   "scripts": {
     "build": "node scripts/build_assets.mjs"
