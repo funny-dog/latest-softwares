@@ -53,7 +53,7 @@ jobs:
       # 始终检出 main 最新 tip —— 拿到 sync-merge 刚提交回仓库的最新 data/latest.json,
       # 替代原 job 的 "Download latest data artifact"(artifact 内容与提交文件一致)。
       - name: Checkout
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
         with:
           ref: main
 

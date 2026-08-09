@@ -103,7 +103,7 @@ jobs:
 
       # dist 已推送到服务器后再 checkout —— checkout 默认会 git clean 掉 untracked 的 dist/,顺序不可颠倒。
       - name: Checkout (for backend deploy)
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
         with:
           ref: main
 
