@@ -1402,3 +1402,34 @@ packages:
     platforms:
     - platform: mac-universal
       download_url: https://im.qq.com/macqq/index.shtml
+- id: scrcpy
+  name: scrcpy
+  category: Utilities
+  editions:
+  - cn
+  - intl
+  homepage: https://github.com/Genymobile/scrcpy
+  fetcher: github_release
+  args:
+    repo: Genymobile/scrcpy
+    assets:
+    - platform: win-x64
+      pattern: scrcpy-win64-v*.zip
+  desc_cn: 显示和控制您的Android设备
+  desc_en: Display and control your Android device
+- id: youtube-dl
+  name: youtube-dl
+  category: Media Players
+  editions:
+  - cn
+  - intl
+  homepage: https://github.com/ytdl-org/youtube-dl
+  fetcher: github_release
+  args:
+    repo: ytdl-org/youtube-dl
+    assets:
+    - platform: win-x64
+      pattern: youtube-dl.exe
+  desc_cn: 从YouTube.com和其他视频网站下载视频的命令行程序
+  desc_en: Command-line program to download videos from YouTube.com and other video
+    sites
