@@ -5,7 +5,7 @@
 > **Latest version metadata** automatically synced from official upstream sources daily by GitHub Actions.
 > This repository **does not host binary installers** — download buttons link directly to upstream official downloads.
 >
-> 📅 **Last updated**: `2026-09-16 05:26:30` (UTC) · 495 software items (28 using previous data, marked ⚠️)
+> 📅 **Last updated**: `2026-09-16 06:39:07` (UTC) · 495 software items (27 using previous data, marked ⚠️)
 
 ---
 
@@ -185,7 +185,7 @@
 | [**Trunk**](https://github.com/trunk-rs/trunk) | `2026-09-16` | — | [win-x64](https://github.com/trunk-rs/trunk/releases) · [mac-arm64](https://github.com/trunk-rs/trunk/releases) · [linux-x64](https://github.com/trunk-rs/trunk/releases) | Official project download page; no stable public release asset API |
 | [**Taplo**](https://github.com/tamasfe/taplo) | `2026-09-16` | — | [win-x64](https://github.com/tamasfe/taplo/releases) · [mac-arm64](https://github.com/tamasfe/taplo/releases) · [linux-x64](https://github.com/tamasfe/taplo/releases) | Official project download page; no stable public release asset API |
 | [**just**](https://github.com/casey/just) | `1.58.0` | 2026-08-03 | [win-x64](https://github.com/casey/just/releases/download/1.58.0/just-1.58.0-x86_64-pc-windows-msvc.zip) · [mac-arm64](https://github.com/casey/just/releases/download/1.58.0/just-1.58.0-aarch64-apple-darwin.tar.gz) · [linux-x64](https://github.com/casey/just/releases/download/1.58.0/just-1.58.0-x86_64-unknown-linux-musl.tar.gz) | GitHub Release: casey/just |
-| [**dog**](https://github.com/ogham/dog) ⚠️ | `0.1.0` | 2020-11-07 | [win-x64](https://github.com/ogham/dog/releases/download/v0.1.0/dog-v0.1.0-x86_64-pc-windows-msvc.zip) · [mac-arm64](https://github.com/ogham/dog/releases/download/v0.1.0/dog-v0.1.0-x86_64-apple-darwin.zip) | GitHub Release: ogham/dog<br>⚠ ogham/dog: 仓库无 latest release（可能仅有 prerelease）<br>⚠ linux-x64: 没有匹配 asset pattern 'dog-v*-x86_64-unknown-linux-musl.zip' |
+| [**dog**](https://github.com/ogham/dog) ⚠️ | `0.1.0` | 2020-11-07 | [win-x64](https://github.com/ogham/dog/releases/download/v0.1.0/dog-v0.1.0-x86_64-pc-windows-msvc.zip) · [mac-arm64](https://github.com/ogham/dog/releases/download/v0.1.0/dog-v0.1.0-x86_64-apple-darwin.zip) | GitHub Release: ogham/dog<br>⚠ linux-x64: 没有匹配 asset pattern 'dog-v*-x86_64-unknown-linux-musl.zip' |
 | [**choose**](https://github.com/theryangeary/choose) | `2026-09-16` | — | [win-x64](https://github.com/theryangeary/choose/releases) · [mac-arm64](https://github.com/theryangeary/choose/releases) · [linux-x64](https://github.com/theryangeary/choose/releases) | Official project download page; no stable public release asset API |
 | [**mask**](https://github.com/jacobdeichert/mask) | `0.11.7` | 2026-01-10 | [win-x64](https://github.com/jacobdeichert/mask/releases/download/mask/0.11.7/mask-0.11.7-x86_64-pc-windows-msvc.zip) · [mac-arm64](https://github.com/jacobdeichert/mask/releases/download/mask/0.11.7/mask-0.11.7-aarch64-apple-darwin.zip) · [linux-x64](https://github.com/jacobdeichert/mask/releases/download/mask/0.11.7/mask-0.11.7-x86_64-unknown-linux-musl.zip) | GitHub Release: jacobdeichert/mask |
 | [**oha**](https://github.com/hatoo/oha) | `2026-09-16` | — | [win-x64](https://github.com/hatoo/oha/releases) · [mac-arm64](https://github.com/hatoo/oha/releases) · [linux-x64](https://github.com/hatoo/oha/releases) | Official project download page; no stable public release asset API |
