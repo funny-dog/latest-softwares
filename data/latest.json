@@ -5262,7 +5262,7 @@
     {
       "id": "wechat",
       "name": "WeChat",
-      "version": "4.1.15",
+      "version": "4.1.15.15",
       "source": "微信官网",
       "version_kind": "release_version",
       "version_source": "Content-Disposition / official page; date fallback when unavailable",
@@ -5273,7 +5273,7 @@
       "assets": [
         {
           "platform": "mac-universal",
-          "url": "https://dldir1.qq.com/weixin/mac/WeChatMac.dmg",
+          "url": "https://dldir1v6.qq.com/weixin/Universal/Mac/xWeChatMac_universal_4.1.15.15_270095.dmg",
           "link_kind": null,
           "filename": null,
           "size": null,

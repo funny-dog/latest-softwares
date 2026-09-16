@@ -1390,7 +1390,7 @@ packages:
   args:
     platforms:
     - platform: mac-universal
-      download_url: https://dldir1.qq.com/weixin/mac/WeChatMac.dmg
+      download_url: https://dldir1v6.qq.com/weixin/Universal/Mac/xWeChatMac_universal_4.1.15.15_270095.dmg
 - id: qq
   name: QQ
   category: Messaging

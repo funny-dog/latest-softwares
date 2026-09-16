@@ -98,3 +98,85 @@ def test_resolve_version_falls_back_to_date(monkeypatch):
 
     # 日期格式 YYYY-MM-DD
     assert len(result) == 10 and result.count("-") == 2
+
+
+def test_parse_mac_release_xml_success():
+    xml_content = """<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle">
+<channel>
+<item>
+<title>4.1.15.15</title>
+<sparkle:shortVersionString>4.1.15.15</sparkle:shortVersionString>
+<enclosure url="https://dldir1v6.qq.com/weixin/Universal/Mac/xWeChatMac_universal_4.1.15.15_270095.dmg?t=1789532558" length="12345"/>
+</item>
+</channel>
+</rss>
+"""
+    ver, url = wechat._parse_mac_release_xml(xml_content)
+    assert ver == "4.1.15.15"
+    assert (
+        url
+        == "https://dldir1v6.qq.com/weixin/Universal/Mac/xWeChatMac_universal_4.1.15.15_270095.dmg"
+    )
+
+
+def test_parse_mac_release_xml_fallback_to_title():
+    xml_content = """<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<item>
+<title>4.1.15.15</title>
+<enclosure url="https://dldir1v6.qq.com/weixin/Universal/Mac/WeChat.dmg"/>
+</item>
+</channel>
+</rss>
+"""
+    ver, url = wechat._parse_mac_release_xml(xml_content)
+    assert ver == "4.1.15.15"
+    assert url == "https://dldir1v6.qq.com/weixin/Universal/Mac/WeChat.dmg"
+
+
+def test_parse_mac_release_xml_no_enclosure_or_malformed():
+    assert wechat._parse_mac_release_xml(
+        "<rss><channel><item></item></channel></rss>"
+    ) == (None, None)
+    assert wechat._parse_mac_release_xml("invalid xml") == (None, None)
+
+
+def test_fetch_mac_platform_uses_dynamic_url(monkeypatch):
+    monkeypatch.setattr(
+        wechat,
+        "_from_mac_release_xml",
+        lambda: ("4.1.15.15", "https://dldir1v6.qq.com/dynamic/WeChatMac.dmg"),
+    )
+    result = wechat.fetch(
+        {
+            "platforms": [
+                {
+                    "platform": "mac-universal",
+                    "download_url": "https://fallback.com/WeChat.dmg",
+                }
+            ]
+        }
+    )
+    assert result.version == "4.1.15.15"
+    assert len(result.assets) == 1
+    assert result.assets[0].url == "https://dldir1v6.qq.com/dynamic/WeChatMac.dmg"
+
+
+def test_fetch_mac_platform_fallback_to_static_url(monkeypatch):
+    monkeypatch.setattr(wechat, "_from_mac_release_xml", lambda: (None, None))
+    monkeypatch.setattr(wechat, "_resolve_version", lambda: "2026-09-16")
+    result = wechat.fetch(
+        {
+            "platforms": [
+                {
+                    "platform": "mac-universal",
+                    "download_url": "https://fallback.com/WeChat.dmg",
+                }
+            ]
+        }
+    )
+    assert result.version == "2026-09-16"
+    assert len(result.assets) == 1
+    assert result.assets[0].url == "https://fallback.com/WeChat.dmg"

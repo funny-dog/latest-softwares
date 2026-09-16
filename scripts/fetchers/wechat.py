@@ -9,6 +9,7 @@ from __future__ import annotations
 
 import logging
 import re
+import xml.etree.ElementTree as ET
 from datetime import datetime, timezone
 from typing import Any
 
@@ -25,6 +26,7 @@ from .base import (
 
 HOMEPAGE = "https://weixin.qq.com/"
 WIN_DOWNLOAD = "https://dldir1.qq.com/weixin/Windows/WeChatSetup.exe"
+MAC_RELEASE_XML = "https://dldir1.qq.com/weixin/mac/mac-release.xml"
 TIMEOUT = 30
 
 # 主段 < 100、各段 < 10000、3-4 段 —— 过滤 "214.172.387.384" 这类乱码命中。
@@ -93,6 +95,55 @@ def _from_homepage_html() -> str | None:
     return None
 
 
+def _parse_mac_release_xml(xml_text: str) -> tuple[str | None, str | None]:
+    """从微信 Mac Sparkle XML 解析 (version, download_url)。"""
+    try:
+        root = ET.fromstring(xml_text)
+    except (ET.ParseError, ValueError) as exc:
+        logger.debug("wechat: 解析 mac-release.xml 失败: %s", exc)
+        return None, None
+
+    for item in root.findall(".//item"):
+        enclosure = item.find("enclosure")
+        if enclosure is None:
+            continue
+        raw_url = enclosure.attrib.get("url", "").strip()
+        if not raw_url:
+            continue
+
+        version = None
+        for elem in item:
+            tag = elem.tag.split("}")[-1] if "}" in elem.tag else elem.tag
+            if tag == "shortVersionString" and elem.text and elem.text.strip():
+                cand = elem.text.strip()
+                if _is_plausible(cand):
+                    version = cand
+                    break
+
+        if not version:
+            title = item.find("title")
+            if title is not None and title.text:
+                cand = title.text.strip()
+                if _is_plausible(cand):
+                    version = cand
+
+        clean_url = raw_url.split("?")[0]
+        return version, clean_url
+
+    return None, None
+
+
+def _from_mac_release_xml() -> tuple[str | None, str | None]:
+    """从微信 Mac 官方 Sparkle XML 抓取 (version, download_url)。"""
+    try:
+        resp = get(MAC_RELEASE_XML, timeout=TIMEOUT, headers=browser_headers())
+        resp.raise_for_status()
+    except requests.RequestException as exc:
+        logger.debug("wechat: GET %s 失败: %s", MAC_RELEASE_XML, exc)
+        return None, None
+    return _parse_mac_release_xml(resp.text)
+
+
 def _resolve_version() -> str:
     today = datetime.now(tz=timezone.utc).strftime("%Y-%m-%d")
     version = _from_content_disposition(WIN_DOWNLOAD)
@@ -107,20 +158,29 @@ def _resolve_version() -> str:
 
 def fetch(args: dict[str, Any]) -> FetchResult:
     platforms = args.get("platforms", [])
-    version = _resolve_version()
+    mac_version, mac_url = _from_mac_release_xml()
 
     assets: list[AssetInfo] = []
+    has_mac = False
     for spec in platforms:
+        plat = spec["platform"]
+        url = spec.get("download_url")
+        if plat in ("mac-universal", "mac-arm64", "mac-x64"):
+            has_mac = True
+            if mac_url:
+                url = mac_url
         assets.append(
             AssetInfo(
-                platform=spec["platform"],
-                url=spec["download_url"],
+                platform=plat,
+                url=url,
                 link_kind=spec.get("link_kind"),
             )
         )
 
     if not assets:
         assets.append(AssetInfo(platform="win-x64", url=WIN_DOWNLOAD))
+
+    version = mac_version if (has_mac and mac_version) else _resolve_version()
 
     return FetchResult(
         id="wechat",
