@@ -307,24 +307,25 @@ packages:
       pattern: NocoDB-*.AppImage
   desc_cn: 开源 Airtable 替代品，将数据库转为智能表格
   desc_en: Open-source Airtable alternative, turns any database into smart spreadsheet
-- id: lobe-chat
-  name: LobeHub
-  category: AI Tools
-  editions:
-  - cn
-  homepage: https://github.com/lobehub/lobehub
-  fetcher: github_release
-  args:
-    repo: lobehub/lobehub
-    assets:
-    - platform: win-x64
-      pattern: LobeHub-*-setup.exe
-    - platform: mac-arm64
-      pattern: LobeHub-*-arm64.dmg
-    - platform: mac-x64
-      pattern: LobeHub-*-x64.dmg
-  desc_cn: 开源 AI 聊天框架，支持多种 AI 模型
-  desc_en: Open-source AI chat framework supporting multiple AI models
+# 暂时下线：上游 GitHub 组织 lobehub 突发 404（疑似被封禁/挂起），待恢复后再启用
+# - id: lobe-chat
+#   name: LobeHub
+#   category: AI Tools
+#   editions:
+#   - cn
+#   homepage: https://github.com/lobehub/lobehub
+#   fetcher: github_release
+#   args:
+#     repo: lobehub/lobehub
+#     assets:
+#     - platform: win-x64
+#       pattern: LobeHub-*-setup.exe
+#     - platform: mac-arm64
+#       pattern: LobeHub-*-arm64.dmg
+#     - platform: mac-x64
+#       pattern: LobeHub-*-x64.dmg
+#   desc_cn: 开源 AI 聊天框架，支持多种 AI 模型
+#   desc_en: Open-source AI chat framework supporting multiple AI models
 - id: chatbox
   name: Chatbox
   category: AI Tools

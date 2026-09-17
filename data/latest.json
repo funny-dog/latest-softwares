@@ -5597,53 +5597,6 @@
       "desc_en": "Locally hosted one-stop-shop for all your PDF needs"
     },
     {
-      "id": "lobe-chat",
-      "name": "LobeHub",
-      "version": "2.2.17",
-      "source": "GitHub Release: lobehub/lobehub",
-      "version_kind": "release_version",
-      "version_source": "GitHub release tag",
-      "category": "AI Tools",
-      "homepage": "https://github.com/lobehub/lobehub",
-      "released_at": "2026-09-11T09:20:12Z",
-      "notes_url": "https://github.com/lobehub/lobehub/releases/tag/v2.2.17",
-      "assets": [
-        {
-          "platform": "win-x64",
-          "url": "https://github.com/lobehub/lobehub/releases/download/v2.2.17/LobeHub-2.2.17-setup.exe",
-          "link_kind": "direct",
-          "filename": "LobeHub-2.2.17-setup.exe",
-          "size": 141119444,
-          "sha256": null
-        },
-        {
-          "platform": "mac-arm64",
-          "url": "https://github.com/lobehub/lobehub/releases/download/v2.2.17/LobeHub-2.2.17-arm64.dmg",
-          "link_kind": "direct",
-          "filename": "LobeHub-2.2.17-arm64.dmg",
-          "size": 150806912,
-          "sha256": null
-        },
-        {
-          "platform": "mac-x64",
-          "url": "https://github.com/lobehub/lobehub/releases/download/v2.2.17/LobeHub-2.2.17-x64.dmg",
-          "link_kind": "direct",
-          "filename": "LobeHub-2.2.17-x64.dmg",
-          "size": 153871668,
-          "sha256": null
-        }
-      ],
-      "fetched_at": "2026-09-16T06:38:29+00:00",
-      "last_success_at": "2026-09-16T06:38:29+00:00",
-      "editions": [
-        "cn"
-      ],
-      "desc_cn": "开源 AI 聊天框架，支持多种 AI 模型",
-      "desc_en": "Open-source AI chat framework supporting multiple AI models",
-      "_stale": true,
-      "_stale_reason": "lobehub/lobehub: 仓库无 latest release（可能仅有 prerelease）"
-    },
-    {
       "id": "uptime-kuma",
       "name": "Uptime Kuma",
       "version": "2.5.5",
