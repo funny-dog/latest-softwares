@@ -1,20 +1,29 @@
 """下载链接校验与自动修复。
 
 遍历 data/latest.json 中所有 asset URL，发送 HEAD 请求校验可达性。
+
+增量检查：若上一份 data/link-health.json 中同一 (url, version) 已校验为 ok
+且未超过 --max-age-days，则直接沿用结果、不再发请求（版本有变化的条目必然重查）。
+--full 强制全量检查。
+
 若发现失效链接（4xx/5xx），根据 fetcher 类型尝试自动修复：
 
   - 重新调用对应 fetcher，按相同 platform 查找最新 URL
   - 无法重新抓取或 URL 未变化时输出警告
 
-修复后的数据写回 data/latest.json，供后续 render 使用。
+修复后的数据写回 data/latest.json（仅在确有修复时写），供后续 render 使用；
+在 GitHub Actions 中还会把 fixed / failed 数写入 $GITHUB_OUTPUT，
+供 workflow 决定是否重新渲染并提交。
 """
 
 from __future__ import annotations
 
+import argparse
 import json
+import os
 import sys
 from concurrent.futures import ThreadPoolExecutor, as_completed
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from typing import Any
 
@@ -26,12 +35,17 @@ if __package__ in (None, ""):
         LINK_KIND_LANDING_PAGE,
         is_direct_link,
     )
-    from scripts.net import get, github_headers, head  # type: ignore
+    from scripts.net import (  # type: ignore
+        get,
+        github_headers,
+        head,
+        set_max_connections_per_host,
+    )
     from scripts.config_loader import load_packages_config  # type: ignore
 else:
     from .fetchers import FETCHERS
     from .link_utils import LINK_KIND_DIRECT, LINK_KIND_LANDING_PAGE, is_direct_link
-    from .net import get, github_headers, head
+    from .net import get, github_headers, head, set_max_connections_per_host
     from .config_loader import load_packages_config
 
 # Windows runner 默认 cp1252，输出 ✓/✗/中文会 UnicodeEncodeError 进而崩掉整个脚本。
@@ -48,11 +62,49 @@ DATA_FILE = REPO_ROOT / "data" / "latest.json"
 LINK_HEALTH_FILE = REPO_ROOT / "data" / "link-health.json"
 
 TIMEOUT = 30
-MAX_WORKERS = 15  # URL 检查纯 I/O，可开更多线程（比 sync 多，无 API 限流压力）
+# URL 检查纯 I/O；95% 的直链都在 github.com，单 host 并发上限必须同步放开，
+# 否则会被 net.py 默认的 4 连接/host 卡住，线程数再多也用不上。
+MAX_WORKERS = 16
+MAX_CONNECTIONS_PER_HOST = 16
+DEFAULT_MAX_AGE_DAYS = 7
 
 
 def _utc_now_iso() -> str:
     return datetime.now(timezone.utc).isoformat(timespec="seconds")
+
+
+def _parse_iso(value: Any) -> datetime | None:
+    if not isinstance(value, str):
+        return None
+    try:
+        parsed = datetime.fromisoformat(value)
+    except ValueError:
+        return None
+    if parsed.tzinfo is None:
+        parsed = parsed.replace(tzinfo=timezone.utc)
+    return parsed
+
+
+def _load_previous_ok(max_age_days: float) -> dict[tuple[str, str], str]:
+    """读取上一份健康报告，返回仍在有效期内的 ok 结果：(url, version) → checked_at。"""
+    try:
+        report = json.loads(LINK_HEALTH_FILE.read_text(encoding="utf-8"))
+    except (OSError, ValueError):
+        return {}
+    if not isinstance(report, dict):
+        return {}
+
+    cutoff = datetime.now(timezone.utc) - timedelta(days=max_age_days)
+    previous: dict[tuple[str, str], str] = {}
+    for row in report.get("links", []):
+        if not isinstance(row, dict) or row.get("status") != "ok":
+            continue
+        checked_at = row.get("checked_at")
+        parsed = _parse_iso(checked_at)
+        if parsed is None or parsed < cutoff:
+            continue
+        previous[(str(row.get("url", "")), str(row.get("version", "")))] = checked_at
+    return previous
 
 
 def _new_health_report(total: int, direct: int, landing_page: int) -> dict[str, Any]:
@@ -66,6 +118,7 @@ def _new_health_report(total: int, direct: int, landing_page: int) -> dict[str, 
             "ok": 0,
             "fixed": 0,
             "failed": 0,
+            "cached": 0,
         },
         "links": [],
     }
@@ -79,6 +132,8 @@ def _record_link(
     kind: str,
     status: str,
     url: str,
+    version: str | None = None,
+    checked_at: str | None = None,
     final_url: str | None = None,
     error: str | None = None,
 ) -> None:
@@ -89,11 +144,25 @@ def _record_link(
         "status": status,
         "url": url,
     }
+    if version:
+        row["version"] = version
+    if checked_at:
+        row["checked_at"] = checked_at
     if final_url and final_url != url:
         row["final_url"] = final_url
     if error:
         row["error"] = error
     report["links"].append(row)
+
+
+def _write_github_output(**values: int) -> None:
+    """在 GitHub Actions 中把统计写入 step outputs；本地运行时不做任何事。"""
+    output = os.environ.get("GITHUB_OUTPUT")
+    if not output:
+        return
+    with open(output, "a", encoding="utf-8") as fh:
+        for key, value in values.items():
+            fh.write(f"{key}={value}\n")
 
 
 def _write_health_report(report: dict[str, Any]) -> None:
@@ -104,14 +173,18 @@ def _write_health_report(report: dict[str, Any]) -> None:
     )
 
 
-def validate_and_fix() -> int:
+def validate_and_fix(
+    *, full: bool = False, max_age_days: float = DEFAULT_MAX_AGE_DAYS
+) -> int:
     data = json.loads(DATA_FILE.read_text(encoding="utf-8"))
     cfg = load_packages_config()
     configs = {entry["id"]: entry for entry in cfg.get("packages", [])}
+    previous_ok = {} if full else _load_previous_ok(max_age_days)
 
     # ==== Phase 1: 收集所有待检查的直链 URL ====
     Check = tuple[dict, int, str, str, str]  # (pkg, asset_idx, eid, platform, url)
     checks: list[Check] = []
+    cached: list[tuple[str, str, str, str, str]] = []  # (eid, platform, url, ver, at)
     landing_records: list[tuple[str, str, str]] = []  # (eid, platform, url)
     landing_count = 0
 
@@ -134,14 +207,39 @@ def validate_and_fix() -> int:
                 print(f"  ↗ {eid} [{asset.get('platform', '')}]: 跳转页，跳过验证")
                 continue
 
-            checks.append((pkg, i, eid, asset.get("platform", ""), url))
+            platform = asset.get("platform", "")
+            version = str(pkg.get("version", ""))
+            checked_at = previous_ok.get((url, version))
+            if checked_at:
+                cached.append((eid, platform, url, version, checked_at))
+                continue
+            checks.append((pkg, i, eid, platform, url))
 
-    total_checked = len(checks) + landing_count
+    total_checked = len(checks) + len(cached) + landing_count
     health = _new_health_report(
         total=total_checked,
-        direct=len(checks),
+        direct=len(checks) + len(cached),
         landing_page=landing_count,
     )
+    if cached:
+        print(
+            f"增量检查：{len(cached)} 个直链版本未变且 {max_age_days:g} 天内校验通过，"
+            f"沿用结果；需实际检查 {len(checks)} 个"
+        )
+
+    for eid, platform, url, version, checked_at in cached:
+        health["stats"]["ok"] += 1
+        health["stats"]["cached"] += 1
+        _record_link(
+            health,
+            package_id=eid,
+            platform=platform,
+            kind=LINK_KIND_DIRECT,
+            status="ok",
+            url=url,
+            version=version,
+            checked_at=checked_at,
+        )
 
     for eid, platform, url in landing_records:
         _record_link(
@@ -157,6 +255,7 @@ def validate_and_fix() -> int:
     failed_checks: list[Check] = []
 
     if checks:
+        set_max_connections_per_host(MAX_CONNECTIONS_PER_HOST)
         with ThreadPoolExecutor(max_workers=MAX_WORKERS) as executor:
             futures = {
                 executor.submit(_check_url_robust, url): (pkg, i, eid, platform, url)
@@ -174,6 +273,8 @@ def validate_and_fix() -> int:
                         kind=LINK_KIND_DIRECT,
                         status="ok",
                         url=url,
+                        version=str(pkg.get("version", "")),
+                        checked_at=_utc_now_iso(),
                     )
                     print(f"  ✓ {eid} [{platform}]: 有效")
                 else:
@@ -219,11 +320,13 @@ def validate_and_fix() -> int:
             )
             print("    ⚠ 无法自动修复", file=sys.stderr)
 
-    DATA_FILE.write_text(
-        json.dumps(data, ensure_ascii=False, indent=2, sort_keys=False) + "\n",
-        encoding="utf-8",
-    )
+    if total_fixed:
+        DATA_FILE.write_text(
+            json.dumps(data, ensure_ascii=False, indent=2, sort_keys=False) + "\n",
+            encoding="utf-8",
+        )
     _write_health_report(health)
+    _write_github_output(fixed=total_fixed, failed=total_failed)
     print(
         f"\n校验完成：检查 {total_checked} 个链接，修复 {total_fixed} 个，失败 {total_failed} 个"
     )
@@ -295,5 +398,22 @@ def _fix_by_refetch(config: dict[str, Any], asset: dict[str, Any]) -> str | None
     return None
 
 
+def main(argv: list[str] | None = None) -> int:
+    parser = argparse.ArgumentParser(description="校验下载直链并尝试自动修复")
+    parser.add_argument(
+        "--full",
+        action="store_true",
+        help="忽略上一份健康报告，全量检查所有直链",
+    )
+    parser.add_argument(
+        "--max-age-days",
+        type=float,
+        default=DEFAULT_MAX_AGE_DAYS,
+        help=f"沿用上次 ok 结果的最长天数（默认 {DEFAULT_MAX_AGE_DAYS}）",
+    )
+    args = parser.parse_args(argv)
+    return validate_and_fix(full=args.full, max_age_days=args.max_age_days)
+
+
 if __name__ == "__main__":
-    sys.exit(validate_and_fix())
+    sys.exit(main())

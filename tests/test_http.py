@@ -173,3 +173,133 @@ def test_parse_retry_after_returns_none_for_garbage():
     assert http._parse_retry_after(None) is None
     assert http._parse_retry_after("") is None
     assert http._parse_retry_after("not-a-date") is None
+
+
+class _JsonResponse:
+    def __init__(self, status_code, body="", etag=None):
+        self.status_code = status_code
+        self.text = body
+        self.headers = {"ETag": etag} if etag else {}
+        self.closed = False
+
+    def json(self):
+        import json
+
+        return json.loads(self.text)
+
+    def raise_for_status(self):
+        if self.status_code >= 400:
+            raise requests.HTTPError(f"HTTP {self.status_code}")
+
+    def close(self):
+        self.closed = True
+
+
+def _reset_conditional_cache(monkeypatch, http, cache_file):
+    monkeypatch.setenv(http.HTTP_CACHE_ENV, str(cache_file))
+    monkeypatch.setattr(http, "_CONDITIONAL_CACHE", None)
+    # atexit 注册的保存函数在测试里无意义，避免进程退出时写入临时目录
+    monkeypatch.setattr(http.atexit, "register", lambda *_: None)
+
+
+def test_get_json_uses_etag_and_reuses_body_on_304(tmp_path, monkeypatch):
+    from scripts import net as http
+
+    cache_file = tmp_path / "http-cache.json.gz"
+    _reset_conditional_cache(monkeypatch, http, cache_file)
+    url = "https://api.github.com/repos/o/r/releases/latest"
+    sent_headers: list[dict] = []
+    responses = iter(
+        [
+            _JsonResponse(200, '{"tag_name": "v1"}', etag='W/"abc"'),
+            _JsonResponse(304),
+        ]
+    )
+
+    def fake_request(method, req_url, headers=None, **kwargs):
+        sent_headers.append(dict(headers or {}))
+        return next(responses)
+
+    monkeypatch.setattr(http.requests, "request", fake_request)
+
+    assert http.get_json(url) == {"tag_name": "v1"}
+    http._save_conditional_cache()
+
+    # 模拟下一次 CI 运行：从磁盘重新加载缓存
+    monkeypatch.setattr(http, "_CONDITIONAL_CACHE", None)
+    assert http.get_json(url) == {"tag_name": "v1"}
+
+    assert "If-None-Match" not in sent_headers[0]
+    assert sent_headers[1]["If-None-Match"] == 'W/"abc"'
+    assert http._CONDITIONAL_CACHE is not None
+    assert http._CONDITIONAL_CACHE.hits == 1
+
+
+def test_get_json_conditional_cache_only_for_github_api(tmp_path, monkeypatch):
+    from scripts import net as http
+
+    _reset_conditional_cache(monkeypatch, http, tmp_path / "cache.json.gz")
+    sent_headers: list[dict] = []
+
+    def fake_request(method, req_url, headers=None, **kwargs):
+        sent_headers.append(dict(headers or {}))
+        return _JsonResponse(200, "{}", etag='"x"')
+
+    monkeypatch.setattr(http.requests, "request", fake_request)
+
+    http.get_json("https://nodejs.org/dist/index.json")
+    http.get_json("https://nodejs.org/dist/index.json")
+
+    assert all("If-None-Match" not in h for h in sent_headers)
+    assert http._CONDITIONAL_CACHE is None
+
+
+def test_get_json_without_cache_env_sends_no_conditional_header(monkeypatch):
+    from scripts import net as http
+
+    monkeypatch.delenv(http.HTTP_CACHE_ENV, raising=False)
+    monkeypatch.setattr(http, "_CONDITIONAL_CACHE", None)
+    sent_headers: list[dict] = []
+
+    def fake_request(method, req_url, headers=None, **kwargs):
+        sent_headers.append(dict(headers or {}))
+        return _JsonResponse(200, '{"ok": true}', etag='"x"')
+
+    monkeypatch.setattr(http.requests, "request", fake_request)
+
+    assert http.get_json("https://api.github.com/rate_limit") == {"ok": True}
+    assert "If-None-Match" not in sent_headers[0]
+    assert http._CONDITIONAL_CACHE is None
+
+
+def test_conditional_cache_prunes_idle_entries_and_tolerates_corruption(tmp_path):
+    from scripts import net as http
+
+    cache_file = tmp_path / "cache.json.gz"
+    cache_file.write_bytes(b"not gzip")
+    cache = http.ConditionalCache(cache_file)  # 损坏文件不抛异常
+    assert cache.lookup("https://api.github.com/a") is None
+
+    cache.store("https://api.github.com/a", '"a"', "{}")
+    cache.store("https://api.github.com/b", '"b"', "{}")
+    cache._entries["https://api.github.com/b"]["used_at"] = 0
+    cache.save()
+
+    reloaded = http.ConditionalCache(cache_file)
+    assert reloaded.lookup("https://api.github.com/a") is not None
+    assert reloaded.lookup("https://api.github.com/b") is None
+
+
+def test_set_max_connections_per_host_resets_limiters(monkeypatch):
+    from scripts import net as http
+
+    monkeypatch.setattr(http, "MAX_CONNECTIONS_PER_HOST", 4)
+    monkeypatch.setattr(http, "_HOST_LIMITERS", {})
+
+    http._get_host_limiter("https://github.com/a")
+    http.set_max_connections_per_host(16)
+
+    assert http.MAX_CONNECTIONS_PER_HOST == 16
+    assert http._HOST_LIMITERS == {}
+    limiter = http._get_host_limiter("https://github.com/a")
+    assert limiter._initial_value == 16

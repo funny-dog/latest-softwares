@@ -37,6 +37,9 @@ discover_new_ids.txt
 # SQLite 运行时数据库（FastAPI Cloud 临时存储，不入库）
 data/site_metrics.db
 
+# GitHub API 条件请求缓存（LATEST_SOFTWARES_HTTP_CACHE）
+.cache/
+
 # Node.js
 node_modules/
 
