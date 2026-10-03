@@ -67,6 +67,37 @@ def test_link_check_uses_synced_latest_data_artifact():
     assert "path: data/" in link_job
 
 
+def test_link_check_persists_health_report_for_incremental_checks():
+    workflow = WORKFLOW.read_text(encoding="utf-8")
+    link_job = workflow.split("\n  link-check:", 1)[1]
+
+    restore = link_job.index("actions/cache/restore@")
+    validate = link_job.index("python scripts/validate_links.py")
+    save = link_job.index("actions/cache/save@")
+    assert restore < validate < save
+    assert "path: data/link-health.json" in link_job
+    # 有失效链接时 validate_links 退出码非 0，保存缓存必须不受影响
+    save_step = link_job[link_job.rindex("- name:", 0, save) : save]
+    assert "always()" in save_step
+
+
+def test_sync_shard_uses_github_etag_cache():
+    workflow = WORKFLOW.read_text(encoding="utf-8")
+    sync_job = workflow.split("\n  sync:", 1)[1].split("\n  sync-merge:", 1)[0]
+
+    assert "LATEST_SOFTWARES_HTTP_CACHE:" in sync_job
+    assert "actions/cache/restore@" in sync_job
+    assert "actions/cache/save@" in sync_job
+
+
+def test_workflows_install_python_deps_with_uv():
+    for path in (WORKFLOW, DEPLOY_INTL):
+        workflow = path.read_text(encoding="utf-8")
+        assert "astral-sh/setup-uv@" in workflow, path
+        assert "cache: 'pip'" not in workflow, path
+        assert re.search(r"^\s*run: pip install", workflow, re.M) is None, path
+
+
 def test_deploy_does_not_wait_for_link_check():
     """部署拆分为独立 workflow 后,应在 Sync 成功后接力触发(workflow_run),
     而不被 flaky 的 link-check 阻塞 —— 两版 deploy 都不应引用 link-check。

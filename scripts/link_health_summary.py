@@ -19,12 +19,13 @@ def render_summary(report: dict[str, Any]) -> str:
     lines = [
         "## Link Health",
         "",
-        "| Total | Direct | Landing pages | OK | Fixed | Failed |",
-        "|---:|---:|---:|---:|---:|---:|",
+        "| Total | Direct | Landing pages | OK | Fixed | Failed | Cached |",
+        "|---:|---:|---:|---:|---:|---:|---:|",
         (
             f"| {stats.get('total', 0)} | {stats.get('direct', 0)} | "
             f"{stats.get('landing_page', 0)} | {stats.get('ok', 0)} | "
-            f"{stats.get('fixed', 0)} | {stats.get('failed', 0)} |"
+            f"{stats.get('fixed', 0)} | {stats.get('failed', 0)} | "
+            f"{stats.get('cached', 0)} |"
         ),
     ]
 

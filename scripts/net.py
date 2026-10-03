@@ -2,9 +2,14 @@
 
 from __future__ import annotations
 
+import atexit
 from email.utils import parsedate_to_datetime
 from datetime import datetime, timezone
+import gzip
+import json
 import os
+from pathlib import Path
+import sys
 import threading
 import time
 from typing import Any
@@ -27,6 +32,13 @@ MAX_CONNECTIONS_PER_HOST = max(
 )
 _HOST_LIMITERS: dict[str, threading.BoundedSemaphore] = {}
 _HOST_LIMITERS_LOCK = threading.Lock()
+
+# GitHub API 条件请求缓存：设置该环境变量（缓存文件路径）即开启。
+# 命中 304 时复用上次的响应体，且不计入 GitHub primary rate limit。
+HTTP_CACHE_ENV = "LATEST_SOFTWARES_HTTP_CACHE"
+CONDITIONAL_CACHE_HOSTS = frozenset({"api.github.com"})
+# 超过该天数未被使用的条目在保存时丢弃，防止缓存文件无限增长
+HTTP_CACHE_MAX_IDLE_SECONDS = 14 * 86400
 
 
 def base_headers(extra: dict[str, str] | None = None) -> dict[str, str]:
@@ -69,6 +81,14 @@ def browser_headers(extra: dict[str, str] | None = None) -> dict[str, str]:
 def _host_key(url: str) -> str:
     parsed = urlsplit(url)
     return (parsed.netloc or url).lower()
+
+
+def set_max_connections_per_host(limit: int) -> None:
+    """调整单 host 并发上限；须在发出请求前调用（已创建的 limiter 会被丢弃）。"""
+    global MAX_CONNECTIONS_PER_HOST
+    with _HOST_LIMITERS_LOCK:
+        MAX_CONNECTIONS_PER_HOST = max(1, int(limit))
+        _HOST_LIMITERS.clear()
 
 
 def _get_host_limiter(url: str) -> threading.BoundedSemaphore:
@@ -158,7 +178,115 @@ def head(url: str, **kwargs: Any) -> requests.Response:
     return request("HEAD", url, **kwargs)
 
 
+class ConditionalCache:
+    """按 URL 保存 ETag + 响应体的磁盘缓存（gzip JSON），线程安全。"""
+
+    def __init__(self, path: Path) -> None:
+        self.path = path
+        self._lock = threading.Lock()
+        self._entries: dict[str, dict[str, Any]] = {}
+        self.hits = 0
+        self.misses = 0
+        try:
+            with gzip.open(path, "rt", encoding="utf-8") as fh:
+                payload = json.load(fh)
+            entries = payload.get("entries", {}) if isinstance(payload, dict) else {}
+            if isinstance(entries, dict):
+                self._entries = entries
+        except FileNotFoundError:
+            pass
+        except Exception as exc:  # 缓存损坏不应影响抓取，丢弃重建即可
+            print(f"HTTP cache load failed, ignoring: {exc}", file=sys.stderr)
+
+    def lookup(self, url: str) -> dict[str, Any] | None:
+        with self._lock:
+            entry = self._entries.get(url)
+            if isinstance(entry, dict) and entry.get("etag") and "body" in entry:
+                return entry
+            return None
+
+    def hit(self, url: str) -> None:
+        with self._lock:
+            self.hits += 1
+            entry = self._entries.get(url)
+            if entry is not None:
+                entry["used_at"] = time.time()
+
+    def store(self, url: str, etag: str, body: str) -> None:
+        with self._lock:
+            self.misses += 1
+            self._entries[url] = {"etag": etag, "body": body, "used_at": time.time()}
+
+    def save(self) -> None:
+        cutoff = time.time() - HTTP_CACHE_MAX_IDLE_SECONDS
+        with self._lock:
+            entries = {
+                url: entry
+                for url, entry in self._entries.items()
+                if float(entry.get("used_at", 0)) >= cutoff
+            }
+        self.path.parent.mkdir(parents=True, exist_ok=True)
+        tmp = self.path.with_name(self.path.name + ".tmp")
+        with gzip.open(tmp, "wt", encoding="utf-8") as fh:
+            json.dump({"version": 1, "entries": entries}, fh, ensure_ascii=False)
+        os.replace(tmp, self.path)
+
+
+_CONDITIONAL_CACHE: ConditionalCache | None = None
+_CONDITIONAL_CACHE_LOCK = threading.Lock()
+
+
+def _save_conditional_cache() -> None:
+    cache = _CONDITIONAL_CACHE
+    if cache is None:
+        return
+    try:
+        cache.save()
+    except Exception as exc:
+        print(f"HTTP cache save failed: {exc}", file=sys.stderr)
+        return
+    if cache.hits or cache.misses:
+        print(
+            f"HTTP conditional cache: {cache.hits} x 304 reused, "
+            f"{cache.misses} x 200 stored",
+            file=sys.stderr,
+        )
+
+
+def _conditional_cache_for(url: str) -> ConditionalCache | None:
+    """返回 URL 适用的条件请求缓存；未开启或 host 不在白名单时返回 None。"""
+    global _CONDITIONAL_CACHE
+    path = os.environ.get(HTTP_CACHE_ENV)
+    if not path or urlsplit(url).hostname not in CONDITIONAL_CACHE_HOSTS:
+        return None
+    with _CONDITIONAL_CACHE_LOCK:
+        if _CONDITIONAL_CACHE is None or _CONDITIONAL_CACHE.path != Path(path):
+            if _CONDITIONAL_CACHE is None:
+                atexit.register(_save_conditional_cache)
+            else:
+                _save_conditional_cache()
+            _CONDITIONAL_CACHE = ConditionalCache(Path(path))
+        return _CONDITIONAL_CACHE
+
+
 def get_json(url: str, **kwargs: Any) -> Any:
+    cache = _conditional_cache_for(url)
+    entry = cache.lookup(url) if cache is not None else None
+    if entry is not None:
+        kwargs["headers"] = {
+            **(kwargs.get("headers") or {}),
+            "If-None-Match": entry["etag"],
+        }
+
     response = get(url, **kwargs)
+    if cache is not None and entry is not None and response.status_code == 304:
+        response.close()
+        cache.hit(url)
+        return json.loads(entry["body"])
+
     response.raise_for_status()
-    return response.json()
+    data = response.json()
+    etag = response.headers.get("ETag") if cache is not None else None
+    if cache is not None and etag:
+        cache.store(url, etag, response.text)
+    return data

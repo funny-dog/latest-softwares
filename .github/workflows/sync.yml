@@ -65,11 +65,15 @@ jobs:
         uses: actions/setup-python@v6
         with:
           python-version: '3.12'
-          cache: 'pip'
-          cache-dependency-path: requirements*.txt
+
+      - name: Setup uv
+        uses: astral-sh/setup-uv@v7
+        with:
+          enable-cache: true
+          cache-dependency-glob: requirements*.txt
 
       - name: Install Python dependencies
-        run: pip install -r requirements.txt -r requirements-dev.txt
+        run: uv pip install --system -r requirements.txt -r requirements-dev.txt
 
       - name: Lint + test
         uses: ./.github/actions/python-lint-test
@@ -100,8 +104,14 @@ jobs:
         with:
           python-version: '3.12'
 
+      - name: Setup uv
+        uses: astral-sh/setup-uv@v7
+        with:
+          enable-cache: true
+          cache-dependency-glob: requirements*.txt
+
       - name: Install pyyaml
-        run: pip install pyyaml
+        run: uv pip install --system "$(grep -i '^pyyaml==' requirements.txt)"
 
       - name: Compute partition
         id: partition
@@ -132,15 +142,29 @@ jobs:
         uses: actions/setup-python@v6
         with:
           python-version: '3.12'
-          cache: 'pip'
-          cache-dependency-path: requirements*.txt
+
+      - name: Setup uv
+        uses: astral-sh/setup-uv@v7
+        with:
+          enable-cache: true
+          cache-dependency-glob: requirements*.txt
 
       - name: Install Python dependencies
-        run: pip install -r requirements.txt -r requirements-dev.txt
+        run: uv pip install --system -r requirements.txt
+
+      # GitHub API 条件请求缓存（ETag）：304 不占 rate limit，响应体也更小。
+      # 按分片序号隔离；分片划分变化只会导致一次未命中，不影响正确性。
+      - name: Restore GitHub API ETag cache
+        uses: actions/cache/restore@v6
+        with:
+          path: .cache/http
+          key: github-etag-shard${{ strategy.job-index }}-${{ github.run_id }}
+          restore-keys: github-etag-shard${{ strategy.job-index }}-
 
       - name: Sync shard
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          LATEST_SOFTWARES_HTTP_CACHE: .cache/http/github-etag.json.gz
           SYNC_ONLY: ${{ inputs.only }}
           SYNC_SKIP: ${{ inputs.skip }}
           SHARD_IDS: ${{ matrix.shard }}
@@ -150,6 +174,14 @@ jobs:
           if [ -n "$SYNC_ONLY" ]; then ARGS+=(--only "$SYNC_ONLY"); fi
           if [ -n "$SYNC_SKIP" ]; then ARGS+=(--skip "$SYNC_SKIP"); fi
           python scripts/sync.py "${ARGS[@]}"
+
+      # 拆成 restore/save 两步并用 always()：分片健康检查失败时也要保存缓存
+      - name: Save GitHub API ETag cache
+        if: ${{ always() && hashFiles('.cache/http/github-etag.json.gz') != '' }}
+        uses: actions/cache/save@v6
+        with:
+          path: .cache/http
+          key: github-etag-shard${{ strategy.job-index }}-${{ github.run_id }}
 
       - name: Check sync failure rate
         if: ${{ !cancelled() }}
@@ -180,12 +212,15 @@ jobs:
         uses: actions/setup-python@v6
         with:
           python-version: '3.12'
-          cache: 'pip'
-          cache-dependency-path: requirements*.txt
+
+      - name: Setup uv
+        uses: astral-sh/setup-uv@v7
+        with:
+          enable-cache: true
+          cache-dependency-glob: requirements*.txt
 
       - name: Install Python dependencies
-        run: |
-          pip install -r requirements.txt -r requirements-dev.txt
+        run: uv pip install --system -r requirements.txt -r requirements-dev.txt
 
       - name: Download shard artifacts
         uses: actions/download-artifact@v8
@@ -249,17 +284,29 @@ jobs:
         uses: actions/setup-python@v6
         with:
           python-version: '3.12'
-          cache: 'pip'
-          cache-dependency-path: requirements*.txt
+
+      - name: Setup uv
+        uses: astral-sh/setup-uv@v7
+        with:
+          enable-cache: true
+          cache-dependency-glob: requirements*.txt
 
       - name: Install Python dependencies
-        run: pip install -r requirements.txt -r requirements-dev.txt
+        run: uv pip install --system -r requirements.txt
 
       - name: Download latest data artifact
         uses: actions/download-artifact@v8
         with:
           name: latest-data
           path: data/
+
+      # 上一次的健康报告：版本未变且 7 天内校验通过的直链直接沿用结果。
+      - name: Restore previous link health report
+        uses: actions/cache/restore@v6
+        with:
+          path: data/link-health.json
+          key: link-health-${{ github.run_id }}
+          restore-keys: link-health-
 
       - name: Validate links and write health report
         env:
@@ -269,6 +316,14 @@ jobs:
       - name: Write link health summary
         if: ${{ always() }}
         run: python scripts/link_health_summary.py data/link-health.json
+
+      # 有失效链接时脚本返回非 0，仍需保存报告，否则下次会退化为全量检查
+      - name: Save link health report
+        if: ${{ always() && hashFiles('data/link-health.json') != '' }}
+        uses: actions/cache/save@v6
+        with:
+          path: data/link-health.json
+          key: link-health-${{ github.run_id }}
 
       - name: Upload link health artifact
         if: ${{ always() }}
