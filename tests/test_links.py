@@ -250,6 +250,39 @@ def test_validate_links_raises_per_host_connection_limit(tmp_path, monkeypatch):
     assert validate_links.MAX_CONNECTIONS_PER_HOST >= validate_links.MAX_WORKERS
 
 
+def test_validate_links_leaves_data_untouched_without_fixes(tmp_path, monkeypatch):
+    _setup_validate_env(tmp_path, monkeypatch)
+    data_file = validate_links.DATA_FILE
+    original = data_file.read_text(encoding="utf-8")
+    output = tmp_path / "github_output"
+    monkeypatch.setenv("GITHUB_OUTPUT", str(output))
+
+    validate_links.validate_and_fix()
+
+    assert data_file.read_text(encoding="utf-8") == original
+    assert output.read_text(encoding="utf-8") == "fixed=0\nfailed=0\n"
+
+
+def test_validate_links_writes_fixed_url_and_reports_output(tmp_path, monkeypatch):
+    _setup_validate_env(tmp_path, monkeypatch)
+    monkeypatch.setattr(validate_links, "_check_url_robust", lambda url: False)
+    monkeypatch.setattr(
+        validate_links,
+        "_fix_by_refetch",
+        lambda config, asset: "https://example.test/app-v2.exe",
+    )
+    output = tmp_path / "github_output"
+    monkeypatch.setenv("GITHUB_OUTPUT", str(output))
+
+    rc = validate_links.validate_and_fix()
+
+    data = json.loads(validate_links.DATA_FILE.read_text(encoding="utf-8"))
+    urls = [a["url"] for a in data["packages"][0]["assets"]]
+    assert rc == 0
+    assert "https://example.test/app-v2.exe" in urls
+    assert output.read_text(encoding="utf-8") == "fixed=1\nfailed=0\n"
+
+
 def test_link_health_summary_writes_github_step_summary(tmp_path, monkeypatch):
     report = tmp_path / "link-health.json"
     summary = tmp_path / "summary.md"

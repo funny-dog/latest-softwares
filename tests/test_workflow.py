@@ -81,6 +81,27 @@ def test_link_check_persists_health_report_for_incremental_checks():
     assert "always()" in save_step
 
 
+def test_link_check_commits_fixed_links():
+    workflow = WORKFLOW.read_text(encoding="utf-8")
+    link_job = workflow.split("\n  link-check:", 1)[1]
+
+    # 须检出分支最新提交（含 sync-merge 的数据提交），否则回写推送会冲突
+    assert "ref: ${{ github.ref_name }}" in link_job
+    assert "id: validate" in link_job
+    fixed_guard = "steps.validate.outputs.fixed > 0"
+    for step in (
+        "Render README with fixed links",
+        "Rebuild web (dist/)",
+        "Re-upload dist artifact",
+        "Commit fixed links back to repo",
+    ):
+        block = link_job.split(f"- name: {step}", 1)[1].split("- name:", 1)[0]
+        assert fixed_guard in block, step
+        assert "!cancelled()" in block, step
+    assert "overwrite: true" in link_job
+    assert "file_pattern: 'data/latest.json README.md README_zh.md'" in link_job
+
+
 def test_sync_shard_uses_github_etag_cache():
     workflow = WORKFLOW.read_text(encoding="utf-8")
     sync_job = workflow.split("\n  sync:", 1)[1].split("\n  sync-merge:", 1)[0]

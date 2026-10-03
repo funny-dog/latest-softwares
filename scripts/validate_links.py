@@ -11,13 +11,16 @@
   - 重新调用对应 fetcher，按相同 platform 查找最新 URL
   - 无法重新抓取或 URL 未变化时输出警告
 
-修复后的数据写回 data/latest.json，供后续 render 使用。
+修复后的数据写回 data/latest.json（仅在确有修复时写），供后续 render 使用；
+在 GitHub Actions 中还会把 fixed / failed 数写入 $GITHUB_OUTPUT，
+供 workflow 决定是否重新渲染并提交。
 """
 
 from __future__ import annotations
 
 import argparse
 import json
+import os
 import sys
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime, timedelta, timezone
@@ -150,6 +153,16 @@ def _record_link(
     if error:
         row["error"] = error
     report["links"].append(row)
+
+
+def _write_github_output(**values: int) -> None:
+    """在 GitHub Actions 中把统计写入 step outputs；本地运行时不做任何事。"""
+    output = os.environ.get("GITHUB_OUTPUT")
+    if not output:
+        return
+    with open(output, "a", encoding="utf-8") as fh:
+        for key, value in values.items():
+            fh.write(f"{key}={value}\n")
 
 
 def _write_health_report(report: dict[str, Any]) -> None:
@@ -307,11 +320,13 @@ def validate_and_fix(
             )
             print("    ⚠ 无法自动修复", file=sys.stderr)
 
-    DATA_FILE.write_text(
-        json.dumps(data, ensure_ascii=False, indent=2, sort_keys=False) + "\n",
-        encoding="utf-8",
-    )
+    if total_fixed:
+        DATA_FILE.write_text(
+            json.dumps(data, ensure_ascii=False, indent=2, sort_keys=False) + "\n",
+            encoding="utf-8",
+        )
     _write_health_report(health)
+    _write_github_output(fixed=total_fixed, failed=total_failed)
     print(
         f"\n校验完成：检查 {total_checked} 个链接，修复 {total_fixed} 个，失败 {total_failed} 个"
     )
