@@ -30,16 +30,22 @@ on:
       - '.github/workflows/sync.yml'
   pull_request:
     branches: [main, master]
+    # 比 push 路径更宽：Dependabot 的 npm / GitHub Actions / pre-commit 升级 PR
+    # 也要经过 pr-checks，否则合并前没有任何验证。
     paths:
       - 'packages/**'
       - 'requirements*.txt'
+      - 'pyproject.toml'
+      - 'package.json'
+      - 'package-lock.json'
+      - '.pre-commit-config.yaml'
       - 'scripts/**'
       - 'app_core/**'
       - 'tests/**'
       - 'README.template.md'
       - 'README_zh.template.md'
       - 'web/**'
-      - '.github/workflows/sync.yml'
+      - '.github/**'
 
 permissions:
   contents: write   # 自动 commit 渲染结果回主分支
@@ -59,10 +65,10 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
 
       - name: Setup Python
-        uses: actions/setup-python@v6
+        uses: actions/setup-python@v7
         with:
           python-version: '3.12'
 
@@ -81,6 +87,19 @@ jobs:
       - name: Check rendered README
         run: python scripts/render.py --check
 
+      # build_web.py 在前端构建失败时会静默回退到未打包的原文件，
+      # 这里单独跑一遍让 esbuild / 构建脚本的问题直接报错。
+      - name: Setup Node
+        uses: actions/setup-node@v7
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Build frontend assets
+        run: |
+          npm ci
+          npm run build
+
       - name: Build web (dist/)
         run: python scripts/build_web.py
 
@@ -97,10 +116,10 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
 
       - name: Setup Python
-        uses: actions/setup-python@v6
+        uses: actions/setup-python@v7
         with:
           python-version: '3.12'
 
@@ -136,10 +155,10 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
 
       - name: Setup Python
-        uses: actions/setup-python@v6
+        uses: actions/setup-python@v7
         with:
           python-version: '3.12'
 
@@ -206,10 +225,10 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
 
       - name: Setup Python
-        uses: actions/setup-python@v6
+        uses: actions/setup-python@v7
         with:
           python-version: '3.12'
 
@@ -283,12 +302,12 @@ jobs:
       # 检出分支最新提交（而非触发时的 sha）：需包含 sync-merge 刚提交的数据，
       # 否则下面回写修复时会 non-fast-forward 推送失败。
       - name: Checkout
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
         with:
           ref: ${{ github.ref_name }}
 
       - name: Setup Python
-        uses: actions/setup-python@v6
+        uses: actions/setup-python@v7
         with:
           python-version: '3.12'
 
