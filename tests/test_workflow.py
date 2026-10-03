@@ -111,6 +111,26 @@ def test_sync_shard_uses_github_etag_cache():
     assert "actions/cache/save@" in sync_job
 
 
+def test_pr_checks_cover_dependency_update_prs():
+    """Dependabot 的 npm / Actions / 依赖升级 PR 必须触发 pr-checks 并真正跑前端构建。"""
+    workflow = WORKFLOW.read_text(encoding="utf-8")
+    pr_trigger = workflow.split("\n  pull_request:", 1)[1].split("\npermissions:", 1)[0]
+    for path in (
+        "'requirements*.txt'",
+        "'pyproject.toml'",
+        "'package.json'",
+        "'package-lock.json'",
+        "'.pre-commit-config.yaml'",
+        "'.github/**'",
+    ):
+        assert path in pr_trigger, path
+
+    pr_job = workflow.split("\n  pr-checks:", 1)[1].split("\n  generate-shards:", 1)[0]
+    assert "actions/setup-node@" in pr_job
+    assert "npm ci" in pr_job
+    assert "npm run build" in pr_job
+
+
 def test_workflows_install_python_deps_with_uv():
     for path in (WORKFLOW, DEPLOY_INTL):
         workflow = path.read_text(encoding="utf-8")

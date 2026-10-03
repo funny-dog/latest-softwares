@@ -2,7 +2,7 @@
 repos:
   # 注意: rev 需与 requirements-dev.txt 中的 ruff 版本保持一致
   - repo: https://github.com/astral-sh/ruff-pre-commit
-    rev: v0.15.12
+    rev: v0.16.6
     hooks:
       - id: ruff
       - id: ruff-format
