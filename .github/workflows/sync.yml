@@ -273,6 +273,9 @@ jobs:
   link-check:
     needs: sync-merge
     if: github.event_name != 'pull_request'
+    # 两版部署经 workflow_run 在本 workflow "成功" 后触发。失效链接本身不应阻断
+    # 当日数据上线：job 照样标红便于发现，但不让整个 run 失败。
+    continue-on-error: true
     runs-on: ubuntu-latest
     timeout-minutes: 12
 

@@ -119,13 +119,18 @@ def test_workflows_install_python_deps_with_uv():
         assert re.search(r"^\s*run: pip install", workflow, re.M) is None, path
 
 
-def test_deploy_does_not_wait_for_link_check():
+def test_deploy_is_not_blocked_by_link_check():
     """部署拆分为独立 workflow 后,应在 Sync 成功后接力触发(workflow_run),
     而不被 flaky 的 link-check 阻塞 —— 两版 deploy 都不应引用 link-check。
 
-    拆分前由 `needs: sync` + 不写 `needs: link-check` 表达此意图;拆分后等价于
-    `workflow_run: workflows: ["Sync Latest Software"]`(接力 Sync)且全文不提 link-check。
+    workflow_run 只看整个 Sync run 的结论,所以 link-check 必须
+    continue-on-error:有无法修复的失效链接时 job 标红,但 run 仍为 success,
+    当日数据照常部署(且能带上 link-check 刚回写的修复)。
     """
+    workflow = WORKFLOW.read_text(encoding="utf-8")
+    link_job = workflow.split("\n  link-check:", 1)[1].split("\n    steps:", 1)[0]
+    assert "continue-on-error: true" in link_job
+
     for path in (DEPLOY_INTL, DEPLOY_CN):
         workflow = path.read_text(encoding="utf-8")
         # 接力 Sync 完成后部署最新数据（替代拆分前的 needs: sync）
