@@ -5,7 +5,7 @@
 > 由 GitHub Actions 每日自动同步上游官方源的**最新版本元数据**。
 > 仓库**不托管二进制安装包**，下载按钮直接跳到上游官方下载链接。
 >
-> 📅 **最后更新**：`2026-10-11 10:37:46` (UTC)　· 共 494 项软件（其中 29 项使用上次数据，标 ⚠️）
+> 📅 **最后更新**：`2026-10-11 10:46:32` (UTC)　· 共 497 项软件（其中 29 项使用上次数据，标 ⚠️）
 
 ---
 
@@ -210,6 +210,7 @@
 | [**PicGo**](https://github.com/Molunerfinn/PicGo) | `3.0.3` | 2026-10-05 | [win-x64](https://github.com/Molunerfinn/PicGo/releases/download/v3.0.3/PicGo-3.0.3-x64.exe) · [mac-x64](https://github.com/Molunerfinn/PicGo/releases/download/v3.0.3/PicGo-3.0.3-x64.dmg) | GitHub Release: Molunerfinn/PicGo |
 | [**SwitchHosts**](https://github.com/oldj/SwitchHosts) | `5.0.2` | 2026-09-03 | [win-x64](https://github.com/oldj/SwitchHosts/releases/download/v5.0.2/SwitchHosts-5.0.2-windows-x64-setup.exe) · [mac-x64](https://github.com/oldj/SwitchHosts/releases/download/v5.0.2/SwitchHosts-5.0.2-mac-x64.dmg) | GitHub Release: oldj/SwitchHosts |
 | [**Apifox**](https://apifox.com/) | `2026-10-11` | — | [win-x64](https://apifox.com/download/) · [mac-x64](https://apifox.com/download/) | Official download page; no public version API |
+| [**cc-switch**](https://github.com/farion1231/cc-switch) | `4.0.8` | 2026-10-10 | [win-x64](https://github.com/farion1231/cc-switch/releases/download/v4.0.8/CC-Switch-v4.0.8-Windows.msi) | GitHub Release: farion1231/cc-switch |
 
 
 ### System Utilities
@@ -279,6 +280,7 @@
 | [**百度输入法**](https://shurufa.baidu.com/) | `2026-10-11` | — | [win-x64](https://shurufa.baidu.com/) | Official download page; no public version API |
 | [**腾讯柠檬清理**](https://lemon.qq.com/) | `2026-10-11` | — | [mac-universal](https://lemon.qq.com/) | Official download page; no public version API |
 | [**鲁大师**](https://www.ludashi.com/) | `2026-10-11` | — | [win-x64](https://www.ludashi.com/) | Official download page; no public version API |
+| [**scrcpy**](https://github.com/Genymobile/scrcpy) | `5.0.1` | 2026-10-08 | [win-x64](https://github.com/Genymobile/scrcpy/releases/download/v5.0.1/scrcpy-win64-v5.0.1.zip) | GitHub Release: Genymobile/scrcpy |
 
 
 ### Cloud & DevOps
@@ -531,6 +533,7 @@
 | [**剪映专业版**](https://www.capcut.cn/) | `2026-10-11` | — | [win-x64](https://www.capcut.cn/) · [mac-universal](https://www.capcut.cn/) | Official download page; no public version API |
 | [**优酷**](https://www.youku.com/) | `2026-10-11` | — | [win-x64](https://www.youku.com/) · [mac-universal](https://www.youku.com/) | Official download page; no public version API |
 | [**Listen1**](https://github.com/listen1/listen1_desktop) | `2.33.0` | 2025-06-17 | [win-x64](https://github.com/listen1/listen1_desktop/releases/download/v2.33.0/listen1_2.33.0_win_x64.exe) · [mac-universal](https://github.com/listen1/listen1_desktop/releases/download/v2.33.0/listen1_2.33.0_mac_universal.dmg) | GitHub Release: listen1/listen1_desktop |
+| [**youtube-dl**](https://github.com/ytdl-org/youtube-dl) | `2021.12.17` | 2021-12-16 | [win-x64](https://github.com/ytdl-org/youtube-dl/releases/download/2021.12.17/youtube-dl.exe) | GitHub Release: ytdl-org/youtube-dl |
 
 
 ### Productivity
