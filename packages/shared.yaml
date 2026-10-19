@@ -1450,3 +1450,18 @@ packages:
     ccswitch.io
   desc_en: 'A cross-platform desktop All-in-One assistant for Claude Code, Codex,
     OpenCode, OpenClaw, Grok Build & Hermes Agent. Only official website: ccswitch.io'
+- id: godot
+  name: godot
+  category: Gaming
+  editions:
+  - cn
+  - intl
+  homepage: https://github.com/godotengine/godot
+  fetcher: github_release
+  args:
+    repo: godotengine/godot
+    assets:
+    - platform: win-x64
+      pattern: Godot_v*-stable_mono_win64.zip
+  desc_cn: Godot引擎–多平台2D和3D游戏引擎
+  desc_en: Godot Engine – Multi-platform 2D and 3D game engine
