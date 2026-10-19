@@ -5,7 +5,7 @@
 > **Latest version metadata** automatically synced from official upstream sources daily by GitHub Actions.
 > This repository **does not host binary installers** — download buttons link directly to upstream official downloads.
 >
-> 📅 **Last updated**: `2026-10-19 05:26:45` (UTC) · 497 software items (28 using previous data, marked ⚠️)
+> 📅 **Last updated**: `2026-10-19 09:44:36` (UTC) · 498 software items (28 using previous data, marked ⚠️)
 
 ---
 
@@ -414,7 +414,7 @@
 | Software | Latest Version | Released | Download | Source |
 |----------|---------------|----------|----------|--------|
 | [**Playnite**](https://github.com/JosefNemec/Playnite) | `10.62` | 2026-09-29 | [win-x64](https://github.com/JosefNemec/Playnite/releases/download/10.62/Playnite1062.exe) | GitHub Release: JosefNemec/Playnite |
-| [**RPCS3**](https://rpcs3.net/) | `179ffd2329f70de6949247aadfc2e7c9f621e1` | 2026-10-18 | [win-x64](https://github.com/RPCS3/rpcs3-binaries-win/releases/download/build-bd179ffd2329f70de6949247aadfc2e7c9f621e1/rpcs3-v0.0.43-20336-bd179ffd_win64_msvc.7z) | GitHub Release: RPCS3/rpcs3-binaries-win |
+| [**RPCS3**](https://rpcs3.net/) | `1b1b7dea308e8385a636ddf208c77498b01bc061` | 2026-10-19 | [win-x64](https://github.com/RPCS3/rpcs3-binaries-win/releases/download/build-1b1b7dea308e8385a636ddf208c77498b01bc061/rpcs3-v0.0.43-20337-1b1b7dea_win64_msvc.7z) | GitHub Release: RPCS3/rpcs3-binaries-win |
 | [**MangoHud**](https://github.com/flightlessmango/MangoHud) | `2026-10-19` | — | [linux-x64](https://github.com/flightlessmango/MangoHud/releases) | Official project download page; no stable public release asset API |
 | [**Bottles**](https://usebottles.com/download/) | `2026-10-19` | — | [linux-x64](https://usebottles.com/download/) | Official project download page; no stable public release asset API |
 | [**xemu**](https://github.com/xemu-project/xemu) ⚠️ | `0.8.137` | 2026-10-16 | [linux-x64](https://github.com/xemu-project/xemu/releases/download/v0.8.137/xemu-0.8.137-dbg-x86_64.AppImage) | GitHub Release: xemu-project/xemu<br>⚠ win-x64: 没有匹配 asset pattern 'xemu-win-*-zip.zip'; mac-arm64: 没有匹配 asset pattern 'xemu-macos-*-arm64.tar.gz' |
@@ -435,7 +435,7 @@
 | [**PPSSPP**](https://www.ppsspp.org/) | `1.20.4` | 2026-05-16 | [win-x64](https://github.com/hrydgard/ppsspp/releases/download/v1.20.4/PPSSPP-v1.20.4-Windows-x64.zip) · [mac-universal](https://github.com/hrydgard/ppsspp/releases/download/v1.20.4/PPSSPPSDL-macOS-v1.20.4.zip) · [linux-x64](https://github.com/hrydgard/ppsspp/releases/download/v1.20.4/PPSSPP-v1.20.4-anylinux-x86_64.AppImage) | GitHub Release: hrydgard/ppsspp |
 | [**Heroic Games Launcher**](https://heroicgameslauncher.com/) | `2.22.4` | 2026-10-15 | [win-x64](https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/releases/download/v2.22.4/Heroic-2.22.4-Setup-x64.exe) · [mac-arm64](https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/releases/download/v2.22.4/Heroic-2.22.4-macOS-arm64.dmg) · [linux-x64](https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/releases/download/v2.22.4/Heroic-2.22.4-linux-amd64.deb) | GitHub Release: Heroic-Games-Launcher/HeroicGamesLauncher |
 | [**Lutris**](https://github.com/lutris/lutris) | `0.5.22` | 2026-02-25 | [linux-x64](https://github.com/lutris/lutris/releases/download/v0.5.22/lutris_0.5.22_all.deb) | GitHub Release: lutris/lutris |
-| [**GE-Proton**](https://github.com/GloriousEggroll/proton-ge-custom) | `11-9` | 2026-10-14 | [linux-x64](https://github.com/GloriousEggroll/proton-ge-custom/releases/download/GE-Proton11-9/GE-Proton11-9-aarch64.tar.gz) | GitHub Release: GloriousEggroll/proton-ge-custom |
+| [**GE-Proton**](https://github.com/GloriousEggroll/proton-ge-custom) | `11-10` | 2026-10-19 | [linux-x64](https://github.com/GloriousEggroll/proton-ge-custom/releases/download/GE-Proton11-10/GE-Proton11-10-aarch64.tar.gz) | GitHub Release: GloriousEggroll/proton-ge-custom |
 | [**Ryujinx**](https://github.com/Ryubing/Ryujinx) | `2026-10-19` | — | [win-x64](https://github.com/Ryubing/Ryujinx/releases) · [mac-arm64](https://github.com/Ryubing/Ryujinx/releases) · [linux-x64](https://github.com/Ryubing/Ryujinx/releases) | Official project download page; no stable public release asset API |
 | [**RMG**](https://github.com/Rosalie241/RMG) | `2026-10-19` | — | [win-x64](https://github.com/Rosalie241/RMG/releases) · [linux-x64](https://github.com/Rosalie241/RMG/releases) | Official project download page; no stable public release asset API |
 | [**RetroArch**](https://github.com/libretro/RetroArch) | `2026-10-19` | — | [win-x64](https://github.com/libretro/RetroArch/releases) · [mac-arm64](https://github.com/libretro/RetroArch/releases) | Official project download page; no stable public release asset API |
@@ -453,6 +453,7 @@
 | [**永劫无间**](https://www.yjwujian.cn/) | `2026-10-19` | — | [win-x64](https://www.yjwujian.cn/download/) | Official download page; no public version API |
 | [**原神**](https://ys.mihoyo.com/) | `2026-10-19` | — | [win-x64](https://ys.mihoyo.com/) | Official download page; no public version API |
 | [**剑网3**](https://jx3.xoyo.com/) | `2026-10-19` | — | [win-x64](https://jx3.xoyo.com/download/) | Official download page; no public version API |
+| [**godot**](https://github.com/godotengine/godot) | `4.7.2-stable` | 2026-08-18 | [win-x64](https://github.com/godotengine/godot/releases/download/4.7.2-stable/Godot_v4.7.2-stable_mono_win64.zip) | GitHub Release: godotengine/godot |
 
 
 ### Messaging
@@ -497,7 +498,7 @@
 | [**OpenSCAD**](https://github.com/openscad/openscad) | `2021.01` | 2021-02-07 | [win-x64](https://github.com/openscad/openscad/releases/download/openscad-2021.01/OpenSCAD-2021.01-x86-64-Installer.exe) | GitHub Release: openscad/openscad |
 | [**HandBrake**](https://github.com/HandBrake/HandBrake) | `1.11.2` | 2026-06-07 | [win-x64](https://github.com/HandBrake/HandBrake/releases/download/1.11.2/HandBrake-1.11.2-x86_64-Win_GUI.exe) | GitHub Release: HandBrake/HandBrake |
 | [**IINA**](https://github.com/iina/iina) | `1.5.0` | 2026-10-03 | [mac-arm64](https://github.com/iina/iina/releases/download/v1.5.0/IINA.v1.5.0.dmg) | GitHub Release: iina/iina |
-| [**LosslessCut**](https://github.com/mifi/lossless-cut) ⚠️ | `3.69.0` | 2026-06-04 | [win-x64](https://github.com/mifi/lossless-cut/releases/download/v3.69.0/LosslessCut-win-x64.7z) · [linux-x64](https://github.com/mifi/lossless-cut/releases/download/v3.69.0/LosslessCut-linux-x86_64.AppImage) | GitHub Release: mifi/lossless-cut<br>⚠ mac-universal: 没有匹配 asset pattern 'LosslessCut-mac-universal.pkg' |
+| [**LosslessCut**](https://github.com/mifi/lossless-cut) ⚠️ | `3.70.0` | 2026-10-19 | [win-x64](https://github.com/mifi/lossless-cut/releases/download/v3.70.0/LosslessCut-win-x64.7z) · [linux-x64](https://github.com/mifi/lossless-cut/releases/download/v3.70.0/LosslessCut-linux-x86_64.AppImage) | GitHub Release: mifi/lossless-cut<br>⚠ mac-universal: 没有匹配 asset pattern 'LosslessCut-mac-universal.pkg' |
 | [**Kdenlive**](https://kdenlive.org/en/download/) | `2026-10-19` | — | [win-x64](https://kdenlive.org/en/download/) | Official project download page; no stable public release asset API |
 | [**MusicBrainz Picard**](https://github.com/metabrainz/picard) | `2026-10-19` | — | [win-x64](https://github.com/metabrainz/picard/releases) · [mac-arm64](https://github.com/metabrainz/picard/releases) | Official project download page; no stable public release asset API |
 | [**GIMP**](https://www.gimp.org/downloads/) | `2026-10-19` | — | [win-x64](https://www.gimp.org/downloads/) | Official project download page; no stable public release asset API |
@@ -561,7 +562,7 @@
 | [**calibre**](https://github.com/kovidgoyal/calibre) | `9.16.0` | 2026-10-09 | [win-x64](https://github.com/kovidgoyal/calibre/releases/download/v9.16.0/calibre-64bit-9.16.0.msi) | GitHub Release: kovidgoyal/calibre |
 | [**Shotcut**](https://github.com/mltframework/shotcut) | `26.9.27` | 2026-09-28 | [win-x64](https://github.com/mltframework/shotcut/releases/download/v26.9.27/shotcut-win64-26.9.27.exe) | GitHub Release: mltframework/shotcut |
 | [**draw.io**](https://github.com/jgraph/drawio-desktop) | `32.5.5` | 2026-10-18 | [win-x64](https://github.com/jgraph/drawio-desktop/releases/download/v32.5.5/draw.io-32.5.5-windows-installer.exe) · [mac-arm64](https://github.com/jgraph/drawio-desktop/releases/download/v32.5.5/draw.io-arm64-32.5.5.dmg) · [linux-x64](https://github.com/jgraph/drawio-desktop/releases/download/v32.5.5/drawio-x86_64-32.5.5.rpm) | GitHub Release: jgraph/drawio-desktop |
-| [**Paseo**](https://getpaseo.com) | `0.11.4` | 2026-10-15 | [mac-arm64](https://github.com/getpaseo/paseo/releases/download/v0.11.4/Paseo-0.11.4-arm64.dmg) · [mac-x64](https://github.com/getpaseo/paseo/releases/download/v0.11.4/Paseo-0.11.4-x64.dmg) | GitHub Release: getpaseo/paseo |
+| [**Paseo**](https://getpaseo.com) | `0.12.0` | 2026-10-19 | [mac-arm64](https://github.com/getpaseo/paseo/releases/download/v0.12.0/Paseo-0.12.0-arm64.dmg) · [mac-x64](https://github.com/getpaseo/paseo/releases/download/v0.12.0/Paseo-0.12.0-x64.dmg) | GitHub Release: getpaseo/paseo |
 | [**XMind**](https://xmind.app) | `2026-10-19` | — | [mac-universal](https://xmind.app/download/) | Official download page; no public version API |
 | [**Anytype**](https://github.com/anyproto/anytype-ts) | `0.57.4` | 2026-10-03 | [win-x64](https://github.com/anyproto/anytype-ts/releases/download/v0.57.4/Anytype.Setup.0.57.4.exe) · [mac-arm64](https://github.com/anyproto/anytype-ts/releases/download/v0.57.4/Anytype-0.57.4-mac-arm64.dmg) · [linux-x64](https://github.com/anyproto/anytype-ts/releases/download/v0.57.4/anytype_0.57.4_amd64.deb) | GitHub Release: anyproto/anytype-ts |
 | [**Excalidraw**](https://github.com/excalidraw/excalidraw) | `2026-10-19` | — | [win-x64](https://github.com/excalidraw/excalidraw/releases) | Official project download page; no stable public release asset API |
