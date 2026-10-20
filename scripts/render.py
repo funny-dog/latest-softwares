@@ -37,8 +37,10 @@ REPO_ROOT = Path(__file__).resolve().parents[1]
 DATA_FILE = REPO_ROOT / "data" / "latest.json"
 
 # 双语模板配置：(模板文件, 输出文件)
-README_EN = (REPO_ROOT / "README.template.md", REPO_ROOT / "README.md")
-README_ZH = (REPO_ROOT / "README_zh.template.md", REPO_ROOT / "README_zh.md")
+# README.md 是中文版——GitHub 会把它作为仓库首页展示，面向主要受众（国内用户）。
+# 英文版输出到 README_en.md，通过页面顶部的语言切换链接进入。
+README_ZH = (REPO_ROOT / "README.template.md", REPO_ROOT / "README.md")
+README_EN = (REPO_ROOT / "README_en.template.md", REPO_ROOT / "README_en.md")
 
 UNCATEGORIZED = "其他"
 
@@ -156,7 +158,7 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument(
         "--check",
         action="store_true",
-        help="只检查 README.md / README_zh.md 是否与模板和数据一致，不写文件",
+        help="只检查 README.md / README_en.md 是否与模板和数据一致，不写文件",
     )
     parser.add_argument(
         "--edition",

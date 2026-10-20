@@ -45,7 +45,7 @@ on:
       - 'app_core/**'
       - 'tests/**'
       - 'README.template.md'
-      - 'README_zh.template.md'
+      - 'README_en.template.md'
       - 'web/**'
       - '.github/workflows/sync.yml'
   pull_request:
@@ -67,7 +67,7 @@ on:
       - 'app_core/**'
       - 'tests/**'
       - 'README.template.md'
-      - 'README_zh.template.md'
+      - 'README_en.template.md'
       - 'web/**'
       - '.github/workflows/sync.yml'
 
@@ -411,7 +411,7 @@ jobs:
         with:
           branch: ${{ github.ref_name }}
           commit_message: 'chore(data): publish verified software snapshot [skip ci]'
-          file_pattern: 'data/latest.json data/link-state.json data/coverage-report.json README.md README_zh.md'
+          file_pattern: 'data/latest.json data/link-state.json data/coverage-report.json README.md README_en.md'
       - uses: actions/upload-artifact@v7
         with:
           name: dist-cn

@@ -26,8 +26,8 @@ def test_render_check_detects_stale_output(tmp_path, monkeypatch):
     output_file.write_text("old\n", encoding="utf-8")
 
     monkeypatch.setattr(render, "DATA_FILE", data_file)
-    monkeypatch.setattr(render, "README_EN", (template_file, output_file))
-    monkeypatch.setattr(render, "README_ZH", (template_file, tmp_path / "README_zh.md"))
+    monkeypatch.setattr(render, "README_ZH", (template_file, output_file))
+    monkeypatch.setattr(render, "README_EN", (template_file, tmp_path / "README_en.md"))
     monkeypatch.setattr(render, "REPO_ROOT", tmp_path)
 
     rc = render.main(["--check"])
@@ -56,8 +56,8 @@ def test_render_check_accepts_current_output(tmp_path, monkeypatch):
     )
 
     monkeypatch.setattr(render, "DATA_FILE", data_file)
-    monkeypatch.setattr(render, "README_EN", (template_file, output_file))
-    monkeypatch.setattr(render, "README_ZH", (template_file, tmp_path / "README_zh.md"))
+    monkeypatch.setattr(render, "README_ZH", (template_file, output_file))
+    monkeypatch.setattr(render, "README_EN", (template_file, tmp_path / "README_en.md"))
     monkeypatch.setattr(render, "REPO_ROOT", tmp_path)
 
     assert render.main([]) == 0

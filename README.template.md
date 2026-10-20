@@ -1,114 +1,114 @@
-[English](README.md) | [中文](README_zh.md)
+**中文** | [English](README_en.md)
 
-# 🚀 Latest Windows / macOS Software Releases
+# 🚀 最新 Windows / macOS 软件速递
 
-> **Latest version metadata** automatically synced from official upstream sources daily by GitHub Actions.
-> This repository **does not host binary installers** — download buttons link directly to upstream official downloads.
+> 由 GitHub Actions 每日自动同步上游官方源的**最新版本元数据**。
+> 仓库**不托管二进制安装包**，下载按钮直接跳到上游官方下载链接。
 >
-> 📅 **Last updated**: `{{ updated_at }}` (UTC){{ " · " if updated_at else "" }}{{ total }} software items{% if failed > 0 %} ({{ failed }} using previous data, marked ⚠️){% endif %}
+> 📅 **最后更新**：`{{ updated_at }}` (UTC)　{{ "·" if updated_at else "" }} 共 {{ total }} 项软件{% if failed > 0 %}（其中 {{ failed }} 项使用上次数据，标 ⚠️）{% endif %}
 
 ---
 
-## 🌐 Live Sites
+## 🌐 在线站点
 
-| Edition | Site | Hosting |
-|---------|------|---------|
-| 🇨🇳 Chinese | <https://cn.erhu8.dpdns.org/> | Cloudflare Pages (static) |
-| 🌍 International | <https://intl.erhu8.dpdns.org/> | FastAPI Cloud |
+| 版本 | 地址 | 托管 |
+|------|------|------|
+| 🇨🇳 国内版 | <https://cn.erhu8.dpdns.org/> | Cloudflare Pages（纯静态） |
+| 🌍 国际版 | <https://intl.erhu8.dpdns.org/> | FastAPI Cloud |
 
 ---
 
-## 📦 Software List
+## 📦 软件清单
 
 {% for category, items in grouped %}
 ### {{ category }}
 
-| Software | Latest Version | Released | Download | Source |
-|----------|---------------|----------|----------|--------|
+| 软件 | 最新版本 | 发布日期 | 下载链接 | 来源 |
+|------|---------|---------|---------|------|
 {%- for it in items %}
-| {% if it.homepage %}[**{{ it.name }}**]({{ it.homepage }}){% else %}**{{ it.name }}**{% endif %}{% if it._stale or it.warnings %} ⚠️{% endif %} | `{{ it.version }}` | {{ it.released_at | fmt_date }} | {% for a in it.assets %}{% if asset_available(a) %}[{{ a.platform }}]({{ a.url }}){% else %}{{ a.platform }}（Unavailable; pending verification）{% endif %}{% if not loop.last %} · {% endif %}{% endfor %} | {{ it.source }}{% if it._stale_reason %}<br>⚠ {{ it._stale_reason }}{% endif %}{% if it.warnings %}<br>⚠ {{ it.warnings | join("; ") }}{% endif %} |
+| {% if it.homepage %}[**{{ it.name }}**]({{ it.homepage }}){% else %}**{{ it.name }}**{% endif %}{% if it._stale or it.warnings %} ⚠️{% endif %} | `{{ it.version }}` | {{ it.released_at | fmt_date }} | {% for a in it.assets %}{% if asset_available(a) %}[{{ a.platform }}]({{ a.url }}){% else %}{{ a.platform }}（暂不可用，待核验）{% endif %}{% if not loop.last %} · {% endif %}{% endfor %} | {{ it.source }}{% if it._stale_reason %}<br>⚠ {{ it._stale_reason }}{% endif %}{% if it.warnings %}<br>⚠ {{ it.warnings | join("; ") }}{% endif %} |
 {%- endfor %}
 
 {% endfor %}
 
 ---
 
-## 🔧 Adding New Software
+## 🔧 添加新软件
 
-The project's "control panel" is the [`packages/`](packages/) directory. To add a new software item, simply append an entry to the appropriate yaml file:
+仓库的"控制面板"是 [`packages/`](packages/) 目录。要加新软件，只需追加一项：
 
 ```yaml
-  - id: powertoys                    # unique slug
-    name: PowerToys                  # display name
-    category: Utilities              # README grouping
-    fetcher: github_release          # fetcher plugin (this one works for most)
+  - id: powertoys                    # 唯一短标识
+    name: PowerToys                  # 显示名
+    category: 通用工具               # README 分组
+    fetcher: github_release          # 抓取器（多数情况选这个）
     args:
       repo: microsoft/PowerToys
       assets:
         - { platform: win-x64, pattern: "PowerToysUserSetup-*-x64.exe" }
 ```
 
-After committing, the scheduled task (or an immediate push trigger) will pick it up on the next run, and the new row will appear in the README table.
+提交后定时任务（或 push 时立即触发）会在下次运行时自动抓取，README 表格里就会出现新行。
 
-### Available Fetchers
+### 可用的 fetcher
 
-| Fetcher | Use Case | Key `args` Fields | Version Source | Download Link |
-|---------|----------|-------------------|----------------|---------------|
-| `github_release` | Software published via GitHub Releases (**default choice**) | `repo`, `assets[].{platform, pattern}` | Release tag | Direct (GitHub asset) |
-| `vscode_official` | VS Code | `builds[].{platform, build}` (`build` is VSCode API `platform.os`, e.g. `win32-x64-user`) | VSCode Build Manifest API | Direct |
-| `chrome_official` | Google Chrome | `platforms[].{platform, os_key, channel, download_url}` | Google Version History API | Depends on `download_url` |
-| `steam_official` | Steam client | `platforms[].{platform, download_url}` | Valve Client Update API (build timestamp) | Depends on `download_url` |
-| `windows11_fido` | Windows 11 ISO | `lang` (default `Chinese (Simplified)`), `edition` (default `Pro`), `arch` (default `x64`) | ISO URL parsing (e.g. `25H2`) | Direct, ~24h expiry |
-| `ubuntu_releases` | Ubuntu | `platforms[].{platform, pattern}` | Ubuntu releases index | Direct |
-| `fedora_releases` | Fedora Workstation | `platforms[].{platform, pattern}` | Fedora release directory | Direct |
-| `baidunetdisk` | Baidu Netdisk | `platforms[].{platform, download_url}` | Page `__V20_VER__` (build date, not client version) | Depends on `download_url` |
-| `geek` | Geek Uninstaller | `platforms[].{platform, download_url}` | Official HTML parsing | Depends on `download_url` |
-| `everything` | Everything Search | `platforms[].{platform, download_url}` | Official HTML parsing | Depends on `download_url` |
-| `wechat_official` | WeChat PC | `platforms[].{platform, download_url}` | Official HTML parsing; falls back to today's date | Depends on `download_url` |
-| `wegame_official` | WeGame | `platforms[].{platform, download_url?}` (can be omitted entirely) | Today's date (SPA, no public API) | Fixed redirect page |
-| `nvidia_app` | NVIDIA App | `platforms[].{platform, download_url?}` (can be omitted entirely) | Today's date (SPA, no public API) | Fixed redirect page |
-| `qq_official` | Tencent QQ (QQNT) | `platforms[].{platform, download_url?}` (can be omitted entirely) | Today's date (SPA, no public API) | Fixed redirect page |
-| `yy_official` | YY Voice | `platforms[].{platform, download_url?}` (can be omitted entirely) | Today's date (SPA, no public API) | Fixed redirect page |
+| fetcher | 适用场景 | 关键 args 字段 | 版本号来源 | 下载链接 |
+|---------|---------|--------------|----------|--------|
+| `github_release` | GitHub Releases 发布的软件（**通用首选**） | `repo`、`assets[].{platform, pattern}` | Release tag | 直链（GitHub asset） |
+| `vscode_official` | VS Code | `builds[].{platform, build}`（`build` 为 VSCode API 的 `platform.os`，如 `win32-x64-user`） | VSCode Build Manifest API | 直链 |
+| `chrome_official` | Google Chrome | `platforms[].{platform, os_key, channel, download_url}` | Google Version History API | 取决于 `download_url` |
+| `steam_official` | Steam 客户端 | `platforms[].{platform, download_url}` | Valve Client Update API（构建时间戳） | 取决于 `download_url` |
+| `windows11_fido` | Windows 11 ISO | `lang`（默认 `Chinese (Simplified)`）、`edition`（默认 `Pro`）、`arch`（默认 `x64`） | ISO URL 解析（如 `24H2`） | 直链，约 24 h 有效 |
+| `ubuntu_releases` | Ubuntu | `platforms[].{platform, pattern}` | Ubuntu releases index | 直链 |
+| `fedora_releases` | Fedora Workstation | `platforms[].{platform, pattern}` | Fedora release directory | 直链 |
+| `baidunetdisk` | 百度网盘 | `platforms[].{platform, download_url}` | 页面 `__V20_VER__`（构建日期，非客户端版本） | 取决于 `download_url` |
+| `geek` | Geek Uninstaller | `platforms[].{platform, download_url}` | 官网 HTML 解析 | 取决于 `download_url` |
+| `everything` | Everything 搜索 | `platforms[].{platform, download_url}` | 官网 HTML 解析 | 取决于 `download_url` |
+| `wechat_official` | 微信 PC 客户端 | `platforms[].{platform, download_url}` | 官网 HTML 解析；失败时退为当天日期 | 取决于 `download_url` |
+| `wegame_official` | WeGame | `platforms[].{platform, download_url?}`（可整体省略；缺 URL 时使用下载页） | 当天日期（SPA，无公开 API） | 固定跳转页 |
+| `nvidia_app` | NVIDIA App | `platforms[].{platform, download_url?}`（可整体省略；缺 URL 时使用下载页） | 当天日期（SPA，无公开 API） | 固定跳转页 |
+| `qq_official` | 腾讯 QQ（QQNT） | `platforms[].{platform, download_url?}`（可整体省略；缺 URL 时使用下载页） | 当天日期（SPA，无公开 API） | 固定跳转页 |
+| `yy_official` | YY 语音 | `platforms[].{platform, download_url?}`（可整体省略；缺 URL 时使用下载页） | 当天日期（SPA，无公开 API） | 固定跳转页 |
 
-**`github_release` Extended Parameters**
+**`github_release` 扩展参数**
 
-- `tag_pattern` (regex) — For monorepos, filters release tags to find the target sub-product.
-- `release_scan_pages` (integer, default `1`) — Only meaningful with `tag_pattern`; controls pagination depth (30 releases per page).
-- `warnings` — Runtime field, not configured in yaml. When a platform's `pattern` doesn't match any asset in the release, that platform is skipped and recorded in `warnings`.
+- `tag_pattern`（正则）—— monorepo 场景，用正则从 release 列表中筛出目标子产品的 tag。
+- `release_scan_pages`（整数，默认 `1`）—— 仅当 `tag_pattern` 存在时有意义，控制翻页深度（每页 30 个 release）。
+- `warnings` —— 运行时字段，不在 yaml 中配置。当某个 platform 的 `pattern` 在当次 Release 的 assets 里未找到匹配文件时，该 platform 跳过并记入 `warnings`。
 
-**Direct Links vs Landing Pages**
+**直链 vs 跳转页**
 
-The system automatically determines link type from the `download_url` file extension:
+系统根据 `download_url` 的路径后缀自动判断类型，无需手动标注：
 
-- **Direct**: URL ends with `.exe` / `.dmg` / `.iso` / `.zip` / `.tar.gz` / `.msi` / `.pkg` etc., download starts immediately. Shown as **filled badges** in the web UI.
-- **Landing page**: URL points to a download webpage (no file extension), user must manually click download on that page. Shown as **outlined badges** in the web UI.
+- **直链**：URL 以 `.exe` / `.dmg` / `.iso` / `.zip` / `.tar.gz` / `.msi` / `.pkg` 等文件扩展名结尾，点击立即开始下载。Web 界面中对应**实心填充**徽章。
+- **跳转页**：URL 指向一个下载网页（无文件后缀），点击后需在页面上再手动选择下载。Web 界面中对应**空心描边**徽章。
 
-If the URL extension cannot be reliably determined, explicitly set `link_kind: direct` or `link_kind: landing_page` in the platform config in `packages/`.
+如 URL 后缀无法可靠判断，可在 `packages/` 的 platform 配置中显式写 `link_kind: direct` 或 `link_kind: landing_page`。
 
-**Version Field Semantics**
+**版本字段语义**
 
-Each entry in `data/latest.json` includes `version_kind` and `version_source`:
+`data/latest.json` 每个软件条目都会写入 `version_kind` 和 `version_source`：
 
-- `release_version`: Upstream release version, e.g. GitHub Release tag, official manifest.
-- `release_label`: Release label, e.g. `25H2` from Windows 11 ISO filename.
-- `build_date` / `page_date`: When upstream only exposes a build time or page update date.
-- `sync_date`: Upstream has no public version API; this field indicates the sync date.
+- `release_version`：上游发布版本号，例如 GitHub Release tag、官方 manifest。
+- `release_label`：发行标签，例如 Windows 11 ISO 文件名中的 `25H2`。
+- `build_date` / `page_date`：上游只暴露构建时间或页面更新时间时，展示为日期。
+- `sync_date`：上游没有公开版本 API，只能确认下载入口，本字段表示本次同步日期。
 
-Current data contract version: `schema_version: 2`.
+当前数据契约版本为 `schema_version: 2`。
 
 ---
 
-## ⚙️ Workflow
+## ⚙️ 工作流
 
-- **Scheduled**: Daily at UTC `01:00` (Beijing time 09:00)
-- **Manual**: Run workflow from the Actions page
-- **Config changes**: Triggered immediately on `packages/` push
+- **定时**：每日 UTC `01:00`（北京时间 09:00）
+- **手动**：仓库 Actions 页面点 *Run workflow*
+- **配置变更**：`packages/` 改动 push 时立即触发
 
-Workflow file: [`.github/workflows/sync.yml`](.github/workflows/sync.yml)
+工作流文件：[`.github/workflows/sync.yml`](.github/workflows/sync.yml)
 
-Raw fetched data: [`data/latest.json`](data/latest.json)
+抓取结果原始数据：[`data/latest.json`](data/latest.json)
 
-For local debugging, you can sync only specific packages:
+本地调试时可以只同步部分软件：
 
 ```bash
 python -m scripts.sync --only vscode,chrome
@@ -118,9 +118,9 @@ python -m scripts.render
 
 ---
 
-## 🤝 Credits
+## 🤝 致谢
 
-- [pbatard/Fido](https://github.com/pbatard/Fido) — Windows ISO direct link generator, GPL v3
-- All upstream official sources
+- [pbatard/Fido](https://github.com/pbatard/Fido) —— Windows ISO 直链生成器，GPL v3 协议
+- 各软件上游官方源
 
-> This repository is maintained automatically by GitHub Actions. README content is auto-generated — do not edit manually (overwritten on each sync).
+> 本仓库由 GitHub Actions 自动维护，README 内容请勿手动修改（每次同步会被覆盖）。
