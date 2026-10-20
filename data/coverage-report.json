@@ -1,14 +1,14 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-20T19:01:17+00:00",
-  "configured": 494,
-  "published": 494,
+  "generated_at": "2026-10-20T19:40:06+00:00",
+  "configured": 700,
+  "published": 700,
   "stale_packages": 31,
-  "verified_assets": 879,
+  "verified_assets": 1085,
   "unavailable_assets": 70,
-  "required_total": 95,
-  "required_covered": 94,
-  "required_coverage": 0.9894736842105263,
+  "required_total": 301,
+  "required_covered": 300,
+  "required_coverage": 0.9966777408637874,
   "obsolete_ids": [],
   "problems": [
     {
@@ -353,9 +353,9 @@
   "publication_exceptions": [
     {
       "id": "adobe-photoshop",
-      "reason": "User explicitly approved this release on 2026-10-21: keep Photoshop listed as pending verification and disable its download entries.",
+      "reason": "User-approved exception for the ongoing 2026-10-21 deployment and catalog expansion: keep Photoshop listed as pending verification with download entries disabled.",
       "approved_by": "funny-dog",
-      "at": "2026-10-20T19:00:35+00:00"
+      "at": "2026-10-20T19:39:34+00:00"
     }
   ]
 }
