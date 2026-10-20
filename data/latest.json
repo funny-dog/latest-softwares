@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-10-20T19:39:14+00:00",
+  "generated_at": "2026-10-20T20:17:00+00:00",
   "packages": [
     {
       "id": "windows11",
@@ -2536,7 +2536,7 @@
           "expires_at": null,
           "verification": {
             "status": "unverified",
-            "checked_at": "2026-10-20T19:39:34+00:00",
+            "checked_at": "2026-10-20T20:17:21+00:00",
             "url": "https://kimi.moonshot.cn/download",
             "final_url": "https://kimi.moonshot.cn/download",
             "redirects": [
@@ -2556,7 +2556,7 @@
           "expires_at": null,
           "verification": {
             "status": "unverified",
-            "checked_at": "2026-10-20T19:39:34+00:00",
+            "checked_at": "2026-10-20T20:17:21+00:00",
             "url": "https://kimi.moonshot.cn/download",
             "final_url": "https://kimi.moonshot.cn/download",
             "redirects": [
@@ -2602,7 +2602,7 @@
           "expires_at": null,
           "verification": {
             "status": "unverified",
-            "checked_at": "2026-10-20T19:39:34+00:00",
+            "checked_at": "2026-10-20T20:17:21+00:00",
             "url": "https://tongyi.aliyun.com/download",
             "reason": "redirect host needs review",
             "final_url": "http://www.qianwen.com/download",
@@ -2621,7 +2621,7 @@
           "expires_at": null,
           "verification": {
             "status": "unverified",
-            "checked_at": "2026-10-20T19:39:34+00:00",
+            "checked_at": "2026-10-20T20:17:21+00:00",
             "url": "https://tongyi.aliyun.com/download",
             "reason": "redirect host needs review",
             "final_url": "http://www.qianwen.com/download",
@@ -2666,7 +2666,7 @@
           "expires_at": null,
           "verification": {
             "status": "unverified",
-            "checked_at": "2026-10-20T19:39:34+00:00",
+            "checked_at": "2026-10-20T20:17:21+00:00",
             "url": "https://chatglm.cn/download",
             "final_url": "https://chatglm.cn/download",
             "redirects": [
@@ -2686,7 +2686,7 @@
           "expires_at": null,
           "verification": {
             "status": "unverified",
-            "checked_at": "2026-10-20T19:39:34+00:00",
+            "checked_at": "2026-10-20T20:17:21+00:00",
             "url": "https://chatglm.cn/download",
             "final_url": "https://chatglm.cn/download",
             "redirects": [
@@ -2732,7 +2732,7 @@
           "expires_at": null,
           "verification": {
             "status": "unverified",
-            "checked_at": "2026-10-20T19:39:34+00:00",
+            "checked_at": "2026-10-20T20:17:21+00:00",
             "url": "https://xinghuo.xfyun.cn/download",
             "final_url": "https://xinghuo.xfyun.cn/download",
             "redirects": [
@@ -2752,7 +2752,7 @@
           "expires_at": null,
           "verification": {
             "status": "unverified",
-            "checked_at": "2026-10-20T19:39:34+00:00",
+            "checked_at": "2026-10-20T20:17:21+00:00",
             "url": "https://xinghuo.xfyun.cn/download",
             "final_url": "https://xinghuo.xfyun.cn/download",
             "redirects": [
@@ -3446,7 +3446,7 @@
           "expires_at": null,
           "verification": {
             "status": "unverified",
-            "checked_at": "2026-10-20T19:39:34+00:00",
+            "checked_at": "2026-10-20T20:17:21+00:00",
             "url": "https://www.foxitsoftware.cn/downloads/",
             "final_url": "https://www.foxitsoftware.cn/downloads/",
             "redirects": [
@@ -3640,7 +3640,7 @@
           "expires_at": null,
           "verification": {
             "status": "restricted",
-            "checked_at": "2026-10-20T19:39:34+00:00",
+            "checked_at": "2026-10-20T20:17:21+00:00",
             "url": "https://apifox.com/download/",
             "final_url": "https://apifox.com/download/",
             "redirects": [
@@ -3660,7 +3660,7 @@
           "expires_at": null,
           "verification": {
             "status": "restricted",
-            "checked_at": "2026-10-20T19:39:34+00:00",
+            "checked_at": "2026-10-20T20:17:21+00:00",
             "url": "https://apifox.com/download/",
             "final_url": "https://apifox.com/download/",
             "redirects": [
@@ -3706,7 +3706,7 @@
           "expires_at": null,
           "verification": {
             "status": "unverified",
-            "checked_at": "2026-10-20T19:39:34+00:00",
+            "checked_at": "2026-10-20T20:17:21+00:00",
             "url": "https://uu.163.com/download/",
             "final_url": "https://uu.163.com/download/",
             "redirects": [
@@ -3847,7 +3847,7 @@
           "expires_at": null,
           "verification": {
             "status": "failed",
-            "checked_at": "2026-10-20T19:39:34+00:00",
+            "checked_at": "2026-10-20T20:17:21+00:00",
             "url": "https://www.kuwo.cn/download",
             "final_url": "https://www.kuwo.cn/",
             "redirects": [
@@ -4491,7 +4491,7 @@
           "expires_at": null,
           "verification": {
             "status": "unverified",
-            "checked_at": "2026-10-20T19:39:34+00:00",
+            "checked_at": "2026-10-20T20:17:21+00:00",
             "url": "https://www.wps.cn/product/wps-pdf",
             "final_url": "https://www.wps.cn",
             "redirects": [
@@ -4539,7 +4539,7 @@
           "expires_at": null,
           "verification": {
             "status": "failed",
-            "checked_at": "2026-10-20T19:39:34+00:00",
+            "checked_at": "2026-10-20T20:17:21+00:00",
             "url": "https://mail.163.com/dashi/download.htm",
             "final_url": "https://mail.163.com/dashi/download.htm",
             "redirects": [
@@ -4559,7 +4559,7 @@
           "expires_at": null,
           "verification": {
             "status": "failed",
-            "checked_at": "2026-10-20T19:39:34+00:00",
+            "checked_at": "2026-10-20T20:17:21+00:00",
             "url": "https://mail.163.com/dashi/download.htm",
             "final_url": "https://mail.163.com/dashi/download.htm",
             "redirects": [
@@ -6217,7 +6217,7 @@
           "expires_at": null,
           "verification": {
             "status": "unverified",
-            "checked_at": "2026-10-20T19:39:34+00:00",
+            "checked_at": "2026-10-20T20:17:21+00:00",
             "url": "https://lol.qq.com/download.shtml",
             "final_url": "https://lol.qq.com/download.shtml",
             "redirects": [
@@ -6551,7 +6551,7 @@
           "expires_at": null,
           "verification": {
             "status": "unverified",
-            "checked_at": "2026-10-20T19:39:34+00:00",
+            "checked_at": "2026-10-20T20:17:21+00:00",
             "url": "https://xyq.163.com/download/",
             "final_url": "https://xyq.163.com/download/",
             "redirects": [
@@ -29220,7 +29220,7 @@
           "expires_at": null,
           "verification": {
             "status": "failed",
-            "checked_at": "2026-10-20T19:39:34+00:00",
+            "checked_at": "2026-10-20T20:17:21+00:00",
             "url": "https://github.com/Ryubing/Ryujinx/releases",
             "final_url": "https://github.com/Ryubing/Ryujinx/releases",
             "redirects": [
@@ -29240,7 +29240,7 @@
           "expires_at": null,
           "verification": {
             "status": "failed",
-            "checked_at": "2026-10-20T19:39:34+00:00",
+            "checked_at": "2026-10-20T20:17:21+00:00",
             "url": "https://github.com/Ryubing/Ryujinx/releases",
             "final_url": "https://github.com/Ryubing/Ryujinx/releases",
             "redirects": [
@@ -29260,7 +29260,7 @@
           "expires_at": null,
           "verification": {
             "status": "failed",
-            "checked_at": "2026-10-20T19:39:34+00:00",
+            "checked_at": "2026-10-20T20:17:21+00:00",
             "url": "https://github.com/Ryubing/Ryujinx/releases",
             "final_url": "https://github.com/Ryubing/Ryujinx/releases",
             "redirects": [
@@ -31233,7 +31233,7 @@
           "expires_at": null,
           "verification": {
             "status": "unverified",
-            "checked_at": "2026-10-20T19:39:34+00:00",
+            "checked_at": "2026-10-20T20:17:21+00:00",
             "url": "https://github.com/TriliumNext/Notes/releases",
             "final_url": "https://github.com/TriliumNext/Notes/releases",
             "redirects": [
@@ -31253,7 +31253,7 @@
           "expires_at": null,
           "verification": {
             "status": "unverified",
-            "checked_at": "2026-10-20T19:39:34+00:00",
+            "checked_at": "2026-10-20T20:17:21+00:00",
             "url": "https://github.com/TriliumNext/Notes/releases",
             "final_url": "https://github.com/TriliumNext/Notes/releases",
             "redirects": [
@@ -31273,7 +31273,7 @@
           "expires_at": null,
           "verification": {
             "status": "unverified",
-            "checked_at": "2026-10-20T19:39:34+00:00",
+            "checked_at": "2026-10-20T20:17:21+00:00",
             "url": "https://github.com/TriliumNext/Notes/releases",
             "final_url": "https://github.com/TriliumNext/Notes/releases",
             "redirects": [
@@ -35046,7 +35046,7 @@
           "expires_at": null,
           "verification": {
             "status": "failed",
-            "checked_at": "2026-10-20T19:39:34+00:00",
+            "checked_at": "2026-10-20T20:17:21+00:00",
             "url": "https://github.com/midnight-commander/mc/releases",
             "final_url": "https://github.com/midnight-commander/mc/releases",
             "redirects": [
@@ -35364,7 +35364,7 @@
           "expires_at": null,
           "verification": {
             "status": "unverified",
-            "checked_at": "2026-10-20T19:39:34+00:00",
+            "checked_at": "2026-10-20T20:17:21+00:00",
             "url": "https://github.com/aristocratos/btop/releases",
             "final_url": "https://github.com/aristocratos/btop/releases",
             "redirects": [
@@ -44233,7 +44233,7 @@
           "expires_at": null,
           "verification": {
             "status": "failed",
-            "checked_at": "2026-10-20T19:39:34+00:00",
+            "checked_at": "2026-10-20T20:17:21+00:00",
             "url": "https://www.deepl.com/macos/app/installer/download",
             "final_url": "https://www.deepl.com/en/macos/app/installer/download",
             "redirects": [
@@ -44452,7 +44452,7 @@
           "expires_at": null,
           "verification": {
             "status": "unverified",
-            "checked_at": "2026-10-20T19:39:34+00:00",
+            "checked_at": "2026-10-20T20:17:21+00:00",
             "url": "https://xmind.app/download/",
             "reason": "redirect host needs review",
             "final_url": "https://xmind.com:443/download/",
@@ -44548,7 +44548,7 @@
           "expires_at": null,
           "verification": {
             "status": "failed",
-            "checked_at": "2026-10-20T19:39:34+00:00",
+            "checked_at": "2026-10-20T20:17:21+00:00",
             "url": "https://termius.com/download/mac",
             "final_url": "https://termius.com/download/mac",
             "redirects": [
@@ -45221,7 +45221,7 @@
           "expires_at": null,
           "verification": {
             "status": "restricted",
-            "checked_at": "2026-10-20T19:39:34+00:00",
+            "checked_at": "2026-10-20T20:17:21+00:00",
             "url": "https://www.adobe.com/products/photoshop.html",
             "final_url": "https://www.adobe.com/products/photoshop.html",
             "redirects": [
@@ -45241,7 +45241,7 @@
           "expires_at": null,
           "verification": {
             "status": "restricted",
-            "checked_at": "2026-10-20T19:39:34+00:00",
+            "checked_at": "2026-10-20T20:17:21+00:00",
             "url": "https://www.adobe.com/products/photoshop.html",
             "final_url": "https://www.adobe.com/products/photoshop.html",
             "redirects": [
@@ -45504,9 +45504,9 @@
       }
     ]
   },
-  "release_id": "bd70139a36828fe4e478",
-  "checked_at": "2026-10-20T19:39:34+00:00",
-  "verified_at": "2026-10-20T19:39:34+00:00",
+  "release_id": "b90b1744b69f18aeef97",
+  "checked_at": "2026-10-20T20:17:21+00:00",
+  "verified_at": "2026-10-20T20:17:21+00:00",
   "quality": {
     "required_total": 301,
     "required_covered": 300,
@@ -45516,9 +45516,9 @@
     "publication_exceptions": [
       {
         "id": "adobe-photoshop",
-        "reason": "User-approved exception for the ongoing 2026-10-21 deployment and catalog expansion: keep Photoshop listed as pending verification with download entries disabled.",
+        "reason": "迁移国内版到 Cloudflare Pages 期间放行；adobe-photoshop 上游限流无法验证，条目保留但禁用下载",
         "approved_by": "funny-dog",
-        "at": "2026-10-20T19:39:34+00:00"
+        "at": "2026-10-20T20:17:21+00:00"
       }
     ]
   }
