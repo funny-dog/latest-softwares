@@ -1237,14 +1237,19 @@ packages:
 - id: raycast
   name: Raycast
   category: System Utilities
-  desc_cn: macOS 效率启动器，替代 Spotlight，支持插件扩展
-  desc_en: macOS productivity launcher replacing Spotlight with plugin support
+  desc_cn: macOS 效率启动器，支持插件扩展；当前最新版要求 Apple Silicon 与 macOS Tahoe 或更新版本
+  desc_en: macOS productivity launcher with extensions; current release requires Apple Silicon and macOS Tahoe or later
   homepage: https://www.raycast.com
   fetcher: download_page
   args:
+    source: Official latest Apple Silicon installer; macOS Tahoe or newer required
     platforms:
-    - platform: mac-universal
-      download_url: https://releases.raycast.com/releases/latest/download?arch=universal&channel=stable
+    - platform: mac-arm64
+      download_url: https://x.raycast-releases.com/download/web?platform=macos&architecture=arm64
+      link_kind: direct
+  verification:
+    allowed_hosts:
+    - x-r2.raycast-releases.com
 - id: deepl
   name: DeepL
   category: Utilities
@@ -1493,7 +1498,7 @@ packages:
   editions:
   - cn
   - intl
-  homepage: https://www.adobe.com/products/photoshop.html
+  homepage: https://helpx.adobe.com/cn/photoshop/desktop.html
   priority: critical
   verification:
     identity_terms:
@@ -1502,9 +1507,9 @@ packages:
   args:
     platforms:
     - platform: win-x64
-      download_url: https://www.adobe.com/products/photoshop.html
+      download_url: https://helpx.adobe.com/cn/photoshop/desktop.html
     - platform: mac-universal
-      download_url: https://www.adobe.com/products/photoshop.html
+      download_url: https://helpx.adobe.com/cn/photoshop/desktop.html
   desc_cn: Adobe 专业图像编辑软件，通过官网试用或购买后安装
   desc_en: Professional image editor; install through the official trial or subscription
 - id: adobe-reader

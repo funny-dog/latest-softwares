@@ -106,7 +106,11 @@ def verify_link(asset: dict, config: dict, *, now: datetime | None = None) -> di
                 allow_redirects=False,
                 timeout=15,
                 retries=1,
-                headers=browser_headers({"Range": "bytes=0-65535"}),
+                headers=browser_headers(
+                    {"Range": "bytes=0-65535"}
+                    if is_direct_link(url, asset.get("link_kind"))
+                    else None
+                ),
             )
             chain.append(current)
             if response.status_code in {301, 302, 303, 307, 308}:

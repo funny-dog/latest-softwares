@@ -137,3 +137,25 @@ def test_runtime_honors_verification_and_expiry():
     assert not asset_available(asset, NOW + timedelta(hours=2))
     assert not asset_available({**asset, "verification": {"status": "restricted"}}, NOW)
     assert not asset_available({"url": "javascript:alert(1)"}, NOW)
+
+
+@pytest.mark.parametrize("kind,has_range", [("direct", True), ("landing_page", False)])
+def test_range_header_only_used_for_binary_downloads(monkeypatch, kind, has_range):
+    calls = []
+    response = Response(
+        b"<html>Example App download</html>", headers={"Content-Type": "text/html"}
+    )
+
+    def get(url, **kwargs):
+        calls.append(kwargs["headers"])
+        return response
+
+    monkeypatch.setattr(link_verifier, "get", get)
+    link_verifier.verify_link(
+        {"url": CONFIG["homepage"], "platform": "win-x64", "link_kind": kind},
+        CONFIG,
+        now=NOW,
+    )
+    assert ("Range" in calls[0]) is has_range
+    assert response.read_sizes == [65536]
+    assert response.closed

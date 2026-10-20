@@ -1065,8 +1065,9 @@
         "intl"
       ],
       "platforms": [
-        "mac-universal"
-      ]
+        "mac-arm64"
+      ],
+      "notes": "Current Raycast release requires Apple Silicon; do not label the arm64 installer as universal."
     },
     {
       "id": "orbstack",

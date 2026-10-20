@@ -23,6 +23,7 @@ def test_firefox_fetcher_uses_mozilla_product_details(monkeypatch):
     assert result.version == "145.0.1"
     assert result.version_source == firefox.VERSION_SOURCE
     assert [asset.platform for asset in result.assets] == ["win-x64", "mac-universal"]
+    assert all(asset.link_kind == "direct" for asset in result.assets)
     assert "product=firefox-latest-ssl" in result.assets[0].url
     assert "lang=en-US" in result.assets[0].url
 

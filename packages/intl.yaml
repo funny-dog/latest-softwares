@@ -510,6 +510,9 @@ packages:
       os: linux64
   desc_cn: Mozilla 开发的开源浏览器，注重隐私和开放网络
   desc_en: Open-source browser by Mozilla focused on privacy and open web
+  verification:
+    allowed_hosts:
+    - download-installer.cdn.mozilla.net
 - id: nodejs
   name: Node.js
   category: Developer Tools
@@ -974,19 +977,19 @@ packages:
   category: Utilities
   editions:
   - intl
-  homepage: https://www.qbittorrent.org/download
+  homepage: https://github.com/qbittorrent/qBittorrent/releases/latest
   fetcher: download_page
   args:
     source: Official qBittorrent download page; no public version API
     platforms:
     - platform: win-x64
-      download_url: https://www.qbittorrent.org/download
+      download_url: https://github.com/qbittorrent/qBittorrent/releases/latest
       link_kind: landing_page
     - platform: mac-universal
-      download_url: https://www.qbittorrent.org/download
+      download_url: https://github.com/qbittorrent/qBittorrent/releases/latest
       link_kind: landing_page
     - platform: linux-x64
-      download_url: https://www.qbittorrent.org/download
+      download_url: https://github.com/qbittorrent/qBittorrent/releases/latest
       link_kind: landing_page
   desc_cn: 免费开源的 BitTorrent 客户端，无广告无捆绑
   desc_en: Free open-source BitTorrent client without ads or bundled software
@@ -2624,11 +2627,11 @@ packages:
   homepage: https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html
   fetcher: download_page
   args:
-    source: Official project download page; no stable public release asset API
+    source: Official latest installer endpoint; version label is sync date
     platforms:
     - platform: win-x64
-      download_url: https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html
-      link_kind: landing_page
+      download_url: https://the.earth.li/~sgtatham/putty/latest/w64/putty.exe
+      link_kind: direct
   desc_cn: 经典的 SSH 和 Telnet 客户端，Windows 远程连接必备工具
   desc_en: Classic SSH and Telnet client, essential remote connection tool for Windows
 - id: cloudflare-warp
@@ -4274,6 +4277,9 @@ packages:
       link_kind: landing_page
   desc_cn: 微软基于 Chromium 的浏览器，深度集成 Windows 和 AI
   desc_en: Microsoft's Chromium-based browser with deep Windows and AI integration
+  verification:
+    allowed_hosts:
+    - explore.microsoft.com
 - id: opera
   name: Opera Browser
   category: Browsers
@@ -4563,14 +4569,14 @@ packages:
   homepage: https://www.google.com/drive/download/
   fetcher: download_page
   args:
-    source: Official Google Drive download page; no public version API
+    source: Official latest installer endpoint; version label is sync date
     platforms:
     - platform: win-x64
-      download_url: https://www.google.com/drive/download/
-      link_kind: landing_page
+      download_url: https://dl.google.com/drive-file-stream/GoogleDriveSetup.exe
+      link_kind: direct
     - platform: mac-universal
-      download_url: https://www.google.com/drive/download/
-      link_kind: landing_page
+      download_url: https://dl.google.com/drive-file-stream/GoogleDrive.dmg
+      link_kind: direct
   desc_cn: Google 云存储桌面客户端，同步文件到本地
   desc_en: Google cloud storage desktop client for local file sync
 - id: onedrive
@@ -4833,19 +4839,19 @@ packages:
   category: Network & Proxy
   editions:
   - intl
-  homepage: https://filezilla-project.org/download.php?show_all=1
+  homepage: https://filezilla-project.org/download.php?type=client
   fetcher: download_page
   args:
     source: Official FileZilla Client download page; no public version API
     platforms:
     - platform: win-x64
-      download_url: https://filezilla-project.org/download.php?show_all=1
+      download_url: https://filezilla-project.org/download.php?type=client
       link_kind: landing_page
     - platform: mac-universal
-      download_url: https://filezilla-project.org/download.php?show_all=1
+      download_url: https://filezilla-project.org/download.php?type=client
       link_kind: landing_page
     - platform: linux-x64
-      download_url: https://filezilla-project.org/download.php?show_all=1
+      download_url: https://filezilla-project.org/download.php?type=client
       link_kind: landing_page
   desc_cn: 免费的跨平台 FTP 客户端，支持多种文件传输协议
   desc_en: Free cross-platform FTP client supporting multiple file transfer protocols
@@ -4915,19 +4921,19 @@ packages:
   category: Utilities
   editions:
   - intl
-  homepage: https://anydesk.com/en/downloads
+  homepage: https://support.anydesk.com/docs/install-anydesk
   fetcher: download_page
   args:
     source: Official AnyDesk downloads page; no public version API
     platforms:
     - platform: win-x64
-      download_url: https://anydesk.com/en/downloads
+      download_url: https://support.anydesk.com/docs/install-anydesk
       link_kind: landing_page
     - platform: mac-universal
-      download_url: https://anydesk.com/en/downloads
+      download_url: https://support.anydesk.com/docs/install-anydesk
       link_kind: landing_page
     - platform: linux-x64
-      download_url: https://anydesk.com/en/downloads
+      download_url: https://support.anydesk.com/docs/install-anydesk
       link_kind: landing_page
   desc_cn: 远程桌面软件，低延迟跨设备远程控制
   desc_en: Remote desktop software with low-latency cross-device remote control
@@ -5022,16 +5028,19 @@ packages:
   homepage: https://store.epicgames.com/download
   fetcher: download_page
   args:
-    source: Official Epic Games Store download page; no public version API
+    source: Official latest installer endpoint; version label is sync date
     platforms:
     - platform: win-x64
-      download_url: https://store.epicgames.com/download
-      link_kind: landing_page
+      download_url: https://launcher-public-service-prod06.ol.epicgames.com/launcher/api/installer/download/EpicGamesLauncherInstaller.msi
+      link_kind: direct
     - platform: mac-universal
-      download_url: https://store.epicgames.com/download
-      link_kind: landing_page
+      download_url: https://launcher-public-service-prod06.ol.epicgames.com/launcher/api/installer/download/EpicGamesLauncher.dmg
+      link_kind: direct
   desc_cn: Epic Games 官方游戏平台，独占游戏和每周免费领取
   desc_en: Official Epic Games platform with exclusives and weekly free games
+  verification:
+    allowed_hosts:
+    - epicgames-download1.akamaized.net
 - id: anki
   name: Anki
   category: Productivity

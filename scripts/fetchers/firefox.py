@@ -41,7 +41,7 @@ def fetch(args: dict[str, Any]) -> FetchResult:
                     os=spec["os"],
                     lang=spec.get("lang", lang),
                 ),
-                link_kind=spec.get("link_kind"),
+                link_kind=spec.get("link_kind", "direct"),
             )
         )
 
