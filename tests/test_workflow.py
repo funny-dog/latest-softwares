@@ -6,23 +6,35 @@ from pathlib import Path
 
 WORKFLOW = Path(".github/workflows/sync.yml")
 DEPLOY_INTL = Path(".github/workflows/deploy.yml")
-DEPLOY_CN = Path(".github/workflows/deploy-cn.yml")
+DEPLOY_CN = Path(".github/workflows/deploy-cn-cloudflare.yml")
 PYTHON_LINT_TEST_ACTION = Path(".github/actions/python-lint-test/action.yml")
 SCRIPTS_DIR = Path("scripts")
 
 
-def test_deploy_job_has_secret_preflight():
-    """国内版(阿里云)部署前必须 fail-fast 校验 secret —— 部署拆分后位于 deploy-cn.yml。"""
+def test_deploy_job_guards_against_backend_url_in_static_build():
+    """国内版是纯静态站，产物若注入 public_site_url 会让下载按钮指向不存在的 API。"""
     workflow = DEPLOY_CN.read_text(encoding="utf-8")
 
-    assert "Validate deploy secrets" in workflow
-    for name in (
-        "ALIYUN_DEPLOY_KEY",
-        "ALIYUN_HOST",
-        "ALIYUN_USER",
-        "ALIYUN_DEPLOY_PATH",
-    ):
+    # 部署必须能读到 Cloudflare 凭证
+    for name in ("CLOUDFLARE_API_TOKEN", "CLOUDFLARE_ACCOUNT_ID"):
         assert name in workflow
+
+    # 必须拒绝带后端地址的产物
+    assert "Guard against backend URLs in static build" in workflow
+    assert "public_site_url" in workflow
+    assert "exit 1" in workflow
+
+
+def test_deploy_cn_uses_direct_upload_not_git_integration():
+    """用 Direct Upload 上传 sync 产出的 dist-cn，避免消耗 Pages 构建额度。"""
+    workflow = DEPLOY_CN.read_text(encoding="utf-8")
+
+    assert "pages deploy dist-cn" in workflow
+    assert "latest-softwares-cn" in workflow
+    # 不允许在部署阶段重新构建前端
+    assert "build_web.py" not in workflow
+    assert "  push:" not in workflow
+    assert "DEPLOY_CN_CF_ENABLED" in workflow
 
 
 def test_workflow_dispatch_exposes_sync_filters():
@@ -69,16 +81,27 @@ def test_publication_uses_only_validated_data_and_both_editions():
     assert "git-auto-commit" not in str(jobs["sync-merge"])
 
 
-def test_deploys_pin_source_data_and_frontend_to_same_successful_run():
+def test_deploys_pin_artifacts_to_same_successful_run():
+    """两个部署 workflow 都必须锁定同一个成功的 sync run，不能部署来路不明的产物。"""
     for path in (DEPLOY_INTL, DEPLOY_CN):
         workflow = path.read_text(encoding="utf-8")
         assert 'workflows: ["Sync Latest Software"]' in workflow
         assert "github.event.workflow_run.conclusion == 'success'" in workflow
-        assert "ref: ${{ steps.release.outputs.sha }}" in workflow
-        assert workflow.count("run-id: ${{ steps.release.outputs.run_id }}") == 2
-        assert "name: validated-data" in workflow
+        assert "run-id: ${{ steps.release.outputs.run_id }}" in workflow
         assert "python scripts/build_web.py" not in workflow
         assert "  push:" not in workflow
+
+    # 国际版：检出源码 + 下载验证数据与前端（后端要跑起来）
+    intl = DEPLOY_INTL.read_text(encoding="utf-8")
+    assert "ref: ${{ steps.release.outputs.sha }}" in intl
+    assert intl.count("run-id: ${{ steps.release.outputs.run_id }}") == 2
+    assert "name: validated-data" in intl
+
+    # 国内版：纯静态，只需要前端产物，不检出源码
+    cn = DEPLOY_CN.read_text(encoding="utf-8")
+    assert cn.count("run-id: ${{ steps.release.outputs.run_id }}") == 1
+    assert "name: dist-cn" in cn
+    assert "actions/checkout" not in cn
 
 
 def test_sync_filters_are_applied_before_partitioning_and_windows_fetcher_runs_on_windows():
