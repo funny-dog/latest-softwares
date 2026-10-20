@@ -23,7 +23,7 @@ packages:
   editions:
   - cn
   - intl
-  homepage: https://fedoraproject.org/workstation/download
+  homepage: https://fedoraproject.org/workstation/download/
   fetcher: fedora_releases
   args:
     edition_path: Workstation/x86_64/iso

@@ -1,6 +1,10 @@
 from __future__ import annotations
 
 import json
+
+import pytest
+
+from app_core.downloads import asset_available
 from datetime import datetime, timedelta, timezone
 
 from scripts import link_health_summary, link_utils, validate_links
@@ -370,3 +374,71 @@ def test_validate_links_raises_per_host_connection_limit(tmp_path, monkeypatch):
     validate_links.validate_and_fix()
     assert limits == [validate_links.MAX_CONNECTIONS_PER_HOST]
     assert validate_links.MAX_CONNECTIONS_PER_HOST >= validate_links.MAX_WORKERS
+
+
+def test_explicit_exception_preserves_unavailable_asset_and_does_not_persist(
+    tmp_path, monkeypatch
+):
+    path, _ = _setup_validation(tmp_path, monkeypatch)
+    monkeypatch.setenv("GITHUB_ACTOR", "reviewer")
+    monkeypatch.setattr(validate_links, "_refetch_package", lambda c: None)
+    monkeypatch.setattr(
+        validate_links,
+        "verify_link",
+        lambda *a, **kw: {
+            "status": "restricted",
+            "reason": "HTTP 403",
+            "checked_at": datetime.now(timezone.utc).isoformat(),
+        },
+    )
+    assert (
+        validate_links.validate_and_fix(
+            gate=True,
+            allow_unverified_required={"example"},
+            exception_reason="User approved disabled entry",
+        )
+        == 0
+    )
+    data = json.loads(path.read_text())
+    assert data["quality"]["required_covered"] == 0
+    assert data["quality"]["publication_exceptions"][0]["approved_by"] == "reviewer"
+    assert not asset_available(data["packages"][0]["assets"][0])
+    report = json.loads((tmp_path / "coverage-report.json").read_text())
+    assert report["gate_errors"] == []
+    assert report["strict_gate_errors"] == ["example"]
+    assert validate_links.validate_and_fix(gate=True) == 1
+    assert json.loads(path.read_text())["quality"]["publication_exceptions"] == []
+
+
+def test_exception_cannot_waive_missing_software_or_platform(tmp_path, monkeypatch):
+    path, _ = _setup_validation(tmp_path, monkeypatch)
+    data = json.loads(path.read_text())
+    data["packages"][0]["assets"] = []
+    path.write_text(json.dumps(data))
+    assert (
+        validate_links.validate_and_fix(
+            gate=True,
+            allow_unverified_required={"example"},
+            exception_reason="User approval",
+        )
+        == 1
+    )
+    assert json.loads(path.read_text())["quality"]["publication_exceptions"] == []
+
+
+def test_exception_requires_reason_gate_and_known_required_id(tmp_path, monkeypatch):
+    _setup_validation(tmp_path, monkeypatch)
+    with pytest.raises(ValueError, match="reason"):
+        validate_links.validate_and_fix(
+            gate=True, allow_unverified_required={"example"}
+        )
+    with pytest.raises(ValueError, match="--gate"):
+        validate_links.validate_and_fix(
+            allow_unverified_required={"example"}, exception_reason="Approval"
+        )
+    with pytest.raises(ValueError, match="required software"):
+        validate_links.validate_and_fix(
+            gate=True,
+            allow_unverified_required={"unknown"},
+            exception_reason="Approval",
+        )

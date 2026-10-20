@@ -16,6 +16,16 @@ on:
         required: false
         default: ''
         type: string
+      allow_unverified_required:
+        description: '仅本次人工批准：保留但禁用待核验重要软件入口（逗号分隔 id）'
+        required: false
+        default: ''
+        type: string
+      exception_reason:
+        description: '发布例外的人工批准原因；有例外时必填'
+        required: false
+        default: ''
+        type: string
   push:
     branches: [main, master]
     paths:
@@ -316,7 +326,14 @@ jobs:
       - name: Validate links and write health report
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: python scripts/validate_links.py --gate
+          ALLOW_UNVERIFIED_REQUIRED: ${{ inputs.allow_unverified_required }}
+          EXCEPTION_REASON: ${{ inputs.exception_reason }}
+        run: |
+          ARGS=()
+          if [ -n "$ALLOW_UNVERIFIED_REQUIRED" ]; then
+            ARGS+=(--allow-unverified-required "$ALLOW_UNVERIFIED_REQUIRED" --exception-reason "$EXCEPTION_REASON")
+          fi
+          python scripts/validate_links.py --gate "${ARGS[@]}"
 
       - name: Save link check history
         if: ${{ always() && hashFiles('data/link-state.json') != '' }}

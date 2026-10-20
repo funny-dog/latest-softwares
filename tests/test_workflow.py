@@ -165,3 +165,16 @@ def test_workflows_install_python_deps_with_uv():
         assert "astral-sh/setup-uv@" in workflow, path
         assert "cache: 'pip'" not in workflow, path
         assert re.search(r"^\s*run: pip install", workflow, re.M) is None, path
+
+
+def test_publication_exceptions_are_explicit_dispatch_inputs():
+    import yaml
+
+    workflow = yaml.safe_load(WORKFLOW.read_text())
+    inputs = workflow[True]["workflow_dispatch"]["inputs"]
+    assert inputs["allow_unverified_required"]["default"] == ""
+    assert inputs["exception_reason"]["default"] == ""
+    check = str(workflow["jobs"]["link-check"])
+    assert "inputs.allow_unverified_required" in check
+    assert "inputs.exception_reason" in check
+    assert '--allow-unverified-required "$ALLOW_UNVERIFIED_REQUIRED"' in check

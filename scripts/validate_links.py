@@ -90,13 +90,23 @@ def _config_fingerprint(config: dict, asset: dict) -> str:
 
 
 def validate_and_fix(
-    *, force: bool = False, budget: int = 2000, gate: bool = False
+    *,
+    force: bool = False,
+    budget: int = 2000,
+    gate: bool = False,
+    allow_unverified_required: set[str] | None = None,
+    exception_reason: str = "",
 ) -> int:
     data = json.loads(DATA_FILE.read_text(encoding="utf-8"))
     entries = load_packages_config()["packages"]
     configs = {p["id"]: p for p in entries}
     baseline = load_baseline()
     important = {p["id"] for p in baseline["required"]}
+    allowed = allow_unverified_required or set()
+    if allowed and (not gate or not exception_reason.strip()):
+        raise ValueError("publication exceptions require --gate and a reason")
+    if allowed - important:
+        raise ValueError("publication exceptions must name required software")
     state_file = DATA_FILE.with_name("link-state.json")
     try:
         state = json.loads(state_file.read_text(encoding="utf-8"))
@@ -351,6 +361,23 @@ def validate_and_fix(
     ).hexdigest()[:20]
     data["checked_at"] = now.isoformat(timespec="seconds")
     coverage = coverage_report(entries, data, baseline, now=now)
+    coverage["strict_gate_errors"] = list(coverage["gate_errors"])
+    exceptions = []
+    for problem in coverage["problems"]:
+        if problem["id"] in allowed and all(
+            issue.startswith("unverified_or_unavailable:")
+            for issue in problem["issues"]
+        ):
+            coverage["gate_errors"].remove(problem["id"])
+            exceptions.append(
+                {
+                    "id": problem["id"],
+                    "reason": exception_reason.strip(),
+                    "approved_by": os.environ.get("GITHUB_ACTOR", "local operator"),
+                    "at": data["checked_at"],
+                }
+            )
+    coverage["publication_exceptions"] = exceptions
     if not coverage["gate_errors"]:
         data["verified_at"] = data["checked_at"]
     else:
@@ -363,6 +390,7 @@ def validate_and_fix(
             "verified_assets",
             "unavailable_assets",
             "stale_packages",
+            "publication_exceptions",
         )
     }
     failed = [p for p in data["packages"] if p.get("_stale")]
@@ -377,6 +405,8 @@ def validate_and_fix(
         ],
     }
     report["gate_errors"] = coverage["gate_errors"]
+    report["strict_gate_errors"] = coverage["strict_gate_errors"]
+    report["publication_exceptions"] = exceptions
     state["assets"] = {k: v for k, v in state["assets"].items() if k in active_keys}
     _write_json(DATA_FILE, data)
     _write_json(state_file, state)
@@ -411,10 +441,30 @@ def main(argv: list[str] | None = None) -> int:
         action="store_true",
         help="Block publication on missing required software/entrypoints",
     )
+    parser.add_argument(
+        "--allow-unverified-required",
+        default="",
+        metavar="ID[,ID...]",
+        help="Explicit per-run exception; entry stays present and unavailable",
+    )
+    parser.add_argument("--exception-reason", default="", help="Human approval reason")
     args = parser.parse_args(argv)
     if args.budget < 1:
         parser.error("budget must be positive")
-    return validate_and_fix(force=args.force, budget=args.budget, gate=args.gate)
+    try:
+        return validate_and_fix(
+            force=args.force,
+            budget=args.budget,
+            gate=args.gate,
+            allow_unverified_required={
+                p.strip()
+                for p in args.allow_unverified_required.split(",")
+                if p.strip()
+            },
+            exception_reason=args.exception_reason,
+        )
+    except ValueError as exc:
+        parser.error(str(exc))
 
 
 if __name__ == "__main__":

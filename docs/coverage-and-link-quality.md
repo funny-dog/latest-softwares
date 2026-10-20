@@ -32,6 +32,10 @@ uv run python -m scripts.build_web --edition cn
 uv run python -m scripts.build_web --edition intl
 ```
 
+手动发布可显式提供 `--allow-unverified-required ID[,ID...] --exception-reason "人工批准原因"`。这只允许已存在、平台齐全但验证未通过的必收录条目作为发布例外；不会放行目录缺失、数据缺失、平台缺失或版本/edition 问题，也不会把资产改成已验证。前端与下载 API 仍禁用该入口。报告保存实际覆盖数量、`strict_gate_errors`、批准人、时间与原因，快照 `quality.publication_exceptions` 保存本轮例外。标志不从旧快照继承，定时运行仍是严格门禁。
+
+Actions 的 `workflow_dispatch` 对应输入为 `allow_unverified_required` / `exception_reason`，默认均为空。2026-10-21 用户明确批准仅本次允许 `adobe-photoshop` 保留为待核验、禁用下载，其余软件仍必须通过原门禁。
+
 仅在 `--gate` 成功后发布；本地调试可用 `--force` 忽略检查计划，`--budget N` 限制本轮验证操作数。默认预算 2000；预算不足的未知入口不能获得验证成功状态。
 
 - 每个 HTTP 响应最多读取 64 KiB，限制并发，不下载完整安装包。服务器忽略 Range 也会关闭流。
