@@ -48,7 +48,12 @@ web/dist/
 
 # 本地配置文件
 AGENTS.md
+CLAUDE.md
+TODO.md
 uv.lock
+
+# AI agent 生成的计划/设计文档（本地保留，不入库）
+docs/superpowers/
 
 # 自动发现游标与审查记录由 Actions cache/artifact 保存
 data/discovery-state.json
