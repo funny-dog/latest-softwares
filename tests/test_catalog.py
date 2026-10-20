@@ -80,6 +80,79 @@ def test_coverage_reports_catalog_data_platform_and_verification_gaps():
     )
 
 
+def test_exemption_unblocks_only_restricted_upstream():
+    """长期例外只该放行"上游拒绝访问"，真实失效仍必须阻塞发布。"""
+    now = datetime.now(timezone.utc)
+    baseline = {
+        "required": [
+            {
+                "id": "example",
+                "platforms": ["win-x64"],
+                "editions": ["cn", "intl"],
+                "exemptions": {"reason": "上游 403", "review_by": "2027-01-01"},
+            }
+        ]
+    }
+
+    def build(status, valid_until=None):
+        return {
+            "packages": [
+                {
+                    "id": "example",
+                    "assets": [
+                        {
+                            "platform": "win-x64",
+                            "url": ENTRY["homepage"],
+                            "verification": {
+                                "status": status,
+                                "valid_until": (
+                                    valid_until or (now + timedelta(days=1))
+                                ).isoformat(),
+                            },
+                        }
+                    ],
+                }
+            ]
+        }
+
+    # restricted（反爬/限流）→ 豁免，不再阻塞
+    report = coverage_report([ENTRY], build("restricted"), baseline, now=now)
+    assert report["gate_errors"] == []
+    assert [e["id"] for e in report["required_exemptions"]] == ["example"]
+
+    # failed（404 等真实失效）→ 仍然阻塞，不能被豁免
+    report = coverage_report([ENTRY], build("failed"), baseline, now=now)
+    assert report["gate_errors"] == ["example"]
+    assert report["required_exemptions"] == []
+
+    # 过期的例外不再生效
+    expired = {
+        "required": [
+            {
+                "id": "example",
+                "platforms": ["win-x64"],
+                "editions": ["cn", "intl"],
+                "exemptions": {"reason": "上游 403", "review_by": "2020-01-01"},
+            }
+        ]
+    }
+    report = coverage_report([ENTRY], build("restricted"), expired, now=now)
+    assert report["gate_errors"] == ["example"]
+
+    # 没有配置例外时，restricted 照旧阻塞
+    no_exemption = {
+        "required": [
+            {
+                "id": "example",
+                "platforms": ["win-x64"],
+                "editions": ["cn", "intl"],
+            }
+        ]
+    }
+    report = coverage_report([ENTRY], build("restricted"), no_exemption, now=now)
+    assert report["gate_errors"] == ["example"]
+
+
 def test_committed_baseline_is_unique_and_all_required_platforms_are_configured():
     baseline = load_baseline()["required"]
     config = {p["id"]: p for p in load_packages_config()["packages"]}

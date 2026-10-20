@@ -36,6 +36,31 @@ uv run python -m scripts.build_web --edition intl
 
 Actions 的 `workflow_dispatch` 对应输入为 `allow_unverified_required` / `exception_reason`，默认均为空。2026-10-21 用户明确批准仅本次允许 `adobe-photoshop` 保留为待核验、禁用下载，其余软件仍必须通过原门禁。
 
+### 长期例外（声明式，随配置走）
+
+单次命令行豁免需要每次手动干预，不适合"上游长期反爬"这种稳定失败。这类情况改用必收录条目上的 `exemptions` 字段声明：
+
+```json
+{
+  "id": "adobe-photoshop",
+  "platforms": ["win-x64", "mac-universal"],
+  "exemptions": {
+    "reason": "Adobe 官网对自动访问返回 HTTP 403（反爬），无法自动核验",
+    "review_by": "2027-04-01"
+  }
+}
+```
+
+生效规则（实现见 `scripts/catalog.py::_exemption_issue`）：
+
+- **只放行 `restricted`**（上游拒绝访问/限流）。`failed`（404/410 等真实失效）**不在豁免范围**，仍会阻塞发布——避免把死链放行。
+- **不允许豁免缺数据**：`package is None`（同步失败）一律阻塞，那不是反爬问题。
+- **`review_by` 到期后自动失效**，需要重新评估上游是否仍拒绝访问。日期格式 `YYYY-MM-DD`。
+- 被豁免的条目仍会以"待核验"状态出现在 README 和网站上，下载入口置灰，不会冒充可用。
+- 豁免记录写入报告的 `required_exemptions`，便于审计。
+
+当前生效：`adobe-photoshop`（`review_by: 2027-04-01`）。
+
 仅在 `--gate` 成功后发布；本地调试可用 `--force` 忽略检查计划，`--budget N` 限制本轮验证操作数。默认预算 2000；预算不足的未知入口不能获得验证成功状态。
 
 - 每个 HTTP 响应最多读取 64 KiB，限制并发，不下载完整安装包。服务器忽略 Range 也会关闭流。

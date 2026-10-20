@@ -15,6 +15,57 @@ from scripts.fetchers.base import AssetInfo, FetchResult, VERSION_KIND_SYNC_DATE
 ROOT = Path(__file__).resolve().parents[1]
 BASELINE = ROOT / "config" / "coverage.json"
 
+# 允许用"长期例外"豁免门禁的 verification 状态。
+# 只认上游主动拒绝访问的情况（反爬/限流），这类失败不代表链接真的失效；
+# failed（404/410）等真实失效状态不在其中，仍会阻塞发布。
+EXEMPTABLE_STATUSES = {"restricted"}
+
+
+def _exemption_issue(
+    required_entry: dict[str, Any],
+    assets: dict[str, dict[str, Any]],
+    platforms: set[str],
+    now: datetime | None,
+) -> str | None:
+    """判断该条目能否用配置里的长期例外豁免门禁。
+
+    返回 None 表示可以豁免；返回字符串说明为什么不行（写进报告，便于排查）。
+
+    配置形状（config/coverage.json 的 required 项）：
+        "exemptions": {
+            "reason": "Adobe 官网对自动访问返回 403",
+            "review_by": "2027-01-01"
+        }
+
+    设计取舍：只允许"上游拒绝访问"这类状态豁免。真实失效（failed，如 404/410）
+    不在 EXEMPTABLE_STATUSES 里，因此仍会阻塞发布——否则等于把死链放行。
+    """
+    exemption = required_entry.get("exemptions")
+    if not isinstance(exemption, dict):
+        return "no_exemption_configured"
+
+    review_by = exemption.get("review_by")
+    if review_by:
+        try:
+            deadline = datetime.fromisoformat(str(review_by)).replace(
+                tzinfo=timezone.utc
+            )
+        except ValueError:
+            return "bad_review_by"
+        current = now or datetime.now(timezone.utc)
+        if current > deadline:
+            return f"exemption_expired:{review_by}"
+
+    for platform in sorted(platforms):
+        asset = assets.get(platform)
+        if asset is None:
+            return f"missing_platform:{platform}"
+        status = (asset.get("verification") or {}).get("status")
+        if status not in EXEMPTABLE_STATUSES:
+            return f"status_not_exemptable:{platform}={status}"
+    return None
+
+
 
 def expected_platforms(entry: dict[str, Any]) -> list[str]:
     args = entry.get("args", {})
@@ -72,6 +123,7 @@ def coverage_report(
     required = {p["id"]: p for p in baseline.get("required", [])}
     problems = []
     gate_errors = []
+    exempted_required: list[dict[str, Any]] = []
     covered = 0
     for pid in sorted(configured.keys() | required.keys()):
         entry = configured.get(pid)
@@ -104,7 +156,35 @@ def coverage_report(
         if issues:
             problems.append({"id": pid, "required": pid in required, "issues": issues})
             if pid in required or "missing_data" in issues:
-                gate_errors.append(pid)
+                # 长期例外：只有"上游拒绝访问"能被豁免，真实失效仍阻塞。
+                # 注意 package is None（缺数据）时不允许豁免——那是同步失败，不是反爬。
+                exempted: str | None = "not_applicable"
+                if pid in required and package is not None:
+                    exempted = _exemption_issue(
+                        required_entry,
+                        {a["platform"]: a for a in package.get("assets", [])},
+                        set(required_entry.get("platforms", []))
+                        or set(expected_platforms(entry or package)),
+                        now,
+                    )
+                if pid in required and exempted is None:
+                    exempted_required.append(
+                        {
+                            "id": pid,
+                            "reason": str(
+                                (required_entry.get("exemptions") or {}).get(
+                                    "reason", ""
+                                )
+                            ),
+                            "review_by": (required_entry.get("exemptions") or {}).get(
+                                "review_by"
+                            ),
+                        }
+                    )
+                else:
+                    gate_errors.append(pid)
+                    if exempted and exempted != "no_exemption_configured":
+                        problems[-1]["exemption_blocked_by"] = exempted
         elif pid in required:
             covered += 1
     extras = sorted(published.keys() - configured.keys())
@@ -131,6 +211,7 @@ def coverage_report(
         "obsolete_ids": extras,
         "problems": problems,
         "gate_errors": sorted(set(gate_errors)),
+        "required_exemptions": exempted_required,
     }
 
 

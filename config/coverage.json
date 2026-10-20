@@ -1162,7 +1162,11 @@
       "platforms": [
         "win-x64",
         "mac-universal"
-      ]
+      ],
+      "exemptions": {
+        "reason": "Adobe 官网对自动访问返回 HTTP 403（反爬），无法自动核验；条目保留，下载入口在前端按 unverified 置灰。",
+        "review_by": "2027-04-01"
+      }
     },
     {
       "id": "adobe-reader",
