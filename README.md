@@ -5,7 +5,7 @@
 > **Latest version metadata** automatically synced from official upstream sources daily by GitHub Actions.
 > This repository **does not host binary installers** — download buttons link directly to upstream official downloads.
 >
-> 📅 **Last updated**: `2026-10-20 20:17:00` (UTC) · 700 software items (31 using previous data, marked ⚠️)
+> 📅 **Last updated**: `2026-10-20 20:31:12` (UTC) · 699 software items (31 using previous data, marked ⚠️)
 
 ---
 
@@ -674,7 +674,6 @@
 | [**GE-Proton**](https://github.com/GloriousEggroll/proton-ge-custom) ⚠️ | `11-11` | 2026-10-19 | [linux-x64](https://github.com/GloriousEggroll/proton-ge-custom) | GitHub Release: GloriousEggroll/proton-ge-custom<br>⚠ GloriousEggroll/proton-ge-custom@GE-Proton11-11: linux-x64 pattern 'GE-Proton*.tar.gz' 匹配多个资产，需收紧规则 |
 | [**Bottles**](https://usebottles.com/download/) | `2026-10-20` | — | linux-x64（Unavailable; pending verification） | Official project download page; no stable public release asset API |
 | [**Vita3K**](https://github.com/Vita3K/Vita3K) | `2026-10-20` | — | [win-x64](https://github.com/Vita3K/Vita3K/releases) · [mac-arm64](https://github.com/Vita3K/Vita3K/releases) · [linux-x64](https://github.com/Vita3K/Vita3K/releases) | Official project download page; no stable public release asset API |
-| [**Ryujinx**](https://github.com/Ryubing/Ryujinx) | `2026-10-20` | — | win-x64（Unavailable; pending verification） · mac-arm64（Unavailable; pending verification） · linux-x64（Unavailable; pending verification） | Official project download page; no stable public release asset API |
 | [**xemu**](https://github.com/xemu-project/xemu) ⚠️ | `0.8.137` | 2026-10-16 | [linux-x64](https://github.com/xemu-project/xemu/releases/download/v0.8.137/xemu-0.8.137-dbg-x86_64.AppImage) · [win-x64](https://github.com/xemu-project/xemu) · [mac-arm64](https://github.com/xemu-project/xemu) | GitHub Release: xemu-project/xemu<br>⚠ xemu-project/xemu@v0.8.138: linux-x64 pattern 'xemu-*-x86_64.AppImage' 匹配多个资产，需收紧规则<br>⚠ win-x64: 没有匹配 asset pattern 'xemu-win-*-zip.zip'; mac-arm64: 没有匹配 asset pattern 'xemu-macos-*-arm64.tar.gz' |
 | [**mGBA**](https://github.com/mgba-emu/mgba) | `0.10.5` | 2025-03-09 | [win-x64](https://github.com/mgba-emu/mgba/releases/download/0.10.5/mGBA-0.10.5-win64.7z) · [mac-universal](https://github.com/mgba-emu/mgba/releases/download/0.10.5/mGBA-0.10.5-macos.dmg) | GitHub Release: mgba-emu/mgba |
 | [**RMG**](https://github.com/Rosalie241/RMG) | `2026-10-20` | — | [win-x64](https://github.com/Rosalie241/RMG/releases) · [linux-x64](https://github.com/Rosalie241/RMG/releases) | Official project download page; no stable public release asset API |
@@ -701,7 +700,7 @@
 | [**喜马拉雅**](https://www.ximalaya.com/) | `2026-10-20` | — | [win-x64](https://www.ximalaya.com/download/) · [mac-x64](https://www.ximalaya.com/download/) | Official download page; no public version API |
 | [**PotPlayer**](https://potplayer.daum.net/) | `2026-10-20` | — | win-x64（Unavailable; pending verification） | Official download page; no public version API |
 | [**剪映专业版**](https://www.capcut.cn/) | `2026-10-20` | — | [win-x64](https://www.capcut.cn/) · [mac-universal](https://www.capcut.cn/) | Official download page; no public version API |
-| [**优酷**](https://www.youku.com/) | `2026-10-20` | — | win-x64（Unavailable; pending verification） · mac-universal（Unavailable; pending verification） | Official download page; no public version API |
+| [**优酷**](https://www.youku.com/) | `2026-10-20` | — | win-x64（Unavailable; pending verification） · [mac-universal](https://www.youku.com/) | Official download page; no public version API |
 | [**芒果TV**](https://www.mgtv.com/) | `2026-10-20` | — | [win-x64](https://www.mgtv.com/) · [mac-universal](https://www.mgtv.com/) | Official download page; no public version API |
 | [**QQ影音**](https://player.qq.com/) | `2026-10-20` | — | win-x64（Unavailable; pending verification） | Official download page; no public version API |
 | [**洛雪音乐助手**](https://github.com/lyswhut/lx-music-desktop) | `2.12.6` | 2026-09-19 | [win-x64](https://github.com/lyswhut/lx-music-desktop/releases/download/v2.12.6/lx-music-desktop-v2.12.6-x64-Setup.exe) · [mac-arm64](https://github.com/lyswhut/lx-music-desktop/releases/download/v2.12.6/lx-music-desktop-2.12.6-arm64.dmg) · [mac-x64](https://github.com/lyswhut/lx-music-desktop/releases/download/v2.12.6/lx-music-desktop-2.12.6-x64.dmg) | GitHub Release: lyswhut/lx-music-desktop |
