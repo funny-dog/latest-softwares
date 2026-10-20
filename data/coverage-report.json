@@ -1,0 +1,361 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-10-20T19:01:17+00:00",
+  "configured": 494,
+  "published": 494,
+  "stale_packages": 31,
+  "verified_assets": 879,
+  "unavailable_assets": 70,
+  "required_total": 95,
+  "required_covered": 94,
+  "required_coverage": 0.9894736842105263,
+  "obsolete_ids": [],
+  "problems": [
+    {
+      "id": "360ee",
+      "required": false,
+      "issues": [
+        "unverified_or_unavailable:win-x64"
+      ]
+    },
+    {
+      "id": "360zip",
+      "required": false,
+      "issues": [
+        "unverified_or_unavailable:win-x64"
+      ]
+    },
+    {
+      "id": "adobe-photoshop",
+      "required": true,
+      "issues": [
+        "unverified_or_unavailable:mac-universal",
+        "unverified_or_unavailable:win-x64"
+      ]
+    },
+    {
+      "id": "another-redis-desktop-manager",
+      "required": false,
+      "issues": [
+        "unverified_or_unavailable:linux-x64",
+        "unverified_or_unavailable:mac-arm64",
+        "unverified_or_unavailable:mac-x64",
+        "unverified_or_unavailable:win-x64"
+      ]
+    },
+    {
+      "id": "apifox",
+      "required": false,
+      "issues": [
+        "unverified_or_unavailable:mac-x64",
+        "unverified_or_unavailable:win-x64"
+      ]
+    },
+    {
+      "id": "ardour",
+      "required": false,
+      "issues": [
+        "unverified_or_unavailable:mac-arm64",
+        "unverified_or_unavailable:win-x64"
+      ]
+    },
+    {
+      "id": "baidu-input",
+      "required": false,
+      "issues": [
+        "unverified_or_unavailable:win-x64"
+      ]
+    },
+    {
+      "id": "bottles",
+      "required": false,
+      "issues": [
+        "unverified_or_unavailable:linux-x64"
+      ]
+    },
+    {
+      "id": "bottom",
+      "required": false,
+      "issues": [
+        "unverified_or_unavailable:linux-x64",
+        "unverified_or_unavailable:mac-arm64",
+        "unverified_or_unavailable:win-x64"
+      ]
+    },
+    {
+      "id": "btop-win",
+      "required": false,
+      "issues": [
+        "unverified_or_unavailable:win-x64"
+      ]
+    },
+    {
+      "id": "cajviewer",
+      "required": false,
+      "issues": [
+        "unverified_or_unavailable:win-x64"
+      ]
+    },
+    {
+      "id": "chatglm",
+      "required": false,
+      "issues": [
+        "unverified_or_unavailable:mac-x64",
+        "unverified_or_unavailable:win-x64"
+      ]
+    },
+    {
+      "id": "cloudflare-warp",
+      "required": false,
+      "issues": [
+        "unverified_or_unavailable:win-x64"
+      ]
+    },
+    {
+      "id": "deepl",
+      "required": false,
+      "issues": [
+        "unverified_or_unavailable:mac-universal"
+      ]
+    },
+    {
+      "id": "delta-force",
+      "required": false,
+      "issues": [
+        "unverified_or_unavailable:win-x64"
+      ]
+    },
+    {
+      "id": "fantasy-westward-journey",
+      "required": false,
+      "issues": [
+        "unverified_or_unavailable:win-x64"
+      ]
+    },
+    {
+      "id": "fastgithub",
+      "required": false,
+      "issues": [
+        "unverified_or_unavailable:win-x64"
+      ]
+    },
+    {
+      "id": "foxit-reader-cn",
+      "required": false,
+      "issues": [
+        "unverified_or_unavailable:win-x64"
+      ]
+    },
+    {
+      "id": "kimi",
+      "required": false,
+      "issues": [
+        "unverified_or_unavailable:mac-x64",
+        "unverified_or_unavailable:win-x64"
+      ]
+    },
+    {
+      "id": "kuwo-music",
+      "required": false,
+      "issues": [
+        "unverified_or_unavailable:win-x64"
+      ]
+    },
+    {
+      "id": "league-of-legends",
+      "required": false,
+      "issues": [
+        "unverified_or_unavailable:win-x64"
+      ]
+    },
+    {
+      "id": "losslesscut",
+      "required": false,
+      "issues": [
+        "unverified_or_unavailable:mac-universal"
+      ]
+    },
+    {
+      "id": "navi-cli",
+      "required": false,
+      "issues": [
+        "unverified_or_unavailable:win-x64"
+      ]
+    },
+    {
+      "id": "netease-mail",
+      "required": false,
+      "issues": [
+        "unverified_or_unavailable:mac-x64",
+        "unverified_or_unavailable:win-x64"
+      ]
+    },
+    {
+      "id": "potplayer-cn",
+      "required": false,
+      "issues": [
+        "unverified_or_unavailable:win-x64"
+      ]
+    },
+    {
+      "id": "prism-launcher",
+      "required": false,
+      "issues": [
+        "unverified_or_unavailable:mac-arm64",
+        "unverified_or_unavailable:win-x64"
+      ]
+    },
+    {
+      "id": "qqplayer",
+      "required": false,
+      "issues": [
+        "unverified_or_unavailable:win-x64"
+      ]
+    },
+    {
+      "id": "quark",
+      "required": false,
+      "issues": [
+        "unverified_or_unavailable:mac-universal",
+        "unverified_or_unavailable:win-x64"
+      ]
+    },
+    {
+      "id": "ryujinx",
+      "required": false,
+      "issues": [
+        "unverified_or_unavailable:linux-x64",
+        "unverified_or_unavailable:mac-arm64",
+        "unverified_or_unavailable:win-x64"
+      ]
+    },
+    {
+      "id": "scribus",
+      "required": false,
+      "issues": [
+        "unverified_or_unavailable:win-x64"
+      ]
+    },
+    {
+      "id": "skype",
+      "required": false,
+      "issues": [
+        "unverified_or_unavailable:linux-x64",
+        "unverified_or_unavailable:mac-universal",
+        "unverified_or_unavailable:win-x64"
+      ]
+    },
+    {
+      "id": "sparkdesk",
+      "required": false,
+      "issues": [
+        "unverified_or_unavailable:mac-x64",
+        "unverified_or_unavailable:win-x64"
+      ]
+    },
+    {
+      "id": "tealdeer",
+      "required": false,
+      "issues": [
+        "unverified_or_unavailable:linux-x64",
+        "unverified_or_unavailable:mac-arm64",
+        "unverified_or_unavailable:win-x64"
+      ]
+    },
+    {
+      "id": "teracopy",
+      "required": false,
+      "issues": [
+        "unverified_or_unavailable:win-x64"
+      ]
+    },
+    {
+      "id": "termius",
+      "required": false,
+      "issues": [
+        "unverified_or_unavailable:mac-universal"
+      ]
+    },
+    {
+      "id": "text-generation-webui",
+      "required": false,
+      "issues": [
+        "unverified_or_unavailable:win-x64"
+      ]
+    },
+    {
+      "id": "tongyi",
+      "required": false,
+      "issues": [
+        "unverified_or_unavailable:mac-x64",
+        "unverified_or_unavailable:win-x64"
+      ]
+    },
+    {
+      "id": "tor-browser",
+      "required": false,
+      "issues": [
+        "unverified_or_unavailable:linux-x64",
+        "unverified_or_unavailable:mac-universal",
+        "unverified_or_unavailable:win-x64"
+      ]
+    },
+    {
+      "id": "trilium",
+      "required": false,
+      "issues": [
+        "unverified_or_unavailable:linux-x64",
+        "unverified_or_unavailable:mac-arm64",
+        "unverified_or_unavailable:win-x64"
+      ]
+    },
+    {
+      "id": "uu-accelerator",
+      "required": false,
+      "issues": [
+        "unverified_or_unavailable:win-x64"
+      ]
+    },
+    {
+      "id": "wps-pdf",
+      "required": false,
+      "issues": [
+        "unverified_or_unavailable:win-x64"
+      ]
+    },
+    {
+      "id": "xmind",
+      "required": false,
+      "issues": [
+        "unverified_or_unavailable:mac-universal"
+      ]
+    },
+    {
+      "id": "youku",
+      "required": false,
+      "issues": [
+        "unverified_or_unavailable:mac-universal",
+        "unverified_or_unavailable:win-x64"
+      ]
+    },
+    {
+      "id": "yy",
+      "required": false,
+      "issues": [
+        "unverified_or_unavailable:win-x64"
+      ]
+    }
+  ],
+  "gate_errors": [],
+  "strict_gate_errors": [
+    "adobe-photoshop"
+  ],
+  "publication_exceptions": [
+    {
+      "id": "adobe-photoshop",
+      "reason": "User explicitly approved this release on 2026-10-21: keep Photoshop listed as pending verification and disable its download entries.",
+      "approved_by": "funny-dog",
+      "at": "2026-10-20T19:00:35+00:00"
+    }
+  ]
+}
