@@ -4,7 +4,7 @@
 
 候选来自人工整理的重要软件缺口，对照 Homebrew Cask、Scoop 和 WinGet 当前元数据。按稳定 ID、名称和官方主页去重；拒绝已停用目录、错误架构、过期或无效地址。没有将同一软件的 Windows/macOS 版本重复计数，也没有把 .NET SDK 附带的运行库重复计为新软件。
 
-新条目采用 package_manifest 持续刷新版本、资产和上游 SHA256；明确官方 CDN 域名后仍复验响应。直链不可用时，仅在官方入口页独立通过身份与下载入口验证后降级，页面入口与安装包直链分别标注。完整安装包未下载验签，不把上游 SHA256 当作已完成本地校验。
+新条目采用 package_manifest 持续刷新版本、资产和上游 SHA256；明确官方 CDN 域名后仍复验响应。直链不可用时，仅在官方入口页独立通过身份与下载入口验证后降级，页面入口与安装包直链分别标注。Mendeley 的下载页降级使用 Elsevier 官方安装说明（旧 service.elsevier.com 已迁往 elsevier.support），仍由相同身份与下载入口规则复验。完整安装包未下载验签，不把上游 SHA256 当作已完成本地校验。
 
 待进一步处理且未纳入本批新增计数：GitKraken、SourceTree、XYplorer、GPU-Z、Qt Creator、Resilio Sync、SketchUp 等，其下载入口、平台或来源仍需复核。CPU-Z、SSMS、System Informer 的 WinGet 清单路径未能唯一定位，也没有伪造成功。后续继续补齐，不能把本轮清单当作所有重要软件已经穷尽。
 

@@ -2419,7 +2419,7 @@ packages:
   editions:
   - cn
   - intl
-  homepage: https://www.mendeley.com/
+  homepage: https://www.elsevier.support/mendeley/answer/how-do-i-install-mendeley-reference-manager
   fetcher: package_manifest
   args:
     provider: scoop
