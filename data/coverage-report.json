@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-20T21:13:28+00:00",
+  "generated_at": "2026-10-20T21:27:21+00:00",
   "configured": 699,
   "published": 699,
   "stale_packages": 31,
@@ -337,15 +337,13 @@
     }
   ],
   "gate_errors": [],
-  "strict_gate_errors": [
-    "adobe-photoshop"
-  ],
-  "publication_exceptions": [
+  "required_exemptions": [
     {
       "id": "adobe-photoshop",
-      "reason": "Adobe 官方下载页限流，无法自动验证；条目保留但下载入口禁用",
-      "approved_by": "funny-dog",
-      "at": "2026-10-20T21:12:59+00:00"
+      "reason": "Adobe 官网对自动访问返回 HTTP 403（反爬），无法自动核验；条目保留，下载入口在前端按 unverified 置灰。",
+      "review_by": "2027-04-01"
     }
-  ]
+  ],
+  "strict_gate_errors": [],
+  "publication_exceptions": []
 }
