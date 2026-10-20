@@ -8,6 +8,16 @@
 
 待进一步处理且未纳入本批新增计数：GitKraken、SourceTree、XYplorer、GPU-Z、Qt Creator、Resilio Sync、SketchUp 等，其下载入口、平台或来源仍需复核。CPU-Z、SSMS、System Informer 的 WinGet 清单路径未能唯一定位，也没有伪造成功。后续继续补齐，不能把本轮清单当作所有重要软件已经穷尽。
 
+## 已上线验收
+
+- GitHub 仓库 About 的 Website 已设置为 [FastAPI Cloud 国际站](https://latest-softwares-064facea.fastapicloud.dev)。
+- 国际版从 **393 增至 599 项**，实际新增 **206 项**；仓库目录共 700 项。新增项中 87 项采用 Windows 来源，119 项采用 macOS 来源；没有声称每项都覆盖所有操作系统。
+- 所有 206 个新增软件在发布快照中至少有一个仍有效的已验证入口。必收录门禁实际通过 300/301；唯一人工批准的发布例外为 Photoshop，其下载入口保持禁用。例外只适用于此次手动发布，不继承到后续定时运行。
+- 国际版目前 580 项有至少一个可用入口，19 项旧条目待核验；936/972 个平台入口可用。不能把收录数量等同于有效下载数量。
+- [同步、门禁及构建运行](https://github.com/funny-dog/latest-softwares/actions/runs/39485100737)与[FastAPI Cloud 部署运行](https://github.com/funny-dog/latest-softwares/actions/runs/39485504602)均成功，快照 ID 为 `bd70139a36828fe4e478`。
+- HTTP 验收通过：首页字节与同一运行的 dist-intl artifact 完全一致，health/packages 返回同一快照；Photoshop API 返回 503，.NET SDK 下载跳转与快照 URL 一致；Turso 访问与下载计数未下降。
+- 未打开实际网页进行人工交互验收，未完整下载安装包、验签或测试安装器。仍待补齐的候选保留在下文，不计入本轮新增成果。
+
 | 软件 | ID | 本轮平台 | 持续更新来源 |
 |---|---|---|---|
 | Arc | `arc` | mac | brew: `arc` |
