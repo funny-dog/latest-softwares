@@ -1176,6 +1176,2478 @@
         "win-x64",
         "mac-universal"
       ]
+    },
+    {
+      "id": "arc",
+      "name": "Arc",
+      "category": "Browsers",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "mac"
+      ]
+    },
+    {
+      "id": "min",
+      "name": "Min",
+      "category": "Browsers",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "win-x64"
+      ]
+    },
+    {
+      "id": "orion",
+      "name": "Orion Browser",
+      "category": "Browsers",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "mac"
+      ]
+    },
+    {
+      "id": "palemoon",
+      "name": "Pale Moon",
+      "category": "Browsers",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "win-x64"
+      ]
+    },
+    {
+      "id": "seamonkey",
+      "name": "SeaMonkey",
+      "category": "Browsers",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "win-x64"
+      ]
+    },
+    {
+      "id": "waterfox",
+      "name": "Waterfox",
+      "category": "Browsers",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "win-x64"
+      ]
+    },
+    {
+      "id": "wavebox",
+      "name": "Wavebox",
+      "category": "Browsers",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "mac-arm64"
+      ]
+    },
+    {
+      "id": "android-studio",
+      "name": "Android Studio",
+      "category": "Developer Tools",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "win-x64"
+      ]
+    },
+    {
+      "id": "aws",
+      "name": "AWS CLI",
+      "category": "Developer Tools",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "win-x64"
+      ]
+    },
+    {
+      "id": "azure-cli",
+      "name": "Azure CLI",
+      "category": "Developer Tools",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "win-x64"
+      ]
+    },
+    {
+      "id": "azure-storage-explorer",
+      "name": "Microsoft Azure Storage Explorer",
+      "category": "Developer Tools",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "win-x64"
+      ]
+    },
+    {
+      "id": "bbedit",
+      "name": "BBEdit",
+      "category": "Developer Tools",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "mac"
+      ]
+    },
+    {
+      "id": "beyond-compare",
+      "name": "Beyond Compare",
+      "category": "Developer Tools",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "mac"
+      ]
+    },
+    {
+      "id": "charles",
+      "name": "Charles",
+      "category": "Developer Tools",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "mac"
+      ]
+    },
+    {
+      "id": "clion",
+      "name": "CLion",
+      "category": "Developer Tools",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "win-x64"
+      ]
+    },
+    {
+      "id": "cmake",
+      "name": "CMake",
+      "category": "Developer Tools",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "win-x64"
+      ]
+    },
+    {
+      "id": "composer",
+      "name": "Composer",
+      "category": "Developer Tools",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "win"
+      ]
+    },
+    {
+      "id": "corretto-jdk",
+      "name": "Amazon Corretto JDK 25",
+      "category": "Developer Tools",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "win-x64"
+      ]
+    },
+    {
+      "id": "coteditor",
+      "name": "CotEditor",
+      "category": "Developer Tools",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "mac"
+      ]
+    },
+    {
+      "id": "datagrip",
+      "name": "DataGrip",
+      "category": "Developer Tools",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "mac-arm64"
+      ]
+    },
+    {
+      "id": "db-browser-for-sqlite",
+      "name": "DB Browser for SQLite",
+      "category": "Developer Tools",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "mac"
+      ]
+    },
+    {
+      "id": "dbgate",
+      "name": "DbGate",
+      "category": "Developer Tools",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "mac-universal"
+      ]
+    },
+    {
+      "id": "deno",
+      "name": "Deno",
+      "category": "Developer Tools",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "win-x64"
+      ]
+    },
+    {
+      "id": "dotnet-sdk",
+      "name": ".NET SDK 10",
+      "category": "Developer Tools",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "win-x64"
+      ]
+    },
+    {
+      "id": "eclipse-java",
+      "name": "Eclipse IDE for Java Developers",
+      "category": "Developer Tools",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "win-x64"
+      ]
+    },
+    {
+      "id": "fork",
+      "name": "Fork",
+      "category": "Developer Tools",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "win"
+      ]
+    },
+    {
+      "id": "geany",
+      "name": "Geany",
+      "category": "Developer Tools",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "mac-arm64"
+      ]
+    },
+    {
+      "id": "gitbutler",
+      "name": "GitButler",
+      "category": "Developer Tools",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "win-x64"
+      ]
+    },
+    {
+      "id": "gitextensions",
+      "name": "Git Extensions",
+      "category": "Developer Tools",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "win-x64"
+      ]
+    },
+    {
+      "id": "github-desktop",
+      "name": "GitHub Desktop",
+      "category": "Developer Tools",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "win-x64"
+      ]
+    },
+    {
+      "id": "goland",
+      "name": "Goland",
+      "category": "Developer Tools",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "mac-arm64"
+      ]
+    },
+    {
+      "id": "gradle",
+      "name": "Gradle",
+      "category": "Developer Tools",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "win"
+      ]
+    },
+    {
+      "id": "http-toolkit",
+      "name": "HTTP Toolkit",
+      "category": "Developer Tools",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "mac-arm64"
+      ]
+    },
+    {
+      "id": "intellij-idea",
+      "name": "IntelliJ IDEA Ultimate",
+      "category": "Developer Tools",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "win-x64"
+      ]
+    },
+    {
+      "id": "julia",
+      "name": "Julia",
+      "category": "Developer Tools",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "win-x64"
+      ]
+    },
+    {
+      "id": "kate",
+      "name": "Kate",
+      "category": "Developer Tools",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "mac-arm64"
+      ]
+    },
+    {
+      "id": "kdiff3",
+      "name": "KDiff3",
+      "category": "Developer Tools",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "win-x64"
+      ]
+    },
+    {
+      "id": "kubectl",
+      "name": "kubectl",
+      "category": "Developer Tools",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "win-x64"
+      ]
+    },
+    {
+      "id": "lens",
+      "name": "Lens",
+      "category": "Developer Tools",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "mac-arm64"
+      ]
+    },
+    {
+      "id": "llvm",
+      "name": "LLVM",
+      "category": "Developer Tools",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "win-x64"
+      ]
+    },
+    {
+      "id": "mactex-no-gui",
+      "name": "MacTeX",
+      "category": "Developer Tools",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "mac"
+      ]
+    },
+    {
+      "id": "maven",
+      "name": "Maven",
+      "category": "Developer Tools",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "win"
+      ]
+    },
+    {
+      "id": "meld",
+      "name": "Meld",
+      "category": "Developer Tools",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "win-x64"
+      ]
+    },
+    {
+      "id": "mongodb-compass",
+      "name": "MongoDB Compass",
+      "category": "Developer Tools",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "win-x64"
+      ]
+    },
+    {
+      "id": "mysqlworkbench",
+      "name": "MySQL Workbench",
+      "category": "Developer Tools",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "mac-arm64"
+      ]
+    },
+    {
+      "id": "netbeans",
+      "name": "NetBeans IDE",
+      "category": "Developer Tools",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "mac-arm64"
+      ]
+    },
+    {
+      "id": "ninja",
+      "name": "Ninja",
+      "category": "Developer Tools",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "win-x64"
+      ]
+    },
+    {
+      "id": "packer",
+      "name": "Packer",
+      "category": "Developer Tools",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "win-x64"
+      ]
+    },
+    {
+      "id": "pgadmin4",
+      "name": "pgAdmin4",
+      "category": "Developer Tools",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "mac-arm64"
+      ]
+    },
+    {
+      "id": "php",
+      "name": "PHP",
+      "category": "Developer Tools",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "win-x64"
+      ]
+    },
+    {
+      "id": "phpstorm",
+      "name": "JetBrains PhpStorm",
+      "category": "Developer Tools",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "mac-arm64"
+      ]
+    },
+    {
+      "id": "podman-desktop",
+      "name": "Podman Desktop",
+      "category": "Developer Tools",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "mac-arm64"
+      ]
+    },
+    {
+      "id": "positron",
+      "name": "Positron",
+      "category": "Developer Tools",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "mac-arm64"
+      ]
+    },
+    {
+      "id": "postico",
+      "name": "Postico",
+      "category": "Developer Tools",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "mac"
+      ]
+    },
+    {
+      "id": "proxyman",
+      "name": "Proxyman",
+      "category": "Developer Tools",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "mac"
+      ]
+    },
+    {
+      "id": "pycharm",
+      "name": "PyCharm",
+      "category": "Developer Tools",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "win-x64"
+      ]
+    },
+    {
+      "id": "querious",
+      "name": "Querious 4",
+      "category": "Developer Tools",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "mac"
+      ]
+    },
+    {
+      "id": "r",
+      "name": "R",
+      "category": "Developer Tools",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "win-x64"
+      ]
+    },
+    {
+      "id": "rancher",
+      "name": "Rancher Desktop",
+      "category": "Developer Tools",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "mac-arm64"
+      ]
+    },
+    {
+      "id": "rapidapi",
+      "name": "RapidAPI",
+      "category": "Developer Tools",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "mac"
+      ]
+    },
+    {
+      "id": "redis-insight",
+      "name": "Redis Insight",
+      "category": "Developer Tools",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "mac-arm64"
+      ]
+    },
+    {
+      "id": "rider",
+      "name": "JetBrains Rider",
+      "category": "Developer Tools",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "win-x64"
+      ]
+    },
+    {
+      "id": "rstudio",
+      "name": "RStudio",
+      "category": "Developer Tools",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "win-x64"
+      ]
+    },
+    {
+      "id": "rubymine",
+      "name": "RubyMine",
+      "category": "Developer Tools",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "mac-arm64"
+      ]
+    },
+    {
+      "id": "rustrover",
+      "name": "RustRover",
+      "category": "Developer Tools",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "win-x64"
+      ]
+    },
+    {
+      "id": "rustup",
+      "name": "Rustup",
+      "category": "Developer Tools",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "win-x64"
+      ]
+    },
+    {
+      "id": "sequel-ace",
+      "name": "Sequel Ace",
+      "category": "Developer Tools",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "mac"
+      ]
+    },
+    {
+      "id": "smartgit",
+      "name": "SmartGit",
+      "category": "Developer Tools",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "win-x64"
+      ]
+    },
+    {
+      "id": "sqlitestudio",
+      "name": "SQLiteStudio",
+      "category": "Developer Tools",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "win-x64"
+      ]
+    },
+    {
+      "id": "studio-3t",
+      "name": "Studio 3T",
+      "category": "Developer Tools",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "mac-arm64"
+      ]
+    },
+    {
+      "id": "sublime-merge",
+      "name": "Sublime Merge",
+      "category": "Developer Tools",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "win-x64"
+      ]
+    },
+    {
+      "id": "sublime-text",
+      "name": "Sublime Text",
+      "category": "Developer Tools",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "win-x64"
+      ]
+    },
+    {
+      "id": "temurin-jdk",
+      "name": "Eclipse Temurin JDK 25",
+      "category": "Developer Tools",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "win-x64"
+      ]
+    },
+    {
+      "id": "textmate",
+      "name": "TextMate",
+      "category": "Developer Tools",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "mac"
+      ]
+    },
+    {
+      "id": "vagrant",
+      "name": "Vagrant",
+      "category": "Developer Tools",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "win-x64"
+      ]
+    },
+    {
+      "id": "vcredist-x64",
+      "name": "Microsoft Visual C++ Redistributable x64",
+      "category": "Developer Tools",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "win-x64"
+      ]
+    },
+    {
+      "id": "visual-studio-community",
+      "name": "Visual Studio Community",
+      "category": "Developer Tools",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "win-x64"
+      ]
+    },
+    {
+      "id": "webstorm",
+      "name": "WebStorm",
+      "category": "Developer Tools",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "mac-arm64"
+      ]
+    },
+    {
+      "id": "winmerge",
+      "name": "WinMerge",
+      "category": "Developer Tools",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "win-x64"
+      ]
+    },
+    {
+      "id": "ableton-live-suite",
+      "name": "Ableton Live Suite",
+      "category": "Media Players",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "mac-universal"
+      ]
+    },
+    {
+      "id": "acorn",
+      "name": "Acorn",
+      "category": "Media Players",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "mac"
+      ]
+    },
+    {
+      "id": "aimp",
+      "name": "AIMP",
+      "category": "Media Players",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "win-x64"
+      ]
+    },
+    {
+      "id": "autodesk-fusion",
+      "name": "Autodesk Fusion 360",
+      "category": "Media Players",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "mac"
+      ]
+    },
+    {
+      "id": "bambu-studio",
+      "name": "Bambu Studio",
+      "category": "Media Players",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "win-x64"
+      ]
+    },
+    {
+      "id": "bitwig-studio",
+      "name": "Bitwig Studio",
+      "category": "Media Players",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "mac"
+      ]
+    },
+    {
+      "id": "canva",
+      "name": "Canva",
+      "category": "Media Players",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "mac-universal"
+      ]
+    },
+    {
+      "id": "cap",
+      "name": "Cap",
+      "category": "Media Players",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "mac"
+      ]
+    },
+    {
+      "id": "dopamine",
+      "name": "Dopamine",
+      "category": "Media Players",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "win"
+      ]
+    },
+    {
+      "id": "elmedia-player",
+      "name": "Elmedia Player",
+      "category": "Media Players",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "mac"
+      ]
+    },
+    {
+      "id": "fl-studio",
+      "name": "FL Studio",
+      "category": "Media Players",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "mac"
+      ]
+    },
+    {
+      "id": "kap",
+      "name": "Kap",
+      "category": "Media Players",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "mac-arm64"
+      ]
+    },
+    {
+      "id": "libresprite",
+      "name": "Libresprite",
+      "category": "Media Players",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "win-x64"
+      ]
+    },
+    {
+      "id": "meshlab",
+      "name": "MeshLab",
+      "category": "Media Players",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "win-x64"
+      ]
+    },
+    {
+      "id": "mixxx",
+      "name": "Mixxx",
+      "category": "Media Players",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "mac"
+      ]
+    },
+    {
+      "id": "mpc-be",
+      "name": "MPC-BE",
+      "category": "Media Players",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "win-x64"
+      ]
+    },
+    {
+      "id": "mpc-hc",
+      "name": "MPC-HC",
+      "category": "Media Players",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "win-x64"
+      ]
+    },
+    {
+      "id": "ocenaudio",
+      "name": "ocenaudio",
+      "category": "Media Players",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "win-x64"
+      ]
+    },
+    {
+      "id": "opentoonz",
+      "name": "OpenToonz",
+      "category": "Media Players",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "win-x64"
+      ]
+    },
+    {
+      "id": "orcaslicer",
+      "name": "Orca Slicer",
+      "category": "Media Players",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "win-x64"
+      ]
+    },
+    {
+      "id": "paintbrush",
+      "name": "Paintbrush",
+      "category": "Media Players",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "mac"
+      ]
+    },
+    {
+      "id": "pinta",
+      "name": "Pinta",
+      "category": "Media Players",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "win-x64"
+      ]
+    },
+    {
+      "id": "prusaslicer",
+      "name": "PrusaSlicer",
+      "category": "Media Players",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "win-x64"
+      ]
+    },
+    {
+      "id": "reaper",
+      "name": "REAPER",
+      "category": "Media Players",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "win-x64"
+      ]
+    },
+    {
+      "id": "rekordbox",
+      "name": "rekordbox",
+      "category": "Media Players",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "mac"
+      ]
+    },
+    {
+      "id": "screen-studio",
+      "name": "Screen Studio",
+      "category": "Media Players",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "mac-arm64"
+      ]
+    },
+    {
+      "id": "sketch",
+      "name": "Sketch",
+      "category": "Media Players",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "mac"
+      ]
+    },
+    {
+      "id": "ultimaker-cura",
+      "name": "UltiMaker Cura",
+      "category": "Media Players",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "mac-arm64"
+      ]
+    },
+    {
+      "id": "virtualdj",
+      "name": "VirtualDJ",
+      "category": "Media Players",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "mac"
+      ]
+    },
+    {
+      "id": "cyberduck",
+      "name": "Cyberduck",
+      "category": "Network & Proxy",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "mac"
+      ]
+    },
+    {
+      "id": "little-snitch",
+      "name": "Little Snitch",
+      "category": "Network & Proxy",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "mac"
+      ]
+    },
+    {
+      "id": "lulu",
+      "name": "LuLu",
+      "category": "Network & Proxy",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "mac"
+      ]
+    },
+    {
+      "id": "mountain-duck",
+      "name": "Mountain Duck",
+      "category": "Network & Proxy",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "mac"
+      ]
+    },
+    {
+      "id": "transmit",
+      "name": "Transmit",
+      "category": "Network & Proxy",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "mac"
+      ]
+    },
+    {
+      "id": "asana",
+      "name": "Asana",
+      "category": "Productivity",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "mac-arm64"
+      ]
+    },
+    {
+      "id": "basecamp",
+      "name": "Basecamp",
+      "category": "Productivity",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "mac"
+      ]
+    },
+    {
+      "id": "box-drive",
+      "name": "Box Drive",
+      "category": "Productivity",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "mac"
+      ]
+    },
+    {
+      "id": "busycal",
+      "name": "BusyCal",
+      "category": "Productivity",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "mac"
+      ]
+    },
+    {
+      "id": "capacities",
+      "name": "Capacities",
+      "category": "Productivity",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "mac-arm64"
+      ]
+    },
+    {
+      "id": "celestia",
+      "name": "Celestia",
+      "category": "Productivity",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "mac"
+      ]
+    },
+    {
+      "id": "clickup",
+      "name": "ClickUp",
+      "category": "Productivity",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "mac-arm64"
+      ]
+    },
+    {
+      "id": "endnote",
+      "name": "EndNote",
+      "category": "Productivity",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "mac"
+      ]
+    },
+    {
+      "id": "evernote",
+      "name": "Evernote",
+      "category": "Productivity",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "mac"
+      ]
+    },
+    {
+      "id": "fantastical",
+      "name": "Fantastical",
+      "category": "Productivity",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "mac"
+      ]
+    },
+    {
+      "id": "ferdium",
+      "name": "Ferdium",
+      "category": "Productivity",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "win-x64"
+      ]
+    },
+    {
+      "id": "franz",
+      "name": "Franz",
+      "category": "Productivity",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "mac-arm64"
+      ]
+    },
+    {
+      "id": "geogebra",
+      "name": "GeoGebra",
+      "category": "Productivity",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "win"
+      ]
+    },
+    {
+      "id": "google-earth-pro",
+      "name": "Google Earth Pro",
+      "category": "Productivity",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "mac-x64"
+      ]
+    },
+    {
+      "id": "heptabase",
+      "name": "Hepta",
+      "category": "Productivity",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "mac-arm64"
+      ]
+    },
+    {
+      "id": "internxt-drive",
+      "name": "Internxt Drive",
+      "category": "Productivity",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "mac"
+      ]
+    },
+    {
+      "id": "itsycal",
+      "name": "Itsycal",
+      "category": "Productivity",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "mac"
+      ]
+    },
+    {
+      "id": "jabref",
+      "name": "JabRef",
+      "category": "Productivity",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "win-x64"
+      ]
+    },
+    {
+      "id": "jamovi",
+      "name": "jamovi",
+      "category": "Productivity",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "win-x64"
+      ]
+    },
+    {
+      "id": "jasp",
+      "name": "JASP",
+      "category": "Productivity",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "mac-arm64"
+      ]
+    },
+    {
+      "id": "meetingbar",
+      "name": "MeetingBar",
+      "category": "Productivity",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "mac"
+      ]
+    },
+    {
+      "id": "megasync",
+      "name": "MEGAsync",
+      "category": "Productivity",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "win-x64"
+      ]
+    },
+    {
+      "id": "mendeley",
+      "name": "Mendeley",
+      "category": "Productivity",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "win-x64"
+      ]
+    },
+    {
+      "id": "nextcloud",
+      "name": "Nextcloud",
+      "category": "Productivity",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "win-x64"
+      ]
+    },
+    {
+      "id": "notesnook",
+      "name": "Notesnook",
+      "category": "Productivity",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "win-x64"
+      ]
+    },
+    {
+      "id": "omnifocus",
+      "name": "OmniFocus",
+      "category": "Productivity",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "mac"
+      ]
+    },
+    {
+      "id": "omnigraffle",
+      "name": "OmniGraffle",
+      "category": "Productivity",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "mac"
+      ]
+    },
+    {
+      "id": "omniplan",
+      "name": "OmniPlan",
+      "category": "Productivity",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "mac"
+      ]
+    },
+    {
+      "id": "onlyoffice",
+      "name": "ONLYOFFICE",
+      "category": "Productivity",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "win-x64"
+      ]
+    },
+    {
+      "id": "owncloud",
+      "name": "ownCloud",
+      "category": "Productivity",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "win-x64"
+      ]
+    },
+    {
+      "id": "papers",
+      "name": "ReadCube Papers",
+      "category": "Productivity",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "mac-arm64"
+      ]
+    },
+    {
+      "id": "pdf-expert",
+      "name": "PDF Expert",
+      "category": "Productivity",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "mac"
+      ]
+    },
+    {
+      "id": "pdfgear",
+      "name": "PDFgear",
+      "category": "Productivity",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "win-x64"
+      ]
+    },
+    {
+      "id": "pdfsam-basic",
+      "name": "PDFsam Basic",
+      "category": "Productivity",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "win-x64"
+      ]
+    },
+    {
+      "id": "power-bi-desktop",
+      "name": "Microsoft Power BI Desktop",
+      "category": "Productivity",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "win-x64"
+      ]
+    },
+    {
+      "id": "qgis",
+      "name": "QGIS",
+      "category": "Productivity",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "mac"
+      ]
+    },
+    {
+      "id": "rambox",
+      "name": "Rambox",
+      "category": "Productivity",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "win-x64"
+      ]
+    },
+    {
+      "id": "sage",
+      "name": "Sage",
+      "category": "Productivity",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "mac-arm64"
+      ]
+    },
+    {
+      "id": "scrivener",
+      "name": "Scrivener",
+      "category": "Productivity",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "mac"
+      ]
+    },
+    {
+      "id": "seadrive",
+      "name": "Seadrive",
+      "category": "Productivity",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "mac"
+      ]
+    },
+    {
+      "id": "skim",
+      "name": "Skim",
+      "category": "Productivity",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "mac"
+      ]
+    },
+    {
+      "id": "softmaker-freeoffice",
+      "name": "SoftMaker FreeOffice",
+      "category": "Productivity",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "mac"
+      ]
+    },
+    {
+      "id": "standard-notes",
+      "name": "Standard Notes",
+      "category": "Productivity",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "win-x64"
+      ]
+    },
+    {
+      "id": "stellarium",
+      "name": "Stellarium",
+      "category": "Productivity",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "win-x64"
+      ]
+    },
+    {
+      "id": "synology-drive",
+      "name": "Synology Drive",
+      "category": "Productivity",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "mac"
+      ]
+    },
+    {
+      "id": "taskade",
+      "name": "Taskade",
+      "category": "Productivity",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "mac-universal"
+      ]
+    },
+    {
+      "id": "texmaker",
+      "name": "Texmaker",
+      "category": "Productivity",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "win-x64"
+      ]
+    },
+    {
+      "id": "texstudio",
+      "name": "TeXstudio",
+      "category": "Productivity",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "win-x64"
+      ]
+    },
+    {
+      "id": "advancedrenamer",
+      "name": "Advanced Renamer",
+      "category": "System Utilities",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "win-x64"
+      ]
+    },
+    {
+      "id": "aida64extreme",
+      "name": "AIDA64 Extreme",
+      "category": "System Utilities",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "win"
+      ]
+    },
+    {
+      "id": "alfred",
+      "name": "Alfred",
+      "category": "System Utilities",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "mac"
+      ]
+    },
+    {
+      "id": "alt-tab",
+      "name": "AltTab",
+      "category": "System Utilities",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "mac"
+      ]
+    },
+    {
+      "id": "apparency",
+      "name": "Apparency",
+      "category": "System Utilities",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "mac"
+      ]
+    },
+    {
+      "id": "appcleaner",
+      "name": "FreeMacSoft AppCleaner",
+      "category": "System Utilities",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "mac"
+      ]
+    },
+    {
+      "id": "arq",
+      "name": "Arq",
+      "category": "System Utilities",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "mac"
+      ]
+    },
+    {
+      "id": "backblaze",
+      "name": "Backblaze",
+      "category": "System Utilities",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "mac"
+      ]
+    },
+    {
+      "id": "bartender",
+      "name": "Bartender",
+      "category": "System Utilities",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "mac"
+      ]
+    },
+    {
+      "id": "bettertouchtool",
+      "name": "BetterTouchTool",
+      "category": "System Utilities",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "mac"
+      ]
+    },
+    {
+      "id": "blockblock",
+      "name": "BlockBlock",
+      "category": "System Utilities",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "mac"
+      ]
+    },
+    {
+      "id": "carbon-copy-cloner",
+      "name": "Carbon Copy Cloner",
+      "category": "System Utilities",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "mac"
+      ]
+    },
+    {
+      "id": "chronosync",
+      "name": "ChronoSync",
+      "category": "System Utilities",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "mac"
+      ]
+    },
+    {
+      "id": "cleanshot",
+      "name": "CleanShot",
+      "category": "System Utilities",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "mac"
+      ]
+    },
+    {
+      "id": "clipy",
+      "name": "Clipy",
+      "category": "System Utilities",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "mac"
+      ]
+    },
+    {
+      "id": "commander-one",
+      "name": "Commander One",
+      "category": "System Utilities",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "mac"
+      ]
+    },
+    {
+      "id": "espanso",
+      "name": "Espanso",
+      "category": "System Utilities",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "mac-universal"
+      ]
+    },
+    {
+      "id": "forklift",
+      "name": "ForkLift",
+      "category": "System Utilities",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "mac"
+      ]
+    },
+    {
+      "id": "freefilesync",
+      "name": "FreeFileSync",
+      "category": "System Utilities",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "mac"
+      ]
+    },
+    {
+      "id": "hammerspoon",
+      "name": "Hammerspoon",
+      "category": "System Utilities",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "mac"
+      ]
+    },
+    {
+      "id": "hiddenbar",
+      "name": "Hidden Bar",
+      "category": "System Utilities",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "mac"
+      ]
+    },
+    {
+      "id": "hwinfo",
+      "name": "HWiNFO",
+      "category": "System Utilities",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "win-x64"
+      ]
+    },
+    {
+      "id": "hwmonitor",
+      "name": "HWMonitor",
+      "category": "System Utilities",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "win-x64"
+      ]
+    },
+    {
+      "id": "karabiner-elements",
+      "name": "Karabiner Elements",
+      "category": "System Utilities",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "mac"
+      ]
+    },
+    {
+      "id": "keyboard-maestro",
+      "name": "Keyboard Maestro",
+      "category": "System Utilities",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "mac"
+      ]
+    },
+    {
+      "id": "knockknock",
+      "name": "KnockKnock",
+      "category": "System Utilities",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "mac"
+      ]
+    },
+    {
+      "id": "linearmouse",
+      "name": "LinearMouse",
+      "category": "System Utilities",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "mac"
+      ]
+    },
+    {
+      "id": "mos",
+      "name": "Mos",
+      "category": "System Utilities",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "mac"
+      ]
+    },
+    {
+      "id": "multicommander",
+      "name": "Multi Commander",
+      "category": "System Utilities",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "win-x64"
+      ]
+    },
+    {
+      "id": "multipass",
+      "name": "Multipass",
+      "category": "System Utilities",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "mac"
+      ]
+    },
+    {
+      "id": "onecommander",
+      "name": "OneCommander",
+      "category": "System Utilities",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "win"
+      ]
+    },
+    {
+      "id": "oversight",
+      "name": "OverSight",
+      "category": "System Utilities",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "mac"
+      ]
+    },
+    {
+      "id": "parallels",
+      "name": "Parallels Desktop",
+      "category": "System Utilities",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "mac"
+      ]
+    },
+    {
+      "id": "paste",
+      "name": "Paste",
+      "category": "System Utilities",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "mac"
+      ]
+    },
+    {
+      "id": "popclip",
+      "name": "PopClip",
+      "category": "System Utilities",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "mac"
+      ]
+    },
+    {
+      "id": "q-dir",
+      "name": "Q-Dir",
+      "category": "System Utilities",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "win-x64"
+      ]
+    },
+    {
+      "id": "scroll-reverser",
+      "name": "Scroll Reverser",
+      "category": "System Utilities",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "mac"
+      ]
+    },
+    {
+      "id": "shottr",
+      "name": "Shottr",
+      "category": "System Utilities",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "mac"
+      ]
+    },
+    {
+      "id": "superduper",
+      "name": "SuperDuper!",
+      "category": "System Utilities",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "mac"
+      ]
+    },
+    {
+      "id": "suspicious-package",
+      "name": "Suspicious Package",
+      "category": "System Utilities",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "mac"
+      ]
+    },
+    {
+      "id": "syncovery",
+      "name": "Syncovery",
+      "category": "System Utilities",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "mac"
+      ]
+    },
+    {
+      "id": "testdisk",
+      "name": "TestDisk",
+      "category": "System Utilities",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "win"
+      ]
+    },
+    {
+      "id": "totalcommander",
+      "name": "Total Commander",
+      "category": "System Utilities",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "win-x64"
+      ]
+    },
+    {
+      "id": "yoink",
+      "name": "Yoink",
+      "category": "System Utilities",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "mac"
+      ]
+    },
+    {
+      "id": "freedownloadmanager",
+      "name": "Free Download Manager",
+      "category": "Utilities",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "win-x64"
+      ]
     }
   ]
 }

@@ -147,26 +147,31 @@ def fetch(args: dict[str, Any]) -> FetchResult:
                 chosen = data
             elif platform in {"mac-arm64", "mac-x64"}:
                 arch = "arm64" if platform.endswith("arm64") else "x86_64"
-                variations = [
-                    v
-                    for key, v in data.get("variations", {}).items()
-                    if key.startswith(arch)
-                ]
-                chosen = variations[0] if variations else data
-                url = chosen.get("url", "")
                 tokens = (
                     ("arm64", "aarch64")
                     if arch == "arm64"
                     else ("x86_64", "amd64", "intel", "x64")
                 )
-                if (
-                    not variations
-                    and not any(t in url.lower() for t in tokens)
-                    and "universal" not in url.lower()
-                ):
-                    raise FetchError(
-                        "Homebrew architecture is not established by metadata"
-                    )
+                default_url = data.get("url", "").lower()
+                if any(t in default_url for t in tokens) or "universal" in default_url:
+                    chosen = data
+                else:
+                    variations = {
+                        v["url"]: v
+                        for key, v in data.get("variations", {}).items()
+                        if not key.endswith("_linux")
+                        and v.get("url")
+                        and str(v.get("version", version)) == str(version)
+                        and (
+                            key.startswith(arch)
+                            or any(t in v["url"].lower() for t in tokens)
+                        )
+                    }
+                    if len(variations) != 1:
+                        raise FetchError(
+                            "Homebrew architecture is not established by metadata at the current version"
+                        )
+                    chosen = next(iter(variations.values()))
             else:
                 raise FetchError(
                     "Homebrew supports mac platforms only; universal must be explicitly verified"

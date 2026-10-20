@@ -1,0 +1,3639 @@
+# 2026-10-21：人工核对身份与来源的新软件，首次发布前逐项通过覆盖与链接门禁。
+packages:
+- id: arc
+  name: Arc
+  category: Browsers
+  editions:
+  - cn
+  - intl
+  homepage: https://arc.net/
+  fetcher: package_manifest
+  args:
+    provider: brew
+    package: arc
+    platforms:
+    - platform: mac
+  source_ids:
+    brew: arc
+  desc_cn: Arc 网页浏览器
+  desc_en: Chromium based browser
+- id: min
+  name: Min
+  category: Browsers
+  editions:
+  - cn
+  - intl
+  homepage: https://minbrowser.org/
+  fetcher: package_manifest
+  args:
+    provider: scoop
+    package: extras/min
+    platforms:
+    - platform: win-x64
+  source_ids:
+    scoop: extras/min
+    brew: min
+  desc_cn: 轻量网页浏览器
+  desc_en: Minimal browser that protects privacy
+- id: orion
+  name: Orion Browser
+  category: Browsers
+  editions:
+  - cn
+  - intl
+  homepage: https://browser.kagi.com/
+  fetcher: package_manifest
+  args:
+    provider: brew
+    package: orion
+    platforms:
+    - platform: mac
+  source_ids:
+    brew: orion
+  desc_cn: macOS Orion 网页浏览器
+  desc_en: WebKit based web browser
+- id: palemoon
+  name: Pale Moon
+  category: Browsers
+  editions:
+  - cn
+  - intl
+  homepage: https://www.palemoon.org
+  fetcher: package_manifest
+  args:
+    provider: scoop
+    package: extras/palemoon
+    platforms:
+    - platform: win-x64
+  source_ids:
+    scoop: extras/palemoon
+  desc_cn: Pale Moon 网页浏览器
+  desc_en: Mozilla-derived web browser focusing on efficiency and customization
+- id: seamonkey
+  name: SeaMonkey
+  category: Browsers
+  editions:
+  - cn
+  - intl
+  homepage: https://www.seamonkey-project.org
+  fetcher: package_manifest
+  args:
+    provider: scoop
+    package: extras/seamonkey
+    platforms:
+    - platform: win-x64
+  source_ids:
+    scoop: extras/seamonkey
+    brew: seamonkey
+  desc_cn: 浏览器与邮件工具套件
+  desc_en: Development of SeaMonkey Internet Application Suite
+- id: waterfox
+  name: Waterfox
+  category: Browsers
+  editions:
+  - cn
+  - intl
+  homepage: https://www.waterfox.net
+  fetcher: package_manifest
+  args:
+    provider: scoop
+    package: extras/waterfox
+    platforms:
+    - platform: win-x64
+  source_ids:
+    scoop: extras/waterfox
+    brew: waterfox
+  desc_cn: 注重隐私的 Firefox 系浏览器
+  desc_en: Web browser
+  verification:
+    allowed_hosts:
+    - cdn.waterfox.com
+- id: wavebox
+  name: Wavebox
+  category: Browsers
+  editions:
+  - cn
+  - intl
+  homepage: https://wavebox.io/
+  fetcher: package_manifest
+  args:
+    provider: brew
+    package: wavebox
+    platforms:
+    - platform: mac-arm64
+  source_ids:
+    brew: wavebox
+  desc_cn: 网页应用与多账号工作空间浏览器
+  desc_en: Web browser
+- id: android-studio
+  name: Android Studio
+  category: Developer Tools
+  editions:
+  - cn
+  - intl
+  homepage: https://developer.android.com/studio
+  fetcher: package_manifest
+  args:
+    provider: scoop
+    package: extras/android-studio
+    platforms:
+    - platform: win-x64
+  source_ids:
+    scoop: extras/android-studio
+    brew: android-studio
+  desc_cn: Android 应用集成开发环境
+  desc_en: Tools for building Android applications
+- id: aws
+  name: AWS CLI
+  category: Developer Tools
+  editions:
+  - cn
+  - intl
+  homepage: https://aws.amazon.com/cli/
+  fetcher: package_manifest
+  args:
+    provider: scoop
+    package: main/aws
+    platforms:
+    - platform: win-x64
+  source_ids:
+    scoop: main/aws
+  desc_cn: AWS 官方命令行客户端
+  desc_en: Unified tool to manage AWS services
+- id: azure-cli
+  name: Azure CLI
+  category: Developer Tools
+  editions:
+  - cn
+  - intl
+  homepage: https://aka.ms/cli
+  fetcher: package_manifest
+  args:
+    provider: scoop
+    package: main/azure-cli
+    platforms:
+    - platform: win-x64
+  source_ids:
+    scoop: main/azure-cli
+  desc_cn: Microsoft Azure 官方命令行客户端
+  desc_en: A cross-platform command-line tool to connect to Azure and execute administrative commands on Azure resources
+- id: azure-storage-explorer
+  name: Microsoft Azure Storage Explorer
+  category: Developer Tools
+  desc_cn: Azure 存储图形管理工具
+  editions:
+  - cn
+  - intl
+  homepage: https://azure.microsoft.com/products/storage/storage-explorer/
+  fetcher: package_manifest
+  args:
+    provider: winget
+    package: Microsoft.Azure.StorageExplorer
+    platforms:
+    - platform: win-x64
+  source_ids:
+    winget: Microsoft.Azure.StorageExplorer
+  desc_en: Microsoft Azure Storage Explorer
+  verification:
+    allowed_hosts:
+    - download.visualstudio.microsoft.com
+    - download.microsoft.com
+- id: bbedit
+  name: BBEdit
+  category: Developer Tools
+  editions:
+  - cn
+  - intl
+  homepage: https://www.barebones.com/products/bbedit/
+  fetcher: package_manifest
+  args:
+    provider: brew
+    package: bbedit
+    platforms:
+    - platform: mac
+  source_ids:
+    brew: bbedit
+  desc_cn: macOS 专业文本与代码编辑器
+  desc_en: Text, code, and markup editor
+- id: beyond-compare
+  name: Beyond Compare
+  category: Developer Tools
+  editions:
+  - cn
+  - intl
+  homepage: https://www.scootersoftware.com/
+  fetcher: package_manifest
+  args:
+    provider: brew
+    package: beyond-compare
+    platforms:
+    - platform: mac
+  source_ids:
+    brew: beyond-compare
+  desc_cn: 文件、文件夹与文本比较合并工具
+  desc_en: Compare files and folders
+- id: charles
+  name: Charles
+  category: Developer Tools
+  editions:
+  - cn
+  - intl
+  homepage: https://www.charlesproxy.com/
+  fetcher: package_manifest
+  args:
+    provider: brew
+    package: charles
+    platforms:
+    - platform: mac
+  source_ids:
+    brew: charles
+  desc_cn: HTTP 和 HTTPS 网络调试代理
+  desc_en: Web debugging Proxy application
+- id: clion
+  name: CLion
+  category: Developer Tools
+  editions:
+  - cn
+  - intl
+  homepage: https://www.jetbrains.com/cpp/
+  fetcher: package_manifest
+  args:
+    provider: scoop
+    package: extras/clion
+    platforms:
+    - platform: win-x64
+  source_ids:
+    scoop: extras/clion
+    brew: clion
+  desc_cn: C 和 C++ 集成开发环境
+  desc_en: C and C++ IDE
+  verification:
+    allowed_hosts:
+    - download-cdn.jetbrains.com
+    - download-cdn.clf.jetbrains.com.cn
+- id: cmake
+  name: CMake
+  category: Developer Tools
+  editions:
+  - cn
+  - intl
+  homepage: https://cmake.org
+  fetcher: package_manifest
+  args:
+    provider: scoop
+    package: main/cmake
+    platforms:
+    - platform: win-x64
+  source_ids:
+    scoop: main/cmake
+  desc_cn: 跨平台软件构建配置工具
+  desc_en: Family of tools designed to build, test and package software
+- id: composer
+  name: Composer
+  category: Developer Tools
+  editions:
+  - cn
+  - intl
+  homepage: https://getcomposer.org/
+  fetcher: package_manifest
+  args:
+    provider: scoop
+    package: main/composer
+    platforms:
+    - platform: win
+  source_ids:
+    scoop: main/composer
+  desc_cn: PHP 依赖管理工具
+  desc_en: Dependency Manager for PHP
+- id: corretto-jdk
+  name: Amazon Corretto JDK 25
+  category: Developer Tools
+  desc_cn: Amazon Java 25 长期支持版开发工具包
+  editions:
+  - cn
+  - intl
+  homepage: https://aws.amazon.com/corretto/
+  fetcher: package_manifest
+  args:
+    provider: winget
+    package: Amazon.Corretto.25.JDK
+    platforms:
+    - platform: win-x64
+  source_ids:
+    winget: Amazon.Corretto.25.JDK
+  desc_en: Amazon Corretto JDK 25
+- id: coteditor
+  name: CotEditor
+  category: Developer Tools
+  editions:
+  - cn
+  - intl
+  homepage: https://coteditor.com/
+  fetcher: package_manifest
+  args:
+    provider: brew
+    package: coteditor
+    platforms:
+    - platform: mac
+  source_ids:
+    brew: coteditor
+  desc_cn: macOS 开源纯文本编辑器
+  desc_en: Plain-text editor for web pages, program source codes and more
+- id: datagrip
+  name: DataGrip
+  category: Developer Tools
+  editions:
+  - cn
+  - intl
+  homepage: https://www.jetbrains.com/datagrip/
+  fetcher: package_manifest
+  args:
+    provider: brew
+    package: datagrip
+    platforms:
+    - platform: mac-arm64
+  source_ids:
+    brew: datagrip
+  desc_cn: 多数据库开发与 SQL 管理工具
+  desc_en: Databases and SQL IDE
+  verification:
+    allowed_hosts:
+    - download-cdn.jetbrains.com
+    - download-cdn.clf.jetbrains.com.cn
+- id: db-browser-for-sqlite
+  name: DB Browser for SQLite
+  category: Developer Tools
+  editions:
+  - cn
+  - intl
+  homepage: https://sqlitebrowser.org/
+  fetcher: package_manifest
+  args:
+    provider: brew
+    package: db-browser-for-sqlite
+    platforms:
+    - platform: mac
+  source_ids:
+    brew: db-browser-for-sqlite
+  desc_cn: SQLite 数据库图形管理工具
+  desc_en: Browser for SQLite databases
+- id: dbgate
+  name: DbGate
+  category: Developer Tools
+  editions:
+  - cn
+  - intl
+  homepage: https://dbgate.org/
+  fetcher: package_manifest
+  args:
+    provider: brew
+    package: dbgate
+    platforms:
+    - platform: mac-universal
+  source_ids:
+    brew: dbgate
+  desc_cn: 开源多数据库管理客户端
+  desc_en: Database manager for MySQL, PostgreSQL, SQL Server, MongoDB, SQLite and others
+- id: deno
+  name: Deno
+  category: Developer Tools
+  editions:
+  - cn
+  - intl
+  homepage: https://deno.com
+  fetcher: package_manifest
+  args:
+    provider: scoop
+    package: main/deno
+    platforms:
+    - platform: win-x64
+  source_ids:
+    scoop: main/deno
+  desc_cn: JavaScript 与 TypeScript 运行时
+  desc_en: A secure runtime for JavaScript and TypeScript
+- id: dotnet-sdk
+  name: .NET SDK 10
+  category: Developer Tools
+  desc_cn: .NET 应用开发工具包
+  editions:
+  - cn
+  - intl
+  homepage: https://dotnet.microsoft.com/download/dotnet/10.0
+  fetcher: package_manifest
+  args:
+    provider: winget
+    package: Microsoft.DotNet.SDK.10
+    platforms:
+    - platform: win-x64
+  source_ids:
+    winget: Microsoft.DotNet.SDK.10
+  desc_en: .NET SDK 10
+- id: eclipse-java
+  name: Eclipse IDE for Java Developers
+  category: Developer Tools
+  editions:
+  - cn
+  - intl
+  homepage: https://www.eclipse.org
+  fetcher: package_manifest
+  args:
+    provider: scoop
+    package: extras/eclipse-java
+    platforms:
+    - platform: win-x64
+  source_ids:
+    scoop: extras/eclipse-java
+    brew: eclipse-java
+  desc_cn: Eclipse Java 集成开发环境
+  desc_en: Eclipse IDE for Java developers
+- id: fork
+  name: Fork
+  category: Developer Tools
+  editions:
+  - cn
+  - intl
+  homepage: https://git-fork.com/
+  fetcher: package_manifest
+  args:
+    provider: scoop
+    package: extras/fork
+    platforms:
+    - platform: win
+  source_ids:
+    scoop: extras/fork
+    brew: fork
+  desc_cn: Git 图形客户端
+  desc_en: GIT client
+- id: geany
+  name: Geany
+  category: Developer Tools
+  editions:
+  - cn
+  - intl
+  homepage: https://www.geany.org/
+  fetcher: package_manifest
+  args:
+    provider: brew
+    package: geany
+    platforms:
+    - platform: mac-arm64
+  source_ids:
+    brew: geany
+  desc_cn: 轻量跨平台代码编辑器
+  desc_en: Small and lightweight IDE
+- id: gitbutler
+  name: GitButler
+  category: Developer Tools
+  editions:
+  - cn
+  - intl
+  homepage: https://gitbutler.com/
+  fetcher: package_manifest
+  args:
+    provider: scoop
+    package: extras/gitbutler
+    platforms:
+    - platform: win-x64
+  source_ids:
+    scoop: extras/gitbutler
+    brew: gitbutler
+  desc_cn: Git 分支与变更管理客户端
+  desc_en: Git client for simultaneous branches on top of your existing workflow
+- id: gitextensions
+  name: Git Extensions
+  category: Developer Tools
+  editions:
+  - cn
+  - intl
+  homepage: https://gitextensions.github.io/
+  fetcher: package_manifest
+  args:
+    provider: scoop
+    package: extras/gitextensions
+    platforms:
+    - platform: win-x64
+  source_ids:
+    scoop: extras/gitextensions
+  desc_cn: Git 图形管理客户端
+  desc_en: A graphical user interface for Git that allows you to control Git without using the commandline.
+- id: github-desktop
+  name: GitHub Desktop
+  category: Developer Tools
+  editions:
+  - cn
+  - intl
+  homepage: https://desktop.github.com/
+  fetcher: package_manifest
+  args:
+    provider: scoop
+    package: extras/github
+    platforms:
+    - platform: win-x64
+  source_ids:
+    scoop: extras/github
+    brew: github
+  desc_cn: GitHub Desktop Git 图形客户端
+  desc_en: Desktop client for GitHub repositories
+- id: goland
+  name: Goland
+  category: Developer Tools
+  editions:
+  - cn
+  - intl
+  homepage: https://www.jetbrains.com/go/
+  fetcher: package_manifest
+  args:
+    provider: brew
+    package: goland
+    platforms:
+    - platform: mac-arm64
+  source_ids:
+    brew: goland
+  desc_cn: Go 语言集成开发环境
+  desc_en: Go (golang) IDE
+  verification:
+    allowed_hosts:
+    - download-cdn.jetbrains.com
+    - download-cdn.clf.jetbrains.com.cn
+- id: gradle
+  name: Gradle
+  category: Developer Tools
+  editions:
+  - cn
+  - intl
+  homepage: https://gradle.org
+  fetcher: package_manifest
+  args:
+    provider: scoop
+    package: main/gradle
+    platforms:
+    - platform: win
+  source_ids:
+    scoop: main/gradle
+  desc_cn: 多语言项目构建与自动化工具
+  desc_en: An open-source build automation tool focused on flexibility and performance. (Source code and documentation bundled)
+  verification:
+    allowed_hosts:
+    - github.com
+    - release-assets.githubusercontent.com
+    - objects.githubusercontent.com
+- id: http-toolkit
+  name: HTTP Toolkit
+  category: Developer Tools
+  editions:
+  - cn
+  - intl
+  homepage: https://httptoolkit.tech/
+  fetcher: package_manifest
+  args:
+    provider: brew
+    package: http-toolkit
+    platforms:
+    - platform: mac-arm64
+  source_ids:
+    brew: http-toolkit
+  desc_cn: HTTP 请求调试、抓包与模拟工具
+  desc_en: HTTP(S) debugging proxy, analyzer, and client
+- id: intellij-idea
+  name: IntelliJ IDEA Ultimate
+  category: Developer Tools
+  editions:
+  - cn
+  - intl
+  homepage: https://www.jetbrains.com/idea/
+  fetcher: package_manifest
+  args:
+    provider: scoop
+    package: extras/idea
+    platforms:
+    - platform: win-x64
+  source_ids:
+    scoop: extras/idea
+    brew: intellij-idea
+  desc_cn: IntelliJ IDEA 集成开发环境
+  desc_en: Java IDE by JetBrains
+  verification:
+    allowed_hosts:
+    - download-cdn.jetbrains.com
+    - download-cdn.clf.jetbrains.com.cn
+- id: julia
+  name: Julia
+  category: Developer Tools
+  editions:
+  - cn
+  - intl
+  homepage: https://julialang.org/
+  fetcher: package_manifest
+  args:
+    provider: scoop
+    package: main/julia
+    platforms:
+    - platform: win-x64
+  source_ids:
+    scoop: main/julia
+  desc_cn: 科学计算与数值分析编程语言
+  desc_en: The Julia programming language
+- id: kate
+  name: Kate
+  category: Developer Tools
+  editions:
+  - cn
+  - intl
+  homepage: https://kate-editor.org/
+  fetcher: package_manifest
+  args:
+    provider: brew
+    package: kate
+    platforms:
+    - platform: mac-arm64
+  source_ids:
+    brew: kate
+  desc_cn: KDE 高级文本编辑器
+  desc_en: Multi-document editor by KDE
+- id: kdiff3
+  name: KDiff3
+  category: Developer Tools
+  editions:
+  - cn
+  - intl
+  homepage: https://apps.kde.org/kdiff3/
+  fetcher: package_manifest
+  args:
+    provider: scoop
+    package: extras/kdiff3
+    platforms:
+    - platform: win-x64
+  source_ids:
+    scoop: extras/kdiff3
+    brew: kdiff3
+  desc_cn: 三方文件比较与合并工具
+  desc_en: Utility for comparing and merging files and directories
+- id: kubectl
+  name: kubectl
+  category: Developer Tools
+  editions:
+  - cn
+  - intl
+  homepage: https://kubernetes.io/docs/reference/kubectl/
+  fetcher: package_manifest
+  args:
+    provider: scoop
+    package: main/kubectl
+    platforms:
+    - platform: win-x64
+  source_ids:
+    scoop: main/kubectl
+  desc_cn: Kubernetes 官方命令行工具
+  desc_en: Control the Kubernetes cluster manager.
+- id: lens
+  name: Lens
+  category: Developer Tools
+  editions:
+  - cn
+  - intl
+  homepage: https://lenshq.io/
+  fetcher: package_manifest
+  args:
+    provider: brew
+    package: lens
+    platforms:
+    - platform: mac-arm64
+  source_ids:
+    brew: lens
+  desc_cn: Kubernetes 桌面管理工具
+  desc_en: Kubernetes IDE
+  verification:
+    allowed_hosts:
+    - downloads.k8slens.dev
+- id: llvm
+  name: LLVM
+  category: Developer Tools
+  editions:
+  - cn
+  - intl
+  homepage: https://www.llvm.org
+  fetcher: package_manifest
+  args:
+    provider: scoop
+    package: main/llvm
+    platforms:
+    - platform: win-x64
+  source_ids:
+    scoop: main/llvm
+  desc_cn: LLVM 编译器与工具链
+  desc_en: Collection of modular and reusable compiler and toolchain technologies.
+- id: mactex-no-gui
+  name: MacTeX
+  category: Developer Tools
+  editions:
+  - cn
+  - intl
+  homepage: https://www.tug.org/mactex/
+  fetcher: package_manifest
+  args:
+    provider: brew
+    package: mactex-no-gui
+    platforms:
+    - platform: mac
+  source_ids:
+    brew: mactex-no-gui
+  desc_cn: macOS TeX 与 LaTeX 排版环境
+  desc_en: Full TeX Live distribution without GUI applications
+- id: maven
+  name: Maven
+  category: Developer Tools
+  editions:
+  - cn
+  - intl
+  homepage: https://maven.apache.org/
+  fetcher: package_manifest
+  args:
+    provider: scoop
+    package: main/maven
+    platforms:
+    - platform: win
+  source_ids:
+    scoop: main/maven
+  desc_cn: Java 项目构建与依赖管理工具
+  desc_en: Software project management and comprehension tool
+- id: meld
+  name: Meld
+  category: Developer Tools
+  editions:
+  - cn
+  - intl
+  homepage: https://meldmerge.org/
+  fetcher: package_manifest
+  args:
+    provider: scoop
+    package: extras/meld
+    platforms:
+    - platform: win-x64
+  source_ids:
+    scoop: extras/meld
+    brew: meld
+  desc_cn: 可视化差异比较和合并工具
+  desc_en: Visual diff and merge tool
+- id: mongodb-compass
+  name: MongoDB Compass
+  category: Developer Tools
+  editions:
+  - cn
+  - intl
+  homepage: https://www.mongodb.com/products/compass
+  fetcher: package_manifest
+  args:
+    provider: scoop
+    package: extras/mongodb-compass
+    platforms:
+    - platform: win-x64
+  source_ids:
+    scoop: extras/mongodb-compass
+    brew: mongodb-compass
+  desc_cn: MongoDB 官方图形数据库管理工具
+  desc_en: Interactive tool for analyzing MongoDB data
+- id: mysqlworkbench
+  name: MySQL Workbench
+  category: Developer Tools
+  editions:
+  - cn
+  - intl
+  homepage: https://www.mysql.com/products/workbench/
+  fetcher: package_manifest
+  args:
+    provider: brew
+    package: mysqlworkbench
+    platforms:
+    - platform: mac-arm64
+  source_ids:
+    brew: mysqlworkbench
+  desc_cn: MySQL 数据库建模与管理工具
+  desc_en: Visual tool to design, develop and administer MySQL servers
+- id: netbeans
+  name: NetBeans IDE
+  category: Developer Tools
+  editions:
+  - cn
+  - intl
+  homepage: https://netbeans.apache.org/
+  fetcher: package_manifest
+  args:
+    provider: brew
+    package: netbeans
+    platforms:
+    - platform: mac-arm64
+  source_ids:
+    brew: netbeans
+  desc_cn: Java 等语言的开源集成开发环境
+  desc_en: Development environment, tooling platform and application framework
+- id: ninja
+  name: Ninja
+  category: Developer Tools
+  editions:
+  - cn
+  - intl
+  homepage: https://ninja-build.org/
+  fetcher: package_manifest
+  args:
+    provider: scoop
+    package: main/ninja
+    platforms:
+    - platform: win-x64
+  source_ids:
+    scoop: main/ninja
+  desc_cn: 轻量高速软件构建工具
+  desc_en: A small build system with a focus on speed.
+- id: packer
+  name: Packer
+  category: Developer Tools
+  editions:
+  - cn
+  - intl
+  homepage: https://www.packer.io
+  fetcher: package_manifest
+  args:
+    provider: scoop
+    package: main/packer
+    platforms:
+    - platform: win-x64
+  source_ids:
+    scoop: main/packer
+  desc_cn: 机器镜像构建与自动化工具
+  desc_en: Automates the creation of any type of virtual machine image.
+- id: pgadmin4
+  name: pgAdmin4
+  category: Developer Tools
+  editions:
+  - cn
+  - intl
+  homepage: https://www.pgadmin.org/
+  fetcher: package_manifest
+  args:
+    provider: brew
+    package: pgadmin4
+    platforms:
+    - platform: mac-arm64
+  source_ids:
+    brew: pgadmin4
+  desc_cn: PostgreSQL 图形管理工具
+  desc_en: Administration and development platform for PostgreSQL
+- id: php
+  name: PHP
+  category: Developer Tools
+  editions:
+  - cn
+  - intl
+  homepage: https://www.php.net/
+  fetcher: package_manifest
+  args:
+    provider: scoop
+    package: main/php
+    platforms:
+    - platform: win-x64
+  source_ids:
+    scoop: main/php
+  desc_cn: PHP 编程语言运行环境
+  desc_en: A popular general-purpose scripting language that is especially suited to web development. (thread safe)
+- id: phpstorm
+  name: JetBrains PhpStorm
+  category: Developer Tools
+  editions:
+  - cn
+  - intl
+  homepage: https://www.jetbrains.com/phpstorm/
+  fetcher: package_manifest
+  args:
+    provider: brew
+    package: phpstorm
+    platforms:
+    - platform: mac-arm64
+  source_ids:
+    brew: phpstorm
+  desc_cn: PHP 集成开发环境
+  desc_en: PHP IDE by JetBrains
+  verification:
+    allowed_hosts:
+    - download-cdn.jetbrains.com
+    - download-cdn.clf.jetbrains.com.cn
+- id: podman-desktop
+  name: Podman Desktop
+  category: Developer Tools
+  editions:
+  - cn
+  - intl
+  homepage: https://podman-desktop.io/
+  fetcher: package_manifest
+  args:
+    provider: brew
+    package: podman-desktop
+    platforms:
+    - platform: mac-arm64
+  source_ids:
+    brew: podman-desktop
+  desc_cn: Podman 容器桌面管理工具
+  desc_en: Browse, manage, inspect containers and images
+- id: positron
+  name: Positron
+  category: Developer Tools
+  editions:
+  - cn
+  - intl
+  homepage: https://positron.posit.co/
+  fetcher: package_manifest
+  args:
+    provider: brew
+    package: positron
+    platforms:
+    - platform: mac-arm64
+  source_ids:
+    brew: positron
+  desc_cn: 数据科学集成开发环境
+  desc_en: Data science IDE
+- id: postico
+  name: Postico
+  category: Developer Tools
+  editions:
+  - cn
+  - intl
+  homepage: https://eggerapps.at/postico2/
+  fetcher: package_manifest
+  args:
+    provider: brew
+    package: postico
+    platforms:
+    - platform: mac
+  source_ids:
+    brew: postico
+  desc_cn: macOS PostgreSQL 数据库客户端
+  desc_en: GUI client for PostgreSQL databases
+- id: proxyman
+  name: Proxyman
+  category: Developer Tools
+  editions:
+  - cn
+  - intl
+  homepage: https://proxyman.com/
+  fetcher: package_manifest
+  args:
+    provider: brew
+    package: proxyman
+    platforms:
+    - platform: mac
+  source_ids:
+    brew: proxyman
+  desc_cn: macOS HTTP 和 HTTPS 网络调试代理
+  desc_en: HTTP debugging proxy
+- id: pycharm
+  name: PyCharm
+  category: Developer Tools
+  editions:
+  - cn
+  - intl
+  homepage: https://www.jetbrains.com/pycharm/
+  fetcher: package_manifest
+  args:
+    provider: scoop
+    package: extras/pycharm
+    platforms:
+    - platform: win-x64
+  source_ids:
+    scoop: extras/pycharm
+    brew: pycharm
+  desc_cn: Python 集成开发环境
+  desc_en: IDE for professional Python development
+  verification:
+    allowed_hosts:
+    - download-cdn.jetbrains.com
+    - download-cdn.clf.jetbrains.com.cn
+- id: querious
+  name: Querious 4
+  category: Developer Tools
+  editions:
+  - cn
+  - intl
+  homepage: https://www.araelium.com/querious/
+  fetcher: package_manifest
+  args:
+    provider: brew
+    package: querious
+    platforms:
+    - platform: mac
+  source_ids:
+    brew: querious
+  desc_cn: macOS MySQL 数据库管理工具
+  desc_en: MySQL and compatible databases tool
+  verification:
+    allowed_hosts:
+    - arweb-assets.s3.amazonaws.com
+- id: r
+  name: R
+  category: Developer Tools
+  editions:
+  - cn
+  - intl
+  homepage: https://www.r-project.org
+  fetcher: package_manifest
+  args:
+    provider: scoop
+    package: main/r
+    platforms:
+    - platform: win-x64
+  source_ids:
+    scoop: main/r
+  desc_cn: R 统计计算环境
+  desc_en: A free software environment for statistical computing and graphics.
+- id: rancher
+  name: Rancher Desktop
+  category: Developer Tools
+  editions:
+  - cn
+  - intl
+  homepage: https://rancherdesktop.io/
+  fetcher: package_manifest
+  args:
+    provider: brew
+    package: rancher
+    platforms:
+    - platform: mac-arm64
+  source_ids:
+    brew: rancher
+  desc_cn: Rancher Desktop 本地容器与 Kubernetes 环境
+  desc_en: Kubernetes and container management on the desktop
+- id: rapidapi
+  name: RapidAPI
+  category: Developer Tools
+  editions:
+  - cn
+  - intl
+  homepage: https://paw.cloud/
+  fetcher: package_manifest
+  args:
+    provider: brew
+    package: rapidapi
+    platforms:
+    - platform: mac
+  source_ids:
+    brew: rapidapi
+  desc_cn: API 请求构建与调试客户端
+  desc_en: HTTP client that helps testing and describing APIs
+- id: redis-insight
+  name: Redis Insight
+  category: Developer Tools
+  editions:
+  - cn
+  - intl
+  homepage: https://redis.io/insight/
+  fetcher: package_manifest
+  args:
+    provider: brew
+    package: redis-insight
+    platforms:
+    - platform: mac-arm64
+  source_ids:
+    brew: redis-insight
+  desc_cn: Redis 官方可视化管理工具
+  desc_en: GUI for streamlined Redis application development
+- id: rider
+  name: JetBrains Rider
+  category: Developer Tools
+  editions:
+  - cn
+  - intl
+  homepage: https://www.jetbrains.com/rider/
+  fetcher: package_manifest
+  args:
+    provider: scoop
+    package: extras/rider
+    platforms:
+    - platform: win-x64
+  source_ids:
+    scoop: extras/rider
+    brew: rider
+  desc_cn: .NET 与游戏开发集成开发环境
+  desc_en: .NET IDE
+  verification:
+    allowed_hosts:
+    - download-cdn.jetbrains.com
+    - download-cdn.clf.jetbrains.com.cn
+- id: rstudio
+  name: RStudio
+  category: Developer Tools
+  editions:
+  - cn
+  - intl
+  homepage: https://posit.co/products/open-source/rstudio/
+  fetcher: package_manifest
+  args:
+    provider: scoop
+    package: extras/rstudio
+    platforms:
+    - platform: win-x64
+  source_ids:
+    scoop: extras/rstudio
+    brew: rstudio
+  desc_cn: R 语言统计分析与数据科学开发环境
+  desc_en: Data science software focusing on R and Python
+- id: rubymine
+  name: RubyMine
+  category: Developer Tools
+  editions:
+  - cn
+  - intl
+  homepage: https://www.jetbrains.com/ruby/
+  fetcher: package_manifest
+  args:
+    provider: brew
+    package: rubymine
+    platforms:
+    - platform: mac-arm64
+  source_ids:
+    brew: rubymine
+  desc_cn: Ruby 和 Rails 集成开发环境
+  desc_en: Ruby on Rails IDE
+  verification:
+    allowed_hosts:
+    - download-cdn.jetbrains.com
+    - download-cdn.clf.jetbrains.com.cn
+- id: rustrover
+  name: RustRover
+  category: Developer Tools
+  editions:
+  - cn
+  - intl
+  homepage: https://www.jetbrains.com/rust/
+  fetcher: package_manifest
+  args:
+    provider: scoop
+    package: extras/rustrover
+    platforms:
+    - platform: win-x64
+  source_ids:
+    scoop: extras/rustrover
+    brew: rustrover
+  desc_cn: Rust 集成开发环境
+  desc_en: Rust IDE
+  verification:
+    allowed_hosts:
+    - download-cdn.jetbrains.com
+    - download-cdn.clf.jetbrains.com.cn
+- id: rustup
+  name: Rustup
+  category: Developer Tools
+  editions:
+  - cn
+  - intl
+  homepage: https://rustup.rs
+  fetcher: package_manifest
+  args:
+    provider: scoop
+    package: main/rustup
+    platforms:
+    - platform: win-x64
+  source_ids:
+    scoop: main/rustup
+  desc_cn: Rust 编程语言工具链安装与管理工具
+  desc_en: Manage multiple rust installations with ease
+- id: sequel-ace
+  name: Sequel Ace
+  category: Developer Tools
+  editions:
+  - cn
+  - intl
+  homepage: https://github.com/Sequel-Ace/Sequel-Ace
+  fetcher: package_manifest
+  args:
+    provider: brew
+    package: sequel-ace
+    platforms:
+    - platform: mac
+  source_ids:
+    brew: sequel-ace
+  desc_cn: macOS MySQL 与 MariaDB 客户端
+  desc_en: MySQL/MariaDB database management
+- id: smartgit
+  name: SmartGit
+  category: Developer Tools
+  editions:
+  - cn
+  - intl
+  homepage: https://www.smartgit.dev/
+  fetcher: package_manifest
+  args:
+    provider: scoop
+    package: extras/smartgit
+    platforms:
+    - platform: win-x64
+  source_ids:
+    scoop: extras/smartgit
+    brew: smartgit
+  desc_cn: 跨平台 Git 图形客户端
+  desc_en: Git client
+- id: sqlitestudio
+  name: SQLiteStudio
+  category: Developer Tools
+  editions:
+  - cn
+  - intl
+  homepage: https://sqlitestudio.pl
+  fetcher: package_manifest
+  args:
+    provider: scoop
+    package: extras/sqlitestudio
+    platforms:
+    - platform: win-x64
+  source_ids:
+    scoop: extras/sqlitestudio
+  desc_cn: SQLite 数据库管理与 SQL 编辑工具
+  desc_en: A SQLite database manager. (Deprecated, please use `extras/letos` instead)
+- id: studio-3t
+  name: Studio 3T
+  category: Developer Tools
+  editions:
+  - cn
+  - intl
+  homepage: https://studio3t.com/
+  fetcher: package_manifest
+  args:
+    provider: brew
+    package: studio-3t
+    platforms:
+    - platform: mac-arm64
+  source_ids:
+    brew: studio-3t
+  desc_cn: MongoDB 数据库开发与管理工具
+  desc_en: IDE, client, and GUI for MongoDB
+- id: sublime-merge
+  name: Sublime Merge
+  category: Developer Tools
+  editions:
+  - cn
+  - intl
+  homepage: https://www.sublimemerge.com/
+  fetcher: package_manifest
+  args:
+    provider: scoop
+    package: extras/sublime-merge
+    platforms:
+    - platform: win-x64
+  source_ids:
+    scoop: extras/sublime-merge
+    brew: sublime-merge
+  desc_cn: Git 图形客户端
+  desc_en: Git client
+- id: sublime-text
+  name: Sublime Text
+  category: Developer Tools
+  editions:
+  - cn
+  - intl
+  homepage: https://www.sublimetext.com
+  fetcher: package_manifest
+  args:
+    provider: scoop
+    package: extras/sublime-text
+    platforms:
+    - platform: win-x64
+  source_ids:
+    scoop: extras/sublime-text
+    brew: sublime-text
+  desc_cn: 轻量文本与代码编辑器
+  desc_en: Text editor for code, markup and prose
+- id: temurin-jdk
+  name: Eclipse Temurin JDK 25
+  category: Developer Tools
+  desc_cn: Java 25 长期支持版开发工具包
+  editions:
+  - cn
+  - intl
+  homepage: https://adoptium.net/temurin/releases/
+  fetcher: package_manifest
+  args:
+    provider: winget
+    package: EclipseAdoptium.Temurin.25.JDK
+    platforms:
+    - platform: win-x64
+  source_ids:
+    winget: EclipseAdoptium.Temurin.25.JDK
+  desc_en: Eclipse Temurin JDK 25
+- id: textmate
+  name: TextMate
+  category: Developer Tools
+  editions:
+  - cn
+  - intl
+  homepage: https://macromates.com/
+  fetcher: package_manifest
+  args:
+    provider: brew
+    package: textmate
+    platforms:
+    - platform: mac
+  source_ids:
+    brew: textmate
+  desc_cn: macOS 文本与代码编辑器
+  desc_en: General-purpose text editor
+- id: vagrant
+  name: Vagrant
+  category: Developer Tools
+  editions:
+  - cn
+  - intl
+  homepage: https://www.vagrantup.com/
+  fetcher: package_manifest
+  args:
+    provider: scoop
+    package: main/vagrant
+    platforms:
+    - platform: win-x64
+  source_ids:
+    scoop: main/vagrant
+    brew: vagrant
+  desc_cn: 开发虚拟机环境管理工具
+  desc_en: Development environment
+- id: vcredist-x64
+  name: Microsoft Visual C++ Redistributable x64
+  category: Developer Tools
+  desc_cn: Microsoft Visual C++ 程序运行库
+  editions:
+  - cn
+  - intl
+  homepage: https://learn.microsoft.com/cpp/windows/latest-supported-vc-redist
+  fetcher: package_manifest
+  args:
+    provider: winget
+    package: Microsoft.VCRedist.2015+.x64
+    platforms:
+    - platform: win-x64
+  source_ids:
+    winget: Microsoft.VCRedist.2015+.x64
+  desc_en: Microsoft Visual C++ Redistributable x64
+  verification:
+    allowed_hosts:
+    - download.visualstudio.microsoft.com
+    - download.microsoft.com
+- id: visual-studio-community
+  name: Visual Studio Community
+  category: Developer Tools
+  desc_cn: Visual Studio .NET 与 C++ 集成开发环境
+  editions:
+  - cn
+  - intl
+  homepage: https://visualstudio.microsoft.com/vs/community/
+  fetcher: package_manifest
+  args:
+    provider: winget
+    package: Microsoft.VisualStudio.2022.Community
+    platforms:
+    - platform: win-x64
+  source_ids:
+    winget: Microsoft.VisualStudio.2022.Community
+  desc_en: Visual Studio Community
+  verification:
+    allowed_hosts:
+    - download.visualstudio.microsoft.com
+    - download.microsoft.com
+- id: webstorm
+  name: WebStorm
+  category: Developer Tools
+  editions:
+  - cn
+  - intl
+  homepage: https://www.jetbrains.com/webstorm/
+  fetcher: package_manifest
+  args:
+    provider: brew
+    package: webstorm
+    platforms:
+    - platform: mac-arm64
+  source_ids:
+    brew: webstorm
+  desc_cn: JavaScript 与 TypeScript 集成开发环境
+  desc_en: JavaScript IDE
+  verification:
+    allowed_hosts:
+    - download-cdn.jetbrains.com
+    - download-cdn.clf.jetbrains.com.cn
+- id: winmerge
+  name: WinMerge
+  category: Developer Tools
+  editions:
+  - cn
+  - intl
+  homepage: https://winmerge.org
+  fetcher: package_manifest
+  args:
+    provider: scoop
+    package: extras/winmerge
+    platforms:
+    - platform: win-x64
+  source_ids:
+    scoop: extras/winmerge
+  desc_cn: 开源文件与文件夹比较工具
+  desc_en: Differencing and merging tool, that compares both folders and files, presenting differences in a visual text format that is easy to understand and handle.
+- id: ableton-live-suite
+  name: Ableton Live Suite
+  category: Media Players
+  editions:
+  - cn
+  - intl
+  homepage: https://www.ableton.com/en/live/
+  fetcher: package_manifest
+  args:
+    provider: brew
+    package: ableton-live-suite
+    platforms:
+    - platform: mac-universal
+  source_ids:
+    brew: ableton-live-suite
+  desc_cn: 音乐制作与现场演出软件
+  desc_en: Sound and music editor
+- id: acorn
+  name: Acorn
+  category: Media Players
+  editions:
+  - cn
+  - intl
+  homepage: https://flyingmeat.com/acorn/
+  fetcher: package_manifest
+  args:
+    provider: brew
+    package: acorn
+    platforms:
+    - platform: mac
+  source_ids:
+    brew: acorn
+  desc_cn: macOS 图像编辑工具
+  desc_en: Image editor focused on simplicity
+- id: aimp
+  name: AIMP
+  category: Media Players
+  editions:
+  - cn
+  - intl
+  homepage: https://www.aimp.ru
+  fetcher: package_manifest
+  args:
+    provider: scoop
+    package: extras/aimp
+    platforms:
+    - platform: win-x64
+  source_ids:
+    scoop: extras/aimp
+  desc_cn: 音频播放与音乐库管理工具
+  desc_en: Audio player
+  verification:
+    allowed_hosts:
+    - aimp.ru
+- id: autodesk-fusion
+  name: Autodesk Fusion 360
+  category: Media Players
+  editions:
+  - cn
+  - intl
+  homepage: https://www.autodesk.com/products/fusion-360/overview
+  fetcher: package_manifest
+  args:
+    provider: brew
+    package: autodesk-fusion
+    platforms:
+    - platform: mac
+  source_ids:
+    brew: autodesk-fusion
+  desc_cn: CAD、CAM 与工程设计工具
+  desc_en: Integrated CAD, CAM, CAE, and PCB software
+- id: bambu-studio
+  name: Bambu Studio
+  category: Media Players
+  editions:
+  - cn
+  - intl
+  homepage: https://github.com/bambulab/BambuStudio
+  fetcher: package_manifest
+  args:
+    provider: scoop
+    package: extras/bambu-studio
+    platforms:
+    - platform: win-x64
+  source_ids:
+    scoop: extras/bambu-studio
+    brew: bambu-studio
+  desc_cn: Bambu 三维打印模型切片工具
+  desc_en: 3D model slicing software for 3D printers, maintained by Bambu Lab
+- id: bitwig-studio
+  name: Bitwig Studio
+  category: Media Players
+  editions:
+  - cn
+  - intl
+  homepage: https://www.bitwig.com/
+  fetcher: package_manifest
+  args:
+    provider: brew
+    package: bitwig-studio
+    platforms:
+    - platform: mac
+  source_ids:
+    brew: bitwig-studio
+  desc_cn: 音乐创作与音频制作软件
+  desc_en: Digital audio workstation
+  verification:
+    allowed_hosts:
+    - downloads-secure.bitwig.com
+- id: canva
+  name: Canva
+  category: Media Players
+  editions:
+  - cn
+  - intl
+  homepage: https://www.canva.com/
+  fetcher: package_manifest
+  args:
+    provider: brew
+    package: canva
+    platforms:
+    - platform: mac-universal
+  source_ids:
+    brew: canva
+  desc_cn: Canva 桌面设计与内容创作工具
+  desc_en: Design tool
+- id: cap
+  name: Cap
+  category: Media Players
+  editions:
+  - cn
+  - intl
+  homepage: https://cap.so/
+  fetcher: package_manifest
+  args:
+    provider: brew
+    package: cap
+    platforms:
+    - platform: mac
+  source_ids:
+    brew: cap
+  desc_cn: 屏幕录制与视频分享工具
+  desc_en: Screen recording software
+- id: dopamine
+  name: Dopamine
+  category: Media Players
+  editions:
+  - cn
+  - intl
+  homepage: https://www.digimezzo.com/software/dopamine/
+  fetcher: package_manifest
+  args:
+    provider: scoop
+    package: extras/dopamine
+    platforms:
+    - platform: win
+  source_ids:
+    scoop: extras/dopamine
+  desc_cn: 音乐播放与音乐库管理工具
+  desc_en: Audio player which tries to make organizing and listening to music as simple and pretty as possible.
+- id: elmedia-player
+  name: Elmedia Player
+  category: Media Players
+  editions:
+  - cn
+  - intl
+  homepage: https://www.electronic.us/products/elmedia/
+  fetcher: package_manifest
+  args:
+    provider: brew
+    package: elmedia-player
+    platforms:
+    - platform: mac
+  source_ids:
+    brew: elmedia-player
+  desc_cn: macOS 音视频播放器
+  desc_en: Video and audio player
+- id: fl-studio
+  name: FL Studio
+  category: Media Players
+  editions:
+  - cn
+  - intl
+  homepage: https://www.image-line.com/fl-studio/
+  fetcher: package_manifest
+  args:
+    provider: brew
+    package: fl-studio
+    platforms:
+    - platform: mac
+  source_ids:
+    brew: fl-studio
+  desc_cn: 音乐编曲与音频制作工具
+  desc_en: Digital audio production application
+- id: kap
+  name: Kap
+  category: Media Players
+  editions:
+  - cn
+  - intl
+  homepage: https://getkap.co/
+  fetcher: package_manifest
+  args:
+    provider: brew
+    package: kap
+    platforms:
+    - platform: mac-arm64
+  source_ids:
+    brew: kap
+  desc_cn: macOS 开源屏幕录制工具
+  desc_en: Open-source screen recorder built with web technology
+- id: libresprite
+  name: Libresprite
+  category: Media Players
+  editions:
+  - cn
+  - intl
+  homepage: https://libresprite.github.io
+  fetcher: package_manifest
+  args:
+    provider: scoop
+    package: extras/libresprite
+    platforms:
+    - platform: win-x64
+  source_ids:
+    scoop: extras/libresprite
+  desc_cn: 开源像素画与动画工具
+  desc_en: Animated sprite editor & pixel art tool
+- id: meshlab
+  name: MeshLab
+  category: Media Players
+  editions:
+  - cn
+  - intl
+  homepage: http://www.meshlab.net
+  fetcher: package_manifest
+  args:
+    provider: scoop
+    package: extras/meshlab
+    platforms:
+    - platform: win-x64
+  source_ids:
+    scoop: extras/meshlab
+    brew: meshlab
+  desc_cn: 三维网格处理与编辑工具
+  desc_en: Mesh processing system
+- id: mixxx
+  name: Mixxx
+  category: Media Players
+  editions:
+  - cn
+  - intl
+  homepage: https://www.mixxx.org/
+  fetcher: package_manifest
+  args:
+    provider: brew
+    package: mixxx
+    platforms:
+    - platform: mac
+  source_ids:
+    brew: mixxx
+  desc_cn: 开源 DJ 混音软件
+  desc_en: Open-source DJ software
+- id: mpc-be
+  name: MPC-BE
+  category: Media Players
+  editions:
+  - cn
+  - intl
+  homepage: https://sourceforge.net/projects/mpcbe/
+  fetcher: package_manifest
+  args:
+    provider: scoop
+    package: extras/mpc-be
+    platforms:
+    - platform: win-x64
+  source_ids:
+    scoop: extras/mpc-be
+  desc_cn: MPC-BE 开源音视频播放器
+  desc_en: Fork of Media Player Classic containing additional features and bug fixes.
+- id: mpc-hc
+  name: MPC-HC
+  category: Media Players
+  editions:
+  - cn
+  - intl
+  homepage: https://github.com/clsid2/mpc-hc
+  fetcher: package_manifest
+  args:
+    provider: scoop
+    package: extras/mpc-hc-fork
+    platforms:
+    - platform: win-x64
+  source_ids:
+    scoop: extras/mpc-hc-fork
+  desc_cn: MPC-HC 开源音视频播放器
+  desc_en: An extremely light-weight, open source media player for Windows.
+- id: ocenaudio
+  name: ocenaudio
+  category: Media Players
+  editions:
+  - cn
+  - intl
+  homepage: https://www.ocenaudio.com/
+  fetcher: package_manifest
+  args:
+    provider: scoop
+    package: extras/ocenaudio
+    platforms:
+    - platform: win-x64
+  source_ids:
+    scoop: extras/ocenaudio
+    brew: ocenaudio
+  desc_cn: 跨平台音频编辑器
+  desc_en: Audio editor
+- id: opentoonz
+  name: OpenToonz
+  category: Media Players
+  editions:
+  - cn
+  - intl
+  homepage: https://github.com/opentoonz/opentoonz
+  fetcher: package_manifest
+  args:
+    provider: scoop
+    package: extras/opentoonz
+    platforms:
+    - platform: win-x64
+  source_ids:
+    scoop: extras/opentoonz
+    brew: opentoonz
+  desc_cn: 开源二维动画制作工具
+  desc_en: Open-source full-featured 2D animation creation software
+- id: orcaslicer
+  name: Orca Slicer
+  category: Media Players
+  editions:
+  - cn
+  - intl
+  homepage: https://github.com/OrcaSlicer/OrcaSlicer
+  fetcher: package_manifest
+  args:
+    provider: scoop
+    package: extras/orcaslicer
+    platforms:
+    - platform: win-x64
+  source_ids:
+    scoop: extras/orcaslicer
+    brew: orcaslicer
+  desc_cn: 开源三维打印切片工具
+  desc_en: G-code generator for 3D printers
+- id: paintbrush
+  name: Paintbrush
+  category: Media Players
+  editions:
+  - cn
+  - intl
+  homepage: https://paintbrush.sourceforge.io/
+  fetcher: package_manifest
+  args:
+    provider: brew
+    package: paintbrush
+    platforms:
+    - platform: mac
+  source_ids:
+    brew: paintbrush
+  desc_cn: macOS 轻量绘图工具
+  desc_en: Image editor
+- id: pinta
+  name: Pinta
+  category: Media Players
+  editions:
+  - cn
+  - intl
+  homepage: https://www.pinta-project.com/
+  fetcher: package_manifest
+  args:
+    provider: scoop
+    package: extras/pinta
+    platforms:
+    - platform: win-x64
+  source_ids:
+    scoop: extras/pinta
+    brew: pinta
+  desc_cn: 开源绘图与图像编辑工具
+  desc_en: Simple Gtk# Paint Program
+- id: prusaslicer
+  name: PrusaSlicer
+  category: Media Players
+  editions:
+  - cn
+  - intl
+  homepage: https://www.prusa3d.com/prusaslicer/
+  fetcher: package_manifest
+  args:
+    provider: scoop
+    package: extras/prusaslicer
+    platforms:
+    - platform: win-x64
+  source_ids:
+    scoop: extras/prusaslicer
+    brew: prusaslicer
+  desc_cn: 三维打印模型切片工具
+  desc_en: G-code generator for 3D printers (RepRap, Makerbot, Ultimaker etc.)
+- id: reaper
+  name: REAPER
+  category: Media Players
+  editions:
+  - cn
+  - intl
+  homepage: https://www.reaper.fm
+  fetcher: package_manifest
+  args:
+    provider: scoop
+    package: extras/reaper
+    platforms:
+    - platform: win-x64
+  source_ids:
+    scoop: extras/reaper
+    brew: reaper
+  desc_cn: 多轨音频录制、编辑与制作工具
+  desc_en: Digital audio production application
+  verification:
+    allowed_hosts:
+    - dlcf.reaper.fm
+- id: rekordbox
+  name: rekordbox
+  category: Media Players
+  editions:
+  - cn
+  - intl
+  homepage: https://rekordbox.com/en/
+  fetcher: package_manifest
+  args:
+    provider: brew
+    package: rekordbox
+    platforms:
+    - platform: mac
+  source_ids:
+    brew: rekordbox
+  desc_cn: DJ 音乐管理与演出软件
+  desc_en: Free Dj app to prepare and manage your music files
+- id: screen-studio
+  name: Screen Studio
+  category: Media Players
+  editions:
+  - cn
+  - intl
+  homepage: https://screen.studio/
+  fetcher: package_manifest
+  args:
+    provider: brew
+    package: screen-studio
+    platforms:
+    - platform: mac-arm64
+  source_ids:
+    brew: screen-studio
+  desc_cn: macOS 屏幕录制与演示视频制作工具
+  desc_en: Screen recorder and editor
+- id: sketch
+  name: Sketch
+  category: Media Players
+  editions:
+  - cn
+  - intl
+  homepage: https://www.sketch.com/
+  fetcher: package_manifest
+  args:
+    provider: brew
+    package: sketch
+    platforms:
+    - platform: mac
+  source_ids:
+    brew: sketch
+  desc_cn: macOS 界面与矢量设计工具
+  desc_en: Digital design and prototyping platform
+- id: ultimaker-cura
+  name: UltiMaker Cura
+  category: Media Players
+  editions:
+  - cn
+  - intl
+  homepage: https://ultimaker.com/software/ultimaker-cura
+  fetcher: package_manifest
+  args:
+    provider: brew
+    package: ultimaker-cura
+    platforms:
+    - platform: mac-arm64
+  source_ids:
+    brew: ultimaker-cura
+  desc_cn: 三维打印模型切片工具
+  desc_en: 3D printer and slicing GUI
+- id: virtualdj
+  name: VirtualDJ
+  category: Media Players
+  editions:
+  - cn
+  - intl
+  homepage: https://virtualdj.com/
+  fetcher: package_manifest
+  args:
+    provider: brew
+    package: virtualdj
+    platforms:
+    - platform: mac
+  source_ids:
+    brew: virtualdj
+  desc_cn: DJ 混音与演出软件
+  desc_en: DJ Software
+- id: cyberduck
+  name: Cyberduck
+  category: Network & Proxy
+  editions:
+  - cn
+  - intl
+  homepage: https://cyberduck.io/
+  fetcher: package_manifest
+  args:
+    provider: brew
+    package: cyberduck
+    platforms:
+    - platform: mac
+  source_ids:
+    brew: cyberduck
+  desc_cn: FTP、SFTP 与云存储文件传输客户端
+  desc_en: Server and cloud storage browser
+  verification:
+    allowed_hosts:
+    - a48823c7ec3cf4539564-60c534a1284a12ce74ef84032e9b4e46.ssl.cf1.rackcdn.com
+- id: little-snitch
+  name: Little Snitch
+  category: Network & Proxy
+  editions:
+  - cn
+  - intl
+  homepage: https://www.obdev.at/products/littlesnitch/index.html
+  fetcher: package_manifest
+  args:
+    provider: brew
+    package: little-snitch
+    platforms:
+    - platform: mac
+  source_ids:
+    brew: little-snitch
+  desc_cn: macOS 网络连接监控与防火墙工具
+  desc_en: Host-based application firewall
+- id: lulu
+  name: LuLu
+  category: Network & Proxy
+  editions:
+  - cn
+  - intl
+  homepage: https://objective-see.org/products/lulu.html
+  fetcher: package_manifest
+  args:
+    provider: brew
+    package: lulu
+    platforms:
+    - platform: mac
+  source_ids:
+    brew: lulu
+  desc_cn: macOS 开源出站防火墙
+  desc_en: Open-source firewall to block unknown outgoing connections
+- id: mountain-duck
+  name: Mountain Duck
+  category: Network & Proxy
+  editions:
+  - cn
+  - intl
+  homepage: https://mountainduck.io/
+  fetcher: package_manifest
+  args:
+    provider: brew
+    package: mountain-duck
+    platforms:
+    - platform: mac
+  source_ids:
+    brew: mountain-duck
+  desc_cn: 将远程文件与云存储挂载为磁盘
+  desc_en: Mounts servers and cloud storages as a disk on the desktop
+  verification:
+    allowed_hosts:
+    - 5c4462a03254654e7308-dde484ab6d0ffaf01b4b545307b386c2.ssl.cf5.rackcdn.com
+- id: transmit
+  name: Transmit
+  category: Network & Proxy
+  editions:
+  - cn
+  - intl
+  homepage: https://panic.com/transmit/
+  fetcher: package_manifest
+  args:
+    provider: brew
+    package: transmit
+    platforms:
+    - platform: mac
+  source_ids:
+    brew: transmit
+  desc_cn: macOS 文件传输客户端
+  desc_en: File transfer application
+- id: asana
+  name: Asana
+  category: Productivity
+  editions:
+  - cn
+  - intl
+  homepage: https://asana.com/
+  fetcher: package_manifest
+  args:
+    provider: brew
+    package: asana
+    platforms:
+    - platform: mac-arm64
+  source_ids:
+    brew: asana
+  desc_cn: 团队任务与项目管理客户端
+  desc_en: Manage team projects and tasks
+- id: basecamp
+  name: Basecamp
+  category: Productivity
+  editions:
+  - cn
+  - intl
+  homepage: https://basecamp.com/
+  fetcher: package_manifest
+  args:
+    provider: brew
+    package: basecamp
+    platforms:
+    - platform: mac
+  source_ids:
+    brew: basecamp
+  desc_cn: 团队项目管理与协作客户端
+  desc_en: All-In-One Toolkit for Working Remotely
+- id: box-drive
+  name: Box Drive
+  category: Productivity
+  editions:
+  - cn
+  - intl
+  homepage: https://www.box.com/drive
+  fetcher: package_manifest
+  args:
+    provider: brew
+    package: box-drive
+    platforms:
+    - platform: mac
+  source_ids:
+    brew: box-drive
+  desc_cn: Box 云存储桌面客户端
+  desc_en: Client for the Box cloud storage service
+- id: busycal
+  name: BusyCal
+  category: Productivity
+  editions:
+  - cn
+  - intl
+  homepage: https://busymac.com/busycal/index.html
+  fetcher: package_manifest
+  args:
+    provider: brew
+    package: busycal
+    platforms:
+    - platform: mac
+  source_ids:
+    brew: busycal
+  desc_cn: macOS 日历与日程管理工具
+  desc_en: Calendar software focusing on flexibility and reliability
+- id: capacities
+  name: Capacities
+  category: Productivity
+  editions:
+  - cn
+  - intl
+  homepage: https://capacities.io/
+  fetcher: package_manifest
+  args:
+    provider: brew
+    package: capacities
+    platforms:
+    - platform: mac-arm64
+  source_ids:
+    brew: capacities
+  desc_cn: 以对象组织信息的知识管理工具
+  desc_en: App to write and organise your ideas
+- id: celestia
+  name: Celestia
+  category: Productivity
+  editions:
+  - cn
+  - intl
+  homepage: https://celestiaproject.space/
+  fetcher: package_manifest
+  args:
+    provider: brew
+    package: celestia
+    platforms:
+    - platform: mac
+  source_ids:
+    brew: celestia
+  desc_cn: 三维宇宙与天体模拟工具
+  desc_en: Space simulation for exploring the universe in three dimensions
+- id: clickup
+  name: ClickUp
+  category: Productivity
+  editions:
+  - cn
+  - intl
+  homepage: https://clickup.com/
+  fetcher: package_manifest
+  args:
+    provider: brew
+    package: clickup
+    platforms:
+    - platform: mac-arm64
+  source_ids:
+    brew: clickup
+  desc_cn: 项目管理与团队协作客户端
+  desc_en: Productivity platform for tasks, docs, goals, and chat
+- id: endnote
+  name: EndNote
+  category: Productivity
+  editions:
+  - cn
+  - intl
+  homepage: https://endnote.com/
+  fetcher: package_manifest
+  args:
+    provider: brew
+    package: endnote
+    platforms:
+    - platform: mac
+  source_ids:
+    brew: endnote
+  desc_cn: 学术文献与引文管理工具
+  desc_en: Reference manager
+- id: evernote
+  name: Evernote
+  category: Productivity
+  editions:
+  - cn
+  - intl
+  homepage: https://evernote.com/
+  fetcher: package_manifest
+  args:
+    provider: brew
+    package: evernote
+    platforms:
+    - platform: mac
+  source_ids:
+    brew: evernote
+  desc_cn: 跨设备笔记与资料整理工具
+  desc_en: App for note taking, organising, task lists, and archiving
+- id: fantastical
+  name: Fantastical
+  category: Productivity
+  editions:
+  - cn
+  - intl
+  homepage: https://flexibits.com/fantastical
+  fetcher: package_manifest
+  args:
+    provider: brew
+    package: fantastical
+    platforms:
+    - platform: mac
+  source_ids:
+    brew: fantastical
+  desc_cn: 日历、会议与任务管理工具
+  desc_en: Calendar software
+- id: ferdium
+  name: Ferdium
+  category: Productivity
+  editions:
+  - cn
+  - intl
+  homepage: https://ferdium.org/
+  fetcher: package_manifest
+  args:
+    provider: scoop
+    package: extras/ferdium
+    platforms:
+    - platform: win-x64
+  source_ids:
+    scoop: extras/ferdium
+    brew: ferdium
+  desc_cn: 多服务消息与网页应用聚合客户端
+  desc_en: Multi-platform multi-messaging app
+- id: franz
+  name: Franz
+  category: Productivity
+  editions:
+  - cn
+  - intl
+  homepage: https://meetfranz.com/
+  fetcher: package_manifest
+  args:
+    provider: brew
+    package: franz
+    platforms:
+    - platform: mac-arm64
+  source_ids:
+    brew: franz
+  desc_cn: 多服务消息聚合客户端
+  desc_en: Messaging app for WhatsApp, Facebook Messenger, Slack, Telegram and more
+- id: geogebra
+  name: GeoGebra
+  category: Productivity
+  editions:
+  - cn
+  - intl
+  homepage: https://www.geogebra.org
+  fetcher: package_manifest
+  args:
+    provider: scoop
+    package: extras/geogebra
+    platforms:
+    - platform: win
+  source_ids:
+    scoop: extras/geogebra
+    brew: geogebra
+  desc_cn: 数学绘图与交互教学工具
+  desc_en: Solve, save and share math problems, graph functions, etc
+- id: google-earth-pro
+  name: Google Earth Pro
+  category: Productivity
+  editions:
+  - cn
+  - intl
+  homepage: https://www.google.com/earth/
+  fetcher: package_manifest
+  args:
+    provider: brew
+    package: google-earth-pro
+    platforms:
+    - platform: mac-x64
+  source_ids:
+    brew: google-earth-pro
+  desc_cn: Google Earth 三维地图与地理浏览工具
+  desc_en: Virtual globe
+- id: heptabase
+  name: Hepta
+  category: Productivity
+  editions:
+  - cn
+  - intl
+  homepage: https://heptabase.com/
+  fetcher: package_manifest
+  args:
+    provider: brew
+    package: heptabase
+    platforms:
+    - platform: mac-arm64
+  source_ids:
+    brew: heptabase
+  desc_cn: 白板式知识整理与笔记工具
+  desc_en: Note-taking tool for visual learning
+- id: internxt-drive
+  name: Internxt Drive
+  category: Productivity
+  editions:
+  - cn
+  - intl
+  homepage: https://internxt.com/drive
+  fetcher: package_manifest
+  args:
+    provider: brew
+    package: internxt-drive
+    platforms:
+    - platform: mac
+  source_ids:
+    brew: internxt-drive
+  desc_cn: Internxt 云存储桌面客户端
+  desc_en: Client for Internxt file storage service
+- id: itsycal
+  name: Itsycal
+  category: Productivity
+  editions:
+  - cn
+  - intl
+  homepage: https://www.mowglii.com/itsycal/
+  fetcher: package_manifest
+  args:
+    provider: brew
+    package: itsycal
+    platforms:
+    - platform: mac
+  source_ids:
+    brew: itsycal
+  desc_cn: macOS 菜单栏日历
+  desc_en: Menu bar calendar
+- id: jabref
+  name: JabRef
+  category: Productivity
+  editions:
+  - cn
+  - intl
+  homepage: https://www.jabref.org
+  fetcher: package_manifest
+  args:
+    provider: scoop
+    package: extras/jabref
+    platforms:
+    - platform: win-x64
+  source_ids:
+    scoop: extras/jabref
+    brew: jabref
+  desc_cn: BibTeX 与 BibLaTeX 文献管理工具
+  desc_en: Reference manager to edit, manage and search BibTeX files
+- id: jamovi
+  name: jamovi
+  category: Productivity
+  editions:
+  - cn
+  - intl
+  homepage: https://www.jamovi.org
+  fetcher: package_manifest
+  args:
+    provider: scoop
+    package: extras/jamovi
+    platforms:
+    - platform: win-x64
+  source_ids:
+    scoop: extras/jamovi
+    brew: jamovi
+  desc_cn: 开源图形化统计分析工具
+  desc_en: Statistical software
+  verification:
+    allowed_hosts:
+    - dl-cdn.jamovi.org
+- id: jasp
+  name: JASP
+  category: Productivity
+  editions:
+  - cn
+  - intl
+  homepage: https://jasp-stats.org/
+  fetcher: package_manifest
+  args:
+    provider: brew
+    package: jasp
+    platforms:
+    - platform: mac-arm64
+  source_ids:
+    brew: jasp
+  desc_cn: 图形化统计分析工具
+  desc_en: Statistical analysis application
+- id: meetingbar
+  name: MeetingBar
+  category: Productivity
+  editions:
+  - cn
+  - intl
+  homepage: https://github.com/leits/MeetingBar
+  fetcher: package_manifest
+  args:
+    provider: brew
+    package: meetingbar
+    platforms:
+    - platform: mac
+  source_ids:
+    brew: meetingbar
+  desc_cn: macOS 菜单栏会议与日程工具
+  desc_en: Shows the next meeting in the menu bar
+- id: megasync
+  name: MEGAsync
+  category: Productivity
+  editions:
+  - cn
+  - intl
+  homepage: https://mega.nz
+  fetcher: package_manifest
+  args:
+    provider: scoop
+    package: extras/megasync
+    platforms:
+    - platform: win-x64
+  source_ids:
+    scoop: extras/megasync
+    brew: megasync
+  desc_cn: MEGA 云存储同步客户端
+  desc_en: Syncs files between computers and MEGA Cloud drives
+- id: mendeley
+  name: Mendeley
+  category: Productivity
+  editions:
+  - cn
+  - intl
+  homepage: https://www.mendeley.com/
+  fetcher: package_manifest
+  args:
+    provider: scoop
+    package: extras/mendeley
+    platforms:
+    - platform: win-x64
+  source_ids:
+    scoop: extras/mendeley
+  desc_cn: 文献管理与学术阅读工具
+  desc_en: Manage and share research papers, and generate bibliographies for scholarly articles.
+- id: nextcloud
+  name: Nextcloud
+  category: Productivity
+  editions:
+  - cn
+  - intl
+  homepage: https://nextcloud.com/
+  fetcher: package_manifest
+  args:
+    provider: scoop
+    package: extras/nextcloud
+    platforms:
+    - platform: win-x64
+  source_ids:
+    scoop: extras/nextcloud
+    brew: nextcloud
+  desc_cn: Nextcloud 文件同步与协作客户端
+  desc_en: Desktop sync client for Nextcloud software products
+- id: notesnook
+  name: Notesnook
+  category: Productivity
+  editions:
+  - cn
+  - intl
+  homepage: https://notesnook.com/
+  fetcher: package_manifest
+  args:
+    provider: scoop
+    package: extras/notesnook
+    platforms:
+    - platform: win-x64
+  source_ids:
+    scoop: extras/notesnook
+    brew: notesnook
+  desc_cn: 注重隐私的跨平台笔记工具
+  desc_en: Privacy-focused note taking app
+- id: omnifocus
+  name: OmniFocus
+  category: Productivity
+  editions:
+  - cn
+  - intl
+  homepage: https://www.omnigroup.com/omnifocus/
+  fetcher: package_manifest
+  args:
+    provider: brew
+    package: omnifocus
+    platforms:
+    - platform: mac
+  source_ids:
+    brew: omnifocus
+  desc_cn: 任务与项目管理工具
+  desc_en: Scheduling application focusing on organisation
+- id: omnigraffle
+  name: OmniGraffle
+  category: Productivity
+  editions:
+  - cn
+  - intl
+  homepage: https://www.omnigroup.com/omnigraffle/
+  fetcher: package_manifest
+  args:
+    provider: brew
+    package: omnigraffle
+    platforms:
+    - platform: mac
+  source_ids:
+    brew: omnigraffle
+  desc_cn: 图表与可视化绘图工具
+  desc_en: Visual communication software
+- id: omniplan
+  name: OmniPlan
+  category: Productivity
+  editions:
+  - cn
+  - intl
+  homepage: https://www.omnigroup.com/omniplan/
+  fetcher: package_manifest
+  args:
+    provider: brew
+    package: omniplan
+    platforms:
+    - platform: mac
+  source_ids:
+    brew: omniplan
+  desc_cn: 项目规划与进度管理工具
+  desc_en: Project planning and management software
+- id: onlyoffice
+  name: ONLYOFFICE
+  category: Productivity
+  editions:
+  - cn
+  - intl
+  homepage: https://www.onlyoffice.com/apps.aspx
+  fetcher: package_manifest
+  args:
+    provider: scoop
+    package: extras/onlyoffice-desktopeditors
+    platforms:
+    - platform: win-x64
+  source_ids:
+    scoop: extras/onlyoffice-desktopeditors
+    brew: onlyoffice
+  desc_cn: 文档、表格与演示文稿办公套件
+  desc_en: Document editor
+- id: owncloud
+  name: ownCloud
+  category: Productivity
+  editions:
+  - cn
+  - intl
+  homepage: https://owncloud.com/
+  fetcher: package_manifest
+  args:
+    provider: scoop
+    package: extras/owncloud
+    platforms:
+    - platform: win-x64
+  source_ids:
+    scoop: extras/owncloud
+    brew: owncloud
+  desc_cn: ownCloud 桌面文件同步客户端
+  desc_en: Desktop syncing client for ownCloud
+- id: papers
+  name: ReadCube Papers
+  category: Productivity
+  editions:
+  - cn
+  - intl
+  homepage: https://www.readcube.com/home
+  fetcher: package_manifest
+  args:
+    provider: brew
+    package: papers
+    platforms:
+    - platform: mac-arm64
+  source_ids:
+    brew: papers
+  desc_cn: 学术论文阅读与文献管理工具
+  desc_en: Reference management software for researchers
+- id: pdf-expert
+  name: PDF Expert
+  category: Productivity
+  editions:
+  - cn
+  - intl
+  homepage: https://pdfexpert.com/
+  fetcher: package_manifest
+  args:
+    provider: brew
+    package: pdf-expert
+    platforms:
+    - platform: mac
+  source_ids:
+    brew: pdf-expert
+  desc_cn: PDF 阅读、编辑与批注工具
+  desc_en: PDF reader, editor and annotator
+- id: pdfgear
+  name: PDFgear
+  category: Productivity
+  editions:
+  - cn
+  - intl
+  homepage: https://www.pdfgear.com
+  fetcher: package_manifest
+  args:
+    provider: scoop
+    package: extras/pdfgear
+    platforms:
+    - platform: win-x64
+  source_ids:
+    scoop: extras/pdfgear
+  desc_cn: PDF 阅读、编辑与转换工具
+  desc_en: A free, cross-platform PDF application that allows you to read, edit, convert, and merge documents across devices without requiring registration.
+- id: pdfsam-basic
+  name: PDFsam Basic
+  category: Productivity
+  editions:
+  - cn
+  - intl
+  homepage: https://github.com/torakiki/pdfsam
+  fetcher: package_manifest
+  args:
+    provider: scoop
+    package: extras/pdfsam
+    platforms:
+    - platform: win-x64
+  source_ids:
+    scoop: extras/pdfsam
+    brew: pdfsam-basic
+  desc_cn: PDF 合并、拆分与页面整理工具
+  desc_en: Extracts pages, splits, merges, mixes and rotates PDF files
+- id: power-bi-desktop
+  name: Microsoft Power BI Desktop
+  category: Productivity
+  desc_cn: 商业智能与数据可视化桌面工具
+  editions:
+  - cn
+  - intl
+  homepage: https://powerbi.microsoft.com/desktop/
+  fetcher: package_manifest
+  args:
+    provider: winget
+    package: Microsoft.PowerBI
+    platforms:
+    - platform: win-x64
+  source_ids:
+    winget: Microsoft.PowerBI
+  desc_en: Microsoft Power BI Desktop
+  verification:
+    allowed_hosts:
+    - download.visualstudio.microsoft.com
+    - download.microsoft.com
+- id: qgis
+  name: QGIS
+  category: Productivity
+  editions:
+  - cn
+  - intl
+  homepage: https://www.qgis.org/
+  fetcher: package_manifest
+  args:
+    provider: brew
+    package: qgis
+    platforms:
+    - platform: mac
+  source_ids:
+    brew: qgis
+  desc_cn: 开源地理信息系统与地图分析工具
+  desc_en: Geographic Information System
+  verification:
+    allowed_hosts:
+    - dl2.qgis.org
+- id: rambox
+  name: Rambox
+  category: Productivity
+  editions:
+  - cn
+  - intl
+  homepage: https://rambox.app
+  fetcher: package_manifest
+  args:
+    provider: scoop
+    package: extras/rambox
+    platforms:
+    - platform: win-x64
+  source_ids:
+    scoop: extras/rambox
+    brew: rambox
+  desc_cn: 多账号网页应用工作空间客户端
+  desc_en: Workspace simplifier - to organize your workspace and boost your productivity
+- id: sage
+  name: Sage
+  category: Productivity
+  editions:
+  - cn
+  - intl
+  homepage: https://www.sagemath.org/
+  fetcher: package_manifest
+  args:
+    provider: brew
+    package: sage
+    platforms:
+    - platform: mac-arm64
+  source_ids:
+    brew: sage
+  desc_cn: 开源数学计算工具
+  desc_en: Mathematics software system
+- id: scrivener
+  name: Scrivener
+  category: Productivity
+  editions:
+  - cn
+  - intl
+  homepage: https://www.literatureandlatte.com/scrivener/overview
+  fetcher: package_manifest
+  args:
+    provider: brew
+    package: scrivener
+    platforms:
+    - platform: mac
+  source_ids:
+    brew: scrivener
+  desc_cn: 长篇写作与资料组织工具
+  desc_en: Word processing software with a typewriter style
+- id: seadrive
+  name: Seadrive
+  category: Productivity
+  editions:
+  - cn
+  - intl
+  homepage: https://www.seafile.com/en/home/
+  fetcher: package_manifest
+  args:
+    provider: brew
+    package: seadrive
+    platforms:
+    - platform: mac
+  source_ids:
+    brew: seadrive
+  desc_cn: Seafile 云盘虚拟磁盘客户端
+  desc_en: Manual for Seafile server
+- id: skim
+  name: Skim
+  category: Productivity
+  editions:
+  - cn
+  - intl
+  homepage: https://skim-app.sourceforge.io/
+  fetcher: package_manifest
+  args:
+    provider: brew
+    package: skim
+    platforms:
+    - platform: mac
+  source_ids:
+    brew: skim
+  desc_cn: macOS PDF 阅读与批注工具
+  desc_en: PDF reader and note-taking application
+- id: softmaker-freeoffice
+  name: SoftMaker FreeOffice
+  category: Productivity
+  editions:
+  - cn
+  - intl
+  homepage: https://www.freeoffice.com/
+  fetcher: package_manifest
+  args:
+    provider: brew
+    package: softmaker-freeoffice
+    platforms:
+    - platform: mac
+  source_ids:
+    brew: softmaker-freeoffice
+  desc_cn: 文档、表格与演示文稿办公套件
+  desc_en: Office suite
+- id: standard-notes
+  name: Standard Notes
+  category: Productivity
+  editions:
+  - cn
+  - intl
+  homepage: https://standardnotes.org/
+  fetcher: package_manifest
+  args:
+    provider: scoop
+    package: extras/standardnotes
+    platforms:
+    - platform: win-x64
+  source_ids:
+    scoop: extras/standardnotes
+    brew: standard-notes
+  desc_cn: 加密笔记与资料管理工具
+  desc_en: Free, open-source, and completely encrypted notes app
+- id: stellarium
+  name: Stellarium
+  category: Productivity
+  editions:
+  - cn
+  - intl
+  homepage: https://stellarium.org
+  fetcher: package_manifest
+  args:
+    provider: scoop
+    package: extras/stellarium
+    platforms:
+    - platform: win-x64
+  source_ids:
+    scoop: extras/stellarium
+    brew: stellarium
+  desc_cn: 开源天文与星空模拟工具
+  desc_en: Tool to render realistic skies in real time on the screen
+- id: synology-drive
+  name: Synology Drive
+  category: Productivity
+  editions:
+  - cn
+  - intl
+  homepage: https://www.synology.com/
+  fetcher: package_manifest
+  args:
+    provider: brew
+    package: synology-drive
+    platforms:
+    - platform: mac
+  source_ids:
+    brew: synology-drive
+  desc_cn: Synology Drive 文件同步客户端
+  desc_en: Sync and backup service to Synology NAS drives
+- id: taskade
+  name: Taskade
+  category: Productivity
+  editions:
+  - cn
+  - intl
+  homepage: https://www.taskade.com/
+  fetcher: package_manifest
+  args:
+    provider: brew
+    package: taskade
+    platforms:
+    - platform: mac-universal
+  source_ids:
+    brew: taskade
+  desc_cn: 团队任务与知识协作客户端
+  desc_en: Task manager for teams
+- id: texmaker
+  name: Texmaker
+  category: Productivity
+  editions:
+  - cn
+  - intl
+  homepage: https://www.xm1math.net/texmaker/
+  fetcher: package_manifest
+  args:
+    provider: scoop
+    package: extras/texmaker
+    platforms:
+    - platform: win-x64
+  source_ids:
+    scoop: extras/texmaker
+    brew: texmaker
+  desc_cn: 跨平台 LaTeX 编辑器
+  desc_en: LaTeX editor
+- id: texstudio
+  name: TeXstudio
+  category: Productivity
+  editions:
+  - cn
+  - intl
+  homepage: https://www.texstudio.org
+  fetcher: package_manifest
+  args:
+    provider: scoop
+    package: extras/texstudio
+    platforms:
+    - platform: win-x64
+  source_ids:
+    scoop: extras/texstudio
+    brew: texstudio
+  desc_cn: LaTeX 文档编辑环境
+  desc_en: LaTeX editor
+- id: advancedrenamer
+  name: Advanced Renamer
+  category: System Utilities
+  editions:
+  - cn
+  - intl
+  homepage: https://www.advancedrenamer.com
+  fetcher: package_manifest
+  args:
+    provider: scoop
+    package: extras/advancedrenamer
+    platforms:
+    - platform: win-x64
+  source_ids:
+    scoop: extras/advancedrenamer
+  desc_cn: 文件批量重命名与整理工具
+  desc_en: Batch file renaming utility for Windows
+- id: aida64extreme
+  name: AIDA64 Extreme
+  category: System Utilities
+  editions:
+  - cn
+  - intl
+  homepage: https://www.aida64.com
+  fetcher: package_manifest
+  args:
+    provider: scoop
+    package: extras/aida64extreme
+    platforms:
+    - platform: win
+  source_ids:
+    scoop: extras/aida64extreme
+  desc_cn: 计算机硬件信息、诊断与测试工具
+  desc_en: System information, diagnostics, and auditing application
+- id: alfred
+  name: Alfred
+  category: System Utilities
+  editions:
+  - cn
+  - intl
+  homepage: https://www.alfredapp.com/
+  fetcher: package_manifest
+  args:
+    provider: brew
+    package: alfred
+    platforms:
+    - platform: mac
+  source_ids:
+    brew: alfred
+  desc_cn: macOS 启动器与自动化工具
+  desc_en: Application launcher and productivity software
+- id: alt-tab
+  name: AltTab
+  category: System Utilities
+  editions:
+  - cn
+  - intl
+  homepage: https://alt-tab.app/
+  fetcher: package_manifest
+  args:
+    provider: brew
+    package: alt-tab
+    platforms:
+    - platform: mac
+  source_ids:
+    brew: alt-tab
+  desc_cn: macOS 窗口切换工具
+  desc_en: Enable Windows-like alt-tab
+- id: apparency
+  name: Apparency
+  category: System Utilities
+  editions:
+  - cn
+  - intl
+  homepage: https://www.mothersruin.com/software/Apparency/
+  fetcher: package_manifest
+  args:
+    provider: brew
+    package: apparency
+    platforms:
+    - platform: mac
+  source_ids:
+    brew: apparency
+  desc_cn: macOS 应用包内容与签名查看工具
+  desc_en: Inspect application bundles
+- id: appcleaner
+  name: FreeMacSoft AppCleaner
+  category: System Utilities
+  editions:
+  - cn
+  - intl
+  homepage: https://freemacsoft.net/appcleaner/
+  fetcher: package_manifest
+  args:
+    provider: brew
+    package: appcleaner
+    platforms:
+    - platform: mac
+  source_ids:
+    brew: appcleaner
+  desc_cn: macOS 应用卸载与残留清理工具
+  desc_en: Application uninstaller
+- id: arq
+  name: Arq
+  category: System Utilities
+  editions:
+  - cn
+  - intl
+  homepage: https://www.arqbackup.com/
+  fetcher: package_manifest
+  args:
+    provider: brew
+    package: arq
+    platforms:
+    - platform: mac
+  source_ids:
+    brew: arq
+  desc_cn: 加密备份与云端备份工具
+  desc_en: Multi-cloud backup application
+- id: backblaze
+  name: Backblaze
+  category: System Utilities
+  editions:
+  - cn
+  - intl
+  homepage: https://backblaze.com/
+  fetcher: package_manifest
+  args:
+    provider: brew
+    package: backblaze
+    platforms:
+    - platform: mac
+  source_ids:
+    brew: backblaze
+  desc_cn: 云端电脑备份客户端
+  desc_en: Data backup and storage service
+- id: bartender
+  name: Bartender
+  category: System Utilities
+  editions:
+  - cn
+  - intl
+  homepage: https://www.macbartender.com/
+  fetcher: package_manifest
+  args:
+    provider: brew
+    package: bartender
+    platforms:
+    - platform: mac
+  source_ids:
+    brew: bartender
+  desc_cn: macOS 菜单栏管理工具
+  desc_en: Menu bar icon organiser
+- id: bettertouchtool
+  name: BetterTouchTool
+  category: System Utilities
+  editions:
+  - cn
+  - intl
+  homepage: https://folivora.ai/
+  fetcher: package_manifest
+  args:
+    provider: brew
+    package: bettertouchtool
+    platforms:
+    - platform: mac
+  source_ids:
+    brew: bettertouchtool
+  desc_cn: macOS 输入手势与窗口自动化工具
+  desc_en: Tool to customise input devices and automate computer systems
+- id: blockblock
+  name: BlockBlock
+  category: System Utilities
+  editions:
+  - cn
+  - intl
+  homepage: https://objective-see.org/products/blockblock.html
+  fetcher: package_manifest
+  args:
+    provider: brew
+    package: blockblock
+    platforms:
+    - platform: mac
+  source_ids:
+    brew: blockblock
+  desc_cn: macOS 持久化行为监控工具
+  desc_en: Monitors common persistence locations
+- id: carbon-copy-cloner
+  name: Carbon Copy Cloner
+  category: System Utilities
+  editions:
+  - cn
+  - intl
+  homepage: https://bombich.com/
+  fetcher: package_manifest
+  args:
+    provider: brew
+    package: carbon-copy-cloner
+    platforms:
+    - platform: mac
+  source_ids:
+    brew: carbon-copy-cloner
+  desc_cn: macOS 磁盘克隆与备份工具
+  desc_en: Hard disk backup and cloning utility
+- id: chronosync
+  name: ChronoSync
+  category: System Utilities
+  editions:
+  - cn
+  - intl
+  homepage: https://www.econtechnologies.com/
+  fetcher: package_manifest
+  args:
+    provider: brew
+    package: chronosync
+    platforms:
+    - platform: mac
+  source_ids:
+    brew: chronosync
+  desc_cn: macOS 文件同步与备份工具
+  desc_en: Synchronisation and backup tool
+- id: cleanshot
+  name: CleanShot
+  category: System Utilities
+  editions:
+  - cn
+  - intl
+  homepage: https://cleanshot.com/
+  fetcher: package_manifest
+  args:
+    provider: brew
+    package: cleanshot
+    platforms:
+    - platform: mac
+  source_ids:
+    brew: cleanshot
+  desc_cn: macOS 截图、录屏与标注工具
+  desc_en: Screen capturing tool
+- id: clipy
+  name: Clipy
+  category: System Utilities
+  editions:
+  - cn
+  - intl
+  homepage: https://clipy-app.com/
+  fetcher: package_manifest
+  args:
+    provider: brew
+    package: clipy
+    platforms:
+    - platform: mac
+  source_ids:
+    brew: clipy
+  desc_cn: macOS 开源剪贴板管理工具
+  desc_en: Clipboard extension app
+- id: commander-one
+  name: Commander One
+  category: System Utilities
+  editions:
+  - cn
+  - intl
+  homepage: https://mac.eltima.com/file-manager.html
+  fetcher: package_manifest
+  args:
+    provider: brew
+    package: commander-one
+    platforms:
+    - platform: mac
+  source_ids:
+    brew: commander-one
+  desc_cn: macOS 双栏文件管理器
+  desc_en: Two-panel file manager
+- id: espanso
+  name: Espanso
+  category: System Utilities
+  editions:
+  - cn
+  - intl
+  homepage: https://espanso.org/
+  fetcher: package_manifest
+  args:
+    provider: brew
+    package: espanso
+    platforms:
+    - platform: mac-universal
+  source_ids:
+    brew: espanso
+  desc_cn: 跨平台文本扩展与快捷输入工具
+  desc_en: Cross-platform Text Expander written in Rust
+- id: forklift
+  name: ForkLift
+  category: System Utilities
+  editions:
+  - cn
+  - intl
+  homepage: https://binarynights.com/
+  fetcher: package_manifest
+  args:
+    provider: brew
+    package: forklift
+    platforms:
+    - platform: mac
+  source_ids:
+    brew: forklift
+  desc_cn: macOS 双栏文件管理与传输工具
+  desc_en: Finder replacement and FTP, SFTP, WebDAV and Amazon s3 client
+- id: freefilesync
+  name: FreeFileSync
+  category: System Utilities
+  editions:
+  - cn
+  - intl
+  homepage: https://freefilesync.org/
+  fetcher: package_manifest
+  args:
+    provider: brew
+    package: freefilesync
+    platforms:
+    - platform: mac
+  source_ids:
+    brew: freefilesync
+  desc_cn: 文件夹比较、同步与备份工具
+  desc_en: Folder comparison and synchronization software
+- id: hammerspoon
+  name: Hammerspoon
+  category: System Utilities
+  editions:
+  - cn
+  - intl
+  homepage: https://www.hammerspoon.org/
+  fetcher: package_manifest
+  args:
+    provider: brew
+    package: hammerspoon
+    platforms:
+    - platform: mac
+  source_ids:
+    brew: hammerspoon
+  desc_cn: macOS 开源自动化工具
+  desc_en: Desktop automation application
+- id: hiddenbar
+  name: Hidden Bar
+  category: System Utilities
+  editions:
+  - cn
+  - intl
+  homepage: https://github.com/dwarvesf/hidden/
+  fetcher: package_manifest
+  args:
+    provider: brew
+    package: hiddenbar
+    platforms:
+    - platform: mac
+  source_ids:
+    brew: hiddenbar
+  desc_cn: macOS 菜单栏图标整理工具
+  desc_en: Utility to hide menu bar items
+- id: hwinfo
+  name: HWiNFO
+  category: System Utilities
+  desc_cn: 计算机硬件信息与监控工具
+  editions:
+  - cn
+  - intl
+  homepage: https://www.hwinfo.com/
+  fetcher: package_manifest
+  args:
+    provider: winget
+    package: REALiX.HWiNFO
+    platforms:
+    - platform: win-x64
+  source_ids:
+    winget: REALiX.HWiNFO
+  desc_en: HWiNFO
+- id: hwmonitor
+  name: HWMonitor
+  category: System Utilities
+  editions:
+  - cn
+  - intl
+  homepage: https://www.cpuid.com/softwares/hwmonitor.html
+  fetcher: package_manifest
+  args:
+    provider: scoop
+    package: extras/hwmonitor
+    platforms:
+    - platform: win-x64
+  source_ids:
+    scoop: extras/hwmonitor
+  desc_cn: 计算机硬件温度与电压监控工具
+  desc_en: 'A hardware monitoring program that reads PC systems main health sensors : voltages, temperatures, fans speed.'
+- id: karabiner-elements
+  name: Karabiner Elements
+  category: System Utilities
+  editions:
+  - cn
+  - intl
+  homepage: https://karabiner-elements.pqrs.org/
+  fetcher: package_manifest
+  args:
+    provider: brew
+    package: karabiner-elements
+    platforms:
+    - platform: mac
+  source_ids:
+    brew: karabiner-elements
+  desc_cn: macOS 键盘映射与输入定制工具
+  desc_en: Keyboard customiser
+- id: keyboard-maestro
+  name: Keyboard Maestro
+  category: System Utilities
+  editions:
+  - cn
+  - intl
+  homepage: https://www.keyboardmaestro.com/main/
+  fetcher: package_manifest
+  args:
+    provider: brew
+    package: keyboard-maestro
+    platforms:
+    - platform: mac
+  source_ids:
+    brew: keyboard-maestro
+  desc_cn: macOS 键盘与工作流自动化工具
+  desc_en: Automation software
+- id: knockknock
+  name: KnockKnock
+  category: System Utilities
+  editions:
+  - cn
+  - intl
+  homepage: https://objective-see.org/products/knockknock.html
+  fetcher: package_manifest
+  args:
+    provider: brew
+    package: knockknock
+    platforms:
+    - platform: mac
+  source_ids:
+    brew: knockknock
+  desc_cn: macOS 持久化项目与启动项检查工具
+  desc_en: Tool to show what is persistently installed on the computer
+- id: linearmouse
+  name: LinearMouse
+  category: System Utilities
+  editions:
+  - cn
+  - intl
+  homepage: https://linearmouse.org/
+  fetcher: package_manifest
+  args:
+    provider: brew
+    package: linearmouse
+    platforms:
+    - platform: mac
+  source_ids:
+    brew: linearmouse
+  desc_cn: macOS 鼠标与指针设置工具
+  desc_en: Customise mouse behavior
+- id: mos
+  name: Mos
+  category: System Utilities
+  editions:
+  - cn
+  - intl
+  homepage: https://mos.caldis.me/
+  fetcher: package_manifest
+  args:
+    provider: brew
+    package: mos
+    platforms:
+    - platform: mac
+  source_ids:
+    brew: mos
+  desc_cn: macOS 鼠标滚动优化工具
+  desc_en: Smooths scrolling and set mouse scroll directions independently
+- id: multicommander
+  name: Multi Commander
+  category: System Utilities
+  editions:
+  - cn
+  - intl
+  homepage: https://multicommander.com/
+  fetcher: package_manifest
+  args:
+    provider: scoop
+    package: extras/multicommander
+    platforms:
+    - platform: win-x64
+  source_ids:
+    scoop: extras/multicommander
+  desc_cn: Windows 双栏文件管理工具
+  desc_en: A multi-tabbed file manager and is an alternative to the standard Windows Explorer
+- id: multipass
+  name: Multipass
+  category: System Utilities
+  editions:
+  - cn
+  - intl
+  homepage: https://github.com/canonical/multipass/
+  fetcher: package_manifest
+  args:
+    provider: brew
+    package: multipass
+    platforms:
+    - platform: mac
+  source_ids:
+    brew: multipass
+  desc_cn: Ubuntu 轻量虚拟机管理工具
+  desc_en: Orchestrates virtual Ubuntu instances
+- id: onecommander
+  name: OneCommander
+  category: System Utilities
+  editions:
+  - cn
+  - intl
+  homepage: https://onecommander.com/
+  fetcher: package_manifest
+  args:
+    provider: scoop
+    package: extras/onecommander
+    platforms:
+    - platform: win
+  source_ids:
+    scoop: extras/onecommander
+  desc_cn: Windows 文件管理工具
+  desc_en: A modern dual-pane file manager with tabs, columns view, built-in preview, editable themes, and more.
+- id: oversight
+  name: OverSight
+  category: System Utilities
+  editions:
+  - cn
+  - intl
+  homepage: https://objective-see.org/products/oversight.html
+  fetcher: package_manifest
+  args:
+    provider: brew
+    package: oversight
+    platforms:
+    - platform: mac
+  source_ids:
+    brew: oversight
+  desc_cn: macOS 摄像头与麦克风使用监控工具
+  desc_en: Monitors computer mic and webcam
+- id: parallels
+  name: Parallels Desktop
+  category: System Utilities
+  editions:
+  - cn
+  - intl
+  homepage: https://www.parallels.com/products/desktop/
+  fetcher: package_manifest
+  args:
+    provider: brew
+    package: parallels
+    platforms:
+    - platform: mac
+  source_ids:
+    brew: parallels
+  desc_cn: macOS 虚拟机与跨系统运行工具
+  desc_en: Desktop virtualization software
+- id: paste
+  name: Paste
+  category: System Utilities
+  editions:
+  - cn
+  - intl
+  homepage: https://pasteapp.io/
+  fetcher: package_manifest
+  args:
+    provider: brew
+    package: paste
+    platforms:
+    - platform: mac
+  source_ids:
+    brew: paste
+  desc_cn: macOS 剪贴板历史管理工具
+  desc_en: Limitless clipboard
+- id: popclip
+  name: PopClip
+  category: System Utilities
+  editions:
+  - cn
+  - intl
+  homepage: https://www.popclip.app/
+  fetcher: package_manifest
+  args:
+    provider: brew
+    package: popclip
+    platforms:
+    - platform: mac
+  source_ids:
+    brew: popclip
+  desc_cn: macOS 文本选择与快捷操作工具
+  desc_en: Used to access context-specific actions when text is selected
+- id: q-dir
+  name: Q-Dir
+  category: System Utilities
+  editions:
+  - cn
+  - intl
+  homepage: https://www.softwareok.com/?seite=Freeware/Q-Dir
+  fetcher: package_manifest
+  args:
+    provider: scoop
+    package: extras/q-dir
+    platforms:
+    - platform: win-x64
+  source_ids:
+    scoop: extras/q-dir
+  desc_cn: Windows 多窗格文件管理工具
+  desc_en: A quad window file manager based on Windows File Explorer
+- id: scroll-reverser
+  name: Scroll Reverser
+  category: System Utilities
+  editions:
+  - cn
+  - intl
+  homepage: https://pilotmoon.com/scrollreverser/
+  fetcher: package_manifest
+  args:
+    provider: brew
+    package: scroll-reverser
+    platforms:
+    - platform: mac
+  source_ids:
+    brew: scroll-reverser
+  desc_cn: macOS 鼠标与触控板滚动方向控制工具
+  desc_en: Tool to reverse the direction of scrolling
+- id: shottr
+  name: Shottr
+  category: System Utilities
+  editions:
+  - cn
+  - intl
+  homepage: https://shottr.cc/
+  fetcher: package_manifest
+  args:
+    provider: brew
+    package: shottr
+    platforms:
+    - platform: mac
+  source_ids:
+    brew: shottr
+  desc_cn: macOS 截图与标注工具
+  desc_en: Screenshot measurement and annotation tool
+- id: superduper
+  name: SuperDuper!
+  category: System Utilities
+  editions:
+  - cn
+  - intl
+  homepage: https://www.shirt-pocket.com/superduper4.php
+  fetcher: package_manifest
+  args:
+    provider: brew
+    package: superduper
+    platforms:
+    - platform: mac
+  source_ids:
+    brew: superduper
+  desc_cn: macOS 磁盘克隆与备份工具
+  desc_en: Backup, recovery and cloning software
+- id: suspicious-package
+  name: Suspicious Package
+  category: System Utilities
+  editions:
+  - cn
+  - intl
+  homepage: https://www.mothersruin.com/software/SuspiciousPackage/
+  fetcher: package_manifest
+  args:
+    provider: brew
+    package: suspicious-package
+    platforms:
+    - platform: mac
+  source_ids:
+    brew: suspicious-package
+  desc_cn: macOS 安装包内容查看工具
+  desc_en: Application for inspecting installer packages
+- id: syncovery
+  name: Syncovery
+  category: System Utilities
+  editions:
+  - cn
+  - intl
+  homepage: https://www.syncovery.com/
+  fetcher: package_manifest
+  args:
+    provider: brew
+    package: syncovery
+    platforms:
+    - platform: mac
+  source_ids:
+    brew: syncovery
+  desc_cn: 文件同步与备份工具
+  desc_en: File synchronisation and backup software
+- id: testdisk
+  name: TestDisk
+  category: System Utilities
+  editions:
+  - cn
+  - intl
+  homepage: https://www.cgsecurity.org/wiki/TestDisk
+  fetcher: package_manifest
+  args:
+    provider: scoop
+    package: extras/testdisk
+    platforms:
+    - platform: win
+  source_ids:
+    scoop: extras/testdisk
+  desc_cn: 磁盘分区与文件恢复工具
+  desc_en: TestDisk & PhotoRec. Data and digital picture recovery
+- id: totalcommander
+  name: Total Commander
+  category: System Utilities
+  editions:
+  - cn
+  - intl
+  homepage: https://www.ghisler.com
+  fetcher: package_manifest
+  args:
+    provider: scoop
+    package: extras/totalcommander
+    platforms:
+    - platform: win-x64
+  source_ids:
+    scoop: extras/totalcommander
+  desc_cn: Windows 双栏文件管理工具
+  desc_en: Total Commander is a Shareware file manager for Windows® 95/98/ME/NT/2000/XP/Vista/7/8/8.1/10, and Windows® 3.1.
+- id: yoink
+  name: Yoink
+  category: System Utilities
+  editions:
+  - cn
+  - intl
+  homepage: https://eternalstorms.at/yoink/mac/
+  fetcher: package_manifest
+  args:
+    provider: brew
+    package: yoink
+    platforms:
+    - platform: mac
+  source_ids:
+    brew: yoink
+  desc_cn: macOS 拖放文件暂存工具
+  desc_en: Drag and drop utility
+- id: freedownloadmanager
+  name: Free Download Manager
+  category: Utilities
+  editions:
+  - cn
+  - intl
+  homepage: https://www.freedownloadmanager.org
+  fetcher: package_manifest
+  args:
+    provider: scoop
+    package: extras/freedownloadmanager
+    platforms:
+    - platform: win-x64
+  source_ids:
+    scoop: extras/freedownloadmanager
+  desc_cn: 多协议文件下载管理工具
+  desc_en: A powerful download manager

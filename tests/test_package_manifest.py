@@ -237,3 +237,53 @@ def test_winget_explicit_policy_prefers_installer_over_portable_archive():
     assert package_manifest.select_winget_installer(manifest, "x64")[
         "InstallerUrl"
     ].endswith("setup.msi")
+
+
+def test_brew_current_default_is_not_replaced_by_old_os_variation(monkeypatch):
+    monkeypatch.setattr(
+        package_manifest,
+        "get_json",
+        lambda *a, **kw: {
+            "token": "sample",
+            "version": "2.0",
+            "url": "https://example.test/2.0-arm64.dmg",
+            "variations": {
+                "arm64_ventura": {
+                    "version": "1.0",
+                    "url": "https://example.test/1.0-arm64.dmg",
+                }
+            },
+        },
+    )
+    result = package_manifest.fetch(
+        {
+            "provider": "brew",
+            "package": "sample",
+            "platforms": [{"platform": "mac-arm64"}],
+        }
+    )
+    assert result.version == "2.0"
+    assert result.assets[0].url.endswith("2.0-arm64.dmg")
+
+
+def test_brew_cannot_label_old_other_arch_release_as_current_version(monkeypatch):
+    monkeypatch.setattr(
+        package_manifest,
+        "get_json",
+        lambda *a, **kw: {
+            "token": "sample",
+            "version": "2.0",
+            "url": "https://example.test/2.0-arm64.dmg",
+            "variations": {
+                "sequoia": {"version": "1.0", "url": "https://example.test/1.0-x64.dmg"}
+            },
+        },
+    )
+    with pytest.raises(FetchError, match="current version"):
+        package_manifest.fetch(
+            {
+                "provider": "brew",
+                "package": "sample",
+                "platforms": [{"platform": "mac-x64"}],
+            }
+        )
