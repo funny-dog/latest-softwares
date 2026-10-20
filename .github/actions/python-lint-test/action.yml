@@ -58,7 +58,7 @@ runs:
     - name: Test - FastAPI app
       if: ${{ !cancelled() }}
       shell: bash
-      run: python -m pytest tests/test_main.py -q
+      run: python -m pytest tests/test_main.py tests/test_app_core.py tests/test_app_builder.py -q
 
     - name: Test - vendor (update_vendor)
       if: ${{ !cancelled() }}
@@ -69,6 +69,11 @@ runs:
       if: ${{ !cancelled() }}
       shell: bash
       run: python -m pytest tests/test_links.py -q
+
+    - name: Test - publication and verification
+      if: ${{ !cancelled() }}
+      shell: bash
+      run: python -m pytest tests/test_catalog.py tests/test_link_verifier.py tests/test_package_manifest.py tests/test_publication.py -q
 
     - name: Test - sync core
       if: ${{ !cancelled() }}
@@ -95,18 +100,7 @@ runs:
     - name: Test - discover
       if: ${{ !cancelled() }}
       shell: bash
-      run: |
-        python -m pytest \
-          tests/test_discover_asset_infer.py \
-          tests/test_discover_categorize.py \
-          tests/test_discover_dedup.py \
-          tests/test_discover_translate.py \
-          tests/test_discover_generate.py \
-          tests/test_discover_github.py \
-          tests/test_discover_corroborate.py \
-          tests/test_discover_aggregate.py \
-          tests/test_discover_cli.py \
-          -q
+      run: python -m pytest tests/test_discover*.py -q
 
     - name: Test - workflow.yml self-check
       if: ${{ !cancelled() }}

@@ -50,6 +50,7 @@ class AssetInfo:
     filename: str | None = None  # 原始文件名（GitHub Release 才有）
     size: int | None = None  # 字节
     sha256: str | None = None
+    expires_at: str | None = None  # 上游临时下载地址的有效期
 
 
 @dataclass

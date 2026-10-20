@@ -201,3 +201,34 @@ def test_download_unknown_asset_returns_404(data_file, tmp_path):
     client = TestClient(app)
     resp = client.get("/api/download/nope/win-x64", follow_redirects=False)
     assert resp.status_code == 404
+
+
+def test_metrics_failure_does_not_break_download_redirect(
+    tmp_path, data_file, monkeypatch
+):
+    store = JsonFileMetricsStore(tmp_path / "m.json")
+    monkeypatch.setattr(
+        store,
+        "increment_download",
+        lambda *a: (_ for _ in ()).throw(OSError("disk full")),
+    )
+    client = TestClient(create_app(edition="cn", store=store, data_file=data_file))
+    response = client.get("/api/download/firefox/win-x64", follow_redirects=False)
+    assert response.status_code == 307
+    assert response.headers["location"] == "https://example.com/ff.exe"
+
+
+def test_unverified_download_is_unavailable(tmp_path, data_file):
+    data = json.loads(data_file.read_text())
+    data["packages"][0]["assets"][0]["verification"] = {"status": "failed"}
+    data_file.write_text(json.dumps(data))
+    client = TestClient(
+        create_app(
+            edition="cn",
+            store=JsonFileMetricsStore(tmp_path / "m.json"),
+            data_file=data_file,
+        )
+    )
+    response = client.get("/api/download/firefox/win-x64", follow_redirects=False)
+    assert response.status_code == 503
+    assert "location" not in response.headers

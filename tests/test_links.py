@@ -55,7 +55,7 @@ def test_refetch_repair_uses_registered_fetcher(monkeypatch):
     assert calls == [{"repo": "owner/repo", "assets": []}]
 
 
-def _setup_validate_env(tmp_path, monkeypatch, *, version="1.0.0"):
+def test_validate_links_writes_structured_health_report(tmp_path, monkeypatch):
     data_file = tmp_path / "latest.json"
     packages_file = tmp_path / "packages.yaml"
     health_file = tmp_path / "link-health.json"
@@ -69,7 +69,7 @@ def _setup_validate_env(tmp_path, monkeypatch, *, version="1.0.0"):
                         "id": "example",
                         "name": "Example",
                         "category": "工具",
-                        "version": version,
+                        "version": "1.0.0",
                         "version_kind": "release_version",
                         "version_source": "test",
                         "source": "test",
@@ -111,176 +111,27 @@ packages:
     )
     monkeypatch.setattr("scripts.config_loader.PACKAGES_FILE", packages_file)
     monkeypatch.setattr(validate_links, "LINK_HEALTH_FILE", health_file)
-    # 避免修改 net 模块的全局并发上限而影响其它测试
-    monkeypatch.setattr(validate_links, "set_max_connections_per_host", lambda _: None)
-    checked: list[str] = []
-
-    def fake_check(url):
-        checked.append(url)
-        return True
-
-    monkeypatch.setattr(validate_links, "_check_url_robust", fake_check)
-    return health_file, checked
-
-
-def _write_previous_report(health_file, *, version, checked_at, status="ok"):
-    health_file.write_text(
-        json.dumps(
-            {
-                "schema_version": 1,
-                "links": [
-                    {
-                        "id": "example",
-                        "platform": "win-x64",
-                        "kind": "direct",
-                        "status": status,
-                        "url": "https://example.test/app.exe",
-                        "version": version,
-                        "checked_at": checked_at,
-                    }
-                ],
-            }
-        ),
-        encoding="utf-8",
-    )
-
-
-def _iso_days_ago(days: float) -> str:
-    return (datetime.now(timezone.utc) - timedelta(days=days)).isoformat(
-        timespec="seconds"
-    )
-
-
-def test_validate_links_writes_structured_health_report(tmp_path, monkeypatch):
-    health_file, checked = _setup_validate_env(tmp_path, monkeypatch)
-
-    rc = validate_links.validate_and_fix()
-
-    report = json.loads(health_file.read_text(encoding="utf-8"))
-    assert rc == 0
-    assert checked == ["https://example.test/app.exe"]
-    assert report["schema_version"] == 1
-    assert report["stats"] == {
-        "total": 2,
-        "direct": 1,
-        "landing_page": 1,
-        "ok": 1,
-        "fixed": 0,
-        "failed": 0,
-        "cached": 0,
-    }
-    rows = sorted(report["links"], key=lambda item: item["platform"])
-    assert rows[0] == {
-        "id": "example",
-        "platform": "web",
-        "kind": "landing_page",
-        "status": "skipped",
-        "url": "https://example.test/download/",
-    }
-    direct = rows[1]
-    assert datetime.fromisoformat(direct.pop("checked_at"))
-    assert direct == {
-        "id": "example",
-        "platform": "win-x64",
-        "kind": "direct",
-        "status": "ok",
-        "url": "https://example.test/app.exe",
-        "version": "1.0.0",
-    }
-
-
-def test_validate_links_reuses_recent_ok_result_for_same_version(tmp_path, monkeypatch):
-    health_file, checked = _setup_validate_env(tmp_path, monkeypatch)
-    previous_at = _iso_days_ago(1)
-    _write_previous_report(health_file, version="1.0.0", checked_at=previous_at)
-
-    rc = validate_links.validate_and_fix()
-
-    report = json.loads(health_file.read_text(encoding="utf-8"))
-    assert rc == 0
-    assert checked == []
-    assert report["stats"]["ok"] == 1
-    assert report["stats"]["cached"] == 1
-    direct = next(row for row in report["links"] if row["kind"] == "direct")
-    # 沿用原 checked_at，TTL 从首次真实校验起算，而不是每次续期
-    assert direct["checked_at"] == previous_at
-
-
-def test_validate_links_rechecks_when_version_changed(tmp_path, monkeypatch):
-    health_file, checked = _setup_validate_env(tmp_path, monkeypatch, version="2.0.0")
-    _write_previous_report(health_file, version="1.0.0", checked_at=_iso_days_ago(1))
-
-    validate_links.validate_and_fix()
-
-    assert checked == ["https://example.test/app.exe"]
-
-
-def test_validate_links_rechecks_expired_or_failed_results(tmp_path, monkeypatch):
-    health_file, checked = _setup_validate_env(tmp_path, monkeypatch)
-
-    _write_previous_report(health_file, version="1.0.0", checked_at=_iso_days_ago(8))
-    validate_links.validate_and_fix(max_age_days=7)
-    assert checked == ["https://example.test/app.exe"]
-
-    checked.clear()
-    _write_previous_report(
-        health_file, version="1.0.0", checked_at=_iso_days_ago(1), status="failed"
-    )
-    validate_links.validate_and_fix()
-    assert checked == ["https://example.test/app.exe"]
-
-
-def test_validate_links_full_ignores_previous_report(tmp_path, monkeypatch):
-    health_file, checked = _setup_validate_env(tmp_path, monkeypatch)
-    _write_previous_report(health_file, version="1.0.0", checked_at=_iso_days_ago(1))
-
-    validate_links.main(["--full"])
-
-    assert checked == ["https://example.test/app.exe"]
-
-
-def test_validate_links_raises_per_host_connection_limit(tmp_path, monkeypatch):
-    _setup_validate_env(tmp_path, monkeypatch)
-    limits: list[int] = []
-    monkeypatch.setattr(validate_links, "set_max_connections_per_host", limits.append)
-
-    validate_links.validate_and_fix()
-
-    assert limits == [validate_links.MAX_CONNECTIONS_PER_HOST]
-    assert validate_links.MAX_CONNECTIONS_PER_HOST >= validate_links.MAX_WORKERS
-
-
-def test_validate_links_leaves_data_untouched_without_fixes(tmp_path, monkeypatch):
-    _setup_validate_env(tmp_path, monkeypatch)
-    data_file = validate_links.DATA_FILE
-    original = data_file.read_text(encoding="utf-8")
-    output = tmp_path / "github_output"
-    monkeypatch.setenv("GITHUB_OUTPUT", str(output))
-
-    validate_links.validate_and_fix()
-
-    assert data_file.read_text(encoding="utf-8") == original
-    assert output.read_text(encoding="utf-8") == "fixed=0\nfailed=0\n"
-
-
-def test_validate_links_writes_fixed_url_and_reports_output(tmp_path, monkeypatch):
-    _setup_validate_env(tmp_path, monkeypatch)
-    monkeypatch.setattr(validate_links, "_check_url_robust", lambda url: False)
     monkeypatch.setattr(
         validate_links,
-        "_fix_by_refetch",
-        lambda config, asset: "https://example.test/app-v2.exe",
+        "verify_link",
+        lambda asset, config, **kwargs: {
+            "status": "verified",
+            "checked_at": datetime.now(timezone.utc).isoformat(),
+            "valid_until": (datetime.now(timezone.utc) + timedelta(days=1)).isoformat(),
+        },
     )
-    output = tmp_path / "github_output"
-    monkeypatch.setenv("GITHUB_OUTPUT", str(output))
 
     rc = validate_links.validate_and_fix()
 
-    data = json.loads(validate_links.DATA_FILE.read_text(encoding="utf-8"))
-    urls = [a["url"] for a in data["packages"][0]["assets"]]
+    report = json.loads(health_file.read_text(encoding="utf-8"))
     assert rc == 0
-    assert "https://example.test/app-v2.exe" in urls
-    assert output.read_text(encoding="utf-8") == "fixed=1\nfailed=0\n"
+    assert report["schema_version"] == 2
+    assert report["stats"]["total"] == 2
+    assert report["stats"]["ok"] == 2
+    assert report["stats"]["failed"] == 0
+    rows = sorted(report["links"], key=lambda item: item["platform"])
+    assert [row["status"] for row in rows] == ["ok", "ok"]
+    assert {row["kind"] for row in rows} == {"direct", "landing_page"}
 
 
 def test_link_health_summary_writes_github_step_summary(tmp_path, monkeypatch):
@@ -298,7 +149,6 @@ def test_link_health_summary_writes_github_step_summary(tmp_path, monkeypatch):
                     "ok": 0,
                     "fixed": 0,
                     "failed": 1,
-                    "cached": 0,
                 },
                 "links": [
                     {
@@ -321,5 +171,202 @@ def test_link_health_summary_writes_github_step_summary(tmp_path, monkeypatch):
     text = summary.read_text(encoding="utf-8")
     assert rc == 0
     assert "Link Health" in text
-    assert "| Total | Direct | Landing pages | OK | Fixed | Failed | Cached |" in text
+    assert "| Total | Direct | Landing pages | OK | Fixed | Failed |" in text
     assert "| `example` | `win-x64` | `direct` | `failed` |" in text
+
+
+def _setup_validation(tmp_path, monkeypatch, required=True, platforms=("win-x64",)):
+    data_file = tmp_path / "latest.json"
+    config = {
+        "id": "example",
+        "name": "Example",
+        "category": "Utilities",
+        "fetcher": "github_release",
+        "args": {
+            "repo": "owner/repo",
+            "assets": [{"platform": p, "pattern": "*.exe"} for p in platforms],
+        },
+    }
+    package = {
+        "id": "example",
+        "name": "Example",
+        "version": "1.0",
+        "version_kind": "release_version",
+        "source": "old",
+        "assets": [
+            {
+                "platform": p,
+                "url": f"https://example.test/old-{p}.exe",
+                "filename": "old.exe",
+                "size": 1,
+            }
+            for p in platforms
+        ],
+    }
+    data_file.write_text(json.dumps({"schema_version": 2, "packages": [package]}))
+    monkeypatch.setattr(validate_links, "DATA_FILE", data_file)
+    monkeypatch.setattr(
+        validate_links, "LINK_HEALTH_FILE", tmp_path / "link-health.json"
+    )
+    monkeypatch.setattr(
+        validate_links, "load_packages_config", lambda: {"packages": [config]}
+    )
+    monkeypatch.setattr(
+        validate_links,
+        "load_baseline",
+        lambda: {
+            "required": [{"id": "example", "platforms": list(platforms)}]
+            if required
+            else []
+        },
+    )
+    return data_file, config
+
+
+def _verified(**extra):
+    return {
+        "status": "verified",
+        "checked_at": datetime.now(timezone.utc).isoformat(),
+        "valid_until": (datetime.now(timezone.utc) + timedelta(days=1)).isoformat(),
+        **extra,
+    }
+
+
+def test_repaired_release_is_reverified_and_replaces_all_metadata(
+    tmp_path, monkeypatch
+):
+    path, _ = _setup_validation(tmp_path, monkeypatch)
+    seen = []
+
+    def verify(asset, config, **kwargs):
+        seen.append(asset["url"])
+        return (
+            _verified()
+            if "new" in asset["url"]
+            else {
+                "status": "failed",
+                "checked_at": datetime.now(timezone.utc).isoformat(),
+            }
+        )
+
+    monkeypatch.setattr(validate_links, "verify_link", verify)
+    monkeypatch.setattr(
+        validate_links,
+        "_refetch_package",
+        lambda c: {
+            "id": "example",
+            "name": "Example",
+            "version": "2.0",
+            "source": "new",
+            "assets": [
+                {
+                    "platform": "win-x64",
+                    "url": "https://example.test/new.exe",
+                    "filename": "new.exe",
+                    "size": 200,
+                }
+            ],
+        },
+    )
+    assert validate_links.validate_and_fix(gate=True) == 0
+    package = json.loads(path.read_text())["packages"][0]
+    assert package["version"] == "2.0"
+    assert package["assets"][0]["size"] == 200
+    assert seen == [
+        "https://example.test/old-win-x64.exe",
+        "https://example.test/new.exe",
+    ]
+    assert (
+        json.loads((tmp_path / "link-health.json").read_text())["stats"]["fixed"] == 1
+    )
+
+
+def test_unverified_repair_is_not_published_as_fixed(tmp_path, monkeypatch):
+    path, _ = _setup_validation(tmp_path, monkeypatch)
+    monkeypatch.setattr(
+        validate_links,
+        "verify_link",
+        lambda *a, **kw: {
+            "status": "failed",
+            "checked_at": datetime.now(timezone.utc).isoformat(),
+            "reason": "bad file",
+        },
+    )
+    monkeypatch.setattr(
+        validate_links,
+        "_refetch_package",
+        lambda c: {
+            "id": "example",
+            "version": "2.0",
+            "assets": [{"platform": "win-x64", "url": "https://example.test/new.exe"}],
+        },
+    )
+    assert validate_links.validate_and_fix(gate=True) == 1
+    assert json.loads(path.read_text())["packages"][0]["version"] == "1.0"
+    assert (
+        json.loads((tmp_path / "link-health.json").read_text())["stats"]["fixed"] == 0
+    )
+
+
+def test_incremental_cache_avoids_repeated_http_and_preserves_history(
+    tmp_path, monkeypatch
+):
+    _setup_validation(tmp_path, monkeypatch)
+    calls = []
+    monkeypatch.setattr(
+        validate_links, "verify_link", lambda *a, **kw: calls.append(1) or _verified()
+    )
+    assert validate_links.validate_and_fix(gate=True) == 0
+    assert validate_links.validate_and_fix(gate=True) == 0
+    assert calls == [1]
+    state = json.loads((tmp_path / "link-state.json").read_text())["assets"][
+        "example:win-x64"
+    ]
+    assert len(state["history"]) == 1
+    assert state["last_success_at"]
+
+
+def test_budget_exhaustion_blocks_missing_critical_platform(tmp_path, monkeypatch):
+    _setup_validation(tmp_path, monkeypatch, platforms=("win-x64", "mac-arm64"))
+    calls = []
+    monkeypatch.setattr(
+        validate_links, "verify_link", lambda *a, **kw: calls.append(1) or _verified()
+    )
+    assert validate_links.validate_and_fix(gate=True, budget=1) == 1
+    assert calls == [1]
+    assert (
+        json.loads((tmp_path / "link-health.json").read_text())["stats"]["deferred"]
+        == 1
+    )
+
+
+def test_verified_official_page_fallback_is_recorded(tmp_path, monkeypatch):
+    path, config = _setup_validation(tmp_path, monkeypatch)
+    config["homepage"] = "https://example.test/download"
+    monkeypatch.setattr(validate_links, "_refetch_package", lambda c: None)
+    monkeypatch.setattr(
+        validate_links,
+        "verify_link",
+        lambda a, c, **kw: (
+            _verified()
+            if a["url"] == config["homepage"]
+            else {
+                "status": "restricted",
+                "checked_at": datetime.now(timezone.utc).isoformat(),
+            }
+        ),
+    )
+    assert validate_links.validate_and_fix(gate=True) == 0
+    asset = json.loads(path.read_text())["packages"][0]["assets"][0]
+    assert asset["url"] == config["homepage"]
+    assert asset["link_kind"] == "landing_page" and asset["fallback"]
+
+
+def test_validate_links_raises_per_host_connection_limit(tmp_path, monkeypatch):
+    _setup_validation(tmp_path, monkeypatch)
+    limits = []
+    monkeypatch.setattr(validate_links, "set_max_connections_per_host", limits.append)
+    monkeypatch.setattr(validate_links, "verify_link", lambda *a, **kw: _verified())
+    validate_links.validate_and_fix()
+    assert limits == [validate_links.MAX_CONNECTIONS_PER_HOST]
+    assert validate_links.MAX_CONNECTIONS_PER_HOST >= validate_links.MAX_WORKERS

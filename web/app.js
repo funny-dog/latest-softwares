@@ -220,10 +220,18 @@ function app() {
     },
 
     downloadUrl(pkg, asset) {
+      if (!this.assetAvailable(asset)) return null;
       if (this.publicSiteUrl && pkg?.id && asset?.platform) {
         return `${this.publicSiteUrl}/api/download/${encodeURIComponent(pkg.id)}/${encodeURIComponent(asset.platform)}`;
       }
       return asset.url;
+    },
+
+    assetAvailable(asset) {
+      const verification = asset.verification;
+      if (!verification) return true;
+      return verification.status === 'verified' &&
+        Date.parse(verification.valid_until) > Date.now();
     },
 
     recordVisit() {
@@ -341,6 +349,9 @@ function app() {
     },
 
     assetTitle(asset) {
+      if (!this.assetAvailable(asset)) {
+        return this.edition === 'intl' ? 'Unavailable; pending verification' : '暂不可用，待核验';
+      }
       if (this.isDirectLink(asset.url, asset.link_kind)) {
         return this.msg('direct_download', {
           platform: asset.platform,

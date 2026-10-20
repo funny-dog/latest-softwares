@@ -44,6 +44,8 @@ def partition_ids(ids: list[str], n: int) -> list[str]:
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("shards", type=int, help="分组数量")
+    parser.add_argument("--only", default="")
+    parser.add_argument("--skip", default="")
     parser.add_argument(
         "--edition",
         choices=["cn", "intl"],
@@ -51,12 +53,25 @@ def main() -> int:
         help="只取指定版本的软件 ID。",
     )
     args = parser.parse_args()
+    if args.shards < 1:
+        parser.error("shards must be positive")
 
     cfg = load_packages_config()
     entries = cfg.get("packages", [])
 
     if args.edition:
-        entries = [e for e in entries if args.edition in e.get("editions", [])]
+        entries = [
+            e for e in entries if args.edition in e.get("editions", ["cn", "intl"])
+        ]
+
+    only = {v.strip() for v in args.only.split(",") if v.strip()}
+    skip = {v.strip() for v in args.skip.split(",") if v.strip()}
+    configured = {e["id"] for e in entries}
+    if (only | skip) - configured:
+        parser.error("unknown package id in only/skip")
+    entries = [
+        e for e in entries if (not only or e["id"] in only) and e["id"] not in skip
+    ]
 
     ids = [e["id"] for e in entries]
     if not ids:

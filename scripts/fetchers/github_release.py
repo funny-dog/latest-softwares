@@ -90,10 +90,12 @@ def fetch(args: dict[str, Any]) -> FetchResult:
     for spec in asset_specs:
         platform = spec["platform"]
         pattern = spec["pattern"]
-        hit = next(
-            (a for a in release_assets if fnmatch.fnmatch(a["name"], pattern)),
-            None,
-        )
+        hits = [a for a in release_assets if fnmatch.fnmatchcase(a["name"], pattern)]
+        if len(hits) > 1:
+            raise FetchError(
+                f"{repo}@{tag}: {platform} pattern {pattern!r} 匹配多个资产，需收紧规则"
+            )
+        hit = hits[0] if hits else None
         if hit is None:
             warnings.append(f"{platform}: 没有匹配 asset pattern {pattern!r}")
             continue
@@ -104,6 +106,11 @@ def fetch(args: dict[str, Any]) -> FetchResult:
                 link_kind=spec.get("link_kind", LINK_KIND_DIRECT),
                 filename=hit["name"],
                 size=hit.get("size"),
+                sha256=(
+                    hit["digest"][7:]
+                    if re.fullmatch(r"sha256:[0-9a-fA-F]{64}", hit.get("digest") or "")
+                    else None
+                ),
             )
         )
 

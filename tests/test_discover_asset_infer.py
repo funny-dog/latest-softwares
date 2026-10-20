@@ -40,3 +40,8 @@ def test_zip_only_counts_with_windows_marker():
     assert infer_windows_pattern(["project-1.0.0-windows-x64.zip"]) == (
         "project-*-windows-x64.zip"
     )
+
+
+def test_tied_assets_and_ambiguous_generated_globs_are_not_guessed():
+    assert infer_windows_pattern(["first-1.0-x64.exe", "second-1.0-x64.exe"]) is None
+    assert infer_windows_pattern(["setup-1.0-x64.exe", "setup-2.0-x64.exe"]) is None

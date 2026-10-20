@@ -130,3 +130,24 @@ def test_missing_github_assets_are_reported_as_warnings(monkeypatch):
     assert result.warnings == [
         "mac-arm64: 没有匹配 asset pattern 'App-*.dmg'",
     ]
+
+
+def test_ambiguous_asset_pattern_is_rejected(monkeypatch):
+    import pytest
+    from scripts.fetchers.base import FetchError
+
+    monkeypatch.setattr(
+        github_release,
+        "_pick_release",
+        lambda *a: {
+            "tag_name": "v1.0",
+            "assets": [{"name": "app-x64.exe"}, {"name": "app-arm64.exe"}],
+        },
+    )
+    with pytest.raises(FetchError, match="匹配多个资产"):
+        github_release.fetch(
+            {
+                "repo": "owner/app",
+                "assets": [{"platform": "win-x64", "pattern": "*.exe"}],
+            }
+        )

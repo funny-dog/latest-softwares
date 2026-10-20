@@ -2,8 +2,8 @@ name: Discover popular software
 
 on:
   schedule:
-    # 双周：每月 1 号与 15 号 02:00 UTC（GitHub Actions cron 无原生双周，用双日期近似）
-    - cron: "0 2 1,15 * *"
+    # 每周扫描，单源游标和全局候选上限控制预算。
+    - cron: "0 2 * * 1"
   workflow_dispatch: {}
 
 permissions:
@@ -23,10 +23,32 @@ jobs:
       - name: Install deps
         run: pip install -r requirements.txt
 
+      - name: Restore discovery progress
+        uses: actions/cache/restore@v5
+        with:
+          path: data/discovery-state.json
+          key: discovery-state-${{ github.run_id }}-${{ github.run_attempt }}
+          restore-keys: discovery-state-
+
       - name: Run discovery
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: python -m scripts.discover --output packages/shared.yaml --new-ids-file discover_new_ids.txt
+        run: python -m scripts.discover --sources github winget brew scoop --max-output 30 --output packages/shared.yaml --new-ids-file discover_new_ids.txt
+
+      - name: Save discovery progress
+        if: ${{ always() }}
+        uses: actions/cache/save@v5
+        with:
+          path: data/discovery-state.json
+          key: discovery-state-${{ github.run_id }}-${{ github.run_attempt }}
+
+      - name: Upload candidate review evidence
+        if: ${{ always() }}
+        uses: actions/upload-artifact@v6
+        with:
+          name: discovery-review
+          path: data/discovery-candidates.json
+          retention-days: 30
 
       - name: Validate config
         run: python scripts/validate_config.py
@@ -61,5 +83,6 @@ jobs:
             - [ ] 核对每条 `desc_cn`（自动翻译，可能需润色）
             - [ ] 确认 `category` 合理
             - [ ] 如不适合国内版，把 `editions` 从 `[cn, intl]` 改为 `[intl]`
-            - [ ] 确认 `args.assets[].pattern` 能匹配到 Windows 安装包
-        # 无变更时该 action 不会开 PR
+            - [ ] 核对 source_ids、provider/package 和平台；GitHub pattern 必须唯一命中
+            - [ ] 检查 discovery-review artifact 中的来源证据和冲突，候选尚未通过发布链接验证
+        # 无变更时该 action 不会开 PR；游标缓存与审查产物独立保存。

@@ -95,6 +95,14 @@ def infer_windows_pattern(asset_names: list[str]) -> str | None:
     if not scored:
         return None
     scored.sort(key=lambda x: x[0], reverse=True)
-    # 最高分若与次高分并列且文件名差异大，仍取最高分第一个（确定性）
+    if len(scored) > 1 and scored[0][0] == scored[1][0]:
+        return None
     best_name = scored[0][1]
-    return _globify_version(best_name)
+    pattern = _globify_version(best_name)
+    import fnmatch
+
+    return (
+        pattern
+        if sum(fnmatch.fnmatchcase(name, pattern) for name in asset_names) == 1
+        else None
+    )

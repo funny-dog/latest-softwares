@@ -13,6 +13,7 @@ from __future__ import annotations
 import re
 import subprocess
 import time
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from typing import Any
 from urllib.parse import unquote, urlparse
@@ -133,6 +134,9 @@ def fetch(args: dict[str, Any]) -> FetchResult:
         url=url,
         link_kind=LINK_KIND_DIRECT,
         filename=filename,
+        expires_at=(datetime.now(timezone.utc) + timedelta(hours=23)).isoformat(
+            timespec="seconds"
+        ),
     )
 
     return FetchResult(

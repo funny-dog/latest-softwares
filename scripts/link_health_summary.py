@@ -28,11 +28,30 @@ def render_summary(report: dict[str, Any]) -> str:
             f"{stats.get('cached', 0)} |"
         ),
     ]
+    lines.extend(
+        [
+            "",
+            "Additional states: "
+            + ", ".join(
+                f"{key}={stats.get(key, 0)}"
+                for key in (
+                    "fallback",
+                    "restricted",
+                    "unverified",
+                    "cached",
+                    "deferred",
+                )
+            ),
+        ]
+    )
+    if report.get("gate_errors"):
+        lines.extend(["", "Publication blocked: " + ", ".join(report["gate_errors"])])
 
     notable = [
         row
         for row in report.get("links", [])
-        if row.get("status") in {"failed", "fixed"}
+        if row.get("status")
+        in {"failed", "fixed", "fallback", "restricted", "unverified", "deferred"}
     ]
     if notable:
         lines.extend(
@@ -43,7 +62,7 @@ def render_summary(report: dict[str, Any]) -> str:
             ]
         )
         for row in notable:
-            note = row.get("error") or row.get("final_url") or ""
+            note = row.get("error") or row.get("reason") or row.get("final_url") or ""
             lines.append(
                 "| "
                 f"`{_table_escape(row.get('id'))}` | "

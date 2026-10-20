@@ -54,109 +54,40 @@ def test_link_check_writes_step_summary():
     assert "python scripts/link_health_summary.py data/link-health.json" in link_job
 
 
-def test_link_check_uses_synced_latest_data_artifact():
-    workflow = WORKFLOW.read_text(encoding="utf-8")
-    sync_job = workflow.split("\n  sync:", 1)[1].split("\n  link-check:", 1)[0]
-    link_job = workflow.split("\n  link-check:", 1)[1]
+def test_publication_uses_only_validated_data_and_both_editions():
+    import yaml
 
-    assert "Upload latest data artifact" in sync_job
-    assert "name: latest-data" in sync_job
-    assert "path: data/latest.json" in sync_job
-    assert "Download latest data artifact" in link_job
-    assert "name: latest-data" in link_job
-    assert "path: data/" in link_job
-
-
-def test_link_check_persists_health_report_for_incremental_checks():
-    workflow = WORKFLOW.read_text(encoding="utf-8")
-    link_job = workflow.split("\n  link-check:", 1)[1]
-
-    restore = link_job.index("actions/cache/restore@")
-    validate = link_job.index("python scripts/validate_links.py")
-    save = link_job.index("actions/cache/save@")
-    assert restore < validate < save
-    assert "path: data/link-health.json" in link_job
-    # 有失效链接时 validate_links 退出码非 0，保存缓存必须不受影响
-    save_step = link_job[link_job.rindex("- name:", 0, save) : save]
-    assert "always()" in save_step
+    jobs = yaml.safe_load(WORKFLOW.read_text(encoding="utf-8"))["jobs"]
+    assert jobs["link-check"]["needs"] == "sync-merge"
+    assert jobs["publish"]["needs"] == "link-check"
+    assert "python scripts/validate_links.py --gate" in str(jobs["link-check"])
+    assert "candidate-data" in str(jobs["sync-merge"])
+    assert "validated-data" in str(jobs["link-check"])
+    assert "validated-data" in str(jobs["publish"])
+    assert "dist-cn" in str(jobs["publish"]) and "dist-intl" in str(jobs["publish"])
+    assert "Commit verified snapshot" in str(jobs["publish"])
+    assert "git-auto-commit" not in str(jobs["sync-merge"])
 
 
-def test_link_check_commits_fixed_links():
-    workflow = WORKFLOW.read_text(encoding="utf-8")
-    link_job = workflow.split("\n  link-check:", 1)[1]
-
-    # 须检出分支最新提交（含 sync-merge 的数据提交），否则回写推送会冲突
-    assert "ref: ${{ github.ref_name }}" in link_job
-    assert "id: validate" in link_job
-    fixed_guard = "steps.validate.outputs.fixed > 0"
-    for step in (
-        "Render README with fixed links",
-        "Rebuild web (dist/)",
-        "Re-upload dist artifact",
-        "Commit fixed links back to repo",
-    ):
-        block = link_job.split(f"- name: {step}", 1)[1].split("- name:", 1)[0]
-        assert fixed_guard in block, step
-        assert "!cancelled()" in block, step
-    assert "overwrite: true" in link_job
-    assert "file_pattern: 'data/latest.json README.md README_zh.md'" in link_job
-
-
-def test_sync_shard_uses_github_etag_cache():
-    workflow = WORKFLOW.read_text(encoding="utf-8")
-    sync_job = workflow.split("\n  sync:", 1)[1].split("\n  sync-merge:", 1)[0]
-
-    assert "LATEST_SOFTWARES_HTTP_CACHE:" in sync_job
-    assert "actions/cache/restore@" in sync_job
-    assert "actions/cache/save@" in sync_job
-
-
-def test_pr_checks_cover_dependency_update_prs():
-    """Dependabot 的 npm / Actions / 依赖升级 PR 必须触发 pr-checks 并真正跑前端构建。"""
-    workflow = WORKFLOW.read_text(encoding="utf-8")
-    pr_trigger = workflow.split("\n  pull_request:", 1)[1].split("\npermissions:", 1)[0]
-    for path in (
-        "'requirements*.txt'",
-        "'pyproject.toml'",
-        "'package.json'",
-        "'package-lock.json'",
-        "'.pre-commit-config.yaml'",
-        "'.github/**'",
-    ):
-        assert path in pr_trigger, path
-
-    pr_job = workflow.split("\n  pr-checks:", 1)[1].split("\n  generate-shards:", 1)[0]
-    assert "actions/setup-node@" in pr_job
-    assert "npm ci" in pr_job
-    assert "npm run build" in pr_job
-
-
-def test_workflows_install_python_deps_with_uv():
-    for path in (WORKFLOW, DEPLOY_INTL):
-        workflow = path.read_text(encoding="utf-8")
-        assert "astral-sh/setup-uv@" in workflow, path
-        assert "cache: 'pip'" not in workflow, path
-        assert re.search(r"^\s*run: pip install", workflow, re.M) is None, path
-
-
-def test_deploy_is_not_blocked_by_link_check():
-    """部署拆分为独立 workflow 后,应在 Sync 成功后接力触发(workflow_run),
-    而不被 flaky 的 link-check 阻塞 —— 两版 deploy 都不应引用 link-check。
-
-    workflow_run 只看整个 Sync run 的结论,所以 link-check 必须
-    continue-on-error:有无法修复的失效链接时 job 标红,但 run 仍为 success,
-    当日数据照常部署(且能带上 link-check 刚回写的修复)。
-    """
-    workflow = WORKFLOW.read_text(encoding="utf-8")
-    link_job = workflow.split("\n  link-check:", 1)[1].split("\n    steps:", 1)[0]
-    assert "continue-on-error: true" in link_job
-
+def test_deploys_pin_source_data_and_frontend_to_same_successful_run():
     for path in (DEPLOY_INTL, DEPLOY_CN):
         workflow = path.read_text(encoding="utf-8")
-        # 接力 Sync 完成后部署最新数据（替代拆分前的 needs: sync）
-        assert 'workflows: ["Sync Latest Software"]' in workflow, path
-        # 不依赖、也不等待 link-check
-        assert "link-check" not in workflow, path
+        assert 'workflows: ["Sync Latest Software"]' in workflow
+        assert "github.event.workflow_run.conclusion == 'success'" in workflow
+        assert "ref: ${{ steps.release.outputs.sha }}" in workflow
+        assert workflow.count("run-id: ${{ steps.release.outputs.run_id }}") == 2
+        assert "name: validated-data" in workflow
+        assert "python scripts/build_web.py" not in workflow
+        assert "  push:" not in workflow
+
+
+def test_sync_filters_are_applied_before_partitioning_and_windows_fetcher_runs_on_windows():
+    import yaml
+
+    jobs = yaml.safe_load(WORKFLOW.read_text(encoding="utf-8"))["jobs"]
+    assert jobs["sync"]["runs-on"] == "windows-latest"
+    assert '--only "$SYNC_ONLY" --skip "$SYNC_SKIP"' in str(jobs["generate-shards"])
+    assert 'ARGS+=(--only "$SYNC_ONLY")' not in str(jobs["sync"])
 
 
 def test_python_lint_test_action_splits_test_steps():
@@ -197,3 +128,40 @@ def test_scripts_with_non_ascii_print_reconfigure_stdio():
         f"以下脚本 print 了非 ASCII 字符但缺少 stdio UTF-8 reconfigure，"
         f"会在 Windows runner 上崩溃：{offenders}"
     )
+
+
+def test_sync_shard_uses_github_etag_cache():
+    workflow = WORKFLOW.read_text(encoding="utf-8")
+    sync_job = workflow.split("\n  sync:", 1)[1].split("\n  sync-merge:", 1)[0]
+
+    assert "LATEST_SOFTWARES_HTTP_CACHE:" in sync_job
+    assert "actions/cache/restore@" in sync_job
+    assert "actions/cache/save@" in sync_job
+
+
+def test_pr_checks_cover_dependency_update_prs():
+    """Dependabot 的 npm / Actions / 依赖升级 PR 必须触发 pr-checks 并真正跑前端构建。"""
+    workflow = WORKFLOW.read_text(encoding="utf-8")
+    pr_trigger = workflow.split("\n  pull_request:", 1)[1].split("\npermissions:", 1)[0]
+    for path in (
+        "'requirements*.txt'",
+        "'pyproject.toml'",
+        "'package.json'",
+        "'package-lock.json'",
+        "'.pre-commit-config.yaml'",
+        "'.github/**'",
+    ):
+        assert path in pr_trigger, path
+
+    pr_job = workflow.split("\n  pr-checks:", 1)[1].split("\n  generate-shards:", 1)[0]
+    assert "actions/setup-node@" in pr_job
+    assert "npm ci" in pr_job
+    assert "npm run build" in pr_job
+
+
+def test_workflows_install_python_deps_with_uv():
+    for path in (WORKFLOW, DEPLOY_INTL):
+        workflow = path.read_text(encoding="utf-8")
+        assert "astral-sh/setup-uv@" in workflow, path
+        assert "cache: 'pip'" not in workflow, path
+        assert re.search(r"^\s*run: pip install", workflow, re.M) is None, path

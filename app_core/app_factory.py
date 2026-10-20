@@ -13,6 +13,7 @@
 from __future__ import annotations
 
 import json
+import logging
 from pathlib import Path
 from typing import Any, Callable
 
@@ -21,6 +22,7 @@ from fastapi.responses import JSONResponse, RedirectResponse
 from fastapi.staticfiles import StaticFiles
 
 from app_core.editions import filter_data_by_edition
+from app_core.downloads import asset_available
 from app_core.metrics import load_data, utc_now_iso
 from app_core.store import MetricsStore
 
@@ -63,6 +65,12 @@ def create_app(
                 continue
             for asset in package.get("assets", []):
                 if asset.get("platform") == platform and asset.get("url"):
+                    if not asset_available(asset):
+                        raise HTTPException(
+                            status_code=503,
+                            detail="download entry requires verification",
+                            headers={"Retry-After": "3600"},
+                        )
                     return asset
         raise HTTPException(status_code=404, detail="download asset not found")
 
@@ -75,6 +83,8 @@ def create_app(
             "edition": edition,
             "packages_count": len(data.get("packages", [])),
             "generated_at": data.get("generated_at"),
+            "release_id": data.get("release_id"),
+            "verified_at": data.get("verified_at"),
         }
 
     if with_packages_endpoint:
@@ -98,7 +108,10 @@ def create_app(
     def redirect_download(package_id: str, platform: str) -> RedirectResponse:
         """记录下载点击并重定向到上游资源 URL。"""
         asset = _find_asset(package_id, platform)
-        store.increment_download(package_id, platform)
+        try:
+            store.increment_download(package_id, platform)
+        except Exception:
+            logging.getLogger(__name__).exception("Download metrics write failed")
         if log_events:
             _log_event(
                 "download",

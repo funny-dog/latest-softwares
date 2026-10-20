@@ -17,6 +17,12 @@ import sys
 from datetime import datetime, timezone
 from pathlib import Path
 
+if __package__ in (None, ""):
+    sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+
+from scripts.catalog import fallback_record
+from scripts.config_loader import load_packages_config
+
 # 兼容 Windows runner（cp1252 默认编码）下的非 ASCII 输出。
 for _stream in (sys.stdout, sys.stderr):
     if hasattr(_stream, "reconfigure"):
@@ -36,6 +42,7 @@ def load_json(path: Path) -> dict:
 def merge_results(
     partials: list[dict],
     previous: dict[str, dict],
+    entries: list[dict] | None = None,
 ) -> dict:
     """合并多个 partial 结果，回填缺失的软件。"""
     merged: dict[str, dict] = {}
@@ -53,7 +60,6 @@ def merge_results(
                 merged[pid] = pkg
 
     # 回填：previous 中存在但本次没被任何 shard 处理的软件
-    backfilled = 0
     for pid, entry in previous.items():
         if pid not in merged:
             stale = dict(entry)
@@ -61,10 +67,26 @@ def merge_results(
             stale["_stale_reason"] = "not included in any sync shard"
             stale.setdefault("last_success_at", stale.get("fetched_at"))
             merged[pid] = stale
-            backfilled += 1
+
+    if entries is not None:
+        configured = {entry["id"]: entry for entry in entries}
+        merged = {pid: p for pid, p in merged.items() if pid in configured}
+        for pid, config in configured.items():
+            if pid not in merged:
+                fallback = fallback_record(
+                    config,
+                    "not included in sync output; official page pending verification",
+                )
+                if fallback:
+                    merged[pid] = fallback
+            if pid in merged:
+                for key in ("name", "category", "homepage", "desc_cn", "desc_en"):
+                    if key in config:
+                        merged[pid][key] = config[key]
+                merged[pid]["editions"] = config.get("editions", ["cn", "intl"])
 
     # 按 previous 的顺序排列（保持一致性），新增的排在末尾
-    order = list(previous.keys())
+    order = [e["id"] for e in entries] if entries is not None else list(previous.keys())
     ordered = []
     for pid in order:
         if pid in merged:
@@ -145,7 +167,7 @@ def main() -> int:
         except Exception as e:
             print(f"  无法读取旧数据 {DATA_FILE}: {e}", file=sys.stderr)
 
-    result = merge_results(partials, previous)
+    result = merge_results(partials, previous, load_packages_config()["packages"])
 
     DATA_FILE.parent.mkdir(parents=True, exist_ok=True)
     DATA_FILE.write_text(

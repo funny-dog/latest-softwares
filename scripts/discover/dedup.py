@@ -4,6 +4,7 @@ from __future__ import annotations
 
 from ..config_loader import load_packages_config
 from .models import Candidate
+from .url_utils import normalize_homepage
 
 
 def existing_repos() -> set[str]:
@@ -38,6 +39,45 @@ def existing_ids() -> set[str]:
     return ids
 
 
+def existing_homepages() -> set[str]:
+    """返回所有现有条目的规范化 homepage 集合。"""
+    cfg = load_packages_config()
+    homepages: set[str] = set()
+    for pkg in cfg.get("packages", []):
+        if not isinstance(pkg, dict):
+            continue
+        hp = pkg.get("homepage")
+        if isinstance(hp, str) and hp.strip():
+            norm = normalize_homepage(hp)
+            if norm:
+                homepages.add(norm)
+    return homepages
+
+
 def is_new(candidate: Candidate, existing: set[str]) -> bool:
     """判断候选 repo 是否未在现有清单中收录。"""
+    if not candidate.repo:
+        return True
     return candidate.repo.strip().lower() not in existing
+
+
+def is_already_collected(
+    candidate: Candidate,
+    existing_repos_set: set[str],
+    existing_homepages_set: set[str],
+) -> bool:
+    """综合 repo 与规范化 homepage 判断候选是否已被收录。"""
+    if candidate.repo and candidate.repo.strip().lower() in existing_repos_set:
+        return True
+    norm_hp = normalize_homepage(candidate.homepage)
+    if norm_hp and norm_hp in existing_homepages_set:
+        return True
+    return False
+
+
+def existing_source_ids() -> set[tuple[str, str]]:
+    return {
+        (provider, str(ident).casefold())
+        for p in load_packages_config()["packages"]
+        for provider, ident in p.get("source_ids", {}).items()
+    }

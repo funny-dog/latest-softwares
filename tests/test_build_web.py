@@ -162,7 +162,9 @@ def test_web_index_uses_i18n_for_visible_copy():
     assert "statusText()" in html
     assert "totalSoftwareText()" in html
     assert "resultCountText()" in html
-    assert "msg('direct_download'" in html
+    assert "assetTitle(asset)" in html
+    app = (build_web.WEB_SRC / "app.js").read_text(encoding="utf-8")
+    assert "msg('direct_download'" in app
     assert "t('footer')" in html
     assert "downloadUrl(pkg, asset)" in html
 
@@ -198,3 +200,22 @@ def test_web_app_displays_site_visit_and_download_counts():
     assert "noteDownloadClick()" in app_js
     assert "siteMetricsSummary()" in html
     assert "noteDownloadClick()" in html
+
+
+def test_download_badge_has_one_click_handler_and_disabled_semantics():
+    from html.parser import HTMLParser
+
+    class Links(HTMLParser):
+        badges = []
+
+        def handle_starttag(self, tag, attrs):
+            if tag == "a" and dict(attrs).get(":href") == "downloadUrl(pkg, asset)":
+                self.badges.append(attrs)
+
+    parser = Links()
+    parser.feed((build_web.WEB_SRC / "index.html").read_text())
+    assert len(parser.badges) == 1
+    attributes = parser.badges[0]
+    assert sum(key == "@click" for key, _ in attributes) == 1
+    assert ":aria-disabled" in dict(attributes)
+    assert "assetAvailable(asset)" in dict(attributes)["@click"]

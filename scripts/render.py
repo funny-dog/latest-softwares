@@ -22,6 +22,8 @@ if __package__ in (None, ""):
 else:
     from .editions import filter_data_by_edition, VALID_EDITIONS
 
+from app_core.downloads import asset_available
+
 # 同 sync.py，Windows cp1252 默认编码会让 print 中文/emoji 崩。
 for _stream in (sys.stdout, sys.stderr):
     if hasattr(_stream, "reconfigure"):
@@ -105,6 +107,7 @@ def render_markdown(data: dict, template_file: Path) -> str:
         keep_trailing_newline=True,
     )
     env.filters["fmt_date"] = fmt_date
+    env.globals["asset_available"] = asset_available
 
     tmpl = env.get_template(template_file.name)
     return tmpl.render(

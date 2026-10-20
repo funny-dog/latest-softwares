@@ -39,7 +39,7 @@ def check_sync_health(log_file: Path, max_fail_rate: float = 0.10) -> bool:
                 continue
             entry = json.loads(line)
             total += 1
-            if entry.get("status") == "fail":
+            if entry.get("status") in {"fail", "cached_fail"}:
                 failures += 1
 
     if total == 0:

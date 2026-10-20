@@ -40,10 +40,14 @@ if __package__ in (None, ""):
     from scripts.fetchers import FETCHERS, FetchResult
     from scripts.validate_config import validate_config
     from scripts.editions import filter_by_edition, VALID_EDITIONS
+    from scripts.catalog import fallback_record, load_baseline
+    from scripts.schedule import next_sync, sync_due
 else:
     from .fetchers import FETCHERS, FetchResult
     from .validate_config import validate_config
     from .editions import filter_by_edition, VALID_EDITIONS
+    from .catalog import fallback_record, load_baseline
+    from .schedule import next_sync, sync_due
 
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
@@ -183,6 +187,7 @@ def _write_sync_log(eid: str, fetcher: str, status: str, error: str | None) -> N
 def _sync_one(
     entry: dict[str, Any],
     previous: dict[str, dict[str, Any]],
+    due_only: bool = False,
 ) -> tuple[str, dict[str, Any] | None, bool, tuple[str, str] | None]:
     """运行单个 fetcher，返回 (index, result_dict, ok, error_info)。
 
@@ -191,6 +196,24 @@ def _sync_one(
     eid = entry["id"]
     fetcher_name = entry["fetcher"]
     fetcher = FETCHERS.get(fetcher_name)
+    prior = previous.get(eid, {})
+    if due_only and prior and not sync_due(prior, entry):
+        cached = _apply_config_metadata(dict(prior), entry)
+        cached_stale = bool(cached.get("_stale"))
+        _write_sync_log(
+            eid,
+            fetcher_name,
+            "cached_fail" if cached_stale else "cached",
+            cached.get("_stale_reason"),
+        )
+        return (
+            eid,
+            cached,
+            not cached_stale,
+            (eid, cached.get("_stale_reason", "previous fetch failed"))
+            if cached_stale
+            else None,
+        )
 
     if fetcher is None:
         msg = f"未知 fetcher: {fetcher_name}"
@@ -211,6 +234,7 @@ def _sync_one(
         result = res.to_dict()
         _normalize_version_semantics(result)
         result["last_success_at"] = result.get("fetched_at")
+        result["_sync"] = next_sync(entry)
         # Keep packages.yaml-owned metadata authoritative even when fetchers
         # return their own default labels.
         _apply_config_metadata(result, entry)
@@ -223,16 +247,25 @@ def _sync_one(
         _write_sync_log(eid, fetcher_name, "fail", msg)
         if eid in previous:
             stale = _stale_from_previous(previous[eid], msg)
+            stale["_sync"] = next_sync(
+                entry, int(prior.get("_sync", {}).get("failures", 0)) + 1
+            )
             _apply_config_metadata(stale, entry)
             print(
                 f"  ↳ 复用上次数据（{previous[eid].get('version')}）", file=sys.stderr
             )
             return (eid, stale, False, (eid, msg))
-        return (eid, None, False, (eid, msg))
+        fallback = fallback_record(entry, msg)
+        if fallback is not None:
+            fallback["_sync"] = next_sync(entry, 1)
+        return (eid, fallback, False, (eid, msg))
 
 
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument(
+        "--due", action="store_true", help="只请求已到期的软件，其余保留上一轮记录"
+    )
     parser.add_argument(
         "--only",
         action="append",
@@ -262,6 +295,11 @@ def main(argv: list[str] | None = None) -> int:
         return 1
 
     entries = cfg.get("packages", [])
+    important = {p["id"] for p in load_baseline()["required"]}
+    for entry in entries:
+        entry.setdefault(
+            "priority", "critical" if entry["id"] in important else "standard"
+        )
     try:
         entries = _filter_entries(
             entries,
@@ -283,6 +321,8 @@ def main(argv: list[str] | None = None) -> int:
         return 1
 
     previous = load_previous()
+    LOG_FILE.parent.mkdir(parents=True, exist_ok=True)
+    LOG_FILE.write_text("", encoding="utf-8")
     total = len(entries)
     success = 0
     failures: list[tuple[str, str]] = []
@@ -293,7 +333,9 @@ def main(argv: list[str] | None = None) -> int:
     order: list[str] = [e["id"] for e in entries]
 
     with ThreadPoolExecutor(max_workers=MAX_WORKERS) as executor:
-        futures = [executor.submit(_sync_one, entry, previous) for entry in entries]
+        futures = [
+            executor.submit(_sync_one, entry, previous, args.due) for entry in entries
+        ]
         for future in as_completed(futures):
             eid, result, ok, error_info = future.result()
             if result is not None:

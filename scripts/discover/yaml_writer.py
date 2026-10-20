@@ -7,6 +7,7 @@
 from __future__ import annotations
 
 from pathlib import Path
+import os
 
 import yaml
 
@@ -18,7 +19,10 @@ def append_entries(entries: list[dict], path: Path) -> None:
     """
     if not entries:
         return
-    text = path.read_text(encoding="utf-8")
+    text = path.read_text(encoding="utf-8") if path.exists() else "packages: []\n"
+    existing = yaml.safe_load(text)
+    if not isinstance(existing, dict) or not isinstance(existing.get("packages"), list):
+        raise ValueError("packages must be a YAML list")
     if not text.endswith("\n"):
         text += "\n"
     chunk = yaml.safe_dump(
@@ -28,4 +32,15 @@ def append_entries(entries: list[dict], path: Path) -> None:
         sort_keys=False,
         indent=2,
     )
-    path.write_text(text + chunk, encoding="utf-8")
+    combined = text + chunk
+    try:
+        yaml.safe_load(combined)
+    except yaml.YAMLError:
+        combined = yaml.safe_dump(
+            {**existing, "packages": existing["packages"] + entries},
+            allow_unicode=True,
+            sort_keys=False,
+        )
+    temporary = path.with_suffix(path.suffix + ".tmp")
+    temporary.write_text(combined, encoding="utf-8")
+    os.replace(temporary, path)

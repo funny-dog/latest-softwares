@@ -49,3 +49,7 @@ web/dist/
 # 本地配置文件
 AGENTS.md
 uv.lock
+
+# 自动发现游标与审查记录由 Actions cache/artifact 保存
+data/discovery-state.json
+data/discovery-candidates.json

@@ -245,6 +245,41 @@ def _validate_fetcher_args(
 ) -> None:
     if fetcher_name == "github_release":
         _validate_github_release(errors, label, args)
+    elif fetcher_name == "package_manifest":
+        if args.get("provider") not in {"winget", "brew", "scoop"}:
+            errors.append(f"{label}: manifest provider 必须是 winget / brew / scoop")
+        package = args.get("package", "")
+        if (
+            not isinstance(package, str)
+            or not re.fullmatch(
+                r"[A-Za-z0-9][A-Za-z0-9_.+-]*(?:/[A-Za-z0-9_.+-]+)?", package
+            )
+            or ".." in package
+        ):
+            errors.append(f"{label}: 无效的 manifest package 标识符")
+        elif (
+            (
+                args.get("provider") == "winget"
+                and ("." not in package or "/" in package)
+            )
+            or (args.get("provider") == "brew" and "/" in package)
+            or (
+                args.get("provider") == "scoop"
+                and not re.fullmatch(r"(?:main|extras)/[A-Za-z0-9_.+-]+", package)
+            )
+        ):
+            errors.append(f"{label}: manifest package 与 provider 不匹配")
+        platforms = _validate_list(errors, label, args, "platforms")
+        _validate_unique_platforms(errors, label, platforms)
+        for platform in platforms:
+            _require_string(errors, label, platform, "platform")
+            allowed = (
+                {"mac", "mac-universal", "mac-x64", "mac-arm64"}
+                if args.get("provider") == "brew"
+                else {"win", "win-x86", "win-x64", "win-arm64"}
+            )
+            if platform.get("platform") not in allowed:
+                errors.append(f"{label}: manifest platform 与 provider 不匹配")
     elif fetcher_name == "windows11_fido":
         _validate_windows11_fido(errors, label, args)
     elif fetcher_name == "vscode_official":
@@ -322,6 +357,37 @@ def validate_config(config: dict) -> list[str]:
 
         if "homepage" in entry:
             _require_url(errors, label, entry, "homepage")
+        if "source_ids" in entry:
+            mapping = entry["source_ids"]
+            if not isinstance(mapping, dict) or any(
+                provider not in {"winget", "brew", "scoop"}
+                or not _is_nonempty_string(ident)
+                for provider, ident in mapping.items()
+            ):
+                errors.append(f"{label}: source_ids 必须是来源到稳定标识符的映射")
+
+        if "priority" in entry and entry["priority"] not in {
+            "critical",
+            "standard",
+            "long_tail",
+        }:
+            errors.append(f"{label}: priority 必须是 critical / standard / long_tail")
+        verification = entry.get("verification", {})
+        if not isinstance(verification, dict):
+            errors.append(f"{label}: verification 必须是对象")
+        else:
+            for key in ("allowed_hosts", "identity_terms"):
+                values = verification.get(key, [])
+                if not isinstance(values, list) or any(
+                    not _is_nonempty_string(v) for v in values
+                ):
+                    errors.append(f"{label}: verification.{key} 必须是非空字符串列表")
+                elif key == "allowed_hosts" and any(
+                    not re.fullmatch(r"[a-zA-Z0-9.-]+", v) for v in values
+                ):
+                    errors.append(
+                        f"{label}: allowed_hosts 只接受域名，不接受 URL 或通配符"
+                    )
 
         fetcher_name = entry.get("fetcher")
         if not _is_nonempty_string(fetcher_name):

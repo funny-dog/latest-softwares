@@ -22,10 +22,12 @@ from . import (
     fedora,
 )
 from . import nvidia_app, qq, wechat, yy
+from . import package_manifest
 
 
 FETCHERS: dict[str, Callable[[dict], FetchResult]] = {
     "github_release": github_release.fetch,
+    "package_manifest": package_manifest.fetch,
     "windows11_fido": windows11_fido.fetch,
     "vscode_official": vscode.fetch,
     "chrome_official": chrome.fetch,

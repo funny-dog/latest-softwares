@@ -23,7 +23,7 @@
 | 软件 | 最新版本 | 发布日期 | 下载链接 | 来源 |
 |------|---------|---------|---------|------|
 {%- for it in items %}
-| {% if it.homepage %}[**{{ it.name }}**]({{ it.homepage }}){% else %}**{{ it.name }}**{% endif %}{% if it._stale or it.warnings %} ⚠️{% endif %} | `{{ it.version }}` | {{ it.released_at | fmt_date }} | {% for a in it.assets %}[{{ a.platform }}]({{ a.url }}){% if not loop.last %} · {% endif %}{% endfor %} | {{ it.source }}{% if it._stale_reason %}<br>⚠ {{ it._stale_reason }}{% endif %}{% if it.warnings %}<br>⚠ {{ it.warnings | join("; ") }}{% endif %} |
+| {% if it.homepage %}[**{{ it.name }}**]({{ it.homepage }}){% else %}**{{ it.name }}**{% endif %}{% if it._stale or it.warnings %} ⚠️{% endif %} | `{{ it.version }}` | {{ it.released_at | fmt_date }} | {% for a in it.assets %}{% if asset_available(a) %}[{{ a.platform }}]({{ a.url }}){% else %}{{ a.platform }}（暂不可用，待核验）{% endif %}{% if not loop.last %} · {% endif %}{% endfor %} | {{ it.source }}{% if it._stale_reason %}<br>⚠ {{ it._stale_reason }}{% endif %}{% if it.warnings %}<br>⚠ {{ it.warnings | join("; ") }}{% endif %} |
 {%- endfor %}
 
 {% endfor %}

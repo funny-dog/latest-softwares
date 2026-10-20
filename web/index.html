@@ -204,13 +204,15 @@
             <template x-for="asset in pkg.assets" :key="asset.platform">
               <a
                 :href="downloadUrl(pkg, asset)"
-                @click="noteDownloadClick()"
+                :aria-disabled="!assetAvailable(asset)"
+                :tabindex="assetAvailable(asset) ? 0 : -1"
+                @click="if (assetAvailable(asset)) noteDownloadClick(); else $event.preventDefault()"
                 target="_blank" rel="noopener"
                 :class="badgeClass(asset.platform, asset.url, asset.link_kind)"
                 class="inline-flex items-center gap-1 text-xs px-2.5 py-1 rounded-md font-medium transition"
-                :title="isDirectLink(asset.url, asset.link_kind) ? msg('direct_download', { platform: asset.platform, size: asset.size ? formatSize(asset.size) : '' }) : msg('landing_download', { platform: asset.platform })"
+                :title="assetTitle(asset)"
               >
-                <span x-text="asset.platform"></span>
+                <span x-text="asset.platform + (assetAvailable(asset) ? '' : (edition === 'intl' ? ' · Unavailable' : ' · 待核验'))"></span>
                 <!-- Direct download icon -->
                 <svg x-show="isDirectLink(asset.url, asset.link_kind)" class="w-3 h-3 opacity-60" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" d="M12 4v12m0 0l-4-4m4 4l4-4M4 20h16"/></svg>
                 <!-- External-page icon -->

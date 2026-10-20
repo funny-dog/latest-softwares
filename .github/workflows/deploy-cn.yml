@@ -1,35 +1,17 @@
 name: Deploy CN to Aliyun
 
-# 国内版(cn)持续部署 —— 由 sync.yml 的 deploy job + 旧的 deploy-only.yml 合并而成的独立 workflow,
-# 与国际版 deploy.yml 对称。
-#
-# 触发策略(互不重叠):
-#   1) workflow_run: "Sync Latest Software" 成功跑完后接力,部署当日最新数据(原 sync.yml deploy job 的角色)。
-#   2) push: 仅限 cn 相关 / 共享代码路径(deploy / app_core / config / requirements / 本文件),
-#      覆盖旧 deploy-only.yml「只改部署配置就重新部署」的快路径。这些路径与 sync.yml 的 push
-#      路径不相交,因此不会和 (1) 重复触发。
-#   3) workflow_dispatch: 需要时手动部署。
-#
-# 部署目标:自管 Aliyun VPS —— 静态由 nginx 服务($DEPLOY_PATH),后端由 systemd 跑(/opt/latest-softwares)。
-# 机制:SSH + rsync + systemctl restart。凭据:Secret ALIYUN_DEPLOY_KEY / HOST / USER / PORT / DEPLOY_PATH。
+# 只部署成功同步运行的已验证产物；源码与两版前端/后端锁定同一 run-id。
+# 手动运行选择 main 最近一次成功发布，应用代码变更统一先经过 sync.yml。
 
 on:
   workflow_run:
     workflows: ["Sync Latest Software"]
     types: [completed]
-  push:
-    branches: [main, master]
-    paths:
-      - 'deploy/**'
-      - 'app_core/**'
-      - 'config/**'
-      - 'requirements*.txt'
-      - '.github/workflows/deploy-cn.yml'
   workflow_dispatch:
 
 permissions:
   contents: read
-  actions: read   # dawidd6/action-download-artifact 需要读 sync.yml 的运行与产物
+  actions: read   # 按 run-id 下载已验证产物
 
 concurrency:
   group: deploy-cn-aliyun
@@ -48,17 +30,40 @@ jobs:
     timeout-minutes: 5
 
     steps:
-      # 复用上一次成功 sync 构建并上传的 dist(--edition cn);与拆分前一致,不重建。
-      # workflow_run 触发时,这即为刚跑完那次 sync 的产物。
-      - name: Download dist from last successful sync
-        uses: dawidd6/action-download-artifact@v27
+      - name: Resolve verified release
+        id: release
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          TRIGGER_RUN: ${{ github.event.workflow_run.id }}
+        run: |
+          RUN_ID="$TRIGGER_RUN"
+          if [ -z "$RUN_ID" ]; then
+            RUN_ID=$(gh run list --workflow sync.yml --branch main --status success --limit 30 --json databaseId,event --jq 'map(select(.event != "pull_request"))[0].databaseId')
+          fi
+          test -n "$RUN_ID" && test "$RUN_ID" != null
+          SOURCE_SHA=$(gh api "repos/$GH_REPO/actions/runs/$RUN_ID" --jq 'select(.name == "Sync Latest Software" and .conclusion == "success" and .event != "pull_request") | .head_sha')
+          test -n "$SOURCE_SHA"
+          echo "run_id=$RUN_ID" >> "$GITHUB_OUTPUT"
+          echo "sha=$SOURCE_SHA" >> "$GITHUB_OUTPUT"
+      - name: Checkout verified release source
+        uses: actions/checkout@v7
         with:
-          workflow: sync.yml
-          name: dist
+          ref: ${{ steps.release.outputs.sha }}
+      - name: Download verified data
+        uses: actions/download-artifact@v8
+        with:
+          name: validated-data
+          path: data/
+          github-token: ${{ github.token }}
+          run-id: ${{ steps.release.outputs.run_id }}
+      - name: Download verified frontend
+        uses: actions/download-artifact@v8
+        with:
+          name: dist-cn
           path: dist/
-          workflow_conclusion: success
-          branch: main
-          if_no_artifact_found: fail
+          github-token: ${{ github.token }}
+          run-id: ${{ steps.release.outputs.run_id }}
 
       - name: Validate deploy secrets
         env:
@@ -101,12 +106,6 @@ jobs:
             -e "ssh -i ~/.ssh/deploy_key -p $PORT -o StrictHostKeyChecking=accept-new" \
             dist/ "$SSH_USER@$SSH_HOST:$DEPLOY_PATH/"
 
-      # dist 已推送到服务器后再 checkout —— checkout 默认会 git clean 掉 untracked 的 dist/,顺序不可颠倒。
-      - name: Checkout (for backend deploy)
-        uses: actions/checkout@v7
-        with:
-          ref: main
-
       - name: Deploy API backend to Aliyun
         env:
           SSH_HOST:    ${{ secrets.ALIYUN_HOST }}
@@ -128,7 +127,7 @@ jobs:
             -e "$SSH_CMD" \
             data/latest.json "$SSH_USER@$SSH_HOST:/opt/latest-softwares/data/"
           # 重启 API 服务
-          $SSH_CMD "$SSH_USER@$SSH_HOST" "sudo systemctl restart latest-softwares-api" || true
+          $SSH_CMD "$SSH_USER@$SSH_HOST" "sudo systemctl restart latest-softwares-api"
 
       - name: Summary
         env:

@@ -2,8 +2,8 @@ name: Sync Latest Software
 
 on:
   schedule:
-    # 每日 UTC 01:00（北京时间 09:00）
-    - cron: '0 1 * * *'
+    # 每 6 小时检查重要入口；普通软件按状态中的 next_attempt_at 增量抓取。
+    - cron: '0 1,7,13,19 * * *'
   workflow_dispatch:
     inputs:
       only:
@@ -19,20 +19,12 @@ on:
   push:
     branches: [main, master]
     paths:
-      - 'packages/**'
-      - 'requirements*.txt'
-      - 'scripts/**'
-      - 'app_core/**'
-      - 'tests/**'
-      - 'README.template.md'
-      - 'README_zh.template.md'
-      - 'web/**'
-      - '.github/workflows/sync.yml'
-  pull_request:
-    branches: [main, master]
-    # 比 push 路径更宽：Dependabot 的 npm / GitHub Actions / pre-commit 升级 PR
-    # 也要经过 pr-checks，否则合并前没有任何验证。
-    paths:
+      - 'config/**'
+      - 'main.py'
+      - 'app.py'
+      - 'deploy/**'
+      - '.github/actions/**'
+      - '.github/**'
       - 'packages/**'
       - 'requirements*.txt'
       - 'pyproject.toml'
@@ -45,7 +37,29 @@ on:
       - 'README.template.md'
       - 'README_zh.template.md'
       - 'web/**'
+      - '.github/workflows/sync.yml'
+  pull_request:
+    branches: [main, master]
+    paths:
+      - 'config/**'
+      - 'main.py'
+      - 'app.py'
+      - 'deploy/**'
+      - '.github/actions/**'
       - '.github/**'
+      - 'packages/**'
+      - 'requirements*.txt'
+      - 'pyproject.toml'
+      - 'package.json'
+      - 'package-lock.json'
+      - '.pre-commit-config.yaml'
+      - 'scripts/**'
+      - 'app_core/**'
+      - 'tests/**'
+      - 'README.template.md'
+      - 'README_zh.template.md'
+      - 'web/**'
+      - '.github/workflows/sync.yml'
 
 permissions:
   contents: write   # 自动 commit 渲染结果回主分支
@@ -87,8 +101,6 @@ jobs:
       - name: Check rendered README
         run: python scripts/render.py --check
 
-      # build_web.py 在前端构建失败时会静默回退到未打包的原文件，
-      # 这里单独跑一遍让 esbuild / 构建脚本的问题直接报错。
       - name: Setup Node
         uses: actions/setup-node@v7
         with:
@@ -134,19 +146,22 @@ jobs:
 
       - name: Compute partition
         id: partition
+        env:
+          SYNC_ONLY: ${{ inputs.only }}
+          SYNC_SKIP: ${{ inputs.skip }}
         run: |
-          SHARDS=$(python scripts/partition_ids.py 3)
+          SHARDS=$(python scripts/partition_ids.py 3 --only "$SYNC_ONLY" --skip "$SYNC_SKIP")
           echo "shards=$SHARDS" >> "$GITHUB_OUTPUT"
           echo "分片矩阵: $SHARDS"
 
   # ==========================================================================
   # Job 2: 并行 sync —— 每个分片独立运行 sync.py --only
-  #   ubuntu-latest 预装 pwsh，windows11 fetcher 可跨平台运行。
+  #   Windows runner 满足 Fido 平台检查要求。
   # ==========================================================================
   sync:
     needs: generate-shards
     if: github.event_name != 'pull_request'
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
     timeout-minutes: 10
     strategy:
       fail-fast: false
@@ -169,10 +184,8 @@ jobs:
           cache-dependency-glob: requirements*.txt
 
       - name: Install Python dependencies
-        run: uv pip install --system -r requirements.txt
+        run: uv pip install --system -r requirements.txt -r requirements-dev.txt
 
-      # GitHub API 条件请求缓存（ETag）：304 不占 rate limit，响应体也更小。
-      # 按分片序号隔离；分片划分变化只会导致一次未命中，不影响正确性。
       - name: Restore GitHub API ETag cache
         uses: actions/cache/restore@v6
         with:
@@ -181,6 +194,7 @@ jobs:
           restore-keys: github-etag-shard${{ strategy.job-index }}-
 
       - name: Sync shard
+        shell: bash
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           LATEST_SOFTWARES_HTTP_CACHE: .cache/http/github-etag.json.gz
@@ -190,11 +204,8 @@ jobs:
         run: |
           ARGS=()
           if [ -n "$SHARD_IDS" ]; then ARGS+=(--only "$SHARD_IDS"); fi
-          if [ -n "$SYNC_ONLY" ]; then ARGS+=(--only "$SYNC_ONLY"); fi
-          if [ -n "$SYNC_SKIP" ]; then ARGS+=(--skip "$SYNC_SKIP"); fi
-          python scripts/sync.py "${ARGS[@]}"
+          python scripts/sync.py --due "${ARGS[@]}"
 
-      # 拆成 restore/save 两步并用 always()：分片健康检查失败时也要保存缓存
       - name: Save GitHub API ETag cache
         if: ${{ always() && hashFiles('.cache/http/github-etag.json.gz') != '' }}
         uses: actions/cache/save@v6
@@ -203,6 +214,7 @@ jobs:
           key: github-etag-shard${{ strategy.job-index }}-${{ github.run_id }}
 
       - name: Check sync failure rate
+        continue-on-error: true
         if: ${{ !cancelled() }}
         shell: bash
         run: python scripts/check_sync_health.py --max-fail-rate 0.10
@@ -215,7 +227,7 @@ jobs:
           retention-days: 1
 
   # ==========================================================================
-  # Job 3: 合并分片 + 渲染 README + 构建 web + 回写仓库
+  # Job 3: 合并候选；发布必须等待链接校验门禁
   # ==========================================================================
   sync-merge:
     needs: sync
@@ -239,7 +251,8 @@ jobs:
           cache-dependency-glob: requirements*.txt
 
       - name: Install Python dependencies
-        run: uv pip install --system -r requirements.txt -r requirements-dev.txt
+        run: |
+          uv pip install --system -r requirements.txt -r requirements-dev.txt
 
       - name: Download shard artifacts
         uses: actions/download-artifact@v8
@@ -253,38 +266,12 @@ jobs:
       - name: Re-validate latest.json schema
         run: python -m pytest tests/test_latest_json_schema.py -q
 
-      - name: Upload latest data artifact
+      - name: Upload candidate data artifact
         uses: actions/upload-artifact@v7
         with:
-          name: latest-data
+          name: candidate-data
           path: data/latest.json
           retention-days: 1
-
-      - name: Render README
-        run: python scripts/render.py
-
-      - name: Check rendered README
-        run: python scripts/render.py --check
-
-      - name: Build web (dist/) — 国内版
-        env:
-          CN_PUBLIC_SITE_URL: ${{ vars.CN_PUBLIC_SITE_URL || 'http://localhost:8080' }}
-        run: python scripts/build_web.py --edition cn
-
-      - name: Commit data + README back to repo
-        uses: stefanzweifel/git-auto-commit-action@v7
-        with:
-          commit_message: 'chore(data): sync latest software [skip ci]'
-          file_pattern: 'data/latest.json README.md README_zh.md'
-          commit_user_name: 'github-actions[bot]'
-          commit_user_email: '41898282+github-actions[bot]@users.noreply.github.com'
-
-      - name: Upload dist artifact
-        uses: actions/upload-artifact@v7
-        with:
-          name: dist
-          path: dist/
-          retention-days: 7
 
   # ==========================================================================
   # Job 4: 真实下载链接巡检
@@ -292,19 +279,12 @@ jobs:
   link-check:
     needs: sync-merge
     if: github.event_name != 'pull_request'
-    # 两版部署经 workflow_run 在本 workflow "成功" 后触发。失效链接本身不应阻断
-    # 当日数据上线：job 照样标红便于发现，但不让整个 run 失败。
-    continue-on-error: true
     runs-on: ubuntu-latest
     timeout-minutes: 12
 
     steps:
-      # 检出分支最新提交（而非触发时的 sha）：需包含 sync-merge 刚提交的数据，
-      # 否则下面回写修复时会 non-fast-forward 推送失败。
       - name: Checkout
         uses: actions/checkout@v7
-        with:
-          ref: ${{ github.ref_name }}
 
       - name: Setup Python
         uses: actions/setup-python@v7
@@ -318,76 +298,110 @@ jobs:
           cache-dependency-glob: requirements*.txt
 
       - name: Install Python dependencies
-        run: uv pip install --system -r requirements.txt
+        run: uv pip install --system -r requirements.txt -r requirements-dev.txt
 
-      - name: Download latest data artifact
+      - name: Download candidate data artifact
         uses: actions/download-artifact@v8
         with:
-          name: latest-data
+          name: candidate-data
           path: data/
 
-      # 上一次的健康报告：版本未变且 7 天内校验通过的直链直接沿用结果。
-      - name: Restore previous link health report
+      - name: Restore link check history
         uses: actions/cache/restore@v6
         with:
-          path: data/link-health.json
-          key: link-health-${{ github.run_id }}
-          restore-keys: link-health-
+          path: data/link-state.json
+          key: link-state-${{ github.run_id }}-${{ github.run_attempt }}
+          restore-keys: link-state-
 
       - name: Validate links and write health report
-        id: validate
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: python scripts/validate_links.py
+        run: python scripts/validate_links.py --gate
+
+      - name: Save link check history
+        if: ${{ always() && hashFiles('data/link-state.json') != '' }}
+        uses: actions/cache/save@v6
+        with:
+          path: data/link-state.json
+          key: link-state-${{ github.run_id }}-${{ github.run_attempt }}
 
       - name: Write link health summary
         if: ${{ always() }}
         run: python scripts/link_health_summary.py data/link-health.json
-
-      # ---- 自动修复的链接回写：仅在确有修复时执行 ----
-      # 有无法修复的链接时上一步退出码非 0，但已修复的部分仍要落地，故用 !cancelled()。
-      - name: Render README with fixed links
-        if: ${{ !cancelled() && steps.validate.outputs.fixed > 0 }}
-        run: python scripts/render.py
-
-      # 国内版部署取的是本次运行的 dist 构件，需用修复后的数据重建并覆盖
-      - name: Rebuild web (dist/) — 国内版
-        if: ${{ !cancelled() && steps.validate.outputs.fixed > 0 }}
-        env:
-          CN_PUBLIC_SITE_URL: ${{ vars.CN_PUBLIC_SITE_URL || 'http://localhost:8080' }}
-        run: python scripts/build_web.py --edition cn
-
-      - name: Re-upload dist artifact
-        if: ${{ !cancelled() && steps.validate.outputs.fixed > 0 }}
-        uses: actions/upload-artifact@v7
-        with:
-          name: dist
-          path: dist/
-          retention-days: 7
-          overwrite: true
-
-      - name: Commit fixed links back to repo
-        if: ${{ !cancelled() && steps.validate.outputs.fixed > 0 }}
-        uses: stefanzweifel/git-auto-commit-action@v7
-        with:
-          commit_message: 'chore(data): fix broken download links [skip ci]'
-          file_pattern: 'data/latest.json README.md README_zh.md'
-          commit_user_name: 'github-actions[bot]'
-          commit_user_email: '41898282+github-actions[bot]@users.noreply.github.com'
-
-      # 有失效链接时脚本返回非 0，仍需保存报告，否则下次会退化为全量检查
-      - name: Save link health report
-        if: ${{ always() && hashFiles('data/link-health.json') != '' }}
-        uses: actions/cache/save@v6
-        with:
-          path: data/link-health.json
-          key: link-health-${{ github.run_id }}
 
       - name: Upload link health artifact
         if: ${{ always() }}
         uses: actions/upload-artifact@v7
         with:
           name: link-health
-          path: data/link-health.json
+          path: |
+            data/link-health.json
+            data/coverage-report.json
           if-no-files-found: warn
           retention-days: 14
+
+      - name: Upload validated data artifact
+        uses: actions/upload-artifact@v7
+        with:
+          name: validated-data
+          path: |
+            data/latest.json
+            data/link-state.json
+            data/link-health.json
+            data/coverage-report.json
+          retention-days: 30
+
+  publish:
+    needs: link-check
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          ref: ${{ github.sha }}
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.12'
+
+      - name: Setup uv
+        uses: astral-sh/setup-uv@v7
+        with:
+          enable-cache: true
+          cache-dependency-glob: requirements*.txt
+      - run: uv pip install --system -r requirements.txt
+      - uses: actions/setup-node@v7
+        with:
+          node-version: '20'
+      - run: npm ci
+      - uses: actions/download-artifact@v8
+        with:
+          name: validated-data
+          path: data/
+      - name: Render verified snapshot
+        run: |
+          python scripts/render.py
+          python scripts/render.py --check
+      - name: Build both editions from verified snapshot
+        env:
+          CN_PUBLIC_SITE_URL: ${{ vars.CN_PUBLIC_SITE_URL }}
+        run: |
+          python scripts/build_web.py --edition cn
+          mv dist dist-cn
+          python scripts/build_web.py --edition intl
+          mv dist dist-intl
+      - name: Commit verified snapshot
+        uses: stefanzweifel/git-auto-commit-action@v7
+        with:
+          branch: ${{ github.ref_name }}
+          commit_message: 'chore(data): publish verified software snapshot [skip ci]'
+          file_pattern: 'data/latest.json data/link-state.json data/coverage-report.json README.md README_zh.md'
+      - uses: actions/upload-artifact@v7
+        with:
+          name: dist-cn
+          path: dist-cn/
+          retention-days: 30
+      - uses: actions/upload-artifact@v7
+        with:
+          name: dist-intl
+          path: dist-intl/
+          retention-days: 30

@@ -2,10 +2,17 @@ from __future__ import annotations
 
 from pathlib import Path
 
+import pytest
 import yaml
 
 from scripts.discover.yaml_writer import append_entries
 from scripts import discover_popular
+
+
+@pytest.fixture(autouse=True)
+def isolate_cli_state(tmp_path: Path, monkeypatch: pytest.MonkeyPatch):
+    """确保所有 CLI 测试均使用独立的 tmp_path 状态文件与审查文件，避免污染真实 data/ 目录。"""
+    monkeypatch.setattr(discover_popular, "REPO_ROOT", tmp_path)
 
 
 def test_append_entries_preserves_existing_and_adds(tmp_path: Path):
