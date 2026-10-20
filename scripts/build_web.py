@@ -55,7 +55,13 @@ DATA_PLACEHOLDER = (
     '/*__DATA__*/ {"schema_version": 2, "packages": [], "stats": {}} /*__DATA__*/'
 )
 PUBLIC_SITE_URL = "https://latest-softwares-064facea.fastapicloud.dev"
-CN_PUBLIC_SITE_URL = os.environ.get("CN_PUBLIC_SITE_URL", "http://localhost:8080")
+# 国内版已迁到 Cloudflare Pages（纯静态），没有后端可注入。
+# 默认空字符串 → 前端 downloadUrl() 走 asset.url 直链、recordVisit() 直接 return。
+# 切勿回退成 http://localhost:8080，否则线上下载按钮会全部指向本机。
+CN_PUBLIC_SITE_URL = os.environ.get("CN_PUBLIC_SITE_URL", "")
+
+# web/ 下不属于部署产物的目录/文件：npm 构建中间产物与 macOS 元数据。
+COPY_EXCLUDED = {"dist", "__pycache__", ".DS_Store"}
 
 
 ASSET_MANIFEST = WEB_SRC / "dist" / "asset-manifest.json"
@@ -106,7 +112,9 @@ def copy_static(skip: set[str] | None = None) -> int:
     Args:
         skip: 要跳过的顶层文件名集合（如已由前端构建处理的 hashed 文件）。
     """
-    skip = skip or set()
+    # web/dist/ 是 npm 构建的中间产物，__pycache__ 等同理：都不该出现在部署产物里，
+    # 否则会被原样复制成 dist/dist/ 并对外可访问（暴露历史 hashed 资源）。
+    skip = (skip or set()) | COPY_EXCLUDED
     count = 0
     for src in WEB_SRC.iterdir():
         if src.name in skip:

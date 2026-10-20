@@ -1,0 +1,85 @@
+name: Deploy CN to Cloudflare Pages
+
+# 国内版前端部署到 Cloudflare Pages（纯静态，Direct Upload）。
+#
+# 只部署成功同步运行的已验证产物：按 run-id 下载 sync.yml 产出的 dist-cn，
+# 保证与 README / data/latest.json 来自同一份验证快照，不重新构建。
+#
+# 注意：这里刻意不使用 Pages 的 Git 集成构建。Git 集成每次 push 都会触发云端
+# 构建，会消耗 Pages 每月 500 次的构建额度；本仓库每 6 小时同步一次，
+# 用 Direct Upload 上传现成产物既省额度也保证与验证快照一致。
+
+on:
+  workflow_run:
+    workflows: ["Sync Latest Software"]
+    types: [completed]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  actions: read   # 按 run-id 下载已验证产物
+
+concurrency:
+  group: deploy-cn-cloudflare
+  cancel-in-progress: false
+
+jobs:
+  deploy-cn:
+    # 开关:仓库变量 DEPLOY_CN_CF_ENABLED=true 才部署。
+    # 经 workflow_run 触发时,只在源工作流"成功"且"非 PR 触发"时才部署。
+    if: >-
+      vars.DEPLOY_CN_CF_ENABLED == 'true' &&
+      (github.event_name != 'workflow_run' ||
+       (github.event.workflow_run.conclusion == 'success' &&
+        github.event.workflow_run.event != 'pull_request'))
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Resolve verified release
+        id: release
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          TRIGGER_RUN: ${{ github.event.workflow_run.id }}
+        run: |
+          RUN_ID="$TRIGGER_RUN"
+          if [ -z "$RUN_ID" ]; then
+            RUN_ID=$(gh run list --workflow sync.yml --branch main --status success --limit 30 \
+              --json databaseId,event --jq 'map(select(.event != "pull_request"))[0].databaseId')
+          fi
+          test -n "$RUN_ID" && test "$RUN_ID" != null
+          echo "run_id=$RUN_ID" >> "$GITHUB_OUTPUT"
+
+      - name: Download verified frontend
+        uses: actions/download-artifact@v8
+        with:
+          name: dist-cn
+          path: dist-cn/
+          github-token: ${{ github.token }}
+          run-id: ${{ steps.release.outputs.run_id }}
+
+      - name: Guard against backend URLs in static build
+        # 纯静态站点不该再注入 /api 后端地址；一旦出现说明构建配置出错，
+        # 否则线上下载按钮会指向一个不存在的 API。
+        run: |
+          if grep -o '"public_site_url":"[^"]\+"' dist-cn/index.html; then
+            echo "✗ dist-cn 注入了 public_site_url，国内版应保持为空（走直链降级）" >&2
+            exit 1
+          fi
+          echo "✓ public_site_url 为空，下载走直链"
+
+      - name: Deploy to Cloudflare Pages
+        uses: cloudflare/wrangler-action@v3
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: >-
+            pages deploy dist-cn
+            --project-name=latest-softwares-cn
+            --branch=main
+            --commit-dirty=true
+
+      - name: Summary
+        run: |
+          echo "✅ 国内版已部署到 https://latest-softwares-cn.pages.dev"
