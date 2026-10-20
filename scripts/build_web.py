@@ -55,10 +55,15 @@ DATA_PLACEHOLDER = (
     '/*__DATA__*/ {"schema_version": 2, "packages": [], "stats": {}} /*__DATA__*/'
 )
 PUBLIC_SITE_URL = "https://latest-softwares-064facea.fastapicloud.dev"
-# 国内版已迁到 Cloudflare Pages（纯静态），没有后端可注入。
-# 默认空字符串 → 前端 downloadUrl() 走 asset.url 直链、recordVisit() 直接 return。
-# 切勿回退成 http://localhost:8080，否则线上下载按钮会全部指向本机。
+# 国内版已迁到 Cloudflare Pages（纯静态），没有自己的后端。
+# 下载一律走 asset.url 直链——切勿回退成 http://localhost:8080，
+# 否则线上下载按钮会全部指向本机。
 CN_PUBLIC_SITE_URL = os.environ.get("CN_PUBLIC_SITE_URL", "")
+
+# 国内版统计上报地址：复用国际版后端（Turso 持久化）。
+# 与 public_site_url 分开，是因为它只控制「访问/下载计数打到哪」，
+# 不控制下载跳转（下载仍走直链，不经 302 中转）。
+CN_METRICS_URL = os.environ.get("CN_METRICS_URL", PUBLIC_SITE_URL)
 
 # web/ 下不属于部署产物的目录/文件：npm 构建中间产物与 macOS 元数据。
 COPY_EXCLUDED = {"dist", "__pycache__", ".DS_Store"}
@@ -252,6 +257,8 @@ def inject_data(edition: str | None = None) -> int:
         data["public_site_url"] = PUBLIC_SITE_URL
     elif edition == "cn":
         data["public_site_url"] = CN_PUBLIC_SITE_URL
+        # 国内版下载走直链，但统计仍复用国际版后端（与页面同源的 API 不存在）。
+        data["metrics_url"] = CN_METRICS_URL
     # ensure_ascii=False 让中文不被转义成 \uXXXX，体积更小
     data_json = _json_for_inline_script(data)
     replacement = f"/*__DATA__*/ {data_json} /*__DATA__*/"

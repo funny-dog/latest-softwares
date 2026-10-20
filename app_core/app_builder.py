@@ -96,6 +96,7 @@ def build_app(
         serve_static_dir=serve_static,
         with_packages_endpoint=profile.get("packages_endpoint", False),
         log_events=profile.get("log_events", False),
+        cors_origins=profile.get("cors_origins"),
         lifespan=lifespan,
         title=profile.get("title"),
         description=profile.get("description", ""),

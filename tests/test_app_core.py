@@ -195,6 +195,51 @@ def test_create_app_cn(data_file, tmp_path):
     assert client.get("/api/metrics").json()["downloads"]["total"] == 1
 
 
+def test_cors_allows_listed_origin_only(data_file, tmp_path):
+    """国内版是纯静态站，靠国际版后端统计；只放行配置里的来源。"""
+    store = JsonFileMetricsStore(tmp_path / "m.json")
+    app = create_app(
+        edition="intl",
+        store=store,
+        data_file=data_file,
+        cors_origins=["https://cn.erhu8.dpdns.org"],
+    )
+    client = TestClient(app)
+
+    # 预检放行
+    preflight = client.options(
+        "/api/visit",
+        headers={
+            "Origin": "https://cn.erhu8.dpdns.org",
+            "Access-Control-Request-Method": "POST",
+        },
+    )
+    assert preflight.status_code == 200
+    assert (
+        preflight.headers["access-control-allow-origin"] == "https://cn.erhu8.dpdns.org"
+    )
+
+    # 实际请求带 ACAO
+    resp = client.post("/api/visit", headers={"Origin": "https://cn.erhu8.dpdns.org"})
+    assert resp.status_code == 200
+    assert resp.headers["access-control-allow-origin"] == "https://cn.erhu8.dpdns.org"
+
+    # 未授权来源不发 ACAO（浏览器据此拦截）
+    other = client.post("/api/visit", headers={"Origin": "https://evil.example.com"})
+    assert other.status_code == 200
+    assert "access-control-allow-origin" not in other.headers
+
+
+def test_cors_disabled_when_not_configured(data_file, tmp_path):
+    """未配置 cors_origins 时不加中间件，保持原行为（国内版历史部署无需跨域）。"""
+    store = JsonFileMetricsStore(tmp_path / "m.json")
+    app = create_app(edition="cn", store=store, data_file=data_file)
+    client = TestClient(app)
+
+    resp = client.post("/api/visit", headers={"Origin": "https://cn.erhu8.dpdns.org"})
+    assert "access-control-allow-origin" not in resp.headers
+
+
 def test_download_unknown_asset_returns_404(data_file, tmp_path):
     store = JsonFileMetricsStore(tmp_path / "m.json")
     app = create_app(edition="cn", store=store, data_file=data_file)

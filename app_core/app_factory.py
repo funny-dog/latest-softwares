@@ -18,6 +18,7 @@ from pathlib import Path
 from typing import Any, Callable
 
 from fastapi import FastAPI, HTTPException
+from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse, RedirectResponse
 from fastapi.staticfiles import StaticFiles
 
@@ -48,8 +49,14 @@ def create_app(
     lifespan: Callable[..., Any] | None = None,
     title: str | None = None,
     description: str = "",
+    cors_origins: list[str] | None = None,
 ) -> FastAPI:
-    """组装并返回一个 FastAPI 应用。两版入口各自选好参数后调用即可。"""
+    """组装并返回一个 FastAPI 应用。两版入口各自选好参数后调用即可。
+
+    cors_origins: 允许跨域调用 /api/* 的来源。国内版是纯静态站（Cloudflare
+    Pages），它要靠国际版后端记录访问/下载统计，因此国际版需放行国内版域名。
+    只影响浏览器跨域，不改变任何端点的鉴权语义（这些端点本就无需鉴权）。
+    """
     data_file = Path(data_file)
     app = FastAPI(
         title=title or f"Latest Softwares API ({edition})",
@@ -57,6 +64,15 @@ def create_app(
         version="1.0.0",
         lifespan=lifespan,
     )
+
+    if cors_origins:
+        app.add_middleware(
+            CORSMiddleware,
+            allow_origins=cors_origins,
+            allow_methods=["GET", "POST"],
+            allow_headers=["*"],
+            max_age=86400,
+        )
 
     def _find_asset(package_id: str, platform: str) -> dict[str, Any]:
         data = filter_data_by_edition(load_data(data_file), edition)

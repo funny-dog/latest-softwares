@@ -119,6 +119,9 @@ function app() {
       this.packages = data.packages || [];
       this.stats = data.stats || {};
       this.publicSiteUrl = (data.public_site_url || '').replace(/\/$/, '');
+      // 统计上报地址可与下载中转地址不同：国内版是纯静态站
+      // （public_site_url 为空、下载走直链），但统计仍打向国际版后端。
+      this.metricsUrl = (data.metrics_url || this.publicSiteUrl || '').replace(/\/$/, '');
       this.directFileExtensions = data.direct_file_extensions || this.directFileExtensions;
       this.recordVisit();
 
@@ -235,8 +238,8 @@ function app() {
     },
 
     recordVisit() {
-      if (!this.publicSiteUrl) return;
-      fetch(`${this.publicSiteUrl}/api/visit`, {
+      if (!this.metricsUrl) return;
+      fetch(`${this.metricsUrl}/api/visit`, {
         method: 'POST',
         keepalive: true,
       })
@@ -249,8 +252,8 @@ function app() {
     },
 
     fetchSiteMetrics() {
-      if (!this.publicSiteUrl) return;
-      fetch(`${this.publicSiteUrl}/api/metrics`)
+      if (!this.metricsUrl) return;
+      fetch(`${this.metricsUrl}/api/metrics`)
         .then(response => response.ok ? response.json() : null)
         .then(metrics => this.applySiteMetrics(metrics))
         .catch(() => {});

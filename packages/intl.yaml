@@ -2794,27 +2794,6 @@ packages:
       link_kind: landing_page
   desc_cn: PlayStation Vita 模拟器，支持商业游戏
   desc_en: PlayStation Vita emulator with commercial game support
-- id: ryujinx
-  name: Ryujinx
-  category: Gaming
-  editions:
-  - intl
-  homepage: https://github.com/Ryubing/Ryujinx
-  fetcher: download_page
-  args:
-    source: Official project download page; no stable public release asset API
-    platforms:
-    - platform: win-x64
-      download_url: https://github.com/Ryubing/Ryujinx/releases
-      link_kind: landing_page
-    - platform: mac-arm64
-      download_url: https://github.com/Ryubing/Ryujinx/releases
-      link_kind: landing_page
-    - platform: linux-x64
-      download_url: https://github.com/Ryubing/Ryujinx/releases
-      link_kind: landing_page
-  desc_cn: Nintendo Switch 模拟器，C# 编写兼容性好
-  desc_en: Nintendo Switch emulator written in C# with good compatibility
 - id: xemu
   name: xemu
   category: Gaming

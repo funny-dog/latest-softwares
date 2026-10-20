@@ -73,6 +73,45 @@ def test_json_injection_records_requested_edition(tmp_path, monkeypatch):
     assert '"id":"cn-only"' not in html
 
 
+def test_cn_build_keeps_downloads_direct_but_reports_metrics(tmp_path, monkeypatch):
+    """国内版是纯静态站：下载必须走直链（public_site_url 为空），
+    同时仍把统计上报指向国际版后端（metrics_url）。"""
+    dist = tmp_path / "dist"
+    dist.mkdir()
+    index = dist / "index.html"
+    index.write_text(
+        f"<script>window.__PKG_DATA__ = {build_web.DATA_PLACEHOLDER};</script>",
+        encoding="utf-8",
+    )
+    data_file = tmp_path / "latest.json"
+    data_file.write_text(
+        json.dumps(
+            {
+                "schema_version": 2,
+                "packages": [{"id": "cn-only", "editions": ["cn"]}],
+                "stats": {},
+            }
+        ),
+        encoding="utf-8",
+    )
+
+    monkeypatch.setattr(build_web, "DIST", dist)
+    monkeypatch.setattr(build_web, "DATA_FILE", data_file)
+    monkeypatch.setattr(build_web, "CN_PUBLIC_SITE_URL", "")
+    monkeypatch.setattr(
+        build_web, "CN_METRICS_URL", "https://metrics.example.test"
+    )
+
+    build_web.inject_data(edition="cn")
+
+    html = index.read_text(encoding="utf-8")
+    assert '"edition":"cn"' in html
+    # 下载走直链：不能出现非空的 public_site_url
+    assert '"public_site_url":""' in html
+    # 统计仍上报到国际版后端
+    assert '"metrics_url":"https://metrics.example.test"' in html
+
+
 def test_web_source_uses_local_vendor_assets():
     html = (build_web.WEB_SRC / "index.html").read_text(encoding="utf-8")
 
