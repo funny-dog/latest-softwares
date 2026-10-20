@@ -23,7 +23,7 @@ packages:
   editions:
   - cn
   - intl
-  homepage: https://fedoraproject.org/workstation/download/
+  homepage: https://fedoraproject.org/workstation/download
   fetcher: fedora_releases
   args:
     edition_path: Workstation/x86_64/iso
@@ -31,8 +31,10 @@ packages:
     - platform: workstation-live-x86_64
       pattern: Fedora-Workstation-Live-{version}-*.x86_64.iso
   desc_cn: Red Hat 赞助的前沿 Linux 发行版，率先采用新技术
-  desc_en: Cutting-edge Linux distribution sponsored by Red Hat, early adopter of
-    new tech
+  desc_en: Cutting-edge Linux distribution sponsored by Red Hat, early adopter of new tech
+  verification:
+    identity_terms:
+    - Fedora Workstation
 - id: v2rayn
   name: v2rayN
   category: Network & Proxy
@@ -1507,9 +1509,9 @@ packages:
   args:
     platforms:
     - platform: win-x64
-      download_url: https://helpx.adobe.com/cn/photoshop/desktop.html
+      download_url: https://www.adobe.com/products/photoshop.html
     - platform: mac-universal
-      download_url: https://helpx.adobe.com/cn/photoshop/desktop.html
+      download_url: https://www.adobe.com/products/photoshop.html
   desc_cn: Adobe 专业图像编辑软件，通过官网试用或购买后安装
   desc_en: Professional image editor; install through the official trial or subscription
 - id: adobe-reader

@@ -307,6 +307,12 @@ def validate_and_fix(
                     "fallback": True,
                 }
                 page_verification = check(page, config)
+                if page_verification["status"] != "verified":
+                    print(
+                        f"Fallback {pid}:{asset['platform']}: "
+                        f"{page_verification.get('reason', page_verification['status'])}",
+                        file=sys.stderr,
+                    )
                 if page_verification["status"] == "verified":
                     asset.clear()
                     asset.update(page)
