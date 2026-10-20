@@ -67,7 +67,7 @@ jobs:
 
       - name: Fetch current metrics from live instance
         env:
-          METRICS_URL: "https://latest-softwares-064facea.fastapicloud.dev/api/metrics"
+          METRICS_URL: "https://intl.erhu8.dpdns.org/api/metrics"
         run: |
           HTTP_CODE=$(curl -sSL -o data/site_metrics.json -w '%{http_code}' --max-time 15 "$METRICS_URL" || echo "000")
           if [ "$HTTP_CODE" -ge 200 ] && [ "$HTTP_CODE" -lt 300 ]; then

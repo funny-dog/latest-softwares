@@ -28,7 +28,7 @@ jobs:
       - name: Fetch metrics from FastAPI Cloud
         id: fetch
         env:
-          METRICS_URL: "https://latest-softwares-064facea.fastapicloud.dev/api/metrics"
+          METRICS_URL: "https://intl.erhu8.dpdns.org/api/metrics"
         run: |
           for attempt in 1 2 3; do
             HTTP_CODE=$(curl -sSL -o /tmp/metrics.json -w '%{http_code}' --max-time 15 "$METRICS_URL" || echo "000")

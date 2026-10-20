@@ -67,7 +67,7 @@ def test_json_injection_records_requested_edition(tmp_path, monkeypatch):
     html = index.read_text(encoding="utf-8")
     assert '"edition":"intl"' in html
     assert (
-        '"public_site_url":"https://latest-softwares-064facea.fastapicloud.dev"' in html
+        '"public_site_url":"https://intl.erhu8.dpdns.org"' in html
     )
     assert '"id":"intl-only"' in html
     assert '"id":"cn-only"' not in html

@@ -54,7 +54,11 @@ VERSIONED_ASSETS = (
 DATA_PLACEHOLDER = (
     '/*__DATA__*/ {"schema_version": 2, "packages": [], "stats": {}} /*__DATA__*/'
 )
-PUBLIC_SITE_URL = "https://latest-softwares-064facea.fastapicloud.dev"
+# 国际版正式地址。FastAPI Cloud 的默认子域
+# （latest-softwares-064facea.fastapicloud.dev）仍可访问，但对外统一用自定义域名。
+PUBLIC_SITE_URL = os.environ.get(
+    "PUBLIC_SITE_URL", "https://intl.erhu8.dpdns.org"
+)
 # 国内版已迁到 Cloudflare Pages（纯静态），没有自己的后端。
 # 下载一律走 asset.url 直链——切勿回退成 http://localhost:8080，
 # 否则线上下载按钮会全部指向本机。

@@ -9,9 +9,12 @@
 
 ---
 
-## 🌐 Live Site
+## 🌐 Live Sites
 
-- Site: <https://latest-softwares-064facea.fastapicloud.dev/>
+| Edition | Site | Hosting |
+|---------|------|---------|
+| 🇨🇳 Chinese | <https://cn.erhu8.dpdns.org/> | Cloudflare Pages (static) |
+| 🌍 International | <https://intl.erhu8.dpdns.org/> | FastAPI Cloud |
 
 ---
 
