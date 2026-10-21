@@ -388,11 +388,15 @@ def test_maintenance_page_does_not_resurrect_expired_verification(
     assert validate_links.validate_and_fix(gate=True) == 0
 
     # 让 state 与快照中的验证都过期，模拟上游宕机超过 7 天
-    expired = (datetime.now(timezone.utc) - timedelta(days=1)).isoformat()
+    expired = (datetime.now(timezone.utc) - timedelta(days=8)).isoformat()
     state_path = tmp_path / "link-state.json"
     state = json.loads(state_path.read_text())
-    state["assets"]["example:win-x64"]["verification"]["valid_until"] = expired
-    state["assets"]["example:win-x64"]["next_check_at"] = expired
+    entry = state["assets"]["example:win-x64"]
+    entry["verification"]["valid_until"] = expired
+    entry["next_check_at"] = expired
+    # 历史里的成功记录同样超出 7 天，确保自愈逻辑不会把它救回来
+    entry["last_success_at"] = expired
+    entry["history"] = [{**h, "at": expired} for h in entry.get("history", [])]
     state_path.write_text(json.dumps(state))
     data = json.loads(path.read_text())
     data["packages"][0]["assets"][0]["verification"]["valid_until"] = expired
@@ -610,3 +614,103 @@ def test_exception_requires_reason_gate_and_known_required_id(tmp_path, monkeypa
             allow_unverified_required={"unknown"},
             exception_reason="Approval",
         )
+
+
+def _write_polluted_state(tmp_path, *, history, last_success):
+    """构造已被旧版本污染的 link-state：失败记录替代了原验证结果。"""
+    url = "https://example.test/old-win-x64.exe"
+    config = {
+        "id": "example",
+        "name": "Example",
+        "fetcher": "package_manifest",
+        "args": {
+            "provider": "brew",
+            "package": "example",
+            "platforms": [{"platform": "win-x64"}],
+        },
+    }
+    fingerprint = validate_links._config_fingerprint(
+        config, {"platform": "win-x64", "url": url}
+    )
+    (tmp_path / "link-state.json").write_text(
+        json.dumps(
+            {
+                "schema_version": 1,
+                "assets": {
+                    "example:win-x64": {
+                        "fingerprint": fingerprint,
+                        "verification": {
+                            "status": "failed",
+                            "checked_at": "2026-10-21T17:00:00+00:00",
+                            "reason": "expected installer",
+                        },
+                        "failures": 1,
+                        "next_check_at": "2026-10-21T19:00:00+00:00",
+                        "last_success_at": last_success,
+                        "history": history,
+                    }
+                },
+            }
+        )
+    )
+
+
+@pytest.mark.parametrize(
+    "history,last_success,status,expected",
+    [
+        # 历史里有同 URL 的成功记录 + 本轮是临时故障 → 自愈放行
+        ("recent", "recent", "transient", 0),
+        # 本轮是真失效（404）→ 不放行
+        ("recent", "recent", "failed", 1),
+        # 没有任何成功记录 → 不放行
+        ([], None, "transient", 1),
+        # 最近成功已超出 7 天 → 不放行
+        ([], "stale", "transient", 1),
+        # 成功记录是别的 URL → 不放行
+        ("other_url", None, "transient", 1),
+    ],
+)
+def test_polluted_state_self_heals_only_for_transient_failures(
+    tmp_path, monkeypatch, history, last_success, status, expected
+):
+    """缓存被旧版本写成 failed 后，只允许凭历史成功记录为临时故障自愈。"""
+    _, config = _setup_validation(tmp_path, monkeypatch)
+    now = datetime.now(timezone.utc)
+    recent = (now - timedelta(hours=3)).isoformat(timespec="seconds")
+    if history == "recent":
+        history = [
+            {
+                "at": recent,
+                "url": "https://example.test/old-win-x64.exe",
+                "status": "verified",
+                "reason": None,
+            }
+        ]
+    elif history == "other_url":
+        history = [
+            {
+                "at": recent,
+                "url": "https://example.test/old-win-mac.dmg",
+                "status": "verified",
+                "reason": None,
+            }
+        ]
+    if last_success == "recent":
+        last_success = recent
+    elif last_success == "stale":
+        last_success = (now - timedelta(days=8)).isoformat(timespec="seconds")
+    _write_polluted_state(tmp_path, history=history, last_success=last_success)
+
+    monkeypatch.setattr(validate_links, "_refetch_package", lambda c: None)
+    monkeypatch.setattr(
+        validate_links,
+        "verify_link",
+        lambda a, c, **kw: {
+            "status": status,
+            "reason": (
+                "upstream maintenance page" if status == "transient" else "HTTP 404"
+            ),
+            "checked_at": now.isoformat(timespec="seconds"),
+        },
+    )
+    assert validate_links.validate_and_fix(gate=True, force=True) == expected

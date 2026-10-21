@@ -81,6 +81,43 @@ def _fix_by_refetch(config: dict[str, Any], asset: dict[str, Any]) -> str | None
     return None
 
 
+def _recover_from_history(
+    old: dict[str, Any],
+    attempt: dict[str, Any],
+    asset: dict[str, Any],
+    now: datetime,
+) -> dict[str, Any] | None:
+    """从 link-state 历史里恢复最近一次成功验证，用于自愈被污染的缓存。
+
+    旧版本把上游维护页判成 failed 并写回 link-state 后，缓存里只剩一条没有
+    valid_until 的失败记录，后续轮次就再也带不回"上次成功"。这里要求：
+    本轮确实是临时性失败、URL 未变、历史上确有成功记录，且距现在未超过
+    默认验证有效期，才重建一份与正常验证等价的证据。
+    """
+    if attempt.get("status") not in {"transient", "unverified"}:
+        return None
+    url = asset.get("url")
+    last_success = parse_time(old.get("last_success_at"))
+    recovered_at = None
+    for entry in old.get("history", []):
+        if entry.get("status") != "verified" or entry.get("url") != url:
+            continue
+        at = parse_time(entry.get("at"))
+        if at and (recovered_at is None or at > recovered_at):
+            recovered_at = at
+    if recovered_at is None:
+        recovered_at = last_success
+    if recovered_at is None or (now - recovered_at) >= timedelta(days=7):
+        return None
+    return {
+        "status": "verified",
+        "checked_at": recovered_at.isoformat(timespec="seconds"),
+        "url": url,
+        "valid_until": (recovered_at + timedelta(days=7)).isoformat(timespec="seconds"),
+        "evidence": "recovered from link-state history after a transient failure",
+    }
+
+
 def _config_fingerprint(config: dict, asset: dict) -> str:
     payload = {
         "policy_version": VERIFICATION_POLICY_VERSION,
@@ -203,7 +240,9 @@ def validate_and_fix(
                 if k not in _transient_keys
             }
         else:
-            carry_over = None
+            # 缓存里的记录可能已被旧版本写成 failed（没有 valid_until），此时凭
+            # history 里的最后一次成功重建证据，避免一次临时故障永久污染缓存。
+            carry_over = _recover_from_history(old, attempt, asset, now)
         if transient and carry_over:
             verification = {
                 **carry_over,
