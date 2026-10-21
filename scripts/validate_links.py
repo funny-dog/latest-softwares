@@ -36,6 +36,9 @@ LINK_HEALTH_FILE = REPO_ROOT / "data/link-health.json"
 MAX_WORKERS = 8
 MAX_CONNECTIONS_PER_HOST = 8
 VERIFICATION_POLICY_VERSION = 1
+# 命中上游维护页时沿用旧验证结果，并把下次重试提前到这个间隔，避免上游
+# 恢复后仍按 2~24 小时的退避干等。
+MAINTENANCE_RETRY_MINUTES = 30
 
 
 def _write_json(path: Path, data: dict) -> None:
@@ -127,6 +130,7 @@ def validate_and_fix(
                 "fallback",
                 "failed",
                 "restricted",
+                "transient",
                 "unverified",
                 "cached",
                 "deferred",
@@ -170,13 +174,19 @@ def validate_and_fix(
                 }
             remaining -= 1
             verification = verify_link(asset, config, now=now)
-        failures = (
-            0 if verification["status"] == "verified" else old.get("failures", 0) + 1
-        )
         attempt = dict(verification)
+        # 失败次数按"本轮真实尝试结果"计，降级不改变退避语义。
+        failures = 0 if attempt["status"] == "verified" else old.get("failures", 0) + 1
+        # 短暂故障降级（沿用旧结果，不延长有效期、不算成功）：
+        # 1) 网络异常/超时（已有行为，重试间隔仍按 failures 退避）；
+        # 2) 上游整站维护页（transient）——既不是死链也不是反爬，硬判失败会让
+        #    整条发布流水线卡到上游恢复为止，因此额外把重试提前。
+        transient = attempt["status"] in {"unverified", "transient"} and (
+            attempt["status"] == "transient"
+            or attempt.get("reason", "").startswith("network check failed:")
+        )
         if (
-            verification["status"] == "unverified"
-            and verification.get("reason", "").startswith("network check failed:")
+            transient
             and old.get("fingerprint") == fingerprint
             and asset_available(candidate, now)
         ):
@@ -186,6 +196,14 @@ def validate_and_fix(
                 "last_attempt_status": attempt["status"],
                 "last_attempt_reason": attempt.get("reason"),
             }
+            retry_at = (
+                now + timedelta(minutes=MAINTENANCE_RETRY_MINUTES)
+                if attempt["status"] == "transient"
+                else None
+            )
+        else:
+            verification = attempt
+            retry_at = None
         hours = (
             6
             if config["id"] in important
@@ -196,6 +214,8 @@ def validate_and_fix(
         if failures:
             hours = min(24, 2 ** min(failures, 4))
         next_at = now + timedelta(hours=hours)
+        if retry_at and retry_at < next_at:
+            next_at = retry_at
         expiry = parse_time(verification.get("valid_until"))
         if expiry:
             next_at = min(next_at, expiry)

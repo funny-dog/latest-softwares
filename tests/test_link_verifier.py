@@ -109,6 +109,42 @@ def test_restricted_access_is_distinct_from_dead_link(monkeypatch):
     assert verify(monkeypatch, Response(status=404))["status"] == "failed"
 
 
+MAINTENANCE_HTML = (
+    b"<html><body>Our website is temporarily down for maintenance. "
+    b"We expect to be back up shortly.</body></html>"
+)
+
+
+@pytest.mark.parametrize(
+    "url,link_kind",
+    [
+        ("https://example.test/download", "landing_page"),
+        ("https://example.test/app-x64.exe", "direct"),
+    ],
+)
+def test_maintenance_page_is_transient_not_dead_link(monkeypatch, url, link_kind):
+    """上游整站维护页既不是死链也不是反爬，必须与 404/403 区分开。"""
+    result = verify(
+        monkeypatch,
+        Response(MAINTENANCE_HTML, headers={"Content-Type": "text/html"}),
+        url=url,
+        link_kind=link_kind,
+    )
+    assert result["status"] == "transient"
+    assert result["reason"] == "upstream maintenance page"
+
+
+def test_ordinary_error_page_is_still_failed(monkeypatch):
+    """普通错误页不能被维护页识别误放行。"""
+    result = verify(
+        monkeypatch,
+        Response(b"<html>Not found</html>", headers={"Content-Type": "text/html"}),
+        url=CONFIG["homepage"],
+        link_kind="landing_page",
+    )
+    assert result["status"] == "unverified"
+
+
 def test_expired_signatures_are_rejected_without_request(monkeypatch):
     monkeypatch.setattr(
         link_verifier,

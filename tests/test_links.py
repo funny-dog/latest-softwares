@@ -330,6 +330,99 @@ def test_incremental_cache_avoids_repeated_http_and_preserves_history(
     assert state["last_success_at"]
 
 
+def test_maintenance_page_keeps_previous_verification_and_retries_soon(
+    tmp_path, monkeypatch
+):
+    """上游整站维护期间沿用仍未过期的旧验证，不延长有效期、且尽快重试。"""
+    path, _ = _setup_validation(tmp_path, monkeypatch)
+    monkeypatch.setattr(validate_links, "verify_link", lambda *a, **kw: _verified())
+    assert validate_links.validate_and_fix(gate=True) == 0
+    published = json.loads(path.read_text())["packages"][0]["assets"][0]
+    original_valid_until = published["verification"]["valid_until"]
+
+    # 第二轮：上游整站维护，直链与官网都只返回维护页
+    monkeypatch.setattr(
+        validate_links,
+        "_refetch_package",
+        lambda c: {
+            "id": "example",
+            "version": "1.0",
+            "assets": [{"platform": "win-x64", "url": "https://example.test/a.exe"}],
+        },
+    )
+    monkeypatch.setattr(
+        validate_links,
+        "verify_link",
+        lambda *a, **kw: {
+            "status": "transient",
+            "reason": "upstream maintenance page",
+            "checked_at": datetime.now(timezone.utc).isoformat(),
+        },
+    )
+    assert validate_links.validate_and_fix(gate=True, force=True) == 0
+
+    asset = json.loads(path.read_text())["packages"][0]["assets"][0]
+    # 入口没有被替换成维护页，下载仍指向原地址
+    assert asset["url"] == "https://example.test/old-win-x64.exe"
+    # 沿用旧验证，且没有延长有效期
+    assert asset["verification"]["status"] == "verified"
+    assert asset["verification"]["valid_until"] == original_valid_until
+    # 记录本次尝试，便于排查
+    assert asset["verification"]["last_attempt_status"] == "transient"
+    state = json.loads((tmp_path / "link-state.json").read_text())["assets"][
+        "example:win-x64"
+    ]
+    assert state["history"][-1]["status"] == "transient"
+    next_check = datetime.fromisoformat(state["next_check_at"])
+    assert next_check <= datetime.now(timezone.utc) + timedelta(
+        minutes=validate_links.MAINTENANCE_RETRY_MINUTES
+    )
+
+
+def test_maintenance_page_does_not_resurrect_expired_verification(
+    tmp_path, monkeypatch
+):
+    """旧验证已过期时，维护页不能把入口重新变成可用——那是真失效。"""
+    path, _ = _setup_validation(tmp_path, monkeypatch)
+    monkeypatch.setattr(validate_links, "verify_link", lambda *a, **kw: _verified())
+    assert validate_links.validate_and_fix(gate=True) == 0
+
+    # 让 state 与快照中的验证都过期，模拟上游宕机超过 7 天
+    expired = (datetime.now(timezone.utc) - timedelta(days=1)).isoformat()
+    state_path = tmp_path / "link-state.json"
+    state = json.loads(state_path.read_text())
+    state["assets"]["example:win-x64"]["verification"]["valid_until"] = expired
+    state["assets"]["example:win-x64"]["next_check_at"] = expired
+    state_path.write_text(json.dumps(state))
+    data = json.loads(path.read_text())
+    data["packages"][0]["assets"][0]["verification"]["valid_until"] = expired
+    path.write_text(json.dumps(data))
+
+    monkeypatch.setattr(
+        validate_links,
+        "_refetch_package",
+        lambda c: {
+            "id": "example",
+            "version": "1.0",
+            "assets": [{"platform": "win-x64", "url": "https://example.test/a.exe"}],
+        },
+    )
+    monkeypatch.setattr(
+        validate_links,
+        "verify_link",
+        lambda *a, **kw: {
+            "status": "transient",
+            "reason": "upstream maintenance page",
+            "checked_at": datetime.now(timezone.utc).isoformat(),
+        },
+    )
+    assert validate_links.validate_and_fix(gate=True, force=True) == 1
+
+    asset = json.loads(path.read_text())["packages"][0]["assets"][0]
+    assert asset["verification"]["status"] == "transient"
+    assert not asset_available(asset)
+
+
 def test_budget_exhaustion_blocks_missing_critical_platform(tmp_path, monkeypatch):
     _setup_validation(tmp_path, monkeypatch, platforms=("win-x64", "mac-arm64"))
     calls = []

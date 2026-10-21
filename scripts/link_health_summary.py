@@ -37,6 +37,7 @@ def render_summary(report: dict[str, Any]) -> str:
                 for key in (
                     "fallback",
                     "restricted",
+                    "transient",
                     "unverified",
                     "cached",
                     "deferred",
@@ -51,7 +52,15 @@ def render_summary(report: dict[str, Any]) -> str:
         row
         for row in report.get("links", [])
         if row.get("status")
-        in {"failed", "fixed", "fallback", "restricted", "unverified", "deferred"}
+        in {
+            "failed",
+            "fixed",
+            "fallback",
+            "restricted",
+            "transient",
+            "unverified",
+            "deferred",
+        }
     ]
     if notable:
         lines.extend(

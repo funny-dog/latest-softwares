@@ -23,6 +23,30 @@ _ARCH = {
     "x86": r"(?:i[3-6]86|ia32|win32|(?<![a-z0-9])x86(?!_64))",
 }
 
+# 上游整站维护页的措辞。这类页面不属于"死链"，也不是反爬，而是上游
+# 主动下线的临时状态；按真实失效处理会让整条发布流水线卡到上游恢复为止。
+# 维护通告通常整站可见，因此直链被重定向到它、或落地页本身变成它时都按
+# transient 处理；是否沿用旧验证结果由 validate_links 决定（要求旧结果仍有效）。
+_MAINTENANCE_PHRASES = (
+    "temporarily down for maintenance",
+    "temporarily offline",
+    "down for maintenance",
+    "temporarily unavailable",
+    "will be back shortly",
+    "back up shortly",
+    "undergoing maintenance",
+    "scheduled maintenance",
+    "维护中",
+    "暂时无法访问",
+    "临时维护",
+    "系统维护",
+)
+
+
+def _looks_like_maintenance(text: str) -> bool:
+    """判断 HTML 正文是否是上游整站维护/停机通告。"""
+    return any(phrase in _normal(text) for phrase in _MAINTENANCE_PHRASES)
+
 
 def _public_url(url: str) -> bool:
     if not is_http_url(url):
@@ -151,6 +175,16 @@ def verify_link(asset: dict, config: dict, *, now: datetime | None = None) -> di
         )
         if is_direct_link(url, asset.get("link_kind")):
             if is_html or "json" in content_type or "text/plain" in content_type:
+                # 直链被重定向到上游维护页时按 transient 处理，与落地页口径一致；
+                # 其余文档/错误页仍视为真实失效，不放行死链。
+                if is_html and _looks_like_maintenance(
+                    sample.decode("utf-8", errors="replace")
+                ):
+                    return {
+                        **result,
+                        "status": "transient",
+                        "reason": "upstream maintenance page",
+                    }
                 return {
                     **result,
                     "reason": "expected installer, received a document/error page",
@@ -191,7 +225,16 @@ def verify_link(asset: dict, config: dict, *, now: datetime | None = None) -> di
                     "status": "unverified",
                     "reason": "expected an official download page",
                 }
-            text = _normal(sample.decode("utf-8", errors="replace"))
+            raw_text = sample.decode("utf-8", errors="replace")
+            text = _normal(raw_text)
+            # 上游整站维护/停机通告：既不是死链也不是反爬，单独标记以便门禁
+            # 沿用仍未过期的上次验证结果，而不是阻塞整条发布流水线。
+            if _looks_like_maintenance(raw_text):
+                return {
+                    **result,
+                    "status": "transient",
+                    "reason": "upstream maintenance page",
+                }
             terms = settings.get("identity_terms") or [
                 config.get("name", ""),
                 config.get("id", ""),
