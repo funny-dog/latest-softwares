@@ -1,11 +1,11 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-21T05:44:26+00:00",
+  "generated_at": "2026-10-21T18:38:07+00:00",
   "configured": 699,
   "published": 699,
   "stale_packages": 31,
-  "verified_assets": 1086,
-  "unavailable_assets": 66,
+  "verified_assets": 1088,
+  "unavailable_assets": 64,
   "required_total": 301,
   "required_covered": 300,
   "required_coverage": 0.9966777408637874,
@@ -109,13 +109,6 @@
       "required": false,
       "issues": [
         "unverified_or_unavailable:win-x64"
-      ]
-    },
-    {
-      "id": "deepl",
-      "required": false,
-      "issues": [
-        "unverified_or_unavailable:mac-universal"
       ]
     },
     {
@@ -319,13 +312,6 @@
       "required": false,
       "issues": [
         "unverified_or_unavailable:mac-universal"
-      ]
-    },
-    {
-      "id": "youku",
-      "required": false,
-      "issues": [
-        "unverified_or_unavailable:win-x64"
       ]
     },
     {
