@@ -7,6 +7,7 @@
   "packages_endpoint": true,
   "log_events": true,
   "cors_origins": [
+    "https://latest-softwares-cn-bhnr38evqjb.qoder.zone",
     "https://cn.erhu8.dpdns.org",
     "https://latest-softwares-cn.pages.dev"
   ],

@@ -13,7 +13,7 @@
 
 | 版本 | 地址 | 托管 |
 |------|------|------|
-| 🇨🇳 国内版 | <https://cn.erhu8.dpdns.org/> | Cloudflare Pages（纯静态） |
+| 🇨🇳 国内版 | <https://latest-softwares-cn-bhnr38evqjb.qoder.zone/> | Qoder Sites（主）· Cloudflare Pages（备用：<https://cn.erhu8.dpdns.org/>） |
 | 🌍 国际版 | <https://intl.erhu8.dpdns.org/> | FastAPI Cloud |
 
 ---

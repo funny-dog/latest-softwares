@@ -55,6 +55,9 @@ uv.lock
 # AI agent 生成的计划/设计文档（本地保留，不入库）
 docs/superpowers/
 
+# Qoder Sites 本地发布描述文件（含冻结快照与私有绑定）
+*.qoder.site
+
 # 自动发现游标与审查记录由 Actions cache/artifact 保存
 data/discovery-state.json
 data/discovery-candidates.json

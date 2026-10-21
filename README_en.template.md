@@ -13,7 +13,7 @@
 
 | Edition | Site | Hosting |
 |---------|------|---------|
-| 🇨🇳 Chinese | <https://cn.erhu8.dpdns.org/> | Cloudflare Pages (static) |
+| 🇨🇳 Chinese | <https://latest-softwares-cn-bhnr38evqjb.qoder.zone/> | Qoder Sites (primary) · Cloudflare Pages (backup: <https://cn.erhu8.dpdns.org/>) |
 | 🌍 International | <https://intl.erhu8.dpdns.org/> | FastAPI Cloud |
 
 ---
