@@ -185,13 +185,28 @@ def validate_and_fix(
             attempt["status"] == "transient"
             or attempt.get("reason", "").startswith("network check failed:")
         )
-        if (
-            transient
-            and old.get("fingerprint") == fingerprint
-            and asset_available(candidate, now)
-        ):
+        # 优先用 link-state 的旧结果；缓存丢失时回退到快照自身仍有效的验证结果，
+        # 否则一次 cache miss 就会把可用的已发布入口判成不可用。
+        # 携带时先剥掉上一轮的瞬时标记，避免把历史尝试信息当成新结论。
+        _transient_keys = {
+            "last_attempt_at",
+            "last_attempt_status",
+            "last_attempt_reason",
+        }
+        snapshot_verification = asset.get("verification")
+        if old.get("fingerprint") == fingerprint and asset_available(candidate, now):
+            carry_over = {k: v for k, v in cached.items() if k not in _transient_keys}
+        elif isinstance(snapshot_verification, dict) and asset_available(asset, now):
+            carry_over = {
+                k: v
+                for k, v in snapshot_verification.items()
+                if k not in _transient_keys
+            }
+        else:
+            carry_over = None
+        if transient and carry_over:
             verification = {
-                **cached,
+                **carry_over,
                 "last_attempt_at": now.isoformat(timespec="seconds"),
                 "last_attempt_status": attempt["status"],
                 "last_attempt_reason": attempt.get("reason"),

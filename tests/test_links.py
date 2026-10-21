@@ -423,6 +423,81 @@ def test_maintenance_page_does_not_resurrect_expired_verification(
     assert not asset_available(asset)
 
 
+def test_maintenance_page_without_link_state_falls_back_to_snapshot(
+    tmp_path, monkeypatch
+):
+    """link-state 缓存丢失时，回退到快照自身仍有效的验证，不能让 cache miss 阻塞发布。"""
+    path, _ = _setup_validation(tmp_path, monkeypatch)
+    monkeypatch.setattr(validate_links, "verify_link", lambda *a, **kw: _verified())
+    assert validate_links.validate_and_fix(gate=True) == 0
+    published_until = json.loads(path.read_text())["packages"][0]["assets"][0][
+        "verification"
+    ]["valid_until"]
+
+    # 模拟 Actions cache 未命中：只有快照，没有 link-state.json
+    (tmp_path / "link-state.json").unlink()
+    monkeypatch.setattr(
+        validate_links,
+        "_refetch_package",
+        lambda c: {
+            "id": "example",
+            "version": "1.0",
+            "assets": [{"platform": "win-x64", "url": "https://example.test/a.exe"}],
+        },
+    )
+    monkeypatch.setattr(
+        validate_links,
+        "verify_link",
+        lambda *a, **kw: {
+            "status": "transient",
+            "reason": "upstream maintenance page",
+            "checked_at": datetime.now(timezone.utc).isoformat(),
+        },
+    )
+    assert validate_links.validate_and_fix(gate=True, force=True) == 0
+
+    asset = json.loads(path.read_text())["packages"][0]["assets"][0]
+    assert asset["verification"]["status"] == "verified"
+    assert asset["verification"]["last_attempt_status"] == "transient"
+    assert asset["verification"]["valid_until"] == published_until
+
+
+def test_carry_over_drops_stale_transient_markers(tmp_path, monkeypatch):
+    """回退沿用旧验证时，必须用本轮尝试覆盖上一轮残留的 last_attempt_* 标记。"""
+    path, _ = _setup_validation(tmp_path, monkeypatch)
+    monkeypatch.setattr(validate_links, "verify_link", lambda *a, **kw: _verified())
+    assert validate_links.validate_and_fix(gate=True) == 0
+
+    published = json.loads(path.read_text())["packages"][0]["assets"][0]
+    published_until = published["verification"]["valid_until"]
+    published["verification"]["last_attempt_status"] = "transient"
+    published["verification"]["last_attempt_reason"] = "stale reason"
+    data = json.loads(path.read_text())
+    data["packages"][0]["assets"][0] = published
+    path.write_text(json.dumps(data))
+    (tmp_path / "link-state.json").unlink()
+
+    monkeypatch.setattr(validate_links, "_refetch_package", lambda c: None)
+    monkeypatch.setattr(
+        validate_links,
+        "verify_link",
+        lambda *a, **kw: {
+            "status": "transient",
+            "reason": "upstream maintenance page",
+            "checked_at": datetime.now(timezone.utc).isoformat(),
+        },
+    )
+    assert validate_links.validate_and_fix(gate=True, force=True) == 0
+
+    verification = json.loads(path.read_text())["packages"][0]["assets"][0][
+        "verification"
+    ]
+    assert verification["status"] == "verified"
+    assert verification["last_attempt_status"] == "transient"
+    assert verification["last_attempt_reason"] == "upstream maintenance page"
+    assert verification["valid_until"] == published_until
+
+
 def test_budget_exhaustion_blocks_missing_critical_platform(tmp_path, monkeypatch):
     _setup_validation(tmp_path, monkeypatch, platforms=("win-x64", "mac-arm64"))
     calls = []
