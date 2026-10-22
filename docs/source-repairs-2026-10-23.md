@@ -161,6 +161,14 @@
 - 实测 `delta-force`、`fantasy-westward-journey`、`league-of-legends` 由 `unverified` 变为 `verified`。
 - 身份词精确化（页面使用连写或简称，原名带空格无法命中）：`360ee` → `360极速浏览器`、`360zip` → `360压缩`、`foxit-reader-cn` → `福昕PDF`、`uu-accelerator` → `网易UU加速器`、`btop-win` → `btop`、`cloudflare-warp` → `WARP`。
 - 通义千问官网已迁至 `qianwen.com`（原 `tongyi.aliyun.com/download` 302 到 `http://www.qianwen.com/download`）：入口改为 https，身份词用“千问”。
-- 仍未解决：`scribus` 命中反爬验证页；`bottles` 页面无静态下载词；`chatglm`、`sparkdesk`、`iqiyi`、`tencent-docs`、`yy`、`baidu-input`、`kimi` 为 JS 渲染，静态证据不足；`wps-pdf` 产品页已重定向到 `wps.cn`；`fastgithub`、`qqplayer` 为已记录 404；`adobe-photoshop`、`apifox` 为 403 受限（前者有声明式豁免）。
+- 仍未解决：`scribus` 命中反爬验证页；`chatglm`、`sparkdesk`、`tencent-docs`、`yy`、`baidu-input`、`kimi` 为 JS 渲染，静态证据不足；`wps-pdf` 产品页已重定向到 `wps.cn`；`fastgithub`、`qqplayer` 为已记录 404；`adobe-photoshop`、`apifox` 为 403 受限（前者有声明式豁免）。
 
 验收：`validate_config` 通过；本批 11 个平台入口实测 `verified`；`tests/test_link_verifier.py tests/test_validate_config.py tests/test_catalog.py` 47 passed；Ruff 检查与格式通过。
+
+### 6.1 续批：直接分发入口
+
+| 软件 | 原入口问题 | 处理 |
+|---|---|---|
+| iqiyi | 旧 `/opensource` 页无静态下载证据 | 改用官方客户端站 `https://app.iqiyi.com/`（verified） |
+| bottles | GitHub Releases 无二进制资产，官网下载页为 JS 渲染 | 改用官方 Flathub 页面 `com.usebottles.bottles`（verified） |
+| potplayer-cn | `potplayer.daum.net` 在 CI 中连接失败 | 官网静态页给出 Kakao CDN 直链，改用 `PotPlayerSetup64.exe`（latest，direct，verified） |

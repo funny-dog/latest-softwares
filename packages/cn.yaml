@@ -699,7 +699,7 @@ packages:
   args:
     platforms:
     - platform: win-x64
-      download_url: https://www.iqiyi.com/opensource
+      download_url: https://app.iqiyi.com/
       link_kind: landing_page
   desc_cn: 百度旗下视频流媒体平台，影视剧和综艺内容
   desc_en: Baidu-backed video streaming platform for movies and variety shows
@@ -1115,10 +1115,11 @@ packages:
   homepage: https://potplayer.daum.net/
   fetcher: download_page
   args:
+    source: Official Kakao CDN installer (latest build)
     platforms:
     - platform: win-x64
-      download_url: https://potplayer.daum.net/
-      link_kind: landing_page
+      download_url: https://t1.kakaocdn.net/potplayer/PotPlayer/Version/Latest/PotPlayerSetup64.exe
+      link_kind: direct
   desc_cn: 高性能视频播放器，支持多种格式和硬件加速
   desc_en: High-performance video player with multi-format and hardware acceleration
 - id: jianying

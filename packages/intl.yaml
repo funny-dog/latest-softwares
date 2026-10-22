@@ -2763,13 +2763,13 @@ packages:
   category: Gaming
   editions:
   - intl
-  homepage: https://usebottles.com/download/
+  homepage: https://flathub.org/apps/com.usebottles.bottles
   fetcher: download_page
   args:
-    source: Official project download page; no stable public release asset API
+    source: Official Flathub listing (no release binaries on GitHub)
     platforms:
     - platform: linux-x64
-      download_url: https://usebottles.com/download/
+      download_url: https://flathub.org/apps/com.usebottles.bottles
       link_kind: landing_page
   desc_cn: Linux 上运行 Windows 软件的图形化管理工具
   desc_en: GUI tool for running Windows software on Linux
