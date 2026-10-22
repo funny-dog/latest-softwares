@@ -5,7 +5,7 @@
 > 由 GitHub Actions 每日自动同步上游官方源的**最新版本元数据**。
 > 仓库**不托管二进制安装包**，下载按钮直接跳到上游官方下载链接。
 >
-> 📅 **最后更新**：`2026-10-22 20:36:41` (UTC)　· 共 699 项软件
+> 📅 **最后更新**：`2026-10-22 20:41:16` (UTC)　· 共 699 项软件
 
 ---
 
@@ -675,7 +675,7 @@
 | [**MangoHud**](https://github.com/flightlessmango/MangoHud) | `2026-10-20` | — | [linux-x64](https://github.com/flightlessmango/MangoHud/releases) | Official project download page; no stable public release asset API |
 | [**GameMode**](https://github.com/FeralInteractive/gamemode) | `2026-10-20` | — | [linux-x64](https://github.com/FeralInteractive/gamemode/releases) | Official project download page; no stable public release asset API |
 | [**GE-Proton**](https://github.com/GloriousEggroll/proton-ge-custom) | `11-11` | 2026-10-19 | [linux-x64](https://github.com/GloriousEggroll/proton-ge-custom/releases/download/GE-Proton11-11/GE-Proton11-11-x86_64.tar.gz) | GitHub Release: GloriousEggroll/proton-ge-custom |
-| [**Bottles**](https://usebottles.com/download/) | `2026-10-20` | — | linux-x64（暂不可用，待核验） | Official project download page; no stable public release asset API |
+| [**Bottles**](https://flathub.org/apps/com.usebottles.bottles) | `2026-10-22` | — | [linux-x64](https://flathub.org/apps/com.usebottles.bottles) | Official Flathub listing (no release binaries on GitHub) |
 | [**Vita3K**](https://github.com/Vita3K/Vita3K) | `2026-10-20` | — | [win-x64](https://github.com/Vita3K/Vita3K/releases) · [mac-arm64](https://github.com/Vita3K/Vita3K/releases) · [linux-x64](https://github.com/Vita3K/Vita3K/releases) | Official project download page; no stable public release asset API |
 | [**xemu**](https://github.com/xemu-project/xemu) | `0.8.139` | 2026-10-21 | [win-x64](https://github.com/xemu-project/xemu/releases/download/v0.8.139/xemu-0.8.139-windows-x86_64.zip) · [mac-universal](https://github.com/xemu-project/xemu/releases/download/v0.8.139/xemu-0.8.139-macos-universal.zip) · [linux-x64](https://github.com/xemu-project/xemu/releases/download/v0.8.139/xemu-0.8.139-x86_64.AppImage) | GitHub Release: xemu-project/xemu |
 | [**mGBA**](https://github.com/mgba-emu/mgba) | `0.10.5` | 2025-03-09 | [win-x64](https://github.com/mgba-emu/mgba/releases/download/0.10.5/mGBA-0.10.5-win64.7z) · [mac-universal](https://github.com/mgba-emu/mgba/releases/download/0.10.5/mGBA-0.10.5-macos.dmg) | GitHub Release: mgba-emu/mgba |
@@ -697,11 +697,11 @@
 | [**哔哩哔哩**](https://www.bilibili.com/) | `2026-10-20` | — | [win-x64](https://app.bilibili.com/) | Official download page; no public version API |
 | [**QQ音乐**](https://y.qq.com/) | `2026-10-20` | — | [win-x64](https://y.qq.com/download/) · [mac-x64](https://y.qq.com/download/) | Official download page; no public version API |
 | [**腾讯视频**](https://v.qq.com/) | `2026-10-20` | — | [win-x64](https://v.qq.com/download.html) | Official download page; no public version API |
-| [**爱奇艺**](https://www.iqiyi.com/) | `2026-10-20` | — | win-x64（暂不可用，待核验） | Official download page; no public version API |
+| [**爱奇艺**](https://www.iqiyi.com/) | `2026-10-22` | — | [win-x64](https://app.iqiyi.com/) | Official download page; no public version API |
 | [**酷狗音乐**](https://www.kugou.com/) | `2026-10-20` | — | [win-x64](https://www.kugou.com/) | Official download page; no public version API |
 | [**酷我音乐**](https://www.kuwo.cn/) | `2026-10-20` | — | win-x64（暂不可用，待核验） | Official download page; no public version API |
 | [**喜马拉雅**](https://www.ximalaya.com/) | `2026-10-20` | — | [win-x64](https://www.ximalaya.com/download/) · [mac-x64](https://www.ximalaya.com/download/) | Official download page; no public version API |
-| [**PotPlayer**](https://potplayer.daum.net/) | `2026-10-20` | — | win-x64（暂不可用，待核验） | Official download page; no public version API |
+| [**PotPlayer**](https://potplayer.daum.net/) | `2026-10-22` | — | [win-x64](https://t1.kakaocdn.net/potplayer/PotPlayer/Version/Latest/PotPlayerSetup64.exe) | Official Kakao CDN installer (latest build) |
 | [**剪映专业版**](https://www.capcut.cn/) | `2026-10-20` | — | [win-x64](https://www.capcut.cn/) · [mac-universal](https://www.capcut.cn/) | Official download page; no public version API |
 | [**优酷**](https://www.youku.com/) | `2026-10-20` | — | win-x64（暂不可用，待核验） · mac-universal（暂不可用，待核验） | Official download page; no public version API |
 | [**芒果TV**](https://www.mgtv.com/) | `2026-10-20` | — | [win-x64](https://www.mgtv.com/) · [mac-universal](https://www.mgtv.com/) | Official download page; no public version API |

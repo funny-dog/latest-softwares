@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-10-22T20:36:41+00:00",
+  "generated_at": "2026-10-22T20:41:16+00:00",
   "packages": [
     {
       "id": "windows11",
@@ -2653,7 +2653,7 @@
           "expires_at": null,
           "verification": {
             "status": "unverified",
-            "checked_at": "2026-10-22T20:37:02+00:00",
+            "checked_at": "2026-10-22T20:41:33+00:00",
             "url": "https://kimi.moonshot.cn/download",
             "final_url": "https://kimi.moonshot.cn/download",
             "redirects": [
@@ -2674,7 +2674,7 @@
           "expires_at": null,
           "verification": {
             "status": "unverified",
-            "checked_at": "2026-10-22T20:37:02+00:00",
+            "checked_at": "2026-10-22T20:41:33+00:00",
             "url": "https://kimi.moonshot.cn/download",
             "final_url": "https://kimi.moonshot.cn/download",
             "redirects": [
@@ -2795,7 +2795,7 @@
           "expires_at": null,
           "verification": {
             "status": "unverified",
-            "checked_at": "2026-10-22T20:37:02+00:00",
+            "checked_at": "2026-10-22T20:41:33+00:00",
             "url": "https://chatglm.cn/download",
             "final_url": "https://chatglm.cn/download",
             "redirects": [
@@ -2816,7 +2816,7 @@
           "expires_at": null,
           "verification": {
             "status": "unverified",
-            "checked_at": "2026-10-22T20:37:02+00:00",
+            "checked_at": "2026-10-22T20:41:33+00:00",
             "url": "https://chatglm.cn/download",
             "final_url": "https://chatglm.cn/download",
             "redirects": [
@@ -2863,7 +2863,7 @@
           "expires_at": null,
           "verification": {
             "status": "unverified",
-            "checked_at": "2026-10-22T20:37:02+00:00",
+            "checked_at": "2026-10-22T20:41:33+00:00",
             "url": "https://xinghuo.xfyun.cn/download",
             "final_url": "https://xinghuo.xfyun.cn/download",
             "redirects": [
@@ -2884,7 +2884,7 @@
           "expires_at": null,
           "verification": {
             "status": "unverified",
-            "checked_at": "2026-10-22T20:37:02+00:00",
+            "checked_at": "2026-10-22T20:41:33+00:00",
             "url": "https://xinghuo.xfyun.cn/download",
             "final_url": "https://xinghuo.xfyun.cn/download",
             "redirects": [
@@ -3210,7 +3210,7 @@
     {
       "id": "iqiyi",
       "name": "爱奇艺",
-      "version": "2026-10-20",
+      "version": "2026-10-22",
       "source": "Official download page; no public version API",
       "version_kind": "sync_date",
       "version_source": "UTC sync date; no public version API",
@@ -3221,29 +3221,37 @@
       "assets": [
         {
           "platform": "win-x64",
-          "url": "https://www.iqiyi.com/",
+          "url": "https://app.iqiyi.com/",
           "link_kind": "landing_page",
-          "fallback": true,
+          "filename": null,
+          "size": null,
+          "sha256": null,
+          "expires_at": null,
           "verification": {
-            "status": "unverified",
-            "checked_at": "2026-10-22T20:37:02+00:00",
-            "url": "https://www.iqiyi.com/",
-            "final_url": "https://www.iqiyi.com/",
+            "status": "verified",
+            "checked_at": "2026-10-22T20:41:33+00:00",
+            "url": "https://app.iqiyi.com/",
+            "final_url": "https://www.iqiyi.com/appstore.html",
             "redirects": [
-              "https://www.iqiyi.com/"
+              "https://app.iqiyi.com/",
+              "http://app.iqiyi.com/pc/player/index.html",
+              "https://www.iqiyi.com/appstore.html"
             ],
             "http_status": 200,
-            "reason": "download/access entry not found on page",
-            "fingerprint": "0a1696348f780409fc36212852ad367ec79436831c8fcff07bc671b1b818a4cf"
+            "valid_until": "2026-10-29T20:41:33+00:00",
+            "filename": "appstore.html",
+            "content_type": "text/html;charset=utf-8",
+            "evidence": "trusted source, product identity and download/access entry",
+            "fingerprint": "8e2ef3e9428ddafd92fe8837e36071747fec5ab1001b33d4ab48229a13d9c461"
           }
         }
       ],
-      "fetched_at": "2026-10-20T18:59:37+00:00",
-      "last_success_at": "2026-10-20T18:59:37+00:00",
+      "fetched_at": "2026-10-22T20:40:47+00:00",
+      "last_success_at": "2026-10-22T20:40:47+00:00",
       "_sync": {
         "failures": 0,
-        "fingerprint": "c22ea204994a7bd7df686c58faf474de6460a78f3c37dc25cf861da03dd82d80",
-        "next_attempt_at": "2026-10-23T18:59:37+00:00"
+        "fingerprint": "e11377694f6112347f6b786b957ea6b9bd5bfc2eaa89d4df124d35f5408ecb26",
+        "next_attempt_at": "2026-10-25T20:40:47+00:00"
       },
       "editions": [
         "cn"
@@ -3797,7 +3805,7 @@
           "expires_at": null,
           "verification": {
             "status": "restricted",
-            "checked_at": "2026-10-22T20:37:02+00:00",
+            "checked_at": "2026-10-22T20:41:33+00:00",
             "url": "https://apifox.com/download/",
             "final_url": "https://apifox.com/download/",
             "redirects": [
@@ -3818,7 +3826,7 @@
           "expires_at": null,
           "verification": {
             "status": "restricted",
-            "checked_at": "2026-10-22T20:37:02+00:00",
+            "checked_at": "2026-10-22T20:41:33+00:00",
             "url": "https://apifox.com/download/",
             "final_url": "https://apifox.com/download/",
             "redirects": [
@@ -4012,7 +4020,7 @@
           "expires_at": null,
           "verification": {
             "status": "transient",
-            "checked_at": "2026-10-22T20:37:02+00:00",
+            "checked_at": "2026-10-22T20:41:33+00:00",
             "url": "https://www.kuwo.cn/download",
             "final_url": "https://www.kuwo.cn/",
             "redirects": [
@@ -4671,7 +4679,7 @@
           "expires_at": null,
           "verification": {
             "status": "unverified",
-            "checked_at": "2026-10-22T20:37:02+00:00",
+            "checked_at": "2026-10-22T20:41:33+00:00",
             "url": "https://www.wps.cn/product/wps-pdf",
             "final_url": "https://www.wps.cn",
             "redirects": [
@@ -4775,8 +4783,8 @@
     {
       "id": "potplayer-cn",
       "name": "PotPlayer",
-      "version": "2026-10-20",
-      "source": "Official download page; no public version API",
+      "version": "2026-10-22",
+      "source": "Official Kakao CDN installer (latest build)",
       "version_kind": "sync_date",
       "version_source": "UTC sync date; no public version API",
       "category": "Media Players",
@@ -4786,27 +4794,35 @@
       "assets": [
         {
           "platform": "win-x64",
-          "url": "https://potplayer.daum.net/",
-          "link_kind": "landing_page",
+          "url": "https://t1.kakaocdn.net/potplayer/PotPlayer/Version/Latest/PotPlayerSetup64.exe",
+          "link_kind": "direct",
           "filename": null,
           "size": null,
           "sha256": null,
           "expires_at": null,
           "verification": {
-            "status": "unverified",
-            "checked_at": "2026-10-22T20:37:02+00:00",
-            "url": "https://potplayer.daum.net/",
-            "reason": "network check failed: ConnectionError",
-            "fingerprint": "e65321c475174f82f24f42bd0816542f2f16cbece6755982540ecc14c51a0618"
+            "status": "verified",
+            "checked_at": "2026-10-22T20:41:33+00:00",
+            "url": "https://t1.kakaocdn.net/potplayer/PotPlayer/Version/Latest/PotPlayerSetup64.exe",
+            "final_url": "https://t1.kakaocdn.net/potplayer/PotPlayer/Version/Latest/PotPlayerSetup64.exe",
+            "redirects": [
+              "https://t1.kakaocdn.net/potplayer/PotPlayer/Version/Latest/PotPlayerSetup64.exe"
+            ],
+            "http_status": 206,
+            "valid_until": "2026-10-29T20:41:33+00:00",
+            "filename": "PotPlayerSetup64.exe",
+            "content_type": "application/x-dosexec",
+            "evidence": "trusted source, download response and platform filename checks",
+            "fingerprint": "679f084b253a0f9dd745561d182c043e3299f9360382669897e84441e57b2759"
           }
         }
       ],
-      "fetched_at": "2026-10-20T18:59:37+00:00",
-      "last_success_at": "2026-10-20T18:59:37+00:00",
+      "fetched_at": "2026-10-22T20:40:47+00:00",
+      "last_success_at": "2026-10-22T20:40:47+00:00",
       "_sync": {
         "failures": 0,
-        "fingerprint": "c92f1a6364c35bee6492ee74281bd0f993d430fc762f201950794179833d8d47",
-        "next_attempt_at": "2026-10-23T18:59:37+00:00"
+        "fingerprint": "265703154122fcc2128429bd16040e3969a4bc9fb01ad86be1430f0fc648c968",
+        "next_attempt_at": "2026-10-25T20:40:47+00:00"
       },
       "editions": [
         "cn"
@@ -29871,43 +29887,47 @@
     {
       "id": "bottles",
       "name": "Bottles",
-      "version": "2026-10-20",
-      "source": "Official project download page; no stable public release asset API",
+      "version": "2026-10-22",
+      "source": "Official Flathub listing (no release binaries on GitHub)",
       "version_kind": "sync_date",
       "version_source": "UTC sync date; no public version API",
       "category": "Gaming",
-      "homepage": "https://usebottles.com/download/",
+      "homepage": "https://flathub.org/apps/com.usebottles.bottles",
       "released_at": null,
       "notes_url": null,
       "assets": [
         {
           "platform": "linux-x64",
-          "url": "https://usebottles.com/download/",
+          "url": "https://flathub.org/apps/com.usebottles.bottles",
           "link_kind": "landing_page",
           "filename": null,
           "size": null,
           "sha256": null,
           "expires_at": null,
           "verification": {
-            "status": "unverified",
-            "checked_at": "2026-10-22T20:37:02+00:00",
-            "url": "https://usebottles.com/download/",
-            "final_url": "https://usebottles.com/download/",
+            "status": "verified",
+            "checked_at": "2026-10-22T20:41:33+00:00",
+            "url": "https://flathub.org/apps/com.usebottles.bottles",
+            "final_url": "https://flathub.org/en/apps/com.usebottles.bottles",
             "redirects": [
-              "https://usebottles.com/download/"
+              "https://flathub.org/apps/com.usebottles.bottles",
+              "https://flathub.org/en/apps/com.usebottles.bottles"
             ],
             "http_status": 200,
-            "reason": "download/access entry not found on page",
-            "fingerprint": "d1b1a7a21c62283333f52fefa7ca59fc7e5cc55eb24603c6920b48e64445680e"
+            "valid_until": "2026-10-29T20:41:33+00:00",
+            "filename": "com.usebottles.bottles",
+            "content_type": "text/html; charset=utf-8",
+            "evidence": "trusted source, product identity and download/access entry",
+            "fingerprint": "e01495b2967d22bb2746905bea829ace0c2f82f8c154d8eb500e38ee27f829fd"
           }
         }
       ],
-      "fetched_at": "2026-10-20T18:59:49+00:00",
-      "last_success_at": "2026-10-20T18:59:49+00:00",
+      "fetched_at": "2026-10-22T20:40:57+00:00",
+      "last_success_at": "2026-10-22T20:40:57+00:00",
       "_sync": {
         "failures": 0,
-        "fingerprint": "81ffd9fdc8115d43f3817e4febafd68cffa309f201850024c121358c032000a4",
-        "next_attempt_at": "2026-10-23T18:59:49+00:00"
+        "fingerprint": "cfe44833b4c9a8624da3c6e4a608c1ec8711fc170acc4de421dcf281d085fa8f",
+        "next_attempt_at": "2026-10-25T20:40:57+00:00"
       },
       "editions": [
         "intl"
@@ -46449,7 +46469,7 @@
           "expires_at": null,
           "verification": {
             "status": "restricted",
-            "checked_at": "2026-10-22T20:37:02+00:00",
+            "checked_at": "2026-10-22T20:41:33+00:00",
             "url": "https://www.adobe.com/products/photoshop.html",
             "final_url": "https://www.adobe.com/products/photoshop.html",
             "redirects": [
@@ -46470,7 +46490,7 @@
           "expires_at": null,
           "verification": {
             "status": "restricted",
-            "checked_at": "2026-10-22T20:37:02+00:00",
+            "checked_at": "2026-10-22T20:41:33+00:00",
             "url": "https://www.adobe.com/products/photoshop.html",
             "final_url": "https://www.adobe.com/products/photoshop.html",
             "redirects": [
@@ -46579,14 +46599,14 @@
     "failed_ids": [],
     "failures": []
   },
-  "release_id": "e8a5ceb91c6dff3172ec",
-  "checked_at": "2026-10-22T20:37:02+00:00",
-  "verified_at": "2026-10-22T20:37:02+00:00",
+  "release_id": "b5d3529441916a27eb71",
+  "checked_at": "2026-10-22T20:41:33+00:00",
+  "verified_at": "2026-10-22T20:41:33+00:00",
   "quality": {
     "required_total": 301,
     "required_covered": 300,
-    "verified_assets": 1127,
-    "unavailable_assets": 26,
+    "verified_assets": 1130,
+    "unavailable_assets": 23,
     "stale_packages": 0,
     "publication_exceptions": []
   }

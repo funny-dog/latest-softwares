@@ -1,11 +1,11 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-22T20:38:53+00:00",
+  "generated_at": "2026-10-22T20:43:49+00:00",
   "configured": 699,
   "published": 699,
   "stale_packages": 0,
-  "verified_assets": 1127,
-  "unavailable_assets": 26,
+  "verified_assets": 1130,
+  "unavailable_assets": 23,
   "required_total": 301,
   "required_covered": 300,
   "required_coverage": 0.9966777408637874,
@@ -35,13 +35,6 @@
       ]
     },
     {
-      "id": "bottles",
-      "required": false,
-      "issues": [
-        "unverified_or_unavailable:linux-x64"
-      ]
-    },
-    {
       "id": "cajviewer",
       "required": false,
       "issues": [
@@ -64,13 +57,6 @@
       ]
     },
     {
-      "id": "iqiyi",
-      "required": false,
-      "issues": [
-        "unverified_or_unavailable:win-x64"
-      ]
-    },
-    {
       "id": "kimi",
       "required": false,
       "issues": [
@@ -80,13 +66,6 @@
     },
     {
       "id": "kuwo-music",
-      "required": false,
-      "issues": [
-        "unverified_or_unavailable:win-x64"
-      ]
-    },
-    {
-      "id": "potplayer-cn",
       "required": false,
       "issues": [
         "unverified_or_unavailable:win-x64"
