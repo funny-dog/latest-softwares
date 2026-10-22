@@ -155,4 +155,4 @@ Docker Desktop 的三个平台都使用 `https://www.docker.com/products/docker-
 
 - `c4484ce`（阿里云盘官方配置抓取）推送后，`Sync Latest Software` run [39847819252](https://github.com/funny-dog/latest-softwares/actions/runs/39847819252) 成功；Cloudflare 备用站与国际版部署按同一 run-id 成功，验证快照 `4c46df3` 已发布（stale 0，不可用入口 47，必收录覆盖 300/301 + Photoshop 声明式豁免）。
 - 国内版主站（Qoder Sites）此前仍停留在 10-21 快照，本地定时重发布任务最近一次运行以 `session-failed` 结束；已按同一条同步快照重建并重新发布，线上 `generated_at` 为 `2026-10-22T20:20:44Z`。
-- 剩余工作为分批清理 47 个不可用入口，首批 redirect host 复核见来源修复记录第 5 节。
+- 剩余工作为分批清理不可用入口，已从 47 降至 23：redirect host 复核（→37）、HTML 字符集与中文站身份词（→26）、直接分发入口（→23），明细见来源修复记录第 5、6 节。剩余 23 项为 JS 渲染页、反爬页与 403/404/500 上游状态，已分类记录；`youku` 在最后一轮 CI 出现一次身份证据缺失，本地复验通过，判为页面波动。国内版主站已同步发布到最终快照（`generated_at` 2026-10-22T20:41:16Z）。

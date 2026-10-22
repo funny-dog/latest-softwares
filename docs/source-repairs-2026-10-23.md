@@ -161,7 +161,7 @@
 - 实测 `delta-force`、`fantasy-westward-journey`、`league-of-legends` 由 `unverified` 变为 `verified`。
 - 身份词精确化（页面使用连写或简称，原名带空格无法命中）：`360ee` → `360极速浏览器`、`360zip` → `360压缩`、`foxit-reader-cn` → `福昕PDF`、`uu-accelerator` → `网易UU加速器`、`btop-win` → `btop`、`cloudflare-warp` → `WARP`。
 - 通义千问官网已迁至 `qianwen.com`（原 `tongyi.aliyun.com/download` 302 到 `http://www.qianwen.com/download`）：入口改为 https，身份词用“千问”。
-- 仍未解决：`scribus` 命中反爬验证页；`chatglm`、`sparkdesk`、`tencent-docs`、`yy`、`baidu-input`、`kimi` 为 JS 渲染，静态证据不足；`wps-pdf` 产品页已重定向到 `wps.cn`；`fastgithub`、`qqplayer` 为已记录 404；`adobe-photoshop`、`apifox` 为 403 受限（前者有声明式豁免）。
+- 仍未解决：`scribus` 命中反爬验证页；`chatglm`、`sparkdesk`、`tencent-docs`、`yy`、`baidu-input`、`kimi` 为 JS 渲染，静态证据不足；`wps-pdf` 产品页已重定向到 `wps.cn`；`fastgithub`、`qqplayer` 为已记录 404；`adobe-photoshop`、`apifox` 为 403 受限（前者有声明式豁免）。`youku` 在最后一轮 CI 中出现一次身份证据缺失，本地复验通过，判为页面波动。
 
 验收：`validate_config` 通过；本批 11 个平台入口实测 `verified`；`tests/test_link_verifier.py tests/test_validate_config.py tests/test_catalog.py` 47 passed；Ruff 检查与格式通过。
 
