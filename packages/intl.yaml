@@ -2644,6 +2644,9 @@ packages:
     - platform: win-x64
       download_url: https://one.one.one.one/
       link_kind: landing_page
+  verification:
+    identity_terms:
+    - WARP
   desc_cn: Cloudflare 提供的免费 VPN 和 DNS 解析加速服务
   desc_en: Free VPN and DNS resolution acceleration service by Cloudflare
 - id: openspeedtest
@@ -4198,6 +4201,9 @@ packages:
     - platform: win-x64
       download_url: https://github.com/aristocratos/btop/releases
       link_kind: landing_page
+  verification:
+    identity_terms:
+    - btop
   desc_cn: 美观的终端系统监控工具（Windows 版）
   desc_en: Beautiful terminal system resource monitor (Windows build)
 - id: nushell-win

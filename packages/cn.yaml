@@ -564,16 +564,19 @@ packages:
   category: AI Tools
   editions:
   - cn
-  homepage: https://tongyi.aliyun.com/
+  homepage: https://www.qianwen.com/
   fetcher: download_page
   args:
     platforms:
     - platform: win-x64
-      download_url: https://tongyi.aliyun.com/download
+      download_url: https://www.qianwen.com/download
       link_kind: landing_page
     - platform: mac-x64
-      download_url: https://tongyi.aliyun.com/download
+      download_url: https://www.qianwen.com/download
       link_kind: landing_page
+  verification:
+    identity_terms:
+    - 千问
   desc_cn: 阿里云大模型 AI 助手，多模态理解和创作
   desc_en: Alibaba Cloud's LLM assistant with multimodal understanding and creation
 - id: chatglm
@@ -760,6 +763,9 @@ packages:
     - platform: win-x64
       download_url: https://browser.360.cn/ee/
       link_kind: landing_page
+  verification:
+    identity_terms:
+    - 360极速浏览器
   desc_cn: 基于 Chromium 的国产浏览器，双核极速切换
   desc_en: Chromium-based Chinese browser with dual-engine fast switching
 - id: youdao-note
@@ -791,6 +797,9 @@ packages:
     - platform: win-x64
       download_url: https://www.foxitsoftware.cn/downloads/
       link_kind: landing_page
+  verification:
+    identity_terms:
+    - 福昕PDF
   desc_cn: 国产 PDF 阅读器和编辑器，轻量快速
   desc_en: Chinese PDF reader and editor, lightweight and fast
 - id: picgo
@@ -854,6 +863,9 @@ packages:
     - platform: win-x64
       download_url: https://uu.163.com/download/
       link_kind: landing_page
+  verification:
+    identity_terms:
+    - 网易UU加速器
   desc_cn: 网易游戏加速器，降低延迟优化网络
   desc_en: NetEase's game accelerator for reducing latency and optimizing network
 - id: sogou-input
@@ -1003,6 +1015,9 @@ packages:
     - platform: win-x64
       download_url: https://yasuo.360.cn/
       link_kind: landing_page
+  verification:
+    identity_terms:
+    - 360压缩
   desc_cn: 免费解压缩软件，支持多种压缩格式
   desc_en: Free decompression software supporting multiple archive formats
 - id: tencent-pc-manager

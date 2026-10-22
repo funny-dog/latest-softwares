@@ -35,7 +35,7 @@ DATA_FILE = REPO_ROOT / "data/latest.json"
 LINK_HEALTH_FILE = REPO_ROOT / "data/link-health.json"
 MAX_WORKERS = 8
 MAX_CONNECTIONS_PER_HOST = 8
-VERIFICATION_POLICY_VERSION = 2
+VERIFICATION_POLICY_VERSION = 3
 # 命中上游维护页时沿用旧验证结果，并把下次重试提前到这个间隔，避免上游
 # 恢复后仍按 2~24 小时的退避干等。
 MAINTENANCE_RETRY_MINUTES = 30

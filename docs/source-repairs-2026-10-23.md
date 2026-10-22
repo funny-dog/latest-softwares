@@ -152,3 +152,15 @@
 同批复查 5 条网络类失败：`crystaldiskinfo`、`crystaldiskmark`、`cajviewer` 本地实测已 `verified`，CI 中为瞬时超时，无需改配置；`potplayer-cn` 仍报 SSLError、`quark` 需在 CI 网络复核，本批未改配置。
 
 验收：`validate_config` 通过；5 个改动条目共 10 个平台入口以项目验证器实测 `verified`；`tests/test_validate_config.py tests/test_catalog.py` 22 passed。
+
+---
+
+## 6. 续批：HTML 字符集与中文站身份词（2026-10-23）
+
+- 校验器此前固定按 UTF-8 解码 HTML。`df.qq.com`（gbk）、`xyq.163.com`（gbk）、`lol.qq.com`（gb2312）的正文全为中文，硬解后身份词与“下载”全部丢失，被误判为 `unverified`。现改为优先使用 `Content-Type` 或 `<meta charset>` 声明的字符集（gb2312/gbk 归一为 gb18030），无法识别时回退 UTF-8；只修解码，不放宽任何校验规则。验证策略版本 2→3，旧缓存按新规则重验。
+- 实测 `delta-force`、`fantasy-westward-journey`、`league-of-legends` 由 `unverified` 变为 `verified`。
+- 身份词精确化（页面使用连写或简称，原名带空格无法命中）：`360ee` → `360极速浏览器`、`360zip` → `360压缩`、`foxit-reader-cn` → `福昕PDF`、`uu-accelerator` → `网易UU加速器`、`btop-win` → `btop`、`cloudflare-warp` → `WARP`。
+- 通义千问官网已迁至 `qianwen.com`（原 `tongyi.aliyun.com/download` 302 到 `http://www.qianwen.com/download`）：入口改为 https，身份词用“千问”。
+- 仍未解决：`scribus` 命中反爬验证页；`bottles` 页面无静态下载词；`chatglm`、`sparkdesk`、`iqiyi`、`tencent-docs`、`yy`、`baidu-input`、`kimi` 为 JS 渲染，静态证据不足；`wps-pdf` 产品页已重定向到 `wps.cn`；`fastgithub`、`qqplayer` 为已记录 404；`adobe-photoshop`、`apifox` 为 403 受限（前者有声明式豁免）。
+
+验收：`validate_config` 通过；本批 11 个平台入口实测 `verified`；`tests/test_link_verifier.py tests/test_validate_config.py tests/test_catalog.py` 47 passed；Ruff 检查与格式通过。

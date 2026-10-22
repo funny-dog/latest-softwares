@@ -138,6 +138,56 @@ def test_landing_page_requires_software_identity_and_download_entry(
     assert result["status"] == status
 
 
+def test_landing_page_decodes_declared_gbk_charset(monkeypatch):
+    body = (
+        '<html><head><meta charset="gbk"></head><body>示例软件 官方下载</body></html>'
+    ).encode("gbk")
+    monkeypatch.setattr(
+        link_verifier,
+        "get",
+        lambda *a, **kw: Response(body, headers={"Content-Type": "text/html"}),
+    )
+    result = link_verifier.verify_link(
+        {
+            "platform": "win-x64",
+            "url": "https://example.test/download",
+            "link_kind": "landing_page",
+        },
+        {
+            "id": "example",
+            "name": "示例软件",
+            "homepage": "https://example.test/download",
+        },
+        now=NOW,
+    )
+    assert result["status"] == "verified"
+
+
+def test_landing_page_honors_content_type_charset(monkeypatch):
+    body = "<html><body>示例软件 官方下载</body></html>".encode("gb18030")
+    monkeypatch.setattr(
+        link_verifier,
+        "get",
+        lambda *a, **kw: Response(
+            body, headers={"Content-Type": "text/html; charset=GB2312"}
+        ),
+    )
+    result = link_verifier.verify_link(
+        {
+            "platform": "win-x64",
+            "url": "https://example.test/download",
+            "link_kind": "landing_page",
+        },
+        {
+            "id": "example",
+            "name": "示例软件",
+            "homepage": "https://example.test/download",
+        },
+        now=NOW,
+    )
+    assert result["status"] == "verified"
+
+
 def test_unknown_redirect_host_is_never_requested(monkeypatch):
     calls = []
 

@@ -54,6 +54,28 @@ def _html_evidence(text: str) -> str:
     )
 
 
+_CHARSET_ALIASES = {"gb2312": "gb18030", "gbk": "gb18030"}
+
+
+def _decode_html(sample: bytes, content_type: str) -> str:
+    """按页面声明的字符集解码；国内站点多为 GBK/GB2312，按 UTF-8 硬解会丢正文。"""
+    declared = ""
+    match = re.search(r"charset=[\"']?([\w-]+)", content_type, re.I)
+    if match:
+        declared = match.group(1)
+    else:
+        match = re.search(
+            rb"<meta[^>]+charset\s*=\s*[\"']?([\w-]+)", sample[:4096], re.I
+        )
+        if match:
+            declared = match.group(1).decode("ascii", "ignore")
+    charset = _CHARSET_ALIASES.get(declared.casefold(), declared or "utf-8")
+    try:
+        return sample.decode(charset, errors="replace")
+    except LookupError:
+        return sample.decode("utf-8", errors="replace")
+
+
 def _looks_like_maintenance(text: str) -> bool:
     """判断 HTML 正文是否是上游整站维护/停机通告。"""
     normalized = _normal(_html_evidence(text))
@@ -199,7 +221,7 @@ def verify_link(asset: dict, config: dict, *, now: datetime | None = None) -> di
                 # 直链被重定向到上游维护页时按 transient 处理，与落地页口径一致；
                 # 其余文档/错误页仍视为真实失效，不放行死链。
                 if is_html and _looks_like_maintenance(
-                    sample.decode("utf-8", errors="replace")
+                    _decode_html(sample, content_type)
                 ):
                     return {
                         **result,
@@ -246,7 +268,7 @@ def verify_link(asset: dict, config: dict, *, now: datetime | None = None) -> di
                     "status": "unverified",
                     "reason": "expected an official download page",
                 }
-            raw_text = sample.decode("utf-8", errors="replace")
+            raw_text = _decode_html(sample, content_type)
             text = _normal(_html_evidence(raw_text))
             # 上游整站维护/停机通告：既不是死链也不是反爬，单独标记以便门禁
             # 沿用仍未过期的上次验证结果，而不是阻塞整条发布流水线。
