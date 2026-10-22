@@ -4,7 +4,7 @@
 
 针对 CI 审计快照中发现的 33 项 `_stale` 软件源异常及 `link-health.json` 中检测到的失效/未验证入口，按 `AGENTS.md` 规范与 Ponytail 最小完整改动原则进行了系统性修复。
 
-共调整 39 个软件配置，涉及原 33 个 stale 软件中的 32 个；剩余 Ubuntu 为网络超时，不盲目改源。目录 ID 与必收录平台覆盖保持。依据上游元数据与官方入口响应修正配置；HTTP 200、元数据抓取和 pattern 匹配不等于安装包已通过验证，实际质量由后续同快照 CI 门禁确认。
+共调整 40 个软件配置，涉及原 33 个 stale 软件中的 32 个；剩余 Ubuntu 为网络超时，不盲目改源，真实 CI 重试成功后 stale 为 0。目录 ID 与必收录平台覆盖保持。依据上游元数据与官方入口响应修正配置；HTTP 200、元数据抓取和 pattern 匹配不等于安装包已通过验证，实际质量由同快照 CI 门禁确认。
 
 ---
 
@@ -116,6 +116,10 @@
 ---
 
 ## 4. 验证与回归测试
+
+首次整合 CI 的不可用入口从 67 降到 49，但阿里云盘的 SPA 页面没有静态下载证据，正确阻止了发布。因此补充 `aliyundrive_official`：只读取官方页面 `Global` 中三个明确的客户端 URL 字段，限定官方 CDN、版本文件名与架构后缀，不执行 JavaScript；拒绝缺失、重复、不同版本或不可信下载域名。版本从客户端文件名取得，不把页面里无关的 `latest_version: V2.1.7` 当客户端版本。配置增加官方已有的 Mac ARM64 安装包。
+
+本地真实取得 6.9.3 的 Windows、Mac Intel、Mac ARM64 URL，三者均通过项目的有界下载验证（HTTP 206，检查响应与文件类型/平台线索），未完整下载安装包。证据保存在 `/tmp/latest-softwares-ci-audit/aliyundrive-client-checks.json`。新增回归及相关 fetcher/配置/同步/工作流测试 55 passed。
 
 新增专用回归测试文件 `tests/test_catalog_source_repairs.py`，测试涵盖：
 1. Docker Desktop 官方三平台安装文档配置校验；

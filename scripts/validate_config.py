@@ -292,6 +292,12 @@ def _validate_fetcher_args(
         _validate_nodejs(errors, label, args)
     elif fetcher_name in {"ubuntu_releases", "fedora_releases"}:
         _validate_release_directory(errors, label, args)
+    elif fetcher_name == "aliyundrive_official":
+        platforms = _validate_list(errors, label, args, "platforms")
+        _validate_unique_platforms(errors, label, platforms)
+        for platform in platforms:
+            if platform.get("platform") not in ("win-x64", "mac-x64", "mac-arm64"):
+                errors.append(f"{label}: unsupported Aliyun Drive platform")
     elif fetcher_name in FIXED_URL_FETCHERS:
         _validate_fixed_url_platforms(errors, label, args)
     elif fetcher_name in REDIRECT_FETCHERS:

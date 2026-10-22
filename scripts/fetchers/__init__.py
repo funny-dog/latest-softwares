@@ -22,7 +22,7 @@ from . import (
     fedora,
 )
 from . import nvidia_app, qq, wechat, yy
-from . import package_manifest
+from . import package_manifest, aliyundrive
 
 
 FETCHERS: dict[str, Callable[[dict], FetchResult]] = {
@@ -37,6 +37,7 @@ FETCHERS: dict[str, Callable[[dict], FetchResult]] = {
     "download_page": download_page.fetch,
     "wegame_official": wegame.fetch,
     "baidunetdisk": baidunetdisk.fetch,
+    "aliyundrive_official": aliyundrive.fetch,
     "geek": geek.fetch,
     "everything": everything.fetch,
     "nvidia_app": nvidia_app.fetch,

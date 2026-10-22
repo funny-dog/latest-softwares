@@ -437,16 +437,13 @@ packages:
   category: Utilities
   editions:
   - cn
-  homepage: https://www.aliyundrive.com/
-  fetcher: download_page
+  homepage: https://www.alipan.com/
+  fetcher: aliyundrive_official
   args:
     platforms:
     - platform: win-x64
-      download_url: https://www.aliyundrive.com/download
-      link_kind: landing_page
     - platform: mac-x64
-      download_url: https://www.aliyundrive.com/download
-      link_kind: landing_page
+    - platform: mac-arm64
   desc_cn: 阿里巴巴旗下云存储服务，不限速大容量
   desc_en: Alibaba's cloud storage service with unlimited speed and large capacity
 - id: nutstore
