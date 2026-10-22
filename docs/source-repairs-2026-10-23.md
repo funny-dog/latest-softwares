@@ -133,3 +133,22 @@
 .venv/bin/pytest tests/test_catalog_source_repairs.py
 ```
 整合后的定向配置验收：`tests/test_catalog_source_repairs.py tests/test_catalog.py tests/test_validate_config.py` 共 39 passed；另通过全目录配置验证。`{version}` 的真实 fetcher 单测验证版本替换及错误变体排除。
+
+---
+
+## 5. 续批：redirect host 复核（2026-10-23 发布验收后）
+
+针对 `link-state` 中 6 条 `redirect host needs review` 逐条核对最终跳转域名，改用经官方跳转确认的稳定入口，未使用通配符放开域名：
+
+| 软件 | 原入口 | 实际跳转 | 处理 |
+|---|---|---|---|
+| ardour | `ardour.org/download.html` | `community.ardour.org/download` | 入口改为 https 社区下载页 |
+| teracopy | `www.codesector.com/teracopy` | `codesector.com/teracopy` | 入口改为 apex 域 |
+| xmind | `xmind.app/download/` | `xmind.com:443` | 入口与主页改为 `xmind.com/download/` |
+| tor-browser | `www.torproject.org/download/` | `download.torproject.org/` | 保留官方入口，`allowed_hosts` 精确放行官方下载域 |
+| skype | `www.skype.com/get-skype/` | `teams.live.com/free?source=skype` | 微软已停止 Skype 下载，入口改为 Teams 免费版官方页并同步说明 |
+| kimi | `kimi.moonshot.cn/download` | `www.kimi.com`（SPA） | 静态 HTML 无下载词条，未找到可核实直链，保持 unverified |
+
+同批复查 5 条网络类失败：`crystaldiskinfo`、`crystaldiskmark`、`cajviewer` 本地实测已 `verified`，CI 中为瞬时超时，无需改配置；`potplayer-cn` 仍报 SSLError、`quark` 需在 CI 网络复核，本批未改配置。
+
+验收：`validate_config` 通过；5 个改动条目共 10 个平台入口以项目验证器实测 `verified`；`tests/test_validate_config.py tests/test_catalog.py` 22 passed。

@@ -150,3 +150,9 @@ Docker Desktop 的三个平台都使用 `https://www.docker.com/products/docker-
 用户批准后已实施验证器、证据保存与撤销、局部合并、push 发布检查及快照新鲜度检查，并调整 39 个软件配置。来源明细与客观限制见 [来源修复记录](source-repairs-2026-10-23.md)，当前规则见 [覆盖与链接质量约定](coverage-and-link-quality.md)。GitHub pattern 增加 `{version}`，避免用固定版本位数区分正式包；另修复 README 一致性检查随链接到期产生的时间漂移，以及当前依赖版本下的格式/mypy 问题。
 
 最终本地整合验收为 338 passed（8 秒）；Ruff 检查/格式、mypy、编译、配置、README 一致性、actionlint、npm 与两版前端构建均通过。三个 vendor 文件远端哈希比对通过（Tailwind 初次代理 503 后定向重试成功）。Windows/Fido 与真实发布链路由推送后的 CI 验收，不能以这些本地结果替代。
+
+### 发布验收结果（2026-10-23 04:30）
+
+- `c4484ce`（阿里云盘官方配置抓取）推送后，`Sync Latest Software` run [39847819252](https://github.com/funny-dog/latest-softwares/actions/runs/39847819252) 成功；Cloudflare 备用站与国际版部署按同一 run-id 成功，验证快照 `4c46df3` 已发布（stale 0，不可用入口 47，必收录覆盖 300/301 + Photoshop 声明式豁免）。
+- 国内版主站（Qoder Sites）此前仍停留在 10-21 快照，本地定时重发布任务最近一次运行以 `session-failed` 结束；已按同一条同步快照重建并重新发布，线上 `generated_at` 为 `2026-10-22T20:20:44Z`。
+- 剩余工作为分批清理 47 个不可用入口，首批 redirect host 复核见来源修复记录第 5 节。

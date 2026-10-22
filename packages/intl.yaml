@@ -3166,16 +3166,16 @@ packages:
   category: Media Players
   editions:
   - intl
-  homepage: https://ardour.org/download.html
+  homepage: https://community.ardour.org/download
   fetcher: download_page
   args:
-    source: Official project download page; no stable public release asset API
+    source: Official community download page; no stable public release asset API
     platforms:
     - platform: win-x64
-      download_url: https://ardour.org/download.html
+      download_url: https://community.ardour.org/download
       link_kind: landing_page
     - platform: mac-arm64
-      download_url: https://ardour.org/download.html
+      download_url: https://community.ardour.org/download
       link_kind: landing_page
   desc_cn: 开源数字音频工作站，多轨录音和混音
   desc_en: Open-source digital audio workstation for multi-track recording and mixing
@@ -4313,6 +4313,9 @@ packages:
     - platform: linux-x64
       download_url: https://www.torproject.org/download/
       link_kind: landing_page
+  verification:
+    allowed_hosts:
+    - download.torproject.org
   desc_cn: Tor 匿名网络浏览器，保护用户隐私和匿名性
   desc_en: Tor anonymous network browser for privacy and anonymity protection
 - id: librewolf
@@ -4422,19 +4425,19 @@ packages:
   homepage: https://www.skype.com/get-skype/
   fetcher: download_page
   args:
-    source: Official Skype download page; no public version API
+    source: Microsoft retired Skype downloads; official entry redirects to Teams Free
     platforms:
     - platform: win-x64
-      download_url: https://www.skype.com/get-skype/
+      download_url: https://teams.live.com/free?source=skype
       link_kind: landing_page
     - platform: mac-universal
-      download_url: https://www.skype.com/get-skype/
+      download_url: https://teams.live.com/free?source=skype
       link_kind: landing_page
     - platform: linux-x64
-      download_url: https://www.skype.com/get-skype/
+      download_url: https://teams.live.com/free?source=skype
       link_kind: landing_page
-  desc_cn: 微软的视频通话和即时通讯工具
-  desc_en: Video calling and instant messaging tool by Microsoft
+  desc_cn: 微软已停止 Skype 下载，官方入口跳转至 Teams 免费版
+  desc_en: Microsoft retired Skype downloads; the official entry now redirects to Teams Free
 - id: libreoffice
   name: LibreOffice
   category: Productivity
@@ -4878,13 +4881,13 @@ packages:
   category: Utilities
   editions:
   - intl
-  homepage: https://www.codesector.com/teracopy
+  homepage: https://codesector.com/teracopy
   fetcher: download_page
   args:
     source: Official TeraCopy download page; no public version API
     platforms:
     - platform: win-x64
-      download_url: https://www.codesector.com/teracopy
+      download_url: https://codesector.com/teracopy
       link_kind: landing_page
   desc_cn: Windows 文件复制加速工具，支持校验和恢复
   desc_en: Windows file copy acceleration tool with verification and resume support

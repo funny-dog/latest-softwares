@@ -1307,12 +1307,12 @@ packages:
   category: Productivity
   desc_cn: 专业思维导图工具，支持多种结构和导出格式
   desc_en: Professional mind mapping tool with multiple structures and export formats
-  homepage: https://xmind.app
+  homepage: https://xmind.com/
   fetcher: download_page
   args:
     platforms:
     - platform: mac-universal
-      download_url: https://xmind.app/download/
+      download_url: https://xmind.com/download/
 - id: orbstack
   name: OrbStack
   category: Developer Tools
