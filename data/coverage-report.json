@@ -1,11 +1,11 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-22T20:23:46+00:00",
+  "generated_at": "2026-10-22T20:33:37+00:00",
   "configured": 699,
   "published": 699,
   "stale_packages": 0,
-  "verified_assets": 1106,
-  "unavailable_assets": 47,
+  "verified_assets": 1116,
+  "unavailable_assets": 37,
   "required_total": 301,
   "required_covered": 300,
   "required_coverage": 0.9966777408637874,
@@ -38,14 +38,6 @@
       "required": false,
       "issues": [
         "unverified_or_unavailable:mac-x64",
-        "unverified_or_unavailable:win-x64"
-      ]
-    },
-    {
-      "id": "ardour",
-      "required": false,
-      "issues": [
-        "unverified_or_unavailable:mac-arm64",
         "unverified_or_unavailable:win-x64"
       ]
     },
@@ -193,15 +185,6 @@
       ]
     },
     {
-      "id": "skype",
-      "required": false,
-      "issues": [
-        "unverified_or_unavailable:linux-x64",
-        "unverified_or_unavailable:mac-universal",
-        "unverified_or_unavailable:win-x64"
-      ]
-    },
-    {
       "id": "sparkdesk",
       "required": false,
       "issues": [
@@ -217,26 +200,10 @@
       ]
     },
     {
-      "id": "teracopy",
-      "required": false,
-      "issues": [
-        "unverified_or_unavailable:win-x64"
-      ]
-    },
-    {
       "id": "tongyi",
       "required": false,
       "issues": [
         "unverified_or_unavailable:mac-x64",
-        "unverified_or_unavailable:win-x64"
-      ]
-    },
-    {
-      "id": "tor-browser",
-      "required": false,
-      "issues": [
-        "unverified_or_unavailable:linux-x64",
-        "unverified_or_unavailable:mac-universal",
         "unverified_or_unavailable:win-x64"
       ]
     },
@@ -252,13 +219,6 @@
       "required": false,
       "issues": [
         "unverified_or_unavailable:win-x64"
-      ]
-    },
-    {
-      "id": "xmind",
-      "required": false,
-      "issues": [
-        "unverified_or_unavailable:mac-universal"
       ]
     },
     {

@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-10-22T20:20:44+00:00",
+  "generated_at": "2026-10-22T20:32:49+00:00",
   "packages": [
     {
       "id": "windows11",
@@ -2653,7 +2653,7 @@
           "expires_at": null,
           "verification": {
             "status": "unverified",
-            "checked_at": "2026-10-22T20:21:00+00:00",
+            "checked_at": "2026-10-22T20:33:08+00:00",
             "url": "https://kimi.moonshot.cn/download",
             "final_url": "https://kimi.moonshot.cn/download",
             "redirects": [
@@ -2674,7 +2674,7 @@
           "expires_at": null,
           "verification": {
             "status": "unverified",
-            "checked_at": "2026-10-22T20:21:00+00:00",
+            "checked_at": "2026-10-22T20:33:08+00:00",
             "url": "https://kimi.moonshot.cn/download",
             "final_url": "https://kimi.moonshot.cn/download",
             "redirects": [
@@ -2721,7 +2721,7 @@
           "expires_at": null,
           "verification": {
             "status": "unverified",
-            "checked_at": "2026-10-22T20:21:00+00:00",
+            "checked_at": "2026-10-22T20:33:08+00:00",
             "url": "https://tongyi.aliyun.com/download",
             "reason": "redirect host needs review",
             "final_url": "http://www.qianwen.com/download",
@@ -2741,7 +2741,7 @@
           "expires_at": null,
           "verification": {
             "status": "unverified",
-            "checked_at": "2026-10-22T20:21:00+00:00",
+            "checked_at": "2026-10-22T20:33:08+00:00",
             "url": "https://tongyi.aliyun.com/download",
             "reason": "redirect host needs review",
             "final_url": "http://www.qianwen.com/download",
@@ -2787,7 +2787,7 @@
           "expires_at": null,
           "verification": {
             "status": "unverified",
-            "checked_at": "2026-10-22T20:21:00+00:00",
+            "checked_at": "2026-10-22T20:33:08+00:00",
             "url": "https://chatglm.cn/download",
             "final_url": "https://chatglm.cn/download",
             "redirects": [
@@ -2808,7 +2808,7 @@
           "expires_at": null,
           "verification": {
             "status": "unverified",
-            "checked_at": "2026-10-22T20:21:00+00:00",
+            "checked_at": "2026-10-22T20:33:08+00:00",
             "url": "https://chatglm.cn/download",
             "final_url": "https://chatglm.cn/download",
             "redirects": [
@@ -2855,7 +2855,7 @@
           "expires_at": null,
           "verification": {
             "status": "unverified",
-            "checked_at": "2026-10-22T20:21:00+00:00",
+            "checked_at": "2026-10-22T20:33:08+00:00",
             "url": "https://xinghuo.xfyun.cn/download",
             "final_url": "https://xinghuo.xfyun.cn/download",
             "redirects": [
@@ -2876,7 +2876,7 @@
           "expires_at": null,
           "verification": {
             "status": "unverified",
-            "checked_at": "2026-10-22T20:21:00+00:00",
+            "checked_at": "2026-10-22T20:33:08+00:00",
             "url": "https://xinghuo.xfyun.cn/download",
             "final_url": "https://xinghuo.xfyun.cn/download",
             "redirects": [
@@ -3584,7 +3584,7 @@
           "expires_at": null,
           "verification": {
             "status": "unverified",
-            "checked_at": "2026-10-22T20:21:00+00:00",
+            "checked_at": "2026-10-22T20:33:08+00:00",
             "url": "https://www.foxitsoftware.cn/downloads/",
             "final_url": "https://www.foxitsoftware.cn/downloads/",
             "redirects": [
@@ -3783,7 +3783,7 @@
           "expires_at": null,
           "verification": {
             "status": "restricted",
-            "checked_at": "2026-10-22T20:21:00+00:00",
+            "checked_at": "2026-10-22T20:33:08+00:00",
             "url": "https://apifox.com/download/",
             "final_url": "https://apifox.com/download/",
             "redirects": [
@@ -3804,7 +3804,7 @@
           "expires_at": null,
           "verification": {
             "status": "restricted",
-            "checked_at": "2026-10-22T20:21:00+00:00",
+            "checked_at": "2026-10-22T20:33:08+00:00",
             "url": "https://apifox.com/download/",
             "final_url": "https://apifox.com/download/",
             "redirects": [
@@ -3851,7 +3851,7 @@
           "expires_at": null,
           "verification": {
             "status": "unverified",
-            "checked_at": "2026-10-22T20:21:00+00:00",
+            "checked_at": "2026-10-22T20:33:08+00:00",
             "url": "https://uu.163.com/download/",
             "final_url": "https://uu.163.com/download/",
             "redirects": [
@@ -3995,7 +3995,7 @@
           "expires_at": null,
           "verification": {
             "status": "transient",
-            "checked_at": "2026-10-22T20:21:00+00:00",
+            "checked_at": "2026-10-22T20:33:08+00:00",
             "url": "https://www.kuwo.cn/download",
             "final_url": "https://www.kuwo.cn/",
             "redirects": [
@@ -4651,7 +4651,7 @@
           "expires_at": null,
           "verification": {
             "status": "unverified",
-            "checked_at": "2026-10-22T20:21:00+00:00",
+            "checked_at": "2026-10-22T20:33:08+00:00",
             "url": "https://www.wps.cn/product/wps-pdf",
             "final_url": "https://www.wps.cn",
             "redirects": [
@@ -6439,7 +6439,7 @@
           "expires_at": null,
           "verification": {
             "status": "unverified",
-            "checked_at": "2026-10-22T20:21:00+00:00",
+            "checked_at": "2026-10-22T20:33:08+00:00",
             "url": "https://lol.qq.com/download.shtml",
             "final_url": "https://lol.qq.com/download.shtml",
             "redirects": [
@@ -6780,7 +6780,7 @@
           "expires_at": null,
           "verification": {
             "status": "unverified",
-            "checked_at": "2026-10-22T20:21:00+00:00",
+            "checked_at": "2026-10-22T20:33:08+00:00",
             "url": "https://xyq.163.com/download/",
             "final_url": "https://xyq.163.com/download/",
             "redirects": [
@@ -31539,61 +31539,69 @@
       "id": "ardour",
       "name": "Ardour",
       "version": "2026-10-22",
-      "source": "Official project download page; no stable public release asset API",
+      "source": "Official community download page; no stable public release asset API",
       "version_kind": "sync_date",
       "version_source": "UTC sync date; no public version API",
       "category": "Media Players",
-      "homepage": "https://ardour.org/download.html",
+      "homepage": "https://community.ardour.org/download",
       "released_at": null,
       "notes_url": null,
       "assets": [
         {
           "platform": "win-x64",
-          "url": "https://ardour.org/download.html",
+          "url": "https://community.ardour.org/download",
           "link_kind": "landing_page",
           "filename": null,
           "size": null,
           "sha256": null,
           "expires_at": null,
           "verification": {
-            "status": "unverified",
-            "checked_at": "2026-10-22T20:10:59+00:00",
-            "url": "https://ardour.org/download.html",
-            "reason": "redirect host needs review",
-            "final_url": "http://community.ardour.org/download",
+            "status": "verified",
+            "checked_at": "2026-10-22T20:33:08+00:00",
+            "url": "https://community.ardour.org/download",
+            "final_url": "https://community.ardour.org/download",
             "redirects": [
-              "https://ardour.org/download.html"
+              "https://community.ardour.org/download"
             ],
-            "fingerprint": "a49f4411a638e605ae1158b6055fb5018118f15866d0cf8ec19bf5e6f688d12d"
+            "http_status": 200,
+            "valid_until": "2026-10-29T20:33:08+00:00",
+            "filename": "download",
+            "content_type": "text/html; charset=utf-8",
+            "evidence": "trusted source, product identity and download/access entry",
+            "fingerprint": "a8f118061929de8e14545ade01c2c54db5f80999378c2bf20ebd00d968399a45"
           }
         },
         {
           "platform": "mac-arm64",
-          "url": "https://ardour.org/download.html",
+          "url": "https://community.ardour.org/download",
           "link_kind": "landing_page",
           "filename": null,
           "size": null,
           "sha256": null,
           "expires_at": null,
           "verification": {
-            "status": "unverified",
-            "checked_at": "2026-10-22T20:10:59+00:00",
-            "url": "https://ardour.org/download.html",
-            "reason": "redirect host needs review",
-            "final_url": "http://community.ardour.org/download",
+            "status": "verified",
+            "checked_at": "2026-10-22T20:33:08+00:00",
+            "url": "https://community.ardour.org/download",
+            "final_url": "https://community.ardour.org/download",
             "redirects": [
-              "https://ardour.org/download.html"
+              "https://community.ardour.org/download"
             ],
-            "fingerprint": "0ae8dccc51598b70cfd51a723ae03815e56ec093a655a41ab1057c7cfcf926df"
+            "http_status": 200,
+            "valid_until": "2026-10-29T20:33:08+00:00",
+            "filename": "download",
+            "content_type": "text/html; charset=utf-8",
+            "evidence": "trusted source, product identity and download/access entry",
+            "fingerprint": "d12fa831234f6be22a5076a595a08a343feb6b0ecaf0add5f76800ec412e8fe4"
           }
         }
       ],
-      "fetched_at": "2026-10-22T20:20:19+00:00",
-      "last_success_at": "2026-10-22T20:20:19+00:00",
+      "fetched_at": "2026-10-22T20:32:29+00:00",
+      "last_success_at": "2026-10-22T20:32:29+00:00",
       "_sync": {
         "failures": 0,
-        "fingerprint": "68e0d3b3cd85a413179b8327ce114448948e45fabdabced5bd239f915b02e55c",
-        "next_attempt_at": "2026-10-25T20:20:19+00:00"
+        "fingerprint": "f551f569d752db11785f24c71e21ade33e72603fdaeb7fb7ac831a3a22c6830c",
+        "next_attempt_at": "2026-10-25T20:32:29+00:00"
       },
       "editions": [
         "intl"
@@ -36257,7 +36265,7 @@
           "expires_at": null,
           "verification": {
             "status": "unverified",
-            "checked_at": "2026-10-22T20:21:00+00:00",
+            "checked_at": "2026-10-22T20:33:08+00:00",
             "url": "https://github.com/aristocratos/btop/releases",
             "final_url": "https://github.com/aristocratos/btop/releases",
             "redirects": [
@@ -36708,15 +36716,20 @@
           "sha256": null,
           "expires_at": null,
           "verification": {
-            "status": "unverified",
-            "checked_at": "2026-10-22T20:10:59+00:00",
+            "status": "verified",
+            "checked_at": "2026-10-22T20:33:08+00:00",
             "url": "https://www.torproject.org/download/",
-            "reason": "redirect host needs review",
             "final_url": "https://download.torproject.org/",
             "redirects": [
-              "https://www.torproject.org/download/"
+              "https://www.torproject.org/download/",
+              "https://download.torproject.org/"
             ],
-            "fingerprint": "379c13c3c9099656fc6e4575c9425017b898b742b46ec49e0d3392c4d44d3bfc"
+            "http_status": 200,
+            "valid_until": "2026-10-29T20:33:08+00:00",
+            "filename": "",
+            "content_type": "text/html",
+            "evidence": "trusted source, product identity and download/access entry",
+            "fingerprint": "0bfbb12fbb61b33c9430f3b0e95557c77a0a8ef420364bbd8533aa96d3a22fd2"
           }
         },
         {
@@ -36728,15 +36741,20 @@
           "sha256": null,
           "expires_at": null,
           "verification": {
-            "status": "unverified",
-            "checked_at": "2026-10-22T20:10:59+00:00",
+            "status": "verified",
+            "checked_at": "2026-10-22T20:33:08+00:00",
             "url": "https://www.torproject.org/download/",
-            "reason": "redirect host needs review",
             "final_url": "https://download.torproject.org/",
             "redirects": [
-              "https://www.torproject.org/download/"
+              "https://www.torproject.org/download/",
+              "https://download.torproject.org/"
             ],
-            "fingerprint": "26745e900fadc1e38064a74c8a657df4a2f0d6064c166f812792818d282342cf"
+            "http_status": 200,
+            "valid_until": "2026-10-29T20:33:08+00:00",
+            "filename": "",
+            "content_type": "text/html",
+            "evidence": "trusted source, product identity and download/access entry",
+            "fingerprint": "3264e9c72b7ddcee719b0a0b1d3210b2f7f50a54d2ae1b4f119541600cfb8bc6"
           }
         },
         {
@@ -36748,15 +36766,20 @@
           "sha256": null,
           "expires_at": null,
           "verification": {
-            "status": "unverified",
-            "checked_at": "2026-10-22T20:10:59+00:00",
+            "status": "verified",
+            "checked_at": "2026-10-22T20:33:08+00:00",
             "url": "https://www.torproject.org/download/",
-            "reason": "redirect host needs review",
             "final_url": "https://download.torproject.org/",
             "redirects": [
-              "https://www.torproject.org/download/"
+              "https://www.torproject.org/download/",
+              "https://download.torproject.org/"
             ],
-            "fingerprint": "87bd49f9a4737faf7f8f9abca7937af10663c07d690f1affd6ee97eecb4f3dcd"
+            "http_status": 200,
+            "valid_until": "2026-10-29T20:33:08+00:00",
+            "filename": "",
+            "content_type": "text/html",
+            "evidence": "trusted source, product identity and download/access entry",
+            "fingerprint": "421fc2a16424539f978b9452061fdedd65cad5b3cf87f394a4de5f9cff52067f"
           }
         }
       ],
@@ -37223,8 +37246,8 @@
     {
       "id": "skype",
       "name": "Skype",
-      "version": "2026-10-20",
-      "source": "Official Skype download page; no public version API",
+      "version": "2026-10-22",
+      "source": "Microsoft retired Skype downloads; official entry redirects to Teams Free",
       "version_kind": "sync_date",
       "version_source": "UTC sync date; no public version API",
       "category": "Messaging",
@@ -37234,77 +37257,89 @@
       "assets": [
         {
           "platform": "win-x64",
-          "url": "https://www.skype.com/get-skype/",
+          "url": "https://teams.live.com/free?source=skype",
           "link_kind": "landing_page",
           "filename": null,
           "size": null,
           "sha256": null,
           "expires_at": null,
           "verification": {
-            "status": "unverified",
-            "checked_at": "2026-10-22T20:10:59+00:00",
-            "url": "https://www.skype.com/get-skype/",
-            "reason": "redirect host needs review",
+            "status": "verified",
+            "checked_at": "2026-10-22T20:33:08+00:00",
+            "url": "https://teams.live.com/free?source=skype",
             "final_url": "https://teams.live.com/free?source=skype",
             "redirects": [
-              "https://www.skype.com/get-skype/"
+              "https://teams.live.com/free?source=skype"
             ],
-            "fingerprint": "57f6140b959d797559862e8720d201b02d1471aa05d39feb4431f5608292c041"
+            "http_status": 200,
+            "valid_until": "2026-10-29T20:33:08+00:00",
+            "filename": "free",
+            "content_type": "text/html; charset=utf-8",
+            "evidence": "trusted source, product identity and download/access entry",
+            "fingerprint": "f88e19e887858edb337dc3937007c32ed2291b54eb80b4cd9fbd99171597da6c"
           }
         },
         {
           "platform": "mac-universal",
-          "url": "https://www.skype.com/get-skype/",
+          "url": "https://teams.live.com/free?source=skype",
           "link_kind": "landing_page",
           "filename": null,
           "size": null,
           "sha256": null,
           "expires_at": null,
           "verification": {
-            "status": "unverified",
-            "checked_at": "2026-10-22T20:10:59+00:00",
-            "url": "https://www.skype.com/get-skype/",
-            "reason": "redirect host needs review",
+            "status": "verified",
+            "checked_at": "2026-10-22T20:33:08+00:00",
+            "url": "https://teams.live.com/free?source=skype",
             "final_url": "https://teams.live.com/free?source=skype",
             "redirects": [
-              "https://www.skype.com/get-skype/"
+              "https://teams.live.com/free?source=skype"
             ],
-            "fingerprint": "2fead8f8b087d3ec40fc3374958e768ec7d9abfa936dde147547e01a54bd35bf"
+            "http_status": 200,
+            "valid_until": "2026-10-29T20:33:08+00:00",
+            "filename": "free",
+            "content_type": "text/html; charset=utf-8",
+            "evidence": "trusted source, product identity and download/access entry",
+            "fingerprint": "394bf995aa214ae664c7691828c4a699a91319a03c0ff43dc42bf702ba00793a"
           }
         },
         {
           "platform": "linux-x64",
-          "url": "https://www.skype.com/get-skype/",
+          "url": "https://teams.live.com/free?source=skype",
           "link_kind": "landing_page",
           "filename": null,
           "size": null,
           "sha256": null,
           "expires_at": null,
           "verification": {
-            "status": "unverified",
-            "checked_at": "2026-10-22T20:10:59+00:00",
-            "url": "https://www.skype.com/get-skype/",
-            "reason": "redirect host needs review",
+            "status": "verified",
+            "checked_at": "2026-10-22T20:33:08+00:00",
+            "url": "https://teams.live.com/free?source=skype",
             "final_url": "https://teams.live.com/free?source=skype",
             "redirects": [
-              "https://www.skype.com/get-skype/"
+              "https://teams.live.com/free?source=skype"
             ],
-            "fingerprint": "de6d726c0568db8eef9f37aad7b23f0521e05a474b5284c63067a4798696e62b"
+            "http_status": 200,
+            "valid_until": "2026-10-29T20:33:08+00:00",
+            "filename": "free",
+            "content_type": "text/html; charset=utf-8",
+            "evidence": "trusted source, product identity and download/access entry",
+            "fingerprint": "7628c9dc7aab92da0e8c575fef9fd3df59fa4d3b33fb8ef9d02f738561b11da9"
           }
         }
       ],
-      "fetched_at": "2026-10-20T18:59:50+00:00",
-      "last_success_at": "2026-10-20T18:59:50+00:00",
+      "fetched_at": "2026-10-22T20:32:29+00:00",
+      "last_success_at": "2026-10-22T20:32:29+00:00",
       "_sync": {
         "failures": 0,
-        "fingerprint": "e234a144831ff49b4a2e058d8795504004f0b38da686cfd62eda3720c424a1f2",
-        "next_attempt_at": "2026-10-23T18:59:50+00:00"
+        "fingerprint": "7fb3ccc22f3f0948f456b4b6c321ded614c3d7d1c3f9c5d6a7fd1c0353192480",
+        "next_attempt_at": "2026-10-25T20:32:29+00:00"
       },
       "editions": [
         "intl"
       ],
-      "desc_cn": "微软的视频通话和即时通讯工具",
-      "desc_en": "Video calling and instant messaging tool by Microsoft"
+      "desc_cn": "微软已停止 Skype 下载，官方入口跳转至 Teams 免费版",
+      "desc_en": "Microsoft retired Skype downloads; the official entry now redirects to Teams Free"
     },
     {
       "id": "libreoffice",
@@ -39169,42 +39204,46 @@
     {
       "id": "teracopy",
       "name": "TeraCopy",
-      "version": "2026-10-20",
+      "version": "2026-10-22",
       "source": "Official TeraCopy download page; no public version API",
       "version_kind": "sync_date",
       "version_source": "UTC sync date; no public version API",
       "category": "Utilities",
-      "homepage": "https://www.codesector.com/teracopy",
+      "homepage": "https://codesector.com/teracopy",
       "released_at": null,
       "notes_url": null,
       "assets": [
         {
           "platform": "win-x64",
-          "url": "https://www.codesector.com/teracopy",
+          "url": "https://codesector.com/teracopy",
           "link_kind": "landing_page",
           "filename": null,
           "size": null,
           "sha256": null,
           "expires_at": null,
           "verification": {
-            "status": "unverified",
-            "checked_at": "2026-10-22T20:10:59+00:00",
-            "url": "https://www.codesector.com/teracopy",
-            "reason": "redirect host needs review",
+            "status": "verified",
+            "checked_at": "2026-10-22T20:33:08+00:00",
+            "url": "https://codesector.com/teracopy",
             "final_url": "https://codesector.com/teracopy",
             "redirects": [
-              "https://www.codesector.com/teracopy"
+              "https://codesector.com/teracopy"
             ],
-            "fingerprint": "6e508b9cec72d0717908980d15da0b2d6c4014d3a31175a8b1bcd6ec89cea6bf"
+            "http_status": 200,
+            "valid_until": "2026-10-29T20:33:08+00:00",
+            "filename": "teracopy",
+            "content_type": "text/html; charset=utf-8",
+            "evidence": "trusted source, product identity and download/access entry",
+            "fingerprint": "c81a001473b34a1afb17ef50766316baca1e29acb18e87852ebff81c33b6f572"
           }
         }
       ],
-      "fetched_at": "2026-10-20T18:59:50+00:00",
-      "last_success_at": "2026-10-20T18:59:50+00:00",
+      "fetched_at": "2026-10-22T20:32:29+00:00",
+      "last_success_at": "2026-10-22T20:32:29+00:00",
       "_sync": {
         "failures": 0,
-        "fingerprint": "d658e50cdb4c4339df8af5de1b8782cf335a7619f6b6913e24c1aa7f0a7730d1",
-        "next_attempt_at": "2026-10-23T18:59:50+00:00"
+        "fingerprint": "474ee56f35ce01fe7f8fd69dfe2cfa12663f9b376573d68d9ce1e3d731aa3031",
+        "next_attempt_at": "2026-10-25T20:32:29+00:00"
       },
       "editions": [
         "intl"
@@ -45555,42 +45594,47 @@
     {
       "id": "xmind",
       "name": "XMind",
-      "version": "2026-10-20",
+      "version": "2026-10-22",
       "source": "Official download page; no public version API",
       "version_kind": "sync_date",
       "version_source": "UTC sync date; no public version API",
       "category": "Productivity",
-      "homepage": "https://xmind.app",
+      "homepage": "https://xmind.com/",
       "released_at": null,
       "notes_url": null,
       "assets": [
         {
           "platform": "mac-universal",
-          "url": "https://xmind.app/download/",
+          "url": "https://xmind.com/download/",
           "link_kind": "landing_page",
           "filename": null,
           "size": null,
           "sha256": null,
           "expires_at": null,
           "verification": {
-            "status": "unverified",
-            "checked_at": "2026-10-22T20:21:00+00:00",
-            "url": "https://xmind.app/download/",
-            "reason": "redirect host needs review",
-            "final_url": "https://xmind.com:443/download/",
+            "status": "verified",
+            "checked_at": "2026-10-22T20:33:08+00:00",
+            "url": "https://xmind.com/download/",
+            "final_url": "https://xmind.com/download",
             "redirects": [
-              "https://xmind.app/download/"
+              "https://xmind.com/download/",
+              "https://xmind.com/download"
             ],
-            "fingerprint": "27cdd4d650b1758d1565ee9c6a814b34ce5bddcd0fea36367019f074032f72ec"
+            "http_status": 200,
+            "valid_until": "2026-10-29T20:33:08+00:00",
+            "filename": "download",
+            "content_type": "text/html",
+            "evidence": "trusted source, product identity and download/access entry",
+            "fingerprint": "3533f6d77cb91d4f39f720111c8af6d66e739fbd62bdbee2794dc5ff5b05c55c"
           }
         }
       ],
-      "fetched_at": "2026-10-20T18:59:47+00:00",
-      "last_success_at": "2026-10-20T18:59:47+00:00",
+      "fetched_at": "2026-10-22T20:32:31+00:00",
+      "last_success_at": "2026-10-22T20:32:31+00:00",
       "_sync": {
         "failures": 0,
-        "fingerprint": "14579c6e6270c7cc72cdf1ca1c18ee3f1aa0703d6eea5753aa59d27a969e2af7",
-        "next_attempt_at": "2026-10-23T18:59:47+00:00"
+        "fingerprint": "b6ebd0e08f11f1f788e5054db8f2dcab9c0c473a1bf4192c5e648ae326cdf3cf",
+        "next_attempt_at": "2026-10-25T20:32:31+00:00"
       },
       "desc_cn": "专业思维导图工具，支持多种结构和导出格式",
       "desc_en": "Professional mind mapping tool with multiple structures and export formats",
@@ -46362,7 +46406,7 @@
           "expires_at": null,
           "verification": {
             "status": "restricted",
-            "checked_at": "2026-10-22T20:21:00+00:00",
+            "checked_at": "2026-10-22T20:33:08+00:00",
             "url": "https://www.adobe.com/products/photoshop.html",
             "final_url": "https://www.adobe.com/products/photoshop.html",
             "redirects": [
@@ -46383,7 +46427,7 @@
           "expires_at": null,
           "verification": {
             "status": "restricted",
-            "checked_at": "2026-10-22T20:21:00+00:00",
+            "checked_at": "2026-10-22T20:33:08+00:00",
             "url": "https://www.adobe.com/products/photoshop.html",
             "final_url": "https://www.adobe.com/products/photoshop.html",
             "redirects": [
@@ -46492,14 +46536,14 @@
     "failed_ids": [],
     "failures": []
   },
-  "release_id": "35b4efbf82daf33f7e36",
-  "checked_at": "2026-10-22T20:21:00+00:00",
-  "verified_at": "2026-10-22T20:21:00+00:00",
+  "release_id": "51d2526255f64f817236",
+  "checked_at": "2026-10-22T20:33:08+00:00",
+  "verified_at": "2026-10-22T20:33:08+00:00",
   "quality": {
     "required_total": 301,
     "required_covered": 300,
-    "verified_assets": 1106,
-    "unavailable_assets": 47,
+    "verified_assets": 1116,
+    "unavailable_assets": 37,
     "stale_packages": 0,
     "publication_exceptions": []
   }
