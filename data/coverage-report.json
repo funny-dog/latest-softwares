@@ -1,30 +1,16 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-22T20:33:37+00:00",
+  "generated_at": "2026-10-22T20:38:53+00:00",
   "configured": 699,
   "published": 699,
   "stale_packages": 0,
-  "verified_assets": 1116,
-  "unavailable_assets": 37,
+  "verified_assets": 1127,
+  "unavailable_assets": 26,
   "required_total": 301,
   "required_covered": 300,
   "required_coverage": 0.9966777408637874,
   "obsolete_ids": [],
   "problems": [
-    {
-      "id": "360ee",
-      "required": false,
-      "issues": [
-        "unverified_or_unavailable:win-x64"
-      ]
-    },
-    {
-      "id": "360zip",
-      "required": false,
-      "issues": [
-        "unverified_or_unavailable:win-x64"
-      ]
-    },
     {
       "id": "adobe-photoshop",
       "required": true,
@@ -56,13 +42,6 @@
       ]
     },
     {
-      "id": "btop-win",
-      "required": false,
-      "issues": [
-        "unverified_or_unavailable:win-x64"
-      ]
-    },
-    {
       "id": "cajviewer",
       "required": false,
       "issues": [
@@ -78,49 +57,7 @@
       ]
     },
     {
-      "id": "cloudflare-warp",
-      "required": false,
-      "issues": [
-        "unverified_or_unavailable:win-x64"
-      ]
-    },
-    {
-      "id": "crystaldiskinfo",
-      "required": false,
-      "issues": [
-        "unverified_or_unavailable:win-x64"
-      ]
-    },
-    {
-      "id": "crystaldiskmark",
-      "required": false,
-      "issues": [
-        "unverified_or_unavailable:win-x64"
-      ]
-    },
-    {
-      "id": "delta-force",
-      "required": false,
-      "issues": [
-        "unverified_or_unavailable:win-x64"
-      ]
-    },
-    {
-      "id": "fantasy-westward-journey",
-      "required": false,
-      "issues": [
-        "unverified_or_unavailable:win-x64"
-      ]
-    },
-    {
       "id": "fastgithub",
-      "required": false,
-      "issues": [
-        "unverified_or_unavailable:win-x64"
-      ]
-    },
-    {
-      "id": "foxit-reader-cn",
       "required": false,
       "issues": [
         "unverified_or_unavailable:win-x64"
@@ -143,13 +80,6 @@
     },
     {
       "id": "kuwo-music",
-      "required": false,
-      "issues": [
-        "unverified_or_unavailable:win-x64"
-      ]
-    },
-    {
-      "id": "league-of-legends",
       "required": false,
       "issues": [
         "unverified_or_unavailable:win-x64"
@@ -200,24 +130,17 @@
       ]
     },
     {
-      "id": "tongyi",
-      "required": false,
-      "issues": [
-        "unverified_or_unavailable:mac-x64",
-        "unverified_or_unavailable:win-x64"
-      ]
-    },
-    {
-      "id": "uu-accelerator",
-      "required": false,
-      "issues": [
-        "unverified_or_unavailable:win-x64"
-      ]
-    },
-    {
       "id": "wps-pdf",
       "required": false,
       "issues": [
+        "unverified_or_unavailable:win-x64"
+      ]
+    },
+    {
+      "id": "youku",
+      "required": false,
+      "issues": [
+        "unverified_or_unavailable:mac-universal",
         "unverified_or_unavailable:win-x64"
       ]
     },
