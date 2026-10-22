@@ -35,7 +35,7 @@ DATA_FILE = REPO_ROOT / "data/latest.json"
 LINK_HEALTH_FILE = REPO_ROOT / "data/link-health.json"
 MAX_WORKERS = 8
 MAX_CONNECTIONS_PER_HOST = 8
-VERIFICATION_POLICY_VERSION = 1
+VERIFICATION_POLICY_VERSION = 2
 # 命中上游维护页时沿用旧验证结果，并把下次重试提前到这个间隔，避免上游
 # 恢复后仍按 2~24 小时的退避干等。
 MAINTENANCE_RETRY_MINUTES = 30
@@ -81,41 +81,32 @@ def _fix_by_refetch(config: dict[str, Any], asset: dict[str, Any]) -> str | None
     return None
 
 
-def _recover_from_history(
+def _recover_verification(
     old: dict[str, Any],
-    attempt: dict[str, Any],
     asset: dict[str, Any],
+    fingerprint: str,
     now: datetime,
 ) -> dict[str, Any] | None:
-    """从 link-state 历史里恢复最近一次成功验证，用于自愈被污染的缓存。
-
-    旧版本把上游维护页判成 failed 并写回 link-state 后，缓存里只剩一条没有
-    valid_until 的失败记录，后续轮次就再也带不回"上次成功"。这里要求：
-    本轮确实是临时性失败、URL 未变、历史上确有成功记录，且距现在未超过
-    默认验证有效期，才重建一份与正常验证等价的证据。
-    """
-    if attempt.get("status") not in {"transient", "unverified"}:
+    """只恢复同地址、同规则且仍有效的完整证据，不从成功时间推算验证结果。"""
+    if fingerprint in old.get("invalidated", []):
         return None
-    url = asset.get("url")
-    last_success = parse_time(old.get("last_success_at"))
-    recovered_at = None
-    for entry in old.get("history", []):
-        if entry.get("status") != "verified" or entry.get("url") != url:
-            continue
-        at = parse_time(entry.get("at"))
-        if at and (recovered_at is None or at > recovered_at):
-            recovered_at = at
-    if recovered_at is None:
-        recovered_at = last_success
-    if recovered_at is None or (now - recovered_at) >= timedelta(days=7):
-        return None
-    return {
-        "status": "verified",
-        "checked_at": recovered_at.isoformat(timespec="seconds"),
-        "url": url,
-        "valid_until": (recovered_at + timedelta(days=7)).isoformat(timespec="seconds"),
-        "evidence": "recovered from link-state history after a transient failure",
-    }
+    candidates = [
+        old.get("verification", {}) if old.get("fingerprint") == fingerprint else {},
+        old.get("successes", {}).get(fingerprint, {}),
+        asset.get("verification") or {},
+    ]
+    for proof in candidates:
+        if (
+            proof.get("fingerprint") == fingerprint
+            and proof.get("url") == asset["url"]
+            and asset_available({**asset, "verification": proof}, now)
+        ):
+            return {
+                k: v
+                for k, v in proof.items()
+                if not k.startswith("last_attempt_") and k not in {"cached", "deferred"}
+            }
+    return None
 
 
 def _config_fingerprint(config: dict, asset: dict) -> str:
@@ -193,6 +184,11 @@ def validate_and_fix(
             and old.get("fingerprint") == fingerprint
             and next_check
             and next_check > now
+            and not (
+                gate
+                and config["id"] in important
+                and cached.get("status") != "verified"
+            )
         ):
             if cached.get("status") != "verified" or asset_available(candidate, now):
                 return {**cached, "cached": True}
@@ -211,7 +207,7 @@ def validate_and_fix(
                 }
             remaining -= 1
             verification = verify_link(asset, config, now=now)
-        attempt = dict(verification)
+        attempt = {**verification, "url": asset["url"], "fingerprint": fingerprint}
         # 失败次数按"本轮真实尝试结果"计，降级不改变退避语义。
         failures = 0 if attempt["status"] == "verified" else old.get("failures", 0) + 1
         # 短暂故障降级（沿用旧结果，不延长有效期、不算成功）：
@@ -222,27 +218,7 @@ def validate_and_fix(
             attempt["status"] == "transient"
             or attempt.get("reason", "").startswith("network check failed:")
         )
-        # 优先用 link-state 的旧结果；缓存丢失时回退到快照自身仍有效的验证结果，
-        # 否则一次 cache miss 就会把可用的已发布入口判成不可用。
-        # 携带时先剥掉上一轮的瞬时标记，避免把历史尝试信息当成新结论。
-        _transient_keys = {
-            "last_attempt_at",
-            "last_attempt_status",
-            "last_attempt_reason",
-        }
-        snapshot_verification = asset.get("verification")
-        if old.get("fingerprint") == fingerprint and asset_available(candidate, now):
-            carry_over = {k: v for k, v in cached.items() if k not in _transient_keys}
-        elif isinstance(snapshot_verification, dict) and asset_available(asset, now):
-            carry_over = {
-                k: v
-                for k, v in snapshot_verification.items()
-                if k not in _transient_keys
-            }
-        else:
-            # 缓存里的记录可能已被旧版本写成 failed（没有 valid_until），此时凭
-            # history 里的最后一次成功重建证据，避免一次临时故障永久污染缓存。
-            carry_over = _recover_from_history(old, attempt, asset, now)
+        carry_over = _recover_verification(old, asset, fingerprint, now)
         if transient and carry_over:
             verification = {
                 **carry_over,
@@ -266,7 +242,7 @@ def validate_and_fix(
             )
         )
         if failures:
-            hours = min(24, 2 ** min(failures, 4))
+            hours = min(6 if config["id"] in important else 24, 2 ** min(failures, 4))
         next_at = now + timedelta(hours=hours)
         if retry_at and retry_at < next_at:
             next_at = retry_at
@@ -281,15 +257,33 @@ def validate_and_fix(
                 "reason": attempt.get("reason"),
             }
         ]
+        successes = dict(old.get("successes", {}))
+        invalidated = list(old.get("invalidated", []))
+        if carry_over:
+            successes[fingerprint] = carry_over
+        if attempt["status"] == "verified":
+            successes[fingerprint] = attempt
+            invalidated = [fp for fp in invalidated if fp != fingerprint]
+        elif attempt["status"] == "failed":
+            successes.pop(fingerprint, None)
+            if fingerprint not in invalidated:
+                invalidated.append(fingerprint)
+        successes = {
+            fp: proof
+            for fp, proof in successes.items()
+            if asset_available({"url": proof["url"], "verification": proof}, now)
+        }
         state["assets"][key] = {
             "fingerprint": fingerprint,
             "verification": verification,
             "failures": failures,
             "next_check_at": next_at.isoformat(timespec="seconds"),
             "last_success_at": verification["checked_at"]
-            if not failures
+            if verification["status"] == "verified"
             else old.get("last_success_at"),
             "history": history,
+            "successes": dict(list(successes.items())[-10:]),
+            "invalidated": invalidated[-10:],
         }
         return verification
 
@@ -329,6 +323,11 @@ def validate_and_fix(
                 and old.get("fingerprint") == _config_fingerprint(config, asset)
                 and next_at
                 and next_at > now
+                and not (
+                    gate
+                    and config["id"] in important
+                    and old.get("verification", {}).get("status") != "verified"
+                )
                 and (
                     old.get("verification", {}).get("status") != "verified"
                     or asset_available(
@@ -481,6 +480,9 @@ def validate_and_fix(
     report["gate_errors"] = coverage["gate_errors"]
     report["strict_gate_errors"] = coverage["strict_gate_errors"]
     report["publication_exceptions"] = exceptions
+    report["required_exemptions"] = coverage["required_exemptions"]
+    report["coverage"] = data["quality"]
+    report["stale_packages"] = data["stats"]["failures"]
     state["assets"] = {k: v for k, v in state["assets"].items() if k in active_keys}
     _write_json(DATA_FILE, data)
     _write_json(state_file, state)

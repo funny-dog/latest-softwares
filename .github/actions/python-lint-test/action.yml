@@ -1,7 +1,7 @@
 name: Python lint + test
 description: |
   共享的"配置校验 + 静态检查 + 拆分后的单测 + 字节码编译"步骤序列。
-  pr-checks 与 sync 两个 job 都需要这套相同的检查 —— 抽出来避免漂移。
+  sync.yml 的 pr-checks job 复用本 action，覆盖 PR、push 和人工运行。
 
   step 拆分原则：
     - 每个 test_*.py 模块独立一个 step，GitHub Actions UI 中可单独看 ✓ / ✗
@@ -9,9 +9,7 @@ description: |
     - 除"配置校验"外所有 step 都加 if: !cancelled()，一次跑能看到所有失败
       （配置坏掉时其它 step 仍可跑，因为它们大多 mock 输入；故也加 !cancelled）
 
-  注意：本 action 不含 setup-python 与 install deps —— 这两步在 windows 与
-  ubuntu 上的 pip cache 策略不同（sync.yml 用手动 cache step 防止内置 cache
-  异常吞日志），强行统一会丢失这个意图。
+  本 action 不含 setup-python 与 install deps，由调用方准备运行环境。
 
 runs:
   using: composite
@@ -38,7 +36,7 @@ runs:
     - name: Test - config (validate_config)
       if: ${{ !cancelled() }}
       shell: bash
-      run: python -m pytest tests/test_validate_config.py -q
+      run: python -m pytest tests/test_validate_config.py tests/test_catalog_source_repairs.py -q
 
     - name: Test - schema (latest.json)
       if: ${{ !cancelled() }}
@@ -73,7 +71,7 @@ runs:
     - name: Test - publication and verification
       if: ${{ !cancelled() }}
       shell: bash
-      run: python -m pytest tests/test_catalog.py tests/test_link_verifier.py tests/test_package_manifest.py tests/test_publication.py -q
+      run: python -m pytest tests/test_catalog.py tests/test_link_verifier.py tests/test_package_manifest.py tests/test_publication.py tests/test_publication_health.py -q
 
     - name: Test - sync core
       if: ${{ !cancelled() }}

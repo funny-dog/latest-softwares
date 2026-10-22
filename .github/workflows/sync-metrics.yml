@@ -57,3 +57,13 @@ jobs:
           file_pattern: 'data/site_metrics.json'
           commit_user_name: 'github-actions[bot]'
           commit_user_email: '41898282+github-actions[bot]@users.noreply.github.com'
+
+      - name: Setup Python for publication health
+        if: ${{ !cancelled() }}
+        uses: actions/setup-python@v7
+        with:
+          python-version: '3.12'
+
+      - name: Check publication freshness
+        if: ${{ !cancelled() }}
+        run: python scripts/check_publication_health.py --max-age-hours 24

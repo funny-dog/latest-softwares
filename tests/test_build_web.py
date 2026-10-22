@@ -66,9 +66,7 @@ def test_json_injection_records_requested_edition(tmp_path, monkeypatch):
 
     html = index.read_text(encoding="utf-8")
     assert '"edition":"intl"' in html
-    assert (
-        '"public_site_url":"https://intl.erhu8.dpdns.org"' in html
-    )
+    assert '"public_site_url":"https://intl.erhu8.dpdns.org"' in html
     assert '"id":"intl-only"' in html
     assert '"id":"cn-only"' not in html
 
@@ -98,9 +96,7 @@ def test_cn_build_keeps_downloads_direct_but_reports_metrics(tmp_path, monkeypat
     monkeypatch.setattr(build_web, "DIST", dist)
     monkeypatch.setattr(build_web, "DATA_FILE", data_file)
     monkeypatch.setattr(build_web, "CN_PUBLIC_SITE_URL", "")
-    monkeypatch.setattr(
-        build_web, "CN_METRICS_URL", "https://metrics.example.test"
-    )
+    monkeypatch.setattr(build_web, "CN_METRICS_URL", "https://metrics.example.test")
 
     build_web.inject_data(edition="cn")
 

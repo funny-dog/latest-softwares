@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import json
+from datetime import datetime, timedelta, timezone
 
 from scripts import render
 
@@ -70,6 +71,39 @@ def test_render_check_accepts_current_output(tmp_path, monkeypatch):
 
 def test_current_readme_matches_template_and_data():
     assert render.main(["--check"]) == 0
+
+
+def test_check_reproduces_snapshot_but_new_render_disables_expired_links(
+    tmp_path, monkeypatch
+):
+    monkeypatch.setattr(render, "REPO_ROOT", tmp_path)
+    snapshot_time = datetime.now(timezone.utc) - timedelta(days=2)
+    data = {
+        "verified_at": snapshot_time.isoformat(),
+        "packages": [
+            {
+                "id": "example",
+                "assets": [
+                    {
+                        "url": "https://example.test/installer.exe",
+                        "verification": {
+                            "status": "verified",
+                            "valid_until": (
+                                snapshot_time + timedelta(days=1)
+                            ).isoformat(),
+                        },
+                    }
+                ],
+            }
+        ],
+    }
+    template = tmp_path / "template.md"
+    template.write_text("{{ asset_available(grouped[0][1][0].assets[0]) }}")
+    output = tmp_path / "output.md"
+    output.write_text("True")
+    assert render._render_one(data, template, output, check=True)
+    assert render._render_one(data, template, output, check=False)
+    assert output.read_text() == "False"
 
 
 def test_render_includes_stale_reason():

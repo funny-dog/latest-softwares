@@ -42,7 +42,7 @@ def select_winget_installer(data: dict, architecture: str) -> dict:
         scope = item.get("Scope", data.get("Scope"))
         return (
             types.index(kind) if kind in types else len(types),
-            {"user": 0, "machine": 1}.get(scope, 2),
+            {"user": 0, "machine": 1}.get(scope or "", 2),
         )
 
     best = min(map(rank, matches))

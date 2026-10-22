@@ -57,6 +57,57 @@ def test_http_200_html_is_not_an_installer(monkeypatch):
     assert result["status"] == "failed"
 
 
+@pytest.mark.parametrize("status", [500, 502, 503, 504])
+def test_exhausted_server_errors_are_transient(monkeypatch, status):
+    response = Response(status=status)
+    result = verify(monkeypatch, response)
+    assert result["status"] == "transient"
+    assert result["reason"] == f"HTTP {status}"
+    assert response.closed
+
+
+@pytest.mark.parametrize(
+    "prefix_size,expected", [(85000, "verified"), (600000, "unverified")]
+)
+def test_landing_page_has_a_separate_bounded_sample(monkeypatch, prefix_size, expected):
+    body = (
+        b"<html><script>" + b"x" * prefix_size + b"</script>Example App download</html>"
+    )
+    response = Response(body, headers={"Content-Type": "text/html"})
+    result = verify(
+        monkeypatch,
+        response,
+        url="https://example.test/download",
+        link_kind="landing_page",
+    )
+    assert result["status"] == expected
+    assert response.read_sizes == [link_verifier.HTML_SAMPLE_BYTES]
+    assert response.closed
+
+
+@pytest.mark.parametrize(
+    "body,expected",
+    [
+        (
+            b"<html><script>Example App download</script>Unrelated page</html>",
+            "unverified",
+        ),
+        (
+            b"<html><script>temporarily unavailable</script>Example App download</html>",
+            "verified",
+        ),
+    ],
+)
+def test_script_strings_are_not_page_evidence(monkeypatch, body, expected):
+    result = verify(
+        monkeypatch,
+        Response(body, headers={"Content-Type": "text/html"}),
+        url="https://example.test/download",
+        link_kind="landing_page",
+    )
+    assert result["status"] == expected
+
+
 def test_architecture_mismatch_and_wrong_file_header_are_rejected(monkeypatch):
     assert (
         verify(monkeypatch, Response(), url="https://example.test/app-arm64.exe")[
@@ -193,5 +244,7 @@ def test_range_header_only_used_for_binary_downloads(monkeypatch, kind, has_rang
         now=NOW,
     )
     assert ("Range" in calls[0]) is has_range
-    assert response.read_sizes == [65536]
+    assert response.read_sizes == [
+        65536 if has_range else link_verifier.HTML_SAMPLE_BYTES
+    ]
     assert response.closed

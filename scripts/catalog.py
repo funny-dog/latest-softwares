@@ -66,7 +66,6 @@ def _exemption_issue(
     return None
 
 
-
 def expected_platforms(entry: dict[str, Any]) -> list[str]:
     args = entry.get("args", {})
     if entry.get("fetcher") == "windows11_fido":

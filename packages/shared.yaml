@@ -122,7 +122,7 @@ packages:
     repo: localsend/localsend
     assets:
     - platform: win-x64
-      pattern: LocalSend-*-windows-x86-64.exe
+      pattern: LocalSend-[0-9]*-windows-x86-64.exe
     - platform: mac-arm64
       pattern: LocalSend-*.dmg
   desc_cn: 局域网文件传输工具，AirDrop 的跨平台替代品
@@ -246,7 +246,7 @@ packages:
     repo: Kong/insomnia
     assets:
     - platform: win-x64
-      pattern: Insomnia.Core-*.exe
+      pattern: Insomnia.Core-[0-9]*.exe
   desc_cn: 开源 REST 和 GraphQL API 测试工具，界面简洁
   desc_en: Open-source REST and GraphQL API testing tool with clean UI
 - id: heidisql
@@ -356,7 +356,7 @@ packages:
     repo: keepassxreboot/keepassxc
     assets:
     - platform: win-x64
-      pattern: KeePassXC-*-Win64.msi
+      pattern: KeePassXC-*-x64.msi
   desc_cn: 离线密码管理器，本地加密存储密码数据库
   desc_en: Offline password manager with locally encrypted password database
 - id: rustdesk
@@ -386,7 +386,7 @@ packages:
     repo: telegramdesktop/tdesktop
     assets:
     - platform: win-x64
-      pattern: tsetup.*.exe
+      pattern: td-setup-win-x64-*.exe
   desc_cn: 注重安全和速度的即时通讯工具，支持大群组和频道
   desc_en: Security and speed-focused messenger with large groups and channels
 - id: logseq
@@ -441,13 +441,13 @@ packages:
   editions:
   - intl
   - cn
-  homepage: https://github.com/Alex313031/Thorium-Win
-  fetcher: github_release
+  homepage: https://thorium.rocks/
+  fetcher: package_manifest
   args:
-    repo: Alex313031/Thorium-Win
-    assets:
+    provider: scoop
+    package: extras/thorium
+    platforms:
     - platform: win-x64
-      pattern: thorium_*.exe
   desc_cn: 性能优化的 Chromium 分支，针对速度特别调优
   desc_en: Performance-optimized Chromium fork, specifically tuned for speed
 - id: ollama
@@ -612,7 +612,7 @@ packages:
     repo: MetaCubeX/mihomo
     assets:
     - platform: win-x64
-      pattern: mihomo-windows-amd64-*.zip
+      pattern: mihomo-windows-amd64-v{version}.zip
   desc_cn: Clash.Meta 内核，支持更多代理协议和规则引擎
   desc_en: Clash.Meta kernel with extended proxy protocol and rule engine support
 - id: motrix
@@ -642,7 +642,7 @@ packages:
     repo: marktext/marktext
     assets:
     - platform: win-x64
-      pattern: marktext-setup.exe
+      pattern: marktext-win-x64-*-setup.exe
   desc_cn: 简洁的 Markdown 编辑器，实时预览所见即所得
   desc_en: Clean Markdown editor with real-time WYSIWYG preview
 - id: xray-core
@@ -672,7 +672,7 @@ packages:
     repo: audacity/audacity
     assets:
     - platform: win-x64
-      pattern: audacity-win-*-64bit.exe
+      pattern: audacity-win-*-x86_64.msi
   desc_cn: 开源音频编辑器，录制和编辑音频的专业工具
   desc_en: Open-source audio editor for professional recording and editing
 - id: calibre
@@ -790,7 +790,7 @@ packages:
     repo: shinchiro/mpv-winbuild-cmake
     assets:
     - platform: win-x64
-      pattern: mpv-x86_64-*-git-*.7z
+      pattern: mpv-x86_64-[0-9]*-git-*.7z
   desc_cn: 轻量强大的跨平台视频播放器，支持丰富配置
   desc_en: Lightweight powerful cross-platform video player with rich configuration
 - id: zed
@@ -1016,14 +1016,17 @@ packages:
   desc_cn: 开发者瑞士军刀，JSON/URL/Base64 等常用工具合集
   desc_en: Swiss army knife for developers with JSON/URL/Base64 and other utilities
   homepage: https://devtoys.app
-  fetcher: github_release
+  fetcher: download_page
   args:
-    repo: DevToys-app/DevToys
-    assets:
+    source: Official DevToys download page; no public version API
+    homepage: https://devtoys.app
+    platforms:
     - platform: mac-arm64
-      pattern: devtoys_osx_arm64.zip
+      download_url: https://devtoys.app
+      link_kind: landing_page
     - platform: mac-x64
-      pattern: devtoys_osx_x64.zip
+      download_url: https://devtoys.app
+      link_kind: landing_page
 - id: stats
   name: Stats
   category: System Utilities
@@ -1134,7 +1137,7 @@ packages:
     repo: runjuu/InputSourcePro
     assets:
     - platform: mac-universal
-      pattern: Input.Source.Pro.*.dmg
+      pattern: Input-Source-Pro-*.dmg
 - id: cmux
   name: cmux
   category: Developer Tools
@@ -1331,7 +1334,7 @@ packages:
   args:
     platforms:
     - platform: mac-universal
-      download_url: https://termius.com/download/mac
+      download_url: https://termius.com/download/macos
 - id: macs-fan-control
   name: Macs Fan Control
   category: System Utilities

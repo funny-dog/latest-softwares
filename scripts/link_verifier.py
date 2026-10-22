@@ -22,6 +22,7 @@ _ARCH = {
     "x64": r"(?:x86_64|amd64|(?<![a-z0-9])x64)",
     "x86": r"(?:i[3-6]86|ia32|win32|(?<![a-z0-9])x86(?!_64))",
 }
+HTML_SAMPLE_BYTES = 512 * 1024
 
 # 上游整站维护页的措辞。这类页面不属于"死链"，也不是反爬，而是上游
 # 主动下线的临时状态；按真实失效处理会让整条发布流水线卡到上游恢复为止。
@@ -43,9 +44,20 @@ _MAINTENANCE_PHRASES = (
 )
 
 
+def _html_evidence(text: str) -> str:
+    # 脚本里的产品字串或错误提示不能充当页面身份、下载或维护证据。
+    return re.sub(
+        r"<(script|style)\b[^>]*>.*?(?:</\1\s*>|$)",
+        " ",
+        text,
+        flags=re.I | re.S,
+    )
+
+
 def _looks_like_maintenance(text: str) -> bool:
     """判断 HTML 正文是否是上游整站维护/停机通告。"""
-    return any(phrase in _normal(text) for phrase in _MAINTENANCE_PHRASES)
+    normalized = _normal(_html_evidence(text))
+    return any(phrase in normalized for phrase in _MAINTENANCE_PHRASES)
 
 
 def _public_url(url: str) -> bool:
@@ -156,10 +168,19 @@ def verify_link(asset: dict, config: dict, *, now: datetime | None = None) -> di
                 "status": "restricted",
                 "reason": "upstream requires access or rate limited",
             }
+        if response.status_code in {500, 502, 503, 504}:
+            return {
+                **result,
+                "status": "transient",
+                "reason": f"HTTP {response.status_code}",
+            }
         if not 200 <= response.status_code < 300:
             return {**result, "reason": f"HTTP {response.status_code}"}
         # raw.read 有上界；服务端忽略 Range 也不下载完整安装包。
-        sample = response.raw.read(65536, decode_content=True)
+        sample = response.raw.read(
+            65536 if is_direct_link(url, asset.get("link_kind")) else HTML_SAMPLE_BYTES,
+            decode_content=True,
+        )
         if not sample:
             return {**result, "reason": "empty response"}
         content_type = response.headers.get("Content-Type", "").lower()
@@ -226,7 +247,7 @@ def verify_link(asset: dict, config: dict, *, now: datetime | None = None) -> di
                     "reason": "expected an official download page",
                 }
             raw_text = sample.decode("utf-8", errors="replace")
-            text = _normal(raw_text)
+            text = _normal(_html_evidence(raw_text))
             # 上游整站维护/停机通告：既不是死链也不是反爬，单独标记以便门禁
             # 沿用仍未过期的上次验证结果，而不是阻塞整条发布流水线。
             if _looks_like_maintenance(raw_text):

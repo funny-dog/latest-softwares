@@ -43,6 +43,7 @@ def merge_results(
     partials: list[dict],
     previous: dict[str, dict],
     entries: list[dict] | None = None,
+    scheduled_ids: set[str] | None = None,
 ) -> dict:
     """合并多个 partial 结果，回填缺失的软件。"""
     merged: dict[str, dict] = {}
@@ -63,9 +64,10 @@ def merge_results(
     for pid, entry in previous.items():
         if pid not in merged:
             stale = dict(entry)
-            stale["_stale"] = True
-            stale["_stale_reason"] = "not included in any sync shard"
-            stale.setdefault("last_success_at", stale.get("fetched_at"))
+            if scheduled_ids is None or pid in scheduled_ids:
+                stale["_stale"] = True
+                stale["_stale_reason"] = "not included in any sync shard"
+                stale.setdefault("last_success_at", stale.get("fetched_at"))
             merged[pid] = stale
 
     if entries is not None:
@@ -132,7 +134,18 @@ def main() -> int:
         type=Path,
         help="包含多个 partial latest.json 的目录（自动扫描 *.json）。",
     )
+    parser.add_argument("--only", default="")
+    parser.add_argument("--skip", default="")
     args = parser.parse_args()
+    entries = load_packages_config()["packages"]
+    only = {pid.strip() for pid in args.only.split(",") if pid.strip()}
+    skip = {pid.strip() for pid in args.skip.split(",") if pid.strip()}
+    configured = {entry["id"] for entry in entries}
+    if (only | skip) - configured:
+        parser.error("unknown package id in only/skip")
+    scheduled = {
+        pid for pid in configured if (not only or pid in only) and pid not in skip
+    }
 
     paths: list[Path] = []
     if args.shards_dir:
@@ -167,7 +180,7 @@ def main() -> int:
         except Exception as e:
             print(f"  无法读取旧数据 {DATA_FILE}: {e}", file=sys.stderr)
 
-    result = merge_results(partials, previous, load_packages_config()["packages"])
+    result = merge_results(partials, previous, entries, scheduled)
 
     DATA_FILE.parent.mkdir(parents=True, exist_ok=True)
     DATA_FILE.write_text(

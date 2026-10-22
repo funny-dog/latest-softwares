@@ -47,11 +47,31 @@ def render_summary(report: dict[str, Any]) -> str:
     )
     if report.get("gate_errors"):
         lines.extend(["", "Publication blocked: " + ", ".join(report["gate_errors"])])
+    if report.get("required_exemptions"):
+        lines.extend(
+            [
+                "",
+                "Restricted entries with configured exemptions (downloads stay disabled): "
+                + ", ".join(item["id"] for item in report["required_exemptions"]),
+            ]
+        )
+    coverage = report.get("coverage", {})
+    if coverage:
+        lines.extend(
+            [
+                "",
+                f"Required coverage: {coverage['required_covered']}/{coverage['required_total']}; "
+                f"unavailable assets (including cached): {coverage['unavailable_assets']}; "
+                f"stale packages: {coverage['stale_packages']}",
+            ]
+        )
 
     notable = [
         row
         for row in report.get("links", [])
-        if row.get("status")
+        if row.get("last_attempt_status")
+        or row.get("verification_status") not in {None, "verified"}
+        or row.get("status")
         in {
             "failed",
             "fixed",
@@ -62,6 +82,7 @@ def render_summary(report: dict[str, Any]) -> str:
             "deferred",
         }
     ]
+    notable.sort(key=lambda row: row.get("id") not in report.get("gate_errors", []))
     if notable:
         lines.extend(
             [
@@ -71,15 +92,32 @@ def render_summary(report: dict[str, Any]) -> str:
             ]
         )
         for row in notable:
-            note = row.get("error") or row.get("reason") or row.get("final_url") or ""
+            note = (
+                row.get("last_attempt_reason")
+                or row.get("error")
+                or row.get("reason")
+                or row.get("final_url")
+                or ""
+            )
+            status = row.get("status")
+            if status == "cached":
+                status = f"cached/{row.get('verification_status', 'unknown')}"
             lines.append(
                 "| "
                 f"`{_table_escape(row.get('id'))}` | "
                 f"`{_table_escape(row.get('platform'))}` | "
                 f"`{_table_escape(row.get('kind'))}` | "
-                f"`{_table_escape(row.get('status'))}` | "
+                f"`{_table_escape(status)}` | "
                 f"{_table_escape(row.get('url'))} | "
                 f"{_table_escape(note)} |"
+            )
+    if report.get("stale_packages"):
+        lines.extend(
+            ["", "### Stale metadata", "", "| Package | Reason |", "|---|---|"]
+        )
+        for package in report["stale_packages"]:
+            lines.append(
+                f"| `{_table_escape(package['id'])}` | {_table_escape(package['error'])} |"
             )
     return "\n".join(lines) + "\n"
 

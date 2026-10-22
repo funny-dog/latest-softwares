@@ -22,7 +22,7 @@ if __package__ in (None, ""):
 else:
     from .editions import filter_data_by_edition, VALID_EDITIONS
 
-from app_core.downloads import asset_available
+from app_core.downloads import asset_available, parse_time
 
 # 同 sync.py，Windows cp1252 默认编码会让 print 中文/emoji 崩。
 for _stream in (sys.stdout, sys.stderr):
@@ -90,7 +90,9 @@ def _latest_fetched_at(packages: list[dict]) -> str | None:
     return values[-1] if values else None
 
 
-def render_markdown(data: dict, template_file: Path) -> str:
+def render_markdown(
+    data: dict, template_file: Path, *, now: datetime | None = None
+) -> str:
     packages = data.get("packages", [])
     stats = data.get("stats", {})
     updated_at = (
@@ -109,7 +111,7 @@ def render_markdown(data: dict, template_file: Path) -> str:
         keep_trailing_newline=True,
     )
     env.filters["fmt_date"] = fmt_date
-    env.globals["asset_available"] = asset_available
+    env.globals["asset_available"] = lambda asset: asset_available(asset, now)
 
     tmpl = env.get_template(template_file.name)
     return tmpl.render(
@@ -128,7 +130,13 @@ def _render_one(
     check: bool,
 ) -> bool:
     """渲染单个模板，返回是否成功。check=True 时只校验不写入。"""
-    rendered = render_markdown(data, template_file)
+    # 一致性检查复现生成时的快照；新渲染仍按当前时间禁用过期入口。
+    snapshot_time = parse_time(
+        data.get("verified_at") or data.get("checked_at") or data.get("generated_at")
+    )
+    rendered = render_markdown(
+        data, template_file, now=snapshot_time if check else None
+    )
 
     if check:
         if not output_file.exists():

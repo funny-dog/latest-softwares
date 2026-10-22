@@ -397,6 +397,8 @@ def test_maintenance_page_does_not_resurrect_expired_verification(
     # 历史里的成功记录同样超出 7 天，确保自愈逻辑不会把它救回来
     entry["last_success_at"] = expired
     entry["history"] = [{**h, "at": expired} for h in entry.get("history", [])]
+    for proof in entry["successes"].values():
+        proof["valid_until"] = expired
     state_path.write_text(json.dumps(state))
     data = json.loads(path.read_text())
     data["packages"][0]["assets"][0]["verification"]["valid_until"] = expired
@@ -616,101 +618,191 @@ def test_exception_requires_reason_gate_and_known_required_id(tmp_path, monkeypa
         )
 
 
-def _write_polluted_state(tmp_path, *, history, last_success):
-    """构造已被旧版本污染的 link-state：失败记录替代了原验证结果。"""
-    url = "https://example.test/old-win-x64.exe"
-    config = {
-        "id": "example",
-        "name": "Example",
-        "fetcher": "package_manifest",
-        "args": {
-            "provider": "brew",
-            "package": "example",
-            "platforms": [{"platform": "win-x64"}],
-        },
-    }
-    fingerprint = validate_links._config_fingerprint(
-        config, {"platform": "win-x64", "url": url}
-    )
-    (tmp_path / "link-state.json").write_text(
-        json.dumps(
-            {
-                "schema_version": 1,
-                "assets": {
-                    "example:win-x64": {
-                        "fingerprint": fingerprint,
-                        "verification": {
-                            "status": "failed",
-                            "checked_at": "2026-10-21T17:00:00+00:00",
-                            "reason": "expected installer",
-                        },
-                        "failures": 1,
-                        "next_check_at": "2026-10-21T19:00:00+00:00",
-                        "last_success_at": last_success,
-                        "history": history,
-                    }
-                },
-            }
-        )
-    )
-
-
 @pytest.mark.parametrize(
-    "history,last_success,status,expected",
+    "change,expected",
     [
-        # 历史里有同 URL 的成功记录 + 本轮是临时故障 → 自愈放行
-        ("recent", "recent", "transient", 0),
-        # 本轮是真失效（404）→ 不放行
-        ("recent", "recent", "failed", 1),
-        # 没有任何成功记录 → 不放行
-        ([], None, "transient", 1),
-        # 最近成功已超出 7 天 → 不放行
-        ([], "stale", "transient", 1),
-        # 成功记录是别的 URL → 不放行
-        ("other_url", None, "transient", 1),
+        ("same", 0),
+        ("url", 1),
+        ("config", 1),
+        ("policy", 1),
+        ("expired", 1),
+        ("timestamps_only", 1),
+        ("saved_proof", 0),
     ],
 )
-def test_polluted_state_self_heals_only_for_transient_failures(
-    tmp_path, monkeypatch, history, last_success, status, expected
+def test_transient_recovery_requires_complete_matching_evidence(
+    tmp_path, monkeypatch, change, expected
 ):
-    """缓存被旧版本写成 failed 后，只允许凭历史成功记录为临时故障自愈。"""
-    _, config = _setup_validation(tmp_path, monkeypatch)
-    now = datetime.now(timezone.utc)
-    recent = (now - timedelta(hours=3)).isoformat(timespec="seconds")
-    if history == "recent":
-        history = [
-            {
-                "at": recent,
-                "url": "https://example.test/old-win-x64.exe",
-                "status": "verified",
-                "reason": None,
-            }
-        ]
-    elif history == "other_url":
-        history = [
-            {
-                "at": recent,
-                "url": "https://example.test/old-win-mac.dmg",
-                "status": "verified",
-                "reason": None,
-            }
-        ]
-    if last_success == "recent":
-        last_success = recent
-    elif last_success == "stale":
-        last_success = (now - timedelta(days=8)).isoformat(timespec="seconds")
-    _write_polluted_state(tmp_path, history=history, last_success=last_success)
-
+    path, config = _setup_validation(tmp_path, monkeypatch)
+    monkeypatch.setattr(validate_links, "verify_link", lambda *a, **kw: _verified())
     monkeypatch.setattr(validate_links, "_refetch_package", lambda c: None)
+    assert validate_links.validate_and_fix(gate=True) == 0
+    data = json.loads(path.read_text())
+    asset = data["packages"][0]["assets"][0]
+    original_expiry = asset["verification"]["valid_until"]
+    state_path = tmp_path / "link-state.json"
+    state = json.loads(state_path.read_text())
+    old = state["assets"]["example:win-x64"]
+    if change == "url":
+        asset["url"] = "https://example.test/never-verified.exe"
+    elif change == "config":
+        config["verification"] = {"identity_terms": ["Different Product"]}
+    elif change == "policy":
+        monkeypatch.setattr(validate_links, "VERIFICATION_POLICY_VERSION", 999)
+    elif change == "expired":
+        expired = (datetime.now(timezone.utc) - timedelta(seconds=1)).isoformat()
+        old["verification"]["valid_until"] = expired
+        asset["verification"]["valid_until"] = expired
+        for proof in old["successes"].values():
+            proof["valid_until"] = expired
+    elif change in {"timestamps_only", "saved_proof"}:
+        old["verification"] = {"status": "unverified"}
+        asset.pop("verification")
+        if change == "timestamps_only":
+            old.pop("successes")
+    path.write_text(json.dumps(data))
+    state_path.write_text(json.dumps(state))
     monkeypatch.setattr(
         validate_links,
         "verify_link",
-        lambda a, c, **kw: {
-            "status": status,
-            "reason": (
-                "upstream maintenance page" if status == "transient" else "HTTP 404"
-            ),
-            "checked_at": now.isoformat(timespec="seconds"),
+        lambda *a, **kw: {
+            "status": "transient",
+            "reason": "HTTP 502",
+            "checked_at": datetime.now(timezone.utc).isoformat(),
         },
     )
     assert validate_links.validate_and_fix(gate=True, force=True) == expected
+    result = json.loads(path.read_text())["packages"][0]["assets"][0]["verification"]
+    if expected == 0:
+        assert result["valid_until"] == original_expiry
+        assert result["last_attempt_reason"] == "HTTP 502"
+    else:
+        assert result["status"] == "transient"
+
+
+def test_confirmed_dead_link_cannot_be_restored_from_old_snapshot(
+    tmp_path, monkeypatch
+):
+    path, _ = _setup_validation(tmp_path, monkeypatch)
+    monkeypatch.setattr(validate_links, "verify_link", lambda *a, **kw: _verified())
+    monkeypatch.setattr(validate_links, "_refetch_package", lambda c: None)
+    assert validate_links.validate_and_fix(gate=True) == 0
+    snapshot = path.read_text()
+    monkeypatch.setattr(
+        validate_links,
+        "verify_link",
+        lambda *a, **kw: {
+            "status": "failed",
+            "reason": "HTTP 404",
+            "checked_at": datetime.now(timezone.utc).isoformat(),
+        },
+    )
+    assert validate_links.validate_and_fix(gate=True, force=True) == 1
+    path.write_text(snapshot)
+    monkeypatch.setattr(
+        validate_links,
+        "verify_link",
+        lambda *a, **kw: {
+            "status": "transient",
+            "reason": "HTTP 502",
+            "checked_at": datetime.now(timezone.utc).isoformat(),
+        },
+    )
+    assert validate_links.validate_and_fix(gate=True, force=True) == 1
+
+
+def test_fallback_keeps_success_evidence_for_original_url(tmp_path, monkeypatch):
+    path, config = _setup_validation(tmp_path, monkeypatch)
+    config["homepage"] = "https://example.test/download"
+    monkeypatch.setattr(validate_links, "verify_link", lambda *a, **kw: _verified())
+    monkeypatch.setattr(validate_links, "_refetch_package", lambda c: None)
+    assert validate_links.validate_and_fix(gate=True) == 0
+    snapshot = path.read_text()
+    original = json.loads(snapshot)["packages"][0]["assets"][0]
+    monkeypatch.setattr(
+        validate_links,
+        "verify_link",
+        lambda asset, *a, **kw: (
+            _verified()
+            if asset["url"] == config["homepage"]
+            else {
+                "status": "restricted",
+                "reason": "HTTP 403",
+                "checked_at": datetime.now(timezone.utc).isoformat(),
+            }
+        ),
+    )
+    assert validate_links.validate_and_fix(gate=True, force=True) == 0
+    state = json.loads((tmp_path / "link-state.json").read_text())["assets"][
+        "example:win-x64"
+    ]
+    assert len(state["successes"]) == 2
+    path.write_text(snapshot)
+    monkeypatch.setattr(
+        validate_links,
+        "verify_link",
+        lambda *a, **kw: {
+            "status": "transient",
+            "reason": "HTTP 502",
+            "checked_at": datetime.now(timezone.utc).isoformat(),
+        },
+    )
+    assert validate_links.validate_and_fix(gate=True, force=True) == 0
+    asset = json.loads(path.read_text())["packages"][0]["assets"][0]
+    assert asset["url"] == original["url"]
+    assert (
+        asset["verification"]["valid_until"] == original["verification"]["valid_until"]
+    )
+
+
+def test_summary_includes_cached_failures_and_blockers_first():
+    report = {
+        "gate_errors": ["critical"],
+        "coverage": {
+            "required_total": 2,
+            "required_covered": 1,
+            "unavailable_assets": 2,
+            "stale_packages": 1,
+        },
+        "links": [
+            {
+                "id": "other",
+                "platform": "win-x64",
+                "status": "failed",
+                "reason": "HTTP 404",
+            },
+            {
+                "id": "critical",
+                "platform": "win-x64",
+                "status": "cached",
+                "verification_status": "unverified",
+                "reason": "identity missing",
+            },
+        ],
+    }
+    summary = link_health_summary.render_summary(report)
+    assert "unavailable assets (including cached): 2" in summary
+    assert "cached/unverified" in summary
+    assert summary.index("`critical`") < summary.index("`other`")
+
+
+@pytest.mark.parametrize("required,calls_expected", [(True, 2), (False, 1)])
+def test_gate_rechecks_failed_required_assets_without_waiting_for_backoff(
+    tmp_path, monkeypatch, required, calls_expected
+):
+    _setup_validation(tmp_path, monkeypatch, required=required)
+    calls = []
+    monkeypatch.setattr(validate_links, "_refetch_package", lambda c: None)
+
+    def verify(*a, **kw):
+        calls.append(1)
+        return (
+            {"status": "failed", "reason": "HTTP 404"}
+            if len(calls) == 1
+            else _verified()
+        )
+
+    monkeypatch.setattr(validate_links, "verify_link", verify)
+    validate_links.validate_and_fix(gate=True)
+    assert validate_links.validate_and_fix(gate=True) == 0
+    assert len(calls) == calls_expected

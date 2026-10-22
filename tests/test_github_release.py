@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 from scripts.fetchers import github_release
+import pytest
 
 
 def test_tag_pattern_scans_configured_release_pages(monkeypatch):
@@ -151,3 +152,27 @@ def test_ambiguous_asset_pattern_is_rejected(monkeypatch):
                 "assets": [{"platform": "win-x64", "pattern": "*.exe"}],
             }
         )
+
+
+@pytest.mark.parametrize("version", ["4.15", "10.123.456"])
+def test_release_version_pattern_excludes_other_variants(monkeypatch, version):
+    names = [f"app-{version}.exe", f"app-{version}p.exe", f"app-{version}-arm64.exe"]
+    monkeypatch.setattr(
+        github_release,
+        "_pick_release",
+        lambda *a: {
+            "tag_name": f"v{version}",
+            "assets": [
+                {"name": name, "browser_download_url": f"https://example.test/{name}"}
+                for name in names
+            ],
+        },
+    )
+    result = github_release.fetch(
+        {
+            "repo": "owner/app",
+            "assets": [{"platform": "win-x64", "pattern": "app-{version}.exe"}],
+        }
+    )
+    assert result.version == version
+    assert [asset.filename for asset in result.assets] == [names[0]]

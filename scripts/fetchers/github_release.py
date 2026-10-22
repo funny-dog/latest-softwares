@@ -89,7 +89,7 @@ def fetch(args: dict[str, Any]) -> FetchResult:
     warnings: list[str] = []
     for spec in asset_specs:
         platform = spec["platform"]
-        pattern = spec["pattern"]
+        pattern = spec["pattern"].replace("{version}", version)
         hits = [a for a in release_assets if fnmatch.fnmatchcase(a["name"], pattern)]
         if len(hits) > 1:
             raise FetchError(

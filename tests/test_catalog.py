@@ -36,6 +36,21 @@ def test_merge_follows_current_catalog_and_recovers_new_missing_entries():
     assert record["assets"][0]["verification"]["status"] == "unverified"
 
 
+def test_targeted_merge_only_marks_missing_scheduled_packages_stale():
+    previous = {
+        pid: {"id": pid, "version": "1.0"} for pid in ("updated", "skipped", "missing")
+    }
+    result = merge_results(
+        [{"packages": [previous["updated"]]}],
+        previous,
+        scheduled_ids={"updated", "missing"},
+    )
+    records = {p["id"]: p for p in result["packages"]}
+    assert records["skipped"] == previous["skipped"]
+    assert records["missing"]["_stale"]
+    assert result["stats"]["failed_ids"] == ["missing"]
+
+
 def test_coverage_reports_catalog_data_platform_and_verification_gaps():
     now = datetime.now(timezone.utc)
     baseline = {

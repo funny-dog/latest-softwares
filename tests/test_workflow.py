@@ -71,7 +71,7 @@ def test_publication_uses_only_validated_data_and_both_editions():
 
     jobs = yaml.safe_load(WORKFLOW.read_text(encoding="utf-8"))["jobs"]
     assert jobs["link-check"]["needs"] == "sync-merge"
-    assert jobs["publish"]["needs"] == "link-check"
+    assert set(jobs["publish"]["needs"]) == {"link-check", "pr-checks"}
     assert "python scripts/validate_links.py --gate" in str(jobs["link-check"])
     assert "candidate-data" in str(jobs["sync-merge"])
     assert "validated-data" in str(jobs["link-check"])
@@ -79,6 +79,35 @@ def test_publication_uses_only_validated_data_and_both_editions():
     assert "dist-cn" in str(jobs["publish"]) and "dist-intl" in str(jobs["publish"])
     assert "Commit verified snapshot" in str(jobs["publish"])
     assert "git-auto-commit" not in str(jobs["sync-merge"])
+
+
+def test_push_checks_block_publication_and_scheduled_runs_can_skip_them():
+    import yaml
+
+    jobs = yaml.safe_load(WORKFLOW.read_text())["jobs"]
+    assert jobs["pr-checks"]["if"] == "github.event_name != 'schedule'"
+    condition = jobs["publish"]["if"]
+    assert "needs.link-check.result == 'success'" in condition
+    assert "needs.pr-checks.result == 'success'" in condition
+    assert "github.event_name == 'schedule'" in condition
+    assert "needs.pr-checks.result == 'skipped'" in condition
+    merge = str(jobs["sync-merge"])
+    assert '--only "$SYNC_ONLY" --skip "$SYNC_SKIP"' in merge
+
+
+def test_metrics_workflow_checks_publication_age_even_when_metrics_fail():
+    import yaml
+
+    jobs = yaml.safe_load(Path(".github/workflows/sync-metrics.yml").read_text())[
+        "jobs"
+    ]
+    step = next(
+        s
+        for s in jobs["sync-metrics"]["steps"]
+        if s.get("name") == "Check publication freshness"
+    )
+    assert "check_publication_health.py --max-age-hours 24" in step["run"]
+    assert "!cancelled()" in step["if"]
 
 
 def test_deploys_pin_artifacts_to_same_successful_run():

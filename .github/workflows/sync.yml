@@ -80,10 +80,10 @@ concurrency:
 
 jobs:
   # ==========================================================================
-  # Job 0: PR 轻量检查 —— 仅 PR 触发
+  # Job 0: 代码检查 —— PR / push / 人工运行，定时同步复用已检查的源码
   # ==========================================================================
   pr-checks:
-    if: github.event_name == 'pull_request'
+    if: github.event_name != 'schedule'
     runs-on: ubuntu-latest
     timeout-minutes: 10
 
@@ -271,7 +271,10 @@ jobs:
           path: /tmp/shards
 
       - name: Merge shard results
-        run: python scripts/merge_results.py --shards-dir /tmp/shards
+        env:
+          SYNC_ONLY: ${{ inputs.only }}
+          SYNC_SKIP: ${{ inputs.skip }}
+        run: python scripts/merge_results.py --shards-dir /tmp/shards --only "$SYNC_ONLY" --skip "$SYNC_SKIP"
 
       - name: Re-validate latest.json schema
         run: python -m pytest tests/test_latest_json_schema.py -q
@@ -369,7 +372,11 @@ jobs:
           retention-days: 30
 
   publish:
-    needs: link-check
+    needs: [link-check, pr-checks]
+    if: >-
+      !cancelled() && needs.link-check.result == 'success' &&
+      (needs.pr-checks.result == 'success' ||
+       (github.event_name == 'schedule' && needs.pr-checks.result == 'skipped'))
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:

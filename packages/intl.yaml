@@ -52,7 +52,7 @@ packages:
     repo: pbatard/rufus
     assets:
     - platform: win-x64
-      pattern: rufus-*.exe
+      pattern: rufus-{version}.exe
   desc_cn: USB 启动盘制作工具，快速创建可引导 USB
   desc_en: USB bootable drive creator for quickly making bootable USB drives
 - id: ventoy
@@ -94,7 +94,7 @@ packages:
     repo: ShareX/ShareX
     assets:
     - platform: win-x64
-      pattern: ShareX-*-setup.exe
+      pattern: ShareX-*-setup-x64.exe
   desc_cn: Windows 截图和屏幕录制工具，功能全面的免费工具
   desc_en: Windows screenshot and screen recording tool, feature-rich and free
 - id: handbrake
@@ -290,7 +290,7 @@ packages:
     repo: transmission/transmission
     assets:
     - platform: win-x64
-      pattern: transmission-*-x64.msi
+      pattern: transmission-{version}-x64.msi
   desc_cn: 轻量级 BitTorrent 客户端，简洁高效
   desc_en: Lightweight BitTorrent client, simple and efficient
 - id: nvm-windows
@@ -304,7 +304,7 @@ packages:
     repo: coreybutler/nvm-windows
     assets:
     - platform: win-x64
-      pattern: nvm-setup.exe
+      pattern: nvm-*-x64-setup.exe
   desc_cn: Windows 版 Node.js 版本管理器，轻松切换 Node 版本
   desc_en: Node.js version manager for Windows, easily switch between Node versions
 - id: nssm
@@ -551,7 +551,7 @@ packages:
     - platform: mac-universal
       pattern: Obsidian-*.dmg
     - platform: linux-x64
-      pattern: Obsidian-*.AppImage
+      pattern: Obsidian-{version}.AppImage
   desc_cn: 知识管理和笔记工具，基于双向链接构建个人知识库
   desc_en: Knowledge management and note-taking with bidirectional links for personal
     knowledge base
@@ -698,11 +698,11 @@ packages:
     repo: LizardByte/Sunshine
     assets:
     - platform: win-x64
-      pattern: Sunshine-Windows-AMD64-installer.exe
+      pattern: Sunshine-Windows-AMD64-installer.msi
     - platform: win-x64-portable
-      pattern: Sunshine-Windows-AMD64-portable.zip
+      pattern: Sunshine-Windows-AMD64-lite.zip
     - platform: linux-x64
-      pattern: sunshine-ubuntu-24.04-amd64.deb
+      pattern: sunshine_*ubuntu24.04_amd64.deb
   desc_cn: 自托管的游戏串流服务器，Moonlight 的服务端
   desc_en: Self-hosted game streaming server, server-side for Moonlight
 - id: heroic
@@ -1116,20 +1116,17 @@ packages:
   category: Developer Tools
   editions:
   - intl
-  homepage: https://clementtsang.github.io/bottom/installation/
-  fetcher: download_page
+  homepage: https://github.com/ClementTsang/bottom
+  fetcher: github_release
   args:
-    source: Official project download page; no stable public release asset API
-    platforms:
+    repo: ClementTsang/bottom
+    assets:
     - platform: win-x64
-      download_url: https://clementtsang.github.io/bottom/installation/
-      link_kind: landing_page
+      pattern: bottom_x86_64_installer.msi
     - platform: mac-arm64
-      download_url: https://clementtsang.github.io/bottom/installation/
-      link_kind: landing_page
+      pattern: bottom_aarch64-apple-darwin.tar.gz
     - platform: linux-x64
-      download_url: https://clementtsang.github.io/bottom/installation/
-      link_kind: landing_page
+      pattern: bottom_x86_64-unknown-linux-gnu.tar.gz
   desc_cn: 跨平台终端系统监控工具，支持多种图表
   desc_en: Cross-platform terminal system monitor with multiple visualization widgets
 - id: btop
@@ -1258,11 +1255,11 @@ packages:
     repo: Wilfred/difftastic
     assets:
     - platform: win-x64
-      pattern: difft-x86_64-pc-windows-msvc.zip
+      pattern: difft-*-x86_64-pc-windows-msvc.zip
     - platform: mac-arm64
-      pattern: difft-aarch64-apple-darwin.tar.gz
+      pattern: difft-*-aarch64-apple-darwin.tar.gz
     - platform: linux-x64
-      pattern: difft-x86_64-unknown-linux-gnu.tar.gz
+      pattern: difft-*-x86_64-unknown-linux-gnu.tar.gz
   desc_cn: 基于语法树的结构化 diff 工具，理解代码语义
   desc_en: Structural diff tool based on syntax trees that understands code semantics
 - id: gitui
@@ -2017,7 +2014,7 @@ packages:
     repo: d2phap/ImageGlass
     assets:
     - platform: win-x64
-      pattern: ImageGlass_*_x64.msi
+      pattern: ImageGlass_*_win-x64.msi
   desc_cn: 轻量级图片查看器，支持多种格式快速浏览
   desc_en: Lightweight image viewer with fast multi-format browsing
 - id: nomacs
@@ -2755,7 +2752,7 @@ packages:
     repo: GloriousEggroll/proton-ge-custom
     assets:
     - platform: linux-x64
-      pattern: GE-Proton*.tar.gz
+      pattern: GE-Proton*-x86_64.tar.gz
   desc_cn: 社区维护的 Proton 构建版，兼容更多 Windows 游戏
   desc_en: Community-maintained Proton build with better Windows game compatibility
 - id: bottles
@@ -2805,11 +2802,11 @@ packages:
     repo: xemu-project/xemu
     assets:
     - platform: win-x64
-      pattern: xemu-win-*-zip.zip
-    - platform: mac-arm64
-      pattern: xemu-macos-*-arm64.tar.gz
+      pattern: xemu-*[0-9]-windows-x86_64.zip
+    - platform: mac-universal
+      pattern: xemu-[0-9]*-macos-universal.zip
     - platform: linux-x64
-      pattern: xemu-*-x86_64.AppImage
+      pattern: xemu-*[0-9]-x86_64.AppImage
   desc_cn: 原始 Xbox 模拟器，基于 x86 硬件模拟
   desc_en: Original Xbox emulator based on x86 hardware emulation
 - id: mgba
@@ -2857,11 +2854,11 @@ packages:
     repo: OpenMW/openmw
     assets:
     - platform: win-x64
-      pattern: OpenMW-*-win64.exe
+      pattern: OpenMW-*-Windows-x64.exe
     - platform: mac-arm64
-      pattern: OpenMW-*-macos-arm64.dmg
+      pattern: OpenMW-*-macOS-arm64.dmg
     - platform: linux-x64
-      pattern: OpenMW-*-Linux-generic64.tar.gz
+      pattern: openmw-*-Linux-64Bit.tar.gz
   desc_cn: 开源的 Morrowind 引擎重制版，支持现代系统
   desc_en: Open-source Morrowind engine reimplementation for modern systems
 - id: dosbox-staging
@@ -3169,16 +3166,16 @@ packages:
   category: Media Players
   editions:
   - intl
-  homepage: https://ardour.org/download/
+  homepage: https://ardour.org/download.html
   fetcher: download_page
   args:
     source: Official project download page; no stable public release asset API
     platforms:
     - platform: win-x64
-      download_url: https://ardour.org/download/
+      download_url: https://ardour.org/download.html
       link_kind: landing_page
     - platform: mac-arm64
-      download_url: https://ardour.org/download/
+      download_url: https://ardour.org/download.html
       link_kind: landing_page
   desc_cn: 开源数字音频工作站，多轨录音和混音
   desc_en: Open-source digital audio workstation for multi-track recording and mixing
@@ -4057,20 +4054,17 @@ packages:
   category: Developer Tools
   editions:
   - intl
-  homepage: https://dbrgn.github.io/tealdeer/installing.html
-  fetcher: download_page
+  homepage: https://github.com/dbrgn/tealdeer
+  fetcher: github_release
   args:
-    source: Official project download page; no stable public release asset API
-    platforms:
+    repo: dbrgn/tealdeer
+    assets:
     - platform: win-x64
-      download_url: https://dbrgn.github.io/tealdeer/installing.html
-      link_kind: landing_page
+      pattern: tealdeer-windows-x86_64-msvc.exe
     - platform: mac-arm64
-      download_url: https://dbrgn.github.io/tealdeer/installing.html
-      link_kind: landing_page
+      pattern: tealdeer-macos-aarch64
     - platform: linux-x64
-      download_url: https://dbrgn.github.io/tealdeer/installing.html
-      link_kind: landing_page
+      pattern: tealdeer-linux-x86_64-musl
   desc_cn: tldr 的快速 Rust 实现，命令速查客户端
   desc_en: Fast Rust implementation of tldr, command cheatsheet client
 - id: erdtree
@@ -4116,20 +4110,19 @@ packages:
   desc_cn: 终端文件管理器，模糊搜索和树状浏览
   desc_en: Terminal file manager with fuzzy search and tree browsing
 - id: navi-cli
-  name: mc
+  name: navi
   category: Developer Tools
   editions:
   - intl
-  homepage: https://github.com/midnight-commander/mc
-  fetcher: download_page
+  homepage: https://github.com/denisidoro/navi
+  fetcher: github_release
   args:
-    source: Official project download page; no stable public release asset API
-    platforms:
+    repo: denisidoro/navi
+    assets:
     - platform: win-x64
-      download_url: https://github.com/midnight-commander/mc/releases
-      link_kind: landing_page
-  desc_cn: Midnight Commander 风格的终端文件管理器
-  desc_en: Midnight Commander-style terminal file manager
+      pattern: navi-*-x86_64-pc-windows-*.zip
+  desc_cn: 终端交互式命令行备忘单工具
+  desc_en: Interactive cheatsheet tool for the command-line
 - id: xcp
   name: xcp
   category: Developer Tools
@@ -4680,16 +4673,16 @@ packages:
   homepage: https://www.docker.com/products/docker-desktop/
   fetcher: download_page
   args:
-    source: Official Docker Desktop download page; no public version API
+    source: Official Docker Desktop installation documentation
     platforms:
     - platform: win-x64
-      download_url: https://www.docker.com/products/docker-desktop/
+      download_url: https://docs.docker.com/desktop/setup/install/windows-install/
       link_kind: landing_page
     - platform: mac-universal
-      download_url: https://www.docker.com/products/docker-desktop/
+      download_url: https://docs.docker.com/desktop/setup/install/mac-install/
       link_kind: landing_page
     - platform: linux-x64
-      download_url: https://www.docker.com/products/docker-desktop/
+      download_url: https://docs.docker.com/desktop/setup/install/linux/
       link_kind: landing_page
   desc_cn: Docker 容器桌面应用，一站式构建和管理容器
   desc_en: Docker container desktop app for building and managing containers in one

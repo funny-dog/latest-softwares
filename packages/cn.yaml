@@ -55,12 +55,14 @@ packages:
   editions:
   - cn
   homepage: https://github.com/sub-store-org/Sub-Store
-  fetcher: github_release
+  fetcher: download_page
   args:
-    repo: sub-store-org/Sub-Store
-    assets:
+    source: Official Sub-Store project page; deployed via script or container
+    homepage: https://github.com/sub-store-org/Sub-Store
+    platforms:
     - platform: linux-x64
-      pattern: Sub-Store-*
+      download_url: https://github.com/sub-store-org/Sub-Store
+      link_kind: landing_page
   desc_cn: 高级订阅管理器，支持 QX/Loon/Surge/Shadowrocket 等
   desc_en: Advanced subscription manager for QX, Loon, Surge, Shadowrocket
 - id: frp
@@ -132,13 +134,13 @@ packages:
     repo: qishibo/AnotherRedisDesktopManager
     assets:
     - platform: win-x64
-      pattern: Another-Redis-Desktop-Manager-*-win-x64-installer.exe
+      pattern: Another-Redis-Desktop-Manager-win-*-x64.exe
     - platform: mac-arm64
-      pattern: Another-Redis-Desktop-Manager-*-mac-arm64.dmg
+      pattern: Another-Redis-Desktop-Manager-mac-*-arm64.dmg
     - platform: mac-x64
-      pattern: Another-Redis-Desktop-Manager-*-mac-x64.dmg
+      pattern: Another-Redis-Desktop-Manager-mac-*-x64.dmg
     - platform: linux-x64
-      pattern: Another-Redis-Desktop-Manager-*-linux-x86_64.AppImage
+      pattern: Another-Redis-Desktop-Manager-linux-*-x86_64.AppImage
   desc_cn: 更快更好的 Redis 桌面管理器
   desc_en: Faster, better and more stable Redis desktop manager
 - id: tiny-rdm
@@ -172,7 +174,7 @@ packages:
     repo: ClickHouse/ClickHouse
     assets:
     - platform: linux-x64
-      pattern: clickhouse-common-static-*-amd64.tgz
+      pattern: clickhouse-common-static-[0-9]*-amd64.tgz
   desc_cn: 高性能列式 OLAP 数据库，适用于实时分析
   desc_en: High-performance columnar OLAP database for real-time analytics
 - id: bruno
@@ -239,12 +241,14 @@ packages:
   editions:
   - cn
   homepage: https://github.com/dani-garcia/vaultwarden
-  fetcher: github_release
+  fetcher: download_page
   args:
-    repo: dani-garcia/vaultwarden
-    assets:
+    source: Official Vaultwarden project page; deployed as container
+    homepage: https://github.com/dani-garcia/vaultwarden
+    platforms:
     - platform: linux-x64
-      pattern: vaultwarden-*-x86_64-*.tar.gz
+      download_url: https://github.com/dani-garcia/vaultwarden
+      link_kind: landing_page
   desc_cn: Bitwarden 兼容的自托管密码管理服务器
   desc_en: Unofficial Bitwarden compatible self-hosted password manager
 - id: prometheus
@@ -258,11 +262,11 @@ packages:
     repo: prometheus/prometheus
     assets:
     - platform: linux-x64
-      pattern: prometheus-*-linux-amd64.tar.gz
+      pattern: prometheus-*.linux-amd64.tar.gz
     - platform: mac-arm64
-      pattern: prometheus-*-darwin-arm64.tar.gz
+      pattern: prometheus-*.darwin-arm64.tar.gz
     - platform: mac-x64
-      pattern: prometheus-*-darwin-amd64.tar.gz
+      pattern: prometheus-*.darwin-amd64.tar.gz
   desc_cn: 开源监控和告警系统
   desc_en: Open-source monitoring and alerting system
 - id: n8n
@@ -271,12 +275,14 @@ packages:
   editions:
   - cn
   homepage: https://n8n.io
-  fetcher: github_release
+  fetcher: download_page
   args:
-    repo: n8n-io/n8n
-    assets:
+    source: Official n8n project page; deployed via npm or docker
+    homepage: https://n8n.io
+    platforms:
     - platform: linux-x64
-      pattern: n8n-*-linux-x64.tar.gz
+      download_url: https://n8n.io
+      link_kind: landing_page
   desc_cn: 开源工作流自动化平台，支持 400+ 集成
   desc_en: Open-source workflow automation platform with 400+ integrations
 - id: appsmith
@@ -285,12 +291,14 @@ packages:
   editions:
   - cn
   homepage: https://github.com/appsmithorg/appsmith
-  fetcher: github_release
+  fetcher: download_page
   args:
-    repo: appsmithorg/appsmith
-    assets:
+    source: Official Appsmith project page; deployed as container
+    homepage: https://github.com/appsmithorg/appsmith
+    platforms:
     - platform: linux-x64
-      pattern: appsmith-server-*.jar
+      download_url: https://github.com/appsmithorg/appsmith
+      link_kind: landing_page
   desc_cn: 开源低代码内部工具构建平台
   desc_en: Open-source low-code platform for building internal tools
 - id: nocodb
@@ -299,12 +307,14 @@ packages:
   editions:
   - cn
   homepage: https://github.com/nocodb/nocodb
-  fetcher: github_release
+  fetcher: download_page
   args:
-    repo: nocodb/nocodb
-    assets:
+    source: Official NocoDB project page; deployed via npm or docker
+    homepage: https://github.com/nocodb/nocodb
+    platforms:
     - platform: linux-x64
-      pattern: NocoDB-*.AppImage
+      download_url: https://github.com/nocodb/nocodb
+      link_kind: landing_page
   desc_cn: 开源 Airtable 替代品，将数据库转为智能表格
   desc_en: Open-source Airtable alternative, turns any database into smart spreadsheet
 # 暂时下线：上游 GitHub 组织 lobehub 突发 404（疑似被封禁/挂起），待恢复后再启用
@@ -331,19 +341,24 @@ packages:
   category: AI Tools
   editions:
   - cn
-  homepage: https://github.com/chatboxai/chatbox
-  fetcher: github_release
+  homepage: https://chatboxai.app/
+  fetcher: download_page
   args:
-    repo: chatboxai/chatbox
-    assets:
+    source: Official Chatbox download page
+    homepage: https://chatboxai.app/
+    platforms:
     - platform: win-x64
-      pattern: Chatbox-*-Setup.exe
+      download_url: https://chatboxai.app/
+      link_kind: landing_page
     - platform: mac-arm64
-      pattern: Chatbox-*-arm64.dmg
+      download_url: https://chatboxai.app/
+      link_kind: landing_page
     - platform: mac-x64
-      pattern: Chatbox-*-x64.dmg
+      download_url: https://chatboxai.app/
+      link_kind: landing_page
     - platform: linux-x64
-      pattern: Chatbox-*-x86_64.AppImage
+      download_url: https://chatboxai.app/
+      link_kind: landing_page
   desc_cn: 跨平台 AI 桌面客户端，支持 OpenAI/Claude/本地模型
   desc_en: Cross-platform AI desktop client supporting OpenAI/Claude/local models
 - id: gitea
@@ -393,9 +408,9 @@ packages:
     - platform: win-x64
       pattern: PowerShell-*-win-x64.msi
     - platform: mac-arm64
-      pattern: powershell-*-osx-arm64.pkg
+      pattern: powershell-[0-9]*-osx-arm64.pkg
     - platform: mac-x64
-      pattern: powershell-*-osx-x64.pkg
+      pattern: powershell-[0-9]*-osx-x64.pkg
     - platform: linux-x64
       pattern: powershell-*-linux-x64.tar.gz
   desc_cn: 跨平台自动化和配置管理框架
@@ -1068,15 +1083,15 @@ packages:
   category: Productivity
   editions:
   - cn
-  homepage: https://mail.163.com/dashi/
+  homepage: https://dashi.163.com/
   fetcher: download_page
   args:
     platforms:
     - platform: win-x64
-      download_url: https://mail.163.com/dashi/download.htm
+      download_url: https://dashi.163.com/
       link_kind: landing_page
     - platform: mac-x64
-      download_url: https://mail.163.com/dashi/download.htm
+      download_url: https://dashi.163.com/
       link_kind: landing_page
   desc_cn: 网易邮件客户端，多邮箱聚合管理
   desc_en: NetEase email client with multi-account aggregation
