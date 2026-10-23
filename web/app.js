@@ -42,7 +42,7 @@ function app() {
         clear_filter: '清除筛选',
         direct_download: ({ platform, size }) => `直链下载 · ${platform}${size ? ` (${size})` : ''}`,
         landing_download: ({ platform }) => `跳转下载页 · ${platform}`,
-        release_notes: 'Release Notes →',
+        release_notes: '发行说明 →',
         stale: ({ reason }) => `本次抓取失败，复用上次数据${reason ? `：${reason}` : ''}`,
         warnings: ({ warnings }) => warnings.join('；'),
         footer: '由 GitHub Actions 每日同步上游官方源 · 仅记录元数据，不托管二进制',
@@ -164,6 +164,7 @@ function app() {
           'Browsers': '浏览器',
           'Cloud & DevOps': '云服务与运维',
           'Developer Tools': '开发工具',
+          'Download Tools': '下载工具',
           'Gaming': '游戏',
           'Media Players': '媒体与创作',
           'Messaging': '通讯',
@@ -409,11 +410,71 @@ function app() {
       return pkg.desc_cn || pkg.desc_en || '';
     },
 
-    // 从 homepage 提取 favicon.im 图标 URL
+    // 卡片底部的来源说明：数据层是英文开发者备注，国内版翻译成中文。
+    // 覆盖方式 = 精确映射（少数一次性文案）+ 模式匹配（批量生成的文案）。
+    sourceText(source) {
+      if (!source) return '';
+      if (this.edition !== 'cn' || !/[a-zA-Z]/.test(source)) return source;
+      const exact = {
+        'Microsoft Software Download (via Fido)': '微软官方下载（Fido）',
+        'Mozilla product-details API': 'Mozilla 产品信息 API',
+        'Node.js official dist index': 'Node.js 官方分发索引',
+        'VSCode Build Manifest': 'VSCode 构建清单',
+        'Google Version History API': 'Google 版本历史 API',
+        'Valve Client Update API': 'Valve 客户端更新 API',
+        'Ubuntu official releases index': 'Ubuntu 官方发布索引',
+        'Fedora official release directory': 'Fedora 官方发布目录',
+        'Aliyun Drive official client download configuration': '阿里云盘官方客户端下载配置',
+        'Official Kakao CDN installer (latest build)': 'Kakao 官方 CDN 安装包（最新构建）',
+        'Official Flathub listing (no release binaries on GitHub)': 'Flathub 官方页面（GitHub 无 Release 二进制）',
+        'Microsoft retired Skype downloads; official entry redirects to Teams Free': '微软已停用 Skype 下载；官方入口跳转到 Teams Free',
+        'Official Docker Desktop installation documentation': 'Docker Desktop 官方安装文档',
+        'Official latest Apple Silicon installer; macOS Tahoe or newer required': '官方 Apple Silicon 安装包（需 macOS Tahoe 及以上）',
+        'Official Microsoft Sysinternals download; suite version is not exposed as a public API': '微软 Sysinternals 官方下载（套件版本无公开 API）',
+        'GitHub project page; no public release API': 'GitHub 项目页 · 无公开 Release API',
+        'Geek Uninstaller official download page': 'Geek Uninstaller 官方下载页',
+        'voidtools official download page': 'voidtools 官方下载页',
+        'Official Chatbox download page': 'Chatbox 官方下载页',
+        'Official Sub-Store project page; deployed via script or container': 'Sub-Store 官方项目页；通过脚本或容器部署',
+        'Official Vaultwarden project page; deployed as container': 'Vaultwarden 官方项目页；以容器部署',
+        'Official n8n project page; deployed via npm or docker': 'n8n 官方项目页；通过 npm 或 Docker 部署',
+        'Official Appsmith project page; deployed as container': 'Appsmith 官方项目页；以容器部署',
+        'Official NocoDB project page; deployed via npm or docker': 'NocoDB 官方项目页；通过 npm 或 Docker 部署',
+      };
+      if (exact[source]) return exact[source];
+      const patterns = [
+        [/^Official (.+?) download page; no public version API$/, '$1 官方下载页 · 无公开版本 API'],
+        [/^Official (.+?) downloads page; no public version API$/, '$1 官方下载页 · 无公开版本 API'],
+        [/^Official (.+?) download endpoint; no public version API$/, '$1 官方下载直链 · 无公开版本 API'],
+        [/^Official (.+?) (?:installation|install) page(?:; no public version API)?$/, '$1 官方安装页'],
+        [/^Official (.+?) project page/, '$1 官方项目页'],
+        [/^Official (.+?) (?:download|installation) documentation$/, '$1 官方安装文档'],
+        [/^Official project download page; no stable public release asset API$/, '官方项目下载页 · 无稳定 Release 资产 API'],
+        [/^Official community download page; no stable public release asset API$/, '官方社区下载页 · 无稳定 Release 资产 API'],
+        [/^Official download page; no public version API$/, '官方下载页 · 无公开版本 API'],
+        [/^Official latest installer endpoint; version label is sync date$/, '官方安装包直链 · 版本取自同步日期'],
+        [/^brew manifest: (.+)$/, 'Homebrew 清单: $1'],
+        [/^scoop manifest: (.+)$/, 'Scoop 清单: $1'],
+        [/^winget manifest: (.+)$/, 'winget 清单: $1'],
+      ];
+      for (const [re, replacement] of patterns) {
+        if (re.test(source)) return source.replace(re, replacement);
+      }
+      // GitHub Release: owner/repo 等品牌名开头的信息保留原文
+      return source;
+    },
+
+    // 从 homepage 提取图标 URL；GitHub 仓库主页用 owner 头像，
+    // 避免 N 个仓库都取到同一张 github.com 站点图标（深色模式下近乎纯色块）
     faviconUrl(homepage) {
       if (!homepage) return '';
       try {
-        return `https://favicon.im/${new URL(homepage).hostname}`;
+        const url = new URL(homepage);
+        if (url.hostname === 'github.com') {
+          const owner = url.pathname.split('/').filter(Boolean)[0];
+          if (owner) return `https://github.com/${encodeURIComponent(owner)}.png?size=64`;
+        }
+        return `https://favicon.im/${url.hostname}`;
       } catch {
         return '';
       }

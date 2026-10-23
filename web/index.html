@@ -223,7 +223,7 @@
 
           <!-- Metadata -->
           <div class="mt-4 pt-3 border-t border-zinc-100 dark:border-zinc-800 flex items-center justify-between text-[11px] text-zinc-400 dark:text-zinc-500">
-            <span x-text="pkg.source" class="truncate"></span>
+            <span x-text="sourceText(pkg.source)" class="truncate"></span>
             <a
               x-show="pkg.notes_url"
               :href="pkg.notes_url"
