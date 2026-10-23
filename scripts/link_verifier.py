@@ -10,7 +10,7 @@ from urllib.parse import unquote, urljoin, urlsplit
 
 from app_core.downloads import is_http_url, parse_time, url_expiry
 from scripts.link_utils import is_direct_link
-from scripts.net import browser_headers, get
+from scripts.net import base_headers, browser_headers, get
 
 _GITHUB_HOSTS = {
     "github.com",
@@ -98,6 +98,39 @@ def _normal(value: str) -> str:
     return " ".join(re.findall(r"[\w]+", value.casefold()))
 
 
+def _fetch_check(current: str, asset: dict, url: str):
+    """GET 一个待检 URL（含一次 406 降级重试）。
+
+    gitlab.gnome.org 的 generic package API 等端点对浏览器 UA 返回 406
+    （bot 防护），但接受非浏览器 UA；先用浏览器 UA 请求，406 时换同步器
+    UA 重试一次。重试仍失败则按原逻辑处理。
+    """
+    range_headers = (
+        {"Range": "bytes=0-65535"}
+        if is_direct_link(url, asset.get("link_kind"))
+        else None
+    )
+    response = get(
+        current,
+        stream=True,
+        allow_redirects=False,
+        timeout=15,
+        retries=1,
+        headers=browser_headers(range_headers),
+    )
+    if response.status_code == 406:
+        response.close()
+        return get(
+            current,
+            stream=True,
+            allow_redirects=False,
+            timeout=15,
+            retries=1,
+            headers=base_headers(range_headers),
+        )
+    return response
+
+
 def _platform_error(filename: str, platform: str) -> str | None:
     name = filename.lower()
     expected_arch = next(
@@ -158,18 +191,7 @@ def verify_link(asset: dict, config: dict, *, now: datetime | None = None) -> di
                     "final_url": current,
                     "redirects": chain,
                 }
-            response = get(
-                current,
-                stream=True,
-                allow_redirects=False,
-                timeout=15,
-                retries=1,
-                headers=browser_headers(
-                    {"Range": "bytes=0-65535"}
-                    if is_direct_link(url, asset.get("link_kind"))
-                    else None
-                ),
-            )
+            response = _fetch_check(current, asset, url)
             chain.append(current)
             if response.status_code in {301, 302, 303, 307, 308}:
                 location = response.headers.get("Location")

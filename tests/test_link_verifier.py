@@ -298,3 +298,50 @@ def test_range_header_only_used_for_binary_downloads(monkeypatch, kind, has_rang
         65536 if has_range else link_verifier.HTML_SAMPLE_BYTES
     ]
     assert response.closed
+
+
+def test_http_406_retries_once_with_sync_user_agent(monkeypatch):
+    # gitlab.gnome.org 的 generic package API 对浏览器 UA 返回 406，
+    # 接受非浏览器 UA：第一次请求带浏览器 UA，406 后降级重试一次。
+    from scripts.net import BROWSER_USER_AGENT, USER_AGENT
+
+    calls = []
+    rejected = Response(status=406)
+    ok = Response()
+
+    def get(url, **kwargs):
+        calls.append(kwargs["headers"])
+        return rejected if len(calls) == 1 else ok
+
+    monkeypatch.setattr(link_verifier, "get", get)
+    result = link_verifier.verify_link(
+        {"url": "https://gitlab.test/api/app-x64.exe", "platform": "win-x64"},
+        CONFIG,
+        now=NOW,
+    )
+
+    assert result["status"] == "verified"
+    assert len(calls) == 2
+    assert calls[0]["User-Agent"] == BROWSER_USER_AGENT
+    assert calls[1]["User-Agent"] == USER_AGENT
+    assert rejected.closed
+
+
+def test_http_406_persists_after_retry_is_failed(monkeypatch):
+    calls = []
+    response = Response(status=406)
+
+    def get(url, **kwargs):
+        calls.append(kwargs["headers"])
+        return response
+
+    monkeypatch.setattr(link_verifier, "get", get)
+    result = link_verifier.verify_link(
+        {"url": "https://example.test/app-x64.exe", "platform": "win-x64"},
+        CONFIG,
+        now=NOW,
+    )
+
+    assert result["status"] == "failed"
+    assert result["reason"] == "HTTP 406"
+    assert len(calls) == 2
