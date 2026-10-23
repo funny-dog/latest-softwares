@@ -5,7 +5,7 @@
 > 由 GitHub Actions 每日自动同步上游官方源的**最新版本元数据**。
 > 仓库**不托管二进制安装包**，下载按钮直接跳到上游官方下载链接。
 >
-> 📅 **最后更新**：`2026-10-22 22:04:20` (UTC)　· 共 699 项软件
+> 📅 **最后更新**：`2026-10-23 05:43:55` (UTC)　· 共 699 项软件
 
 ---
 
@@ -25,7 +25,7 @@
 
 | 软件 | 最新版本 | 发布日期 | 下载链接 | 来源 |
 |------|---------|---------|---------|------|
-| [**Windows 11**](https://www.microsoft.com/software-download/windows11) | `25H2` | — | [win-x64](https://software.download.prss.microsoft.com/dbazure/Win11_25H2_Chinese_Simplified_x64_v2.iso?t=abb8309a-ae50-47ee-be92-ba434e493427&P1=1792786818&P2=602&P3=2&P4=UBnIm7UJHAuMW103U9LNIH3AtHWl%2bW8%2fgMLzM%2fIT0W2Y0i9aNijBJh45BsQohtkT9p1l8kDktIT56B1IFiplygF%2bgPQmprJMuU4Lg0vViasmopAr30Eu8sWsU87UJG3B5D49EqjtH3kTYz8V%2bjsHOrtcwWnLMOvfKj6I7wqpn9nbqu1o0h3sybqGvQMytUHFY5E4DysxyxjehlkCn2MzlDuZHrUrb8fZ0Uol%2fFJltWb3w2Bm6SQwcxGr9P7LJ5LMGgapCeS8moAIvhcSX5wAFQ3%2bI%2fUlSQ5fM8FC49zIIy6mZjkTFwMI%2f26Ks%2f5NnLZpSXlIcAnJ3Ym6DLlZY6XnRw%3d%3d) | Microsoft Software Download (via Fido) |
+| [**Windows 11**](https://www.microsoft.com/software-download/windows11) | `25H2` | — | [win-x64](https://software.download.prss.microsoft.com/dbazure/Win11_25H2_Chinese_Simplified_x64_v2.iso?t=ae2ccf53-8eb1-4719-b2d7-968d4d3d878b&P1=1792820610&P2=602&P3=2&P4=w2OusNjVGy5XONPchGHnYUc07sSfrgNvhmybeZzDK%2bsuhYEedlq4knLZ7k2BXfhzZM%2bs7fwkkj0KLBRm60CFSikWqsG9TWmnkAxf5koIkOqcm5pua2dWLE3nUKVz1sR3uUZlT3s%2fzEAW0bFw8vYPwyy9hdpD5cESa3pM8T9fr9e8hmls8RX50K6N1cbmcehKfS2EKQv2xMVsiI5YmnfihLY018VibzNviTKSV0mUfXfB1t6DP77VsNd1nGEjFUxmcJaDskGqy6cR901h7XlvCmyt%2fwnwmFBBpa1G84lORgtb%2bx%2b1bqQH0fBKFD%2fMEB0DCnPt%2fnkgix0%2fPa3inXPwRQ%3d%3d) | Microsoft Software Download (via Fido) |
 | [**Ubuntu**](https://ubuntu.com/download) | `26.10` | — | [desktop-amd64](https://releases.ubuntu.com/26.10/ubuntu-26.10-desktop-amd64.iso) · [server-amd64](https://releases.ubuntu.com/26.10/ubuntu-26.10-live-server-amd64.iso) · [wsl-amd64](https://ubuntu.com/download) | Ubuntu official releases index |
 | [**Fedora Workstation**](https://fedoraproject.org/workstation/download/) | `44` | — | [workstation-live-x86_64](https://fedoraproject.org/workstation/download/) | Fedora official release directory |
 
@@ -97,7 +97,7 @@
 | [**SwitchHosts**](https://github.com/oldj/SwitchHosts) | `5.0.3` | 2026-10-20 | [win-x64](https://github.com/oldj/SwitchHosts/releases/download/v5.0.3/SwitchHosts-5.0.3-windows-x64-setup.exe) · [mac-x64](https://github.com/oldj/SwitchHosts/releases/download/v5.0.3/SwitchHosts-5.0.3-mac-x64.dmg) | GitHub Release: oldj/SwitchHosts |
 | [**Apifox**](https://apifox.com/) | `2026-10-20` | — | win-x64（暂不可用，待核验） · mac-x64（暂不可用，待核验） | Official download page; no public version API |
 | [**Android Studio**](https://developer.android.com/studio) | `2026.2.1.8` | — | [win-x64](https://edgedl.me.gvt1.com/android/studio/ide-zips/2026.2.1.8/android-studio-rabbit1-windows.zip) | scoop manifest: extras/android-studio |
-| [**AWS CLI**](https://aws.amazon.com/cli/) | `2.38.4` | — | [win-x64](https://awscli.amazonaws.com/AWSCLIV2-2.38.4.msi) | scoop manifest: main/aws |
+| [**AWS CLI**](https://aws.amazon.com/cli/) | `2.38.5` | — | [win-x64](https://awscli.amazonaws.com/AWSCLIV2-2.38.5.msi) | scoop manifest: main/aws |
 | [**Azure CLI**](https://aka.ms/cli) | `2.91.0` | — | [win-x64](https://github.com/Azure/azure-cli/releases/download/azure-cli-2.91.0/azure-cli-2.91.0-x64.zip) | scoop manifest: main/azure-cli |
 | [**Microsoft Azure Storage Explorer**](https://azure.microsoft.com/products/storage/storage-explorer/) | `1.46.0` | — | [win-x64](https://github.com/microsoft/AzureStorageExplorer/releases/download/v1.46.0/StorageExplorer-windows-x64.exe) | winget manifest: Microsoft.Azure.StorageExplorer |
 | [**BBEdit**](https://www.barebones.com/products/bbedit/) | `16.0.3` | — | [mac](https://s3.amazonaws.com/BBSW-download/BBEdit_16.0.3.dmg) | brew manifest: bbedit |
@@ -240,7 +240,7 @@
 | [**Cursor**](https://cursor.com/downloads) | `2026-10-20` | — | [win-x64](https://cursor.com/downloads) · [mac-universal](https://cursor.com/downloads) · [linux-x64](https://cursor.com/downloads) | Official Cursor downloads page; no public version API |
 | [**JetBrains Toolbox App**](https://www.jetbrains.com/toolbox-app/) | `2026-10-20` | — | [win-x64](https://www.jetbrains.com/toolbox-app/) · [mac-universal](https://www.jetbrains.com/toolbox-app/) · [linux-x64](https://www.jetbrains.com/toolbox-app/) | Official JetBrains Toolbox download page; no public version API |
 | [**VirtualBox**](https://www.virtualbox.org/wiki/Downloads) | `2026-10-20` | — | [win-x64](https://www.virtualbox.org/wiki/Downloads) · [mac-universal](https://www.virtualbox.org/wiki/Downloads) · [linux-x64](https://www.virtualbox.org/wiki/Downloads) | Official VirtualBox downloads page; no public version API |
-| [**Visual Studio Code**](https://code.visualstudio.com) | `1.143.0` | 2026-10-20 | [win-x64](https://vscode.download.prss.microsoft.com/dbazure/download/stable/2d0b7506a36c1d6db9a466440131a8e01eab2289/VSCodeUserSetup-x64-1.143.0.exe) · [win-arm64](https://vscode.download.prss.microsoft.com/dbazure/download/stable/2d0b7506a36c1d6db9a466440131a8e01eab2289/VSCodeUserSetup-arm64-1.143.0.exe) · [mac-arm64](https://vscode.download.prss.microsoft.com/dbazure/download/stable/2d0b7506a36c1d6db9a466440131a8e01eab2289/VSCode-darwin-arm64.dmg) · [mac-x64](https://vscode.download.prss.microsoft.com/dbazure/download/stable/2d0b7506a36c1d6db9a466440131a8e01eab2289/VSCode-darwin-x64.dmg) | VSCode Build Manifest |
+| [**Visual Studio Code**](https://code.visualstudio.com) | `1.143.1` | 2026-10-22 | [win-x64](https://vscode.download.prss.microsoft.com/dbazure/download/stable/e646868227c3e3a9e3f24277c8c7220be42c0be7/VSCodeUserSetup-x64-1.143.1.exe) · [win-arm64](https://vscode.download.prss.microsoft.com/dbazure/download/stable/e646868227c3e3a9e3f24277c8c7220be42c0be7/VSCodeUserSetup-arm64-1.143.1.exe) · [mac-arm64](https://vscode.download.prss.microsoft.com/dbazure/download/stable/e646868227c3e3a9e3f24277c8c7220be42c0be7/VSCode-darwin-arm64.dmg) · [mac-x64](https://vscode.download.prss.microsoft.com/dbazure/download/stable/e646868227c3e3a9e3f24277c8c7220be42c0be7/VSCode-darwin-x64.dmg) | VSCode Build Manifest |
 | [**OpenAI Codex**](https://github.com/openai/codex) | `0.163.0` | 2026-10-15 | [win-x64](https://github.com/openai/codex/releases/download/rust-v0.163.0/codex-x86_64-pc-windows-msvc.exe) · [win-arm64](https://github.com/openai/codex/releases/download/rust-v0.163.0/codex-aarch64-pc-windows-msvc.exe) · [mac-arm64](https://github.com/openai/codex/releases/download/rust-v0.163.0/codex-aarch64-apple-darwin.dmg) · [mac-x64](https://github.com/openai/codex/releases/download/rust-v0.163.0/codex-x86_64-apple-darwin.tar.gz) | GitHub Release: openai/codex |
 | [**Git for Windows**](https://github.com/git-for-windows/git) | `2.56.0.windows.3` | 2026-10-22 | [win-x64](https://github.com/git-for-windows/git/releases/download/v2.56.0.windows.3/Git-2.56.0.3-64-bit.exe) | GitHub Release: git-for-windows/git |
 | [**Insomnia**](https://github.com/Kong/insomnia) | `13.3.1` | 2026-10-09 | [win-x64](https://github.com/Kong/insomnia/releases/download/core%4013.3.1/Insomnia.Core-13.3.1.exe) | GitHub Release: Kong/insomnia |
@@ -309,13 +309,13 @@
 | [**Advanced Renamer**](https://www.advancedrenamer.com) | `4.27` | — | [win-x64](https://www.advancedrenamer.com/down/win/advanced_renamer_portable_4_27.zip) | scoop manifest: extras/advancedrenamer |
 | [**AIDA64 Extreme**](https://www.aida64.com) | `8.40.5000` | — | [win](https://download.aida64.com/aida64extreme840.zip) | scoop manifest: extras/aida64extreme |
 | [**Alfred**](https://www.alfredapp.com/) | `5.8.1,2349` | — | [mac](https://cachefly.alfredapp.com/Alfred_5.8.1_2349.tar.gz) | brew manifest: alfred |
-| [**AltTab**](https://alt-tab.app/) | `11.9.2` | — | [mac](https://github.com/lwouis/alt-tab-macos/releases/download/v11.9.2/AltTab-11.9.2.zip) | brew manifest: alt-tab |
+| [**AltTab**](https://alt-tab.app/) | `11.10.0` | — | [mac](https://github.com/lwouis/alt-tab-macos/releases/download/v11.10.0/AltTab-11.10.0.zip) | brew manifest: alt-tab |
 | [**Apparency**](https://www.mothersruin.com/software/Apparency/) | `3.4` | — | [mac](https://www.mothersruin.com/software/archives/Apparency-3.4.dmg) | brew manifest: apparency |
 | [**FreeMacSoft AppCleaner**](https://freemacsoft.net/appcleaner/) | `3.7` | — | [mac](https://www.freemacsoft.net/downloads/AppCleaner_3.7.zip) | brew manifest: appcleaner |
 | [**Arq**](https://www.arqbackup.com/) | `7.50` | — | [mac](https://www.arqbackup.com/download/arqbackup/Arq7.50.pkg) | brew manifest: arq |
-| [**Backblaze**](https://backblaze.com/) | `10.0.3.1076` | — | [mac](https://secure.backblaze.com/api/install_backblaze?file=bzinstall-mac-10.0.3.1076.dmg) | brew manifest: backblaze |
+| [**Backblaze**](https://backblaze.com/) | `10.0.4.1082` | — | [mac](https://secure.backblaze.com/api/install_backblaze?file=bzinstall-mac-10.0.4.1082.dmg) | brew manifest: backblaze |
 | [**Bartender**](https://www.macbartender.com/) | `7.1.0` | — | [mac](https://downloads.macbartender.com/Bartender7/updates/7-1-0/Bartender%207.zip) | brew manifest: bartender |
-| [**BetterTouchTool**](https://folivora.ai/) | `6.970,2026102202` | — | [mac](https://folivora.ai/releases/btt6.970-2026102202.zip) | brew manifest: bettertouchtool |
+| [**BetterTouchTool**](https://folivora.ai/) | `6.974,2026102208` | — | [mac](https://folivora.ai/releases/btt6.974-2026102208.zip) | brew manifest: bettertouchtool |
 | [**BlockBlock**](https://objective-see.org/products/blockblock.html) | `2.5.2` | — | [mac](https://github.com/objective-see/BlockBlock/releases/download/v2.5.2/BlockBlock_2.5.2.zip) | brew manifest: blockblock |
 | [**Carbon Copy Cloner**](https://bombich.com/) | `7.2.2,8450` | — | [mac](https://files.bombich.com/ccc-7.2.2.8450.zip) | brew manifest: carbon-copy-cloner |
 | [**ChronoSync**](https://www.econtechnologies.com/) | `12.0.3` | — | [mac](https://downloads.econtechnologies.com/CS4_Download.dmg) | brew manifest: chronosync |
@@ -455,7 +455,7 @@
 | [**AnyDesk**](https://support.anydesk.com/docs/install-anydesk) | `2026-10-20` | — | [win-x64](https://support.anydesk.com/docs/install-anydesk) · [mac-universal](https://support.anydesk.com/docs/install-anydesk) · [linux-x64](https://support.anydesk.com/docs/install-anydesk) | Official AnyDesk downloads page; no public version API |
 | [**TeamViewer**](https://www.teamviewer.com/en/download/) | `2026-10-20` | — | [win-x64](https://www.teamviewer.com/en/download/) · [mac-universal](https://www.teamviewer.com/en/download/) · [linux-x64](https://www.teamviewer.com/en/download/) | Official TeamViewer download page; no public version API |
 | [**LocalSend**](https://localsend.org) | `1.18.2` | 2026-08-21 | [win-x64](https://localsend.org) · [mac-arm64](https://github.com/localsend/localsend/releases/download/v1.18.2/LocalSend-1.18.2.dmg) | GitHub Release: localsend/localsend |
-| [**Bitwarden Desktop**](https://bitwarden.com/download/) | `2026.10.0` | 2026-10-15 | [win-x64](https://github.com/bitwarden/clients/releases/download/desktop-v2026.10.0/Bitwarden-Installer-2026.10.0.exe) · [mac-universal](https://github.com/bitwarden/clients/releases/download/desktop-v2026.10.0/Bitwarden-2026.10.0-universal.dmg) | GitHub Release: bitwarden/clients |
+| [**Bitwarden Desktop**](https://bitwarden.com/download/) | `2026.10.1` | 2026-10-22 | [win-x64](https://github.com/bitwarden/clients/releases/download/desktop-v2026.10.1/Bitwarden-Installer-2026.10.1.exe) · [mac-universal](https://github.com/bitwarden/clients/releases/download/desktop-v2026.10.1/Bitwarden-2026.10.1-universal.dmg) | GitHub Release: bitwarden/clients |
 | [**Geek Uninstaller**](https://geekuninstaller.com/) | `1.6.0.200` | — | [win-x64](https://geekuninstaller.com/download) | Geek Uninstaller official download page |
 | [**Everything**](https://www.voidtools.com/) | `1.4.1.1032` | — | [win-x64](https://www.voidtools.com/Everything-1.4.1.1032.x64-Setup.exe) · [win-x86](https://www.voidtools.com/Everything-1.4.1.1032.x86-Setup.exe) · [win-x64-portable](https://www.voidtools.com/Everything-1.4.1.1032.x64.zip) · [win-x86-portable](https://www.voidtools.com/Everything-1.4.1.1032.x86.zip) | voidtools official download page |
 | [**KeePassXC**](https://github.com/keepassxreboot/keepassxc) | `2.8.0` | 2026-10-21 | [win-x64](https://github.com/keepassxreboot/keepassxc/releases/download/2.8.0/KeePassXC-2.8.0-x64.msi) | GitHub Release: keepassxreboot/keepassxc |
@@ -517,7 +517,7 @@
 | [**Evernote**](https://evernote.com/) | `10.105.4,20240910164757,a2e60a8d876a07eded5d212fa56ba45214114ad0` | — | [mac](https://mac.desktop.evernote.com/builds/Evernote-10.105.4-mac-ddl-stage-20240910164757-a2e60a8d876a07eded5d212fa56ba45214114ad0.dmg) | brew manifest: evernote |
 | [**Fantastical**](https://flexibits.com/fantastical) | `4.2.3` | — | [mac](https://cdn.flexibits.com/Fantastical_4.2.3.zip) | brew manifest: fantastical |
 | [**Ferdium**](https://ferdium.org/) | `7.2.3` | — | [win-x64](https://github.com/ferdium/ferdium-app/releases/download/v7.2.3/Ferdium-win-AutoSetup-7.2.3-x64.exe#/dl.7z) | scoop manifest: extras/ferdium |
-| [**Franz**](https://meetfranz.com/) | `6.10.0` | — | [mac-arm64](https://github.com/meetfranz/franz-6/releases/download/v6.10.0/Franz-arm64.dmg) | brew manifest: franz |
+| [**Franz**](https://meetfranz.com/) | `6.10.1` | — | [mac-arm64](https://github.com/meetfranz/franz-6/releases/download/v6.10.1/Franz-arm64.dmg) | brew manifest: franz |
 | [**GeoGebra**](https://www.geogebra.org) | `6.0.933.1` | — | [win](https://download.geogebra.org/installers/6.0/GeoGebra-Windows-Portable-6-0-933-1.zip) | scoop manifest: extras/geogebra |
 | [**Google Earth Pro**](https://www.google.com/earth/) | `7.3.7.1327` | — | [mac-x64](https://dl.google.com/dl/earth/client/advanced/current/googleearthpromac-intel-7.3.7.dmg) | brew manifest: google-earth-pro |
 | [**Hepta**](https://heptabase.com/) | `1.112.8` | — | [mac-arm64](https://github.com/heptameta/project-meta/releases/download/v1.112.8/Heptabase-1.112.8-arm64-mac.zip) | brew manifest: heptabase |
@@ -541,7 +541,7 @@
 | [**PDFgear**](https://www.pdfgear.com) | `3.0.1` | — | [win-x64](https://downloadfiles.pdfgear.com/releases/windows/pdfgear_setup_v3.0.1.exe) | scoop manifest: extras/pdfgear |
 | [**PDFsam Basic**](https://github.com/torakiki/pdfsam) | `6.0.6` | — | [win-x64](https://github.com/torakiki/pdfsam/releases/download/v6.0.6/pdfsam-basic-6.0.6-windows-x64.zip) | scoop manifest: extras/pdfsam |
 | [**Microsoft Power BI Desktop**](https://powerbi.microsoft.com/desktop/) | `2.159.883.0` | — | [win-x64](https://download.microsoft.com/download/8/8/0/880BCA75-79DD-466A-927D-1ABF1F5454B0/PBIDesktopSetup-2026-10_x64.exe) | winget manifest: Microsoft.PowerBI |
-| [**QGIS**](https://www.qgis.org/) | `4.2.3` | — | [mac](https://download.qgis.org/downloads/macos/pr/qgis_pr_final-4_2_3.dmg) | brew manifest: qgis |
+| [**QGIS**](https://www.qgis.org/) | `4.2.3` | — | [mac](https://www.qgis.org/) | brew manifest: qgis |
 | [**Rambox**](https://rambox.app) | `2.7.2` | — | [win-x64](https://github.com/ramboxapp/download/releases/download/v2.7.2/Rambox-2.7.2-win-x64.exe#/dl.7z) | scoop manifest: extras/rambox |
 | [**Sage**](https://www.sagemath.org/) | `10.9,10.9.1` | — | [mac-arm64](https://github.com/3-manifolds/Sage_macOS/releases/download/v10.9.1/SageMath-10.9_arm64.dmg) | brew manifest: sage |
 | [**Scrivener**](https://www.literatureandlatte.com/scrivener/overview) | `3.5.2,17487,11` | — | [mac](https://scrivener.s3.amazonaws.com/mac_updates/Scrivener_11_17487.zip) | brew manifest: scrivener |
@@ -554,7 +554,7 @@
 | [**Taskade**](https://www.taskade.com/) | `4.7.0` | — | [mac-universal](https://apps.taskade.com/updates/Taskade-4.7.0-universal.dmg) | brew manifest: taskade |
 | [**Texmaker**](https://www.xm1math.net/texmaker/) | `6.0.2` | — | [win-x64](https://www.xm1math.net/texmaker/assets/files/texmakerwin64usb.zip) | scoop manifest: extras/texmaker |
 | [**TeXstudio**](https://www.texstudio.org) | `4.9.8` | — | [win-x64](https://github.com/texstudio-org/texstudio/releases/download/4.9.8/texstudio-4.9.8-win-portable-qt6.zip) | scoop manifest: extras/texstudio |
-| [**Obsidian**](https://obsidian.md/download) | `1.14.4` | 2026-10-05 | [win-x64](https://github.com/obsidianmd/obsidian-releases/releases/download/v1.14.4/Obsidian-1.14.4.exe) · [mac-universal](https://github.com/obsidianmd/obsidian-releases/releases/download/v1.14.4/Obsidian-1.14.4.dmg) · [linux-x64](https://github.com/obsidianmd/obsidian-releases/releases/download/v1.14.4/Obsidian-1.14.4.AppImage) | GitHub Release: obsidianmd/obsidian-releases |
+| [**Obsidian**](https://obsidian.md/download) | `1.14.5` | 2026-10-22 | [win-x64](https://github.com/obsidianmd/obsidian-releases/releases/download/v1.14.5/Obsidian-1.14.5.exe) · [mac-universal](https://github.com/obsidianmd/obsidian-releases/releases/download/v1.14.5/Obsidian-1.14.5.dmg) · [linux-x64](https://github.com/obsidianmd/obsidian-releases/releases/download/v1.14.5/Obsidian-1.14.5.AppImage) | GitHub Release: obsidianmd/obsidian-releases |
 | [**Anytype**](https://github.com/anyproto/anytype-ts) | `0.57.4` | 2026-10-03 | [win-x64](https://github.com/anyproto/anytype-ts/releases/download/v0.57.4/Anytype.Setup.0.57.4.exe) · [mac-arm64](https://github.com/anyproto/anytype-ts/releases/download/v0.57.4/Anytype-0.57.4-mac-arm64.dmg) · [linux-x64](https://github.com/anyproto/anytype-ts/releases/download/v0.57.4/anytype_0.57.4_amd64.deb) | GitHub Release: anyproto/anytype-ts |
 | [**Trilium Notes**](https://github.com/TriliumNext/Notes) | `2026-10-20` | — | [win-x64](https://github.com/TriliumNext/Notes/releases) · [mac-arm64](https://github.com/TriliumNext/Notes/releases) · [linux-x64](https://github.com/TriliumNext/Notes/releases) | Official project download page; no stable public release asset API |
 | [**Zettlr**](https://github.com/Zettlr/Zettlr) | `4.8.0` | 2026-09-18 | [win-x64](https://github.com/Zettlr/Zettlr/releases/download/v4.8.0/Zettlr-4.8.0-x64.exe) · [mac-arm64](https://github.com/Zettlr/Zettlr/releases/download/v4.8.0/Zettlr-4.8.0-arm64.dmg) · [linux-x64](https://github.com/Zettlr/Zettlr/releases/download/v4.8.0/Zettlr-4.8.0-amd64.deb) | GitHub Release: Zettlr/Zettlr |
@@ -613,7 +613,7 @@
 | [**Open WebUI**](https://docs.openwebui.com/getting-started/) | `2026-10-20` | — | [win-x64](https://docs.openwebui.com/getting-started/) · [mac-arm64](https://docs.openwebui.com/getting-started/) · [linux-x64](https://docs.openwebui.com/getting-started/) | Official project download page; no stable public release asset API |
 | [**KoboldCpp**](https://github.com/LostRuins/koboldcpp) | `2026-10-20` | — | [win-x64](https://github.com/LostRuins/koboldcpp/releases) · [mac-arm64](https://github.com/LostRuins/koboldcpp/releases) · [linux-x64](https://github.com/LostRuins/koboldcpp/releases) | Official project download page; no stable public release asset API |
 | [**Claude Code**](https://github.com/anthropics/claude-code) | `2.1.308` | 2026-10-22 | [win-x64](https://github.com/anthropics/claude-code/releases/download/v2.1.308/claude-win32-x64.zip) · [mac-universal](https://github.com/anthropics/claude-code/releases/download/v2.1.308/claude-darwin-arm64.tar.gz) · [linux-x64](https://github.com/anthropics/claude-code/releases/download/v2.1.308/claude-linux-x64.tar.gz) | GitHub Release: anthropics/claude-code |
-| [**Ollama**](https://github.com/ollama/ollama) | `0.40.8` | 2026-10-21 | [win-x64](https://github.com/ollama/ollama/releases/download/v0.40.8/OllamaSetup.exe) | GitHub Release: ollama/ollama |
+| [**Ollama**](https://github.com/ollama/ollama) | `0.40.9` | 2026-10-22 | [win-x64](https://github.com/ollama/ollama/releases/download/v0.40.9/OllamaSetup.exe) | GitHub Release: ollama/ollama |
 | [**Doubao**](https://www.doubao.com) | `2026-10-20` | — | [mac-universal](https://www.doubao.com/download) | Official download page; no public version API |
 
 
@@ -640,14 +640,14 @@
 | [**Skype**](https://www.skype.com/get-skype/) | `2026-10-22` | — | [win-x64](https://teams.live.com/free?source=skype) · [mac-universal](https://teams.live.com/free?source=skype) · [linux-x64](https://teams.live.com/free?source=skype) | Microsoft retired Skype downloads; official entry redirects to Teams Free |
 | [**Telegram Desktop**](https://github.com/telegramdesktop/tdesktop) | `7.3.3` | 2026-10-21 | [win-x64](https://github.com/telegramdesktop/tdesktop/releases/download/v7.3.3/td-setup-win-x64-7.3.3.exe) | GitHub Release: telegramdesktop/tdesktop |
 | [**WeChat**](https://weixin.qq.com) | `4.1.15.55` | — | [mac-universal](https://dldir1v6.qq.com/weixin/Universal/Mac/xWeChatMac_universal_4.1.15.55_270135.dmg) | 微信官网 |
-| [**QQ**](https://im.qq.com) | `2026-10-22` | — | [mac-universal](https://im.qq.com/macqq/index.shtml) | Official download page; no public version API |
+| [**QQ**](https://im.qq.com) | `2026-10-23` | — | [mac-universal](https://im.qq.com/macqq/index.shtml) | Official download page; no public version API |
 
 
 ### Gaming
 
 | 软件 | 最新版本 | 发布日期 | 下载链接 | 来源 |
 |------|---------|---------|---------|------|
-| [**WeGame**](https://www.wegame.com.cn/) | `2026-10-22` | — | [win-x64](https://www.wegame.com.cn/client/) | Official download page; no public version API |
+| [**WeGame**](https://www.wegame.com.cn/) | `2026-10-23` | — | [win-x64](https://www.wegame.com.cn/client/) | Official download page; no public version API |
 | [**网易 UU 加速器**](https://uu.163.com/) | `2026-10-20` | — | [win-x64](https://uu.163.com/download/) | Official download page; no public version API |
 | [**英雄联盟**](https://lol.qq.com/) | `2026-10-20` | — | [win-x64](https://lol.qq.com/download.shtml) | Official download page; no public version API |
 | [**地下城与勇士**](https://dnf.qq.com/) | `2026-10-20` | — | [win-x64](https://dnf.qq.com/web2015/down.shtml) | Official download page; no public version API |
@@ -799,7 +799,7 @@
 | [**Tor Browser**](https://www.torproject.org/download/) | `2026-10-20` | — | [win-x64](https://www.torproject.org/download/) · [mac-universal](https://www.torproject.org/download/) · [linux-x64](https://www.torproject.org/download/) | Official Tor Project download page; no public version API |
 | [**LibreWolf**](https://librewolf.net/installation/) | `2026-10-20` | — | [win-x64](https://librewolf.net/installation/) · [mac-universal](https://librewolf.net/installation/) · [linux-x64](https://librewolf.net/installation/) | Official LibreWolf installation page; no public version API |
 | [**Mullvad Browser**](https://mullvad.net/en/browser) | `2026-10-20` | — | [win-x64](https://mullvad.net/en/browser) · [mac-universal](https://mullvad.net/en/browser) · [linux-x64](https://mullvad.net/en/browser) | Official Mullvad Browser download page; no public version API |
-| [**Google Chrome**](https://www.google.com/chrome/) | `156.0.8078.48` | — | [win-x64](https://dl.google.com/chrome/install/standalonesetup64.exe) · [mac-arm64](https://dl.google.com/chrome/mac/stable/GGRO/googlechrome.dmg) | Google Version History API |
+| [**Google Chrome**](https://www.google.com/chrome/) | `157.0.8103.15` | — | [win-x64](https://dl.google.com/chrome/install/standalonesetup64.exe) · [mac-arm64](https://dl.google.com/chrome/mac/stable/GGRO/googlechrome.dmg) | Google Version History API |
 | [**Brave Browser**](https://github.com/brave/brave-browser) | `1.98.60` | 2026-10-21 | [win-x64](https://github.com/brave/brave-browser/releases/download/v1.98.60/BraveBrowserSetup.exe) | GitHub Release: brave/brave-browser |
 | [**Thorium Browser**](https://thorium.rocks/) | `138.0.7204.303` | — | [win-x64](https://github.com/Alex313031/Thorium-Win/releases/download/M138.0.7204.303/Thorium_SSE3_138.0.7204.303.zip) | scoop manifest: extras/thorium |
 
