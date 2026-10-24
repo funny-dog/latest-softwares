@@ -5,7 +5,7 @@
 > **Latest version metadata** automatically synced from official upstream sources daily by GitHub Actions.
 > This repository **does not host binary installers** — download buttons link directly to upstream official downloads.
 >
-> 📅 **Last updated**: `2026-10-24 16:26:45` (UTC) · 699 software items (1 using previous data, marked ⚠️)
+> 📅 **Last updated**: `2026-10-24 21:25:34` (UTC) · 699 software items (1 using previous data, marked ⚠️)
 
 ---
 
@@ -25,7 +25,7 @@
 
 | Software | Latest Version | Released | Download | Source |
 |----------|---------------|----------|----------|--------|
-| [**Windows 11**](https://www.microsoft.com/software-download/windows11) | `25H2` | — | [win-x64](https://software.download.prss.microsoft.com/dbazure/Win11_25H2_Chinese_Simplified_x64_v2.iso?t=905406ff-bbf5-40ad-a376-12712d493b33&P1=1792929041&P2=602&P3=2&P4=ZZa9tbT16CzP%2bwmBo2e9FvY7uh20Q%2f%2fHFMQHcQny940TxhB7TEKHsRyiVRupyVPjp2RnCg%2ff7y4NnnqFad2kOd0FkAybKSEoXnXHNQfINnoHbHvEt6yW7xK1jlbe474Gxc7diKnEsWRWFG6u0fypSVUGjSwkbjEAohCAQJI1vgYlw7Dzp0B0Rz1FAyyWRtEFKhTdp5Qnv1CRLxEdvJgBS85pIKBH8qoCTEwRPbZD1whPZXx41YNL%2b35K83ZPrTYZG66uLlp%2faRrGkZorSILGKm1v19VDDejyc%2bt%2fDvz69lsKAGTdewrwdy4zuOsOL%2bMVP0QLvMaRhHn45bLeWmbWsg%3d%3d) | Microsoft Software Download (via Fido) |
+| [**Windows 11**](https://www.microsoft.com/software-download/windows11) | `25H2` | — | [win-x64](https://software.download.prss.microsoft.com/dbazure/Win11_25H2_Chinese_Simplified_x64_v2.iso?t=ab951cff-1760-457c-a9d3-6bbd61b71755&P1=1792963510&P2=602&P3=2&P4=NwuKcsowH%2fhhkFEQfTTjVBDM7euEKaHs%2b4ggdrkqFaYn5WQmYAZhhsgE14ylgW9oADaExG6p2TLvTW3I2mcOzonRKo0BKSMFaFbyxPJ6jTh51AtEbJMNZ9xj%2fgiy2%2bPS0iH%2bX6pbAuezLQl2wlbEGhSmXcrWri2Vbnod8d%2bwGL%2brWV22DajoSK2wZa14Ljg5Ig8aSo8weAecWCno7yvEZeMgciMnBEPEBW%2fO7SteehJrlq3xCSghvqXEyGiFz2S1dAlEDsJA5Cmfp1CZneYO9SO93S%2f6c8n%2fm%2fjVJ9u%2bG%2bwf%2bnxdphKb7aDFhM9IZ7vy1J145ox5f9fmAfSoY08Y3w%3d%3d) | Microsoft Software Download (via Fido) |
 | [**Ubuntu**](https://ubuntu.com/download) | `26.10` | — | [desktop-amd64](https://releases.ubuntu.com/26.10/ubuntu-26.10-desktop-amd64.iso) · [server-amd64](https://releases.ubuntu.com/26.10/ubuntu-26.10-live-server-amd64.iso) · [wsl-amd64](https://ubuntu.com/download) | Ubuntu official releases index |
 | [**Fedora Workstation**](https://fedoraproject.org/workstation/download/) | `44` | — | [workstation-live-x86_64](https://fedoraproject.org/workstation/download/) | Fedora official release directory |
 
@@ -613,7 +613,7 @@
 | [**Open WebUI**](https://docs.openwebui.com/getting-started/) | `2026-10-23` | — | [win-x64](https://docs.openwebui.com/getting-started/) · [mac-arm64](https://docs.openwebui.com/getting-started/) · [linux-x64](https://docs.openwebui.com/getting-started/) | Official project download page; no stable public release asset API |
 | [**KoboldCpp**](https://github.com/LostRuins/koboldcpp) | `2026-10-23` | — | [win-x64](https://github.com/LostRuins/koboldcpp/releases) · [mac-arm64](https://github.com/LostRuins/koboldcpp/releases) · [linux-x64](https://github.com/LostRuins/koboldcpp/releases) | Official project download page; no stable public release asset API |
 | [**Claude Code**](https://github.com/anthropics/claude-code) | `2.1.309` | 2026-10-22 | [win-x64](https://github.com/anthropics/claude-code/releases/download/v2.1.309/claude-win32-x64.zip) · [mac-universal](https://github.com/anthropics/claude-code/releases/download/v2.1.309/claude-darwin-arm64.tar.gz) · [linux-x64](https://github.com/anthropics/claude-code/releases/download/v2.1.309/claude-linux-x64.tar.gz) | GitHub Release: anthropics/claude-code |
-| [**Ollama**](https://github.com/ollama/ollama) | `0.40.10` | 2026-10-23 | [win-x64](https://github.com/ollama/ollama/releases/download/v0.40.10/OllamaSetup.exe) | GitHub Release: ollama/ollama |
+| [**Ollama**](https://github.com/ollama/ollama) | `0.40.11` | 2026-10-24 | [win-x64](https://github.com/ollama/ollama/releases/download/v0.40.11/OllamaSetup.exe) | GitHub Release: ollama/ollama |
 | [**Doubao**](https://www.doubao.com) | `2026-10-23` | — | [mac-universal](https://www.doubao.com/download) | Official download page; no public version API |
 
 
@@ -731,14 +731,14 @@
 | [**Paintbrush**](https://paintbrush.sourceforge.io/) | `2.6.0,20210402` | — | [mac](https://paintbrush.sourceforge.io/) | brew manifest: paintbrush |
 | [**Pinta**](https://www.pinta-project.com/) | `3.1.2` | — | [win-x64](https://github.com/PintaProject/Pinta/releases/download/3.1.2/Pinta-x86_64.exe) | scoop manifest: extras/pinta |
 | [**PrusaSlicer**](https://www.prusa3d.com/prusaslicer/) | `2.9.6` | — | [win-x64](https://github.com/prusa3d/PrusaSlicer/releases/download/version_2.9.6/PrusaSlicer-2.9.6.zip) | scoop manifest: extras/prusaslicer |
-| [**REAPER**](https://www.reaper.fm) | `7.82` | — | [win-x64](https://www.reaper.fm/files/7.x/reaper782_x64-install.exe#/dl.7z) | scoop manifest: extras/reaper |
+| [**REAPER**](https://www.reaper.fm) | `7.83` | — | [win-x64](https://www.reaper.fm/files/7.x/reaper783_x64-install.exe#/dl.7z) | scoop manifest: extras/reaper |
 | [**rekordbox**](https://rekordbox.com/en/) | `7.2.19,20260914095016` | — | [mac](https://cdn.rekordbox.com/files/20260914095016/Install_rekordbox_7_2_19.pkg_.zip) | brew manifest: rekordbox |
 | [**Screen Studio**](https://screen.studio/) | `4.1.0-5005` | — | [mac-arm64](https://screenstudioassets.com/releases/4.1.0-5005/Screen%20Studio-4.1.0-5005-arm64-mac.zip) | brew manifest: screen-studio |
 | [**Sketch**](https://www.sketch.com/) | `2026.3.1,234013` | — | [mac](https://download.sketch.com/sketch-2026.3.1-234013.zip) | brew manifest: sketch |
 | [**UltiMaker Cura**](https://ultimaker.com/software/ultimaker-cura) | `5.13.0` | — | [mac-arm64](https://github.com/Ultimaker/Cura/releases/download/5.13.0/UltiMaker-Cura-5.13.0-macos-ARM64.dmg) | brew manifest: ultimaker-cura |
 | [**VirtualDJ**](https://virtualdj.com/) | `2026,9729,B11799B7` | — | [mac](https://download.virtualdj.com/b9729/B11799B7/install_virtualdj_2026_b9729_mac.pkg) | brew manifest: virtualdj |
 | [**HandBrake**](https://github.com/HandBrake/HandBrake) | `1.11.2` | 2026-06-07 | [win-x64](https://github.com/HandBrake/HandBrake/releases/download/1.11.2/HandBrake-1.11.2-x86_64-Win_GUI.exe) | GitHub Release: HandBrake/HandBrake |
-| [**FFmpeg**](https://github.com/BtbN/FFmpeg-Builds) | `latest` | 2026-10-23 | [win-x64](https://github.com/BtbN/FFmpeg-Builds/releases/download/latest/ffmpeg-master-latest-win64-gpl.zip) | GitHub Release: BtbN/FFmpeg-Builds |
+| [**FFmpeg**](https://github.com/BtbN/FFmpeg-Builds) | `latest` | 2026-10-24 | [win-x64](https://github.com/BtbN/FFmpeg-Builds/releases/download/latest/ffmpeg-master-latest-win64-gpl.zip) | GitHub Release: BtbN/FFmpeg-Builds |
 | [**IINA**](https://github.com/iina/iina) | `1.5.0` | 2026-10-03 | [mac-arm64](https://github.com/iina/iina/releases/download/v1.5.0/IINA.v1.5.0.dmg) | GitHub Release: iina/iina |
 | [**LosslessCut**](https://github.com/mifi/lossless-cut) ⚠️ | `3.70.1` | 2026-10-19 | [win-x64](https://github.com/mifi/lossless-cut/releases/download/v3.70.1/LosslessCut-win-x64.7z) · [linux-x64](https://github.com/mifi/lossless-cut/releases/download/v3.70.1/LosslessCut-linux-x86_64.AppImage) · [mac-universal](https://github.com/mifi/lossless-cut) | GitHub Release: mifi/lossless-cut<br>⚠ mac-universal: 没有匹配 asset pattern 'LosslessCut-mac-universal.pkg' |
 | [**Spotify**](https://www.spotify.com/download/) | `2026-10-23` | — | [win-x64](https://www.spotify.com/download/windows/) · [mac-universal](https://www.spotify.com/download/mac/) | Official Spotify download page; no public version API |
