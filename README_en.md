@@ -5,7 +5,7 @@
 > **Latest version metadata** automatically synced from official upstream sources daily by GitHub Actions.
 > This repository **does not host binary installers** — download buttons link directly to upstream official downloads.
 >
-> 📅 **Last updated**: `2026-10-24 05:22:52` (UTC) · 699 software items (1 using previous data, marked ⚠️)
+> 📅 **Last updated**: `2026-10-24 11:51:02` (UTC) · 699 software items (1 using previous data, marked ⚠️)
 
 ---
 
@@ -25,7 +25,7 @@
 
 | Software | Latest Version | Released | Download | Source |
 |----------|---------------|----------|----------|--------|
-| [**Windows 11**](https://www.microsoft.com/software-download/windows11) | `25H2` | — | [win-x64](https://software.download.prss.microsoft.com/dbazure/Win11_25H2_Chinese_Simplified_x64_v2.iso?t=e005355a-6c65-4cd0-9ad1-f2d3e7aab8e0&P1=1792905747&P2=602&P3=2&P4=iCtCunAYJ97UkCgaoRLdplZsBnCnV38qm4kYiUyfYU9x3Ecbc8lyFpmPGpBNCxuK9xmEPVqX9A9mXlyoTakjuozI%2ben29RlP9kBo97zTNTX8CTFJYYiCCigJZw0b5%2b9aAUG53R3fZ62I1Af5uZZdX%2fqbDFK2t1DUSedUk1OTlTgZJwCxHKY7ERGlzPjT41y5Ohfes7YFlc4eVw7DA1eIaD4HNPGY78Yzuc6W%2bN1oZr%2bb4RZo7VF8vB0bFfz8vLvN%2f8jZp66Gw8DYXM0uZy1S5cfXPSpT2y7idEXiarYNiU3wyKUGotvBacXRBTIoaBzWjETpnzi0EQo8%2bWc%2bpOjveQ%3d%3d) | Microsoft Software Download (via Fido) |
+| [**Windows 11**](https://www.microsoft.com/software-download/windows11) | `25H2` | — | [win-x64](https://software.download.prss.microsoft.com/dbazure/Win11_25H2_Chinese_Simplified_x64_v2.iso?t=905406ff-bbf5-40ad-a376-12712d493b33&P1=1792929041&P2=602&P3=2&P4=ZZa9tbT16CzP%2bwmBo2e9FvY7uh20Q%2f%2fHFMQHcQny940TxhB7TEKHsRyiVRupyVPjp2RnCg%2ff7y4NnnqFad2kOd0FkAybKSEoXnXHNQfINnoHbHvEt6yW7xK1jlbe474Gxc7diKnEsWRWFG6u0fypSVUGjSwkbjEAohCAQJI1vgYlw7Dzp0B0Rz1FAyyWRtEFKhTdp5Qnv1CRLxEdvJgBS85pIKBH8qoCTEwRPbZD1whPZXx41YNL%2b35K83ZPrTYZG66uLlp%2faRrGkZorSILGKm1v19VDDejyc%2bt%2fDvz69lsKAGTdewrwdy4zuOsOL%2bMVP0QLvMaRhHn45bLeWmbWsg%3d%3d) | Microsoft Software Download (via Fido) |
 | [**Ubuntu**](https://ubuntu.com/download) | `26.10` | — | [desktop-amd64](https://releases.ubuntu.com/26.10/ubuntu-26.10-desktop-amd64.iso) · [server-amd64](https://releases.ubuntu.com/26.10/ubuntu-26.10-live-server-amd64.iso) · [wsl-amd64](https://ubuntu.com/download) | Ubuntu official releases index |
 | [**Fedora Workstation**](https://fedoraproject.org/workstation/download/) | `44` | — | [workstation-live-x86_64](https://fedoraproject.org/workstation/download/) | Fedora official release directory |
 
@@ -341,7 +341,7 @@
 | [**Parallels Desktop**](https://www.parallels.com/products/desktop/) | `27.0.3-58680` | — | [mac](https://download.parallels.com/desktop/v27/27.0.3-58680/ParallelsDesktop-27.0.3-58680.dmg) | brew manifest: parallels |
 | [**Paste**](https://pasteapp.io/) | `7.0.4` | — | [mac](https://downloads.pasteapp.io/dist/stable/Paste-7.0.4.zip) | brew manifest: paste |
 | [**PopClip**](https://www.popclip.app/) | `2026.8.1` | — | [mac](https://pilotmoon.com/downloads/PopClip-2026.8.1.zip) | brew manifest: popclip |
-| [**Q-Dir**](https://www.softwareok.com/?seite=Freeware/Q-Dir) | `12.81` | — | [win-x64](https://www.softwareok.com/Download/Q-Dir_Portable_x64.zip) | scoop manifest: extras/q-dir |
+| [**Q-Dir**](https://www.softwareok.com/?seite=Freeware/Q-Dir) | `12.82` | — | [win-x64](https://www.softwareok.com/Download/Q-Dir_Portable_x64.zip) | scoop manifest: extras/q-dir |
 | [**Scroll Reverser**](https://pilotmoon.com/scrollreverser/) | `2.0.2` | — | [mac](https://pilotmoon.com/downloads/ScrollReverser-2.0.2.zip) | brew manifest: scroll-reverser |
 | [**Shottr**](https://shottr.cc/) | `1.9.3b` | — | [mac](https://shottr.cc/dl/Shottr-1.9.3b.dmg) | brew manifest: shottr |
 | [**SuperDuper!**](https://www.shirt-pocket.com/superduper4.php) | `4.0.10` | — | [mac](https://www.shirt-pocket.com/downloads/SuperDuper-4.0.10.dmg) | brew manifest: superduper |
@@ -541,7 +541,7 @@
 | [**PDFgear**](https://www.pdfgear.com) | `3.0.1` | — | [win-x64](https://downloadfiles.pdfgear.com/releases/windows/pdfgear_setup_v3.0.1.exe) | scoop manifest: extras/pdfgear |
 | [**PDFsam Basic**](https://github.com/torakiki/pdfsam) | `6.0.6` | — | [win-x64](https://github.com/torakiki/pdfsam/releases/download/v6.0.6/pdfsam-basic-6.0.6-windows-x64.zip) | scoop manifest: extras/pdfsam |
 | [**Microsoft Power BI Desktop**](https://powerbi.microsoft.com/desktop/) | `2.159.883.0` | — | [win-x64](https://download.microsoft.com/download/8/8/0/880BCA75-79DD-466A-927D-1ABF1F5454B0/PBIDesktopSetup-2026-10_x64.exe) | winget manifest: Microsoft.PowerBI |
-| [**QGIS**](https://www.qgis.org/) | `4.2.3` | — | [mac](https://www.qgis.org/) | brew manifest: qgis |
+| [**QGIS**](https://www.qgis.org/) | `4.2.3` | — | [mac](https://download.qgis.org/downloads/macos/pr/qgis_pr_final-4_2_3.dmg) | brew manifest: qgis |
 | [**Rambox**](https://rambox.app) | `2.7.2` | — | [win-x64](https://github.com/ramboxapp/download/releases/download/v2.7.2/Rambox-2.7.2-win-x64.exe#/dl.7z) | scoop manifest: extras/rambox |
 | [**Sage**](https://www.sagemath.org/) | `10.9,10.9.1` | — | [mac-arm64](https://github.com/3-manifolds/Sage_macOS/releases/download/v10.9.1/SageMath-10.9_arm64.dmg) | brew manifest: sage |
 | [**Scrivener**](https://www.literatureandlatte.com/scrivener/overview) | `3.5.2,17487,11` | — | [mac](https://scrivener.s3.amazonaws.com/mac_updates/Scrivener_11_17487.zip) | brew manifest: scrivener |
