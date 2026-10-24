@@ -5,7 +5,7 @@
 > 由 GitHub Actions 每日自动同步上游官方源的**最新版本元数据**。
 > 仓库**不托管二进制安装包**，下载按钮直接跳到上游官方下载链接。
 >
-> 📅 **最后更新**：`2026-10-23 22:37:24` (UTC)　· 共 699 项软件（其中 1 项使用上次数据，标 ⚠️）
+> 📅 **最后更新**：`2026-10-24 05:22:52` (UTC)　· 共 699 项软件（其中 1 项使用上次数据，标 ⚠️）
 
 ---
 
@@ -25,7 +25,7 @@
 
 | 软件 | 最新版本 | 发布日期 | 下载链接 | 来源 |
 |------|---------|---------|---------|------|
-| [**Windows 11**](https://www.microsoft.com/software-download/windows11) | `25H2` | — | [win-x64](https://software.download.prss.microsoft.com/dbazure/Win11_25H2_Chinese_Simplified_x64_v2.iso?t=cb193bce-54f8-48f0-86f7-073fa20c2063&P1=1792881409&P2=602&P3=2&P4=JCcmUELax9zykmhbAqCFFpiRRjWOSbQsJLU1v9q3byYakDVcDwsTm5RV2bMLfR5cW3Gg%2f554mFTzYWqixZFIj8010bK3M2DTMIO0FoWd8sYvpupDR9MVYXs3uGLDqxX99VtsLzCzkV2qd8NcMpuAvqvETrIMXjHkYDQ0pYTPRUKcNksi3JIhXzNyK%2bkRoE12GpxLib0gL8U4Hydzy4QusjP04RM3EtCpDFni5fZXGxbvwWkvPJc44dTgnsM7XZ8rqtoKaBlL%2bK90%2f7%2bOKmygYEvsi0RH6yNQ6tJAJrZrz9fwXH%2fokYxQ8NP9sGBik0YbqZdMjVxzyItUgzAaO9YiLA%3d%3d) | Microsoft Software Download (via Fido) |
+| [**Windows 11**](https://www.microsoft.com/software-download/windows11) | `25H2` | — | [win-x64](https://software.download.prss.microsoft.com/dbazure/Win11_25H2_Chinese_Simplified_x64_v2.iso?t=e005355a-6c65-4cd0-9ad1-f2d3e7aab8e0&P1=1792905747&P2=602&P3=2&P4=iCtCunAYJ97UkCgaoRLdplZsBnCnV38qm4kYiUyfYU9x3Ecbc8lyFpmPGpBNCxuK9xmEPVqX9A9mXlyoTakjuozI%2ben29RlP9kBo97zTNTX8CTFJYYiCCigJZw0b5%2b9aAUG53R3fZ62I1Af5uZZdX%2fqbDFK2t1DUSedUk1OTlTgZJwCxHKY7ERGlzPjT41y5Ohfes7YFlc4eVw7DA1eIaD4HNPGY78Yzuc6W%2bN1oZr%2bb4RZo7VF8vB0bFfz8vLvN%2f8jZp66Gw8DYXM0uZy1S5cfXPSpT2y7idEXiarYNiU3wyKUGotvBacXRBTIoaBzWjETpnzi0EQo8%2bWc%2bpOjveQ%3d%3d) | Microsoft Software Download (via Fido) |
 | [**Ubuntu**](https://ubuntu.com/download) | `26.10` | — | [desktop-amd64](https://releases.ubuntu.com/26.10/ubuntu-26.10-desktop-amd64.iso) · [server-amd64](https://releases.ubuntu.com/26.10/ubuntu-26.10-live-server-amd64.iso) · [wsl-amd64](https://ubuntu.com/download) | Ubuntu official releases index |
 | [**Fedora Workstation**](https://fedoraproject.org/workstation/download/) | `44` | — | [workstation-live-x86_64](https://fedoraproject.org/workstation/download/) | Fedora official release directory |
 
@@ -309,7 +309,7 @@
 | [**Advanced Renamer**](https://www.advancedrenamer.com) | `4.27` | — | [win-x64](https://www.advancedrenamer.com/down/win/advanced_renamer_portable_4_27.zip) | scoop manifest: extras/advancedrenamer |
 | [**AIDA64 Extreme**](https://www.aida64.com) | `8.40.5000` | — | [win](https://download.aida64.com/aida64extreme840.zip) | scoop manifest: extras/aida64extreme |
 | [**Alfred**](https://www.alfredapp.com/) | `5.8.1,2349` | — | [mac](https://cachefly.alfredapp.com/Alfred_5.8.1_2349.tar.gz) | brew manifest: alfred |
-| [**AltTab**](https://alt-tab.app/) | `11.10.0` | — | [mac](https://github.com/lwouis/alt-tab-macos/releases/download/v11.10.0/AltTab-11.10.0.zip) | brew manifest: alt-tab |
+| [**AltTab**](https://alt-tab.app/) | `11.10.1` | — | [mac](https://github.com/lwouis/alt-tab-macos/releases/download/v11.10.1/AltTab-11.10.1.zip) | brew manifest: alt-tab |
 | [**Apparency**](https://www.mothersruin.com/software/Apparency/) | `3.4` | — | [mac](https://www.mothersruin.com/software/archives/Apparency-3.4.dmg) | brew manifest: apparency |
 | [**FreeMacSoft AppCleaner**](https://freemacsoft.net/appcleaner/) | `3.7` | — | [mac](https://www.freemacsoft.net/downloads/AppCleaner_3.7.zip) | brew manifest: appcleaner |
 | [**Arq**](https://www.arqbackup.com/) | `7.50` | — | [mac](https://www.arqbackup.com/download/arqbackup/Arq7.50.pkg) | brew manifest: arq |
@@ -346,7 +346,7 @@
 | [**Shottr**](https://shottr.cc/) | `1.9.3b` | — | [mac](https://shottr.cc/dl/Shottr-1.9.3b.dmg) | brew manifest: shottr |
 | [**SuperDuper!**](https://www.shirt-pocket.com/superduper4.php) | `4.0.10` | — | [mac](https://www.shirt-pocket.com/downloads/SuperDuper-4.0.10.dmg) | brew manifest: superduper |
 | [**Suspicious Package**](https://www.mothersruin.com/software/SuspiciousPackage/) | `4.8` | — | [mac](https://www.mothersruin.com/software/archives/SuspiciousPackage-4.8.dmg) | brew manifest: suspicious-package |
-| [**Syncovery**](https://www.syncovery.com/) | `12.9.1` | — | [mac](https://www.syncovery.com/release/SyncoveryMac12.9.1-Apple.dmg) | brew manifest: syncovery |
+| [**Syncovery**](https://www.syncovery.com/) | `12.9.7` | — | [mac](https://www.syncovery.com/release/SyncoveryMac12.9.7-Apple.dmg) | brew manifest: syncovery |
 | [**TestDisk**](https://www.cgsecurity.org/wiki/TestDisk) | `7.2` | — | [win](https://www.cgsecurity.org/testdisk-7.2.win.zip) | scoop manifest: extras/testdisk |
 | [**Total Commander**](https://www.ghisler.com) | `11.58` | — | [win-x64](https://totalcommander.ch/1158/tcmd1158x64.exe) | scoop manifest: extras/totalcommander |
 | [**Yoink**](https://eternalstorms.at/yoink/mac/) | `3.7.6` | — | [mac](https://downloads.eternalstorms.at/Yoink.zip) | brew manifest: yoink |
@@ -541,7 +541,7 @@
 | [**PDFgear**](https://www.pdfgear.com) | `3.0.1` | — | [win-x64](https://downloadfiles.pdfgear.com/releases/windows/pdfgear_setup_v3.0.1.exe) | scoop manifest: extras/pdfgear |
 | [**PDFsam Basic**](https://github.com/torakiki/pdfsam) | `6.0.6` | — | [win-x64](https://github.com/torakiki/pdfsam/releases/download/v6.0.6/pdfsam-basic-6.0.6-windows-x64.zip) | scoop manifest: extras/pdfsam |
 | [**Microsoft Power BI Desktop**](https://powerbi.microsoft.com/desktop/) | `2.159.883.0` | — | [win-x64](https://download.microsoft.com/download/8/8/0/880BCA75-79DD-466A-927D-1ABF1F5454B0/PBIDesktopSetup-2026-10_x64.exe) | winget manifest: Microsoft.PowerBI |
-| [**QGIS**](https://www.qgis.org/) | `4.2.3` | — | [mac](https://download.qgis.org/downloads/macos/pr/qgis_pr_final-4_2_3.dmg) | brew manifest: qgis |
+| [**QGIS**](https://www.qgis.org/) | `4.2.3` | — | [mac](https://www.qgis.org/) | brew manifest: qgis |
 | [**Rambox**](https://rambox.app) | `2.7.2` | — | [win-x64](https://github.com/ramboxapp/download/releases/download/v2.7.2/Rambox-2.7.2-win-x64.exe#/dl.7z) | scoop manifest: extras/rambox |
 | [**Sage**](https://www.sagemath.org/) | `10.9,10.9.1` | — | [mac-arm64](https://github.com/3-manifolds/Sage_macOS/releases/download/v10.9.1/SageMath-10.9_arm64.dmg) | brew manifest: sage |
 | [**Scrivener**](https://www.literatureandlatte.com/scrivener/overview) | `3.5.2,17487,11` | — | [mac](https://scrivener.s3.amazonaws.com/mac_updates/Scrivener_11_17487.zip) | brew manifest: scrivener |
@@ -640,14 +640,14 @@
 | [**Skype**](https://www.skype.com/get-skype/) | `2026-10-22` | — | [win-x64](https://teams.live.com/free?source=skype) · [mac-universal](https://teams.live.com/free?source=skype) · [linux-x64](https://teams.live.com/free?source=skype) | Microsoft retired Skype downloads; official entry redirects to Teams Free |
 | [**Telegram Desktop**](https://github.com/telegramdesktop/tdesktop) | `7.3.3` | 2026-10-21 | [win-x64](https://github.com/telegramdesktop/tdesktop/releases/download/v7.3.3/td-setup-win-x64-7.3.3.exe) | GitHub Release: telegramdesktop/tdesktop |
 | [**WeChat**](https://weixin.qq.com) | `4.1.15.55` | — | [mac-universal](https://dldir1v6.qq.com/weixin/Universal/Mac/xWeChatMac_universal_4.1.15.55_270135.dmg) | 微信官网 |
-| [**QQ**](https://im.qq.com) | `2026-10-23` | — | [mac-universal](https://im.qq.com/macqq/index.shtml) | Official download page; no public version API |
+| [**QQ**](https://im.qq.com) | `2026-10-24` | — | [mac-universal](https://im.qq.com/macqq/index.shtml) | Official download page; no public version API |
 
 
 ### Gaming
 
 | 软件 | 最新版本 | 发布日期 | 下载链接 | 来源 |
 |------|---------|---------|---------|------|
-| [**WeGame**](https://www.wegame.com.cn/) | `2026-10-23` | — | [win-x64](https://www.wegame.com.cn/client/) | Official download page; no public version API |
+| [**WeGame**](https://www.wegame.com.cn/) | `2026-10-24` | — | [win-x64](https://www.wegame.com.cn/client/) | Official download page; no public version API |
 | [**网易 UU 加速器**](https://uu.163.com/) | `2026-10-23` | — | [win-x64](https://uu.163.com/download/) | Official download page; no public version API |
 | [**英雄联盟**](https://lol.qq.com/) | `2026-10-23` | — | [win-x64](https://lol.qq.com/download.shtml) | Official download page; no public version API |
 | [**地下城与勇士**](https://dnf.qq.com/) | `2026-10-23` | — | [win-x64](https://dnf.qq.com/web2015/down.shtml) | Official download page; no public version API |
