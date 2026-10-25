@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-10-25T12:20:52+00:00",
+  "generated_at": "2026-10-25T16:58:29+00:00",
   "packages": [
     {
       "id": "windows11",
@@ -2653,7 +2653,7 @@
           "expires_at": null,
           "verification": {
             "status": "unverified",
-            "checked_at": "2026-10-25T12:21:10+00:00",
+            "checked_at": "2026-10-25T16:58:48+00:00",
             "url": "https://kimi.moonshot.cn/download",
             "final_url": "https://kimi.moonshot.cn/download",
             "redirects": [
@@ -2674,7 +2674,7 @@
           "expires_at": null,
           "verification": {
             "status": "unverified",
-            "checked_at": "2026-10-25T12:21:10+00:00",
+            "checked_at": "2026-10-25T16:58:48+00:00",
             "url": "https://kimi.moonshot.cn/download",
             "final_url": "https://kimi.moonshot.cn/download",
             "redirects": [
@@ -2795,7 +2795,7 @@
           "expires_at": null,
           "verification": {
             "status": "unverified",
-            "checked_at": "2026-10-25T12:21:10+00:00",
+            "checked_at": "2026-10-25T16:58:48+00:00",
             "url": "https://chatglm.cn/download",
             "final_url": "https://chatglm.cn/download",
             "redirects": [
@@ -2816,7 +2816,7 @@
           "expires_at": null,
           "verification": {
             "status": "unverified",
-            "checked_at": "2026-10-25T12:21:10+00:00",
+            "checked_at": "2026-10-25T16:58:48+00:00",
             "url": "https://chatglm.cn/download",
             "final_url": "https://chatglm.cn/download",
             "redirects": [
@@ -2863,7 +2863,7 @@
           "expires_at": null,
           "verification": {
             "status": "unverified",
-            "checked_at": "2026-10-25T12:21:10+00:00",
+            "checked_at": "2026-10-25T16:58:48+00:00",
             "url": "https://xinghuo.xfyun.cn/download",
             "final_url": "https://xinghuo.xfyun.cn/download",
             "redirects": [
@@ -2884,7 +2884,7 @@
           "expires_at": null,
           "verification": {
             "status": "unverified",
-            "checked_at": "2026-10-25T12:21:10+00:00",
+            "checked_at": "2026-10-25T16:58:48+00:00",
             "url": "https://xinghuo.xfyun.cn/download",
             "final_url": "https://xinghuo.xfyun.cn/download",
             "redirects": [
@@ -3805,7 +3805,7 @@
           "expires_at": null,
           "verification": {
             "status": "restricted",
-            "checked_at": "2026-10-25T12:21:10+00:00",
+            "checked_at": "2026-10-25T16:58:48+00:00",
             "url": "https://apifox.com/download/",
             "final_url": "https://apifox.com/download/",
             "redirects": [
@@ -3826,7 +3826,7 @@
           "expires_at": null,
           "verification": {
             "status": "restricted",
-            "checked_at": "2026-10-25T12:21:10+00:00",
+            "checked_at": "2026-10-25T16:58:48+00:00",
             "url": "https://apifox.com/download/",
             "final_url": "https://apifox.com/download/",
             "redirects": [
@@ -4020,7 +4020,7 @@
           "expires_at": null,
           "verification": {
             "status": "transient",
-            "checked_at": "2026-10-25T12:21:10+00:00",
+            "checked_at": "2026-10-25T16:58:48+00:00",
             "url": "https://www.kuwo.cn/download",
             "final_url": "https://www.kuwo.cn/",
             "redirects": [
@@ -4211,7 +4211,7 @@
           "expires_at": null,
           "verification": {
             "status": "failed",
-            "checked_at": "2026-10-25T12:21:10+00:00",
+            "checked_at": "2026-10-25T16:58:48+00:00",
             "url": "https://docs.qq.com/download",
             "final_url": "https://docs.qq.com/download",
             "redirects": [
@@ -4682,7 +4682,7 @@
           "expires_at": null,
           "verification": {
             "status": "unverified",
-            "checked_at": "2026-10-25T12:21:10+00:00",
+            "checked_at": "2026-10-25T16:58:48+00:00",
             "url": "https://www.wps.cn/product/wps-pdf",
             "final_url": "https://www.wps.cn",
             "redirects": [
@@ -5102,7 +5102,7 @@
           "expires_at": null,
           "verification": {
             "status": "unverified",
-            "checked_at": "2026-10-25T12:21:10+00:00",
+            "checked_at": "2026-10-25T16:58:48+00:00",
             "url": "https://www.youku.com/",
             "final_url": "https://www.youku.com/",
             "redirects": [
@@ -42631,9 +42631,9 @@
       "fetched_at": "2026-10-23T05:43:29+00:00",
       "last_success_at": "2026-10-23T05:43:29+00:00",
       "_sync": {
-        "failures": 4,
+        "failures": 5,
         "fingerprint": "b9c9dedd92bcbf226302ae00b5105e08bce8c8106e96f2c0d1bef4ffbe820f2f",
-        "next_attempt_at": "2026-10-25T13:25:04+00:00"
+        "next_attempt_at": "2026-10-26T08:58:06+00:00"
       },
       "editions": [
         "intl",
@@ -42642,7 +42642,7 @@
       "desc_cn": "开源下载工具，支持 HTTP/FTP/BT/磁力链接",
       "desc_en": "Open-source download manager supporting HTTP/FTP/BitTorrent/magnet links",
       "_stale": true,
-      "_stale_reason": "agalwood/Motrix@v2.0.0: 没有任何 asset 匹配配置的 pattern，现有 asset: ['beta-linux-arm64.yml', 'beta-linux.yml', 'beta-mac.yml', 'beta.yml', 'latest-linux-arm64.yml']..."
+      "_stale_reason": "agalwood/Motrix@v2.0.1: 没有任何 asset 匹配配置的 pattern，现有 asset: ['beta-linux-arm64.yml', 'beta-linux.yml', 'beta-mac.yml', 'beta.yml', 'latest-linux-arm64.yml']..."
     },
     {
       "id": "marktext",
@@ -46477,7 +46477,7 @@
           "expires_at": null,
           "verification": {
             "status": "restricted",
-            "checked_at": "2026-10-25T12:21:10+00:00",
+            "checked_at": "2026-10-25T16:58:48+00:00",
             "url": "https://www.adobe.com/products/photoshop.html",
             "final_url": "https://www.adobe.com/products/photoshop.html",
             "redirects": [
@@ -46498,7 +46498,7 @@
           "expires_at": null,
           "verification": {
             "status": "restricted",
-            "checked_at": "2026-10-25T12:21:10+00:00",
+            "checked_at": "2026-10-25T16:58:48+00:00",
             "url": "https://www.adobe.com/products/photoshop.html",
             "final_url": "https://www.adobe.com/products/photoshop.html",
             "redirects": [
@@ -46610,13 +46610,13 @@
     "failures": [
       {
         "id": "motrix",
-        "error": "agalwood/Motrix@v2.0.0: 没有任何 asset 匹配配置的 pattern，现有 asset: ['beta-linux-arm64.yml', 'beta-linux.yml', 'beta-mac.yml', 'beta.yml', 'latest-linux-arm64.yml']..."
+        "error": "agalwood/Motrix@v2.0.1: 没有任何 asset 匹配配置的 pattern，现有 asset: ['beta-linux-arm64.yml', 'beta-linux.yml', 'beta-mac.yml', 'beta.yml', 'latest-linux-arm64.yml']..."
       }
     ]
   },
-  "release_id": "811bc1920825e197adca",
-  "checked_at": "2026-10-25T12:21:10+00:00",
-  "verified_at": "2026-10-25T12:21:10+00:00",
+  "release_id": "93f64ba25b04beb59d29",
+  "checked_at": "2026-10-25T16:58:48+00:00",
+  "verified_at": "2026-10-25T16:58:48+00:00",
   "quality": {
     "required_total": 301,
     "required_covered": 300,
