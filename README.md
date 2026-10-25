@@ -5,7 +5,7 @@
 > 由 GitHub Actions 每日自动同步上游官方源的**最新版本元数据**。
 > 仓库**不托管二进制安装包**，下载按钮直接跳到上游官方下载链接。
 >
-> 📅 **最后更新**：`2026-10-25 05:39:45` (UTC)　· 共 699 项软件（其中 1 项使用上次数据，标 ⚠️）
+> 📅 **最后更新**：`2026-10-25 12:20:52` (UTC)　· 共 699 项软件（其中 1 项使用上次数据，标 ⚠️）
 
 ---
 
@@ -25,7 +25,7 @@
 
 | 软件 | 最新版本 | 发布日期 | 下载链接 | 来源 |
 |------|---------|---------|---------|------|
-| [**Windows 11**](https://www.microsoft.com/software-download/windows11) | `25H2` | — | [win-x64](https://software.download.prss.microsoft.com/dbazure/Win11_25H2_Chinese_Simplified_x64_v2.iso?t=12dead1c-aa27-44cc-8298-6ab1294bc923&P1=1792993153&P2=602&P3=2&P4=Wj2ZfIAYSGWCQxICM2PjhRwm0wBGpBA%2fNH2zClbUmsr7e17xD%2fs32ClDwhTkPzsuvmIwev1dl%2fKYEAi%2bNER3VfV0JirmmhPH0xO%2buYQ6fDf4SyA8fkz0UjY%2fWMwky5fb37mTLNUZPdV5Iira%2ft090k%2f6Gh7ZBymGj375wI74tWSH5SKOXcwk%2fcA6AgjfCKaxi0kNoq3nSauYBCBClavoWW3gO21yx9Fg9FQUjGU16jYWpp%2fYlacK9AyfeUtpzO%2bACEg9FeyfdiTGB9o8EKdFpm2RSrVATYe0PAGmxsD0YqxgN5MtpLSBQVXSRLM04zeuMUQbwl%2bZZwWcrEX0iP2psA%3d%3d) | Microsoft Software Download (via Fido) |
+| [**Windows 11**](https://www.microsoft.com/software-download/windows11) | `25H2` | — | [win-x64](https://software.download.prss.microsoft.com/dbazure/Win11_25H2_Chinese_Simplified_x64_v2.iso?t=cfbea344-fd63-4a5f-a534-c20bc03dba85&P1=1793017198&P2=602&P3=2&P4=VSRVD2%2fJs8uwTl1hJXZ9IG%2f03T78LK6hnRufb1V3dKeopEb0hQk0wrMavfNGjpVT09uuQL6s1jOFmLP4E2v5bD24zN8xqhNfO8pQ4AuqFDgZSKW1kwlug3Mm5cPUiAy8zplKtunzmBlOGgW0yYcfQB%2bIOwI2ILYnxdQiPRFwUt5L32Y4yUaEJMMbnccKsEvT6ohL7FkgGRqiCU7IdFFs%2f31mgXaZeKsNdwyw%2bbWn4RrZF46hqY%2bE6a1lDAPkvND2yQQH0Fq3G7eDdjEZm8yQ9cdE5gZBuxon8qgnfAEQWpuI5obWefw7GBy0zwDY9jwNwF%2b4Fti5wShppQr%2bIzX2sQ%3d%3d) | Microsoft Software Download (via Fido) |
 | [**Ubuntu**](https://ubuntu.com/download) | `26.10` | — | [desktop-amd64](https://releases.ubuntu.com/26.10/ubuntu-26.10-desktop-amd64.iso) · [server-amd64](https://releases.ubuntu.com/26.10/ubuntu-26.10-live-server-amd64.iso) · [wsl-amd64](https://ubuntu.com/download) | Ubuntu official releases index |
 | [**Fedora Workstation**](https://fedoraproject.org/workstation/download/) | `44` | — | [workstation-live-x86_64](https://fedoraproject.org/workstation/download/) | Fedora official release directory |
 
@@ -541,7 +541,7 @@
 | [**PDFgear**](https://www.pdfgear.com) | `3.0.1` | — | [win-x64](https://downloadfiles.pdfgear.com/releases/windows/pdfgear_setup_v3.0.1.exe) | scoop manifest: extras/pdfgear |
 | [**PDFsam Basic**](https://github.com/torakiki/pdfsam) | `6.0.6` | — | [win-x64](https://github.com/torakiki/pdfsam/releases/download/v6.0.6/pdfsam-basic-6.0.6-windows-x64.zip) | scoop manifest: extras/pdfsam |
 | [**Microsoft Power BI Desktop**](https://powerbi.microsoft.com/desktop/) | `2.159.883.0` | — | [win-x64](https://download.microsoft.com/download/8/8/0/880BCA75-79DD-466A-927D-1ABF1F5454B0/PBIDesktopSetup-2026-10_x64.exe) | winget manifest: Microsoft.PowerBI |
-| [**QGIS**](https://www.qgis.org/) | `4.2.3` | — | [mac](https://download.qgis.org/downloads/macos/pr/qgis_pr_final-4_2_3.dmg) | brew manifest: qgis |
+| [**QGIS**](https://www.qgis.org/) | `4.2.3` | — | [mac](https://www.qgis.org/) | brew manifest: qgis |
 | [**Rambox**](https://rambox.app) | `2.7.2` | — | [win-x64](https://github.com/ramboxapp/download/releases/download/v2.7.2/Rambox-2.7.2-win-x64.exe#/dl.7z) | scoop manifest: extras/rambox |
 | [**Sage**](https://www.sagemath.org/) | `10.9,10.9.1` | — | [mac-arm64](https://github.com/3-manifolds/Sage_macOS/releases/download/v10.9.1/SageMath-10.9_arm64.dmg) | brew manifest: sage |
 | [**Scrivener**](https://www.literatureandlatte.com/scrivener/overview) | `3.5.2,17487,11` | — | [mac](https://scrivener.s3.amazonaws.com/mac_updates/Scrivener_11_17487.zip) | brew manifest: scrivener |
@@ -703,7 +703,7 @@
 | [**喜马拉雅**](https://www.ximalaya.com/) | `2026-10-23` | — | [win-x64](https://www.ximalaya.com/download/) · [mac-x64](https://www.ximalaya.com/download/) | Official download page; no public version API |
 | [**PotPlayer**](https://potplayer.daum.net/) | `2026-10-22` | — | [win-x64](https://t1.kakaocdn.net/potplayer/PotPlayer/Version/Latest/PotPlayerSetup64.exe) | Official Kakao CDN installer (latest build) |
 | [**剪映专业版**](https://www.capcut.cn/) | `2026-10-23` | — | [win-x64](https://www.capcut.cn/) · [mac-universal](https://www.capcut.cn/) | Official download page; no public version API |
-| [**优酷**](https://www.youku.com/) | `2026-10-23` | — | win-x64（暂不可用，待核验） · mac-universal（暂不可用，待核验） | Official download page; no public version API |
+| [**优酷**](https://www.youku.com/) | `2026-10-23` | — | [win-x64](https://www.youku.com/) · mac-universal（暂不可用，待核验） | Official download page; no public version API |
 | [**芒果TV**](https://www.mgtv.com/) | `2026-10-23` | — | [win-x64](https://www.mgtv.com/) · [mac-universal](https://www.mgtv.com/) | Official download page; no public version API |
 | [**QQ影音**](https://player.qq.com/) | `2026-10-23` | — | win-x64（暂不可用，待核验） | Official download page; no public version API |
 | [**洛雪音乐助手**](https://github.com/lyswhut/lx-music-desktop) | `2.12.6` | 2026-09-19 | [win-x64](https://github.com/lyswhut/lx-music-desktop/releases/download/v2.12.6/lx-music-desktop-v2.12.6-x64-Setup.exe) · [mac-arm64](https://github.com/lyswhut/lx-music-desktop/releases/download/v2.12.6/lx-music-desktop-2.12.6-arm64.dmg) · [mac-x64](https://github.com/lyswhut/lx-music-desktop/releases/download/v2.12.6/lx-music-desktop-2.12.6-x64.dmg) | GitHub Release: lyswhut/lx-music-desktop |
