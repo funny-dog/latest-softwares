@@ -1,11 +1,11 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-24T21:30:20+00:00",
+  "generated_at": "2026-10-25T05:43:53+00:00",
   "configured": 699,
   "published": 699,
   "stale_packages": 1,
-  "verified_assets": 1132,
-  "unavailable_assets": 21,
+  "verified_assets": 1130,
+  "unavailable_assets": 23,
   "required_total": 301,
   "required_covered": 300,
   "required_coverage": 0.9966777408637874,
@@ -112,6 +112,14 @@
       "id": "wps-pdf",
       "required": false,
       "issues": [
+        "unverified_or_unavailable:win-x64"
+      ]
+    },
+    {
+      "id": "youku",
+      "required": false,
+      "issues": [
+        "unverified_or_unavailable:mac-universal",
         "unverified_or_unavailable:win-x64"
       ]
     },
