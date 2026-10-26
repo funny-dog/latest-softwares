@@ -5,7 +5,7 @@
 > **Latest version metadata** automatically synced from official upstream sources daily by GitHub Actions.
 > This repository **does not host binary installers** — download buttons link directly to upstream official downloads.
 >
-> 📅 **Last updated**: `2026-10-26 05:45:59` (UTC) · 699 software items (1 using previous data, marked ⚠️)
+> 📅 **Last updated**: `2026-10-26 13:52:51` (UTC) · 699 software items (1 using previous data, marked ⚠️)
 
 ---
 
@@ -25,7 +25,7 @@
 
 | Software | Latest Version | Released | Download | Source |
 |----------|---------------|----------|----------|--------|
-| [**Windows 11**](https://www.microsoft.com/software-download/windows11) | `25H2` | — | [win-x64](https://software.download.prss.microsoft.com/dbazure/Win11_25H2_Chinese_Simplified_x64_v2.iso?t=de07e2a4-a40d-4c41-a7c6-30b43caa56df&P1=1793079929&P2=602&P3=2&P4=oOb0iTNC%2fEuKcWOIt2M6ZPW6jJ4YyeQMjyQcfJkRd0PteHcFEclzaYxPT1mXvwOR%2fNe8Vemdf3DybFHdml%2bnx6qz80r5O6GK4nMThjyBrOxCniZSoCwb%2bk7nAcvCXQw3GSq1jveNIXlNFCg0vL23HZIXK7SPAnE%2fHDSnzjXlXKZl5jwgrMNcm%2f%2b8uWcl8MBdqlyuN0fXQCNpfaj1WAhtYFKPvK6KSzC5Ip2pGvcbqE9nfRilFK1bk9fZXAoMgWuAsV5SUbfTBt8z6iWkw04mA6QBtfhmkdcZvlEkQ5kQJr%2fpmnbiAT0e2gET7x9jCyYiwC5JiWEb67WGEMb0CbB0hQ%3d%3d) | Microsoft Software Download (via Fido) |
+| [**Windows 11**](https://www.microsoft.com/software-download/windows11) | `25H2` | — | [win-x64](https://software.download.prss.microsoft.com/dbazure/Win11_25H2_Chinese_Simplified_x64_v2.iso?t=422426d3-172b-4e75-8f2d-af24eb700c18&P1=1793109087&P2=602&P3=2&P4=ZAHoKX95uHUE9EhXMzNLe48QuzVnSMeRJHvymDB8APoBEOr%2fQd6r8G28U0llbsbO1L9PT7yP0FbWzo6BO9AIyLBAkltirnfvQFYKJCZYk69w%2f0XHuNCBO5Cjr8YsEQzDitzkV80ssEc3c5vtyR1IndAviCthJUNjLa3In0bc495OsGkA%2b2RoKXAetISfgMPh0oqohQAa5Gp2RncL8qsnsOf2u6kfLC1ASclIm1PF1iwVibbAJeRjBVgKvtCLBSGINBmNveKzO7rZvdhziVA9OlUETZc0VJIE3CzGaBNI7TqUFAbo%2bFrwq9flVkWtPuC1fRpisYSgve35oM%2bI%2f5VNhg%3d%3d) | Microsoft Software Download (via Fido) |
 | [**Ubuntu**](https://ubuntu.com/download) | `26.10` | — | [desktop-amd64](https://releases.ubuntu.com/26.10/ubuntu-26.10-desktop-amd64.iso) · [server-amd64](https://releases.ubuntu.com/26.10/ubuntu-26.10-live-server-amd64.iso) · [wsl-amd64](https://ubuntu.com/download) | Ubuntu official releases index |
 | [**Fedora Workstation**](https://fedoraproject.org/workstation/download/) | `44` | — | [workstation-live-x86_64](https://fedoraproject.org/workstation/download/) | Fedora official release directory |
 
@@ -123,7 +123,7 @@
 | [**Gradle**](https://gradle.org) | `9.8.2` | — | [win](https://services.gradle.org/distributions/gradle-9.8.2-all.zip) | scoop manifest: main/gradle |
 | [**HTTP Toolkit**](https://httptoolkit.tech/) | `1.27.3` | — | [mac-arm64](https://github.com/httptoolkit/httptoolkit-desktop/releases/download/v1.27.3/HttpToolkit-1.27.3-arm64.dmg) | brew manifest: http-toolkit |
 | [**IntelliJ IDEA Ultimate**](https://www.jetbrains.com/idea/) | `2026.2.3-262.10968.63` | — | [win-x64](https://download.jetbrains.com/idea/idea-2026.2.3.win.zip) | scoop manifest: extras/idea |
-| [**Julia**](https://julialang.org/) | `1.13.2` | — | [win-x64](https://julialang-s3.julialang.org/bin/winnt/x64/1.13/julia-1.13.2-win64.zip) | scoop manifest: main/julia |
+| [**Julia**](https://julialang.org/) | `1.13.3` | — | [win-x64](https://julialang-s3.julialang.org/bin/winnt/x64/1.13/julia-1.13.3-win64.zip) | scoop manifest: main/julia |
 | [**Kate**](https://kate-editor.org/) | `26.08,12761` | — | [mac-arm64](https://cdn.kde.org/ci-builds/utilities/kate/release-26.08/macos-arm64/kate-release_26.08-12761-macos-clang-arm64.dmg) | brew manifest: kate |
 | [**KDiff3**](https://apps.kde.org/kdiff3/) | `1.12.4` | — | [win-x64](https://apps.kde.org/kdiff3/) | scoop manifest: extras/kdiff3 |
 | [**kubectl**](https://kubernetes.io/docs/reference/kubectl/) | `1.37.1` | — | [win-x64](https://dl.k8s.io/release/v1.37.1/kubernetes-client-windows-amd64.tar.gz) | scoop manifest: main/kubectl |
@@ -142,7 +142,7 @@
 | [**JetBrains PhpStorm**](https://www.jetbrains.com/phpstorm/) | `2026.2.3,262.10968.76` | — | [mac-arm64](https://www.jetbrains.com/phpstorm/) | brew manifest: phpstorm |
 | [**Podman Desktop**](https://podman-desktop.io/) | `1.30.5` | — | [mac-arm64](https://github.com/containers/podman-desktop/releases/download/v1.30.5/podman-desktop-1.30.5-arm64.dmg) | brew manifest: podman-desktop |
 | [**Positron**](https://positron.posit.co/) | `2026.10.1-2` | — | [mac-arm64](https://cdn.posit.co/positron/releases/mac/arm64/Positron-darwin-2026.10.1-2-arm64.zip) | brew manifest: positron |
-| [**Postico**](https://eggerapps.at/postico2/) | `2.3.4,9812` | — | [mac](https://downloads.eggerapps.at/postico/postico-9812.dmg) | brew manifest: postico |
+| [**Postico**](https://eggerapps.at/postico2/) | `2.3.5,9817` | — | [mac](https://downloads.eggerapps.at/postico/postico-9817.dmg) | brew manifest: postico |
 | [**Proxyman**](https://proxyman.com/) | `26.2.0,260200` | — | [mac](https://download.proxyman.com/260200/Proxyman_26.2.0.dmg) | brew manifest: proxyman |
 | [**PyCharm**](https://www.jetbrains.com/pycharm/) | `2026.2.3-262.10968.92` | — | [win-x64](https://download.jetbrains.com/python/pycharm-2026.2.3.win.zip) | scoop manifest: extras/pycharm |
 | [**Querious 4**](https://www.araelium.com/querious/) | `4.2.5` | — | [mac](https://www.araelium.com/querious/downloads/versions/Querious4.2.5.zip) | brew manifest: querious |
@@ -242,7 +242,7 @@
 | [**VirtualBox**](https://www.virtualbox.org/wiki/Downloads) | `2026-10-23` | — | [win-x64](https://www.virtualbox.org/wiki/Downloads) · [mac-universal](https://www.virtualbox.org/wiki/Downloads) · [linux-x64](https://www.virtualbox.org/wiki/Downloads) | Official VirtualBox downloads page; no public version API |
 | [**Visual Studio Code**](https://code.visualstudio.com) | `1.143.1` | 2026-10-22 | [win-x64](https://vscode.download.prss.microsoft.com/dbazure/download/stable/e646868227c3e3a9e3f24277c8c7220be42c0be7/VSCodeUserSetup-x64-1.143.1.exe) · [win-arm64](https://vscode.download.prss.microsoft.com/dbazure/download/stable/e646868227c3e3a9e3f24277c8c7220be42c0be7/VSCodeUserSetup-arm64-1.143.1.exe) · [mac-arm64](https://vscode.download.prss.microsoft.com/dbazure/download/stable/e646868227c3e3a9e3f24277c8c7220be42c0be7/VSCode-darwin-arm64.dmg) · [mac-x64](https://vscode.download.prss.microsoft.com/dbazure/download/stable/e646868227c3e3a9e3f24277c8c7220be42c0be7/VSCode-darwin-x64.dmg) | VSCode Build Manifest |
 | [**OpenAI Codex**](https://github.com/openai/codex) | `0.164.0` | 2026-10-23 | [win-x64](https://github.com/openai/codex/releases/download/rust-v0.164.0/codex-x86_64-pc-windows-msvc.exe) · [win-arm64](https://github.com/openai/codex/releases/download/rust-v0.164.0/codex-aarch64-pc-windows-msvc.exe) · [mac-arm64](https://github.com/openai/codex/releases/download/rust-v0.164.0/codex-aarch64-apple-darwin.dmg) · [mac-x64](https://github.com/openai/codex/releases/download/rust-v0.164.0/codex-x86_64-apple-darwin.tar.gz) | GitHub Release: openai/codex |
-| [**Git for Windows**](https://github.com/git-for-windows/git) | `2.56.0.windows.3` | 2026-10-22 | [win-x64](https://github.com/git-for-windows/git/releases/download/v2.56.0.windows.3/Git-2.56.0.3-64-bit.exe) | GitHub Release: git-for-windows/git |
+| [**Git for Windows**](https://github.com/git-for-windows/git) | `2.56.0.windows.4` | 2026-10-26 | [win-x64](https://github.com/git-for-windows/git/releases/download/v2.56.0.windows.4/Git-2.56.0.4-64-bit.exe) | GitHub Release: git-for-windows/git |
 | [**Insomnia**](https://github.com/Kong/insomnia) | `13.3.1` | 2026-10-09 | [win-x64](https://github.com/Kong/insomnia/releases/download/core%4013.3.1/Insomnia.Core-13.3.1.exe) | GitHub Release: Kong/insomnia |
 | [**HeidiSQL**](https://github.com/HeidiSQL/HeidiSQL) | `12.22` | 2026-10-25 | [win-x64](https://github.com/HeidiSQL/HeidiSQL/releases/download/v12.22/HeidiSQL_12.22.0.7382_Setup.exe) | GitHub Release: HeidiSQL/HeidiSQL |
 | [**Notepad++**](https://github.com/notepad-plus-plus/notepad-plus-plus) | `8.9.8.1` | 2026-09-24 | [win-x64](https://github.com/notepad-plus-plus/notepad-plus-plus/releases/download/v8.9.8.1/npp.8.9.8.1.Installer.x64.exe) | GitHub Release: notepad-plus-plus/notepad-plus-plus |
@@ -703,7 +703,7 @@
 | [**喜马拉雅**](https://www.ximalaya.com/) | `2026-10-23` | — | [win-x64](https://www.ximalaya.com/download/) · [mac-x64](https://www.ximalaya.com/download/) | Official download page; no public version API |
 | [**PotPlayer**](https://potplayer.daum.net/) | `2026-10-26` | — | [win-x64](https://t1.kakaocdn.net/potplayer/PotPlayer/Version/Latest/PotPlayerSetup64.exe) | Official Kakao CDN installer (latest build) |
 | [**剪映专业版**](https://www.capcut.cn/) | `2026-10-23` | — | [win-x64](https://www.capcut.cn/) · [mac-universal](https://www.capcut.cn/) | Official download page; no public version API |
-| [**优酷**](https://www.youku.com/) | `2026-10-23` | — | [win-x64](https://www.youku.com/) · mac-universal（Unavailable; pending verification） | Official download page; no public version API |
+| [**优酷**](https://www.youku.com/) | `2026-10-23` | — | win-x64（Unavailable; pending verification） · mac-universal（Unavailable; pending verification） | Official download page; no public version API |
 | [**芒果TV**](https://www.mgtv.com/) | `2026-10-23` | — | [win-x64](https://www.mgtv.com/) · [mac-universal](https://www.mgtv.com/) | Official download page; no public version API |
 | [**QQ影音**](https://player.qq.com/) | `2026-10-23` | — | win-x64（Unavailable; pending verification） | Official download page; no public version API |
 | [**洛雪音乐助手**](https://github.com/lyswhut/lx-music-desktop) | `2.12.6` | 2026-09-19 | [win-x64](https://github.com/lyswhut/lx-music-desktop/releases/download/v2.12.6/lx-music-desktop-v2.12.6-x64-Setup.exe) · [mac-arm64](https://github.com/lyswhut/lx-music-desktop/releases/download/v2.12.6/lx-music-desktop-2.12.6-arm64.dmg) · [mac-x64](https://github.com/lyswhut/lx-music-desktop/releases/download/v2.12.6/lx-music-desktop-2.12.6-x64.dmg) | GitHub Release: lyswhut/lx-music-desktop |
