@@ -1538,3 +1538,334 @@ packages:
       download_url: https://get.adobe.com/reader/
   desc_cn: Adobe 官方 PDF 阅读器，提供免费下载入口
   desc_en: Official Adobe PDF reader with a free download entry
+- id: pdf-over
+  name: PDF-Over
+  category: Utilities
+  editions:
+  - cn
+  - intl
+  homepage: https://technology.a-sit.at/en/pdf-over
+  fetcher: package_manifest
+  args:
+    provider: winget
+    package: A-SIT.PDF-Over
+    platforms:
+    - platform: win-x64
+  desc_cn: 轻松签署PDF文档
+  desc_en: Sign your PDF documents with ease
+  source_ids:
+    winget: A-SIT.PDF-Over
+- id: rv
+  name: rv
+  category: Utilities
+  editions:
+  - cn
+  - intl
+  homepage: https://github.com/A2-ai/rv
+  fetcher: package_manifest
+  args:
+    provider: winget
+    package: A2-Ai.rv
+    platforms:
+    - platform: win-x64
+  desc_cn: 以可重现、快速和声明的方式管理和安装R包的新方法。
+  desc_en: A new way to manage and install your R packages in a reproducible, fast,
+    and declarative way.
+  source_ids:
+    winget: A2-Ai.rv
+- id: wtfast
+  name: WTFast
+  category: Gaming
+  editions:
+  - cn
+  - intl
+  homepage: https://www.wtfast.com/en
+  fetcher: package_manifest
+  args:
+    provider: winget
+    package: AAAInternetPublishing.WTFast
+    platforms:
+    - platform: win-x86
+  desc_cn: 消除延迟、更快的Ping、更流畅的游戏体验
+  desc_en: Eliminate Lag, Faster Ping, Smoother Gaming
+  source_ids:
+    winget: AAAInternetPublishing.WTFast
+- id: aas-worldwide-telescope
+  name: AAS WorldWide Telescope
+  category: Utilities
+  editions:
+  - cn
+  - intl
+  homepage: http://worldwidetelescope.org/
+  fetcher: package_manifest
+  args:
+    provider: winget
+    package: AAS.WorldWideTelescope
+    platforms:
+    - platform: win-x64
+  desc_cn: 展示天文数据和知识的工具
+  desc_en: Tool for showcasing astronomical data and knowledge
+  source_ids:
+    winget: AAS.WorldWideTelescope
+- id: e-design
+  name: e-Design
+  category: Utilities
+  editions:
+  - cn
+  - intl
+  homepage: https://new.abb.com/low-voltage/support/software/e-design
+  fetcher: package_manifest
+  args:
+    provider: winget
+    package: ABB.e-Design
+    platforms:
+    - platform: win-x86
+  desc_cn: ABB LP设计软件的单一访问点。
+  desc_en: The single point of access to ABB LP Design Software.
+  source_ids:
+    winget: ABB.e-Design
+- id: desktuna
+  name: DeskTuna
+  category: Utilities
+  editions:
+  - cn
+  - intl
+  homepage: https://desktuna.com
+  fetcher: package_manifest
+  args:
+    provider: winget
+    package: ABKTeknik.DeskTuna
+    platforms:
+    - platform: win-x64
+  desc_cn: 免费桌面管理器，可将桌面图标分组到智能围栏中。
+  desc_en: Free desktop organizer that groups your desktop icons into smart fences.
+  source_ids:
+    winget: ABKTeknik.DeskTuna
+- id: neonprime
+  name: NeonPrime
+  category: System Utilities
+  editions:
+  - cn
+  - intl
+  homepage: https://github.com/ABowlOfEleven/NeonPrime
+  fetcher: package_manifest
+  args:
+    provider: winget
+    package: ABowlOfEleven.NeonPrime
+    platforms:
+    - platform: win-x64
+  desc_cn: 适用于Windows的全息系统控制卡组。一台机器，三种模式。
+  desc_en: A holographic system control deck for Windows. One machine, three modes.
+  source_ids:
+    winget: ABowlOfEleven.NeonPrime
+- id: hopscout
+  name: hopscout
+  category: System Utilities
+  editions:
+  - cn
+  - intl
+  homepage: https://github.com/ABowlOfEleven/hopscout
+  fetcher: package_manifest
+  args:
+    provider: winget
+    package: ABowlOfEleven.hopscout
+    platforms:
+    - platform: win-x64
+  desc_cn: 适用于Windows的现代MTR兼容跟踪路由和网络监视器。
+  desc_en: A modern, MTR-compatible traceroute and network monitor for Windows.
+  source_ids:
+    winget: ABowlOfEleven.hopscout
+- id: unimailclient
+  name: UnimailClient
+  category: Developer Tools
+  editions:
+  - cn
+  - intl
+  homepage: https://github.com/unimails/unimail-client
+  fetcher: package_manifest
+  args:
+    provider: winget
+    package: ACCloud.UnimailClient
+    platforms:
+    - platform: win-x64
+  desc_cn: 这是Unimail的第一个可执行客户端程序，易于快速使用。
+  desc_en: This is the first executable client program of Unimail, easy to use quickly.
+  source_ids:
+    winget: ACCloud.UnimailClient
+- id: acdsee-free
+  name: ACDSee Free
+  category: Browsers
+  editions:
+  - cn
+  - intl
+  homepage: https://www.acdsee.com/en/products/acdsee-free/
+  fetcher: package_manifest
+  args:
+    provider: winget
+    package: ACDSystems.ACDSee.Free
+    platforms:
+    - platform: win-x64
+  desc_cn: ACDSee Free是一款快速且功能强大的文件浏览器，非常适合用于查看RAW图像以及搜索和排序媒体库。
+  desc_en: ACDSee Free is a fast and powerful file browser, ideal for viewing RAW
+    images, as well as searching and sorting your media libraries.
+  source_ids:
+    winget: ACDSystems.ACDSee.Free
+- id: acdsee-gemstone-photo-editor-15
+  name: ACDSee Gemstone Photo Editor 15
+  category: Developer Tools
+  editions:
+  - cn
+  - intl
+  homepage: https://www.acdsee.com/en/products/gemstone-photo-editor/
+  fetcher: package_manifest
+  args:
+    provider: winget
+    package: ACDSystems.ACDSeeGemstone
+    platforms:
+    - platform: win-x64
+  desc_cn: ACDSee Gemstone相片编辑器15是您无限创意的启动板，旨在为每次图形设计和相片编辑旅程提供动力。Gemstone专为精准和轻松而设计，让您自由探索新的创意前沿。
+  desc_en: ACDSee Gemstone Photo Editor 15 is your launchpad for limitless creativity,
+    built to fuel every graphic design and photo editing journey. Engineered for both
+    precision and ease, Gemstone gives you the freedom to explore new creative frontiers.
+  source_ids:
+    winget: ACDSystems.ACDSeeGemstone
+- id: acdsee-photo-studio-home-2026
+  name: ACDSee Photo Studio Home 2026
+  category: Utilities
+  editions:
+  - cn
+  - intl
+  homepage: https://www.acdsee.com/en/products/photo-studio-home/
+  fetcher: package_manifest
+  args:
+    provider: winget
+    package: ACDSystems.ACDSeePhotoStudio.Home
+    platforms:
+    - platform: win-x64
+  desc_cn: ACDSee Photo Studio Home 2026为您提供了掌握大量照片集的工具。
+  desc_en: ACDSee Photo Studio Home 2026 equips you with the tools to master your
+    extensive photo collection.
+  source_ids:
+    winget: ACDSystems.ACDSeePhotoStudio.Home
+- id: acdsee-photo-studio-professional-2026
+  name: ACDSee Photo Studio Professional 2026
+  category: Developer Tools
+  editions:
+  - cn
+  - intl
+  homepage: https://www.acdsee.com/en/products/photo-studio-professional/
+  fetcher: package_manifest
+  args:
+    provider: winget
+    package: ACDSystems.ACDSeePhotoStudio.Professional
+    platforms:
+    - platform: win-x64
+  desc_cn: ACDSee Photo Studio Professional为您提供资源丰富的工具包，该工具包将尖端的本地人工智能(AI)与传奇的数字资产管理和复杂的RAW图像编辑相结合。
+  desc_en: ACDSee Photo Studio Professional supplies you with a resourceful toolkit
+    that blends cutting-edge, locally powered Artificial Intelligence (AI) with legendary
+    digital asset management and sophisticated RAW image editing.
+  source_ids:
+    winget: ACDSystems.ACDSeePhotoStudio.Professional
+- id: acdsee-photo-studio-ultimate-2026
+  name: ACDSee Photo Studio Ultimate 2026
+  category: AI Tools
+  editions:
+  - cn
+  - intl
+  homepage: https://www.acdsee.com/en/products/photo-studio-ultimate/
+  fetcher: package_manifest
+  args:
+    provider: winget
+    package: ACDSystems.ACDSeePhotoStudio.Ultimate
+    platforms:
+    - platform: win-x64
+  desc_cn: 使用人工智能驱动的Precision导航您的创意路径和数字资产
+  desc_en: Navigate Your Creative Path and Digital Assets with AI-Powered Precision
+  source_ids:
+    winget: ACDSystems.ACDSeePhotoStudio.Ultimate
+- id: downloadhelper-coapp
+  name: DownloadHelper CoApp
+  category: Media Players
+  editions:
+  - cn
+  - intl
+  homepage: https://www.downloadhelper.net/install-coapp-v2
+  fetcher: package_manifest
+  args:
+    provider: winget
+    package: ACLAP.DownloadHelperCoApp
+    platforms:
+    - platform: win-x64
+  desc_cn: 视频下载Helper Companion应用程序
+  desc_en: Video DownloadHelper Companion App
+  source_ids:
+    winget: ACLAP.DownloadHelperCoApp
+- id: 0patch-agent
+  name: 0patch Agent
+  category: Security & Privacy
+  editions:
+  - cn
+  - intl
+  homepage: https://0patch.com/
+  fetcher: package_manifest
+  args:
+    provider: winget
+    package: ACROSSecurity.0patch
+    platforms:
+    - platform: win-x64
+  desc_cn: 为许多程序实时微修补安全漏洞
+  desc_en: Micropatching security vulnerabilities for many programs and in real time
+  source_ids:
+    winget: ACROSSecurity.0patch
+- id: adata-ssd-toolbox
+  name: ADATA SSD Toolbox
+  category: Developer Tools
+  editions:
+  - cn
+  - intl
+  homepage: https://www.adata.com/en/support/downloads/
+  fetcher: package_manifest
+  args:
+    provider: winget
+    package: ADATA.SSDToolbox
+    platforms:
+    - platform: win-x64
+  desc_cn: 为用户提供多种方式来获取磁盘信息并轻松更改设置。此外，它还可以加快固态硬盘的速度并提高其使用寿命。
+  desc_en: Provides multiple ways for users to obtain disk information and easily
+    change settings. Additionally, it can speed up your SSD and improve its lifespan.
+  source_ids:
+    winget: ADATA.SSDToolbox
+- id: devmate
+  name: DevMate
+  category: Developer Tools
+  editions:
+  - cn
+  - intl
+  homepage: https://github.com/GOALLINNOOUT/Devmate
+  fetcher: package_manifest
+  args:
+    provider: winget
+    package: ADELA.Devmate
+    platforms:
+    - platform: win-x64
+  desc_cn: 开发人员诊断CLI
+  desc_en: Developer diagnostics CLI
+  source_ids:
+    winget: ADELA.Devmate
+- id: agent-desktop-harness
+  name: Agent Desktop Harness
+  category: Utilities
+  editions:
+  - cn
+  - intl
+  homepage: https://github.com/xuyw1997/agent-desktop-harness
+  fetcher: package_manifest
+  args:
+    provider: winget
+    package: ADHProject.ADH
+    platforms:
+    - platform: win-x64
+  desc_cn: Windows桌面代理的可信Python计算机使用线束。
+  desc_en: Trusted Python computer-use harness for Windows desktop agents.
+  source_ids:
+    winget: ADHProject.ADH
