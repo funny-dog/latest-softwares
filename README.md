@@ -5,7 +5,7 @@
 > 由 GitHub Actions 每日自动同步上游官方源的**最新版本元数据**。
 > 仓库**不托管二进制安装包**，下载按钮直接跳到上游官方下载链接。
 >
-> 📅 **最后更新**：`2026-10-27 05:58:46` (UTC)　· 共 699 项软件（其中 1 项使用上次数据，标 ⚠️）
+> 📅 **最后更新**：`2026-10-27 12:58:58` (UTC)　· 共 699 项软件（其中 1 项使用上次数据，标 ⚠️）
 
 ---
 
@@ -25,7 +25,7 @@
 
 | 软件 | 最新版本 | 发布日期 | 下载链接 | 来源 |
 |------|---------|---------|---------|------|
-| [**Windows 11**](https://www.microsoft.com/software-download/windows11) | `25H2` | — | [win-x64](https://software.download.prss.microsoft.com/dbazure/Win11_25H2_Chinese_Simplified_x64_v2.iso?t=4847cdd5-438a-461d-8b24-18a90ea2fc63&P1=1793167093&P2=602&P3=2&P4=DMJYEO1Ev6G1bIFeZoNmwPxINnx4TRwDaDb1l1qbkOGQi8xnNhzXgfLv6pwN1Nzen4nIjOy42KU19CGxiTNYpwUeRp5CYUZU6J8kT41XKJ0dIfA7u%2fEKw%2fsXnbqSm%2fBL%2buEEnP1kwUmaxHTSChWhRlU8vj%2bzm%2bcqnhFDR65xM5ngKH433Q5f6YvBMwto8D2IrSAUA4bh%2b%2ftBN4LS14OYnByJXD6VpegA94e5z7S8yNkMPgPviI8wzfrfPVqH%2f7GXSAd2EREWvHE5wnAZdbgYlj6%2biMXgVo6uggCSTNjW1H7N%2fZReqhrivqYRGBBBlYLACQInecyGKWnLQpkZ1DH5XQ%3d%3d) | Microsoft Software Download (via Fido) |
+| [**Windows 11**](https://www.microsoft.com/software-download/windows11) | `25H2` | — | [win-x64](https://software.download.prss.microsoft.com/dbazure/Win11_25H2_Chinese_Simplified_x64_v2.iso?t=0d41fb2e-7013-401c-946b-dfc85cca1156&P1=1793192294&P2=602&P3=2&P4=Sd9rMFbOXBGPAXs7ubkpH4JPy6GxvHJQSjJRBcDDn6sU%2fN7yVu5jP3CWuZA3zI%2b3xAtb%2bs2xNSnROVa2hKU0mC1Ru4ZlJkovoOvn2Au%2bVVcEu7PX8pfhN4M8uotGL2Wz685bTkqIq1nHETFF8Ex9Ip7fV3FfcHZf4lb7VF1wDeAuoMIaTksaJ47d2jNyXnfEPm0jxZie1EOUrKLG2p4%2fPQ2tkvnYGlJz5fWCLB2HgH7RRTihyfPEEV8HxrAHM%2bNdLV6QKwBhOOI%2fk0DMcg5mKCcKy2%2fJssRA7acSGCBTAno%2fyO0RJAmKf9b8lABFO7QZSyUBryB1cDUbxev%2flcYLDQ%3d%3d) | Microsoft Software Download (via Fido) |
 | [**Ubuntu**](https://ubuntu.com/download) | `26.10` | — | [desktop-amd64](https://releases.ubuntu.com/26.10/ubuntu-26.10-desktop-amd64.iso) · [server-amd64](https://releases.ubuntu.com/26.10/ubuntu-26.10-live-server-amd64.iso) · [wsl-amd64](https://ubuntu.com/download) | Ubuntu official releases index |
 | [**Fedora Workstation**](https://fedoraproject.org/workstation/download/) | `44` | — | [workstation-live-x86_64](https://fedoraproject.org/workstation/download/) | Fedora official release directory |
 
@@ -127,7 +127,7 @@
 | [**Kate**](https://kate-editor.org/) | `26.08,12761` | — | [mac-arm64](https://cdn.kde.org/ci-builds/utilities/kate/release-26.08/macos-arm64/kate-release_26.08-12761-macos-clang-arm64.dmg) | brew manifest: kate |
 | [**KDiff3**](https://apps.kde.org/kdiff3/) | `1.12.4` | — | [win-x64](https://apps.kde.org/kdiff3/) | scoop manifest: extras/kdiff3 |
 | [**kubectl**](https://kubernetes.io/docs/reference/kubectl/) | `1.37.1` | — | [win-x64](https://dl.k8s.io/release/v1.37.1/kubernetes-client-windows-amd64.tar.gz) | scoop manifest: main/kubectl |
-| [**Lens**](https://lenshq.io/) | `2026.10.121159` | — | [mac-arm64](https://api.k8slens.dev/binaries/Lens-2026.10.121159-latest-arm64.dmg) | brew manifest: lens |
+| [**Lens**](https://lenshq.io/) | `2026.10.261408` | — | [mac-arm64](https://api.k8slens.dev/binaries/Lens-2026.10.261408-latest-arm64.dmg) | brew manifest: lens |
 | [**LLVM**](https://www.llvm.org) | `23.1.4` | — | [win-x64](https://github.com/llvm/llvm-project/releases/download/llvmorg-23.1.4/LLVM-23.1.4-win64.msi) | scoop manifest: main/llvm |
 | [**MacTeX**](https://www.tug.org/mactex/) | `2026.0324` | — | [mac](https://www.tug.org/mactex/) | brew manifest: mactex-no-gui |
 | [**Maven**](https://maven.apache.org/) | `3.10.0` | — | [win](https://dlcdn.apache.org/maven/maven-3/3.10.0/binaries/apache-maven-3.10.0-bin.zip) | scoop manifest: main/maven |
@@ -306,7 +306,7 @@
 | [**百度输入法**](https://shurufa.baidu.com/) | `2026-10-27` | — | win-x64（暂不可用，待核验） | Official download page; no public version API |
 | [**鲁大师**](https://www.ludashi.com/) | `2026-10-27` | — | [win-x64](https://www.ludashi.com/) | Official download page; no public version API |
 | [**腾讯柠檬清理**](https://lemon.qq.com/) | `2026-10-27` | — | [mac-universal](https://lemon.qq.com/) | Official download page; no public version API |
-| [**Advanced Renamer**](https://www.advancedrenamer.com) | `4.27` | — | [win-x64](https://www.advancedrenamer.com/down/win/advanced_renamer_portable_4_27.zip) | scoop manifest: extras/advancedrenamer |
+| [**Advanced Renamer**](https://www.advancedrenamer.com) | `4.28` | — | [win-x64](https://www.advancedrenamer.com/down/win/advanced_renamer_portable_4_28.zip) | scoop manifest: extras/advancedrenamer |
 | [**AIDA64 Extreme**](https://www.aida64.com) | `8.40.5000` | — | [win](https://download.aida64.com/aida64extreme840.zip) | scoop manifest: extras/aida64extreme |
 | [**Alfred**](https://www.alfredapp.com/) | `5.8.1,2349` | — | [mac](https://cachefly.alfredapp.com/Alfred_5.8.1_2349.tar.gz) | brew manifest: alfred |
 | [**AltTab**](https://alt-tab.app/) | `11.10.1` | — | [mac](https://github.com/lwouis/alt-tab-macos/releases/download/v11.10.1/AltTab-11.10.1.zip) | brew manifest: alt-tab |
@@ -352,7 +352,7 @@
 | [**Yoink**](https://eternalstorms.at/yoink/mac/) | `3.7.6` | — | [mac](https://downloads.eternalstorms.at/Yoink.zip) | brew manifest: yoink |
 | [**Rufus**](https://github.com/pbatard/rufus) | `4.15` | 2026-06-30 | [win-x64](https://github.com/pbatard/rufus/releases/download/v4.15/rufus-4.15.exe) | GitHub Release: pbatard/rufus |
 | [**Ventoy**](https://github.com/ventoy/Ventoy) | `1.1.18` | 2026-10-09 | [win-x64](https://github.com/ventoy/Ventoy/releases/download/v1.1.18/ventoy-1.1.18-windows.zip) | GitHub Release: ventoy/Ventoy |
-| [**PowerToys**](https://github.com/microsoft/PowerToys) | `0.102.2933.0` | 2026-10-21 | [win-x64](https://github.com/microsoft/PowerToys/releases/download/v0.102.2933.0/PowerToysUserSetup-0.102.2933.0-x64.exe) | GitHub Release: microsoft/PowerToys |
+| [**PowerToys**](https://github.com/microsoft/PowerToys) | `0.102.3001` | 2026-10-27 | [win-x64](https://github.com/microsoft/PowerToys/releases/download/v0.102.3001/PowerToysUserSetup-0.102.3001.0-x64.exe) | GitHub Release: microsoft/PowerToys |
 | [**ShareX**](https://github.com/ShareX/ShareX) | `21.0.0` | 2026-07-03 | [win-x64](https://github.com/ShareX/ShareX/releases/download/v21.0.0/ShareX-21.0.0-setup-x64.exe) | GitHub Release: ShareX/ShareX |
 | [**Lively Wallpaper**](https://github.com/rocksdanister/lively) | `2.2.1.0` | 2025-09-18 | [win-x64](https://github.com/rocksdanister/lively) | GitHub Release: rocksdanister/lively |
 | [**ExplorerPatcher**](https://github.com/valinet/ExplorerPatcher) | `26100.8457.70.3` | 2026-06-20 | [win-x64](https://github.com/valinet/ExplorerPatcher/releases/download/26100.8457.70.3/ep_setup.exe) | GitHub Release: valinet/ExplorerPatcher |
@@ -499,7 +499,7 @@
 | [**网易邮箱大师**](https://dashi.163.com/) | `2026-10-26` | — | [win-x64](https://dashi.163.com/) · [mac-x64](https://dashi.163.com/) | Official download page; no public version API |
 | [**Foxmail**](https://www.foxmail.com/) | `2026-10-27` | — | [win-x64](https://www.foxmail.com/) · [mac-universal](https://www.foxmail.com/) | Official download page; no public version API |
 | [**金山词霸**](https://www.iciba.com/) | `2026-10-27` | — | [win-x64](https://www.iciba.com/) · [mac-universal](https://www.iciba.com/) | Official download page; no public version API |
-| [**欧路词典**](https://www.eudic.net/) | `2026-10-27` | — | win-x64（暂不可用，待核验） · mac-universal（暂不可用，待核验） | Official download page; no public version API |
+| [**欧路词典**](https://www.eudic.net/) | `2026-10-27` | — | [win-x64](https://www.eudic.net/) · [mac-universal](https://www.eudic.net/) | Official download page; no public version API |
 | [**印象笔记**](https://www.yinxiang.com/) | `2026-10-27` | — | [win-x64](https://www.yinxiang.com/) · [mac-universal](https://www.yinxiang.com/) | Official download page; no public version API |
 | [**滴答清单**](https://dida365.com/) | `2026-10-27` | — | [win-x64](https://dida365.com/) · [mac-universal](https://dida365.com/) | Official download page; no public version API |
 | [**语雀**](https://www.yuque.com/) | `2026-10-27` | — | [win-x64](https://www.yuque.com/) · [mac-universal](https://www.yuque.com/) | Official download page; no public version API |
@@ -783,9 +783,9 @@
 | [**Arc**](https://arc.net/) | `1.170.0,89123` | — | [mac](https://releases.arc.net/release/Arc-1.170.0-89123.zip) | brew manifest: arc |
 | [**Min**](https://minbrowser.org/) | `1.35.7` | — | [win-x64](https://github.com/minbrowser/min/releases/download/v1.35.7/Min-v1.35.7-windows.zip) | scoop manifest: extras/min |
 | [**Orion Browser**](https://browser.kagi.com/) | `1.1.3,152` | — | [mac](https://cdn.kagi.com/updates/26_0/152.zip) | brew manifest: orion |
-| [**Pale Moon**](https://www.palemoon.org) | `35.0.2` | — | [win-x64](https://rm-eu.palemoon.org/release/Palemoon-Portable-35.0.2.win64.exe#/palemoon.7z) | scoop manifest: extras/palemoon |
+| [**Pale Moon**](https://www.palemoon.org) | `35.0.3` | — | [win-x64](https://rm-eu.palemoon.org/release/Palemoon-Portable-35.0.3.win64.exe#/palemoon.7z) | scoop manifest: extras/palemoon |
 | [**SeaMonkey**](https://www.seamonkey-project.org) | `2.53.24` | — | [win-x64](https://archive.seamonkey-project.org/releases/2.53.24/win64/en-US/seamonkey-2.53.24.en-US.win64.installer.exe#/dl.7z) | scoop manifest: extras/seamonkey |
-| [**Waterfox**](https://www.waterfox.net) | `6.7.6` | — | [win-x64](https://cdn1.waterfox.net/waterfox/releases/6.7.6/WINNT_x86_64/Waterfox%20Setup%206.7.6.exe#/dl.7z) | scoop manifest: extras/waterfox |
+| [**Waterfox**](https://www.waterfox.net) | `6.7.7` | — | [win-x64](https://cdn1.waterfox.net/waterfox/releases/6.7.7/WINNT_x86_64/Waterfox%20Setup%206.7.7.exe#/dl.7z) | scoop manifest: extras/waterfox |
 | [**Wavebox**](https://wavebox.io/) | `156.3.20.2` | — | [mac-arm64](https://download.wavebox.app/stable/macarm64/Wavebox_156.3.20.2.zip) | brew manifest: wavebox |
 | [**Zen Browser**](https://github.com/zen-browser/desktop) | `1.23.4b` | 2026-10-21 | [win-x64](https://github.com/zen-browser/desktop/releases/download/1.23.4b/zen.installer.exe) | GitHub Release: zen-browser/desktop |
 | [**Mozilla Firefox**](https://www.mozilla.org/firefox/new/) | `158.0.1` | — | [win-x64](https://download.mozilla.org/?product=firefox-latest-ssl&os=win64&lang=en-US) · [mac-universal](https://download.mozilla.org/?product=firefox-latest-ssl&os=osx&lang=en-US) · [linux-x64](https://download.mozilla.org/?product=firefox-latest-ssl&os=linux64&lang=en-US) | Mozilla product-details API |
