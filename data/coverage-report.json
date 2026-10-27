@@ -1,11 +1,11 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-26T13:54:27+00:00",
+  "generated_at": "2026-10-27T06:02:10+00:00",
   "configured": 699,
   "published": 699,
   "stale_packages": 1,
-  "verified_assets": 1130,
-  "unavailable_assets": 23,
+  "verified_assets": 1129,
+  "unavailable_assets": 24,
   "required_total": 301,
   "required_covered": 300,
   "required_coverage": 0.9966777408637874,
@@ -46,6 +46,14 @@
       "required": false,
       "issues": [
         "unverified_or_unavailable:mac-x64",
+        "unverified_or_unavailable:win-x64"
+      ]
+    },
+    {
+      "id": "eudic",
+      "required": false,
+      "issues": [
+        "unverified_or_unavailable:mac-universal",
         "unverified_or_unavailable:win-x64"
       ]
     },
@@ -119,8 +127,7 @@
       "id": "youku",
       "required": false,
       "issues": [
-        "unverified_or_unavailable:mac-universal",
-        "unverified_or_unavailable:win-x64"
+        "unverified_or_unavailable:mac-universal"
       ]
     },
     {
