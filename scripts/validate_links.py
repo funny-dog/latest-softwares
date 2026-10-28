@@ -213,13 +213,19 @@ def validate_and_fix(
         # 短暂故障降级（沿用旧结果，不延长有效期、不算成功）：
         # 1) 网络异常/超时（已有行为，重试间隔仍按 failures 退避）；
         # 2) 上游整站维护页（transient）——既不是死链也不是反爬，硬判失败会让
-        #    整条发布流水线卡到上游恢复为止，因此额外把重试提前。
+        #    整条发布流水线卡到上游恢复为止，因此额外把重试提前；
+        # 3) 落地页被反爬/限流（restricted）——页面内容根本没有被评估，入口本
+        #    身未必变化；直链 403 无法区分“检查者被挡”与“确实需要访问权限”，
+        #    维持原判，长期反爬走 coverage.json 的 exemptions。
         transient = attempt["status"] in {"unverified", "transient"} and (
             attempt["status"] == "transient"
             or attempt.get("reason", "").startswith("network check failed:")
         )
+        blocked_landing = attempt["status"] == "restricted" and not is_direct_link(
+            asset["url"], asset.get("link_kind")
+        )
         carry_over = _recover_verification(old, asset, fingerprint, now)
-        if transient and carry_over:
+        if (transient or blocked_landing) and carry_over:
             verification = {
                 **carry_over,
                 "last_attempt_at": now.isoformat(timespec="seconds"),

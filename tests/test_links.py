@@ -504,6 +504,124 @@ def test_carry_over_drops_stale_transient_markers(tmp_path, monkeypatch):
     assert verification["valid_until"] == published_until
 
 
+def _setup_landing_validation(tmp_path, monkeypatch):
+    data_file, config = _setup_validation(tmp_path, monkeypatch)
+    data = json.loads(data_file.read_text())
+    data["packages"][0]["assets"][0] = {
+        "platform": "win-x64",
+        "url": "https://example.test/download/",
+        "link_kind": "landing_page",
+    }
+    data_file.write_text(json.dumps(data))
+    return data_file, config
+
+
+def test_restricted_landing_page_keeps_previous_verification(tmp_path, monkeypatch):
+    """落地页被反爬 403 时沿用仍未过期的旧验证，不延长有效期、记录受限尝试。"""
+    path, _ = _setup_landing_validation(tmp_path, monkeypatch)
+    monkeypatch.setattr(validate_links, "verify_link", lambda *a, **kw: _verified())
+    assert validate_links.validate_and_fix(gate=True) == 0
+    published = json.loads(path.read_text())["packages"][0]["assets"][0]
+    original_valid_until = published["verification"]["valid_until"]
+
+    landing = {
+        "platform": "win-x64",
+        "url": "https://example.test/download/",
+        "link_kind": "landing_page",
+    }
+    monkeypatch.setattr(
+        validate_links,
+        "_refetch_package",
+        lambda c: {"id": "example", "version": "1.0", "assets": [dict(landing)]},
+    )
+    monkeypatch.setattr(
+        validate_links,
+        "verify_link",
+        lambda *a, **kw: {
+            "status": "restricted",
+            "reason": "upstream requires access or rate limited",
+            "http_status": 403,
+            "checked_at": datetime.now(timezone.utc).isoformat(),
+        },
+    )
+    assert validate_links.validate_and_fix(gate=True, force=True) == 0
+
+    asset = json.loads(path.read_text())["packages"][0]["assets"][0]
+    assert asset["url"] == "https://example.test/download/"
+    assert asset["verification"]["status"] == "verified"
+    assert asset["verification"]["valid_until"] == original_valid_until
+    assert asset["verification"]["last_attempt_status"] == "restricted"
+    state = json.loads((tmp_path / "link-state.json").read_text())["assets"][
+        "example:win-x64"
+    ]
+    assert state["history"][-1]["status"] == "restricted"
+
+
+def test_restricted_landing_page_does_not_resurrect_expired_verification(
+    tmp_path, monkeypatch
+):
+    """旧验证已过期时，落地页被挡不能把入口重新变成可用——需要人工介入。"""
+    path, _ = _setup_landing_validation(tmp_path, monkeypatch)
+    monkeypatch.setattr(validate_links, "verify_link", lambda *a, **kw: _verified())
+    assert validate_links.validate_and_fix(gate=True) == 0
+
+    expired = (datetime.now(timezone.utc) - timedelta(days=8)).isoformat()
+    state_path = tmp_path / "link-state.json"
+    state = json.loads(state_path.read_text())
+    entry = state["assets"]["example:win-x64"]
+    entry["verification"]["valid_until"] = expired
+    entry["next_check_at"] = expired
+    entry["last_success_at"] = expired
+    entry["history"] = [{**h, "at": expired} for h in entry.get("history", [])]
+    for proof in entry["successes"].values():
+        proof["valid_until"] = expired
+    state_path.write_text(json.dumps(state))
+    data = json.loads(path.read_text())
+    data["packages"][0]["assets"][0]["verification"]["valid_until"] = expired
+    path.write_text(json.dumps(data))
+
+    monkeypatch.setattr(validate_links, "_refetch_package", lambda c: None)
+    monkeypatch.setattr(
+        validate_links,
+        "verify_link",
+        lambda *a, **kw: {
+            "status": "restricted",
+            "reason": "upstream requires access or rate limited",
+            "http_status": 403,
+            "checked_at": datetime.now(timezone.utc).isoformat(),
+        },
+    )
+    assert validate_links.validate_and_fix(gate=True, force=True) == 1
+
+    asset = json.loads(path.read_text())["packages"][0]["assets"][0]
+    assert asset["verification"]["status"] == "restricted"
+    assert not asset_available(asset)
+
+
+def test_restricted_direct_link_still_blocks_gate(tmp_path, monkeypatch):
+    """直链被 403/429 拒绝时不沿用旧验证——无法区分被挡与真实访问限制。"""
+    path, _ = _setup_validation(tmp_path, monkeypatch)
+    monkeypatch.setattr(validate_links, "verify_link", lambda *a, **kw: _verified())
+    assert validate_links.validate_and_fix(gate=True) == 0
+
+    monkeypatch.setattr(validate_links, "_refetch_package", lambda c: None)
+    monkeypatch.setattr(
+        validate_links,
+        "verify_link",
+        lambda *a, **kw: {
+            "status": "restricted",
+            "reason": "upstream requires access or rate limited",
+            "http_status": 403,
+            "checked_at": datetime.now(timezone.utc).isoformat(),
+        },
+    )
+    assert validate_links.validate_and_fix(gate=True, force=True) == 1
+
+    asset = json.loads(path.read_text())["packages"][0]["assets"][0]
+    assert asset["verification"]["status"] == "restricted"
+    assert not asset_available(asset)
+
+
 def test_budget_exhaustion_blocks_missing_critical_platform(tmp_path, monkeypatch):
     _setup_validation(tmp_path, monkeypatch, platforms=("win-x64", "mac-arm64"))
     calls = []
