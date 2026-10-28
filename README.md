@@ -5,7 +5,7 @@
 > 由 GitHub Actions 每日自动同步上游官方源的**最新版本元数据**。
 > 仓库**不托管二进制安装包**，下载按钮直接跳到上游官方下载链接。
 >
-> 📅 **最后更新**：`2026-10-28 06:37:31` (UTC)　· 共 699 项软件（其中 2 项使用上次数据，标 ⚠️）
+> 📅 **最后更新**：`2026-10-28 13:49:32` (UTC)　· 共 699 项软件（其中 2 项使用上次数据，标 ⚠️）
 
 ---
 
@@ -25,7 +25,7 @@
 
 | 软件 | 最新版本 | 发布日期 | 下载链接 | 来源 |
 |------|---------|---------|---------|------|
-| [**Windows 11**](https://www.microsoft.com/software-download/windows11) | `25H2` | — | [win-x64](https://software.download.prss.microsoft.com/dbazure/Win11_25H2_Chinese_Simplified_x64_v2.iso?t=2d170e01-e510-4ddb-a517-fa4c04ddc341&P1=1793255830&P2=602&P3=2&P4=u5rq2Xm4%2f6vr34yzjw%2bUS6RAaQSiAgaLrSvIevQAdfR6hnC0HkCd%2bt0nFGUGRrGVVYxoYX5LLoWbtLcmqJQh0L6a7s9wtpAIxw1Glvs53aa%2fsm82bxf2%2fnCvqAbtU1dr8qilHmjHKp%2budtWQChxT8QJ8iUQn0ZAK8Mtyu283aDdpkWT6Qy%2fGPLTVk0Z5fP%2bFcED4nyUkd1sCdm%2fWJMtz6uhpuwu3Nz7XM%2foUB3HXG0N7zYLMFgBrTJDkSDG3%2f1szPA7k8FY46HWu9hNmB8IUz4RoaIJ6uSTK4syNa%2bDihlTk%2b8slH7OVsKNpnyZyKTJn0%2b1%2f2FhVa4D2BXGOrmpNRA%3d%3d) | Microsoft Software Download (via Fido) |
+| [**Windows 11**](https://www.microsoft.com/software-download/windows11) | `25H2` | — | [win-x64](https://software.download.prss.microsoft.com/dbazure/Win11_25H2_Chinese_Simplified_x64_v2.iso?t=73d9f426-c712-4077-bc7d-e0a8960b8ad1&P1=1793281749&P2=602&P3=2&P4=Apx8BH%2fN3vfjahbEuRU0q8n5A6Ow5r4llZ378XXZRvIMPZDzOhBZGi4lvmB24C4sBg37zh9GerocOmxNG3U6CBihmz9jyvfzxQ1OI%2fElvMP6zabAxMAY8Q2HHAos6wjkcJRkqqDCNVnC%2fn8Krv9G0o2orJzIO8ezm0jfx2fxfaWST8vgdxO1E4B2hXcKvCKcINqTk%2fra2SGA65ZzCx3maLvF3cfIjvdHGvr7RbQKQYgGtWVAaTFEfWixJHgw8pFZXOV8BBRSJdY885B1Eng2CSGZBU2j%2b9sqXi4K%2bfcjJWup%2fcZQvM7E2xNcri5QOEobsmXF%2f%2bRl7l8EbEyG3yEqxA%3d%3d) | Microsoft Software Download (via Fido) |
 | [**Ubuntu**](https://ubuntu.com/download) | `26.10` | — | [desktop-amd64](https://releases.ubuntu.com/26.10/ubuntu-26.10-desktop-amd64.iso) · [server-amd64](https://releases.ubuntu.com/26.10/ubuntu-26.10-live-server-amd64.iso) · [wsl-amd64](https://ubuntu.com/download) | Ubuntu official releases index |
 | [**Fedora Workstation**](https://fedoraproject.org/workstation/download/) | `44` | — | [workstation-live-x86_64](https://fedoraproject.org/workstation/download/) | Fedora official release directory |
 
@@ -116,7 +116,7 @@
 | [**Eclipse IDE for Java Developers**](https://www.eclipse.org) | `2026-09` | — | [win-x64](http://download.eclipse.org/technology/epp/downloads/release/2026-09/R/eclipse-java-2026-09-R-win32-x86_64.zip) | scoop manifest: extras/eclipse-java |
 | [**Fork**](https://git-fork.com/) | `2.23.2` | — | [win](https://cdn.fork.dev/update/win/Fork-2.23.2-full.nupkg) | scoop manifest: extras/fork |
 | [**Geany**](https://www.geany.org/) | `2.1` | — | [mac-arm64](https://download.geany.org/geany-2.1_osx_arm64.dmg) | brew manifest: geany |
-| [**GitButler**](https://gitbutler.com/) | `0.22.3` | — | [win-x64](https://releases.gitbutler.com/releases/release/0.22.3-3234/windows/x86_64/GitButler_0.22.3_x64_en-US.msi) | scoop manifest: extras/gitbutler |
+| [**GitButler**](https://gitbutler.com/) | `0.23.0` | — | [win-x64](https://releases.gitbutler.com/releases/release/0.23.0-3311/windows/x86_64/GitButler_0.23.0_x64_en-US.msi) | scoop manifest: extras/gitbutler |
 | [**Git Extensions**](https://gitextensions.github.io/) | `7.2.1.7` | — | [win-x64](https://github.com/gitextensions/gitextensions/releases/download/v7.2.1/GitExtensions-Portable-x64-7.2.1.7-0aea2d6df.zip) | scoop manifest: extras/gitextensions |
 | [**GitHub Desktop**](https://desktop.github.com/) | `3.6.7` | — | [win-x64](https://github.com/desktop/desktop/releases/download/release-3.6.7/GitHubDesktop-3.6.7-x64-full.nupkg) | scoop manifest: extras/github |
 | [**Goland**](https://www.jetbrains.com/go/) | `2026.2.3,262.10968.67` | — | [mac-arm64](https://www.jetbrains.com/go/) | brew manifest: goland |
@@ -125,8 +125,8 @@
 | [**IntelliJ IDEA Ultimate**](https://www.jetbrains.com/idea/) | `2026.2.3-262.10968.63` | — | [win-x64](https://download.jetbrains.com/idea/idea-2026.2.3.win.zip) | scoop manifest: extras/idea |
 | [**Julia**](https://julialang.org/) | `1.13.3` | — | [win-x64](https://julialang-s3.julialang.org/bin/winnt/x64/1.13/julia-1.13.3-win64.zip) | scoop manifest: main/julia |
 | [**Kate**](https://kate-editor.org/) | `26.08,12761` | — | [mac-arm64](https://cdn.kde.org/ci-builds/utilities/kate/release-26.08/macos-arm64/kate-release_26.08-12761-macos-clang-arm64.dmg) | brew manifest: kate |
-| [**KDiff3**](https://apps.kde.org/kdiff3/) | `1.12.4` | — | [win-x64](https://apps.kde.org/kdiff3/) | scoop manifest: extras/kdiff3 |
-| [**kubectl**](https://kubernetes.io/docs/reference/kubectl/) | `1.37.1` | — | [win-x64](https://dl.k8s.io/release/v1.37.1/kubernetes-client-windows-amd64.tar.gz) | scoop manifest: main/kubectl |
+| [**KDiff3**](https://apps.kde.org/kdiff3/) | `1.12.6` | — | [win-x64](https://apps.kde.org/kdiff3/) | scoop manifest: extras/kdiff3 |
+| [**kubectl**](https://kubernetes.io/docs/reference/kubectl/) | `1.37.2` | — | [win-x64](https://dl.k8s.io/release/v1.37.2/kubernetes-client-windows-amd64.tar.gz) | scoop manifest: main/kubectl |
 | [**Lens**](https://lenshq.io/) | `2026.10.261408` | — | [mac-arm64](https://api.k8slens.dev/binaries/Lens-2026.10.261408-latest-arm64.dmg) | brew manifest: lens |
 | [**LLVM**](https://www.llvm.org) | `23.1.4` | — | [win-x64](https://github.com/llvm/llvm-project/releases/download/llvmorg-23.1.4/LLVM-23.1.4-win64.msi) | scoop manifest: main/llvm |
 | [**MacTeX**](https://www.tug.org/mactex/) | `2026.0324` | — | [mac](https://www.tug.org/mactex/) | brew manifest: mactex-no-gui |
@@ -161,7 +161,14 @@
 | [**Studio 3T**](https://studio3t.com/) | `2026.14.0` | — | [mac-arm64](https://download.studio3t.com/studio-3t/mac-aarch64/2026.14.0/Studio-3T.dmg) | brew manifest: studio-3t |
 | [**Sublime Merge**](https://www.sublimemerge.com/) | `2132` | — | [win-x64](https://download.sublimetext.com/sublime_merge_build_2132_x64.zip) | scoop manifest: extras/sublime-merge |
 | [**Sublime Text**](https://www.sublimetext.com) | `4-4215` | — | [win-x64](https://download.sublimetext.com/sublime_text_build_4215_x64.zip) | scoop manifest: extras/sublime-text |
-| [**Eclipse Temurin JDK 25**](https://adoptium.net/temurin/releases/) | `25.0.5.8` | — | [win-x64](https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.5+8/OpenJDK25U-jdk_x64_windows_hotspot_25.0.5_8.msi) | winget manifest: EclipseAdoptium.Temurin.25.JDK |
+| [**Eclipse Temurin JDK 25**](https://adoptium.net/temurin/releases/) ⚠️ | `25.0.5.8` | — | [win-x64](https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.5+8/OpenJDK25U-jdk_x64_windows_hotspot_25.0.5_8.msi) | winget manifest: EclipseAdoptium.Temurin.25.JDK<br>⚠ while scanning a simple key
+  in "<unicode string>", line 2, column 1:
+    For more on scraping GitHub and  ... 
+    ^
+could not find expected ':'
+  in "<unicode string>", line 2, column 177:
+     ... -terms/github-terms-of-service).
+                                         ^ |
 | [**TextMate**](https://macromates.com/) | `2.0.23` | — | [mac](https://github.com/textmate/textmate/releases/download/v2.0.23/TextMate_2.0.23.tbz) | brew manifest: textmate |
 | [**Vagrant**](https://www.vagrantup.com/) | `2.4.9` | — | [win-x64](https://releases.hashicorp.com/vagrant/2.4.9/vagrant_2.4.9_windows_amd64.msi) | scoop manifest: main/vagrant |
 | [**Microsoft Visual C++ Redistributable x64**](https://learn.microsoft.com/cpp/windows/latest-supported-vc-redist) | `14.51.36247.0` | — | [win-x64](https://download.visualstudio.microsoft.com/download/pr/ebdab8e5-1d7b-4d9f-a11b-cbb1720c3b12/843068991DAAA1F73AD9F6239BCE4D0F6A07A51F18C37EA2A867E9BECA71295C/VC_redist.x64.exe) | winget manifest: Microsoft.VCRedist.2015+.x64 |
@@ -263,7 +270,7 @@
 | [**Helix**](https://github.com/helix-editor/helix) | `25.07.1` | 2025-07-18 | [win-x64](https://github.com/helix-editor/helix/releases/download/25.07.1/helix-25.07.1-x86_64-windows.zip) · [mac-arm64](https://github.com/helix-editor/helix/releases/download/25.07.1/helix-25.07.1-aarch64-macos.tar.xz) · [linux-x64](https://github.com/helix-editor/helix/releases/download/25.07.1/helix-25.07.1-x86_64-linux.tar.xz) | GitHub Release: helix-editor/helix |
 | [**UTM**](https://mac.getutm.app) | `5.0.8` | 2026-10-17 | [mac-universal](https://github.com/utmapp/UTM/releases/download/v5.0.8/UTM.dmg) | GitHub Release: utmapp/UTM |
 | [**PortKiller**](https://github.com/gupsammy/PortKiller) | `0.3.0` | 2025-12-06 | [mac-universal](https://github.com/gupsammy/PortKiller/releases/download/v0.3.0/PortKiller.dmg) | GitHub Release: gupsammy/PortKiller |
-| [**cmux**](https://cmux.dev) ⚠️ | `0.65.2` | 2026-10-16 | [mac-universal](https://github.com/manaflow-ai/cmux/releases/download/v0.65.2/cmux-macos.dmg) | GitHub Release: manaflow-ai/cmux<br>⚠ manaflow-ai/cmux@v0.65.2.2: 没有任何 asset 匹配配置的 pattern，现有 asset: []... |
+| [**cmux**](https://cmux.dev) | `0.65.2.2` | 2026-10-27 | [mac-universal](https://github.com/manaflow-ai/cmux/releases/download/v0.65.2.2/cmux-macos.dmg) | GitHub Release: manaflow-ai/cmux |
 | [**OpenCode**](https://opencode.ai) | `0.0.55` | 2025-06-27 | [mac-arm64](https://github.com/opencode-ai/opencode/releases/download/v0.0.55/opencode-mac-arm64.tar.gz) · [mac-x64](https://github.com/opencode-ai/opencode/releases/download/v0.0.55/opencode-mac-x86_64.tar.gz) | GitHub Release: opencode-ai/opencode |
 | [**AppPorts**](https://github.com/wzh4869/AppPorts) | `2.0.0` | 2026-10-24 | [mac-universal](https://github.com/wzh4869/AppPorts/releases/download/2.0.0/AppPorts2.0.0.dmg) | GitHub Release: wzh4869/AppPorts |
 | [**TablePlus**](https://tableplus.com) | `2026-10-27` | — | [mac-universal](https://tableplus.com) | Official download page; no public version API |
@@ -541,7 +548,7 @@
 | [**PDFgear**](https://www.pdfgear.com) | `3.0.1` | — | [win-x64](https://downloadfiles.pdfgear.com/releases/windows/pdfgear_setup_v3.0.1.exe) | scoop manifest: extras/pdfgear |
 | [**PDFsam Basic**](https://github.com/torakiki/pdfsam) | `6.0.6` | — | [win-x64](https://github.com/torakiki/pdfsam/releases/download/v6.0.6/pdfsam-basic-6.0.6-windows-x64.zip) | scoop manifest: extras/pdfsam |
 | [**Microsoft Power BI Desktop**](https://powerbi.microsoft.com/desktop/) | `2.159.883.0` | — | [win-x64](https://download.microsoft.com/download/8/8/0/880BCA75-79DD-466A-927D-1ABF1F5454B0/PBIDesktopSetup-2026-10_x64.exe) | winget manifest: Microsoft.PowerBI |
-| [**QGIS**](https://www.qgis.org/) | `4.2.3` | — | [mac](https://download.qgis.org/downloads/macos/pr/qgis_pr_final-4_2_3.dmg) | brew manifest: qgis |
+| [**QGIS**](https://www.qgis.org/) | `4.2.3` | — | [mac](https://www.qgis.org/) | brew manifest: qgis |
 | [**Rambox**](https://rambox.app) | `2.7.2` | — | [win-x64](https://github.com/ramboxapp/download/releases/download/v2.7.2/Rambox-2.7.2-win-x64.exe#/dl.7z) | scoop manifest: extras/rambox |
 | [**Sage**](https://www.sagemath.org/) | `10.9,10.9.1` | — | [mac-arm64](https://github.com/3-manifolds/Sage_macOS/releases/download/v10.9.1/SageMath-10.9_arm64.dmg) | brew manifest: sage |
 | [**Scrivener**](https://www.literatureandlatte.com/scrivener/overview) | `3.5.2,17487,11` | — | [mac](https://scrivener.s3.amazonaws.com/mac_updates/Scrivener_11_17487.zip) | brew manifest: scrivener |
@@ -639,7 +646,7 @@
 | [**Thunderbird**](https://www.thunderbird.net/thunderbird/all/) | `2026-10-27` | — | [win-x64](https://www.thunderbird.net/thunderbird/all/) · [mac-universal](https://www.thunderbird.net/thunderbird/all/) · [linux-x64](https://www.thunderbird.net/thunderbird/all/) | Official Thunderbird download page; no public version API |
 | [**Skype**](https://www.skype.com/get-skype/) | `2026-10-26` | — | [win-x64](https://teams.live.com/free?source=skype) · [mac-universal](https://teams.live.com/free?source=skype) · [linux-x64](https://teams.live.com/free?source=skype) | Microsoft retired Skype downloads; official entry redirects to Teams Free |
 | [**Telegram Desktop**](https://github.com/telegramdesktop/tdesktop) | `7.3.3` | 2026-10-21 | [win-x64](https://github.com/telegramdesktop/tdesktop/releases/download/v7.3.3/td-setup-win-x64-7.3.3.exe) | GitHub Release: telegramdesktop/tdesktop |
-| [**WeChat**](https://weixin.qq.com) | `4.1.15.55` | — | [mac-universal](https://dldir1v6.qq.com/weixin/Universal/Mac/xWeChatMac_universal_4.1.15.55_270135.dmg) | 微信官网 |
+| [**WeChat**](https://weixin.qq.com) | `4.2.0.12` | — | [mac-universal](https://dldir1v6.qq.com/weixin/Universal/Mac/xWeChatMac_universal_4.2.0.12_270348.dmg) | 微信官网 |
 | [**QQ**](https://im.qq.com) | `2026-10-28` | — | [mac-universal](https://im.qq.com/macqq/index.shtml) | Official download page; no public version API |
 
 
@@ -703,7 +710,7 @@
 | [**喜马拉雅**](https://www.ximalaya.com/) | `2026-10-27` | — | [win-x64](https://www.ximalaya.com/download/) · [mac-x64](https://www.ximalaya.com/download/) | Official download page; no public version API |
 | [**PotPlayer**](https://potplayer.daum.net/) | `2026-10-26` | — | [win-x64](https://t1.kakaocdn.net/potplayer/PotPlayer/Version/Latest/PotPlayerSetup64.exe) | Official Kakao CDN installer (latest build) |
 | [**剪映专业版**](https://www.capcut.cn/) | `2026-10-27` | — | [win-x64](https://www.capcut.cn/) · [mac-universal](https://www.capcut.cn/) | Official download page; no public version API |
-| [**优酷**](https://www.youku.com/) | `2026-10-27` | — | [win-x64](https://www.youku.com/) · mac-universal（暂不可用，待核验） | Official download page; no public version API |
+| [**优酷**](https://www.youku.com/) | `2026-10-27` | — | [win-x64](https://www.youku.com/) · [mac-universal](https://www.youku.com/) | Official download page; no public version API |
 | [**芒果TV**](https://www.mgtv.com/) | `2026-10-27` | — | [win-x64](https://www.mgtv.com/) · [mac-universal](https://www.mgtv.com/) | Official download page; no public version API |
 | [**QQ影音**](https://player.qq.com/) | `2026-10-27` | — | win-x64（暂不可用，待核验） | Official download page; no public version API |
 | [**洛雪音乐助手**](https://github.com/lyswhut/lx-music-desktop) | `2.12.6` | 2026-09-19 | [win-x64](https://github.com/lyswhut/lx-music-desktop/releases/download/v2.12.6/lx-music-desktop-v2.12.6-x64-Setup.exe) · [mac-arm64](https://github.com/lyswhut/lx-music-desktop/releases/download/v2.12.6/lx-music-desktop-2.12.6-arm64.dmg) · [mac-x64](https://github.com/lyswhut/lx-music-desktop/releases/download/v2.12.6/lx-music-desktop-2.12.6-x64.dmg) | GitHub Release: lyswhut/lx-music-desktop |
