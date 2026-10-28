@@ -5,7 +5,7 @@
 > **Latest version metadata** automatically synced from official upstream sources daily by GitHub Actions.
 > This repository **does not host binary installers** — download buttons link directly to upstream official downloads.
 >
-> 📅 **Last updated**: `2026-10-28 15:47:57` (UTC) · 699 software items (2 using previous data, marked ⚠️)
+> 📅 **Last updated**: `2026-10-28 16:08:46` (UTC) · 699 software items (2 using previous data, marked ⚠️)
 
 ---
 
@@ -161,14 +161,7 @@
 | [**Studio 3T**](https://studio3t.com/) | `2026.14.0` | — | [mac-arm64](https://download.studio3t.com/studio-3t/mac-aarch64/2026.14.0/Studio-3T.dmg) | brew manifest: studio-3t |
 | [**Sublime Merge**](https://www.sublimemerge.com/) | `2132` | — | [win-x64](https://download.sublimetext.com/sublime_merge_build_2132_x64.zip) | scoop manifest: extras/sublime-merge |
 | [**Sublime Text**](https://www.sublimetext.com) | `4-4215` | — | [win-x64](https://download.sublimetext.com/sublime_text_build_4215_x64.zip) | scoop manifest: extras/sublime-text |
-| [**Eclipse Temurin JDK 25**](https://adoptium.net/temurin/releases/) ⚠️ | `25.0.5.8` | — | [win-x64](https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.5+8/OpenJDK25U-jdk_x64_windows_hotspot_25.0.5_8.msi) | winget manifest: EclipseAdoptium.Temurin.25.JDK<br>⚠ while scanning a simple key
-  in "<unicode string>", line 2, column 1:
-    For more on scraping GitHub and  ... 
-    ^
-could not find expected ':'
-  in "<unicode string>", line 2, column 177:
-     ... -terms/github-terms-of-service).
-                                         ^ |
+| [**Eclipse Temurin JDK 25**](https://adoptium.net/temurin/releases/) ⚠️ | `25.0.5.8` | — | [win-x64](https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.5+8/OpenJDK25U-jdk_x64_windows_hotspot_25.0.5_8.msi) | winget manifest: EclipseAdoptium.Temurin.25.JDK<br>⚠ 429 Client Error: Too Many Requests for url: https://api.github.com/repos/microsoft/winget-pkgs/contents/manifests/e/EclipseAdoptium/Temurin/25/JDK |
 | [**TextMate**](https://macromates.com/) | `2.0.23` | — | [mac](https://github.com/textmate/textmate/releases/download/v2.0.23/TextMate_2.0.23.tbz) | brew manifest: textmate |
 | [**Vagrant**](https://www.vagrantup.com/) | `2.4.9` | — | [win-x64](https://releases.hashicorp.com/vagrant/2.4.9/vagrant_2.4.9_windows_amd64.msi) | scoop manifest: main/vagrant |
 | [**Microsoft Visual C++ Redistributable x64**](https://learn.microsoft.com/cpp/windows/latest-supported-vc-redist) | `14.51.36247.0` | — | [win-x64](https://download.visualstudio.microsoft.com/download/pr/ebdab8e5-1d7b-4d9f-a11b-cbb1720c3b12/843068991DAAA1F73AD9F6239BCE4D0F6A07A51F18C37EA2A867E9BECA71295C/VC_redist.x64.exe) | winget manifest: Microsoft.VCRedist.2015+.x64 |

@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-10-28T15:47:57+00:00",
+  "generated_at": "2026-10-28T16:08:46+00:00",
   "packages": [
     {
       "id": "windows11",
@@ -2653,7 +2653,7 @@
           "expires_at": null,
           "verification": {
             "status": "unverified",
-            "checked_at": "2026-10-28T15:48:17+00:00",
+            "checked_at": "2026-10-28T16:09:04+00:00",
             "url": "https://kimi.moonshot.cn/download",
             "final_url": "https://kimi.moonshot.cn/download",
             "redirects": [
@@ -2674,7 +2674,7 @@
           "expires_at": null,
           "verification": {
             "status": "unverified",
-            "checked_at": "2026-10-28T15:48:17+00:00",
+            "checked_at": "2026-10-28T16:09:04+00:00",
             "url": "https://kimi.moonshot.cn/download",
             "final_url": "https://kimi.moonshot.cn/download",
             "redirects": [
@@ -2795,7 +2795,7 @@
           "expires_at": null,
           "verification": {
             "status": "unverified",
-            "checked_at": "2026-10-28T15:48:17+00:00",
+            "checked_at": "2026-10-28T16:09:04+00:00",
             "url": "https://chatglm.cn/download",
             "final_url": "https://chatglm.cn/download",
             "redirects": [
@@ -2816,7 +2816,7 @@
           "expires_at": null,
           "verification": {
             "status": "unverified",
-            "checked_at": "2026-10-28T15:48:17+00:00",
+            "checked_at": "2026-10-28T16:09:04+00:00",
             "url": "https://chatglm.cn/download",
             "final_url": "https://chatglm.cn/download",
             "redirects": [
@@ -2863,7 +2863,7 @@
           "expires_at": null,
           "verification": {
             "status": "unverified",
-            "checked_at": "2026-10-28T15:48:17+00:00",
+            "checked_at": "2026-10-28T16:09:04+00:00",
             "url": "https://xinghuo.xfyun.cn/download",
             "final_url": "https://xinghuo.xfyun.cn/download",
             "redirects": [
@@ -2884,7 +2884,7 @@
           "expires_at": null,
           "verification": {
             "status": "unverified",
-            "checked_at": "2026-10-28T15:48:17+00:00",
+            "checked_at": "2026-10-28T16:09:04+00:00",
             "url": "https://xinghuo.xfyun.cn/download",
             "final_url": "https://xinghuo.xfyun.cn/download",
             "redirects": [
@@ -3805,7 +3805,7 @@
           "expires_at": null,
           "verification": {
             "status": "restricted",
-            "checked_at": "2026-10-28T15:48:17+00:00",
+            "checked_at": "2026-10-28T16:09:04+00:00",
             "url": "https://apifox.com/download/",
             "final_url": "https://apifox.com/download/",
             "redirects": [
@@ -3826,7 +3826,7 @@
           "expires_at": null,
           "verification": {
             "status": "restricted",
-            "checked_at": "2026-10-28T15:48:17+00:00",
+            "checked_at": "2026-10-28T16:09:04+00:00",
             "url": "https://apifox.com/download/",
             "final_url": "https://apifox.com/download/",
             "redirects": [
@@ -4020,7 +4020,7 @@
           "expires_at": null,
           "verification": {
             "status": "transient",
-            "checked_at": "2026-10-28T15:48:17+00:00",
+            "checked_at": "2026-10-28T16:09:04+00:00",
             "url": "https://www.kuwo.cn/download",
             "final_url": "https://www.kuwo.cn/",
             "redirects": [
@@ -4211,7 +4211,7 @@
           "expires_at": null,
           "verification": {
             "status": "failed",
-            "checked_at": "2026-10-28T15:48:17+00:00",
+            "checked_at": "2026-10-28T16:09:04+00:00",
             "url": "https://docs.qq.com/download",
             "final_url": "https://docs.qq.com/download",
             "redirects": [
@@ -4682,7 +4682,7 @@
           "expires_at": null,
           "verification": {
             "status": "unverified",
-            "checked_at": "2026-10-28T15:48:17+00:00",
+            "checked_at": "2026-10-28T16:09:04+00:00",
             "url": "https://www.wps.cn/product/wps-pdf",
             "final_url": "https://www.wps.cn",
             "redirects": [
@@ -10776,9 +10776,9 @@
       "fetched_at": "2026-10-28T06:36:57+00:00",
       "last_success_at": "2026-10-28T06:36:57+00:00",
       "_sync": {
-        "failures": 1,
+        "failures": 2,
         "fingerprint": "56a3770766e9bba03d84d80d8fbc885e5c3a34c23b513273159e2059ae6d527e",
-        "next_attempt_at": "2026-10-28T15:49:09+00:00"
+        "next_attempt_at": "2026-10-28T20:08:22+00:00"
       },
       "editions": [
         "cn",
@@ -10787,7 +10787,7 @@
       "desc_cn": "Java 25 长期支持版开发工具包",
       "desc_en": "Eclipse Temurin JDK 25",
       "_stale": true,
-      "_stale_reason": "while scanning a simple key\n  in \"<unicode string>\", line 2, column 1:\n    For more on scraping GitHub and  ... \n    ^\ncould not find expected ':'\n  in \"<unicode string>\", line 2, column 177:\n     ... -terms/github-terms-of-service).\n                                         ^"
+      "_stale_reason": "429 Client Error: Too Many Requests for url: https://api.github.com/repos/microsoft/winget-pkgs/contents/manifests/e/EclipseAdoptium/Temurin/25/JDK"
     },
     {
       "id": "textmate",
@@ -46483,7 +46483,7 @@
           "expires_at": null,
           "verification": {
             "status": "restricted",
-            "checked_at": "2026-10-28T15:48:17+00:00",
+            "checked_at": "2026-10-28T16:09:04+00:00",
             "url": "https://www.adobe.com/products/photoshop.html",
             "final_url": "https://www.adobe.com/products/photoshop.html",
             "redirects": [
@@ -46504,7 +46504,7 @@
           "expires_at": null,
           "verification": {
             "status": "restricted",
-            "checked_at": "2026-10-28T15:48:17+00:00",
+            "checked_at": "2026-10-28T16:09:04+00:00",
             "url": "https://www.adobe.com/products/photoshop.html",
             "final_url": "https://www.adobe.com/products/photoshop.html",
             "redirects": [
@@ -46617,7 +46617,7 @@
     "failures": [
       {
         "id": "temurin-jdk",
-        "error": "while scanning a simple key\n  in \"<unicode string>\", line 2, column 1:\n    For more on scraping GitHub and  ... \n    ^\ncould not find expected ':'\n  in \"<unicode string>\", line 2, column 177:\n     ... -terms/github-terms-of-service).\n                                         ^"
+        "error": "429 Client Error: Too Many Requests for url: https://api.github.com/repos/microsoft/winget-pkgs/contents/manifests/e/EclipseAdoptium/Temurin/25/JDK"
       },
       {
         "id": "motrix",
@@ -46625,9 +46625,9 @@
       }
     ]
   },
-  "release_id": "6154e0687a5966bddaa2",
-  "checked_at": "2026-10-28T15:48:17+00:00",
-  "verified_at": "2026-10-28T15:48:17+00:00",
+  "release_id": "23af2c954afd9c724bc7",
+  "checked_at": "2026-10-28T16:09:04+00:00",
+  "verified_at": "2026-10-28T16:09:04+00:00",
   "quality": {
     "required_total": 301,
     "required_covered": 300,
