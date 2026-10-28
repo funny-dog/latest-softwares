@@ -5,7 +5,7 @@
 > **Latest version metadata** automatically synced from official upstream sources daily by GitHub Actions.
 > This repository **does not host binary installers** — download buttons link directly to upstream official downloads.
 >
-> 📅 **Last updated**: `2026-10-28 13:49:32` (UTC) · 699 software items (2 using previous data, marked ⚠️)
+> 📅 **Last updated**: `2026-10-28 15:47:57` (UTC) · 699 software items (2 using previous data, marked ⚠️)
 
 ---
 
@@ -467,7 +467,7 @@ could not find expected ':'
 | [**Everything**](https://www.voidtools.com/) | `1.4.1.1032` | — | [win-x64](https://www.voidtools.com/Everything-1.4.1.1032.x64-Setup.exe) · [win-x86](https://www.voidtools.com/Everything-1.4.1.1032.x86-Setup.exe) · [win-x64-portable](https://www.voidtools.com/Everything-1.4.1.1032.x64.zip) · [win-x86-portable](https://www.voidtools.com/Everything-1.4.1.1032.x86.zip) | voidtools official download page |
 | [**KeePassXC**](https://github.com/keepassxreboot/keepassxc) | `2.8.0` | 2026-10-21 | [win-x64](https://github.com/keepassxreboot/keepassxc/releases/download/2.8.0/KeePassXC-2.8.0-x64.msi) | GitHub Release: keepassxreboot/keepassxc |
 | [**RustDesk**](https://github.com/rustdesk/rustdesk) | `1.5.0` | 2026-09-30 | [win-x64](https://github.com/rustdesk/rustdesk/releases/download/1.5.0/rustdesk-1.5.0-x86_64.exe) | GitHub Release: rustdesk/rustdesk |
-| [**Motrix**](https://github.com/agalwood/Motrix) ⚠️ | `1.8.19` | 2023-05-03 | [win-x64](https://github.com/agalwood/Motrix/releases/download/v1.8.19/Motrix-1.8.19-x64.exe) | GitHub Release: agalwood/Motrix<br>⚠ agalwood/Motrix@v2.0.1: 没有任何 asset 匹配配置的 pattern，现有 asset: ['beta-linux-arm64.yml', 'beta-linux.yml', 'beta-mac.yml', 'beta.yml', 'latest-linux-arm64.yml']... |
+| [**Motrix**](https://github.com/agalwood/Motrix) ⚠️ | `1.8.19` | 2023-05-03 | [win-x64](https://github.com/agalwood/Motrix/releases/download/v1.8.19/Motrix-1.8.19-x64.exe) | GitHub Release: agalwood/Motrix<br>⚠ agalwood/Motrix@v2.1.0: 没有任何 asset 匹配配置的 pattern，现有 asset: ['beta-linux-arm64.yml', 'beta-linux.yml', 'beta-mac.yml', 'beta.yml', 'latest-linux-arm64.yml']... |
 | [**Syncthing**](https://github.com/syncthing/syncthing) | `2.1.7` | 2026-10-21 | [win-x64](https://github.com/syncthing/syncthing/releases/download/v2.1.7/syncthing-windows-amd64-v2.1.7.zip) · [mac-arm64](https://github.com/syncthing/syncthing/releases/download/v2.1.7/syncthing-macos-arm64-v2.1.7.zip) · [linux-x64](https://github.com/syncthing/syncthing/releases/download/v2.1.7/syncthing-linux-amd64-v2.1.7.tar.gz) | GitHub Release: syncthing/syncthing |
 | [**Easydict**](https://github.com/tisfeng/Easydict) | `2.25.0` | 2026-10-19 | [mac-universal](https://github.com/tisfeng/Easydict/releases/download/2.25.0/Easydict.dmg) | GitHub Release: tisfeng/Easydict |
 | [**DeepL**](https://www.deepl.com) | `2026-10-27` | — | [mac-universal](https://www.deepl.com) | Official download page; no public version API |
