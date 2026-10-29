@@ -5,7 +5,7 @@
 > 由 GitHub Actions 每日自动同步上游官方源的**最新版本元数据**。
 > 仓库**不托管二进制安装包**，下载按钮直接跳到上游官方下载链接。
 >
-> 📅 **最后更新**：`2026-10-29 13:56:17` (UTC)　· 共 699 项软件（其中 7 项使用上次数据，标 ⚠️）
+> 📅 **最后更新**：`2026-10-29 23:06:46` (UTC)　· 共 699 项软件（其中 1 项使用上次数据，标 ⚠️）
 
 ---
 
@@ -25,7 +25,7 @@
 
 | 软件 | 最新版本 | 发布日期 | 下载链接 | 来源 |
 |------|---------|---------|---------|------|
-| [**Windows 11**](https://www.microsoft.com/software-download/windows11) | `25H2` | — | [win-x64](https://software.download.prss.microsoft.com/dbazure/Win11_25H2_Chinese_Simplified_x64_v2.iso?t=9a2a3ceb-efd8-4755-8250-7d6f1c488249&P1=1793368554&P2=602&P3=2&P4=uP3rPeRgm1o%2fXfMdLeUXGqdwMAnpkNLpSWsgcdJsPBlkmqQ%2fweu%2fHKz5ClG6eiy5uSRVNWFCvHlDT552iw36s5RWwHABNm797erHCLPqjE1fiYsa9ntl9iK%2bQwqbywmHyq%2bgoZptUpHkqomKA8ItoBnAFG%2f%2bX8efyG6B98qJgKhVgvFRgmtQg704AEAhc3wy2lVfGKZI85aCfLaGNeuFNwNJjcWyCCaoe1mRJMgOH6UENAgdQKd9F%2f1OzaL6arIWhyOPP9tcRlUi0bFiWcg8jpbb0WS5POrtmEVptK67kMbCW7IfEaHjd2cBxOZPyichpUF3%2bu8PaC9tosMgnlJV%2fA%3d%3d) | Microsoft Software Download (via Fido) |
+| [**Windows 11**](https://www.microsoft.com/software-download/windows11) | `25H2` | — | [win-x64](https://software.download.prss.microsoft.com/dbazure/Win11_25H2_Chinese_Simplified_x64_v2.iso?t=5e5578ec-c3c2-4582-8caf-f7e0b3523554&P1=1793401580&P2=602&P3=2&P4=Dw3DyhJL7kAOZvtLCbhrO6uw5zoWgLb1o9R6agRdbF2hSml%2bpo5aVSYxbF5k5JNkxiGMJSGs1yDFiT7MtBqk0DtxXk0nPBN%2fx1ZAgEmIgqmb0EYGQqpa3cr4ALDeHinpBD2osvciZ2XEPpU4ZGWpOErghbbXtDmi6rfDlm6TvWCNBtLHpjcocT9PX4w6uHVnHmTBbPv9AX9cfiS%2fYFg5LkJ33mTssgspsR2K2j9SkpHsJMti13jF%2fzQTl8xi5HAU5OaI5RAZL3Ap7IVJ%2b4hN6MtdLw7ej3Au1N4FNVcMFS9f5p4M1QLh2VS3guZQwCjwMSaDc8ZxBBdGgCFyKiIYTw%3d%3d) | Microsoft Software Download (via Fido) |
 | [**Ubuntu**](https://ubuntu.com/download) | `26.10` | — | [desktop-amd64](https://releases.ubuntu.com/26.10/ubuntu-26.10-desktop-amd64.iso) · [server-amd64](https://releases.ubuntu.com/26.10/ubuntu-26.10-live-server-amd64.iso) · [wsl-amd64](https://ubuntu.com/download) | Ubuntu official releases index |
 | [**Fedora Workstation**](https://fedoraproject.org/workstation/download/) | `44` | — | [workstation-live-x86_64](https://fedoraproject.org/workstation/download/) | Fedora official release directory |
 
@@ -97,36 +97,22 @@
 | [**SwitchHosts**](https://github.com/oldj/SwitchHosts) | `5.0.3` | 2026-10-20 | [win-x64](https://github.com/oldj/SwitchHosts/releases/download/v5.0.3/SwitchHosts-5.0.3-windows-x64-setup.exe) · [mac-x64](https://github.com/oldj/SwitchHosts/releases/download/v5.0.3/SwitchHosts-5.0.3-mac-x64.dmg) | GitHub Release: oldj/SwitchHosts |
 | [**Apifox**](https://apifox.com/) | `2026-10-27` | — | win-x64（暂不可用，待核验） · mac-x64（暂不可用，待核验） | Official download page; no public version API |
 | [**Android Studio**](https://developer.android.com/studio) | `2026.2.2.8` | — | [win-x64](https://edgedl.me.gvt1.com/android/studio/ide-zips/2026.2.2.8/android-studio-rabbit2-windows.zip) | scoop manifest: extras/android-studio |
-| [**AWS CLI**](https://aws.amazon.com/cli/) | `2.39.1` | — | [win-x64](https://awscli.amazonaws.com/AWSCLIV2-2.39.1.msi) | scoop manifest: main/aws |
+| [**AWS CLI**](https://aws.amazon.com/cli/) | `2.39.2` | — | [win-x64](https://awscli.amazonaws.com/AWSCLIV2-2.39.2.msi) | scoop manifest: main/aws |
 | [**Azure CLI**](https://aka.ms/cli) | `2.91.0` | — | [win-x64](https://github.com/Azure/azure-cli/releases/download/azure-cli-2.91.0/azure-cli-2.91.0-x64.zip) | scoop manifest: main/azure-cli |
-| [**Microsoft Azure Storage Explorer**](https://azure.microsoft.com/products/storage/storage-explorer/) ⚠️ | `1.46.0` | — | [win-x64](https://github.com/microsoft/AzureStorageExplorer/releases/download/v1.46.0/StorageExplorer-windows-x64.exe) | winget manifest: Microsoft.Azure.StorageExplorer<br>⚠ while scanning a simple key
-  in "<unicode string>", line 2, column 1:
-    For more on scraping GitHub and  ... 
-    ^
-could not find expected ':'
-  in "<unicode string>", line 2, column 177:
-     ... -terms/github-terms-of-service).
-                                         ^ |
+| [**Microsoft Azure Storage Explorer**](https://azure.microsoft.com/products/storage/storage-explorer/) | `1.46.0` | — | [win-x64](https://github.com/microsoft/AzureStorageExplorer/releases/download/v1.46.0/StorageExplorer-windows-x64.exe) | winget manifest: Microsoft.Azure.StorageExplorer |
 | [**BBEdit**](https://www.barebones.com/products/bbedit/) | `16.0.3` | — | [mac](https://s3.amazonaws.com/BBSW-download/BBEdit_16.0.3.dmg) | brew manifest: bbedit |
 | [**Beyond Compare**](https://www.scootersoftware.com/) | `5.2.7.32913` | — | [mac](https://www.scootersoftware.com/files/BCompareOSX-5.2.7.32913.zip) | brew manifest: beyond-compare |
 | [**Charles**](https://www.charlesproxy.com/) | `5.2.2` | — | [mac](https://www.charlesproxy.com/assets/release/5.2.2/charles-proxy-5.2.2.dmg) | brew manifest: charles |
 | [**CLion**](https://www.jetbrains.com/cpp/) | `2026.2.4-262.11879.74` | — | [win-x64](https://download.jetbrains.com/cpp/CLion-2026.2.4.win.zip) | scoop manifest: extras/clion |
 | [**CMake**](https://cmake.org) | `4.4.5` | — | [win-x64](https://github.com/Kitware/CMake/releases/download/v4.4.5/cmake-4.4.5-windows-x86_64.zip) | scoop manifest: main/cmake |
 | [**Composer**](https://getcomposer.org/) | `2.11.0` | — | [win](https://getcomposer.org/download/2.11.0/composer.phar) | scoop manifest: main/composer |
-| [**Amazon Corretto JDK 25**](https://aws.amazon.com/corretto/) ⚠️ | `25.0.5.0` | — | [win-x64](https://corretto.aws/downloads/resources/25.0.5.0.10/amazon-corretto-25.0.5.0.10-windows-x64.msi) | winget manifest: Amazon.Corretto.25.JDK<br>⚠ while scanning a simple key
-  in "<unicode string>", line 2, column 1:
-    For more on scraping GitHub and  ... 
-    ^
-could not find expected ':'
-  in "<unicode string>", line 2, column 177:
-     ... -terms/github-terms-of-service).
-                                         ^ |
+| [**Amazon Corretto JDK 25**](https://aws.amazon.com/corretto/) | `25.0.5.0` | — | [win-x64](https://corretto.aws/downloads/resources/25.0.5.0.10/amazon-corretto-25.0.5.0.10-windows-x64.msi) | winget manifest: Amazon.Corretto.25.JDK |
 | [**CotEditor**](https://coteditor.com/) | `7.1.3` | — | [mac](https://github.com/coteditor/CotEditor/releases/download/7.1.3/CotEditor_7.1.3.dmg) | brew manifest: coteditor |
 | [**DataGrip**](https://www.jetbrains.com/datagrip/) | `2026.2.6,262.10968.148` | — | [mac-arm64](https://www.jetbrains.com/datagrip/) | brew manifest: datagrip |
 | [**DB Browser for SQLite**](https://sqlitebrowser.org/) | `3.13.1` | — | [mac](https://github.com/sqlitebrowser/sqlitebrowser/releases/download/v3.13.1/DB.Browser.for.SQLite-v3.13.1.dmg) | brew manifest: db-browser-for-sqlite |
 | [**DbGate**](https://dbgate.org/) | `7.3.3` | — | [mac-universal](https://github.com/dbgate/dbgate/releases/download/v7.3.3/dbgate-7.3.3-mac_universal.dmg) | brew manifest: dbgate |
 | [**Deno**](https://deno.com) | `2.9.8` | — | [win-x64](https://github.com/denoland/deno/releases/download/v2.9.8/deno-x86_64-pc-windows-msvc.zip) | scoop manifest: main/deno |
-| [**.NET SDK 10**](https://dotnet.microsoft.com/download/dotnet/10.0) ⚠️ | `10.0.403` | — | [win-x64](https://download.microsoft.com/download/4a85064e-5a0f-43c9-85ea-a5a9d78047c5/7a651622-ad57-4db0-8c1e-12771c93f513/dotnet-sdk-10.0.403-win-x64.exe) | winget manifest: Microsoft.DotNet.SDK.10<br>⚠ 429 Client Error: Too Many Requests for url: https://api.github.com/repos/microsoft/winget-pkgs/contents/manifests/m/Microsoft/DotNet/SDK/10 |
+| [**.NET SDK 10**](https://dotnet.microsoft.com/download/dotnet/10.0) | `10.0.403` | — | [win-x64](https://download.microsoft.com/download/4a85064e-5a0f-43c9-85ea-a5a9d78047c5/7a651622-ad57-4db0-8c1e-12771c93f513/dotnet-sdk-10.0.403-win-x64.exe) | winget manifest: Microsoft.DotNet.SDK.10 |
 | [**Eclipse IDE for Java Developers**](https://www.eclipse.org) | `2026-09` | — | [win-x64](http://download.eclipse.org/technology/epp/downloads/release/2026-09/R/eclipse-java-2026-09-R-win32-x86_64.zip) | scoop manifest: extras/eclipse-java |
 | [**Fork**](https://git-fork.com/) | `2.23.2` | — | [win](https://cdn.fork.dev/update/win/Fork-2.23.2-full.nupkg) | scoop manifest: extras/fork |
 | [**Geany**](https://www.geany.org/) | `2.1` | — | [mac-arm64](https://download.geany.org/geany-2.1_osx_arm64.dmg) | brew manifest: geany |
@@ -151,7 +137,7 @@ could not find expected ':'
 | [**NetBeans IDE**](https://netbeans.apache.org/) | `31` | — | [mac-arm64](https://github.com/Friends-of-Apache-NetBeans/netbeans-installers/releases/download/nb31/Apache-NetBeans-31-arm64.pkg) | brew manifest: netbeans |
 | [**Ninja**](https://ninja-build.org/) | `1.13.2` | — | [win-x64](https://github.com/ninja-build/ninja/releases/download/v1.13.2/ninja-win.zip) | scoop manifest: main/ninja |
 | [**Packer**](https://www.packer.io) | `1.16.2` | — | [win-x64](https://releases.hashicorp.com/packer/1.16.2/packer_1.16.2_windows_amd64.zip) | scoop manifest: main/packer |
-| [**pgAdmin4**](https://www.pgadmin.org/) | `9.18` | — | [mac-arm64](https://ftp.postgresql.org/pub/pgadmin/pgadmin4/v9.18/macos/pgadmin4-9.18-arm64.dmg) | brew manifest: pgadmin4 |
+| [**pgAdmin4**](https://www.pgadmin.org/) | `9.19` | — | [mac-arm64](https://ftp.postgresql.org/pub/pgadmin/pgadmin4/v9.19/macos/pgadmin4-9.19-arm64.dmg) | brew manifest: pgadmin4 |
 | [**PHP**](https://www.php.net/) | `8.5.12-1` | — | [win-x64](https://downloads.php.net/~windows/releases/archives/php-8.5.12-1-Win32-vs17-x64.zip) | scoop manifest: main/php |
 | [**JetBrains PhpStorm**](https://www.jetbrains.com/phpstorm/) | `2026.2.3,262.10968.76` | — | [mac-arm64](https://www.jetbrains.com/phpstorm/) | brew manifest: phpstorm |
 | [**Podman Desktop**](https://podman-desktop.io/) | `1.30.5` | — | [mac-arm64](https://github.com/containers/podman-desktop/releases/download/v1.30.5/podman-desktop-1.30.5-arm64.dmg) | brew manifest: podman-desktop |
@@ -179,14 +165,7 @@ could not find expected ':'
 | [**TextMate**](https://macromates.com/) | `2.0.23` | — | [mac](https://github.com/textmate/textmate/releases/download/v2.0.23/TextMate_2.0.23.tbz) | brew manifest: textmate |
 | [**Vagrant**](https://www.vagrantup.com/) | `2.4.9` | — | [win-x64](https://releases.hashicorp.com/vagrant/2.4.9/vagrant_2.4.9_windows_amd64.msi) | scoop manifest: main/vagrant |
 | [**Microsoft Visual C++ Redistributable x64**](https://learn.microsoft.com/cpp/windows/latest-supported-vc-redist) | `14.51.36247.0` | — | [win-x64](https://download.visualstudio.microsoft.com/download/pr/ebdab8e5-1d7b-4d9f-a11b-cbb1720c3b12/843068991DAAA1F73AD9F6239BCE4D0F6A07A51F18C37EA2A867E9BECA71295C/VC_redist.x64.exe) | winget manifest: Microsoft.VCRedist.2015+.x64 |
-| [**Visual Studio Community**](https://visualstudio.microsoft.com/vs/community/) ⚠️ | `17.14.43` | — | [win-x64](https://download.visualstudio.microsoft.com/download/pr/4bc08c27-bd31-470c-9a30-3b62707fbf0f/49f31fd9b0b6125c4230209bf86c26bf4498ab0e13ac57759168a3f16927133f/vs_Community.exe) | winget manifest: Microsoft.VisualStudio.2022.Community<br>⚠ while scanning a simple key
-  in "<unicode string>", line 2, column 1:
-    For more on scraping GitHub and  ... 
-    ^
-could not find expected ':'
-  in "<unicode string>", line 2, column 177:
-     ... -terms/github-terms-of-service).
-                                         ^ |
+| [**Visual Studio Community**](https://visualstudio.microsoft.com/vs/community/) | `17.14.43` | — | [win-x64](https://download.visualstudio.microsoft.com/download/pr/4bc08c27-bd31-470c-9a30-3b62707fbf0f/49f31fd9b0b6125c4230209bf86c26bf4498ab0e13ac57759168a3f16927133f/vs_Community.exe) | winget manifest: Microsoft.VisualStudio.2022.Community |
 | [**WebStorm**](https://www.jetbrains.com/webstorm/) | `2026.2.3,262.10968.77` | — | [mac-arm64](https://www.jetbrains.com/webstorm/) | brew manifest: webstorm |
 | [**WinMerge**](https://winmerge.org) | `2.16.60` | — | [win-x64](https://github.com/WinMerge/winmerge/releases/download/v2.16.60/winmerge-2.16.60-x64-exe.zip) | scoop manifest: extras/winmerge |
 | [**Alacritty**](https://github.com/alacritty/alacritty) | `0.17.0` | 2026-04-06 | [win-x64](https://github.com/alacritty/alacritty/releases/download/v0.17.0/Alacritty-v0.17.0-portable.exe) | GitHub Release: alacritty/alacritty |
@@ -331,7 +310,7 @@ could not find expected ':'
 | [**AIDA64 Extreme**](https://www.aida64.com) | `8.40.5000` | — | [win](https://download.aida64.com/aida64extreme840.zip) | scoop manifest: extras/aida64extreme |
 | [**Alfred**](https://www.alfredapp.com/) | `5.8.1,2349` | — | [mac](https://cachefly.alfredapp.com/Alfred_5.8.1_2349.tar.gz) | brew manifest: alfred |
 | [**AltTab**](https://alt-tab.app/) | `11.10.1` | — | [mac](https://github.com/lwouis/alt-tab-macos/releases/download/v11.10.1/AltTab-11.10.1.zip) | brew manifest: alt-tab |
-| [**Apparency**](https://www.mothersruin.com/software/Apparency/) | `3.4` | — | [mac](https://www.mothersruin.com/software/archives/Apparency-3.4.dmg) | brew manifest: apparency |
+| [**Apparency**](https://www.mothersruin.com/software/Apparency/) | `3.5` | — | [mac](https://www.mothersruin.com/software/archives/Apparency-3.5.dmg) | brew manifest: apparency |
 | [**FreeMacSoft AppCleaner**](https://freemacsoft.net/appcleaner/) | `3.7` | — | [mac](https://www.freemacsoft.net/downloads/AppCleaner_3.7.zip) | brew manifest: appcleaner |
 | [**Arq**](https://www.arqbackup.com/) | `7.50` | — | [mac](https://www.arqbackup.com/download/arqbackup/Arq7.50.pkg) | brew manifest: arq |
 | [**Backblaze**](https://backblaze.com/) | `10.0.4.1082` | — | [mac](https://secure.backblaze.com/api/install_backblaze?file=bzinstall-mac-10.0.4.1082.dmg) | brew manifest: backblaze |
@@ -348,7 +327,7 @@ could not find expected ':'
 | [**FreeFileSync**](https://freefilesync.org/) | `14.13` | — | [mac](https://freefilesync.org/download/FreeFileSync_14.13_macOS.zip) | brew manifest: freefilesync |
 | [**Hammerspoon**](https://www.hammerspoon.org/) | `1.1.1` | — | [mac](https://github.com/Hammerspoon/hammerspoon/releases/download/1.1.1/Hammerspoon-1.1.1.zip) | brew manifest: hammerspoon |
 | [**Hidden Bar**](https://github.com/dwarvesf/hidden/) | `1.11.1` | — | [mac](https://github.com/dwarvesf/hidden/releases/download/v1.11.1/Hidden-Bar-v1.11.1-macos.zip) | brew manifest: hiddenbar |
-| [**HWiNFO**](https://www.hwinfo.com/) ⚠️ | `8.54` | — | [win-x64](https://www.hwinfo.com/files/hwi64_854.exe) | winget manifest: REALiX.HWiNFO<br>⚠ 429 Client Error: Too Many Requests for url: https://api.github.com/repos/microsoft/winget-pkgs/contents/manifests/r/REALiX/HWiNFO/8.54 |
+| [**HWiNFO**](https://www.hwinfo.com/) | `8.54` | — | [win-x64](https://www.hwinfo.com/files/hwi64_854.exe) | winget manifest: REALiX.HWiNFO |
 | [**HWMonitor**](https://www.cpuid.com/softwares/hwmonitor.html) | `1.68` | — | [win-x64](https://download.cpuid.com/hwmonitor/hwmonitor_1.68.zip) | scoop manifest: extras/hwmonitor |
 | [**Karabiner Elements**](https://karabiner-elements.pqrs.org/) | `16.3.0` | — | [mac](https://github.com/pqrs-org/Karabiner-Elements/releases/download/v16.3.0/Karabiner-Elements-16.3.0.dmg) | brew manifest: karabiner-elements |
 | [**Keyboard Maestro**](https://www.keyboardmaestro.com/main/) | `11.1.1,1111` | — | [mac](https://files.stairways.com/keyboardmaestro-1111.zip) | brew manifest: keyboard-maestro |
@@ -359,7 +338,7 @@ could not find expected ':'
 | [**Multipass**](https://github.com/canonical/multipass/) | `1.16.4` | — | [mac](https://github.com/canonical/multipass/releases/download/v1.16.4/multipass-1.16.4+mac-Darwin.pkg) | brew manifest: multipass |
 | [**OneCommander**](https://onecommander.com/) | `3.108.0.0` | — | [win](https://onecommander.com/OneCommander3.108.0.0.zip) | scoop manifest: extras/onecommander |
 | [**OverSight**](https://objective-see.org/products/oversight.html) | `2.4.0` | — | [mac](https://github.com/objective-see/OverSight/releases/download/v2.4.0/OverSight_2.4.0.zip) | brew manifest: oversight |
-| [**Parallels Desktop**](https://www.parallels.com/products/desktop/) | `27.0.3-58680` | — | [mac](https://download.parallels.com/desktop/v27/27.0.3-58680/ParallelsDesktop-27.0.3-58680.dmg) | brew manifest: parallels |
+| [**Parallels Desktop**](https://www.parallels.com/products/desktop/) | `27.1.0-58756` | — | [mac](https://download.parallels.com/desktop/v27/27.1.0-58756/ParallelsDesktop-27.1.0-58756.dmg) | brew manifest: parallels |
 | [**Paste**](https://pasteapp.io/) | `7.0.4` | — | [mac](https://downloads.pasteapp.io/dist/stable/Paste-7.0.4.zip) | brew manifest: paste |
 | [**PopClip**](https://www.popclip.app/) | `2026.8.1` | — | [mac](https://pilotmoon.com/downloads/PopClip-2026.8.1.zip) | brew manifest: popclip |
 | [**Q-Dir**](https://www.softwareok.com/?seite=Freeware/Q-Dir) | `12.82` | — | [win-x64](https://www.softwareok.com/Download/Q-Dir_Portable_x64.zip) | scoop manifest: extras/q-dir |
@@ -531,7 +510,7 @@ could not find expected ':'
 | [**Basecamp**](https://basecamp.com/) | `5.2.3` | — | [mac](https://basecamp.com/desktop/Basecamp-5.2.3-mac.zip) | brew manifest: basecamp |
 | [**Box Drive**](https://www.box.com/drive) | `2.54.172` | — | [mac](https://e3.boxcdn.net/desktop/releases/mac/BoxDrive-2.54.172.pkg) | brew manifest: box-drive |
 | [**BusyCal**](https://busymac.com/busycal/index.html) | `2026.4.4,2026-10-26-10-21-25` | — | [mac](https://downloads.busymac.com/bcl-2026.4.4-2026-10-26-10-21-25.zip) | brew manifest: busycal |
-| [**Capacities**](https://capacities.io/) | `1.72.4` | — | [mac-arm64](https://2vks4.upcloudobjects.com/capacities-desktop-app/Capacities-1.72.4-arm64.dmg) | brew manifest: capacities |
+| [**Capacities**](https://capacities.io/) | `1.72.7` | — | [mac-arm64](https://2vks4.upcloudobjects.com/capacities-desktop-app/Capacities-1.72.7-arm64.dmg) | brew manifest: capacities |
 | [**Celestia**](https://celestiaproject.space/) | `1.6.4` | — | [mac](https://github.com/CelestiaProject/Celestia/releases/download/1.6.4/celestia-1.6.4-macOS.zip) | brew manifest: celestia |
 | [**ClickUp**](https://clickup.com/) | `3.5.402,261028rnqdrclpe` | — | [mac-arm64](https://download.todesktop.com/221003ra4tebclw/ClickUp%203.5.402%20-%20Build%20261028rnqdrclpe-arm64.dmg) | brew manifest: clickup |
 | [**EndNote**](https://endnote.com/) | `22.3.0.22265,2025` | — | [mac](https://download.endnote.com/downloads/2025/EndNote2025Installer.dmg) | brew manifest: endnote |
@@ -550,7 +529,7 @@ could not find expected ':'
 | [**MeetingBar**](https://github.com/leits/MeetingBar) | `4.11.6` | — | [mac](https://github.com/leits/MeetingBar/releases/download/v4.11.6/MeetingBar.dmg) | brew manifest: meetingbar |
 | [**MEGAsync**](https://mega.nz) | `6.7.0.3` | — | [win-x64](https://mega.nz/MEGAsyncSetup64.exe#/dl.7z) | scoop manifest: extras/megasync |
 | [**Mendeley**](https://www.elsevier.support/mendeley/answer/how-do-i-install-mendeley-reference-manager) | `2.150.0` | — | [win-x64](https://static.mendeley.com/bin/desktop/mendeley-reference-manager-2.150.0.exe#/dl.7z) | scoop manifest: extras/mendeley |
-| [**Nextcloud**](https://nextcloud.com/) | `35.0.0` | — | [win-x64](https://github.com/nextcloud-releases/desktop/releases/download/v35.0.0/Nextcloud-35.0.0-x64.msi) | scoop manifest: extras/nextcloud |
+| [**Nextcloud**](https://nextcloud.com/) | `35.0.1` | — | [win-x64](https://github.com/nextcloud-releases/desktop/releases/download/v35.0.1/Nextcloud-35.0.1-x64.msi) | scoop manifest: extras/nextcloud |
 | [**Notesnook**](https://notesnook.com/) | `3.4.11` | — | [win-x64](https://github.com/streetwriters/notesnook/releases/download/v3.4.11/notesnook_win_x64.exe#/dl.7z) | scoop manifest: extras/notesnook |
 | [**OmniFocus**](https://www.omnigroup.com/omnifocus/) | `4.9.3` | — | [mac](https://downloads.omnigroup.com/software/macOS/15/OmniFocus-4.9.3.dmg) | brew manifest: omnifocus |
 | [**OmniGraffle**](https://www.omnigroup.com/omnigraffle/) | `7.26.1` | — | [mac](https://downloads.omnigroup.com/software/macOS/14/OmniGraffle-7.26.1.dmg) | brew manifest: omnigraffle |
@@ -561,7 +540,7 @@ could not find expected ':'
 | [**PDF Expert**](https://pdfexpert.com/) | `3.13.4,1177` | — | [mac](https://downloads.pdfexpert.com/pem3/versions/1177/PDFExpert.zip) | brew manifest: pdf-expert |
 | [**PDFgear**](https://www.pdfgear.com) | `3.0.1` | — | [win-x64](https://downloadfiles.pdfgear.com/releases/windows/pdfgear_setup_v3.0.1.exe) | scoop manifest: extras/pdfgear |
 | [**PDFsam Basic**](https://github.com/torakiki/pdfsam) | `6.0.6` | — | [win-x64](https://github.com/torakiki/pdfsam/releases/download/v6.0.6/pdfsam-basic-6.0.6-windows-x64.zip) | scoop manifest: extras/pdfsam |
-| [**Microsoft Power BI Desktop**](https://powerbi.microsoft.com/desktop/) ⚠️ | `2.159.883.0` | — | [win-x64](https://download.microsoft.com/download/8/8/0/880BCA75-79DD-466A-927D-1ABF1F5454B0/PBIDesktopSetup-2026-10_x64.exe) | winget manifest: Microsoft.PowerBI<br>⚠ 429 Client Error: Too Many Requests for url: https://api.github.com/repos/microsoft/winget-pkgs/contents/manifests/m/Microsoft/PowerBI/2.159.883.0 |
+| [**Microsoft Power BI Desktop**](https://powerbi.microsoft.com/desktop/) | `2.159.883.0` | — | [win-x64](https://download.microsoft.com/download/8/8/0/880BCA75-79DD-466A-927D-1ABF1F5454B0/PBIDesktopSetup-2026-10_x64.exe) | winget manifest: Microsoft.PowerBI |
 | [**QGIS**](https://www.qgis.org/) | `4.2.3` | — | [mac](https://www.qgis.org/) | brew manifest: qgis |
 | [**Rambox**](https://rambox.app) | `2.7.2` | — | [win-x64](https://github.com/ramboxapp/download/releases/download/v2.7.2/Rambox-2.7.2-win-x64.exe#/dl.7z) | scoop manifest: extras/rambox |
 | [**Sage**](https://www.sagemath.org/) | `10.9,10.9.1` | — | [mac-arm64](https://github.com/3-manifolds/Sage_macOS/releases/download/v10.9.1/SageMath-10.9_arm64.dmg) | brew manifest: sage |
@@ -724,7 +703,7 @@ could not find expected ':'
 | [**喜马拉雅**](https://www.ximalaya.com/) | `2026-10-27` | — | [win-x64](https://www.ximalaya.com/download/) · [mac-x64](https://www.ximalaya.com/download/) | Official download page; no public version API |
 | [**PotPlayer**](https://potplayer.daum.net/) | `2026-10-29` | — | [win-x64](https://t1.kakaocdn.net/potplayer/PotPlayer/Version/Latest/PotPlayerSetup64.exe) | Official Kakao CDN installer (latest build) |
 | [**剪映专业版**](https://www.capcut.cn/) | `2026-10-27` | — | [win-x64](https://www.capcut.cn/) · [mac-universal](https://www.capcut.cn/) | Official download page; no public version API |
-| [**优酷**](https://www.youku.com/) | `2026-10-27` | — | win-x64（暂不可用，待核验） · mac-universal（暂不可用，待核验） | Official download page; no public version API |
+| [**优酷**](https://www.youku.com/) | `2026-10-27` | — | [win-x64](https://www.youku.com/) · mac-universal（暂不可用，待核验） | Official download page; no public version API |
 | [**芒果TV**](https://www.mgtv.com/) | `2026-10-27` | — | [win-x64](https://www.mgtv.com/) · [mac-universal](https://www.mgtv.com/) | Official download page; no public version API |
 | [**QQ影音**](https://player.qq.com/) | `2026-10-27` | — | win-x64（暂不可用，待核验） | Official download page; no public version API |
 | [**洛雪音乐助手**](https://github.com/lyswhut/lx-music-desktop) | `2.12.6` | 2026-09-19 | [win-x64](https://github.com/lyswhut/lx-music-desktop/releases/download/v2.12.6/lx-music-desktop-v2.12.6-x64-Setup.exe) · [mac-arm64](https://github.com/lyswhut/lx-music-desktop/releases/download/v2.12.6/lx-music-desktop-2.12.6-arm64.dmg) · [mac-x64](https://github.com/lyswhut/lx-music-desktop/releases/download/v2.12.6/lx-music-desktop-2.12.6-x64.dmg) | GitHub Release: lyswhut/lx-music-desktop |
@@ -759,7 +738,7 @@ could not find expected ':'
 | [**UltiMaker Cura**](https://ultimaker.com/software/ultimaker-cura) | `5.13.0` | — | [mac-arm64](https://github.com/Ultimaker/Cura/releases/download/5.13.0/UltiMaker-Cura-5.13.0-macos-ARM64.dmg) | brew manifest: ultimaker-cura |
 | [**VirtualDJ**](https://virtualdj.com/) | `2026,9729,B11799B7` | — | [mac](https://download.virtualdj.com/b9729/B11799B7/install_virtualdj_2026_b9729_mac.pkg) | brew manifest: virtualdj |
 | [**HandBrake**](https://github.com/HandBrake/HandBrake) | `1.11.2` | 2026-06-07 | [win-x64](https://github.com/HandBrake/HandBrake/releases/download/1.11.2/HandBrake-1.11.2-x86_64-Win_GUI.exe) | GitHub Release: HandBrake/HandBrake |
-| [**FFmpeg**](https://github.com/BtbN/FFmpeg-Builds) | `latest` | 2026-10-28 | [win-x64](https://github.com/BtbN/FFmpeg-Builds/releases/download/latest/ffmpeg-master-latest-win64-gpl.zip) | GitHub Release: BtbN/FFmpeg-Builds |
+| [**FFmpeg**](https://github.com/BtbN/FFmpeg-Builds) | `latest` | 2026-10-29 | [win-x64](https://github.com/BtbN/FFmpeg-Builds/releases/download/latest/ffmpeg-master-latest-win64-gpl.zip) | GitHub Release: BtbN/FFmpeg-Builds |
 | [**IINA**](https://github.com/iina/iina) | `1.5.0` | 2026-10-03 | [mac-arm64](https://github.com/iina/iina/releases/download/v1.5.0/IINA.v1.5.0.dmg) | GitHub Release: iina/iina |
 | [**LosslessCut**](https://github.com/mifi/lossless-cut) ⚠️ | `3.70.2` | 2026-10-28 | [win-x64](https://github.com/mifi/lossless-cut/releases/download/v3.70.2/LosslessCut-win-x64.7z) · [linux-x64](https://github.com/mifi/lossless-cut/releases/download/v3.70.2/LosslessCut-linux-x86_64.AppImage) · [mac-universal](https://github.com/mifi/lossless-cut) | GitHub Release: mifi/lossless-cut<br>⚠ mac-universal: 没有匹配 asset pattern 'LosslessCut-mac-universal.pkg' |
 | [**Spotify**](https://www.spotify.com/download/) | `2026-10-27` | — | [win-x64](https://www.spotify.com/download/windows/) · [mac-universal](https://www.spotify.com/download/mac/) | Official Spotify download page; no public version API |
@@ -785,7 +764,7 @@ could not find expected ':'
 | [**Plex Media Server**](https://www.plex.tv/media-server-downloads/) | `2026-10-27` | — | [win-x64](https://www.plex.tv/media-server-downloads/) · [mac-universal](https://www.plex.tv/media-server-downloads/) · [linux-x64](https://www.plex.tv/media-server-downloads/) | Official Plex Media Server download page; no public version API |
 | [**foobar2000**](https://www.foobar2000.org/download) | `2026-10-27` | — | [win-x64](https://www.foobar2000.org/download) · [mac-universal](https://www.foobar2000.org/download) | Official foobar2000 download page; no public version API |
 | [**Audacity**](https://github.com/audacity/audacity) | `4.0.1` | 2026-09-30 | [win-x64](https://github.com/audacity/audacity/releases/download/Audacity-4.0.1/audacity-win-4.0.1-x86_64.msi) | GitHub Release: audacity/audacity |
-| [**OBS Studio**](https://obsproject.com/) ⚠️ | `33.0.0` | 2026-10-23 | [win-x64](https://github.com/obsproject/obs-studio/releases/download/33.0.0/OBS-Studio-33.0.0-Windows-x64-Installer.exe) · [mac-arm64](https://github.com/obsproject/obs-studio/releases/download/33.0.0/OBS-Studio-33.0.0-macOS-Apple.dmg) · [mac-x64](https://github.com/obsproject/obs-studio/releases/download/33.0.0/OBS-Studio-33.0.0-macOS-Intel.dmg) · [linux-x64](https://obsproject.com/) | GitHub Release: obsproject/obs-studio<br>⚠ linux-x64: 没有匹配 asset pattern 'OBS-Studio-*-Ubuntu-24.04-x86_64.deb' |
+| [**OBS Studio**](https://obsproject.com/) ⚠️ | `33.0.1` | 2026-10-29 | [win-x64](https://github.com/obsproject/obs-studio/releases/download/33.0.1/OBS-Studio-33.0.1-Windows-x64-Installer.exe) · [mac-arm64](https://github.com/obsproject/obs-studio/releases/download/33.0.1/OBS-Studio-33.0.1-macOS-Apple.dmg) · [mac-x64](https://github.com/obsproject/obs-studio/releases/download/33.0.1/OBS-Studio-33.0.1-macOS-Intel.dmg) · [linux-x64](https://obsproject.com/) | GitHub Release: obsproject/obs-studio<br>⚠ linux-x64: 没有匹配 asset pattern 'OBS-Studio-*-Ubuntu-24.04-x86_64.deb' |
 | [**mpv**](https://mpv.io/) | `20261021` | 2026-10-21 | [win-x64](https://github.com/shinchiro/mpv-winbuild-cmake/releases/download/20261021/mpv-x86_64-20261021-git-e471496c56.7z) | GitHub Release: shinchiro/mpv-winbuild-cmake |
 | [**OpenSCAD**](https://github.com/openscad/openscad) | `2021.01` | 2021-02-07 | [win-x64](https://github.com/openscad/openscad) | GitHub Release: openscad/openscad |
 | [**LMMS**](https://github.com/LMMS/lmms) | `1.2.2` | 2020-07-04 | [win-x64](https://github.com/LMMS/lmms/releases/download/v1.2.2/lmms-1.2.2-win64.exe) · [mac-x64](https://github.com/LMMS/lmms/releases/download/v1.2.2/lmms-1.2.2-mac10.14.dmg) | GitHub Release: LMMS/lmms |
@@ -801,7 +780,7 @@ could not find expected ':'
 | [**360 极速浏览器**](https://browser.360.cn/ee/) | `2026-10-27` | — | [win-x64](https://browser.360.cn/ee/) | Official download page; no public version API |
 | [**夸克浏览器**](https://pc.quark.cn/) | `2026-10-27` | — | win-x64（暂不可用，待核验） · mac-universal（暂不可用，待核验） | Official download page; no public version API |
 | [**QQ浏览器**](https://browser.qq.com/) | `2026-10-27` | — | [win-x64](https://browser.qq.com/) · [mac-universal](https://browser.qq.com/) | Official download page; no public version API |
-| [**Arc**](https://arc.net/) | `1.170.0,89123` | — | [mac](https://releases.arc.net/release/Arc-1.170.0-89123.zip) | brew manifest: arc |
+| [**Arc**](https://arc.net/) | `1.171.0,89666` | — | [mac](https://releases.arc.net/release/Arc-1.171.0-89666.zip) | brew manifest: arc |
 | [**Min**](https://minbrowser.org/) | `1.35.7` | — | [win-x64](https://github.com/minbrowser/min/releases/download/v1.35.7/Min-v1.35.7-windows.zip) | scoop manifest: extras/min |
 | [**Orion Browser**](https://browser.kagi.com/) | `1.1.3,152` | — | [mac](https://cdn.kagi.com/updates/26_0/152.zip) | brew manifest: orion |
 | [**Pale Moon**](https://www.palemoon.org) | `35.0.3` | — | [win-x64](https://rm-eu.palemoon.org/release/Palemoon-Portable-35.0.3.win64.exe#/palemoon.7z) | scoop manifest: extras/palemoon |

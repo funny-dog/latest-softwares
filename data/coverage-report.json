@@ -1,11 +1,11 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-10-29T13:59:45+00:00",
+  "generated_at": "2026-10-29T23:08:56+00:00",
   "configured": 699,
   "published": 699,
-  "stale_packages": 7,
-  "verified_assets": 1130,
-  "unavailable_assets": 23,
+  "stale_packages": 1,
+  "verified_assets": 1131,
+  "unavailable_assets": 22,
   "required_total": 301,
   "required_covered": 300,
   "required_coverage": 0.9966777408637874,
@@ -119,8 +119,7 @@
       "id": "youku",
       "required": false,
       "issues": [
-        "unverified_or_unavailable:mac-universal",
-        "unverified_or_unavailable:win-x64"
+        "unverified_or_unavailable:mac-universal"
       ]
     },
     {
