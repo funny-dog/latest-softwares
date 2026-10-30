@@ -5,7 +5,7 @@
 > 由 GitHub Actions 每日自动同步上游官方源的**最新版本元数据**。
 > 仓库**不托管二进制安装包**，下载按钮直接跳到上游官方下载链接。
 >
-> 📅 **最后更新**：`2026-10-30 13:49:40` (UTC)　· 共 699 项软件（其中 1 项使用上次数据，标 ⚠️）
+> 📅 **最后更新**：`2026-10-30 22:46:49` (UTC)　· 共 699 项软件（其中 1 项使用上次数据，标 ⚠️）
 
 ---
 
@@ -25,7 +25,7 @@
 
 | 软件 | 最新版本 | 发布日期 | 下载链接 | 来源 |
 |------|---------|---------|---------|------|
-| [**Windows 11**](https://www.microsoft.com/software-download/windows11) | `25H2` | — | [win-x64](https://software.download.prss.microsoft.com/dbazure/Win11_25H2_Chinese_Simplified_x64_v2.iso?t=37c4b0de-9b5b-47ef-9bcb-602c6884b4f3&P1=1793454555&P2=602&P3=2&P4=SOHsY3aGNdbrquH7pmVkYWrVEAnzOIWNzNwwZHjQVFunsuOkgSS9J47HELUPCegMv8jTjP9AJt0BFmjbu0szc7NLGjwE1MBCYn%2bm69bmTT7erY76OHYKqZcZ1GoZ7WrfgQt3xUO3hEbWx9HThOeCf%2bM7ILvgE0e0AOWlYTkft5t3%2fddyCLae3SD6Xqoz8JsH%2bYKI53uRvkfUUzitAb3LObUFpSvqonL%2bqWu18qaitFvfEq5ovwiAU5XXaaIgH9k6%2bErYFqKWjtRbCkkafZENNhJagtiCcsZHZKxD4i0SJetiZSwrqKPkqRkWSlRRP06FywfjQl1T7hiOYs3Gm%2bRD1A%3d%3d) | Microsoft Software Download (via Fido) |
+| [**Windows 11**](https://www.microsoft.com/software-download/windows11) | `25H2` | — | [win-x64](https://software.download.prss.microsoft.com/dbazure/Win11_25H2_Chinese_Simplified_x64_v2.iso?t=e5e60f7f-b2ee-4dc7-8954-d43d505f89ad&P1=1793486781&P2=602&P3=2&P4=ogX9U82DHNkw0JNgygPnwRUMVMYKmY7f%2fuCSgnN6pon1qt12J3DzT%2b5IkQk8B8quJ8UJ3dSBXijI5GahX8b5lb9Jwlfc8zjolsmcVKlLxXVaSkvd40hjSx9wA1%2fMS%2baOYncFIObx8Y9sFhM5hFn1zUIcaEtfsoruHFpvl7IP3C658uzb%2flTJ%2beXVz9YlA%2ff3dKOoB6Ynfp%2bzcZC2A4jbEZaIy3hjN3MuC6JJuMZO2I0qDDvatZI7zXWmI5QZXfO9Kd1FhVjIaby5DqoEVpUDvcRyeRfqFjNfL%2bk3Xs2DdTNaiU51XcL3k8V4PQ7qhDnqJ9KO%2bVf1iVa7RQ1NrqBjdw%3d%3d) | Microsoft Software Download (via Fido) |
 | [**Ubuntu**](https://ubuntu.com/download) | `26.10` | — | [desktop-amd64](https://releases.ubuntu.com/26.10/ubuntu-26.10-desktop-amd64.iso) · [server-amd64](https://releases.ubuntu.com/26.10/ubuntu-26.10-live-server-amd64.iso) · [wsl-amd64](https://ubuntu.com/download) | Ubuntu official releases index |
 | [**Fedora Workstation**](https://fedoraproject.org/workstation/download/) | `44` | — | [workstation-live-x86_64](https://fedoraproject.org/workstation/download/) | Fedora official release directory |
 
@@ -97,18 +97,18 @@
 | [**SwitchHosts**](https://github.com/oldj/SwitchHosts) | `5.0.3` | 2026-10-20 | [win-x64](https://github.com/oldj/SwitchHosts/releases/download/v5.0.3/SwitchHosts-5.0.3-windows-x64-setup.exe) · [mac-x64](https://github.com/oldj/SwitchHosts/releases/download/v5.0.3/SwitchHosts-5.0.3-mac-x64.dmg) | GitHub Release: oldj/SwitchHosts |
 | [**Apifox**](https://apifox.com/) | `2026-10-30` | — | win-x64（暂不可用，待核验） · mac-x64（暂不可用，待核验） | Official download page; no public version API |
 | [**Android Studio**](https://developer.android.com/studio) | `2026.2.2.8` | — | [win-x64](https://edgedl.me.gvt1.com/android/studio/ide-zips/2026.2.2.8/android-studio-rabbit2-windows.zip) | scoop manifest: extras/android-studio |
-| [**AWS CLI**](https://aws.amazon.com/cli/) | `2.39.2` | — | [win-x64](https://awscli.amazonaws.com/AWSCLIV2-2.39.2.msi) | scoop manifest: main/aws |
+| [**AWS CLI**](https://aws.amazon.com/cli/) | `2.39.3` | — | [win-x64](https://awscli.amazonaws.com/AWSCLIV2-2.39.3.msi) | scoop manifest: main/aws |
 | [**Azure CLI**](https://aka.ms/cli) | `2.91.0` | — | [win-x64](https://github.com/Azure/azure-cli/releases/download/azure-cli-2.91.0/azure-cli-2.91.0-x64.zip) | scoop manifest: main/azure-cli |
-| [**Microsoft Azure Storage Explorer**](https://azure.microsoft.com/products/storage/storage-explorer/) | `1.46.0` | — | [win-x64](https://github.com/microsoft/AzureStorageExplorer/releases/download/v1.46.0/StorageExplorer-windows-x64.exe) | winget manifest: Microsoft.Azure.StorageExplorer |
+| [**Microsoft Azure Storage Explorer**](https://azure.microsoft.com/products/storage/storage-explorer/) | `1.47.0` | — | [win-x64](https://github.com/microsoft/AzureStorageExplorer/releases/download/v1.47.0/StorageExplorer-windows-x64.exe) | winget manifest: Microsoft.Azure.StorageExplorer |
 | [**BBEdit**](https://www.barebones.com/products/bbedit/) | `16.0.3` | — | [mac](https://s3.amazonaws.com/BBSW-download/BBEdit_16.0.3.dmg) | brew manifest: bbedit |
 | [**Beyond Compare**](https://www.scootersoftware.com/) | `5.2.7.32913` | — | [mac](https://www.scootersoftware.com/files/BCompareOSX-5.2.7.32913.zip) | brew manifest: beyond-compare |
 | [**Charles**](https://www.charlesproxy.com/) | `5.2.2` | — | [mac](https://www.charlesproxy.com/assets/release/5.2.2/charles-proxy-5.2.2.dmg) | brew manifest: charles |
-| [**CLion**](https://www.jetbrains.com/cpp/) | `2026.2.4-262.11879.74` | — | [win-x64](https://download.jetbrains.com/cpp/CLion-2026.2.4.win.zip) | scoop manifest: extras/clion |
+| [**CLion**](https://www.jetbrains.com/cpp/) | `2026.2.4.1-262.11879.106` | — | [win-x64](https://download.jetbrains.com/cpp/CLion-2026.2.4.1.win.zip) | scoop manifest: extras/clion |
 | [**CMake**](https://cmake.org) | `4.4.5` | — | [win-x64](https://github.com/Kitware/CMake/releases/download/v4.4.5/cmake-4.4.5-windows-x86_64.zip) | scoop manifest: main/cmake |
-| [**Composer**](https://getcomposer.org/) | `2.11.0` | — | [win](https://getcomposer.org/download/2.11.0/composer.phar) | scoop manifest: main/composer |
+| [**Composer**](https://getcomposer.org/) | `2.11.1` | — | [win](https://getcomposer.org/download/2.11.1/composer.phar) | scoop manifest: main/composer |
 | [**Amazon Corretto JDK 25**](https://aws.amazon.com/corretto/) | `25.0.5.0` | — | [win-x64](https://corretto.aws/downloads/resources/25.0.5.0.10/amazon-corretto-25.0.5.0.10-windows-x64.msi) | winget manifest: Amazon.Corretto.25.JDK |
 | [**CotEditor**](https://coteditor.com/) | `7.1.3` | — | [mac](https://github.com/coteditor/CotEditor/releases/download/7.1.3/CotEditor_7.1.3.dmg) | brew manifest: coteditor |
-| [**DataGrip**](https://www.jetbrains.com/datagrip/) | `2026.2.6,262.10968.148` | — | [mac-arm64](https://www.jetbrains.com/datagrip/) | brew manifest: datagrip |
+| [**DataGrip**](https://www.jetbrains.com/datagrip/) | `2026.2.6.1,262.11879.103` | — | [mac-arm64](https://www.jetbrains.com/datagrip/) | brew manifest: datagrip |
 | [**DB Browser for SQLite**](https://sqlitebrowser.org/) | `3.13.1` | — | [mac](https://github.com/sqlitebrowser/sqlitebrowser/releases/download/v3.13.1/DB.Browser.for.SQLite-v3.13.1.dmg) | brew manifest: db-browser-for-sqlite |
 | [**DbGate**](https://dbgate.org/) | `7.3.3` | — | [mac-universal](https://github.com/dbgate/dbgate/releases/download/v7.3.3/dbgate-7.3.3-mac_universal.dmg) | brew manifest: dbgate |
 | [**Deno**](https://deno.com) | `2.9.8` | — | [win-x64](https://github.com/denoland/deno/releases/download/v2.9.8/deno-x86_64-pc-windows-msvc.zip) | scoop manifest: main/deno |
@@ -119,10 +119,10 @@
 | [**GitButler**](https://gitbutler.com/) | `0.23.1` | — | [win-x64](https://releases.gitbutler.com/releases/release/0.23.1-3317/windows/x86_64/GitButler_0.23.1_x64_en-US.msi) | scoop manifest: extras/gitbutler |
 | [**Git Extensions**](https://gitextensions.github.io/) | `7.2.1.7` | — | [win-x64](https://github.com/gitextensions/gitextensions/releases/download/v7.2.1/GitExtensions-Portable-x64-7.2.1.7-0aea2d6df.zip) | scoop manifest: extras/gitextensions |
 | [**GitHub Desktop**](https://desktop.github.com/) | `3.6.10` | — | [win-x64](https://github.com/desktop/desktop/releases/download/release-3.6.10/GitHubDesktop-3.6.10-x64-full.nupkg) | scoop manifest: extras/github |
-| [**Goland**](https://www.jetbrains.com/go/) | `2026.2.3,262.10968.67` | — | [mac-arm64](https://www.jetbrains.com/go/) | brew manifest: goland |
+| [**Goland**](https://www.jetbrains.com/go/) | `2026.2.4,262.11879.101` | — | [mac-arm64](https://www.jetbrains.com/go/) | brew manifest: goland |
 | [**Gradle**](https://gradle.org) | `9.8.2` | — | [win](https://services.gradle.org/distributions/gradle-9.8.2-all.zip) | scoop manifest: main/gradle |
 | [**HTTP Toolkit**](https://httptoolkit.tech/) | `1.27.4` | — | [mac-arm64](https://github.com/httptoolkit/httptoolkit-desktop/releases/download/v1.27.4/HttpToolkit-1.27.4-arm64.dmg) | brew manifest: http-toolkit |
-| [**IntelliJ IDEA Ultimate**](https://www.jetbrains.com/idea/) | `2026.2.3-262.10968.63` | — | [win-x64](https://download.jetbrains.com/idea/idea-2026.2.3.win.zip) | scoop manifest: extras/idea |
+| [**IntelliJ IDEA Ultimate**](https://www.jetbrains.com/idea/) | `2026.2.4-262.11879.100` | — | [win-x64](https://download.jetbrains.com/idea/idea-2026.2.4.win.zip) | scoop manifest: extras/idea |
 | [**Julia**](https://julialang.org/) | `1.13.3` | — | [win-x64](https://julialang-s3.julialang.org/bin/winnt/x64/1.13/julia-1.13.3-win64.zip) | scoop manifest: main/julia |
 | [**Kate**](https://kate-editor.org/) | `26.08,12761` | — | [mac-arm64](https://cdn.kde.org/ci-builds/utilities/kate/release-26.08/macos-arm64/kate-release_26.08-12761-macos-clang-arm64.dmg) | brew manifest: kate |
 | [**KDiff3**](https://apps.kde.org/kdiff3/) | `1.12.6` | — | [win-x64](https://apps.kde.org/kdiff3/) | scoop manifest: extras/kdiff3 |
@@ -139,21 +139,21 @@
 | [**Packer**](https://www.packer.io) | `1.16.2` | — | [win-x64](https://releases.hashicorp.com/packer/1.16.2/packer_1.16.2_windows_amd64.zip) | scoop manifest: main/packer |
 | [**pgAdmin4**](https://www.pgadmin.org/) | `9.19` | — | [mac-arm64](https://ftp.postgresql.org/pub/pgadmin/pgadmin4/v9.19/macos/pgadmin4-9.19-arm64.dmg) | brew manifest: pgadmin4 |
 | [**PHP**](https://www.php.net/) | `8.5.12-1` | — | [win-x64](https://downloads.php.net/~windows/releases/archives/php-8.5.12-1-Win32-vs17-x64.zip) | scoop manifest: main/php |
-| [**JetBrains PhpStorm**](https://www.jetbrains.com/phpstorm/) | `2026.2.3,262.10968.76` | — | [mac-arm64](https://www.jetbrains.com/phpstorm/) | brew manifest: phpstorm |
+| [**JetBrains PhpStorm**](https://www.jetbrains.com/phpstorm/) | `2026.2.4,262.11879.104` | — | [mac-arm64](https://www.jetbrains.com/phpstorm/) | brew manifest: phpstorm |
 | [**Podman Desktop**](https://podman-desktop.io/) | `1.30.5` | — | [mac-arm64](https://github.com/containers/podman-desktop/releases/download/v1.30.5/podman-desktop-1.30.5-arm64.dmg) | brew manifest: podman-desktop |
 | [**Positron**](https://positron.posit.co/) | `2026.10.2-3` | — | [mac-arm64](https://cdn.posit.co/positron/releases/mac/arm64/Positron-darwin-2026.10.2-3-arm64.zip) | brew manifest: positron |
 | [**Postico**](https://eggerapps.at/postico2/) | `2.3.5,9817` | — | [mac](https://downloads.eggerapps.at/postico/postico-9817.dmg) | brew manifest: postico |
 | [**Proxyman**](https://proxyman.com/) | `26.3.0,260300` | — | [mac](https://download.proxyman.com/260300/Proxyman_26.3.0.dmg) | brew manifest: proxyman |
-| [**PyCharm**](https://www.jetbrains.com/pycharm/) | `2026.2.3-262.10968.92` | — | [win-x64](https://download.jetbrains.com/python/pycharm-2026.2.3.win.zip) | scoop manifest: extras/pycharm |
+| [**PyCharm**](https://www.jetbrains.com/pycharm/) | `2026.2.4-262.11879.98` | — | [win-x64](https://download.jetbrains.com/python/pycharm-2026.2.4.win.zip) | scoop manifest: extras/pycharm |
 | [**Querious 4**](https://www.araelium.com/querious/) | `4.2.5` | — | [mac](https://www.araelium.com/querious/downloads/versions/Querious4.2.5.zip) | brew manifest: querious |
 | [**R**](https://www.r-project.org) | `4.6.2` | — | [win-x64](https://cloud.r-project.org/bin/windows/base/old/4.6.2/R-4.6.2-win.exe) | scoop manifest: main/r |
 | [**Rancher Desktop**](https://rancherdesktop.io/) | `1.24.0` | — | [mac-arm64](https://github.com/rancher-sandbox/rancher-desktop/releases/download/v1.24.0/Rancher.Desktop-1.24.0.aarch64.dmg) | brew manifest: rancher |
 | [**RapidAPI**](https://paw.cloud/) | `4.5.5` | — | [mac](https://cdn-builds.paw.cloud/paw/RapidAPI-4.5.5.zip) | brew manifest: rapidapi |
 | [**Redis Insight**](https://redis.io/insight/) | `3.8.0` | — | [mac-arm64](https://s3.amazonaws.com/redisinsight.download/public/releases/3.8.0/Redis-Insight-mac-arm64.dmg) | brew manifest: redis-insight |
-| [**JetBrains Rider**](https://www.jetbrains.com/rider/) | `2026.2.3.1-262.10968.170` | — | [win-x64](https://download.jetbrains.com/rider/JetBrains.Rider-2026.2.3.1.win.zip) | scoop manifest: extras/rider |
+| [**JetBrains Rider**](https://www.jetbrains.com/rider/) | `2026.2.4-262.11879.110` | — | [win-x64](https://download.jetbrains.com/rider/JetBrains.Rider-2026.2.4.win.zip) | scoop manifest: extras/rider |
 | [**RStudio**](https://posit.co/products/open-source/rstudio/) | `2026.10.1-239` | — | [win-x64](https://s3.amazonaws.com/rstudio-desktop/electron/windows/RStudio-2026.10.1-239.exe#/dl.7z) | scoop manifest: extras/rstudio |
-| [**RubyMine**](https://www.jetbrains.com/ruby/) | `2026.2.3,262.10968.66` | — | [mac-arm64](https://www.jetbrains.com/ruby/) | brew manifest: rubymine |
-| [**RustRover**](https://www.jetbrains.com/rust/) | `2026.2.4-262.10968.211` | — | [win-x64](https://download.jetbrains.com/rustrover/RustRover-2026.2.4.exe#/dl.7z) | scoop manifest: extras/rustrover |
+| [**RubyMine**](https://www.jetbrains.com/ruby/) | `2026.2.4,262.11879.97` | — | [mac-arm64](https://www.jetbrains.com/ruby/) | brew manifest: rubymine |
+| [**RustRover**](https://www.jetbrains.com/rust/) | `2026.2.5-262.11879.102` | — | [win-x64](https://download.jetbrains.com/rustrover/RustRover-2026.2.5.exe#/dl.7z) | scoop manifest: extras/rustrover |
 | [**Rustup**](https://rustup.rs) | `1.29.2` | — | [win-x64](https://static.rust-lang.org/rustup/dist/x86_64-pc-windows-msvc/rustup-init.exe) | scoop manifest: main/rustup |
 | [**Sequel Ace**](https://github.com/Sequel-Ace/Sequel-Ace) | `6.1.0,20117` | — | [mac](https://github.com/Sequel-Ace/Sequel-Ace/releases/download/production/6.1.0-20117/Sequel-Ace-6.1.0.zip) | brew manifest: sequel-ace |
 | [**SmartGit**](https://www.smartgit.dev/) | `26.1.057` | — | [win-x64](https://download.smartgit.dev/smartgit/smartgit-26_1_057-win-portable.7z) | scoop manifest: extras/smartgit |
@@ -166,7 +166,7 @@
 | [**Vagrant**](https://www.vagrantup.com/) | `2.4.9` | — | [win-x64](https://releases.hashicorp.com/vagrant/2.4.9/vagrant_2.4.9_windows_amd64.msi) | scoop manifest: main/vagrant |
 | [**Microsoft Visual C++ Redistributable x64**](https://learn.microsoft.com/cpp/windows/latest-supported-vc-redist) | `14.51.36247.0` | — | [win-x64](https://download.visualstudio.microsoft.com/download/pr/ebdab8e5-1d7b-4d9f-a11b-cbb1720c3b12/843068991DAAA1F73AD9F6239BCE4D0F6A07A51F18C37EA2A867E9BECA71295C/VC_redist.x64.exe) | winget manifest: Microsoft.VCRedist.2015+.x64 |
 | [**Visual Studio Community**](https://visualstudio.microsoft.com/vs/community/) | `17.14.44` | — | [win-x64](https://download.visualstudio.microsoft.com/download/pr/6bd63d7f-1818-4e03-a552-9feb11496c19/fec1b3df4cd2dd488083008dea194201f7f14574a7ce8f4eba943c9b6f4a01f3/vs_Community.exe) | winget manifest: Microsoft.VisualStudio.2022.Community |
-| [**WebStorm**](https://www.jetbrains.com/webstorm/) | `2026.2.3,262.10968.77` | — | [mac-arm64](https://www.jetbrains.com/webstorm/) | brew manifest: webstorm |
+| [**WebStorm**](https://www.jetbrains.com/webstorm/) | `2026.2.4,262.11879.105` | — | [mac-arm64](https://www.jetbrains.com/webstorm/) | brew manifest: webstorm |
 | [**WinMerge**](https://winmerge.org) | `2.16.60` | — | [win-x64](https://github.com/WinMerge/winmerge/releases/download/v2.16.60/winmerge-2.16.60-x64-exe.zip) | scoop manifest: extras/winmerge |
 | [**Alacritty**](https://github.com/alacritty/alacritty) | `0.17.0` | 2026-04-06 | [win-x64](https://github.com/alacritty/alacritty/releases/download/v0.17.0/Alacritty-v0.17.0-portable.exe) | GitHub Release: alacritty/alacritty |
 | [**nvm-windows**](https://github.com/coreybutler/nvm-windows) | `2.0.1` | 2026-10-02 | [win-x64](https://github.com/nvm-windows/nvm/releases/download/v2.0.1/nvm-2.0.1-x64-setup.exe) | GitHub Release: coreybutler/nvm-windows |
@@ -334,7 +334,7 @@
 | [**KnockKnock**](https://objective-see.org/products/knockknock.html) | `4.1.0` | — | [mac](https://github.com/objective-see/KnockKnock/releases/download/v4.1.0/KnockKnock_4.1.0.zip) | brew manifest: knockknock |
 | [**LinearMouse**](https://linearmouse.org/) | `0.12.0` | — | [mac](https://dl.linearmouse.org/v0.12.0/LinearMouse.dmg) | brew manifest: linearmouse |
 | [**Mos**](https://mos.caldis.me/) | `4.2.1,20260531.1` | — | [mac](https://github.com/Caldis/Mos/releases/download/4.2.1/Mos.Versions.4.2.1-20260531.1.zip) | brew manifest: mos |
-| [**Multi Commander**](https://multicommander.com/) | `16.6.0.3230` | — | [win-x64](https://multicommander.com/files/updates/MultiCommander_x64_Portable_(16.6.0.3230).zip) | scoop manifest: extras/multicommander |
+| [**Multi Commander**](https://multicommander.com/) | `16.6.0.3233` | — | [win-x64](https://multicommander.com/files/updates/MultiCommander_x64_Portable_(16.6.0.3233).zip) | scoop manifest: extras/multicommander |
 | [**Multipass**](https://github.com/canonical/multipass/) | `1.16.4` | — | [mac](https://github.com/canonical/multipass/releases/download/v1.16.4/multipass-1.16.4+mac-Darwin.pkg) | brew manifest: multipass |
 | [**OneCommander**](https://onecommander.com/) | `3.108.0.0` | — | [win](https://onecommander.com/OneCommander3.108.0.0.zip) | scoop manifest: extras/onecommander |
 | [**OverSight**](https://objective-see.org/products/oversight.html) | `2.4.0` | — | [mac](https://github.com/objective-see/OverSight/releases/download/v2.4.0/OverSight_2.4.0.zip) | brew manifest: oversight |
@@ -708,7 +708,7 @@
 | [**QQ影音**](https://player.qq.com/) | `2026-10-30` | — | win-x64（暂不可用，待核验） | Official download page; no public version API |
 | [**洛雪音乐助手**](https://github.com/lyswhut/lx-music-desktop) | `2.12.6` | 2026-09-19 | [win-x64](https://github.com/lyswhut/lx-music-desktop/releases/download/v2.12.6/lx-music-desktop-v2.12.6-x64-Setup.exe) · [mac-arm64](https://github.com/lyswhut/lx-music-desktop/releases/download/v2.12.6/lx-music-desktop-2.12.6-arm64.dmg) · [mac-x64](https://github.com/lyswhut/lx-music-desktop/releases/download/v2.12.6/lx-music-desktop-2.12.6-x64.dmg) | GitHub Release: lyswhut/lx-music-desktop |
 | [**Listen1**](https://github.com/listen1/listen1_desktop) | `2.33.0` | 2025-06-17 | [win-x64](https://github.com/listen1/listen1_desktop/releases/download/v2.33.0/listen1_2.33.0_win_x64.exe) · [mac-universal](https://github.com/listen1/listen1_desktop/releases/download/v2.33.0/listen1_2.33.0_mac_universal.dmg) | GitHub Release: listen1/listen1_desktop |
-| [**Ableton Live Suite**](https://www.ableton.com/en/live/) | `12.4.15` | — | [mac-universal](https://cdn-downloads.ableton.com/channels/12.4.15/ableton_live_suite_12.4.15_universal.dmg) | brew manifest: ableton-live-suite |
+| [**Ableton Live Suite**](https://www.ableton.com/en/live/) | `12.4.16` | — | [mac-universal](https://cdn-downloads.ableton.com/channels/12.4.16/ableton_live_suite_12.4.16_universal.dmg) | brew manifest: ableton-live-suite |
 | [**Acorn**](https://flyingmeat.com/acorn/) | `8.7.1` | — | [mac](https://flyingmeat.com/download/Acorn-8.7.1.zip) | brew manifest: acorn |
 | [**AIMP**](https://www.aimp.ru) | `5.40.2727` | — | [win-x64](https://www.aimp.ru/?do=download.file&id=31#/dl.zip) | scoop manifest: extras/aimp |
 | [**Autodesk Fusion 360**](https://www.autodesk.com/products/fusion-360/overview) | `latest` | — | [mac](https://dl.appstreaming.autodesk.com/production/installers/Fusion%20Client%20Downloader.dmg) | brew manifest: autodesk-fusion |
@@ -800,7 +800,7 @@
 | [**LibreWolf**](https://librewolf.net/installation/) | `2026-10-30` | — | [win-x64](https://librewolf.net/installation/) · [mac-universal](https://librewolf.net/installation/) · [linux-x64](https://librewolf.net/installation/) | Official LibreWolf installation page; no public version API |
 | [**Mullvad Browser**](https://mullvad.net/en/browser) | `2026-10-30` | — | [win-x64](https://mullvad.net/en/browser) · [mac-universal](https://mullvad.net/en/browser) · [linux-x64](https://mullvad.net/en/browser) | Official Mullvad Browser download page; no public version API |
 | [**Google Chrome**](https://www.google.com/chrome/) | `157.0.8103.27` | — | [win-x64](https://dl.google.com/chrome/install/standalonesetup64.exe) · [mac-arm64](https://dl.google.com/chrome/mac/stable/GGRO/googlechrome.dmg) | Google Version History API |
-| [**Brave Browser**](https://github.com/brave/brave-browser) | `1.98.62` | 2026-10-28 | [win-x64](https://github.com/brave/brave-browser/releases/download/v1.98.62/BraveBrowserSetup.exe) | GitHub Release: brave/brave-browser |
+| [**Brave Browser**](https://github.com/brave/brave-browser) | `1.98.63` | 2026-10-30 | [win-x64](https://github.com/brave/brave-browser/releases/download/v1.98.63/BraveBrowserSetup.exe) | GitHub Release: brave/brave-browser |
 | [**Thorium Browser**](https://thorium.rocks/) | `138.0.7204.303` | — | [win-x64](https://github.com/Alex313031/Thorium-Win/releases/download/M138.0.7204.303/Thorium_SSE3_138.0.7204.303.zip) | scoop manifest: extras/thorium |
 
 
