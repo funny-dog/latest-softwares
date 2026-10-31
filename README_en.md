@@ -5,7 +5,7 @@
 > **Latest version metadata** automatically synced from official upstream sources daily by GitHub Actions.
 > This repository **does not host binary installers** — download buttons link directly to upstream official downloads.
 >
-> 📅 **Last updated**: `2026-10-30 22:46:49` (UTC) · 699 software items (1 using previous data, marked ⚠️)
+> 📅 **Last updated**: `2026-10-31 06:37:05` (UTC) · 699 software items (1 using previous data, marked ⚠️)
 
 ---
 
@@ -25,7 +25,7 @@
 
 | Software | Latest Version | Released | Download | Source |
 |----------|---------------|----------|----------|--------|
-| [**Windows 11**](https://www.microsoft.com/software-download/windows11) | `25H2` | — | [win-x64](https://software.download.prss.microsoft.com/dbazure/Win11_25H2_Chinese_Simplified_x64_v2.iso?t=e5e60f7f-b2ee-4dc7-8954-d43d505f89ad&P1=1793486781&P2=602&P3=2&P4=ogX9U82DHNkw0JNgygPnwRUMVMYKmY7f%2fuCSgnN6pon1qt12J3DzT%2b5IkQk8B8quJ8UJ3dSBXijI5GahX8b5lb9Jwlfc8zjolsmcVKlLxXVaSkvd40hjSx9wA1%2fMS%2baOYncFIObx8Y9sFhM5hFn1zUIcaEtfsoruHFpvl7IP3C658uzb%2flTJ%2beXVz9YlA%2ff3dKOoB6Ynfp%2bzcZC2A4jbEZaIy3hjN3MuC6JJuMZO2I0qDDvatZI7zXWmI5QZXfO9Kd1FhVjIaby5DqoEVpUDvcRyeRfqFjNfL%2bk3Xs2DdTNaiU51XcL3k8V4PQ7qhDnqJ9KO%2bVf1iVa7RQ1NrqBjdw%3d%3d) | Microsoft Software Download (via Fido) |
+| [**Windows 11**](https://www.microsoft.com/software-download/windows11) | `25H2` | — | [win-x64](https://software.download.prss.microsoft.com/dbazure/Win11_25H2_Chinese_Simplified_x64_v2.iso?t=9a142133-7b50-48a8-a844-edbd6e405d31&P1=1793514991&P2=602&P3=2&P4=sqrGnASjV7pxsXPcN%2fTDrnfyqaItrjqa20d%2bJlOSjpSW6HeVguvbv%2fEGELgTLkt8%2bM%2fIUd6dUdx00psXkdHKcVHrms4wTZnf1sWWWFC%2f%2fsIn8ob0AYmYO%2boS8SVEy5iSbu8eAHeXygzwxFb7vmbYLXhtAKFRlvceZIgx0CO34mzs8iKj%2faoRv4v9X0wFKkx%2fge413muujzGgwg2pzia%2b3PpffwHtBEnzcVMdGSTh1Ls1kuRnTHtOwOrJI4iEy35p3rrkI0Re2FW1ODUSlEVBlgVtIeAlnEhdbMTWPMMhSdBwkPNIE%2fdvEE33wZPr8kUZOsbiXeEJ2LB98rENY7f5AQ%3d%3d) | Microsoft Software Download (via Fido) |
 | [**Ubuntu**](https://ubuntu.com/download) | `26.10` | — | [desktop-amd64](https://releases.ubuntu.com/26.10/ubuntu-26.10-desktop-amd64.iso) · [server-amd64](https://releases.ubuntu.com/26.10/ubuntu-26.10-live-server-amd64.iso) · [wsl-amd64](https://ubuntu.com/download) | Ubuntu official releases index |
 | [**Fedora Workstation**](https://fedoraproject.org/workstation/download/) | `44` | — | [workstation-live-x86_64](https://fedoraproject.org/workstation/download/) | Fedora official release directory |
 
@@ -320,7 +320,7 @@
 | [**Carbon Copy Cloner**](https://bombich.com/) | `7.2.2,8450` | — | [mac](https://files.bombich.com/ccc-7.2.2.8450.zip) | brew manifest: carbon-copy-cloner |
 | [**ChronoSync**](https://www.econtechnologies.com/) | `12.0.3` | — | [mac](https://downloads.econtechnologies.com/CS4_Download.dmg) | brew manifest: chronosync |
 | [**CleanShot**](https://cleanshot.com/) | `5.0.2` | — | [mac](https://updates.getcleanshot.com/v3/CleanShot-X-5.0.2.dmg) | brew manifest: cleanshot |
-| [**Clipy**](https://clipy-app.com/) | `1.4.0` | — | [mac](https://github.com/Clipy/Clipy/releases/download/1.4.0/Clipy_1.4.0.dmg) | brew manifest: clipy |
+| [**Clipy**](https://clipy-app.com/) | `1.4.1` | — | [mac](https://github.com/Clipy/Clipy/releases/download/1.4.1/Clipy_1.4.1.dmg) | brew manifest: clipy |
 | [**Commander One**](https://mac.eltima.com/file-manager.html) | `3.18` | — | [mac](https://cdn.electronic.us/products/commander/mac/download/commander.dmg) | brew manifest: commander-one |
 | [**Espanso**](https://espanso.org/) | `2.4.1` | — | [mac-universal](https://github.com/espanso/espanso/releases/download/v2.4.1/Espanso-Mac-Universal.dmg) | brew manifest: espanso |
 | [**ForkLift**](https://binarynights.com/) | `4.7.7` | — | [mac](https://download.binarynights.com/ForkLift/ForkLift4.7.7.zip) | brew manifest: forklift |
@@ -640,14 +640,14 @@
 | [**Skype**](https://www.skype.com/get-skype/) | `2026-10-29` | — | [win-x64](https://teams.live.com/free?source=skype) · [mac-universal](https://teams.live.com/free?source=skype) · [linux-x64](https://teams.live.com/free?source=skype) | Microsoft retired Skype downloads; official entry redirects to Teams Free |
 | [**Telegram Desktop**](https://github.com/telegramdesktop/tdesktop) | `7.3.3` | 2026-10-21 | [win-x64](https://github.com/telegramdesktop/tdesktop/releases/download/v7.3.3/td-setup-win-x64-7.3.3.exe) | GitHub Release: telegramdesktop/tdesktop |
 | [**WeChat**](https://weixin.qq.com) | `4.2.0.12` | — | [mac-universal](https://dldir1v6.qq.com/weixin/Universal/Mac/xWeChatMac_universal_4.2.0.12_270348.dmg) | 微信官网 |
-| [**QQ**](https://im.qq.com) | `2026-10-30` | — | [mac-universal](https://im.qq.com/macqq/index.shtml) | Official download page; no public version API |
+| [**QQ**](https://im.qq.com) | `2026-10-31` | — | [mac-universal](https://im.qq.com/macqq/index.shtml) | Official download page; no public version API |
 
 
 ### Gaming
 
 | Software | Latest Version | Released | Download | Source |
 |----------|---------------|----------|----------|--------|
-| [**WeGame**](https://www.wegame.com.cn/) | `2026-10-30` | — | [win-x64](https://www.wegame.com.cn/client/) | Official download page; no public version API |
+| [**WeGame**](https://www.wegame.com.cn/) | `2026-10-31` | — | [win-x64](https://www.wegame.com.cn/client/) | Official download page; no public version API |
 | [**网易 UU 加速器**](https://uu.163.com/) | `2026-10-30` | — | [win-x64](https://uu.163.com/download/) | Official download page; no public version API |
 | [**英雄联盟**](https://lol.qq.com/) | `2026-10-30` | — | [win-x64](https://lol.qq.com/download.shtml) | Official download page; no public version API |
 | [**地下城与勇士**](https://dnf.qq.com/) | `2026-10-30` | — | [win-x64](https://dnf.qq.com/web2015/down.shtml) | Official download page; no public version API |
@@ -703,7 +703,7 @@
 | [**喜马拉雅**](https://www.ximalaya.com/) | `2026-10-30` | — | [win-x64](https://www.ximalaya.com/download/) · [mac-x64](https://www.ximalaya.com/download/) | Official download page; no public version API |
 | [**PotPlayer**](https://potplayer.daum.net/) | `2026-10-29` | — | [win-x64](https://t1.kakaocdn.net/potplayer/PotPlayer/Version/Latest/PotPlayerSetup64.exe) | Official Kakao CDN installer (latest build) |
 | [**剪映专业版**](https://www.capcut.cn/) | `2026-10-30` | — | [win-x64](https://www.capcut.cn/) · [mac-universal](https://www.capcut.cn/) | Official download page; no public version API |
-| [**优酷**](https://www.youku.com/) | `2026-10-30` | — | [win-x64](https://www.youku.com/) · mac-universal（Unavailable; pending verification） | Official download page; no public version API |
+| [**优酷**](https://www.youku.com/) | `2026-10-30` | — | win-x64（Unavailable; pending verification） · mac-universal（Unavailable; pending verification） | Official download page; no public version API |
 | [**芒果TV**](https://www.mgtv.com/) | `2026-10-30` | — | [win-x64](https://www.mgtv.com/) · [mac-universal](https://www.mgtv.com/) | Official download page; no public version API |
 | [**QQ影音**](https://player.qq.com/) | `2026-10-30` | — | win-x64（Unavailable; pending verification） | Official download page; no public version API |
 | [**洛雪音乐助手**](https://github.com/lyswhut/lx-music-desktop) | `2.12.6` | 2026-09-19 | [win-x64](https://github.com/lyswhut/lx-music-desktop/releases/download/v2.12.6/lx-music-desktop-v2.12.6-x64-Setup.exe) · [mac-arm64](https://github.com/lyswhut/lx-music-desktop/releases/download/v2.12.6/lx-music-desktop-2.12.6-arm64.dmg) · [mac-x64](https://github.com/lyswhut/lx-music-desktop/releases/download/v2.12.6/lx-music-desktop-2.12.6-x64.dmg) | GitHub Release: lyswhut/lx-music-desktop |
