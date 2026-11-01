@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-01T18:16:11+00:00",
+  "generated_at": "2026-11-01T22:36:04+00:00",
   "packages": [
     {
       "id": "windows11",
@@ -2653,7 +2653,7 @@
           "expires_at": null,
           "verification": {
             "status": "unverified",
-            "checked_at": "2026-11-01T18:16:31+00:00",
+            "checked_at": "2026-11-01T22:36:21+00:00",
             "url": "https://kimi.moonshot.cn/download",
             "final_url": "https://kimi.moonshot.cn/download",
             "redirects": [
@@ -2674,7 +2674,7 @@
           "expires_at": null,
           "verification": {
             "status": "unverified",
-            "checked_at": "2026-11-01T18:16:31+00:00",
+            "checked_at": "2026-11-01T22:36:21+00:00",
             "url": "https://kimi.moonshot.cn/download",
             "final_url": "https://kimi.moonshot.cn/download",
             "redirects": [
@@ -2795,7 +2795,7 @@
           "expires_at": null,
           "verification": {
             "status": "unverified",
-            "checked_at": "2026-11-01T18:16:31+00:00",
+            "checked_at": "2026-11-01T22:36:21+00:00",
             "url": "https://chatglm.cn/download",
             "final_url": "https://chatglm.cn/download",
             "redirects": [
@@ -2816,7 +2816,7 @@
           "expires_at": null,
           "verification": {
             "status": "unverified",
-            "checked_at": "2026-11-01T18:16:31+00:00",
+            "checked_at": "2026-11-01T22:36:21+00:00",
             "url": "https://chatglm.cn/download",
             "final_url": "https://chatglm.cn/download",
             "redirects": [
@@ -2863,7 +2863,7 @@
           "expires_at": null,
           "verification": {
             "status": "unverified",
-            "checked_at": "2026-11-01T18:16:31+00:00",
+            "checked_at": "2026-11-01T22:36:21+00:00",
             "url": "https://xinghuo.xfyun.cn/download",
             "final_url": "https://xinghuo.xfyun.cn/download",
             "redirects": [
@@ -2884,7 +2884,7 @@
           "expires_at": null,
           "verification": {
             "status": "unverified",
-            "checked_at": "2026-11-01T18:16:31+00:00",
+            "checked_at": "2026-11-01T22:36:21+00:00",
             "url": "https://xinghuo.xfyun.cn/download",
             "final_url": "https://xinghuo.xfyun.cn/download",
             "redirects": [
@@ -3804,15 +3804,10 @@
           "sha256": null,
           "expires_at": null,
           "verification": {
-            "status": "restricted",
-            "checked_at": "2026-11-01T18:16:31+00:00",
+            "status": "unverified",
+            "checked_at": "2026-11-01T22:36:21+00:00",
             "url": "https://apifox.com/download/",
-            "final_url": "https://apifox.com/download/",
-            "redirects": [
-              "https://apifox.com/download/"
-            ],
-            "http_status": 403,
-            "reason": "upstream requires access or rate limited",
+            "reason": "network check failed: ConnectTimeout",
             "fingerprint": "7603cdb634e12d898adbdfa500be49daea6fa3afc5e3b376d9ea75c74de586eb"
           }
         },
@@ -3825,15 +3820,10 @@
           "sha256": null,
           "expires_at": null,
           "verification": {
-            "status": "restricted",
-            "checked_at": "2026-11-01T18:16:31+00:00",
+            "status": "unverified",
+            "checked_at": "2026-11-01T22:36:21+00:00",
             "url": "https://apifox.com/download/",
-            "final_url": "https://apifox.com/download/",
-            "redirects": [
-              "https://apifox.com/download/"
-            ],
-            "http_status": 403,
-            "reason": "upstream requires access or rate limited",
+            "reason": "network check failed: ConnectTimeout",
             "fingerprint": "0358b879c6b8fd18005b868d5796e824a2b8789577fbffdfa0a5c97f22c5ca0e"
           }
         }
@@ -4020,7 +4010,7 @@
           "expires_at": null,
           "verification": {
             "status": "transient",
-            "checked_at": "2026-11-01T18:16:31+00:00",
+            "checked_at": "2026-11-01T22:36:21+00:00",
             "url": "https://www.kuwo.cn/download",
             "final_url": "https://www.kuwo.cn/",
             "redirects": [
@@ -4211,7 +4201,7 @@
           "expires_at": null,
           "verification": {
             "status": "failed",
-            "checked_at": "2026-11-01T18:16:31+00:00",
+            "checked_at": "2026-11-01T22:36:21+00:00",
             "url": "https://docs.qq.com/download",
             "final_url": "https://docs.qq.com/download",
             "redirects": [
@@ -4682,7 +4672,7 @@
           "expires_at": null,
           "verification": {
             "status": "unverified",
-            "checked_at": "2026-11-01T18:16:31+00:00",
+            "checked_at": "2026-11-01T22:36:21+00:00",
             "url": "https://www.wps.cn/product/wps-pdf",
             "final_url": "https://www.wps.cn",
             "redirects": [
@@ -5076,15 +5066,19 @@
           "sha256": null,
           "expires_at": null,
           "verification": {
-            "status": "unverified",
-            "checked_at": "2026-11-01T18:16:31+00:00",
+            "status": "verified",
+            "checked_at": "2026-11-01T22:36:21+00:00",
             "url": "https://www.youku.com/",
-            "final_url": "https://www.youku.com/",
+            "final_url": "https://www.youku.com/ku/webhome",
             "redirects": [
-              "https://www.youku.com/"
+              "https://www.youku.com/",
+              "https://www.youku.com/ku/webhome"
             ],
             "http_status": 200,
-            "reason": "download/access entry not found on page",
+            "valid_until": "2026-11-08T22:36:21+00:00",
+            "filename": "webhome",
+            "content_type": "text/html; charset=utf-8",
+            "evidence": "trusted source, product identity and download/access entry",
             "fingerprint": "532b610d69125ff50b89c049aba9d2f5b8c3066ee64ae675df52c37661a85e03"
           }
         },
@@ -6679,7 +6673,7 @@
             "content_type": "text/html",
             "evidence": "trusted source, product identity and download/access entry",
             "fingerprint": "945464beb5ff2504bdc93f4484599d5dbeb3d57de8645700ecd2ec21ffa0606e",
-            "last_attempt_at": "2026-11-01T18:16:31+00:00",
+            "last_attempt_at": "2026-11-01T22:36:21+00:00",
             "last_attempt_status": "transient",
             "last_attempt_reason": "upstream maintenance page"
           }
@@ -6920,14 +6914,14 @@
           "expires_at": null,
           "verification": {
             "status": "verified",
-            "checked_at": "2026-10-31T22:11:57+00:00",
+            "checked_at": "2026-11-01T22:36:21+00:00",
             "url": "https://sr.mihoyo.com/",
             "final_url": "https://sr.mihoyo.com/",
             "redirects": [
               "https://sr.mihoyo.com/"
             ],
             "http_status": 200,
-            "valid_until": "2026-11-07T22:11:57+00:00",
+            "valid_until": "2026-11-08T22:36:21+00:00",
             "filename": "",
             "content_type": "text/html",
             "evidence": "trusted source, product identity and download/access entry",
@@ -10566,9 +10560,9 @@
       "fetched_at": "2026-11-01T07:07:00+00:00",
       "last_success_at": "2026-11-01T07:07:00+00:00",
       "_sync": {
-        "failures": 1,
+        "failures": 2,
         "fingerprint": "d75fa2a8927e0f92a1e7787552373e53f901e4768dee62909814a36b4cc324c4",
-        "next_attempt_at": "2026-11-01T20:15:36+00:00"
+        "next_attempt_at": "2026-11-02T02:35:41+00:00"
       },
       "editions": [
         "cn",
@@ -39639,18 +39633,10 @@
           "sha256": null,
           "expires_at": null,
           "verification": {
-            "status": "verified",
-            "checked_at": "2026-10-31T22:11:57+00:00",
+            "status": "failed",
+            "checked_at": "2026-11-01T22:36:21+00:00",
             "url": "https://www.plex.tv/media-server-downloads/",
-            "final_url": "https://www.plex.tv/media-server-downloads/",
-            "redirects": [
-              "https://www.plex.tv/media-server-downloads/"
-            ],
-            "http_status": 200,
-            "valid_until": "2026-11-07T22:11:57+00:00",
-            "filename": "media-server-downloads",
-            "content_type": "text/html; charset=utf-8",
-            "evidence": "trusted source, product identity and download/access entry",
+            "reason": "too many redirects",
             "fingerprint": "212037968bb5a581ecbf3bb63dcc472ad967c6145b6c0e801446eca74e3865e8"
           }
         },
@@ -39663,18 +39649,10 @@
           "sha256": null,
           "expires_at": null,
           "verification": {
-            "status": "verified",
-            "checked_at": "2026-10-31T22:11:57+00:00",
+            "status": "failed",
+            "checked_at": "2026-11-01T22:36:21+00:00",
             "url": "https://www.plex.tv/media-server-downloads/",
-            "final_url": "https://www.plex.tv/media-server-downloads/",
-            "redirects": [
-              "https://www.plex.tv/media-server-downloads/"
-            ],
-            "http_status": 200,
-            "valid_until": "2026-11-07T22:11:57+00:00",
-            "filename": "media-server-downloads",
-            "content_type": "text/html; charset=utf-8",
-            "evidence": "trusted source, product identity and download/access entry",
+            "reason": "too many redirects",
             "fingerprint": "914dc6b4656b1d58d2421873ef771c8d842ab568eca97b4bec68369fd36072d8"
           }
         },
@@ -39687,18 +39665,10 @@
           "sha256": null,
           "expires_at": null,
           "verification": {
-            "status": "verified",
-            "checked_at": "2026-10-31T22:11:57+00:00",
+            "status": "failed",
+            "checked_at": "2026-11-01T22:36:21+00:00",
             "url": "https://www.plex.tv/media-server-downloads/",
-            "final_url": "https://www.plex.tv/media-server-downloads/",
-            "redirects": [
-              "https://www.plex.tv/media-server-downloads/"
-            ],
-            "http_status": 200,
-            "valid_until": "2026-11-07T22:11:57+00:00",
-            "filename": "media-server-downloads",
-            "content_type": "text/html; charset=utf-8",
-            "evidence": "trusted source, product identity and download/access entry",
+            "reason": "too many redirects",
             "fingerprint": "a1ff8e95daf34103b4e9c399ade67ab65441a60fbfa87e208a2bcbd494754688"
           }
         }
@@ -46478,7 +46448,7 @@
           "expires_at": null,
           "verification": {
             "status": "restricted",
-            "checked_at": "2026-11-01T18:16:31+00:00",
+            "checked_at": "2026-11-01T22:36:21+00:00",
             "url": "https://www.adobe.com/products/photoshop.html",
             "final_url": "https://www.adobe.com/products/photoshop.html",
             "redirects": [
@@ -46499,7 +46469,7 @@
           "expires_at": null,
           "verification": {
             "status": "restricted",
-            "checked_at": "2026-11-01T18:16:31+00:00",
+            "checked_at": "2026-11-01T22:36:21+00:00",
             "url": "https://www.adobe.com/products/photoshop.html",
             "final_url": "https://www.adobe.com/products/photoshop.html",
             "redirects": [
@@ -46620,14 +46590,14 @@
       }
     ]
   },
-  "release_id": "7a7b9159e9921cea3fa5",
-  "checked_at": "2026-11-01T18:16:31+00:00",
-  "verified_at": "2026-11-01T18:16:31+00:00",
+  "release_id": "cf4be2ea2e9bb196da68",
+  "checked_at": "2026-11-01T22:36:21+00:00",
+  "verified_at": "2026-11-01T22:36:21+00:00",
   "quality": {
     "required_total": 301,
     "required_covered": 300,
-    "verified_assets": 1130,
-    "unavailable_assets": 23,
+    "verified_assets": 1128,
+    "unavailable_assets": 25,
     "stale_packages": 2,
     "publication_exceptions": []
   }
