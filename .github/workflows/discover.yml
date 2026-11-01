@@ -24,7 +24,7 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: Restore discovery progress
-        uses: actions/cache/restore@v5
+        uses: actions/cache/restore@v6
         with:
           path: data/discovery-state.json
           key: discovery-state-${{ github.run_id }}-${{ github.run_attempt }}
@@ -37,14 +37,14 @@ jobs:
 
       - name: Save discovery progress
         if: ${{ always() }}
-        uses: actions/cache/save@v5
+        uses: actions/cache/save@v6
         with:
           path: data/discovery-state.json
           key: discovery-state-${{ github.run_id }}-${{ github.run_attempt }}
 
       - name: Upload candidate review evidence
         if: ${{ always() }}
-        uses: actions/upload-artifact@v6
+        uses: actions/upload-artifact@v7
         with:
           name: discovery-review
           path: data/discovery-candidates.json
