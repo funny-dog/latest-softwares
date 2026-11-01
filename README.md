@@ -5,7 +5,7 @@
 > 由 GitHub Actions 每日自动同步上游官方源的**最新版本元数据**。
 > 仓库**不托管二进制安装包**，下载按钮直接跳到上游官方下载链接。
 >
-> 📅 **最后更新**：`2026-10-31 22:11:36` (UTC)　· 共 699 项软件（其中 1 项使用上次数据，标 ⚠️）
+> 📅 **最后更新**：`2026-11-01 07:07:37` (UTC)　· 共 699 项软件（其中 1 项使用上次数据，标 ⚠️）
 
 ---
 
@@ -25,7 +25,7 @@
 
 | 软件 | 最新版本 | 发布日期 | 下载链接 | 来源 |
 |------|---------|---------|---------|------|
-| [**Windows 11**](https://www.microsoft.com/software-download/windows11) | `25H2` | — | [win-x64](https://software.download.prss.microsoft.com/dbazure/Win11_25H2_Chinese_Simplified_x64_v2.iso?t=688de48a-e14e-4bc1-a794-f360b6add229&P1=1793571070&P2=602&P3=2&P4=ZifmCeELabFSons0zsPOi%2bUg6x%2fAgIEI8Eey4UWSbsGotAK%2fEPgygPMJyWvfvzJyQI5ry4QqFKLKdoz%2fuc4CIX2SwHsFxDs3afPo4hlWgNNjKi5uE5HVgzZMwngkjdpo92qjbJFsjsoAUZiTDQX3Iil510E5zAr98ykhqz8T9DnE%2fj%2fckex9o6RST2Hin6J6KoK1qIoSSkxO2dYjCszD96TlrVAHMZuQmR1M%2bZ2WyoMRYkN8Q2tbRuaFmMnSH%2fN7TNGBo%2fJP%2fEoTgAMEK%2bwRq%2frcb5YWsqQXEvbRy%2bGdamkJdPfImmoQ%2fH9rm3UKeixCl1aHuSAiIk8xz%2bvOraaa9Q%3d%3d) | Microsoft Software Download (via Fido) |
+| [**Windows 11**](https://www.microsoft.com/software-download/windows11) | `25H2` | — | [win-x64](https://software.download.prss.microsoft.com/dbazure/Win11_25H2_Chinese_Simplified_x64_v2.iso?t=b2592f77-adf2-4207-8c71-7dcddb429b27&P1=1793603235&P2=602&P3=2&P4=aN7EOWcztYWDqnN9uLk2OXhUVj0ufv2DGtAySYrX7X%2fB%2fVYpz%2bFRUVfl3pDCyTCj2nPnAzOAarVRd09bPGrN5wKHoaTFxmoNM4nkbI0N3AXQL1BlgoBl%2bu11B3ZjljF%2fpF%2f%2b1Si6saeHDN00ghvHFWOZwis%2fXo1jM9XP72Tf9JwvC9%2f8lgU94gEtkSsGpFMLpVPUbZuwedfujPQnT3TblDGWNAEVeZfh4EEB86N5L8Xaj8S3p0k2GZEWz5K%2fsvchbvM%2fjRPIDdMqnwgBH3wvoaXtgf8cucBZG%2fs9qI1P0t12COcpfxBWnUgkvsoiZ2ly3cwA0lwWuv4HrydIs74RTA%3d%3d) | Microsoft Software Download (via Fido) |
 | [**Ubuntu**](https://ubuntu.com/download) | `26.10` | — | [desktop-amd64](https://releases.ubuntu.com/26.10/ubuntu-26.10-desktop-amd64.iso) · [server-amd64](https://releases.ubuntu.com/26.10/ubuntu-26.10-live-server-amd64.iso) · [wsl-amd64](https://ubuntu.com/download) | Ubuntu official releases index |
 | [**Fedora Workstation**](https://fedoraproject.org/workstation/download/) | `44` | — | [workstation-live-x86_64](https://fedoraproject.org/workstation/download/) | Fedora official release directory |
 
@@ -36,7 +36,7 @@
 |------|---------|---------|---------|------|
 | [**v2rayA**](https://github.com/v2rayA/v2rayA) | `2.5.10` | 2026-10-09 | [win-x64](https://github.com/v2rayA/v2rayA/releases/download/v2.5.10/v2raya_windows_x64_2.5.10.exe) · [mac-arm64](https://github.com/v2rayA/v2rayA/releases/download/v2.5.10/v2raya_darwin_arm64_2.5.10) · [mac-x64](https://github.com/v2rayA/v2rayA/releases/download/v2.5.10/v2raya_darwin_x64_2.5.10) · [linux-x64](https://github.com/v2rayA/v2rayA/releases/download/v2.5.10/installer_debian_x64_2.5.10.deb) | GitHub Release: v2rayA/v2rayA |
 | [**Subconverter**](https://github.com/tindy2013/subconverter) | `0.9.0` | 2024-04-08 | [win-x64](https://github.com/tindy2013/subconverter/releases/download/v0.9.0/subconverter_win64.7z) · [mac-x64](https://github.com/tindy2013/subconverter/releases/download/v0.9.0/subconverter_darwin64.tar.gz) · [linux-x64](https://github.com/tindy2013/subconverter/releases/download/v0.9.0/subconverter_linux64.tar.gz) | GitHub Release: tindy2013/subconverter |
-| [**Sub-Store**](https://github.com/sub-store-org/Sub-Store) | `2026-10-29` | — | [linux-x64](https://github.com/sub-store-org/Sub-Store) | Official Sub-Store project page; deployed via script or container |
+| [**Sub-Store**](https://github.com/sub-store-org/Sub-Store) | `2026-11-01` | — | [linux-x64](https://github.com/sub-store-org/Sub-Store) | Official Sub-Store project page; deployed via script or container |
 | [**frp**](https://github.com/fatedier/frp) | `0.71.1` | 2026-10-14 | [win-x64](https://github.com/fatedier/frp/releases/download/v0.71.1/frp_0.71.1_windows_amd64.zip) · [mac-arm64](https://github.com/fatedier/frp/releases/download/v0.71.1/frp_0.71.1_darwin_arm64.tar.gz) · [mac-x64](https://github.com/fatedier/frp/releases/download/v0.71.1/frp_0.71.1_darwin_amd64.tar.gz) · [linux-x64](https://github.com/fatedier/frp/releases/download/v0.71.1/frp_0.71.1_linux_amd64.tar.gz) | GitHub Release: fatedier/frp |
 | [**AList**](https://github.com/AlistGo/alist) | `3.66.0` | 2026-10-21 | [win-x64](https://github.com/AlistGo/alist/releases/download/v3.66.0/alist-windows-amd64.zip) · [mac-arm64](https://github.com/AlistGo/alist/releases/download/v3.66.0/alist-darwin-arm64.tar.gz) · [mac-x64](https://github.com/AlistGo/alist/releases/download/v3.66.0/alist-darwin-amd64.tar.gz) · [linux-x64](https://github.com/AlistGo/alist/releases/download/v3.66.0/alist-linux-amd64.tar.gz) | GitHub Release: AlistGo/alist |
 | [**Cyberduck**](https://cyberduck.io/) | `9.5.4,45528` | — | [mac](https://update.cyberduck.io/Cyberduck-9.5.4.45528.zip) | brew manifest: cyberduck |
@@ -90,8 +90,8 @@
 | [**Another Redis Desktop Manager**](https://github.com/qishibo/AnotherRedisDesktopManager) | `1.7.4` | 2026-08-18 | [win-x64](https://github.com/qishibo/AnotherRedisDesktopManager/releases/download/v1.7.4/Another-Redis-Desktop-Manager-win-1.7.4-x64.exe) · [mac-arm64](https://github.com/qishibo/AnotherRedisDesktopManager/releases/download/v1.7.4/Another-Redis-Desktop-Manager-mac-1.7.4-arm64.dmg) · [mac-x64](https://github.com/qishibo/AnotherRedisDesktopManager/releases/download/v1.7.4/Another-Redis-Desktop-Manager-mac-1.7.4-x64.dmg) · [linux-x64](https://github.com/qishibo/AnotherRedisDesktopManager/releases/download/v1.7.4/Another-Redis-Desktop-Manager-linux-1.7.4-x86_64.AppImage) | GitHub Release: qishibo/AnotherRedisDesktopManager |
 | [**Tiny RDM**](https://github.com/tiny-craft/tiny-rdm) | `1.2.7` | 2026-03-30 | [win-x64](https://github.com/tiny-craft/tiny-rdm/releases/download/v1.2.7/TinyRDM_Setup_1.2.7_windows_x64.exe) · [win-arm64](https://github.com/tiny-craft/tiny-rdm/releases/download/v1.2.7/TinyRDM_Setup_1.2.7_windows_arm64.exe) · [mac-arm64](https://github.com/tiny-craft/tiny-rdm/releases/download/v1.2.7/TinyRDM_1.2.7_mac_arm64.dmg) · [mac-x64](https://github.com/tiny-craft/tiny-rdm/releases/download/v1.2.7/TinyRDM_1.2.7_mac_intel.dmg) | GitHub Release: tiny-craft/tiny-rdm |
 | [**Bruno**](https://github.com/usebruno/bruno) | `4.3.0` | 2026-10-22 | [win-x64](https://github.com/usebruno/bruno/releases/download/v4.3.0/bruno_4.3.0_x64_win.exe) · [win-arm64](https://github.com/usebruno/bruno/releases/download/v4.3.0/bruno_4.3.0_arm64_win.exe) · [mac-arm64](https://github.com/usebruno/bruno/releases/download/v4.3.0/bruno_4.3.0_arm64_mac.dmg) · [mac-x64](https://github.com/usebruno/bruno/releases/download/v4.3.0/bruno_4.3.0_x64_mac.dmg) | GitHub Release: usebruno/bruno |
-| [**Appsmith**](https://github.com/appsmithorg/appsmith) | `2026-10-29` | — | [linux-x64](https://github.com/appsmithorg/appsmith) | Official Appsmith project page; deployed as container |
-| [**NocoDB**](https://github.com/nocodb/nocodb) | `2026-10-29` | — | [linux-x64](https://github.com/nocodb/nocodb) | Official NocoDB project page; deployed via npm or docker |
+| [**Appsmith**](https://github.com/appsmithorg/appsmith) | `2026-11-01` | — | [linux-x64](https://github.com/appsmithorg/appsmith) | Official Appsmith project page; deployed as container |
+| [**NocoDB**](https://github.com/nocodb/nocodb) | `2026-11-01` | — | [linux-x64](https://github.com/nocodb/nocodb) | Official NocoDB project page; deployed via npm or docker |
 | [**PowerShell**](https://github.com/PowerShell/PowerShell) | `7.6.9` | 2026-10-25 | [win-x64](https://github.com/PowerShell/PowerShell/releases/download/v7.6.9/PowerShell-7.6.9-win-x64.msi) · [mac-arm64](https://github.com/PowerShell/PowerShell/releases/download/v7.6.9/powershell-7.6.9-osx-arm64.pkg) · [mac-x64](https://github.com/PowerShell/PowerShell/releases/download/v7.6.9/powershell-7.6.9-osx-x64.pkg) · [linux-x64](https://github.com/PowerShell/PowerShell/releases/download/v7.6.9/powershell-7.6.9-linux-x64.tar.gz) | GitHub Release: PowerShell/PowerShell |
 | [**PicGo**](https://github.com/Molunerfinn/PicGo) | `3.0.3` | 2026-10-05 | [win-x64](https://github.com/Molunerfinn/PicGo/releases/download/v3.0.3/PicGo-3.0.3-x64.exe) · [mac-x64](https://github.com/Molunerfinn/PicGo/releases/download/v3.0.3/PicGo-3.0.3-x64.dmg) | GitHub Release: Molunerfinn/PicGo |
 | [**SwitchHosts**](https://github.com/oldj/SwitchHosts) | `5.0.3` | 2026-10-20 | [win-x64](https://github.com/oldj/SwitchHosts/releases/download/v5.0.3/SwitchHosts-5.0.3-windows-x64-setup.exe) · [mac-x64](https://github.com/oldj/SwitchHosts/releases/download/v5.0.3/SwitchHosts-5.0.3-mac-x64.dmg) | GitHub Release: oldj/SwitchHosts |
@@ -235,7 +235,7 @@
 | [**btop for Windows**](https://github.com/aristocratos/btop) | `2026-10-30` | — | [win-x64](https://github.com/aristocratos/btop/releases) | Official project download page; no stable public release asset API |
 | [**Nushell (Windows)**](https://github.com/nushell/nushell) | `0.116.1` | 2026-10-04 | [win-x64](https://github.com/nushell/nushell/releases/download/0.116.1/nu-0.116.1-x86_64-pc-windows-msvc.zip) | GitHub Release: nushell/nushell |
 | [**Starship (Windows)**](https://github.com/starship/starship) | `1.27.0` | 2026-10-17 | [win-x64](https://github.com/starship/starship/releases/download/v1.27.0/starship-x86_64-pc-windows-msvc.zip) | GitHub Release: starship/starship |
-| [**Docker Desktop**](https://www.docker.com/products/docker-desktop/) | `2026-10-29` | — | [win-x64](https://docs.docker.com/desktop/setup/install/windows-install/) · [mac-universal](https://docs.docker.com/desktop/setup/install/mac-install/) · [linux-x64](https://docs.docker.com/desktop/setup/install/linux/) | Official Docker Desktop installation documentation |
+| [**Docker Desktop**](https://www.docker.com/products/docker-desktop/) | `2026-11-01` | — | [win-x64](https://docs.docker.com/desktop/setup/install/windows-install/) · [mac-universal](https://docs.docker.com/desktop/setup/install/mac-install/) · [linux-x64](https://docs.docker.com/desktop/setup/install/linux/) | Official Docker Desktop installation documentation |
 | [**Postman**](https://www.postman.com/downloads/) | `2026-10-30` | — | [win-x64](https://www.postman.com/downloads/) · [mac-universal](https://www.postman.com/downloads/) · [linux-x64](https://www.postman.com/downloads/) | Official Postman downloads page; no public version API |
 | [**Cursor**](https://cursor.com/downloads) | `2026-10-30` | — | [win-x64](https://cursor.com/downloads) · [mac-universal](https://cursor.com/downloads) · [linux-x64](https://cursor.com/downloads) | Official Cursor downloads page; no public version API |
 | [**JetBrains Toolbox App**](https://www.jetbrains.com/toolbox-app/) | `2026-10-30` | — | [win-x64](https://www.jetbrains.com/toolbox-app/) · [mac-universal](https://www.jetbrains.com/toolbox-app/) · [linux-x64](https://www.jetbrains.com/toolbox-app/) | Official JetBrains Toolbox download page; no public version API |
@@ -269,7 +269,7 @@
 | [**TablePlus**](https://tableplus.com) | `2026-10-30` | — | [mac-universal](https://tableplus.com) | Official download page; no public version API |
 | [**Dash**](https://kapeli.com/dash) | `2026-10-30` | — | [mac-universal](https://kapeli.com/dash/download) | Official download page; no public version API |
 | [**OrbStack**](https://orbstack.dev) | `2026-10-30` | — | [mac-universal](https://orbstack.dev/download) | Official download page; no public version API |
-| [**Termius**](https://termius.com) | `2026-10-29` | — | [mac-universal](https://termius.com/download/macos) | Official download page; no public version API |
+| [**Termius**](https://termius.com) | `2026-11-01` | — | [mac-universal](https://termius.com/download/macos) | Official download page; no public version API |
 | [**FinalShell**](https://www.hostbuf.com) | `2026-10-30` | — | [mac-universal](https://www.hostbuf.com) | Official download page; no public version API |
 | [**Navicat Premium Lite**](https://www.navicat.com/en/download/navicat-premium-lite) | `2026-10-30` | — | [mac-universal](https://www.navicat.com/en/download/navicat-premium-lite) | Official download page; no public version API |
 | [**cc-switch**](https://github.com/farion1231/cc-switch) | `4.0.22` | 2026-10-30 | [win-x64](https://github.com/farion1231/cc-switch/releases/download/v4.0.22/CC-Switch-v4.0.22-Windows.msi) | GitHub Release: farion1231/cc-switch |
@@ -315,7 +315,7 @@
 | [**Arq**](https://www.arqbackup.com/) | `7.50` | — | [mac](https://www.arqbackup.com/download/arqbackup/Arq7.50.pkg) | brew manifest: arq |
 | [**Backblaze**](https://backblaze.com/) | `10.0.4.1082` | — | [mac](https://secure.backblaze.com/api/install_backblaze?file=bzinstall-mac-10.0.4.1082.dmg) | brew manifest: backblaze |
 | [**Bartender**](https://www.macbartender.com/) | `7.1.0` | — | [mac](https://downloads.macbartender.com/Bartender7/updates/7-1-0/Bartender%207.zip) | brew manifest: bartender |
-| [**BetterTouchTool**](https://folivora.ai/) | `6.990,2026102901` | — | [mac](https://folivora.ai/releases/btt6.990-2026102901.zip) | brew manifest: bettertouchtool |
+| [**BetterTouchTool**](https://folivora.ai/) | `6.992,2026103102` | — | [mac](https://folivora.ai/releases/btt6.992-2026103102.zip) | brew manifest: bettertouchtool |
 | [**BlockBlock**](https://objective-see.org/products/blockblock.html) | `2.5.2` | — | [mac](https://github.com/objective-see/BlockBlock/releases/download/v2.5.2/BlockBlock_2.5.2.zip) | brew manifest: blockblock |
 | [**Carbon Copy Cloner**](https://bombich.com/) | `7.2.2,8450` | — | [mac](https://files.bombich.com/ccc-7.2.2.8450.zip) | brew manifest: carbon-copy-cloner |
 | [**ChronoSync**](https://www.econtechnologies.com/) | `12.0.3` | — | [mac](https://downloads.econtechnologies.com/CS4_Download.dmg) | brew manifest: chronosync |
@@ -393,7 +393,7 @@
 | [**TrafficMonitor**](https://github.com/zhongyang219/TrafficMonitor) | `1.86` | 2026-03-29 | [win-x64](https://github.com/zhongyang219/TrafficMonitor/releases/download/V1.86/TrafficMonitor_V1.86_x64.zip) | GitHub Release: zhongyang219/TrafficMonitor |
 | [**Flameshot**](https://github.com/flameshot-org/flameshot) ⚠️ | `14.0.0` | 2026-06-19 | [win-x64](https://github.com/flameshot-org/flameshot/releases/download/v14.0.0/flameshot-14.0.0-win64.zip) · [linux-x64](https://github.com/flameshot-org/flameshot) | GitHub Release: flameshot-org/flameshot<br>⚠ linux-x64: 没有匹配 asset pattern 'flameshot-*-debian-12-amd64.deb' |
 | [**Tabby**](https://github.com/Eugeny/tabby) | `1.0.238` | 2026-10-07 | [win-x64](https://github.com/Eugeny/tabby/releases/download/v1.0.238/tabby-1.0.238-setup-x64.exe) · [mac-arm64](https://github.com/Eugeny/tabby/releases/download/v1.0.238/tabby-1.0.238-macos-arm64.dmg) · [linux-x64](https://github.com/Eugeny/tabby/releases/download/v1.0.238/tabby-1.0.238-linux-x64.rpm) | GitHub Release: Eugeny/tabby |
-| [**DevToys**](https://devtoys.app) | `2026-10-29` | — | [mac-arm64](https://devtoys.app) · [mac-x64](https://devtoys.app) | Official DevToys download page; no public version API |
+| [**DevToys**](https://devtoys.app) | `2026-11-01` | — | [mac-arm64](https://devtoys.app) · [mac-x64](https://devtoys.app) | Official DevToys download page; no public version API |
 | [**Stats**](https://github.com/exelban/stats) | `3.0.23` | 2026-10-25 | [mac-universal](https://github.com/exelban/stats/releases/download/v3.0.23/Stats.dmg) | GitHub Release: exelban/stats |
 | [**BetterDisplay**](https://github.com/waydabber/BetterDisplay) | `5.2.1` | 2026-10-29 | [mac-universal](https://github.com/waydabber/BetterDisplay/releases/download/v5.2.1/BetterDisplay-v5.2.1.dmg) | GitHub Release: waydabber/BetterDisplay |
 | [**QuickRecorder**](https://github.com/lihaoyun6/QuickRecorder) | `1.6.9` | 2025-06-11 | [mac-universal](https://github.com/lihaoyun6/QuickRecorder/releases/download/1.6.9/QuickRecorder_v1.6.9.dmg) | GitHub Release: lihaoyun6/QuickRecorder |
@@ -451,7 +451,7 @@
 | [**charm**](https://github.com/charmbracelet/charm) | `0.12.6` | 2023-07-26 | [win-x64](https://github.com/charmbracelet/charm/releases/download/v0.12.6/charm_0.12.6_Windows_x86_64.zip) · [mac-arm64](https://github.com/charmbracelet/charm/releases/download/v0.12.6/charm_0.12.6_Darwin_arm64.tar.gz) · [linux-x64](https://github.com/charmbracelet/charm/releases/download/v0.12.6/charm_0.12.6_Linux_x86_64.tar.gz) | GitHub Release: charmbracelet/charm |
 | [**skate**](https://github.com/charmbracelet/skate) | `1.1.0` | 2026-09-28 | [win-x64](https://github.com/charmbracelet/skate/releases/download/v1.1.0/skate_1.1.0_Windows_x86_64.zip) · [mac-arm64](https://github.com/charmbracelet/skate/releases/download/v1.1.0/skate_1.1.0_Darwin_arm64.tar.gz) · [linux-x64](https://github.com/charmbracelet/skate/releases/download/v1.1.0/skate_1.1.0_Linux_x86_64.tar.gz) | GitHub Release: charmbracelet/skate |
 | [**WinRAR**](https://www.win-rar.com/download.html) | `2026-10-30` | — | [win-x64](https://www.win-rar.com/download.html) | Official WinRAR download page; no public version API |
-| [**TeraCopy**](https://codesector.com/teracopy) | `2026-10-29` | — | [win-x64](https://codesector.com/teracopy) | Official TeraCopy download page; no public version API |
+| [**TeraCopy**](https://codesector.com/teracopy) | `2026-11-01` | — | [win-x64](https://codesector.com/teracopy) | Official TeraCopy download page; no public version API |
 | [**AnyDesk**](https://support.anydesk.com/docs/install-anydesk) | `2026-10-30` | — | [win-x64](https://support.anydesk.com/docs/install-anydesk) · [mac-universal](https://support.anydesk.com/docs/install-anydesk) · [linux-x64](https://support.anydesk.com/docs/install-anydesk) | Official AnyDesk downloads page; no public version API |
 | [**TeamViewer**](https://www.teamviewer.com/en/download/) | `2026-10-30` | — | [win-x64](https://www.teamviewer.com/en/download/) · [mac-universal](https://www.teamviewer.com/en/download/) · [linux-x64](https://www.teamviewer.com/en/download/) | Official TeamViewer download page; no public version API |
 | [**LocalSend**](https://localsend.org) | `1.18.2` | 2026-08-21 | [win-x64](https://localsend.org) · [mac-arm64](https://github.com/localsend/localsend/releases/download/v1.18.2/LocalSend-1.18.2.dmg) | GitHub Release: localsend/localsend |
@@ -460,7 +460,7 @@
 | [**Everything**](https://www.voidtools.com/) | `1.4.1.1032` | — | [win-x64](https://www.voidtools.com/Everything-1.4.1.1032.x64-Setup.exe) · [win-x86](https://www.voidtools.com/Everything-1.4.1.1032.x86-Setup.exe) · [win-x64-portable](https://www.voidtools.com/Everything-1.4.1.1032.x64.zip) · [win-x86-portable](https://www.voidtools.com/Everything-1.4.1.1032.x86.zip) | voidtools official download page |
 | [**KeePassXC**](https://github.com/keepassxreboot/keepassxc) | `2.8.0` | 2026-10-21 | [win-x64](https://github.com/keepassxreboot/keepassxc/releases/download/2.8.0/KeePassXC-2.8.0-x64.msi) | GitHub Release: keepassxreboot/keepassxc |
 | [**RustDesk**](https://github.com/rustdesk/rustdesk) | `1.5.0` | 2026-09-30 | [win-x64](https://github.com/rustdesk/rustdesk/releases/download/1.5.0/rustdesk-1.5.0-x86_64.exe) | GitHub Release: rustdesk/rustdesk |
-| [**Motrix**](https://github.com/agalwood/Motrix) ⚠️ | `1.8.19` | 2023-05-03 | [win-x64](https://github.com/agalwood/Motrix/releases/download/v1.8.19/Motrix-1.8.19-x64.exe) | GitHub Release: agalwood/Motrix<br>⚠ agalwood/Motrix@v2.1.1: 没有任何 asset 匹配配置的 pattern，现有 asset: ['beta-linux-arm64.yml', 'beta-linux.yml', 'beta-mac.yml', 'beta.yml', 'latest-linux-arm64.yml']... |
+| [**Motrix**](https://github.com/agalwood/Motrix) ⚠️ | `1.8.19` | 2023-05-03 | [win-x64](https://github.com/agalwood/Motrix/releases/download/v1.8.19/Motrix-1.8.19-x64.exe) | GitHub Release: agalwood/Motrix<br>⚠ agalwood/Motrix@v2.2.0: 没有任何 asset 匹配配置的 pattern，现有 asset: ['beta-linux-arm64.yml', 'beta-linux.yml', 'beta-mac.yml', 'beta.yml', 'latest-linux-arm64.yml']... |
 | [**Syncthing**](https://github.com/syncthing/syncthing) | `2.1.7` | 2026-10-21 | [win-x64](https://github.com/syncthing/syncthing/releases/download/v2.1.7/syncthing-windows-amd64-v2.1.7.zip) · [mac-arm64](https://github.com/syncthing/syncthing/releases/download/v2.1.7/syncthing-macos-arm64-v2.1.7.zip) · [linux-x64](https://github.com/syncthing/syncthing/releases/download/v2.1.7/syncthing-linux-amd64-v2.1.7.tar.gz) | GitHub Release: syncthing/syncthing |
 | [**Easydict**](https://github.com/tisfeng/Easydict) | `2.25.0` | 2026-10-19 | [mac-universal](https://github.com/tisfeng/Easydict/releases/download/2.25.0/Easydict.dmg) | GitHub Release: tisfeng/Easydict |
 | [**DeepL**](https://www.deepl.com) | `2026-10-30` | — | [mac-universal](https://www.deepl.com) | Official download page; no public version API |
@@ -470,7 +470,7 @@
 
 | 软件 | 最新版本 | 发布日期 | 下载链接 | 来源 |
 |------|---------|---------|---------|------|
-| [**Vaultwarden**](https://github.com/dani-garcia/vaultwarden) | `2026-10-29` | — | [linux-x64](https://github.com/dani-garcia/vaultwarden) | Official Vaultwarden project page; deployed as container |
+| [**Vaultwarden**](https://github.com/dani-garcia/vaultwarden) | `2026-11-01` | — | [linux-x64](https://github.com/dani-garcia/vaultwarden) | Official Vaultwarden project page; deployed as container |
 | [**火绒安全**](https://www.huorong.cn/) | `2026-10-30` | — | [win-x64](https://www.huorong.cn/) | Official download page; no public version API |
 | [**腾讯电脑管家**](https://guanjia.qq.com/) | `2026-10-30` | — | [win-x64](https://guanjia.qq.com/) | Official download page; no public version API |
 | [**360 安全卫士**](https://www.360.cn/) | `2026-10-30` | — | [win-x64](https://www.360.cn/) | Official download page; no public version API |
@@ -489,14 +489,14 @@
 
 | 软件 | 最新版本 | 发布日期 | 下载链接 | 来源 |
 |------|---------|---------|---------|------|
-| [**n8n**](https://n8n.io) | `2026-10-29` | — | [linux-x64](https://n8n.io) | Official n8n project page; deployed via npm or docker |
+| [**n8n**](https://n8n.io) | `2026-11-01` | — | [linux-x64](https://n8n.io) | Official n8n project page; deployed via npm or docker |
 | [**有道云笔记**](https://note.youdao.com/) | `2026-10-30` | — | [win-x64](https://note.youdao.com/download.html) · [mac-x64](https://note.youdao.com/download.html) | Official download page; no public version API |
 | [**福昕 PDF**](https://www.foxitsoftware.cn/) | `2026-10-30` | — | [win-x64](https://www.foxitsoftware.cn/downloads/) | Official download page; no public version API |
 | [**网易有道词典**](https://www.youdao.com/) | `2026-10-30` | — | [win-x64](https://www.youdao.com/) · [mac-x64](https://www.youdao.com/) | Official download page; no public version API |
 | [**腾讯文档**](https://docs.qq.com/) | `2026-10-30` | — | win-x64（暂不可用，待核验） | Official download page; no public version API |
 | [**石墨文档**](https://shimo.im/) | `2026-10-30` | — | [win-x64](https://shimo.im/download) · [mac-x64](https://shimo.im/download) | Official download page; no public version API |
 | [**WPS PDF**](https://www.wps.cn/) | `2026-10-30` | — | win-x64（暂不可用，待核验） | Official download page; no public version API |
-| [**网易邮箱大师**](https://dashi.163.com/) | `2026-10-29` | — | [win-x64](https://dashi.163.com/) · [mac-x64](https://dashi.163.com/) | Official download page; no public version API |
+| [**网易邮箱大师**](https://dashi.163.com/) | `2026-11-01` | — | [win-x64](https://dashi.163.com/) · [mac-x64](https://dashi.163.com/) | Official download page; no public version API |
 | [**Foxmail**](https://www.foxmail.com/) | `2026-10-30` | — | [win-x64](https://www.foxmail.com/) · [mac-universal](https://www.foxmail.com/) | Official download page; no public version API |
 | [**金山词霸**](https://www.iciba.com/) | `2026-10-30` | — | [win-x64](https://www.iciba.com/) · [mac-universal](https://www.iciba.com/) | Official download page; no public version API |
 | [**欧路词典**](https://www.eudic.net/) | `2026-10-30` | — | [win-x64](https://www.eudic.net/) · [mac-universal](https://www.eudic.net/) | Official download page; no public version API |
@@ -585,7 +585,7 @@
 | [**draw.io**](https://github.com/jgraph/drawio-desktop) | `32.6.1` | 2026-10-23 | [win-x64](https://github.com/jgraph/drawio-desktop/releases/download/v32.6.1/draw.io-32.6.1-windows-installer.exe) · [mac-arm64](https://github.com/jgraph/drawio-desktop/releases/download/v32.6.1/draw.io-arm64-32.6.1.dmg) · [linux-x64](https://github.com/jgraph/drawio-desktop/releases/download/v32.6.1/drawio-x86_64-32.6.1.rpm) | GitHub Release: jgraph/drawio-desktop |
 | [**Paseo**](https://getpaseo.com) | `0.14.0` | 2026-10-29 | [mac-arm64](https://github.com/getpaseo/paseo/releases/download/v0.14.0/Paseo-0.14.0-arm64.dmg) · [mac-x64](https://github.com/getpaseo/paseo/releases/download/v0.14.0/Paseo-0.14.0-x64.dmg) | GitHub Release: getpaseo/paseo |
 | [**Readest**](https://readest.com) | `0.12.16` | 2026-10-13 | [mac-universal](https://github.com/readest/readest/releases/download/v0.12.16/Readest_0.12.16_universal.dmg) | GitHub Release: readest/readest |
-| [**XMind**](https://xmind.com/) | `2026-10-29` | — | [mac-universal](https://xmind.com/download/) | Official download page; no public version API |
+| [**XMind**](https://xmind.com/) | `2026-11-01` | — | [mac-universal](https://xmind.com/download/) | Official download page; no public version API |
 | [**WPS Office**](https://www.wps.com) | `2026-10-30` | — | [mac-universal](https://mac.wps.cn) | Official download page; no public version API |
 | [**Microsoft 365**](https://support.microsoft.com/en-us/office/download-and-install-or-reinstall-microsoft-365-or-office-2019-on-a-pc-or-mac-4414eaaf-0478-48be-9c42-23adc4716658) | `2026-10-30` | — | [win-x64](https://support.microsoft.com/en-us/office/download-and-install-or-reinstall-microsoft-365-or-office-2019-on-a-pc-or-mac-4414eaaf-0478-48be-9c42-23adc4716658) · [mac-universal](https://support.microsoft.com/en-us/office/download-and-install-or-reinstall-microsoft-365-or-office-2019-on-a-pc-or-mac-4414eaaf-0478-48be-9c42-23adc4716658) | Official download page; no public version API |
 | [**Adobe Acrobat Reader**](https://get.adobe.com/reader/) | `2026-10-30` | — | [win-x64](https://get.adobe.com/reader/) · [mac-universal](https://get.adobe.com/reader/) | Official download page; no public version API |
@@ -595,9 +595,9 @@
 
 | 软件 | 最新版本 | 发布日期 | 下载链接 | 来源 |
 |------|---------|---------|---------|------|
-| [**Chatbox**](https://chatboxai.app/) | `2026-10-29` | — | [win-x64](https://chatboxai.app/) · [mac-arm64](https://chatboxai.app/) · [mac-x64](https://chatboxai.app/) · [linux-x64](https://chatboxai.app/) | Official Chatbox download page |
+| [**Chatbox**](https://chatboxai.app/) | `2026-11-01` | — | [win-x64](https://chatboxai.app/) · [mac-arm64](https://chatboxai.app/) · [mac-x64](https://chatboxai.app/) · [linux-x64](https://chatboxai.app/) | Official Chatbox download page |
 | [**Kimi**](https://kimi.moonshot.cn/) | `2026-10-30` | — | win-x64（暂不可用，待核验） · mac-x64（暂不可用，待核验） | Official download page; no public version API |
-| [**通义千问**](https://www.qianwen.com/) | `2026-10-29` | — | [win-x64](https://www.qianwen.com/download) · [mac-x64](https://www.qianwen.com/download) | Official download page; no public version API |
+| [**通义千问**](https://www.qianwen.com/) | `2026-11-01` | — | [win-x64](https://www.qianwen.com/download) · [mac-x64](https://www.qianwen.com/download) | Official download page; no public version API |
 | [**智谱清言**](https://chatglm.cn/) | `2026-10-30` | — | win-x64（暂不可用，待核验） · mac-x64（暂不可用，待核验） | Official download page; no public version API |
 | [**讯飞星火**](https://xinghuo.xfyun.cn/) | `2026-10-30` | — | win-x64（暂不可用，待核验） · mac-x64（暂不可用，待核验） | Official download page; no public version API |
 | [**Jan**](https://jan.ai/) | `0.8.8` | 2026-10-28 | [win-x64](https://github.com/janhq/jan/releases/download/v0.8.8/Jan_0.8.8_x64-setup.exe) · [mac-universal](https://github.com/janhq/jan/releases/download/v0.8.8/Jan_0.8.8_universal.dmg) · [linux-x64](https://github.com/janhq/jan/releases/download/v0.8.8/Jan_0.8.8_amd64.AppImage) | GitHub Release: menloresearch/jan |
@@ -637,17 +637,17 @@
 | [**Microsoft Teams**](https://www.microsoft.com/microsoft-teams/download-app) | `2026-10-30` | — | [win-x64](https://www.microsoft.com/microsoft-teams/download-app) · [mac-universal](https://www.microsoft.com/microsoft-teams/download-app) | Official Microsoft Teams download page; no public version API |
 | [**WhatsApp**](https://www.whatsapp.com/download) | `2026-10-30` | — | [win-x64](https://www.whatsapp.com/download) · [mac-universal](https://www.whatsapp.com/download) | Official WhatsApp download page; no public version API |
 | [**Thunderbird**](https://www.thunderbird.net/thunderbird/all/) | `2026-10-30` | — | [win-x64](https://www.thunderbird.net/thunderbird/all/) · [mac-universal](https://www.thunderbird.net/thunderbird/all/) · [linux-x64](https://www.thunderbird.net/thunderbird/all/) | Official Thunderbird download page; no public version API |
-| [**Skype**](https://www.skype.com/get-skype/) | `2026-10-29` | — | [win-x64](https://teams.live.com/free?source=skype) · [mac-universal](https://teams.live.com/free?source=skype) · [linux-x64](https://teams.live.com/free?source=skype) | Microsoft retired Skype downloads; official entry redirects to Teams Free |
+| [**Skype**](https://www.skype.com/get-skype/) | `2026-11-01` | — | [win-x64](https://teams.live.com/free?source=skype) · [mac-universal](https://teams.live.com/free?source=skype) · [linux-x64](https://teams.live.com/free?source=skype) | Microsoft retired Skype downloads; official entry redirects to Teams Free |
 | [**Telegram Desktop**](https://github.com/telegramdesktop/tdesktop) | `7.3.3` | 2026-10-21 | [win-x64](https://github.com/telegramdesktop/tdesktop/releases/download/v7.3.3/td-setup-win-x64-7.3.3.exe) | GitHub Release: telegramdesktop/tdesktop |
 | [**WeChat**](https://weixin.qq.com) | `4.2.0.12` | — | [mac-universal](https://dldir1v6.qq.com/weixin/Universal/Mac/xWeChatMac_universal_4.2.0.12_270348.dmg) | 微信官网 |
-| [**QQ**](https://im.qq.com) | `2026-10-31` | — | [mac-universal](https://im.qq.com/macqq/index.shtml) | Official download page; no public version API |
+| [**QQ**](https://im.qq.com) | `2026-11-01` | — | [mac-universal](https://im.qq.com/macqq/index.shtml) | Official download page; no public version API |
 
 
 ### Gaming
 
 | 软件 | 最新版本 | 发布日期 | 下载链接 | 来源 |
 |------|---------|---------|---------|------|
-| [**WeGame**](https://www.wegame.com.cn/) | `2026-10-31` | — | [win-x64](https://www.wegame.com.cn/client/) | Official download page; no public version API |
+| [**WeGame**](https://www.wegame.com.cn/) | `2026-11-01` | — | [win-x64](https://www.wegame.com.cn/client/) | Official download page; no public version API |
 | [**网易 UU 加速器**](https://uu.163.com/) | `2026-10-30` | — | [win-x64](https://uu.163.com/download/) | Official download page; no public version API |
 | [**英雄联盟**](https://lol.qq.com/) | `2026-10-30` | — | [win-x64](https://lol.qq.com/download.shtml) | Official download page; no public version API |
 | [**地下城与勇士**](https://dnf.qq.com/) | `2026-10-30` | — | [win-x64](https://dnf.qq.com/web2015/down.shtml) | Official download page; no public version API |
@@ -675,7 +675,7 @@
 | [**MangoHud**](https://github.com/flightlessmango/MangoHud) | `2026-10-30` | — | [linux-x64](https://github.com/flightlessmango/MangoHud/releases) | Official project download page; no stable public release asset API |
 | [**GameMode**](https://github.com/FeralInteractive/gamemode) | `2026-10-30` | — | [linux-x64](https://github.com/FeralInteractive/gamemode/releases) | Official project download page; no stable public release asset API |
 | [**GE-Proton**](https://github.com/GloriousEggroll/proton-ge-custom) | `11-11` | 2026-10-19 | [linux-x64](https://github.com/GloriousEggroll/proton-ge-custom/releases/download/GE-Proton11-11/GE-Proton11-11-x86_64.tar.gz) | GitHub Release: GloriousEggroll/proton-ge-custom |
-| [**Bottles**](https://flathub.org/apps/com.usebottles.bottles) | `2026-10-29` | — | [linux-x64](https://flathub.org/apps/com.usebottles.bottles) | Official Flathub listing (no release binaries on GitHub) |
+| [**Bottles**](https://flathub.org/apps/com.usebottles.bottles) | `2026-11-01` | — | [linux-x64](https://flathub.org/apps/com.usebottles.bottles) | Official Flathub listing (no release binaries on GitHub) |
 | [**Vita3K**](https://github.com/Vita3K/Vita3K) | `2026-10-30` | — | [win-x64](https://github.com/Vita3K/Vita3K/releases) · [mac-arm64](https://github.com/Vita3K/Vita3K/releases) · [linux-x64](https://github.com/Vita3K/Vita3K/releases) | Official project download page; no stable public release asset API |
 | [**xemu**](https://github.com/xemu-project/xemu) | `0.8.139` | 2026-10-21 | [win-x64](https://github.com/xemu-project/xemu/releases/download/v0.8.139/xemu-0.8.139-windows-x86_64.zip) · [mac-universal](https://github.com/xemu-project/xemu/releases/download/v0.8.139/xemu-0.8.139-macos-universal.zip) · [linux-x64](https://github.com/xemu-project/xemu/releases/download/v0.8.139/xemu-0.8.139-x86_64.AppImage) | GitHub Release: xemu-project/xemu |
 | [**mGBA**](https://github.com/mgba-emu/mgba) | `0.10.5` | 2025-03-09 | [win-x64](https://github.com/mgba-emu/mgba/releases/download/0.10.5/mGBA-0.10.5-win64.7z) · [mac-universal](https://github.com/mgba-emu/mgba/releases/download/0.10.5/mGBA-0.10.5-macos.dmg) | GitHub Release: mgba-emu/mgba |
@@ -697,11 +697,11 @@
 | [**哔哩哔哩**](https://www.bilibili.com/) | `2026-10-30` | — | [win-x64](https://app.bilibili.com/) | Official download page; no public version API |
 | [**QQ音乐**](https://y.qq.com/) | `2026-10-30` | — | [win-x64](https://y.qq.com/download/) · [mac-x64](https://y.qq.com/download/) | Official download page; no public version API |
 | [**腾讯视频**](https://v.qq.com/) | `2026-10-30` | — | [win-x64](https://v.qq.com/download.html) | Official download page; no public version API |
-| [**爱奇艺**](https://www.iqiyi.com/) | `2026-10-29` | — | [win-x64](https://app.iqiyi.com/) | Official download page; no public version API |
+| [**爱奇艺**](https://www.iqiyi.com/) | `2026-11-01` | — | [win-x64](https://app.iqiyi.com/) | Official download page; no public version API |
 | [**酷狗音乐**](https://www.kugou.com/) | `2026-10-30` | — | [win-x64](https://www.kugou.com/) | Official download page; no public version API |
 | [**酷我音乐**](https://www.kuwo.cn/) | `2026-10-30` | — | win-x64（暂不可用，待核验） | Official download page; no public version API |
 | [**喜马拉雅**](https://www.ximalaya.com/) | `2026-10-30` | — | [win-x64](https://www.ximalaya.com/download/) · [mac-x64](https://www.ximalaya.com/download/) | Official download page; no public version API |
-| [**PotPlayer**](https://potplayer.daum.net/) | `2026-10-29` | — | [win-x64](https://t1.kakaocdn.net/potplayer/PotPlayer/Version/Latest/PotPlayerSetup64.exe) | Official Kakao CDN installer (latest build) |
+| [**PotPlayer**](https://potplayer.daum.net/) | `2026-11-01` | — | [win-x64](https://t1.kakaocdn.net/potplayer/PotPlayer/Version/Latest/PotPlayerSetup64.exe) | Official Kakao CDN installer (latest build) |
 | [**剪映专业版**](https://www.capcut.cn/) | `2026-10-30` | — | [win-x64](https://www.capcut.cn/) · [mac-universal](https://www.capcut.cn/) | Official download page; no public version API |
 | [**优酷**](https://www.youku.com/) | `2026-10-30` | — | [win-x64](https://www.youku.com/) · mac-universal（暂不可用，待核验） | Official download page; no public version API |
 | [**芒果TV**](https://www.mgtv.com/) | `2026-10-30` | — | [win-x64](https://www.mgtv.com/) · [mac-universal](https://www.mgtv.com/) | Official download page; no public version API |
@@ -757,7 +757,7 @@
 | [**darktable**](https://github.com/darktable-org/darktable) | `5.6.2` | 2026-10-04 | [win-x64](https://github.com/darktable-org/darktable/releases/download/release-5.6.2/darktable-5.6.2-win64.exe) · [mac-arm64](https://github.com/darktable-org/darktable/releases/download/release-5.6.2/darktable-5.6.2-arm64.dmg) | GitHub Release: darktable-org/darktable |
 | [**RawTherapee**](https://www.rawtherapee.com/downloads/) | `2026-10-30` | — | [win-x64](https://www.rawtherapee.com/downloads/) | Official project download page; no stable public release asset API |
 | [**Scribus**](https://www.scribus.net/downloads/) | `2026-10-30` | — | win-x64（暂不可用，待核验） | Official project download page; no stable public release asset API |
-| [**Ardour**](https://community.ardour.org/download) | `2026-10-29` | — | [win-x64](https://community.ardour.org/download) · [mac-arm64](https://community.ardour.org/download) | Official community download page; no stable public release asset API |
+| [**Ardour**](https://community.ardour.org/download) | `2026-11-01` | — | [win-x64](https://community.ardour.org/download) · [mac-arm64](https://community.ardour.org/download) | Official community download page; no stable public release asset API |
 | [**OpenShot**](https://github.com/OpenShot/openshot-qt) | `4.0.1` | 2026-09-27 | [win-x64](https://github.com/OpenShot/openshot-qt/releases/download/v4.0.1/OpenShot-v4.0.1-x86_64.exe) | GitHub Release: OpenShot/openshot-qt |
 | [**Natron**](https://github.com/NatronGitHub/Natron) | `2.5.0` | 2022-11-26 | [win-x64](https://github.com/NatronGitHub/Natron/releases/download/v2.5.0/Natron-2.5.0-Windows-x86_64.zip) · [mac-x64](https://github.com/NatronGitHub/Natron/releases/download/v2.5.0/Natron-2.5.0-macOS12-x86_64.dmg) | GitHub Release: NatronGitHub/Natron |
 | [**Kodi**](https://kodi.tv/download/) | `2026-10-30` | — | [win-x64](https://kodi.tv/download/) · [mac-universal](https://kodi.tv/download/) · [linux-x64](https://kodi.tv/download/) | Official Kodi download page; no public version API |
@@ -765,7 +765,7 @@
 | [**foobar2000**](https://www.foobar2000.org/download) | `2026-10-30` | — | [win-x64](https://www.foobar2000.org/download) · [mac-universal](https://www.foobar2000.org/download) | Official foobar2000 download page; no public version API |
 | [**Audacity**](https://github.com/audacity/audacity) | `4.0.1` | 2026-09-30 | [win-x64](https://github.com/audacity/audacity/releases/download/Audacity-4.0.1/audacity-win-4.0.1-x86_64.msi) | GitHub Release: audacity/audacity |
 | [**OBS Studio**](https://obsproject.com/) ⚠️ | `33.0.1` | 2026-10-29 | [win-x64](https://github.com/obsproject/obs-studio/releases/download/33.0.1/OBS-Studio-33.0.1-Windows-x64-Installer.exe) · [mac-arm64](https://github.com/obsproject/obs-studio/releases/download/33.0.1/OBS-Studio-33.0.1-macOS-Apple.dmg) · [mac-x64](https://github.com/obsproject/obs-studio/releases/download/33.0.1/OBS-Studio-33.0.1-macOS-Intel.dmg) · [linux-x64](https://obsproject.com/) | GitHub Release: obsproject/obs-studio<br>⚠ linux-x64: 没有匹配 asset pattern 'OBS-Studio-*-Ubuntu-24.04-x86_64.deb' |
-| [**mpv**](https://mpv.io/) | `20261021` | 2026-10-21 | [win-x64](https://github.com/shinchiro/mpv-winbuild-cmake/releases/download/20261021/mpv-x86_64-20261021-git-e471496c56.7z) | GitHub Release: shinchiro/mpv-winbuild-cmake |
+| [**mpv**](https://mpv.io/) | `20261101` | 2026-11-01 | [win-x64](https://github.com/shinchiro/mpv-winbuild-cmake/releases/download/20261101/mpv-x86_64-20261101-git-48fca90e8c.7z) | GitHub Release: shinchiro/mpv-winbuild-cmake |
 | [**OpenSCAD**](https://github.com/openscad/openscad) | `2021.01` | 2021-02-07 | [win-x64](https://github.com/openscad/openscad) | GitHub Release: openscad/openscad |
 | [**LMMS**](https://github.com/LMMS/lmms) | `1.2.2` | 2020-07-04 | [win-x64](https://github.com/LMMS/lmms/releases/download/v1.2.2/lmms-1.2.2-win64.exe) · [mac-x64](https://github.com/LMMS/lmms/releases/download/v1.2.2/lmms-1.2.2-mac10.14.dmg) | GitHub Release: LMMS/lmms |
 | [**MuseScore**](https://github.com/musescore/MuseScore) | `4.7.6` | 2026-10-26 | [win-x64](https://github.com/musescore/MuseScore/releases/download/v4.7.6/MuseScore-Studio-4.7.6.261022093-x86_64.msi) | GitHub Release: musescore/MuseScore |
