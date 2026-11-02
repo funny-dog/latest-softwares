@@ -1,11 +1,11 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-02T07:17:53+00:00",
+  "generated_at": "2026-11-02T22:11:36+00:00",
   "configured": 699,
   "published": 699,
   "stale_packages": 2,
-  "verified_assets": 1128,
-  "unavailable_assets": 25,
+  "verified_assets": 1131,
+  "unavailable_assets": 22,
   "required_total": 301,
   "required_covered": 300,
   "required_coverage": 0.9966777408637874,
@@ -68,15 +68,6 @@
       "id": "kuwo-music",
       "required": false,
       "issues": [
-        "unverified_or_unavailable:win-x64"
-      ]
-    },
-    {
-      "id": "plex",
-      "required": false,
-      "issues": [
-        "unverified_or_unavailable:linux-x64",
-        "unverified_or_unavailable:mac-universal",
         "unverified_or_unavailable:win-x64"
       ]
     },
