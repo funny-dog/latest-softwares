@@ -5,7 +5,7 @@
 > **Latest version metadata** automatically synced from official upstream sources daily by GitHub Actions.
 > This repository **does not host binary installers** — download buttons link directly to upstream official downloads.
 >
-> 📅 **Last updated**: `2026-11-07 13:44:45` (UTC) · 699 software items (2 using previous data, marked ⚠️)
+> 📅 **Last updated**: `2026-11-07 22:30:17` (UTC) · 699 software items (2 using previous data, marked ⚠️)
 
 ---
 
@@ -25,7 +25,7 @@
 
 | Software | Latest Version | Released | Download | Source |
 |----------|---------------|----------|----------|--------|
-| [**Windows 11**](https://www.microsoft.com/software-download/windows11) | `25H2` | — | [win-x64](https://software.download.prss.microsoft.com/dbazure/Win11_25H2_Chinese_Simplified_x64_v2.iso?t=b65ac764-e6fb-46a8-9571-2168ab878cf9&P1=1794145466&P2=602&P3=2&P4=jbQ6D13dtush%2fHrib2cfz2bx9C16TFSyPhIFVDBTemuo1eXPxwk68yk2SSy5MHjlWV8DAtDbunDrpmJX3T97WzwGsKFgzQvuZkNDn36Kj0SZruCKtxFtUVGRYI%2bBPzhJeQ30KA6SSehT%2bHjL9YTw5z44MCnVcWSXrk668pHhS30Rs7B1HjRi6sGK9XtZR2IoK7sRfp1llmfIS5prnjZkDjgTtA9w7i1Nnpaf2JcrTCfzjFqdFsIYYtKNNIw%2f9zmjbtASAjW7zCSEm6LTXlSKchBPFlTcZg01kwG1gjDtfmP8JURwJvipBaXa%2f4L4rlafg7neSTu8qn80yWWxtyKBdQ%3d%3d) | Microsoft Software Download (via Fido) |
+| [**Windows 11**](https://www.microsoft.com/software-download/windows11) | `25H2` | — | [win-x64](https://software.download.prss.microsoft.com/dbazure/Win11_25H2_Chinese_Simplified_x64_v2.iso?t=70ce32ba-20b3-49a4-9915-88b8720155dc&P1=1794176966&P2=602&P3=2&P4=TdMbsP%2f7F0Lney9ZUhcpgPgGWDn8qL8WZRswCzPV5ISQJRBLJV5Tr8xcdyOUFcy8pebx0qM%2boGiTOFqkeUjo0jo8k0UIyylxJKWqKcSFI7MqhbE1e3meSFc2UO5FngSFIh4aKNQoJIvch6lZZk1oblnVXoYwvM4E3PxWTpvtnIcLKLLQDs2fwoUAWM0e4QFkVWwMCx020QgFf0QZ7N4rroax%2bZweTFhVJxWavHfEdNpmbqZqO2vAOZ0qUPvd%2bS824UK0Om%2fU%2b4fLJPtj%2bPrz263u97D5TdaSQHDRTiiYpCgrwOHl3FE9Axed0I94vTDCa5CmCEEsj4W%2bwGPzblLQ9Q%3d%3d) | Microsoft Software Download (via Fido) |
 | [**Ubuntu**](https://ubuntu.com/download) | `26.10` | — | [desktop-amd64](https://releases.ubuntu.com/26.10/ubuntu-26.10-desktop-amd64.iso) · [server-amd64](https://releases.ubuntu.com/26.10/ubuntu-26.10-live-server-amd64.iso) · [wsl-amd64](https://ubuntu.com/download) | Ubuntu official releases index |
 | [**Fedora Workstation**](https://fedoraproject.org/workstation/download/) | `45` | — | [workstation-live-x86_64](https://fedoraproject.org/workstation/download/) | Fedora official release directory |
 
@@ -72,7 +72,7 @@
 | [**mihomo**](https://github.com/MetaCubeX/mihomo) | `1.19.33` | 2026-10-21 | [win-x64](https://github.com/MetaCubeX/mihomo/releases/download/v1.19.33/mihomo-windows-amd64-v1.19.33.zip) | GitHub Release: MetaCubeX/mihomo |
 | [**Xray-core**](https://github.com/XTLS/Xray-core) | `26.10.31` | 2026-10-31 | [win-x64](https://github.com/XTLS/Xray-core/releases/download/v26.10.31/Xray-windows-64.zip) | GitHub Release: XTLS/Xray-core |
 | [**Clash Verge Rev**](https://github.com/clash-verge-rev/clash-verge-rev) ⚠️ | `2.5.10` | 2026-11-03 | [win-x64](https://github.com/clash-verge-rev/clash-verge-rev/releases/download/v2.5.10/Clash.Verge_2.5.10_x64-setup.exe) · [mac-arm64](https://github.com/clash-verge-rev/clash-verge-rev/releases/download/v2.5.10/Clash.Verge_2.5.10_aarch64.dmg) · [linux-x64](https://github.com/clash-verge-rev/clash-verge-rev) | GitHub Release: clash-verge-rev/clash-verge-rev<br>⚠ linux-x64: 没有匹配 asset pattern 'clash-verge_*_amd64.deb' |
-| [**Tunnelblick**](https://tunnelblick.net) | `10.0.2` | 2026-10-26 | [mac-universal](https://github.com/Tunnelblick/Tunnelblick/releases/download/v10.0.2/Tunnelblick_10.0.2_build_6590.dmg) | GitHub Release: Tunnelblick/Tunnelblick |
+| [**Tunnelblick**](https://tunnelblick.net) | `10.0.3` | 2026-11-07 | [mac-universal](https://github.com/Tunnelblick/Tunnelblick/releases/download/v10.0.3/Tunnelblick_10.0.3_build_6610.dmg) | GitHub Release: Tunnelblick/Tunnelblick |
 
 
 ### Download Tools
@@ -247,9 +247,9 @@
 | [**HeidiSQL**](https://github.com/HeidiSQL/HeidiSQL) | `12.22` | 2026-10-25 | [win-x64](https://github.com/HeidiSQL/HeidiSQL/releases/download/v12.22/HeidiSQL_12.22.0.7382_Setup.exe) | GitHub Release: HeidiSQL/HeidiSQL |
 | [**Notepad++**](https://github.com/notepad-plus-plus/notepad-plus-plus) | `8.9.9` | 2026-11-06 | [win-x64](https://github.com/notepad-plus-plus/notepad-plus-plus/releases/download/v8.9.9/npp.8.9.9.Installer.x64.exe) | GitHub Release: notepad-plus-plus/notepad-plus-plus |
 | [**WezTerm**](https://github.com/wez/wezterm) | `20240203-110809-5046fc22` | 2024-02-03 | [win-x64](https://github.com/wezterm/wezterm/releases/download/20240203-110809-5046fc22/WezTerm-20240203-110809-5046fc22-setup.exe) | GitHub Release: wez/wezterm |
-| [**fzf**](https://github.com/junegunn/fzf) | `0.74.5` | 2026-10-11 | [win-x64](https://github.com/junegunn/fzf/releases/download/v0.74.5/fzf-0.74.5-windows_amd64.zip) | GitHub Release: junegunn/fzf |
+| [**fzf**](https://github.com/junegunn/fzf) | `0.75.0` | 2026-11-07 | [win-x64](https://github.com/junegunn/fzf/releases/download/v0.75.0/fzf-0.75.0-windows_amd64.zip) | GitHub Release: junegunn/fzf |
 | [**bat**](https://github.com/sharkdp/bat) | `0.26.1` | 2025-12-02 | [win-x64](https://github.com/sharkdp/bat/releases/download/v0.26.1/bat-v0.26.1-x86_64-pc-windows-msvc.zip) | GitHub Release: sharkdp/bat |
-| [**fd**](https://github.com/sharkdp/fd) | `10.5.1` | 2026-11-04 | [win-x64](https://github.com/sharkdp/fd/releases/download/v10.5.1/fd-v10.5.1-x86_64-pc-windows-msvc.zip) | GitHub Release: sharkdp/fd |
+| [**fd**](https://github.com/sharkdp/fd) | `10.5.2` | 2026-11-07 | [win-x64](https://github.com/sharkdp/fd/releases/download/v10.5.2/fd-v10.5.2-x86_64-pc-windows-msvc.zip) | GitHub Release: sharkdp/fd |
 | [**ripgrep**](https://github.com/BurntSushi/ripgrep) | `15.2.0` | 2026-07-15 | [win-x64](https://github.com/BurntSushi/ripgrep/releases/download/15.2.0/ripgrep-15.2.0-x86_64-pc-windows-msvc.zip) | GitHub Release: BurntSushi/ripgrep |
 | [**jq**](https://github.com/jqlang/jq) | `1.8.2` | 2026-06-20 | [win-x64](https://github.com/jqlang/jq/releases/download/jq-1.8.2/jq-windows-amd64.exe) | GitHub Release: jqlang/jq |
 | [**yq**](https://github.com/mikefarah/yq) | `4.54.2` | 2026-11-06 | [win-x64](https://github.com/mikefarah/yq/releases/download/v4.54.2/yq_windows_amd64.exe) | GitHub Release: mikefarah/yq |
@@ -272,7 +272,7 @@
 | [**Termius**](https://termius.com) | `2026-11-07` | — | [mac-universal](https://termius.com/download/macos) | Official download page; no public version API |
 | [**FinalShell**](https://www.hostbuf.com) | `2026-11-05` | — | [mac-universal](https://www.hostbuf.com) | Official download page; no public version API |
 | [**Navicat Premium Lite**](https://www.navicat.com/en/download/navicat-premium-lite) | `2026-11-05` | — | [mac-universal](https://www.navicat.com/en/download/navicat-premium-lite) | Official download page; no public version API |
-| [**cc-switch**](https://github.com/farion1231/cc-switch) | `4.0.26` | 2026-11-05 | [win-x64](https://github.com/farion1231/cc-switch/releases/download/v4.0.26/CC-Switch-v4.0.26-Windows.msi) | GitHub Release: farion1231/cc-switch |
+| [**cc-switch**](https://github.com/farion1231/cc-switch) | `4.0.27` | 2026-11-07 | [win-x64](https://github.com/farion1231/cc-switch/releases/download/v4.0.27/CC-Switch-v4.0.27-Windows.msi) | GitHub Release: farion1231/cc-switch |
 
 
 ### Cloud & DevOps
@@ -340,7 +340,7 @@
 | [**OverSight**](https://objective-see.org/products/oversight.html) | `2.4.0` | — | [mac](https://github.com/objective-see/OverSight/releases/download/v2.4.0/OverSight_2.4.0.zip) | brew manifest: oversight |
 | [**Parallels Desktop**](https://www.parallels.com/products/desktop/) | `27.1.0-58756` | — | [mac](https://download.parallels.com/desktop/v27/27.1.0-58756/ParallelsDesktop-27.1.0-58756.dmg) | brew manifest: parallels |
 | [**Paste**](https://pasteapp.io/) | `7.0.5` | — | [mac](https://downloads.pasteapp.io/dist/stable/Paste-7.0.5.zip) | brew manifest: paste |
-| [**PopClip**](https://www.popclip.app/) | `2026.8.1` | — | [mac](https://pilotmoon.com/downloads/PopClip-2026.8.1.zip) | brew manifest: popclip |
+| [**PopClip**](https://www.popclip.app/) | `2026.11` | — | [mac](https://pilotmoon.com/downloads/PopClip-2026.11.zip) | brew manifest: popclip |
 | [**Q-Dir**](https://www.softwareok.com/?seite=Freeware/Q-Dir) | `12.83` | — | [win-x64](https://www.softwareok.com/Download/Q-Dir_Portable_x64.zip) | scoop manifest: extras/q-dir |
 | [**Scroll Reverser**](https://pilotmoon.com/scrollreverser/) | `2.1.1` | — | [mac](https://pilotmoon.com/downloads/ScrollReverser-2.1.1.zip) | brew manifest: scroll-reverser |
 | [**Shottr**](https://shottr.cc/) | `1.9.3b` | — | [mac](https://shottr.cc/dl/Shottr-1.9.3b.dmg) | brew manifest: shottr |
@@ -389,9 +389,9 @@
 | [**Hyper**](https://hyper.is/#installation) | `2026-11-05` | — | [win-x64](https://hyper.is/#installation) · [mac-arm64](https://hyper.is/#installation) | Official project download page; no stable public release asset API |
 | [**Sysinternals Suite**](https://learn.microsoft.com/sysinternals/downloads/sysinternals-suite) | `2026-11-05` | — | [win-x64](https://download.sysinternals.com/files/SysinternalsSuite.zip) | Official Microsoft Sysinternals download; suite version is not exposed as a public API |
 | [**WizTree**](https://diskanalyzer.com/download) | `2026-11-05` | — | [win-x64](https://diskanalyzer.com/download) | Official WizTree download page; no public version API |
-| [**NVIDIA App**](https://www.nvidia.com/en-us/software/nvidia-app/) | `2026-11-06` | — | [win-x64](https://www.nvidia.com/en-us/software/nvidia-app/) | Official download page; no public version API |
+| [**NVIDIA App**](https://www.nvidia.com/en-us/software/nvidia-app/) | `2026-11-07` | — | [win-x64](https://www.nvidia.com/en-us/software/nvidia-app/) | Official download page; no public version API |
 | [**TrafficMonitor**](https://github.com/zhongyang219/TrafficMonitor) | `1.86` | 2026-03-29 | [win-x64](https://github.com/zhongyang219/TrafficMonitor/releases/download/V1.86/TrafficMonitor_V1.86_x64.zip) | GitHub Release: zhongyang219/TrafficMonitor |
-| [**Flameshot**](https://github.com/flameshot-org/flameshot) ⚠️ | `14.0.0` | 2026-06-19 | [win-x64](https://github.com/flameshot-org/flameshot/releases/download/v14.0.0/flameshot-14.0.0-win64.zip) · [linux-x64](https://github.com/flameshot-org/flameshot) | GitHub Release: flameshot-org/flameshot<br>⚠ linux-x64: 没有匹配 asset pattern 'flameshot-*-debian-12-amd64.deb' |
+| [**Flameshot**](https://github.com/flameshot-org/flameshot) ⚠️ | `15.0.0` | 2026-11-07 | [win-x64](https://github.com/flameshot-org/flameshot/releases/download/v15.0.0/flameshot-15.0.0-win64.zip) · [linux-x64](https://github.com/flameshot-org/flameshot) | GitHub Release: flameshot-org/flameshot<br>⚠ linux-x64: 没有匹配 asset pattern 'flameshot-*-debian-12-amd64.deb' |
 | [**Tabby**](https://github.com/Eugeny/tabby) | `1.0.238` | 2026-10-07 | [win-x64](https://github.com/Eugeny/tabby/releases/download/v1.0.238/tabby-1.0.238-setup-x64.exe) · [mac-arm64](https://github.com/Eugeny/tabby/releases/download/v1.0.238/tabby-1.0.238-macos-arm64.dmg) · [linux-x64](https://github.com/Eugeny/tabby/releases/download/v1.0.238/tabby-1.0.238-linux-x64.rpm) | GitHub Release: Eugeny/tabby |
 | [**DevToys**](https://devtoys.app) | `2026-11-07` | — | [mac-arm64](https://devtoys.app) · [mac-x64](https://devtoys.app) | Official DevToys download page; no public version API |
 | [**Stats**](https://github.com/exelban/stats) | `3.0.25` | 2026-11-04 | [mac-universal](https://github.com/exelban/stats/releases/download/v3.0.25/Stats.dmg) | GitHub Release: exelban/stats |
@@ -541,7 +541,7 @@
 | [**PDFgear**](https://www.pdfgear.com) | `3.0.1` | — | [win-x64](https://downloadfiles.pdfgear.com/releases/windows/pdfgear_setup_v3.0.1.exe) | scoop manifest: extras/pdfgear |
 | [**PDFsam Basic**](https://github.com/torakiki/pdfsam) | `6.0.10` | — | [win-x64](https://github.com/torakiki/pdfsam/releases/download/v6.0.10/pdfsam-basic-6.0.10-windows-x64.zip) | scoop manifest: extras/pdfsam |
 | [**Microsoft Power BI Desktop**](https://powerbi.microsoft.com/desktop/) | `2.159.1231.0` | — | [win-x64](https://download.microsoft.com/download/8/8/0/880BCA75-79DD-466A-927D-1ABF1F5454B0/PBIDesktopSetup-2026-10_x64.exe) | winget manifest: Microsoft.PowerBI |
-| [**QGIS**](https://www.qgis.org/) | `4.2.3` | — | [mac](https://download.qgis.org/downloads/macos/pr/qgis_pr_final-4_2_3.dmg) | brew manifest: qgis |
+| [**QGIS**](https://www.qgis.org/) | `4.2.3` | — | [mac](https://www.qgis.org/) | brew manifest: qgis |
 | [**Rambox**](https://rambox.app) | `2.7.2` | — | [win-x64](https://github.com/ramboxapp/download/releases/download/v2.7.2/Rambox-2.7.2-win-x64.exe#/dl.7z) | scoop manifest: extras/rambox |
 | [**Sage**](https://www.sagemath.org/) | `10.9,10.9.1` | — | [mac-arm64](https://github.com/3-manifolds/Sage_macOS/releases/download/v10.9.1/SageMath-10.9_arm64.dmg) | brew manifest: sage |
 | [**Scrivener**](https://www.literatureandlatte.com/scrivener/overview) | `3.5.2,17487,11` | — | [mac](https://scrivener.s3.amazonaws.com/mac_updates/Scrivener_11_17487.zip) | brew manifest: scrivener |
@@ -624,7 +624,7 @@
 | [**钉钉**](https://www.dingtalk.com/) | `2026-11-05` | — | [win-x64](https://www.dingtalk.com/download) · [mac-x64](https://www.dingtalk.com/download) | Official download page; no public version API |
 | [**飞书**](https://www.feishu.cn/) | `2026-11-05` | — | [win-x64](https://www.feishu.cn/download) · [mac-x64](https://www.feishu.cn/download) | Official download page; no public version API |
 | [**腾讯会议**](https://meeting.tencent.com/) | `2026-11-05` | — | [win-x64](https://meeting.tencent.com/download/) · [mac-x64](https://meeting.tencent.com/download/) | Official download page; no public version API |
-| [**YY 语音**](https://www.yy.com/) | `2026-11-06` | — | win-x64（Unavailable; pending verification） | Official download page; no public version API |
+| [**YY 语音**](https://www.yy.com/) | `2026-11-07` | — | win-x64（Unavailable; pending verification） | Official download page; no public version API |
 | [**企业微信**](https://work.weixin.qq.com/) | `2026-11-05` | — | [win-x64](https://work.weixin.qq.com/) · [mac-universal](https://work.weixin.qq.com/) | Official download page; no public version API |
 | [**Discord**](https://discord.com/download) | `2026-11-05` | — | [win-x64](https://discord.com/download) · [mac-universal](https://discord.com/download) · [linux-x64](https://discord.com/download) | Official Discord download endpoint; no public version API |
 | [**Slack**](https://slack.com/downloads/) | `2026-11-05` | — | [win-x64](https://slack.com/downloads/windows) · [mac-universal](https://slack.com/downloads/mac) · [linux-x64](https://slack.com/downloads/linux) | Official Slack download page; no public version API |
@@ -661,13 +661,13 @@
 | [**崩坏：星穹铁道**](https://sr.mihoyo.com/) | `2026-11-05` | — | [win-x64](https://sr.mihoyo.com/) | Official download page; no public version API |
 | [**DOTA2**](https://www.dota2.com.cn/) | `2026-11-05` | — | [win-x64](https://www.dota2.com.cn/download/) | Official download page; no public version API |
 | [**剑网3**](https://jx3.xoyo.com/) | `2026-11-05` | — | [win-x64](https://jx3.xoyo.com/) | Official download page; no public version API |
-| [**DuckStation**](https://github.com/stenzek/duckstation) | `latest` | 2026-10-25 | [win-x64](https://github.com/stenzek/duckstation/releases/download/latest/duckstation-windows-x64-release.zip) | GitHub Release: stenzek/duckstation |
+| [**DuckStation**](https://github.com/stenzek/duckstation) | `latest` | 2026-11-07 | [win-x64](https://github.com/stenzek/duckstation/releases/download/latest/duckstation-windows-x64-release.zip) | GitHub Release: stenzek/duckstation |
 | [**PCSX2**](https://github.com/PCSX2/pcsx2) | `2.8.2` | 2026-09-04 | [win-x64](https://github.com/PCSX2/pcsx2/releases/download/v2.8.2/pcsx2-v2.8.2-windows-x64-Qt.7z) | GitHub Release: PCSX2/pcsx2 |
 | [**Playnite**](https://github.com/JosefNemec/Playnite) | `10.63` | 2026-10-19 | [win-x64](https://github.com/JosefNemec/Playnite/releases/download/10.63/Playnite1063.exe) | GitHub Release: JosefNemec/Playnite |
 | [**Moonlight**](https://github.com/moonlight-stream/moonlight-qt) | `6.2.0` | 2026-10-04 | [win-x64](https://github.com/moonlight-stream/moonlight-qt/releases/download/v6.2.0/MoonlightPortable-x64-6.2.0.zip) | GitHub Release: moonlight-stream/moonlight-qt |
 | [**Cemu**](https://github.com/cemu-project/Cemu) | `2.6` | 2025-02-06 | [win-x64](https://github.com/cemu-project/Cemu/releases/download/v2.6/cemu-2.6-windows-x64.zip) | GitHub Release: cemu-project/Cemu |
 | [**PPSSPP**](https://www.ppsspp.org/) | `1.20.4` | 2026-05-16 | [win-x64](https://github.com/hrydgard/ppsspp/releases/download/v1.20.4/PPSSPP-v1.20.4-Windows-x64.zip) · [mac-universal](https://github.com/hrydgard/ppsspp/releases/download/v1.20.4/PPSSPPSDL-macOS-v1.20.4.zip) · [linux-x64](https://github.com/hrydgard/ppsspp/releases/download/v1.20.4/PPSSPP-v1.20.4-anylinux-x86_64.AppImage) | GitHub Release: hrydgard/ppsspp |
-| [**RPCS3**](https://rpcs3.net/) | `3f0f7c285f2b8aa18fec278a2146c5cd874eb` | 2026-11-05 | [win-x64](https://github.com/RPCS3/rpcs3-binaries-win/releases/download/build-eee3f0f7c285f2b8aa18fec278a2146c5cd874eb/rpcs3-v0.0.43-20565-eee3f0f7_win64_msvc.7z) | GitHub Release: RPCS3/rpcs3-binaries-win |
+| [**RPCS3**](https://rpcs3.net/) | `13a3cd4266158911a8c555dda59005bc20fd2a66` | 2026-11-07 | [win-x64](https://github.com/RPCS3/rpcs3-binaries-win/releases/download/build-13a3cd4266158911a8c555dda59005bc20fd2a66/rpcs3-v0.0.43-20570-13a3cd42_win64_msvc.7z) | GitHub Release: RPCS3/rpcs3-binaries-win |
 | [**Sunshine**](https://app.lizardbyte.dev/Sunshine/) | `2026.914.233613` | 2026-09-15 | [win-x64](https://github.com/LizardByte/Sunshine/releases/download/v2026.914.233613/Sunshine-Windows-AMD64-installer.msi) · [win-x64-portable](https://github.com/LizardByte/Sunshine/releases/download/v2026.914.233613/Sunshine-Windows-AMD64-lite.zip) · [linux-x64](https://github.com/LizardByte/Sunshine/releases/download/v2026.914.233613/sunshine_2026.914.233613-1%2Bubuntu24.04_amd64.deb) | GitHub Release: LizardByte/Sunshine |
 | [**Heroic Games Launcher**](https://heroicgameslauncher.com/) | `2.22.4` | 2026-10-15 | [win-x64](https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/releases/download/v2.22.4/Heroic-2.22.4-Setup-x64.exe) · [mac-arm64](https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/releases/download/v2.22.4/Heroic-2.22.4-macOS-arm64.dmg) · [linux-x64](https://github.com/Heroic-Games-Launcher/HeroicGamesLauncher/releases/download/v2.22.4/Heroic-2.22.4-linux-amd64.deb) | GitHub Release: Heroic-Games-Launcher/HeroicGamesLauncher |
 | [**Prism Launcher**](https://github.com/PrismLauncher/PrismLauncher) ⚠️ | `11.1.1` | 2026-09-28 | [linux-x64](https://github.com/PrismLauncher/PrismLauncher/releases/download/11.1.1/PrismLauncher-Linux-x86_64.AppImage) · [win-x64](https://github.com/PrismLauncher/PrismLauncher) · [mac-arm64](https://github.com/PrismLauncher/PrismLauncher) | GitHub Release: PrismLauncher/PrismLauncher<br>⚠ win-x64: 没有匹配 asset pattern 'PrismLauncher-*-Windows-MSVC-Setup.exe'; mac-arm64: 没有匹配 asset pattern 'PrismLauncher-*-macOS-arm64.dmg' |
@@ -738,7 +738,7 @@
 | [**UltiMaker Cura**](https://ultimaker.com/software/ultimaker-cura) | `5.14.0` | — | [mac-arm64](https://github.com/Ultimaker/Cura/releases/download/5.14.0/UltiMaker-Cura-5.14.0-macos-ARM64.dmg) | brew manifest: ultimaker-cura |
 | [**VirtualDJ**](https://virtualdj.com/) | `2026,9729,B11799B7` | — | [mac](https://download.virtualdj.com/b9729/B11799B7/install_virtualdj_2026_b9729_mac.pkg) | brew manifest: virtualdj |
 | [**HandBrake**](https://github.com/HandBrake/HandBrake) | `1.11.2` | 2026-06-07 | [win-x64](https://github.com/HandBrake/HandBrake/releases/download/1.11.2/HandBrake-1.11.2-x86_64-Win_GUI.exe) | GitHub Release: HandBrake/HandBrake |
-| [**FFmpeg**](https://github.com/BtbN/FFmpeg-Builds) | `latest` | 2026-11-07 | [win-x64](https://github.com/BtbN/FFmpeg-Builds/releases/download/latest/ffmpeg-master-latest-win64-gpl.zip) | GitHub Release: BtbN/FFmpeg-Builds |
+| [**FFmpeg**](https://github.com/BtbN/FFmpeg-Builds) | `latest` | 2026-11-07 | [win-x64](https://github.com/FFmpeg-Builds/FFmpeg-Builds/releases/download/latest/ffmpeg-master-latest-win64-gpl.zip) | GitHub Release: BtbN/FFmpeg-Builds |
 | [**IINA**](https://github.com/iina/iina) | `1.5.1` | 2026-11-06 | [mac-arm64](https://github.com/iina/iina/releases/download/v1.5.1/IINA.v1.5.1.dmg) | GitHub Release: iina/iina |
 | [**LosslessCut**](https://github.com/mifi/lossless-cut) ⚠️ | `3.70.2` | 2026-10-28 | [win-x64](https://github.com/mifi/lossless-cut/releases/download/v3.70.2/LosslessCut-win-x64.7z) · [linux-x64](https://github.com/mifi/lossless-cut/releases/download/v3.70.2/LosslessCut-linux-x86_64.AppImage) · [mac-universal](https://github.com/mifi/lossless-cut) | GitHub Release: mifi/lossless-cut<br>⚠ mac-universal: 没有匹配 asset pattern 'LosslessCut-mac-universal.pkg' |
 | [**Spotify**](https://www.spotify.com/download/) | `2026-11-05` | — | [win-x64](https://www.spotify.com/download/windows/) · [mac-universal](https://www.spotify.com/download/mac/) | Official Spotify download page; no public version API |
@@ -785,7 +785,7 @@
 | [**Orion Browser**](https://browser.kagi.com/) | `1.1.3,152` | — | [mac](https://cdn.kagi.com/updates/26_0/152.zip) | brew manifest: orion |
 | [**Pale Moon**](https://www.palemoon.org) | `35.0.3` | — | [win-x64](https://rm-eu.palemoon.org/release/Palemoon-Portable-35.0.3.win64.exe#/palemoon.7z) | scoop manifest: extras/palemoon |
 | [**SeaMonkey**](https://www.seamonkey-project.org) | `2.53.24` | — | [win-x64](https://archive.seamonkey-project.org/releases/2.53.24/win64/en-US/seamonkey-2.53.24.en-US.win64.installer.exe#/dl.7z) | scoop manifest: extras/seamonkey |
-| [**Waterfox**](https://www.waterfox.net) | `6.7.7` | — | [win-x64](https://cdn1.waterfox.net/waterfox/releases/6.7.7/WINNT_x86_64/Waterfox%20Setup%206.7.7.exe#/dl.7z) | scoop manifest: extras/waterfox |
+| [**Waterfox**](https://www.waterfox.net) | `6.7.8` | — | [win-x64](https://cdn1.waterfox.net/waterfox/releases/6.7.8/WINNT_x86_64/Waterfox%20Setup%206.7.8.exe#/dl.7z) | scoop manifest: extras/waterfox |
 | [**Wavebox**](https://wavebox.io/) | `157.3.25.2` | — | [mac-arm64](https://download.wavebox.app/stable/macarm64/Wavebox_157.3.25.2.zip) | brew manifest: wavebox |
 | [**Zen Browser**](https://github.com/zen-browser/desktop) | `1.24.1b` | 2026-11-06 | [win-x64](https://github.com/zen-browser/desktop/releases/download/1.24.1b/zen.installer.exe) | GitHub Release: zen-browser/desktop |
 | [**Mozilla Firefox**](https://www.mozilla.org/firefox/new/) | `159.0.1` | — | [win-x64](https://download.mozilla.org/?product=firefox-latest-ssl&os=win64&lang=en-US) · [mac-universal](https://download.mozilla.org/?product=firefox-latest-ssl&os=osx&lang=en-US) · [linux-x64](https://download.mozilla.org/?product=firefox-latest-ssl&os=linux64&lang=en-US) | Mozilla product-details API |
