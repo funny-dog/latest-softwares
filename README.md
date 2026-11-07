@@ -5,7 +5,7 @@
 > 由 GitHub Actions 每日自动同步上游官方源的**最新版本元数据**。
 > 仓库**不托管二进制安装包**，下载按钮直接跳到上游官方下载链接。
 >
-> 📅 **最后更新**：`2026-11-06 19:51:12` (UTC)　· 共 699 项软件（其中 3 项使用上次数据，标 ⚠️）
+> 📅 **最后更新**：`2026-11-07 06:50:04` (UTC)　· 共 699 项软件（其中 3 项使用上次数据，标 ⚠️）
 
 ---
 
@@ -25,7 +25,7 @@
 
 | 软件 | 最新版本 | 发布日期 | 下载链接 | 来源 |
 |------|---------|---------|---------|------|
-| [**Windows 11**](https://www.microsoft.com/software-download/windows11) | `25H2` | — | [win-x64](https://software.download.prss.microsoft.com/dbazure/Win11_25H2_Chinese_Simplified_x64_v2.iso?t=190ce171-7711-4635-92eb-3edf18349cb4&P1=1794081044&P2=602&P3=2&P4=eghEjcwC1elqWZk%2fIIsYxmJx3rEdoTb3n9xDwIMx0v%2fE4qx7pF1wn%2ftNzUdG2q9vBPmvDj3B3xJTHn%2bbJsSG1m7ii8u3Nv8Icb5a070w%2bVnr3fYEXddrbt4oxP6jilje7DCRb1FxZReRoro4QGuWebsEknlAuD62FP6lSxPMwO6IPm8atibS59NHxdovscwmcBPyfcx2FpSUDxtk1slBSx%2bcoBkHi%2fX%2fGVtZ4Pq3Jf3keQafUsX2V0v1mTovOnUXFi%2fsfY3BHuxeHW5ekcbt612LZCk1LV%2bS6m0a4MEDSfiGlpNvbKNiWETIRo3V7K2K6SWIYExQsXqld0XCA7ccxg%3d%3d) | Microsoft Software Download (via Fido) |
+| [**Windows 11**](https://www.microsoft.com/software-download/windows11) | `25H2` | — | [win-x64](https://software.download.prss.microsoft.com/dbazure/Win11_25H2_Chinese_Simplified_x64_v2.iso?t=f552edf8-3f54-464e-a6e7-ee43b41bb2a9&P1=1794120585&P2=602&P3=2&P4=PvNEJve9yA2uj73V4%2bePD5l2V5mZLMv7%2b8xBkerVJcrQBSr6Bxx%2fogYwGIgFjCMzlgfGQJPncn1Z%2f%2feDdoAC1qYxyBmevSbOi5yX6VLjArALz%2bPJOrVaDN%2fK3TQMRAxdfnQQ2x0xTDbHZb0T1OPGwKLj%2f1kbLxLf1SxawE9e52FD3XNjXz2ujTHXGNqHi8ov8esSSE2cHPwOr0VS1ZmjU2LI5Mg9Iev%2f6G%2bHoeEn389qMIf7Nzef7KXt7wMHM%2fB%2bhA8XZOnFqtI0aSsQ8fVr3PHmEIZma2uazXDcwKgYivA59cBbhN9hPIqdEbmr7sJKzj0g6Q55TDUmu3jXetiojA%3d%3d) | Microsoft Software Download (via Fido) |
 | [**Ubuntu**](https://ubuntu.com/download) | `26.10` | — | [desktop-amd64](https://releases.ubuntu.com/26.10/ubuntu-26.10-desktop-amd64.iso) · [server-amd64](https://releases.ubuntu.com/26.10/ubuntu-26.10-live-server-amd64.iso) · [wsl-amd64](https://ubuntu.com/download) | Ubuntu official releases index |
 | [**Fedora Workstation**](https://fedoraproject.org/workstation/download/) | `45` | — | [workstation-live-x86_64](https://fedoraproject.org/workstation/download/) | Fedora official release directory |
 
@@ -97,7 +97,7 @@
 | [**SwitchHosts**](https://github.com/oldj/SwitchHosts) | `5.0.3` | 2026-10-20 | [win-x64](https://github.com/oldj/SwitchHosts/releases/download/v5.0.3/SwitchHosts-5.0.3-windows-x64-setup.exe) · [mac-x64](https://github.com/oldj/SwitchHosts/releases/download/v5.0.3/SwitchHosts-5.0.3-mac-x64.dmg) | GitHub Release: oldj/SwitchHosts |
 | [**Apifox**](https://apifox.com/) | `2026-11-05` | — | win-x64（暂不可用，待核验） · mac-x64（暂不可用，待核验） | Official download page; no public version API |
 | [**Android Studio**](https://developer.android.com/studio) | `2026.2.2.9` | — | [win-x64](https://edgedl.me.gvt1.com/android/studio/ide-zips/2026.2.2.9/android-studio-rabbit2-patch1-windows.zip) | scoop manifest: extras/android-studio |
-| [**AWS CLI**](https://aws.amazon.com/cli/) | `2.39.5` | — | [win-x64](https://awscli.amazonaws.com/AWSCLIV2-2.39.5.msi) | scoop manifest: main/aws |
+| [**AWS CLI**](https://aws.amazon.com/cli/) | `2.39.6` | — | [win-x64](https://awscli.amazonaws.com/AWSCLIV2-2.39.6.msi) | scoop manifest: main/aws |
 | [**Azure CLI**](https://aka.ms/cli) | `2.92.0` | — | [win-x64](https://github.com/Azure/azure-cli/releases/download/azure-cli-2.92.0/azure-cli-2.92.0-x64.zip) | scoop manifest: main/azure-cli |
 | [**Microsoft Azure Storage Explorer**](https://azure.microsoft.com/products/storage/storage-explorer/) | `1.47.0` | — | [win-x64](https://github.com/microsoft/AzureStorageExplorer/releases/download/v1.47.0/StorageExplorer-windows-x64.exe) | winget manifest: Microsoft.Azure.StorageExplorer |
 | [**BBEdit**](https://www.barebones.com/products/bbedit/) | `16.1` | — | [mac](https://s3.amazonaws.com/BBSW-download/BBEdit_16.1.dmg) | brew manifest: bbedit |
@@ -114,7 +114,7 @@
 | [**Deno**](https://deno.com) | `2.9.8` | — | [win-x64](https://github.com/denoland/deno/releases/download/v2.9.8/deno-x86_64-pc-windows-msvc.zip) | scoop manifest: main/deno |
 | [**.NET SDK 10**](https://dotnet.microsoft.com/download/dotnet/10.0) | `10.0.403` | — | [win-x64](https://download.microsoft.com/download/4a85064e-5a0f-43c9-85ea-a5a9d78047c5/7a651622-ad57-4db0-8c1e-12771c93f513/dotnet-sdk-10.0.403-win-x64.exe) | winget manifest: Microsoft.DotNet.SDK.10 |
 | [**Eclipse IDE for Java Developers**](https://www.eclipse.org) | `2026-09` | — | [win-x64](http://download.eclipse.org/technology/epp/downloads/release/2026-09/R/eclipse-java-2026-09-R-win32-x86_64.zip) | scoop manifest: extras/eclipse-java |
-| [**Fork**](https://git-fork.com/) | `2.23.2` | — | [win](https://cdn.fork.dev/update/win/Fork-2.23.2-full.nupkg) | scoop manifest: extras/fork |
+| [**Fork**](https://git-fork.com/) | `2.24.0` | — | [win](https://cdn.fork.dev/update/win/Fork-2.24.0-full.nupkg) | scoop manifest: extras/fork |
 | [**Geany**](https://www.geany.org/) | `2.1` | — | [mac-arm64](https://download.geany.org/geany-2.1_osx_arm64.dmg) | brew manifest: geany |
 | [**GitButler**](https://gitbutler.com/) | `0.23.2` | — | [win-x64](https://releases.gitbutler.com/releases/release/0.23.2-3329/windows/x86_64/GitButler_0.23.2_x64_en-US.msi) | scoop manifest: extras/gitbutler |
 | [**Git Extensions**](https://gitextensions.github.io/) | `7.2.1.7` | — | [win-x64](https://github.com/gitextensions/gitextensions/releases/download/v7.2.1/GitExtensions-Portable-x64-7.2.1.7-0aea2d6df.zip) | scoop manifest: extras/gitextensions |
@@ -353,7 +353,7 @@
 | [**Rufus**](https://github.com/pbatard/rufus) | `4.15` | 2026-06-30 | [win-x64](https://github.com/pbatard/rufus/releases/download/v4.15/rufus-4.15.exe) | GitHub Release: pbatard/rufus |
 | [**Ventoy**](https://github.com/ventoy/Ventoy) | `1.1.18` | 2026-10-09 | [win-x64](https://github.com/ventoy/Ventoy/releases/download/v1.1.18/ventoy-1.1.18-windows.zip) | GitHub Release: ventoy/Ventoy |
 | [**PowerToys**](https://github.com/microsoft/PowerToys) | `0.102.3101` | 2026-11-06 | [win-x64](https://github.com/microsoft/PowerToys/releases/download/v0.102.3101/PowerToysUserSetup-0.102.3101.0-x64.exe) | GitHub Release: microsoft/PowerToys |
-| [**ShareX**](https://github.com/ShareX/ShareX) | `22.2.0` | 2026-11-06 | [win-x64](https://github.com/ShareX/ShareX/releases/download/v22.2.0/ShareX-22.2.0-setup-x64.exe) | GitHub Release: ShareX/ShareX |
+| [**ShareX**](https://github.com/ShareX/ShareX) | `22.3.0` | 2026-11-07 | [win-x64](https://github.com/ShareX/ShareX/releases/download/v22.3.0/ShareX-22.3.0-setup-x64.exe) | GitHub Release: ShareX/ShareX |
 | [**Lively Wallpaper**](https://github.com/rocksdanister/lively) | `2.2.1.0` | 2025-09-18 | [win-x64](https://github.com/rocksdanister/lively) | GitHub Release: rocksdanister/lively |
 | [**ExplorerPatcher**](https://github.com/valinet/ExplorerPatcher) | `26100.9711.71.1` | 2026-10-29 | [win-x64](https://github.com/valinet/ExplorerPatcher/releases/download/26100.9711.71.1/ep_setup.exe) | GitHub Release: valinet/ExplorerPatcher |
 | [**Rufus Portable**](https://github.com/pbatard/rufus) | `4.15` | 2026-06-30 | [win-x64](https://github.com/pbatard/rufus/releases/download/v4.15/rufus-4.15p.exe) | GitHub Release: pbatard/rufus |
@@ -509,7 +509,7 @@
 | [**Asana**](https://asana.com/) | `2.10.6` | — | [mac-arm64](https://desktop-downloads.asana.com/darwin_arm64/prod/v2.10.6/Asana-darwin-arm64-2.10.6.zip) | brew manifest: asana |
 | [**Basecamp**](https://basecamp.com/) | `5.2.3` | — | [mac](https://basecamp.com/desktop/Basecamp-5.2.3-mac.zip) | brew manifest: basecamp |
 | [**Box Drive**](https://www.box.com/drive) | `2.54.172` | — | [mac](https://e3.boxcdn.net/desktop/releases/mac/BoxDrive-2.54.172.pkg) | brew manifest: box-drive |
-| [**BusyCal**](https://busymac.com/busycal/index.html) | `2026.4.5,2026-11-06-09-31-42` | — | [mac](https://downloads.busymac.com/bcl-2026.4.5-2026-11-06-09-31-42.zip) | brew manifest: busycal |
+| [**BusyCal**](https://busymac.com/busycal/index.html) | `2026.4.5,2026-11-07-02-54-51` | — | [mac](https://downloads.busymac.com/bcl-2026.4.5-2026-11-07-02-54-51.zip) | brew manifest: busycal |
 | [**Capacities**](https://capacities.io/) | `1.72.7` | — | [mac-arm64](https://2vks4.upcloudobjects.com/capacities-desktop-app/Capacities-1.72.7-arm64.dmg) | brew manifest: capacities |
 | [**Celestia**](https://celestiaproject.space/) | `1.6.4` | — | [mac](https://github.com/CelestiaProject/Celestia/releases/download/1.6.4/celestia-1.6.4-macOS.zip) | brew manifest: celestia |
 | [**ClickUp**](https://clickup.com/) | `3.5.402,261028rnqdrclpe` | — | [mac-arm64](https://download.todesktop.com/221003ra4tebclw/ClickUp%203.5.402%20-%20Build%20261028rnqdrclpe-arm64.dmg) | brew manifest: clickup |
@@ -640,14 +640,14 @@
 | [**Skype**](https://www.skype.com/get-skype/) | `2026-11-04` | — | [win-x64](https://teams.live.com/free?source=skype) · [mac-universal](https://teams.live.com/free?source=skype) · [linux-x64](https://teams.live.com/free?source=skype) | Microsoft retired Skype downloads; official entry redirects to Teams Free |
 | [**Telegram Desktop**](https://github.com/telegramdesktop/tdesktop) | `7.4.1` | 2026-11-06 | [win-x64](https://github.com/telegramdesktop/tdesktop/releases/download/v7.4.1/td-setup-win-x64-7.4.1.exe) | GitHub Release: telegramdesktop/tdesktop |
 | [**WeChat**](https://weixin.qq.com) | `4.2.0.17` | — | [mac-universal](https://dldir1v6.qq.com/weixin/Universal/Mac/xWeChatMac_universal_4.2.0.17_270353.dmg) | 微信官网 |
-| [**QQ**](https://im.qq.com) | `2026-11-06` | — | [mac-universal](https://im.qq.com/macqq/index.shtml) | Official download page; no public version API |
+| [**QQ**](https://im.qq.com) | `2026-11-07` | — | [mac-universal](https://im.qq.com/macqq/index.shtml) | Official download page; no public version API |
 
 
 ### Gaming
 
 | 软件 | 最新版本 | 发布日期 | 下载链接 | 来源 |
 |------|---------|---------|---------|------|
-| [**WeGame**](https://www.wegame.com.cn/) | `2026-11-06` | — | [win-x64](https://www.wegame.com.cn/client/) | Official download page; no public version API |
+| [**WeGame**](https://www.wegame.com.cn/) | `2026-11-07` | — | [win-x64](https://www.wegame.com.cn/client/) | Official download page; no public version API |
 | [**网易 UU 加速器**](https://uu.163.com/) | `2026-11-05` | — | [win-x64](https://uu.163.com/download/) | Official download page; no public version API |
 | [**英雄联盟**](https://lol.qq.com/) | `2026-11-05` | — | [win-x64](https://lol.qq.com/download.shtml) | Official download page; no public version API |
 | [**地下城与勇士**](https://dnf.qq.com/) | `2026-11-05` | — | [win-x64](https://dnf.qq.com/web2015/down.shtml) | Official download page; no public version API |
@@ -724,7 +724,7 @@
 | [**MeshLab**](http://www.meshlab.net) | `2025.07` | — | [win-x64](https://github.com/cnr-isti-vclab/meshlab/releases/download/MeshLab-2025.07/MeshLab2025.07-windows_x86_64.zip) | scoop manifest: extras/meshlab |
 | [**Mixxx**](https://www.mixxx.org/) | `2.5.6` | — | [mac](https://downloads.mixxx.org/releases/2.5.6/mixxx-2.5.6-macosarm.dmg) | brew manifest: mixxx |
 | [**MPC-BE**](https://sourceforge.net/projects/mpcbe/) | `1.9.3` | — | [win-x64](https://github.com/Aleksoid1978/MPC-BE/releases/download/1.9.3/MPC-BE.1.9.3.x64.7z) | scoop manifest: extras/mpc-be |
-| [**MPC-HC**](https://github.com/clsid2/mpc-hc) | `2.8.4` | — | [win-x64](https://github.com/clsid2/mpc-hc/releases/download/2.8.4/MPC-HC.2.8.4.x64.zip) | scoop manifest: extras/mpc-hc-fork |
+| [**MPC-HC**](https://github.com/clsid2/mpc-hc) | `2.8.5` | — | [win-x64](https://github.com/clsid2/mpc-hc/releases/download/2.8.5/MPC-HC.2.8.5.x64.zip) | scoop manifest: extras/mpc-hc-fork |
 | [**ocenaudio**](https://www.ocenaudio.com/) | `3.22.2` | — | [win-x64](https://www.ocenaudio.com/downloads/index.php/ocenaudio_windows64.zip?version=v3.22.2) | scoop manifest: extras/ocenaudio |
 | [**OpenToonz**](https://github.com/opentoonz/opentoonz) | `1.8.0` | — | [win-x64](https://github.com/opentoonz/opentoonz/releases/download/v1.8.0/OpenToonzSetup.exe) | scoop manifest: extras/opentoonz |
 | [**Orca Slicer**](https://github.com/OrcaSlicer/OrcaSlicer) | `2.4.2` | — | [win-x64](https://github.com/OrcaSlicer/OrcaSlicer/releases/download/v2.4.2/OrcaSlicer_Windows_V2.4.2_x64_portable.zip) | scoop manifest: extras/orcaslicer |
@@ -765,7 +765,7 @@
 | [**foobar2000**](https://www.foobar2000.org/download) | `2026-11-05` | — | [win-x64](https://www.foobar2000.org/download) · [mac-universal](https://www.foobar2000.org/download) | Official foobar2000 download page; no public version API |
 | [**Audacity**](https://github.com/audacity/audacity) | `4.0.2` | 2026-11-02 | [win-x64](https://github.com/audacity/audacity/releases/download/Audacity-4.0.2/audacity-win-4.0.2-x86_64.msi) | GitHub Release: audacity/audacity |
 | [**OBS Studio**](https://obsproject.com/) ⚠️ | `33.0.1` | 2026-10-29 | [win-x64](https://github.com/obsproject/obs-studio/releases/download/33.0.1/OBS-Studio-33.0.1-Windows-x64-Installer.exe) · [mac-arm64](https://github.com/obsproject/obs-studio/releases/download/33.0.1/OBS-Studio-33.0.1-macOS-Apple.dmg) · [mac-x64](https://github.com/obsproject/obs-studio/releases/download/33.0.1/OBS-Studio-33.0.1-macOS-Intel.dmg) · [linux-x64](https://obsproject.com/) | GitHub Release: obsproject/obs-studio<br>⚠ linux-x64: 没有匹配 asset pattern 'OBS-Studio-*-Ubuntu-24.04-x86_64.deb' |
-| [**mpv**](https://mpv.io/) | `20261106` | 2026-11-06 | [win-x64](https://github.com/shinchiro/mpv-winbuild-cmake/releases/download/20261106/mpv-x86_64-20261106-git-9028187538.7z) | GitHub Release: shinchiro/mpv-winbuild-cmake |
+| [**mpv**](https://mpv.io/) | `20261107` | 2026-11-07 | [win-x64](https://github.com/shinchiro/mpv-winbuild-cmake/releases/download/20261107/mpv-x86_64-20261107-git-9028187538.7z) | GitHub Release: shinchiro/mpv-winbuild-cmake |
 | [**OpenSCAD**](https://github.com/openscad/openscad) | `2021.01` | 2021-02-07 | [win-x64](https://github.com/openscad/openscad) | GitHub Release: openscad/openscad |
 | [**LMMS**](https://github.com/LMMS/lmms) | `1.2.2` | 2020-07-04 | [win-x64](https://github.com/LMMS/lmms/releases/download/v1.2.2/lmms-1.2.2-win64.exe) · [mac-x64](https://github.com/LMMS/lmms/releases/download/v1.2.2/lmms-1.2.2-mac10.14.dmg) | GitHub Release: LMMS/lmms |
 | [**MuseScore**](https://github.com/musescore/MuseScore) | `4.7.6` | 2026-10-26 | [win-x64](https://github.com/musescore/MuseScore/releases/download/v4.7.6/MuseScore-Studio-4.7.6.261022093-x86_64.msi) | GitHub Release: musescore/MuseScore |
