@@ -5,7 +5,7 @@
 > 由 GitHub Actions 每日自动同步上游官方源的**最新版本元数据**。
 > 仓库**不托管二进制安装包**，下载按钮直接跳到上游官方下载链接。
 >
-> 📅 **最后更新**：`2026-11-07 22:30:17` (UTC)　· 共 699 项软件（其中 2 项使用上次数据，标 ⚠️）
+> 📅 **最后更新**：`2026-11-08 06:56:07` (UTC)　· 共 699 项软件（其中 2 项使用上次数据，标 ⚠️）
 
 ---
 
@@ -25,7 +25,7 @@
 
 | 软件 | 最新版本 | 发布日期 | 下载链接 | 来源 |
 |------|---------|---------|---------|------|
-| [**Windows 11**](https://www.microsoft.com/software-download/windows11) | `25H2` | — | [win-x64](https://software.download.prss.microsoft.com/dbazure/Win11_25H2_Chinese_Simplified_x64_v2.iso?t=70ce32ba-20b3-49a4-9915-88b8720155dc&P1=1794176966&P2=602&P3=2&P4=TdMbsP%2f7F0Lney9ZUhcpgPgGWDn8qL8WZRswCzPV5ISQJRBLJV5Tr8xcdyOUFcy8pebx0qM%2boGiTOFqkeUjo0jo8k0UIyylxJKWqKcSFI7MqhbE1e3meSFc2UO5FngSFIh4aKNQoJIvch6lZZk1oblnVXoYwvM4E3PxWTpvtnIcLKLLQDs2fwoUAWM0e4QFkVWwMCx020QgFf0QZ7N4rroax%2bZweTFhVJxWavHfEdNpmbqZqO2vAOZ0qUPvd%2bS824UK0Om%2fU%2b4fLJPtj%2bPrz263u97D5TdaSQHDRTiiYpCgrwOHl3FE9Axed0I94vTDCa5CmCEEsj4W%2bwGPzblLQ9Q%3d%3d) | Microsoft Software Download (via Fido) |
+| [**Windows 11**](https://www.microsoft.com/software-download/windows11) | `25H2` | — | [win-x64](https://software.download.prss.microsoft.com/dbazure/Win11_25H2_Chinese_Simplified_x64_v2.iso?t=d9b2897d-8e4a-42d6-84fa-a85049f8b40c&P1=1794207336&P2=602&P3=2&P4=w5bKjPiG5pvjvJvP6%2fKLxnWOTAlBb0nqE5yu1IQu9%2bSSoCnXsWdk8Yp02Ox1oI0ldtvlJDsH1jCpmOnPbxxIOUlO6J7TNQ%2fBsuxrMYgP1JRB0BUKtk3i9wjY3pJxHDxlTV8OsZrQe2oC8AJH5J8B9jNVNOFTfhtJL1HL%2brwJ0KNU6gS09ormLJEThh5dyvpHVX6WjDRgdJyrgY%2b6YwJizS3tJybNnFZMIOvzfJFBvf0vAEnj6IzL5T9wjuG0Rv%2bfCseC68bYc2tE3GIbXTANnQeMhjrMD91qgcAItPeTuWbRaDiAGwHuu4sbz7EXaicvQ3tvg96hgjngSC8SRsZn0w%3d%3d) | Microsoft Software Download (via Fido) |
 | [**Ubuntu**](https://ubuntu.com/download) | `26.10` | — | [desktop-amd64](https://releases.ubuntu.com/26.10/ubuntu-26.10-desktop-amd64.iso) · [server-amd64](https://releases.ubuntu.com/26.10/ubuntu-26.10-live-server-amd64.iso) · [wsl-amd64](https://ubuntu.com/download) | Ubuntu official releases index |
 | [**Fedora Workstation**](https://fedoraproject.org/workstation/download/) | `45` | — | [workstation-live-x86_64](https://fedoraproject.org/workstation/download/) | Fedora official release directory |
 
@@ -315,7 +315,7 @@
 | [**Arq**](https://www.arqbackup.com/) | `7.51` | — | [mac](https://www.arqbackup.com/download/arqbackup/Arq7.51.pkg) | brew manifest: arq |
 | [**Backblaze**](https://backblaze.com/) | `10.0.4.1082` | — | [mac](https://secure.backblaze.com/api/install_backblaze?file=bzinstall-mac-10.0.4.1082.dmg) | brew manifest: backblaze |
 | [**Bartender**](https://www.macbartender.com/) | `7.1.0` | — | [mac](https://downloads.macbartender.com/Bartender7/updates/7-1-0/Bartender%207.zip) | brew manifest: bartender |
-| [**BetterTouchTool**](https://folivora.ai/) | `6.1110,2026110705` | — | [mac](https://folivora.ai/releases/btt6.1110-2026110705.zip) | brew manifest: bettertouchtool |
+| [**BetterTouchTool**](https://folivora.ai/) | `6.1112,2026110708` | — | [mac](https://folivora.ai/releases/btt6.1112-2026110708.zip) | brew manifest: bettertouchtool |
 | [**BlockBlock**](https://objective-see.org/products/blockblock.html) | `2.5.2` | — | [mac](https://github.com/objective-see/BlockBlock/releases/download/v2.5.2/BlockBlock_2.5.2.zip) | brew manifest: blockblock |
 | [**Carbon Copy Cloner**](https://bombich.com/) | `7.2.2,8450` | — | [mac](https://files.bombich.com/ccc-7.2.2.8450.zip) | brew manifest: carbon-copy-cloner |
 | [**ChronoSync**](https://www.econtechnologies.com/) | `12.0.3` | — | [mac](https://downloads.econtechnologies.com/CS4_Download.dmg) | brew manifest: chronosync |
@@ -353,7 +353,7 @@
 | [**Rufus**](https://github.com/pbatard/rufus) | `4.15` | 2026-06-30 | [win-x64](https://github.com/pbatard/rufus/releases/download/v4.15/rufus-4.15.exe) | GitHub Release: pbatard/rufus |
 | [**Ventoy**](https://github.com/ventoy/Ventoy) | `1.1.18` | 2026-10-09 | [win-x64](https://github.com/ventoy/Ventoy/releases/download/v1.1.18/ventoy-1.1.18-windows.zip) | GitHub Release: ventoy/Ventoy |
 | [**PowerToys**](https://github.com/microsoft/PowerToys) | `0.102.3101` | 2026-11-06 | [win-x64](https://github.com/microsoft/PowerToys/releases/download/v0.102.3101/PowerToysUserSetup-0.102.3101.0-x64.exe) | GitHub Release: microsoft/PowerToys |
-| [**ShareX**](https://github.com/ShareX/ShareX) | `22.3.0` | 2026-11-07 | [win-x64](https://github.com/ShareX/ShareX/releases/download/v22.3.0/ShareX-22.3.0-setup-x64.exe) | GitHub Release: ShareX/ShareX |
+| [**ShareX**](https://github.com/ShareX/ShareX) | `22.4.0` | 2026-11-08 | [win-x64](https://github.com/ShareX/ShareX/releases/download/v22.4.0/ShareX-22.4.0-setup-x64.exe) | GitHub Release: ShareX/ShareX |
 | [**Lively Wallpaper**](https://github.com/rocksdanister/lively) | `2.2.1.0` | 2025-09-18 | [win-x64](https://github.com/rocksdanister/lively) | GitHub Release: rocksdanister/lively |
 | [**ExplorerPatcher**](https://github.com/valinet/ExplorerPatcher) | `26100.9711.71.1` | 2026-10-29 | [win-x64](https://github.com/valinet/ExplorerPatcher/releases/download/26100.9711.71.1/ep_setup.exe) | GitHub Release: valinet/ExplorerPatcher |
 | [**Rufus Portable**](https://github.com/pbatard/rufus) | `4.15` | 2026-06-30 | [win-x64](https://github.com/pbatard/rufus/releases/download/v4.15/rufus-4.15p.exe) | GitHub Release: pbatard/rufus |
@@ -526,7 +526,7 @@
 | [**JabRef**](https://www.jabref.org) | `5.15` | — | [win-x64](https://github.com/JabRef/jabref/releases/download/v5.15/JabRef-5.15-portable_windows.zip) | scoop manifest: extras/jabref |
 | [**jamovi**](https://www.jamovi.org) | `2.7.41.0` | — | [win-x64](https://www.jamovi.org) | scoop manifest: extras/jamovi |
 | [**JASP**](https://jasp-stats.org/) | `0.99.0.0` | — | [mac-arm64](https://github.com/jasp-stats/jasp-desktop/releases/download/v0.99.0/JASP-0.99.0.0-macOS-arm64.dmg) | brew manifest: jasp |
-| [**MeetingBar**](https://github.com/leits/MeetingBar) | `4.11.6` | — | [mac](https://github.com/leits/MeetingBar/releases/download/v4.11.6/MeetingBar.dmg) | brew manifest: meetingbar |
+| [**MeetingBar**](https://github.com/leits/MeetingBar) | `5.0.0` | — | [mac](https://github.com/leits/MeetingBar/releases/download/v5.0.0/MeetingBar.dmg) | brew manifest: meetingbar |
 | [**MEGAsync**](https://mega.nz) | `6.7.0.3` | — | [win-x64](https://mega.nz/MEGAsyncSetup64.exe#/dl.7z) | scoop manifest: extras/megasync |
 | [**Mendeley**](https://www.elsevier.support/mendeley/answer/how-do-i-install-mendeley-reference-manager) | `2.151.0` | — | [win-x64](https://static.mendeley.com/bin/desktop/mendeley-reference-manager-2.151.0.exe#/dl.7z) | scoop manifest: extras/mendeley |
 | [**Nextcloud**](https://nextcloud.com/) | `35.0.3` | — | [win-x64](https://github.com/nextcloud-releases/desktop/releases/download/v35.0.3/Nextcloud-35.0.3-x64.msi) | scoop manifest: extras/nextcloud |
@@ -640,14 +640,14 @@
 | [**Skype**](https://www.skype.com/get-skype/) | `2026-11-07` | — | [win-x64](https://teams.live.com/free?source=skype) · [mac-universal](https://teams.live.com/free?source=skype) · [linux-x64](https://teams.live.com/free?source=skype) | Microsoft retired Skype downloads; official entry redirects to Teams Free |
 | [**Telegram Desktop**](https://github.com/telegramdesktop/tdesktop) | `7.4.1` | 2026-11-06 | [win-x64](https://github.com/telegramdesktop/tdesktop/releases/download/v7.4.1/td-setup-win-x64-7.4.1.exe) | GitHub Release: telegramdesktop/tdesktop |
 | [**WeChat**](https://weixin.qq.com) | `4.2.0.17` | — | [mac-universal](https://dldir1v6.qq.com/weixin/Universal/Mac/xWeChatMac_universal_4.2.0.17_270353.dmg) | 微信官网 |
-| [**QQ**](https://im.qq.com) | `2026-11-07` | — | [mac-universal](https://im.qq.com/macqq/index.shtml) | Official download page; no public version API |
+| [**QQ**](https://im.qq.com) | `2026-11-08` | — | [mac-universal](https://im.qq.com/macqq/index.shtml) | Official download page; no public version API |
 
 
 ### Gaming
 
 | 软件 | 最新版本 | 发布日期 | 下载链接 | 来源 |
 |------|---------|---------|---------|------|
-| [**WeGame**](https://www.wegame.com.cn/) | `2026-11-07` | — | [win-x64](https://www.wegame.com.cn/client/) | Official download page; no public version API |
+| [**WeGame**](https://www.wegame.com.cn/) | `2026-11-08` | — | [win-x64](https://www.wegame.com.cn/client/) | Official download page; no public version API |
 | [**网易 UU 加速器**](https://uu.163.com/) | `2026-11-05` | — | [win-x64](https://uu.163.com/download/) | Official download page; no public version API |
 | [**英雄联盟**](https://lol.qq.com/) | `2026-11-05` | — | [win-x64](https://lol.qq.com/download.shtml) | Official download page; no public version API |
 | [**地下城与勇士**](https://dnf.qq.com/) | `2026-11-05` | — | [win-x64](https://dnf.qq.com/web2015/down.shtml) | Official download page; no public version API |
@@ -703,7 +703,7 @@
 | [**喜马拉雅**](https://www.ximalaya.com/) | `2026-11-05` | — | [win-x64](https://www.ximalaya.com/download/) · [mac-x64](https://www.ximalaya.com/download/) | Official download page; no public version API |
 | [**PotPlayer**](https://potplayer.daum.net/) | `2026-11-07` | — | [win-x64](https://t1.kakaocdn.net/potplayer/PotPlayer/Version/Latest/PotPlayerSetup64.exe) | Official Kakao CDN installer (latest build) |
 | [**剪映专业版**](https://www.capcut.cn/) | `2026-11-05` | — | [win-x64](https://www.capcut.cn/) · [mac-universal](https://www.capcut.cn/) | Official download page; no public version API |
-| [**优酷**](https://www.youku.com/) | `2026-11-05` | — | [win-x64](https://www.youku.com/) · [mac-universal](https://www.youku.com/) | Official download page; no public version API |
+| [**优酷**](https://www.youku.com/) | `2026-11-05` | — | [win-x64](https://www.youku.com/) · mac-universal（暂不可用，待核验） | Official download page; no public version API |
 | [**芒果TV**](https://www.mgtv.com/) | `2026-11-05` | — | [win-x64](https://www.mgtv.com/) · [mac-universal](https://www.mgtv.com/) | Official download page; no public version API |
 | [**QQ影音**](https://player.qq.com/) | `2026-11-05` | — | win-x64（暂不可用，待核验） | Official download page; no public version API |
 | [**洛雪音乐助手**](https://github.com/lyswhut/lx-music-desktop) | `2.12.6` | 2026-09-19 | [win-x64](https://github.com/lyswhut/lx-music-desktop/releases/download/v2.12.6/lx-music-desktop-v2.12.6-x64-Setup.exe) · [mac-arm64](https://github.com/lyswhut/lx-music-desktop/releases/download/v2.12.6/lx-music-desktop-2.12.6-arm64.dmg) · [mac-x64](https://github.com/lyswhut/lx-music-desktop/releases/download/v2.12.6/lx-music-desktop-2.12.6-x64.dmg) | GitHub Release: lyswhut/lx-music-desktop |
@@ -765,7 +765,7 @@
 | [**foobar2000**](https://www.foobar2000.org/download) | `2026-11-05` | — | [win-x64](https://www.foobar2000.org/download) · [mac-universal](https://www.foobar2000.org/download) | Official foobar2000 download page; no public version API |
 | [**Audacity**](https://github.com/audacity/audacity) | `4.0.2` | 2026-11-02 | [win-x64](https://github.com/audacity/audacity/releases/download/Audacity-4.0.2/audacity-win-4.0.2-x86_64.msi) | GitHub Release: audacity/audacity |
 | [**OBS Studio**](https://obsproject.com/) ⚠️ | `33.0.1` | 2026-10-29 | [win-x64](https://github.com/obsproject/obs-studio/releases/download/33.0.1/OBS-Studio-33.0.1-Windows-x64-Installer.exe) · [mac-arm64](https://github.com/obsproject/obs-studio/releases/download/33.0.1/OBS-Studio-33.0.1-macOS-Apple.dmg) · [mac-x64](https://github.com/obsproject/obs-studio/releases/download/33.0.1/OBS-Studio-33.0.1-macOS-Intel.dmg) · [linux-x64](https://obsproject.com/) | GitHub Release: obsproject/obs-studio<br>⚠ linux-x64: 没有匹配 asset pattern 'OBS-Studio-*-Ubuntu-24.04-x86_64.deb' |
-| [**mpv**](https://mpv.io/) | `20261107` | 2026-11-07 | [win-x64](https://github.com/shinchiro/mpv-winbuild-cmake/releases/download/20261107/mpv-x86_64-20261107-git-9028187538.7z) | GitHub Release: shinchiro/mpv-winbuild-cmake |
+| [**mpv**](https://mpv.io/) | `20261108` | 2026-11-08 | [win-x64](https://github.com/shinchiro/mpv-winbuild-cmake/releases/download/20261108/mpv-x86_64-20261108-git-55d3feb45c.7z) | GitHub Release: shinchiro/mpv-winbuild-cmake |
 | [**OpenSCAD**](https://github.com/openscad/openscad) | `2021.01` | 2021-02-07 | [win-x64](https://github.com/openscad/openscad) | GitHub Release: openscad/openscad |
 | [**LMMS**](https://github.com/LMMS/lmms) | `1.2.2` | 2020-07-04 | [win-x64](https://github.com/LMMS/lmms/releases/download/v1.2.2/lmms-1.2.2-win64.exe) · [mac-x64](https://github.com/LMMS/lmms/releases/download/v1.2.2/lmms-1.2.2-mac10.14.dmg) | GitHub Release: LMMS/lmms |
 | [**MuseScore**](https://github.com/musescore/MuseScore) | `4.7.6` | 2026-10-26 | [win-x64](https://github.com/musescore/MuseScore/releases/download/v4.7.6/MuseScore-Studio-4.7.6.261022093-x86_64.msi) | GitHub Release: musescore/MuseScore |
