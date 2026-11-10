@@ -5,7 +5,7 @@
 > 由 GitHub Actions 每日自动同步上游官方源的**最新版本元数据**。
 > 仓库**不托管二进制安装包**，下载按钮直接跳到上游官方下载链接。
 >
-> 📅 **最后更新**：`2026-11-09 22:52:32` (UTC)　· 共 699 项软件（其中 2 项使用上次数据，标 ⚠️）
+> 📅 **最后更新**：`2026-11-10 07:59:36` (UTC)　· 共 699 项软件（其中 2 项使用上次数据，标 ⚠️）
 
 ---
 
@@ -25,7 +25,7 @@
 
 | 软件 | 最新版本 | 发布日期 | 下载链接 | 来源 |
 |------|---------|---------|---------|------|
-| [**Windows 11**](https://www.microsoft.com/software-download/windows11) | `25H2` | — | [win-x64](https://software.download.prss.microsoft.com/dbazure/Win11_25H2_Chinese_Simplified_x64_v2.iso?t=dcc0dade-1f83-48e6-aa23-3ee564cf613b&P1=1794351133&P2=602&P3=2&P4=PkC%2ff4iT7RuGtwFbn2jUa4lDRZbGAXSVH04GaXV6peHJstleilVPdt6Z3h0%2bl764IAnrVJ42EUyhyPJ7KjAqDDjOrlbCmxvn3JvvqT6ZXiB6rXX9%2bob%2bjWEKh97M1Nk8YG9h6p%2bTWwWQ74zmuHhNbAmS8%2bo6i9Z3URTHHe%2fj40kpeRegMukWI9%2fCSPe6jYcN6AZCcJsgjn2Ic48DlgajcYhrkrC0fB%2f4tvG%2f5WDACOXnEcZmK9KvXmSatgY3q6IpDjYHbQpeBCmQmCiHYEIMqs6pkTafYtb6YfI0%2fG4rT45h2wqJe3iq8g01lPLvyXhndbSiv4Z3%2frX4Dqq%2bE57fIQ%3d%3d) | Microsoft Software Download (via Fido) |
+| [**Windows 11**](https://www.microsoft.com/software-download/windows11) | `25H2` | — | [win-x64](https://software.download.prss.microsoft.com/dbazure/Win11_25H2_Chinese_Simplified_x64_v2.iso?t=2c3b64dc-240d-4a2e-877b-60053cc14166&P1=1794383955&P2=602&P3=2&P4=YUVGVfaNIKP80nPmD2uUgMatGQ5ZpkXcjiYKefIEV%2bUgrSpi3dLB3ap%2b0VS%2fEXvkxUdXCL1UzMrT3t2hFL4rualkz1Sg1fAhnVnLYtA7XVGlixO9q0cdmG4xYZNViBooj%2fRByqxNJ9%2fXzC13tEQj10o8vP%2fBiMYwp0mIDXAl3dF1bTBnbovJfbEV%2fY137x8JNUzFGYJKLn3gqIJd7uXGgj9GZOG5hS7RXjC6fAdRKJYjOvKIxizzt8Qpx1iecAKojmQROWa5VBqlGGy%2fuc9ZiqDqvsnNga7exTifTTnlTewqoFEQkcAjqWKTUgFXenHjHgjiZqlHkWOqd3w5NOPsSQ%3d%3d) | Microsoft Software Download (via Fido) |
 | [**Ubuntu**](https://ubuntu.com/download) | `26.10` | — | [desktop-amd64](https://releases.ubuntu.com/26.10/ubuntu-26.10-desktop-amd64.iso) · [server-amd64](https://releases.ubuntu.com/26.10/ubuntu-26.10-live-server-amd64.iso) · [wsl-amd64](https://ubuntu.com/download) | Ubuntu official releases index |
 | [**Fedora Workstation**](https://fedoraproject.org/workstation/download/) | `45` | — | [workstation-live-x86_64](https://fedoraproject.org/workstation/download/) | Fedora official release directory |
 
@@ -460,7 +460,7 @@
 | [**Everything**](https://www.voidtools.com/) | `1.4.1.1032` | — | [win-x64](https://www.voidtools.com/Everything-1.4.1.1032.x64-Setup.exe) · [win-x86](https://www.voidtools.com/Everything-1.4.1.1032.x86-Setup.exe) · [win-x64-portable](https://www.voidtools.com/Everything-1.4.1.1032.x64.zip) · [win-x86-portable](https://www.voidtools.com/Everything-1.4.1.1032.x86.zip) | voidtools official download page |
 | [**KeePassXC**](https://github.com/keepassxreboot/keepassxc) | `2.8.0` | 2026-10-21 | [win-x64](https://github.com/keepassxreboot/keepassxc/releases/download/2.8.0/KeePassXC-2.8.0-x64.msi) | GitHub Release: keepassxreboot/keepassxc |
 | [**RustDesk**](https://github.com/rustdesk/rustdesk) | `1.5.1` | 2026-11-01 | [win-x64](https://github.com/rustdesk/rustdesk/releases/download/1.5.1/rustdesk-1.5.1-x86_64.exe) | GitHub Release: rustdesk/rustdesk |
-| [**Motrix**](https://github.com/agalwood/Motrix) ⚠️ | `1.8.19` | 2023-05-03 | [win-x64](https://github.com/agalwood/Motrix/releases/download/v1.8.19/Motrix-1.8.19-x64.exe) | GitHub Release: agalwood/Motrix<br>⚠ agalwood/Motrix@v2.4.0: 没有任何 asset 匹配配置的 pattern，现有 asset: ['beta-linux-arm64.yml', 'beta-linux.yml', 'beta-mac.yml', 'beta.yml', 'latest-linux-arm64.yml']... |
+| [**Motrix**](https://github.com/agalwood/Motrix) ⚠️ | `1.8.19` | 2023-05-03 | [win-x64](https://github.com/agalwood/Motrix/releases/download/v1.8.19/Motrix-1.8.19-x64.exe) | GitHub Release: agalwood/Motrix<br>⚠ agalwood/Motrix@v2.4.1: 没有任何 asset 匹配配置的 pattern，现有 asset: ['beta-linux-arm64.yml', 'beta-linux.yml', 'beta-mac.yml', 'beta.yml', 'latest-linux-arm64.yml']... |
 | [**Syncthing**](https://github.com/syncthing/syncthing) | `2.1.7` | 2026-10-21 | [win-x64](https://github.com/syncthing/syncthing/releases/download/v2.1.7/syncthing-windows-amd64-v2.1.7.zip) · [mac-arm64](https://github.com/syncthing/syncthing/releases/download/v2.1.7/syncthing-macos-arm64-v2.1.7.zip) · [linux-x64](https://github.com/syncthing/syncthing/releases/download/v2.1.7/syncthing-linux-amd64-v2.1.7.tar.gz) | GitHub Release: syncthing/syncthing |
 | [**Easydict**](https://github.com/tisfeng/Easydict) | `2.26.0` | 2026-10-27 | [mac-universal](https://github.com/tisfeng/Easydict/releases/download/2.26.0/Easydict.dmg) | GitHub Release: tisfeng/Easydict |
 | [**DeepL**](https://www.deepl.com) | `2026-11-08` | — | [mac-universal](https://www.deepl.com) | Official download page; no public version API |
@@ -613,7 +613,7 @@
 | [**Open WebUI**](https://docs.openwebui.com/getting-started/) | `2026-11-08` | — | [win-x64](https://docs.openwebui.com/getting-started/) · [mac-arm64](https://docs.openwebui.com/getting-started/) · [linux-x64](https://docs.openwebui.com/getting-started/) | Official project download page; no stable public release asset API |
 | [**KoboldCpp**](https://github.com/LostRuins/koboldcpp) | `2026-11-08` | — | [win-x64](https://github.com/LostRuins/koboldcpp/releases) · [mac-arm64](https://github.com/LostRuins/koboldcpp/releases) · [linux-x64](https://github.com/LostRuins/koboldcpp/releases) | Official project download page; no stable public release asset API |
 | [**Claude Code**](https://github.com/anthropics/claude-code) | `2.1.321` | 2026-11-09 | [win-x64](https://github.com/anthropics/claude-code/releases/download/v2.1.321/claude-win32-x64.zip) · [mac-universal](https://github.com/anthropics/claude-code/releases/download/v2.1.321/claude-darwin-arm64.tar.gz) · [linux-x64](https://github.com/anthropics/claude-code/releases/download/v2.1.321/claude-linux-x64.tar.gz) | GitHub Release: anthropics/claude-code |
-| [**Ollama**](https://github.com/ollama/ollama) | `0.40.15` | 2026-11-03 | [win-x64](https://github.com/ollama/ollama/releases/download/v0.40.15/OllamaSetup.exe) | GitHub Release: ollama/ollama |
+| [**Ollama**](https://github.com/ollama/ollama) | `0.40.16` | 2026-11-09 | [win-x64](https://github.com/ollama/ollama/releases/download/v0.40.16/OllamaSetup.exe) | GitHub Release: ollama/ollama |
 | [**Doubao**](https://www.doubao.com) | `2026-11-08` | — | [mac-universal](https://www.doubao.com/download) | Official download page; no public version API |
 
 
@@ -640,14 +640,14 @@
 | [**Skype**](https://www.skype.com/get-skype/) | `2026-11-07` | — | [win-x64](https://teams.live.com/free?source=skype) · [mac-universal](https://teams.live.com/free?source=skype) · [linux-x64](https://teams.live.com/free?source=skype) | Microsoft retired Skype downloads; official entry redirects to Teams Free |
 | [**Telegram Desktop**](https://github.com/telegramdesktop/tdesktop) | `7.4.1` | 2026-11-06 | [win-x64](https://github.com/telegramdesktop/tdesktop/releases/download/v7.4.1/td-setup-win-x64-7.4.1.exe) | GitHub Release: telegramdesktop/tdesktop |
 | [**WeChat**](https://weixin.qq.com) | `4.2.0.17` | — | [mac-universal](https://dldir1v6.qq.com/weixin/Universal/Mac/xWeChatMac_universal_4.2.0.17_270353.dmg) | 微信官网 |
-| [**QQ**](https://im.qq.com) | `2026-11-09` | — | [mac-universal](https://im.qq.com/macqq/index.shtml) | Official download page; no public version API |
+| [**QQ**](https://im.qq.com) | `2026-11-10` | — | [mac-universal](https://im.qq.com/macqq/index.shtml) | Official download page; no public version API |
 
 
 ### Gaming
 
 | 软件 | 最新版本 | 发布日期 | 下载链接 | 来源 |
 |------|---------|---------|---------|------|
-| [**WeGame**](https://www.wegame.com.cn/) | `2026-11-09` | — | [win-x64](https://www.wegame.com.cn/client/) | Official download page; no public version API |
+| [**WeGame**](https://www.wegame.com.cn/) | `2026-11-10` | — | [win-x64](https://www.wegame.com.cn/client/) | Official download page; no public version API |
 | [**网易 UU 加速器**](https://uu.163.com/) | `2026-11-08` | — | [win-x64](https://uu.163.com/download/) | Official download page; no public version API |
 | [**英雄联盟**](https://lol.qq.com/) | `2026-11-08` | — | [win-x64](https://lol.qq.com/download.shtml) | Official download page; no public version API |
 | [**地下城与勇士**](https://dnf.qq.com/) | `2026-11-08` | — | [win-x64](https://dnf.qq.com/web2015/down.shtml) | Official download page; no public version API |
@@ -765,7 +765,7 @@
 | [**foobar2000**](https://www.foobar2000.org/download) | `2026-11-08` | — | [win-x64](https://www.foobar2000.org/download) · [mac-universal](https://www.foobar2000.org/download) | Official foobar2000 download page; no public version API |
 | [**Audacity**](https://github.com/audacity/audacity) | `4.0.2` | 2026-11-02 | [win-x64](https://github.com/audacity/audacity/releases/download/Audacity-4.0.2/audacity-win-4.0.2-x86_64.msi) | GitHub Release: audacity/audacity |
 | [**OBS Studio**](https://obsproject.com/) ⚠️ | `33.0.1` | 2026-10-29 | [win-x64](https://github.com/obsproject/obs-studio/releases/download/33.0.1/OBS-Studio-33.0.1-Windows-x64-Installer.exe) · [mac-arm64](https://github.com/obsproject/obs-studio/releases/download/33.0.1/OBS-Studio-33.0.1-macOS-Apple.dmg) · [mac-x64](https://github.com/obsproject/obs-studio/releases/download/33.0.1/OBS-Studio-33.0.1-macOS-Intel.dmg) · [linux-x64](https://obsproject.com/) | GitHub Release: obsproject/obs-studio<br>⚠ linux-x64: 没有匹配 asset pattern 'OBS-Studio-*-Ubuntu-24.04-x86_64.deb' |
-| [**mpv**](https://mpv.io/) | `20261109` | 2026-11-09 | [win-x64](https://github.com/shinchiro/mpv-winbuild-cmake/releases/download/20261109/mpv-x86_64-20261109-git-8bc468896e.7z) | GitHub Release: shinchiro/mpv-winbuild-cmake |
+| [**mpv**](https://mpv.io/) | `20261110` | 2026-11-10 | [win-x64](https://github.com/shinchiro/mpv-winbuild-cmake/releases/download/20261110/mpv-x86_64-20261110-git-a61f6c3abd.7z) | GitHub Release: shinchiro/mpv-winbuild-cmake |
 | [**OpenSCAD**](https://github.com/openscad/openscad) | `2021.01` | 2021-02-07 | [win-x64](https://github.com/openscad/openscad) | GitHub Release: openscad/openscad |
 | [**LMMS**](https://github.com/LMMS/lmms) | `1.2.2` | 2020-07-04 | [win-x64](https://github.com/LMMS/lmms/releases/download/v1.2.2/lmms-1.2.2-win64.exe) · [mac-x64](https://github.com/LMMS/lmms/releases/download/v1.2.2/lmms-1.2.2-mac10.14.dmg) | GitHub Release: LMMS/lmms |
 | [**MuseScore**](https://github.com/musescore/MuseScore) | `4.7.6` | 2026-10-26 | [win-x64](https://github.com/musescore/MuseScore/releases/download/v4.7.6/MuseScore-Studio-4.7.6.261022093-x86_64.msi) | GitHub Release: musescore/MuseScore |
