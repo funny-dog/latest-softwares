@@ -5,7 +5,7 @@
 > 由 GitHub Actions 每日自动同步上游官方源的**最新版本元数据**。
 > 仓库**不托管二进制安装包**，下载按钮直接跳到上游官方下载链接。
 >
-> 📅 **最后更新**：`2026-11-15 07:31:30` (UTC)　· 共 699 项软件（其中 2 项使用上次数据，标 ⚠️）
+> 📅 **最后更新**：`2026-11-15 19:15:07` (UTC)　· 共 699 项软件（其中 2 项使用上次数据，标 ⚠️）
 
 ---
 
@@ -25,7 +25,7 @@
 
 | 软件 | 最新版本 | 发布日期 | 下载链接 | 来源 |
 |------|---------|---------|---------|------|
-| [**Windows 11**](https://www.microsoft.com/software-download/windows11) | `25H2` | — | [win-x64](https://software.download.prss.microsoft.com/dbazure/Win11_25H2_Chinese_Simplified_x64_v2.iso?t=4351fd0a-ba09-4d41-9ca7-e02268cfceb9&P1=1794814272&P2=602&P3=2&P4=RemJ4zg9KaJ7r5anhLUHcul3LYsRb98JR3CYx7dDybIQ2cYTknOehAX1bP7ml7HwuP4hDvWvQGR5%2bed4AlfY5pAnO5Yk6UY3JAPdOy%2fXThgB00UcxkePRPJRbR1pm8CMUDrI3QKt7mlwR4IbZsZlG2meWaA%2bAKAx0s8SQDRnwcV0PoIH5dwN1qJqsYysnLDQBeRBRRiR%2bTEKNUkArFz2CY%2fZikMBLzE17JH6ZW6oP7wayNPHgxhqsrxuG0V4l%2bwv49LnQugLgbxcFdizhY19lZs5ErFOArXEo0xhcI1RVliz%2bSlj8ezZNzaaD8sBpzxE2aO%2bddc4o8em27Hc0bRK4Q%3d%3d) | Microsoft Software Download (via Fido) |
+| [**Windows 11**](https://www.microsoft.com/software-download/windows11) | `25H2` | — | [win-x64](https://software.download.prss.microsoft.com/dbazure/Win11_25H2_Chinese_Simplified_x64_v2.iso?t=5c4f7b45-bc3e-4d79-93be-c5048548869a&P1=1794856484&P2=602&P3=2&P4=XQkgPvEiST4zatBszpFlqHN0ElPOUXKNtt0sctzyx%2bdDiZh4AOIEU5Xc%2foJpICJWFYkIvcktS1P57fAFMGon4ZVrOfiIuUY0O2YHa1fjHe8pXeZiBmOdZSQuTqMJEMpKXYtB17QjXBfXmzr65pcEEsPAuByh0HYCukvpLHpZtG1rerP7z7cMKeQqdv09lfYOr11I5RjvSBHQ2lTgTHGRmawBvRKiQQMunQidmy0WWikmiROeW62obhQHLFLOg5HBbzR8roYVzajTWp8A7fy7CvYrxOTPFnbILxzkXBHpYQkkrhVKM4zr%2b9TqvhnMBHsRDz7SOA%2bkcUImxNFWx%2ftsaw%3d%3d) | Microsoft Software Download (via Fido) |
 | [**Ubuntu**](https://ubuntu.com/download) | `26.10` | — | [desktop-amd64](https://releases.ubuntu.com/26.10/ubuntu-26.10-desktop-amd64.iso) · [server-amd64](https://releases.ubuntu.com/26.10/ubuntu-26.10-live-server-amd64.iso) · [wsl-amd64](https://ubuntu.com/download) | Ubuntu official releases index |
 | [**Fedora Workstation**](https://fedoraproject.org/workstation/download/) | `45` | — | [workstation-live-x86_64](https://fedoraproject.org/workstation/download/) | Fedora official release directory |
 
@@ -130,7 +130,7 @@
 | [**Lens**](https://lenshq.io/) | `2026.11.91422` | — | [mac-arm64](https://api.k8slens.dev/binaries/Lens-2026.11.91422-latest-arm64.dmg) | brew manifest: lens |
 | [**LLVM**](https://www.llvm.org) | `23.1.5` | — | [win-x64](https://github.com/llvm/llvm-project/releases/download/llvmorg-23.1.5/LLVM-23.1.5-win64.msi) | scoop manifest: main/llvm |
 | [**MacTeX**](https://www.tug.org/mactex/) | `2026.0324` | — | [mac](https://www.tug.org/mactex/) | brew manifest: mactex-no-gui |
-| [**Maven**](https://maven.apache.org/) | `3.10.0` | — | [win](https://dlcdn.apache.org/maven/maven-3/3.10.0/binaries/apache-maven-3.10.0-bin.zip) | scoop manifest: main/maven |
+| [**Maven**](https://maven.apache.org/) | `3.10.1` | — | [win](https://dlcdn.apache.org/maven/maven-3/3.10.1/binaries/apache-maven-3.10.1-bin.zip) | scoop manifest: main/maven |
 | [**Meld**](https://meldmerge.org/) | `3.24.1` | — | [win-x64](https://gitlab.gnome.org/api/v4/projects/GNOME%2Fmeld/packages/generic/meld/3.24.1/meld-3.24.1.exe#/dl.7z) | scoop manifest: extras/meld |
 | [**MongoDB Compass**](https://www.mongodb.com/products/compass) | `1.53.2` | — | [win-x64](https://downloads.mongodb.com/compass/mongodb-compass-1.53.2-win32-x64.zip) | scoop manifest: extras/mongodb-compass |
 | [**MySQL Workbench**](https://www.mysql.com/products/workbench/) | `8.0.47` | — | [mac-arm64](https://cdn.mysql.com/Downloads/MySQLGUITools/mysql-workbench-community-8.0.47-macos-arm64.dmg) | brew manifest: mysqlworkbench |
@@ -257,7 +257,7 @@
 | [**Micro**](https://github.com/zyedidia/micro) | `2.0.15` | 2025-12-31 | [win-x64](https://github.com/micro-editor/micro/releases/download/v2.0.15/micro-2.0.15-win64.zip) | GitHub Release: zyedidia/micro |
 | [**Neovim**](https://github.com/neovim/neovim) | `0.12.6` | 2026-10-09 | [win-x64](https://github.com/neovim/neovim/releases/download/v0.12.6/nvim-win64.zip) | GitHub Release: neovim/neovim |
 | [**Windows Terminal**](https://github.com/microsoft/terminal) | `1.25.3131.0` | 2026-11-11 | [win-x64](https://github.com/microsoft/terminal/releases/download/v1.25.3131.0/Microsoft.WindowsTerminal_1.25.3131.0_8wekyb3d8bbwe.msixbundle) | GitHub Release: microsoft/terminal |
-| [**DBeaver Community**](https://dbeaver.io/download/) | `26.2.4` | 2026-11-01 | [win-x64](https://github.com/dbeaver/dbeaver/releases/download/26.2.4/dbeaver-ce-26.2.4-windows-x86_64.exe) · [mac-arm64](https://github.com/dbeaver/dbeaver/releases/download/26.2.4/dbeaver-ce-26.2.4-macos-aarch64.dmg) · [mac-x64](https://github.com/dbeaver/dbeaver/releases/download/26.2.4/dbeaver-ce-26.2.4-macos-x86_64.dmg) · [linux-x64](https://github.com/dbeaver/dbeaver/releases/download/26.2.4/dbeaver-ce-26.2.4-linux-x86_64.deb) | GitHub Release: dbeaver/dbeaver |
+| [**DBeaver Community**](https://dbeaver.io/download/) | `26.2.5` | 2026-11-15 | [win-x64](https://github.com/dbeaver/dbeaver/releases/download/26.2.5/dbeaver-ce-26.2.5-windows-x86_64.exe) · [mac-arm64](https://github.com/dbeaver/dbeaver/releases/download/26.2.5/dbeaver-ce-26.2.5-macos-aarch64.dmg) · [mac-x64](https://github.com/dbeaver/dbeaver/releases/download/26.2.5/dbeaver-ce-26.2.5-macos-x86_64.dmg) · [linux-x64](https://github.com/dbeaver/dbeaver/releases/download/26.2.5/dbeaver-ce-26.2.5-linux-x86_64.deb) | GitHub Release: dbeaver/dbeaver |
 | [**Zed**](https://github.com/zed-industries/zed) ⚠️ | `1.28.1` | 2026-11-11 | [linux-x64](https://github.com/zed-industries/zed/releases/download/v1.28.1/zed-linux-x86_64.tar.gz) · [mac-arm64](https://github.com/zed-industries/zed) | GitHub Release: zed-industries/zed<br>⚠ mac-arm64: 没有匹配 asset pattern 'Zed-*-aarch64.dmg' |
 | [**Lapce**](https://github.com/lapce/lapce) | `2026-11-15` | — | [win-x64](https://github.com/lapce/lapce/releases) · [mac-arm64](https://github.com/lapce/lapce/releases) · [linux-x64](https://github.com/lapce/lapce/releases) | Official project download page; no stable public release asset API |
 | [**Helix**](https://github.com/helix-editor/helix) | `25.07.1` | 2025-07-18 | [win-x64](https://github.com/helix-editor/helix/releases/download/25.07.1/helix-25.07.1-x86_64-windows.zip) · [mac-arm64](https://github.com/helix-editor/helix/releases/download/25.07.1/helix-25.07.1-aarch64-macos.tar.xz) · [linux-x64](https://github.com/helix-editor/helix/releases/download/25.07.1/helix-25.07.1-x86_64-linux.tar.xz) | GitHub Release: helix-editor/helix |
@@ -326,13 +326,13 @@
 | [**ForkLift**](https://binarynights.com/) | `4.7.7` | — | [mac](https://download.binarynights.com/ForkLift/ForkLift4.7.7.zip) | brew manifest: forklift |
 | [**FreeFileSync**](https://freefilesync.org/) | `14.13` | — | [mac](https://freefilesync.org/download/FreeFileSync_14.13_macOS.zip) | brew manifest: freefilesync |
 | [**Hammerspoon**](https://www.hammerspoon.org/) | `1.1.1` | — | [mac](https://github.com/Hammerspoon/hammerspoon/releases/download/1.1.1/Hammerspoon-1.1.1.zip) | brew manifest: hammerspoon |
-| [**Hidden Bar**](https://github.com/dwarvesf/hidden/) | `1.11.1` | — | [mac](https://github.com/dwarvesf/hidden/releases/download/v1.11.1/Hidden-Bar-v1.11.1-macos.zip) | brew manifest: hiddenbar |
+| [**Hidden Bar**](https://github.com/dwarvesf/hidden/) | `1.11.2` | — | [mac](https://github.com/dwarvesf/hidden/releases/download/v1.11.2/Hidden-Bar-v1.11.2-macos.zip) | brew manifest: hiddenbar |
 | [**HWiNFO**](https://www.hwinfo.com/) | `8.54` | — | [win-x64](https://www.hwinfo.com/) | winget manifest: REALiX.HWiNFO |
 | [**HWMonitor**](https://www.cpuid.com/softwares/hwmonitor.html) | `1.68` | — | [win-x64](https://download.cpuid.com/hwmonitor/hwmonitor_1.68.zip) | scoop manifest: extras/hwmonitor |
 | [**Karabiner Elements**](https://karabiner-elements.pqrs.org/) | `16.3.0` | — | [mac](https://github.com/pqrs-org/Karabiner-Elements/releases/download/v16.3.0/Karabiner-Elements-16.3.0.dmg) | brew manifest: karabiner-elements |
 | [**Keyboard Maestro**](https://www.keyboardmaestro.com/main/) | `11.1.1,1111` | — | [mac](https://files.stairways.com/keyboardmaestro-1111.zip) | brew manifest: keyboard-maestro |
 | [**KnockKnock**](https://objective-see.org/products/knockknock.html) | `4.1.0` | — | [mac](https://github.com/objective-see/KnockKnock/releases/download/v4.1.0/KnockKnock_4.1.0.zip) | brew manifest: knockknock |
-| [**LinearMouse**](https://linearmouse.org/) | `0.12.0` | — | [mac](https://dl.linearmouse.org/v0.12.0/LinearMouse.dmg) | brew manifest: linearmouse |
+| [**LinearMouse**](https://linearmouse.org/) | `0.13.0` | — | [mac](https://dl.linearmouse.org/v0.13.0/LinearMouse.dmg) | brew manifest: linearmouse |
 | [**Mos**](https://mos.caldis.me/) | `4.2.1,20260531.1` | — | [mac](https://github.com/Caldis/Mos/releases/download/4.2.1/Mos.Versions.4.2.1-20260531.1.zip) | brew manifest: mos |
 | [**Multi Commander**](https://multicommander.com/) | `16.6.0.3238` | — | [win-x64](https://multicommander.com/files/updates/MultiCommander_x64_Portable_(16.6.0.3238).zip) | scoop manifest: extras/multicommander |
 | [**Multipass**](https://github.com/canonical/multipass/) | `1.17.1` | — | [mac](https://github.com/canonical/multipass/releases/download/v1.17.1/multipass-1.17.1+mac-Darwin.pkg) | brew manifest: multipass |
@@ -460,7 +460,7 @@
 | [**Everything**](https://www.voidtools.com/) | `1.4.1.1032` | — | [win-x64](https://www.voidtools.com/Everything-1.4.1.1032.x64-Setup.exe) · [win-x86](https://www.voidtools.com/Everything-1.4.1.1032.x86-Setup.exe) · [win-x64-portable](https://www.voidtools.com/Everything-1.4.1.1032.x64.zip) · [win-x86-portable](https://www.voidtools.com/Everything-1.4.1.1032.x86.zip) | voidtools official download page |
 | [**KeePassXC**](https://github.com/keepassxreboot/keepassxc) | `2.8.0` | 2026-10-21 | [win-x64](https://github.com/keepassxreboot/keepassxc/releases/download/2.8.0/KeePassXC-2.8.0-x64.msi) | GitHub Release: keepassxreboot/keepassxc |
 | [**RustDesk**](https://github.com/rustdesk/rustdesk) | `1.5.3` | 2026-11-09 | [win-x64](https://github.com/rustdesk/rustdesk/releases/download/1.5.3/rustdesk-1.5.3-x86_64.exe) | GitHub Release: rustdesk/rustdesk |
-| [**Motrix**](https://github.com/agalwood/Motrix) ⚠️ | `1.8.19` | 2023-05-03 | [win-x64](https://github.com/agalwood/Motrix/releases/download/v1.8.19/Motrix-1.8.19-x64.exe) | GitHub Release: agalwood/Motrix<br>⚠ agalwood/Motrix@v2.4.1: 没有任何 asset 匹配配置的 pattern，现有 asset: ['beta-linux-arm64.yml', 'beta-linux.yml', 'beta-mac.yml', 'beta.yml', 'latest-linux-arm64.yml']... |
+| [**Motrix**](https://github.com/agalwood/Motrix) ⚠️ | `1.8.19` | 2023-05-03 | [win-x64](https://github.com/agalwood/Motrix/releases/download/v1.8.19/Motrix-1.8.19-x64.exe) | GitHub Release: agalwood/Motrix<br>⚠ agalwood/Motrix@v2.4.2: 没有任何 asset 匹配配置的 pattern，现有 asset: ['beta-linux-arm64.yml', 'beta-linux.yml', 'beta-mac.yml', 'beta.yml', 'latest-linux-arm64.yml']... |
 | [**Syncthing**](https://github.com/syncthing/syncthing) | `2.1.7` | 2026-10-21 | [win-x64](https://github.com/syncthing/syncthing/releases/download/v2.1.7/syncthing-windows-amd64-v2.1.7.zip) · [mac-arm64](https://github.com/syncthing/syncthing/releases/download/v2.1.7/syncthing-macos-arm64-v2.1.7.zip) · [linux-x64](https://github.com/syncthing/syncthing/releases/download/v2.1.7/syncthing-linux-amd64-v2.1.7.tar.gz) | GitHub Release: syncthing/syncthing |
 | [**Easydict**](https://github.com/tisfeng/Easydict) | `2.26.0` | 2026-10-27 | [mac-universal](https://github.com/tisfeng/Easydict/releases/download/2.26.0/Easydict.dmg) | GitHub Release: tisfeng/Easydict |
 | [**DeepL**](https://www.deepl.com) | `2026-11-15` | — | [mac-universal](https://www.deepl.com) | Official download page; no public version API |
@@ -738,7 +738,7 @@
 | [**UltiMaker Cura**](https://ultimaker.com/software/ultimaker-cura) | `5.14.0` | — | [mac-arm64](https://github.com/Ultimaker/Cura/releases/download/5.14.0/UltiMaker-Cura-5.14.0-macos-ARM64.dmg) | brew manifest: ultimaker-cura |
 | [**VirtualDJ**](https://virtualdj.com/) | `2026,9746,C02395E7` | — | [mac](https://download.virtualdj.com/b9746/C02395E7/install_virtualdj_2026_b9746_mac.pkg) | brew manifest: virtualdj |
 | [**HandBrake**](https://github.com/HandBrake/HandBrake) | `1.11.2` | 2026-06-07 | [win-x64](https://github.com/HandBrake/HandBrake/releases/download/1.11.2/HandBrake-1.11.2-x86_64-Win_GUI.exe) | GitHub Release: HandBrake/HandBrake |
-| [**FFmpeg**](https://github.com/BtbN/FFmpeg-Builds) | `latest` | 2026-11-14 | [win-x64](https://github.com/FFmpeg-Builds/FFmpeg-Builds/releases/download/latest/ffmpeg-master-latest-win64-gpl.zip) | GitHub Release: BtbN/FFmpeg-Builds |
+| [**FFmpeg**](https://github.com/BtbN/FFmpeg-Builds) | `latest` | 2026-11-15 | [win-x64](https://github.com/FFmpeg-Builds/FFmpeg-Builds/releases/download/latest/ffmpeg-master-latest-win64-gpl.zip) | GitHub Release: BtbN/FFmpeg-Builds |
 | [**IINA**](https://github.com/iina/iina) | `1.5.1` | 2026-11-06 | [mac-arm64](https://github.com/iina/iina/releases/download/v1.5.1/IINA.v1.5.1.dmg) | GitHub Release: iina/iina |
 | [**LosslessCut**](https://github.com/mifi/lossless-cut) ⚠️ | `3.70.2` | 2026-10-28 | [win-x64](https://github.com/mifi/lossless-cut/releases/download/v3.70.2/LosslessCut-win-x64.7z) · [linux-x64](https://github.com/mifi/lossless-cut/releases/download/v3.70.2/LosslessCut-linux-x86_64.AppImage) · [mac-universal](https://github.com/mifi/lossless-cut) | GitHub Release: mifi/lossless-cut<br>⚠ mac-universal: 没有匹配 asset pattern 'LosslessCut-mac-universal.pkg' |
 | [**Spotify**](https://www.spotify.com/download/) | `2026-11-15` | — | [win-x64](https://www.spotify.com/download/windows/) · [mac-universal](https://www.spotify.com/download/mac/) | Official Spotify download page; no public version API |
