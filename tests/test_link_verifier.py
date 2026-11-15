@@ -345,3 +345,37 @@ def test_http_406_persists_after_retry_is_failed(monkeypatch):
     assert result["status"] == "failed"
     assert result["reason"] == "HTTP 406"
     assert len(calls) == 2
+
+
+def test_direct_link_accepts_binary_octet_stream(monkeypatch):
+    """S3/Cloudflare 等对象存储常将安装包标为 binary/octet-stream，无 sigs 的格式（如 dmg）应能正常核验。"""
+    response = Response(
+        body=b"\x00" * 1024,
+        headers={"Content-Type": "binary/octet-stream"},
+    )
+    result = verify(
+        monkeypatch,
+        response,
+        url="https://example.test/app-universal.dmg",
+        platform="mac-universal",
+    )
+    assert result["status"] == "verified"
+    assert result["content_type"] == "binary/octet-stream"
+
+
+def test_direct_link_rejects_insufficient_evidence_when_unknown_content_type(
+    monkeypatch,
+):
+    """既无 attachment、无有效扩展名签名，又非 application/ 或 binary/ 类型时，判定为证据不足。"""
+    response = Response(
+        body=b"\x00" * 1024,
+        headers={"Content-Type": "unknown/custom-stream"},
+    )
+    result = verify(
+        monkeypatch,
+        response,
+        url="https://example.test/app-universal.dmg",
+        platform="mac-universal",
+    )
+    assert result["status"] == "unverified"
+    assert result["reason"] == "insufficient download response evidence"

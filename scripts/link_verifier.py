@@ -275,7 +275,7 @@ def verify_link(asset: dict, config: dict, *, now: datetime | None = None) -> di
             if not filename or not (
                 "attachment" in disposition.lower()
                 or sigs
-                or content_type.startswith("application/")
+                or content_type.startswith(("application/", "binary/"))
             ):
                 return {
                     **result,
