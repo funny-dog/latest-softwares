@@ -5,7 +5,7 @@
 > 由 GitHub Actions 每日自动同步上游官方源的**最新版本元数据**。
 > 仓库**不托管二进制安装包**，下载按钮直接跳到上游官方下载链接。
 >
-> 📅 **最后更新**：`2026-11-15 01:01:41` (UTC)　· 共 699 项软件（其中 2 项使用上次数据，标 ⚠️）
+> 📅 **最后更新**：`2026-11-15 07:31:30` (UTC)　· 共 699 项软件（其中 2 项使用上次数据，标 ⚠️）
 
 ---
 
@@ -25,7 +25,7 @@
 
 | 软件 | 最新版本 | 发布日期 | 下载链接 | 来源 |
 |------|---------|---------|---------|------|
-| [**Windows 11**](https://www.microsoft.com/software-download/windows11) | `25H2` | — | [win-x64](https://software.download.prss.microsoft.com/dbazure/Win11_25H2_Chinese_Simplified_x64_v2.iso?t=438d645b-2ef8-4d9f-8c2d-a9775cc7dbef&P1=1794790876&P2=602&P3=2&P4=PjNiEoKorPAArdvNe1XdSlAvNcdGRUIF2gkm5aPXQ7mp942nH3ahMwwIqS2A%2bwkh6OMYWrr8LrnPlYY3mP46olIP6RIBMci446CFWPom5IfEVdWbGuRlf7QBdn7E9%2fHSolXxct9Rf3KPr9H9A5d%2bPyJOSEAQrGS4%2bh9RIsuPrGBU725MyX%2fBD9AcLxRnGU09xQqo78N06X0lJvb3Vk93fgJkB1rIF1pvgHloeS1PJVF0gD%2btoBQc3XN0Bu6MIhFHIz6gzS1kaiZjedgiR8F%2bXjJlo2J%2fptIBVvc2R4q1%2f3nTFRswVvF96tepFCiOCi5f2XWuKpuNneVFSAW%2fVpLfNQ%3d%3d) | Microsoft Software Download (via Fido) |
+| [**Windows 11**](https://www.microsoft.com/software-download/windows11) | `25H2` | — | [win-x64](https://software.download.prss.microsoft.com/dbazure/Win11_25H2_Chinese_Simplified_x64_v2.iso?t=4351fd0a-ba09-4d41-9ca7-e02268cfceb9&P1=1794814272&P2=602&P3=2&P4=RemJ4zg9KaJ7r5anhLUHcul3LYsRb98JR3CYx7dDybIQ2cYTknOehAX1bP7ml7HwuP4hDvWvQGR5%2bed4AlfY5pAnO5Yk6UY3JAPdOy%2fXThgB00UcxkePRPJRbR1pm8CMUDrI3QKt7mlwR4IbZsZlG2meWaA%2bAKAx0s8SQDRnwcV0PoIH5dwN1qJqsYysnLDQBeRBRRiR%2bTEKNUkArFz2CY%2fZikMBLzE17JH6ZW6oP7wayNPHgxhqsrxuG0V4l%2bwv49LnQugLgbxcFdizhY19lZs5ErFOArXEo0xhcI1RVliz%2bSlj8ezZNzaaD8sBpzxE2aO%2bddc4o8em27Hc0bRK4Q%3d%3d) | Microsoft Software Download (via Fido) |
 | [**Ubuntu**](https://ubuntu.com/download) | `26.10` | — | [desktop-amd64](https://releases.ubuntu.com/26.10/ubuntu-26.10-desktop-amd64.iso) · [server-amd64](https://releases.ubuntu.com/26.10/ubuntu-26.10-live-server-amd64.iso) · [wsl-amd64](https://ubuntu.com/download) | Ubuntu official releases index |
 | [**Fedora Workstation**](https://fedoraproject.org/workstation/download/) | `45` | — | [workstation-live-x86_64](https://fedoraproject.org/workstation/download/) | Fedora official release directory |
 
@@ -522,7 +522,7 @@
 | [**Google Earth Pro**](https://www.google.com/earth/) | `7.3.7.1327` | — | [mac-x64](https://dl.google.com/dl/earth/client/advanced/current/googleearthpromac-intel-7.3.7.dmg) | brew manifest: google-earth-pro |
 | [**Hepta**](https://heptabase.com/) | `1.117.1` | — | [mac-arm64](https://github.com/heptameta/project-meta/releases/download/v1.117.1/Heptabase-1.117.1-arm64-mac.zip) | brew manifest: heptabase |
 | [**Internxt Drive**](https://internxt.com/drive) | `2.7.0.89` | — | [mac](https://github.com/internxt/drive-desktop-macos/releases/download/v2.7.0.89/Internxt_Drive_2.7.0.89.dmg) | brew manifest: internxt-drive |
-| [**Itsycal**](https://www.mowglii.com/itsycal/) | `0.28.0` | — | [mac](https://itsycal.s3.amazonaws.com/Itsycal-0.28.0.zip) | brew manifest: itsycal |
+| [**Itsycal**](https://www.mowglii.com/itsycal/) | `0.29.0` | — | [mac](https://itsycal.s3.amazonaws.com/Itsycal-0.29.0.zip) | brew manifest: itsycal |
 | [**JabRef**](https://www.jabref.org) | `5.15` | — | [win-x64](https://github.com/JabRef/jabref/releases/download/v5.15/JabRef-5.15-portable_windows.zip) | scoop manifest: extras/jabref |
 | [**jamovi**](https://www.jamovi.org) | `2.7.41.0` | — | [win-x64](https://www.jamovi.org) | scoop manifest: extras/jamovi |
 | [**JASP**](https://jasp-stats.org/) | `0.99.0.0` | — | [mac-arm64](https://github.com/jasp-stats/jasp-desktop/releases/download/v0.99.0/JASP-0.99.0.0-macOS-arm64.dmg) | brew manifest: jasp |
