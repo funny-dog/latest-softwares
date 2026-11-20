@@ -22,6 +22,10 @@ _ARCH = {
     "x64": r"(?:x86_64|amd64|(?<![a-z0-9])x64)",
     "x86": r"(?:i[3-6]86|ia32|win32|(?<![a-z0-9])x86(?!_64))",
 }
+# 明确由"浏览器 UA/bot 防护"造成的拒绝；命中后换同步器 UA 再试一次。
+# 403 也在此列：SourceForge 的 downloads.* 对浏览器 UA 返回 403，对同步器
+# UA 正常 302/206。重试只换 UA，不放宽判定——重试仍失败依旧是 restricted。
+_UA_REJECTED_STATUSES = frozenset({403, 406})
 HTML_SAMPLE_BYTES = 512 * 1024
 
 # 上游整站维护页的措辞。这类页面不属于"死链"，也不是反爬，而是上游
@@ -99,11 +103,14 @@ def _normal(value: str) -> str:
 
 
 def _fetch_check(current: str, asset: dict, url: str):
-    """GET 一个待检 URL（含一次 406 降级重试）。
+    """GET 一个待检 URL（含一次 bot 防护降级重试）。
 
-    gitlab.gnome.org 的 generic package API 等端点对浏览器 UA 返回 406
-    （bot 防护），但接受非浏览器 UA；先用浏览器 UA 请求，406 时换同步器
-    UA 重试一次。重试仍失败则按原逻辑处理。
+    部分上游对浏览器 UA 做 bot 防护，但接受非浏览器 UA：
+      - gitlab.gnome.org 的 generic package API 返回 406；
+      - SourceForge 的 downloads.* 直链返回 403（skim 等源）。
+    先用浏览器 UA 请求（落地页需要它才拿得到正常 HTML），若命中这些
+    "明确因 UA 被拒"的状态码，换同步器 UA 重试一次。仍失败则按原逻辑
+    处理——403 依然会被判为 restricted，不会被当成成功。
     """
     range_headers = (
         {"Range": "bytes=0-65535"}
@@ -118,7 +125,7 @@ def _fetch_check(current: str, asset: dict, url: str):
         retries=1,
         headers=browser_headers(range_headers),
     )
-    if response.status_code == 406:
+    if response.status_code in _UA_REJECTED_STATUSES:
         response.close()
         return get(
             current,

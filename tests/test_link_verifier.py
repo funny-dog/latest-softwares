@@ -399,6 +399,60 @@ def test_http_406_persists_after_retry_is_failed(monkeypatch):
     assert len(calls) == 2
 
 
+def test_http_403_retries_once_with_sync_user_agent(monkeypatch):
+    """SourceForge downloads.* 对浏览器 UA 返回 403，对同步器 UA 正常 302。
+
+    skim 通过 brew cask 指向 SourceForge 直链，长期因浏览器 UA 被判 restricted。
+    403 属于"因 UA 被拒"，应和 406 一样降级重试一次。
+    """
+    from scripts.net import BROWSER_USER_AGENT, USER_AGENT
+
+    calls = []
+    rejected = Response(status=403)
+    ok = Response()
+
+    def get(url, **kwargs):
+        calls.append(kwargs["headers"])
+        return rejected if len(calls) == 1 else ok
+
+    monkeypatch.setattr(link_verifier, "get", get)
+    result = link_verifier.verify_link(
+        {
+            "url": "https://downloads.sourceforge.test/app-x64.exe",
+            "platform": "win-x64",
+        },
+        CONFIG,
+        now=NOW,
+    )
+
+    assert result["status"] == "verified"
+    assert len(calls) == 2
+    assert calls[0]["User-Agent"] == BROWSER_USER_AGENT
+    assert calls[1]["User-Agent"] == USER_AGENT
+    assert rejected.closed
+
+
+def test_http_403_persists_after_retry_is_restricted(monkeypatch):
+    """重试只换 UA，不放宽判定：两次都 403 时依旧是 restricted，不能变成功。"""
+    calls = []
+    response = Response(status=403)
+
+    def get(url, **kwargs):
+        calls.append(kwargs["headers"])
+        return response
+
+    monkeypatch.setattr(link_verifier, "get", get)
+    result = link_verifier.verify_link(
+        {"url": "https://example.test/app-x64.exe", "platform": "win-x64"},
+        CONFIG,
+        now=NOW,
+    )
+
+    assert result["status"] == "restricted"
+    assert result["http_status"] == 403
+    assert len(calls) == 2
+
+
 def test_direct_link_accepts_binary_octet_stream(monkeypatch):
     """S3/Cloudflare 等对象存储常将安装包标为 binary/octet-stream，无 sigs 的格式（如 dmg）应能正常核验。"""
     response = Response(
