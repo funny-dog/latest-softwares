@@ -757,7 +757,11 @@
         "win-x64",
         "mac-arm64",
         "linux-x64"
-      ]
+      ],
+      "exemptions": {
+        "reason": "blender.org 与 download.blender.org 均在 Cloudflare 之后，GitHub Actions 数据中心 IP 被反爬拦截（HTTP 403 cf-mitigated: challenge），无法在 CI 内自动核验；普通网络与本地访问正常。条目保留，版本与官方直链仍来自官方下载目录，CI 未核验时下载入口按 unverified 置灰。",
+        "review_by": "2027-06-01"
+      }
     },
     {
       "id": "audacity",

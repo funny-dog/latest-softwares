@@ -59,7 +59,10 @@ Actions 的 `workflow_dispatch` 对应输入为 `allow_unverified_required` / `e
 - 被豁免的条目仍会以"待核验"状态出现在 README 和网站上，下载入口置灰，不会冒充可用。
 - 豁免记录写入报告的 `required_exemptions`，便于审计。
 
-当前生效：`adobe-photoshop`（`review_by: 2027-04-01`）。
+当前生效：`adobe-photoshop`（`review_by: 2027-04-01`）、`blender`（`review_by: 2027-06-01`）。
+
+`blender` 的特殊之处：`www.blender.org` 与 `download.blender.org` 都在 Cloudflare 之后，GitHub Actions 的数据中心 IP 会被反爬拦截（403 `cf-mitigated: challenge`），而普通网络访问正常。因此该条目的版本与安装包直链改由 `blender_official` fetcher 解析官方
+`download.blender.org/release/` 目录索引取得（不再依赖被挑战的落地页），版本号来自真实文件名；CI 内若仍被 403，按 `restricted` 走声明式豁免，不把反爬当作死链。豁免只覆盖 `restricted`——若该目录真的返回 404/410，仍会阻塞发布。
 
 仅在 `--gate` 成功后发布；本地调试可用 `--force` 忽略检查计划，`--budget N` 限制本轮验证操作数。默认预算 2000；预算不足的未知入口不能获得验证成功状态。
 
