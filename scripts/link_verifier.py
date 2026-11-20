@@ -131,6 +131,36 @@ def _fetch_check(current: str, asset: dict, url: str):
     return response
 
 
+def _disposition_filename(disposition: str) -> str | None:
+    """按 RFC 6266 取 Content-Disposition 里的文件名。
+
+    上游常同时给两个参数：
+
+        attachment; filename="TencentDocs-x8664.exe";
+                    filename*=UTF-8''TencentDocs-x86_64.exe
+
+    `filename` 是为老客户端准备的 ASCII 兼容名，可能被截断/去符号（上例丢了
+    下划线，会让 "x86_64" 变成 "x8664" 而被误判成 x86 架构）；`filename*=`
+    才是权威的 UTF-8 原名。因此必须优先解析 `filename*=`，不能再让一条
+    正则先撞上 `filename=`。
+    """
+    extended = re.search(
+        r"filename\*\s*=\s*(?:([\w!#$%&+^`{}~-]+)'[\w-]*')([^;]+)", disposition, re.I
+    )
+    if extended:
+        charset, encoded = extended.group(1), extended.group(2).strip().strip('"')
+        try:
+            return unquote(encoded, encoding=charset or "utf-8", errors="replace")
+        except LookupError:
+            return unquote(encoded, errors="replace")
+    plain = re.search(r'filename\s*=\s*(?:"([^"]*)"|([^;]+))', disposition, re.I)
+    if plain:
+        return (
+            plain.group(1) if plain.group(1) is not None else plain.group(2)
+        ).strip()
+    return None
+
+
 def _platform_error(filename: str, platform: str) -> str | None:
     name = filename.lower()
     expected_arch = next(
@@ -228,12 +258,9 @@ def verify_link(asset: dict, config: dict, *, now: datetime | None = None) -> di
         if not sample:
             return {**result, "reason": "empty response"}
         content_type = response.headers.get("Content-Type", "").lower()
-        disposition = unquote(response.headers.get("Content-Disposition", ""))
-        match = re.search(r"filename\*?=(?:UTF-8''|\")?([^\";]+)", disposition, re.I)
-        filename = (
-            match.group(1)
-            if match
-            else unquote(PurePosixPath(urlsplit(current).path).name)
+        raw_disposition = response.headers.get("Content-Disposition", "")
+        filename = _disposition_filename(raw_disposition) or unquote(
+            PurePosixPath(urlsplit(current).path).name
         )
         is_html = "html" in content_type or sample.lstrip().lower().startswith(
             (b"<!doctype html", b"<html")
@@ -273,7 +300,7 @@ def verify_link(asset: dict, config: dict, *, now: datetime | None = None) -> di
                     "reason": "file header does not match installer format",
                 }
             if not filename or not (
-                "attachment" in disposition.lower()
+                "attachment" in raw_disposition.lower()
                 or sigs
                 or content_type.startswith(("application/", "binary/"))
             ):

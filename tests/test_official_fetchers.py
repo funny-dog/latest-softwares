@@ -1,6 +1,8 @@
 from __future__ import annotations
 
-from scripts.fetchers import download_page, fedora, firefox, nodejs, ubuntu
+import pytest
+
+from scripts.fetchers import blender, download_page, fedora, firefox, nodejs, ubuntu
 
 
 def test_firefox_fetcher_uses_mozilla_product_details(monkeypatch):
@@ -151,6 +153,129 @@ def test_fedora_fetcher_uses_highest_release_directory(monkeypatch):
         "https://dl.fedoraproject.org/pub/fedora/linux/releases/44/"
         "Workstation/x86_64/iso/Fedora-Workstation-Live-44-1.7.x86_64.iso"
     )
+
+
+def test_blender_fetcher_reads_official_release_directory(monkeypatch):
+    """blender.org 主站被 Cloudflare 挑战挡住，改为解析官方下载目录索引。"""
+    responses = {
+        blender.INDEX_URL: """
+            <a href="../">../</a>
+            <a href="Blender4.5/">Blender4.5/</a>
+            <a href="Blender5.2/">Blender5.2/</a>
+            <a href="Blender5.3/">Blender5.3/</a>
+        """,
+        "https://download.blender.org/release/Blender5.3/": """
+            <a href="../">../</a>
+            <a href="blender-5.3.0-linux-x64.tar.xz">linux</a>
+            <a href="blender-5.3.0-macos-arm64.dmg">mac arm64</a>
+            <a href="blender-5.3.0-windows-arm64.msi">win arm64</a>
+            <a href="blender-5.3.0-windows-x64.msi">win x64</a>
+            <a href="blender-5.3.0-windows-x64.zip">win x64 zip</a>
+            <a href="blender-5.3.0.sha256">checksum</a>
+        """,
+    }
+
+    class Response:
+        def __init__(self, text: str):
+            self.text = text
+
+        def raise_for_status(self):
+            return None
+
+    monkeypatch.setattr(blender, "get", lambda url, **_: Response(responses[url]))
+
+    result = blender.fetch(
+        {
+            "platforms": [
+                {"platform": "win-x64", "pattern": "blender-{version}-windows-x64.msi"},
+                {
+                    "platform": "mac-arm64",
+                    "pattern": "blender-{version}-macos-arm64.dmg",
+                },
+                {
+                    "platform": "linux-x64",
+                    "pattern": "blender-{version}-linux-x64.tar.xz",
+                },
+            ],
+        }
+    )
+
+    # 版本来自目录里的真实文件名，不再是 sync_date。
+    assert result.version == "5.3.0"
+    assert result.version_source == blender.VERSION_SOURCE
+    assert [asset.platform for asset in result.assets] == [
+        "win-x64",
+        "mac-arm64",
+        "linux-x64",
+    ]
+    assert all(asset.link_kind == "direct" for asset in result.assets)
+    # 不能把 windows-arm64.msi 或 .zip 误当 x64 安装器。
+    assert result.assets[0].filename == "blender-5.3.0-windows-x64.msi"
+    assert result.assets[0].url == (
+        "https://download.blender.org/release/Blender5.3/blender-5.3.0-windows-x64.msi"
+    )
+
+
+def test_blender_fetcher_takes_highest_patch_version(monkeypatch):
+    responses = {
+        blender.INDEX_URL: '<a href="Blender4.5/">4.5/</a>',
+        "https://download.blender.org/release/Blender4.5/": """
+            <a href="blender-4.5.9-windows-x64.msi">old</a>
+            <a href="blender-4.5.16-windows-x64.msi">new</a>
+        """,
+    }
+
+    class Response:
+        def __init__(self, text: str):
+            self.text = text
+
+        def raise_for_status(self):
+            return None
+
+    monkeypatch.setattr(blender, "get", lambda url, **_: Response(responses[url]))
+
+    result = blender.fetch(
+        {
+            "platforms": [
+                {"platform": "win-x64", "pattern": "blender-{version}-windows-x64.msi"}
+            ]
+        }
+    )
+
+    assert result.version == "4.5.16"
+    assert result.assets[0].filename == "blender-4.5.16-windows-x64.msi"
+
+
+def test_blender_fetcher_rejects_ambiguous_pattern(monkeypatch):
+    """pattern 同时命中多个文件时必须报错，不能靠排序猜一个。"""
+    responses = {
+        blender.INDEX_URL: '<a href="Blender5.3/">5.3/</a>',
+        "https://download.blender.org/release/Blender5.3/": """
+            <a href="blender-5.3.0-windows-x64.msi">a</a>
+            <a href="blender-5.3.0-windows-x64.zip">b</a>
+        """,
+    }
+
+    class Response:
+        def __init__(self, text: str):
+            self.text = text
+
+        def raise_for_status(self):
+            return None
+
+    monkeypatch.setattr(blender, "get", lambda url, **_: Response(responses[url]))
+
+    with pytest.raises(blender.FetchError):
+        blender.fetch(
+            {
+                "platforms": [
+                    {
+                        "platform": "win-x64",
+                        "pattern": "blender-{version}-windows-x64.*",
+                    }
+                ]
+            }
+        )
 
 
 def test_download_page_fetcher_marks_sync_date_and_preserves_link_kind():

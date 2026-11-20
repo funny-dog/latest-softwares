@@ -141,9 +141,9 @@ packages:
     release_scan_pages: 3
     assets:
     - platform: win-x64
-      pattern: Bitwarden-Installer-*.exe
+      pattern: bit-Bitwarden-Installer-{version}.exe
     - platform: mac-universal
-      pattern: Bitwarden-*-universal.dmg
+      pattern: bit-Bitwarden-{version}-universal.dmg
   desc_cn: 开源密码管理器，跨平台同步加密存储
   desc_en: Open-source password manager with cross-platform encrypted sync
 - id: codex
@@ -627,7 +627,7 @@ packages:
     repo: agalwood/Motrix
     assets:
     - platform: win-x64
-      pattern: Motrix-*-x64.exe
+      pattern: Motrix-Setup-{version}.exe
   desc_cn: 开源下载工具，支持 HTTP/FTP/BT/磁力链接
   desc_en: Open-source download manager supporting HTTP/FTP/BitTorrent/magnet links
 - id: marktext

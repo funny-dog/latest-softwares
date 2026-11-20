@@ -23,6 +23,7 @@ from . import (
 )
 from . import nvidia_app, qq, wechat, yy
 from . import package_manifest, aliyundrive
+from . import blender
 
 
 FETCHERS: dict[str, Callable[[dict], FetchResult]] = {
@@ -46,6 +47,7 @@ FETCHERS: dict[str, Callable[[dict], FetchResult]] = {
     "yy_official": yy.fetch,
     "ubuntu_releases": ubuntu.fetch,
     "fedora_releases": fedora.fetch,
+    "blender_official": blender.fetch,
 }
 
 

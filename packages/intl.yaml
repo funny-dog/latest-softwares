@@ -3080,19 +3080,15 @@ packages:
   editions:
   - intl
   homepage: https://www.blender.org/download/
-  fetcher: download_page
+  fetcher: blender_official
   args:
-    source: Official project download page; no stable public release asset API
     platforms:
     - platform: win-x64
-      download_url: https://www.blender.org/download/
-      link_kind: landing_page
+      pattern: blender-{version}-windows-x64.msi
     - platform: mac-arm64
-      download_url: https://www.blender.org/download/
-      link_kind: landing_page
+      pattern: blender-{version}-macos-arm64.dmg
     - platform: linux-x64
-      download_url: https://www.blender.org/download/
-      link_kind: landing_page
+      pattern: blender-{version}-linux-x64.tar.xz
   desc_cn: 开源 3D 创作套件，建模/动画/渲染/后期一体化
   desc_en: Open-source 3D creation suite for modeling, animation, rendering, and compositing
 - id: freecad

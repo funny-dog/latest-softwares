@@ -1238,13 +1238,13 @@ packages:
   fetcher: package_manifest
   args:
     provider: scoop
-    package: extras/sqlitestudio
+    package: extras/letos
     platforms:
     - platform: win-x64
   source_ids:
-    scoop: extras/sqlitestudio
+    scoop: extras/letos
   desc_cn: SQLite 数据库管理与 SQL 编辑工具
-  desc_en: A SQLite database manager. (Deprecated, please use `extras/letos` instead)
+  desc_en: A SQLite database manager. (Formerly known as SQLiteStudio; upstream renamed to Letos.)
 - id: studio-3t
   name: Studio 3T
   category: Developer Tools

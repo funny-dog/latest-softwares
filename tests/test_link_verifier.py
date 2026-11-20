@@ -49,6 +49,58 @@ def test_direct_link_checks_bounded_content_and_closes_response(monkeypatch):
     assert response.closed
 
 
+def test_direct_link_prefers_rfc6266_extended_filename(monkeypatch):
+    """上游同时给 filename= 与 filename*= 时必须优先用后者。
+
+    腾讯文档实测响应：
+        attachment;filename="TencentDocs-x8664.exe";
+                    filename*=UTF-8''TencentDocs-x86_64.exe
+    老客户端用的 ASCII 兼容名丢了 "_"，若拿它做架构判断会把 x86_64 误判成 x86。
+    """
+    response = Response(
+        headers={
+            "Content-Type": "application/octet-stream",
+            "Content-Disposition": (
+                'attachment;filename="TencentDocs-x8664.exe";'
+                "filename*=UTF-8''TencentDocs-x86_64.exe"
+            ),
+        }
+    )
+    result = verify(
+        monkeypatch,
+        response,
+        url="https://example.test/app/TencentDocs-x86_64.exe",
+        link_kind="direct",
+    )
+
+    assert result["status"] == "verified"
+    # 必须取回下划线版本，而不是被截断的 x8664。
+    assert result["filename"] == "TencentDocs-x86_64.exe"
+
+
+def test_architecture_check_uses_decoded_extended_filename(monkeypatch):
+    """ASCII 兼容名会触发架构冲突，权威文件名不该触发。"""
+    assert (
+        link_verifier._platform_error("TencentDocs-x8664.exe", "win-x64")
+        == "download architecture conflicts with configured platform"
+    )
+    assert link_verifier._platform_error("TencentDocs-x86_64.exe", "win-x64") is None
+
+
+@pytest.mark.parametrize(
+    ("disposition", "expected"),
+    [
+        ('attachment; filename="WeChat-3.9.11.25.exe"', "WeChat-3.9.11.25.exe"),
+        ("attachment; filename*=UTF-8''%E5%BE%AE%E4%BF%A1.exe", "微信.exe"),
+        ("attachment; filename=plain.exe", "plain.exe"),
+        ("", None),
+        ("attachment", None),
+    ],
+)
+def test_disposition_filename_parsing(disposition, expected):
+    assert link_verifier._disposition_filename(disposition) == expected
+
+
 def test_http_200_html_is_not_an_installer(monkeypatch):
     result = verify(
         monkeypatch,

@@ -290,7 +290,7 @@ def _validate_fetcher_args(
         _validate_firefox(errors, label, args)
     elif fetcher_name == "nodejs_official":
         _validate_nodejs(errors, label, args)
-    elif fetcher_name in {"ubuntu_releases", "fedora_releases"}:
+    elif fetcher_name in {"ubuntu_releases", "fedora_releases", "blender_official"}:
         _validate_release_directory(errors, label, args)
     elif fetcher_name == "aliyundrive_official":
         platforms = _validate_list(errors, label, args, "platforms")

@@ -954,8 +954,12 @@ packages:
   args:
     platforms:
     - platform: win-x64
-      download_url: https://docs.qq.com/download
-      link_kind: landing_page
+      download_url: https://docs.qq.com/api/package/get?channel_id=30001&version_id=latest&package_name=TencentDocs-x86_64.exe
+      link_kind: direct
+  verification:
+    # 官方下载接口 302 到自有 CDN（desktop-gz.docs.qq.com），按精确域名放行。
+    allowed_hosts:
+    - desktop-gz.docs.qq.com
   desc_cn: 在线协作文档工具，支持多人实时编辑
   desc_en: Online collaborative document tool with real-time multi-user editing
 - id: shimo
