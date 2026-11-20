@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-20T07:04:24+00:00",
+  "generated_at": "2026-11-20T08:02:45+00:00",
   "packages": [
     {
       "id": "windows11",
@@ -2652,7 +2652,7 @@
           "expires_at": null,
           "verification": {
             "status": "unverified",
-            "checked_at": "2026-11-20T07:04:40+00:00",
+            "checked_at": "2026-11-20T08:03:13+00:00",
             "url": "https://kimi.moonshot.cn/download",
             "final_url": "https://kimi.moonshot.cn/download",
             "redirects": [
@@ -2673,7 +2673,7 @@
           "expires_at": null,
           "verification": {
             "status": "unverified",
-            "checked_at": "2026-11-20T07:04:40+00:00",
+            "checked_at": "2026-11-20T08:03:13+00:00",
             "url": "https://kimi.moonshot.cn/download",
             "final_url": "https://kimi.moonshot.cn/download",
             "redirects": [
@@ -2794,7 +2794,7 @@
           "expires_at": null,
           "verification": {
             "status": "unverified",
-            "checked_at": "2026-11-20T07:04:40+00:00",
+            "checked_at": "2026-11-20T08:03:13+00:00",
             "url": "https://chatglm.cn/download",
             "final_url": "https://chatglm.cn/download",
             "redirects": [
@@ -2815,7 +2815,7 @@
           "expires_at": null,
           "verification": {
             "status": "unverified",
-            "checked_at": "2026-11-20T07:04:40+00:00",
+            "checked_at": "2026-11-20T08:03:13+00:00",
             "url": "https://chatglm.cn/download",
             "final_url": "https://chatglm.cn/download",
             "redirects": [
@@ -2862,7 +2862,7 @@
           "expires_at": null,
           "verification": {
             "status": "unverified",
-            "checked_at": "2026-11-20T07:04:40+00:00",
+            "checked_at": "2026-11-20T08:03:13+00:00",
             "url": "https://xinghuo.xfyun.cn/download",
             "final_url": "https://xinghuo.xfyun.cn/download",
             "redirects": [
@@ -2883,7 +2883,7 @@
           "expires_at": null,
           "verification": {
             "status": "unverified",
-            "checked_at": "2026-11-20T07:04:40+00:00",
+            "checked_at": "2026-11-20T08:03:13+00:00",
             "url": "https://xinghuo.xfyun.cn/download",
             "final_url": "https://xinghuo.xfyun.cn/download",
             "redirects": [
@@ -3804,7 +3804,7 @@
           "expires_at": null,
           "verification": {
             "status": "restricted",
-            "checked_at": "2026-11-20T07:04:40+00:00",
+            "checked_at": "2026-11-20T08:03:13+00:00",
             "url": "https://apifox.com/download/",
             "final_url": "https://apifox.com/download/",
             "redirects": [
@@ -3825,7 +3825,7 @@
           "expires_at": null,
           "verification": {
             "status": "restricted",
-            "checked_at": "2026-11-20T07:04:40+00:00",
+            "checked_at": "2026-11-20T08:03:13+00:00",
             "url": "https://apifox.com/download/",
             "final_url": "https://apifox.com/download/",
             "redirects": [
@@ -4019,7 +4019,7 @@
           "expires_at": null,
           "verification": {
             "status": "transient",
-            "checked_at": "2026-11-20T07:04:40+00:00",
+            "checked_at": "2026-11-20T08:03:13+00:00",
             "url": "https://www.kuwo.cn/download",
             "final_url": "https://www.kuwo.cn/",
             "redirects": [
@@ -31234,7 +31234,7 @@
             "content_type": "text/html; charset=utf-8",
             "evidence": "trusted source, product identity and download/access entry",
             "fingerprint": "759703a53b58e7fb035d11f66820eca20e05778cd0ef7f3b7adcaed7b66c9d58",
-            "last_attempt_at": "2026-11-20T06:39:38+00:00",
+            "last_attempt_at": "2026-11-20T08:03:13+00:00",
             "last_attempt_status": "transient",
             "last_attempt_reason": "HTTP 502"
           }
@@ -46498,7 +46498,7 @@
           "expires_at": null,
           "verification": {
             "status": "restricted",
-            "checked_at": "2026-11-20T07:04:40+00:00",
+            "checked_at": "2026-11-20T08:03:13+00:00",
             "url": "https://www.adobe.com/products/photoshop.html",
             "final_url": "https://www.adobe.com/products/photoshop.html",
             "redirects": [
@@ -46519,7 +46519,7 @@
           "expires_at": null,
           "verification": {
             "status": "restricted",
-            "checked_at": "2026-11-20T07:04:40+00:00",
+            "checked_at": "2026-11-20T08:03:13+00:00",
             "url": "https://www.adobe.com/products/photoshop.html",
             "final_url": "https://www.adobe.com/products/photoshop.html",
             "redirects": [
@@ -46628,9 +46628,9 @@
     "failed_ids": [],
     "failures": []
   },
-  "release_id": "a3fe3b38880ecef133ad",
-  "checked_at": "2026-11-20T07:04:40+00:00",
-  "verified_at": "2026-11-20T07:04:40+00:00",
+  "release_id": "5d0c77a1009f440f5cfb",
+  "checked_at": "2026-11-20T08:03:13+00:00",
+  "verified_at": "2026-11-20T08:03:13+00:00",
   "quality": {
     "required_total": 301,
     "required_covered": 300,
