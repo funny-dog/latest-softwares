@@ -5,7 +5,7 @@
 > 由 GitHub Actions 每日自动同步上游官方源的**最新版本元数据**。
 > 仓库**不托管二进制安装包**，下载按钮直接跳到上游官方下载链接。
 >
-> 📅 **最后更新**：`2026-11-21 07:58:12` (UTC)　· 共 699 项软件
+> 📅 **最后更新**：`2026-11-21 19:55:51` (UTC)　· 共 699 项软件
 
 ---
 
@@ -25,7 +25,7 @@
 
 | 软件 | 最新版本 | 发布日期 | 下载链接 | 来源 |
 |------|---------|---------|---------|------|
-| [**Windows 11**](https://www.microsoft.com/software-download/windows11) | `25H2` | — | [win-x64](https://software.download.prss.microsoft.com/dbazure/Win11_25H2_Chinese_Simplified_x64_v2.iso?t=0574474c-45a3-4fd0-8115-f1130ba12e61&P1=1795334252&P2=602&P3=2&P4=NXRQTfEdxcczbxku7QbM4E7vQpSUaQxh9JWiEpV4W43iktLaJBiXH82ASDU2OaU2IDLYnqUNEY7cF5PsY3McN05z1WeWHK5c4ebIQsq6DZqUNnmyY9hQ4BuMM0pufBg0xYee6nkpYpApt0in1PmzLyPmu6vU5KCa6cnZnDv9lT4QuuDUBlW64NQTgos52S16dha0ggHlbJZ%2bIMjdfZm5%2fbHUG5ViOEVhtkKXsbd6DO3Ktj9hQRoq5nF%2bl5mT0j8IMiQGAjg9m%2fbGjRo5PJKybAqASOSpKwUBi94KDMo9%2bEmaPv3DwUlCPThu99gWVykO8BBDWR6OY6ZXj89uoH3GBQ%3d%3d) | Microsoft Software Download (via Fido) |
+| [**Windows 11**](https://www.microsoft.com/software-download/windows11) | `25H2` | — | [win-x64](https://software.download.prss.microsoft.com/dbazure/Win11_25H2_Chinese_Simplified_x64_v2.iso?t=288cc566-622b-42f1-a967-8310a0d8cb7b&P1=1795377333&P2=602&P3=2&P4=I0%2bSLt1OOfhobdQI1e5RH2XxEgFGF0MXy15z9V8NP5lNXrh7GULCXGRWGWyrGsyJu5%2b%2bEcF6Is94fjLqNN5OKpF8aqhGJyNUrLb9mxdFUjJRuCV7CW%2bJa8E%2bba7Vbc4nlfsbshuXXOIPqSXngjYQJl%2btInI%2b1IYvwG19BXCx169B4MRVFyK3yozafObJnLCbAQ1EELV%2fQdSALl8BXTTazZSj8CHmxV%2fs6%2f0CWFxStcLdbSPY6mZRV%2bmpNqDTjOiHX%2bNorEjXZ2zhXkyKb%2bTriE4E84mOL4bhb8x6%2benCHq66qGs7%2biuOJIOM8VVABpsEr0is0mjLI072t84a88DDJw%3d%3d) | Microsoft Software Download (via Fido) |
 | [**Ubuntu**](https://ubuntu.com/download) | `26.10` | — | [desktop-amd64](https://releases.ubuntu.com/26.10/ubuntu-26.10-desktop-amd64.iso) · [server-amd64](https://releases.ubuntu.com/26.10/ubuntu-26.10-live-server-amd64.iso) · [wsl-amd64](https://ubuntu.com/download) | Ubuntu official releases index |
 | [**Fedora Workstation**](https://fedoraproject.org/workstation/download/) | `45` | — | [workstation-live-x86_64](https://fedoraproject.org/workstation/download/) | Fedora official release directory |
 
@@ -308,14 +308,14 @@
 | [**腾讯柠檬清理**](https://lemon.qq.com/) | `2026-11-20` | — | [mac-universal](https://lemon.qq.com/) | Official download page; no public version API |
 | [**Advanced Renamer**](https://www.advancedrenamer.com) | `4.29.1` | — | [win-x64](https://www.advancedrenamer.com/down/win/advanced_renamer_portable_4_29_1.zip) | scoop manifest: extras/advancedrenamer |
 | [**AIDA64 Extreme**](https://www.aida64.com) | `8.40.5000` | — | [win](https://download.aida64.com/aida64extreme840.zip) | scoop manifest: extras/aida64extreme |
-| [**Alfred**](https://www.alfredapp.com/) | `6.0.2,3222` | — | [mac](https://cachefly.alfredapp.com/Alfred_6.0.2_3222.dmg) | brew manifest: alfred |
+| [**Alfred**](https://www.alfredapp.com/) | `6.0.3,3225` | — | [mac](https://cachefly.alfredapp.com/Alfred_6.0.3_3225.dmg) | brew manifest: alfred |
 | [**AltTab**](https://alt-tab.app/) | `11.10.2` | — | [mac](https://github.com/lwouis/alt-tab-macos/releases/download/v11.10.2/AltTab-11.10.2.zip) | brew manifest: alt-tab |
 | [**Apparency**](https://www.mothersruin.com/software/Apparency/) | `3.5` | — | [mac](https://www.mothersruin.com/software/archives/Apparency-3.5.dmg) | brew manifest: apparency |
 | [**FreeMacSoft AppCleaner**](https://freemacsoft.net/appcleaner/) | `3.7` | — | [mac](https://www.freemacsoft.net/downloads/AppCleaner_3.7.zip) | brew manifest: appcleaner |
 | [**Arq**](https://www.arqbackup.com/) | `7.51.1` | — | [mac](https://www.arqbackup.com/download/arqbackup/Arq7.51.1.pkg) | brew manifest: arq |
 | [**Backblaze**](https://backblaze.com/) | `10.0.4.1082` | — | [mac](https://secure.backblaze.com/api/install_backblaze?file=bzinstall-mac-10.0.4.1082.dmg) | brew manifest: backblaze |
 | [**Bartender**](https://www.macbartender.com/) | `7.2.0` | — | [mac](https://downloads.macbartender.com/Bartender7/updates/7-2-0/Bartender%207.zip) | brew manifest: bartender |
-| [**BetterTouchTool**](https://folivora.ai/) | `6.1161,2026112001` | — | [mac](https://folivora.ai/releases/btt6.1161-2026112001.zip) | brew manifest: bettertouchtool |
+| [**BetterTouchTool**](https://folivora.ai/) | `6.1164,2026112102` | — | [mac](https://folivora.ai/releases/btt6.1164-2026112102.zip) | brew manifest: bettertouchtool |
 | [**BlockBlock**](https://objective-see.org/products/blockblock.html) | `2.5.2` | — | [mac](https://github.com/objective-see/BlockBlock/releases/download/v2.5.2/BlockBlock_2.5.2.zip) | brew manifest: blockblock |
 | [**Carbon Copy Cloner**](https://bombich.com/) | `7.2.2,8450` | — | [mac](https://files.bombich.com/ccc-7.2.2.8450.zip) | brew manifest: carbon-copy-cloner |
 | [**ChronoSync**](https://www.econtechnologies.com/) | `12.0.4` | — | [mac](https://downloads.econtechnologies.com/CS4_Download.dmg) | brew manifest: chronosync |
@@ -341,7 +341,7 @@
 | [**Parallels Desktop**](https://www.parallels.com/products/desktop/) | `27.1.0-58756` | — | [mac](https://download.parallels.com/desktop/v27/27.1.0-58756/ParallelsDesktop-27.1.0-58756.dmg) | brew manifest: parallels |
 | [**Paste**](https://pasteapp.io/) | `7.1.0` | — | [mac](https://downloads.pasteapp.io/dist/stable/Paste-7.1.0.zip) | brew manifest: paste |
 | [**PopClip**](https://www.popclip.app/) | `2026.11` | — | [mac](https://pilotmoon.com/downloads/PopClip-2026.11.zip) | brew manifest: popclip |
-| [**Q-Dir**](https://www.softwareok.com/?seite=Freeware/Q-Dir) | `12.84` | — | [win-x64](https://www.softwareok.com/Download/Q-Dir_Portable_x64.zip) | scoop manifest: extras/q-dir |
+| [**Q-Dir**](https://www.softwareok.com/?seite=Freeware/Q-Dir) | `12.85` | — | [win-x64](https://www.softwareok.com/Download/Q-Dir_Portable_x64.zip) | scoop manifest: extras/q-dir |
 | [**Scroll Reverser**](https://pilotmoon.com/scrollreverser/) | `2.1.1` | — | [mac](https://pilotmoon.com/downloads/ScrollReverser-2.1.1.zip) | brew manifest: scroll-reverser |
 | [**Shottr**](https://shottr.cc/) | `1.10.0` | — | [mac](https://shottr.cc/dl/Shottr-1.10.0.dmg) | brew manifest: shottr |
 | [**SuperDuper!**](https://www.shirt-pocket.com/superduper4.php) | `4.0.11` | — | [mac](https://www.shirt-pocket.com/downloads/SuperDuper-4.0.11.dmg) | brew manifest: superduper |
@@ -738,7 +738,7 @@
 | [**UltiMaker Cura**](https://ultimaker.com/software/ultimaker-cura) | `5.14.0` | — | [mac-arm64](https://github.com/Ultimaker/Cura/releases/download/5.14.0/UltiMaker-Cura-5.14.0-macos-ARM64.dmg) | brew manifest: ultimaker-cura |
 | [**VirtualDJ**](https://virtualdj.com/) | `2026,9746,C02395E7` | — | [mac](https://download.virtualdj.com/b9746/C02395E7/install_virtualdj_2026_b9746_mac.pkg) | brew manifest: virtualdj |
 | [**HandBrake**](https://github.com/HandBrake/HandBrake) | `1.11.2` | 2026-06-07 | [win-x64](https://github.com/HandBrake/HandBrake/releases/download/1.11.2/HandBrake-1.11.2-x86_64-Win_GUI.exe) | GitHub Release: HandBrake/HandBrake |
-| [**FFmpeg**](https://github.com/BtbN/FFmpeg-Builds) | `latest` | 2026-11-20 | [win-x64](https://github.com/FFmpeg-Builds/FFmpeg-Builds/releases/download/latest/ffmpeg-master-latest-win64-gpl.zip) | GitHub Release: BtbN/FFmpeg-Builds |
+| [**FFmpeg**](https://github.com/BtbN/FFmpeg-Builds) | `latest` | 2026-11-21 | [win-x64](https://github.com/FFmpeg-Builds/FFmpeg-Builds/releases/download/latest/ffmpeg-master-latest-win64-gpl.zip) | GitHub Release: BtbN/FFmpeg-Builds |
 | [**IINA**](https://github.com/iina/iina) | `1.5.1` | 2026-11-06 | [mac-arm64](https://github.com/iina/iina/releases/download/v1.5.1/IINA.v1.5.1.dmg) | GitHub Release: iina/iina |
 | [**LosslessCut**](https://github.com/mifi/lossless-cut) ⚠️ | `3.70.2` | 2026-10-28 | [win-x64](https://github.com/mifi/lossless-cut/releases/download/v3.70.2/LosslessCut-win-x64.7z) · [linux-x64](https://github.com/mifi/lossless-cut/releases/download/v3.70.2/LosslessCut-linux-x86_64.AppImage) · [mac-universal](https://github.com/mifi/lossless-cut) | GitHub Release: mifi/lossless-cut<br>⚠ mac-universal: 没有匹配 asset pattern 'LosslessCut-mac-universal.pkg' |
 | [**Spotify**](https://www.spotify.com/download/) | `2026-11-20` | — | [win-x64](https://www.spotify.com/download/windows/) · [mac-universal](https://www.spotify.com/download/mac/) | Official Spotify download page; no public version API |
@@ -780,7 +780,7 @@
 | [**360 极速浏览器**](https://browser.360.cn/ee/) | `2026-11-20` | — | [win-x64](https://browser.360.cn/ee/) | Official download page; no public version API |
 | [**夸克浏览器**](https://pc.quark.cn/) | `2026-11-20` | — | win-x64（暂不可用，待核验） · mac-universal（暂不可用，待核验） | Official download page; no public version API |
 | [**QQ浏览器**](https://browser.qq.com/) | `2026-11-20` | — | [win-x64](https://browser.qq.com/) · [mac-universal](https://browser.qq.com/) | Official download page; no public version API |
-| [**Arc**](https://arc.net/) | `1.174.0,91305` | — | [mac](https://releases.arc.net/release/Arc-1.174.0-91305.zip) | brew manifest: arc |
+| [**Arc**](https://arc.net/) | `1.174.1,91404` | — | [mac](https://releases.arc.net/release/Arc-1.174.1-91404.zip) | brew manifest: arc |
 | [**Min**](https://minbrowser.org/) | `1.35.7` | — | [win-x64](https://github.com/minbrowser/min/releases/download/v1.35.7/Min-v1.35.7-windows.zip) | scoop manifest: extras/min |
 | [**Orion Browser**](https://browser.kagi.com/) | `1.1.4,153` | — | [mac](https://cdn.kagi.com/updates/26_0/153.zip) | brew manifest: orion |
 | [**Pale Moon**](https://www.palemoon.org) | `35.0.3` | — | [win-x64](https://rm-eu.palemoon.org/release/Palemoon-Portable-35.0.3.win64.exe#/palemoon.7z) | scoop manifest: extras/palemoon |
