@@ -5,7 +5,7 @@
 > 由 GitHub Actions 每日自动同步上游官方源的**最新版本元数据**。
 > 仓库**不托管二进制安装包**，下载按钮直接跳到上游官方下载链接。
 >
-> 📅 **最后更新**：`2026-11-23 08:34:28` (UTC)　· 共 699 项软件
+> 📅 **最后更新**：`2026-11-24 00:35:22` (UTC)　· 共 699 项软件
 
 ---
 
@@ -25,7 +25,7 @@
 
 | 软件 | 最新版本 | 发布日期 | 下载链接 | 来源 |
 |------|---------|---------|---------|------|
-| [**Windows 11**](https://www.microsoft.com/software-download/windows11) | `25H2` | — | [win-x64](https://software.download.prss.microsoft.com/dbazure/Win11_25H2_Chinese_Simplified_x64_v2.iso?t=b92b614e-9783-4d10-af39-9d2272e8b865&P1=1795509241&P2=602&P3=2&P4=WysnkX8CnvyrDNJlDTCtg7PLiX9k9tKWsyUcxN%2bzPxzmPD1fJFfVzt7ZV5%2bRC3u9EiuLKXbdoUMcCsvVloErGujuprPbPojZmgYiPa0FaxAIfK6I4vGQh6p6Uhx9vvXZDjxVRd2HM%2btSDI01ea243qipNrjqDh6Lt5utqVTLfZSXZaP2saX0ZPO1EbqqOpD63Zli96bhbBYFb2z6gAhrwhsCU22D9VGfDUcML0%2bHMkuEhLepmt4L2sagJnPTsIXH%2bYoFmkA%2bMiaYN6D6o5FT%2fWteSpmXhCZQirTcPQ0sdyz5zAQR956s%2fXOQ3vj5mLZXDc6qaTlkAlfrPJZNgJpnRA%3d%3d) | Microsoft Software Download (via Fido) |
+| [**Windows 11**](https://www.microsoft.com/software-download/windows11) | `25H2` | — | [win-x64](https://software.download.prss.microsoft.com/dbazure/Win11_25H2_Chinese_Simplified_x64_v2.iso?t=0719bf3b-e9ec-4645-aea7-84da23a45938&P1=1795566903&P2=602&P3=2&P4=BfrlqMLYtVgCWzac%2bHz2NBqdtccEjqXVSpeHQtiX%2fM86MYLOPMB2Hqi4vYix711ViA91%2fgBCCd9PEq5w4xH1LkvuGaOr13MJgy1wZX%2bNdBrTtR1bfcvUblLSLH%2fY9nrRTM%2btCSGDkWI3bgpajUnpNG%2fEhwZa2bxcndXa9FNl2TtuLElSqYkPmDT22KxdhEYd3myAEDeZo8DQW8HK2NwWklJwzjNcf7wfBdMRxCr78j9JIZCJ0jYLn9x4Q%2fBjADhLI3JWG0QsIFzUjwKdHD7WHcMSkrDRO8rgzQO9Jfg%2b97txOzE8V5F%2fUgg4sPNuo4paOel%2bobJ6gabLSZ2FgUq02A%3d%3d) | Microsoft Software Download (via Fido) |
 | [**Ubuntu**](https://ubuntu.com/download) | `26.10` | — | [desktop-amd64](https://releases.ubuntu.com/26.10/ubuntu-26.10-desktop-amd64.iso) · [server-amd64](https://releases.ubuntu.com/26.10/ubuntu-26.10-live-server-amd64.iso) · [wsl-amd64](https://ubuntu.com/download) | Ubuntu official releases index |
 | [**Fedora Workstation**](https://fedoraproject.org/workstation/download/) | `45` | — | [workstation-live-x86_64](https://fedoraproject.org/workstation/download/) | Fedora official release directory |
 
@@ -315,11 +315,11 @@
 | [**Arq**](https://www.arqbackup.com/) | `7.51.1` | — | [mac](https://www.arqbackup.com/download/arqbackup/Arq7.51.1.pkg) | brew manifest: arq |
 | [**Backblaze**](https://backblaze.com/) | `10.0.4.1082` | — | [mac](https://secure.backblaze.com/api/install_backblaze?file=bzinstall-mac-10.0.4.1082.dmg) | brew manifest: backblaze |
 | [**Bartender**](https://www.macbartender.com/) | `7.2.0` | — | [mac](https://downloads.macbartender.com/Bartender7/updates/7-2-0/Bartender%207.zip) | brew manifest: bartender |
-| [**BetterTouchTool**](https://folivora.ai/) | `6.1167,2026112202` | — | [mac](https://folivora.ai/releases/btt6.1167-2026112202.zip) | brew manifest: bettertouchtool |
+| [**BetterTouchTool**](https://folivora.ai/) | `6.1169,2026112302` | — | [mac](https://folivora.ai/releases/btt6.1169-2026112302.zip) | brew manifest: bettertouchtool |
 | [**BlockBlock**](https://objective-see.org/products/blockblock.html) | `2.5.2` | — | [mac](https://github.com/objective-see/BlockBlock/releases/download/v2.5.2/BlockBlock_2.5.2.zip) | brew manifest: blockblock |
 | [**Carbon Copy Cloner**](https://bombich.com/) | `7.2.2,8450` | — | [mac](https://files.bombich.com/ccc-7.2.2.8450.zip) | brew manifest: carbon-copy-cloner |
 | [**ChronoSync**](https://www.econtechnologies.com/) | `12.0.4` | — | [mac](https://downloads.econtechnologies.com/CS4_Download.dmg) | brew manifest: chronosync |
-| [**CleanShot**](https://cleanshot.com/) | `5.0.2` | — | [mac](https://updates.getcleanshot.com/v3/CleanShot-X-5.0.2.dmg) | brew manifest: cleanshot |
+| [**CleanShot**](https://cleanshot.com/) | `5.0.3` | — | [mac](https://updates.getcleanshot.com/v3/CleanShot-X-5.0.3.dmg) | brew manifest: cleanshot |
 | [**Clipy**](https://clipy-app.com/) | `1.4.2` | — | [mac](https://github.com/Clipy/Clipy/releases/download/1.4.2/Clipy_1.4.2.dmg) | brew manifest: clipy |
 | [**Commander One**](https://mac.eltima.com/file-manager.html) | `3.18` | — | [mac](https://cdn.electronic.us/products/commander/mac/download/commander.dmg) | brew manifest: commander-one |
 | [**Espanso**](https://espanso.org/) | `2.4.1` | — | [mac-universal](https://github.com/espanso/espanso/releases/download/v2.4.1/Espanso-Mac-Universal.dmg) | brew manifest: espanso |
@@ -510,7 +510,7 @@
 | [**Basecamp**](https://basecamp.com/) | `5.2.4` | — | [mac](https://basecamp.com/desktop/Basecamp-5.2.4-mac.zip) | brew manifest: basecamp |
 | [**Box Drive**](https://www.box.com/drive) | `2.54.172` | — | [mac](https://e3.boxcdn.net/desktop/releases/mac/BoxDrive-2.54.172.pkg) | brew manifest: box-drive |
 | [**BusyCal**](https://busymac.com/busycal/index.html) | `2026.4.6,2026-11-14-00-51-54` | — | [mac](https://downloads.busymac.com/bcl-2026.4.6-2026-11-14-00-51-54.zip) | brew manifest: busycal |
-| [**Capacities**](https://capacities.io/) | `1.73.8` | — | [mac-arm64](https://2vks4.upcloudobjects.com/capacities-desktop-app/Capacities-1.73.8-arm64.dmg) | brew manifest: capacities |
+| [**Capacities**](https://capacities.io/) | `1.74.1` | — | [mac-arm64](https://2vks4.upcloudobjects.com/capacities-desktop-app/Capacities-1.74.1-arm64.dmg) | brew manifest: capacities |
 | [**Celestia**](https://celestiaproject.space/) | `1.6.4` | — | [mac](https://github.com/CelestiaProject/Celestia/releases/download/1.6.4/celestia-1.6.4-macOS.zip) | brew manifest: celestia |
 | [**ClickUp**](https://clickup.com/) | `3.5.402,261028rnqdrclpe` | — | [mac-arm64](https://download.todesktop.com/221003ra4tebclw/ClickUp%203.5.402%20-%20Build%20261028rnqdrclpe-arm64.dmg) | brew manifest: clickup |
 | [**EndNote**](https://endnote.com/) | `22.3.0.22265,2025` | — | [mac](https://download.endnote.com/downloads/2025/EndNote2025Installer.dmg) | brew manifest: endnote |
@@ -518,9 +518,9 @@
 | [**Fantastical**](https://flexibits.com/fantastical) | `4.2.4` | — | [mac](https://cdn.flexibits.com/Fantastical_4.2.4.zip) | brew manifest: fantastical |
 | [**Ferdium**](https://ferdium.org/) | `7.2.3` | — | [win-x64](https://github.com/ferdium/ferdium-app/releases/download/v7.2.3/Ferdium-win-AutoSetup-7.2.3-x64.exe#/dl.7z) | scoop manifest: extras/ferdium |
 | [**Franz**](https://meetfranz.com/) | `6.11.3` | — | [mac-arm64](https://github.com/meetfranz/franz-6/releases/download/v6.11.3/Franz-arm64.dmg) | brew manifest: franz |
-| [**GeoGebra**](https://www.geogebra.org) | `6.0.936.0` | — | [win](https://download.geogebra.org/installers/6.0/GeoGebra-Windows-Portable-6-0-936-0.zip) | scoop manifest: extras/geogebra |
+| [**GeoGebra**](https://www.geogebra.org) | `6.0.937.0` | — | [win](https://download.geogebra.org/installers/6.0/GeoGebra-Windows-Portable-6-0-937-0.zip) | scoop manifest: extras/geogebra |
 | [**Google Earth Pro**](https://www.google.com/earth/) | `7.3.7.1327` | — | [mac-x64](https://dl.google.com/dl/earth/client/advanced/current/googleearthpromac-intel-7.3.7.dmg) | brew manifest: google-earth-pro |
-| [**Hepta**](https://heptabase.com/) | `1.118.0` | — | [mac-arm64](https://github.com/heptameta/project-meta/releases/download/v1.118.0/Heptabase-1.118.0-arm64-mac.zip) | brew manifest: heptabase |
+| [**Hepta**](https://heptabase.com/) | `1.118.1` | — | [mac-arm64](https://github.com/heptameta/project-meta/releases/download/v1.118.1/Heptabase-1.118.1-arm64-mac.zip) | brew manifest: heptabase |
 | [**Internxt Drive**](https://internxt.com/drive) | `2.7.1.90` | — | [mac](https://github.com/internxt/drive-desktop-macos/releases/download/v2.7.1.90/Internxt_Drive_2.7.1.90.dmg) | brew manifest: internxt-drive |
 | [**Itsycal**](https://www.mowglii.com/itsycal/) | `0.29.0` | — | [mac](https://itsycal.s3.amazonaws.com/Itsycal-0.29.0.zip) | brew manifest: itsycal |
 | [**JabRef**](https://www.jabref.org) | `5.15` | — | [win-x64](https://github.com/JabRef/jabref/releases/download/v5.15/JabRef-5.15-portable_windows.zip) | scoop manifest: extras/jabref |
@@ -530,7 +530,7 @@
 | [**MEGAsync**](https://mega.nz) | `6.7.1.0` | — | [win-x64](https://mega.nz/MEGAsyncSetup64.exe#/dl.7z) | scoop manifest: extras/megasync |
 | [**Mendeley**](https://www.elsevier.support/mendeley/answer/how-do-i-install-mendeley-reference-manager) | `2.151.0` | — | [win-x64](https://static.mendeley.com/bin/desktop/mendeley-reference-manager-2.151.0.exe#/dl.7z) | scoop manifest: extras/mendeley |
 | [**Nextcloud**](https://nextcloud.com/) | `35.0.3` | — | [win-x64](https://github.com/nextcloud-releases/desktop/releases/download/v35.0.3/Nextcloud-35.0.3-x64.msi) | scoop manifest: extras/nextcloud |
-| [**Notesnook**](https://notesnook.com/) | `3.4.13` | — | [win-x64](https://github.com/streetwriters/notesnook/releases/download/v3.4.13/notesnook_win_x64.exe#/dl.7z) | scoop manifest: extras/notesnook |
+| [**Notesnook**](https://notesnook.com/) | `3.4.14` | — | [win-x64](https://github.com/streetwriters/notesnook/releases/download/v3.4.14/notesnook_win_x64.exe#/dl.7z) | scoop manifest: extras/notesnook |
 | [**OmniFocus**](https://www.omnigroup.com/omnifocus/) | `4.10.1` | — | [mac](https://downloads.omnigroup.com/software/macOS/15/OmniFocus-4.10.1.dmg) | brew manifest: omnifocus |
 | [**OmniGraffle**](https://www.omnigroup.com/omnigraffle/) | `7.26.1` | — | [mac](https://downloads.omnigroup.com/software/macOS/14/OmniGraffle-7.26.1.dmg) | brew manifest: omnigraffle |
 | [**OmniPlan**](https://www.omnigroup.com/omniplan/) | `4.11` | — | [mac](https://downloads.omnigroup.com/software/macOS/12/OmniPlan-4.11.dmg) | brew manifest: omniplan |
@@ -540,7 +540,7 @@
 | [**PDF Expert**](https://pdfexpert.com/) | `3.13.6,1187` | — | [mac](https://downloads.pdfexpert.com/pem3/versions/1187/PDFExpert.zip) | brew manifest: pdf-expert |
 | [**PDFgear**](https://www.pdfgear.com) | `3.0.1` | — | [win-x64](https://downloadfiles.pdfgear.com/releases/windows/pdfgear_setup_v3.0.1.exe) | scoop manifest: extras/pdfgear |
 | [**PDFsam Basic**](https://github.com/torakiki/pdfsam) | `6.0.11` | — | [win-x64](https://github.com/torakiki/pdfsam/releases/download/v6.0.11/pdfsam-basic-6.0.11-windows-x64.zip) | scoop manifest: extras/pdfsam |
-| [**Microsoft Power BI Desktop**](https://powerbi.microsoft.com/desktop/) | `2.159.1231.0` | — | [win-x64](https://download.microsoft.com/download/8/8/0/880BCA75-79DD-466A-927D-1ABF1F5454B0/PBIDesktopSetup-2026-10_x64.exe) | winget manifest: Microsoft.PowerBI |
+| [**Microsoft Power BI Desktop**](https://powerbi.microsoft.com/desktop/) | `2.160.1151.0` | — | [win-x64](https://download.microsoft.com/download/8/8/0/880BCA75-79DD-466A-927D-1ABF1F5454B0/PBIDesktopSetup-2026-11_x64.exe) | winget manifest: Microsoft.PowerBI |
 | [**QGIS**](https://www.qgis.org/) | `4.2.3` | — | [mac](https://www.qgis.org/) | brew manifest: qgis |
 | [**Rambox**](https://rambox.app) | `3.2.0` | — | [win-x64](https://github.com/ramboxapp/download/releases/download/v3.2.0/Rambox-3.2.0-win-x64.exe#/dl.7z) | scoop manifest: extras/rambox |
 | [**Sage**](https://www.sagemath.org/) | `10.9,10.9.1` | — | [mac-arm64](https://github.com/3-manifolds/Sage_macOS/releases/download/v10.9.1/SageMath-10.9_arm64.dmg) | brew manifest: sage |
@@ -638,16 +638,16 @@
 | [**WhatsApp**](https://www.whatsapp.com/download) | `2026-11-23` | — | [win-x64](https://www.whatsapp.com/download) · [mac-universal](https://www.whatsapp.com/download) | Official WhatsApp download page; no public version API |
 | [**Thunderbird**](https://www.thunderbird.net/thunderbird/all/) | `2026-11-23` | — | [win-x64](https://www.thunderbird.net/thunderbird/all/) · [mac-universal](https://www.thunderbird.net/thunderbird/all/) · [linux-x64](https://www.thunderbird.net/thunderbird/all/) | Official Thunderbird download page; no public version API |
 | [**Skype**](https://www.skype.com/get-skype/) | `2026-11-23` | — | [win-x64](https://teams.live.com/free?source=skype) · [mac-universal](https://teams.live.com/free?source=skype) · [linux-x64](https://teams.live.com/free?source=skype) | Microsoft retired Skype downloads; official entry redirects to Teams Free |
-| [**Telegram Desktop**](https://github.com/telegramdesktop/tdesktop) | `7.4.4` | 2026-11-13 | [win-x64](https://github.com/telegramdesktop/tdesktop/releases/download/v7.4.4/td-setup-win-x64-7.4.4.exe) | GitHub Release: telegramdesktop/tdesktop |
+| [**Telegram Desktop**](https://github.com/telegramdesktop/tdesktop) | `7.4.6` | 2026-11-23 | [win-x64](https://github.com/telegramdesktop/tdesktop/releases/download/v7.4.6/td-setup-win-x64-7.4.6.exe) | GitHub Release: telegramdesktop/tdesktop |
 | [**WeChat**](https://weixin.qq.com) | `4.2.0.54` | — | [mac-universal](https://dldir1v6.qq.com/weixin/Universal/Mac/xWeChatMac_universal_4.2.0.54_270390.dmg) | 微信官网 |
-| [**QQ**](https://im.qq.com) | `2026-11-23` | — | [mac-universal](https://im.qq.com/macqq/index.shtml) | Official download page; no public version API |
+| [**QQ**](https://im.qq.com) | `2026-11-24` | — | [mac-universal](https://im.qq.com/macqq/index.shtml) | Official download page; no public version API |
 
 
 ### Gaming
 
 | 软件 | 最新版本 | 发布日期 | 下载链接 | 来源 |
 |------|---------|---------|---------|------|
-| [**WeGame**](https://www.wegame.com.cn/) | `2026-11-23` | — | [win-x64](https://www.wegame.com.cn/client/) | Official download page; no public version API |
+| [**WeGame**](https://www.wegame.com.cn/) | `2026-11-24` | — | [win-x64](https://www.wegame.com.cn/client/) | Official download page; no public version API |
 | [**网易 UU 加速器**](https://uu.163.com/) | `2026-11-23` | — | [win-x64](https://uu.163.com/download/) | Official download page; no public version API |
 | [**英雄联盟**](https://lol.qq.com/) | `2026-11-23` | — | [win-x64](https://lol.qq.com/download.shtml) | Official download page; no public version API |
 | [**地下城与勇士**](https://dnf.qq.com/) | `2026-11-23` | — | [win-x64](https://dnf.qq.com/web2015/down.shtml) | Official download page; no public version API |
@@ -738,7 +738,7 @@
 | [**UltiMaker Cura**](https://ultimaker.com/software/ultimaker-cura) | `5.14.0` | — | [mac-arm64](https://github.com/Ultimaker/Cura/releases/download/5.14.0/UltiMaker-Cura-5.14.0-macos-ARM64.dmg) | brew manifest: ultimaker-cura |
 | [**VirtualDJ**](https://virtualdj.com/) | `2026,9746,C02395E7` | — | [mac](https://download.virtualdj.com/b9746/C02395E7/install_virtualdj_2026_b9746_mac.pkg) | brew manifest: virtualdj |
 | [**HandBrake**](https://github.com/HandBrake/HandBrake) | `1.11.2` | 2026-06-07 | [win-x64](https://github.com/HandBrake/HandBrake/releases/download/1.11.2/HandBrake-1.11.2-x86_64-Win_GUI.exe) | GitHub Release: HandBrake/HandBrake |
-| [**FFmpeg**](https://github.com/BtbN/FFmpeg-Builds) | `latest` | 2026-11-22 | [win-x64](https://github.com/FFmpeg-Builds/FFmpeg-Builds/releases/download/latest/ffmpeg-master-latest-win64-gpl.zip) | GitHub Release: BtbN/FFmpeg-Builds |
+| [**FFmpeg**](https://github.com/BtbN/FFmpeg-Builds) | `latest` | 2026-11-23 | [win-x64](https://github.com/FFmpeg-Builds/FFmpeg-Builds/releases/download/latest/ffmpeg-master-latest-win64-gpl.zip) | GitHub Release: BtbN/FFmpeg-Builds |
 | [**IINA**](https://github.com/iina/iina) | `1.5.1` | 2026-11-06 | [mac-arm64](https://github.com/iina/iina/releases/download/v1.5.1/IINA.v1.5.1.dmg) | GitHub Release: iina/iina |
 | [**LosslessCut**](https://github.com/mifi/lossless-cut) ⚠️ | `3.70.2` | 2026-10-28 | [win-x64](https://github.com/mifi/lossless-cut/releases/download/v3.70.2/LosslessCut-win-x64.7z) · [linux-x64](https://github.com/mifi/lossless-cut/releases/download/v3.70.2/LosslessCut-linux-x86_64.AppImage) · [mac-universal](https://github.com/mifi/lossless-cut) | GitHub Release: mifi/lossless-cut<br>⚠ mac-universal: 没有匹配 asset pattern 'LosslessCut-mac-universal.pkg' |
 | [**Spotify**](https://www.spotify.com/download/) | `2026-11-23` | — | [win-x64](https://www.spotify.com/download/windows/) · [mac-universal](https://www.spotify.com/download/mac/) | Official Spotify download page; no public version API |
@@ -780,7 +780,7 @@
 | [**360 极速浏览器**](https://browser.360.cn/ee/) | `2026-11-23` | — | [win-x64](https://browser.360.cn/ee/) | Official download page; no public version API |
 | [**夸克浏览器**](https://pc.quark.cn/) | `2026-11-23` | — | win-x64（暂不可用，待核验） · mac-universal（暂不可用，待核验） | Official download page; no public version API |
 | [**QQ浏览器**](https://browser.qq.com/) | `2026-11-23` | — | [win-x64](https://browser.qq.com/) · [mac-universal](https://browser.qq.com/) | Official download page; no public version API |
-| [**Arc**](https://arc.net/) | `1.174.1,91404` | — | [mac](https://releases.arc.net/release/Arc-1.174.1-91404.zip) | brew manifest: arc |
+| [**Arc**](https://arc.net/) | `1.174.2,91442` | — | [mac](https://releases.arc.net/release/Arc-1.174.2-91442.zip) | brew manifest: arc |
 | [**Min**](https://minbrowser.org/) | `1.35.7` | — | [win-x64](https://github.com/minbrowser/min/releases/download/v1.35.7/Min-v1.35.7-windows.zip) | scoop manifest: extras/min |
 | [**Orion Browser**](https://browser.kagi.com/) | `1.1.4,153` | — | [mac](https://cdn.kagi.com/updates/26_0/153.zip) | brew manifest: orion |
 | [**Pale Moon**](https://www.palemoon.org) | `35.0.3` | — | [win-x64](https://rm-eu.palemoon.org/release/Palemoon-Portable-35.0.3.win64.exe#/palemoon.7z) | scoop manifest: extras/palemoon |
