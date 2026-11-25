@@ -5,7 +5,7 @@
 > **Latest version metadata** automatically synced from official upstream sources daily by GitHub Actions.
 > This repository **does not host binary installers** — download buttons link directly to upstream official downloads.
 >
-> 📅 **Last updated**: `2026-11-24 22:54:36` (UTC) · 699 software items
+> 📅 **Last updated**: `2026-11-25 09:31:47` (UTC) · 699 software items
 
 ---
 
@@ -25,7 +25,7 @@
 
 | Software | Latest Version | Released | Download | Source |
 |----------|---------------|----------|----------|--------|
-| [**Windows 11**](https://www.microsoft.com/software-download/windows11) | `25H2` | — | [win-x64](https://software.download.prss.microsoft.com/dbazure/Win11_25H2_Chinese_Simplified_x64_v2.iso?t=fe287a4c-63c9-4949-82d2-ce9d2df9d929&P1=1795647253&P2=602&P3=2&P4=CqbVfygREEQcNVSZB8I3rx6sP7Vb0c%2fW6NRql2nKWJidF3aoOGOila9ao%2fTe%2bPB3S3aMu%2b8k%2fmRj4AZPkS6SoU97y1VmwDlcU%2fkDVqKtgEmRttsrmSvYJuBEQv616%2fXc61Hf%2f2mK5bauC5rvYYKrsOnr4UI3iSLrMyTerCslIas5QYHi%2fJTeZOInKJFJaPAmax%2f1vJw3UjJfXI81k2rB6RiqJPw%2fi5%2fINMoN%2b%2fnQ9Pjdim9sIKY%2bKzJv7tVTmTvH1ltec69PllGuZBDEKnZAhsDpjYFhRrYbos7bwrnr4dLSf02YBE3cEJuYUqlhBMtW3qyIcKXQk9Vr8boGl%2fnnAQ%3d%3d) | Microsoft Software Download (via Fido) |
+| [**Windows 11**](https://www.microsoft.com/software-download/windows11) | `25H2` | — | [win-x64](https://software.download.prss.microsoft.com/dbazure/Win11_25H2_Chinese_Simplified_x64_v2.iso?t=15a45ccb-ac18-4714-b7de-c9d0667ae1eb&P1=1795685444&P2=602&P3=2&P4=SXnx6OjCAdyaxlVtdABR5tTX6Pp5DDOTbW%2b28GyxxUq6dUW7DqlLiZOo41R45QDdOuYKceykWpspcZLXLoYG%2bErBEUW3nXNWPqBUbqHM2kZOQ%2flF3sq56SNQtelUsnud1Q2%2bX9zPXfGHz96OtNDJx0sEeKLRgkd28M%2b6DTz5HtnWFWwb8CE36Lg905mo3hBa%2bX53R8eNdzzPi0IDfxS8viVvvG287iFR2mlJlDPGj0MKm47fvyxF4%2fBYees3irYG25PZuRPXfl5rQOPLmxbwoQmGhkvx6EoqgFdjNno%2fMkwewJ2%2bHFEYAyahMv5eV0Ld96hDRjTY%2fd62kaGyVgHgyQ%3d%3d) | Microsoft Software Download (via Fido) |
 | [**Ubuntu**](https://ubuntu.com/download) | `26.10` | — | [desktop-amd64](https://releases.ubuntu.com/26.10/ubuntu-26.10-desktop-amd64.iso) · [server-amd64](https://releases.ubuntu.com/26.10/ubuntu-26.10-live-server-amd64.iso) · [wsl-amd64](https://ubuntu.com/download) | Ubuntu official releases index |
 | [**Fedora Workstation**](https://fedoraproject.org/workstation/download/) | `45` | — | [workstation-live-x86_64](https://fedoraproject.org/workstation/download/) | Fedora official release directory |
 
@@ -151,7 +151,7 @@
 | [**RapidAPI**](https://paw.cloud/) | `4.5.5` | — | [mac](https://cdn-builds.paw.cloud/paw/RapidAPI-4.5.5.zip) | brew manifest: rapidapi |
 | [**Redis Insight**](https://redis.io/insight/) | `3.10.2` | — | [mac-arm64](https://s3.amazonaws.com/redisinsight.download/public/releases/3.10.2/Redis-Insight-mac-arm64.dmg) | brew manifest: redis-insight |
 | [**JetBrains Rider**](https://www.jetbrains.com/rider/) | `2026.3.0.2-263.7307.355` | — | [win-x64](https://download.jetbrains.com/rider/JetBrains.Rider-2026.3.0.2.win.zip) | scoop manifest: extras/rider |
-| [**RStudio**](https://posit.co/products/open-source/rstudio/) | `2026.11.0-203` | — | [win-x64](https://s3.amazonaws.com/rstudio-desktop/electron/windows/RStudio-2026.11.0-203.exe#/dl.7z) | scoop manifest: extras/rstudio |
+| [**RStudio**](https://posit.co/products/open-source/rstudio/) | `2026.11.1-204` | — | [win-x64](https://s3.amazonaws.com/rstudio-desktop/electron/windows/RStudio-2026.11.1-204.exe#/dl.7z) | scoop manifest: extras/rstudio |
 | [**RubyMine**](https://www.jetbrains.com/ruby/) | `2026.3.0.1,263.7307.350` | — | [mac-arm64](https://download.jetbrains.com/ruby/RubyMine-2026.3.0.1-aarch64.dmg) | brew manifest: rubymine |
 | [**RustRover**](https://www.jetbrains.com/rust/) | `2026.3.1.1-263.7307.349` | — | [win-x64](https://download.jetbrains.com/rustrover/RustRover-2026.3.1.1.exe#/dl.7z) | scoop manifest: extras/rustrover |
 | [**Rustup**](https://rustup.rs) | `1.29.3` | — | [win-x64](https://static.rust-lang.org/rustup/dist/x86_64-pc-windows-msvc/rustup-init.exe) | scoop manifest: main/rustup |
@@ -640,14 +640,14 @@
 | [**Skype**](https://www.skype.com/get-skype/) | `2026-11-23` | — | [win-x64](https://teams.live.com/free?source=skype) · [mac-universal](https://teams.live.com/free?source=skype) · [linux-x64](https://teams.live.com/free?source=skype) | Microsoft retired Skype downloads; official entry redirects to Teams Free |
 | [**Telegram Desktop**](https://github.com/telegramdesktop/tdesktop) | `7.4.6` | 2026-11-23 | [win-x64](https://github.com/telegramdesktop/tdesktop/releases/download/v7.4.6/td-setup-win-x64-7.4.6.exe) | GitHub Release: telegramdesktop/tdesktop |
 | [**WeChat**](https://weixin.qq.com) | `4.2.1.9` | — | [mac-universal](https://dldir1v6.qq.com/weixin/Universal/Mac/xWeChatMac_universal_4.2.1.9_270601.dmg) | 微信官网 |
-| [**QQ**](https://im.qq.com) | `2026-11-24` | — | [mac-universal](https://im.qq.com/macqq/index.shtml) | Official download page; no public version API |
+| [**QQ**](https://im.qq.com) | `2026-11-25` | — | [mac-universal](https://im.qq.com/macqq/index.shtml) | Official download page; no public version API |
 
 
 ### Gaming
 
 | Software | Latest Version | Released | Download | Source |
 |----------|---------------|----------|----------|--------|
-| [**WeGame**](https://www.wegame.com.cn/) | `2026-11-24` | — | [win-x64](https://www.wegame.com.cn/client/) | Official download page; no public version API |
+| [**WeGame**](https://www.wegame.com.cn/) | `2026-11-25` | — | [win-x64](https://www.wegame.com.cn/client/) | Official download page; no public version API |
 | [**网易 UU 加速器**](https://uu.163.com/) | `2026-11-23` | — | [win-x64](https://uu.163.com/download/) | Official download page; no public version API |
 | [**英雄联盟**](https://lol.qq.com/) | `2026-11-23` | — | [win-x64](https://lol.qq.com/download.shtml) | Official download page; no public version API |
 | [**地下城与勇士**](https://dnf.qq.com/) | `2026-11-23` | — | [win-x64](https://dnf.qq.com/web2015/down.shtml) | Official download page; no public version API |
@@ -703,7 +703,7 @@
 | [**喜马拉雅**](https://www.ximalaya.com/) | `2026-11-23` | — | [win-x64](https://www.ximalaya.com/download/) · [mac-x64](https://www.ximalaya.com/download/) | Official download page; no public version API |
 | [**PotPlayer**](https://potplayer.daum.net/) | `2026-11-23` | — | [win-x64](https://t1.kakaocdn.net/potplayer/PotPlayer/Version/Latest/PotPlayerSetup64.exe) | Official Kakao CDN installer (latest build) |
 | [**剪映专业版**](https://www.capcut.cn/) | `2026-11-23` | — | [win-x64](https://www.capcut.cn/) · [mac-universal](https://www.capcut.cn/) | Official download page; no public version API |
-| [**优酷**](https://www.youku.com/) | `2026-11-23` | — | win-x64（Unavailable; pending verification） · [mac-universal](https://www.youku.com/) | Official download page; no public version API |
+| [**优酷**](https://www.youku.com/) | `2026-11-23` | — | [win-x64](https://www.youku.com/) · [mac-universal](https://www.youku.com/) | Official download page; no public version API |
 | [**芒果TV**](https://www.mgtv.com/) | `2026-11-23` | — | [win-x64](https://www.mgtv.com/) · [mac-universal](https://www.mgtv.com/) | Official download page; no public version API |
 | [**QQ影音**](https://player.qq.com/) | `2026-11-23` | — | win-x64（Unavailable; pending verification） | Official download page; no public version API |
 | [**洛雪音乐助手**](https://github.com/lyswhut/lx-music-desktop) | `2.12.6` | 2026-09-19 | [win-x64](https://github.com/lyswhut/lx-music-desktop/releases/download/v2.12.6/lx-music-desktop-v2.12.6-x64-Setup.exe) · [mac-arm64](https://github.com/lyswhut/lx-music-desktop/releases/download/v2.12.6/lx-music-desktop-2.12.6-arm64.dmg) · [mac-x64](https://github.com/lyswhut/lx-music-desktop/releases/download/v2.12.6/lx-music-desktop-2.12.6-x64.dmg) | GitHub Release: lyswhut/lx-music-desktop |
@@ -780,8 +780,8 @@
 | [**360 极速浏览器**](https://browser.360.cn/ee/) | `2026-11-23` | — | [win-x64](https://browser.360.cn/ee/) | Official download page; no public version API |
 | [**夸克浏览器**](https://pc.quark.cn/) | `2026-11-23` | — | win-x64（Unavailable; pending verification） · mac-universal（Unavailable; pending verification） | Official download page; no public version API |
 | [**QQ浏览器**](https://browser.qq.com/) | `2026-11-23` | — | [win-x64](https://browser.qq.com/) · [mac-universal](https://browser.qq.com/) | Official download page; no public version API |
-| [**Arc**](https://arc.net/) | `1.174.2,91442` | — | [mac](https://releases.arc.net/release/Arc-1.174.2-91442.zip) | brew manifest: arc |
-| [**Min**](https://minbrowser.org/) | `1.35.7` | — | [win-x64](https://github.com/minbrowser/min/releases/download/v1.35.7/Min-v1.35.7-windows.zip) | scoop manifest: extras/min |
+| [**Arc**](https://arc.net/) | `1.174.3,91540` | — | [mac](https://releases.arc.net/release/Arc-1.174.3-91540.zip) | brew manifest: arc |
+| [**Min**](https://minbrowser.org/) | `1.35.8` | — | [win-x64](https://github.com/minbrowser/min/releases/download/v1.35.8/Min-v1.35.8-windows.zip) | scoop manifest: extras/min |
 | [**Orion Browser**](https://browser.kagi.com/) | `1.1.4,153` | — | [mac](https://cdn.kagi.com/updates/26_0/153.zip) | brew manifest: orion |
 | [**Pale Moon**](https://www.palemoon.org) | `35.0.3` | — | [win-x64](https://rm-eu.palemoon.org/release/Palemoon-Portable-35.0.3.win64.exe#/palemoon.7z) | scoop manifest: extras/palemoon |
 | [**SeaMonkey**](https://www.seamonkey-project.org) | `2.53.24` | — | [win-x64](https://archive.seamonkey-project.org/releases/2.53.24/win64/en-US/seamonkey-2.53.24.en-US.win64.installer.exe#/dl.7z) | scoop manifest: extras/seamonkey |
