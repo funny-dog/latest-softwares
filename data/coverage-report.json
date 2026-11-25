@@ -1,11 +1,11 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-25T09:33:03+00:00",
+  "generated_at": "2026-11-25T22:11:10+00:00",
   "configured": 699,
   "published": 699,
-  "stale_packages": 0,
-  "verified_assets": 1132,
-  "unavailable_assets": 21,
+  "stale_packages": 1,
+  "verified_assets": 1131,
+  "unavailable_assets": 22,
   "required_total": 301,
   "required_covered": 300,
   "required_coverage": 0.9966777408637874,
@@ -58,6 +58,13 @@
     },
     {
       "id": "fastgithub",
+      "required": false,
+      "issues": [
+        "unverified_or_unavailable:win-x64"
+      ]
+    },
+    {
+      "id": "format-factory",
       "required": false,
       "issues": [
         "unverified_or_unavailable:win-x64"
