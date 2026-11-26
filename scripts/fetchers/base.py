@@ -51,6 +51,7 @@ class AssetInfo:
     size: int | None = None  # 字节
     sha256: str | None = None
     expires_at: str | None = None  # 上游临时下载地址的有效期
+    version: str | None = None  # 多源组合时记录该平台所属来源的精确版本
 
 
 @dataclass

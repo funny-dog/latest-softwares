@@ -9,12 +9,19 @@ packages:
   homepage: https://arc.net/
   fetcher: package_manifest
   args:
-    provider: brew
-    package: arc
-    platforms:
-    - platform: mac
+    sources:
+    - provider: brew
+      package: arc
+      platforms:
+      - platform: mac
+    - provider: winget
+      package: TheBrowserCompany.Arc
+      platforms:
+      - platform: win-x64
+      - platform: win-arm64
   source_ids:
     brew: arc
+    winget: TheBrowserCompany.Arc
   desc_cn: Arc 网页浏览器
   desc_en: Chromium based browser
 - id: min
@@ -61,12 +68,18 @@ packages:
   homepage: https://www.palemoon.org
   fetcher: package_manifest
   args:
-    provider: scoop
-    package: extras/palemoon
-    platforms:
-    - platform: win-x64
+    sources:
+    - provider: scoop
+      package: extras/palemoon
+      platforms:
+      - platform: win-x64
+    - provider: brew
+      package: pale-moon
+      platforms:
+      - platform: mac
   source_ids:
     scoop: extras/palemoon
+    brew: pale-moon
   desc_cn: Pale Moon 网页浏览器
   desc_en: Mozilla-derived web browser focusing on efficiency and customization
 - id: seamonkey
@@ -96,10 +109,16 @@ packages:
   homepage: https://www.waterfox.net
   fetcher: package_manifest
   args:
-    provider: scoop
-    package: extras/waterfox
-    platforms:
-    - platform: win-x64
+    sources:
+    - provider: scoop
+      package: extras/waterfox
+      platforms:
+      - platform: win-x64
+    - provider: brew
+      package: waterfox
+      platforms:
+      - platform: mac-arm64
+      - platform: mac-x64
   source_ids:
     scoop: extras/waterfox
     brew: waterfox
@@ -134,10 +153,15 @@ packages:
   homepage: https://developer.android.com/studio
   fetcher: package_manifest
   args:
-    provider: scoop
-    package: extras/android-studio
-    platforms:
-    - platform: win-x64
+    sources:
+    - provider: scoop
+      package: extras/android-studio
+      platforms:
+      - platform: win-x64
+    - provider: brew
+      package: android-studio
+      platforms:
+      - platform: mac
   source_ids:
     scoop: extras/android-studio
     brew: android-studio
@@ -176,7 +200,8 @@ packages:
   source_ids:
     scoop: main/azure-cli
   desc_cn: Microsoft Azure 官方命令行客户端
-  desc_en: A cross-platform command-line tool to connect to Azure and execute administrative commands on Azure resources
+  desc_en: A cross-platform command-line tool to connect to Azure and execute administrative
+    commands on Azure resources
 - id: azure-storage-explorer
   name: Microsoft Azure Storage Explorer
   category: Developer Tools
@@ -187,12 +212,19 @@ packages:
   homepage: https://azure.microsoft.com/products/storage/storage-explorer/
   fetcher: package_manifest
   args:
-    provider: winget
-    package: Microsoft.Azure.StorageExplorer
-    platforms:
-    - platform: win-x64
+    sources:
+    - provider: winget
+      package: Microsoft.Azure.StorageExplorer
+      platforms:
+      - platform: win-x64
+    - provider: brew
+      package: microsoft-azure-storage-explorer
+      platforms:
+      - platform: mac-arm64
+      - platform: mac-x64
   source_ids:
     winget: Microsoft.Azure.StorageExplorer
+    brew: microsoft-azure-storage-explorer
   desc_en: Microsoft Azure Storage Explorer
   verification:
     allowed_hosts:
@@ -241,12 +273,18 @@ packages:
   homepage: https://www.charlesproxy.com/
   fetcher: package_manifest
   args:
-    provider: brew
-    package: charles
-    platforms:
-    - platform: mac
+    sources:
+    - provider: brew
+      package: charles
+      platforms:
+      - platform: mac
+    - provider: winget
+      package: XK72.Charles
+      platforms:
+      - platform: win-x64
   source_ids:
     brew: charles
+    winget: XK72.Charles
   desc_cn: HTTP 和 HTTPS 网络调试代理
   desc_en: Web debugging Proxy application
 - id: clion
@@ -280,12 +318,19 @@ packages:
   homepage: https://cmake.org
   fetcher: package_manifest
   args:
-    provider: scoop
-    package: main/cmake
-    platforms:
-    - platform: win-x64
+    sources:
+    - provider: scoop
+      package: main/cmake
+      platforms:
+      - platform: win-x64
+    - provider: brew
+      package: cmake-app
+      platforms:
+      - platform: mac-arm64
+      - platform: mac-x64
   source_ids:
     scoop: main/cmake
+    brew: cmake-app
   desc_cn: 跨平台软件构建配置工具
   desc_en: Family of tools designed to build, test and package software
 - id: composer
@@ -369,12 +414,19 @@ packages:
   homepage: https://sqlitebrowser.org/
   fetcher: package_manifest
   args:
-    provider: brew
-    package: db-browser-for-sqlite
-    platforms:
-    - platform: mac
+    sources:
+    - provider: brew
+      package: db-browser-for-sqlite
+      platforms:
+      - platform: mac
+    - provider: winget
+      package: DBBrowserForSQLite.DBBrowserForSQLite
+      platforms:
+      - platform: win-x64
+      - platform: win-arm64
   source_ids:
     brew: db-browser-for-sqlite
+    winget: DBBrowserForSQLite.DBBrowserForSQLite
   desc_cn: SQLite 数据库图形管理工具
   desc_en: Browser for SQLite databases
 - id: dbgate
@@ -386,14 +438,21 @@ packages:
   homepage: https://dbgate.org/
   fetcher: package_manifest
   args:
-    provider: brew
-    package: dbgate
-    platforms:
-    - platform: mac-universal
+    sources:
+    - provider: brew
+      package: dbgate
+      platforms:
+      - platform: mac-universal
+    - provider: winget
+      package: JanProchazka.dbgate
+      platforms:
+      - platform: win-x64
   source_ids:
     brew: dbgate
+    winget: JanProchazka.dbgate
   desc_cn: 开源多数据库管理客户端
-  desc_en: Database manager for MySQL, PostgreSQL, SQL Server, MongoDB, SQLite and others
+  desc_en: Database manager for MySQL, PostgreSQL, SQL Server, MongoDB, SQLite and
+    others
 - id: deno
   name: Deno
   category: Developer Tools
@@ -455,10 +514,15 @@ packages:
   homepage: https://git-fork.com/
   fetcher: package_manifest
   args:
-    provider: scoop
-    package: extras/fork
-    platforms:
-    - platform: win
+    sources:
+    - provider: scoop
+      package: extras/fork
+      platforms:
+      - platform: win
+    - provider: brew
+      package: fork
+      platforms:
+      - platform: mac
   source_ids:
     scoop: extras/fork
     brew: fork
@@ -473,12 +537,18 @@ packages:
   homepage: https://www.geany.org/
   fetcher: package_manifest
   args:
-    provider: brew
-    package: geany
-    platforms:
-    - platform: mac-arm64
+    sources:
+    - provider: brew
+      package: geany
+      platforms:
+      - platform: mac-arm64
+    - provider: winget
+      package: Geany.Geany
+      platforms:
+      - platform: win-x64
   source_ids:
     brew: geany
+    winget: Geany.Geany
   desc_cn: 轻量跨平台代码编辑器
   desc_en: Small and lightweight IDE
 - id: gitbutler
@@ -490,10 +560,16 @@ packages:
   homepage: https://gitbutler.com/
   fetcher: package_manifest
   args:
-    provider: scoop
-    package: extras/gitbutler
-    platforms:
-    - platform: win-x64
+    sources:
+    - provider: scoop
+      package: extras/gitbutler
+      platforms:
+      - platform: win-x64
+    - provider: brew
+      package: gitbutler
+      platforms:
+      - platform: mac-arm64
+      - platform: mac-x64
   source_ids:
     scoop: extras/gitbutler
     brew: gitbutler
@@ -515,7 +591,8 @@ packages:
   source_ids:
     scoop: extras/gitextensions
   desc_cn: Git 图形管理客户端
-  desc_en: A graphical user interface for Git that allows you to control Git without using the commandline.
+  desc_en: A graphical user interface for Git that allows you to control Git without
+    using the commandline.
 - id: github-desktop
   name: GitHub Desktop
   category: Developer Tools
@@ -525,10 +602,16 @@ packages:
   homepage: https://desktop.github.com/
   fetcher: package_manifest
   args:
-    provider: scoop
-    package: extras/github
-    platforms:
-    - platform: win-x64
+    sources:
+    - provider: scoop
+      package: extras/github
+      platforms:
+      - platform: win-x64
+    - provider: brew
+      package: github
+      platforms:
+      - platform: mac-arm64
+      - platform: mac-x64
   source_ids:
     scoop: extras/github
     brew: github
@@ -571,7 +654,8 @@ packages:
   source_ids:
     scoop: main/gradle
   desc_cn: 多语言项目构建与自动化工具
-  desc_en: An open-source build automation tool focused on flexibility and performance. (Source code and documentation bundled)
+  desc_en: An open-source build automation tool focused on flexibility and performance.
+    (Source code and documentation bundled)
   verification:
     allowed_hosts:
     - github.com
@@ -586,12 +670,18 @@ packages:
   homepage: https://httptoolkit.tech/
   fetcher: package_manifest
   args:
-    provider: brew
-    package: http-toolkit
-    platforms:
-    - platform: mac-arm64
+    sources:
+    - provider: brew
+      package: http-toolkit
+      platforms:
+      - platform: mac-arm64
+    - provider: winget
+      package: HTTPToolKit.HTTPToolKit
+      platforms:
+      - platform: win-x64
   source_ids:
     brew: http-toolkit
+    winget: HTTPToolKit.HTTPToolKit
   desc_cn: HTTP 请求调试、抓包与模拟工具
   desc_en: HTTP(S) debugging proxy, analyzer, and client
 - id: intellij-idea
@@ -625,12 +715,19 @@ packages:
   homepage: https://julialang.org/
   fetcher: package_manifest
   args:
-    provider: scoop
-    package: main/julia
-    platforms:
-    - platform: win-x64
+    sources:
+    - provider: scoop
+      package: main/julia
+      platforms:
+      - platform: win-x64
+    - provider: brew
+      package: julia-app
+      platforms:
+      - platform: mac-arm64
+      - platform: mac-x64
   source_ids:
     scoop: main/julia
+    brew: julia-app
   desc_cn: 科学计算与数值分析编程语言
   desc_en: The Julia programming language
 - id: kate
@@ -642,12 +739,18 @@ packages:
   homepage: https://kate-editor.org/
   fetcher: package_manifest
   args:
-    provider: brew
-    package: kate
-    platforms:
-    - platform: mac-arm64
+    sources:
+    - provider: brew
+      package: kate
+      platforms:
+      - platform: mac-arm64
+    - provider: winget
+      package: KDE.Kate
+      platforms:
+      - platform: win-x64
   source_ids:
     brew: kate
+    winget: KDE.Kate
   desc_cn: KDE 高级文本编辑器
   desc_en: Multi-document editor by KDE
 - id: kdiff3
@@ -694,12 +797,18 @@ packages:
   homepage: https://lenshq.io/
   fetcher: package_manifest
   args:
-    provider: brew
-    package: lens
-    platforms:
-    - platform: mac-arm64
+    sources:
+    - provider: brew
+      package: lens
+      platforms:
+      - platform: mac-arm64
+    - provider: winget
+      package: Mirantis.Lens
+      platforms:
+      - platform: win-x64
   source_ids:
     brew: lens
+    winget: Mirantis.Lens
   desc_cn: Kubernetes 桌面管理工具
   desc_en: Kubernetes IDE
   verification:
@@ -765,10 +874,16 @@ packages:
   homepage: https://meldmerge.org/
   fetcher: package_manifest
   args:
-    provider: scoop
-    package: extras/meld
-    platforms:
-    - platform: win-x64
+    sources:
+    - provider: scoop
+      package: extras/meld
+      platforms:
+      - platform: win-x64
+    - provider: brew
+      package: meld
+      platforms:
+      - platform: mac-arm64
+      - platform: mac-x64
   source_ids:
     scoop: extras/meld
     brew: meld
@@ -783,10 +898,16 @@ packages:
   homepage: https://www.mongodb.com/products/compass
   fetcher: package_manifest
   args:
-    provider: scoop
-    package: extras/mongodb-compass
-    platforms:
-    - platform: win-x64
+    sources:
+    - provider: scoop
+      package: extras/mongodb-compass
+      platforms:
+      - platform: win-x64
+    - provider: brew
+      package: mongodb-compass
+      platforms:
+      - platform: mac-arm64
+      - platform: mac-x64
   source_ids:
     scoop: extras/mongodb-compass
     brew: mongodb-compass
@@ -801,12 +922,18 @@ packages:
   homepage: https://www.mysql.com/products/workbench/
   fetcher: package_manifest
   args:
-    provider: brew
-    package: mysqlworkbench
-    platforms:
-    - platform: mac-arm64
+    sources:
+    - provider: brew
+      package: mysqlworkbench
+      platforms:
+      - platform: mac-arm64
+    - provider: winget
+      package: Oracle.MySQLWorkbench
+      platforms:
+      - platform: win-x64
   source_ids:
     brew: mysqlworkbench
+    winget: Oracle.MySQLWorkbench
   desc_cn: MySQL 数据库建模与管理工具
   desc_en: Visual tool to design, develop and administer MySQL servers
 - id: netbeans
@@ -818,12 +945,18 @@ packages:
   homepage: https://netbeans.apache.org/
   fetcher: package_manifest
   args:
-    provider: brew
-    package: netbeans
-    platforms:
-    - platform: mac-arm64
+    sources:
+    - provider: brew
+      package: netbeans
+      platforms:
+      - platform: mac-arm64
+    - provider: winget
+      package: Apache.NetBeans
+      platforms:
+      - platform: win-x64
   source_ids:
     brew: netbeans
+    winget: Apache.NetBeans
   desc_cn: Java 等语言的开源集成开发环境
   desc_en: Development environment, tooling platform and application framework
 - id: ninja
@@ -869,12 +1002,18 @@ packages:
   homepage: https://www.pgadmin.org/
   fetcher: package_manifest
   args:
-    provider: brew
-    package: pgadmin4
-    platforms:
-    - platform: mac-arm64
+    sources:
+    - provider: brew
+      package: pgadmin4
+      platforms:
+      - platform: mac-arm64
+    - provider: winget
+      package: PostgreSQL.pgAdmin
+      platforms:
+      - platform: win-x64
   source_ids:
     brew: pgadmin4
+    winget: PostgreSQL.pgAdmin
   desc_cn: PostgreSQL 图形管理工具
   desc_en: Administration and development platform for PostgreSQL
 - id: php
@@ -893,7 +1032,8 @@ packages:
   source_ids:
     scoop: main/php
   desc_cn: PHP 编程语言运行环境
-  desc_en: A popular general-purpose scripting language that is especially suited to web development. (thread safe)
+  desc_en: A popular general-purpose scripting language that is especially suited
+    to web development. (thread safe)
 - id: phpstorm
   name: JetBrains PhpStorm
   category: Developer Tools
@@ -924,12 +1064,19 @@ packages:
   homepage: https://podman-desktop.io/
   fetcher: package_manifest
   args:
-    provider: brew
-    package: podman-desktop
-    platforms:
-    - platform: mac-arm64
+    sources:
+    - provider: brew
+      package: podman-desktop
+      platforms:
+      - platform: mac-arm64
+    - provider: winget
+      package: RedHat.Podman-Desktop
+      platforms:
+      - platform: win-x64
+      - platform: win-arm64
   source_ids:
     brew: podman-desktop
+    winget: RedHat.Podman-Desktop
   desc_cn: Podman 容器桌面管理工具
   desc_en: Browse, manage, inspect containers and images
 - id: positron
@@ -941,12 +1088,18 @@ packages:
   homepage: https://positron.posit.co/
   fetcher: package_manifest
   args:
-    provider: brew
-    package: positron
-    platforms:
-    - platform: mac-arm64
+    sources:
+    - provider: brew
+      package: positron
+      platforms:
+      - platform: mac-arm64
+    - provider: winget
+      package: Posit.Positron
+      platforms:
+      - platform: win-x64
   source_ids:
     brew: positron
+    winget: Posit.Positron
   desc_cn: 数据科学集成开发环境
   desc_en: Data science IDE
 - id: postico
@@ -975,12 +1128,18 @@ packages:
   homepage: https://proxyman.com/
   fetcher: package_manifest
   args:
-    provider: brew
-    package: proxyman
-    platforms:
-    - platform: mac
+    sources:
+    - provider: brew
+      package: proxyman
+      platforms:
+      - platform: mac
+    - provider: winget
+      package: Proxyman.Proxyman
+      platforms:
+      - platform: win-x64
   source_ids:
     brew: proxyman
+    winget: Proxyman.Proxyman
   desc_cn: macOS HTTP 和 HTTPS 网络调试代理
   desc_en: HTTP debugging proxy
 - id: pycharm
@@ -1034,12 +1193,18 @@ packages:
   homepage: https://www.r-project.org
   fetcher: package_manifest
   args:
-    provider: scoop
-    package: main/r
-    platforms:
-    - platform: win-x64
+    sources:
+    - provider: scoop
+      package: main/r
+      platforms:
+      - platform: win-x64
+    - provider: brew
+      package: r-app
+      platforms:
+      - platform: mac
   source_ids:
     scoop: main/r
+    brew: r-app
   desc_cn: R 统计计算环境
   desc_en: A free software environment for statistical computing and graphics.
 - id: rancher
@@ -1051,12 +1216,18 @@ packages:
   homepage: https://rancherdesktop.io/
   fetcher: package_manifest
   args:
-    provider: brew
-    package: rancher
-    platforms:
-    - platform: mac-arm64
+    sources:
+    - provider: brew
+      package: rancher
+      platforms:
+      - platform: mac-arm64
+    - provider: winget
+      package: SUSE.RancherDesktop
+      platforms:
+      - platform: win-x64
   source_ids:
     brew: rancher
+    winget: SUSE.RancherDesktop
   desc_cn: Rancher Desktop 本地容器与 Kubernetes 环境
   desc_en: Kubernetes and container management on the desktop
 - id: rapidapi
@@ -1085,12 +1256,18 @@ packages:
   homepage: https://redis.io/insight/
   fetcher: package_manifest
   args:
-    provider: brew
-    package: redis-insight
-    platforms:
-    - platform: mac-arm64
+    sources:
+    - provider: brew
+      package: redis-insight
+      platforms:
+      - platform: mac-arm64
+    - provider: winget
+      package: RedisInsight.RedisInsight
+      platforms:
+      - platform: win-x64
   source_ids:
     brew: redis-insight
+    winget: RedisInsight.RedisInsight
   desc_cn: Redis 官方可视化管理工具
   desc_en: GUI for streamlined Redis application development
 - id: rider
@@ -1124,10 +1301,15 @@ packages:
   homepage: https://posit.co/products/open-source/rstudio/
   fetcher: package_manifest
   args:
-    provider: scoop
-    package: extras/rstudio
-    platforms:
-    - platform: win-x64
+    sources:
+    - provider: scoop
+      package: extras/rstudio
+      platforms:
+      - platform: win-x64
+    - provider: brew
+      package: rstudio
+      platforms:
+      - platform: mac
   source_ids:
     scoop: extras/rstudio
     brew: rstudio
@@ -1244,7 +1426,8 @@ packages:
   source_ids:
     scoop: extras/letos
   desc_cn: SQLite 数据库管理与 SQL 编辑工具
-  desc_en: A SQLite database manager. (Formerly known as SQLiteStudio; upstream renamed to Letos.)
+  desc_en: A SQLite database manager. (Formerly known as SQLiteStudio; upstream renamed
+    to Letos.)
 - id: studio-3t
   name: Studio 3T
   category: Developer Tools
@@ -1254,12 +1437,18 @@ packages:
   homepage: https://studio3t.com/
   fetcher: package_manifest
   args:
-    provider: brew
-    package: studio-3t
-    platforms:
-    - platform: mac-arm64
+    sources:
+    - provider: brew
+      package: studio-3t
+      platforms:
+      - platform: mac-arm64
+    - provider: winget
+      package: 3TSoftwareLabs.Studio3T
+      platforms:
+      - platform: win-x64
   source_ids:
     brew: studio-3t
+    winget: 3TSoftwareLabs.Studio3T
   desc_cn: MongoDB 数据库开发与管理工具
   desc_en: IDE, client, and GUI for MongoDB
 - id: sublime-merge
@@ -1271,10 +1460,15 @@ packages:
   homepage: https://www.sublimemerge.com/
   fetcher: package_manifest
   args:
-    provider: scoop
-    package: extras/sublime-merge
-    platforms:
-    - platform: win-x64
+    sources:
+    - provider: scoop
+      package: extras/sublime-merge
+      platforms:
+      - platform: win-x64
+    - provider: brew
+      package: sublime-merge
+      platforms:
+      - platform: mac
   source_ids:
     scoop: extras/sublime-merge
     brew: sublime-merge
@@ -1289,10 +1483,15 @@ packages:
   homepage: https://www.sublimetext.com
   fetcher: package_manifest
   args:
-    provider: scoop
-    package: extras/sublime-text
-    platforms:
-    - platform: win-x64
+    sources:
+    - provider: scoop
+      package: extras/sublime-text
+      platforms:
+      - platform: win-x64
+    - provider: brew
+      package: sublime-text
+      platforms:
+      - platform: mac
   source_ids:
     scoop: extras/sublime-text
     brew: sublime-text
@@ -1341,10 +1540,16 @@ packages:
   homepage: https://www.vagrantup.com/
   fetcher: package_manifest
   args:
-    provider: scoop
-    package: main/vagrant
-    platforms:
-    - platform: win-x64
+    sources:
+    - provider: scoop
+      package: main/vagrant
+      platforms:
+      - platform: win-x64
+    - provider: brew
+      package: vagrant
+      platforms:
+      - platform: mac-arm64
+      - platform: mac-x64
   source_ids:
     scoop: main/vagrant
     brew: vagrant
@@ -1429,7 +1634,8 @@ packages:
   source_ids:
     scoop: extras/winmerge
   desc_cn: 开源文件与文件夹比较工具
-  desc_en: Differencing and merging tool, that compares both folders and files, presenting differences in a visual text format that is easy to understand and handle.
+  desc_en: Differencing and merging tool, that compares both folders and files, presenting
+    differences in a visual text format that is easy to understand and handle.
 - id: ableton-live-suite
   name: Ableton Live Suite
   category: Media Players
@@ -1510,10 +1716,15 @@ packages:
   homepage: https://github.com/bambulab/BambuStudio
   fetcher: package_manifest
   args:
-    provider: scoop
-    package: extras/bambu-studio
-    platforms:
-    - platform: win-x64
+    sources:
+    - provider: scoop
+      package: extras/bambu-studio
+      platforms:
+      - platform: win-x64
+    - provider: brew
+      package: bambu-studio
+      platforms:
+      - platform: mac
   source_ids:
     scoop: extras/bambu-studio
     brew: bambu-studio
@@ -1528,12 +1739,19 @@ packages:
   homepage: https://www.bitwig.com/
   fetcher: package_manifest
   args:
-    provider: brew
-    package: bitwig-studio
-    platforms:
-    - platform: mac
+    sources:
+    - provider: brew
+      package: bitwig-studio
+      platforms:
+      - platform: mac
+    - provider: winget
+      package: bitwig.bitwig
+      platforms:
+      - platform: win-x64
+      - platform: win-arm64
   source_ids:
     brew: bitwig-studio
+    winget: bitwig.bitwig
   desc_cn: 音乐创作与音频制作软件
   desc_en: Digital audio workstation
   verification:
@@ -1548,12 +1766,18 @@ packages:
   homepage: https://www.canva.com/
   fetcher: package_manifest
   args:
-    provider: brew
-    package: canva
-    platforms:
-    - platform: mac-universal
+    sources:
+    - provider: brew
+      package: canva
+      platforms:
+      - platform: mac-universal
+    - provider: winget
+      package: Canva.Canva
+      platforms:
+      - platform: win-x64
   source_ids:
     brew: canva
+    winget: Canva.Canva
   desc_cn: Canva 桌面设计与内容创作工具
   desc_en: Design tool
 - id: cap
@@ -1565,12 +1789,18 @@ packages:
   homepage: https://cap.so/
   fetcher: package_manifest
   args:
-    provider: brew
-    package: cap
-    platforms:
-    - platform: mac
+    sources:
+    - provider: brew
+      package: cap
+      platforms:
+      - platform: mac
+    - provider: winget
+      package: CapSoftware.Cap
+      platforms:
+      - platform: win-x64
   source_ids:
     brew: cap
+    winget: CapSoftware.Cap
   desc_cn: 屏幕录制与视频分享工具
   desc_en: Screen recording software
 - id: dopamine
@@ -1589,7 +1819,8 @@ packages:
   source_ids:
     scoop: extras/dopamine
   desc_cn: 音乐播放与音乐库管理工具
-  desc_en: Audio player which tries to make organizing and listening to music as simple and pretty as possible.
+  desc_en: Audio player which tries to make organizing and listening to music as simple
+    and pretty as possible.
 - id: elmedia-player
   name: Elmedia Player
   category: Media Players
@@ -1667,10 +1898,16 @@ packages:
   homepage: http://www.meshlab.net
   fetcher: package_manifest
   args:
-    provider: scoop
-    package: extras/meshlab
-    platforms:
-    - platform: win-x64
+    sources:
+    - provider: scoop
+      package: extras/meshlab
+      platforms:
+      - platform: win-x64
+    - provider: brew
+      package: meshlab
+      platforms:
+      - platform: mac-arm64
+      - platform: mac-x64
   source_ids:
     scoop: extras/meshlab
     brew: meshlab
@@ -1685,12 +1922,18 @@ packages:
   homepage: https://www.mixxx.org/
   fetcher: package_manifest
   args:
-    provider: brew
-    package: mixxx
-    platforms:
-    - platform: mac
+    sources:
+    - provider: brew
+      package: mixxx
+      platforms:
+      - platform: mac
+    - provider: winget
+      package: Mixxx.Mixxx
+      platforms:
+      - platform: win-x64
   source_ids:
     brew: mixxx
+    winget: Mixxx.Mixxx
   desc_cn: 开源 DJ 混音软件
   desc_en: Open-source DJ software
 - id: mpc-be
@@ -1772,10 +2015,16 @@ packages:
   homepage: https://github.com/OrcaSlicer/OrcaSlicer
   fetcher: package_manifest
   args:
-    provider: scoop
-    package: extras/orcaslicer
-    platforms:
-    - platform: win-x64
+    sources:
+    - provider: scoop
+      package: extras/orcaslicer
+      platforms:
+      - platform: win-x64
+    - provider: brew
+      package: orcaslicer
+      platforms:
+      - platform: mac-arm64
+      - platform: mac-x64
   source_ids:
     scoop: extras/orcaslicer
     brew: orcaslicer
@@ -1807,10 +2056,16 @@ packages:
   homepage: https://www.pinta-project.com/
   fetcher: package_manifest
   args:
-    provider: scoop
-    package: extras/pinta
-    platforms:
-    - platform: win-x64
+    sources:
+    - provider: scoop
+      package: extras/pinta
+      platforms:
+      - platform: win-x64
+    - provider: brew
+      package: pinta
+      platforms:
+      - platform: mac-arm64
+      - platform: mac-x64
   source_ids:
     scoop: extras/pinta
     brew: pinta
@@ -1825,10 +2080,15 @@ packages:
   homepage: https://www.prusa3d.com/prusaslicer/
   fetcher: package_manifest
   args:
-    provider: scoop
-    package: extras/prusaslicer
-    platforms:
-    - platform: win-x64
+    sources:
+    - provider: scoop
+      package: extras/prusaslicer
+      platforms:
+      - platform: win-x64
+    - provider: brew
+      package: prusaslicer
+      platforms:
+      - platform: mac
   source_ids:
     scoop: extras/prusaslicer
     brew: prusaslicer
@@ -1843,10 +2103,16 @@ packages:
   homepage: https://www.reaper.fm
   fetcher: package_manifest
   args:
-    provider: scoop
-    package: extras/reaper
-    platforms:
-    - platform: win-x64
+    sources:
+    - provider: scoop
+      package: extras/reaper
+      platforms:
+      - platform: win-x64
+    - provider: brew
+      package: reaper
+      platforms:
+      - platform: mac-arm64
+      - platform: mac-x64
   source_ids:
     scoop: extras/reaper
     brew: reaper
@@ -1864,12 +2130,18 @@ packages:
   homepage: https://rekordbox.com/en/
   fetcher: package_manifest
   args:
-    provider: brew
-    package: rekordbox
-    platforms:
-    - platform: mac
+    sources:
+    - provider: brew
+      package: rekordbox
+      platforms:
+      - platform: mac
+    - provider: winget
+      package: AlphaTheta.rekordbox
+      platforms:
+      - platform: win-x64
   source_ids:
     brew: rekordbox
+    winget: AlphaTheta.rekordbox
   desc_cn: DJ 音乐管理与演出软件
   desc_en: Free Dj app to prepare and manage your music files
 - id: screen-studio
@@ -1915,12 +2187,18 @@ packages:
   homepage: https://ultimaker.com/software/ultimaker-cura
   fetcher: package_manifest
   args:
-    provider: brew
-    package: ultimaker-cura
-    platforms:
-    - platform: mac-arm64
+    sources:
+    - provider: brew
+      package: ultimaker-cura
+      platforms:
+      - platform: mac-arm64
+    - provider: winget
+      package: Ultimaker.Cura
+      platforms:
+      - platform: win-x64
   source_ids:
     brew: ultimaker-cura
+    winget: Ultimaker.Cura
   desc_cn: 三维打印模型切片工具
   desc_en: 3D printer and slicing GUI
 - id: virtualdj
@@ -1932,12 +2210,18 @@ packages:
   homepage: https://virtualdj.com/
   fetcher: package_manifest
   args:
-    provider: brew
-    package: virtualdj
-    platforms:
-    - platform: mac
+    sources:
+    - provider: brew
+      package: virtualdj
+      platforms:
+      - platform: mac
+    - provider: winget
+      package: AtomixProductions.VirtualDJ
+      platforms:
+      - platform: win-x64
   source_ids:
     brew: virtualdj
+    winget: AtomixProductions.VirtualDJ
   desc_cn: DJ 混音与演出软件
   desc_en: DJ Software
 - id: cyberduck
@@ -1949,12 +2233,18 @@ packages:
   homepage: https://cyberduck.io/
   fetcher: package_manifest
   args:
-    provider: brew
-    package: cyberduck
-    platforms:
-    - platform: mac
+    sources:
+    - provider: brew
+      package: cyberduck
+      platforms:
+      - platform: mac
+    - provider: winget
+      package: Iterate.Cyberduck
+      platforms:
+      - platform: win-x64
   source_ids:
     brew: cyberduck
+    winget: Iterate.Cyberduck
   desc_cn: FTP、SFTP 与云存储文件传输客户端
   desc_en: Server and cloud storage browser
   verification:
@@ -2003,12 +2293,18 @@ packages:
   homepage: https://mountainduck.io/
   fetcher: package_manifest
   args:
-    provider: brew
-    package: mountain-duck
-    platforms:
-    - platform: mac
+    sources:
+    - provider: brew
+      package: mountain-duck
+      platforms:
+      - platform: mac
+    - provider: winget
+      package: Iterate.MountainDuck
+      platforms:
+      - platform: win-x64
   source_ids:
     brew: mountain-duck
+    winget: Iterate.MountainDuck
   desc_cn: 将远程文件与云存储挂载为磁盘
   desc_en: Mounts servers and cloud storages as a disk on the desktop
   verification:
@@ -2040,12 +2336,18 @@ packages:
   homepage: https://asana.com/
   fetcher: package_manifest
   args:
-    provider: brew
-    package: asana
-    platforms:
-    - platform: mac-arm64
+    sources:
+    - provider: brew
+      package: asana
+      platforms:
+      - platform: mac-arm64
+    - provider: winget
+      package: Asana.Asana
+      platforms:
+      - platform: win-x64
   source_ids:
     brew: asana
+    winget: Asana.Asana
   desc_cn: 团队任务与项目管理客户端
   desc_en: Manage team projects and tasks
 - id: basecamp
@@ -2057,12 +2359,18 @@ packages:
   homepage: https://basecamp.com/
   fetcher: package_manifest
   args:
-    provider: brew
-    package: basecamp
-    platforms:
-    - platform: mac
+    sources:
+    - provider: brew
+      package: basecamp
+      platforms:
+      - platform: mac
+    - provider: winget
+      package: 37signals.Basecamp
+      platforms:
+      - platform: win-x64
   source_ids:
     brew: basecamp
+    winget: 37signals.Basecamp
   desc_cn: 团队项目管理与协作客户端
   desc_en: All-In-One Toolkit for Working Remotely
 - id: box-drive
@@ -2142,12 +2450,18 @@ packages:
   homepage: https://clickup.com/
   fetcher: package_manifest
   args:
-    provider: brew
-    package: clickup
-    platforms:
-    - platform: mac-arm64
+    sources:
+    - provider: brew
+      package: clickup
+      platforms:
+      - platform: mac-arm64
+    - provider: winget
+      package: ClickUp.ClickUp
+      platforms:
+      - platform: win-x64
   source_ids:
     brew: clickup
+    winget: ClickUp.ClickUp
   desc_cn: 项目管理与团队协作客户端
   desc_en: Productivity platform for tasks, docs, goals, and chat
 - id: endnote
@@ -2176,12 +2490,18 @@ packages:
   homepage: https://evernote.com/
   fetcher: package_manifest
   args:
-    provider: brew
-    package: evernote
-    platforms:
-    - platform: mac
+    sources:
+    - provider: brew
+      package: evernote
+      platforms:
+      - platform: mac
+    - provider: winget
+      package: Evernote.Evernote
+      platforms:
+      - platform: win-x64
   source_ids:
     brew: evernote
+    winget: Evernote.Evernote
   desc_cn: 跨设备笔记与资料整理工具
   desc_en: App for note taking, organising, task lists, and archiving
 - id: fantastical
@@ -2210,10 +2530,16 @@ packages:
   homepage: https://ferdium.org/
   fetcher: package_manifest
   args:
-    provider: scoop
-    package: extras/ferdium
-    platforms:
-    - platform: win-x64
+    sources:
+    - provider: scoop
+      package: extras/ferdium
+      platforms:
+      - platform: win-x64
+    - provider: brew
+      package: ferdium
+      platforms:
+      - platform: mac-arm64
+      - platform: mac-x64
   source_ids:
     scoop: extras/ferdium
     brew: ferdium
@@ -2228,12 +2554,18 @@ packages:
   homepage: https://meetfranz.com/
   fetcher: package_manifest
   args:
-    provider: brew
-    package: franz
-    platforms:
-    - platform: mac-arm64
+    sources:
+    - provider: brew
+      package: franz
+      platforms:
+      - platform: mac-arm64
+    - provider: winget
+      package: StefanMalzner.Franz
+      platforms:
+      - platform: win-x64
   source_ids:
     brew: franz
+    winget: StefanMalzner.Franz
   desc_cn: 多服务消息聚合客户端
   desc_en: Messaging app for WhatsApp, Facebook Messenger, Slack, Telegram and more
 - id: geogebra
@@ -2263,12 +2595,18 @@ packages:
   homepage: https://www.google.com/earth/
   fetcher: package_manifest
   args:
-    provider: brew
-    package: google-earth-pro
-    platforms:
-    - platform: mac-x64
+    sources:
+    - provider: brew
+      package: google-earth-pro
+      platforms:
+      - platform: mac-x64
+    - provider: winget
+      package: Google.EarthPro
+      platforms:
+      - platform: win-x64
   source_ids:
     brew: google-earth-pro
+    winget: Google.EarthPro
   desc_cn: Google Earth 三维地图与地理浏览工具
   desc_en: Virtual globe
 - id: heptabase
@@ -2297,12 +2635,18 @@ packages:
   homepage: https://internxt.com/drive
   fetcher: package_manifest
   args:
-    provider: brew
-    package: internxt-drive
-    platforms:
-    - platform: mac
+    sources:
+    - provider: brew
+      package: internxt-drive
+      platforms:
+      - platform: mac
+    - provider: winget
+      package: Internxt.Drive
+      platforms:
+      - platform: win-x64
   source_ids:
     brew: internxt-drive
+    winget: Internxt.Drive
   desc_cn: Internxt 云存储桌面客户端
   desc_en: Client for Internxt file storage service
 - id: itsycal
@@ -2331,10 +2675,15 @@ packages:
   homepage: https://www.jabref.org
   fetcher: package_manifest
   args:
-    provider: scoop
-    package: extras/jabref
-    platforms:
-    - platform: win-x64
+    sources:
+    - provider: scoop
+      package: extras/jabref
+      platforms:
+      - platform: win-x64
+    - provider: brew
+      package: jabref
+      platforms:
+      - platform: mac
   source_ids:
     scoop: extras/jabref
     brew: jabref
@@ -2370,12 +2719,18 @@ packages:
   homepage: https://jasp-stats.org/
   fetcher: package_manifest
   args:
-    provider: brew
-    package: jasp
-    platforms:
-    - platform: mac-arm64
+    sources:
+    - provider: brew
+      package: jasp
+      platforms:
+      - platform: mac-arm64
+    - provider: winget
+      package: UniversityOfAmsterdam.JASP
+      platforms:
+      - platform: win-x64
   source_ids:
     brew: jasp
+    winget: UniversityOfAmsterdam.JASP
   desc_cn: 图形化统计分析工具
   desc_en: Statistical analysis application
 - id: meetingbar
@@ -2404,10 +2759,15 @@ packages:
   homepage: https://mega.nz
   fetcher: package_manifest
   args:
-    provider: scoop
-    package: extras/megasync
-    platforms:
-    - platform: win-x64
+    sources:
+    - provider: scoop
+      package: extras/megasync
+      platforms:
+      - platform: win-x64
+    - provider: brew
+      package: megasync
+      platforms:
+      - platform: mac
   source_ids:
     scoop: extras/megasync
     brew: megasync
@@ -2429,7 +2789,8 @@ packages:
   source_ids:
     scoop: extras/mendeley
   desc_cn: 文献管理与学术阅读工具
-  desc_en: Manage and share research papers, and generate bibliographies for scholarly articles.
+  desc_en: Manage and share research papers, and generate bibliographies for scholarly
+    articles.
 - id: nextcloud
   name: Nextcloud
   category: Productivity
@@ -2439,10 +2800,15 @@ packages:
   homepage: https://nextcloud.com/
   fetcher: package_manifest
   args:
-    provider: scoop
-    package: extras/nextcloud
-    platforms:
-    - platform: win-x64
+    sources:
+    - provider: scoop
+      package: extras/nextcloud
+      platforms:
+      - platform: win-x64
+    - provider: brew
+      package: nextcloud
+      platforms:
+      - platform: mac
   source_ids:
     scoop: extras/nextcloud
     brew: nextcloud
@@ -2457,10 +2823,16 @@ packages:
   homepage: https://notesnook.com/
   fetcher: package_manifest
   args:
-    provider: scoop
-    package: extras/notesnook
-    platforms:
-    - platform: win-x64
+    sources:
+    - provider: scoop
+      package: extras/notesnook
+      platforms:
+      - platform: win-x64
+    - provider: brew
+      package: notesnook
+      platforms:
+      - platform: mac-arm64
+      - platform: mac-x64
   source_ids:
     scoop: extras/notesnook
     brew: notesnook
@@ -2526,10 +2898,15 @@ packages:
   homepage: https://www.onlyoffice.com/apps.aspx
   fetcher: package_manifest
   args:
-    provider: scoop
-    package: extras/onlyoffice-desktopeditors
-    platforms:
-    - platform: win-x64
+    sources:
+    - provider: scoop
+      package: extras/onlyoffice-desktopeditors
+      platforms:
+      - platform: win-x64
+    - provider: brew
+      package: onlyoffice
+      platforms:
+      - platform: mac
   source_ids:
     scoop: extras/onlyoffice-desktopeditors
     brew: onlyoffice
@@ -2544,10 +2921,16 @@ packages:
   homepage: https://owncloud.com/
   fetcher: package_manifest
   args:
-    provider: scoop
-    package: extras/owncloud
-    platforms:
-    - platform: win-x64
+    sources:
+    - provider: scoop
+      package: extras/owncloud
+      platforms:
+      - platform: win-x64
+    - provider: brew
+      package: owncloud
+      platforms:
+      - platform: mac-arm64
+      - platform: mac-x64
   source_ids:
     scoop: extras/owncloud
     brew: owncloud
@@ -2603,7 +2986,8 @@ packages:
   source_ids:
     scoop: extras/pdfgear
   desc_cn: PDF 阅读、编辑与转换工具
-  desc_en: A free, cross-platform PDF application that allows you to read, edit, convert, and merge documents across devices without requiring registration.
+  desc_en: A free, cross-platform PDF application that allows you to read, edit, convert,
+    and merge documents across devices without requiring registration.
 - id: pdfsam-basic
   name: PDFsam Basic
   category: Productivity
@@ -2613,10 +2997,16 @@ packages:
   homepage: https://github.com/torakiki/pdfsam
   fetcher: package_manifest
   args:
-    provider: scoop
-    package: extras/pdfsam
-    platforms:
-    - platform: win-x64
+    sources:
+    - provider: scoop
+      package: extras/pdfsam
+      platforms:
+      - platform: win-x64
+    - provider: brew
+      package: pdfsam-basic
+      platforms:
+      - platform: mac-arm64
+      - platform: mac-x64
   source_ids:
     scoop: extras/pdfsam
     brew: pdfsam-basic
@@ -2652,17 +3042,24 @@ packages:
   homepage: https://www.qgis.org/
   fetcher: package_manifest
   args:
-    provider: brew
-    package: qgis
-    platforms:
-    - platform: mac
+    sources:
+    - provider: brew
+      package: qgis
+      platforms:
+      - platform: mac
+    - provider: winget
+      package: OSGeo.QGIS
+      platforms:
+      - platform: win-x64
   source_ids:
     brew: qgis
+    winget: OSGeo.QGIS
   desc_cn: 开源地理信息系统与地图分析工具
   desc_en: Geographic Information System
   verification:
     allowed_hosts:
     - dl2.qgis.org
+    - nbg1.your-objectstorage.com
 - id: rambox
   name: Rambox
   category: Productivity
@@ -2672,10 +3069,15 @@ packages:
   homepage: https://rambox.app
   fetcher: package_manifest
   args:
-    provider: scoop
-    package: extras/rambox
-    platforms:
-    - platform: win-x64
+    sources:
+    - provider: scoop
+      package: extras/rambox
+      platforms:
+      - platform: win-x64
+    - provider: brew
+      package: rambox
+      platforms:
+      - platform: mac
   source_ids:
     scoop: extras/rambox
     brew: rambox
@@ -2707,14 +3109,23 @@ packages:
   homepage: https://www.literatureandlatte.com/scrivener/overview
   fetcher: package_manifest
   args:
-    provider: brew
-    package: scrivener
-    platforms:
-    - platform: mac
+    sources:
+    - provider: brew
+      package: scrivener
+      platforms:
+      - platform: mac
+    - provider: winget
+      package: LiteratureAndLatte.Scrivener
+      platforms:
+      - platform: win-x64
   source_ids:
     brew: scrivener
+    winget: LiteratureAndLatte.Scrivener
   desc_cn: 长篇写作与资料组织工具
   desc_en: Word processing software with a typewriter style
+  verification:
+    allowed_hosts:
+    - scrivener.s3.amazonaws.com
 - id: seadrive
   name: Seadrive
   category: Productivity
@@ -2724,12 +3135,18 @@ packages:
   homepage: https://www.seafile.com/en/home/
   fetcher: package_manifest
   args:
-    provider: brew
-    package: seadrive
-    platforms:
-    - platform: mac
+    sources:
+    - provider: brew
+      package: seadrive
+      platforms:
+      - platform: mac
+    - provider: winget
+      package: Seafile.Seadrive
+      platforms:
+      - platform: win-x64
   source_ids:
     brew: seadrive
+    winget: Seafile.Seadrive
   desc_cn: Seafile 云盘虚拟磁盘客户端
   desc_en: Manual for Seafile server
 - id: skim
@@ -2775,10 +3192,16 @@ packages:
   homepage: https://standardnotes.org/
   fetcher: package_manifest
   args:
-    provider: scoop
-    package: extras/standardnotes
-    platforms:
-    - platform: win-x64
+    sources:
+    - provider: scoop
+      package: extras/standardnotes
+      platforms:
+      - platform: win-x64
+    - provider: brew
+      package: standard-notes
+      platforms:
+      - platform: mac-arm64
+      - platform: mac-x64
   source_ids:
     scoop: extras/standardnotes
     brew: standard-notes
@@ -2793,10 +3216,15 @@ packages:
   homepage: https://stellarium.org
   fetcher: package_manifest
   args:
-    provider: scoop
-    package: extras/stellarium
-    platforms:
-    - platform: win-x64
+    sources:
+    - provider: scoop
+      package: extras/stellarium
+      platforms:
+      - platform: win-x64
+    - provider: brew
+      package: stellarium
+      platforms:
+      - platform: mac-x64
   source_ids:
     scoop: extras/stellarium
     brew: stellarium
@@ -2828,12 +3256,19 @@ packages:
   homepage: https://www.taskade.com/
   fetcher: package_manifest
   args:
-    provider: brew
-    package: taskade
-    platforms:
-    - platform: mac-universal
+    sources:
+    - provider: brew
+      package: taskade
+      platforms:
+      - platform: mac-universal
+    - provider: winget
+      package: Taskcade.Taskade
+      platforms:
+      - platform: win-x64
+      - platform: win-arm64
   source_ids:
     brew: taskade
+    winget: Taskcade.Taskade
   desc_cn: 团队任务与知识协作客户端
   desc_en: Task manager for teams
 - id: texmaker
@@ -2881,12 +3316,18 @@ packages:
   homepage: https://www.advancedrenamer.com
   fetcher: package_manifest
   args:
-    provider: scoop
-    package: extras/advancedrenamer
-    platforms:
-    - platform: win-x64
+    sources:
+    - provider: scoop
+      package: extras/advancedrenamer
+      platforms:
+      - platform: win-x64
+    - provider: brew
+      package: advanced-renamer
+      platforms:
+      - platform: mac
   source_ids:
     scoop: extras/advancedrenamer
+    brew: advanced-renamer
   desc_cn: 文件批量重命名与整理工具
   desc_en: Batch file renaming utility for Windows
 - id: aida64extreme
@@ -2983,12 +3424,18 @@ packages:
   homepage: https://www.arqbackup.com/
   fetcher: package_manifest
   args:
-    provider: brew
-    package: arq
-    platforms:
-    - platform: mac
+    sources:
+    - provider: brew
+      package: arq
+      platforms:
+      - platform: mac
+    - provider: winget
+      package: HaystackSoftware.Arq
+      platforms:
+      - platform: win-x86
   source_ids:
     brew: arq
+    winget: HaystackSoftware.Arq
   desc_cn: 加密备份与云端备份工具
   desc_en: Multi-cloud backup application
 - id: backblaze
@@ -3153,12 +3600,18 @@ packages:
   homepage: https://espanso.org/
   fetcher: package_manifest
   args:
-    provider: brew
-    package: espanso
-    platforms:
-    - platform: mac-universal
+    sources:
+    - provider: brew
+      package: espanso
+      platforms:
+      - platform: mac-universal
+    - provider: winget
+      package: Espanso.Espanso
+      platforms:
+      - platform: win-x64
   source_ids:
     brew: espanso
+    winget: Espanso.Espanso
   desc_cn: 跨平台文本扩展与快捷输入工具
   desc_en: Cross-platform Text Expander written in Rust
 - id: forklift
@@ -3262,7 +3715,8 @@ packages:
   source_ids:
     scoop: extras/hwmonitor
   desc_cn: 计算机硬件温度与电压监控工具
-  desc_en: 'A hardware monitoring program that reads PC systems main health sensors : voltages, temperatures, fans speed.'
+  desc_en: 'A hardware monitoring program that reads PC systems main health sensors
+    : voltages, temperatures, fans speed.'
 - id: karabiner-elements
   name: Karabiner Elements
   category: System Utilities
@@ -3364,7 +3818,8 @@ packages:
   source_ids:
     scoop: extras/multicommander
   desc_cn: Windows 双栏文件管理工具
-  desc_en: A multi-tabbed file manager and is an alternative to the standard Windows Explorer
+  desc_en: A multi-tabbed file manager and is an alternative to the standard Windows
+    Explorer
 - id: multipass
   name: Multipass
   category: System Utilities
@@ -3374,12 +3829,18 @@ packages:
   homepage: https://github.com/canonical/multipass/
   fetcher: package_manifest
   args:
-    provider: brew
-    package: multipass
-    platforms:
-    - platform: mac
+    sources:
+    - provider: brew
+      package: multipass
+      platforms:
+      - platform: mac
+    - provider: winget
+      package: Canonical.Multipass
+      platforms:
+      - platform: win-x64
   source_ids:
     brew: multipass
+    winget: Canonical.Multipass
   desc_cn: Ubuntu 轻量虚拟机管理工具
   desc_en: Orchestrates virtual Ubuntu instances
 - id: onecommander
@@ -3398,7 +3859,8 @@ packages:
   source_ids:
     scoop: extras/onecommander
   desc_cn: Windows 文件管理工具
-  desc_en: A modern dual-pane file manager with tabs, columns view, built-in preview, editable themes, and more.
+  desc_en: A modern dual-pane file manager with tabs, columns view, built-in preview,
+    editable themes, and more.
 - id: oversight
   name: OverSight
   category: System Utilities
@@ -3425,12 +3887,19 @@ packages:
   homepage: https://www.parallels.com/products/desktop/
   fetcher: package_manifest
   args:
-    provider: brew
-    package: parallels
-    platforms:
-    - platform: mac
+    sources:
+    - provider: brew
+      package: parallels
+      platforms:
+      - platform: mac
+    - provider: winget
+      package: Parallels.Parallels
+      platforms:
+      - platform: win-x64
+      - platform: win-arm64
   source_ids:
     brew: parallels
+    winget: Parallels.Parallels
   desc_cn: macOS 虚拟机与跨系统运行工具
   desc_en: Desktop virtualization software
 - id: paste
@@ -3602,7 +4071,8 @@ packages:
   source_ids:
     scoop: extras/totalcommander
   desc_cn: Windows 双栏文件管理工具
-  desc_en: Total Commander is a Shareware file manager for Windows® 95/98/ME/NT/2000/XP/Vista/7/8/8.1/10, and Windows® 3.1.
+  desc_en: Total Commander is a Shareware file manager for Windows® 95/98/ME/NT/2000/XP/Vista/7/8/8.1/10,
+    and Windows® 3.1.
 - id: yoink
   name: Yoink
   category: System Utilities
@@ -3629,11 +4099,17 @@ packages:
   homepage: https://www.freedownloadmanager.org
   fetcher: package_manifest
   args:
-    provider: scoop
-    package: extras/freedownloadmanager
-    platforms:
-    - platform: win-x64
+    sources:
+    - provider: scoop
+      package: extras/freedownloadmanager
+      platforms:
+      - platform: win-x64
+    - provider: brew
+      package: free-download-manager
+      platforms:
+      - platform: mac
   source_ids:
     scoop: extras/freedownloadmanager
+    brew: free-download-manager
   desc_cn: 多协议文件下载管理工具
   desc_en: A powerful download manager

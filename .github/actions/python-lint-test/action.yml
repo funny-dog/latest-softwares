@@ -94,6 +94,8 @@ runs:
           tests/test_redirect_fetchers.py \
           tests/test_wechat.py \
           tests/test_everything.py \
+          tests/test_linux_store.py \
+          tests/test_updater_fetchers.py \
           -q
 
     - name: Test - discover

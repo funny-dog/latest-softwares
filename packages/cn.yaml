@@ -469,15 +469,20 @@ packages:
   editions:
   - cn
   homepage: https://www.dingtalk.com/
-  fetcher: download_page
+  fetcher: package_manifest
+  source_ids:
+    winget: Alibaba.DingTalk.Mainland
+    brew: dingtalk
   args:
-    platforms:
-    - platform: win-x64
-      download_url: https://www.dingtalk.com/download
-      link_kind: landing_page
-    - platform: mac-x64
-      download_url: https://www.dingtalk.com/download
-      link_kind: landing_page
+    sources:
+    - provider: winget
+      package: Alibaba.DingTalk.Mainland
+      platforms:
+      - platform: win-x86
+    - provider: brew
+      package: dingtalk
+      platforms:
+      - platform: mac-universal
   desc_cn: 阿里巴巴企业协同办公平台，即时通讯和视频会议
   desc_en: Alibaba's enterprise collaboration platform with IM and video conferencing
 - id: feishu
@@ -486,15 +491,21 @@ packages:
   editions:
   - cn
   homepage: https://www.feishu.cn/
-  fetcher: download_page
+  fetcher: package_manifest
+  source_ids:
+    winget: ByteDance.Feishu
+    brew: feishu
   args:
-    platforms:
-    - platform: win-x64
-      download_url: https://www.feishu.cn/download
-      link_kind: landing_page
-    - platform: mac-x64
-      download_url: https://www.feishu.cn/download
-      link_kind: landing_page
+    sources:
+    - provider: winget
+      package: ByteDance.Feishu
+      platforms:
+      - platform: win-x64
+      - platform: win-x86
+    - provider: brew
+      package: feishu
+      platforms:
+      - platform: mac-arm64
   desc_cn: 字节跳动企业协作平台，文档/日历/视频会议一体化
   desc_en: ByteDance's enterprise collaboration platform with docs, calendar, and video
 - id: tencent-meeting
@@ -503,15 +514,20 @@ packages:
   editions:
   - cn
   homepage: https://meeting.tencent.com/
-  fetcher: download_page
+  fetcher: package_manifest
+  source_ids:
+    winget: Tencent.TencentMeeting
+    brew: tencent-meeting
   args:
-    platforms:
-    - platform: win-x64
-      download_url: https://meeting.tencent.com/download/
-      link_kind: landing_page
-    - platform: mac-x64
-      download_url: https://meeting.tencent.com/download/
-      link_kind: landing_page
+    sources:
+    - provider: winget
+      package: Tencent.TencentMeeting
+      platforms:
+      - platform: win-x64
+    - provider: brew
+      package: tencent-meeting
+      platforms:
+      - platform: mac-arm64
   desc_cn: 腾讯云视频会议服务，支持大规模在线会议
   desc_en: Tencent Cloud video conferencing service for large-scale online meetings
 - id: wegame
@@ -548,15 +564,14 @@ packages:
   editions:
   - cn
   homepage: https://kimi.moonshot.cn/
-  fetcher: download_page
+  fetcher: package_manifest
+  source_ids:
+    winget: MoonshotAI.Kimi
   args:
+    provider: winget
+    package: MoonshotAI.Kimi
     platforms:
     - platform: win-x64
-      download_url: https://kimi.moonshot.cn/download
-      link_kind: landing_page
-    - platform: mac-x64
-      download_url: https://kimi.moonshot.cn/download
-      link_kind: landing_page
   desc_cn: 月之暗面 AI 助手，支持长文本理解和文件分析
   desc_en: Moonshot AI's assistant with long-text understanding and file analysis
 - id: tongyi
@@ -585,15 +600,14 @@ packages:
   editions:
   - cn
   homepage: https://chatglm.cn/
-  fetcher: download_page
+  fetcher: package_manifest
+  source_ids:
+    winget: ZhipuAI.ChatGLM
   args:
+    provider: winget
+    package: ZhipuAI.ChatGLM
     platforms:
     - platform: win-x64
-      download_url: https://chatglm.cn/download
-      link_kind: landing_page
-    - platform: mac-x64
-      download_url: https://chatglm.cn/download
-      link_kind: landing_page
   desc_cn: 智谱 AI 大模型助手，基于 GLM 模型的对话和创作
   desc_en: Zhipu AI's assistant based on GLM models for conversation and creation
 - id: sparkdesk
@@ -619,12 +633,14 @@ packages:
   editions:
   - cn
   homepage: https://www.xunlei.com/
-  fetcher: download_page
+  fetcher: package_manifest
+  source_ids:
+    winget: Thunder.Thunder
   args:
+    provider: winget
+    package: Thunder.Thunder
     platforms:
     - platform: win-x64
-      download_url: https://www.xunlei.com/
-      link_kind: landing_page
   desc_cn: 老牌下载工具，支持 HTTP/BT/磁力/电驴等协议
   desc_en: Veteran download tool supporting HTTP/BT/magnet/eDonkey protocols
 - id: netease-cloud-music
@@ -633,15 +649,14 @@ packages:
   editions:
   - cn
   homepage: https://music.163.com/
-  fetcher: download_page
+  fetcher: package_manifest
+  source_ids:
+    winget: NetEase.CloudMusic
   args:
+    provider: winget
+    package: NetEase.CloudMusic
     platforms:
     - platform: win-x64
-      download_url: https://music.163.com/#/download
-      link_kind: landing_page
-    - platform: mac-x64
-      download_url: https://music.163.com/#/download
-      link_kind: landing_page
   desc_cn: 网易音乐流媒体平台，个性化推荐和社交互动
   desc_en: NetEase music streaming platform with personalized recommendations
 - id: bilibili
@@ -650,12 +665,21 @@ packages:
   editions:
   - cn
   homepage: https://www.bilibili.com/
-  fetcher: download_page
+  fetcher: package_manifest
+  source_ids:
+    winget: Bilibili.Bilibili
+    brew: bilibili
   args:
-    platforms:
-    - platform: win-x64
-      download_url: https://app.bilibili.com/
-      link_kind: landing_page
+    sources:
+    - provider: winget
+      package: Bilibili.Bilibili
+      platforms:
+      - platform: win-x64
+      - platform: win-arm64
+    - provider: brew
+      package: bilibili
+      platforms:
+      - platform: mac
   desc_cn: 年轻人喜爱的视频社区，弹幕互动和创作者生态
   desc_en: Popular video community with bullet comments and creator ecosystem
 - id: qq-music
@@ -664,15 +688,23 @@ packages:
   editions:
   - cn
   homepage: https://y.qq.com/
-  fetcher: download_page
+  fetcher: package_manifest
+  source_ids:
+    winget: Tencent.QQMusic
+    brew: qqmusic
   args:
-    platforms:
-    - platform: win-x64
-      download_url: https://y.qq.com/download/
-      link_kind: landing_page
-    - platform: mac-x64
-      download_url: https://y.qq.com/download/
-      link_kind: landing_page
+    sources:
+    - provider: winget
+      package: Tencent.QQMusic
+      platforms:
+      - platform: win-x64
+    - provider: brew
+      package: qqmusic
+      platforms:
+      - platform: mac
+  verification:
+    allowed_hosts:
+    - dldir.y.qq.com
   desc_cn: 腾讯音乐流媒体平台，海量正版曲库和歌词
   desc_en: Tencent's music streaming platform with massive licensed music library
 - id: tencent-video
@@ -681,12 +713,14 @@ packages:
   editions:
   - cn
   homepage: https://v.qq.com/
-  fetcher: download_page
+  fetcher: package_manifest
+  source_ids:
+    winget: Tencent.TencentVideo
   args:
+    provider: winget
+    package: Tencent.TencentVideo
     platforms:
-    - platform: win-x64
-      download_url: https://v.qq.com/download.html
-      link_kind: landing_page
+    - platform: win-x86
   desc_cn: 腾讯视频流媒体平台，影视剧综艺直播
   desc_en: Tencent's video streaming platform for movies, shows, and live content
 - id: iqiyi
@@ -695,12 +729,17 @@ packages:
   editions:
   - cn
   homepage: https://www.iqiyi.com/
-  fetcher: download_page
+  fetcher: package_manifest
+  source_ids:
+    winget: iQIYI.iQIYI
   args:
+    provider: winget
+    package: iQIYI.iQIYI
     platforms:
     - platform: win-x64
-      download_url: https://app.iqiyi.com/
-      link_kind: landing_page
+  verification:
+    allowed_hosts:
+    - cdndata.video.iqiyi.com
   desc_cn: 百度旗下视频流媒体平台，影视剧和综艺内容
   desc_en: Baidu-backed video streaming platform for movies and variety shows
 - id: huorong
@@ -709,12 +748,17 @@ packages:
   editions:
   - cn
   homepage: https://www.huorong.cn/
-  fetcher: download_page
+  fetcher: redirect_probe
   args:
+    use_final_url: true
+    version_regex: sysdiag-all-[^-]+-(\d+\.\d+\.\d+\.\d+)
     platforms:
     - platform: win-x64
-      download_url: https://www.huorong.cn/
-      link_kind: landing_page
+      url: https://www.huorong.cn/product/downloadHr60.php?pro=hr60&plat=x64UrlAll
+    - platform: win-x86
+      url: https://www.huorong.cn/product/downloadHr60.php?pro=hr60&plat=x86UrlAll
+    - platform: win-arm64
+      url: https://www.huorong.cn/product/downloadHr60.php?pro=hr60&plat=arm64UrlAll
   desc_cn: 轻量级国产安全软件，弹窗拦截和病毒防护
   desc_en: Lightweight Chinese security software with popup blocking and virus protection
 - id: sunlogin
@@ -774,15 +818,17 @@ packages:
   editions:
   - cn
   homepage: https://note.youdao.com/
-  fetcher: download_page
+  fetcher: package_manifest
+  source_ids:
+    winget: NetEase.YoudaoNote
   args:
+    provider: winget
+    package: NetEase.YoudaoNote
     platforms:
     - platform: win-x64
-      download_url: https://note.youdao.com/download.html
-      link_kind: landing_page
-    - platform: mac-x64
-      download_url: https://note.youdao.com/download.html
-      link_kind: landing_page
+  verification:
+    allowed_hosts:
+    - cowork-common-public-cdn.lx.netease.com
   desc_cn: 网易旗下笔记工具，支持 Markdown 和多端同步
   desc_en: NetEase's note-taking tool with Markdown and multi-device sync
 - id: foxit-reader-cn
@@ -840,15 +886,14 @@ packages:
   editions:
   - cn
   homepage: https://apifox.com/
-  fetcher: download_page
+  fetcher: package_manifest
+  source_ids:
+    winget: Ruihu.Apifox
   args:
+    provider: winget
+    package: Ruihu.Apifox
     platforms:
     - platform: win-x64
-      download_url: https://apifox.com/download/
-      link_kind: landing_page
-    - platform: mac-x64
-      download_url: https://apifox.com/download/
-      link_kind: landing_page
   desc_cn: API 开发协作平台，集接口文档/调试/Mock/测试于一体
   desc_en: API development collaboration platform combining docs, debugging, mock, and testing
 - id: uu-accelerator
@@ -874,12 +919,15 @@ packages:
   editions:
   - cn
   homepage: https://shurufa.sogou.com/
-  fetcher: download_page
+  fetcher: package_manifest
+  source_ids:
+    winget: Sogou.SogouInput
   args:
+    provider: winget
+    package: Sogou.SogouInput
     platforms:
     - platform: win-x64
-      download_url: https://shurufa.sogou.com/
-      link_kind: landing_page
+    - platform: win-arm64
   desc_cn: 搜狗智能输入法，支持语音输入和智能纠错
   desc_en: Sogou smart input method with voice input and intelligent error correction
 - id: kugou-music
@@ -933,15 +981,14 @@ packages:
   editions:
   - cn
   homepage: https://www.youdao.com/
-  fetcher: download_page
+  fetcher: package_manifest
+  source_ids:
+    winget: Youdao.YoudaoTranslate
   args:
+    provider: winget
+    package: Youdao.YoudaoTranslate
     platforms:
-    - platform: win-x64
-      download_url: https://www.youdao.com/download/
-      link_kind: landing_page
-    - platform: mac-x64
-      download_url: https://www.youdao.com/download/
-      link_kind: landing_page
+    - platform: win-x86
   desc_cn: 多语种翻译词典，支持划词翻译和离线词库
   desc_en: Multi-language translation dictionary with text selection and offline support
 - id: tencent-docs
@@ -950,16 +997,14 @@ packages:
   editions:
   - cn
   homepage: https://docs.qq.com/
-  fetcher: download_page
+  fetcher: package_manifest
+  source_ids:
+    winget: Tencent.TencentDocs
   args:
+    provider: winget
+    package: Tencent.TencentDocs
     platforms:
     - platform: win-x64
-      download_url: https://docs.qq.com/api/package/get?channel_id=30001&version_id=latest&package_name=TencentDocs-x86_64.exe
-      link_kind: direct
-  verification:
-    # 官方下载接口 302 到自有 CDN（desktop-gz.docs.qq.com），按精确域名放行。
-    allowed_hosts:
-    - desktop-gz.docs.qq.com
   desc_cn: 在线协作文档工具，支持多人实时编辑
   desc_en: Online collaborative document tool with real-time multi-user editing
 - id: shimo
@@ -1058,12 +1103,15 @@ packages:
   editions:
   - cn
   homepage: https://shurufa.baidu.com/
-  fetcher: download_page
+  fetcher: package_manifest
+  source_ids:
+    winget: Baidu.BaiduPinyin
   args:
+    provider: winget
+    package: Baidu.BaiduPinyin
     platforms:
     - platform: win-x64
-      download_url: https://shurufa.baidu.com/
-      link_kind: landing_page
+    - platform: win-arm64
   desc_cn: 百度智能输入法，AI 语音输入和手写识别
   desc_en: Baidu smart input method with AI voice input and handwriting recognition
 - id: weiyun
@@ -1132,15 +1180,14 @@ packages:
   editions:
   - cn
   homepage: https://www.capcut.cn/
-  fetcher: download_page
+  fetcher: package_manifest
+  source_ids:
+    winget: ByteDance.JianyingPro
   args:
+    provider: winget
+    package: ByteDance.JianyingPro
     platforms:
     - platform: win-x64
-      download_url: https://www.capcut.cn/
-      link_kind: landing_page
-    - platform: mac-universal
-      download_url: https://www.capcut.cn/
-      link_kind: landing_page
   desc_cn: 抖音官方出品的全能视频剪辑工具，模板丰富、智能字幕
   desc_en: All-in-one video editor by Douyin with rich templates and auto-captions
 - id: wecom
@@ -1149,15 +1196,14 @@ packages:
   editions:
   - cn
   homepage: https://work.weixin.qq.com/
-  fetcher: download_page
+  fetcher: package_manifest
+  source_ids:
+    winget: Tencent.WeCom
   args:
+    provider: winget
+    package: Tencent.WeCom
     platforms:
-    - platform: win-x64
-      download_url: https://work.weixin.qq.com/
-      link_kind: landing_page
-    - platform: mac-universal
-      download_url: https://work.weixin.qq.com/
-      link_kind: landing_page
+    - platform: win-x86
   desc_cn: 腾讯出品的企业办公沟通工具，连接微信生态
   desc_en: Tencent enterprise messaging and office tool connected to WeChat
 - id: foxmail
@@ -1183,15 +1229,14 @@ packages:
   editions:
   - cn
   homepage: https://www.youku.com/
-  fetcher: download_page
+  fetcher: package_manifest
+  source_ids:
+    winget: Youku.Youku
   args:
+    provider: winget
+    package: Youku.Youku
     platforms:
-    - platform: win-x64
-      download_url: https://www.youku.com/
-      link_kind: landing_page
-    - platform: mac-universal
-      download_url: https://www.youku.com/
-      link_kind: landing_page
+    - platform: win-x86
   desc_cn: 阿里巴巴旗下视频平台客户端，支持高清离线缓存
   desc_en: Alibaba video platform client with HD offline caching
 - id: mgtv
@@ -1211,20 +1256,6 @@ packages:
       link_kind: landing_page
   desc_cn: 湖南广电旗下视频平台，综艺与自制剧资源丰富
   desc_en: Hunan TV video platform rich in variety shows and originals
-- id: qqplayer
-  name: QQ影音
-  category: Media Players
-  editions:
-  - cn
-  homepage: https://player.qq.com/
-  fetcher: download_page
-  args:
-    platforms:
-    - platform: win-x64
-      download_url: https://player.qq.com/
-      link_kind: landing_page
-  desc_cn: 腾讯出品的轻量高清播放器，支持全格式硬件加速
-  desc_en: Lightweight HD player by Tencent with all-format hardware acceleration
 - id: iciba
   name: 金山词霸
   category: Productivity
@@ -1296,15 +1327,14 @@ packages:
   editions:
   - cn
   homepage: https://dida365.com/
-  fetcher: download_page
+  fetcher: package_manifest
+  source_ids:
+    winget: Appest.Dida
   args:
+    provider: winget
+    package: Appest.Dida
     platforms:
     - platform: win-x64
-      download_url: https://dida365.com/
-      link_kind: landing_page
-    - platform: mac-universal
-      download_url: https://dida365.com/
-      link_kind: landing_page
   desc_cn: 跨平台待办与日程管理工具，支持番茄专注
   desc_en: Cross-platform to-do and schedule manager with Pomodoro focus
 - id: yuque
@@ -1313,15 +1343,14 @@ packages:
   editions:
   - cn
   homepage: https://www.yuque.com/
-  fetcher: download_page
+  fetcher: package_manifest
+  source_ids:
+    winget: Alibaba.Yuque
   args:
+    provider: winget
+    package: Alibaba.Yuque
     platforms:
     - platform: win-x64
-      download_url: https://www.yuque.com/
-      link_kind: landing_page
-    - platform: mac-universal
-      download_url: https://www.yuque.com/
-      link_kind: landing_page
   desc_cn: 蚂蚁出品的知识库与文档协作平台
   desc_en: Knowledge base and document collaboration platform by Ant Group
 - id: quark
@@ -1330,15 +1359,14 @@ packages:
   editions:
   - cn
   homepage: https://pc.quark.cn/
-  fetcher: download_page
+  fetcher: package_manifest
+  source_ids:
+    winget: Alibaba.Quark
   args:
+    provider: winget
+    package: Alibaba.Quark
     platforms:
     - platform: win-x64
-      download_url: https://pc.quark.cn/
-      link_kind: landing_page
-    - platform: mac-universal
-      download_url: https://pc.quark.cn/
-      link_kind: landing_page
   desc_cn: 阿里出品的极简浏览器，集成 AI 搜索与网盘
   desc_en: Minimalist browser by Alibaba with built-in AI search and cloud drive
 - id: qqbrowser
@@ -1347,15 +1375,14 @@ packages:
   editions:
   - cn
   homepage: https://browser.qq.com/
-  fetcher: download_page
+  fetcher: package_manifest
+  source_ids:
+    winget: Tencent.QQBrowser
   args:
+    provider: winget
+    package: Tencent.QQBrowser
     platforms:
-    - platform: win-x64
-      download_url: https://browser.qq.com/
-      link_kind: landing_page
-    - platform: mac-universal
-      download_url: https://browser.qq.com/
-      link_kind: landing_page
+    - platform: win-x86
   desc_cn: 腾讯出品的多功能浏览器，云同步与小程序
   desc_en: Multifunctional browser by Tencent with cloud sync and mini-programs
 - id: tianyiyun
@@ -1661,3 +1688,141 @@ packages:
       link_kind: landing_page
   desc_cn: 西山居开发的武侠 3D MMORPG 端游
   desc_en: Wuxia 3D MMORPG by Seasun (Kingsoft)
+- id: trae-cn
+  name: TRAE 中国版
+  category: AI Tools
+  editions:
+  - cn
+  homepage: https://www.trae.cn/
+  fetcher: package_manifest
+  source_ids:
+    winget: ByteDance.Trae.CN
+  args:
+    provider: winget
+    package: ByteDance.Trae.CN
+    installer_locale: zh-CN
+    platforms:
+    - platform: win-x64
+  desc_cn: 字节跳动推出的面向国内开发者的自适应 AI IDE，内置国产大模型
+  desc_en: Adaptive AI IDE by ByteDance tailored for Chinese developers
+- id: wetype
+  name: 微信输入法
+  category: System Utilities
+  editions:
+  - cn
+  homepage: https://z.weixin.qq.com/
+  fetcher: package_manifest
+  source_ids:
+    winget: Tencent.WeType
+    brew: wetype
+  args:
+    sources:
+    - provider: winget
+      package: Tencent.WeType
+      platforms:
+      - platform: win-x64
+      - platform: win-arm64
+    - provider: brew
+      package: wetype
+      platforms:
+      - platform: mac
+  desc_cn: 腾讯微信团队出品的简洁无广告中文输入法，支持跨设备剪贴板同步
+  desc_en: Clean, ad-free Chinese input method by WeChat with cross-device sync
+- id: weasel
+  name: 小狼毫输入法 (Weasel)
+  category: System Utilities
+  editions:
+  - cn
+  homepage: https://rime.im/
+  fetcher: github_release
+  args:
+    repo: rime/weasel
+    assets:
+    - platform: win-x64
+      pattern: weasel-*-installer.exe
+  desc_cn: Rime 中州韵输入法引擎 Windows 版，高度可定制、开源无广告
+  desc_en: Rime Input Method Engine for Windows, open-source and highly customizable
+- id: squirrel
+  name: 鼠须管输入法 (Squirrel)
+  category: System Utilities
+  editions:
+  - cn
+  homepage: https://rime.im/
+  fetcher: github_release
+  args:
+    repo: rime/squirrel
+    assets:
+    - platform: mac-universal
+      pattern: Squirrel-*.pkg
+  desc_cn: Rime 中州韵输入法引擎 macOS 版，高度可定制、开源无广告
+  desc_en: Rime Input Method Engine for macOS, open-source and highly customizable
+- id: quark-cloud-drive
+  name: 夸克网盘
+  category: Utilities
+  editions:
+  - cn
+  homepage: https://pan.quark.cn/
+  verification:
+    allowed_hosts:
+    - pdds-c1-cdn.quark.cn
+  fetcher: package_manifest
+  source_ids:
+    winget: Alibaba.QuarkCloudDrive
+  args:
+    provider: winget
+    package: Alibaba.QuarkCloudDrive
+    platforms:
+    - platform: win-x64
+  desc_cn: 阿里旗下夸克网盘桌面客户端，支持高速传输与在线文档影音管理
+  desc_en: Alibaba Quark Cloud Drive desktop client with fast sync and media management
+- id: 123pan
+  name: 123云盘
+  category: Utilities
+  editions:
+  - cn
+  homepage: https://www.123pan.com/
+  fetcher: package_manifest
+  source_ids:
+    winget: 123.123pan
+  args:
+    provider: winget
+    package: 123.123pan
+    platforms:
+    - platform: win-x64
+  desc_cn: 主打免登录高速下载与大空间存储的国产云盘客户端
+  desc_en: Chinese cloud storage client known for fast downloads and generous storage
+- id: utools
+  name: uTools
+  category: Productivity
+  editions:
+  - cn
+  homepage: https://www.u-tools.cn/
+  verification:
+    allowed_hosts:
+    - res.u-tools.cn
+  fetcher: package_manifest
+  source_ids:
+    winget: Yuanli.uTools
+  args:
+    provider: winget
+    package: Yuanli.uTools
+    platforms:
+    - platform: win-x64
+  desc_cn: 新一代效率工具平台，通过快捷键呼出与丰富插件极速完成各类操作
+  desc_en: All-in-one productivity launcher with rich community plugins
+- id: bcut
+  name: 必剪
+  category: Media Players
+  editions:
+  - cn
+  homepage: https://bcut.bilibili.cn/
+  fetcher: package_manifest
+  source_ids:
+    winget: Bilibili.Bcut
+  args:
+    provider: winget
+    package: Bilibili.Bcut
+    platforms:
+    - platform: win-x64
+  desc_cn: 哔哩哔哩官方推出的免费视频剪辑软件，支持一键投稿 B 站与字幕识别
+  desc_en: Official free video editor by Bilibili with auto-captions and direct upload

@@ -70,6 +70,14 @@ def expected_platforms(entry: dict[str, Any]) -> list[str]:
     args = entry.get("args", {})
     if entry.get("fetcher") == "windows11_fido":
         return [f"win-{args.get('arch', 'x64')}"]
+    if args.get("sources"):
+        platforms = [
+            item["platform"]
+            for src in args["sources"]
+            for item in src.get("platforms", [])
+        ]
+        if platforms:
+            return platforms
     for key in ("assets", "platforms", "builds"):
         if args.get(key):
             return [item["platform"] for item in args[key]]

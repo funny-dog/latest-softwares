@@ -194,3 +194,25 @@ def test_sync_schedule_prioritizes_critical_and_backs_off_failures():
     assert failed["failures"] == 3
     assert not sync_due({"_sync": urgent})
     assert sync_due({})
+
+
+def test_expected_platforms_supports_multi_source_package_manifest():
+    entry = {
+        "id": "demo",
+        "fetcher": "package_manifest",
+        "args": {
+            "sources": [
+                {
+                    "provider": "winget",
+                    "package": "Publisher.Demo",
+                    "platforms": [{"platform": "win-x64"}],
+                },
+                {
+                    "provider": "brew",
+                    "package": "demo",
+                    "platforms": [{"platform": "mac-arm64"}, {"platform": "mac-x64"}],
+                },
+            ]
+        },
+    }
+    assert expected_platforms(entry) == ["win-x64", "mac-arm64", "mac-x64"]

@@ -76,8 +76,24 @@ def is_already_collected(
 
 
 def existing_source_ids() -> set[tuple[str, str]]:
-    return {
-        (provider, str(ident).casefold())
-        for p in load_packages_config()["packages"]
-        for provider, ident in p.get("source_ids", {}).items()
-    }
+    """返回所有现有条目的 (provider, id_casefold) 集合（来自 source_ids 及 package_manifest args）。"""
+    result: set[tuple[str, str]] = set()
+    for p in load_packages_config().get("packages", []):
+        if not isinstance(p, dict):
+            continue
+        for provider, ident in (p.get("source_ids") or {}).items():
+            if isinstance(provider, str) and isinstance(ident, str) and ident.strip():
+                result.add((provider.strip().lower(), ident.strip().casefold()))
+        if p.get("fetcher") == "package_manifest":
+            args = p.get("args") or {}
+            if isinstance(args, dict):
+                raw_sources = args.get("sources")
+                specs = raw_sources if isinstance(raw_sources, list) else [args]
+                for spec in specs:
+                    if not isinstance(spec, dict):
+                        continue
+                    prov = spec.get("provider")
+                    pkg = spec.get("package")
+                    if isinstance(prov, str) and isinstance(pkg, str) and pkg.strip():
+                        result.add((prov.strip().lower(), pkg.strip().casefold()))
+    return result

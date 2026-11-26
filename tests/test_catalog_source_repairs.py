@@ -234,11 +234,15 @@ def test_manifest_and_fallback_services(packages_map: dict[str, dict]) -> None:
     assert thorium["args"]["provider"] == "scoop"
     assert thorium["args"]["package"] == "extras/thorium"
 
-    # DevToys uses download_page covering required mac platforms
+    # DevToys uses multi-source package_manifest covering WinGet + Brew platforms
     devtoys = packages_map["devtoys"]
-    assert devtoys["fetcher"] == "download_page"
-    dt_plats = {s["platform"]: s["download_url"] for s in devtoys["args"]["platforms"]}
-    assert "mac-arm64" in dt_plats and "mac-x64" in dt_plats
+    assert devtoys["fetcher"] == "package_manifest"
+    dt_plats = {
+        s["platform"]
+        for src in devtoys["args"]["sources"]
+        for s in src.get("platforms", [])
+    }
+    assert {"win-x64", "win-arm64", "mac-arm64", "mac-x64"}.issubset(dt_plats)
 
     # Container-only services use download_page with landing_page
     for svc_id in ["vaultwarden", "n8n", "appsmith", "nocodb", "sub-store"]:

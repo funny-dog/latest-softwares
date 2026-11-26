@@ -287,3 +287,178 @@ def test_brew_cannot_label_old_other_arch_release_as_current_version(monkeypatch
                 "platforms": [{"platform": "mac-x64"}],
             }
         )
+
+
+def test_parse_winget_index_msix_reads_sqlite_packages_table(tmp_path):
+    import io
+    import sqlite3
+    import zipfile
+
+    db_path = tmp_path / "index.db"
+    conn = sqlite3.connect(db_path)
+    conn.execute("CREATE TABLE packages (id TEXT, latest_version TEXT)")
+    conn.execute("INSERT INTO packages VALUES ('Publisher.Sample', '1.2.3')")
+    conn.execute("INSERT INTO packages VALUES ('Publisher.Empty', NULL)")
+    conn.commit()
+    conn.close()
+
+    buf = io.BytesIO()
+    with zipfile.ZipFile(buf, "w") as zf:
+        zf.writestr("Public/index.db", db_path.read_bytes())
+
+    mapping = package_manifest.parse_winget_index_msix(buf.getvalue())
+    assert mapping == {"Publisher.Sample": "1.2.3"}
+
+
+def test_winget_uses_index_fast_path_without_contents_api(monkeypatch):
+    requested_urls = []
+
+    class Response:
+        status_code = 200
+        text = (
+            "PackageIdentifier: Publisher.Sample\n"
+            "PackageVersion: 9.1.0\n"
+            "Installers:\n"
+            "  - Architecture: x64\n"
+            "    InstallerUrl: https://example.test/sample.exe\n"
+        )
+
+        def raise_for_status(self):
+            pass
+
+        def close(self):
+            pass
+
+    monkeypatch.setattr(
+        package_manifest,
+        "_winget_index_version",
+        lambda pkg: "9.1.0" if pkg == "Publisher.Sample" else None,
+    )
+    monkeypatch.setattr(
+        package_manifest,
+        "_contents",
+        lambda *a, **kw: pytest.fail("_contents should not be called when index hits"),
+    )
+
+    def fake_get(url, **kwargs):
+        requested_urls.append(url)
+        return Response()
+
+    monkeypatch.setattr(package_manifest, "get", fake_get)
+    data = package_manifest._winget("Publisher.Sample")
+    assert data["PackageVersion"] == "9.1.0"
+    assert requested_urls == [
+        "https://raw.githubusercontent.com/microsoft/winget-pkgs/master/manifests/p/Publisher/Sample/9.1.0/Publisher.Sample.installer.yaml"
+    ]
+
+
+def test_winget_locale_and_type_disambiguate_installers():
+    manifest = {
+        "Installers": [
+            {
+                "Architecture": "x64",
+                "InstallerType": "inno",
+                "InstallerLocale": "en-US",
+                "InstallerUrl": "https://example.test/app-en.exe",
+            },
+            {
+                "Architecture": "x64",
+                "InstallerType": "inno",
+                "InstallerLocale": "zh-CN",
+                "InstallerUrl": "https://example.test/app-cn.exe",
+            },
+            {
+                "Architecture": "x64",
+                "InstallerType": "msi",
+                "InstallerLocale": "zh-CN",
+                "InstallerUrl": "https://example.test/app-cn.msi",
+            },
+        ]
+    }
+    chosen_cn = package_manifest.select_winget_installer(
+        manifest, "x64", installer_locale="zh-CN"
+    )
+    assert chosen_cn["InstallerUrl"].endswith("app-cn.msi")
+
+    chosen_inno = package_manifest.select_winget_installer(
+        manifest, "x64", installer_locale="zh-CN", installer_type="inno"
+    )
+    assert chosen_inno["InstallerUrl"].endswith("app-cn.exe")
+
+
+def test_package_manifest_multi_source_combines_platforms_and_versions(monkeypatch):
+    monkeypatch.setattr(
+        package_manifest,
+        "_winget",
+        lambda pkg: {
+            "PackageVersion": "4.2.1.9",
+            "Installers": [
+                {
+                    "Architecture": "x64",
+                    "InstallerType": "nullsoft",
+                    "InstallerUrl": "https://example.test/win.exe",
+                    "InstallerSha256": "a" * 64,
+                }
+            ],
+        },
+    )
+    monkeypatch.setattr(
+        package_manifest,
+        "get_json",
+        lambda *a, **kw: {
+            "token": "sample-mac",
+            "version": "4.2.1.12",
+            "url": "https://example.test/mac-universal.dmg",
+            "sha256": "b" * 64,
+            "homepage": "https://example.test",
+        },
+    )
+    result = package_manifest.fetch(
+        {
+            "sources": [
+                {
+                    "provider": "winget",
+                    "package": "Publisher.Sample",
+                    "platforms": [{"platform": "win-x64"}],
+                },
+                {
+                    "provider": "brew",
+                    "package": "sample-mac",
+                    "platforms": [{"platform": "mac-universal"}],
+                },
+            ]
+        }
+    )
+    assert result.version == "4.2.1.9"
+    assert result.homepage == "https://example.test"
+    assert [a.platform for a in result.assets] == ["win-x64", "mac-universal"]
+    assert [a.version for a in result.assets] == ["4.2.1.9", "4.2.1.12"]
+
+
+def test_package_manifest_multi_source_rejects_duplicate_platforms(monkeypatch):
+    monkeypatch.setattr(
+        package_manifest,
+        "get_json",
+        lambda *a, **kw: {
+            "token": "sample-mac",
+            "version": "1.0",
+            "url": "https://example.test/mac-arm64.dmg",
+        },
+    )
+    with pytest.raises(FetchError, match="duplicate platform"):
+        package_manifest.fetch(
+            {
+                "sources": [
+                    {
+                        "provider": "brew",
+                        "package": "sample-mac",
+                        "platforms": [{"platform": "mac-arm64"}],
+                    },
+                    {
+                        "provider": "brew",
+                        "package": "sample-mac",
+                        "platforms": [{"platform": "mac-arm64"}],
+                    },
+                ]
+            }
+        )

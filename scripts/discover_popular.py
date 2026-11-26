@@ -1,8 +1,8 @@
 """自动发现热门软件 CLI。
 
-流程：多源发现（GitHub / WinGet / Homebrew / Scoop）→ 统一去重与证据映射
+流程：多源发现（GitHub / WinGet / Homebrew / Scoop / Flathub）→ 统一去重与证据映射
 → 编排过滤（可靠链接+资产匹配+同名歧义冲突判定+佐证）
-→ 分类+翻译 → 组装条目（github_release / download_page）
+→ 分类+翻译 → 组装条目（github_release / package_manifest / download_page）
 → 追加写入 packages/<edition>.yaml → 校验
 → 持久化状态（--state-file）与人工审查记录（--review-file）
 → 输出新增 id 列表（供 workflow 用）。
@@ -17,6 +17,7 @@ from __future__ import annotations
 import argparse
 import sys
 from pathlib import Path
+from typing import Any
 
 # Windows runner 默认 cp1252，输出中文/✓ 会 UnicodeEncodeError；与 sync.py 一致先 reconfigure。
 for _stream in (sys.stdout, sys.stderr):
@@ -28,16 +29,17 @@ for _stream in (sys.stdout, sys.stderr):
 
 if __package__ in (None, ""):
     sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
-    from scripts.discover.sources import github, AVAILABLE_SOURCES, fetch_source  # type: ignore
-    from scripts.discover.sources.github import discover  # type: ignore
-    from scripts.discover.aggregate import select_candidates  # type: ignore
-    from scripts.discover.categorize import categorize  # type: ignore
-    from scripts.discover.translate import translate_to_zh  # type: ignore
-    from scripts.discover.generate import build_entry  # type: ignore
-    from scripts.discover.yaml_writer import append_entries  # type: ignore
-    from scripts.discover.state import DiscoveryState  # type: ignore
-    from scripts.discover.review import ReviewManager  # type: ignore
-    from scripts.discover.models import (  # type: ignore
+    from scripts.discover.sources import github, AVAILABLE_SOURCES, fetch_source
+    from scripts.discover.sources.corroborate import cross_reference_popular
+    from scripts.discover.sources.github import discover
+    from scripts.discover.aggregate import select_candidates
+    from scripts.discover.categorize import categorize
+    from scripts.discover.translate import translate_to_zh
+    from scripts.discover.generate import build_entry
+    from scripts.discover.yaml_writer import append_entries
+    from scripts.discover.state import DiscoveryState
+    from scripts.discover.review import ReviewManager
+    from scripts.discover.models import (
         DEFAULT_MIN_STARS,
         DEFAULT_MAX_OUTPUT,
         DEFAULT_MAX_SCAN,
@@ -47,10 +49,11 @@ if __package__ in (None, ""):
         DEFAULT_REVIEW_FILE,
         Candidate,
     )
-    from scripts.config_loader import load_packages_config  # type: ignore
-    from scripts.validate_config import validate_config  # type: ignore
+    from scripts.config_loader import load_packages_config
+    from scripts.validate_config import validate_config
 else:
     from .discover.sources import github, AVAILABLE_SOURCES, fetch_source
+    from .discover.sources.corroborate import cross_reference_popular
     from .discover.sources.github import discover
     from .discover.aggregate import select_candidates
     from .discover.categorize import categorize
@@ -74,6 +77,7 @@ else:
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_OUTPUT = REPO_ROOT / "packages" / "shared.yaml"
+DEFAULT_POPULAR_SOURCES = ["brew", "flathub", "github"]
 
 
 def _parse_sources(raw: list[str] | None) -> list[str]:
@@ -98,8 +102,20 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument(
         "--sources",
         nargs="*",
-        default=DEFAULT_SOURCES,
-        help="指定发现源列表（如 github winget brew scoop），默认仅 github",
+        default=None,
+        help="指定发现源列表（如 github winget brew scoop flathub），默认仅 github（--popular 时默认 brew flathub github）",
+    )
+    parser.add_argument(
+        "--popular",
+        action="store_true",
+        default=False,
+        help="启用流行度驱动模式（Brew 30d Analytics + Flathub 热门榜 + WinGet source2.msix 索引交叉匹配）",
+    )
+    parser.add_argument(
+        "--dry-run",
+        action="store_true",
+        default=False,
+        help="只读探测模式：不写入 packages/、state、review 或 new-ids 文件",
     )
     parser.add_argument(
         "--state-file",
@@ -120,7 +136,12 @@ def main(argv: list[str] | None = None) -> int:
 
     state = DiscoveryState.load(args.state_file)
     review_manager = ReviewManager()
-    selected_sources = list(dict.fromkeys(_parse_sources(args.sources)))
+    if args.sources is None:
+        selected_sources = (
+            list(DEFAULT_POPULAR_SOURCES) if args.popular else list(DEFAULT_SOURCES)
+        )
+    else:
+        selected_sources = list(dict.fromkeys(_parse_sources(args.sources)))
     if set(selected_sources) - AVAILABLE_SOURCES.keys():
         parser.error("unknown discovery source")
     if args.max_scan < 1 or args.max_output < 1 or args.max_corroborate < 0:
@@ -154,12 +175,14 @@ def main(argv: list[str] | None = None) -> int:
                 err = str(exc)
                 cands = []
         else:
-            cands, err = fetch_source(
-                src,
-                max_scan=args.max_scan,
-                min_stars=args.min_stars,
-                state=state,
-            )
+            fetch_kwargs: dict[str, Any] = {
+                "max_scan": args.max_scan,
+                "min_stars": args.min_stars,
+                "state": state,
+            }
+            if args.popular:
+                fetch_kwargs["popular"] = True
+            cands, err = fetch_source(src, **fetch_kwargs)
 
         if err:
             print(f"⚠ 发现源 '{src}' 抓取异常: {err}", file=sys.stderr)
@@ -173,9 +196,16 @@ def main(argv: list[str] | None = None) -> int:
     # 网络失败单源隔离但不能伪装成成功零结果；全源失败返回非零。
     if failed_sources and not successful_sources and not all_candidates:
         print("❌ 所有选定的发现源均失败，退出", file=sys.stderr)
-        state.save(args.state_file)
-        review_manager.save(args.review_file)
+        if not args.dry_run:
+            state.save(args.state_file)
+            review_manager.save(args.review_file)
         return 1
+
+    if (args.popular or "flathub" in selected_sources) and all_candidates:
+        cross_cands = cross_reference_popular(all_candidates)
+        if cross_cands:
+            print(f"跨源索引匹配补全 {len(cross_cands)} 条 WinGet/Brew 证据")
+            all_candidates.extend(cross_cands)
 
     print(f"汇总多源候选共 {len(all_candidates)} 个")
 
@@ -189,7 +219,7 @@ def main(argv: list[str] | None = None) -> int:
 
     print(f"过滤后保留 {len(selected)} 个候选")
 
-    entries: list[dict] = []
+    entries: list[dict[str, Any]] = []
     new_ids: list[str] = []
     seen_ids: set[str] = set()
 
@@ -217,7 +247,9 @@ def main(argv: list[str] | None = None) -> int:
             repo=cand.repo,
             pattern=pattern,
             desc_en=cand.description,
-            desc_cn=translate_to_zh(cand.description),
+            desc_cn=(
+                cand.description if args.dry_run else translate_to_zh(cand.description)
+            ),
             fetcher=fetcher_type,
             homepage=cand.homepage,
             download_url=cand.download_url,
@@ -279,7 +311,9 @@ def main(argv: list[str] | None = None) -> int:
         entries.append(entry)
         new_ids.append(entry_id)
         tag = pattern if pattern else f"url:{cand.download_url}"
-        print(f"✓ {entry_id} [{fetcher_type}]: {cand.name} → {tag}")
+        sids = f" source_ids={source_ids}" if source_ids else ""
+        pop = f" pop={cand.popularity}" if cand.popularity else ""
+        print(f"✓ {entry_id} [{fetcher_type}]: {cand.name} → {tag}{sids}{pop}")
 
     output_path = Path(args.output)
     if entries:
@@ -299,15 +333,18 @@ def main(argv: list[str] | None = None) -> int:
         if errors:
             for error in errors:
                 print(error, file=sys.stderr)
-            state.save(args.state_file)
-            review_manager.save(args.review_file)
+            if not args.dry_run:
+                state.save(args.state_file)
+                review_manager.save(args.review_file)
             return 1
-        append_entries(entries, output_path)
+        if not args.dry_run:
+            append_entries(entries, output_path)
 
     # 持久化状态、审查记录与新 ID 列表
-    state.save(args.state_file)
-    review_manager.save(args.review_file)
-    Path(args.new_ids_file).write_text("\n".join(new_ids), encoding="utf-8")
+    if not args.dry_run:
+        state.save(args.state_file)
+        review_manager.save(args.review_file)
+        Path(args.new_ids_file).write_text("\n".join(new_ids), encoding="utf-8")
     return 0
 
 

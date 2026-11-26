@@ -61,7 +61,7 @@
       ],
       "platforms": [
         "win-x64",
-        "mac-universal",
+        "mac",
         "linux-x64"
       ]
     },
@@ -495,7 +495,7 @@
       ],
       "platforms": [
         "win-x64",
-        "mac-universal"
+        "mac"
       ]
     },
     {
@@ -532,7 +532,8 @@
       ],
       "platforms": [
         "win-x64",
-        "mac-universal"
+        "mac-arm64",
+        "mac-x64"
       ]
     },
     {
@@ -556,7 +557,8 @@
       ],
       "platforms": [
         "win-x64",
-        "mac-universal"
+        "win-arm64",
+        "mac-arm64"
       ]
     },
     {
@@ -568,7 +570,7 @@
       ],
       "platforms": [
         "win-x64",
-        "mac-universal",
+        "mac",
         "linux-x64"
       ]
     },
@@ -581,7 +583,7 @@
       ],
       "platforms": [
         "win-x64",
-        "mac-universal",
+        "mac",
         "linux-x64"
       ]
     },
@@ -607,7 +609,9 @@
         "intl"
       ],
       "platforms": [
-        "mac-universal"
+        "win-x64",
+        "mac-arm64",
+        "mac-x64"
       ]
     },
     {
@@ -619,7 +623,8 @@
       ],
       "platforms": [
         "win-x64",
-        "mac-universal"
+        "win-arm64",
+        "mac-arm64"
       ]
     },
     {
@@ -644,7 +649,7 @@
       ],
       "platforms": [
         "win-x64",
-        "mac-universal",
+        "mac",
         "linux-x64"
       ]
     },
@@ -682,7 +687,7 @@
       ],
       "platforms": [
         "win-x64",
-        "mac-universal",
+        "mac",
         "linux-x64"
       ]
     },
@@ -836,7 +841,8 @@
       ],
       "platforms": [
         "win-x64",
-        "mac-universal",
+        "mac-arm64",
+        "mac-x64",
         "linux-x64"
       ]
     },
@@ -926,7 +932,7 @@
       ],
       "platforms": [
         "win-x64",
-        "mac-universal"
+        "mac"
       ]
     },
     {
@@ -974,6 +980,7 @@
         "intl"
       ],
       "platforms": [
+        "win-x64",
         "mac-universal"
       ]
     },
@@ -997,8 +1004,8 @@
         "cn"
       ],
       "platforms": [
-        "win-x64",
-        "mac-x64"
+        "win-x86",
+        "mac-universal"
       ]
     },
     {
@@ -1010,7 +1017,8 @@
       ],
       "platforms": [
         "win-x64",
-        "mac-x64"
+        "win-x86",
+        "mac-arm64"
       ]
     },
     {
@@ -1022,7 +1030,7 @@
       ],
       "platforms": [
         "win-x64",
-        "mac-x64"
+        "mac-arm64"
       ]
     },
     {
@@ -1057,7 +1065,8 @@
       ],
       "platforms": [
         "win-x64",
-        "mac-universal"
+        "win-arm64",
+        "mac"
       ]
     },
     {
@@ -1082,7 +1091,8 @@
         "intl"
       ],
       "platforms": [
-        "mac-universal"
+        "mac-arm64",
+        "mac-x64"
       ]
     },
     {
@@ -1127,7 +1137,7 @@
       ],
       "platforms": [
         "win-x64",
-        "mac-universal"
+        "mac"
       ]
     },
     {
@@ -3655,6 +3665,564 @@
       ],
       "platforms": [
         "win-x64"
+      ]
+    },
+    {
+      "id": "chatgpt",
+      "name": "ChatGPT",
+      "category": "AI Tools",
+      "editions": [
+        "intl"
+      ],
+      "platforms": [
+        "win-x64",
+        "win-arm64",
+        "mac-arm64",
+        "mac-x64"
+      ]
+    },
+    {
+      "id": "claude",
+      "name": "Claude",
+      "category": "AI Tools",
+      "editions": [
+        "intl"
+      ],
+      "platforms": [
+        "win-x64",
+        "win-arm64",
+        "mac-universal"
+      ]
+    },
+    {
+      "id": "trae",
+      "name": "TRAE",
+      "category": "AI Tools",
+      "editions": [
+        "intl"
+      ],
+      "platforms": [
+        "win-x64",
+        "mac-arm64",
+        "mac-x64"
+      ]
+    },
+    {
+      "id": "trae-cn",
+      "name": "TRAE 中国版",
+      "category": "AI Tools",
+      "editions": [
+        "cn"
+      ],
+      "platforms": [
+        "win-x64"
+      ]
+    },
+    {
+      "id": "cherry-studio",
+      "name": "Cherry Studio",
+      "category": "AI Tools",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "win-x64",
+        "win-arm64",
+        "mac-arm64",
+        "mac-x64"
+      ]
+    },
+    {
+      "id": "lm-studio",
+      "name": "LM Studio",
+      "category": "AI Tools",
+      "editions": [
+        "intl"
+      ],
+      "platforms": [
+        "win-x64",
+        "win-arm64",
+        "mac-arm64"
+      ]
+    },
+    {
+      "id": "antigravity",
+      "name": "Antigravity",
+      "category": "AI Tools",
+      "editions": [
+        "intl"
+      ],
+      "platforms": [
+        "win-x64",
+        "mac-x64"
+      ]
+    },
+    {
+      "id": "windsurf",
+      "name": "Windsurf",
+      "category": "AI Tools",
+      "editions": [
+        "intl"
+      ],
+      "platforms": [
+        "win-x64",
+        "mac-arm64",
+        "linux-x64"
+      ]
+    },
+    {
+      "id": "iterm2",
+      "name": "iTerm2",
+      "category": "Developer Tools",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "mac"
+      ]
+    },
+    {
+      "id": "warp",
+      "name": "Warp",
+      "category": "Developer Tools",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "win-x64"
+      ]
+    },
+    {
+      "id": "android-platform-tools",
+      "name": "Android Platform Tools",
+      "category": "Developer Tools",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "win-x64",
+        "mac"
+      ]
+    },
+    {
+      "id": "git-credential-manager",
+      "name": "Git Credential Manager",
+      "category": "Developer Tools",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "win-x64",
+        "mac-arm64",
+        "mac-x64"
+      ]
+    },
+    {
+      "id": "1password-cli",
+      "name": "1Password CLI",
+      "category": "Security & Privacy",
+      "editions": [
+        "intl"
+      ],
+      "platforms": [
+        "win-x64",
+        "mac-arm64",
+        "mac-x64"
+      ]
+    },
+    {
+      "id": "ngrok",
+      "name": "ngrok",
+      "category": "Developer Tools",
+      "editions": [
+        "intl"
+      ],
+      "platforms": [
+        "win-x64",
+        "mac-arm64"
+      ]
+    },
+    {
+      "id": "mitmproxy",
+      "name": "mitmproxy",
+      "category": "Developer Tools",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "win-x64",
+        "mac-arm64",
+        "mac-x64"
+      ]
+    },
+    {
+      "id": "mobaxterm",
+      "name": "MobaXterm",
+      "category": "Developer Tools",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "win-x86"
+      ]
+    },
+    {
+      "id": "windterm",
+      "name": "WindTerm",
+      "category": "Developer Tools",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "win-x64",
+        "win-x86",
+        "mac-x64",
+        "linux-x64"
+      ]
+    },
+    {
+      "id": "wetype",
+      "name": "微信输入法",
+      "category": "System Utilities",
+      "editions": [
+        "cn"
+      ],
+      "platforms": [
+        "win-x64",
+        "win-arm64",
+        "mac"
+      ]
+    },
+    {
+      "id": "weasel",
+      "name": "小狼毫输入法 (Weasel)",
+      "category": "System Utilities",
+      "editions": [
+        "cn"
+      ],
+      "platforms": [
+        "win-x64"
+      ]
+    },
+    {
+      "id": "squirrel",
+      "name": "鼠须管输入法 (Squirrel)",
+      "category": "System Utilities",
+      "editions": [
+        "cn"
+      ],
+      "platforms": [
+        "mac-universal"
+      ]
+    },
+    {
+      "id": "quark-cloud-drive",
+      "name": "夸克网盘",
+      "category": "Utilities",
+      "editions": [
+        "cn"
+      ],
+      "platforms": [
+        "win-x64"
+      ]
+    },
+    {
+      "id": "123pan",
+      "name": "123云盘",
+      "category": "Utilities",
+      "editions": [
+        "cn"
+      ],
+      "platforms": [
+        "win-x64"
+      ]
+    },
+    {
+      "id": "bandizip",
+      "name": "Bandizip",
+      "category": "Utilities",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "win-x64",
+        "win-arm64"
+      ]
+    },
+    {
+      "id": "utools",
+      "name": "uTools",
+      "category": "Productivity",
+      "editions": [
+        "cn"
+      ],
+      "platforms": [
+        "win-x64"
+      ]
+    },
+    {
+      "id": "listary",
+      "name": "Listary",
+      "category": "System Utilities",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "win-x86"
+      ]
+    },
+    {
+      "id": "pixpin",
+      "name": "PixPin",
+      "category": "System Utilities",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "win-x64"
+      ]
+    },
+    {
+      "id": "bcut",
+      "name": "必剪",
+      "category": "Media Players",
+      "editions": [
+        "cn"
+      ],
+      "platforms": [
+        "win-x64"
+      ]
+    },
+    {
+      "id": "flclash",
+      "name": "FlClash",
+      "category": "Network & Proxy",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "win-x64",
+        "win-arm64",
+        "mac-arm64",
+        "mac-x64",
+        "linux-x64",
+        "linux-arm64"
+      ]
+    },
+    {
+      "id": "mihomo-party",
+      "name": "Mihomo Party (Clash Party)",
+      "category": "Network & Proxy",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "win-x64",
+        "win-arm64",
+        "mac-arm64",
+        "mac-x64",
+        "linux-x64",
+        "linux-arm64"
+      ]
+    },
+    {
+      "id": "clash-nyanpasu",
+      "name": "Clash Nyanpasu",
+      "category": "Network & Proxy",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "win-x64",
+        "win-arm64",
+        "mac-arm64",
+        "mac-x64",
+        "linux-x64",
+        "linux-arm64"
+      ]
+    },
+    {
+      "id": "watt-toolkit",
+      "name": "Watt Toolkit (Steam++)",
+      "category": "Gaming",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "win-x64",
+        "mac-arm64",
+        "mac-x64",
+        "linux-x64",
+        "linux-arm64"
+      ]
+    },
+    {
+      "id": "balenaetcher",
+      "name": "balenaEtcher",
+      "category": "System Utilities",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "win-x64",
+        "mac-arm64",
+        "mac-x64",
+        "linux-x64"
+      ]
+    },
+    {
+      "id": "ab-download-manager",
+      "name": "AB Download Manager",
+      "category": "Utilities",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "win-x64",
+        "win-arm64",
+        "mac-arm64",
+        "mac-x64",
+        "linux-x64",
+        "linux-arm64"
+      ]
+    },
+    {
+      "id": "capcut",
+      "name": "CapCut",
+      "category": "Media Players",
+      "editions": [
+        "intl"
+      ],
+      "platforms": [
+        "win-x64",
+        "mac"
+      ]
+    },
+    {
+      "id": "the-unarchiver",
+      "name": "The Unarchiver",
+      "category": "Utilities",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "mac"
+      ]
+    },
+    {
+      "id": "idm",
+      "name": "Internet Download Manager",
+      "category": "Utilities",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "win-x86"
+      ]
+    },
+    {
+      "id": "cpu-z",
+      "name": "CPU-Z",
+      "category": "System Utilities",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "win-x64"
+      ]
+    },
+    {
+      "id": "msi-afterburner",
+      "name": "MSI Afterburner",
+      "category": "System Utilities",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "win-x86"
+      ]
+    },
+    {
+      "id": "unity-hub",
+      "name": "Unity Hub",
+      "category": "Developer Tools",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "win-x64",
+        "mac-arm64",
+        "mac-x64"
+      ]
+    },
+    {
+      "id": "battle-net",
+      "name": "Battle.net",
+      "category": "Gaming",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "win-x86",
+        "mac"
+      ]
+    },
+    {
+      "id": "ea-app",
+      "name": "EA App",
+      "category": "Gaming",
+      "editions": [
+        "intl"
+      ],
+      "platforms": [
+        "win-x64"
+      ]
+    },
+    {
+      "id": "ubisoft-connect",
+      "name": "Ubisoft Connect",
+      "category": "Gaming",
+      "editions": [
+        "intl"
+      ],
+      "platforms": [
+        "win-x86"
+      ]
+    },
+    {
+      "id": "gog-galaxy",
+      "name": "GOG GALAXY",
+      "category": "Gaming",
+      "editions": [
+        "cn",
+        "intl"
+      ],
+      "platforms": [
+        "win-x86",
+        "mac"
       ]
     }
   ]

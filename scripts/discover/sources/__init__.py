@@ -5,13 +5,14 @@ from __future__ import annotations
 from typing import Any, Callable
 
 from ..models import Candidate
-from . import brew, github, scoop, winget
+from . import brew, flathub, github, scoop, winget
 
 AVAILABLE_SOURCES: dict[str, Callable[..., list[Candidate]]] = {
     "github": github.discover,
     "winget": winget.discover,
     "brew": brew.discover,
     "scoop": scoop.discover,
+    "flathub": flathub.discover,
 }
 
 
@@ -21,6 +22,7 @@ def fetch_source(
     max_scan: int,
     min_stars: int = 5000,
     state: Any = None,
+    popular: bool = False,
 ) -> tuple[list[Candidate], str | None]:
     """执行单个发现源的抓取，返回 (candidates, error)。
 
@@ -36,16 +38,20 @@ def fetch_source(
             err = getattr(github, "LAST_ERROR", None)
             return cands, err
         elif name == "winget":
-            cands = fn(max_scan=max_scan, state=state)
+            cands = fn(max_scan=max_scan, state=state, use_index=popular)
             err = getattr(winget, "LAST_ERROR", None)
             return cands, err
         elif name == "brew":
-            cands = fn(max_scan=max_scan, state=state)
+            cands = fn(max_scan=max_scan, state=state, popular=popular)
             err = getattr(brew, "LAST_ERROR", None)
             return cands, err
         elif name == "scoop":
             cands = fn(max_scan=max_scan, state=state)
             err = getattr(scoop, "LAST_ERROR", None)
+            return cands, err
+        elif name == "flathub":
+            cands = fn(max_scan=max_scan, state=state)
+            err = getattr(flathub, "LAST_ERROR", None)
             return cands, err
         else:
             return fn(max_scan=max_scan, state=state), None

@@ -241,3 +241,144 @@ def test_validate_cross_file_skips_underscore_files(tmp_path):
 
     errors = validate_config.validate_cross_file_uniqueness(packages_dir)
     assert errors == []
+
+
+def test_validate_multi_source_package_manifest():
+    cfg = {
+        "packages": [
+            {
+                "id": "demo",
+                "name": "Demo",
+                "category": "Utilities",
+                "fetcher": "package_manifest",
+                "args": {
+                    "sources": [
+                        {
+                            "provider": "winget",
+                            "package": "Publisher.Demo",
+                            "installer_locale": "zh-CN",
+                            "platforms": [{"platform": "win-x64"}],
+                        },
+                        {
+                            "provider": "brew",
+                            "package": "demo",
+                            "platforms": [{"platform": "mac-arm64"}],
+                        },
+                    ]
+                },
+            }
+        ]
+    }
+    assert validate_config.validate_config(cfg) == []
+
+    cfg["packages"][0]["args"]["sources"][1]["platforms"][0]["platform"] = "win-x64"
+    errors = validate_config.validate_config(cfg)
+    assert any("manifest platform 与 provider 不匹配" in e for e in errors)
+
+
+def test_validate_linux_store_and_mixed_manifest_providers():
+    cfg = {
+        "packages": [
+            {
+                "id": "discord",
+                "name": "Discord",
+                "category": "Messaging",
+                "fetcher": "package_manifest",
+                "source_ids": {
+                    "winget": "Discord.Discord",
+                    "brew": "discord",
+                    "flathub": "com.discordapp.Discord",
+                },
+                "args": {
+                    "sources": [
+                        {
+                            "provider": "winget",
+                            "package": "Discord.Discord",
+                            "platforms": [{"platform": "win-x64"}],
+                        },
+                        {
+                            "provider": "flathub",
+                            "package": "com.discordapp.Discord",
+                            "platforms": [{"platform": "linux-x64"}],
+                        },
+                    ]
+                },
+            },
+            {
+                "id": "slack-snap",
+                "name": "Slack",
+                "category": "Messaging",
+                "fetcher": "linux_store",
+                "args": {
+                    "provider": "snapcraft",
+                    "package": "slack",
+                    "platforms": [{"platform": "linux-x64"}],
+                },
+            },
+        ]
+    }
+    assert validate_config.validate_config(cfg) == []
+
+    bad = copy.deepcopy(cfg)
+    bad["packages"][0]["args"]["sources"][1]["platforms"][0]["platform"] = "win-x64"
+    assert any(
+        "manifest platform 与 provider 不匹配" in e
+        for e in validate_config.validate_config(bad)
+    )
+
+    bad_linux = copy.deepcopy(cfg)
+    bad_linux["packages"][1]["args"]["provider"] = "winget"
+    assert any(
+        "manifest provider" in e for e in validate_config.validate_config(bad_linux)
+    )
+
+
+def test_validate_updater_feed_and_redirect_probe():
+    cfg = {
+        "packages": [
+            {
+                "id": "docker-desktop",
+                "name": "Docker Desktop",
+                "category": "Developer Tools",
+                "fetcher": "updater_feed",
+                "args": {
+                    "format": "sparkle",
+                    "platforms": [
+                        {
+                            "platform": "linux-x64",
+                            "feed_url": "https://desktop.docker.com/linux/main/amd64/appcast.xml",
+                            "pattern": "*.deb",
+                        }
+                    ],
+                },
+            },
+            {
+                "id": "huorong",
+                "name": "Huorong",
+                "category": "Security",
+                "fetcher": "redirect_probe",
+                "args": {
+                    "version_regex": r"sysdiag-(\d+\.\d+\.\d+\.\d+)",
+                    "max_hops": 6,
+                    "platforms": [
+                        {
+                            "platform": "win-x64",
+                            "url": "https://www.huorong.cn/product/downloadHr60.php?pro=hr60&plat=x64UrlAll",
+                        }
+                    ],
+                },
+            },
+        ]
+    }
+    assert validate_config.validate_config(cfg) == []
+
+    bad_feed = copy.deepcopy(cfg)
+    bad_feed["packages"][0]["args"]["format"] = "unknown"
+    assert any("format" in e for e in validate_config.validate_config(bad_feed))
+
+    bad_probe = copy.deepcopy(cfg)
+    bad_probe["packages"][1]["args"]["version_regex"] = "["
+    bad_probe["packages"][1]["args"]["max_hops"] = 99
+    errors = validate_config.validate_config(bad_probe)
+    assert any("version_regex 不是有效正则" in e for e in errors)
+    assert any("max_hops 必须是 1-10 的整数" in e for e in errors)

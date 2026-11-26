@@ -31,7 +31,8 @@ packages:
     - platform: workstation-live-x86_64
       pattern: Fedora-Workstation-Live-{version}-*.x86_64.iso
   desc_cn: Red Hat 赞助的前沿 Linux 发行版，率先采用新技术
-  desc_en: Cutting-edge Linux distribution sponsored by Red Hat, early adopter of new tech
+  desc_en: Cutting-edge Linux distribution sponsored by Red Hat, early adopter of
+    new tech
   verification:
     identity_terms:
     - Fedora Workstation
@@ -54,6 +55,10 @@ packages:
       pattern: v2rayN-macos-arm64.dmg
     - platform: mac-x64
       pattern: v2rayN-macos-64.dmg
+    - platform: linux-x64
+      pattern: v2rayN-linux-64.deb
+    - platform: linux-arm64
+      pattern: v2rayN-linux-arm64.deb
   desc_cn: Windows 平台的 V2Ray 图形客户端，支持多种代理协议
   desc_en: V2Ray GUI client for Windows with multi-protocol proxy support
 - id: vscode
@@ -74,6 +79,10 @@ packages:
       build: darwin-arm64-dmg
     - platform: mac-x64
       build: darwin-x64-dmg
+    - platform: linux-x64
+      build: linux-deb-x64
+    - platform: linux-arm64
+      build: linux-deb-arm64
   desc_cn: 微软出品的轻量级代码编辑器，支持丰富的扩展生态
   desc_en: Lightweight code editor by Microsoft with rich extension ecosystem
 - id: chrome
@@ -94,6 +103,14 @@ packages:
       channel: stable
       os_key: mac_arm64
       download_url: https://dl.google.com/chrome/mac/stable/GGRO/googlechrome.dmg
+    - platform: mac-x64
+      channel: stable
+      os_key: mac
+      download_url: https://dl.google.com/chrome/mac/stable/GGRO/googlechrome.dmg
+    - platform: linux-x64
+      channel: stable
+      os_key: linux
+      download_url: https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
   desc_cn: Google 出品的全球最流行的浏览器，速度快安全性好
   desc_en: World's most popular browser by Google, fast and secure
 - id: steam
@@ -108,6 +125,8 @@ packages:
     platforms:
     - platform: win-x64
       download_url: https://cdn.fastly.steamstatic.com/client/installer/SteamSetup.exe
+    - platform: mac-universal
+      download_url: https://cdn.fastly.steamstatic.com/client/installer/steam.dmg
   desc_cn: Valve 的游戏平台，全球最大的 PC 游戏分发平台
   desc_en: Gaming platform by Valve, the world's largest PC game distribution platform
 - id: localsend
@@ -125,6 +144,14 @@ packages:
       pattern: LocalSend-[0-9]*-windows-x86-64.exe
     - platform: mac-arm64
       pattern: LocalSend-*.dmg
+    - platform: win-arm64
+      pattern: LocalSend-[0-9]*-windows-arm-64.zip
+    - platform: mac-x64
+      pattern: LocalSend-[0-9]*.dmg
+    - platform: linux-x64
+      pattern: LocalSend-[0-9]*-linux-x86-64.deb
+    - platform: linux-arm64
+      pattern: LocalSend-[0-9]*-linux-arm-64.deb
   desc_cn: 局域网文件传输工具，AirDrop 的跨平台替代品
   desc_en: LAN file transfer tool, cross-platform alternative to AirDrop
 - id: bitwarden
@@ -144,6 +171,8 @@ packages:
       pattern: bit-Bitwarden-Installer-{version}.exe
     - platform: mac-universal
       pattern: bit-Bitwarden-{version}-universal.dmg
+    - platform: linux-x64
+      pattern: bit-Bitwarden-{version}-amd64.deb
   desc_cn: 开源密码管理器，跨平台同步加密存储
   desc_en: Open-source password manager with cross-platform encrypted sync
 - id: codex
@@ -167,6 +196,10 @@ packages:
       pattern: codex-aarch64-apple-darwin.dmg
     - platform: mac-x64
       pattern: codex-x86_64-apple-darwin.tar.gz
+    - platform: linux-x64
+      pattern: codex-x86_64-unknown-linux-musl.tar.gz
+    - platform: linux-arm64
+      pattern: codex-aarch64-unknown-linux-musl.tar.gz
   desc_cn: OpenAI 推出的 AI 编程助手，自动编写和调试代码
   desc_en: AI coding assistant by OpenAI for automated code writing and debugging
 - id: geek
@@ -232,6 +265,8 @@ packages:
     assets:
     - platform: win-x64
       pattern: Git-*-64-bit.exe
+    - platform: win-arm64
+      pattern: Git-*-arm64.exe
   desc_cn: 分布式版本控制系统 Windows 移植版，开发者必备
   desc_en: Windows port of the distributed version control system, essential for developers
 - id: insomnia
@@ -247,6 +282,10 @@ packages:
     assets:
     - platform: win-x64
       pattern: Insomnia.Core-[0-9]*.exe
+    - platform: mac-universal
+      pattern: Insomnia.Core-{version}.dmg
+    - platform: linux-x64
+      pattern: Insomnia.Core-{version}.deb
   desc_cn: 开源 REST 和 GraphQL API 测试工具，界面简洁
   desc_en: Open-source REST and GraphQL API testing tool with clean UI
 - id: heidisql
@@ -262,6 +301,12 @@ packages:
     assets:
     - platform: win-x64
       pattern: HeidiSQL_*_Setup.exe
+    - platform: mac-universal
+      pattern: heidisql_{version}_macos_app.zip
+    - platform: linux-x64
+      pattern: heidisql_{version}_amd64.deb
+    - platform: linux-arm64
+      pattern: build-qt6-arm64-v*.tgz
   desc_cn: 免费的 MySQL/MariaDB/PostgreSQL 数据库管理工具
   desc_en: Free MySQL/MariaDB/PostgreSQL database management tool
 - id: notepadplusplus
@@ -277,6 +322,8 @@ packages:
     assets:
     - platform: win-x64
       pattern: npp.*.Installer.x64.exe
+    - platform: win-arm64
+      pattern: npp.*.Installer.arm64.exe
   desc_cn: 免费的 Windows 源代码编辑器，支持多种编程语言
   desc_en: Free Windows source code editor with multi-language support
 - id: wezterm
@@ -292,6 +339,12 @@ packages:
     assets:
     - platform: win-x64
       pattern: WezTerm-*-setup.exe
+    - platform: mac-universal
+      pattern: WezTerm-macos-*.zip
+    - platform: linux-x64
+      pattern: WezTerm-*-Ubuntu20.04.AppImage
+    - platform: linux-arm64
+      pattern: wezterm-*.Ubuntu22.04.arm64.deb
   desc_cn: GPU 加速的跨平台终端模拟器，支持 Lua 配置
   desc_en: GPU-accelerated cross-platform terminal emulator with Lua configuration
 - id: hiddify
@@ -311,6 +364,8 @@ packages:
       pattern: Hiddify-MacOS-Installer.pkg
     - platform: linux-x64
       pattern: Hiddify-Linux-x64-AppImage.AppImage
+    - platform: linux-arm64
+      pattern: Hiddify-Debian-arm64.deb
   desc_cn: 多协议代理客户端，支持 V2Ray、Clash 等主流协议
   desc_en: Multi-protocol proxy client supporting V2Ray, Clash and other protocols
 - id: sing-box
@@ -326,6 +381,16 @@ packages:
     assets:
     - platform: win-x64
       pattern: sing-box-*-windows-amd64.zip
+    - platform: win-arm64
+      pattern: sing-box-*-windows-arm64.zip
+    - platform: mac-arm64
+      pattern: sing-box-*-darwin-arm64.tar.gz
+    - platform: mac-x64
+      pattern: sing-box-*-darwin-amd64.tar.gz
+    - platform: linux-x64
+      pattern: sing-box_*_linux_amd64.deb
+    - platform: linux-arm64
+      pattern: sing-box_*_linux_arm64.deb
   desc_cn: 通用代理平台，支持多种协议的下一代网络代理工具
   desc_en: Universal proxy platform supporting multiple protocols as next-gen network
     tool
@@ -342,6 +407,8 @@ packages:
     assets:
     - platform: win-x64
       pattern: TrafficMonitor_V*_x64.zip
+    - platform: win-x86
+      pattern: TrafficMonitor_V*_x86.zip
   desc_cn: Windows 网速和系统资源悬浮窗监控工具
   desc_en: Windows network speed and system resource floating monitor
 - id: keepassxc
@@ -357,6 +424,16 @@ packages:
     assets:
     - platform: win-x64
       pattern: KeePassXC-*-x64.msi
+    - platform: win-arm64
+      pattern: KeePassXC-{version}-ARM64.msi
+    - platform: mac-arm64
+      pattern: KeePassXC-{version}-arm64.dmg
+    - platform: mac-x64
+      pattern: KeePassXC-{version}-x86_64.dmg
+    - platform: linux-x64
+      pattern: KeePassXC-{version}-x86_64.AppImage
+    - platform: linux-arm64
+      pattern: KeePassXC-{version}-aarch64.AppImage
   desc_cn: 离线密码管理器，本地加密存储密码数据库
   desc_en: Offline password manager with locally encrypted password database
 - id: rustdesk
@@ -372,6 +449,16 @@ packages:
     assets:
     - platform: win-x64
       pattern: rustdesk-*-x86_64.exe
+    - platform: win-arm64
+      pattern: rustdesk-{version}-aarch64.exe
+    - platform: mac-arm64
+      pattern: rustdesk-{version}-aarch64.dmg
+    - platform: mac-x64
+      pattern: rustdesk-{version}-x86_64.dmg
+    - platform: linux-x64
+      pattern: rustdesk-{version}-x86_64.deb
+    - platform: linux-arm64
+      pattern: rustdesk-{version}-aarch64.deb
   desc_cn: 开源远程桌面软件，可自建服务器
   desc_en: Open-source remote desktop software with self-hosted server support
 - id: telegram
@@ -387,6 +474,14 @@ packages:
     assets:
     - platform: win-x64
       pattern: td-setup-win-x64-*.exe
+    - platform: win-arm64
+      pattern: td-setup-win-arm-*.exe
+    - platform: win-x86
+      pattern: td-setup-win-x86-*.exe
+    - platform: mac-universal
+      pattern: td-setup-mac-*.dmg
+    - platform: linux-x64
+      pattern: td-setup-linux-x64-*.tar.xz
   desc_cn: 注重安全和速度的即时通讯工具，支持大群组和频道
   desc_en: Security and speed-focused messenger with large groups and channels
 - id: logseq
@@ -402,6 +497,16 @@ packages:
     assets:
     - platform: win-x64
       pattern: Logseq-win-x64-*.exe
+    - platform: win-arm64
+      pattern: Logseq-win-arm64-*.exe
+    - platform: mac-arm64
+      pattern: Logseq-darwin-arm64-*.dmg
+    - platform: mac-x64
+      pattern: Logseq-darwin-x64-*.dmg
+    - platform: linux-x64
+      pattern: Logseq-linux-x86_64-*.AppImage
+    - platform: linux-arm64
+      pattern: Logseq-linux-arm64-*.AppImage
   desc_cn: 开源知识管理和笔记工具，基于大纲和双向链接
   desc_en: Open-source knowledge management and note-taking with outlines and bidirectional
     links
@@ -418,6 +523,12 @@ packages:
     assets:
     - platform: win-x64
       pattern: Joplin-Setup-*.exe
+    - platform: mac-arm64
+      pattern: Joplin-*-arm64.DMG
+    - platform: mac-x64
+      pattern: Joplin-{version}.dmg
+    - platform: linux-x64
+      pattern: Joplin-*.AppImage
   desc_cn: 开源笔记和待办工具，支持 Markdown 和端到端加密
   desc_en: Open-source note-taking and to-do app with Markdown and E2E encryption
 - id: brave
@@ -433,6 +544,16 @@ packages:
     assets:
     - platform: win-x64
       pattern: BraveBrowserSetup.exe
+    - platform: win-arm64
+      pattern: BraveBrowserStandaloneSetupArm64.exe
+    - platform: mac-arm64
+      pattern: Brave-Browser-arm64.dmg
+    - platform: mac-x64
+      pattern: Brave-Browser-x64.dmg
+    - platform: linux-x64
+      pattern: brave-browser_{version}_amd64.deb
+    - platform: linux-arm64
+      pattern: brave-browser_{version}_arm64.deb
   desc_cn: 内置广告拦截和隐私保护的浏览器，基于 Chromium
   desc_en: Browser with built-in ad blocking and privacy protection, based on Chromium
 - id: thorium
@@ -463,6 +584,14 @@ packages:
     assets:
     - platform: win-x64
       pattern: OllamaSetup.exe
+    - platform: win-arm64
+      pattern: ollama-windows-arm64.zip
+    - platform: mac-universal
+      pattern: Ollama.dmg
+    - platform: linux-x64
+      pattern: ollama-linux-amd64.tar.zst
+    - platform: linux-arm64
+      pattern: ollama-linux-arm64.tar.zst
   desc_cn: 本地运行大语言模型的工具，一键部署 LLM
   desc_en: Tool for running large language models locally with one-click deployment
 - id: fzf
@@ -478,6 +607,16 @@ packages:
     assets:
     - platform: win-x64
       pattern: fzf-*-windows_amd64.zip
+    - platform: win-arm64
+      pattern: fzf-*-windows_arm64.zip
+    - platform: mac-arm64
+      pattern: fzf-*-darwin_arm64.tar.gz
+    - platform: mac-x64
+      pattern: fzf-*-darwin_amd64.tar.gz
+    - platform: linux-x64
+      pattern: fzf-*-linux_amd64.tar.gz
+    - platform: linux-arm64
+      pattern: fzf-*-linux_arm64.tar.gz
   desc_cn: 通用的命令行模糊查找器，极速搜索文件和历史
   desc_en: General-purpose command-line fuzzy finder for fast file and history search
 - id: bat
@@ -493,6 +632,16 @@ packages:
     assets:
     - platform: win-x64
       pattern: bat-v*-x86_64-pc-windows-msvc.zip
+    - platform: win-arm64
+      pattern: bat-v*-aarch64-pc-windows-msvc.zip
+    - platform: mac-arm64
+      pattern: bat-v*-aarch64-apple-darwin.tar.gz
+    - platform: mac-x64
+      pattern: bat-v*-x86_64-apple-darwin.tar.gz
+    - platform: linux-x64
+      pattern: bat-v*-x86_64-unknown-linux-gnu.tar.gz
+    - platform: linux-arm64
+      pattern: bat-v*-aarch64-unknown-linux-gnu.tar.gz
   desc_cn: 带语法高亮和 Git 集成的 cat 替代品
   desc_en: cat alternative with syntax highlighting and Git integration
 - id: fd
@@ -508,6 +657,16 @@ packages:
     assets:
     - platform: win-x64
       pattern: fd-v*-x86_64-pc-windows-msvc.zip
+    - platform: win-arm64
+      pattern: fd-v*-aarch64-pc-windows-msvc.zip
+    - platform: mac-arm64
+      pattern: fd-v*-aarch64-apple-darwin.tar.gz
+    - platform: mac-x64
+      pattern: fd-v*-x86_64-apple-darwin.tar.gz
+    - platform: linux-x64
+      pattern: fd-v*-x86_64-unknown-linux-gnu.tar.gz
+    - platform: linux-arm64
+      pattern: fd-v*-aarch64-unknown-linux-gnu.tar.gz
   desc_cn: 更快速友好的 find 替代工具
   desc_en: Faster and more user-friendly alternative to find
 - id: rg
@@ -523,6 +682,16 @@ packages:
     assets:
     - platform: win-x64
       pattern: ripgrep-*-x86_64-pc-windows-msvc.zip
+    - platform: win-arm64
+      pattern: ripgrep-*-aarch64-pc-windows-msvc.zip
+    - platform: mac-arm64
+      pattern: ripgrep-*-aarch64-apple-darwin.tar.gz
+    - platform: mac-x64
+      pattern: ripgrep-*-x86_64-apple-darwin.tar.gz
+    - platform: linux-x64
+      pattern: ripgrep-*-x86_64-unknown-linux-musl.tar.gz
+    - platform: linux-arm64
+      pattern: ripgrep-*-aarch64-unknown-linux-gnu.tar.gz
   desc_cn: 超快的文本搜索工具，grep 的现代替代品
   desc_en: Ultra-fast text search tool, modern alternative to grep
 - id: jq
@@ -538,6 +707,16 @@ packages:
     assets:
     - platform: win-x64
       pattern: jq-windows-amd64.exe
+    - platform: win-arm64
+      pattern: jq-windows-arm64.exe
+    - platform: mac-arm64
+      pattern: jq-macos-arm64
+    - platform: mac-x64
+      pattern: jq-macos-amd64
+    - platform: linux-x64
+      pattern: jq-linux-amd64
+    - platform: linux-arm64
+      pattern: jq-linux-arm64
   desc_cn: 命令行 JSON 处理器，轻量级且功能强大
   desc_en: Command-line JSON processor, lightweight yet powerful
 - id: yq
@@ -553,6 +732,14 @@ packages:
     assets:
     - platform: win-x64
       pattern: yq_windows_amd64.exe
+    - platform: mac-arm64
+      pattern: yq_darwin_arm64.tar.gz
+    - platform: mac-x64
+      pattern: yq_darwin_amd64.tar.gz
+    - platform: linux-x64
+      pattern: yq_linux_amd64.tar.gz
+    - platform: linux-arm64
+      pattern: yq_linux_arm64.tar.gz
   desc_cn: YAML/JSON/XML 命令行处理工具，jq 的多格式版
   desc_en: YAML/JSON/XML command-line processor, multi-format version of jq
 - id: gh
@@ -568,6 +755,16 @@ packages:
     assets:
     - platform: win-x64
       pattern: gh_*_windows_amd64.zip
+    - platform: win-arm64
+      pattern: gh_*_windows_arm64.msi
+    - platform: mac-arm64
+      pattern: gh_*_macOS_arm64.zip
+    - platform: mac-x64
+      pattern: gh_*_macOS_amd64.zip
+    - platform: linux-x64
+      pattern: gh_*_linux_amd64.deb
+    - platform: linux-arm64
+      pattern: gh_*_linux_arm64.deb
   desc_cn: GitHub 官方命令行工具，管理 PR/Issue/Release
   desc_en: Official GitHub CLI for managing PRs, Issues, and Releases
 - id: micro
@@ -583,6 +780,16 @@ packages:
     assets:
     - platform: win-x64
       pattern: micro-*-win64.zip
+    - platform: win-arm64
+      pattern: micro-*-win-arm64.zip
+    - platform: mac-arm64
+      pattern: micro-*-macos-arm64.tar.gz
+    - platform: mac-x64
+      pattern: micro-*-osx.tar.gz
+    - platform: linux-x64
+      pattern: micro-*-linux64.tar.gz
+    - platform: linux-arm64
+      pattern: micro-*-linux-arm64.tar.gz
   desc_cn: 现代化的终端文本编辑器，易上手且支持插件
   desc_en: Modern terminal text editor that's easy to learn with plugin support
 - id: neovim
@@ -598,6 +805,16 @@ packages:
     assets:
     - platform: win-x64
       pattern: nvim-win64.zip
+    - platform: win-arm64
+      pattern: nvim-win-arm64.msi
+    - platform: mac-arm64
+      pattern: nvim-macos-arm64.tar.gz
+    - platform: mac-x64
+      pattern: nvim-macos-x86_64.tar.gz
+    - platform: linux-x64
+      pattern: nvim-linux-x86_64.tar.gz
+    - platform: linux-arm64
+      pattern: nvim-linux-arm64.tar.gz
   desc_cn: Vim 的现代化重构版本，更好的扩展性和 API
   desc_en: Modernized refactor of Vim with better extensibility and API
 - id: mihomo
@@ -613,6 +830,16 @@ packages:
     assets:
     - platform: win-x64
       pattern: mihomo-windows-amd64-v{version}.zip
+    - platform: win-arm64
+      pattern: mihomo-windows-arm64-v{version}.zip
+    - platform: mac-arm64
+      pattern: mihomo-darwin-arm64-v{version}.gz
+    - platform: mac-x64
+      pattern: mihomo-darwin-amd64-v1-v{version}.gz
+    - platform: linux-x64
+      pattern: mihomo-linux-amd64-v1-v{version}.deb
+    - platform: linux-arm64
+      pattern: mihomo-linux-arm64-v{version}.deb
   desc_cn: Clash.Meta 内核，支持更多代理协议和规则引擎
   desc_en: Clash.Meta kernel with extended proxy protocol and rule engine support
 - id: motrix
@@ -628,6 +855,16 @@ packages:
     assets:
     - platform: win-x64
       pattern: Motrix-Setup-{version}.exe
+    - platform: win-arm64
+      pattern: Motrix-Setup-{version}-arm64.exe
+    - platform: mac-arm64
+      pattern: Motrix-{version}-arm64.dmg
+    - platform: mac-x64
+      pattern: Motrix-{version}-x64.dmg
+    - platform: linux-x64
+      pattern: Motrix_{version}_amd64.deb
+    - platform: linux-arm64
+      pattern: Motrix_{version}_arm64.deb
   desc_cn: 开源下载工具，支持 HTTP/FTP/BT/磁力链接
   desc_en: Open-source download manager supporting HTTP/FTP/BitTorrent/magnet links
 - id: marktext
@@ -643,6 +880,16 @@ packages:
     assets:
     - platform: win-x64
       pattern: marktext-win-x64-*-setup.exe
+    - platform: win-arm64
+      pattern: marktext-win-arm64-*-setup.exe
+    - platform: mac-arm64
+      pattern: marktext-mac-arm64-*.dmg
+    - platform: mac-x64
+      pattern: marktext-mac-x64-*.dmg
+    - platform: linux-x64
+      pattern: marktext-linux-{version}.deb
+    - platform: linux-arm64
+      pattern: marktext-linux-arm64-*.deb
   desc_cn: 简洁的 Markdown 编辑器，实时预览所见即所得
   desc_en: Clean Markdown editor with real-time WYSIWYG preview
 - id: xray-core
@@ -658,6 +905,16 @@ packages:
     assets:
     - platform: win-x64
       pattern: Xray-windows-64.zip
+    - platform: win-arm64
+      pattern: Xray-windows-arm64-v8a.zip
+    - platform: mac-arm64
+      pattern: Xray-macos-arm64-v8a.zip
+    - platform: mac-x64
+      pattern: Xray-macos-64.zip
+    - platform: linux-x64
+      pattern: Xray-linux-64.zip
+    - platform: linux-arm64
+      pattern: Xray-linux-arm64-v8a.zip
   desc_cn: Xray 核心引擎，V2Ray 的增强分支，性能更优
   desc_en: Xray core engine, enhanced V2Ray fork with better performance
 - id: audacity
@@ -673,6 +930,16 @@ packages:
     assets:
     - platform: win-x64
       pattern: audacity-win-*-x86_64.msi
+    - platform: win-arm64
+      pattern: audacity-win-*-arm64.msi
+    - platform: mac-arm64
+      pattern: audacity-macOS-*-arm64.dmg
+    - platform: mac-x64
+      pattern: audacity-macOS-*-x86_64.dmg
+    - platform: linux-x64
+      pattern: audacity-linux-*-x86_64.AppImage
+    - platform: linux-arm64
+      pattern: audacity-linux-*-aarch64.AppImage
   desc_cn: 开源音频编辑器，录制和编辑音频的专业工具
   desc_en: Open-source audio editor for professional recording and editing
 - id: calibre
@@ -688,6 +955,12 @@ packages:
     assets:
     - platform: win-x64
       pattern: calibre-64bit-*.msi
+    - platform: mac-universal
+      pattern: calibre-[0-9]*.dmg
+    - platform: linux-x64
+      pattern: calibre-*-x86_64.txz
+    - platform: linux-arm64
+      pattern: calibre-*-arm64.txz
   desc_cn: 电子书管理工具，格式转换和设备同步一站式方案
   desc_en: E-book management tool for format conversion and device sync
 - id: windows-terminal
@@ -703,6 +976,8 @@ packages:
     assets:
     - platform: win-x64
       pattern: Microsoft.WindowsTerminal_*.msixbundle
+    - platform: win-arm64
+      pattern: Microsoft.WindowsTerminal_*_arm64.zip
   desc_cn: 微软推出的现代化 Windows 终端，支持多标签和 GPU 加速
   desc_en: Modern Windows terminal by Microsoft with tabs and GPU acceleration
 - id: affine
@@ -718,6 +993,14 @@ packages:
     assets:
     - platform: win-x64
       pattern: affine-*-windows-x64.exe
+    - platform: win-arm64
+      pattern: affine-*-windows-arm64.exe
+    - platform: mac-arm64
+      pattern: affine-*-macos-arm64.dmg
+    - platform: mac-x64
+      pattern: affine-*-macos-x64.dmg
+    - platform: linux-x64
+      pattern: affine-*-linux-x64.deb
   desc_cn: 开源知识库和协作平台，融合文档、白板和数据库
   desc_en: Open-source knowledge base and collaboration platform with docs, whiteboard,
     and databases
@@ -734,6 +1017,12 @@ packages:
     assets:
     - platform: win-x64
       pattern: shotcut-win64-*.exe
+    - platform: win-arm64
+      pattern: shotcut-win_ARM-*.exe
+    - platform: mac-universal
+      pattern: shotcut-macos-{version}.dmg
+    - platform: linux-x64
+      pattern: shotcut-linux-x86_64-*.AppImage
   desc_cn: 免费开源的跨平台视频编辑器
   desc_en: Free open-source cross-platform video editor
 - id: dbeaver
@@ -755,6 +1044,10 @@ packages:
       pattern: dbeaver-ce-*-macos-x86_64.dmg
     - platform: linux-x64
       pattern: dbeaver-ce-*-linux-x86_64.deb
+    - platform: win-arm64
+      pattern: dbeaver-ce-*-windows-aarch64.exe
+    - platform: linux-arm64
+      pattern: dbeaver-ce-*-linux-aarch64.deb
   desc_cn: 免费的通用数据库工具，支持所有主流数据库
   desc_en: Free universal database tool supporting all major databases
 - id: obs-studio
@@ -775,7 +1068,9 @@ packages:
     - platform: mac-x64
       pattern: OBS-Studio-*-macOS-Intel.dmg
     - platform: linux-x64
-      pattern: OBS-Studio-*-Ubuntu-24.04-x86_64.deb
+      pattern: OBS-Studio-*-Ubuntu-*-x86_64.deb
+    - platform: win-arm64
+      pattern: OBS-Studio-*-Windows-arm64.zip
   desc_cn: 开源直播和录屏工具，专业级的流媒体方案
   desc_en: Open-source live streaming and screen recording tool for professional streaming
 - id: mpv
@@ -791,6 +1086,10 @@ packages:
     assets:
     - platform: win-x64
       pattern: mpv-x86_64-[0-9]*-git-*.7z
+    - platform: win-arm64
+      pattern: mpv-aarch64-[0-9]*-git-*.7z
+    - platform: win-x86
+      pattern: mpv-i686-[0-9]*-git-*.7z
   desc_cn: 轻量强大的跨平台视频播放器，支持丰富配置
   desc_en: Lightweight powerful cross-platform video player with rich configuration
 - id: zed
@@ -808,6 +1107,14 @@ packages:
       pattern: Zed-*-aarch64.dmg
     - platform: linux-x64
       pattern: zed-linux-x86_64.tar.gz
+    - platform: win-x64
+      pattern: Zed-x86_64.exe
+    - platform: win-arm64
+      pattern: Zed-aarch64.exe
+    - platform: mac-x64
+      pattern: Zed-x86_64.dmg
+    - platform: linux-arm64
+      pattern: zed-linux-aarch64.tar.gz
   desc_cn: 高性能多人协作代码编辑器，基于 Rust 构建
   desc_en: High-performance multiplayer code editor built in Rust
 - id: lapce
@@ -817,19 +1124,18 @@ packages:
   - intl
   - cn
   homepage: https://github.com/lapce/lapce
-  fetcher: download_page
+  fetcher: github_release
   args:
-    source: Official project download page; no stable public release asset API
-    platforms:
-    - platform: win-x64
-      download_url: https://github.com/lapce/lapce/releases
-      link_kind: landing_page
-    - platform: mac-arm64
-      download_url: https://github.com/lapce/lapce/releases
-      link_kind: landing_page
+    repo: lapce/lapce
+    assets:
+    - platform: mac-universal
+      pattern: Lapce-macos.dmg
     - platform: linux-x64
-      download_url: https://github.com/lapce/lapce/releases
-      link_kind: landing_page
+      pattern: lapce-linux-amd64.tar.gz
+    - platform: win-x64
+      pattern: Lapce-windows.msi
+    - platform: linux-arm64
+      pattern: lapce-linux-arm64.tar.gz
   desc_cn: 用 Rust 编写的快速轻量级代码编辑器
   desc_en: Fast and lightweight code editor written in Rust
 - id: helix
@@ -849,6 +1155,10 @@ packages:
       pattern: helix-*-aarch64-macos.tar.xz
     - platform: linux-x64
       pattern: helix-*-x86_64-linux.tar.xz
+    - platform: mac-x64
+      pattern: helix-*-x86_64-macos.tar.xz
+    - platform: linux-arm64
+      pattern: helix-*-aarch64-linux.tar.xz
   desc_cn: 基于 Kakoune 的终端代码编辑器，支持 LSP 和树状选择
   desc_en: Kakoune-inspired terminal code editor with LSP and tree-sitter support
 - id: flameshot
@@ -866,6 +1176,10 @@ packages:
       pattern: flameshot-*-win64.zip
     - platform: linux-x64
       pattern: flameshot-*-debian-12-amd64.deb
+    - platform: mac-arm64
+      pattern: Flameshot-*-macos-arm64.dmg
+    - platform: mac-x64
+      pattern: Flameshot-*-macos-intel.dmg
   desc_cn: 功能强大的截图工具，支持标注和编辑
   desc_en: Powerful screenshot tool with annotation and editing support
 - id: tabby
@@ -885,6 +1199,12 @@ packages:
       pattern: tabby-*-arm64.dmg
     - platform: linux-x64
       pattern: tabby-*-linux-x64.rpm
+    - platform: win-arm64
+      pattern: tabby-*-setup-arm64.exe
+    - platform: mac-x64
+      pattern: tabby-*-macos-x86_64.dmg
+    - platform: linux-arm64
+      pattern: tabby-*-linux-arm64.deb
   desc_cn: 跨平台终端模拟器，支持 SSH 和串口连接
   desc_en: Cross-platform terminal emulator with SSH and serial port support
 - id: syncthing
@@ -904,6 +1224,12 @@ packages:
       pattern: syncthing-macos-arm64-v*.zip
     - platform: linux-x64
       pattern: syncthing-linux-amd64-v*.tar.gz
+    - platform: win-arm64
+      pattern: syncthing-windows-arm64-v*.zip
+    - platform: mac-x64
+      pattern: syncthing-macos-amd64-v*.zip
+    - platform: linux-arm64
+      pattern: syncthing-linux-arm64-v*.tar.gz
   desc_cn: 去中心化文件同步工具，P2P 实时同步
   desc_en: Decentralized file synchronization tool with real-time P2P sync
 - id: clash-verge-rev
@@ -923,6 +1249,12 @@ packages:
       pattern: Clash.Verge_*_aarch64.dmg
     - platform: linux-x64
       pattern: clash-verge_*_amd64.deb
+    - platform: win-arm64
+      pattern: Clash.Verge_{version}_arm64-setup.exe
+    - platform: mac-x64
+      pattern: Clash.Verge_{version}_x64.dmg
+    - platform: linux-arm64
+      pattern: Clash.Verge_{version}_arm64.deb
   desc_cn: Clash Verge 的增强版，基于 Tauri 的跨平台代理客户端
   desc_en: Enhanced Clash Verge, cross-platform proxy client built with Tauri
 - id: openscad
@@ -938,6 +1270,12 @@ packages:
     assets:
     - platform: win-x64
       pattern: OpenSCAD-*-x86-64-Installer.exe
+    - platform: win-x86
+      pattern: OpenSCAD-*-x86-32-Installer.exe
+    - platform: mac-universal
+      pattern: OpenSCAD-*.dmg
+    - platform: linux-x64
+      pattern: OpenSCAD-*-x86_64.AppImage
   desc_cn: 程序员的 3D CAD 工具，用代码描述 3D 模型
   desc_en: 3D CAD tool for programmers, describe 3D models with code
 - id: lmms
@@ -953,8 +1291,12 @@ packages:
     assets:
     - platform: win-x64
       pattern: lmms-*-win64.exe
+    - platform: win-x86
+      pattern: lmms-*-win32.exe
     - platform: mac-x64
       pattern: lmms-*-mac10.14.dmg
+    - platform: linux-x64
+      pattern: lmms-*-linux-x86_64.AppImage
   desc_cn: 开源音乐制作工具，电子音乐创作的免费方案
   desc_en: Open-source music production tool for free electronic music creation
 - id: musescore
@@ -970,6 +1312,12 @@ packages:
     assets:
     - platform: win-x64
       pattern: MuseScore-*-x86_64.msi
+    - platform: mac-universal
+      pattern: MuseScore-Studio-*.dmg
+    - platform: linux-x64
+      pattern: MuseScore-Studio-*-x86_64.AppImage
+    - platform: linux-arm64
+      pattern: MuseScore-Studio-*-aarch64.AppImage
   desc_cn: 开源乐谱编辑器，创建和播放乐谱
   desc_en: Open-source music notation editor for creating and playing sheet music
 - id: appflowy
@@ -989,6 +1337,8 @@ packages:
       pattern: AppFlowy-*-macos-arm64.dmg
     - platform: linux-x64
       pattern: AppFlowy-*-linux-x86_64.tar.gz
+    - platform: mac-x64
+      pattern: AppFlowy-*-macos-x86_64.dmg
   desc_cn: 开源的 Notion 替代品，笔记和项目管理
   desc_en: Open-source Notifer alternative for notes and project management
 - id: drawio
@@ -1008,6 +1358,12 @@ packages:
       pattern: draw.io-arm64-*.dmg
     - platform: linux-x64
       pattern: drawio-x86_64-*.rpm
+    - platform: win-arm64
+      pattern: draw.io-arm64-*-windows-arm64-installer.exe
+    - platform: mac-x64
+      pattern: draw.io-x64-*.dmg
+    - platform: linux-arm64
+      pattern: drawio-arm64-*.deb
   desc_cn: 免费的在线绘图工具，支持流程图/UML/架构图
   desc_en: Free online diagramming tool for flowcharts, UML, and architecture diagrams
 - id: devtoys
@@ -1016,17 +1372,22 @@ packages:
   desc_cn: 开发者瑞士军刀，JSON/URL/Base64 等常用工具合集
   desc_en: Swiss army knife for developers with JSON/URL/Base64 and other utilities
   homepage: https://devtoys.app
-  fetcher: download_page
+  fetcher: package_manifest
   args:
-    source: Official DevToys download page; no public version API
-    homepage: https://devtoys.app
-    platforms:
-    - platform: mac-arm64
-      download_url: https://devtoys.app
-      link_kind: landing_page
-    - platform: mac-x64
-      download_url: https://devtoys.app
-      link_kind: landing_page
+    sources:
+    - provider: winget
+      package: DevToys-app.DevToys
+      platforms:
+      - platform: win-x64
+      - platform: win-arm64
+    - provider: brew
+      package: devtoys
+      platforms:
+      - platform: mac-arm64
+      - platform: mac-x64
+  source_ids:
+    winget: DevToys-app.DevToys
+    brew: devtoys
 - id: stats
   name: Stats
   category: System Utilities
@@ -1164,6 +1525,12 @@ packages:
       pattern: Paseo-*-arm64.dmg
     - platform: mac-x64
       pattern: Paseo-*-x64.dmg
+    - platform: win-x64
+      pattern: Paseo-Setup-*-x64.exe
+    - platform: win-arm64
+      pattern: Paseo-Setup-*-arm64.exe
+    - platform: linux-x64
+      pattern: Paseo-*-amd64.deb
 - id: readest
   name: Readest
   category: Productivity
@@ -1176,6 +1543,14 @@ packages:
     assets:
     - platform: mac-universal
       pattern: Readest_*_universal.dmg
+    - platform: win-x64
+      pattern: Readest_*_x64-setup.exe
+    - platform: win-arm64
+      pattern: Readest_*_arm64-setup.exe
+    - platform: linux-x64
+      pattern: Readest_*_amd64.deb
+    - platform: linux-arm64
+      pattern: Readest_*_arm64.deb
 - id: finetune
   name: FineTune
   category: System Utilities
@@ -1202,6 +1577,10 @@ packages:
       pattern: opencode-mac-arm64.tar.gz
     - platform: mac-x64
       pattern: opencode-mac-x86_64.tar.gz
+    - platform: linux-x64
+      pattern: opencode-linux-amd64.deb
+    - platform: linux-arm64
+      pattern: opencode-linux-arm64.deb
 - id: swiftbar
   name: SwiftBar
   category: System Utilities
@@ -1243,15 +1622,17 @@ packages:
   name: Raycast
   category: System Utilities
   desc_cn: macOS 效率启动器，支持插件扩展；当前最新版要求 Apple Silicon 与 macOS Tahoe 或更新版本
-  desc_en: macOS productivity launcher with extensions; current release requires Apple Silicon and macOS Tahoe or later
+  desc_en: macOS productivity launcher with extensions; current release requires Apple
+    Silicon and macOS Tahoe or later
   homepage: https://www.raycast.com
-  fetcher: download_page
+  fetcher: package_manifest
+  source_ids:
+    brew: raycast
   args:
-    source: Official latest Apple Silicon installer; macOS Tahoe or newer required
+    provider: brew
+    package: raycast
     platforms:
     - platform: mac-arm64
-      download_url: https://x.raycast-releases.com/download/web?platform=macos&architecture=arm64
-      link_kind: direct
   verification:
     allowed_hosts:
     - x-r2.raycast-releases.com
@@ -1261,91 +1642,151 @@ packages:
   desc_cn: 高质量 AI 翻译工具，支持 30+ 语言互译
   desc_en: High-quality AI translation tool supporting 30+ languages
   homepage: https://www.deepl.com
-  fetcher: download_page
+  fetcher: package_manifest
+  source_ids:
+    winget: DeepL.DeepL
+    brew: deepl
   args:
-    platforms:
-    - platform: mac-universal
-      download_url: https://www.deepl.com/macos/app/installer/download
+    sources:
+    - provider: winget
+      package: DeepL.DeepL
+      platforms:
+      - platform: win-x64
+    - provider: brew
+      package: deepl
+      platforms:
+      - platform: mac
+  verification:
+    allowed_hosts:
+    - appdownload.deepl.com
 - id: tableplus
   name: TablePlus
   category: Developer Tools
   desc_cn: 现代化数据库管理工具，支持 MySQL/PostgreSQL/Redis 等
   desc_en: Modern database management tool supporting MySQL/PostgreSQL/Redis and more
   homepage: https://tableplus.com
-  fetcher: download_page
+  fetcher: package_manifest
+  source_ids:
+    winget: TablePlus.TablePlus
+    brew: tableplus
   args:
-    platforms:
-    - platform: mac-universal
-      download_url: https://tableplus.com/release/mac/tableplus-latest.dmg
+    sources:
+    - provider: winget
+      package: TablePlus.TablePlus
+      platforms:
+      - platform: win-x64
+    - provider: brew
+      package: tableplus
+      platforms:
+      - platform: mac
 - id: snipaste
   name: Snipaste
   category: System Utilities
   desc_cn: 截图和贴图工具，截图后可贴到屏幕上做参考
   desc_en: Screenshot and pin tool that pins captures to screen as reference
   homepage: https://www.snipaste.com
-  fetcher: download_page
+  fetcher: package_manifest
+  source_ids:
+    winget: liule.Snipaste
+    brew: snipaste
   args:
-    platforms:
-    - platform: win-x64
-      download_url: https://www.snipaste.com/download.html
-      link_kind: landing_page
-    - platform: mac-universal
-      download_url: https://www.snipaste.com/download.html
+    sources:
+    - provider: winget
+      package: liule.Snipaste
+      platforms:
+      - platform: win-x64
+      - platform: win-arm64
+    - provider: brew
+      package: snipaste
+      platforms:
+      - platform: mac
 - id: dash
   name: Dash
   category: Developer Tools
   desc_cn: API 文档浏览器，离线查看 200+ 技术文档
   desc_en: API documentation browser for offline access to 200+ tech docs
   homepage: https://kapeli.com/dash
-  fetcher: download_page
+  fetcher: package_manifest
+  source_ids:
+    brew: dash
   args:
+    provider: brew
+    package: dash
     platforms:
-    - platform: mac-universal
-      download_url: https://kapeli.com/dash/download
+    - platform: mac
 - id: xmind
   name: XMind
   category: Productivity
   desc_cn: 专业思维导图工具，支持多种结构和导出格式
   desc_en: Professional mind mapping tool with multiple structures and export formats
   homepage: https://xmind.com/
-  fetcher: download_page
+  fetcher: package_manifest
+  source_ids:
+    winget: Xmind.Xmind
+    brew: xmind
   args:
-    platforms:
-    - platform: mac-universal
-      download_url: https://xmind.com/download/
+    sources:
+    - provider: winget
+      package: Xmind.Xmind
+      platforms:
+      - platform: win-x64
+    - provider: brew
+      package: xmind
+      platforms:
+      - platform: mac
+  verification:
+    allowed_hosts:
+    - dl3.xmind.app
 - id: orbstack
   name: OrbStack
   category: Developer Tools
   desc_cn: macOS 轻量级 Docker 和 Linux 虚拟机，比 Docker Desktop 更快
   desc_en: Lightweight Docker and Linux VM for macOS, faster than Docker Desktop
   homepage: https://orbstack.dev
-  fetcher: download_page
+  fetcher: package_manifest
+  source_ids:
+    brew: orbstack
   args:
+    provider: brew
+    package: orbstack
     platforms:
-    - platform: mac-universal
-      download_url: https://orbstack.dev/download
+    - platform: mac-arm64
+    - platform: mac-x64
 - id: termius
   name: Termius
   category: Developer Tools
   desc_cn: 跨平台 SSH 客户端，支持团队协作和密钥管理
   desc_en: Cross-platform SSH client with team collaboration and key management
   homepage: https://termius.com
-  fetcher: download_page
+  fetcher: package_manifest
+  source_ids:
+    winget: Termius.Termius
+    brew: termius
   args:
-    platforms:
-    - platform: mac-universal
-      download_url: https://termius.com/download/macos
+    sources:
+    - provider: winget
+      package: Termius.Termius
+      platforms:
+      - platform: win-x64
+      - platform: win-x86
+    - provider: brew
+      package: termius
+      platforms:
+      - platform: mac-arm64
 - id: macs-fan-control
   name: Macs Fan Control
   category: System Utilities
   desc_cn: Mac 风扇控制工具，手动调节风扇转速和温度监控
   desc_en: Mac fan control tool for manual fan speed adjustment and temperature monitoring
   homepage: https://crystalidea.com/macs-fan-control
-  fetcher: download_page
+  fetcher: github_release
   args:
-    platforms:
+    repo: crystalidea/macs-fan-control
+    assets:
+    - platform: win-x64
+      pattern: macsfancontrol_setup.exe
     - platform: mac-universal
-      download_url: https://crystalidea.com/macs-fan-control/download
+      pattern: macsfancontrol.zip
 - id: finalshell
   name: FinalShell
   category: Developer Tools
@@ -1363,44 +1804,83 @@ packages:
   desc_cn: 免费数据库管理工具，支持 MySQL/PostgreSQL/SQLite 等
   desc_en: Free database management tool supporting MySQL/PostgreSQL/SQLite and more
   homepage: https://www.navicat.com/en/download/navicat-premium-lite
-  fetcher: download_page
+  fetcher: package_manifest
   args:
-    platforms:
-    - platform: mac-universal
-      download_url: https://www.navicat.com/en/download/navicat-premium-lite
+    sources:
+    - provider: winget
+      package: PremiumSoft.NavicatPremiumLite
+      installer_locale: en-US
+      platforms:
+      - platform: win-x64
+    - provider: brew
+      package: navicat-premium-lite
+      platforms:
+      - platform: mac
+  source_ids:
+    winget: PremiumSoft.NavicatPremiumLite
+    brew: navicat-premium-lite
 - id: doubao
   name: Doubao
   category: AI Tools
   desc_cn: 字节跳动 AI 助手，支持对话/写作/翻译等多种功能
   desc_en: AI assistant by ByteDance with chat/writing/translation and more
   homepage: https://www.doubao.com
-  fetcher: download_page
+  fetcher: package_manifest
+  source_ids:
+    winget: ByteDance.Doubao
+    brew: doubao
   args:
-    platforms:
-    - platform: mac-universal
-      download_url: https://www.doubao.com/download
+    sources:
+    - provider: winget
+      package: ByteDance.Doubao
+      platforms:
+      - platform: win-x64
+      - platform: win-arm64
+    - provider: brew
+      package: doubao
+      platforms:
+      - platform: mac-universal
 - id: wps-office
   name: WPS Office
   category: Productivity
   desc_cn: 金山办公套件，兼容 Microsoft Office 格式
   desc_en: Office suite by Kingsoft, compatible with Microsoft Office formats
   homepage: https://www.wps.com
-  fetcher: download_page
+  fetcher: package_manifest
+  source_ids:
+    winget: Kingsoft.WPSOffice.x64
+    brew: wpsoffice-cn
   args:
-    platforms:
-    - platform: mac-universal
-      download_url: https://mac.wps.cn
+    sources:
+    - provider: winget
+      package: Kingsoft.WPSOffice.x64
+      platforms:
+      - platform: win-x64
+    - provider: brew
+      package: wpsoffice-cn
+      platforms:
+      - platform: mac-arm64
+      - platform: mac-x64
 - id: wechat
   name: WeChat
   category: Messaging
   desc_cn: 国民级即时通讯应用，支持文字/语音/视频通话
   desc_en: China's leading messaging app with text/voice/video calls
   homepage: https://weixin.qq.com
-  fetcher: wechat_official
+  fetcher: package_manifest
+  source_ids:
+    winget: Tencent.WeChat.Universal
+    brew: wechat
   args:
-    platforms:
-    - platform: mac-universal
-      download_url: https://dldir1v6.qq.com/weixin/Universal/Mac/xWeChatMac_universal_4.1.15.15_270095.dmg
+    sources:
+    - provider: winget
+      package: Tencent.WeChat.Universal
+      platforms:
+      - platform: win-x64
+    - provider: brew
+      package: wechat
+      platforms:
+      - platform: mac-universal
 - id: qq
   name: QQ
   category: Messaging
@@ -1425,6 +1905,16 @@ packages:
     assets:
     - platform: win-x64
       pattern: scrcpy-win64-v*.zip
+    - platform: win-arm64
+      pattern: scrcpy-winarm64-v*.zip
+    - platform: win-x86
+      pattern: scrcpy-win32-v*.zip
+    - platform: mac-arm64
+      pattern: scrcpy-macos-aarch64-v*.tar.gz
+    - platform: mac-x64
+      pattern: scrcpy-macos-x86_64-v*.tar.gz
+    - platform: linux-x64
+      pattern: scrcpy-linux-x86_64-v*.tar.gz
   desc_cn: 显示和控制您的Android设备
   desc_en: Display and control your Android device
 - id: youtube-dl
@@ -1456,6 +1946,14 @@ packages:
     assets:
     - platform: win-x64
       pattern: CC-Switch-v*-Windows.msi
+    - platform: win-arm64
+      pattern: CC-Switch-v*-Windows-arm64.msi
+    - platform: mac-universal
+      pattern: CC-Switch-v*-macOS.dmg
+    - platform: linux-x64
+      pattern: CC-Switch-v*-Linux-x86_64.deb
+    - platform: linux-arm64
+      pattern: CC-Switch-v*-Linux-arm64.deb
   desc_cn: Claude Code、Codex、OpenCode、OpenClaw、Grok Build和Hermes Agent的跨平台桌面一体机助手。唯一官方网站：
     ccswitch.io
   desc_en: 'A cross-platform desktop All-in-One assistant for Claude Code, Codex,
@@ -1473,6 +1971,14 @@ packages:
     assets:
     - platform: win-x64
       pattern: Godot_v*-stable_mono_win64.zip
+    - platform: win-arm64
+      pattern: Godot_v*-stable_mono_windows_arm64.zip
+    - platform: mac-universal
+      pattern: Godot_v*-stable_mono_macos.universal.zip
+    - platform: linux-x64
+      pattern: Godot_v*-stable_mono_linux_x86_64.zip
+    - platform: linux-arm64
+      pattern: Godot_v*-stable_mono_linux_arm64.zip
   desc_cn: Godot引擎–多平台2D和3D游戏引擎
   desc_en: Godot Engine – Multi-platform 2D and 3D game engine
 - id: microsoft-365
@@ -1538,3 +2044,529 @@ packages:
       download_url: https://get.adobe.com/reader/
   desc_cn: Adobe 官方 PDF 阅读器，提供免费下载入口
   desc_en: Official Adobe PDF reader with a free download entry
+- id: cherry-studio
+  name: Cherry Studio
+  category: AI Tools
+  editions:
+  - cn
+  - intl
+  homepage: https://www.cherry-ai.com/
+  fetcher: package_manifest
+  source_ids:
+    winget: kangfenmao.CherryStudio
+    brew: cherry-studio
+  args:
+    sources:
+    - provider: winget
+      package: kangfenmao.CherryStudio
+      platforms:
+      - platform: win-x64
+      - platform: win-arm64
+    - provider: brew
+      package: cherry-studio
+      platforms:
+      - platform: mac-arm64
+      - platform: mac-x64
+  desc_cn: 支持多模型服务商的桌面 AI 客户端，内置知识库、MCP 与丰富助手
+  desc_en: Multi-provider AI desktop client with knowledge base, MCP, and built-in
+    assistants
+- id: iterm2
+  name: iTerm2
+  category: Developer Tools
+  editions:
+  - cn
+  - intl
+  homepage: https://iterm2.com/
+  fetcher: package_manifest
+  source_ids:
+    brew: iterm2
+  args:
+    provider: brew
+    package: iterm2
+    platforms:
+    - platform: mac
+  desc_cn: macOS 下功能最强大的老牌终端模拟器，支持分屏、热键窗口与深度定制
+  desc_en: Feature-rich macOS terminal emulator with split panes, hotkey window, and
+    deep customization
+- id: warp
+  name: Warp
+  category: Developer Tools
+  editions:
+  - cn
+  - intl
+  homepage: https://www.warp.dev/
+  verification:
+    allowed_hosts:
+    - releases.warp.dev
+  fetcher: package_manifest
+  source_ids:
+    winget: Warp.Warp
+  args:
+    provider: winget
+    package: Warp.Warp
+    platforms:
+    - platform: win-x64
+    - platform: win-arm64
+  desc_cn: 集成 AI 命令提示与现代块式编辑体验的 Rust 高性能终端
+  desc_en: Modern Rust-based terminal with AI command assistance and block-style output
+- id: android-platform-tools
+  name: Android Platform Tools
+  category: Developer Tools
+  editions:
+  - cn
+  - intl
+  homepage: https://developer.android.com/tools/releases/platform-tools
+  fetcher: package_manifest
+  source_ids:
+    winget: Google.PlatformTools
+    brew: android-platform-tools
+  args:
+    sources:
+    - provider: winget
+      package: Google.PlatformTools
+      platforms:
+      - platform: win-x64
+    - provider: brew
+      package: android-platform-tools
+      platforms:
+      - platform: mac
+  desc_cn: Google 官方 Android SDK 平台工具集，包含 adb 与 fastboot 等核心命令行工具
+  desc_en: Official Google Android SDK Platform Tools including adb and fastboot
+- id: git-credential-manager
+  name: Git Credential Manager
+  category: Developer Tools
+  editions:
+  - cn
+  - intl
+  homepage: https://github.com/git-ecosystem/git-credential-manager
+  fetcher: package_manifest
+  source_ids:
+    winget: Git.GCM
+    brew: git-credential-manager
+  args:
+    sources:
+    - provider: winget
+      package: Git.GCM
+      platforms:
+      - platform: win-x64
+    - provider: brew
+      package: git-credential-manager
+      platforms:
+      - platform: mac-arm64
+      - platform: mac-x64
+  desc_cn: 跨平台安全 Git 凭据助手，支持 GitHub/Azure/Bitbucket 的 OAuth 与多因素认证
+  desc_en: Secure cross-platform Git credential helper with OAuth and MFA support
+- id: mitmproxy
+  name: mitmproxy
+  category: Developer Tools
+  editions:
+  - cn
+  - intl
+  homepage: https://mitmproxy.org/
+  fetcher: package_manifest
+  source_ids:
+    winget: mitmproxy.mitmproxy
+    brew: mitmproxy
+  args:
+    sources:
+    - provider: winget
+      package: mitmproxy.mitmproxy
+      platforms:
+      - platform: win-x64
+    - provider: brew
+      package: mitmproxy
+      platforms:
+      - platform: mac-arm64
+      - platform: mac-x64
+  desc_cn: 开源交互式 HTTPS 抓包与中间人代理调试工具，支持 Web 界面与 Python 脚本
+  desc_en: Open-source interactive HTTPS debugging proxy with web UI and Python scripting
+- id: mobaxterm
+  name: MobaXterm
+  category: Developer Tools
+  editions:
+  - cn
+  - intl
+  homepage: https://mobaxterm.mobatek.net/
+  fetcher: package_manifest
+  source_ids:
+    winget: Mobatek.MobaXterm
+  args:
+    provider: winget
+    package: Mobatek.MobaXterm
+    platforms:
+    - platform: win-x86
+  desc_cn: Windows 下集成了 SSH、SFTP、X11 服务与多标签会话的增强型远程终端
+  desc_en: Enhanced Windows remote terminal combining SSH, SFTP, X11 server, and multi-tab
+    sessions
+- id: windterm
+  name: WindTerm
+  category: Developer Tools
+  editions:
+  - cn
+  - intl
+  homepage: https://github.com/kingToolbox/WindTerm
+  fetcher: github_release
+  args:
+    repo: kingToolbox/WindTerm
+    assets:
+    - platform: win-x64
+      pattern: WindTerm_*_Windows_Portable_x86_64.zip
+    - platform: win-x86
+      pattern: WindTerm_*_Windows_Portable_x86_32.zip
+    - platform: mac-x64
+      pattern: WindTerm_*_Mac_Portable_x86_64.dmg
+    - platform: linux-x64
+      pattern: WindTerm_*_Linux_Portable_x86_64.zip
+  desc_cn: 高性能开源跨平台 SSH/SFTP/Serial 终端客户端，内存占用低、响应极快
+  desc_en: Fast, low-memory open-source cross-platform SSH/SFTP/Serial terminal client
+- id: bandizip
+  name: Bandizip
+  category: Utilities
+  editions:
+  - cn
+  - intl
+  homepage: https://www.bandisoft.com/bandizip/
+  fetcher: package_manifest
+  source_ids:
+    winget: Bandisoft.Bandizip
+  args:
+    provider: winget
+    package: Bandisoft.Bandizip
+    platforms:
+    - platform: win-x64
+    - platform: win-arm64
+  desc_cn: 极速轻量的多功能解压缩软件，支持 ZIP/7Z/RAR 等格式与自动防乱码处理
+  desc_en: Fast, lightweight archive manager supporting ZIP, 7Z, RAR, and smart encoding
+    detection
+- id: listary
+  name: Listary
+  category: System Utilities
+  editions:
+  - cn
+  - intl
+  homepage: https://www.listary.com/
+  fetcher: package_manifest
+  source_ids:
+    winget: Bopsoft.Listary
+  args:
+    provider: winget
+    package: Bopsoft.Listary
+    platforms:
+    - platform: win-x86
+  desc_cn: Windows 文件极速搜索与快速启动神器，支持文件对话框无缝目录跳转
+  desc_en: Fast file search and launcher for Windows with file dialog quick-switch
+    integration
+- id: pixpin
+  name: PixPin
+  category: System Utilities
+  editions:
+  - cn
+  - intl
+  homepage: https://pixpin.cn/
+  fetcher: package_manifest
+  source_ids:
+    winget: PixPin.PixPin
+  args:
+    provider: winget
+    package: PixPin.PixPin
+    installer_locale: zh-CN
+    platforms:
+    - platform: win-x64
+  desc_cn: 功能强大的截图、贴图、长截图与离线 OCR 文字识别工具
+  desc_en: Feature-rich screenshot, pin-to-screen, scrolling capture, and offline
+    OCR tool
+- id: flclash
+  name: FlClash
+  category: Network & Proxy
+  editions:
+  - cn
+  - intl
+  homepage: https://github.com/chen08209/FlClash
+  fetcher: github_release
+  args:
+    repo: chen08209/FlClash
+    assets:
+    - platform: win-x64
+      pattern: FlClash-{version}-windows-amd64-setup.exe
+    - platform: win-arm64
+      pattern: FlClash-{version}-windows-arm64-setup.exe
+    - platform: mac-arm64
+      pattern: FlClash-{version}-macos-arm64.dmg
+    - platform: mac-x64
+      pattern: FlClash-{version}-macos-amd64.dmg
+    - platform: linux-x64
+      pattern: FlClash-{version}-linux-amd64.deb
+    - platform: linux-arm64
+      pattern: FlClash-{version}-linux-arm64.deb
+  desc_cn: 基于 ClashMeta (Mihomo) 的 Flutter 跨平台代理客户端，界面现代轻量
+  desc_en: Multi-platform ClashMeta (Mihomo) proxy client built with Flutter
+- id: mihomo-party
+  name: Mihomo Party (Clash Party)
+  category: Network & Proxy
+  editions:
+  - cn
+  - intl
+  homepage: https://github.com/mihomo-party-org/clash-party
+  fetcher: github_release
+  args:
+    repo: mihomo-party-org/clash-party
+    assets:
+    - platform: win-x64
+      pattern: clash-party-windows-{version}-x64-setup.exe
+    - platform: win-arm64
+      pattern: clash-party-windows-{version}-arm64-setup.exe
+    - platform: mac-arm64
+      pattern: clash-party-macos-{version}-arm64.pkg
+    - platform: mac-x64
+      pattern: clash-party-macos-{version}-x64.pkg
+    - platform: linux-x64
+      pattern: clash-party-linux-{version}-amd64.deb
+    - platform: linux-arm64
+      pattern: clash-party-linux-{version}-arm64.deb
+  desc_cn: 开箱即用的 Mihomo (Clash Meta) 桌面代理客户端，支持覆写与 TUN 模式
+  desc_en: User-friendly Mihomo (Clash Meta) desktop proxy client with overrides and
+    TUN mode
+- id: clash-nyanpasu
+  name: Clash Nyanpasu
+  category: Network & Proxy
+  editions:
+  - cn
+  - intl
+  homepage: https://github.com/libnyanpasu/clash-nyanpasu
+  fetcher: github_release
+  args:
+    repo: libnyanpasu/clash-nyanpasu
+    assets:
+    - platform: win-x64
+      pattern: Clash.Nyanpasu_{version}_x64-setup.exe
+    - platform: win-arm64
+      pattern: Clash.Nyanpasu_{version}_arm64-setup.exe
+    - platform: mac-arm64
+      pattern: Clash.Nyanpasu_{version}_aarch64.dmg
+    - platform: mac-x64
+      pattern: Clash.Nyanpasu_{version}_x64.dmg
+    - platform: linux-x64
+      pattern: Clash.Nyanpasu_{version}_amd64.deb
+    - platform: linux-arm64
+      pattern: Clash.Nyanpasu_{version}_arm64.deb
+  desc_cn: 基于 Tauri 的 Clash 多内核代理客户端，支持 Mihomo 与 Clash-rs 切换
+  desc_en: Tauri-based Clash GUI supporting Mihomo and Clash-rs cores
+- id: watt-toolkit
+  name: Watt Toolkit (Steam++)
+  category: Gaming
+  editions:
+  - cn
+  - intl
+  homepage: https://steampp.net/
+  fetcher: github_release
+  args:
+    repo: BeyondDimension/SteamTools
+    assets:
+    - platform: win-x64
+      pattern: Steam++_v{version}_win_x64_aot.exe
+    - platform: mac-arm64
+      pattern: Steam++_v{version}_osx_arm64_aot.dmg
+    - platform: mac-x64
+      pattern: Steam++_v{version}_osx_x64_aot.dmg
+    - platform: linux-x64
+      pattern: Steam++_v{version}_linux_x64_aot.tgz
+    - platform: linux-arm64
+      pattern: Steam++_v{version}_linux_arm64_aot.tgz
+  desc_cn: 开源跨平台游戏工具箱，支持 Steam/GitHub 等社区访问加速与令牌管理
+  desc_en: Open-source cross-platform gaming toolkit with Steam acceleration and authenticator
+- id: balenaetcher
+  name: balenaEtcher
+  category: System Utilities
+  editions:
+  - cn
+  - intl
+  homepage: https://etcher.balena.io/
+  fetcher: github_release
+  args:
+    repo: balena-io/etcher
+    assets:
+    - platform: win-x64
+      pattern: balenaEtcher-{version}.Setup.exe
+    - platform: mac-arm64
+      pattern: balenaEtcher-{version}-arm64.dmg
+    - platform: mac-x64
+      pattern: balenaEtcher-{version}-x64.dmg
+    - platform: linux-x64
+      pattern: balena-etcher_{version}_amd64.deb
+  desc_cn: 跨平台图形化镜像烧录工具，安全直观地将 ISO/IMG 写入 U 盘与 SD 卡
+  desc_en: Cross-platform OS image flasher for USB drives and SD cards with validation
+- id: ab-download-manager
+  name: AB Download Manager
+  category: Utilities
+  editions:
+  - cn
+  - intl
+  homepage: https://abdownloadmanager.com/
+  fetcher: github_release
+  args:
+    repo: amir1376/ab-download-manager
+    assets:
+    - platform: win-x64
+      pattern: ABDownloadManager_{version}_windows_x64.exe
+    - platform: win-arm64
+      pattern: ABDownloadManager_{version}_windows_arm64.exe
+    - platform: mac-arm64
+      pattern: ABDownloadManager_{version}_mac_arm64.dmg
+    - platform: mac-x64
+      pattern: ABDownloadManager_{version}_mac_x64.dmg
+    - platform: linux-x64
+      pattern: ABDownloadManager_{version}_linux_x64.tar.gz
+    - platform: linux-arm64
+      pattern: ABDownloadManager_{version}_linux_arm64.tar.gz
+  desc_cn: 开源跨平台高速多线程下载管理器，界面现代且支持浏览器扩展接管
+  desc_en: Open-source cross-platform multi-threaded download manager with browser
+    integration
+- id: the-unarchiver
+  name: The Unarchiver
+  category: Utilities
+  editions:
+  - cn
+  - intl
+  homepage: https://theunarchiver.com/
+  fetcher: package_manifest
+  source_ids:
+    brew: the-unarchiver
+  args:
+    provider: brew
+    package: the-unarchiver
+    platforms:
+    - platform: mac
+  desc_cn: macOS 经典的免费万能解压缩工具，支持数十种压缩包与中文文件名编码识别
+  desc_en: Classic free macOS archive extractor supporting dozens of formats and legacy
+    encodings
+- id: idm
+  name: Internet Download Manager
+  category: Utilities
+  editions:
+  - cn
+  - intl
+  homepage: https://www.internetdownloadmanager.com/
+  fetcher: package_manifest
+  source_ids:
+    winget: Tonec.InternetDownloadManager
+  args:
+    provider: winget
+    package: Tonec.InternetDownloadManager
+    platforms:
+    - platform: win-x86
+  desc_cn: Windows 老牌多线程高速下载神器，支持浏览器视频嗅探与断点续传
+  desc_en: Classic Windows multi-threaded download accelerator with browser capture
+    and resume
+- id: cpu-z
+  name: CPU-Z
+  category: System Utilities
+  editions:
+  - cn
+  - intl
+  homepage: https://www.cpuid.com/softwares/cpu-z.html
+  fetcher: package_manifest
+  source_ids:
+    winget: CPUID.CPU-Z
+  args:
+    provider: winget
+    package: CPUID.CPU-Z
+    installer_locale: en-US
+    platforms:
+    - platform: win-x64
+  desc_cn: 权威的 CPU、主板与内存硬件信息检测与基准测试工具
+  desc_en: Authoritative system profiling tool for CPU, motherboard, and memory specifications
+- id: msi-afterburner
+  name: MSI Afterburner
+  category: System Utilities
+  editions:
+  - cn
+  - intl
+  homepage: https://www.msi.com/Landing/afterburner/graphics-cards
+  fetcher: package_manifest
+  source_ids:
+    winget: Guru3D.Afterburner
+  args:
+    provider: winget
+    package: Guru3D.Afterburner
+    platforms:
+    - platform: win-x86
+  desc_cn: 广受玩家欢迎的显卡超频、风扇曲线调节与游戏内性能监控 (OSD) 工具
+  desc_en: Popular GPU overclocking, fan control, and in-game hardware monitoring
+    utility
+- id: unity-hub
+  name: Unity Hub
+  category: Developer Tools
+  editions:
+  - cn
+  - intl
+  homepage: https://unity.com/download
+  fetcher: package_manifest
+  source_ids:
+    winget: Unity.UnityHub
+    brew: unity-hub
+  args:
+    sources:
+    - provider: winget
+      package: Unity.UnityHub
+      platforms:
+      - platform: win-x64
+    - provider: brew
+      package: unity-hub
+      platforms:
+      - platform: mac-arm64
+      - platform: mac-x64
+  desc_cn: Unity 游戏引擎官方版本管理器与项目启动中心
+  desc_en: Official Unity Engine version manager and project launcher
+- id: battle-net
+  name: Battle.net
+  category: Gaming
+  editions:
+  - cn
+  - intl
+  homepage: https://shop.battle.net/
+  verification:
+    allowed_hosts:
+    - us.battle.net
+    - downloader.battle.net
+  fetcher: package_manifest
+  source_ids:
+    winget: Blizzard.BattleNet
+    brew: battle-net
+  args:
+    sources:
+    - provider: winget
+      package: Blizzard.BattleNet
+      platforms:
+      - platform: win-x86
+    - provider: brew
+      package: battle-net
+      platforms:
+      - platform: mac
+  desc_cn: 暴雪战网官方桌面客户端，用于安装与更新暴雪旗下游戏
+  desc_en: Official Blizzard Battle.net desktop client for Blizzard games
+- id: gog-galaxy
+  name: GOG GALAXY
+  category: Gaming
+  editions:
+  - cn
+  - intl
+  homepage: https://www.gog.com/galaxy
+  verification:
+    allowed_hosts:
+    - gog-cdn-fastly.gog.com
+  fetcher: package_manifest
+  source_ids:
+    winget: GOG.Galaxy
+    brew: gog-galaxy
+  args:
+    sources:
+    - provider: winget
+      package: GOG.Galaxy
+      platforms:
+      - platform: win-x86
+    - provider: brew
+      package: gog-galaxy
+      platforms:
+      - platform: mac
+  desc_cn: GOG 官方无 DRM 游戏库与多平台游戏整合启动器
+  desc_en: Official DRM-free GOG desktop client and multi-platform game library launcher

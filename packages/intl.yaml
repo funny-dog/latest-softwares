@@ -378,21 +378,6 @@ packages:
       pattern: Sandboxie-Plus-x64-v*.exe
   desc_cn: Windows 沙盒工具，安全运行和测试程序
   desc_en: Windows sandbox tool for safely running and testing programs
-- id: fastgithub
-  name: FastGithub
-  category: Network & Proxy
-  editions:
-  - intl
-  homepage: https://github.com/dotnetcore/FastGithub
-  fetcher: download_page
-  args:
-    source: GitHub project page; no public release API
-    platforms:
-    - platform: win-x64
-      download_url: https://github.com/dotnetcore/FastGithub
-      link_kind: landing_page
-  desc_cn: GitHub 加速工具，解决国内访问 GitHub 慢的问题
-  desc_en: GitHub acceleration tool for faster access in China
 - id: gnupg
   name: Gpg4win
   category: Utilities
@@ -765,19 +750,25 @@ packages:
   editions:
   - intl
   homepage: https://discord.com/download
-  fetcher: download_page
+  fetcher: package_manifest
+  source_ids:
+    winget: Discord.Discord
+    brew: discord
+    flathub: com.discordapp.Discord
   args:
-    source: Official Discord download endpoint; no public version API
-    platforms:
-    - platform: win-x64
-      download_url: https://discord.com/api/download?platform=win
-      link_kind: direct
-    - platform: mac-universal
-      download_url: https://discord.com/api/download?platform=osx
-      link_kind: direct
-    - platform: linux-x64
-      download_url: https://discord.com/download
-      link_kind: landing_page
+    sources:
+    - provider: winget
+      package: Discord.Discord
+      platforms:
+      - platform: win-x64
+    - provider: brew
+      package: discord
+      platforms:
+      - platform: mac-universal
+    - provider: flathub
+      package: com.discordapp.Discord
+      platforms:
+      - platform: linux-x64
   desc_cn: 游戏和社区语音聊天平台，支持文字/语音/视频
   desc_en: Gaming and community voice chat platform with text/voice/video
 - id: slack
@@ -786,19 +777,25 @@ packages:
   editions:
   - intl
   homepage: https://slack.com/downloads/
-  fetcher: download_page
+  fetcher: package_manifest
+  source_ids:
+    winget: SlackTechnologies.Slack
+    brew: slack
+    flathub: com.slack.Slack
   args:
-    source: Official Slack download page; no public version API
-    platforms:
-    - platform: win-x64
-      download_url: https://slack.com/downloads/windows
-      link_kind: landing_page
-    - platform: mac-universal
-      download_url: https://slack.com/downloads/mac
-      link_kind: landing_page
-    - platform: linux-x64
-      download_url: https://slack.com/downloads/linux
-      link_kind: landing_page
+    sources:
+    - provider: winget
+      package: SlackTechnologies.Slack
+      platforms:
+      - platform: win-x64
+    - provider: brew
+      package: slack
+      platforms:
+      - platform: mac
+    - provider: flathub
+      package: com.slack.Slack
+      platforms:
+      - platform: linux-x64
   desc_cn: 企业团队协作工具，频道式沟通集成多种服务
   desc_en: Enterprise team collaboration tool with channel-based communication
 - id: zoom
@@ -807,16 +804,24 @@ packages:
   editions:
   - intl
   homepage: https://zoom.us/download
-  fetcher: download_page
+  fetcher: package_manifest
+  source_ids:
+    winget: Zoom.Zoom
+    brew: zoom
   args:
-    source: Official Zoom download page; no public version API
-    platforms:
-    - platform: win-x64
-      download_url: https://zoom.us/download
-      link_kind: landing_page
-    - platform: mac-universal
-      download_url: https://zoom.us/download
-      link_kind: landing_page
+    sources:
+    - provider: winget
+      package: Zoom.Zoom
+      platforms:
+      - platform: win-x64
+      - platform: win-arm64
+    - provider: brew
+      package: zoom
+      platforms:
+      - platform: mac-arm64
+  verification:
+    allowed_hosts:
+    - cdn.zoom.us
   desc_cn: 视频会议和在线协作平台，稳定可靠的远程会议
   desc_en: Video conferencing and online collaboration platform for reliable remote
     meetings
@@ -866,13 +871,15 @@ packages:
   editions:
   - intl
   homepage: https://www.7-zip.org/
-  fetcher: download_page
+  fetcher: package_manifest
+  source_ids:
+    winget: 7zip.7zip
   args:
-    source: Official 7-Zip download page; no public version API
+    provider: winget
+    package: 7zip.7zip
     platforms:
     - platform: win-x64
-      download_url: https://www.7-zip.org/download.html
-      link_kind: landing_page
+    - platform: win-arm64
   desc_cn: 开源的高压缩比文件归档工具，支持多种格式
   desc_en: Open-source high-ratio file archiver supporting multiple formats
 - id: python
@@ -921,16 +928,21 @@ packages:
   editions:
   - intl
   homepage: https://signal.org/download/
-  fetcher: download_page
+  fetcher: package_manifest
+  source_ids:
+    winget: OpenWhisperSystems.Signal
+    brew: signal
   args:
-    source: Official Signal download page; no public version API
-    platforms:
-    - platform: win-x64
-      download_url: https://signal.org/download/windows/
-      link_kind: landing_page
-    - platform: mac-universal
-      download_url: https://signal.org/download/macos/
-      link_kind: landing_page
+    sources:
+    - provider: winget
+      package: OpenWhisperSystems.Signal
+      platforms:
+      - platform: win-x64
+    - provider: brew
+      package: signal
+      platforms:
+      - platform: mac-arm64
+      - platform: mac-x64
   desc_cn: 端到端加密的安全通讯工具，隐私保护标杆
   desc_en: End-to-end encrypted secure messenger, gold standard for privacy
 - id: wireguard
@@ -1192,19 +1204,18 @@ packages:
   editions:
   - intl
   homepage: https://github.com/dalance/procs
-  fetcher: download_page
+  fetcher: github_release
   args:
-    source: Official project download page; no stable public release asset API
-    platforms:
+    repo: dalance/procs
+    assets:
     - platform: win-x64
-      download_url: https://github.com/dalance/procs/releases
-      link_kind: landing_page
+      pattern: procs-v{version}-x86_64-windows.zip
     - platform: mac-arm64
-      download_url: https://github.com/dalance/procs/releases
-      link_kind: landing_page
+      pattern: procs-v{version}-aarch64-mac.zip
+    - platform: mac-x64
+      pattern: procs-v{version}-x86_64-mac.zip
     - platform: linux-x64
-      download_url: https://github.com/dalance/procs/releases
-      link_kind: landing_page
+      pattern: procs-v{version}-x86_64-linux.zip
   desc_cn: ps 替代工具，彩色输出，支持增量搜索
   desc_en: ps alternative with colored output and incremental search
 - id: sd
@@ -1268,19 +1279,16 @@ packages:
   editions:
   - intl
   homepage: https://github.com/extrawurst/gitui
-  fetcher: download_page
+  fetcher: github_release
   args:
-    source: Official project download page; no stable public release asset API
-    platforms:
+    repo: extrawurst/gitui
+    assets:
     - platform: win-x64
-      download_url: https://github.com/extrawurst/gitui/releases
-      link_kind: landing_page
-    - platform: mac-arm64
-      download_url: https://github.com/extrawurst/gitui/releases
-      link_kind: landing_page
+      pattern: gitui-win.msi
+    - platform: mac-universal
+      pattern: gitui-mac.tar.gz
     - platform: linux-x64
-      download_url: https://github.com/extrawurst/gitui/releases
-      link_kind: landing_page
+      pattern: gitui-linux-x86_64.tar.gz
   desc_cn: 终端 Git 客户端，快速的 TUI 界面
   desc_en: Terminal Git client with fast TUI interface
 - id: hyperfine
@@ -1343,19 +1351,20 @@ packages:
   editions:
   - intl
   homepage: https://docs.astral.sh/ruff/installation/
-  fetcher: download_page
+  fetcher: github_release
   args:
-    source: Official project download page; no stable public release asset API
-    platforms:
+    repo: astral-sh/ruff
+    assets:
     - platform: win-x64
-      download_url: https://docs.astral.sh/ruff/installation/
-      link_kind: landing_page
+      pattern: ruff-x86_64-pc-windows-msvc.zip
+    - platform: win-arm64
+      pattern: ruff-aarch64-pc-windows-msvc.zip
     - platform: mac-arm64
-      download_url: https://docs.astral.sh/ruff/installation/
-      link_kind: landing_page
+      pattern: ruff-aarch64-apple-darwin.tar.gz
+    - platform: mac-x64
+      pattern: ruff-x86_64-apple-darwin.tar.gz
     - platform: linux-x64
-      download_url: https://docs.astral.sh/ruff/installation/
-      link_kind: landing_page
+      pattern: ruff-x86_64-unknown-linux-gnu.tar.gz
   desc_cn: 超快的 Python 代码检查和格式化工具，Rust 编写
   desc_en: Ultra-fast Python linter and formatter written in Rust
 - id: uv
@@ -1364,19 +1373,20 @@ packages:
   editions:
   - intl
   homepage: https://docs.astral.sh/uv/getting-started/installation/
-  fetcher: download_page
+  fetcher: github_release
   args:
-    source: Official project download page; no stable public release asset API
-    platforms:
+    repo: astral-sh/uv
+    assets:
     - platform: win-x64
-      download_url: https://docs.astral.sh/uv/getting-started/installation/
-      link_kind: landing_page
+      pattern: uv-x86_64-pc-windows-msvc.zip
+    - platform: win-arm64
+      pattern: uv-aarch64-pc-windows-msvc.zip
     - platform: mac-arm64
-      download_url: https://docs.astral.sh/uv/getting-started/installation/
-      link_kind: landing_page
+      pattern: uv-aarch64-apple-darwin.tar.gz
+    - platform: mac-x64
+      pattern: uv-x86_64-apple-darwin.tar.gz
     - platform: linux-x64
-      download_url: https://docs.astral.sh/uv/getting-started/installation/
-      link_kind: landing_page
+      pattern: uv-x86_64-unknown-linux-gnu.tar.gz
   desc_cn: 超快的 Python 包管理工具，Rust 编写的 pip 替代品
   desc_en: Ultra-fast Python package manager, Rust-based pip alternative
 - id: biome
@@ -1439,19 +1449,16 @@ packages:
   editions:
   - intl
   homepage: https://github.com/trunk-rs/trunk
-  fetcher: download_page
+  fetcher: github_release
   args:
-    source: Official project download page; no stable public release asset API
-    platforms:
+    repo: trunk-rs/trunk
+    assets:
     - platform: win-x64
-      download_url: https://github.com/trunk-rs/trunk/releases
-      link_kind: landing_page
+      pattern: trunk-x86_64-pc-windows-msvc.zip
     - platform: mac-arm64
-      download_url: https://github.com/trunk-rs/trunk/releases
-      link_kind: landing_page
+      pattern: trunk-aarch64-apple-darwin.tar.gz
     - platform: linux-x64
-      download_url: https://github.com/trunk-rs/trunk/releases
-      link_kind: landing_page
+      pattern: trunk-x86_64-unknown-linux-gnu.tar.gz
   desc_cn: WebAssembly 应用的构建工具和开发服务器
   desc_en: Build tool and development server for WebAssembly applications
 - id: lefthook
@@ -1460,19 +1467,18 @@ packages:
   editions:
   - intl
   homepage: https://github.com/evilmartians/lefthook
-  fetcher: download_page
+  fetcher: github_release
   args:
-    source: Official project download page; no stable public release asset API
-    platforms:
+    repo: evilmartians/lefthook
+    assets:
     - platform: win-x64
-      download_url: https://github.com/evilmartians/lefthook/releases
-      link_kind: landing_page
+      pattern: lefthook_{version}_Windows_x86_64.exe
     - platform: mac-arm64
-      download_url: https://github.com/evilmartians/lefthook/releases
-      link_kind: landing_page
+      pattern: lefthook_{version}_MacOS_arm64.gz
+    - platform: mac-x64
+      pattern: lefthook_{version}_MacOS_x86_64.gz
     - platform: linux-x64
-      download_url: https://github.com/evilmartians/lefthook/releases
-      link_kind: landing_page
+      pattern: lefthook_{version}_Linux_x86_64.gz
   desc_cn: 快速的 Git hooks 管理工具，支持并行执行
   desc_en: Fast Git hooks manager with parallel execution support
 - id: typos
@@ -1499,19 +1505,18 @@ packages:
   editions:
   - intl
   homepage: https://github.com/tamasfe/taplo
-  fetcher: download_page
+  fetcher: github_release
   args:
-    source: Official project download page; no stable public release asset API
-    platforms:
+    repo: tamasfe/taplo
+    assets:
     - platform: win-x64
-      download_url: https://github.com/tamasfe/taplo/releases
-      link_kind: landing_page
+      pattern: taplo-windows-x86_64.gz
     - platform: mac-arm64
-      download_url: https://github.com/tamasfe/taplo/releases
-      link_kind: landing_page
+      pattern: taplo-darwin-aarch64.gz
+    - platform: mac-x64
+      pattern: taplo-darwin-x86_64.gz
     - platform: linux-x64
-      download_url: https://github.com/tamasfe/taplo/releases
-      link_kind: landing_page
+      pattern: taplo-linux-x86_64.gz
   desc_cn: TOML 格式化和校验工具，支持 LSP
   desc_en: TOML formatter and linter with LSP support
 - id: tokei
@@ -1649,19 +1654,16 @@ packages:
   editions:
   - intl
   homepage: https://github.com/mgdm/htmlq
-  fetcher: download_page
+  fetcher: github_release
   args:
-    source: Official project download page; no stable public release asset API
-    platforms:
+    repo: mgdm/htmlq
+    assets:
     - platform: win-x64
-      download_url: https://github.com/mgdm/htmlq/releases
-      link_kind: landing_page
-    - platform: mac-arm64
-      download_url: https://github.com/mgdm/htmlq/releases
-      link_kind: landing_page
+      pattern: htmlq-x86_64-windows.zip
+    - platform: mac-x64
+      pattern: htmlq-x86_64-darwin.tar.gz
     - platform: linux-x64
-      download_url: https://github.com/mgdm/htmlq/releases
-      link_kind: landing_page
+      pattern: htmlq-x86_64-linux.tar.gz
   desc_cn: 命令行 HTML 解析工具，像 jq 一样提取 HTML 内容
   desc_en: Command-line HTML parser, extract HTML content like jq for JSON
 - id: choose
@@ -1670,19 +1672,16 @@ packages:
   editions:
   - intl
   homepage: https://github.com/theryangeary/choose
-  fetcher: download_page
+  fetcher: github_release
   args:
-    source: Official project download page; no stable public release asset API
-    platforms:
+    repo: theryangeary/choose
+    assets:
     - platform: win-x64
-      download_url: https://github.com/theryangeary/choose/releases
-      link_kind: landing_page
+      pattern: choose-x86_64-pc-windows-gnu.exe
     - platform: mac-arm64
-      download_url: https://github.com/theryangeary/choose/releases
-      link_kind: landing_page
+      pattern: choose-aarch64-apple-darwin
     - platform: linux-x64
-      download_url: https://github.com/theryangeary/choose/releases
-      link_kind: landing_page
+      pattern: choose-x86_64-unknown-linux-gnu
   desc_cn: cut/awk 的简洁替代品，用更直观的语法选择列
   desc_en: Simpler alternative to cut/awk with more intuitive column selection syntax
 - id: git-cliff
@@ -1745,19 +1744,18 @@ packages:
   editions:
   - intl
   homepage: https://github.com/svenstaro/miniserve
-  fetcher: download_page
+  fetcher: github_release
   args:
-    source: Official project download page; no stable public release asset API
-    platforms:
+    repo: svenstaro/miniserve
+    assets:
     - platform: win-x64
-      download_url: https://github.com/svenstaro/miniserve/releases
-      link_kind: landing_page
+      pattern: miniserve-{version}-x86_64-pc-windows-msvc.exe
     - platform: mac-arm64
-      download_url: https://github.com/svenstaro/miniserve/releases
-      link_kind: landing_page
+      pattern: miniserve-{version}-aarch64-apple-darwin
+    - platform: mac-x64
+      pattern: miniserve-{version}-x86_64-apple-darwin
     - platform: linux-x64
-      download_url: https://github.com/svenstaro/miniserve/releases
-      link_kind: landing_page
+      pattern: miniserve-{version}-x86_64-unknown-linux-gnu
   desc_cn: 轻量级 HTTP 文件服务器，一行命令共享文件
   desc_en: Lightweight HTTP file server, share files with a single command
 - id: httpie
@@ -1787,13 +1785,12 @@ packages:
   editions:
   - intl
   homepage: https://github.com/LibreHardwareMonitor/LibreHardwareMonitor
-  fetcher: download_page
+  fetcher: github_release
   args:
-    source: Official project download page; no stable public release asset API
-    platforms:
+    repo: LibreHardwareMonitor/LibreHardwareMonitor
+    assets:
     - platform: win-x64
-      download_url: https://github.com/LibreHardwareMonitor/LibreHardwareMonitor/releases
-      link_kind: landing_page
+      pattern: LibreHardwareMonitor.zip
   desc_cn: 开源硬件监控工具，温度/电压/风扇转速
   desc_en: Open-source hardware monitor for temperature, voltage, and fan speed
 - id: eartrumpet
@@ -1817,13 +1814,14 @@ packages:
   editions:
   - intl
   homepage: https://github.com/NickeManarin/ScreenToGif
-  fetcher: download_page
+  fetcher: github_release
   args:
-    source: Official project download page; no stable public release asset API
-    platforms:
+    repo: NickeManarin/ScreenToGif
+    assets:
     - platform: win-x64
-      download_url: https://github.com/NickeManarin/ScreenToGif/releases
-      link_kind: landing_page
+      pattern: ScreenToGif.{version}.Light.Setup.x64.msi
+    - platform: win-arm64
+      pattern: ScreenToGif.{version}.Light.Setup.Arm64.msi
   desc_cn: 屏幕录制工具，直接导出为 GIF 动画
   desc_en: Screen recorder that exports directly to GIF animation
 - id: autohotkey
@@ -1846,13 +1844,14 @@ packages:
   editions:
   - intl
   homepage: https://github.com/t1m0thyj/WinDynamicDesktop
-  fetcher: download_page
+  fetcher: github_release
   args:
-    source: Official project download page; no stable public release asset API
-    platforms:
+    repo: t1m0thyj/WinDynamicDesktop
+    assets:
     - platform: win-x64
-      download_url: https://github.com/t1m0thyj/WinDynamicDesktop/releases
-      link_kind: landing_page
+      pattern: WinDynamicDesktop_{version}_x64_Setup.exe
+    - platform: win-arm64
+      pattern: WinDynamicDesktop_{version}_arm64_Setup.exe
   desc_cn: Windows 动态桌面壁纸，随时间自动切换壁纸
   desc_en: Windows dynamic desktop wallpaper that changes with time of day
 - id: translucent-tb
@@ -1861,13 +1860,14 @@ packages:
   editions:
   - intl
   homepage: https://github.com/TranslucentTB/TranslucentTB
-  fetcher: download_page
+  fetcher: github_release
   args:
-    source: Official project download page; no stable public release asset API
-    platforms:
+    repo: TranslucentTB/TranslucentTB
+    assets:
     - platform: win-x64
-      download_url: https://github.com/TranslucentTB/TranslucentTB/releases
-      link_kind: landing_page
+      pattern: TranslucentTB-portable-x64.zip
+    - platform: win-arm64
+      pattern: TranslucentTB-portable-arm64.zip
   desc_cn: 任务栏透明化工具，美化 Windows 任务栏
   desc_en: Taskbar transparency tool for beautifying Windows taskbar
 - id: windhawk
@@ -1890,13 +1890,14 @@ packages:
   editions:
   - intl
   homepage: https://github.com/srwi/EverythingToolbar
-  fetcher: download_page
+  fetcher: github_release
   args:
-    source: Official project download page; no stable public release asset API
-    platforms:
+    repo: srwi/EverythingToolbar
+    assets:
     - platform: win-x64
-      download_url: https://github.com/srwi/EverythingToolbar/releases
-      link_kind: landing_page
+      pattern: EverythingToolbar-{version}-x64.exe
+    - platform: win-arm64
+      pattern: EverythingToolbar-{version}-arm64.exe
   desc_cn: Everything 搜索集成到任务栏，快速搜索文件
   desc_en: Everything search integrated into the taskbar for quick file search
 - id: unigetui
@@ -1994,13 +1995,12 @@ packages:
   editions:
   - intl
   homepage: https://github.com/microsoft/XmlNotepad
-  fetcher: download_page
+  fetcher: github_release
   args:
-    source: Official project download page; no stable public release asset API
-    platforms:
+    repo: microsoft/XmlNotepad
+    assets:
     - platform: win-x64
-      download_url: https://github.com/microsoft/XmlNotepad/releases
-      link_kind: landing_page
+      pattern: XmlNotepadSetup.zip
   desc_cn: 微软出品的 XML 编辑器，树状结构可视化编辑
   desc_en: XML editor by Microsoft with tree-structured visual editing
 - id: imageglass
@@ -2038,13 +2038,12 @@ packages:
   editions:
   - intl
   homepage: https://github.com/QL-Win/QuickLook
-  fetcher: download_page
+  fetcher: github_release
   args:
-    source: Official project download page; no stable public release asset API
-    platforms:
+    repo: QL-Win/QuickLook
+    assets:
     - platform: win-x64
-      download_url: https://github.com/QL-Win/QuickLook/releases
-      link_kind: landing_page
+      pattern: QuickLook-{version}.msi
   desc_cn: Windows 文件预览工具，macOS Quick Look 的移植
   desc_en: Windows file preview tool, port of macOS Quick Look feature
 - id: files-app
@@ -2128,13 +2127,12 @@ packages:
   editions:
   - intl
   homepage: https://github.com/M2Team/NanaZip
-  fetcher: download_page
+  fetcher: github_release
   args:
-    source: Official project download page; no stable public release asset API
-    platforms:
+    repo: M2Team/NanaZip
+    assets:
     - platform: win-x64
-      download_url: https://github.com/M2Team/NanaZip/releases
-      link_kind: landing_page
+      pattern: NanaZip_{version}.msixbundle
   desc_cn: 基于 7-Zip 的现代化 Windows 归档工具
   desc_en: Modern Windows archiver based on 7-Zip
 - id: doublecmd
@@ -2143,13 +2141,16 @@ packages:
   editions:
   - intl
   homepage: https://github.com/doublecmd/doublecmd
-  fetcher: download_page
+  fetcher: github_release
   args:
-    source: Official project download page; no stable public release asset API
-    platforms:
+    repo: doublecmd/doublecmd
+    assets:
     - platform: win-x64
-      download_url: https://github.com/doublecmd/doublecmd/releases
-      link_kind: landing_page
+      pattern: doublecmd-{version}.x86_64-win64.msi
+    - platform: mac-arm64
+      pattern: doublecmd-{version}.cocoa.aarch64.dmg
+    - platform: mac-x64
+      pattern: doublecmd-{version}.cocoa.x86_64.dmg
   desc_cn: 跨平台双面板文件管理器，Total Commander 替代品
   desc_en: Cross-platform dual-panel file manager, alternative to Total Commander
 - id: onionshare
@@ -2158,16 +2159,14 @@ packages:
   editions:
   - intl
   homepage: https://github.com/onionshare/onionshare
-  fetcher: download_page
+  fetcher: github_release
   args:
-    source: Official project download page; no stable public release asset API
-    platforms:
+    repo: onionshare/onionshare
+    assets:
     - platform: win-x64
-      download_url: https://github.com/onionshare/onionshare/releases
-      link_kind: landing_page
-    - platform: mac-arm64
-      download_url: https://github.com/onionshare/onionshare/releases
-      link_kind: landing_page
+      pattern: OnionShare-win64-{version}.msi
+    - platform: mac-universal
+      pattern: OnionShare-{version}.dmg
   desc_cn: 通过 Tor 网络安全共享文件和托管网站
   desc_en: Securely share files and host websites over Tor network
 - id: veracrypt
@@ -2457,13 +2456,17 @@ packages:
   editions:
   - intl
   homepage: https://openvpn.net/community-downloads/
-  fetcher: download_page
+  fetcher: package_manifest
+  source_ids:
+    winget: OpenVPNTechnologies.OpenVPN
   args:
-    source: Official project download page; no stable public release asset API
+    provider: winget
+    package: OpenVPNTechnologies.OpenVPN
     platforms:
     - platform: win-x64
-      download_url: https://openvpn.net/community-downloads/
-      link_kind: landing_page
+  verification:
+    allowed_hosts:
+    - swupdate.openvpn.net
   desc_cn: 开源 VPN 解决方案，支持站点间和远程访问 VPN
   desc_en: Open-source VPN solution for site-to-site and remote access
 - id: nmap
@@ -2472,13 +2475,14 @@ packages:
   editions:
   - intl
   homepage: https://nmap.org/download
-  fetcher: download_page
+  fetcher: package_manifest
+  source_ids:
+    winget: Insecure.Nmap
   args:
-    source: Official project download page; no stable public release asset API
+    provider: winget
+    package: Insecure.Nmap
     platforms:
-    - platform: win-x64
-      download_url: https://nmap.org/download
-      link_kind: landing_page
+    - platform: win-x86
   desc_cn: 网络发现和安全审计工具，业界标准的端口扫描器
   desc_en: Network discovery and security auditing tool, industry-standard port scanner
 - id: mullvad-vpn
@@ -2487,17 +2491,22 @@ packages:
   editions:
   - intl
   homepage: https://mullvad.net/en/download/vpn/windows
-  fetcher: download_page
+  fetcher: package_manifest
+  source_ids:
+    winget: MullvadVPN.MullvadVPN
+    brew: mullvad-vpn
   args:
-    source: Official project download page; no stable public release asset API
-    platforms:
-    - platform: win-x64
-      download_url: https://mullvad.net/en/download/vpn/windows
-      link_kind: landing_page
-    - platform: mac-arm64
-      download_url: https://mullvad.net/en/download/vpn/windows
-      link_kind: landing_page
+    sources:
+    - provider: winget
+      package: MullvadVPN.MullvadVPN
+      platforms:
+      - platform: win-x64
+    - provider: brew
+      package: mullvad-vpn
+      platforms:
+      - platform: mac
   desc_cn: 注重隐私的 VPN 服务，无需注册，支持匿名支付
+  desc_en: Privacy-focused VPN service requiring no signup, supports anonymous payment
   desc_en: Privacy-focused VPN service requiring no signup, supports anonymous payment
 - id: outline-client
   name: Outline Client
@@ -2556,16 +2565,25 @@ packages:
   editions:
   - intl
   homepage: https://www.zerotier.com/download/
-  fetcher: download_page
+  fetcher: package_manifest
+  source_ids:
+    winget: ZeroTier.ZeroTierOne
+    brew: zerotier-one
+    snapcraft: zerotier
   args:
-    source: Official project download page; no stable public release asset API
-    platforms:
-    - platform: win-x64
-      download_url: https://www.zerotier.com/download/
-      link_kind: landing_page
-    - platform: linux-x64
-      download_url: https://www.zerotier.com/download/
-      link_kind: landing_page
+    sources:
+    - provider: winget
+      package: ZeroTier.ZeroTierOne
+      platforms:
+      - platform: win-x86
+    - provider: brew
+      package: zerotier-one
+      platforms:
+      - platform: mac
+    - provider: snapcraft
+      package: zerotier
+      platforms:
+      - platform: linux-x64
   desc_cn: 全球虚拟局域网方案，简单创建安全的点对点网络
   desc_en: Global virtual LAN solution for simple secure peer-to-peer networking
 - id: adguard-home
@@ -2622,13 +2640,14 @@ packages:
   editions:
   - intl
   homepage: https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html
-  fetcher: download_page
+  fetcher: package_manifest
+  source_ids:
+    winget: PuTTY.PuTTY
   args:
-    source: Official latest installer endpoint; version label is sync date
+    provider: winget
+    package: PuTTY.PuTTY
     platforms:
     - platform: win-x64
-      download_url: https://the.earth.li/~sgtatham/putty/latest/w64/putty.exe
-      link_kind: direct
   desc_cn: 经典的 SSH 和 Telnet 客户端，Windows 远程连接必备工具
   desc_en: Classic SSH and Telnet client, essential remote connection tool for Windows
 - id: cloudflare-warp
@@ -2637,16 +2656,20 @@ packages:
   editions:
   - intl
   homepage: https://one.one.one.one/
-  fetcher: download_page
+  fetcher: package_manifest
+  source_ids:
+    winget: Cloudflare.Warp
+    brew: cloudflare-warp
   args:
-    source: Official project download page; no stable public release asset API
-    platforms:
-    - platform: win-x64
-      download_url: https://one.one.one.one/
-      link_kind: landing_page
-  verification:
-    identity_terms:
-    - WARP
+    sources:
+    - provider: winget
+      package: Cloudflare.Warp
+      platforms:
+      - platform: win-x64
+    - provider: brew
+      package: cloudflare-warp
+      platforms:
+      - platform: mac
   desc_cn: Cloudflare 提供的免费 VPN 和 DNS 解析加速服务
   desc_en: Free VPN and DNS resolution acceleration service by Cloudflare
 - id: openspeedtest
@@ -2834,16 +2857,14 @@ packages:
   editions:
   - intl
   homepage: https://github.com/Rosalie241/RMG
-  fetcher: download_page
+  fetcher: github_release
   args:
-    source: Official project download page; no stable public release asset API
-    platforms:
+    repo: Rosalie241/RMG
+    assets:
     - platform: win-x64
-      download_url: https://github.com/Rosalie241/RMG/releases
-      link_kind: landing_page
+      pattern: RMG-Setup-Windows64-v{version}.exe
     - platform: linux-x64
-      download_url: https://github.com/Rosalie241/RMG/releases
-      link_kind: landing_page
+      pattern: RMG-Portable-Linux64-v{version}.AppImage
   desc_cn: Rosalie's Mupen64 GUI，N64 模拟器图形前端
   desc_en: Rosalie's Mupen64 GUI, graphical frontend for N64 emulation
 - id: openmw
@@ -2870,19 +2891,16 @@ packages:
   editions:
   - intl
   homepage: https://github.com/dosbox-staging/dosbox-staging
-  fetcher: download_page
+  fetcher: github_release
   args:
-    source: Official project download page; no stable public release asset API
-    platforms:
+    repo: dosbox-staging/dosbox-staging
+    assets:
     - platform: win-x64
-      download_url: https://github.com/dosbox-staging/dosbox-staging/releases
-      link_kind: landing_page
-    - platform: mac-arm64
-      download_url: https://github.com/dosbox-staging/dosbox-staging/releases
-      link_kind: landing_page
+      pattern: dosbox-staging-windows-x64-v{version}-setup.exe
+    - platform: mac-universal
+      pattern: dosbox-staging-macOS-v{version}.dmg
     - platform: linux-x64
-      download_url: https://github.com/dosbox-staging/dosbox-staging/releases
-      link_kind: landing_page
+      pattern: dosbox-staging-linux-x86_64-v{version}.tar.xz
   desc_cn: 现代化的 DOS 模拟器，改善 DOS 游戏体验
   desc_en: Modern DOS emulator for improved DOS gaming experience
 - id: libretro
@@ -2909,19 +2927,16 @@ packages:
   editions:
   - intl
   homepage: https://github.com/Mudlet/Mudlet
-  fetcher: download_page
+  fetcher: github_release
   args:
-    source: Official project download page; no stable public release asset API
-    platforms:
+    repo: Mudlet/Mudlet
+    assets:
     - platform: win-x64
-      download_url: https://github.com/Mudlet/Mudlet/releases
-      link_kind: landing_page
+      pattern: Mudlet-{version}-windows-64-installer.exe
     - platform: mac-arm64
-      download_url: https://github.com/Mudlet/Mudlet/releases
-      link_kind: landing_page
+      pattern: Mudlet-{version}-arm64.dmg
     - platform: linux-x64
-      download_url: https://github.com/Mudlet/Mudlet/releases
-      link_kind: landing_page
+      pattern: Mudlet-{version}-linux-x64.AppImage.tar
   desc_cn: 功能丰富的 MUD 客户端，支持脚本和触发器
   desc_en: Feature-rich MUD client with scripting and trigger support
 - id: kdenlive
@@ -3065,13 +3080,21 @@ packages:
   editions:
   - intl
   homepage: https://inkscape.org/release/
-  fetcher: download_page
+  fetcher: package_manifest
+  source_ids:
+    winget: Inkscape.Inkscape
+    brew: inkscape
   args:
-    source: Official project download page; no stable public release asset API
-    platforms:
-    - platform: win-x64
-      download_url: https://inkscape.org/release/
-      link_kind: landing_page
+    sources:
+    - provider: winget
+      package: Inkscape.Inkscape
+      platforms:
+      - platform: win-x64
+    - provider: brew
+      package: inkscape
+      platforms:
+      - platform: mac-arm64
+      - platform: mac-x64
   desc_cn: 开源矢量图形编辑器，SVG 格式的专业编辑工具
   desc_en: Open-source vector graphics editor, professional SVG editing tool
 - id: blender
@@ -3097,19 +3120,16 @@ packages:
   editions:
   - intl
   homepage: https://www.freecad.org/downloads.php
-  fetcher: download_page
+  fetcher: github_release
   args:
-    source: Official project download page; no stable public release asset API
-    platforms:
+    repo: FreeCAD/FreeCAD
+    assets:
     - platform: win-x64
-      download_url: https://www.freecad.org/downloads.php
-      link_kind: landing_page
+      pattern: FreeCAD_{version}-Windows-x86_64-py*-installer.exe
     - platform: mac-arm64
-      download_url: https://www.freecad.org/downloads.php
-      link_kind: landing_page
+      pattern: FreeCAD_{version}-macOS-arm64-py*.dmg
     - platform: linux-x64
-      download_url: https://www.freecad.org/downloads.php
-      link_kind: landing_page
+      pattern: FreeCAD_{version}-Linux-x86_64-py*.AppImage
   desc_cn: 开源参数化 3D CAD 建模工具，面向工程设计
   desc_en: Open-source parametric 3D CAD modeler for engineering design
 - id: darktable
@@ -3264,19 +3284,18 @@ packages:
   editions:
   - intl
   homepage: https://github.com/TriliumNext/Notes
-  fetcher: download_page
+  fetcher: github_release
   args:
-    source: Official project download page; no stable public release asset API
-    platforms:
+    repo: TriliumNext/Notes
+    assets:
     - platform: win-x64
-      download_url: https://github.com/TriliumNext/Notes/releases
-      link_kind: landing_page
+      pattern: TriliumNextNotes-v{version}-windows-x64.exe
     - platform: mac-arm64
-      download_url: https://github.com/TriliumNext/Notes/releases
-      link_kind: landing_page
+      pattern: TriliumNextNotes-v{version}-macos-arm64.dmg
+    - platform: mac-x64
+      pattern: TriliumNextNotes-v{version}-macos-x64.dmg
     - platform: linux-x64
-      download_url: https://github.com/TriliumNext/Notes/releases
-      link_kind: landing_page
+      pattern: TriliumNextNotes-v{version}-linux-x64.deb
   desc_cn: 层级化笔记应用，支持关系图和脚本
   desc_en: Hierarchical note-taking app with relation graphs and scripting
 - id: zettlr
@@ -3318,19 +3337,18 @@ packages:
   editions:
   - intl
   homepage: https://www.beekeeperstudio.io/get
-  fetcher: download_page
+  fetcher: github_release
   args:
-    source: Official project download page; no stable public release asset API
-    platforms:
+    repo: beekeeper-studio/beekeeper-studio
+    assets:
     - platform: win-x64
-      download_url: https://www.beekeeperstudio.io/get
-      link_kind: landing_page
+      pattern: Beekeeper-Studio-Setup-{version}.exe
     - platform: mac-arm64
-      download_url: https://www.beekeeperstudio.io/get
-      link_kind: landing_page
+      pattern: Beekeeper-Studio-{version}-arm64.dmg
+    - platform: mac-x64
+      pattern: Beekeeper-Studio-{version}.dmg
     - platform: linux-x64
-      download_url: https://www.beekeeperstudio.io/get
-      link_kind: landing_page
+      pattern: Beekeeper-Studio-{version}.AppImage
   desc_cn: 跨平台数据库管理工具，支持多种数据库
   desc_en: Cross-platform database management tool supporting multiple databases
 - id: sumatrapdf
@@ -3339,16 +3357,17 @@ packages:
   editions:
   - intl
   homepage: https://www.sumatrapdfreader.org/download-free-pdf-viewer
-  fetcher: download_page
+  fetcher: package_manifest
+  source_ids:
+    winget: SumatraPDF.SumatraPDF
   args:
-    source: Official project download page; no stable public release asset API
+    provider: winget
+    package: SumatraPDF.SumatraPDF
     platforms:
     - platform: win-x64
-      download_url: https://www.sumatrapdfreader.org/download-free-pdf-viewer
-      link_kind: landing_page
-    - platform: win-x64-portable
-      download_url: https://www.sumatrapdfreader.org/download-free-pdf-viewer
-      link_kind: landing_page
+  verification:
+    allowed_hosts:
+    - files.sumatrapdfreader.org
   desc_cn: 轻量级 Windows PDF 阅读器，启动极快
   desc_en: Lightweight Windows PDF reader with ultra-fast startup
 - id: sioyek
@@ -3653,19 +3672,16 @@ packages:
   editions:
   - intl
   homepage: https://github.com/LostRuins/koboldcpp
-  fetcher: download_page
+  fetcher: github_release
   args:
-    source: Official project download page; no stable public release asset API
-    platforms:
+    repo: LostRuins/koboldcpp
+    assets:
     - platform: win-x64
-      download_url: https://github.com/LostRuins/koboldcpp/releases
-      link_kind: landing_page
+      pattern: koboldcpp.exe
     - platform: mac-arm64
-      download_url: https://github.com/LostRuins/koboldcpp/releases
-      link_kind: landing_page
+      pattern: koboldcpp-mac-arm64
     - platform: linux-x64
-      download_url: https://github.com/LostRuins/koboldcpp/releases
-      link_kind: landing_page
+      pattern: koboldcpp-linux-x64
   desc_cn: LLaMA 模型的简易运行工具，支持多种模型格式
   desc_en: Easy-to-run LLaMA model tool supporting multiple model formats
 - id: age
@@ -3692,19 +3708,20 @@ packages:
   editions:
   - intl
   homepage: https://github.com/getsops/sops
-  fetcher: download_page
+  fetcher: github_release
   args:
-    source: Official project download page; no stable public release asset API
-    platforms:
+    repo: getsops/sops
+    assets:
     - platform: win-x64
-      download_url: https://github.com/getsops/sops/releases
-      link_kind: landing_page
+      pattern: sops-v{version}.amd64.exe
+    - platform: win-arm64
+      pattern: sops-v{version}.arm64.exe
     - platform: mac-arm64
-      download_url: https://github.com/getsops/sops/releases
-      link_kind: landing_page
+      pattern: sops-v{version}.darwin.arm64
+    - platform: mac-x64
+      pattern: sops-v{version}.darwin.amd64
     - platform: linux-x64
-      download_url: https://github.com/getsops/sops/releases
-      link_kind: landing_page
+      pattern: sops-v{version}.linux.amd64
   desc_cn: Secrets 管理工具，支持多种加密后端
   desc_en: Secrets management tool supporting multiple encryption backends
 - id: yubikey-manager
@@ -3960,19 +3977,18 @@ packages:
   editions:
   - intl
   homepage: https://github.com/hatoo/oha
-  fetcher: download_page
+  fetcher: github_release
   args:
-    source: Official project download page; no stable public release asset API
-    platforms:
+    repo: hatoo/oha
+    assets:
     - platform: win-x64
-      download_url: https://github.com/hatoo/oha/releases
-      link_kind: landing_page
+      pattern: oha-windows-amd64.exe
     - platform: mac-arm64
-      download_url: https://github.com/hatoo/oha/releases
-      link_kind: landing_page
+      pattern: oha-macos-arm64
+    - platform: mac-x64
+      pattern: oha-macos-amd64
     - platform: linux-x64
-      download_url: https://github.com/hatoo/oha/releases
-      link_kind: landing_page
+      pattern: oha-linux-amd64
   desc_cn: HTTP 负载测试工具，类似 ab 和 wrk 但更现代
   desc_en: HTTP load testing tool, modern alternative to ab and wrk
 - id: walk
@@ -4072,19 +4088,18 @@ packages:
   editions:
   - intl
   homepage: https://github.com/solidiquis/erdtree
-  fetcher: download_page
+  fetcher: github_release
   args:
-    source: Official project download page; no stable public release asset API
-    platforms:
+    repo: solidiquis/erdtree
+    assets:
     - platform: win-x64
-      download_url: https://github.com/solidiquis/erdtree/releases
-      link_kind: landing_page
+      pattern: erd-v{version}-x86_64-pc-windows-msvc.exe
     - platform: mac-arm64
-      download_url: https://github.com/solidiquis/erdtree/releases
-      link_kind: landing_page
+      pattern: erd-v{version}-aarch64-apple-darwin.tar.gz
+    - platform: mac-x64
+      pattern: erd-v{version}-x86_64-apple-darwin.tar.gz
     - platform: linux-x64
-      download_url: https://github.com/solidiquis/erdtree/releases
-      link_kind: landing_page
+      pattern: erd-v{version}-x86_64-unknown-linux-gnu.tar.gz
   desc_cn: 现代化的文件树查看工具，替代 tree 命令
   desc_en: Modern file tree viewer, alternative to tree command
 - id: broot
@@ -4236,43 +4251,52 @@ packages:
   editions:
   - intl
   homepage: https://www.microsoft.com/edge/download
-  fetcher: download_page
+  fetcher: package_manifest
+  source_ids:
+    winget: Microsoft.Edge
+    brew: microsoft-edge
+    flathub: com.microsoft.Edge
   args:
-    source: Official Microsoft Edge download page; no public version API
-    platforms:
-    - platform: win-x64
-      download_url: https://www.microsoft.com/edge/download
-      link_kind: landing_page
-    - platform: mac-universal
-      download_url: https://www.microsoft.com/edge/download
-      link_kind: landing_page
-    - platform: linux-x64
-      download_url: https://www.microsoft.com/edge/download
-      link_kind: landing_page
+    sources:
+    - provider: winget
+      package: Microsoft.Edge
+      platforms:
+      - platform: win-x64
+    - provider: brew
+      package: microsoft-edge
+      platforms:
+      - platform: mac
+    - provider: flathub
+      package: com.microsoft.Edge
+      platforms:
+      - platform: linux-x64
   desc_cn: 微软基于 Chromium 的浏览器，深度集成 Windows 和 AI
   desc_en: Microsoft's Chromium-based browser with deep Windows and AI integration
-  verification:
-    allowed_hosts:
-    - explore.microsoft.com
 - id: opera
   name: Opera Browser
   category: Browsers
   editions:
   - intl
   homepage: https://www.opera.com/download
-  fetcher: download_page
+  fetcher: package_manifest
+  source_ids:
+    winget: Opera.Opera
+    brew: opera
+    flathub: com.opera.Opera
   args:
-    source: Official Opera download page; no public version API
-    platforms:
-    - platform: win-x64
-      download_url: https://www.opera.com/download
-      link_kind: landing_page
-    - platform: mac-universal
-      download_url: https://www.opera.com/download
-      link_kind: landing_page
-    - platform: linux-x64
-      download_url: https://www.opera.com/download
-      link_kind: landing_page
+    sources:
+    - provider: winget
+      package: Opera.Opera
+      platforms:
+      - platform: win-x64
+    - provider: brew
+      package: opera
+      platforms:
+      - platform: mac
+    - provider: flathub
+      package: com.opera.Opera
+      platforms:
+      - platform: linux-x64
   desc_cn: 功能丰富的浏览器，内置 VPN 和工作区管理
   desc_en: Feature-rich browser with built-in VPN and workspace management
 - id: vivaldi
@@ -4281,19 +4305,25 @@ packages:
   editions:
   - intl
   homepage: https://vivaldi.com/download/
-  fetcher: download_page
+  fetcher: package_manifest
+  source_ids:
+    winget: Vivaldi.Vivaldi
+    brew: vivaldi
+    flathub: com.vivaldi.Vivaldi
   args:
-    source: Official Vivaldi download page; no public version API
-    platforms:
-    - platform: win-x64
-      download_url: https://vivaldi.com/download/
-      link_kind: landing_page
-    - platform: mac-universal
-      download_url: https://vivaldi.com/download/
-      link_kind: landing_page
-    - platform: linux-x64
-      download_url: https://vivaldi.com/download/
-      link_kind: landing_page
+    sources:
+    - provider: winget
+      package: Vivaldi.Vivaldi
+      platforms:
+      - platform: win-x64
+    - provider: brew
+      package: vivaldi
+      platforms:
+      - platform: mac
+    - provider: flathub
+      package: com.vivaldi.Vivaldi
+      platforms:
+      - platform: linux-x64
   desc_cn: 高度可定制的浏览器，为高级用户打造
   desc_en: Highly customizable browser built for power users
 - id: tor-browser
@@ -4302,22 +4332,28 @@ packages:
   editions:
   - intl
   homepage: https://www.torproject.org/download/
-  fetcher: download_page
+  fetcher: package_manifest
+  source_ids:
+    winget: TorProject.TorBrowser
+    brew: tor-browser
+    flathub: org.torproject.torbrowser-launcher
   args:
-    source: Official Tor Project download page; no public version API
-    platforms:
-    - platform: win-x64
-      download_url: https://www.torproject.org/download/
-      link_kind: landing_page
-    - platform: mac-universal
-      download_url: https://www.torproject.org/download/
-      link_kind: landing_page
-    - platform: linux-x64
-      download_url: https://www.torproject.org/download/
-      link_kind: landing_page
+    sources:
+    - provider: winget
+      package: TorProject.TorBrowser
+      platforms:
+      - platform: win-x64
+    - provider: brew
+      package: tor-browser
+      platforms:
+      - platform: mac
+    - provider: flathub
+      package: org.torproject.torbrowser-launcher
+      platforms:
+      - platform: linux-x64
   verification:
     allowed_hosts:
-    - download.torproject.org
+    - dist.torproject.org
   desc_cn: Tor 匿名网络浏览器，保护用户隐私和匿名性
   desc_en: Tor anonymous network browser for privacy and anonymity protection
 - id: librewolf
@@ -4326,19 +4362,26 @@ packages:
   editions:
   - intl
   homepage: https://librewolf.net/installation/
-  fetcher: download_page
+  fetcher: package_manifest
+  source_ids:
+    winget: LibreWolf.LibreWolf
+    brew: librewolf
+    flathub: io.gitlab.librewolf-community
   args:
-    source: Official LibreWolf installation page; no public version API
-    platforms:
-    - platform: win-x64
-      download_url: https://librewolf.net/installation/
-      link_kind: landing_page
-    - platform: mac-universal
-      download_url: https://librewolf.net/installation/
-      link_kind: landing_page
-    - platform: linux-x64
-      download_url: https://librewolf.net/installation/
-      link_kind: landing_page
+    sources:
+    - provider: winget
+      package: LibreWolf.LibreWolf
+      platforms:
+      - platform: win-x64
+    - provider: brew
+      package: librewolf
+      platforms:
+      - platform: mac-arm64
+      - platform: mac-x64
+    - provider: flathub
+      package: io.gitlab.librewolf-community
+      platforms:
+      - platform: linux-x64
   desc_cn: 注重隐私的 Firefox 分支，默认禁用遥测
   desc_en: Privacy-focused Firefox fork with telemetry disabled by default
 - id: mullvad-browser
@@ -4347,19 +4390,25 @@ packages:
   editions:
   - intl
   homepage: https://mullvad.net/en/browser
-  fetcher: download_page
+  fetcher: package_manifest
+  source_ids:
+    winget: MullvadVPN.MullvadBrowser
+    brew: mullvad-browser
+    flathub: net.mullvad.MullvadBrowser
   args:
-    source: Official Mullvad Browser download page; no public version API
-    platforms:
-    - platform: win-x64
-      download_url: https://mullvad.net/en/browser
-      link_kind: landing_page
-    - platform: mac-universal
-      download_url: https://mullvad.net/en/browser
-      link_kind: landing_page
-    - platform: linux-x64
-      download_url: https://mullvad.net/en/browser
-      link_kind: landing_page
+    sources:
+    - provider: winget
+      package: MullvadVPN.MullvadBrowser
+      platforms:
+      - platform: win-x64
+    - provider: brew
+      package: mullvad-browser
+      platforms:
+      - platform: mac
+    - provider: flathub
+      package: net.mullvad.MullvadBrowser
+      platforms:
+      - platform: linux-x64
   desc_cn: Mullvad 与 Tor 项目合作的隐私浏览器
   desc_en: Privacy browser by Mullvad in collaboration with the Tor Project
 - id: microsoft-teams
@@ -4368,16 +4417,20 @@ packages:
   editions:
   - intl
   homepage: https://www.microsoft.com/microsoft-teams/download-app
-  fetcher: download_page
+  fetcher: package_manifest
+  source_ids:
+    winget: Microsoft.Teams
+    brew: microsoft-teams
   args:
-    source: Official Microsoft Teams download page; no public version API
-    platforms:
-    - platform: win-x64
-      download_url: https://www.microsoft.com/microsoft-teams/download-app
-      link_kind: landing_page
-    - platform: mac-universal
-      download_url: https://www.microsoft.com/microsoft-teams/download-app
-      link_kind: landing_page
+    sources:
+    - provider: winget
+      package: Microsoft.Teams
+      platforms:
+      - platform: win-x64
+    - provider: brew
+      package: microsoft-teams
+      platforms:
+      - platform: mac
   desc_cn: 微软团队协作平台，集成 Office 365 办公套件
   desc_en: Microsoft team collaboration platform integrated with Office 365
 - id: whatsapp
@@ -4404,19 +4457,25 @@ packages:
   editions:
   - intl
   homepage: https://www.thunderbird.net/thunderbird/all/
-  fetcher: download_page
+  fetcher: package_manifest
+  source_ids:
+    winget: Mozilla.Thunderbird
+    brew: thunderbird
+    snapcraft: thunderbird
   args:
-    source: Official Thunderbird download page; no public version API
-    platforms:
-    - platform: win-x64
-      download_url: https://www.thunderbird.net/thunderbird/all/
-      link_kind: landing_page
-    - platform: mac-universal
-      download_url: https://www.thunderbird.net/thunderbird/all/
-      link_kind: landing_page
-    - platform: linux-x64
-      download_url: https://www.thunderbird.net/thunderbird/all/
-      link_kind: landing_page
+    sources:
+    - provider: winget
+      package: Mozilla.Thunderbird
+      platforms:
+      - platform: win-x64
+    - provider: brew
+      package: thunderbird
+      platforms:
+      - platform: mac
+    - provider: snapcraft
+      package: thunderbird
+      platforms:
+      - platform: linux-x64
   desc_cn: Mozilla 开发的开源邮件客户端，支持多账户管理
   desc_en: Open-source email client by Mozilla with multi-account support
 - id: skype
@@ -4467,19 +4526,25 @@ packages:
   editions:
   - intl
   homepage: https://www.zotero.org/download/
-  fetcher: download_page
+  fetcher: package_manifest
+  source_ids:
+    winget: DigitalScholar.Zotero
+    brew: zotero
+    flathub: org.zotero.Zotero
   args:
-    source: Official Zotero download page; no public version API
-    platforms:
-    - platform: win-x64
-      download_url: https://www.zotero.org/download/
-      link_kind: landing_page
-    - platform: mac-universal
-      download_url: https://www.zotero.org/download/
-      link_kind: landing_page
-    - platform: linux-x64
-      download_url: https://www.zotero.org/download/
-      link_kind: landing_page
+    sources:
+    - provider: winget
+      package: DigitalScholar.Zotero
+      platforms:
+      - platform: win-x64
+    - provider: brew
+      package: zotero
+      platforms:
+      - platform: mac
+    - provider: flathub
+      package: org.zotero.Zotero
+      platforms:
+      - platform: linux-x64
   desc_cn: 学术文献管理工具，收集整理和引用研究资料
   desc_en: Academic reference manager for collecting, organizing, and citing research
     materials
@@ -4489,16 +4554,21 @@ packages:
   editions:
   - intl
   homepage: https://www.notion.com/desktop
-  fetcher: download_page
+  fetcher: package_manifest
+  source_ids:
+    winget: Notion.Notion
+    brew: notion
   args:
-    source: Official Notion desktop download page; no public version API
-    platforms:
-    - platform: win-x64
-      download_url: https://www.notion.com/desktop
-      link_kind: landing_page
-    - platform: mac-universal
-      download_url: https://www.notion.com/desktop
-      link_kind: landing_page
+    sources:
+    - provider: winget
+      package: Notion.Notion
+      platforms:
+      - platform: win-x64
+      - platform: win-arm64
+    - provider: brew
+      package: notion
+      platforms:
+      - platform: mac-arm64
   desc_cn: 全能协作工具，笔记/项目管理/数据库/Wiki 集于一体
   desc_en: All-in-one collaboration tool combining notes, project management, databases,
     and wiki
@@ -4508,16 +4578,21 @@ packages:
   editions:
   - intl
   homepage: https://www.figma.com/downloads/
-  fetcher: download_page
+  fetcher: package_manifest
+  source_ids:
+    winget: Figma.Figma
+    brew: figma
   args:
-    source: Official Figma downloads page; no public version API
-    platforms:
-    - platform: win-x64
-      download_url: https://www.figma.com/downloads/
-      link_kind: landing_page
-    - platform: mac-universal
-      download_url: https://www.figma.com/downloads/
-      link_kind: landing_page
+    sources:
+    - provider: winget
+      package: Figma.Figma
+      platforms:
+      - platform: win-x64
+      - platform: win-arm64
+    - provider: brew
+      package: figma
+      platforms:
+      - platform: mac
   desc_cn: 协作设计工具，UI/UX 设计和原型制作
   desc_en: Collaborative design tool for UI/UX design and prototyping
 - id: dropbox
@@ -4544,16 +4619,20 @@ packages:
   editions:
   - intl
   homepage: https://www.google.com/drive/download/
-  fetcher: download_page
+  fetcher: package_manifest
+  source_ids:
+    winget: Google.GoogleDrive
+    brew: google-drive
   args:
-    source: Official latest installer endpoint; version label is sync date
-    platforms:
-    - platform: win-x64
-      download_url: https://dl.google.com/drive-file-stream/GoogleDriveSetup.exe
-      link_kind: direct
-    - platform: mac-universal
-      download_url: https://dl.google.com/drive-file-stream/GoogleDrive.dmg
-      link_kind: direct
+    sources:
+    - provider: winget
+      package: Google.GoogleDrive
+      platforms:
+      - platform: win-x64
+    - provider: brew
+      package: google-drive
+      platforms:
+      - platform: mac
   desc_cn: Google 云存储桌面客户端，同步文件到本地
   desc_en: Google cloud storage desktop client for local file sync
 - id: onedrive
@@ -4562,16 +4641,20 @@ packages:
   editions:
   - intl
   homepage: https://www.microsoft.com/microsoft-365/onedrive/download
-  fetcher: download_page
+  fetcher: package_manifest
+  source_ids:
+    winget: Microsoft.OneDrive
+    brew: onedrive
   args:
-    source: Official OneDrive download page; no public version API
-    platforms:
-    - platform: win-x64
-      download_url: https://www.microsoft.com/microsoft-365/onedrive/download
-      link_kind: landing_page
-    - platform: mac-universal
-      download_url: https://www.microsoft.com/microsoft-365/onedrive/download
-      link_kind: landing_page
+    sources:
+    - provider: winget
+      package: Microsoft.OneDrive
+      platforms:
+      - platform: win-x64
+    - provider: brew
+      package: onedrive
+      platforms:
+      - platform: mac-universal
   desc_cn: 微软云存储服务，深度集成 Windows 和 Office
   desc_en: Microsoft cloud storage service deeply integrated with Windows and Office
 - id: foxit-reader
@@ -4598,20 +4681,27 @@ packages:
   editions:
   - intl
   homepage: https://1password.com/downloads/
-  fetcher: download_page
+  fetcher: package_manifest
+  source_ids:
+    winget: AgileBits.1Password
+    brew: 1password
+    flathub: com.onepassword.OnePassword
   args:
-    source: Official 1Password downloads page; no public version API
-    platforms:
-    - platform: win-x64
-      download_url: https://1password.com/downloads/
-      link_kind: landing_page
-    - platform: mac-universal
-      download_url: https://1password.com/downloads/
-      link_kind: landing_page
-    - platform: linux-x64
-      download_url: https://1password.com/downloads/
-      link_kind: landing_page
+    sources:
+    - provider: winget
+      package: AgileBits.1Password
+      platforms:
+      - platform: win-x64
+    - provider: brew
+      package: 1password
+      platforms:
+      - platform: mac
+    - provider: flathub
+      package: com.onepassword.OnePassword
+      platforms:
+      - platform: linux-x64
   desc_cn: 跨平台密码管理器，安全存储和自动填充密码
+  desc_en: Cross-platform password manager for secure storage and auto-fill
   desc_en: Cross-platform password manager for secure storage and auto-fill
 - id: proton-vpn
   name: Proton VPN
@@ -4619,19 +4709,25 @@ packages:
   editions:
   - intl
   homepage: https://protonvpn.com/download
-  fetcher: download_page
+  fetcher: package_manifest
+  source_ids:
+    winget: Proton.ProtonVPN
+    brew: protonvpn
+    flathub: com.protonvpn.www
   args:
-    source: Official Proton VPN download page; no public version API
-    platforms:
-    - platform: win-x64
-      download_url: https://protonvpn.com/download
-      link_kind: landing_page
-    - platform: mac-universal
-      download_url: https://protonvpn.com/download
-      link_kind: landing_page
-    - platform: linux-x64
-      download_url: https://protonvpn.com/download
-      link_kind: landing_page
+    sources:
+    - provider: winget
+      package: Proton.ProtonVPN
+      platforms:
+      - platform: win-x64
+    - provider: brew
+      package: protonvpn
+      platforms:
+      - platform: mac
+    - provider: flathub
+      package: com.protonvpn.www
+      platforms:
+      - platform: linux-x64
   desc_cn: Proton 提供的 VPN 服务，瑞士隐私法律保护
   desc_en: VPN service by Proton, protected by Swiss privacy laws
 - id: malwarebytes
@@ -4640,16 +4736,20 @@ packages:
   editions:
   - intl
   homepage: https://www.malwarebytes.com/mwb-download
-  fetcher: download_page
+  fetcher: package_manifest
+  source_ids:
+    winget: Malwarebytes.Malwarebytes
+    brew: malwarebytes
   args:
-    source: Official Malwarebytes download page; no public version API
-    platforms:
-    - platform: win-x64
-      download_url: https://www.malwarebytes.com/mwb-download
-      link_kind: landing_page
-    - platform: mac-universal
-      download_url: https://www.malwarebytes.com/mwb-download
-      link_kind: landing_page
+    sources:
+    - provider: winget
+      package: Malwarebytes.Malwarebytes
+      platforms:
+      - platform: win-x64
+    - provider: brew
+      package: malwarebytes
+      platforms:
+      - platform: mac
   desc_cn: 恶意软件查杀工具，实时保护和按需扫描
   desc_en: Malware removal tool with real-time protection and on-demand scanning
 - id: adguard
@@ -4698,19 +4798,26 @@ packages:
   editions:
   - intl
   homepage: https://www.postman.com/downloads/
-  fetcher: download_page
+  fetcher: package_manifest
+  source_ids:
+    winget: Postman.Postman
+    brew: postman
+    flathub: com.getpostman.Postman
   args:
-    source: Official Postman downloads page; no public version API
-    platforms:
-    - platform: win-x64
-      download_url: https://www.postman.com/downloads/
-      link_kind: landing_page
-    - platform: mac-universal
-      download_url: https://www.postman.com/downloads/
-      link_kind: landing_page
-    - platform: linux-x64
-      download_url: https://www.postman.com/downloads/
-      link_kind: landing_page
+    sources:
+    - provider: winget
+      package: Postman.Postman
+      platforms:
+      - platform: win-x64
+    - provider: brew
+      package: postman
+      platforms:
+      - platform: mac-arm64
+      - platform: mac-x64
+    - provider: flathub
+      package: com.getpostman.Postman
+      platforms:
+      - platform: linux-x64
   desc_cn: API 开发协作平台，测试和文档一站式解决方案
   desc_en: API development collaboration platform for testing and documentation
 - id: cursor
@@ -4719,19 +4826,16 @@ packages:
   editions:
   - intl
   homepage: https://cursor.com/downloads
-  fetcher: download_page
+  fetcher: updater_feed
   args:
-    source: Official Cursor downloads page; no public version API
+    format: json
     platforms:
     - platform: win-x64
-      download_url: https://cursor.com/downloads
-      link_kind: landing_page
+      feed_url: https://api2.cursor.sh/updates/api/download/stable/win32-x64-user/cursor
     - platform: mac-universal
-      download_url: https://cursor.com/downloads
-      link_kind: landing_page
+      feed_url: https://api2.cursor.sh/updates/api/download/stable/darwin-universal/cursor
     - platform: linux-x64
-      download_url: https://cursor.com/downloads
-      link_kind: landing_page
+      feed_url: https://api2.cursor.sh/updates/api/download/stable/linux-x64/cursor
   desc_cn: AI 驱动的代码编辑器，基于 VS Code 深度集成 AI
   desc_en: AI-powered code editor with deep AI built on VS Code
 - id: jetbrains-toolbox
@@ -4854,13 +4958,15 @@ packages:
   editions:
   - intl
   homepage: https://www.win-rar.com/download.html
-  fetcher: download_page
+  fetcher: package_manifest
+  source_ids:
+    winget: RARLab.WinRAR
   args:
-    source: Official WinRAR download page; no public version API
+    provider: winget
+    package: RARLab.WinRAR
+    installer_locale: en
     platforms:
     - platform: win-x64
-      download_url: https://www.win-rar.com/download.html
-      link_kind: landing_page
   desc_cn: 经典压缩解压工具，RAR 格式的官方实现
   desc_en: Classic compression tool, official RAR format implementation
 - id: wiztree
@@ -4869,13 +4975,14 @@ packages:
   editions:
   - intl
   homepage: https://diskanalyzer.com/download
-  fetcher: download_page
+  fetcher: package_manifest
+  source_ids:
+    winget: AntibodySoftware.WizTree
   args:
-    source: Official WizTree download page; no public version API
+    provider: winget
+    package: AntibodySoftware.WizTree
     platforms:
     - platform: win-x64
-      download_url: https://diskanalyzer.com/download
-      link_kind: landing_page
   desc_cn: 极速磁盘空间分析工具，秒级扫描显示占用
   desc_en: Ultra-fast disk space analyzer with instant scan and usage display
 - id: teracopy
@@ -4884,13 +4991,17 @@ packages:
   editions:
   - intl
   homepage: https://codesector.com/teracopy
-  fetcher: download_page
+  fetcher: package_manifest
+  source_ids:
+    winget: CodeSector.TeraCopy
   args:
-    source: Official TeraCopy download page; no public version API
+    provider: winget
+    package: CodeSector.TeraCopy
     platforms:
     - platform: win-x64
-      download_url: https://codesector.com/teracopy
-      link_kind: landing_page
+  verification:
+    allowed_hosts:
+    - codesector.nyc3.cdn.digitaloceanspaces.com
   desc_cn: Windows 文件复制加速工具，支持校验和恢复
   desc_en: Windows file copy acceleration tool with verification and resume support
 - id: anydesk
@@ -4984,16 +5095,20 @@ packages:
   editions:
   - intl
   homepage: https://www.foobar2000.org/download
-  fetcher: download_page
+  fetcher: package_manifest
+  source_ids:
+    winget: PeterPawlowski.foobar2000
+    brew: foobar2000
   args:
-    source: Official foobar2000 download page; no public version API
-    platforms:
-    - platform: win-x64
-      download_url: https://www.foobar2000.org/download
-      link_kind: landing_page
-    - platform: mac-universal
-      download_url: https://www.foobar2000.org/download
-      link_kind: landing_page
+    sources:
+    - provider: winget
+      package: PeterPawlowski.foobar2000
+      platforms:
+      - platform: win-x64
+    - provider: brew
+      package: foobar2000
+      platforms:
+      - platform: mac
   desc_cn: 高度可定制的 Windows 音乐播放器，轻量且音质好
   desc_en: Highly customizable Windows music player, lightweight with great audio
     quality
@@ -5003,40 +5118,42 @@ packages:
   editions:
   - intl
   homepage: https://store.epicgames.com/download
-  fetcher: download_page
+  fetcher: package_manifest
+  source_ids:
+    winget: EpicGames.EpicGamesLauncher
+    brew: epic-games
   args:
-    source: Official latest installer endpoint; version label is sync date
-    platforms:
-    - platform: win-x64
-      download_url: https://launcher-public-service-prod06.ol.epicgames.com/launcher/api/installer/download/EpicGamesLauncherInstaller.msi
-      link_kind: direct
-    - platform: mac-universal
-      download_url: https://launcher-public-service-prod06.ol.epicgames.com/launcher/api/installer/download/EpicGamesLauncher.dmg
-      link_kind: direct
+    sources:
+    - provider: winget
+      package: EpicGames.EpicGamesLauncher
+      platforms:
+      - platform: win-x64
+    - provider: brew
+      package: epic-games
+      platforms:
+      - platform: mac
   desc_cn: Epic Games 官方游戏平台，独占游戏和每周免费领取
   desc_en: Official Epic Games platform with exclusives and weekly free games
-  verification:
-    allowed_hosts:
-    - epicgames-download1.akamaized.net
 - id: anki
   name: Anki
   category: Productivity
   editions:
   - intl
   homepage: https://apps.ankiweb.net/
-  fetcher: download_page
+  fetcher: github_release
   args:
-    source: Official Anki download page; no public version API
-    platforms:
+    repo: ankitects/anki
+    assets:
     - platform: win-x64
-      download_url: https://apps.ankiweb.net/
-      link_kind: landing_page
-    - platform: mac-universal
-      download_url: https://apps.ankiweb.net/
-      link_kind: landing_page
+      pattern: anki-{version}-win-x64.msi
+    - platform: win-arm64
+      pattern: anki-{version}-win-arm64.msi
+    - platform: mac-arm64
+      pattern: anki-{version}-mac-apple.dmg
+    - platform: mac-x64
+      pattern: anki-{version}-mac-intel.dmg
     - platform: linux-x64
-      download_url: https://apps.ankiweb.net/
-      link_kind: landing_page
+      pattern: anki-{version}-linux-x86_64.tar.zst
   desc_cn: 间隔重复记忆卡片工具，高效记忆学习内容
   desc_en: Spaced repetition flashcard tool for efficient content memorization
 - id: typora
@@ -5045,19 +5162,25 @@ packages:
   editions:
   - intl
   homepage: https://typora.io
-  fetcher: download_page
+  fetcher: package_manifest
+  source_ids:
+    winget: appmakes.Typora
+    brew: typora
+    flathub: io.typora.Typora
   args:
-    source: Official Typora download page; no public version API
-    platforms:
-    - platform: win-x64
-      download_url: https://typora.io/#download
-      link_kind: landing_page
-    - platform: mac-universal
-      download_url: https://typora.io/#download
-      link_kind: landing_page
-    - platform: linux-x64
-      download_url: https://typora.io/#download
-      link_kind: landing_page
+    sources:
+    - provider: winget
+      package: appmakes.Typora
+      platforms:
+      - platform: win-x64
+    - provider: brew
+      package: typora
+      platforms:
+      - platform: mac
+    - provider: flathub
+      package: io.typora.Typora
+      platforms:
+      - platform: linux-x64
   desc_cn: 极简的 Markdown 编辑器，所见即所得无分栏
   desc_en: Minimalist Markdown editor with seamless WYSIWYG preview
 - id: claude-code
@@ -5078,3 +5201,237 @@ packages:
       pattern: claude-linux-x64.tar.gz
   desc_cn: Anthropic 的 AI 编程助手，终端内智能代码操作
   desc_en: AI coding assistant by Anthropic for intelligent code operations in terminal
+- id: chatgpt
+  name: ChatGPT
+  category: AI Tools
+  editions:
+  - intl
+  homepage: https://chatgpt.com/
+  fetcher: package_manifest
+  source_ids:
+    winget: OpenAI.ChatGPT
+    brew: chatgpt
+  args:
+    sources:
+    - provider: winget
+      package: OpenAI.ChatGPT
+      platforms:
+      - platform: win-x64
+      - platform: win-arm64
+    - provider: brew
+      package: chatgpt
+      platforms:
+      - platform: mac-arm64
+      - platform: mac-x64
+  desc_cn: OpenAI 官方桌面客户端，支持快捷键唤起与语音对话
+  desc_en: Official OpenAI desktop app with quick launcher and voice chat
+- id: claude
+  name: Claude
+  category: AI Tools
+  editions:
+  - intl
+  homepage: https://claude.ai/download
+  fetcher: package_manifest
+  source_ids:
+    winget: Anthropic.Claude
+    brew: claude
+  args:
+    sources:
+    - provider: winget
+      package: Anthropic.Claude
+      platforms:
+      - platform: win-x64
+      - platform: win-arm64
+    - provider: brew
+      package: claude
+      platforms:
+      - platform: mac-universal
+  desc_cn: Anthropic 官方 Claude 桌面客户端，支持文档分析与 MCP 集成
+  desc_en: Official Anthropic Claude desktop app with document analysis and MCP support
+- id: trae
+  name: TRAE
+  category: AI Tools
+  editions:
+  - intl
+  homepage: https://www.trae.ai/
+  fetcher: package_manifest
+  source_ids:
+    winget: ByteDance.Trae
+    brew: trae
+  args:
+    sources:
+    - provider: winget
+      package: ByteDance.Trae
+      installer_locale: en-US
+      platforms:
+      - platform: win-x64
+    - provider: brew
+      package: trae
+      platforms:
+      - platform: mac-arm64
+      - platform: mac-x64
+  desc_cn: 字节跳动推出的自适应 AI IDE，集成智能代码补全与多步 Agent 编程
+  desc_en: Adaptive AI IDE by ByteDance with intelligent completion and agentic coding
+- id: lm-studio
+  name: LM Studio
+  category: AI Tools
+  editions:
+  - intl
+  homepage: https://lmstudio.ai/
+  fetcher: package_manifest
+  source_ids:
+    winget: ElementLabs.LMStudio
+    brew: lm-studio
+  args:
+    sources:
+    - provider: winget
+      package: ElementLabs.LMStudio
+      platforms:
+      - platform: win-x64
+      - platform: win-arm64
+    - provider: brew
+      package: lm-studio
+      platforms:
+      - platform: mac-arm64
+  desc_cn: 本地运行开源大语言模型的桌面工具，提供模型下载与 OpenAI 兼容 API
+  desc_en: Desktop app for running local LLMs with model discovery and OpenAI-compatible API
+- id: antigravity
+  name: Antigravity
+  category: AI Tools
+  editions:
+  - intl
+  homepage: https://antigravity.google/
+  fetcher: package_manifest
+  source_ids:
+    winget: Google.Antigravity
+    brew: antigravity
+  args:
+    sources:
+    - provider: winget
+      package: Google.Antigravity
+      platforms:
+      - platform: win-x64
+    - provider: brew
+      package: antigravity
+      platforms:
+      - platform: mac-x64
+  desc_cn: Google 推出的 Agent 优先 AI 编程与开发 IDE
+  desc_en: Agent-first AI coding and development IDE by Google
+- id: 1password-cli
+  name: 1Password CLI
+  category: Security & Privacy
+  editions:
+  - intl
+  homepage: https://developer.1password.com/docs/cli/
+  fetcher: package_manifest
+  source_ids:
+    winget: AgileBits.1Password.CLI
+    brew: 1password-cli
+  args:
+    sources:
+    - provider: winget
+      package: AgileBits.1Password.CLI
+      platforms:
+      - platform: win-x64
+    - provider: brew
+      package: 1password-cli
+      platforms:
+      - platform: mac-arm64
+      - platform: mac-x64
+  desc_cn: 1Password 官方命令行工具，安全管理密钥、环境变量与自动化凭据
+  desc_en: Official 1Password CLI for managing secrets, env vars, and automated credentials
+- id: ngrok
+  name: ngrok
+  category: Developer Tools
+  editions:
+  - intl
+  homepage: https://ngrok.com/
+  fetcher: package_manifest
+  source_ids:
+    winget: Ngrok.Ngrok
+    brew: ngrok
+  args:
+    sources:
+    - provider: winget
+      package: Ngrok.Ngrok
+      platforms:
+      - platform: win-x64
+    - provider: brew
+      package: ngrok
+      platforms:
+      - platform: mac-arm64
+  desc_cn: 一键将本地服务安全暴露到公网的内网穿透与反向代理工具
+  desc_en: Secure ingress and reverse proxy tool to expose local servers to the internet
+- id: capcut
+  name: CapCut
+  category: Media Players
+  editions:
+  - intl
+  homepage: https://www.capcut.com/
+  fetcher: package_manifest
+  source_ids:
+    winget: ByteDance.CapCut
+    brew: capcut
+  args:
+    sources:
+    - provider: winget
+      package: ByteDance.CapCut
+      platforms:
+      - platform: win-x64
+    - provider: brew
+      package: capcut
+      platforms:
+      - platform: mac
+  desc_cn: 字节跳动旗下全能视频剪辑工具（国际版），支持 AI 字幕与特效
+  desc_en: All-in-one video editor by ByteDance with AI captions and effects
+- id: ea-app
+  name: EA App
+  category: Gaming
+  editions:
+  - intl
+  homepage: https://www.ea.com/ea-app
+  fetcher: package_manifest
+  source_ids:
+    winget: ElectronicArts.EADesktop
+  args:
+    provider: winget
+    package: ElectronicArts.EADesktop
+    platforms:
+    - platform: win-x64
+  desc_cn: Electronic Arts 官方 PC 游戏启动器与商店客户端
+  desc_en: Official Electronic Arts PC game launcher and store client
+- id: ubisoft-connect
+  name: Ubisoft Connect
+  category: Gaming
+  editions:
+  - intl
+  homepage: https://www.ubisoft.com/en-us/ubisoft-connect
+  fetcher: package_manifest
+  source_ids:
+    winget: Ubisoft.Connect
+  args:
+    provider: winget
+    package: Ubisoft.Connect
+    platforms:
+    - platform: win-x86
+  desc_cn: 育碧官方 PC 游戏平台与社交成就客户端
+  desc_en: Official Ubisoft PC gaming platform, store, and overlay client
+- id: windsurf
+  name: Windsurf
+  category: AI Tools
+  editions:
+  - intl
+  homepage: https://windsurf.com/
+  fetcher: updater_feed
+  args:
+    format: json
+    version_key: windsurfVersion
+    platforms:
+    - platform: win-x64
+      feed_url: https://windsurf-stable.codeium.com/api/update/win32-x64-user/stable/latest
+    - platform: mac-arm64
+      feed_url: https://windsurf-stable.codeium.com/api/update/darwin-arm64/stable/latest
+    - platform: linux-x64
+      feed_url: https://windsurf-stable.codeium.com/api/update/linux-x64/stable/latest
+  desc_cn: AI 原生代码编辑器，支持 Cascade 智能代理编程
+  desc_en: AI-native code editor with Cascade agentic coding assistant

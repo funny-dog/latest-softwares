@@ -8,11 +8,12 @@ from __future__ import annotations
 
 from pathlib import Path
 import os
+from typing import Any
 
 import yaml
 
 
-def append_entries(entries: list[dict], path: Path) -> None:
+def append_entries(entries: list[dict[str, Any]], path: Path) -> None:
     """将新条目追加到 YAML 文件的 packages 列表末尾。
 
     采用字符串追加方式，避免全量重写导致 PR diff 过大。

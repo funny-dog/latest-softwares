@@ -24,11 +24,15 @@ from . import (
 from . import nvidia_app, qq, wechat, yy
 from . import package_manifest, aliyundrive
 from . import blender
+from . import linux_store, redirect_probe, updater_feed
 
 
 FETCHERS: dict[str, Callable[[dict], FetchResult]] = {
     "github_release": github_release.fetch,
     "package_manifest": package_manifest.fetch,
+    "linux_store": linux_store.fetch,
+    "updater_feed": updater_feed.fetch,
+    "redirect_probe": redirect_probe.fetch,
     "windows11_fido": windows11_fido.fetch,
     "vscode_official": vscode.fetch,
     "chrome_official": chrome.fetch,

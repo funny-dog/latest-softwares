@@ -9,6 +9,9 @@ from __future__ import annotations
 from urllib.parse import quote
 
 from ...net import get_json, github_headers
+from ..models import Candidate
+from . import brew as brew_source
+from . import winget as winget_source
 
 _GITHUB_API = "https://api.github.com"
 _TIMEOUT = 30
@@ -41,3 +44,36 @@ def is_corroborated(repo: str) -> bool:
     if corroborated_by_winget(repo):
         return True
     return corroborated_by_scoop(repo)
+
+
+def cross_reference_popular(
+    candidates: list[Candidate],
+    *,
+    use_winget_index: bool = True,
+    use_brew_catalog: bool = True,
+    max_winget_lookups: int = 40,
+) -> list[Candidate]:
+    """用本地索引（WinGet source2.msix + Homebrew cask.json）为候选补全跨源证据。
+
+    不消费 GitHub Search/Code API 额度；返回新发现的对应 WinGet/Brew Candidate 列表，
+    由上层 aggregate.select_candidates 按 repo/homepage 聚合。
+    """
+    if not candidates:
+        return []
+
+    extra: list[Candidate] = []
+    if use_brew_catalog:
+        try:
+            extra.extend(brew_source.cross_reference_brew(candidates))
+        except Exception:
+            pass
+    if use_winget_index:
+        try:
+            extra.extend(
+                winget_source.corroborate_with_winget_index(
+                    candidates, max_lookups=max_winget_lookups
+                )
+            )
+        except Exception:
+            pass
+    return extra

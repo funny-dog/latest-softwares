@@ -36,7 +36,7 @@ def build_entry(
     link_kind: str | None = None,
     provider: str = "",
     package: str = "",
-) -> dict:
+) -> dict[str, Any]:
     """按现有 YAML 字段规范组装条目。
 
     兼容 github_release（唯一可靠资产匹配）与 download_page（官方下载元数据）。

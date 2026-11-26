@@ -14,7 +14,7 @@ DEFAULT_MAX_OUTPUT = 10
 DEFAULT_MAX_SCAN = 100  # 最多扫描多少个候选 repo / manifest
 DEFAULT_MAX_CORROBORATE = 30  # 最多对多少候选做 code search 佐证
 DEFAULT_SOURCES = ["github"]
-ALL_SUPPORTED_SOURCES = ["github", "winget", "brew", "scoop"]
+ALL_SUPPORTED_SOURCES = ["github", "winget", "brew", "scoop", "flathub"]
 DEFAULT_STATE_FILE = "data/discovery-state.json"
 DEFAULT_REVIEW_FILE = "data/discovery-candidates.json"
 
@@ -40,6 +40,7 @@ class Candidate:
     platform: str = "win-x64"  # 目标平台 (如 win-x64, mac-universal)
     link_kind: str | None = None  # direct 或 landing_page
     fetcher: str = "github_release"  # 期望的 fetcher 类型
+    popularity: int = 0  # 流行度信号（如 30 天安装量 / 月安装量）
 
     def __post_init__(self) -> None:
         if self.source and not self.sources:
@@ -65,7 +66,7 @@ class Candidate:
         return ""
 
     def manifest_ids(self) -> dict[str, str]:
-        result = {}
+        result: dict[str, str] = {}
         for evidence in self.evidences:
             source, ident = evidence.get("source"), evidence.get("external_id")
             if source not in {"winget", "brew", "scoop"} or not ident:
@@ -95,6 +96,7 @@ class Candidate:
             "sources": self.sources,
             "external_id": self.external_id,
             "stars": self.stars,
+            "popularity": self.popularity,
             "description": self.description,
             "evidences": self.evidences,
         }

@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 from datetime import datetime, timezone
+from typing import Any, cast
 
 from ...net import get_json, github_headers
 from ..models import DEFAULT_MIN_STARS, DEFAULT_MAX_SCAN, Candidate
@@ -14,13 +15,14 @@ _PER_PAGE = 50
 LAST_ERROR: str | None = None
 
 
-def _latest_release(repo: str) -> dict | None:
+def _latest_release(repo: str) -> dict[str, Any] | None:
     try:
-        return get_json(
+        data = get_json(
             f"{_GITHUB_API}/repos/{repo}/releases/latest",
             headers=github_headers(),
             timeout=_TIMEOUT,
         )
+        return cast(dict[str, Any], data) if isinstance(data, dict) else None
     except Exception as exc:
         if getattr(getattr(exc, "response", None), "status_code", None) == 404:
             return None
@@ -44,7 +46,7 @@ def discover(
     candidates = []
     scanned = 0
 
-    def fetch_item(item: dict) -> None:
+    def fetch_item(item: dict[str, Any]) -> None:
         nonlocal scanned
         global LAST_ERROR
         scanned += 1
@@ -73,7 +75,7 @@ def discover(
                 description=item.get("description") or "",
                 topics=list(item.get("topics") or []),
                 asset_names=names,
-                released_at=release.get("published_at"),
+                released_at=release.get("published_at") if release else None,
                 homepage_url=item.get("homepage") or "",
             )
         )

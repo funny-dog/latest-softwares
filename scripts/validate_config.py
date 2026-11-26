@@ -237,6 +237,152 @@ def _validate_redirect_platforms(errors: list[str], label: str, args: dict) -> N
         _validate_link_kind(errors, label, platform)
 
 
+_MANIFEST_PROVIDERS = frozenset({"winget", "brew", "scoop", "flathub", "snapcraft"})
+_LINUX_STORE_PROVIDERS = frozenset({"flathub", "snapcraft"})
+_UPDATER_FORMATS = frozenset({"electron", "sparkle", "json"})
+
+
+def _validate_package_manifest_source(
+    errors: list[str],
+    label: str,
+    spec: dict,
+    *,
+    allowed_providers: frozenset[str] = _MANIFEST_PROVIDERS,
+) -> list[dict]:
+    provider = spec.get("provider")
+    if provider not in allowed_providers:
+        allowed_text = " / ".join(sorted(allowed_providers))
+        errors.append(f"{label}: manifest provider 必须是 {allowed_text}")
+    package = spec.get("package", "")
+    if (
+        not isinstance(package, str)
+        or not re.fullmatch(
+            r"[A-Za-z0-9][A-Za-z0-9_.+-]*(?:/[A-Za-z0-9_.+-]+)?", package
+        )
+        or ".." in package
+    ):
+        errors.append(f"{label}: 无效的 manifest package 标识符")
+    elif (
+        (provider == "winget" and ("." not in package or "/" in package))
+        or (provider == "brew" and "/" in package)
+        or (
+            provider == "scoop"
+            and not re.fullmatch(r"(?:main|extras)/[A-Za-z0-9_.+-]+", package)
+        )
+        or (provider == "flathub" and ("." not in package or "/" in package))
+        or (
+            provider == "snapcraft"
+            and not re.fullmatch(r"[a-z0-9](?:[a-z0-9-]*[a-z0-9])?", package)
+        )
+    ):
+        errors.append(f"{label}: manifest package 与 provider 不匹配")
+    for opt_key in ("installer_locale", "installer_type", "channel", "track"):
+        if opt_key in spec and not _is_nonempty_string(spec[opt_key]):
+            errors.append(f"{label}: {opt_key} 必须是非空字符串")
+    _validate_link_kind(errors, label, spec)
+    platforms = _validate_list(errors, label, spec, "platforms")
+    if provider == "brew":
+        allowed = {"mac", "mac-universal", "mac-x64", "mac-arm64"}
+    elif provider in _LINUX_STORE_PROVIDERS:
+        allowed = {"linux", "linux-x64", "linux-arm64"}
+    else:
+        allowed = {"win", "win-x86", "win-x64", "win-arm64"}
+    for platform in platforms:
+        _require_string(errors, label, platform, "platform")
+        if platform.get("platform") not in allowed:
+            errors.append(f"{label}: manifest platform 与 provider 不匹配")
+    return platforms
+
+
+def _validate_package_manifest(
+    errors: list[str],
+    label: str,
+    args: dict,
+    *,
+    allowed_providers: frozenset[str] = _MANIFEST_PROVIDERS,
+) -> None:
+    if "sources" in args:
+        sources = _validate_list(errors, label, args, "sources")
+        all_platforms: list[dict] = []
+        for spec in sources:
+            all_platforms.extend(
+                _validate_package_manifest_source(
+                    errors, label, spec, allowed_providers=allowed_providers
+                )
+            )
+        _validate_unique_platforms(errors, label, all_platforms)
+    else:
+        platforms = _validate_package_manifest_source(
+            errors, label, args, allowed_providers=allowed_providers
+        )
+        _validate_unique_platforms(errors, label, platforms)
+
+
+def _validate_regex_field(errors: list[str], label: str, data: dict, key: str) -> None:
+    value = data.get(key)
+    if value is None:
+        return
+    if not _is_nonempty_string(value):
+        errors.append(f"{label}: {key} 不能为空")
+        return
+    try:
+        re.compile(str(value))
+    except re.error as exc:
+        errors.append(f"{label}: {key} 不是有效正则: {exc}")
+
+
+def _validate_updater_feed(errors: list[str], label: str, args: dict) -> None:
+    default_format = args.get("format")
+    if default_format is not None and default_format not in _UPDATER_FORMATS:
+        errors.append(f"{label}: format 必须是 electron / sparkle / json")
+    platforms = _validate_list(errors, label, args, "platforms")
+    _validate_unique_platforms(errors, label, platforms)
+    for platform in platforms:
+        _require_string(errors, label, platform, "platform")
+        _require_url(errors, label, platform, "feed_url")
+        _validate_link_kind(errors, label, platform)
+        fmt = platform.get("format", default_format)
+        if fmt not in _UPDATER_FORMATS:
+            errors.append(
+                f"{label}: updater_feed format 必须是 electron / sparkle / json"
+            )
+        for opt_key in ("pattern", "os", "url_key", "version_key"):
+            if opt_key in platform and not _is_nonempty_string(platform[opt_key]):
+                errors.append(f"{label}: {opt_key} 必须是非空字符串")
+
+
+def _validate_probe_options(errors: list[str], label: str, data: dict) -> None:
+    _validate_regex_field(errors, label, data, "version_regex")
+    method = data.get("method")
+    if method is not None and method not in {"head", "get"}:
+        errors.append(f"{label}: method 必须是 head 或 get")
+    user_agent = data.get("user_agent")
+    if user_agent is not None and user_agent not in {"browser", "sync"}:
+        errors.append(f"{label}: user_agent 必须是 browser 或 sync")
+    max_hops = data.get("max_hops")
+    if max_hops is not None and (
+        isinstance(max_hops, bool)
+        or not isinstance(max_hops, int)
+        or not 1 <= max_hops <= 10
+    ):
+        errors.append(f"{label}: max_hops 必须是 1-10 的整数")
+
+
+def _validate_redirect_probe(errors: list[str], label: str, args: dict) -> None:
+    _validate_probe_options(errors, label, args)
+    platforms = _validate_list(errors, label, args, "platforms")
+    _validate_unique_platforms(errors, label, platforms)
+    for platform in platforms:
+        _require_string(errors, label, platform, "platform")
+        url_val = (
+            platform.get("url") if "url" in platform else platform.get("download_url")
+        )
+        if not _is_valid_url(url_val):
+            errors.append(f"{label}: url 不是有效 URL")
+        _validate_link_kind(errors, label, platform)
+        _validate_probe_options(errors, label, platform)
+
+
 def _validate_fetcher_args(
     errors: list[str],
     label: str,
@@ -246,40 +392,15 @@ def _validate_fetcher_args(
     if fetcher_name == "github_release":
         _validate_github_release(errors, label, args)
     elif fetcher_name == "package_manifest":
-        if args.get("provider") not in {"winget", "brew", "scoop"}:
-            errors.append(f"{label}: manifest provider 必须是 winget / brew / scoop")
-        package = args.get("package", "")
-        if (
-            not isinstance(package, str)
-            or not re.fullmatch(
-                r"[A-Za-z0-9][A-Za-z0-9_.+-]*(?:/[A-Za-z0-9_.+-]+)?", package
-            )
-            or ".." in package
-        ):
-            errors.append(f"{label}: 无效的 manifest package 标识符")
-        elif (
-            (
-                args.get("provider") == "winget"
-                and ("." not in package or "/" in package)
-            )
-            or (args.get("provider") == "brew" and "/" in package)
-            or (
-                args.get("provider") == "scoop"
-                and not re.fullmatch(r"(?:main|extras)/[A-Za-z0-9_.+-]+", package)
-            )
-        ):
-            errors.append(f"{label}: manifest package 与 provider 不匹配")
-        platforms = _validate_list(errors, label, args, "platforms")
-        _validate_unique_platforms(errors, label, platforms)
-        for platform in platforms:
-            _require_string(errors, label, platform, "platform")
-            allowed = (
-                {"mac", "mac-universal", "mac-x64", "mac-arm64"}
-                if args.get("provider") == "brew"
-                else {"win", "win-x86", "win-x64", "win-arm64"}
-            )
-            if platform.get("platform") not in allowed:
-                errors.append(f"{label}: manifest platform 与 provider 不匹配")
+        _validate_package_manifest(errors, label, args)
+    elif fetcher_name == "linux_store":
+        _validate_package_manifest(
+            errors, label, args, allowed_providers=_LINUX_STORE_PROVIDERS
+        )
+    elif fetcher_name == "updater_feed":
+        _validate_updater_feed(errors, label, args)
+    elif fetcher_name == "redirect_probe":
+        _validate_redirect_probe(errors, label, args)
     elif fetcher_name == "windows11_fido":
         _validate_windows11_fido(errors, label, args)
     elif fetcher_name == "vscode_official":
@@ -366,8 +487,7 @@ def validate_config(config: dict) -> list[str]:
         if "source_ids" in entry:
             mapping = entry["source_ids"]
             if not isinstance(mapping, dict) or any(
-                provider not in {"winget", "brew", "scoop"}
-                or not _is_nonempty_string(ident)
+                provider not in _MANIFEST_PROVIDERS or not _is_nonempty_string(ident)
                 for provider, ident in mapping.items()
             ):
                 errors.append(f"{label}: source_ids 必须是来源到稳定标识符的映射")

@@ -18,7 +18,7 @@ from .dedup import existing_homepages, existing_ids, existing_repos, existing_so
 from .generate import slugify
 from .models import Candidate
 from .sources.corroborate import is_corroborated
-from .url_utils import is_valid_http_url, normalize_homepage
+from .url_utils import extract_github_repo, is_valid_http_url, normalize_homepage
 
 
 @dataclass
@@ -30,6 +30,7 @@ class SoftwareCluster:
     homepage_url: str = ""
     download_url: str = ""
     stars: int = 0
+    popularity: int = 0
     description: str = ""
     topics: list[str] = field(default_factory=list)
     asset_names: list[str] = field(default_factory=list)
@@ -38,6 +39,7 @@ class SoftwareCluster:
     external_ids: set[str] = field(default_factory=set)
     evidences: list[dict[str, Any]] = field(default_factory=list)
     platform: str = "win-x64"
+    link_kind: str | None = None
     fetcher: str = "github_release"
     has_conflict: bool = False
     conflict_detail: str = ""
@@ -56,6 +58,7 @@ class SoftwareCluster:
             repo=self.repo,
             name=self.name,
             stars=self.stars,
+            popularity=self.popularity,
             description=self.description,
             topics=self.topics,
             asset_names=self.asset_names,
@@ -67,6 +70,7 @@ class SoftwareCluster:
             external_id=sorted(self.external_ids)[0] if self.external_ids else "",
             evidences=self.evidences,
             platform=self.platform,
+            link_kind=self.link_kind,
             fetcher=self.fetcher,
         )
 
@@ -99,6 +103,7 @@ def _cluster_candidates(candidates: list[Candidate]) -> list[SoftwareCluster]:
                 homepage_url=c.homepage_url,
                 download_url=c.download_url,
                 stars=c.stars,
+                popularity=c.popularity,
                 description=c.description,
                 topics=list(c.topics),
                 asset_names=list(c.asset_names),
@@ -107,6 +112,7 @@ def _cluster_candidates(candidates: list[Candidate]) -> list[SoftwareCluster]:
                 external_ids={c.external_id} if c.external_id else set(),
                 evidences=list(c.evidences),
                 platform=c.platform,
+                link_kind=c.link_kind,
                 fetcher=c.fetcher,
                 candidates=[c],
             )
@@ -151,8 +157,13 @@ def _cluster_candidates(candidates: list[Candidate]) -> list[SoftwareCluster]:
                     hp_to_cluster[hp_key] = matched
             if not matched.download_url and c.download_url:
                 matched.download_url = c.download_url
+                matched.platform = c.platform
+                matched.fetcher = c.fetcher
+                matched.link_kind = c.link_kind
             if c.stars > matched.stars:
                 matched.stars = c.stars
+            if c.popularity > matched.popularity:
+                matched.popularity = c.popularity
             if not matched.description and c.description:
                 matched.description = c.description
             if c.asset_names:
@@ -167,10 +178,34 @@ def _cluster_candidates(candidates: list[Candidate]) -> list[SoftwareCluster]:
                 and normalize_homepage(matched.homepage_url)
                 != normalize_homepage(c.homepage_url)
             ):
-                matched.has_conflict = True
-                matched.conflict_detail = (
-                    f"主页冲突: {matched.homepage_url} vs {c.homepage_url}"
+                repo_m = extract_github_repo(matched.homepage_url)
+                repo_c = extract_github_repo(c.homepage_url)
+                same_repo_hp = bool(
+                    matched.repo
+                    and (
+                        (
+                            repo_m
+                            and repo_m.casefold() == matched.repo.casefold()
+                            and not repo_c
+                        )
+                        or (
+                            repo_c
+                            and repo_c.casefold() == matched.repo.casefold()
+                            and not repo_m
+                        )
+                    )
                 )
+                if same_repo_hp:
+                    if repo_m and not repo_c:
+                        matched.homepage_url = c.homepage_url
+                        norm_c = normalize_homepage(c.homepage_url)
+                        if norm_c:
+                            hp_to_cluster[norm_c] = matched
+                else:
+                    matched.has_conflict = True
+                    matched.conflict_detail = (
+                        f"主页冲突: {matched.homepage_url} vs {c.homepage_url}"
+                    )
 
     return clusters
 
@@ -301,9 +336,13 @@ def select_candidates(
                 fetcher = "github_release"
                 cl.platform = "win-x64"
             else:
-                # 资产推断失败，检查是否有官方下载链接降级为 download_page
+                # 资产推断失败，检查是否有官方下载链接降级为 download_page（或保留 package_manifest）
                 if is_valid_http_url(cl.download_url):
-                    fetcher = "download_page"
+                    fetcher = (
+                        "package_manifest"
+                        if cl.fetcher == "package_manifest"
+                        else "download_page"
+                    )
                     pattern = ""
                 else:
                     if review_manager and hasattr(review_manager, "add"):
@@ -319,7 +358,11 @@ def select_candidates(
         else:
             # 无 GitHub release 资产（闭源、非 Windows 或官方直链软件）
             if is_valid_http_url(cl.download_url):
-                fetcher = "download_page"
+                fetcher = (
+                    "package_manifest"
+                    if cl.fetcher == "package_manifest"
+                    else "download_page"
+                )
                 pattern = ""
             else:
                 if review_manager and hasattr(review_manager, "add"):
@@ -336,9 +379,14 @@ def select_candidates(
         cl.fetcher = fetcher
         survivors.append((cl, pattern))
 
-    # 按 star 降序，并优先多源交叉佐证的
+    # 按流行度（stars 或安装量）降序，并优先多源交叉佐证的
     survivors.sort(
-        key=lambda cp: (cp[0].stars, len(cp[0].sources)),
+        key=lambda cp: (
+            max(cp[0].popularity, cp[0].stars),
+            len(cp[0].sources),
+            cp[0].popularity,
+            cp[0].stars,
+        ),
         reverse=True,
     )
     if state is not None:
