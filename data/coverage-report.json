@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-25T22:11:10+00:00",
+  "generated_at": "2026-11-26T09:12:46+00:00",
   "configured": 699,
   "published": 699,
-  "stale_packages": 1,
+  "stale_packages": 0,
   "verified_assets": 1131,
   "unavailable_assets": 22,
   "required_total": 301,
