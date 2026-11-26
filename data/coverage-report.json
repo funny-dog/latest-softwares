@@ -1,11 +1,11 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-26T16:36:37+00:00",
+  "generated_at": "2026-11-26T22:08:39+00:00",
   "configured": 749,
   "published": 749,
   "stale_packages": 25,
-  "verified_assets": 1615,
-  "unavailable_assets": 12,
+  "verified_assets": 1616,
+  "unavailable_assets": 11,
   "required_total": 344,
   "required_covered": 343,
   "required_coverage": 0.997093023255814,
@@ -66,13 +66,6 @@
       "required": false,
       "issues": [
         "unverified_or_unavailable:mac-x64",
-        "unverified_or_unavailable:win-x64"
-      ]
-    },
-    {
-      "id": "wiztree",
-      "required": false,
-      "issues": [
         "unverified_or_unavailable:win-x64"
       ]
     },

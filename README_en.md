@@ -5,7 +5,7 @@
 > **Latest version metadata** automatically synced from official upstream sources daily by GitHub Actions.
 > This repository **does not host binary installers** — download buttons link directly to upstream official downloads.
 >
-> 📅 **Last updated**: `2026-11-26 16:35:04` (UTC) · 749 software items (25 using previous data, marked ⚠️)
+> 📅 **Last updated**: `2026-11-26 22:08:03` (UTC) · 749 software items (25 using previous data, marked ⚠️)
 
 ---
 
@@ -404,7 +404,7 @@
 | [**Notepad3**](https://github.com/rizonesoft/Notepad3) | `7.26.602.1` | 2026-06-02 | [win-x64](https://github.com/rizonesoft/Notepad3/releases/download/RELEASE_7.26.602.1/Notepad3_7.26.602.1_x64_Setup.exe) | GitHub Release: rizonesoft/Notepad3 |
 | [**Hyper**](https://hyper.is/#installation) | `2026-11-26` | — | [win-x64](https://hyper.is/#installation) · [mac-arm64](https://hyper.is/#installation) | Official project download page; no stable public release asset API |
 | [**Sysinternals Suite**](https://learn.microsoft.com/sysinternals/downloads/sysinternals-suite) | `2026-11-26` | — | [win-x64](https://download.sysinternals.com/files/SysinternalsSuite.zip) | Official Microsoft Sysinternals download; suite version is not exposed as a public API |
-| [**WizTree**](https://diskanalyzer.com/download) | `4.34` | — | win-x64（Unavailable; pending verification） | winget manifest: AntibodySoftware.WizTree |
+| [**WizTree**](https://diskanalyzer.com/download) | `4.34` | — | [win-x64](https://diskanalyzer.com/download) | winget manifest: AntibodySoftware.WizTree |
 | [**NVIDIA App**](https://www.nvidia.com/en-us/software/nvidia-app/) | `2026-11-25` | — | [win-x64](https://www.nvidia.com/en-us/software/nvidia-app/) | Official download page; no public version API |
 | [**TrafficMonitor**](https://github.com/zhongyang219/TrafficMonitor) | `1.86` | 2026-03-29 | [win-x64](https://github.com/zhongyang219/TrafficMonitor/releases/download/V1.86/TrafficMonitor_V1.86_x64.zip) · [win-x86](https://github.com/zhongyang219/TrafficMonitor/releases/download/V1.86/TrafficMonitor_V1.86_x86.zip) | GitHub Release: zhongyang219/TrafficMonitor |
 | [**Flameshot**](https://github.com/flameshot-org/flameshot) ⚠️ | `15.0.0` | 2026-11-07 | [win-x64](https://github.com/flameshot-org/flameshot/releases/download/v15.0.0/flameshot-15.0.0-win64.zip) · [mac-arm64](https://github.com/flameshot-org/flameshot/releases/download/v15.0.0/Flameshot-15.0.0-macos-arm64.dmg) · [mac-x64](https://github.com/flameshot-org/flameshot/releases/download/v15.0.0/Flameshot-15.0.0-macos-intel.dmg) · [linux-x64](https://github.com/flameshot-org/flameshot) | GitHub Release: flameshot-org/flameshot<br>⚠ linux-x64: 没有匹配 asset pattern 'flameshot-*-debian-12-amd64.deb' |
@@ -501,7 +501,7 @@
 | Software | Latest Version | Released | Download | Source |
 |----------|---------------|----------|----------|--------|
 | [**Vaultwarden**](https://github.com/dani-garcia/vaultwarden) | `2026-11-26` | — | [linux-x64](https://github.com/dani-garcia/vaultwarden) | Official Vaultwarden project page; deployed as container |
-| [**火绒安全**](https://www.huorong.cn/) ⚠️ | `2026-11-26` | — | [win-x64](https://www.huorong.cn/) · [win-x86](https://www.huorong.cn/) · [win-arm64](https://www.huorong.cn/) | Official download page; no public version API<br>⚠ HTTPSConnectionPool(host='down-tencent.huorong.cn', port=443): Read timed out. (read timeout=15) |
+| [**火绒安全**](https://www.huorong.cn/) ⚠️ | `2026-11-26` | — | [win-x64](https://www.huorong.cn/) · [win-x86](https://www.huorong.cn/) · [win-arm64](https://www.huorong.cn/) | Official download page; no public version API<br>⚠ HTTPSConnectionPool(host='down-tencent.huorong.cn', port=443): Max retries exceeded with url: /sysdiag-all-x64-6.0.13.3-2026.11.26.1.exe (Caused by ConnectTimeoutError(<HTTPSConnection(host='down-tencent.huorong.cn', port=443) at 0x199775b4da0>, 'Connection to down-tencent.huorong.cn timed out. (connect timeout=15)')) |
 | [**腾讯电脑管家**](https://guanjia.qq.com/) | `2026-11-26` | — | [win-x64](https://guanjia.qq.com/) | Official download page; no public version API |
 | [**360 安全卫士**](https://www.360.cn/) | `2026-11-26` | — | [win-x64](https://www.360.cn/) | Official download page; no public version API |
 | [**age**](https://github.com/FiloSottile/age) | `1.3.2` | 2026-08-29 | [win-x64](https://github.com/FiloSottile/age/releases/download/v1.3.2/age-v1.3.2-windows-amd64.zip) · [mac-arm64](https://github.com/FiloSottile/age/releases/download/v1.3.2/age-v1.3.2-darwin-arm64.tar.gz) · [linux-x64](https://github.com/FiloSottile/age/releases/download/v1.3.2/age-v1.3.2-linux-amd64.tar.gz) | GitHub Release: FiloSottile/age |

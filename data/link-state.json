@@ -19269,7 +19269,7 @@
       "fingerprint": "8c0cd3397d33e6c9c683e95dbec97309f9ab1c060fb13aa61a86b50ae876acfc",
       "verification": {
         "status": "restricted",
-        "checked_at": "2026-11-26T16:35:21+00:00",
+        "checked_at": "2026-11-26T22:08:22+00:00",
         "url": "https://helpx.adobe.com/cn/photoshop/desktop.html",
         "final_url": "https://helpx.adobe.com/cn/photoshop/desktop.html",
         "redirects": [
@@ -19279,23 +19279,11 @@
         "reason": "upstream requires access or rate limited",
         "fingerprint": "8c0cd3397d33e6c9c683e95dbec97309f9ab1c060fb13aa61a86b50ae876acfc"
       },
-      "failures": 258,
-      "next_check_at": "2026-11-26T22:35:21+00:00",
+      "failures": 260,
+      "next_check_at": "2026-11-27T04:08:22+00:00",
       "last_success_at": null,
       "history": [
         {
-          "at": "2026-11-25T22:09:07+00:00",
-          "url": "https://www.adobe.com/products/photoshop.html",
-          "status": "restricted",
-          "reason": "upstream requires access or rate limited"
-        },
-        {
-          "at": "2026-11-25T22:09:07+00:00",
-          "url": "https://helpx.adobe.com/cn/photoshop/desktop.html",
-          "status": "restricted",
-          "reason": "upstream requires access or rate limited"
-        },
-        {
           "at": "2026-11-26T09:09:45+00:00",
           "url": "https://www.adobe.com/products/photoshop.html",
           "status": "restricted",
@@ -19339,6 +19327,18 @@
         },
         {
           "at": "2026-11-26T16:35:21+00:00",
+          "url": "https://helpx.adobe.com/cn/photoshop/desktop.html",
+          "status": "restricted",
+          "reason": "upstream requires access or rate limited"
+        },
+        {
+          "at": "2026-11-26T22:08:22+00:00",
+          "url": "https://www.adobe.com/products/photoshop.html",
+          "status": "restricted",
+          "reason": "upstream requires access or rate limited"
+        },
+        {
+          "at": "2026-11-26T22:08:22+00:00",
           "url": "https://helpx.adobe.com/cn/photoshop/desktop.html",
           "status": "restricted",
           "reason": "upstream requires access or rate limited"
@@ -19351,7 +19351,7 @@
       "fingerprint": "6381c3bd7ac744036fab4c2fe732b295a03a8690d973f68005681c723cf1b7a5",
       "verification": {
         "status": "restricted",
-        "checked_at": "2026-11-26T16:35:21+00:00",
+        "checked_at": "2026-11-26T22:08:22+00:00",
         "url": "https://helpx.adobe.com/cn/photoshop/desktop.html",
         "final_url": "https://helpx.adobe.com/cn/photoshop/desktop.html",
         "redirects": [
@@ -19361,23 +19361,11 @@
         "reason": "upstream requires access or rate limited",
         "fingerprint": "6381c3bd7ac744036fab4c2fe732b295a03a8690d973f68005681c723cf1b7a5"
       },
-      "failures": 258,
-      "next_check_at": "2026-11-26T22:35:21+00:00",
+      "failures": 260,
+      "next_check_at": "2026-11-27T04:08:22+00:00",
       "last_success_at": null,
       "history": [
         {
-          "at": "2026-11-25T22:09:07+00:00",
-          "url": "https://www.adobe.com/products/photoshop.html",
-          "status": "restricted",
-          "reason": "upstream requires access or rate limited"
-        },
-        {
-          "at": "2026-11-25T22:09:07+00:00",
-          "url": "https://helpx.adobe.com/cn/photoshop/desktop.html",
-          "status": "restricted",
-          "reason": "upstream requires access or rate limited"
-        },
-        {
           "at": "2026-11-26T09:09:45+00:00",
           "url": "https://www.adobe.com/products/photoshop.html",
           "status": "restricted",
@@ -19421,6 +19409,18 @@
         },
         {
           "at": "2026-11-26T16:35:21+00:00",
+          "url": "https://helpx.adobe.com/cn/photoshop/desktop.html",
+          "status": "restricted",
+          "reason": "upstream requires access or rate limited"
+        },
+        {
+          "at": "2026-11-26T22:08:22+00:00",
+          "url": "https://www.adobe.com/products/photoshop.html",
+          "status": "restricted",
+          "reason": "upstream requires access or rate limited"
+        },
+        {
+          "at": "2026-11-26T22:08:22+00:00",
           "url": "https://helpx.adobe.com/cn/photoshop/desktop.html",
           "status": "restricted",
           "reason": "upstream requires access or rate limited"
@@ -26572,7 +26572,7 @@
       "fingerprint": "ad81577b3ba7912068a2495e883c7aad0212b572888d9d99e7e526d61ebf8986",
       "verification": {
         "status": "unverified",
-        "checked_at": "2026-11-26T16:35:21+00:00",
+        "checked_at": "2026-11-26T22:08:22+00:00",
         "url": "https://xinghuo.xfyun.cn/",
         "final_url": "https://xinghuo.xfyun.cn/",
         "redirects": [
@@ -26582,23 +26582,11 @@
         "reason": "download/access entry not found on page",
         "fingerprint": "ad81577b3ba7912068a2495e883c7aad0212b572888d9d99e7e526d61ebf8986"
       },
-      "failures": 260,
-      "next_check_at": "2026-11-27T08:35:21+00:00",
+      "failures": 262,
+      "next_check_at": "2026-11-27T14:08:22+00:00",
       "last_success_at": null,
       "history": [
         {
-          "at": "2026-11-25T22:09:07+00:00",
-          "url": "https://xinghuo.xfyun.cn/download",
-          "status": "unverified",
-          "reason": "download/access entry not found on page"
-        },
-        {
-          "at": "2026-11-25T22:09:07+00:00",
-          "url": "https://xinghuo.xfyun.cn/",
-          "status": "unverified",
-          "reason": "download/access entry not found on page"
-        },
-        {
           "at": "2026-11-26T09:09:45+00:00",
           "url": "https://xinghuo.xfyun.cn/download",
           "status": "unverified",
@@ -26642,6 +26630,18 @@
         },
         {
           "at": "2026-11-26T16:35:21+00:00",
+          "url": "https://xinghuo.xfyun.cn/",
+          "status": "unverified",
+          "reason": "download/access entry not found on page"
+        },
+        {
+          "at": "2026-11-26T22:08:22+00:00",
+          "url": "https://xinghuo.xfyun.cn/download",
+          "status": "unverified",
+          "reason": "download/access entry not found on page"
+        },
+        {
+          "at": "2026-11-26T22:08:22+00:00",
           "url": "https://xinghuo.xfyun.cn/",
           "status": "unverified",
           "reason": "download/access entry not found on page"
@@ -26654,7 +26654,7 @@
       "fingerprint": "640c1a6e2446bf83962d54fcfd2d8c170d7cc0108401566780e08322f12734fc",
       "verification": {
         "status": "unverified",
-        "checked_at": "2026-11-26T16:35:21+00:00",
+        "checked_at": "2026-11-26T22:08:22+00:00",
         "url": "https://xinghuo.xfyun.cn/",
         "final_url": "https://xinghuo.xfyun.cn/",
         "redirects": [
@@ -26664,23 +26664,11 @@
         "reason": "download/access entry not found on page",
         "fingerprint": "640c1a6e2446bf83962d54fcfd2d8c170d7cc0108401566780e08322f12734fc"
       },
-      "failures": 260,
-      "next_check_at": "2026-11-27T08:35:21+00:00",
+      "failures": 262,
+      "next_check_at": "2026-11-27T14:08:22+00:00",
       "last_success_at": null,
       "history": [
         {
-          "at": "2026-11-25T22:09:07+00:00",
-          "url": "https://xinghuo.xfyun.cn/download",
-          "status": "unverified",
-          "reason": "download/access entry not found on page"
-        },
-        {
-          "at": "2026-11-25T22:09:07+00:00",
-          "url": "https://xinghuo.xfyun.cn/",
-          "status": "unverified",
-          "reason": "download/access entry not found on page"
-        },
-        {
           "at": "2026-11-26T09:09:45+00:00",
           "url": "https://xinghuo.xfyun.cn/download",
           "status": "unverified",
@@ -26724,6 +26712,18 @@
         },
         {
           "at": "2026-11-26T16:35:21+00:00",
+          "url": "https://xinghuo.xfyun.cn/",
+          "status": "unverified",
+          "reason": "download/access entry not found on page"
+        },
+        {
+          "at": "2026-11-26T22:08:22+00:00",
+          "url": "https://xinghuo.xfyun.cn/download",
+          "status": "unverified",
+          "reason": "download/access entry not found on page"
+        },
+        {
+          "at": "2026-11-26T22:08:22+00:00",
           "url": "https://xinghuo.xfyun.cn/",
           "status": "unverified",
           "reason": "download/access entry not found on page"
@@ -27086,7 +27086,7 @@
       "fingerprint": "e0b20559c1b46aedb012dd3d086026284b50be2e96da45d5a167d8a8cff6281a",
       "verification": {
         "status": "unverified",
-        "checked_at": "2026-11-26T16:35:21+00:00",
+        "checked_at": "2026-11-26T22:08:22+00:00",
         "url": "https://www.iqiyi.com/",
         "final_url": "https://www.iqiyi.com/",
         "redirects": [
@@ -27096,22 +27096,10 @@
         "reason": "download/access entry not found on page",
         "fingerprint": "e0b20559c1b46aedb012dd3d086026284b50be2e96da45d5a167d8a8cff6281a"
       },
-      "failures": 6,
-      "next_check_at": "2026-11-27T08:35:21+00:00",
+      "failures": 8,
+      "next_check_at": "2026-11-27T14:08:22+00:00",
       "last_success_at": "2026-11-25T22:09:07+00:00",
       "history": [
-        {
-          "at": "2026-11-22T07:45:25+00:00",
-          "url": "https://app.iqiyi.com/",
-          "status": "verified",
-          "reason": null
-        },
-        {
-          "at": "2026-11-23T08:34:45+00:00",
-          "url": "https://app.iqiyi.com/",
-          "status": "verified",
-          "reason": null
-        },
         {
           "at": "2026-11-24T10:41:14+00:00",
           "url": "https://app.iqiyi.com/",
@@ -27156,6 +27144,18 @@
         },
         {
           "at": "2026-11-26T16:35:21+00:00",
+          "url": "https://www.iqiyi.com/",
+          "status": "unverified",
+          "reason": "download/access entry not found on page"
+        },
+        {
+          "at": "2026-11-26T22:08:22+00:00",
+          "url": "https://mesh.if.iqiyi.com/player/upgrade/file/14.9.5.10287/IQIYIsetup_winget.exe",
+          "status": "unverified",
+          "reason": "redirect host needs review"
+        },
+        {
+          "at": "2026-11-26T22:08:22+00:00",
           "url": "https://www.iqiyi.com/",
           "status": "unverified",
           "reason": "download/access entry not found on page"
@@ -28857,7 +28857,7 @@
       "fingerprint": "0e09fe3605642fd7d596568969d186b9f88d6ea2b49a0682a84600a87db26ab0",
       "verification": {
         "status": "transient",
-        "checked_at": "2026-11-26T16:35:21+00:00",
+        "checked_at": "2026-11-26T22:08:22+00:00",
         "url": "https://www.kuwo.cn/",
         "final_url": "https://www.kuwo.cn/",
         "redirects": [
@@ -28867,23 +28867,11 @@
         "reason": "HTTP 500",
         "fingerprint": "0e09fe3605642fd7d596568969d186b9f88d6ea2b49a0682a84600a87db26ab0"
       },
-      "failures": 260,
-      "next_check_at": "2026-11-27T08:35:21+00:00",
+      "failures": 262,
+      "next_check_at": "2026-11-27T14:08:22+00:00",
       "last_success_at": null,
       "history": [
         {
-          "at": "2026-11-25T22:09:07+00:00",
-          "url": "https://www.kuwo.cn/download",
-          "status": "transient",
-          "reason": "HTTP 500"
-        },
-        {
-          "at": "2026-11-25T22:09:07+00:00",
-          "url": "https://www.kuwo.cn/",
-          "status": "transient",
-          "reason": "HTTP 500"
-        },
-        {
           "at": "2026-11-26T09:09:45+00:00",
           "url": "https://www.kuwo.cn/download",
           "status": "transient",
@@ -28927,6 +28915,18 @@
         },
         {
           "at": "2026-11-26T16:35:21+00:00",
+          "url": "https://www.kuwo.cn/",
+          "status": "transient",
+          "reason": "HTTP 500"
+        },
+        {
+          "at": "2026-11-26T22:08:22+00:00",
+          "url": "https://www.kuwo.cn/download",
+          "status": "transient",
+          "reason": "HTTP 500"
+        },
+        {
+          "at": "2026-11-26T22:08:22+00:00",
           "url": "https://www.kuwo.cn/",
           "status": "transient",
           "reason": "HTTP 500"
@@ -29563,28 +29563,16 @@
       "fingerprint": "b145d0cd63a348f954c8f57ca1e7ae489d75dde808c2ca65b35c2e3700efffd6",
       "verification": {
         "status": "unverified",
-        "checked_at": "2026-11-26T16:35:21+00:00",
+        "checked_at": "2026-11-26T22:08:22+00:00",
         "url": "http://www.pcfreetime.com/",
         "reason": "network check failed: SSLError",
         "fingerprint": "b145d0cd63a348f954c8f57ca1e7ae489d75dde808c2ca65b35c2e3700efffd6"
       },
-      "failures": 18,
-      "next_check_at": "2026-11-27T08:35:21+00:00",
+      "failures": 20,
+      "next_check_at": "2026-11-27T14:08:22+00:00",
       "last_success_at": "2026-11-18T21:06:09+00:00",
       "history": [
         {
-          "at": "2026-11-25T22:09:07+00:00",
-          "url": "http://www.pcfreetime.com/formatfactory/CN/index.html",
-          "status": "unverified",
-          "reason": "network check failed: SSLError"
-        },
-        {
-          "at": "2026-11-25T22:09:07+00:00",
-          "url": "http://www.pcfreetime.com/",
-          "status": "unverified",
-          "reason": "network check failed: SSLError"
-        },
-        {
           "at": "2026-11-26T09:09:45+00:00",
           "url": "http://www.pcfreetime.com/formatfactory/CN/index.html",
           "status": "unverified",
@@ -29628,6 +29616,18 @@
         },
         {
           "at": "2026-11-26T16:35:21+00:00",
+          "url": "http://www.pcfreetime.com/",
+          "status": "unverified",
+          "reason": "network check failed: SSLError"
+        },
+        {
+          "at": "2026-11-26T22:08:22+00:00",
+          "url": "http://www.pcfreetime.com/formatfactory/CN/index.html",
+          "status": "unverified",
+          "reason": "network check failed: SSLError"
+        },
+        {
+          "at": "2026-11-26T22:08:22+00:00",
           "url": "http://www.pcfreetime.com/",
           "status": "unverified",
           "reason": "network check failed: SSLError"
@@ -84642,28 +84642,24 @@
     "wiztree:win-x64": {
       "fingerprint": "3ab66f6ff996ed3708ed89f40d3a105c66a4da645011f4885b3caaae46d8b932",
       "verification": {
-        "status": "unverified",
-        "checked_at": "2026-11-26T16:35:21+00:00",
+        "status": "verified",
+        "checked_at": "2026-11-26T22:08:22+00:00",
         "url": "https://diskanalyzer.com/download",
-        "reason": "network check failed: ReadTimeout",
+        "final_url": "https://diskanalyzer.com/download",
+        "redirects": [
+          "https://diskanalyzer.com/download"
+        ],
+        "http_status": 200,
+        "valid_until": "2026-12-03T22:08:22+00:00",
+        "filename": "download",
+        "content_type": "text/html; charset=utf-8",
+        "evidence": "trusted source, product identity and download/access entry",
         "fingerprint": "3ab66f6ff996ed3708ed89f40d3a105c66a4da645011f4885b3caaae46d8b932"
       },
-      "failures": 6,
-      "next_check_at": "2026-11-27T08:35:21+00:00",
-      "last_success_at": "2026-11-25T22:09:07+00:00",
+      "failures": 0,
+      "next_check_at": "2026-11-27T22:08:22+00:00",
+      "last_success_at": "2026-11-26T22:08:22+00:00",
       "history": [
-        {
-          "at": "2026-11-22T07:45:25+00:00",
-          "url": "https://diskanalyzer.com/download",
-          "status": "verified",
-          "reason": null
-        },
-        {
-          "at": "2026-11-23T08:34:45+00:00",
-          "url": "https://diskanalyzer.com/download",
-          "status": "verified",
-          "reason": null
-        },
         {
           "at": "2026-11-24T10:41:14+00:00",
           "url": "https://diskanalyzer.com/download",
@@ -84711,6 +84707,18 @@
           "url": "https://diskanalyzer.com/download",
           "status": "unverified",
           "reason": "network check failed: ReadTimeout"
+        },
+        {
+          "at": "2026-11-26T22:08:22+00:00",
+          "url": "https://diskanalyzer.com/files/wiztree_4_34_setup.exe",
+          "status": "unverified",
+          "reason": "redirect host needs review"
+        },
+        {
+          "at": "2026-11-26T22:08:22+00:00",
+          "url": "https://diskanalyzer.com/download",
+          "status": "verified",
+          "reason": null
         }
       ],
       "successes": {
@@ -84728,6 +84736,21 @@
           "content_type": "text/html; charset=utf-8",
           "evidence": "trusted source, product identity and download/access entry",
           "fingerprint": "d5637d28c45a0e6852377b55b6c3aa818b434c00d71349eed16f75aa741bd50d"
+        },
+        "3ab66f6ff996ed3708ed89f40d3a105c66a4da645011f4885b3caaae46d8b932": {
+          "status": "verified",
+          "checked_at": "2026-11-26T22:08:22+00:00",
+          "url": "https://diskanalyzer.com/download",
+          "final_url": "https://diskanalyzer.com/download",
+          "redirects": [
+            "https://diskanalyzer.com/download"
+          ],
+          "http_status": 200,
+          "valid_until": "2026-12-03T22:08:22+00:00",
+          "filename": "download",
+          "content_type": "text/html; charset=utf-8",
+          "evidence": "trusted source, product identity and download/access entry",
+          "fingerprint": "3ab66f6ff996ed3708ed89f40d3a105c66a4da645011f4885b3caaae46d8b932"
         }
       },
       "invalidated": []

@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-26T16:35:04+00:00",
+  "generated_at": "2026-11-26T22:08:03+00:00",
   "packages": [
     {
       "id": "windows11",
@@ -2489,9 +2489,9 @@
       "_stale": true,
       "_stale_reason": "WinGet installer manifest is missing or ambiguous",
       "_sync": {
-        "failures": 1,
+        "failures": 2,
         "fingerprint": "5c9d4b425425b800a8fe16ae53dcc92c1bb211e108507128fed10bb715a92501",
-        "next_attempt_at": "2026-11-26T18:27:09+00:00"
+        "next_attempt_at": "2026-11-27T02:06:51+00:00"
       }
     },
     {
@@ -2866,7 +2866,7 @@
           "expires_at": null,
           "verification": {
             "status": "unverified",
-            "checked_at": "2026-11-26T16:35:21+00:00",
+            "checked_at": "2026-11-26T22:08:22+00:00",
             "url": "https://xinghuo.xfyun.cn/download",
             "final_url": "https://xinghuo.xfyun.cn/download",
             "redirects": [
@@ -2887,7 +2887,7 @@
           "expires_at": null,
           "verification": {
             "status": "unverified",
-            "checked_at": "2026-11-26T16:35:21+00:00",
+            "checked_at": "2026-11-26T22:08:22+00:00",
             "url": "https://xinghuo.xfyun.cn/download",
             "final_url": "https://xinghuo.xfyun.cn/download",
             "redirects": [
@@ -2952,9 +2952,9 @@
       "fetched_at": "2026-11-26T09:08:58+00:00",
       "last_success_at": "2026-11-26T09:08:58+00:00",
       "_sync": {
-        "failures": 1,
+        "failures": 2,
         "fingerprint": "8de5e4a07ff65fae16774717bc6228bc1f323787cedaa338e65a362a60b3b8b6",
-        "next_attempt_at": "2026-11-26T18:09:01+00:00"
+        "next_attempt_at": "2026-11-27T02:06:44+00:00"
       },
       "editions": [
         "cn"
@@ -3268,10 +3268,10 @@
           "version": null,
           "verification": {
             "status": "unverified",
-            "checked_at": "2026-11-26T16:35:21+00:00",
+            "checked_at": "2026-11-26T22:08:22+00:00",
             "url": "https://mesh.if.iqiyi.com/player/upgrade/file/14.9.5.10287/IQIYIsetup_winget.exe",
             "reason": "redirect host needs review",
-            "final_url": "https://v-94991e22.71edge.com/cdn/pca/20260924/14.9.5.10287/channel/1790236023108/IQIYIsetup_winget.exe?dis_k=215fa77a349cf9c370615d1ae89ffbb15&dis_t=1795710924&dis_dz=OVERSEA-US&dis_st=36&uuid=868a3e64-1a218b6373e-265&&ip=134.138.62.100&ssl=1",
+            "final_url": "https://v-94991e22.71edge.com/cdn/pca/20260924/14.9.5.10287/channel/1790236023108/IQIYIsetup_winget.exe?dis_k=23da09780c8f6598f33a145d153bd956c&dis_t=1795730905&dis_dz=OVERSEA-US&dis_st=36&uuid=287ce2e0-1a219e71925-491&&ip=40.124.226.224&ssl=1",
             "redirects": [
               "https://mesh.if.iqiyi.com/player/upgrade/file/14.9.5.10287/IQIYIsetup_winget.exe",
               "https://cdndata.video.iqiyi.com/cdn/pca/20260924/14.9.5.10287/channel/1790236023108/IQIYIsetup_winget.exe"
@@ -3375,9 +3375,9 @@
       "fetched_at": "2026-11-26T09:08:58+00:00",
       "last_success_at": "2026-11-26T09:08:58+00:00",
       "_sync": {
-        "failures": 1,
+        "failures": 2,
         "fingerprint": "a15b4298c0d1d3d3d983ac68ef2a6f6b6e6e1490009d4787a9a63ba8333ac10e",
-        "next_attempt_at": "2026-11-26T18:09:31+00:00"
+        "next_attempt_at": "2026-11-27T02:07:44+00:00"
       },
       "editions": [
         "cn"
@@ -3385,7 +3385,7 @@
       "desc_cn": "轻量级国产安全软件，弹窗拦截和病毒防护",
       "desc_en": "Lightweight Chinese security software with popup blocking and virus protection",
       "_stale": true,
-      "_stale_reason": "HTTPSConnectionPool(host='down-tencent.huorong.cn', port=443): Read timed out. (read timeout=15)"
+      "_stale_reason": "HTTPSConnectionPool(host='down-tencent.huorong.cn', port=443): Max retries exceeded with url: /sysdiag-all-x64-6.0.13.3-2026.11.26.1.exe (Caused by ConnectTimeoutError(<HTTPSConnection(host='down-tencent.huorong.cn', port=443) at 0x199775b4da0>, 'Connection to down-tencent.huorong.cn timed out. (connect timeout=15)'))"
     },
     {
       "id": "sunlogin",
@@ -4085,7 +4085,7 @@
           "expires_at": null,
           "verification": {
             "status": "transient",
-            "checked_at": "2026-11-26T16:35:21+00:00",
+            "checked_at": "2026-11-26T22:08:22+00:00",
             "url": "https://www.kuwo.cn/download",
             "final_url": "https://www.kuwo.cn/",
             "redirects": [
@@ -4434,7 +4434,7 @@
           "expires_at": null,
           "verification": {
             "status": "unverified",
-            "checked_at": "2026-11-26T16:35:21+00:00",
+            "checked_at": "2026-11-26T22:08:22+00:00",
             "url": "http://www.pcfreetime.com/formatfactory/CN/index.html",
             "reason": "network check failed: SSLError",
             "fingerprint": "369d26a6b67c44daed8d297dbe357145a1c16a0de2e2c96a7a8c085357b76f03"
@@ -9873,9 +9873,9 @@
       "fetched_at": "2026-11-26T09:09:00+00:00",
       "last_success_at": "2026-11-26T09:09:00+00:00",
       "_sync": {
-        "failures": 1,
+        "failures": 2,
         "fingerprint": "0395e94881dcf0ae3cc76e1d00502e13bc507a44a79f51f504f93e88b3513ad4",
-        "next_attempt_at": "2026-11-26T18:09:02+00:00"
+        "next_attempt_at": "2026-11-27T02:06:52+00:00"
       },
       "editions": [
         "cn",
@@ -11422,9 +11422,9 @@
       "fetched_at": "2026-11-26T09:08:54+00:00",
       "last_success_at": "2026-11-26T09:08:54+00:00",
       "_sync": {
-        "failures": 1,
+        "failures": 2,
         "fingerprint": "8edb29a38a11211ca8b88879cc3708b5f725ebdb108fa97758c0337e7e3f1baf",
-        "next_attempt_at": "2026-11-26T18:09:05+00:00"
+        "next_attempt_at": "2026-11-27T02:06:45+00:00"
       },
       "editions": [
         "cn",
@@ -13129,9 +13129,9 @@
       "_stale": true,
       "_stale_reason": "WinGet installer manifest is missing or ambiguous",
       "_sync": {
-        "failures": 1,
+        "failures": 2,
         "fingerprint": "1add6f7cdeb4633a2b599e03c3a6313d75a3ce0dff56ef3cb48b94edee48ae11",
-        "next_attempt_at": "2026-11-26T18:27:01+00:00"
+        "next_attempt_at": "2026-11-27T02:06:45+00:00"
       }
     },
     {
@@ -15513,9 +15513,9 @@
       "fetched_at": "2026-11-26T09:08:57+00:00",
       "last_success_at": "2026-11-26T09:08:57+00:00",
       "_sync": {
-        "failures": 1,
+        "failures": 2,
         "fingerprint": "21b2c051013657053b053474494ae263d8526875238b2f424a38171b9e7acb17",
-        "next_attempt_at": "2026-11-26T18:09:07+00:00"
+        "next_attempt_at": "2026-11-27T02:06:45+00:00"
       },
       "editions": [
         "cn",
@@ -23945,9 +23945,9 @@
       "fetched_at": "2026-11-26T09:09:00+00:00",
       "last_success_at": "2026-11-26T09:09:00+00:00",
       "_sync": {
-        "failures": 1,
+        "failures": 2,
         "fingerprint": "300fd580a156c3ec4603432429d829b3f81fb9dabf69b77c4c53d02e0c152ae4",
-        "next_attempt_at": "2026-11-26T18:09:26+00:00"
+        "next_attempt_at": "2026-11-27T02:06:48+00:00"
       },
       "editions": [
         "intl"
@@ -24068,9 +24068,9 @@
       "fetched_at": "2026-11-26T09:09:05+00:00",
       "last_success_at": "2026-11-26T09:09:05+00:00",
       "_sync": {
-        "failures": 1,
+        "failures": 2,
         "fingerprint": "a4d2557213e347d8e0991ea04b459b834fcbb8b8f717136d46b6148c491d4a05",
-        "next_attempt_at": "2026-11-26T18:09:11+00:00"
+        "next_attempt_at": "2026-11-27T02:06:45+00:00"
       },
       "editions": [
         "intl"
@@ -24186,9 +24186,9 @@
       "fetched_at": "2026-11-26T09:09:06+00:00",
       "last_success_at": "2026-11-26T09:09:06+00:00",
       "_sync": {
-        "failures": 1,
+        "failures": 2,
         "fingerprint": "0ed8827755f4ab6c92079763d439f14a1e557cb013676d470cca026be9d545d0",
-        "next_attempt_at": "2026-11-26T18:09:08+00:00"
+        "next_attempt_at": "2026-11-27T02:06:51+00:00"
       },
       "editions": [
         "intl"
@@ -24728,9 +24728,9 @@
       "fetched_at": "2026-11-26T09:09:06+00:00",
       "last_success_at": "2026-11-26T09:09:06+00:00",
       "_sync": {
-        "failures": 1,
+        "failures": 2,
         "fingerprint": "8e8425c17c97dbfbf4f8f476d0b1e6c4cb9f66523b464e416ee53fccb1c4ddd9",
-        "next_attempt_at": "2026-11-26T18:09:08+00:00"
+        "next_attempt_at": "2026-11-27T02:06:51+00:00"
       },
       "editions": [
         "intl"
@@ -32512,9 +32512,9 @@
       "fetched_at": "2026-11-26T09:09:06+00:00",
       "last_success_at": "2026-11-26T09:09:06+00:00",
       "_sync": {
-        "failures": 1,
+        "failures": 2,
         "fingerprint": "4a38cd52b4a9801223e124eec8609ac393d2e99aad4912fc6bbb433299697898",
-        "next_attempt_at": "2026-11-26T18:09:10+00:00"
+        "next_attempt_at": "2026-11-27T02:06:51+00:00"
       },
       "editions": [
         "intl"
@@ -40571,9 +40571,9 @@
       "_stale": true,
       "_stale_reason": "WinGet installer manifest is missing or ambiguous",
       "_sync": {
-        "failures": 1,
+        "failures": 2,
         "fingerprint": "0b5894552b567e3c22618b4ff920d9c5640c1caab4ff5316eb88a3ee0934b1bc",
-        "next_attempt_at": "2026-11-26T18:26:56+00:00"
+        "next_attempt_at": "2026-11-27T02:06:48+00:00"
       }
     },
     {
@@ -40685,9 +40685,9 @@
       "fetched_at": "2026-11-26T09:09:05+00:00",
       "last_success_at": "2026-11-26T09:09:05+00:00",
       "_sync": {
-        "failures": 1,
+        "failures": 2,
         "fingerprint": "d6c11c36d8ee9e3cd8e235023e47a6b5b640cdae615a13c1d4dfce430ce50f55",
-        "next_attempt_at": "2026-11-26T18:09:13+00:00"
+        "next_attempt_at": "2026-11-27T02:06:45+00:00"
       },
       "editions": [
         "intl"
@@ -40806,9 +40806,9 @@
       "fetched_at": "2026-11-26T09:09:06+00:00",
       "last_success_at": "2026-11-26T09:09:06+00:00",
       "_sync": {
-        "failures": 1,
+        "failures": 2,
         "fingerprint": "e5140a60c10ec34e4532a6f9aeaf32bae5a5ef2325a2defb95134d7b4c7cb346",
-        "next_attempt_at": "2026-11-26T18:09:10+00:00"
+        "next_attempt_at": "2026-11-27T02:06:51+00:00"
       },
       "editions": [
         "intl"
@@ -41236,9 +41236,9 @@
       "fetched_at": "2026-11-26T09:09:00+00:00",
       "last_success_at": "2026-11-26T09:09:00+00:00",
       "_sync": {
-        "failures": 1,
+        "failures": 2,
         "fingerprint": "702fe065997511805b0f3252916870b5a0184d253d8985e1deac40df69dc60b2",
-        "next_attempt_at": "2026-11-26T18:09:28+00:00"
+        "next_attempt_at": "2026-11-27T02:06:48+00:00"
       },
       "editions": [
         "intl"
@@ -41435,9 +41435,9 @@
       "fetched_at": "2026-11-26T09:09:06+00:00",
       "last_success_at": "2026-11-26T09:09:06+00:00",
       "_sync": {
-        "failures": 1,
+        "failures": 2,
         "fingerprint": "689e08882488123bc9b3d90df424862546b0ac276e201eb83711c37cc5281b9d",
-        "next_attempt_at": "2026-11-26T18:09:09+00:00"
+        "next_attempt_at": "2026-11-27T02:06:51+00:00"
       },
       "editions": [
         "intl"
@@ -42366,9 +42366,9 @@
       "fetched_at": "2026-11-26T09:09:00+00:00",
       "last_success_at": "2026-11-26T09:09:00+00:00",
       "_sync": {
-        "failures": 1,
+        "failures": 2,
         "fingerprint": "23805ae155447401385e9ec85525682b846656985a2119c430d3fa54e5611309",
-        "next_attempt_at": "2026-11-26T18:09:29+00:00"
+        "next_attempt_at": "2026-11-27T02:06:48+00:00"
       },
       "editions": [
         "intl"
@@ -42857,9 +42857,9 @@
       "fetched_at": "2026-11-26T09:09:06+00:00",
       "last_success_at": "2026-11-26T09:09:06+00:00",
       "_sync": {
-        "failures": 1,
+        "failures": 2,
         "fingerprint": "9f260279c3ad7693e64405593972e46af6e1a860cd75c8c05c602e2711af706f",
-        "next_attempt_at": "2026-11-26T18:09:11+00:00"
+        "next_attempt_at": "2026-11-27T02:06:52+00:00"
       },
       "editions": [
         "intl"
@@ -43503,19 +43503,23 @@
       "assets": [
         {
           "platform": "win-x64",
-          "url": "https://diskanalyzer.com/files/wiztree_4_34_setup.exe",
-          "link_kind": "direct",
-          "filename": null,
-          "size": null,
-          "sha256": "77E75B83B59673A49DC88BA60471776DF3646BAEE30A82453DB01FF6AD83EF2C",
-          "expires_at": null,
-          "version": null,
+          "url": "https://diskanalyzer.com/download",
+          "link_kind": "landing_page",
+          "fallback": true,
           "verification": {
-            "status": "unverified",
-            "checked_at": "2026-11-26T16:35:21+00:00",
-            "url": "https://diskanalyzer.com/files/wiztree_4_34_setup.exe",
-            "reason": "network check failed: ReadTimeout",
-            "fingerprint": "bc6c6e67339ddb3c84ce3d6716a0bef313634831c6a452635a33fd54f2f215aa"
+            "status": "verified",
+            "checked_at": "2026-11-26T22:08:22+00:00",
+            "url": "https://diskanalyzer.com/download",
+            "final_url": "https://diskanalyzer.com/download",
+            "redirects": [
+              "https://diskanalyzer.com/download"
+            ],
+            "http_status": 200,
+            "valid_until": "2026-12-03T22:08:22+00:00",
+            "filename": "download",
+            "content_type": "text/html; charset=utf-8",
+            "evidence": "trusted source, product identity and download/access entry",
+            "fingerprint": "3ab66f6ff996ed3708ed89f40d3a105c66a4da645011f4885b3caaae46d8b932"
           }
         }
       ],
@@ -44067,9 +44071,9 @@
       "fetched_at": "2026-11-26T09:09:06+00:00",
       "last_success_at": "2026-11-26T09:09:06+00:00",
       "_sync": {
-        "failures": 1,
+        "failures": 2,
         "fingerprint": "f3f6337ab8c0d979331d548f0709b0c476ef1c986690a859c0a82b93746e1c6a",
-        "next_attempt_at": "2026-11-26T18:09:10+00:00"
+        "next_attempt_at": "2026-11-27T02:06:52+00:00"
       },
       "editions": [
         "intl"
@@ -44837,10 +44841,11 @@
       "_stale": true,
       "_stale_reason": "WinGet installer manifest is missing or ambiguous",
       "_sync": {
-        "failures": 1,
+        "failures": 2,
         "fingerprint": "7eac3f16f446c3490725472fd2f6f3c8d2f3ecb5ebbefe04873447961d7ce518",
-        "next_attempt_at": "2026-11-26T18:09:31+00:00"
-      }
+        "next_attempt_at": "2026-11-27T02:06:48+00:00"
+      },
+      "last_success_at": "2026-11-26T16:09:31+00:00"
     },
     {
       "id": "lm-studio",
@@ -56496,9 +56501,9 @@
       "_stale": true,
       "_stale_reason": "WinGet installer manifest is missing or ambiguous",
       "_sync": {
-        "failures": 1,
+        "failures": 2,
         "fingerprint": "fde343bfacfc9584ea662b9e83ff26038be51c7580ddf84035d8272d607ca77d",
-        "next_attempt_at": "2026-11-26T18:27:08+00:00"
+        "next_attempt_at": "2026-11-27T02:06:44+00:00"
       },
       "editions": [
         "cn",
@@ -57690,7 +57695,7 @@
           "expires_at": null,
           "verification": {
             "status": "restricted",
-            "checked_at": "2026-11-26T16:35:21+00:00",
+            "checked_at": "2026-11-26T22:08:22+00:00",
             "url": "https://www.adobe.com/products/photoshop.html",
             "final_url": "https://www.adobe.com/products/photoshop.html",
             "redirects": [
@@ -57711,7 +57716,7 @@
           "expires_at": null,
           "verification": {
             "status": "restricted",
-            "checked_at": "2026-11-26T16:35:21+00:00",
+            "checked_at": "2026-11-26T22:08:22+00:00",
             "url": "https://www.adobe.com/products/photoshop.html",
             "final_url": "https://www.adobe.com/products/photoshop.html",
             "redirects": [
@@ -58718,10 +58723,11 @@
       "_stale": true,
       "_stale_reason": "WinGet installer manifest is missing or ambiguous",
       "_sync": {
-        "failures": 1,
+        "failures": 2,
         "fingerprint": "02811aecc40e0760ee10d2e47a26ea02629086cfdf00f0aff2d6e2f647971377",
-        "next_attempt_at": "2026-11-26T18:09:36+00:00"
-      }
+        "next_attempt_at": "2026-11-27T02:06:52+00:00"
+      },
+      "last_success_at": "2026-11-26T16:09:36+00:00"
     },
     {
       "id": "flclash",
@@ -59895,10 +59901,11 @@
       "_stale": true,
       "_stale_reason": "WinGet installer manifest is missing or ambiguous",
       "_sync": {
-        "failures": 1,
+        "failures": 2,
         "fingerprint": "963e67e8930c9fd970cdc1f80f01a0dad4725dc6dbced219b78bd075f18239fe",
-        "next_attempt_at": "2026-11-26T18:09:37+00:00"
-      }
+        "next_attempt_at": "2026-11-27T02:06:52+00:00"
+      },
+      "last_success_at": "2026-11-26T16:09:37+00:00"
     },
     {
       "id": "msi-afterburner",
@@ -59949,9 +59956,9 @@
       "_stale": true,
       "_stale_reason": "WinGet installer manifest is missing or ambiguous",
       "_sync": {
-        "failures": 1,
+        "failures": 2,
         "fingerprint": "2984f13d7f5444cc17e155544e259506981d621f9bb4f2fa69f42fe7fcf893d4",
-        "next_attempt_at": "2026-11-26T18:27:00+00:00"
+        "next_attempt_at": "2026-11-27T02:06:48+00:00"
       }
     },
     {
@@ -60755,7 +60762,7 @@
       },
       {
         "id": "huorong",
-        "error": "HTTPSConnectionPool(host='down-tencent.huorong.cn', port=443): Read timed out. (read timeout=15)"
+        "error": "HTTPSConnectionPool(host='down-tencent.huorong.cn', port=443): Max retries exceeded with url: /sysdiag-all-x64-6.0.13.3-2026.11.26.1.exe (Caused by ConnectTimeoutError(<HTTPSConnection(host='down-tencent.huorong.cn', port=443) at 0x199775b4da0>, 'Connection to down-tencent.huorong.cn timed out. (connect timeout=15)'))"
       },
       {
         "id": "kate",
@@ -60847,14 +60854,14 @@
       }
     ]
   },
-  "release_id": "a0711f69bf5153b5e110",
-  "checked_at": "2026-11-26T16:35:21+00:00",
-  "verified_at": "2026-11-26T16:35:21+00:00",
+  "release_id": "4e8b21490da56dcadd22",
+  "checked_at": "2026-11-26T22:08:22+00:00",
+  "verified_at": "2026-11-26T22:08:22+00:00",
   "quality": {
     "required_total": 344,
     "required_covered": 343,
-    "verified_assets": 1615,
-    "unavailable_assets": 12,
+    "verified_assets": 1616,
+    "unavailable_assets": 11,
     "stale_packages": 25,
     "publication_exceptions": []
   }
