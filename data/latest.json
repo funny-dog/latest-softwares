@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-26T16:09:57+00:00",
+  "generated_at": "2026-11-26T16:27:27+00:00",
   "packages": [
     {
       "id": "windows11",
@@ -2485,7 +2485,14 @@
       ],
       "desc_cn": "字节跳动企业协作平台，文档/日历/视频会议一体化",
       "desc_en": "ByteDance's enterprise collaboration platform with docs, calendar, and video",
-      "last_success_at": "2026-11-26T16:11:53+00:00"
+      "last_success_at": "2026-11-26T16:11:53+00:00",
+      "_stale": true,
+      "_stale_reason": "WinGet installer manifest is missing or ambiguous",
+      "_sync": {
+        "failures": 1,
+        "fingerprint": "5c9d4b425425b800a8fe16ae53dcc92c1bb211e108507128fed10bb715a92501",
+        "next_attempt_at": "2026-11-26T18:27:09+00:00"
+      }
     },
     {
       "id": "tencent-meeting",
@@ -2859,7 +2866,7 @@
           "expires_at": null,
           "verification": {
             "status": "unverified",
-            "checked_at": "2026-11-26T16:10:15+00:00",
+            "checked_at": "2026-11-26T16:27:42+00:00",
             "url": "https://xinghuo.xfyun.cn/download",
             "final_url": "https://xinghuo.xfyun.cn/download",
             "redirects": [
@@ -2880,7 +2887,7 @@
           "expires_at": null,
           "verification": {
             "status": "unverified",
-            "checked_at": "2026-11-26T16:10:15+00:00",
+            "checked_at": "2026-11-26T16:27:42+00:00",
             "url": "https://xinghuo.xfyun.cn/download",
             "final_url": "https://xinghuo.xfyun.cn/download",
             "redirects": [
@@ -3261,10 +3268,10 @@
           "version": null,
           "verification": {
             "status": "unverified",
-            "checked_at": "2026-11-26T16:10:15+00:00",
+            "checked_at": "2026-11-26T16:27:42+00:00",
             "url": "https://mesh.if.iqiyi.com/player/upgrade/file/14.9.5.10287/IQIYIsetup_winget.exe",
             "reason": "redirect host needs review",
-            "final_url": "https://v-94991e22.71edge.com/cdn/pca/20260924/14.9.5.10287/channel/1790236023108/IQIYIsetup_winget.exe?dis_k=2450d02781350bdadb256980cbffa96c0&dis_t=1795709467&dis_dz=OVERSEA-US&dis_st=36&uuid=0d566e29-1a2189ffafa-264&&ip=13.86.110.41&ssl=1",
+            "final_url": "https://v-94991e22.71edge.com/cdn/pca/20260924/14.9.5.10287/channel/1790236023108/IQIYIsetup_winget.exe?dis_k=2345296a074a54fdad2fbbe01f04dfade&dis_t=1795710464&dis_dz=OVERSEA-US&dis_st=36&uuid=1460ae5c-1a218af3362-48f&&ip=20.96.174.92&ssl=1",
             "redirects": [
               "https://mesh.if.iqiyi.com/player/upgrade/file/14.9.5.10287/IQIYIsetup_winget.exe",
               "https://cdndata.video.iqiyi.com/cdn/pca/20260924/14.9.5.10287/channel/1790236023108/IQIYIsetup_winget.exe"
@@ -4078,7 +4085,7 @@
           "expires_at": null,
           "verification": {
             "status": "transient",
-            "checked_at": "2026-11-26T16:10:15+00:00",
+            "checked_at": "2026-11-26T16:27:42+00:00",
             "url": "https://www.kuwo.cn/download",
             "final_url": "https://www.kuwo.cn/",
             "redirects": [
@@ -4427,7 +4434,7 @@
           "expires_at": null,
           "verification": {
             "status": "unverified",
-            "checked_at": "2026-11-26T16:10:15+00:00",
+            "checked_at": "2026-11-26T16:27:42+00:00",
             "url": "http://www.pcfreetime.com/formatfactory/CN/index.html",
             "reason": "network check failed: SSLError",
             "fingerprint": "369d26a6b67c44daed8d297dbe357145a1c16a0de2e2c96a7a8c085357b76f03"
@@ -13118,7 +13125,14 @@
       ],
       "desc_cn": "Canva 桌面设计与内容创作工具",
       "desc_en": "Design tool",
-      "last_success_at": "2026-11-26T16:11:57+00:00"
+      "last_success_at": "2026-11-26T16:11:57+00:00",
+      "_stale": true,
+      "_stale_reason": "WinGet installer manifest is missing or ambiguous",
+      "_sync": {
+        "failures": 1,
+        "fingerprint": "1add6f7cdeb4633a2b599e03c3a6313d75a3ce0dff56ef3cb48b94edee48ae11",
+        "next_attempt_at": "2026-11-26T18:27:01+00:00"
+      }
     },
     {
       "id": "cap",
@@ -40553,7 +40567,14 @@
       ],
       "desc_cn": "微软基于 Chromium 的浏览器，深度集成 Windows 和 AI",
       "desc_en": "Microsoft's Chromium-based browser with deep Windows and AI integration",
-      "last_success_at": "2026-11-26T16:12:03+00:00"
+      "last_success_at": "2026-11-26T16:12:03+00:00",
+      "_stale": true,
+      "_stale_reason": "WinGet installer manifest is missing or ambiguous",
+      "_sync": {
+        "failures": 1,
+        "fingerprint": "0b5894552b567e3c22618b4ff920d9c5640c1caab4ff5316eb88a3ee0934b1bc",
+        "next_attempt_at": "2026-11-26T18:26:56+00:00"
+      }
     },
     {
       "id": "opera",
@@ -43491,7 +43512,7 @@
           "version": null,
           "verification": {
             "status": "unverified",
-            "checked_at": "2026-11-26T16:10:15+00:00",
+            "checked_at": "2026-11-26T16:27:42+00:00",
             "url": "https://diskanalyzer.com/files/wiztree_4_34_setup.exe",
             "reason": "network check failed: ReadTimeout",
             "fingerprint": "bc6c6e67339ddb3c84ce3d6716a0bef313634831c6a452635a33fd54f2f215aa"
@@ -56264,7 +56285,18 @@
       "fetched_at": "2026-11-26T16:13:08+00:00",
       "desc_cn": "跨平台 SSH 客户端，支持团队协作和密钥管理",
       "desc_en": "Cross-platform SSH client with team collaboration and key management",
-      "last_success_at": "2026-11-26T16:13:08+00:00"
+      "last_success_at": "2026-11-26T16:13:08+00:00",
+      "_stale": true,
+      "_stale_reason": "WinGet installer manifest is missing or ambiguous",
+      "_sync": {
+        "failures": 1,
+        "fingerprint": "fde343bfacfc9584ea662b9e83ff26038be51c7580ddf84035d8272d607ca77d",
+        "next_attempt_at": "2026-11-26T18:27:08+00:00"
+      },
+      "editions": [
+        "cn",
+        "intl"
+      ]
     },
     {
       "id": "macs-fan-control",
@@ -57451,7 +57483,7 @@
           "expires_at": null,
           "verification": {
             "status": "restricted",
-            "checked_at": "2026-11-26T16:10:15+00:00",
+            "checked_at": "2026-11-26T16:27:42+00:00",
             "url": "https://www.adobe.com/products/photoshop.html",
             "final_url": "https://www.adobe.com/products/photoshop.html",
             "redirects": [
@@ -57472,7 +57504,7 @@
           "expires_at": null,
           "verification": {
             "status": "restricted",
-            "checked_at": "2026-11-26T16:10:15+00:00",
+            "checked_at": "2026-11-26T16:27:42+00:00",
             "url": "https://www.adobe.com/products/photoshop.html",
             "final_url": "https://www.adobe.com/products/photoshop.html",
             "redirects": [
@@ -59706,7 +59738,14 @@
       ],
       "desc_cn": "广受玩家欢迎的显卡超频、风扇曲线调节与游戏内性能监控 (OSD) 工具",
       "desc_en": "Popular GPU overclocking, fan control, and in-game hardware monitoring utility",
-      "last_success_at": "2026-11-26T16:12:22+00:00"
+      "last_success_at": "2026-11-26T16:12:22+00:00",
+      "_stale": true,
+      "_stale_reason": "WinGet installer manifest is missing or ambiguous",
+      "_sync": {
+        "failures": 1,
+        "fingerprint": "2984f13d7f5444cc17e155544e259506981d621f9bb4f2fa69f42fe7fcf893d4",
+        "next_attempt_at": "2026-11-26T18:27:00+00:00"
+      }
     },
     {
       "id": "unity-hub",
@@ -59972,19 +60011,22 @@
   ],
   "stats": {
     "total": 740,
-    "success": 720,
-    "failed": 20,
+    "success": 715,
+    "failed": 25,
     "failed_ids": [
+      "feishu",
       "xunlei",
       "huorong",
       "kate",
       "rancher",
+      "canva",
       "evernote",
       "discord",
       "slack",
       "zoom",
       "signal",
       "mullvad-vpn",
+      "edge",
       "opera",
       "vivaldi",
       "microsoft-teams",
@@ -59993,10 +60035,16 @@
       "postman",
       "foobar2000",
       "trae",
+      "termius",
       "pixpin",
-      "cpu-z"
+      "cpu-z",
+      "msi-afterburner"
     ],
     "failures": [
+      {
+        "id": "feishu",
+        "error": "WinGet installer manifest is missing or ambiguous"
+      },
       {
         "id": "xunlei",
         "error": "WinGet installer manifest is missing or ambiguous"
@@ -60011,6 +60059,10 @@
       },
       {
         "id": "rancher",
+        "error": "WinGet installer manifest is missing or ambiguous"
+      },
+      {
+        "id": "canva",
         "error": "WinGet installer manifest is missing or ambiguous"
       },
       {
@@ -60035,6 +60087,10 @@
       },
       {
         "id": "mullvad-vpn",
+        "error": "WinGet installer manifest is missing or ambiguous"
+      },
+      {
+        "id": "edge",
         "error": "WinGet installer manifest is missing or ambiguous"
       },
       {
@@ -60070,24 +60126,32 @@
         "error": "WinGet installer manifest is missing or ambiguous"
       },
       {
+        "id": "termius",
+        "error": "WinGet installer manifest is missing or ambiguous"
+      },
+      {
         "id": "pixpin",
         "error": "WinGet installer manifest is missing or ambiguous"
       },
       {
         "id": "cpu-z",
         "error": "WinGet installer manifest is missing or ambiguous"
+      },
+      {
+        "id": "msi-afterburner",
+        "error": "WinGet installer manifest is missing or ambiguous"
       }
     ]
   },
-  "release_id": "48f4474123ed3a30ccb9",
-  "checked_at": "2026-11-26T16:10:15+00:00",
-  "verified_at": "2026-11-26T16:10:15+00:00",
+  "release_id": "cd6134f26b332f31abd5",
+  "checked_at": "2026-11-26T16:27:42+00:00",
+  "verified_at": "2026-11-26T16:27:42+00:00",
   "quality": {
     "required_total": 344,
     "required_covered": 343,
     "verified_assets": 1597,
     "unavailable_assets": 12,
-    "stale_packages": 20,
+    "stale_packages": 25,
     "publication_exceptions": []
   }
 }

@@ -667,122 +667,6 @@
       },
       "invalidated": []
     },
-    "feishu:mac-x64": {
-      "fingerprint": "c227edad0ba4124c7130b90858528e22ad916df55c7458989ae8e57df128e555",
-      "verification": {
-        "status": "verified",
-        "checked_at": "2026-11-26T16:10:15+00:00",
-        "url": "https://www.feishu.cn/download",
-        "final_url": "https://www.feishu.cn/download",
-        "redirects": [
-          "https://www.feishu.cn/download"
-        ],
-        "http_status": 200,
-        "valid_until": "2026-12-03T16:10:15+00:00",
-        "filename": "download",
-        "content_type": "text/html; charset=utf-8",
-        "evidence": "trusted source, product identity and download/access entry",
-        "fingerprint": "c227edad0ba4124c7130b90858528e22ad916df55c7458989ae8e57df128e555"
-      },
-      "failures": 0,
-      "next_check_at": "2026-11-26T22:10:15+00:00",
-      "last_success_at": "2026-11-26T16:10:15+00:00",
-      "history": [
-        {
-          "at": "2026-11-22T07:45:25+00:00",
-          "url": "https://www.feishu.cn/download",
-          "status": "verified",
-          "reason": null
-        },
-        {
-          "at": "2026-11-22T20:09:08+00:00",
-          "url": "https://www.feishu.cn/download",
-          "status": "verified",
-          "reason": null
-        },
-        {
-          "at": "2026-11-23T08:34:45+00:00",
-          "url": "https://www.feishu.cn/download",
-          "status": "verified",
-          "reason": null
-        },
-        {
-          "at": "2026-11-24T00:35:36+00:00",
-          "url": "https://www.feishu.cn/download",
-          "status": "verified",
-          "reason": null
-        },
-        {
-          "at": "2026-11-24T10:41:14+00:00",
-          "url": "https://www.feishu.cn/download",
-          "status": "verified",
-          "reason": null
-        },
-        {
-          "at": "2026-11-24T22:54:56+00:00",
-          "url": "https://www.feishu.cn/download",
-          "status": "verified",
-          "reason": null
-        },
-        {
-          "at": "2026-11-25T09:32:02+00:00",
-          "url": "https://www.feishu.cn/download",
-          "status": "verified",
-          "reason": null
-        },
-        {
-          "at": "2026-11-25T22:09:07+00:00",
-          "url": "https://www.feishu.cn/download",
-          "status": "verified",
-          "reason": null
-        },
-        {
-          "at": "2026-11-26T09:09:45+00:00",
-          "url": "https://www.feishu.cn/download",
-          "status": "verified",
-          "reason": null
-        },
-        {
-          "at": "2026-11-26T16:10:15+00:00",
-          "url": "https://www.feishu.cn/download",
-          "status": "verified",
-          "reason": null
-        }
-      ],
-      "successes": {
-        "77dfdc9e34cbc42f98573340b86137cc00e545c987bb36ace529452cf357a983": {
-          "status": "verified",
-          "checked_at": "2026-11-26T09:09:45+00:00",
-          "url": "https://www.feishu.cn/download",
-          "final_url": "https://www.feishu.cn/download",
-          "redirects": [
-            "https://www.feishu.cn/download"
-          ],
-          "http_status": 200,
-          "valid_until": "2026-12-03T09:09:45+00:00",
-          "filename": "download",
-          "content_type": "text/html; charset=utf-8",
-          "evidence": "trusted source, product identity and download/access entry",
-          "fingerprint": "77dfdc9e34cbc42f98573340b86137cc00e545c987bb36ace529452cf357a983"
-        },
-        "c227edad0ba4124c7130b90858528e22ad916df55c7458989ae8e57df128e555": {
-          "status": "verified",
-          "checked_at": "2026-11-26T16:10:15+00:00",
-          "url": "https://www.feishu.cn/download",
-          "final_url": "https://www.feishu.cn/download",
-          "redirects": [
-            "https://www.feishu.cn/download"
-          ],
-          "http_status": 200,
-          "valid_until": "2026-12-03T16:10:15+00:00",
-          "filename": "download",
-          "content_type": "text/html; charset=utf-8",
-          "evidence": "trusted source, product identity and download/access entry",
-          "fingerprint": "c227edad0ba4124c7130b90858528e22ad916df55c7458989ae8e57df128e555"
-        }
-      },
-      "invalidated": []
-    },
     "tencent-meeting:win-x64": {
       "fingerprint": "6ce198821502ce601b086a76ba088b109d06d917d34fb28bc5818aedd2648b34",
       "verification": {
@@ -7356,106 +7240,6 @@
           "content_type": "application/octet-stream",
           "evidence": "trusted source, download response and platform filename checks",
           "fingerprint": "299bacfcc7ee0b53adace447c1c2d229914a57c1ade510e02161f2bab14326ae"
-        }
-      },
-      "invalidated": []
-    },
-    "edge:mac-universal": {
-      "fingerprint": "d3799e58d78d957e5d0c7463241b5930956c4a50dff916b96f784b3d346ac972",
-      "verification": {
-        "status": "unverified",
-        "checked_at": "2026-11-26T16:10:15+00:00",
-        "url": "https://www.microsoft.com/edge/download",
-        "reason": "redirect host needs review",
-        "final_url": "https://explore.microsoft.com/edge/download",
-        "redirects": [
-          "https://www.microsoft.com/edge/download"
-        ],
-        "fingerprint": "d3799e58d78d957e5d0c7463241b5930956c4a50dff916b96f784b3d346ac972"
-      },
-      "failures": 1,
-      "next_check_at": "2026-11-26T18:10:15+00:00",
-      "last_success_at": "2026-11-26T09:09:45+00:00",
-      "history": [
-        {
-          "at": "2026-11-22T07:45:25+00:00",
-          "url": "https://www.microsoft.com/edge/download",
-          "status": "verified",
-          "reason": null
-        },
-        {
-          "at": "2026-11-22T20:09:08+00:00",
-          "url": "https://www.microsoft.com/edge/download",
-          "status": "verified",
-          "reason": null
-        },
-        {
-          "at": "2026-11-23T08:34:45+00:00",
-          "url": "https://www.microsoft.com/edge/download",
-          "status": "verified",
-          "reason": null
-        },
-        {
-          "at": "2026-11-24T00:35:36+00:00",
-          "url": "https://www.microsoft.com/edge/download",
-          "status": "verified",
-          "reason": null
-        },
-        {
-          "at": "2026-11-24T10:41:14+00:00",
-          "url": "https://www.microsoft.com/edge/download",
-          "status": "verified",
-          "reason": null
-        },
-        {
-          "at": "2026-11-24T22:54:56+00:00",
-          "url": "https://www.microsoft.com/edge/download",
-          "status": "verified",
-          "reason": null
-        },
-        {
-          "at": "2026-11-25T09:32:02+00:00",
-          "url": "https://www.microsoft.com/edge/download",
-          "status": "verified",
-          "reason": null
-        },
-        {
-          "at": "2026-11-25T22:09:07+00:00",
-          "url": "https://www.microsoft.com/edge/download",
-          "status": "verified",
-          "reason": null
-        },
-        {
-          "at": "2026-11-26T09:09:45+00:00",
-          "url": "https://www.microsoft.com/edge/download",
-          "status": "verified",
-          "reason": null
-        },
-        {
-          "at": "2026-11-26T16:10:15+00:00",
-          "url": "https://www.microsoft.com/edge/download",
-          "status": "unverified",
-          "reason": "redirect host needs review"
-        }
-      ],
-      "successes": {
-        "d922c8ef690092be4da6b143611a36df17e3439f63a1454d64a21a67d3c8a317": {
-          "status": "verified",
-          "checked_at": "2026-11-26T09:09:45+00:00",
-          "url": "https://www.microsoft.com/edge/download",
-          "final_url": "https://explore.microsoft.com/en-us/edge/download?cs=756685434&form=MA13FJ",
-          "redirects": [
-            "https://www.microsoft.com/edge/download",
-            "https://explore.microsoft.com/edge/download",
-            "https://explore.microsoft.com/en-us/edge/download?cs=756685434",
-            "https://explore.microsoft.com/en-us/edge/download?cs=756685434&form=MA13FJ"
-          ],
-          "http_status": 200,
-          "valid_until": "2026-12-03T09:09:45+00:00",
-          "filename": "download",
-          "content_type": "text/html;charset=utf-8",
-          "evidence": "trusted source, product identity and download/access entry",
-          "fingerprint": "d922c8ef690092be4da6b143611a36df17e3439f63a1454d64a21a67d3c8a317"
         }
       },
       "invalidated": []
@@ -19485,7 +19269,7 @@
       "fingerprint": "8c0cd3397d33e6c9c683e95dbec97309f9ab1c060fb13aa61a86b50ae876acfc",
       "verification": {
         "status": "restricted",
-        "checked_at": "2026-11-26T16:10:15+00:00",
+        "checked_at": "2026-11-26T16:27:42+00:00",
         "url": "https://helpx.adobe.com/cn/photoshop/desktop.html",
         "final_url": "https://helpx.adobe.com/cn/photoshop/desktop.html",
         "redirects": [
@@ -19495,23 +19279,11 @@
         "reason": "upstream requires access or rate limited",
         "fingerprint": "8c0cd3397d33e6c9c683e95dbec97309f9ab1c060fb13aa61a86b50ae876acfc"
       },
-      "failures": 254,
-      "next_check_at": "2026-11-26T22:10:15+00:00",
+      "failures": 256,
+      "next_check_at": "2026-11-26T22:27:42+00:00",
       "last_success_at": null,
       "history": [
         {
-          "at": "2026-11-24T22:54:56+00:00",
-          "url": "https://www.adobe.com/products/photoshop.html",
-          "status": "restricted",
-          "reason": "upstream requires access or rate limited"
-        },
-        {
-          "at": "2026-11-24T22:54:56+00:00",
-          "url": "https://helpx.adobe.com/cn/photoshop/desktop.html",
-          "status": "restricted",
-          "reason": "upstream requires access or rate limited"
-        },
-        {
           "at": "2026-11-25T09:32:02+00:00",
           "url": "https://www.adobe.com/products/photoshop.html",
           "status": "restricted",
@@ -19555,6 +19327,18 @@
         },
         {
           "at": "2026-11-26T16:10:15+00:00",
+          "url": "https://helpx.adobe.com/cn/photoshop/desktop.html",
+          "status": "restricted",
+          "reason": "upstream requires access or rate limited"
+        },
+        {
+          "at": "2026-11-26T16:27:42+00:00",
+          "url": "https://www.adobe.com/products/photoshop.html",
+          "status": "restricted",
+          "reason": "upstream requires access or rate limited"
+        },
+        {
+          "at": "2026-11-26T16:27:42+00:00",
           "url": "https://helpx.adobe.com/cn/photoshop/desktop.html",
           "status": "restricted",
           "reason": "upstream requires access or rate limited"
@@ -19567,7 +19351,7 @@
       "fingerprint": "6381c3bd7ac744036fab4c2fe732b295a03a8690d973f68005681c723cf1b7a5",
       "verification": {
         "status": "restricted",
-        "checked_at": "2026-11-26T16:10:15+00:00",
+        "checked_at": "2026-11-26T16:27:42+00:00",
         "url": "https://helpx.adobe.com/cn/photoshop/desktop.html",
         "final_url": "https://helpx.adobe.com/cn/photoshop/desktop.html",
         "redirects": [
@@ -19577,23 +19361,11 @@
         "reason": "upstream requires access or rate limited",
         "fingerprint": "6381c3bd7ac744036fab4c2fe732b295a03a8690d973f68005681c723cf1b7a5"
       },
-      "failures": 254,
-      "next_check_at": "2026-11-26T22:10:15+00:00",
+      "failures": 256,
+      "next_check_at": "2026-11-26T22:27:42+00:00",
       "last_success_at": null,
       "history": [
         {
-          "at": "2026-11-24T22:54:56+00:00",
-          "url": "https://www.adobe.com/products/photoshop.html",
-          "status": "restricted",
-          "reason": "upstream requires access or rate limited"
-        },
-        {
-          "at": "2026-11-24T22:54:56+00:00",
-          "url": "https://helpx.adobe.com/cn/photoshop/desktop.html",
-          "status": "restricted",
-          "reason": "upstream requires access or rate limited"
-        },
-        {
           "at": "2026-11-25T09:32:02+00:00",
           "url": "https://www.adobe.com/products/photoshop.html",
           "status": "restricted",
@@ -19637,6 +19409,18 @@
         },
         {
           "at": "2026-11-26T16:10:15+00:00",
+          "url": "https://helpx.adobe.com/cn/photoshop/desktop.html",
+          "status": "restricted",
+          "reason": "upstream requires access or rate limited"
+        },
+        {
+          "at": "2026-11-26T16:27:42+00:00",
+          "url": "https://www.adobe.com/products/photoshop.html",
+          "status": "restricted",
+          "reason": "upstream requires access or rate limited"
+        },
+        {
+          "at": "2026-11-26T16:27:42+00:00",
           "url": "https://helpx.adobe.com/cn/photoshop/desktop.html",
           "status": "restricted",
           "reason": "upstream requires access or rate limited"
@@ -26788,7 +26572,7 @@
       "fingerprint": "ad81577b3ba7912068a2495e883c7aad0212b572888d9d99e7e526d61ebf8986",
       "verification": {
         "status": "unverified",
-        "checked_at": "2026-11-26T16:10:15+00:00",
+        "checked_at": "2026-11-26T16:27:42+00:00",
         "url": "https://xinghuo.xfyun.cn/",
         "final_url": "https://xinghuo.xfyun.cn/",
         "redirects": [
@@ -26798,23 +26582,11 @@
         "reason": "download/access entry not found on page",
         "fingerprint": "ad81577b3ba7912068a2495e883c7aad0212b572888d9d99e7e526d61ebf8986"
       },
-      "failures": 256,
-      "next_check_at": "2026-11-27T08:10:15+00:00",
+      "failures": 258,
+      "next_check_at": "2026-11-27T08:27:42+00:00",
       "last_success_at": null,
       "history": [
         {
-          "at": "2026-11-24T22:54:56+00:00",
-          "url": "https://xinghuo.xfyun.cn/download",
-          "status": "unverified",
-          "reason": "download/access entry not found on page"
-        },
-        {
-          "at": "2026-11-24T22:54:56+00:00",
-          "url": "https://xinghuo.xfyun.cn/",
-          "status": "unverified",
-          "reason": "download/access entry not found on page"
-        },
-        {
           "at": "2026-11-25T09:32:02+00:00",
           "url": "https://xinghuo.xfyun.cn/download",
           "status": "unverified",
@@ -26858,6 +26630,18 @@
         },
         {
           "at": "2026-11-26T16:10:15+00:00",
+          "url": "https://xinghuo.xfyun.cn/",
+          "status": "unverified",
+          "reason": "download/access entry not found on page"
+        },
+        {
+          "at": "2026-11-26T16:27:42+00:00",
+          "url": "https://xinghuo.xfyun.cn/download",
+          "status": "unverified",
+          "reason": "download/access entry not found on page"
+        },
+        {
+          "at": "2026-11-26T16:27:42+00:00",
           "url": "https://xinghuo.xfyun.cn/",
           "status": "unverified",
           "reason": "download/access entry not found on page"
@@ -26870,7 +26654,7 @@
       "fingerprint": "640c1a6e2446bf83962d54fcfd2d8c170d7cc0108401566780e08322f12734fc",
       "verification": {
         "status": "unverified",
-        "checked_at": "2026-11-26T16:10:15+00:00",
+        "checked_at": "2026-11-26T16:27:42+00:00",
         "url": "https://xinghuo.xfyun.cn/",
         "final_url": "https://xinghuo.xfyun.cn/",
         "redirects": [
@@ -26880,23 +26664,11 @@
         "reason": "download/access entry not found on page",
         "fingerprint": "640c1a6e2446bf83962d54fcfd2d8c170d7cc0108401566780e08322f12734fc"
       },
-      "failures": 256,
-      "next_check_at": "2026-11-27T08:10:15+00:00",
+      "failures": 258,
+      "next_check_at": "2026-11-27T08:27:42+00:00",
       "last_success_at": null,
       "history": [
         {
-          "at": "2026-11-24T22:54:56+00:00",
-          "url": "https://xinghuo.xfyun.cn/download",
-          "status": "unverified",
-          "reason": "download/access entry not found on page"
-        },
-        {
-          "at": "2026-11-24T22:54:56+00:00",
-          "url": "https://xinghuo.xfyun.cn/",
-          "status": "unverified",
-          "reason": "download/access entry not found on page"
-        },
-        {
           "at": "2026-11-25T09:32:02+00:00",
           "url": "https://xinghuo.xfyun.cn/download",
           "status": "unverified",
@@ -26940,6 +26712,18 @@
         },
         {
           "at": "2026-11-26T16:10:15+00:00",
+          "url": "https://xinghuo.xfyun.cn/",
+          "status": "unverified",
+          "reason": "download/access entry not found on page"
+        },
+        {
+          "at": "2026-11-26T16:27:42+00:00",
+          "url": "https://xinghuo.xfyun.cn/download",
+          "status": "unverified",
+          "reason": "download/access entry not found on page"
+        },
+        {
+          "at": "2026-11-26T16:27:42+00:00",
           "url": "https://xinghuo.xfyun.cn/",
           "status": "unverified",
           "reason": "download/access entry not found on page"
@@ -27302,7 +27086,7 @@
       "fingerprint": "e0b20559c1b46aedb012dd3d086026284b50be2e96da45d5a167d8a8cff6281a",
       "verification": {
         "status": "unverified",
-        "checked_at": "2026-11-26T16:10:15+00:00",
+        "checked_at": "2026-11-26T16:27:42+00:00",
         "url": "https://www.iqiyi.com/",
         "final_url": "https://www.iqiyi.com/",
         "redirects": [
@@ -27312,22 +27096,10 @@
         "reason": "download/access entry not found on page",
         "fingerprint": "e0b20559c1b46aedb012dd3d086026284b50be2e96da45d5a167d8a8cff6281a"
       },
-      "failures": 2,
-      "next_check_at": "2026-11-26T20:10:15+00:00",
+      "failures": 4,
+      "next_check_at": "2026-11-27T08:27:42+00:00",
       "last_success_at": "2026-11-25T22:09:07+00:00",
       "history": [
-        {
-          "at": "2026-11-17T08:47:51+00:00",
-          "url": "https://app.iqiyi.com/",
-          "status": "verified",
-          "reason": null
-        },
-        {
-          "at": "2026-11-18T21:06:09+00:00",
-          "url": "https://app.iqiyi.com/",
-          "status": "verified",
-          "reason": null
-        },
         {
           "at": "2026-11-19T21:11:06+00:00",
           "url": "https://app.iqiyi.com/",
@@ -27372,6 +27144,18 @@
         },
         {
           "at": "2026-11-26T16:10:15+00:00",
+          "url": "https://www.iqiyi.com/",
+          "status": "unverified",
+          "reason": "download/access entry not found on page"
+        },
+        {
+          "at": "2026-11-26T16:27:42+00:00",
+          "url": "https://mesh.if.iqiyi.com/player/upgrade/file/14.9.5.10287/IQIYIsetup_winget.exe",
+          "status": "unverified",
+          "reason": "redirect host needs review"
+        },
+        {
+          "at": "2026-11-26T16:27:42+00:00",
           "url": "https://www.iqiyi.com/",
           "status": "unverified",
           "reason": "download/access entry not found on page"
@@ -29073,7 +28857,7 @@
       "fingerprint": "0e09fe3605642fd7d596568969d186b9f88d6ea2b49a0682a84600a87db26ab0",
       "verification": {
         "status": "transient",
-        "checked_at": "2026-11-26T16:10:15+00:00",
+        "checked_at": "2026-11-26T16:27:42+00:00",
         "url": "https://www.kuwo.cn/",
         "final_url": "https://www.kuwo.cn/",
         "redirects": [
@@ -29083,23 +28867,11 @@
         "reason": "HTTP 500",
         "fingerprint": "0e09fe3605642fd7d596568969d186b9f88d6ea2b49a0682a84600a87db26ab0"
       },
-      "failures": 256,
-      "next_check_at": "2026-11-27T08:10:15+00:00",
+      "failures": 258,
+      "next_check_at": "2026-11-27T08:27:42+00:00",
       "last_success_at": null,
       "history": [
         {
-          "at": "2026-11-24T22:54:56+00:00",
-          "url": "https://www.kuwo.cn/download",
-          "status": "transient",
-          "reason": "HTTP 500"
-        },
-        {
-          "at": "2026-11-24T22:54:56+00:00",
-          "url": "https://www.kuwo.cn/",
-          "status": "transient",
-          "reason": "HTTP 500"
-        },
-        {
           "at": "2026-11-25T09:32:02+00:00",
           "url": "https://www.kuwo.cn/download",
           "status": "transient",
@@ -29143,6 +28915,18 @@
         },
         {
           "at": "2026-11-26T16:10:15+00:00",
+          "url": "https://www.kuwo.cn/",
+          "status": "transient",
+          "reason": "HTTP 500"
+        },
+        {
+          "at": "2026-11-26T16:27:42+00:00",
+          "url": "https://www.kuwo.cn/download",
+          "status": "transient",
+          "reason": "HTTP 500"
+        },
+        {
+          "at": "2026-11-26T16:27:42+00:00",
           "url": "https://www.kuwo.cn/",
           "status": "transient",
           "reason": "HTTP 500"
@@ -29779,27 +29563,15 @@
       "fingerprint": "b145d0cd63a348f954c8f57ca1e7ae489d75dde808c2ca65b35c2e3700efffd6",
       "verification": {
         "status": "unverified",
-        "checked_at": "2026-11-26T16:10:15+00:00",
+        "checked_at": "2026-11-26T16:27:42+00:00",
         "url": "http://www.pcfreetime.com/",
         "reason": "network check failed: SSLError",
         "fingerprint": "b145d0cd63a348f954c8f57ca1e7ae489d75dde808c2ca65b35c2e3700efffd6"
       },
-      "failures": 14,
-      "next_check_at": "2026-11-27T08:10:15+00:00",
+      "failures": 16,
+      "next_check_at": "2026-11-27T08:27:42+00:00",
       "last_success_at": "2026-11-18T21:06:09+00:00",
       "history": [
-        {
-          "at": "2026-11-22T07:45:25+00:00",
-          "url": "http://www.pcfreetime.com/formatfactory/CN/index.html",
-          "status": "unverified",
-          "reason": "network check failed: SSLError"
-        },
-        {
-          "at": "2026-11-23T08:34:45+00:00",
-          "url": "http://www.pcfreetime.com/formatfactory/CN/index.html",
-          "status": "unverified",
-          "reason": "network check failed: SSLError"
-        },
         {
           "at": "2026-11-24T00:35:36+00:00",
           "url": "http://www.pcfreetime.com/formatfactory/CN/index.html",
@@ -29844,6 +29616,18 @@
         },
         {
           "at": "2026-11-26T16:10:15+00:00",
+          "url": "http://www.pcfreetime.com/",
+          "status": "unverified",
+          "reason": "network check failed: SSLError"
+        },
+        {
+          "at": "2026-11-26T16:27:42+00:00",
+          "url": "http://www.pcfreetime.com/formatfactory/CN/index.html",
+          "status": "unverified",
+          "reason": "network check failed: SSLError"
+        },
+        {
+          "at": "2026-11-26T16:27:42+00:00",
           "url": "http://www.pcfreetime.com/",
           "status": "unverified",
           "reason": "network check failed: SSLError"
@@ -84859,27 +84643,15 @@
       "fingerprint": "3ab66f6ff996ed3708ed89f40d3a105c66a4da645011f4885b3caaae46d8b932",
       "verification": {
         "status": "unverified",
-        "checked_at": "2026-11-26T16:10:15+00:00",
+        "checked_at": "2026-11-26T16:27:42+00:00",
         "url": "https://diskanalyzer.com/download",
         "reason": "network check failed: ReadTimeout",
         "fingerprint": "3ab66f6ff996ed3708ed89f40d3a105c66a4da645011f4885b3caaae46d8b932"
       },
-      "failures": 2,
-      "next_check_at": "2026-11-26T20:10:15+00:00",
+      "failures": 4,
+      "next_check_at": "2026-11-27T08:27:42+00:00",
       "last_success_at": "2026-11-25T22:09:07+00:00",
       "history": [
-        {
-          "at": "2026-11-17T08:47:51+00:00",
-          "url": "https://diskanalyzer.com/download",
-          "status": "verified",
-          "reason": null
-        },
-        {
-          "at": "2026-11-18T21:06:09+00:00",
-          "url": "https://diskanalyzer.com/download",
-          "status": "verified",
-          "reason": null
-        },
         {
           "at": "2026-11-19T21:11:06+00:00",
           "url": "https://diskanalyzer.com/download",
@@ -84924,6 +84696,18 @@
         },
         {
           "at": "2026-11-26T16:10:15+00:00",
+          "url": "https://diskanalyzer.com/download",
+          "status": "unverified",
+          "reason": "network check failed: ReadTimeout"
+        },
+        {
+          "at": "2026-11-26T16:27:42+00:00",
+          "url": "https://diskanalyzer.com/files/wiztree_4_34_setup.exe",
+          "status": "unverified",
+          "reason": "network check failed: ReadTimeout"
+        },
+        {
+          "at": "2026-11-26T16:27:42+00:00",
           "url": "https://diskanalyzer.com/download",
           "status": "unverified",
           "reason": "network check failed: ReadTimeout"
@@ -95982,122 +95766,6 @@
           "content_type": "application/octet-stream",
           "evidence": "trusted source, download response and platform filename checks",
           "fingerprint": "be4e976066ac1d7aa93ce1d44c9dbbbdc3ff87fd54e8f49b806e7cdd64dd390b"
-        }
-      },
-      "invalidated": []
-    },
-    "termius:mac-universal": {
-      "fingerprint": "fafaa2a240eb143a7cf1920fced0d322bdc642a290b5c43984ac57c02ff14cf9",
-      "verification": {
-        "status": "verified",
-        "checked_at": "2026-11-26T16:10:15+00:00",
-        "url": "https://termius.com/download/macos",
-        "final_url": "https://termius.com/download/macos",
-        "redirects": [
-          "https://termius.com/download/macos"
-        ],
-        "http_status": 200,
-        "valid_until": "2026-12-03T16:10:15+00:00",
-        "filename": "macos",
-        "content_type": "text/html",
-        "evidence": "trusted source, product identity and download/access entry",
-        "fingerprint": "fafaa2a240eb143a7cf1920fced0d322bdc642a290b5c43984ac57c02ff14cf9"
-      },
-      "failures": 0,
-      "next_check_at": "2026-11-27T16:10:15+00:00",
-      "last_success_at": "2026-11-26T16:10:15+00:00",
-      "history": [
-        {
-          "at": "2026-11-16T07:38:31+00:00",
-          "url": "https://termius.com/download/macos",
-          "status": "verified",
-          "reason": null
-        },
-        {
-          "at": "2026-11-17T08:47:51+00:00",
-          "url": "https://termius.com/download/macos",
-          "status": "verified",
-          "reason": null
-        },
-        {
-          "at": "2026-11-18T21:06:09+00:00",
-          "url": "https://termius.com/download/macos",
-          "status": "verified",
-          "reason": null
-        },
-        {
-          "at": "2026-11-19T21:11:06+00:00",
-          "url": "https://termius.com/download/macos",
-          "status": "verified",
-          "reason": null
-        },
-        {
-          "at": "2026-11-20T21:49:50+00:00",
-          "url": "https://termius.com/download/macos",
-          "status": "verified",
-          "reason": null
-        },
-        {
-          "at": "2026-11-22T07:45:25+00:00",
-          "url": "https://termius.com/download/macos",
-          "status": "verified",
-          "reason": null
-        },
-        {
-          "at": "2026-11-23T08:34:45+00:00",
-          "url": "https://termius.com/download/macos",
-          "status": "verified",
-          "reason": null
-        },
-        {
-          "at": "2026-11-24T10:41:14+00:00",
-          "url": "https://termius.com/download/macos",
-          "status": "verified",
-          "reason": null
-        },
-        {
-          "at": "2026-11-25T22:09:07+00:00",
-          "url": "https://termius.com/download/macos",
-          "status": "verified",
-          "reason": null
-        },
-        {
-          "at": "2026-11-26T16:10:15+00:00",
-          "url": "https://termius.com/download/macos",
-          "status": "verified",
-          "reason": null
-        }
-      ],
-      "successes": {
-        "6e664a6411f0d0c16e0f0ec3bab52c5ce8a5032977b472696520dc7cd160c90d": {
-          "status": "verified",
-          "checked_at": "2026-11-25T22:09:07+00:00",
-          "url": "https://termius.com/download/macos",
-          "final_url": "https://termius.com/download/macos",
-          "redirects": [
-            "https://termius.com/download/macos"
-          ],
-          "http_status": 200,
-          "valid_until": "2026-12-02T22:09:07+00:00",
-          "filename": "macos",
-          "content_type": "text/html",
-          "evidence": "trusted source, product identity and download/access entry",
-          "fingerprint": "6e664a6411f0d0c16e0f0ec3bab52c5ce8a5032977b472696520dc7cd160c90d"
-        },
-        "fafaa2a240eb143a7cf1920fced0d322bdc642a290b5c43984ac57c02ff14cf9": {
-          "status": "verified",
-          "checked_at": "2026-11-26T16:10:15+00:00",
-          "url": "https://termius.com/download/macos",
-          "final_url": "https://termius.com/download/macos",
-          "redirects": [
-            "https://termius.com/download/macos"
-          ],
-          "http_status": 200,
-          "valid_until": "2026-12-03T16:10:15+00:00",
-          "filename": "macos",
-          "content_type": "text/html",
-          "evidence": "trusted source, product identity and download/access entry",
-          "fingerprint": "fafaa2a240eb143a7cf1920fced0d322bdc642a290b5c43984ac57c02ff14cf9"
         }
       },
       "invalidated": []
