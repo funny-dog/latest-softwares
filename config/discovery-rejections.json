@@ -1,3 +1,15 @@
 {
-  "rejected": []
+  "rejected": [
+    "winget:AAAInternetPublishing.WTFast",
+    "winget:ABowlOfEleven.NeonPrime",
+    "winget:ABowlOfEleven.hopscout",
+    "winget:ACCloud.UnimailClient",
+    "winget:ACDSystems.ACDSeeGemstone",
+    "winget:ACDSystems.ACDSeePhotoStudio.Home",
+    "winget:ACDSystems.ACDSeePhotoStudio.Professional",
+    "winget:ACDSystems.ACDSeePhotoStudio.Ultimate",
+    "winget:ADATA.SSDToolbox",
+    "winget:ADELA.Devmate",
+    "winget:ADHProject.ADH"
+  ]
 }

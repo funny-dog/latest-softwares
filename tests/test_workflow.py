@@ -230,3 +230,27 @@ def test_publication_exceptions_are_explicit_dispatch_inputs():
     assert "inputs.allow_unverified_required" in check
     assert "inputs.exception_reason" in check
     assert '--allow-unverified-required "$ALLOW_UNVERIFIED_REQUIRED"' in check
+
+
+def test_pr_concurrency_is_isolated_per_pr():
+    """多条 PR（如 Dependabot 并发开多个 PR）不得共用同一 concurrency group 互相取消。"""
+    import yaml
+
+    workflow = yaml.safe_load(WORKFLOW.read_text(encoding="utf-8"))
+    concurrency = workflow["concurrency"]
+    assert "github.event.pull_request.number" in concurrency["group"]
+    assert "sync-latest-software" in concurrency["group"]
+
+
+def test_dependabot_auto_merge_workflow_gates_on_sync_success():
+    import yaml
+
+    auto_merge_path = Path(".github/workflows/dependabot-auto-merge.yml")
+    workflow = yaml.safe_load(auto_merge_path.read_text(encoding="utf-8"))
+    trigger = workflow[True]["workflow_run"]
+    assert trigger["workflows"] == ["Sync Latest Software"]
+    assert trigger["types"] == ["completed"]
+    job = workflow["jobs"]["auto-merge"]
+    assert "github.event.workflow_run.event == 'pull_request'" in job["if"]
+    assert "github.event.workflow_run.conclusion == 'success'" in job["if"]
+    assert "scripts.dependabot_auto_merge" in str(job["steps"])

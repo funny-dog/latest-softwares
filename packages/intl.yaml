@@ -5435,3 +5435,41 @@ packages:
       feed_url: https://windsurf-stable.codeium.com/api/update/linux-x64/stable/latest
   desc_cn: AI 原生代码编辑器，支持 Cascade 智能代理编程
   desc_en: AI-native code editor with Cascade agentic coding assistant
+- id: orca
+  name: Orca
+  category: AI Tools
+  editions:
+  - intl
+  homepage: https://orca.dev
+  fetcher: github_release
+  args:
+    repo: stablyai/orca
+    assets:
+    - platform: win-x64
+      pattern: orca-windows-setup.exe
+    - platform: mac-arm64
+      pattern: orca-macos-arm64.dmg
+    - platform: mac-x64
+      pattern: orca-macos-x64.dmg
+    - platform: linux-x64
+      pattern: orca-linux.AppImage
+    - platform: linux-arm64
+      pattern: orca-linux-arm64.AppImage
+  desc_cn: 使用自有订阅（如 Claude Code、Grok、Codex）编排运行多 AI 代理集群的桌面工具
+  desc_en: Run a fleet of AI bots with your own subscription (e.g. Claude Code, Grok, Codex) across desktop and remote runtimes
+- id: pdf-over
+  name: PDF-Over
+  category: Productivity
+  editions:
+  - intl
+  homepage: https://technology.a-sit.at/en/pdf-over
+  fetcher: package_manifest
+  args:
+    provider: winget
+    package: A-SIT.PDF-Over
+    platforms:
+    - platform: win-x64
+  desc_cn: A-SIT 推出的开源 PDF 电子签名工具（常用于欧洲 ID Austria 数字签名）
+  desc_en: Open-source digital PDF signing tool by A-SIT
+  source_ids:
+    winget: A-SIT.PDF-Over

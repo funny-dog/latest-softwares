@@ -75,8 +75,8 @@ permissions:
   contents: write   # 自动 commit 渲染结果回主分支
 
 concurrency:
-  group: sync-latest-software
-  cancel-in-progress: false
+  group: ${{ github.event_name == 'pull_request' && format('sync-pr-{0}', github.event.pull_request.number) || 'sync-latest-software' }}
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
 
 jobs:
   # ==========================================================================

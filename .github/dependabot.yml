@@ -7,9 +7,8 @@
 #
 # 策略（每月一次，降低噪音；安全更新需在仓库设置开启 Dependabot security updates，
 # 它不受这里的 schedule 限制）：
-#   - pip / npm：minor + patch 分组成单个 PR，major 单独开 PR（便于人工审查破坏性变更）
-#   - github-actions：所有升级（含 major）合成一个 PR —— action 的 major 多为运行时/打包
-#     升级，逐个开 PR 只会堆积；合并前仍会经过 pr-checks。
+#   - pip / npm / github-actions：minor + patch 分组成单个 PR（通过 pr-checks 后可自动
+#     合并）；major 单独开 PR（便于人工审查破坏性变更或未覆盖到的 deploy/discover workflow）。
 version: 2
 updates:
   # ---- Python 依赖 ----
@@ -65,6 +64,9 @@ updates:
       - "dependencies"
       - "github-actions"
     groups:
-      github-actions:
+      github-actions-minor-patch:
         patterns:
           - "*"
+        update-types:
+          - "minor"
+          - "patch"

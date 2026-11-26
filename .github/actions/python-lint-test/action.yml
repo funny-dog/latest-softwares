@@ -106,7 +106,7 @@ runs:
     - name: Test - workflow.yml self-check
       if: ${{ !cancelled() }}
       shell: bash
-      run: python -m pytest tests/test_workflow.py -q
+      run: python -m pytest tests/test_workflow.py tests/test_dependabot_auto_merge.py -q
 
     - name: Compile Python
       if: ${{ !cancelled() }}

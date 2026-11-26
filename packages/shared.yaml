@@ -2570,3 +2570,130 @@ packages:
       - platform: mac
   desc_cn: GOG 官方无 DRM 游戏库与多平台游戏整合启动器
   desc_en: Official DRM-free GOG desktop client and multi-platform game library launcher
+- id: pi
+  name: pi
+  category: AI Tools
+  editions:
+  - cn
+  - intl
+  homepage: https://github.com/earendil-works/pi
+  fetcher: github_release
+  args:
+    repo: earendil-works/pi
+    assets:
+    - platform: win-x64
+      pattern: pi-windows-x64.zip
+    - platform: win-arm64
+      pattern: pi-windows-arm64.zip
+    - platform: mac-arm64
+      pattern: pi-darwin-arm64.tar.gz
+    - platform: mac-x64
+      pattern: pi-darwin-x64.tar.gz
+    - platform: linux-x64
+      pattern: pi-linux-x64.tar.gz
+    - platform: linux-arm64
+      pattern: pi-linux-arm64.tar.gz
+  desc_cn: 开源 AI 编程代理工具包，提供统一 LLM 接口、代理循环与 TUI/CLI
+  desc_en: 'AI agent toolkit: unified LLM API, agent loop, TUI, coding agent CLI'
+- id: rv
+  name: rv
+  category: Developer Tools
+  editions:
+  - cn
+  - intl
+  homepage: https://github.com/A2-ai/rv
+  fetcher: package_manifest
+  args:
+    provider: winget
+    package: A2-Ai.rv
+    platforms:
+    - platform: win-x64
+  desc_cn: 快速、可复现的声明式 R 语言包管理器
+  desc_en: Fast, reproducible, and declarative package manager for R
+  source_ids:
+    winget: A2-Ai.rv
+- id: aas-worldwide-telescope
+  name: AAS WorldWide Telescope
+  category: Utilities
+  editions:
+  - cn
+  - intl
+  homepage: https://worldwidetelescope.org/
+  fetcher: package_manifest
+  args:
+    provider: winget
+    package: AAS.WorldWideTelescope
+    platforms:
+    - platform: win-x64
+  desc_cn: 美国天文学会出品的虚拟天文台与宇宙三维可视化工具
+  desc_en: Virtual telescope and astronomical data visualization tool by AAS
+  source_ids:
+    winget: AAS.WorldWideTelescope
+- id: desktuna
+  name: DeskTuna
+  category: System Utilities
+  editions:
+  - cn
+  - intl
+  homepage: https://desktuna.com
+  fetcher: package_manifest
+  args:
+    provider: winget
+    package: ABKTeknik.DeskTuna
+    platforms:
+    - platform: win-x64
+  desc_cn: 免费无广告的 Windows 桌面图标分区整理工具，支持文件夹映射与布局快照
+  desc_en: Free ad-free Windows desktop organizer that groups icons into smart fences
+  source_ids:
+    winget: ABKTeknik.DeskTuna
+- id: acdsee-free
+  name: ACDSee Free
+  category: Utilities
+  editions:
+  - cn
+  - intl
+  homepage: https://www.acdsee.com/en/products/acdsee-free/
+  fetcher: package_manifest
+  args:
+    provider: winget
+    package: ACDSystems.ACDSee.Free
+    platforms:
+    - platform: win-x64
+  desc_cn: 轻量高速的免费图片浏览与 RAW 图像查看工具
+  desc_en: Fast and lightweight free image viewer supporting RAW formats
+  source_ids:
+    winget: ACDSystems.ACDSee.Free
+- id: downloadhelper-coapp
+  name: DownloadHelper CoApp
+  category: Download Tools
+  editions:
+  - cn
+  - intl
+  homepage: https://www.downloadhelper.net/install-coapp-v2
+  fetcher: package_manifest
+  args:
+    provider: winget
+    package: ACLAP.DownloadHelperCoApp
+    platforms:
+    - platform: win-x64
+  desc_cn: Video DownloadHelper 浏览器扩展官方配套本地转码与下载组件
+  desc_en: Official companion helper app for the Video DownloadHelper browser extension
+  source_ids:
+    winget: ACLAP.DownloadHelperCoApp
+- id: 0patch-agent
+  name: 0patch Agent
+  category: Security & Privacy
+  editions:
+  - cn
+  - intl
+  homepage: https://0patch.com/
+  fetcher: package_manifest
+  args:
+    provider: winget
+    package: ACROSSecurity.0patch
+    platforms:
+    - platform: win-x64
+  desc_cn: 面向 Windows 漏洞的实时内存微补丁安全防护代理
+  desc_en: Real-time in-memory micropatching security agent for Windows vulnerabilities
+  source_ids:
+    winget: ACROSSecurity.0patch
