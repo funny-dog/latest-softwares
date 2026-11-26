@@ -19269,7 +19269,7 @@
       "fingerprint": "8c0cd3397d33e6c9c683e95dbec97309f9ab1c060fb13aa61a86b50ae876acfc",
       "verification": {
         "status": "restricted",
-        "checked_at": "2026-11-26T16:27:42+00:00",
+        "checked_at": "2026-11-26T16:35:21+00:00",
         "url": "https://helpx.adobe.com/cn/photoshop/desktop.html",
         "final_url": "https://helpx.adobe.com/cn/photoshop/desktop.html",
         "redirects": [
@@ -19279,23 +19279,11 @@
         "reason": "upstream requires access or rate limited",
         "fingerprint": "8c0cd3397d33e6c9c683e95dbec97309f9ab1c060fb13aa61a86b50ae876acfc"
       },
-      "failures": 256,
-      "next_check_at": "2026-11-26T22:27:42+00:00",
+      "failures": 258,
+      "next_check_at": "2026-11-26T22:35:21+00:00",
       "last_success_at": null,
       "history": [
         {
-          "at": "2026-11-25T09:32:02+00:00",
-          "url": "https://www.adobe.com/products/photoshop.html",
-          "status": "restricted",
-          "reason": "upstream requires access or rate limited"
-        },
-        {
-          "at": "2026-11-25T09:32:02+00:00",
-          "url": "https://helpx.adobe.com/cn/photoshop/desktop.html",
-          "status": "restricted",
-          "reason": "upstream requires access or rate limited"
-        },
-        {
           "at": "2026-11-25T22:09:07+00:00",
           "url": "https://www.adobe.com/products/photoshop.html",
           "status": "restricted",
@@ -19339,6 +19327,18 @@
         },
         {
           "at": "2026-11-26T16:27:42+00:00",
+          "url": "https://helpx.adobe.com/cn/photoshop/desktop.html",
+          "status": "restricted",
+          "reason": "upstream requires access or rate limited"
+        },
+        {
+          "at": "2026-11-26T16:35:21+00:00",
+          "url": "https://www.adobe.com/products/photoshop.html",
+          "status": "restricted",
+          "reason": "upstream requires access or rate limited"
+        },
+        {
+          "at": "2026-11-26T16:35:21+00:00",
           "url": "https://helpx.adobe.com/cn/photoshop/desktop.html",
           "status": "restricted",
           "reason": "upstream requires access or rate limited"
@@ -19351,7 +19351,7 @@
       "fingerprint": "6381c3bd7ac744036fab4c2fe732b295a03a8690d973f68005681c723cf1b7a5",
       "verification": {
         "status": "restricted",
-        "checked_at": "2026-11-26T16:27:42+00:00",
+        "checked_at": "2026-11-26T16:35:21+00:00",
         "url": "https://helpx.adobe.com/cn/photoshop/desktop.html",
         "final_url": "https://helpx.adobe.com/cn/photoshop/desktop.html",
         "redirects": [
@@ -19361,23 +19361,11 @@
         "reason": "upstream requires access or rate limited",
         "fingerprint": "6381c3bd7ac744036fab4c2fe732b295a03a8690d973f68005681c723cf1b7a5"
       },
-      "failures": 256,
-      "next_check_at": "2026-11-26T22:27:42+00:00",
+      "failures": 258,
+      "next_check_at": "2026-11-26T22:35:21+00:00",
       "last_success_at": null,
       "history": [
         {
-          "at": "2026-11-25T09:32:02+00:00",
-          "url": "https://www.adobe.com/products/photoshop.html",
-          "status": "restricted",
-          "reason": "upstream requires access or rate limited"
-        },
-        {
-          "at": "2026-11-25T09:32:02+00:00",
-          "url": "https://helpx.adobe.com/cn/photoshop/desktop.html",
-          "status": "restricted",
-          "reason": "upstream requires access or rate limited"
-        },
-        {
           "at": "2026-11-25T22:09:07+00:00",
           "url": "https://www.adobe.com/products/photoshop.html",
           "status": "restricted",
@@ -19421,6 +19409,18 @@
         },
         {
           "at": "2026-11-26T16:27:42+00:00",
+          "url": "https://helpx.adobe.com/cn/photoshop/desktop.html",
+          "status": "restricted",
+          "reason": "upstream requires access or rate limited"
+        },
+        {
+          "at": "2026-11-26T16:35:21+00:00",
+          "url": "https://www.adobe.com/products/photoshop.html",
+          "status": "restricted",
+          "reason": "upstream requires access or rate limited"
+        },
+        {
+          "at": "2026-11-26T16:35:21+00:00",
           "url": "https://helpx.adobe.com/cn/photoshop/desktop.html",
           "status": "restricted",
           "reason": "upstream requires access or rate limited"
@@ -26572,7 +26572,7 @@
       "fingerprint": "ad81577b3ba7912068a2495e883c7aad0212b572888d9d99e7e526d61ebf8986",
       "verification": {
         "status": "unverified",
-        "checked_at": "2026-11-26T16:27:42+00:00",
+        "checked_at": "2026-11-26T16:35:21+00:00",
         "url": "https://xinghuo.xfyun.cn/",
         "final_url": "https://xinghuo.xfyun.cn/",
         "redirects": [
@@ -26582,23 +26582,11 @@
         "reason": "download/access entry not found on page",
         "fingerprint": "ad81577b3ba7912068a2495e883c7aad0212b572888d9d99e7e526d61ebf8986"
       },
-      "failures": 258,
-      "next_check_at": "2026-11-27T08:27:42+00:00",
+      "failures": 260,
+      "next_check_at": "2026-11-27T08:35:21+00:00",
       "last_success_at": null,
       "history": [
         {
-          "at": "2026-11-25T09:32:02+00:00",
-          "url": "https://xinghuo.xfyun.cn/download",
-          "status": "unverified",
-          "reason": "download/access entry not found on page"
-        },
-        {
-          "at": "2026-11-25T09:32:02+00:00",
-          "url": "https://xinghuo.xfyun.cn/",
-          "status": "unverified",
-          "reason": "download/access entry not found on page"
-        },
-        {
           "at": "2026-11-25T22:09:07+00:00",
           "url": "https://xinghuo.xfyun.cn/download",
           "status": "unverified",
@@ -26642,6 +26630,18 @@
         },
         {
           "at": "2026-11-26T16:27:42+00:00",
+          "url": "https://xinghuo.xfyun.cn/",
+          "status": "unverified",
+          "reason": "download/access entry not found on page"
+        },
+        {
+          "at": "2026-11-26T16:35:21+00:00",
+          "url": "https://xinghuo.xfyun.cn/download",
+          "status": "unverified",
+          "reason": "download/access entry not found on page"
+        },
+        {
+          "at": "2026-11-26T16:35:21+00:00",
           "url": "https://xinghuo.xfyun.cn/",
           "status": "unverified",
           "reason": "download/access entry not found on page"
@@ -26654,7 +26654,7 @@
       "fingerprint": "640c1a6e2446bf83962d54fcfd2d8c170d7cc0108401566780e08322f12734fc",
       "verification": {
         "status": "unverified",
-        "checked_at": "2026-11-26T16:27:42+00:00",
+        "checked_at": "2026-11-26T16:35:21+00:00",
         "url": "https://xinghuo.xfyun.cn/",
         "final_url": "https://xinghuo.xfyun.cn/",
         "redirects": [
@@ -26664,23 +26664,11 @@
         "reason": "download/access entry not found on page",
         "fingerprint": "640c1a6e2446bf83962d54fcfd2d8c170d7cc0108401566780e08322f12734fc"
       },
-      "failures": 258,
-      "next_check_at": "2026-11-27T08:27:42+00:00",
+      "failures": 260,
+      "next_check_at": "2026-11-27T08:35:21+00:00",
       "last_success_at": null,
       "history": [
         {
-          "at": "2026-11-25T09:32:02+00:00",
-          "url": "https://xinghuo.xfyun.cn/download",
-          "status": "unverified",
-          "reason": "download/access entry not found on page"
-        },
-        {
-          "at": "2026-11-25T09:32:02+00:00",
-          "url": "https://xinghuo.xfyun.cn/",
-          "status": "unverified",
-          "reason": "download/access entry not found on page"
-        },
-        {
           "at": "2026-11-25T22:09:07+00:00",
           "url": "https://xinghuo.xfyun.cn/download",
           "status": "unverified",
@@ -26724,6 +26712,18 @@
         },
         {
           "at": "2026-11-26T16:27:42+00:00",
+          "url": "https://xinghuo.xfyun.cn/",
+          "status": "unverified",
+          "reason": "download/access entry not found on page"
+        },
+        {
+          "at": "2026-11-26T16:35:21+00:00",
+          "url": "https://xinghuo.xfyun.cn/download",
+          "status": "unverified",
+          "reason": "download/access entry not found on page"
+        },
+        {
+          "at": "2026-11-26T16:35:21+00:00",
           "url": "https://xinghuo.xfyun.cn/",
           "status": "unverified",
           "reason": "download/access entry not found on page"
@@ -27086,7 +27086,7 @@
       "fingerprint": "e0b20559c1b46aedb012dd3d086026284b50be2e96da45d5a167d8a8cff6281a",
       "verification": {
         "status": "unverified",
-        "checked_at": "2026-11-26T16:27:42+00:00",
+        "checked_at": "2026-11-26T16:35:21+00:00",
         "url": "https://www.iqiyi.com/",
         "final_url": "https://www.iqiyi.com/",
         "redirects": [
@@ -27096,22 +27096,10 @@
         "reason": "download/access entry not found on page",
         "fingerprint": "e0b20559c1b46aedb012dd3d086026284b50be2e96da45d5a167d8a8cff6281a"
       },
-      "failures": 4,
-      "next_check_at": "2026-11-27T08:27:42+00:00",
+      "failures": 6,
+      "next_check_at": "2026-11-27T08:35:21+00:00",
       "last_success_at": "2026-11-25T22:09:07+00:00",
       "history": [
-        {
-          "at": "2026-11-19T21:11:06+00:00",
-          "url": "https://app.iqiyi.com/",
-          "status": "verified",
-          "reason": null
-        },
-        {
-          "at": "2026-11-20T21:49:50+00:00",
-          "url": "https://app.iqiyi.com/",
-          "status": "verified",
-          "reason": null
-        },
         {
           "at": "2026-11-22T07:45:25+00:00",
           "url": "https://app.iqiyi.com/",
@@ -27156,6 +27144,18 @@
         },
         {
           "at": "2026-11-26T16:27:42+00:00",
+          "url": "https://www.iqiyi.com/",
+          "status": "unverified",
+          "reason": "download/access entry not found on page"
+        },
+        {
+          "at": "2026-11-26T16:35:21+00:00",
+          "url": "https://mesh.if.iqiyi.com/player/upgrade/file/14.9.5.10287/IQIYIsetup_winget.exe",
+          "status": "unverified",
+          "reason": "redirect host needs review"
+        },
+        {
+          "at": "2026-11-26T16:35:21+00:00",
           "url": "https://www.iqiyi.com/",
           "status": "unverified",
           "reason": "download/access entry not found on page"
@@ -28857,7 +28857,7 @@
       "fingerprint": "0e09fe3605642fd7d596568969d186b9f88d6ea2b49a0682a84600a87db26ab0",
       "verification": {
         "status": "transient",
-        "checked_at": "2026-11-26T16:27:42+00:00",
+        "checked_at": "2026-11-26T16:35:21+00:00",
         "url": "https://www.kuwo.cn/",
         "final_url": "https://www.kuwo.cn/",
         "redirects": [
@@ -28867,23 +28867,11 @@
         "reason": "HTTP 500",
         "fingerprint": "0e09fe3605642fd7d596568969d186b9f88d6ea2b49a0682a84600a87db26ab0"
       },
-      "failures": 258,
-      "next_check_at": "2026-11-27T08:27:42+00:00",
+      "failures": 260,
+      "next_check_at": "2026-11-27T08:35:21+00:00",
       "last_success_at": null,
       "history": [
         {
-          "at": "2026-11-25T09:32:02+00:00",
-          "url": "https://www.kuwo.cn/download",
-          "status": "transient",
-          "reason": "HTTP 500"
-        },
-        {
-          "at": "2026-11-25T09:32:02+00:00",
-          "url": "https://www.kuwo.cn/",
-          "status": "transient",
-          "reason": "HTTP 500"
-        },
-        {
           "at": "2026-11-25T22:09:07+00:00",
           "url": "https://www.kuwo.cn/download",
           "status": "transient",
@@ -28927,6 +28915,18 @@
         },
         {
           "at": "2026-11-26T16:27:42+00:00",
+          "url": "https://www.kuwo.cn/",
+          "status": "transient",
+          "reason": "HTTP 500"
+        },
+        {
+          "at": "2026-11-26T16:35:21+00:00",
+          "url": "https://www.kuwo.cn/download",
+          "status": "transient",
+          "reason": "HTTP 500"
+        },
+        {
+          "at": "2026-11-26T16:35:21+00:00",
           "url": "https://www.kuwo.cn/",
           "status": "transient",
           "reason": "HTTP 500"
@@ -29563,28 +29563,16 @@
       "fingerprint": "b145d0cd63a348f954c8f57ca1e7ae489d75dde808c2ca65b35c2e3700efffd6",
       "verification": {
         "status": "unverified",
-        "checked_at": "2026-11-26T16:27:42+00:00",
+        "checked_at": "2026-11-26T16:35:21+00:00",
         "url": "http://www.pcfreetime.com/",
         "reason": "network check failed: SSLError",
         "fingerprint": "b145d0cd63a348f954c8f57ca1e7ae489d75dde808c2ca65b35c2e3700efffd6"
       },
-      "failures": 16,
-      "next_check_at": "2026-11-27T08:27:42+00:00",
+      "failures": 18,
+      "next_check_at": "2026-11-27T08:35:21+00:00",
       "last_success_at": "2026-11-18T21:06:09+00:00",
       "history": [
         {
-          "at": "2026-11-24T00:35:36+00:00",
-          "url": "http://www.pcfreetime.com/formatfactory/CN/index.html",
-          "status": "unverified",
-          "reason": "network check failed: SSLError"
-        },
-        {
-          "at": "2026-11-24T22:54:56+00:00",
-          "url": "http://www.pcfreetime.com/formatfactory/CN/index.html",
-          "status": "unverified",
-          "reason": "network check failed: SSLError"
-        },
-        {
           "at": "2026-11-25T22:09:07+00:00",
           "url": "http://www.pcfreetime.com/formatfactory/CN/index.html",
           "status": "unverified",
@@ -29628,6 +29616,18 @@
         },
         {
           "at": "2026-11-26T16:27:42+00:00",
+          "url": "http://www.pcfreetime.com/",
+          "status": "unverified",
+          "reason": "network check failed: SSLError"
+        },
+        {
+          "at": "2026-11-26T16:35:21+00:00",
+          "url": "http://www.pcfreetime.com/formatfactory/CN/index.html",
+          "status": "unverified",
+          "reason": "network check failed: SSLError"
+        },
+        {
+          "at": "2026-11-26T16:35:21+00:00",
           "url": "http://www.pcfreetime.com/",
           "status": "unverified",
           "reason": "network check failed: SSLError"
@@ -84643,27 +84643,15 @@
       "fingerprint": "3ab66f6ff996ed3708ed89f40d3a105c66a4da645011f4885b3caaae46d8b932",
       "verification": {
         "status": "unverified",
-        "checked_at": "2026-11-26T16:27:42+00:00",
+        "checked_at": "2026-11-26T16:35:21+00:00",
         "url": "https://diskanalyzer.com/download",
         "reason": "network check failed: ReadTimeout",
         "fingerprint": "3ab66f6ff996ed3708ed89f40d3a105c66a4da645011f4885b3caaae46d8b932"
       },
-      "failures": 4,
-      "next_check_at": "2026-11-27T08:27:42+00:00",
+      "failures": 6,
+      "next_check_at": "2026-11-27T08:35:21+00:00",
       "last_success_at": "2026-11-25T22:09:07+00:00",
       "history": [
-        {
-          "at": "2026-11-19T21:11:06+00:00",
-          "url": "https://diskanalyzer.com/download",
-          "status": "verified",
-          "reason": null
-        },
-        {
-          "at": "2026-11-20T21:49:50+00:00",
-          "url": "https://diskanalyzer.com/download",
-          "status": "verified",
-          "reason": null
-        },
         {
           "at": "2026-11-22T07:45:25+00:00",
           "url": "https://diskanalyzer.com/download",
@@ -84708,6 +84696,18 @@
         },
         {
           "at": "2026-11-26T16:27:42+00:00",
+          "url": "https://diskanalyzer.com/download",
+          "status": "unverified",
+          "reason": "network check failed: ReadTimeout"
+        },
+        {
+          "at": "2026-11-26T16:35:21+00:00",
+          "url": "https://diskanalyzer.com/files/wiztree_4_34_setup.exe",
+          "status": "unverified",
+          "reason": "network check failed: ReadTimeout"
+        },
+        {
+          "at": "2026-11-26T16:35:21+00:00",
           "url": "https://diskanalyzer.com/download",
           "status": "unverified",
           "reason": "network check failed: ReadTimeout"
@@ -144949,6 +144949,878 @@
           "content_type": "application/octet-stream",
           "evidence": "trusted source, download response and platform filename checks",
           "fingerprint": "3fbb4564b09853b350e0f525e5b15f3df43d6315327ae3619e79e39b25f9815d"
+        }
+      },
+      "invalidated": []
+    },
+    "orca:win-x64": {
+      "fingerprint": "e38348b0a7db289c05ec394add1c7f66e13657866199987fe723031149fffc78",
+      "verification": {
+        "status": "verified",
+        "checked_at": "2026-11-26T16:35:21+00:00",
+        "url": "https://github.com/stablyai/orca/releases/download/v1.4.278/orca-windows-setup.exe",
+        "final_url": "https://release-assets.githubusercontent.com/github-production-release-asset/1183888342/cc6444dd-9537-4ec4-8eec-71f8ba786958?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-11-26T17%3A31%3A21Z&rscd=attachment%3B+filename%3Dorca-windows-setup.exe&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-11-26T16%3A31%3A04Z&ske=2026-11-26T17%3A31%3A21Z&sks=b&skv=2018-11-09&sig=MuZ6CezW2o76DX853PbVANpHg9qYN9urgb7JRQq3Mio%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc5NTcxNDUyMSwibmJmIjoxNzk1NzEwOTIxLCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.emCJtg1T-1UZkKcSL6q5jKcrgCdnznRgBdrCRbRtebM&response-content-disposition=attachment%3B%20filename%3Dorca-windows-setup.exe&response-content-type=application%2Foctet-stream",
+        "redirects": [
+          "https://github.com/stablyai/orca/releases/download/v1.4.278/orca-windows-setup.exe",
+          "https://release-assets.githubusercontent.com/github-production-release-asset/1183888342/cc6444dd-9537-4ec4-8eec-71f8ba786958?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-11-26T17%3A31%3A21Z&rscd=attachment%3B+filename%3Dorca-windows-setup.exe&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-11-26T16%3A31%3A04Z&ske=2026-11-26T17%3A31%3A21Z&sks=b&skv=2018-11-09&sig=MuZ6CezW2o76DX853PbVANpHg9qYN9urgb7JRQq3Mio%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc5NTcxNDUyMSwibmJmIjoxNzk1NzEwOTIxLCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.emCJtg1T-1UZkKcSL6q5jKcrgCdnznRgBdrCRbRtebM&response-content-disposition=attachment%3B%20filename%3Dorca-windows-setup.exe&response-content-type=application%2Foctet-stream"
+        ],
+        "http_status": 206,
+        "valid_until": "2026-12-03T16:35:21+00:00",
+        "filename": "orca-windows-setup.exe",
+        "content_type": "application/octet-stream",
+        "evidence": "trusted source, download response and platform filename checks",
+        "fingerprint": "e38348b0a7db289c05ec394add1c7f66e13657866199987fe723031149fffc78"
+      },
+      "failures": 0,
+      "next_check_at": "2026-11-27T16:35:21+00:00",
+      "last_success_at": "2026-11-26T16:35:21+00:00",
+      "history": [
+        {
+          "at": "2026-11-26T16:35:21+00:00",
+          "url": "https://github.com/stablyai/orca/releases/download/v1.4.278/orca-windows-setup.exe",
+          "status": "verified",
+          "reason": null
+        }
+      ],
+      "successes": {
+        "e38348b0a7db289c05ec394add1c7f66e13657866199987fe723031149fffc78": {
+          "status": "verified",
+          "checked_at": "2026-11-26T16:35:21+00:00",
+          "url": "https://github.com/stablyai/orca/releases/download/v1.4.278/orca-windows-setup.exe",
+          "final_url": "https://release-assets.githubusercontent.com/github-production-release-asset/1183888342/cc6444dd-9537-4ec4-8eec-71f8ba786958?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-11-26T17%3A31%3A21Z&rscd=attachment%3B+filename%3Dorca-windows-setup.exe&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-11-26T16%3A31%3A04Z&ske=2026-11-26T17%3A31%3A21Z&sks=b&skv=2018-11-09&sig=MuZ6CezW2o76DX853PbVANpHg9qYN9urgb7JRQq3Mio%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc5NTcxNDUyMSwibmJmIjoxNzk1NzEwOTIxLCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.emCJtg1T-1UZkKcSL6q5jKcrgCdnznRgBdrCRbRtebM&response-content-disposition=attachment%3B%20filename%3Dorca-windows-setup.exe&response-content-type=application%2Foctet-stream",
+          "redirects": [
+            "https://github.com/stablyai/orca/releases/download/v1.4.278/orca-windows-setup.exe",
+            "https://release-assets.githubusercontent.com/github-production-release-asset/1183888342/cc6444dd-9537-4ec4-8eec-71f8ba786958?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-11-26T17%3A31%3A21Z&rscd=attachment%3B+filename%3Dorca-windows-setup.exe&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-11-26T16%3A31%3A04Z&ske=2026-11-26T17%3A31%3A21Z&sks=b&skv=2018-11-09&sig=MuZ6CezW2o76DX853PbVANpHg9qYN9urgb7JRQq3Mio%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc5NTcxNDUyMSwibmJmIjoxNzk1NzEwOTIxLCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.emCJtg1T-1UZkKcSL6q5jKcrgCdnznRgBdrCRbRtebM&response-content-disposition=attachment%3B%20filename%3Dorca-windows-setup.exe&response-content-type=application%2Foctet-stream"
+          ],
+          "http_status": 206,
+          "valid_until": "2026-12-03T16:35:21+00:00",
+          "filename": "orca-windows-setup.exe",
+          "content_type": "application/octet-stream",
+          "evidence": "trusted source, download response and platform filename checks",
+          "fingerprint": "e38348b0a7db289c05ec394add1c7f66e13657866199987fe723031149fffc78"
+        }
+      },
+      "invalidated": []
+    },
+    "orca:mac-arm64": {
+      "fingerprint": "3beeabd21528cda5ab6bf6ca6b21ef54dd4c4b09fce77387aab96c89a5590588",
+      "verification": {
+        "status": "verified",
+        "checked_at": "2026-11-26T16:35:21+00:00",
+        "url": "https://github.com/stablyai/orca/releases/download/v1.4.278/orca-macos-arm64.dmg",
+        "final_url": "https://release-assets.githubusercontent.com/github-production-release-asset/1183888342/5e6f1bf8-7fcb-4385-8b53-53c9fcfd954d?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-11-26T17%3A31%3A33Z&rscd=attachment%3B+filename%3Dorca-macos-arm64.dmg&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-11-26T16%3A31%3A06Z&ske=2026-11-26T17%3A31%3A33Z&sks=b&skv=2018-11-09&sig=Ru6Nc%2FZhivbaTmBYRLvjCrfVDFxx87o69Q%2BP47pcPBc%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc5NTcxNDUyMiwibmJmIjoxNzk1NzEwOTIyLCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.mHS8T657N3Sf5LSe4S7Rj2utB4UqXo93sJ-UrRrktvA&response-content-disposition=attachment%3B%20filename%3Dorca-macos-arm64.dmg&response-content-type=application%2Foctet-stream",
+        "redirects": [
+          "https://github.com/stablyai/orca/releases/download/v1.4.278/orca-macos-arm64.dmg",
+          "https://release-assets.githubusercontent.com/github-production-release-asset/1183888342/5e6f1bf8-7fcb-4385-8b53-53c9fcfd954d?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-11-26T17%3A31%3A33Z&rscd=attachment%3B+filename%3Dorca-macos-arm64.dmg&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-11-26T16%3A31%3A06Z&ske=2026-11-26T17%3A31%3A33Z&sks=b&skv=2018-11-09&sig=Ru6Nc%2FZhivbaTmBYRLvjCrfVDFxx87o69Q%2BP47pcPBc%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc5NTcxNDUyMiwibmJmIjoxNzk1NzEwOTIyLCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.mHS8T657N3Sf5LSe4S7Rj2utB4UqXo93sJ-UrRrktvA&response-content-disposition=attachment%3B%20filename%3Dorca-macos-arm64.dmg&response-content-type=application%2Foctet-stream"
+        ],
+        "http_status": 206,
+        "valid_until": "2026-12-03T16:35:21+00:00",
+        "filename": "orca-macos-arm64.dmg",
+        "content_type": "application/octet-stream",
+        "evidence": "trusted source, download response and platform filename checks",
+        "fingerprint": "3beeabd21528cda5ab6bf6ca6b21ef54dd4c4b09fce77387aab96c89a5590588"
+      },
+      "failures": 0,
+      "next_check_at": "2026-11-27T16:35:21+00:00",
+      "last_success_at": "2026-11-26T16:35:21+00:00",
+      "history": [
+        {
+          "at": "2026-11-26T16:35:21+00:00",
+          "url": "https://github.com/stablyai/orca/releases/download/v1.4.278/orca-macos-arm64.dmg",
+          "status": "verified",
+          "reason": null
+        }
+      ],
+      "successes": {
+        "3beeabd21528cda5ab6bf6ca6b21ef54dd4c4b09fce77387aab96c89a5590588": {
+          "status": "verified",
+          "checked_at": "2026-11-26T16:35:21+00:00",
+          "url": "https://github.com/stablyai/orca/releases/download/v1.4.278/orca-macos-arm64.dmg",
+          "final_url": "https://release-assets.githubusercontent.com/github-production-release-asset/1183888342/5e6f1bf8-7fcb-4385-8b53-53c9fcfd954d?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-11-26T17%3A31%3A33Z&rscd=attachment%3B+filename%3Dorca-macos-arm64.dmg&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-11-26T16%3A31%3A06Z&ske=2026-11-26T17%3A31%3A33Z&sks=b&skv=2018-11-09&sig=Ru6Nc%2FZhivbaTmBYRLvjCrfVDFxx87o69Q%2BP47pcPBc%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc5NTcxNDUyMiwibmJmIjoxNzk1NzEwOTIyLCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.mHS8T657N3Sf5LSe4S7Rj2utB4UqXo93sJ-UrRrktvA&response-content-disposition=attachment%3B%20filename%3Dorca-macos-arm64.dmg&response-content-type=application%2Foctet-stream",
+          "redirects": [
+            "https://github.com/stablyai/orca/releases/download/v1.4.278/orca-macos-arm64.dmg",
+            "https://release-assets.githubusercontent.com/github-production-release-asset/1183888342/5e6f1bf8-7fcb-4385-8b53-53c9fcfd954d?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-11-26T17%3A31%3A33Z&rscd=attachment%3B+filename%3Dorca-macos-arm64.dmg&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-11-26T16%3A31%3A06Z&ske=2026-11-26T17%3A31%3A33Z&sks=b&skv=2018-11-09&sig=Ru6Nc%2FZhivbaTmBYRLvjCrfVDFxx87o69Q%2BP47pcPBc%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc5NTcxNDUyMiwibmJmIjoxNzk1NzEwOTIyLCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.mHS8T657N3Sf5LSe4S7Rj2utB4UqXo93sJ-UrRrktvA&response-content-disposition=attachment%3B%20filename%3Dorca-macos-arm64.dmg&response-content-type=application%2Foctet-stream"
+          ],
+          "http_status": 206,
+          "valid_until": "2026-12-03T16:35:21+00:00",
+          "filename": "orca-macos-arm64.dmg",
+          "content_type": "application/octet-stream",
+          "evidence": "trusted source, download response and platform filename checks",
+          "fingerprint": "3beeabd21528cda5ab6bf6ca6b21ef54dd4c4b09fce77387aab96c89a5590588"
+        }
+      },
+      "invalidated": []
+    },
+    "orca:mac-x64": {
+      "fingerprint": "ac2704a0bbbf77aa97b33dfe59de2f209d7d435fbdaba22915db11bad9f0bf4f",
+      "verification": {
+        "status": "verified",
+        "checked_at": "2026-11-26T16:35:21+00:00",
+        "url": "https://github.com/stablyai/orca/releases/download/v1.4.278/orca-macos-x64.dmg",
+        "final_url": "https://release-assets.githubusercontent.com/github-production-release-asset/1183888342/8cd8ba67-19d4-4ef0-90b5-de0f9d159a87?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-11-26T17%3A16%3A42Z&rscd=attachment%3B+filename%3Dorca-macos-x64.dmg&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-11-26T16%3A16%3A35Z&ske=2026-11-26T17%3A16%3A42Z&sks=b&skv=2018-11-09&sig=8G6RjFu6MySJrxXlUq18JV4a9m5mxQxYQolDojgMlMA%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc5NTcxNDUyMiwibmJmIjoxNzk1NzEwOTIyLCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.mHS8T657N3Sf5LSe4S7Rj2utB4UqXo93sJ-UrRrktvA&response-content-disposition=attachment%3B%20filename%3Dorca-macos-x64.dmg&response-content-type=application%2Foctet-stream",
+        "redirects": [
+          "https://github.com/stablyai/orca/releases/download/v1.4.278/orca-macos-x64.dmg",
+          "https://release-assets.githubusercontent.com/github-production-release-asset/1183888342/8cd8ba67-19d4-4ef0-90b5-de0f9d159a87?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-11-26T17%3A16%3A42Z&rscd=attachment%3B+filename%3Dorca-macos-x64.dmg&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-11-26T16%3A16%3A35Z&ske=2026-11-26T17%3A16%3A42Z&sks=b&skv=2018-11-09&sig=8G6RjFu6MySJrxXlUq18JV4a9m5mxQxYQolDojgMlMA%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc5NTcxNDUyMiwibmJmIjoxNzk1NzEwOTIyLCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.mHS8T657N3Sf5LSe4S7Rj2utB4UqXo93sJ-UrRrktvA&response-content-disposition=attachment%3B%20filename%3Dorca-macos-x64.dmg&response-content-type=application%2Foctet-stream"
+        ],
+        "http_status": 206,
+        "valid_until": "2026-12-03T16:35:21+00:00",
+        "filename": "orca-macos-x64.dmg",
+        "content_type": "application/octet-stream",
+        "evidence": "trusted source, download response and platform filename checks",
+        "fingerprint": "ac2704a0bbbf77aa97b33dfe59de2f209d7d435fbdaba22915db11bad9f0bf4f"
+      },
+      "failures": 0,
+      "next_check_at": "2026-11-27T16:35:21+00:00",
+      "last_success_at": "2026-11-26T16:35:21+00:00",
+      "history": [
+        {
+          "at": "2026-11-26T16:35:21+00:00",
+          "url": "https://github.com/stablyai/orca/releases/download/v1.4.278/orca-macos-x64.dmg",
+          "status": "verified",
+          "reason": null
+        }
+      ],
+      "successes": {
+        "ac2704a0bbbf77aa97b33dfe59de2f209d7d435fbdaba22915db11bad9f0bf4f": {
+          "status": "verified",
+          "checked_at": "2026-11-26T16:35:21+00:00",
+          "url": "https://github.com/stablyai/orca/releases/download/v1.4.278/orca-macos-x64.dmg",
+          "final_url": "https://release-assets.githubusercontent.com/github-production-release-asset/1183888342/8cd8ba67-19d4-4ef0-90b5-de0f9d159a87?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-11-26T17%3A16%3A42Z&rscd=attachment%3B+filename%3Dorca-macos-x64.dmg&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-11-26T16%3A16%3A35Z&ske=2026-11-26T17%3A16%3A42Z&sks=b&skv=2018-11-09&sig=8G6RjFu6MySJrxXlUq18JV4a9m5mxQxYQolDojgMlMA%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc5NTcxNDUyMiwibmJmIjoxNzk1NzEwOTIyLCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.mHS8T657N3Sf5LSe4S7Rj2utB4UqXo93sJ-UrRrktvA&response-content-disposition=attachment%3B%20filename%3Dorca-macos-x64.dmg&response-content-type=application%2Foctet-stream",
+          "redirects": [
+            "https://github.com/stablyai/orca/releases/download/v1.4.278/orca-macos-x64.dmg",
+            "https://release-assets.githubusercontent.com/github-production-release-asset/1183888342/8cd8ba67-19d4-4ef0-90b5-de0f9d159a87?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-11-26T17%3A16%3A42Z&rscd=attachment%3B+filename%3Dorca-macos-x64.dmg&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-11-26T16%3A16%3A35Z&ske=2026-11-26T17%3A16%3A42Z&sks=b&skv=2018-11-09&sig=8G6RjFu6MySJrxXlUq18JV4a9m5mxQxYQolDojgMlMA%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc5NTcxNDUyMiwibmJmIjoxNzk1NzEwOTIyLCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.mHS8T657N3Sf5LSe4S7Rj2utB4UqXo93sJ-UrRrktvA&response-content-disposition=attachment%3B%20filename%3Dorca-macos-x64.dmg&response-content-type=application%2Foctet-stream"
+          ],
+          "http_status": 206,
+          "valid_until": "2026-12-03T16:35:21+00:00",
+          "filename": "orca-macos-x64.dmg",
+          "content_type": "application/octet-stream",
+          "evidence": "trusted source, download response and platform filename checks",
+          "fingerprint": "ac2704a0bbbf77aa97b33dfe59de2f209d7d435fbdaba22915db11bad9f0bf4f"
+        }
+      },
+      "invalidated": []
+    },
+    "orca:linux-x64": {
+      "fingerprint": "a9ebe38285949a45d10fcef5f410b81c7868d86642956fb091cec571b53ac80a",
+      "verification": {
+        "status": "verified",
+        "checked_at": "2026-11-26T16:35:21+00:00",
+        "url": "https://github.com/stablyai/orca/releases/download/v1.4.278/orca-linux.AppImage",
+        "final_url": "https://release-assets.githubusercontent.com/github-production-release-asset/1183888342/4edcfafb-dac0-4912-89a5-6e7c0ec05f5c?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-11-26T17%3A31%3A57Z&rscd=attachment%3B+filename%3Dorca-linux.AppImage&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-11-26T16%3A31%3A32Z&ske=2026-11-26T17%3A31%3A57Z&sks=b&skv=2018-11-09&sig=CtCb6IBXdsKVU1wPwTeyZYbnfjRjjFZP4AogkcMA%2FOI%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc5NTcxNDUyMiwibmJmIjoxNzk1NzEwOTIyLCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.mHS8T657N3Sf5LSe4S7Rj2utB4UqXo93sJ-UrRrktvA&response-content-disposition=attachment%3B%20filename%3Dorca-linux.AppImage&response-content-type=application%2Foctet-stream",
+        "redirects": [
+          "https://github.com/stablyai/orca/releases/download/v1.4.278/orca-linux.AppImage",
+          "https://release-assets.githubusercontent.com/github-production-release-asset/1183888342/4edcfafb-dac0-4912-89a5-6e7c0ec05f5c?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-11-26T17%3A31%3A57Z&rscd=attachment%3B+filename%3Dorca-linux.AppImage&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-11-26T16%3A31%3A32Z&ske=2026-11-26T17%3A31%3A57Z&sks=b&skv=2018-11-09&sig=CtCb6IBXdsKVU1wPwTeyZYbnfjRjjFZP4AogkcMA%2FOI%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc5NTcxNDUyMiwibmJmIjoxNzk1NzEwOTIyLCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.mHS8T657N3Sf5LSe4S7Rj2utB4UqXo93sJ-UrRrktvA&response-content-disposition=attachment%3B%20filename%3Dorca-linux.AppImage&response-content-type=application%2Foctet-stream"
+        ],
+        "http_status": 206,
+        "valid_until": "2026-12-03T16:35:21+00:00",
+        "filename": "orca-linux.AppImage",
+        "content_type": "application/octet-stream",
+        "evidence": "trusted source, download response and platform filename checks",
+        "fingerprint": "a9ebe38285949a45d10fcef5f410b81c7868d86642956fb091cec571b53ac80a"
+      },
+      "failures": 0,
+      "next_check_at": "2026-11-27T16:35:21+00:00",
+      "last_success_at": "2026-11-26T16:35:21+00:00",
+      "history": [
+        {
+          "at": "2026-11-26T16:35:21+00:00",
+          "url": "https://github.com/stablyai/orca/releases/download/v1.4.278/orca-linux.AppImage",
+          "status": "verified",
+          "reason": null
+        }
+      ],
+      "successes": {
+        "a9ebe38285949a45d10fcef5f410b81c7868d86642956fb091cec571b53ac80a": {
+          "status": "verified",
+          "checked_at": "2026-11-26T16:35:21+00:00",
+          "url": "https://github.com/stablyai/orca/releases/download/v1.4.278/orca-linux.AppImage",
+          "final_url": "https://release-assets.githubusercontent.com/github-production-release-asset/1183888342/4edcfafb-dac0-4912-89a5-6e7c0ec05f5c?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-11-26T17%3A31%3A57Z&rscd=attachment%3B+filename%3Dorca-linux.AppImage&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-11-26T16%3A31%3A32Z&ske=2026-11-26T17%3A31%3A57Z&sks=b&skv=2018-11-09&sig=CtCb6IBXdsKVU1wPwTeyZYbnfjRjjFZP4AogkcMA%2FOI%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc5NTcxNDUyMiwibmJmIjoxNzk1NzEwOTIyLCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.mHS8T657N3Sf5LSe4S7Rj2utB4UqXo93sJ-UrRrktvA&response-content-disposition=attachment%3B%20filename%3Dorca-linux.AppImage&response-content-type=application%2Foctet-stream",
+          "redirects": [
+            "https://github.com/stablyai/orca/releases/download/v1.4.278/orca-linux.AppImage",
+            "https://release-assets.githubusercontent.com/github-production-release-asset/1183888342/4edcfafb-dac0-4912-89a5-6e7c0ec05f5c?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-11-26T17%3A31%3A57Z&rscd=attachment%3B+filename%3Dorca-linux.AppImage&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-11-26T16%3A31%3A32Z&ske=2026-11-26T17%3A31%3A57Z&sks=b&skv=2018-11-09&sig=CtCb6IBXdsKVU1wPwTeyZYbnfjRjjFZP4AogkcMA%2FOI%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc5NTcxNDUyMiwibmJmIjoxNzk1NzEwOTIyLCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.mHS8T657N3Sf5LSe4S7Rj2utB4UqXo93sJ-UrRrktvA&response-content-disposition=attachment%3B%20filename%3Dorca-linux.AppImage&response-content-type=application%2Foctet-stream"
+          ],
+          "http_status": 206,
+          "valid_until": "2026-12-03T16:35:21+00:00",
+          "filename": "orca-linux.AppImage",
+          "content_type": "application/octet-stream",
+          "evidence": "trusted source, download response and platform filename checks",
+          "fingerprint": "a9ebe38285949a45d10fcef5f410b81c7868d86642956fb091cec571b53ac80a"
+        }
+      },
+      "invalidated": []
+    },
+    "orca:linux-arm64": {
+      "fingerprint": "4bdb59937f863be30eb6229bf272c548308ebb2b039db4156e9d1c49befd591c",
+      "verification": {
+        "status": "verified",
+        "checked_at": "2026-11-26T16:35:21+00:00",
+        "url": "https://github.com/stablyai/orca/releases/download/v1.4.278/orca-linux-arm64.AppImage",
+        "final_url": "https://release-assets.githubusercontent.com/github-production-release-asset/1183888342/041a11f6-525c-496a-b2ca-9fe7540428b8?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-11-26T17%3A34%3A47Z&rscd=attachment%3B+filename%3Dorca-linux-arm64.AppImage&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-11-26T16%3A34%3A09Z&ske=2026-11-26T17%3A34%3A47Z&sks=b&skv=2018-11-09&sig=%2FAPumAAwmWSF35evmsOa2o5ghtb7%2FxzKjk9XtGZXU%2Bw%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc5NTcxNDUyMiwibmJmIjoxNzk1NzEwOTIyLCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.mHS8T657N3Sf5LSe4S7Rj2utB4UqXo93sJ-UrRrktvA&response-content-disposition=attachment%3B%20filename%3Dorca-linux-arm64.AppImage&response-content-type=application%2Foctet-stream",
+        "redirects": [
+          "https://github.com/stablyai/orca/releases/download/v1.4.278/orca-linux-arm64.AppImage",
+          "https://release-assets.githubusercontent.com/github-production-release-asset/1183888342/041a11f6-525c-496a-b2ca-9fe7540428b8?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-11-26T17%3A34%3A47Z&rscd=attachment%3B+filename%3Dorca-linux-arm64.AppImage&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-11-26T16%3A34%3A09Z&ske=2026-11-26T17%3A34%3A47Z&sks=b&skv=2018-11-09&sig=%2FAPumAAwmWSF35evmsOa2o5ghtb7%2FxzKjk9XtGZXU%2Bw%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc5NTcxNDUyMiwibmJmIjoxNzk1NzEwOTIyLCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.mHS8T657N3Sf5LSe4S7Rj2utB4UqXo93sJ-UrRrktvA&response-content-disposition=attachment%3B%20filename%3Dorca-linux-arm64.AppImage&response-content-type=application%2Foctet-stream"
+        ],
+        "http_status": 206,
+        "valid_until": "2026-12-03T16:35:21+00:00",
+        "filename": "orca-linux-arm64.AppImage",
+        "content_type": "application/octet-stream",
+        "evidence": "trusted source, download response and platform filename checks",
+        "fingerprint": "4bdb59937f863be30eb6229bf272c548308ebb2b039db4156e9d1c49befd591c"
+      },
+      "failures": 0,
+      "next_check_at": "2026-11-27T16:35:21+00:00",
+      "last_success_at": "2026-11-26T16:35:21+00:00",
+      "history": [
+        {
+          "at": "2026-11-26T16:35:21+00:00",
+          "url": "https://github.com/stablyai/orca/releases/download/v1.4.278/orca-linux-arm64.AppImage",
+          "status": "verified",
+          "reason": null
+        }
+      ],
+      "successes": {
+        "4bdb59937f863be30eb6229bf272c548308ebb2b039db4156e9d1c49befd591c": {
+          "status": "verified",
+          "checked_at": "2026-11-26T16:35:21+00:00",
+          "url": "https://github.com/stablyai/orca/releases/download/v1.4.278/orca-linux-arm64.AppImage",
+          "final_url": "https://release-assets.githubusercontent.com/github-production-release-asset/1183888342/041a11f6-525c-496a-b2ca-9fe7540428b8?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-11-26T17%3A34%3A47Z&rscd=attachment%3B+filename%3Dorca-linux-arm64.AppImage&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-11-26T16%3A34%3A09Z&ske=2026-11-26T17%3A34%3A47Z&sks=b&skv=2018-11-09&sig=%2FAPumAAwmWSF35evmsOa2o5ghtb7%2FxzKjk9XtGZXU%2Bw%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc5NTcxNDUyMiwibmJmIjoxNzk1NzEwOTIyLCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.mHS8T657N3Sf5LSe4S7Rj2utB4UqXo93sJ-UrRrktvA&response-content-disposition=attachment%3B%20filename%3Dorca-linux-arm64.AppImage&response-content-type=application%2Foctet-stream",
+          "redirects": [
+            "https://github.com/stablyai/orca/releases/download/v1.4.278/orca-linux-arm64.AppImage",
+            "https://release-assets.githubusercontent.com/github-production-release-asset/1183888342/041a11f6-525c-496a-b2ca-9fe7540428b8?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-11-26T17%3A34%3A47Z&rscd=attachment%3B+filename%3Dorca-linux-arm64.AppImage&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-11-26T16%3A34%3A09Z&ske=2026-11-26T17%3A34%3A47Z&sks=b&skv=2018-11-09&sig=%2FAPumAAwmWSF35evmsOa2o5ghtb7%2FxzKjk9XtGZXU%2Bw%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc5NTcxNDUyMiwibmJmIjoxNzk1NzEwOTIyLCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.mHS8T657N3Sf5LSe4S7Rj2utB4UqXo93sJ-UrRrktvA&response-content-disposition=attachment%3B%20filename%3Dorca-linux-arm64.AppImage&response-content-type=application%2Foctet-stream"
+          ],
+          "http_status": 206,
+          "valid_until": "2026-12-03T16:35:21+00:00",
+          "filename": "orca-linux-arm64.AppImage",
+          "content_type": "application/octet-stream",
+          "evidence": "trusted source, download response and platform filename checks",
+          "fingerprint": "4bdb59937f863be30eb6229bf272c548308ebb2b039db4156e9d1c49befd591c"
+        }
+      },
+      "invalidated": []
+    },
+    "pdf-over:win-x64": {
+      "fingerprint": "9d704ac8efe1a8118f25bcd6c7c11418ac771e2d44a51fff0156eb7071be1c7c",
+      "verification": {
+        "status": "verified",
+        "checked_at": "2026-11-26T16:35:21+00:00",
+        "url": "https://technology.a-sit.at/wp-content/uploads/2026/03/PDF-Over-4.4.8.msi",
+        "final_url": "https://technology.a-sit.at/wp-content/uploads/2026/03/PDF-Over-4.4.8.msi",
+        "redirects": [
+          "https://technology.a-sit.at/wp-content/uploads/2026/03/PDF-Over-4.4.8.msi"
+        ],
+        "http_status": 206,
+        "valid_until": "2026-12-03T16:35:21+00:00",
+        "filename": "PDF-Over-4.4.8.msi",
+        "content_type": "application/x-msi",
+        "evidence": "trusted source, download response and platform filename checks",
+        "fingerprint": "9d704ac8efe1a8118f25bcd6c7c11418ac771e2d44a51fff0156eb7071be1c7c"
+      },
+      "failures": 0,
+      "next_check_at": "2026-11-27T16:35:21+00:00",
+      "last_success_at": "2026-11-26T16:35:21+00:00",
+      "history": [
+        {
+          "at": "2026-11-26T16:35:21+00:00",
+          "url": "https://technology.a-sit.at/wp-content/uploads/2026/03/PDF-Over-4.4.8.msi",
+          "status": "verified",
+          "reason": null
+        }
+      ],
+      "successes": {
+        "9d704ac8efe1a8118f25bcd6c7c11418ac771e2d44a51fff0156eb7071be1c7c": {
+          "status": "verified",
+          "checked_at": "2026-11-26T16:35:21+00:00",
+          "url": "https://technology.a-sit.at/wp-content/uploads/2026/03/PDF-Over-4.4.8.msi",
+          "final_url": "https://technology.a-sit.at/wp-content/uploads/2026/03/PDF-Over-4.4.8.msi",
+          "redirects": [
+            "https://technology.a-sit.at/wp-content/uploads/2026/03/PDF-Over-4.4.8.msi"
+          ],
+          "http_status": 206,
+          "valid_until": "2026-12-03T16:35:21+00:00",
+          "filename": "PDF-Over-4.4.8.msi",
+          "content_type": "application/x-msi",
+          "evidence": "trusted source, download response and platform filename checks",
+          "fingerprint": "9d704ac8efe1a8118f25bcd6c7c11418ac771e2d44a51fff0156eb7071be1c7c"
+        }
+      },
+      "invalidated": []
+    },
+    "pi:win-x64": {
+      "fingerprint": "2e39f1ebec6faee9b277604b9a6b3b4f00a8636af257d5a466dc4ca4bb5e6be1",
+      "verification": {
+        "status": "verified",
+        "checked_at": "2026-11-26T16:35:21+00:00",
+        "url": "https://github.com/earendil-works/pi/releases/download/v1.6.1/pi-windows-x64.zip",
+        "final_url": "https://release-assets.githubusercontent.com/github-production-release-asset/1035029907/022d962a-2cc3-46f6-89d0-02ab4c597853?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-11-26T17%3A35%3A27Z&rscd=attachment%3B+filename%3Dpi-windows-x64.zip&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-11-26T16%3A35%3A10Z&ske=2026-11-26T17%3A35%3A27Z&sks=b&skv=2018-11-09&sig=BhPG1dDbbpfGgz65m5FhIBBM%2Bo9ii9Te5D83Z9i25Jo%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc5NTcxMjcyMiwibmJmIjoxNzk1NzEwOTIyLCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.-5nIv68EQWAPoqTmFdDmo1w3zuJR16jMSP8_VWuiF7c&response-content-disposition=attachment%3B%20filename%3Dpi-windows-x64.zip&response-content-type=application%2Foctet-stream",
+        "redirects": [
+          "https://github.com/earendil-works/pi/releases/download/v1.6.1/pi-windows-x64.zip",
+          "https://release-assets.githubusercontent.com/github-production-release-asset/1035029907/022d962a-2cc3-46f6-89d0-02ab4c597853?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-11-26T17%3A35%3A27Z&rscd=attachment%3B+filename%3Dpi-windows-x64.zip&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-11-26T16%3A35%3A10Z&ske=2026-11-26T17%3A35%3A27Z&sks=b&skv=2018-11-09&sig=BhPG1dDbbpfGgz65m5FhIBBM%2Bo9ii9Te5D83Z9i25Jo%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc5NTcxMjcyMiwibmJmIjoxNzk1NzEwOTIyLCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.-5nIv68EQWAPoqTmFdDmo1w3zuJR16jMSP8_VWuiF7c&response-content-disposition=attachment%3B%20filename%3Dpi-windows-x64.zip&response-content-type=application%2Foctet-stream"
+        ],
+        "http_status": 206,
+        "valid_until": "2026-12-03T16:35:21+00:00",
+        "filename": "pi-windows-x64.zip",
+        "content_type": "application/octet-stream",
+        "evidence": "trusted source, download response and platform filename checks",
+        "fingerprint": "2e39f1ebec6faee9b277604b9a6b3b4f00a8636af257d5a466dc4ca4bb5e6be1"
+      },
+      "failures": 0,
+      "next_check_at": "2026-11-27T16:35:21+00:00",
+      "last_success_at": "2026-11-26T16:35:21+00:00",
+      "history": [
+        {
+          "at": "2026-11-26T16:35:21+00:00",
+          "url": "https://github.com/earendil-works/pi/releases/download/v1.6.1/pi-windows-x64.zip",
+          "status": "verified",
+          "reason": null
+        }
+      ],
+      "successes": {
+        "2e39f1ebec6faee9b277604b9a6b3b4f00a8636af257d5a466dc4ca4bb5e6be1": {
+          "status": "verified",
+          "checked_at": "2026-11-26T16:35:21+00:00",
+          "url": "https://github.com/earendil-works/pi/releases/download/v1.6.1/pi-windows-x64.zip",
+          "final_url": "https://release-assets.githubusercontent.com/github-production-release-asset/1035029907/022d962a-2cc3-46f6-89d0-02ab4c597853?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-11-26T17%3A35%3A27Z&rscd=attachment%3B+filename%3Dpi-windows-x64.zip&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-11-26T16%3A35%3A10Z&ske=2026-11-26T17%3A35%3A27Z&sks=b&skv=2018-11-09&sig=BhPG1dDbbpfGgz65m5FhIBBM%2Bo9ii9Te5D83Z9i25Jo%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc5NTcxMjcyMiwibmJmIjoxNzk1NzEwOTIyLCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.-5nIv68EQWAPoqTmFdDmo1w3zuJR16jMSP8_VWuiF7c&response-content-disposition=attachment%3B%20filename%3Dpi-windows-x64.zip&response-content-type=application%2Foctet-stream",
+          "redirects": [
+            "https://github.com/earendil-works/pi/releases/download/v1.6.1/pi-windows-x64.zip",
+            "https://release-assets.githubusercontent.com/github-production-release-asset/1035029907/022d962a-2cc3-46f6-89d0-02ab4c597853?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-11-26T17%3A35%3A27Z&rscd=attachment%3B+filename%3Dpi-windows-x64.zip&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-11-26T16%3A35%3A10Z&ske=2026-11-26T17%3A35%3A27Z&sks=b&skv=2018-11-09&sig=BhPG1dDbbpfGgz65m5FhIBBM%2Bo9ii9Te5D83Z9i25Jo%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc5NTcxMjcyMiwibmJmIjoxNzk1NzEwOTIyLCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.-5nIv68EQWAPoqTmFdDmo1w3zuJR16jMSP8_VWuiF7c&response-content-disposition=attachment%3B%20filename%3Dpi-windows-x64.zip&response-content-type=application%2Foctet-stream"
+          ],
+          "http_status": 206,
+          "valid_until": "2026-12-03T16:35:21+00:00",
+          "filename": "pi-windows-x64.zip",
+          "content_type": "application/octet-stream",
+          "evidence": "trusted source, download response and platform filename checks",
+          "fingerprint": "2e39f1ebec6faee9b277604b9a6b3b4f00a8636af257d5a466dc4ca4bb5e6be1"
+        }
+      },
+      "invalidated": []
+    },
+    "pi:win-arm64": {
+      "fingerprint": "ece479e3b4bd0ebc562347e02ebdfd7070fee722dada23cb0507415f8c50afa6",
+      "verification": {
+        "status": "verified",
+        "checked_at": "2026-11-26T16:35:21+00:00",
+        "url": "https://github.com/earendil-works/pi/releases/download/v1.6.1/pi-windows-arm64.zip",
+        "final_url": "https://release-assets.githubusercontent.com/github-production-release-asset/1035029907/cfc19f23-401a-488f-8012-265dc053cbfc?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-11-26T17%3A35%3A30Z&rscd=attachment%3B+filename%3Dpi-windows-arm64.zip&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-11-26T16%3A34%3A59Z&ske=2026-11-26T17%3A35%3A30Z&sks=b&skv=2018-11-09&sig=SsV47V5%2BFoUlvB5VmdnqQbpNZSRcRlMCNpdI%2BRsHG0E%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc5NTcxMjcyMiwibmJmIjoxNzk1NzEwOTIyLCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.-5nIv68EQWAPoqTmFdDmo1w3zuJR16jMSP8_VWuiF7c&response-content-disposition=attachment%3B%20filename%3Dpi-windows-arm64.zip&response-content-type=application%2Foctet-stream",
+        "redirects": [
+          "https://github.com/earendil-works/pi/releases/download/v1.6.1/pi-windows-arm64.zip",
+          "https://release-assets.githubusercontent.com/github-production-release-asset/1035029907/cfc19f23-401a-488f-8012-265dc053cbfc?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-11-26T17%3A35%3A30Z&rscd=attachment%3B+filename%3Dpi-windows-arm64.zip&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-11-26T16%3A34%3A59Z&ske=2026-11-26T17%3A35%3A30Z&sks=b&skv=2018-11-09&sig=SsV47V5%2BFoUlvB5VmdnqQbpNZSRcRlMCNpdI%2BRsHG0E%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc5NTcxMjcyMiwibmJmIjoxNzk1NzEwOTIyLCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.-5nIv68EQWAPoqTmFdDmo1w3zuJR16jMSP8_VWuiF7c&response-content-disposition=attachment%3B%20filename%3Dpi-windows-arm64.zip&response-content-type=application%2Foctet-stream"
+        ],
+        "http_status": 206,
+        "valid_until": "2026-12-03T16:35:21+00:00",
+        "filename": "pi-windows-arm64.zip",
+        "content_type": "application/octet-stream",
+        "evidence": "trusted source, download response and platform filename checks",
+        "fingerprint": "ece479e3b4bd0ebc562347e02ebdfd7070fee722dada23cb0507415f8c50afa6"
+      },
+      "failures": 0,
+      "next_check_at": "2026-11-27T16:35:21+00:00",
+      "last_success_at": "2026-11-26T16:35:21+00:00",
+      "history": [
+        {
+          "at": "2026-11-26T16:35:21+00:00",
+          "url": "https://github.com/earendil-works/pi/releases/download/v1.6.1/pi-windows-arm64.zip",
+          "status": "verified",
+          "reason": null
+        }
+      ],
+      "successes": {
+        "ece479e3b4bd0ebc562347e02ebdfd7070fee722dada23cb0507415f8c50afa6": {
+          "status": "verified",
+          "checked_at": "2026-11-26T16:35:21+00:00",
+          "url": "https://github.com/earendil-works/pi/releases/download/v1.6.1/pi-windows-arm64.zip",
+          "final_url": "https://release-assets.githubusercontent.com/github-production-release-asset/1035029907/cfc19f23-401a-488f-8012-265dc053cbfc?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-11-26T17%3A35%3A30Z&rscd=attachment%3B+filename%3Dpi-windows-arm64.zip&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-11-26T16%3A34%3A59Z&ske=2026-11-26T17%3A35%3A30Z&sks=b&skv=2018-11-09&sig=SsV47V5%2BFoUlvB5VmdnqQbpNZSRcRlMCNpdI%2BRsHG0E%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc5NTcxMjcyMiwibmJmIjoxNzk1NzEwOTIyLCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.-5nIv68EQWAPoqTmFdDmo1w3zuJR16jMSP8_VWuiF7c&response-content-disposition=attachment%3B%20filename%3Dpi-windows-arm64.zip&response-content-type=application%2Foctet-stream",
+          "redirects": [
+            "https://github.com/earendil-works/pi/releases/download/v1.6.1/pi-windows-arm64.zip",
+            "https://release-assets.githubusercontent.com/github-production-release-asset/1035029907/cfc19f23-401a-488f-8012-265dc053cbfc?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-11-26T17%3A35%3A30Z&rscd=attachment%3B+filename%3Dpi-windows-arm64.zip&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-11-26T16%3A34%3A59Z&ske=2026-11-26T17%3A35%3A30Z&sks=b&skv=2018-11-09&sig=SsV47V5%2BFoUlvB5VmdnqQbpNZSRcRlMCNpdI%2BRsHG0E%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc5NTcxMjcyMiwibmJmIjoxNzk1NzEwOTIyLCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.-5nIv68EQWAPoqTmFdDmo1w3zuJR16jMSP8_VWuiF7c&response-content-disposition=attachment%3B%20filename%3Dpi-windows-arm64.zip&response-content-type=application%2Foctet-stream"
+          ],
+          "http_status": 206,
+          "valid_until": "2026-12-03T16:35:21+00:00",
+          "filename": "pi-windows-arm64.zip",
+          "content_type": "application/octet-stream",
+          "evidence": "trusted source, download response and platform filename checks",
+          "fingerprint": "ece479e3b4bd0ebc562347e02ebdfd7070fee722dada23cb0507415f8c50afa6"
+        }
+      },
+      "invalidated": []
+    },
+    "pi:mac-arm64": {
+      "fingerprint": "b213ebd0495c69688470c1c9e786117f320d16934626a4966f7daead25acb3a6",
+      "verification": {
+        "status": "verified",
+        "checked_at": "2026-11-26T16:35:21+00:00",
+        "url": "https://github.com/earendil-works/pi/releases/download/v1.6.1/pi-darwin-arm64.tar.gz",
+        "final_url": "https://release-assets.githubusercontent.com/github-production-release-asset/1035029907/92e5fd57-5e8d-4fd5-8f48-8ac576e14979?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-11-26T17%3A31%3A17Z&rscd=attachment%3B+filename%3Dpi-darwin-arm64.tar.gz&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-11-26T16%3A31%3A08Z&ske=2026-11-26T17%3A31%3A17Z&sks=b&skv=2018-11-09&sig=RTuqwtdhZuPAE6gCaPtTnNaRVCH146LgdusseU9%2BQrE%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc5NTcxMjcyMiwibmJmIjoxNzk1NzEwOTIyLCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.-5nIv68EQWAPoqTmFdDmo1w3zuJR16jMSP8_VWuiF7c&response-content-disposition=attachment%3B%20filename%3Dpi-darwin-arm64.tar.gz&response-content-type=application%2Foctet-stream",
+        "redirects": [
+          "https://github.com/earendil-works/pi/releases/download/v1.6.1/pi-darwin-arm64.tar.gz",
+          "https://release-assets.githubusercontent.com/github-production-release-asset/1035029907/92e5fd57-5e8d-4fd5-8f48-8ac576e14979?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-11-26T17%3A31%3A17Z&rscd=attachment%3B+filename%3Dpi-darwin-arm64.tar.gz&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-11-26T16%3A31%3A08Z&ske=2026-11-26T17%3A31%3A17Z&sks=b&skv=2018-11-09&sig=RTuqwtdhZuPAE6gCaPtTnNaRVCH146LgdusseU9%2BQrE%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc5NTcxMjcyMiwibmJmIjoxNzk1NzEwOTIyLCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.-5nIv68EQWAPoqTmFdDmo1w3zuJR16jMSP8_VWuiF7c&response-content-disposition=attachment%3B%20filename%3Dpi-darwin-arm64.tar.gz&response-content-type=application%2Foctet-stream"
+        ],
+        "http_status": 206,
+        "valid_until": "2026-12-03T16:35:21+00:00",
+        "filename": "pi-darwin-arm64.tar.gz",
+        "content_type": "application/octet-stream",
+        "evidence": "trusted source, download response and platform filename checks",
+        "fingerprint": "b213ebd0495c69688470c1c9e786117f320d16934626a4966f7daead25acb3a6"
+      },
+      "failures": 0,
+      "next_check_at": "2026-11-27T16:35:21+00:00",
+      "last_success_at": "2026-11-26T16:35:21+00:00",
+      "history": [
+        {
+          "at": "2026-11-26T16:35:21+00:00",
+          "url": "https://github.com/earendil-works/pi/releases/download/v1.6.1/pi-darwin-arm64.tar.gz",
+          "status": "verified",
+          "reason": null
+        }
+      ],
+      "successes": {
+        "b213ebd0495c69688470c1c9e786117f320d16934626a4966f7daead25acb3a6": {
+          "status": "verified",
+          "checked_at": "2026-11-26T16:35:21+00:00",
+          "url": "https://github.com/earendil-works/pi/releases/download/v1.6.1/pi-darwin-arm64.tar.gz",
+          "final_url": "https://release-assets.githubusercontent.com/github-production-release-asset/1035029907/92e5fd57-5e8d-4fd5-8f48-8ac576e14979?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-11-26T17%3A31%3A17Z&rscd=attachment%3B+filename%3Dpi-darwin-arm64.tar.gz&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-11-26T16%3A31%3A08Z&ske=2026-11-26T17%3A31%3A17Z&sks=b&skv=2018-11-09&sig=RTuqwtdhZuPAE6gCaPtTnNaRVCH146LgdusseU9%2BQrE%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc5NTcxMjcyMiwibmJmIjoxNzk1NzEwOTIyLCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.-5nIv68EQWAPoqTmFdDmo1w3zuJR16jMSP8_VWuiF7c&response-content-disposition=attachment%3B%20filename%3Dpi-darwin-arm64.tar.gz&response-content-type=application%2Foctet-stream",
+          "redirects": [
+            "https://github.com/earendil-works/pi/releases/download/v1.6.1/pi-darwin-arm64.tar.gz",
+            "https://release-assets.githubusercontent.com/github-production-release-asset/1035029907/92e5fd57-5e8d-4fd5-8f48-8ac576e14979?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-11-26T17%3A31%3A17Z&rscd=attachment%3B+filename%3Dpi-darwin-arm64.tar.gz&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-11-26T16%3A31%3A08Z&ske=2026-11-26T17%3A31%3A17Z&sks=b&skv=2018-11-09&sig=RTuqwtdhZuPAE6gCaPtTnNaRVCH146LgdusseU9%2BQrE%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc5NTcxMjcyMiwibmJmIjoxNzk1NzEwOTIyLCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.-5nIv68EQWAPoqTmFdDmo1w3zuJR16jMSP8_VWuiF7c&response-content-disposition=attachment%3B%20filename%3Dpi-darwin-arm64.tar.gz&response-content-type=application%2Foctet-stream"
+          ],
+          "http_status": 206,
+          "valid_until": "2026-12-03T16:35:21+00:00",
+          "filename": "pi-darwin-arm64.tar.gz",
+          "content_type": "application/octet-stream",
+          "evidence": "trusted source, download response and platform filename checks",
+          "fingerprint": "b213ebd0495c69688470c1c9e786117f320d16934626a4966f7daead25acb3a6"
+        }
+      },
+      "invalidated": []
+    },
+    "pi:mac-x64": {
+      "fingerprint": "114367e6ca7e4d7788916d3bc9a184925419f4c6a44eedc704c7610869e75867",
+      "verification": {
+        "status": "verified",
+        "checked_at": "2026-11-26T16:35:21+00:00",
+        "url": "https://github.com/earendil-works/pi/releases/download/v1.6.1/pi-darwin-x64.tar.gz",
+        "final_url": "https://release-assets.githubusercontent.com/github-production-release-asset/1035029907/1dabecea-7fcc-4398-bae7-45de7f4f02e1?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-11-26T17%3A31%3A54Z&rscd=attachment%3B+filename%3Dpi-darwin-x64.tar.gz&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-11-26T16%3A31%3A14Z&ske=2026-11-26T17%3A31%3A54Z&sks=b&skv=2018-11-09&sig=0sDeTslGTA%2BvHW0x%2F%2FyjUmKYP%2FAIQ45aMI9kvKQ9KYY%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc5NTcxMjcyMiwibmJmIjoxNzk1NzEwOTIyLCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.-5nIv68EQWAPoqTmFdDmo1w3zuJR16jMSP8_VWuiF7c&response-content-disposition=attachment%3B%20filename%3Dpi-darwin-x64.tar.gz&response-content-type=application%2Foctet-stream",
+        "redirects": [
+          "https://github.com/earendil-works/pi/releases/download/v1.6.1/pi-darwin-x64.tar.gz",
+          "https://release-assets.githubusercontent.com/github-production-release-asset/1035029907/1dabecea-7fcc-4398-bae7-45de7f4f02e1?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-11-26T17%3A31%3A54Z&rscd=attachment%3B+filename%3Dpi-darwin-x64.tar.gz&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-11-26T16%3A31%3A14Z&ske=2026-11-26T17%3A31%3A54Z&sks=b&skv=2018-11-09&sig=0sDeTslGTA%2BvHW0x%2F%2FyjUmKYP%2FAIQ45aMI9kvKQ9KYY%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc5NTcxMjcyMiwibmJmIjoxNzk1NzEwOTIyLCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.-5nIv68EQWAPoqTmFdDmo1w3zuJR16jMSP8_VWuiF7c&response-content-disposition=attachment%3B%20filename%3Dpi-darwin-x64.tar.gz&response-content-type=application%2Foctet-stream"
+        ],
+        "http_status": 206,
+        "valid_until": "2026-12-03T16:35:21+00:00",
+        "filename": "pi-darwin-x64.tar.gz",
+        "content_type": "application/octet-stream",
+        "evidence": "trusted source, download response and platform filename checks",
+        "fingerprint": "114367e6ca7e4d7788916d3bc9a184925419f4c6a44eedc704c7610869e75867"
+      },
+      "failures": 0,
+      "next_check_at": "2026-11-27T16:35:21+00:00",
+      "last_success_at": "2026-11-26T16:35:21+00:00",
+      "history": [
+        {
+          "at": "2026-11-26T16:35:21+00:00",
+          "url": "https://github.com/earendil-works/pi/releases/download/v1.6.1/pi-darwin-x64.tar.gz",
+          "status": "verified",
+          "reason": null
+        }
+      ],
+      "successes": {
+        "114367e6ca7e4d7788916d3bc9a184925419f4c6a44eedc704c7610869e75867": {
+          "status": "verified",
+          "checked_at": "2026-11-26T16:35:21+00:00",
+          "url": "https://github.com/earendil-works/pi/releases/download/v1.6.1/pi-darwin-x64.tar.gz",
+          "final_url": "https://release-assets.githubusercontent.com/github-production-release-asset/1035029907/1dabecea-7fcc-4398-bae7-45de7f4f02e1?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-11-26T17%3A31%3A54Z&rscd=attachment%3B+filename%3Dpi-darwin-x64.tar.gz&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-11-26T16%3A31%3A14Z&ske=2026-11-26T17%3A31%3A54Z&sks=b&skv=2018-11-09&sig=0sDeTslGTA%2BvHW0x%2F%2FyjUmKYP%2FAIQ45aMI9kvKQ9KYY%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc5NTcxMjcyMiwibmJmIjoxNzk1NzEwOTIyLCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.-5nIv68EQWAPoqTmFdDmo1w3zuJR16jMSP8_VWuiF7c&response-content-disposition=attachment%3B%20filename%3Dpi-darwin-x64.tar.gz&response-content-type=application%2Foctet-stream",
+          "redirects": [
+            "https://github.com/earendil-works/pi/releases/download/v1.6.1/pi-darwin-x64.tar.gz",
+            "https://release-assets.githubusercontent.com/github-production-release-asset/1035029907/1dabecea-7fcc-4398-bae7-45de7f4f02e1?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-11-26T17%3A31%3A54Z&rscd=attachment%3B+filename%3Dpi-darwin-x64.tar.gz&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-11-26T16%3A31%3A14Z&ske=2026-11-26T17%3A31%3A54Z&sks=b&skv=2018-11-09&sig=0sDeTslGTA%2BvHW0x%2F%2FyjUmKYP%2FAIQ45aMI9kvKQ9KYY%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc5NTcxMjcyMiwibmJmIjoxNzk1NzEwOTIyLCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.-5nIv68EQWAPoqTmFdDmo1w3zuJR16jMSP8_VWuiF7c&response-content-disposition=attachment%3B%20filename%3Dpi-darwin-x64.tar.gz&response-content-type=application%2Foctet-stream"
+          ],
+          "http_status": 206,
+          "valid_until": "2026-12-03T16:35:21+00:00",
+          "filename": "pi-darwin-x64.tar.gz",
+          "content_type": "application/octet-stream",
+          "evidence": "trusted source, download response and platform filename checks",
+          "fingerprint": "114367e6ca7e4d7788916d3bc9a184925419f4c6a44eedc704c7610869e75867"
+        }
+      },
+      "invalidated": []
+    },
+    "pi:linux-x64": {
+      "fingerprint": "f9841f0e299e212903f5ac702f55f5b738ebd56dbadd04104733af13614958e9",
+      "verification": {
+        "status": "verified",
+        "checked_at": "2026-11-26T16:35:21+00:00",
+        "url": "https://github.com/earendil-works/pi/releases/download/v1.6.1/pi-linux-x64.tar.gz",
+        "final_url": "https://release-assets.githubusercontent.com/github-production-release-asset/1035029907/9cf3f835-137d-48a0-a78b-69e6bdafafec?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-11-26T17%3A33%3A49Z&rscd=attachment%3B+filename%3Dpi-linux-x64.tar.gz&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-11-26T16%3A33%3A45Z&ske=2026-11-26T17%3A33%3A49Z&sks=b&skv=2018-11-09&sig=sCCpTOKUchfCQ5YrZLLak2Bz6Om3rbsbTqUpUYaQ9d0%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc5NTcxMjcyMiwibmJmIjoxNzk1NzEwOTIyLCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.-5nIv68EQWAPoqTmFdDmo1w3zuJR16jMSP8_VWuiF7c&response-content-disposition=attachment%3B%20filename%3Dpi-linux-x64.tar.gz&response-content-type=application%2Foctet-stream",
+        "redirects": [
+          "https://github.com/earendil-works/pi/releases/download/v1.6.1/pi-linux-x64.tar.gz",
+          "https://release-assets.githubusercontent.com/github-production-release-asset/1035029907/9cf3f835-137d-48a0-a78b-69e6bdafafec?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-11-26T17%3A33%3A49Z&rscd=attachment%3B+filename%3Dpi-linux-x64.tar.gz&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-11-26T16%3A33%3A45Z&ske=2026-11-26T17%3A33%3A49Z&sks=b&skv=2018-11-09&sig=sCCpTOKUchfCQ5YrZLLak2Bz6Om3rbsbTqUpUYaQ9d0%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc5NTcxMjcyMiwibmJmIjoxNzk1NzEwOTIyLCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.-5nIv68EQWAPoqTmFdDmo1w3zuJR16jMSP8_VWuiF7c&response-content-disposition=attachment%3B%20filename%3Dpi-linux-x64.tar.gz&response-content-type=application%2Foctet-stream"
+        ],
+        "http_status": 206,
+        "valid_until": "2026-12-03T16:35:21+00:00",
+        "filename": "pi-linux-x64.tar.gz",
+        "content_type": "application/octet-stream",
+        "evidence": "trusted source, download response and platform filename checks",
+        "fingerprint": "f9841f0e299e212903f5ac702f55f5b738ebd56dbadd04104733af13614958e9"
+      },
+      "failures": 0,
+      "next_check_at": "2026-11-27T16:35:21+00:00",
+      "last_success_at": "2026-11-26T16:35:21+00:00",
+      "history": [
+        {
+          "at": "2026-11-26T16:35:21+00:00",
+          "url": "https://github.com/earendil-works/pi/releases/download/v1.6.1/pi-linux-x64.tar.gz",
+          "status": "verified",
+          "reason": null
+        }
+      ],
+      "successes": {
+        "f9841f0e299e212903f5ac702f55f5b738ebd56dbadd04104733af13614958e9": {
+          "status": "verified",
+          "checked_at": "2026-11-26T16:35:21+00:00",
+          "url": "https://github.com/earendil-works/pi/releases/download/v1.6.1/pi-linux-x64.tar.gz",
+          "final_url": "https://release-assets.githubusercontent.com/github-production-release-asset/1035029907/9cf3f835-137d-48a0-a78b-69e6bdafafec?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-11-26T17%3A33%3A49Z&rscd=attachment%3B+filename%3Dpi-linux-x64.tar.gz&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-11-26T16%3A33%3A45Z&ske=2026-11-26T17%3A33%3A49Z&sks=b&skv=2018-11-09&sig=sCCpTOKUchfCQ5YrZLLak2Bz6Om3rbsbTqUpUYaQ9d0%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc5NTcxMjcyMiwibmJmIjoxNzk1NzEwOTIyLCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.-5nIv68EQWAPoqTmFdDmo1w3zuJR16jMSP8_VWuiF7c&response-content-disposition=attachment%3B%20filename%3Dpi-linux-x64.tar.gz&response-content-type=application%2Foctet-stream",
+          "redirects": [
+            "https://github.com/earendil-works/pi/releases/download/v1.6.1/pi-linux-x64.tar.gz",
+            "https://release-assets.githubusercontent.com/github-production-release-asset/1035029907/9cf3f835-137d-48a0-a78b-69e6bdafafec?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-11-26T17%3A33%3A49Z&rscd=attachment%3B+filename%3Dpi-linux-x64.tar.gz&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-11-26T16%3A33%3A45Z&ske=2026-11-26T17%3A33%3A49Z&sks=b&skv=2018-11-09&sig=sCCpTOKUchfCQ5YrZLLak2Bz6Om3rbsbTqUpUYaQ9d0%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc5NTcxMjcyMiwibmJmIjoxNzk1NzEwOTIyLCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.-5nIv68EQWAPoqTmFdDmo1w3zuJR16jMSP8_VWuiF7c&response-content-disposition=attachment%3B%20filename%3Dpi-linux-x64.tar.gz&response-content-type=application%2Foctet-stream"
+          ],
+          "http_status": 206,
+          "valid_until": "2026-12-03T16:35:21+00:00",
+          "filename": "pi-linux-x64.tar.gz",
+          "content_type": "application/octet-stream",
+          "evidence": "trusted source, download response and platform filename checks",
+          "fingerprint": "f9841f0e299e212903f5ac702f55f5b738ebd56dbadd04104733af13614958e9"
+        }
+      },
+      "invalidated": []
+    },
+    "pi:linux-arm64": {
+      "fingerprint": "2dc770911dfa210bc86259a5723dae10fa479a0a969d6d474a1699328b9bd1e1",
+      "verification": {
+        "status": "verified",
+        "checked_at": "2026-11-26T16:35:21+00:00",
+        "url": "https://github.com/earendil-works/pi/releases/download/v1.6.1/pi-linux-arm64.tar.gz",
+        "final_url": "https://release-assets.githubusercontent.com/github-production-release-asset/1035029907/4dbb3e66-2cae-4a31-b751-942ce0024633?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-11-26T17%3A35%3A24Z&rscd=attachment%3B+filename%3Dpi-linux-arm64.tar.gz&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-11-26T16%3A34%3A56Z&ske=2026-11-26T17%3A35%3A24Z&sks=b&skv=2018-11-09&sig=rPheSiUDrfWXeW9tADy1nvlgAdWg2txnjS3im9OmPpc%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc5NTcxMjcyMiwibmJmIjoxNzk1NzEwOTIyLCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.-5nIv68EQWAPoqTmFdDmo1w3zuJR16jMSP8_VWuiF7c&response-content-disposition=attachment%3B%20filename%3Dpi-linux-arm64.tar.gz&response-content-type=application%2Foctet-stream",
+        "redirects": [
+          "https://github.com/earendil-works/pi/releases/download/v1.6.1/pi-linux-arm64.tar.gz",
+          "https://release-assets.githubusercontent.com/github-production-release-asset/1035029907/4dbb3e66-2cae-4a31-b751-942ce0024633?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-11-26T17%3A35%3A24Z&rscd=attachment%3B+filename%3Dpi-linux-arm64.tar.gz&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-11-26T16%3A34%3A56Z&ske=2026-11-26T17%3A35%3A24Z&sks=b&skv=2018-11-09&sig=rPheSiUDrfWXeW9tADy1nvlgAdWg2txnjS3im9OmPpc%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc5NTcxMjcyMiwibmJmIjoxNzk1NzEwOTIyLCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.-5nIv68EQWAPoqTmFdDmo1w3zuJR16jMSP8_VWuiF7c&response-content-disposition=attachment%3B%20filename%3Dpi-linux-arm64.tar.gz&response-content-type=application%2Foctet-stream"
+        ],
+        "http_status": 206,
+        "valid_until": "2026-12-03T16:35:21+00:00",
+        "filename": "pi-linux-arm64.tar.gz",
+        "content_type": "application/octet-stream",
+        "evidence": "trusted source, download response and platform filename checks",
+        "fingerprint": "2dc770911dfa210bc86259a5723dae10fa479a0a969d6d474a1699328b9bd1e1"
+      },
+      "failures": 0,
+      "next_check_at": "2026-11-27T16:35:21+00:00",
+      "last_success_at": "2026-11-26T16:35:21+00:00",
+      "history": [
+        {
+          "at": "2026-11-26T16:35:21+00:00",
+          "url": "https://github.com/earendil-works/pi/releases/download/v1.6.1/pi-linux-arm64.tar.gz",
+          "status": "verified",
+          "reason": null
+        }
+      ],
+      "successes": {
+        "2dc770911dfa210bc86259a5723dae10fa479a0a969d6d474a1699328b9bd1e1": {
+          "status": "verified",
+          "checked_at": "2026-11-26T16:35:21+00:00",
+          "url": "https://github.com/earendil-works/pi/releases/download/v1.6.1/pi-linux-arm64.tar.gz",
+          "final_url": "https://release-assets.githubusercontent.com/github-production-release-asset/1035029907/4dbb3e66-2cae-4a31-b751-942ce0024633?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-11-26T17%3A35%3A24Z&rscd=attachment%3B+filename%3Dpi-linux-arm64.tar.gz&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-11-26T16%3A34%3A56Z&ske=2026-11-26T17%3A35%3A24Z&sks=b&skv=2018-11-09&sig=rPheSiUDrfWXeW9tADy1nvlgAdWg2txnjS3im9OmPpc%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc5NTcxMjcyMiwibmJmIjoxNzk1NzEwOTIyLCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.-5nIv68EQWAPoqTmFdDmo1w3zuJR16jMSP8_VWuiF7c&response-content-disposition=attachment%3B%20filename%3Dpi-linux-arm64.tar.gz&response-content-type=application%2Foctet-stream",
+          "redirects": [
+            "https://github.com/earendil-works/pi/releases/download/v1.6.1/pi-linux-arm64.tar.gz",
+            "https://release-assets.githubusercontent.com/github-production-release-asset/1035029907/4dbb3e66-2cae-4a31-b751-942ce0024633?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-11-26T17%3A35%3A24Z&rscd=attachment%3B+filename%3Dpi-linux-arm64.tar.gz&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-11-26T16%3A34%3A56Z&ske=2026-11-26T17%3A35%3A24Z&sks=b&skv=2018-11-09&sig=rPheSiUDrfWXeW9tADy1nvlgAdWg2txnjS3im9OmPpc%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc5NTcxMjcyMiwibmJmIjoxNzk1NzEwOTIyLCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.-5nIv68EQWAPoqTmFdDmo1w3zuJR16jMSP8_VWuiF7c&response-content-disposition=attachment%3B%20filename%3Dpi-linux-arm64.tar.gz&response-content-type=application%2Foctet-stream"
+          ],
+          "http_status": 206,
+          "valid_until": "2026-12-03T16:35:21+00:00",
+          "filename": "pi-linux-arm64.tar.gz",
+          "content_type": "application/octet-stream",
+          "evidence": "trusted source, download response and platform filename checks",
+          "fingerprint": "2dc770911dfa210bc86259a5723dae10fa479a0a969d6d474a1699328b9bd1e1"
+        }
+      },
+      "invalidated": []
+    },
+    "rv:win-x64": {
+      "fingerprint": "0b55daf9fe3abf28093b13106071135635900b3b3c91d450514571ed31a342f8",
+      "verification": {
+        "status": "verified",
+        "checked_at": "2026-11-26T16:35:21+00:00",
+        "url": "https://github.com/A2-ai/rv/releases/download/v0.23.3/rv-v0.23.3-x86_64-pc-windows-msvc.zip",
+        "final_url": "https://release-assets.githubusercontent.com/github-production-release-asset/901402266/3cbffb85-7518-4f8f-b0f8-2aa9ce213da2?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-11-26T17%3A32%3A44Z&rscd=attachment%3B+filename%3Drv-v0.23.3-x86_64-pc-windows-msvc.zip&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-11-26T16%3A32%3A02Z&ske=2026-11-26T17%3A32%3A44Z&sks=b&skv=2018-11-09&sig=MzyYv6ukgPtlVDxwH2Whvm7ytx4ly07oZDJyP7NlDd0%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc5NTcxMTIyMiwibmJmIjoxNzk1NzEwOTIyLCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.dmsvG4g-J1cHdeM1x9-K6lVvYLhEpnISM6S64Aew1kA&response-content-disposition=attachment%3B%20filename%3Drv-v0.23.3-x86_64-pc-windows-msvc.zip&response-content-type=application%2Foctet-stream",
+        "redirects": [
+          "https://github.com/A2-ai/rv/releases/download/v0.23.3/rv-v0.23.3-x86_64-pc-windows-msvc.zip",
+          "https://release-assets.githubusercontent.com/github-production-release-asset/901402266/3cbffb85-7518-4f8f-b0f8-2aa9ce213da2?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-11-26T17%3A32%3A44Z&rscd=attachment%3B+filename%3Drv-v0.23.3-x86_64-pc-windows-msvc.zip&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-11-26T16%3A32%3A02Z&ske=2026-11-26T17%3A32%3A44Z&sks=b&skv=2018-11-09&sig=MzyYv6ukgPtlVDxwH2Whvm7ytx4ly07oZDJyP7NlDd0%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc5NTcxMTIyMiwibmJmIjoxNzk1NzEwOTIyLCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.dmsvG4g-J1cHdeM1x9-K6lVvYLhEpnISM6S64Aew1kA&response-content-disposition=attachment%3B%20filename%3Drv-v0.23.3-x86_64-pc-windows-msvc.zip&response-content-type=application%2Foctet-stream"
+        ],
+        "http_status": 206,
+        "valid_until": "2026-12-03T16:35:21+00:00",
+        "filename": "rv-v0.23.3-x86_64-pc-windows-msvc.zip",
+        "content_type": "application/octet-stream",
+        "evidence": "trusted source, download response and platform filename checks",
+        "fingerprint": "0b55daf9fe3abf28093b13106071135635900b3b3c91d450514571ed31a342f8"
+      },
+      "failures": 0,
+      "next_check_at": "2026-11-27T16:35:21+00:00",
+      "last_success_at": "2026-11-26T16:35:21+00:00",
+      "history": [
+        {
+          "at": "2026-11-26T16:35:21+00:00",
+          "url": "https://github.com/A2-ai/rv/releases/download/v0.23.3/rv-v0.23.3-x86_64-pc-windows-msvc.zip",
+          "status": "verified",
+          "reason": null
+        }
+      ],
+      "successes": {
+        "0b55daf9fe3abf28093b13106071135635900b3b3c91d450514571ed31a342f8": {
+          "status": "verified",
+          "checked_at": "2026-11-26T16:35:21+00:00",
+          "url": "https://github.com/A2-ai/rv/releases/download/v0.23.3/rv-v0.23.3-x86_64-pc-windows-msvc.zip",
+          "final_url": "https://release-assets.githubusercontent.com/github-production-release-asset/901402266/3cbffb85-7518-4f8f-b0f8-2aa9ce213da2?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-11-26T17%3A32%3A44Z&rscd=attachment%3B+filename%3Drv-v0.23.3-x86_64-pc-windows-msvc.zip&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-11-26T16%3A32%3A02Z&ske=2026-11-26T17%3A32%3A44Z&sks=b&skv=2018-11-09&sig=MzyYv6ukgPtlVDxwH2Whvm7ytx4ly07oZDJyP7NlDd0%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc5NTcxMTIyMiwibmJmIjoxNzk1NzEwOTIyLCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.dmsvG4g-J1cHdeM1x9-K6lVvYLhEpnISM6S64Aew1kA&response-content-disposition=attachment%3B%20filename%3Drv-v0.23.3-x86_64-pc-windows-msvc.zip&response-content-type=application%2Foctet-stream",
+          "redirects": [
+            "https://github.com/A2-ai/rv/releases/download/v0.23.3/rv-v0.23.3-x86_64-pc-windows-msvc.zip",
+            "https://release-assets.githubusercontent.com/github-production-release-asset/901402266/3cbffb85-7518-4f8f-b0f8-2aa9ce213da2?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-11-26T17%3A32%3A44Z&rscd=attachment%3B+filename%3Drv-v0.23.3-x86_64-pc-windows-msvc.zip&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-11-26T16%3A32%3A02Z&ske=2026-11-26T17%3A32%3A44Z&sks=b&skv=2018-11-09&sig=MzyYv6ukgPtlVDxwH2Whvm7ytx4ly07oZDJyP7NlDd0%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc5NTcxMTIyMiwibmJmIjoxNzk1NzEwOTIyLCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.dmsvG4g-J1cHdeM1x9-K6lVvYLhEpnISM6S64Aew1kA&response-content-disposition=attachment%3B%20filename%3Drv-v0.23.3-x86_64-pc-windows-msvc.zip&response-content-type=application%2Foctet-stream"
+          ],
+          "http_status": 206,
+          "valid_until": "2026-12-03T16:35:21+00:00",
+          "filename": "rv-v0.23.3-x86_64-pc-windows-msvc.zip",
+          "content_type": "application/octet-stream",
+          "evidence": "trusted source, download response and platform filename checks",
+          "fingerprint": "0b55daf9fe3abf28093b13106071135635900b3b3c91d450514571ed31a342f8"
+        }
+      },
+      "invalidated": []
+    },
+    "aas-worldwide-telescope:win-x64": {
+      "fingerprint": "2cea597773fd0d27bcb3fe132b251f729fd395d8eda59daa91819f96700b9bab",
+      "verification": {
+        "status": "verified",
+        "checked_at": "2026-11-26T16:35:21+00:00",
+        "url": "https://web.wwtassets.org/releases/wwt/wwtsetup-6.1.2.0.msi",
+        "final_url": "https://web.wwtassets.org/releases/wwt/wwtsetup-6.1.2.0.msi",
+        "redirects": [
+          "https://web.wwtassets.org/releases/wwt/wwtsetup-6.1.2.0.msi"
+        ],
+        "http_status": 206,
+        "valid_until": "2026-12-03T16:35:21+00:00",
+        "filename": "wwtsetup-6.1.2.0.msi",
+        "content_type": "application/octet-stream",
+        "evidence": "trusted source, download response and platform filename checks",
+        "fingerprint": "2cea597773fd0d27bcb3fe132b251f729fd395d8eda59daa91819f96700b9bab"
+      },
+      "failures": 0,
+      "next_check_at": "2026-11-27T16:35:21+00:00",
+      "last_success_at": "2026-11-26T16:35:21+00:00",
+      "history": [
+        {
+          "at": "2026-11-26T16:35:21+00:00",
+          "url": "https://web.wwtassets.org/releases/wwt/wwtsetup-6.1.2.0.msi",
+          "status": "verified",
+          "reason": null
+        }
+      ],
+      "successes": {
+        "2cea597773fd0d27bcb3fe132b251f729fd395d8eda59daa91819f96700b9bab": {
+          "status": "verified",
+          "checked_at": "2026-11-26T16:35:21+00:00",
+          "url": "https://web.wwtassets.org/releases/wwt/wwtsetup-6.1.2.0.msi",
+          "final_url": "https://web.wwtassets.org/releases/wwt/wwtsetup-6.1.2.0.msi",
+          "redirects": [
+            "https://web.wwtassets.org/releases/wwt/wwtsetup-6.1.2.0.msi"
+          ],
+          "http_status": 206,
+          "valid_until": "2026-12-03T16:35:21+00:00",
+          "filename": "wwtsetup-6.1.2.0.msi",
+          "content_type": "application/octet-stream",
+          "evidence": "trusted source, download response and platform filename checks",
+          "fingerprint": "2cea597773fd0d27bcb3fe132b251f729fd395d8eda59daa91819f96700b9bab"
+        }
+      },
+      "invalidated": []
+    },
+    "desktuna:win-x64": {
+      "fingerprint": "702c2a0dfa15b29bf97e4ad8452c0d1853741b1be1dcf6eb84853dac6cb262d7",
+      "verification": {
+        "status": "verified",
+        "checked_at": "2026-11-26T16:35:21+00:00",
+        "url": "https://desktuna.com/DeskTuna-win-Setup-0.7.8.exe",
+        "final_url": "https://desktuna.com/DeskTuna-win-Setup-0.7.8.exe",
+        "redirects": [
+          "https://desktuna.com/DeskTuna-win-Setup-0.7.8.exe"
+        ],
+        "http_status": 206,
+        "valid_until": "2026-12-03T16:35:21+00:00",
+        "filename": "DeskTuna-win-Setup-0.7.8.exe",
+        "content_type": "application/x-msdownload",
+        "evidence": "trusted source, download response and platform filename checks",
+        "fingerprint": "702c2a0dfa15b29bf97e4ad8452c0d1853741b1be1dcf6eb84853dac6cb262d7"
+      },
+      "failures": 0,
+      "next_check_at": "2026-11-27T16:35:21+00:00",
+      "last_success_at": "2026-11-26T16:35:21+00:00",
+      "history": [
+        {
+          "at": "2026-11-26T16:35:21+00:00",
+          "url": "https://desktuna.com/DeskTuna-win-Setup-0.7.8.exe",
+          "status": "verified",
+          "reason": null
+        }
+      ],
+      "successes": {
+        "702c2a0dfa15b29bf97e4ad8452c0d1853741b1be1dcf6eb84853dac6cb262d7": {
+          "status": "verified",
+          "checked_at": "2026-11-26T16:35:21+00:00",
+          "url": "https://desktuna.com/DeskTuna-win-Setup-0.7.8.exe",
+          "final_url": "https://desktuna.com/DeskTuna-win-Setup-0.7.8.exe",
+          "redirects": [
+            "https://desktuna.com/DeskTuna-win-Setup-0.7.8.exe"
+          ],
+          "http_status": 206,
+          "valid_until": "2026-12-03T16:35:21+00:00",
+          "filename": "DeskTuna-win-Setup-0.7.8.exe",
+          "content_type": "application/x-msdownload",
+          "evidence": "trusted source, download response and platform filename checks",
+          "fingerprint": "702c2a0dfa15b29bf97e4ad8452c0d1853741b1be1dcf6eb84853dac6cb262d7"
+        }
+      },
+      "invalidated": []
+    },
+    "acdsee-free:win-x64": {
+      "fingerprint": "6653603dc57a63d365203918bc22305a95190a6116e9e6fb84048fb7d9b3ff54",
+      "verification": {
+        "status": "verified",
+        "checked_at": "2026-11-26T16:35:21+00:00",
+        "url": "https://dl.acdsystems.com/acdsee-free/en/acdsee-free-2-5-0-1164-win-en.exe",
+        "final_url": "https://dl.acdsystems.com/acdsee-free/en/acdsee-free-2-5-0-1164-win-en.exe",
+        "redirects": [
+          "https://dl.acdsystems.com/acdsee-free/en/acdsee-free-2-5-0-1164-win-en.exe"
+        ],
+        "http_status": 206,
+        "valid_until": "2026-12-03T16:35:21+00:00",
+        "filename": "acdsee-free-2-5-0-1164-win-en.exe",
+        "content_type": "application/x-msdownload",
+        "evidence": "trusted source, download response and platform filename checks",
+        "fingerprint": "6653603dc57a63d365203918bc22305a95190a6116e9e6fb84048fb7d9b3ff54"
+      },
+      "failures": 0,
+      "next_check_at": "2026-11-27T16:35:21+00:00",
+      "last_success_at": "2026-11-26T16:35:21+00:00",
+      "history": [
+        {
+          "at": "2026-11-26T16:35:21+00:00",
+          "url": "https://dl.acdsystems.com/acdsee-free/en/acdsee-free-2-5-0-1164-win-en.exe",
+          "status": "verified",
+          "reason": null
+        }
+      ],
+      "successes": {
+        "6653603dc57a63d365203918bc22305a95190a6116e9e6fb84048fb7d9b3ff54": {
+          "status": "verified",
+          "checked_at": "2026-11-26T16:35:21+00:00",
+          "url": "https://dl.acdsystems.com/acdsee-free/en/acdsee-free-2-5-0-1164-win-en.exe",
+          "final_url": "https://dl.acdsystems.com/acdsee-free/en/acdsee-free-2-5-0-1164-win-en.exe",
+          "redirects": [
+            "https://dl.acdsystems.com/acdsee-free/en/acdsee-free-2-5-0-1164-win-en.exe"
+          ],
+          "http_status": 206,
+          "valid_until": "2026-12-03T16:35:21+00:00",
+          "filename": "acdsee-free-2-5-0-1164-win-en.exe",
+          "content_type": "application/x-msdownload",
+          "evidence": "trusted source, download response and platform filename checks",
+          "fingerprint": "6653603dc57a63d365203918bc22305a95190a6116e9e6fb84048fb7d9b3ff54"
+        }
+      },
+      "invalidated": []
+    },
+    "downloadhelper-coapp:win-x64": {
+      "fingerprint": "402c77aaea556ae78abdacb2abdf3a10a63f400b5ec071aebeb0706bf0fa6891",
+      "verification": {
+        "status": "verified",
+        "checked_at": "2026-11-26T16:35:21+00:00",
+        "url": "https://github.com/aclap-dev/vdhcoapp/releases/download/v2.0.19/vdhcoapp-windows-x86_64-installer.exe",
+        "final_url": "https://release-assets.githubusercontent.com/github-production-release-asset/108186071/b7e9f6d1-d973-4ff7-a84b-0785d0c5ad2a?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-11-26T17%3A35%3A20Z&rscd=attachment%3B+filename%3Dvdhcoapp-windows-x86_64-installer.exe&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-11-26T16%3A35%3A11Z&ske=2026-11-26T17%3A35%3A20Z&sks=b&skv=2018-11-09&sig=F6v4eomJ9bUYdl62M14%2FwezOByoW4L8CU19Lnf%2FkkTc%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc5NTcxMjcyMiwibmJmIjoxNzk1NzEwOTIyLCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.-5nIv68EQWAPoqTmFdDmo1w3zuJR16jMSP8_VWuiF7c&response-content-disposition=attachment%3B%20filename%3Dvdhcoapp-windows-x86_64-installer.exe&response-content-type=application%2Foctet-stream",
+        "redirects": [
+          "https://github.com/aclap-dev/vdhcoapp/releases/download/v2.0.19/vdhcoapp-windows-x86_64-installer.exe",
+          "https://release-assets.githubusercontent.com/github-production-release-asset/108186071/b7e9f6d1-d973-4ff7-a84b-0785d0c5ad2a?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-11-26T17%3A35%3A20Z&rscd=attachment%3B+filename%3Dvdhcoapp-windows-x86_64-installer.exe&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-11-26T16%3A35%3A11Z&ske=2026-11-26T17%3A35%3A20Z&sks=b&skv=2018-11-09&sig=F6v4eomJ9bUYdl62M14%2FwezOByoW4L8CU19Lnf%2FkkTc%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc5NTcxMjcyMiwibmJmIjoxNzk1NzEwOTIyLCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.-5nIv68EQWAPoqTmFdDmo1w3zuJR16jMSP8_VWuiF7c&response-content-disposition=attachment%3B%20filename%3Dvdhcoapp-windows-x86_64-installer.exe&response-content-type=application%2Foctet-stream"
+        ],
+        "http_status": 206,
+        "valid_until": "2026-12-03T16:35:21+00:00",
+        "filename": "vdhcoapp-windows-x86_64-installer.exe",
+        "content_type": "application/octet-stream",
+        "evidence": "trusted source, download response and platform filename checks",
+        "fingerprint": "402c77aaea556ae78abdacb2abdf3a10a63f400b5ec071aebeb0706bf0fa6891"
+      },
+      "failures": 0,
+      "next_check_at": "2026-11-27T16:35:21+00:00",
+      "last_success_at": "2026-11-26T16:35:21+00:00",
+      "history": [
+        {
+          "at": "2026-11-26T16:35:21+00:00",
+          "url": "https://github.com/aclap-dev/vdhcoapp/releases/download/v2.0.19/vdhcoapp-windows-x86_64-installer.exe",
+          "status": "verified",
+          "reason": null
+        }
+      ],
+      "successes": {
+        "402c77aaea556ae78abdacb2abdf3a10a63f400b5ec071aebeb0706bf0fa6891": {
+          "status": "verified",
+          "checked_at": "2026-11-26T16:35:21+00:00",
+          "url": "https://github.com/aclap-dev/vdhcoapp/releases/download/v2.0.19/vdhcoapp-windows-x86_64-installer.exe",
+          "final_url": "https://release-assets.githubusercontent.com/github-production-release-asset/108186071/b7e9f6d1-d973-4ff7-a84b-0785d0c5ad2a?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-11-26T17%3A35%3A20Z&rscd=attachment%3B+filename%3Dvdhcoapp-windows-x86_64-installer.exe&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-11-26T16%3A35%3A11Z&ske=2026-11-26T17%3A35%3A20Z&sks=b&skv=2018-11-09&sig=F6v4eomJ9bUYdl62M14%2FwezOByoW4L8CU19Lnf%2FkkTc%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc5NTcxMjcyMiwibmJmIjoxNzk1NzEwOTIyLCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.-5nIv68EQWAPoqTmFdDmo1w3zuJR16jMSP8_VWuiF7c&response-content-disposition=attachment%3B%20filename%3Dvdhcoapp-windows-x86_64-installer.exe&response-content-type=application%2Foctet-stream",
+          "redirects": [
+            "https://github.com/aclap-dev/vdhcoapp/releases/download/v2.0.19/vdhcoapp-windows-x86_64-installer.exe",
+            "https://release-assets.githubusercontent.com/github-production-release-asset/108186071/b7e9f6d1-d973-4ff7-a84b-0785d0c5ad2a?sp=r&sv=2018-11-09&sr=b&spr=https&se=2026-11-26T17%3A35%3A20Z&rscd=attachment%3B+filename%3Dvdhcoapp-windows-x86_64-installer.exe&rsct=application%2Foctet-stream&skoid=96c2d410-5711-43a1-aedd-ab1947aa7ab0&sktid=398a6654-997b-47e9-b12b-9515b896b4de&skt=2026-11-26T16%3A35%3A11Z&ske=2026-11-26T17%3A35%3A20Z&sks=b&skv=2018-11-09&sig=F6v4eomJ9bUYdl62M14%2FwezOByoW4L8CU19Lnf%2FkkTc%3D&jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmVsZWFzZS1hc3NldHMuZ2l0aHVidXNlcmNvbnRlbnQuY29tIiwia2V5Ijoia2V5MSIsImV4cCI6MTc5NTcxMjcyMiwibmJmIjoxNzk1NzEwOTIyLCJwYXRoIjoicmVsZWFzZWFzc2V0cHJvZHVjdGlvbi5ibG9iLmNvcmUud2luZG93cy5uZXQifQ.-5nIv68EQWAPoqTmFdDmo1w3zuJR16jMSP8_VWuiF7c&response-content-disposition=attachment%3B%20filename%3Dvdhcoapp-windows-x86_64-installer.exe&response-content-type=application%2Foctet-stream"
+          ],
+          "http_status": 206,
+          "valid_until": "2026-12-03T16:35:21+00:00",
+          "filename": "vdhcoapp-windows-x86_64-installer.exe",
+          "content_type": "application/octet-stream",
+          "evidence": "trusted source, download response and platform filename checks",
+          "fingerprint": "402c77aaea556ae78abdacb2abdf3a10a63f400b5ec071aebeb0706bf0fa6891"
+        }
+      },
+      "invalidated": []
+    },
+    "0patch-agent:win-x64": {
+      "fingerprint": "2aa8e6eae14f6b21ec06e534c785cdeb3199a25ee6c7aa168c024a2df3242780",
+      "verification": {
+        "status": "verified",
+        "checked_at": "2026-11-26T16:35:21+00:00",
+        "url": "https://dist.0patch.com/download/latestagent",
+        "final_url": "https://dist.0patch.com/download/latestagent",
+        "redirects": [
+          "https://dist.0patch.com/download/latestagent"
+        ],
+        "http_status": 200,
+        "valid_until": "2026-12-03T16:35:21+00:00",
+        "filename": "0PatchInstaller_22.11.11.10550.msi",
+        "content_type": "application/octet-stream",
+        "evidence": "trusted source, download response and platform filename checks",
+        "fingerprint": "2aa8e6eae14f6b21ec06e534c785cdeb3199a25ee6c7aa168c024a2df3242780"
+      },
+      "failures": 0,
+      "next_check_at": "2026-11-27T16:35:21+00:00",
+      "last_success_at": "2026-11-26T16:35:21+00:00",
+      "history": [
+        {
+          "at": "2026-11-26T16:35:21+00:00",
+          "url": "https://dist.0patch.com/download/latestagent",
+          "status": "verified",
+          "reason": null
+        }
+      ],
+      "successes": {
+        "2aa8e6eae14f6b21ec06e534c785cdeb3199a25ee6c7aa168c024a2df3242780": {
+          "status": "verified",
+          "checked_at": "2026-11-26T16:35:21+00:00",
+          "url": "https://dist.0patch.com/download/latestagent",
+          "final_url": "https://dist.0patch.com/download/latestagent",
+          "redirects": [
+            "https://dist.0patch.com/download/latestagent"
+          ],
+          "http_status": 200,
+          "valid_until": "2026-12-03T16:35:21+00:00",
+          "filename": "0PatchInstaller_22.11.11.10550.msi",
+          "content_type": "application/octet-stream",
+          "evidence": "trusted source, download response and platform filename checks",
+          "fingerprint": "2aa8e6eae14f6b21ec06e534c785cdeb3199a25ee6c7aa168c024a2df3242780"
         }
       },
       "invalidated": []
