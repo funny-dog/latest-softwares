@@ -1,14 +1,14 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-26T09:12:46+00:00",
-  "configured": 699,
-  "published": 699,
-  "stale_packages": 0,
-  "verified_assets": 1131,
-  "unavailable_assets": 22,
-  "required_total": 301,
-  "required_covered": 300,
-  "required_coverage": 0.9966777408637874,
+  "generated_at": "2026-11-26T16:13:08+00:00",
+  "configured": 740,
+  "published": 740,
+  "stale_packages": 20,
+  "verified_assets": 1597,
+  "unavailable_assets": 12,
+  "required_total": 344,
+  "required_covered": 343,
+  "required_coverage": 0.997093023255814,
   "obsolete_ids": [],
   "problems": [
     {
@@ -20,21 +20,6 @@
       ]
     },
     {
-      "id": "apifox",
-      "required": false,
-      "issues": [
-        "unverified_or_unavailable:mac-x64",
-        "unverified_or_unavailable:win-x64"
-      ]
-    },
-    {
-      "id": "baidu-input",
-      "required": false,
-      "issues": [
-        "unverified_or_unavailable:win-x64"
-      ]
-    },
-    {
       "id": "cajviewer",
       "required": false,
       "issues": [
@@ -42,22 +27,7 @@
       ]
     },
     {
-      "id": "chatglm",
-      "required": false,
-      "issues": [
-        "unverified_or_unavailable:mac-x64",
-        "unverified_or_unavailable:win-x64"
-      ]
-    },
-    {
       "id": "delta-force",
-      "required": false,
-      "issues": [
-        "unverified_or_unavailable:win-x64"
-      ]
-    },
-    {
-      "id": "fastgithub",
       "required": false,
       "issues": [
         "unverified_or_unavailable:win-x64"
@@ -71,10 +41,9 @@
       ]
     },
     {
-      "id": "kimi",
+      "id": "iqiyi",
       "required": false,
       "issues": [
-        "unverified_or_unavailable:mac-x64",
         "unverified_or_unavailable:win-x64"
       ]
     },
@@ -82,28 +51,6 @@
       "id": "kuwo-music",
       "required": false,
       "issues": [
-        "unverified_or_unavailable:win-x64"
-      ]
-    },
-    {
-      "id": "navicat-premium-lite",
-      "required": false,
-      "issues": [
-        "unverified_or_unavailable:mac-universal"
-      ]
-    },
-    {
-      "id": "qqplayer",
-      "required": false,
-      "issues": [
-        "unverified_or_unavailable:win-x64"
-      ]
-    },
-    {
-      "id": "quark",
-      "required": false,
-      "issues": [
-        "unverified_or_unavailable:mac-universal",
         "unverified_or_unavailable:win-x64"
       ]
     },
@@ -119,6 +66,13 @@
       "required": false,
       "issues": [
         "unverified_or_unavailable:mac-x64",
+        "unverified_or_unavailable:win-x64"
+      ]
+    },
+    {
+      "id": "wiztree",
+      "required": false,
+      "issues": [
         "unverified_or_unavailable:win-x64"
       ]
     },
